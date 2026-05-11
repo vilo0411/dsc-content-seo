@@ -1,0 +1,26 @@
+# SEO Writer Agent - Cursor Rules
+
+## Project Identity
+- **Name:** SEO Content Pipeline
+- **Philosophy:** Data-driven, Anti-AI vibe, Modular Sub-agents.
+
+## Navigation & Structure
+- **Agents:** Definitions are in `.antigravity/agents/`. Refer to them when performing specific tasks (e.g., Use `seo-collector.md` when doing SERP research).
+- **Rules:** Pipeline logic is in `CLAUDE.md`.
+- **Knowledge Base:** Always check `resources/` before assuming company facts.
+
+## Commands (Simulation)
+When the user types a slash command, follow the logic defined in `CLAUDE.md`:
+- `/write`: Follow the pipeline (SEO Collector -> Main Agent -> Brand Guardian -> Quality Guardian).
+- `/setup`: Invoke `research-agent.md` logic.
+- `/approve`: Update the YAML `Status` field in the active file.
+
+## Token Optimization
+- **Do not read entire directories.** Use `list_dir` to see structure first.
+- **Do not read full content files** if you only need the metadata. Read the first 20 lines.
+- **Summarize research** before drafting to keep context clean.
+
+## Writing Style
+- Vietnamese by default (unless specified).
+- Professional, actionable, evidence-based.
+- Strictly follow `templates/seo-strategy/resources/content-strategy/anti-ai-rules.md`.

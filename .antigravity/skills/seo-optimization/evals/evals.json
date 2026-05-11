@@ -1,0 +1,28 @@
+{
+  "skill_name": "seo-optimization",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "/optimize content/blog/3-finalized/Final-co-phieu-la-gi.md --step",
+      "expected_output": "Một Báo cáo Đề xuất (Proposal) theo đúng form chuẩn, tạm dừng lại chờ người dùng duyệt, KHÔNG được ghi đè hay sửa file gốc ngay.",
+      "assertions": [
+        "Hệ thống không chỉnh sửa hay tạo file mới nào trước khi có lệnh /approve",
+        "Output xuất ra màn hình tuân thủ chính xác cấu trúc của assets/proposal-template.md",
+        "Có đầy đủ 3 trạng thái phân tích: [GIỮ NGUYÊN], [CẬP NHẬT], [XÓA BỎ]",
+        "Có phần Đề xuất [THÊM MỚI] kèm vị trí chèn và từ khóa phụ (Entities)"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "/optimize content/blog/3-finalized/Final-huong-dan-dau-tu.md --auto",
+      "expected_output": "Viết lại bài trực tiếp trên một bản sao (working copy) mà không in báo cáo đề xuất, sau đó tự động lưu vào thư mục chờ duyệt.",
+      "assertions": [
+        "Không in báo cáo Proposal ra màn hình",
+        "Tạo ra một file working copy tên là Optimize-huong-dan-dau-tu.md trong thư mục content/blog/2-user-review/",
+        "File bài gốc trong thư mục 3-finalized vẫn được giữ nguyên không bị thay đổi",
+        "Nội dung file Optimize mới có chứa các câu nối (transition) mượt mà giữa đoạn cũ và đoạn mới",
+        "Cập nhật trạng thái bài viết thành 'Optimizing' trong file sprint-backlog.md"
+      ]
+    }
+  ]
+}
