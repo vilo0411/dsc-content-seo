@@ -20,15 +20,15 @@ graph TD
     MainAgent -- "Consults" --> Skills{Skills /SOP/}
     
     subgraph Engine [.antigravity]
-        Skills -- "Directs" --> seo-writing[Skill: seo-writing]
+        Skills -- "Directs" --> seo-outlining[Skill: seo-outlining]
+        Skills -- "Directs" --> seo-drafting[Skill: seo-drafting]
         Skills -- "Directs" --> internal-linking[Skill: internal-linking]
     end
     
     subgraph Agents [Sub-Agents]
-        seo-writing -- "Calls for SERP" --> seo-collector[Agent: seo-collector]
-        seo-writing -- "Calls for Brand Audit" --> brand-guardian[Agent: brand-guardian]
-        seo-writing -- "Calls for QA" --> quality-guardian[Agent: quality-guardian]
-        internal-linking -- "Triggers" --> audit-script[link_audit.py]
+        seo-outlining -- "Calls for SERP" --> seo-collector[Agent: seo-collector]
+        seo-outlining -- "Calls for Brand Audit" --> brand-guardian[Agent: brand-guardian]
+        seo-drafting -- "Calls for QA" --> quality-guardian[Agent: quality-guardian]
     end
     
     subgraph Data [knowledge/]
@@ -38,16 +38,17 @@ graph TD
     end
 ```
 
-## 🔄 Content Pipeline (seo-writing)
-The production process is managed by `.antigravity/skills/seo-writing/SKILL.md`:
+## 🔄 Content Pipeline
+The production process is split across two skills:
 1. **Discovery:** `/setup` to build KB.
-2. **Strategy:** `/cluster` to map topics.
-3. **Drafting:** `/write` (Modes: Express, Guided, Auto, Sprint, Flush).
+2. **Strategy:** `/cluster` to map topics. `/keyword-plan` to pick next articles.
+3. **Outlining:** `/outlining` — `.antigravity/skills/seo-outlining/SKILL.md`
+4. **Drafting:** `/drafting` or `/write` — `.antigravity/skills/seo-drafting/SKILL.md`
 
 ## 🗂️ Data Hierarchy
 - **`.antigravity/`**: The system (skills, agents, internal templates).
 - **`knowledge/`**: The strategic brain (Brand, Market, Pipeline, Content).
 
 ## 🛠️ Key Utilities
-- **Linking Audit:** Run `python .antigravity/skills/internal-linking/scripts/link_audit.py` or use `/link-audit`.
+- **Internal Linking:** Use `/link` to backfill internal links from existing articles.
 - **Skill Center:** Check `.antigravity/skills/` for specialized capabilities.

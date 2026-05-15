@@ -48,4 +48,4 @@ Tối ưu trải nghiệm cho khách hàng mới (F0):
 - **Ngôn ngữ:** Gần gũi nhưng vẫn giữ được chuẩn mực tài chính, tránh dùng từ ngữ quá hàn lâm gây khó hiểu cho nhà đầu tư mới.
 
 ## 5. Từ khóa thương hiệu chính
-- Chứng khoán DSC, Tư vấn số DSC, Đầu tư chứng khoán thông minh, Ngân hàng đầu tư DSC, Quản lý tài sản số.
+- Chứng khoán DSC, Đầu tư chứng khoán thông minh.

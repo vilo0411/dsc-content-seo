@@ -51,20 +51,24 @@ Cluster_Role: Cluster
 - **Nội dung chính:** Khẳng định vị thế "vô địch lãi suất" của Bắc Á Bank hiện nay.
 - **Target: 150**
 
-### H2: Chi tiết bảng biểu lãi suất tiết kiệm Bắc Á Bank hôm nay
-- **Bằng chứng thực tế:** Kỳ hạn 6 tháng (6,85%), 12 tháng (6,9%). Dẫn đầu hệ thống về mặt con số lãi suất thực nhận.
-- **Target: 350**
+### H2: Chi tiết biểu lãi suất tiết kiệm Bắc Á Bank (Bac A Bank) hôm nay
+- **Nội dung chính:** Phân tích chi tiết biểu lãi suất tại quầy và online.
+- **Bằng chứng thực tế (Statistics):** 
+    - Lãi suất tại quầy: Kỳ hạn 6 tháng (~5.1%), 12 tháng (~5.5%).
+    - Lãi suất Online: Thường được ưu đãi cộng thêm 0.1% - 0.2% tùy thời kỳ.
+    - Hạn mức: Phân hóa lãi suất cho khoản tiền dưới 1 tỷ và trên 1 tỷ đồng.
+- **Target: 400**
 
 ---
 
-### H2: [So sánh] Lãi suất 6,9% của Bắc Á vs. Hiệu quả quản lý vốn DSC Invest
-- **Mục tiêu:** Thu hút tệp khách hàng có vốn nhàn rỗi lớn đang "săn" lãi suất cao tại Bắc Á.
+### H2: Từ gửi tiền tiết kiệm Bắc Á đến hành trình đầu tư chứng khoán DSC
+- **Mục tiêu:** Gợi mở giải pháp tối ưu tài chính cho khách hàng cá nhân (F0) đang tìm kiếm lợi nhuận cao.
 - **Nội dung chính:** 
-    - Lãi suất 6,9% là rất tốt trong hệ thống ngân hàng, nhưng vẫn bị giới hạn bởi tính thanh khoản (phải gửi kỳ hạn dài).
-    - **DSC Invest**: Giải pháp ủy thác đầu tư với vốn từ 3 tỷ đồng, tập trung vào tăng trưởng tài sản bền vững với sự quản lý của đội ngũ chuyên gia quỹ.
-    - So sánh tính linh hoạt và lợi nhuận kỳ vọng.
-- **Entities & Keywords:** DSC Invest, Wealth Management, tối ưu hóa dòng vốn.
-- **Competitive Edge:** Box chuyên gia: Phân tích vì sao 6,9% tiết kiệm vẫn có thể thua lạm phát thực tế của một số nhóm hàng hóa.
+    - **Tư duy tối ưu lợi nhuận:** Nếu bạn đã chọn Bắc Á vì mức lãi suất top đầu thị trường, bạn chắc chắn sẽ quan tâm đến kênh Chứng khoán – nơi lợi nhuận có thể vượt xa ngưỡng 5.5%.
+    - **Dịch vụ mở tài khoản eKYC:** Không cần đến quầy, chỉ 3 phút mở tài khoản chứng khoán DSC để bắt đầu hành trình tích lũy tài sản số.
+    - **Đồng hành cùng Môi giới 1:1:** Thay vì gửi tiền thụ động, bạn nhận được sự tư vấn chuyên sâu từ đội ngũ chuyên gia DSC để xây dựng danh mục đầu tư hiệu quả.
+- **Entities & Keywords:** Mở tài khoản chứng khoán, eKYC, DSC Trading, đầu tư tài chính.
+- **Yếu tố 3S (Story):** "Dành cho nhà đầu tư đang có 1 tỷ đồng tại Bắc Á, việc trích 20% vốn sang chứng khoán thông qua app DSC Trading có thể giúp tổng lợi suất danh mục tăng thêm 2-3% mỗi năm."
 - **Target: 400**
 
 ---
@@ -80,3 +84,8 @@ Cluster_Role: Cluster
 - **Brand Voice Checklist:** 
     - [x] Phân tích sâu, chuyên nghiệp.
     - [x] Đánh trúng tâm lý Yield-seekers.
+
+
+## Nhận xét:
+- Bảng giá lãi suất là nội dung chính mà ngắn quá. Cho thêem nội dung về lãi suất gửi tiết kiệm online và tại quầy
+- Khách lẻ nên tập trung vào dịch vụ mở tài khoản chứng khoán thay vì ủy thác đầu tư.

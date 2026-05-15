@@ -94,3 +94,7 @@ Cluster_Role: Cluster
 - **Internal Links:** [So sánh lãi suất ngân hàng](/blog/so-sanh-lai-suat-tiet-kiem-ngan-hang/).
 - **Brand Voice Checklist:** 
     - [x] Chuyên nghiệp, tin cậy.
+
+
+## Nhận xét:
+- "Nếu bạn thích sự chuyên nghiệp của ACB, bạn sẽ yêu thích hệ sinh thái **DSC Trading**." Đoạn này không ổn về mặt nội dung. Gợi mở người dùng đầu tư chứng khoán và mở tài khoán chứng khoán DSC

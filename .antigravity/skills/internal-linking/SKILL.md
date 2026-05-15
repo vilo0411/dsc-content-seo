@@ -16,7 +16,7 @@ description: >
 3. **Insert Links**: Use relative paths (e.g., `../3-finalized/Final-slug.md`) and approved anchor text variations.
 
 ### Mode: Backfill (After Publishing)
-1. **Source Search**: Scan `content/blog/3-finalized/` for old articles that could link TO the new article.
+1. **Source Search**: Scan `knowledge/4-content/3-finalized/` for old articles that could link TO the new article.
 2. **Update**: Append links to old articles without breaking the flow.
 
 ### Mode: Audit (Health Check)

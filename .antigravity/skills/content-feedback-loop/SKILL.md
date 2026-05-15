@@ -21,9 +21,26 @@ This skill is triggered after the FINAL `/approve` of an article.
 2. **Persona Update**: Adjust the writing persona if the feedback relates to Tone (e.g., "Too formal").
 
 ### Step 3: Knowledge Base Update
-1. **Update Anti-AI Rules**: Append new banned phrases to `knowledge/3-pipeline/anti-ai-rules.md`.
-2. **Update Revision Log**: Log the specific learnings in `knowledge/3-pipeline/revision-log.md` with the article reference.
-3. **Report to User**: Present a summary of what the AI has learned: *"I have learned 3 new rules from your feedback on this article..."*
+
+Ghi vào **đúng file** theo loại bài học:
+
+| Loại bài học | Ghi vào | Điều kiện |
+| :--- | :--- | :--- |
+| Pattern lặp ≥ 2 bài (từ/cụm từ cụ thể) | `knowledge/3-pipeline/anti-ai-rules.md` | Chỉ append, không overwrite |
+| Judgment call, cách tiếp cận, ngữ cảnh cụ thể | `.antigravity/memory/instincts.md` | Ngay sau mỗi /approve, kể cả 1 lần |
+| Raw event (bài nào, ngày nào, sửa gì) | `knowledge/3-pipeline/revision-log.md` | Luôn luôn ghi |
+
+**Quy tắc ghi `instincts.md`** — dùng format chuẩn:
+```
+### [Tên ngắn gọn]
+- **Trạng thái:** ACTIVE
+- **Nguồn:** [slug bài viết hoặc "Global feedback"]
+- **Phản hồi từ User:** "[Quote phản hồi gốc]"
+- **Bản năng:** [Quy tắc hành động cụ thể]
+- **Phạm vi:** [Global / Chỉ topic: X]
+```
+
+4. **Report to User**: Báo cáo tóm tắt: *"Đã học X bài học mới — Y rule mới vào anti-ai-rules, Z bản năng mới vào instincts."*
 
 ## 🚦 Triggers
 - Triggered automatically after a final `/approve` command.
