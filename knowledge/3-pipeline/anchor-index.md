@@ -21,6 +21,16 @@ File này là danh sách tập trung của tất cả bài viết đã publish, 
 
 ---
 
+## Cluster 2: Phân tích kỹ thuật & Chỉ báo
+
+| Anchor Text Gợi ý | URL | Từ khóa Liên quan | Trạng thái |
+| :--- | :--- | :--- | :--- |
+| chỉ báo ADX | `/blog/adx-la-gi/` | ADX là gì, Average Directional Index | Finalized |
+| chỉ báo William %R | `/blog/william-r-la-gi/` | William %R là gì, Williams Percent Range | Finalized |
+| chỉ báo RSI | `/blog/rsi-la-gi/` | RSI là gì, Relative Strength Index, RSI overbought oversold | Finalized |
+
+---
+
 ## Hướng dẫn cập nhật
 
 Khi một bài viết được finalized, thêm một dòng mới vào cluster tương ứng:

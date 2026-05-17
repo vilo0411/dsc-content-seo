@@ -14,8 +14,16 @@ This skill focuses on SERP intelligence and creating high-detail Content Briefs 
         *   Detailed heading structures (H1/H2/H3/H4) theo đúng thứ tự.
         *   Intent từng section — trả lời câu hỏi gì của reader?
         *   Content gaps, unique angles, and UX elements (tables, calculators, FAQ schema).
+    *   **Chạy Competitor Gap Synthesis** theo format trong `web-serp/SKILL.md` — bắt buộc trước khi sang Step 2.
 2. **Consult Knowledge**: Read brand profile and anti-ai rules.
 3. **Verify Product Match**: Identify which brand product fits this specific intent.
+4. **Internal Link Planning**: Đọc `knowledge/3-pipeline/anchor-index.md`. Identify 2–3 bài đã publish phù hợp nhất để link từ bài này. Ghi vào field `Internal_Links:` của outline YAML theo format:
+    ```yaml
+    Internal_Links:
+      - anchor: "[anchor text]"
+        url: "[url từ anchor-index]"
+        suggested_placement: "[tên H2 nên chèn link]"
+    ```
 
 ### Step 2: Validate (Expert Outline)
 1. **Generate Outline**: Use the template at `references/brief-template.md`. 

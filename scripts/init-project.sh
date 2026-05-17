@@ -26,10 +26,11 @@ mkdir -p "$PROJECT_NAME/knowledge/1-brand"
 mkdir -p "$PROJECT_NAME/knowledge/2-market"
 mkdir -p "$PROJECT_NAME/knowledge/3-pipeline"
 mkdir -p "$PROJECT_NAME/knowledge/raw"
-mkdir -p "$PROJECT_NAME/content/blog/0-raw"
-mkdir -p "$PROJECT_NAME/content/blog/1-outlines"
-mkdir -p "$PROJECT_NAME/content/blog/2-user-review"
-mkdir -p "$PROJECT_NAME/content/blog/3-finalized"
+mkdir -p "$PROJECT_NAME/knowledge/4-content/0-sources"
+mkdir -p "$PROJECT_NAME/knowledge/4-content/1-outlines"
+mkdir -p "$PROJECT_NAME/knowledge/4-content/2-drafts"
+mkdir -p "$PROJECT_NAME/knowledge/4-content/3-finalized"
+mkdir -p "$PROJECT_NAME/knowledge/raw/intel"
 
 # Copy internal templates to knowledge folder
 cp -r .antigravity/internal-templates/* "$PROJECT_NAME/knowledge/" 2>/dev/null || true

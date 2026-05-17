@@ -10,8 +10,13 @@ This skill focuses on converting an approved Outline into a high-quality, human-
     *   Avoid all "AI-vibe" phrases and structures.
     *   Use the **3S Rule** (Specific, Story, Statistics) throughout.
     *   Maintain the **Persona** (Senior Expert) and **POV**.
-3. **Internal QA**: Self-audit based on `anti-ai-rules.md`. If AI patterns are found, rewrite before presenting.
-4. **Present Draft**: Deliver the draft to the user with a Feedback Table.
+    *   Embed internal links theo `Internal_Links:` đã plan trong outline — đặt tự nhiên trong câu, không thêm riêng cuối bài.
+3. **3-Sweep Quality Check (BẮT BUỘC trước khi present)**: Sau khi viết xong, tự kiểm tra 3 sweeps sau trên toàn bài. Nếu fail bất kỳ điểm nào → sửa trước khi trình bày:
+    - **So What?** — Mỗi H2 phải có ít nhất 1 câu trả lời rõ ràng "tại sao reader phải quan tâm đến section này?" Không chỉ mô tả — phải có lợi ích cụ thể.
+    - **Prove It** — Mỗi claim/nhận định phải có số liệu, ví dụ cụ thể, hoặc case thực tế đi kèm. Scan toàn bài: mọi câu dạng "[X] là quan trọng/tốt/hiệu quả" mà không có bằng chứng → rewrite.
+    - **Specificity** — Grep các từ: "tốt", "nhanh", "hiệu quả", "đáng kể", "nhiều", "một số". Mỗi từ tìm được → thay bằng con số hoặc ví dụ cụ thể, hoặc xóa.
+4. **Internal QA**: Self-audit based on `anti-ai-rules.md`. If AI patterns are found, rewrite before presenting.
+5. **Present Draft**: Deliver the draft to the user with a Feedback Table.
 
 ### Step 2: Finalize & Learn
 1. **Iterative Revision**: Revise the draft based on user feedback rounds.

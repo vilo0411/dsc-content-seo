@@ -127,6 +127,15 @@ Nếu phát hiện bất kỳ phrase nào — đánh dấu CRITICAL, ghi line nu
 - [ ] Product Bridge đúng dịch vụ với bài phân tích kỹ thuật → Môi giới 1:1 (Instinct: "Ưu tiên Môi giới 1:1")
 - [ ] Kiểm tra mọi instinct khác trong file
 
+### [CL8] E-E-A-T Signals — MAJOR nếu thiếu
+
+Google đánh giá content theo Experience · Expertise · Authoritativeness · Trustworthiness. Thiếu các tín hiệu này → khó rank top dù SEO kỹ thuật đúng.
+
+- [ ] **Experience:** Có ít nhất 1 ví dụ/case cụ thể từ thực tế — không phải ví dụ giả định chung chung ("giả sử bạn...")
+- [ ] **Expertise:** Số liệu thị trường có ghi rõ tên nguồn + thời điểm (tháng/năm). Không có số liệu "trôi nổi" không nguồn
+- [ ] **Authoritativeness:** Bài có góc nhìn/nhận định riêng, không chỉ tổng hợp lại những gì competitor đã nói
+- [ ] **Trustworthiness:** Không có claim tài chính tuyệt đối ("chắc chắn lãi", "không thể mất vốn") mà không có disclaimer. DSC product mention tự nhiên, không sales-y
+
 ---
 
 ## Scoring & Report Format
@@ -150,6 +159,9 @@ Bài chỉ đạt **PASS** khi: 0 CRITICAL + 0 MAJOR.
 **Target Keyword:** [keyword]
 **Word Count:** [thực tế] / [target trong outline]
 **Kết quả:** PASS / FAIL
+**Checklist:** 8 | PASS: _ | FAIL: _
+**CRITICAL fail:** [CL? — mô tả ngắn] hoặc Không có
+**MAJOR fail:** [CL? — mô tả ngắn] hoặc Không có
 
 ---
 
