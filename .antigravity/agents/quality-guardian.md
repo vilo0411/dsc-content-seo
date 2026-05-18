@@ -115,8 +115,11 @@ Nếu phát hiện bất kỳ phrase nào — đánh dấu CRITICAL, ghi line nu
 - [ ] Câu văn ≤ 25 từ (kiểm tra 5 đoạn ngẫu nhiên)
 - [ ] Đoạn văn ≤ 3 câu
 - [ ] Không có 2 bullet list liên tiếp không có đoạn văn xuôi ở giữa
-- [ ] Word count nằm trong target range của outline (±10%)
 - [ ] Không có đoạn intro dài hơn 3 câu trước khi vào nội dung chính
+- [ ] **Word count từng section đạt target** — xem kết quả từ script (Step 1.5 trong SKILL.md):
+  - Script exit 1 → ghi MAJOR [CL6], liệt kê đúng các section FAIL từ output script
+  - Chỉ yêu cầu Main Agent sửa **các section thiếu/vượt target** — không sửa section đã OK
+  - Nếu Step 1.5 chưa được chạy → **bắt buộc chạy trước**, không audit tiếp
 
 ### [CL7] Instincts Check — MAJOR nếu lặp lại lỗi đã biết
 
@@ -148,7 +151,8 @@ Bài chỉ đạt **PASS** khi: 0 CRITICAL + 0 MAJOR.
 
 **Persona:** [P1/P2/P3/P4]
 **Target Keyword:** [keyword]
-**Word Count:** [thực tế] / [target trong outline]
+**Word Count (toàn bài):** [thực tế] / [target trong outline]
+**Word Count Script:** PASS / FAIL — [paste output từ count_words.py]
 **Kết quả:** PASS / FAIL
 
 ---

@@ -18,6 +18,7 @@ File này là danh sách tập trung của tất cả bài viết đã publish, 
 | lãi suất tiết kiệm VPBank | `/blog/lai-suat-tiet-kiem-vpbank/` | lãi suất VPBank, tiết kiệm VPBank | Finalized |
 | lãi suất tiết kiệm Bắc Á | `/blog/lai-suat-tiet-kiem-bac-a/` | lãi suất Bắc Á Bank | Finalized |
 | lãi suất tiết kiệm VIB | `/blog/lai-suat-tiet-kiem-vib/` | lãi suất VIB, tiết kiệm VIB | Finalized |
+| phí giao dịch chứng khoán | `/blog/phi-giao-dich-chung-khoan/` | phí môi giới chứng khoán, thuế phí chứng khoán | Finalized |
 
 ---
 

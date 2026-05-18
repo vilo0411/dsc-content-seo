@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python .antigravity/skills/qa-qc/count_words.py)",
+      "Bash(python .antigravity/skills/qa-qc/count_words.py knowledge/4-content/2-drafts/test.md knowledge/4-content/1-outlines/phi-giao-dich-chung-khoan.md)",
+      "Bash(python .antigravity/skills/qa-qc/count_words.py knowledge/4-content/1-outlines/phi-giao-dich-chung-khoan.md knowledge/4-content/1-outlines/phi-giao-dich-chung-khoan.md)"
+    ]
+  }
+}

@@ -51,6 +51,13 @@ Mỗi khi người dùng đưa ra phản hồi chỉnh sửa, hãy trích xuất
 - **Bản năng:** Đối với các bài viết về báo cáo tài chính hoặc công cụ kỹ thuật, ngoài việc phân tích chiến lược cho nhà đầu tư, cần bổ sung các kiến thức nền tảng như 'Phương pháp lập' hoặc 'Cấu tạo chi tiết'. Điều này giúp thỏa mãn các truy vấn tìm kiếm mang tính học thuật mà không làm loãng ảnh hưởng chiến lược của DSC.
 - **Phạm vi:** Global
 
+### Tuân thủ độ dài đoạn và cấu trúc Heading chuẩn
+- **Trạng thái:** ACTIVE
+- **Nguồn:** phi-giao-dich-chung-khoan
+- **Phản hồi từ User:** QA script `count_words.py` báo sai lệch khi dùng sai thẻ Heading.
+- **Bản năng:** Khi chuyển từ Outline sang Draft, luôn sử dụng Markdown Headings tiêu chuẩn (`#`, `##`, `###`) thay vì giữ nguyên các chuỗi định dạng của Outline (`### H2:`). Điều này đảm bảo Script QA hoạt động chính xác khi cắt block nội dung.
+- **Phạm vi:** Global
+
 ---
 
 *(Agent tự động append bản năng mới vào section "Bản năng Active" sau mỗi vòng viết.)*

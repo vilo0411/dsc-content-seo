@@ -33,6 +33,26 @@ description: >
 - .antigravity/memory/instincts.md             ← Lỗi đã gặp từ trước
 ```
 
+### Step 1.5 — Word Count Pre-check (Bắt buộc, chạy trước 7 checklist)
+
+Chạy Python script để đếm word count từng section và đối chiếu với target trong outline:
+
+```bash
+python .antigravity/skills/qa-qc/count_words.py \
+  knowledge/4-content/2-drafts/[slug].md \
+  knowledge/4-content/1-outlines/[slug].md
+```
+
+**Quy tắc xử lý kết quả:**
+
+| Kết quả script | Hành động |
+|---|---|
+| Exit 0 (PASS) | Tiếp tục Step 2 — 7 checklist |
+| Exit 1 (FAIL) | **Dừng ngay.** Gửi danh sách section thiếu/vượt cho Main Agent sửa. **Chỉ sửa đúng các section được liệt kê — không rewrite toàn bài.** Re-run script sau khi nhận bản sửa. |
+| Exit 2 (error) | Kiểm tra đường dẫn file, báo lỗi cho user |
+
+> **Không được bỏ qua bước này.** Word count sai là MAJOR — bài không thể PASS ngay cả khi 7 checklist đều OK.
+
 ### Step 2 — Invoke Quality Guardian
 
 Chạy toàn bộ 7 checklist theo `.antigravity/agents/quality-guardian.md`:
@@ -44,7 +64,7 @@ Chạy toàn bộ 7 checklist theo `.antigravity/agents/quality-guardian.md`:
 | CL3 — Glossary & Brand | Tên sản phẩm, forbidden terms, format số | CRITICAL |
 | CL4 — Persona Alignment | Tone, CTA, product bridge, jargon level | MAJOR |
 | CL5 — Fact Accuracy | Số liệu DSC, thống kê thị trường | CRITICAL |
-| CL6 — Readability | Sentence/paragraph length, word count | MAJOR |
+| CL6 — Readability | Sentence/paragraph length, word count per section | MAJOR |
 | CL7 — Instincts | Lỗi đã biết từ instincts.md | MAJOR |
 
 ### Step 3 — Output báo cáo

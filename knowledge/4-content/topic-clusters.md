@@ -16,6 +16,8 @@ Tài liệu này quản lý các nhóm chủ đề được phân tách từ d�
 | `/blog/bao-cao-luu-chuyen-tien-te/` | Báo cáo lưu chuyển tiền tệ là gì | 1.900 | Finalized |
 | `/blog/bien-loi-nhuan-rong/` | Biên lợi nhuận ròng là gì | 1.300 | Optimizing |
 | `/blog/casa-la-gi/` | CASA là gì | 5.400 | Finalized |
+| `/blog/phi-giao-dich-chung-khoan/` | Phí giao dịch chứng khoán | 1.500 | Finalized |
+| `/blog/phi-luu-ky-chung-khoan/` | Phí lưu ký chứng khoán | - | Outline-Approved |
 
 ## Cluster 2: Phân tích kỹ thuật & Chỉ báo
 **Mục tiêu:** Xây dựng kho kiến thức chuyên sâu về trading cho Active Traders.
