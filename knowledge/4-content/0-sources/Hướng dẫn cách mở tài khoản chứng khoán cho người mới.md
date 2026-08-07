@@ -5,9 +5,8 @@ author:
 published:
 created: 2026-05-18
 description: "Hướng dẫn cách mở tài khoản chứng khoán miễn phí, đơn giản, nhanh chóng cho người mới bắt đầu. Tham khảo ngay bài viết của DSC nhé!"
-tags:
-  - "clippings"
 ---
+
 Mở tài khoản chứng khoán là bước đầu tiên để bạn tham gia vào thị trường chứng khoán đầy tiềm năng. Bài viết này của DSC sẽ hướng dẫn bạn chi tiết cách mở tài khoản chứng khoán theo 2 hình thức:
 
 - Cách mở tài khoản chứng khoán online qua eKYC

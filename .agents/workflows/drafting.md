@@ -17,6 +17,7 @@ Dùng sau khi Outline đã được `/approve`. Chỉ thực hiện Phase 3 (Dra
 5. `knowledge/3-pipeline/glossary.md`
 6. `knowledge/3-pipeline/anchor-index.md` — Danh sách bài để link nội bộ
 7. `.antigravity/memory/instincts.md`
+8. `knowledge/1-brand/writers/[Writer_Profile].md` — Đọc field `Writer_Profile` trong outline YAML, load file tương ứng (`educational` / `analytical` / `comparison`). Nếu không có field này → dùng `educational` làm default.
 
 > **Nếu Outline không tồn tại hoặc chưa có trạng thái `Outline-Approved` trong `topic-clusters.md`: DỪNG LẠI và yêu cầu người dùng chạy `/outlining [keyword]` trước.**
 

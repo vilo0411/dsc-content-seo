@@ -56,7 +56,7 @@ A centralized, standardized data structure ensuring multi-platform portability a
 - **`knowledge/1-brand/`**: Brand Identity, Personas, ICP, and Voice guidelines.
 - **`knowledge/2-market/`**: Market Landscape, Competitors, and Topic Cluster Maps.
 - **`knowledge/3-pipeline/`**: Content strategy, backlog, keyword lists, and Sprint Planners.
-- **`knowledge/4-content/`**: The production line spanning granular stages (`0-raw` -> `1-outline` -> `2-draft` -> `3-finalized`).
+- **`knowledge/4-content/`**: The production line spanning granular stages (`0-sources` -> `1-outlines` -> `2-drafts` -> `3-finalized`).
 - **`knowledge/raw/`**: Raw, unprocessed uploads (e.g., client briefs, data dumps).
 
 ## ⚡ Key Features

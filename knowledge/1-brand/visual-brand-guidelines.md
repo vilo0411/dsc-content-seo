@@ -9,19 +9,22 @@
 
 | Màu | Hex | Dùng cho |
 | :--- | :--- | :--- |
-| Primary | `[TBD]` | CTA, headline, accent |
-| Secondary | `[TBD]` | Background, dividers |
-| Text Dark | `[TBD]` | Body text |
-| Text Light | `[TBD]` | Text trên nền tối |
+| Brand Green | `#00AD14` | Primary accent, logo, key elements |
+| Bright Green | `#2BE841` | Gradient start, energy highlight |
+| Teal | `#10E7B3` | Gradient end, digital accent |
+| Dark Navy | `#0D1B2A` | Text, dark backgrounds [cần xác nhận với team] |
+| White | `#FFFFFF` | Primary background |
 
-> Điền hex codes thực tế từ Brand Identity file.
+**Gradient chuẩn:** Linear `#2BE841` → `#10E7B3` — dùng cho chart lines, icon accent, overlay.
+
+> Nguồn: research từ dsc.com.vn (logo SVG + Union SVG). Dark Navy cần xác nhận lại với team Marketing.
 
 ---
 
 ## 2. Image Style
 
-- **Phong cách:** [TBD — VD: Photography thực tế / Illustration / Infographic]
-- **Tone:** [TBD — VD: Professional, Warm, Clean, Minimalist]
+- **Phong cách:** Đa dạng theo loại bài — xem `.antigravity/skills/seo-image/skill.md` § Style Options
+- **Tone:** Professional, trustworthy, modern Vietnamese finance — clean, không lạnh kiểu Wall Street
 - **Forbidden styles:** Không dùng ảnh stock rẻ tiền, không dùng hình người mặt nhìn thẳng vào camera.
 
 ---

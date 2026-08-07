@@ -27,6 +27,7 @@ Word_Count_Target: [Số từ - Đề xuất dựa trên Top 1-3 đối thủ + 
 # Audience & Brand
 Persona: [Tên Persona - Ví dụ: F0, Sinh viên...]
 Tone: [Ví dụ: Conversational + Authoritative]
+Writer_Profile: [educational | analytical | comparison]  # xem knowledge/1-brand/writers/README.md
 Writing_Method: [PAS | AIDA | 4Cs]
 Core_Products: # Lấy từ Knowledge Base của dự án hiện tại
   - product: "[Tên sản phẩm 1]"

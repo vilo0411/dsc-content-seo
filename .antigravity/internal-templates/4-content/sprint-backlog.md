@@ -11,5 +11,5 @@ This file tracks the current production status of SEO articles.
 - `Outline-Pending`: Outline generated, waiting for review in `1-outlines/`.
 - `Outline-Approved`: Approved, ready for drafting.
 - `Writing`: Draft in progress.
-- `Review-Pending`: Draft awaiting review in `2-user-review/`.
+- `Review-Pending`: Draft awaiting review in `2-drafts/`.
 - `Finalized`: Completed and moved to `3-finalized/`.
