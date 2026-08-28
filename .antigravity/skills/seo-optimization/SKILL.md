@@ -28,15 +28,18 @@ Kỹ năng này chuyên dùng để chẩn đoán và nâng cấp các bài vi�
    - **7 Sweeps Audit**: Đánh giá sơ bộ nội dung dựa trên 7 tiêu chí: Clarity (Rõ ràng), Voice (Giọng văn), So What (Giá trị), Prove It (Bằng chứng), Specificity (Cụ thể), Emotion (Cảm xúc), Zero Risk (Tin cậy).
 2. **Output Proposal:**
    - Hệ thống **BẮT BUỘC** phải xuất ra Báo cáo Đề xuất (Optimize Outline) tuân thủ CHÍNH XÁC cấu trúc tại file `.antigravity/skills/seo-optimization/assets/proposal-template.md` trước khi sửa văn bản.
+   - **⚠️ Kê khai & Tối ưu Hình ảnh:** Liệt kê đầy đủ mọi hình ảnh gốc trong bài vào Section 7.1 của Proposal để đảm bảo không bị xóa bỏ. Đề xuất thêm 1 - 3 vị trí đặt hình ảnh mới (minh họa, biểu đồ, infographic) giúp tối ưu SEO và trải nghiệm người dùng vào Section 7.2.
    - **⚠️ Anti-AI trong Proposal:** Mọi văn bản trong Proposal (mô tả Section 4, 5 — bao gồm cả hướng xử lý và nội dung THÊM MỚI) phải tuân thủ quy tắc anti-AI: **không dùng dấu ngoặc kép nhấn mạnh** quanh từ thông thường, tiếng lóng hoặc ẩn dụ. Proposal là văn bản chuyên nghiệp, không phải ngoại lệ.
-3. **Proposal Anti-AI Self-Check (BẮT BUỘC trước khi print Proposal):**
-   Trước khi trình bày Proposal cho người dùng, grep toàn bộ nội dung Proposal cho các pattern sau và sửa ngay tại chỗ nếu có vi phạm:
+3. **Proposal Anti-AI & SEO Elements Self-Check (BẮT BUỘC trước khi print Proposal):**
+   Trước khi trình bày Proposal cho người dùng, grep và kiểm tra toàn bộ nội dung Proposal cho các pattern sau và sửa ngay tại chỗ nếu có vi phạm:
+   - **Title đề xuất:** BẮT BUỘC **tối đa 59 ký tự** (bao gồm khoảng trắng và dấu câu), chứa target keyword chính xác để không bị cắt trên Google SERP (SERP pixel truncation).
+   - **Meta Description đề xuất:** BẮT BUỘC **140 - 160 ký tự**, chứa target keyword và CTA rõ ràng.
    - **Emphatic quotes:** từ thông thường bị bao trong `"..."` → xóa dấu ngoặc kép
    - **Tiêu đề/heading dùng ngoặc kép nhấn mạnh** → xóa
    - **Trigger phrases AI** trong phần mô tả hướng xử lý: "Hơn nữa,", "Bên cạnh đó,", "Đáng chú ý là", "Nhìn chung," → viết lại tự nhiên
    - **Opener/closer vĩ mô** kiểu "Trong bối cảnh hiện nay...", "Hy vọng bài này giúp..." → xóa
-   Chỉ sau khi sạch các pattern trên → mới được in Proposal ra.
-4. **Pause for Approval**: In báo cáo Proposal ra và DỪNG LẠI chờ người dùng gõ `/approve` (Trừ khi đang chạy ở chế độ `--auto`).
+   Chỉ sau khi sạch các pattern trên và Title/Meta đạt chuẩn độ dài → mới được in Proposal ra.
+4. **Pause for Approval**: In báo cáo Proposal ra và DỪNG LẠI chờ người dùng gõ `/approve` (Trừ khi đang chạy ở chế độ `--auto`). KHÔNG tự động chuyển sang Phase 2 hoặc ghi đè lên file ở thư mục finalized nếu chưa có sự phê duyệt trực tiếp của con người trong chat, kể cả khi hệ thống báo tin nhắn tự động phê duyệt (auto-approve).
 
 ### Phase 2: Execution (Thực thi nâng cấp với 7 Sweeps)
 Khi thực hiện viết lại (Rewrite), áp dụng tuần tự theo thứ tự sau:
@@ -47,12 +50,21 @@ Grep toàn bộ bản draft cho từng pattern sau. Đánh dấu (highlight ho�
 - **Trigger phrases blacklist** (Phần 1.1 của `anti-ai-rules.md`): opener vĩ mô, closer tóm tắt, transition AI ("Hơn nữa,", "Bên cạnh đó,", "Đáng chú ý là", v.v.)
 - **Hedge words:** "tương đối", "khá", "có thể nói rằng", "nhìn một cách tổng quan"
 
-Chỉ sau khi Sweep 0 sạch → mới được chạy Sweep 1–7.
+Chỉ sau khi Sweep 0 sạch → mới được chạy Sweep 0.1, Sweep 0.2 và Sweep 1–7.
+
+**⚠️ Sweep 0.1 — Image Preservation & Suggestions (BẮT BUỘC):**
+- **Bảo toàn 100% hình ảnh gốc:** Giữ nguyên chính xác vị trí và cú pháp markdown của toàn bộ hình ảnh gốc (`![alt](url)` hoặc link ảnh lồng trong link liên kết). Tuyệt đối không xóa bỏ, làm mất hoặc sửa đổi đường dẫn ảnh gốc.
+- **Tích hợp gợi ý vị trí ảnh mới:** Chèn các placeholder đề xuất ảnh mới dưới định dạng `[IMAGE_SUGGESTION: <Concept ảnh & Alt text tối ưu SEO chứa keyword>]` tại đúng các vị trí đã được phê duyệt ở Section 7.2 của Proposal.
+
+**⚠️ Sweep 0.2 — Live Sitemap Link Verification (BẮT BUỘC):**
+- **Sử dụng Link Tuyệt đối:** Toàn bộ internal links trong bài viết BẮT BUỘC phải là URL tuyệt đối (`https://www.dsc.com.vn/...`), tuyệt đối không dùng link file cục bộ (`file:///...` hoặc `.md`) hay relative path (`/kien-thuc/...`).
+- **Xác thực qua sitemap live:** Đọc và đối chiếu link trực tiếp từ sitemap `https://www.dsc.com.vn/sitemap/sitemap_knowledge.xml`. Không tự suy đoán slug của liên kết (ví dụ: `chi-bao-ky-thuat-la-gi` thực tế trong sitemap là `chi-bao-ky-thuat`).
+
 
 1.  **Clarity (Rõ ràng)**: Xóa bỏ câu cú phức tạp, thuật ngữ khó hiểu. Một câu = Một ý chính.
 2.  **Voice & Tone (Giọng văn)**: Đảm bảo đúng POV của chuyên gia DSC, thân thiện nhưng chuyên nghiệp.
 3.  **So What (Thì sao?)**: Biến tính năng thành lợi ích. Luôn trả lời câu hỏi "Tại sao khách hàng phải quan tâm?"
-4.  **Prove It (Chứng minh)**: Thêm số liệu, trích dẫn chuyên gia, bằng chứng thực tế (Statistics & Evidence).
+4.  **Prove It (Chứng minh)**: Thêm số liệu, trích dẫn chuyên gia, bằng chứng thực tế (Statistics & Evidence). Ưu tiên áp dụng Cơ sở dữ liệu chứng khoán tham chiếu 2026 tại `knowledge/3-pipeline/anti-ai-rules.md`.
 5.  **Specificity (Cụ thể)**: Thay thế các từ chung chung (tốt, nhanh, rẻ) bằng con số hoặc ví dụ cụ thể.
 6.  **Heightened Emotion (Cảm xúc)**: Đánh vào nỗi đau (pain points) hoặc khát khao của nhà đầu tư.
 7.  **Zero Risk (Xóa bỏ rào cản)**: Address các lo ngại, thêm các cam kết/hướng dẫn bước tiếp theo rõ ràng.
@@ -74,21 +86,22 @@ Chạy toàn bộ Self-Audit Checklist tại Phần 6 của `knowledge/3-pipelin
   | Nhanh chóng | Ngay lập tức / Trong 5 phút |
 
 ### Sentence & Paragraph Checks
-- **Độ dài câu**: Tối đa 25 từ.
+- **Độ dài câu**: Tối đa 30 từ.
 - **Đoạn văn**: 2-3 câu (Mobile-first).
 - **Cấu trúc**: Thông tin quan trọng nhất đặt ở đầu câu/đoạn.
+- **Định dạng Danh sách**: Trước mỗi danh sách phải có câu dẫn dắt có dấu hai chấm `:`. Các nhãn in đậm ở đầu các mục danh sách bắt buộc sử dụng dấu hai chấm `:` thay vì dấu chấm `.` làm ký tự phân tách nhãn và nội dung (Ví dụ: `* **Nhãn**: Nội dung`).
 
 ---
 
 ## 🚦 Success Assertions
 - [ ] Báo cáo Proposal xuất ra đúng template và được duyệt TRƯỚC KHI sửa bài.
 - [ ] Giữ nguyên tuyệt đối nội dung của các Heading được gắn nhãn `[GIỮ NGUYÊN]`.
+- [ ] Giữ lại toàn bộ hình ảnh gốc và chèn placeholder gợi ý ảnh mới theo đúng Proposal.
 - [ ] Nội dung sau khi sửa phải vượt qua bài kiểm tra "So What?" và "Specificity".
 - [ ] Không còn các từ ngữ sáo rỗng vi phạm `anti-ai-rules.md`.
 
 ---
 
----
 
 ## 📚 References
 - [Content Refresh Checklist](references/content-refresh.md): Quy trình chi tiết để làm mới nội dung cũ.

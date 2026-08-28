@@ -27,10 +27,11 @@ Ghi vào **đúng file** theo loại bài học:
 | Loại bài học | Ghi vào | Điều kiện |
 | :--- | :--- | :--- |
 | Pattern lặp ≥ 2 bài (từ/cụm từ cụ thể) | `knowledge/3-pipeline/anti-ai-rules.md` | Chỉ append, không overwrite |
-| Judgment call, cách tiếp cận, ngữ cảnh cụ thể | `.antigravity/memory/instincts.md` | Ngay sau mỗi /approve, kể cả 1 lần |
+| Judgment call, cách tiếp cận, ngữ cảnh cụ thể | `.antigravity/memory/instincts-archive.md` & `.antigravity/memory/instincts.md` | Ngay sau mỗi /approve, kể cả 1 lần |
 | Raw event (bài nào, ngày nào, sửa gì) | `knowledge/3-pipeline/revision-log.md` | Luôn luôn ghi |
 
-**Quy tắc ghi `instincts.md`** — dùng format chuẩn:
+**Quy tắc ghi bộ nhớ bản năng (Instincts Memory):**
+1. **Ghi đầy đủ (Archive):** Ghi bản năng mới đầy đủ metadata vào cuối file `.antigravity/memory/instincts-archive.md` theo format chuẩn:
 ```
 ### [Tên ngắn gọn]
 - **Trạng thái:** ACTIVE
@@ -39,6 +40,7 @@ Ghi vào **đúng file** theo loại bài học:
 - **Bản năng:** [Quy tắc hành động cụ thể]
 - **Phạm vi:** [Global / Chỉ topic: X]
 ```
+2. **Đồng bộ bản rút gọn:** Chạy script `python scripts/optimize_instincts.py` để tự động tổng hợp, phân loại và cập nhật lại bản rút gọn tiết kiệm token tại `.antigravity/memory/instincts.md`.
 
 4. **Report to User**: Báo cáo tóm tắt: *"Đã học X bài học mới — Y rule mới vào anti-ai-rules, Z bản năng mới vào instincts."*
 

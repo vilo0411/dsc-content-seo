@@ -60,12 +60,13 @@ Trước khi làm bất cứ việc gì, hệ thống phải đọc:
 
 **Bước 2.2 — Internal Linking:**
 - Kích hoạt skill `.antigravity/skills/internal-linking/SKILL.md` → Mode: Contextual Insertion.
-- Scan `knowledge/3-pipeline/anchor-index.md` để tìm link nội bộ phù hợp.
-- Chèn tối thiểu 2 internal links vào draft.
+- Scan `knowledge/3-pipeline/anchor-index.md` và Sitemap live để tìm link nội bộ phù hợp.
+- Chèn tối thiểu 3-5 internal links vào draft.
+- **BẮT BUỘC:** Luôn có ít nhất 01 link chuyển đổi mở tài khoản chứng khoán DSC (`https://www.dsc.com.vn/mo-tai-khoan`) tại phần Product Bridge hoặc CTA cuối bài.
 
 **Bước 2.3 — Quality Guardian (QA):**
 - Kích hoạt agent `.antigravity/agents/quality-guardian.md`.
-- QA phải load: Outline gốc + anti-ai-rules + glossary + instincts.md.
+- QA chỉ cần đọc thêm: Outline gốc + `anti-ai-rules-blacklist.md` (context pipeline đã có sẵn từ Step 0).
 - Kết quả: `PASS` hoặc `FAIL` với danh sách lỗi có số dòng.
 - Nếu `FAIL`: sửa và chạy lại QA cho đến khi `PASS`.
 
@@ -80,6 +81,7 @@ Trước khi làm bất cứ việc gì, hệ thống phải đọc:
 
 **Bước 3.1 — File Management (BẮT BUỘC):**
 - Di chuyển `knowledge/4-content/2-drafts/Draft-[slug].md` → `knowledge/4-content/3-finalized/Final-[slug].md`.
+- Xóa file outline gốc `knowledge/4-content/1-outlines/[slug].md` (nếu tồn tại) để dọn dẹp hệ thống.
 - Cập nhật `knowledge/4-content/topic-clusters.md` → trạng thái `Finalized`.
 
 **Bước 3.2 — Content Feedback Loop (Auto-trigger):**
@@ -88,7 +90,7 @@ Trước khi làm bất cứ việc gì, hệ thống phải đọc:
 - Ghi bài học vào:
   - `knowledge/3-pipeline/revision-log.md` — log cụ thể theo bài
   - `knowledge/3-pipeline/anti-ai-rules.md` — nếu phát hiện pattern mới
-  - `.antigravity/memory/instincts.md` — bản năng tổng hợp
+  - `.antigravity/memory/instincts-archive.md` — bản năng tổng hợp đầy đủ (và chạy `python scripts/optimize_instincts.py` để đồng bộ sang `instincts.md`)
 
 **Bước 3.3 — Delivery:**
 - Xác nhận đường dẫn file Final cho người dùng.

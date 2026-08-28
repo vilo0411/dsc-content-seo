@@ -1,2 +1,168 @@
 # API Keys — không commit lên git
 .antigravity/config/api-keys.md
+
+# Local scratch / editor state
+.antigravity/brain/
+knowledge/4-content/.obsidian/
+
+# Nguồn thô chưa xử lý (0-sources) — nhập tay, không cần track
+knowledge/4-content/0-sources/3 cách chọn cổ phiếu tốt và có tiềm năng tăng giá để đầu tư.md
+knowledge/4-content/0-sources/ACCA và CFA_ Chọn chứng chỉ nào cho sự nghiệp tài chính_.md
+knowledge/4-content/0-sources/Bollinger Bands là gì_ cách sử dụng chỉ báo PTKT.md
+knowledge/4-content/0-sources/CPI là gì_ Ý nghĩa, cách tính chỉ số tiêu dùng CPI.md
+knowledge/4-content/0-sources/Chi phí cố định là gì_ Cách tính và ứng dụng trong đầu tư.md
+knowledge/4-content/0-sources/Chia tách cổ phiếu là gì_ Mục đích của việc chia tách cổ phiếu.md
+knowledge/4-content/0-sources/Chiến lược đầu tư chứng khoán ngắn hạn_ Lợi nhuận cao rủi ro cao.md
+knowledge/4-content/0-sources/Chính sách tài khóa là gì_ Mục tiêu và công cụ tài khóa.md
+knowledge/4-content/0-sources/Chỉ báo Ultimate Oscillator (UO) là gì Ứng dụng chỉ báo Ultimate Oscillator để xác định tín hiệu MUABÁN cổ phiếu.md
+knowledge/4-content/0-sources/Chỉ số Dow Jones là gì_ Tầm quan trọng chỉ số DJIA.md
+knowledge/4-content/0-sources/Chỉ số EBIT là gì_ Ý nghĩa và ứng dụng EBIT trong đầu tư.md
+knowledge/4-content/0-sources/Chỉ số PCE là gì_ Giải thích chi tiết cho nhà đầu tư.md
+knowledge/4-content/0-sources/Chứng chỉ quỹ là gì_ Thông tin chi tiết về chứng chỉ quỹ.md
+knowledge/4-content/0-sources/Chứng khoán phái sinh là gì_ Tổng hợp kiến thức về phái sinh.md
+knowledge/4-content/0-sources/Cách Chơi Chứng Khoán Cho Sinh Viên \[Bắt Đầu Từ 500K\].md
+knowledge/4-content/0-sources/Cách chơi chứng khoán cho người mới bắt đầu \[2026\].md
+knowledge/4-content/0-sources/Cách đầu tư vàng sinh lời hiệu quả cho người mới bắt đầu \[2026\].md
+knowledge/4-content/0-sources/Có nên bán vàng thời điểm này năm 2026 không_.md
+knowledge/4-content/0-sources/Có nên đầu tư vàng thời điểm này không_ Thông tin chi tiết.md
+knowledge/4-content/0-sources/Cổ phiếu Penny là gì_ Ưu, nhược điểm và cách đầu tư cổ phiếu Penny.md
+knowledge/4-content/0-sources/DCF là gì_ Cách định giá cổ phiếu bằng phương pháp DCF chi tiết.md
+knowledge/4-content/0-sources/Day trading là gì_ Kiến thức, kỹ năng cần có để daytrading.md
+knowledge/4-content/0-sources/Giảm phát là gì_ Phân biệt giảm phát và lạm phát.md
+knowledge/4-content/0-sources/Giờ giao dịch chứng khoán Việt Nam, quốc tế cập nhật 2026.md
+knowledge/4-content/0-sources/Hệ số ICOR là gì_ Ý nghĩa và ứng dụng trong đầu tư.md
+knowledge/4-content/0-sources/Khủng hoảng kinh tế là gì_ Có nên đầu tư khi khủng hoảng_.md
+knowledge/4-content/0-sources/Lãi suất là gì_ Phân loại, vai trò và ứng dụng trong đầu tư.md
+knowledge/4-content/0-sources/Lãi suất thực là gì_ Phân biệt với lãi suất danh nghĩa.md
+knowledge/4-content/0-sources/Lãi suất điều hành là gì_ Thông tin chi tiết A.md
+knowledge/4-content/0-sources/Lạm phát là gì_ Nguyên nhân và tác động lạm phát đến nền kinh tế.md
+knowledge/4-content/0-sources/Lợi nhuận ròng và lợi nhuận sau thuế khác gì nhau_ \[2026\].md
+knowledge/4-content/0-sources/NAV là gì_ Ý nghĩa, cách tính NAV chính xác.md
+knowledge/4-content/0-sources/Ngày đáo hạn phái sinh là gì_ Lịch đáo hạn và những lưu ý.md
+knowledge/4-content/0-sources/Nên gửi tiết kiệm hay mua vàng_ So sánh chi tiết.md
+knowledge/4-content/0-sources/Nên mua vàng SJC hay 9999 tối ưu lợi nhuận năm 2026_.md
+knowledge/4-content/0-sources/Nên mua vàng miếng hay vàng nhẫn năm 2026_.md
+knowledge/4-content/0-sources/Phân tích báo cáo tài chính Hòa Phát (HPG).md
+knowledge/4-content/0-sources/Sideway là gì_ Cách nhận biết và giao dịch trong thị trường Sideway.md
+knowledge/4-content/0-sources/Sàn giao dịch vàng_ Phân loại và lựa chọn đầu tư an toàn, hiệu quả.md
+knowledge/4-content/0-sources/Target là gì trong đầu tư chứng khoán_ Thông tin chi tiết.md
+knowledge/4-content/0-sources/Tỷ lệ nội địa hóa là gì_ Thông tin chi tiết cho nhà đầu tư.md
+knowledge/4-content/0-sources/VWAP là gì_ 6 chiến lược giao dịch hiệu quả với chỉ báo VWAP.md
+knowledge/4-content/0-sources/Vốn ODA là gì_ Vai trò và tác động thị trường chứng khoán.md
+knowledge/4-content/0-sources/nên mua vàng ở ngân hàng hay tiệm vàng_ So sánh chi tiết.md
+knowledge/4-content/0-sources/Đầu tư vàng nên mua loại nào để tích trữ sinh lời hiệu quả_ \[2026\].md
+
+# Outline / draft / finalized nháp đang chạy thử, chưa muốn track
+knowledge/4-content/1-outlines/Proposal-cach-mo-tai-khoan-chung-khoan.md
+knowledge/4-content/1-outlines/app-mua-chung-chi-quy.md
+knowledge/4-content/1-outlines/cach-dau-tu-chung-chi-quy.md
+knowledge/4-content/1-outlines/chi-bao-momentum-la-gi.md
+knowledge/4-content/1-outlines/co-nen-mua-co-phieu-oil.md
+knowledge/4-content/1-outlines/dau-tu-vang-online.md
+knowledge/4-content/1-outlines/nen-gui-tiet-kiem-hay-mua-vang.md
+knowledge/4-content/1-outlines/quantitative-trading-la-gi.md
+knowledge/4-content/2-drafts/Draft-cac-mo-hinh-gia-chung-khoan.md
+knowledge/4-content/2-drafts/Draft-chi-bao-ky-thuat-la-gi.md
+knowledge/4-content/2-drafts/Draft-chi-bao-momentum-la-gi.md
+knowledge/4-content/2-drafts/Draft-chi-so-chung-khoan.md
+knowledge/4-content/2-drafts/Draft-co-nen-dau-tu-vang-thoi-diem-nay.md
+knowledge/4-content/2-drafts/Draft-co-nen-mua-co-phieu-las.md
+knowledge/4-content/2-drafts/Draft-co-tien-nen-dau-tu-bac.md
+knowledge/4-content/2-drafts/Draft-dcf-la-gi.md
+knowledge/4-content/2-drafts/Draft-mo-hinh-nen-dao-chieu.md
+knowledge/4-content/2-drafts/Draft-quy-tac-72.md
+knowledge/4-content/2-drafts/Optimize-cach-choi-chung-khoan-cho-sinh-vien.md
+knowledge/4-content/2-drafts/Optimize-cach-mo-tai-khoan-chung-khoan-v1.md
+knowledge/4-content/2-drafts/Optimize-cach-mo-tai-khoan-chung-khoan-v2.md
+knowledge/4-content/2-drafts/Optimize-chung-chi-quy-la-gi.md
+knowledge/4-content/2-drafts/Optimize-dcf-la-gi.md
+knowledge/4-content/2-drafts/Optimize-lai-suat-la-gi.md
+knowledge/4-content/2-drafts/Optimize-nen-mua-vang-mieng-hay-vang-nhan.md
+knowledge/4-content/2-drafts/Optimize-nen-mua-vang-sjc-hay-9999.md
+knowledge/4-content/2-drafts/Optimize-vwap-la-gi.md
+knowledge/4-content/2-drafts/Proposal-dcf-la-gi.md
+knowledge/4-content/2-drafts/Proposal-lai-suat-la-gi.md
+knowledge/4-content/2-drafts/Proposal-nen-mua-vang-mieng-hay-vang-nhan.md
+knowledge/4-content/2-drafts/Proposal-nen-mua-vang-sjc-hay-9999.md
+knowledge/4-content/2-drafts/Proposal-vwap-la-gi.md
+knowledge/4-content/3-finalized/Final-acca-va-cfa.md
+knowledge/4-content/3-finalized/Final-bien-loi-nhuan-rong.md
+knowledge/4-content/3-finalized/Final-bollinger-bands-la-gi.md
+knowledge/4-content/3-finalized/Final-cac-chi-so-phan-tich-bao-cao-tai-chinh.md
+knowledge/4-content/3-finalized/Final-cac-mo-hinh-gia-chung-khoan.md
+knowledge/4-content/3-finalized/Final-cach-choi-chung-khoan-cho-sinh-vien.md
+knowledge/4-content/3-finalized/Final-cach-chon-co-phieu-tot.md
+knowledge/4-content/3-finalized/Final-cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau.md
+knowledge/4-content/3-finalized/Final-cach-dau-tu-vang.md
+knowledge/4-content/3-finalized/Final-chi-bao-ky-thuat-la-gi.md
+knowledge/4-content/3-finalized/Final-chi-phi-co-dinh.md
+knowledge/4-content/3-finalized/Final-chi-so-chung-khoan.md
+knowledge/4-content/3-finalized/Final-chi-so-dow-jones.md
+knowledge/4-content/3-finalized/Final-chi-so-gia-tieu-dung-cpi-la-gi-va-moi-quan-he-voi-thi-truong-chung-khoan.md
+knowledge/4-content/3-finalized/Final-chi-so-pce-la-gi.md
+knowledge/4-content/3-finalized/Final-chia-tach-co-phieu.md
+knowledge/4-content/3-finalized/Final-chien-luoc-dau-tu-chung-khoan-ngan-han-la-gi.md
+knowledge/4-content/3-finalized/Final-chinh-sach-tai-khoa-la-gi.md
+knowledge/4-content/3-finalized/Final-chung-chi-quy-la-gi.md
+knowledge/4-content/3-finalized/Final-chung-khoan-phai-sinh-la-gi.md
+knowledge/4-content/3-finalized/Final-co-100-trieu-nen-mua-vang-hay-gui-tiet-kiem.md
+knowledge/4-content/3-finalized/Final-co-nen-ban-vang-thoi-diem-nay.md
+knowledge/4-content/3-finalized/Final-co-nen-dau-tu-vang-thoi-diem-nay.md
+knowledge/4-content/3-finalized/Final-co-nen-mua-co-phieu-las.md
+knowledge/4-content/3-finalized/Final-co-nen-mua-co-phieu-novaland.md
+knowledge/4-content/3-finalized/Final-co-phieu-penny-la-gi.md
+knowledge/4-content/3-finalized/Final-co-tien-nen-dau-tu-bac.md
+knowledge/4-content/3-finalized/Final-dao-han-phai-sinh-la-gi.md
+knowledge/4-content/3-finalized/Final-dau-tu-vang-nen-mua-loai-na.md
+knowledge/4-content/3-finalized/Final-day-trading-la-gi.md
+knowledge/4-content/3-finalized/Final-dcf-la-gi.md
+knowledge/4-content/3-finalized/Final-ebit-la-gi.md
+knowledge/4-content/3-finalized/Final-giam-phat-la-gi.md
+knowledge/4-content/3-finalized/Final-gio-giao-dich-chung-khoan.md
+knowledge/4-content/3-finalized/Final-he-so-icor-la-gi.md
+knowledge/4-content/3-finalized/Final-khung-hoang-kinh-te-la-gi.md
+knowledge/4-content/3-finalized/Final-lai-suat-dieu-hanh-la-gi.md
+knowledge/4-content/3-finalized/Final-lai-suat-thuc-la-gi.md
+knowledge/4-content/3-finalized/Final-loi-nhuan-rong-va-loi-nhuan-sau-thue.md
+knowledge/4-content/3-finalized/Final-mo-hinh-nen-dao-chieu.md
+knowledge/4-content/3-finalized/Final-nav-la-gi-trong-dau-tu-chung-khoan.md
+knowledge/4-content/3-finalized/Final-nen-gui-tiet-kiem-hay-mua-vang.md
+knowledge/4-content/3-finalized/Final-nen-mo-tai-khoan-chung-khoan-o-dau.md
+knowledge/4-content/3-finalized/Final-nen-mua-vang-o-ngan-hang-hay-tiem-vang.md
+knowledge/4-content/3-finalized/Final-phi-luu-ky-chung-khoan.md
+knowledge/4-content/3-finalized/Final-quy-dong-la-gi.md
+knowledge/4-content/3-finalized/Final-quy-tac-72.md
+knowledge/4-content/3-finalized/Final-quy-trai-phieu-la-gi.md
+knowledge/4-content/3-finalized/Final-quy-tuong-ho-la-gi.md
+knowledge/4-content/3-finalized/Final-san-giao-dich-vang.md
+knowledge/4-content/3-finalized/Final-sideway-la-gi.md
+knowledge/4-content/3-finalized/Final-target-trong-chung-khoan-la-gi.md
+knowledge/4-content/3-finalized/Final-ty-le-noi-dia-hoa-la-gi.md
+knowledge/4-content/3-finalized/Final-ultimate-oscillator-la-gi.md
+knowledge/4-content/3-finalized/Final-von-hoa-thi-truong-la-gi.md
+knowledge/4-content/3-finalized/Final-von-oda-la-gi.md
+knowledge/4-content/Untitled.md
+knowledge/4-content/blog/
+
+# Dữ liệu raw / phân tích tạm
+knowledge/raw/DSC - Content Mapping - Optimized.csv
+knowledge/raw/DSC - Content Mapping.csv
+knowledge/raw/DSC - Keyword - vàng.csv
+knowledge/raw/analysis_output.txt
+knowledge/raw/category_tree.json
+knowledge/raw/empty_samples.txt
+knowledge/raw/found_hubs.txt
+knowledge/raw/hubs_analysis.txt
+knowledge/raw/optimized_analysis_output.txt
+knowledge/raw/words_analysis.txt
+
+# Scripts phân tích tạm thời
+scripts/analyze_categories.py
+scripts/analyze_optimized.py
+scripts/count_words.py
+scripts/extract_empty_samples.py
+scripts/find_hubs_and_missing.py
+scripts/optimize_mapping.py
+scripts/search_existing_hubs.py
+scripts/update_hub_types.py
+temp_qa.py

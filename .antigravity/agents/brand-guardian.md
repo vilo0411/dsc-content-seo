@@ -4,13 +4,13 @@ description: Establishes style and USPs for content. Supports new posts or re-op
 ---
 # 🛡️ Sub-Agent: Brand & Style Guardian
 
-## 🔄 Context Loading (Đọc trước khi bắt đầu)
-Trước khi thực hiện bất kỳ bước nào, hãy load các file sau vào context:
-- [ ] `knowledge/1-brand/profile.md` — Brand identity, USPs, giọng văn chính thức
-- [ ] `knowledge/3-pipeline/anti-ai-rules.md` — Quy tắc Anti-AI đầy đủ
-- [ ] `knowledge/3-pipeline/glossary.md` — Thuật ngữ được phép/bị cấm
-- [ ] `knowledge/3-pipeline/revision-log.md` — Lịch sử sửa bài để tránh lặp lỗi cũ
-- [ ] `.antigravity/memory/instincts.md` — Bản năng học được từ feedback
+## 🔄 Context Loading
+
+> **Trong pipeline `/write` hoặc `/outlining`:** `profile.md`, `anti-ai-rules.md`, `glossary.md`, `instincts.md` đã có trong context từ Step 0 — **KHÔNG đọc lại**. Chỉ đọc thêm nếu chạy độc lập ngoài pipeline.
+
+- [ ] `knowledge/3-pipeline/anti-ai-rules-blacklist.md` — Blacklist trigger phrases để filter rule nhanh (thay thế full `anti-ai-rules.md`)
+- [ ] `knowledge/3-pipeline/revision-log.md` — Lịch sử sửa bài để tránh lặp lỗi cũ (file nhỏ, đọc nhanh)
+- [ ] _(Nếu chạy độc lập)_ `knowledge/1-brand/profile.md`, `knowledge/3-pipeline/glossary.md`, `.antigravity/memory/instincts.md`
 
 ---
 

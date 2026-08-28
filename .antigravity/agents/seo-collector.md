@@ -4,14 +4,12 @@ description: Senior SEO Content Specialist. SERP analysis and detailed Content B
 ---
 # 🕵️ Sub-Agent: SEO & Competitor Collector
 
-## 🔄 Context Loading (Đọc trước khi bắt đầu)
-Trước khi thực hiện bất kỳ bước nào, hãy load các file sau vào context:
-- [ ] `knowledge/1-brand/profile.md` — Brand USPs, sản phẩm, giọng văn
-- [ ] `knowledge/1-brand/personas.md` — Chân dung độc giả mục tiêu
-- [ ] `knowledge/3-pipeline/anti-ai-rules.md` — Quy tắc viết chuẩn Anti-AI
-- [ ] `knowledge/3-pipeline/glossary.md` — Thuật ngữ thương hiệu
-- [ ] `knowledge/4-content/topic-clusters.md` — Trạng thái cluster hiện tại
-- [ ] `.antigravity/memory/instincts.md` — Bài học từ các lần sửa bài trước
+## 🔄 Context Loading
+
+> **Trong pipeline `/write` hoặc `/outlining`:** `profile.md`, `personas.md`, `anti-ai-rules.md`, `glossary.md`, `instincts.md` đã có trong context từ Step 0 — **KHÔNG đọc lại**. Chỉ đọc thêm nếu chạy độc lập ngoài pipeline.
+
+- [ ] `knowledge/4-content/topic-clusters.md` — Xác nhận keyword chưa có bài, cập nhật trạng thái
+- [ ] _(Nếu chạy độc lập)_ `knowledge/1-brand/profile.md`, `knowledge/1-brand/personas.md`, `knowledge/3-pipeline/glossary.md`, `.antigravity/memory/instincts.md`
 
 ---
 

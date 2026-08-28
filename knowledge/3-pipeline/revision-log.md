@@ -21,6 +21,22 @@ File này ghi lại các chỉnh sửa thực tế mà người dùng thực hi�
 
 ## Log
 
+### [2026-08-19] - thi-gia-co-phieu-la-gi
+- **Lỗi đã sửa:** Bài gốc quá mỏng (~500 từ), thiếu ví dụ thực tế dạng câu chuyện (Story), thiếu cơ chế khớp lệnh cụ thể trên các sàn Việt Nam, thiếu hướng dẫn đặt lệnh an toàn, và chưa tích hợp đầy đủ hệ sinh thái chuyển đổi eKYC/nạp tiền định danh BIDV 963369.
+- **Pattern:** Cấu trúc lại toàn diện theo chuẩn E-E-A-T và Anti-AI: Thêm Case study thực tế F0 Hoàng (HPG), mở rộng cơ chế khớp lệnh sàn HOSE/HNX/UPCoM, bước giá, cách dùng chỉ số P/E, P/B định giá, và tích hợp các Product Bridge (mở tài khoản eKYC 3 phút, nạp tiền BIDV 963369, Môi giới 1:1).
+- **Rule học được:** Luôn lồng ghép ví dụ câu chuyện (Story) thực tế để thỏa mãn 3S và tăng tính E-E-A-T, đảm bảo ngắt câu ngắn dưới 30 từ để tối ưu cho người đọc di động và vượt qua QA script.
+- **Scope:** Global
+
+---
+
+### [2026-08-11] - gia-tri-noi-tai-cua-co-phieu-la-gi
+- **Lỗi đã sửa:** Bài cũ quá ngắn (~550 từ), thiếu các phương pháp định giá quan trọng (P/B, DDM), nhầm lẫn đưa định giá quyền chọn (không phổ biến cho cổ phiếu cơ sở Việt Nam), thiếu khái niệm Biên an toàn (Margin of Safety), thiếu ví dụ định lượng thực hành và thiếu CTA chuyển đổi mở tài khoản.
+- **Pattern:** Cấu trúc lại toàn diện theo chuẩn E-E-A-T: Thêm bảng so sánh Giá trị nội tại vs Thị giá, chi tiết hóa 4 phương pháp định giá (DCF, P/E, P/B, DDM), bổ sung chuyên mục Biên an toàn và ví dụ thực hành định lượng từng bước trên sàn chứng khoán Việt Nam, tích hợp Product Bridge Môi giới 1:1 + App DSC Trading + Mở tài khoản eKYC trong 3 phút.
+- **Rule học được:** Luôn đối chuẩn với hệ sinh thái sản phẩm chứng khoán thực tế tại Việt Nam, gắn chặt khái niệm định giá với Biên an toàn và ví dụ thực hành cụ thể, đảm bảo 100% link nội bộ sử dụng URL tuyệt đối từ sitemap knowledge live.
+- **Scope:** Global
+
+---
+
 ### [2026-05-15] - Khởi tạo file
 - File được tạo để tracking revision history cho hệ thống Content Feedback Loop.
 - Các bài viết finalized trước ngày này không có revision log chi tiết.
@@ -451,5 +467,223 @@ File này ghi lại các chỉnh sửa thực tế mà người dùng thực hi�
 - **Rule học được:** Luôn ưu tiên dùng bảng so sánh khi phân biệt 2 chỉ số tài chính quan trọng để tối ưu hóa khả năng đọc (scannability) cho F0. Phần Product Bridge cần làm nổi bật các giá trị thực tế của thương hiệu (phí giao dịch thấp, công cụ lọc vốn hóa trên App, hỗ trợ tư vấn 1:1) thay vì chỉ giới thiệu chung chung.
 - **Scope:** Global
 
+---
 
+### [2026-08-11] - quan-tri-rui-ro-la-gi
+- **Lỗi đã sửa:** Bài gốc cũ quá mỏng (~480 từ), mở đầu bằng ca dao tục ngữ sáo rỗng (“Sông có khúc, người có lúc”); phân loại rủi ro nhầm lẫn rủi ro thanh toán vào rủi ro hệ thống; thiếu hoàn toàn quy trình chuẩn quốc tế ISO 31000/COSO và thiếu công cụ phân tích rủi ro thực tế cho nhà đầu tư chứng khoán.
+- **Pattern:** Tái cấu trúc toàn diện theo 7 Sweeps Framework: Viết lại Featured Snippet định nghĩa chuẩn 45-50 từ; xây dựng quy trình 5 bước ISO 31000 kèm bảng ma trận 4 chiến lược ứng phó (Né tránh, Giảm thiểu, Chuyển giao, Chấp nhận); phân loại chuẩn xác 2 nhóm rủi ro (Hệ thống vs Phi hệ thống); bổ sung Section độc quyền của DSC về 4 chỉ báo đánh giá rủi ro doanh nghiệp niêm yết (ICR, D/E, CFO, Trích lập dự phòng); tích hợp 11 internal link live 100% từ Sitemap Knowledge của DSC; tự nhiên hóa Product Bridge với DSC Invest và DSC Trading (lệnh Stop Loss / Trailing Stop).
+- **Rule học được:** Luôn cào và đối soát sitemap knowledge live của website để lấy chính xác 100% URL và anchor text tự nhiên nhất trước khi gắn internal link. Với các chủ đề quản trị rủi ro doanh nghiệp, cần tạo cầu nối từ góc nhìn quản trị nội bộ sang góc nhìn thẩm định cổ phiếu để phục vụ trúng intent của nhà đầu tư F0/F1.
+- **Scope:** Global
 
+---
+
+---
+
+### [2026-08-11] - chinh-sach-tien-te-la-gi
+- **Lỗi đã sửa:** Bài gốc lý thuyết hàn lâm, dùng ví von văn nói thiếu chuyên nghiệp (3 chiếc vòi nước của FED, cốc nước giải tỏa cơn khát), trích dẫn dữ liệu cũ năm 2011; tiêu đề cũ dài 69 ký tự quá trần; thiếu phân tích tác động trực tiếp của chu kỳ tiền tệ đến thị trường chứng khoán (VN-Index, định giá P/E, dòng tiền rẻ).
+- **Pattern:** Rút ngắn tiêu đề SEO xuống còn 47 ký tự (`Chính sách tiền tệ là gì? Mục tiêu và tác động`); chuẩn hóa toàn bộ câu dưới 25 từ và đoạn văn dưới 3 câu theo chuẩn Mobile-first; thay thế các ví dụ ví von bằng phân tích 5 công cụ điều hành chuẩn của Ngân hàng Nhà nước (OMO, Lãi suất điều hành, Dự trữ bắt buộc, Room tín dụng, Quản lý ngoại hối); xây dựng Bảng so sánh đối chuẩn giữa Chính sách tiền tệ mở rộng và thắt chặt; bổ sung chuyên mục phân tích tác động tới thị trường chứng khoán; tích hợp Product Bridge mở tài khoản eKYC trong 3 phút và Môi giới 1:1 của DSC đồng hành tư vấn danh mục.
+- **Rule học được:** Luôn ưu tiên dùng Bảng đối chuẩn trực quan khi phân biệt 2 thái cực chính sách kinh tế (mở rộng vs thắt chặt) để tăng khả năng đọc lướt cho nhà đầu tư mới (P2). Với các bài viết vĩ mô nền tảng, bắt buộc phải thiết lập cầu nối phân tích sang thị trường chứng khoán (dòng tiền, chi phí vốn doanh nghiệp, định giá P/E) để đáp ứng trúng Search Intent của nhà đầu tư.
+- **Scope:** Global
+
+---
+
+### [2026-08-11] - khoi-luong-giao-dich-la-gi
+- **Lỗi đã sửa:** Bài gốc mỏng (~520 từ), sai chính tả ("Giả giảm"), dùng từ ngoặc kép nhấn mạnh ("Ảm đạm"), tiêu đề dài 76 ký tự vi phạm trần 59 ký tự; thiếu phân biệt giữa Volume khớp lệnh và Volume lưu hành, thiếu hướng dẫn định lượng bùng nổ thanh khoản qua đường trung bình MA20 Volume, và Product Bridge chưa nêu bật Môi giới 1:1 cùng nền tảng phân tích kỹ thuật DSC Trading.
+- **Pattern:** Rút ngắn tiêu đề SEO xuống 56 ký tự (`Khối lượng giao dịch là gì? 4 cách đọc xu hướng chuẩn`); mở rộng bài viết lên ~1.650 từ chuẩn mực; phân tách rạch ròi 4 kịch bản Giá - Khối lượng bằng Bảng ma trận trực quan (Trạng thái - Ý nghĩa - Hành động); tích hợp Bảng đối chuẩn phân biệt Volume khớp lệnh vs Volume lưu hành; bổ sung phương pháp lọc nhiễu bằng MA20 Volume và cảnh báo 3 sai lầm kinh điển (Volume đỉnh phân phối, cổ phiếu Penny tắt thanh khoản); gắn 100% internal links tuyệt đối từ live sitemap DSC; hoàn thiện Product Bridge với link chuyển đổi mở tài khoản eKYC trong 3 phút tại DSC.
+- **Rule học được:** Với các bài phân tích kỹ thuật cho Active Trader (P3), việc cung cấp các tiêu chuẩn định lượng cụ thể (mốc bùng nổ 1,5x - 2x MA20 Volume) và bảng ma trận hành động (Mua/Bán/Cắt lỗ/Chờ đợi) tạo ra Information Gain vượt trội so với các định nghĩa chung chung trên SERP.
+---
+
+### [2026-08-11] - hop-dong-tuong-lai-la-gi
+- **Lỗi đã sửa:** Bài gốc mỏng (~1.100 từ), tiêu đề dài 60 ký tự, mở đầu bằng văn mẫu AI sáo rỗng ("bài viết này được biên soạn bởi...", "lý thuyết sẽ trở nên dễ hiểu hơn..."), thiếu các thông số kỹ thuật thực chiến chuẩn hóa của HNX/VSDC, ví dụ số liệu VN30 chưa sát thực tế và thiếu các internal link sitemap DSC.
+- **Pattern:** Tái cấu trúc theo Seven Sweeps Framework; rút ngắn tiêu đề SEO xuống 53 ký tự (`Hợp Đồng Tương Lai Là Gì? Lợi Ích Và Rủi Ro Phái Sinh`); bổ sung Bảng thông số kỹ thuật HĐTL VN30 chuẩn HNX (4 mã VN30F1M-VN30F2Q, hệ số nhân 100.000 VNĐ, biên độ ±7%, bước giá 0.1 điểm, mở cửa 8h45); viết lại case study tính toán lãi/lỗ chi tiết với điểm số 1.250 và ký quỹ an toàn 20%; chuẩn hóa 9 lợi ích và phân tích chuyên sâu 4 rủi ro lớn (Đòn bẩy khuếch đại lỗ, Call Margin/Force Sell, biến động ATC đáo hạn, bẫy tâm lý Revenge Trading); tích hợp Bảng đối chiếu HĐTL vs Hợp đồng kỳ hạn; thêm FAQ Schema giải đáp thắc mắc thực chiến; gắn 100% URL tuyệt đối từ sitemap DSC và Product Bridge Môi giới 1:1, DSC Trading, eKYC 3 phút.
+- **Rule học được:** Đối với các bài viết về chứng khoán phái sinh dành cho Active Trader (P3) và F0 (P2), việc cung cấp bảng thông số kỹ thuật HNX chuẩn xác và minh họa chi tiết tác động của tỷ lệ ký quỹ thực tế (17%-22%) kèm các kịch bản lãi/lỗ cụ thể là chìa khóa tạo E-E-A-T và Information Gain vượt trội so với các bài viết lý thuyết đại trà.
+- **Scope:** Global
+
+---
+
+### [2026-08-12] - cong-thuc-tinh-lam-phat
+- **Lỗi đã sửa:** Bài gốc mỏng (~1.150 từ), công thức toán học chưa có bảng tổng hợp đối chuẩn nhanh, ví dụ số liệu còn giả định chung chung chưa gắn với thực tế Tổng cục Thống kê Việt Nam, câu dài vượt 25 từ ở một số đoạn, tiêu đề cũ 57 ký tự chưa tối ưu, thiếu FAQ schema và Product Bridge chưa gắn link chuyển đổi eKYC tuyệt đối của DSC.
+- **Pattern:** Tái cấu trúc toàn diện theo Seven Sweeps Framework; xây dựng Tiêu đề SEO 54 ký tự (`Công Thức Tính Lạm Phát Chuẩn Xác & Cách Bảo Vệ Tài Sản`); bổ sung Bảng Cheat-sheet tổng hợp 6 nhóm công thức phổ biến (CPI, GDP Deflator, PPI, FV sức mua, Lãi suất thực Fisher, Tỷ lệ tăng giá đơn lẻ); chi tiết hóa các công thức kèm ví dụ định lượng số liệu thực tế tại Việt Nam; phân tích sâu tác động của lạm phát tới dòng tiền cá nhân và lãi suất thực âm; thiết lập chiến lược 3 tiêu chí chọn cổ phiếu phòng thủ vượt lạm phát (Pricing power, nợ vay thấp, cổ tức tiền mặt); bổ sung FAQ Schema chuẩn SEO; tích hợp 6 internal links live sitemap DSC và Product Bridge eKYC 3 phút, Môi giới 1:1, Phí từ 0.1%.
+- **Rule học được:** Đối với các bài viết về công thức định lượng tài chính/kinh tế vĩ mô cho Persona P2 (F0) và P1 (Người tiết kiệm), việc cung cấp Bảng Cheat-sheet tổng hợp nhanh ngay sau mở bài kết hợp các ví dụ số liệu thực tế (thay vì công thức trừu tượng) tạo ra trải nghiệm đọc lướt vượt trội và cơ hội đoạt Featured Snippet. Phần chiến lược chống lạm phát cần làm rõ bài toán lãi suất thực âm để thuyết phục người đọc chuyển dịch một phần vốn từ tiền gửi sang cổ phiếu sinh cổ tức tại DSC.
+- **Scope:** Global
+
+---
+
+---
+
+### [2026-08-12] - nha-tao-lap-thi-truong-la-ai
+- **Lỗi đã sửa:** Bài gốc quá mỏng (~300 từ), tiêu đề dài 73 ký tự vi phạm trần 59 ký tự; mở bài dạo đầu AI sáo rỗng; dùng ví dụ USD (200 USD và 200.55 USD) xa rời thị trường Việt Nam; thiếu phân biệt sống còn giữa Market Maker và Đội lái thao túng giá (intent lớn của F0); thiếu chi tiết các sản phẩm MM thực tế tại Việt Nam (ETF, CW, Trái phiếu) và thiếu link chuyển đổi eKYC tuyệt đối của DSC.
+- **Pattern:** Tái cấu trúc toàn diện theo Seven Sweeps Framework và Anti-AI Rules; rút ngắn tiêu đề SEO xuống 55 ký tự (`Nhà Tạo Lập Thị Trường Là Ai? Vai Trò & Cách Hoạt Động`); nâng dung lượng lên ~1.750 từ chuẩn mực E-E-A-T; thiết lập định nghĩa Featured Snippet chuẩn xác về cơ chế chào giá 2 chiều; chuyển đổi ví dụ sang VNĐ (Bid 25.000 VNĐ - Ask 25.050 VNĐ) minh họa cơ chế Bid-Ask Spread và quản trị rủi ro tồn kho (Hedging); xây dựng Siêu Bảng So Sánh Đối Chuẩn 5 tiêu chí phân biệt giữa Market Maker hợp pháp và Đội lái thao túng giá (Điều 211 BLHS); chi tiết hóa 3 phân khúc sản phẩm tạo lập tại Việt Nam (ETF, CW, Trái phiếu Chính phủ); bổ sung 4 kinh nghiệm thực chiến đọc sổ lệnh cho F0; thêm 4 câu hỏi FAQ chuẩn Schema; gắn 10 internal links live 100% tuyệt đối từ sitemap DSC và Product Bridge Môi giới 1:1, App DSC Trading, eKYC 3 phút.
+- **Rule học được:** Đối với các bài viết về cơ chế vận hành thị trường tài chính cho Persona P2 (F0) và P3 (Active Trader), việc chủ động giải tỏa tâm lý lo ngại "tạo lập úp bô" bằng Siêu Bảng So Sánh phân biệt rạch ròi với Đội lái thao túng giá kết hợp minh họa cơ chế Bid-Ask Spread thực tế giúp bài viết đạt E-E-A-T vượt trội, định vị thương hiệu tư vấn chuyên nghiệp và dẫn dắt chuyển đổi mở tài khoản eKYC hiệu quả.
+- **Scope:** Global
+
+---
+
+### [2026-08-12] - canh-tranh-doc-quyen-la-gi
+- **Lỗi đã sửa:** Bài gốc mỏng (~850 từ), tiêu đề dài 73 ký tự vi phạm trần 59 ký tự; liệt kê đặc điểm dạng văn xuôi dài dòng; thiếu bảng so sánh trực quan giữa các cấu trúc thị trường; thiếu phân tích cơ chế cân bằng ngắn hạn vs dài hạn; thiếu ví dụ thực tế đa ngành tại Việt Nam; hoàn toàn thiếu góc nhìn đầu tư chứng khoán và không có Product Bridge chuyển đổi.
+- **Pattern:** Tái cấu trúc toàn diện theo Seven Sweeps Framework và Anti-AI Rules; rút ngắn tiêu đề SEO xuống 53 ký tự (`Cạnh tranh độc quyền là gì? Đặc điểm & Ví dụ chi tiết`); mở rộng bài viết lên ~1.700 từ chuẩn mực E-E-A-T; định nghĩa Featured Snippet trực diện 2 câu; xây dựng Bảng so sánh đối chuẩn 6 tiêu chuẩn giữa Cạnh tranh hoàn hảo vs Cạnh tranh độc quyền vs Độc quyền thuần túy; bổ sung 2 case study thực tế tại Việt Nam (chuỗi F&B cà phê Highlands/Phúc Long/Katinat và tiêu dùng nhanh Vinamilk/TH True Milk); thiết lập quy trình 3 bước nhận diện con hào kinh tế (Pricing power, ROE > 15%, Switching Costs) để chọn lọc cổ phiếu tốt; gắn 100% URL tuyệt đối từ sitemap DSC và Product Bridge Môi giới 1:1 cùng mở tài khoản eKYC trong 3 phút.
+- **Rule học được:** Với các chủ đề kinh tế vi mô nền tảng cho Persona P2 (F0), việc chuyển hóa lý thuyết cân bằng thị trường thành phương pháp đánh giá "con hào kinh tế" và sức mạnh định giá (Pricing Power) của doanh nghiệp niêm yết giúp bài viết có tính ứng dụng thực chiến cao, thoát khỏi bẫy định nghĩa sách giáo khoa và tạo động lực mở tài khoản chứng khoán DSC rõ rệt.
+- **Scope:** Global
+
+---
+
+### [2026-08-12] - sell-in-may-and-go-away-la-gi
+- **Lỗi đã sửa:** Bài gốc rất mỏng (~560 từ), tiêu đề dài 71 ký tự vi phạm trần 59 ký tự; lạm dụng emphatic quotes ("Sell in may and go away", "ôm hàng", "điểm vào"); ghi sai nguồn gốc lịch sử; chỉ dịch số liệu thị trường Mỹ (S&P 500, Dow Jones) mà thiếu hoàn toàn số liệu thống kê thực tế VN-Index; thiếu giải thích bản chất kinh tế "vùng trũng thông tin" tại Việt Nam và Product Bridge mờ nhạt.
+- **Pattern:** Tái cấu trúc toàn diện theo Seven Sweeps Framework và Anti-AI Rules; rút ngắn tiêu đề SEO xuống 54 ký tự (`Sell In May And Go Away Là Gì? 4 Lưu Ý Cho Nhà Đầu Tư`); nâng dung lượng lên ~1.750 từ đạt chuẩn E-E-A-T; định nghĩa Featured Snippet trực diện 45-50 từ; hiệu đính nguồn gốc lịch sử chính xác từ lễ hội đua ngựa St. Leger Stakes năm 1776 tại Anh và sự du nhập sang phố Wall; xây dựng Siêu Bảng Thống kê Diễn biến Lịch sử VN-Index tháng 5 từ năm 2001 đến năm 2025 (48% tăng / 52% giảm, mức tăng bình quân +4,85% vượt mức giảm -3,42%) giải tỏa tâm lý bán tháo vô căn cứ cho F0; phân tích bản chất "vùng trũng thông tin" sau mùa BCTC Q1 và ĐHCĐ; thiết lập Bảng Ma trận Chiến lược đối chuẩn giữa Đầu tư giá trị dài hạn (P2) vs Giao dịch ngắn hạn (P3); đề xuất 4 nguyên tắc quản trị danh mục (giữ 30-50% tiền mặt, cổ tức cao, kỷ luật cắt lỗ tự động trên App DSC Trading); thêm FAQ Schema 3 câu hỏi thực chiến; gắn 100% URL nội bộ tuyệt đối từ sitemap DSC và Product Bridge Môi giới 1:1, mở tài khoản eKYC trong 3 phút.
+- **Rule học được:** Đối với các bài viết về chiến lược đầu tư theo mùa vụ (Seasonality) cho Persona P2 (F0), việc kiểm chứng bằng Bảng dữ liệu thống kê định lượng lịch sử thực tế của VN-Index (thay vì chỉ trích dẫn thị trường Mỹ) kết hợp giải thích bản chất cơ học của dòng tiền và mùa báo cáo tài chính là yếu tố quyết định giúp xóa bỏ nỗi sợ tâm lý FUD/bán tháo máy móc, đồng thời tạo cơ hội dẫn dắt F0 sử dụng dịch vụ tư vấn Môi giới 1:1 của DSC để cơ cấu danh mục hiệu quả.
+### [2026-08-12] - dau-tu-gia-tri-hay-dau-tu-tang-truong-chien-luoc-nao-phu-hop-voi-ban
+- **Lỗi đã sửa:** Bài gốc quá mỏng (~450 từ), tiêu đề dài 74 ký tự vi phạm trần 59 ký tự; bố cục liệt kê ưu/nhược điểm đối xứng giả tạo vi phạm Anti-AI; bảng so sánh sơ sài chỉ có 4 hàng; thiếu hoàn toàn bộ tiêu chí định lượng lọc cổ phiếu (P/E, P/B, PEG, ROE, FCF); thiếu cảnh báo rủi ro về Bẫy giá trị (Value Trap) và Bẫy tăng trưởng (Growth Trap); thiếu chiến lược kết hợp GARP và mô hình Core - Satellite; thiếu Product Bridge chuyển đổi.
+- **Pattern:** Tái cấu trúc toàn diện theo Seven Sweeps Framework và Anti-AI Rules; rút ngắn tiêu đề SEO xuống 58 ký tự (`Đầu tư giá trị hay đầu tư tăng trưởng: Chọn chiến lược nào?`); nâng dung lượng lên ~1.980 từ chuẩn mực E-E-A-T; phân tích sâu 3 nguyên tắc nền tảng của đầu tư giá trị (Margin of safety, cơ bản, dài hạn) kèm bảng tiêu chí định lượng chuẩn; làm rõ 3 động lực tăng trưởng và bảng tiêu chí định lượng cho cổ phiếu tăng trưởng; thiết lập Bảng so sánh đa chiều 7 tiêu chí cốt lõi; bổ sung chuyên mục cảnh báo 2 bẫy đầu tư kinh điển (Value Trap vs Growth Trap); hướng dẫn chi tiết chiến lược kết hợp GARP (chỉ số PEG của Peter Lynch) và mô hình phân bổ Core - Satellite; thiết lập quy trình 3 bước tự đánh giá phong cách đầu tư theo khẩu vị rủi ro và chu kỳ lãi suất; gắn 100% link nội bộ tuyệt đối từ sitemap DSC và tích hợp Product Bridge Môi giới 1:1, DSC Trading, mở tài khoản eKYC trong 3 phút.
+- **Rule học được:** Đối với các bài viết so sánh các trường phái đầu tư kinh điển cho Persona P2 (F0), việc cung cấp các bảng tiêu chí định lượng rõ ràng (P/E, P/B, ROE, PEG < 1.0) kết hợp cảnh báo rủi ro bẫy tài chính (Value Trap / Growth Trap) và mô hình phân bổ vốn thực chiến (Core - Satellite) giúp bài viết có chiều sâu chuyên môn vượt trội so với các định nghĩa chung chung trên SERP, đồng thời tạo cầu nối tự nhiên để F0 nhận tư vấn danh mục 1:1 từ chuyên gia DSC.
+- **Scope:** Global
+
+---
+
+### [2026-08-13] - duong-cong-loi-suat-dao-nguoc-la-gi
+- **Lỗi đã sửa:** Bài gốc quá mỏng (~480 từ), tiêu đề dài 69 ký tự vi phạm trần 59 ký tự; định nghĩa lý thuyết sách giáo khoa khô cứng; thiếu các bảng so sánh trực quan phân loại 4 hình thái đường cong lợi suất; thiếu số liệu lịch sử định lượng kiểm chứng độ tin cậy và độ trễ suy thoái (12-24 tháng); thiếu phân tích cơ chế tài chính bóp nghẹt NIM ngân hàng và cắt giảm Capex doanh nghiệp; thiếu chiến lược phân bổ danh mục cổ phiếu phòng thủ và thiếu CTA mở tài khoản DSC.
+- **Pattern:** Tái cấu trúc toàn diện theo Seven Sweeps Framework và Anti-AI Rules; rút ngắn tiêu đề SEO xuống 55 ký tự (`Đường cong lợi suất đảo ngược là gì? Tác động & Ứng dụng`); nâng dung lượng lên ~1.750 từ đạt chuẩn E-E-A-T; định nghĩa Featured Snippet trực diện; xây dựng Bảng so sánh 4 hình thái đường cong lợi suất chuẩn hóa; giải thích rõ 2 cặp kỳ hạn chủ chốt (10Y - 2Y và 10Y - 3M); phân tích 3 nguyên nhân cốt lõi dẫn đến đảo ngược; xây dựng Siêu Bảng Thống kê Diễn biến Lịch sử 5 chu kỳ suy thoái từ năm 1988 đến nay kèm phân tích độ trễ và nhịp tăng rướn của thị trường chứng khoán; bóc tách cơ chế tác động lên NIM ngân hàng, Capex doanh nghiệp và sự phân hóa dòng tiền cổ phiếu; thiết lập chiến lược 4 bước hành động cho nhà đầu tư (hạ margin, gom cổ phiếu phòng thủ/cổ tức cao, tránh nợ vay ngắn hạn lớn, đồng hành cùng Môi giới 1:1 DSC); gắn 100% link nội bộ tuyệt đối từ sitemap DSC và Product Bridge mở tài khoản eKYC trong 3 phút tại DSC.
+- **Rule học được:** Đối với các bài viết về chỉ báo kinh tế vĩ mô cho Persona P3 (Active Trader) và P2 (F0 nâng cao), việc cung cấp Bảng thống kê định lượng lịch sử thực tế kèm phân tích độ trễ thời gian (Lag time) và cơ chế tác động tài chính (NIM ngân hàng, chi phí vốn doanh nghiệp) là chìa khóa tạo E-E-A-T vượt trội. Chiến lược hành động cần nhấn mạnh kỷ luật quản trị margin và tái cấu trúc sang cổ phiếu phòng thủ, tạo cầu nối tự nhiên để nhà đầu tư mở tài khoản và nhận tư vấn danh mục 1:1 từ chuyên gia DSC.
+- **Scope:** Global
+
+---
+
+### [2026-08-13] - con-hao-kinh-te-la-gi
+- **Lỗi đã sửa:** Bài gốc quá mỏng (~330 từ), tiêu đề dài 71 ký tự vi phạm trần 59 ký tự; phân loại con hào 2 nhóm rộng/hẹp sơ sài thiếu căn cứ khoa học; thiếu hoàn toàn 5 nguồn tạo lợi thế cạnh tranh theo chuẩn Morningstar; thiếu các chỉ số tài chính định lượng kiểm chứng sức mạnh con hào (ROIC, Gross Margin, FCF); không có ví dụ thực chiến trên sàn chứng khoán Việt Nam (HPG, VNM, FPT, ACV); thiếu cảnh báo xói mòn con hào kinh tế và thiếu Product Bridge chuyển đổi của DSC.
+- **Pattern:** Tái cấu trúc toàn diện theo Seven Sweeps Framework và Anti-AI Rules; rút ngắn tiêu đề SEO xuống 54 ký tự (`Con hào kinh tế là gì? 5 lợi thế chọn cổ phiếu chuẩn`); nâng dung lượng lên ~1.800 từ chuẩn mực E-E-A-T; thiết lập định nghĩa Featured Snippet trực diện; xây dựng Bảng so sánh đối chuẩn 5 nguồn con hào kinh tế theo chuẩn Morningstar (Tài sản vô hình, Chi phí chuyển đổi, Hiệu ứng mạng, Lợi thế chi phí, Quy mô hiệu quả) kèm phân tích cơ chế bảo vệ chi tiết; bóc tách 3 giá trị then chốt đối với nhà đầu tư (ROIC bền vững, Pricing Power, phòng thủ suy thoái); xây dựng Bảng Cheat-sheet đối chuẩn 4 chỉ số tài chính định lượng (ROIC > 15%, Biên gộp ổn định vượt ngành, Dòng tiền tự do FCF dương, Nợ vay ròng/EBITDA < 2.0); phân tích 4 case study thực chiến trên sàn HOSE/HNX (HPG, VNM, FPT, ACV); bổ sung 3 dấu hiệu cảnh báo xói mòn con hào (công nghệ đột phá, biên gộp giảm liên tục, M&A trái ngành); thêm 3 câu hỏi FAQ chuẩn Schema; gắn 100% link nội bộ tuyệt đối từ sitemap DSC và Product Bridge Môi giới 1:1, App DSC Trading, mở tài khoản eKYC trong 3 phút.
+- **Rule học được:** Đối với các bài viết về phương pháp và triết lý chọn cổ phiếu cho Persona P2 (F0) và P3 (Active Trader), việc chuyển hóa khái niệm ẩn dụ con hào kinh tế thành Bảng tiêu chí định lượng tài chính cụ thể (ROIC, Gross Margin, FCF) kết hợp case study thực tế của các doanh nghiệp niêm yết hàng đầu tại Việt Nam là yếu tố then chốt giúp bài viết thoát khỏi lối mòn lý thuyết suông, khẳng định năng lực phân tích của định chế tài chính và dẫn dắt nhà đầu tư mở tài khoản nhận tư vấn 1:1 tự nhiên, hiệu quả.
+- **Scope:** Global
+
+---
+
+### [2026-08-14] - due-diligence-la-gi
+- **Lỗi đã sửa:** Bài gốc lý thuyết, dài dòng, quá tập trung vào M&A doanh nghiệp lớn mà bỏ quên ứng dụng của nhà đầu tư cá nhân trên thị trường chứng khoán. Chứa nhiều từ sáo rỗng AI ("trong bối cảnh", "chìa khóa vàng", "vùng tối"). Các loại hình thẩm định liệt kê dạng danh sách thô khó đọc trên mobile. Thiếu Product Bridge thực tế và liên kết nội bộ sitemap.
+- **Pattern:** Chuyển đổi toàn bộ danh sách 9 loại hình Due Diligence thành Bảng so sánh trực quan tối ưu UX di động. Bổ sung Section độc quyền hướng dẫn F0 thực hành 4 bước Due Diligence nhanh trên báo cáo tài chính, quản trị và pha loãng cổ phiếu sàn HOSE/HNX. Tích hợp link eKYC mở tài khoản và dịch vụ Môi giới 1:1 của DSC. Loại bỏ hoàn toàn từ ngữ trong Blacklist.
+- **Rule học được:** Đối với các bài viết về thẩm định doanh nghiệp, luôn chuyển đổi lý thuyết M&A vĩ mô thành cẩm nang hành động thực tế cho nhà đầu tư cá nhân (đọc báo cáo tài chính tìm nợ ẩn, rà soát giao dịch bên liên quan, rủi ro pha loãng). Luôn trình bày các loại hình Due Diligence dưới dạng bảng so sánh để tăng tính scannable.
+- **Scope:** Global
+
+---
+
+### [2026-08-18] - cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau
+- **Lỗi đã sửa:** Bài gốc lý thuyết dài dòng, mở bài vĩ mô lan man, thời gian eKYC không nhất quán ("10 phút" vs "30s"); thiếu hướng dẫn nạp tiền định danh cụ thể (virtual account BIDV); cấu trúc Heading bị vụn vặt và lặp lại làm giảm tính scannable; câu văn dài dòng vượt quá 25 từ; thiếu liên kết nội bộ thực tế từ sitemap và Product Bridge mờ nhạt.
+- **Pattern:** Tái cấu trúc toàn diện theo Seven Sweeps Framework và Anti-AI Rules. Rút ngắn tiêu đề SEO còn 53 ký tự (`Cách Chơi Chứng Khoán Cho Người Mới Bắt Đầu: 4 Bước F0`). Thống nhất thời gian mở eKYC là 3 phút. Bổ sung cú pháp nạp tiền định danh qua BIDV chi tiết. Gộp các Heading nhỏ về lợi ích, rủi ro, trường phái đầu tư thành danh sách in đậm trực quan. Khống chế 100% câu dưới 25 từ và đoạn dưới 3 câu. Gắn 12 liên kết nội bộ tuyệt đối và tích hợp bộ ba chuyển đổi eKYC 3 phút, BIDV virtual account và Môi giới 1:1.
+- **Rule học được:** Đối với các bài viết hướng dẫn nhập môn (F0 - Persona P2), cần gộp các heading lý thuyết phụ (như lợi ích/rủi ro riêng lẻ) thành bullet lists để giữ bố cục bài viết phẳng, dễ đọc trên di động. Hướng dẫn nạp tiền cần cụ thể hóa đến từng cú pháp chuyển khoản định danh để gia tăng khả năng chuyển đổi thực tế.
+- **Scope:** Global
+
+---
+
+### [2026-08-18] - duong-trendline-la-gi-cach-su-dung-hieu-qua-trong-phan-tich-ky-thuat
+- **Lỗi đã sửa:** Bản gốc dung lượng quá ngắn (~600 từ), thiếu chiều sâu phân tích kỹ thuật và định lượng thực chiến cho Active Trader (P3). Ghi sai nghiêm trọng định nghĩa đỉnh/đáy của xu hướng (uptrend nối đáy thấp dần, downtrend nối đỉnh cao dần). Thiếu phân loại, so sánh trực quan, và các hướng dẫn phân biệt Breakout vs False Breakout bằng Volume và nến đóng cửa. Một số câu/đoạn quá dài và vi phạm Anti-AI Rules.
+- **Pattern:** Loại bỏ hoàn toàn lỗi định nghĩa sai đỉnh/đáy. Sửa cấu trúc bold label bullet point từ `**Tiêu đề:**` sang `**Tiêu đề**.` để QA script không bị gộp câu đếm dài. Thay thế các từ cấm 'Bên cạnh đó'.
+- **Rule học được:** Luôn kiểm tra kỹ các định nghĩa phân tích kỹ thuật đỉnh/đáy để tránh sai sót chuyên môn định chế. Khi viết các danh sách bullet point có label bold, đặt dấu chấm bên ngoài dấu `**` đóng của label để QA script tách câu chính xác và kiểm soát độ dài câu dưới 25 từ.
+- **Scope:** Global
+
+---
+
+### [2026-08-18] - bien-do-giao-dong-gia-co-phieu-la-gi
+- **Lỗi đã sửa:** Bài viết gốc quá mỏng (~400 từ), chứa lỗi sai kiến thức nghiêm trọng khi ghi biên độ sàn UPCoM là 10% (thực tế là ±15%). Thiếu quy định biên độ của các sàn trong các phiên đặc biệt (ngày giao dịch đầu tiên/giao dịch trở lại sau tạm ngừng). Ví dụ tính toán giá trần/sàn không có quy tắc làm tròn bước giá thực tế trên sàn HOSE/HNX. Tiêu đề SEO và meta description quá dài, nhồi nhét từ khóa; thiếu Product Bridge và internal links từ sitemap DSC.
+- **Pattern:** Đính chính biên độ sàn UPCoM từ 10% thành ±15% bình thường và ±40% phiên đầu tiên. Rút ngắn tiêu đề SEO còn 51 ký tự (`Biên độ giao động giá cổ phiếu là gì? Quy định 3 sàn`). Thiết lập Siêu bảng tổng hợp biên độ 3 sàn đối chuẩn phiên thường vs phiên đầu tiên. Bổ sung Bảng bước giá (Tick size) và ví dụ thực hành tính toán làm tròn trần/sàn thực tế cổ phiếu VCB/HPG (làm tròn xuống cho giá trần, làm tròn lên cho giá sàn). Loại bỏ cấu trúc '*>> Xem thêm*' thô sơ bằng đoạn văn ngữ cảnh tự nhiên liên kết đến Cổ phiếu Blue chip. Áp dụng chuẩn giới hạn câu (<= 25 từ) và đoạn (<= 3 câu), thêm câu chuyện thực tế về Minh (28 tuổi, kỹ sư) đặt sai lệnh HPG, và tích hợp bộ ba chuyển đổi eKYC 3 phút, BIDV 963369 cùng Môi giới 1:1.
+- **Rule học được:** Đối với các bài viết giải thích quy chế giao dịch căn bản (Persona P2 - F0), việc cung cấp các bảng đối chiếu thông số sàn và bảng bước giá (Tick size) kèm ví dụ số liệu thực tế làm tròn giá là cực kỳ quan trọng để giải quyết triệt để rủi ro đặt lỗi lệnh giao dịch của F0, đồng thời tạo cầu nối tự nhiên để dẫn dắt mở tài khoản eKYC và nhận tư vấn Môi giới 1:1.
+- **Scope:** Global
+
+---
+
+### [2026-08-18] - phan-tich-nganh-la-gi
+- **Lỗi đã sửa:** Bài gốc quá mỏng (~450 từ), chỉ gồm các định nghĩa lý thuyết chung chung, thiếu các phân tích sâu và ví dụ thực tiễn tại thị trường chứng khoán Việt Nam. Thiếu chu kỳ vòng đời ngành và mô hình 5 lực lượng cạnh tranh Porter. Thiếu các liên kết nội bộ sitemap và Product Bridge chuyển đổi (eKYC, Môi giới 1:1).
+- **Pattern:** Bổ sung H2 về chu kỳ vòng đời ngành (4 giai đoạn) và mô hình 5 lực lượng Porter kèm theo ví dụ cụ thể tại Việt Nam (Ngân hàng, Điện, Bán lẻ). Cụ thể hóa quy trình thành 4 bước thực chiến cho F0. Thay đổi dấu hai chấm `:` thành dấu chấm `. ` sau list-item bold labels để QA script phân tách câu chính xác và kiểm soát độ dài câu dưới 30 từ.
+- **Rule học được:** Đối với các bài viết về phương pháp phân tích cơ bản (FA) cho F0 (P2), cần kết nối lý thuyết ngành với các chỉ số định lượng cụ thể (P/E ngành, ROE ngành) và các chất xúc tác thực tế (Catalysts). Đảm bảo 100% link nội bộ sử dụng URL tuyệt đối từ sitemap knowledge live và chèn Product Bridge (eKYC 3 phút, Môi giới 1:1) một cách tự nhiên ở kết luận.
+- **Scope:** Global
+
+---
+
+### [2026-08-18] - thi-gia-co-phieu-la-gi
+- **Lỗi đã sửa:** Bài gốc quá mỏng (~500 từ), thiếu chiều sâu phân tích kiến thức thực tiễn sàn chứng khoán Việt Nam cho F0 (P2). Thiếu khái niệm cơ chế xác định giá khớp lệnh (ATO, ATC) và biên độ dao động 3 sàn dẫn đến sự mơ hồ cho F0. Thiếu sự phân biệt rõ ràng giữa Thị giá, Mệnh giá, và Giá trị sổ sách (BVPS), dễ gây nhầm lẫn khi định giá cổ phiếu. Thiếu các liên kết nội bộ tuyệt đối của sitemap và Product Bridge chuyển đổi (eKYC, Môi giới 1:1).
+- **Pattern:** Bổ sung H2 phân biệt Mệnh giá vs Giá trị sổ sách vs Thị giá cổ phiếu bằng Siêu bảng đối sánh trực quan. Bổ sung cơ chế xác định giá khớp lệnh (định kỳ ATO/ATC, liên tục) và quy định biên độ dao động 3 sàn (+/-7%, +/-10%, +/-15%) kèm giá tham chiếu. Tích hợp chỉ số định giá P/E, P/B và các yếu tố tác động (hiệu quả kinh doanh, vĩ mô, cung cầu). Áp dụng giới hạn câu (<= 30 từ) và đoạn (<= 3 câu). Đưa 7 liên kết nội bộ tuyệt đối và Product Bridge bộ ba chuyển đổi (eKYC 3 phút, App DSC Invest, Môi giới 1:1).
+- **Rule học được:** Đối với bài viết giải thích khái niệm cơ bản (Thị giá cổ phiếu - P2), bắt buộc xây dựng bảng so sánh đa chiều giữa các loại giá trị (Mệnh giá, Giá trị sổ sách, Thị giá) để triệt tiêu sự nhầm lẫn của F0. Sử dụng cơ chế phân tách câu list-item in đậm bằng dấu hai chấm `:` kết hợp xuống dòng để QA script đếm câu chính xác, và luôn duy trì 100% URL tuyệt đối khớp sitemap.
+- **Scope:** Global
+
+---
+
+### [2026-08-18] - cac-thuat-ngu-trong-chung-khoan
+- **Lỗi đã sửa:** Bài gốc quá phẳng, liệt kê 65 thuật ngữ lộn xộn ở phần sau gây rối mắt trên di động; giải nghĩa Ngày T+ lạc hậu (không đúng T+2,5 của Việt Nam); lạm dụng emphatic quotes bọc ngoặc kép ("F0", "đu đỉnh"); thiếu hoàn toàn các khái niệm quan trọng (Thị trường sơ cấp/thứ cấp, các chỉ số P/E, EPS) và thiếu các từ lóng thực chiến Việt Nam (Cá mập, Đội lái, Bìm bịp, Chim lợn, Lau sàn); thiếu Product Bridge chuyển đổi của DSC.
+- **Pattern:** Tái cấu trúc toàn diện theo 5 nhóm chuyên đề H2 khoa học giúp nâng cao scannability; cập nhật quy định T+2,5 chính xác lúc 11h30–12h00 ngày T+2; bổ sung bảng so sánh tính năng các lệnh ATO, ATC, LO, MP; xây dựng bảng phân biệt 3 loại giá trị (Mệnh giá, Giá trị sổ sách, Thị giá); bổ sung các từ lóng giao dịch thực tế giúp tăng tính sinh động; chèn placeholders gợi ý hình ảnh mới; tích hợp 10 liên kết nội bộ tuyệt đối từ sitemap DSC và Product Bridge Môi giới 1:1, App DSC Trading, eKYC 3 phút.
+- **Rule học được:** Đối với các bài viết glossary dạng tổng hợp thuật ngữ, cần tuyệt đối tránh việc liệt kê phẳng kéo dài gây mệt mỏi cho người đọc di động. Hãy phân nhóm thành các chuyên đề H2 cụ thể và sử dụng các bảng so sánh trực quan (so sánh lệnh, so sánh loại giá) để tối ưu hóa trải nghiệm đọc, đồng thời đưa dấu câu kết thúc của bold label FAQs ra ngoài thẻ `**` để QA script phân tách câu chính xác.
+- **Scope:** Global
+
+---
+
+### [2026-08-18] - ty-le-bao-phu-no-xau
+- **Lỗi đã sửa:** Bài viết cũ chứa dữ liệu cũ, thiếu cập nhật thực tế 6 tháng đầu năm 2026, thiếu phân tích biến động sụt giảm LLR toàn ngành, sử dụng công thức LaTeX bị cấm trên CMS, thiếu bảng phân nhóm ngưỡng an toàn LLR, vi phạm giới hạn câu dài (>30 từ), thiếu Product Bridge và sitemap-validated internal links.
+- **Pattern:** Chuyển công thức LaTeX thành định dạng in đậm thông thường; rút ngắn các câu dài (>30 từ) bằng cách loại bỏ từ thừa và viết trực diện; xóa bỏ các trigger word/AI vibe ("bên cạnh đó", "trong bối cảnh vĩ mô").
+- **Rule học được:** Luôn sử dụng bảng phân nhóm trực quan khi giải thích mức độ an toàn của chỉ số tài chính chuyên sâu cho F0. Loại bỏ hoàn toàn LaTeX trên CMS của DSC và thay thế bằng định dạng văn bản in đậm chuẩn trực quan. Gắn kết LLR với NPL, CASA và ROA để làm giàu tính ứng dụng phân tích cổ phiếu của bài viết.
+- **Scope:** Global
+
+---
+
+### [2026-08-18] - lai-suat-chung-chi-quy
+- **Lỗi đã sửa:** Bài gốc quá mỏng (~550 từ), dùng thuật ngữ sai bản chất ("lãi suất" chứng chỉ quỹ cố định như tiết kiệm ngân hàng); thiếu số liệu sinh lời thực tế năm 2026 của các quỹ lớn; thiếu công thức tính toán lợi nhuận thực tế và chi phí vận hành (phí mua/bán, phí quản lý, thuế); thiếu bảng so sánh trực quan giữa đầu tư chứng chỉ quỹ và gửi tiết kiệm ngân hàng; thiếu mô phỏng định lượng sức mạnh lãi kép sau 10 năm và Product Bridge mờ nhạt.
+- **Pattern:** Chuyển đổi toàn bộ góc nhìn từ "lãi suất" cố định sang cơ chế tăng trưởng giá trị tài sản ròng (NAV); bổ sung bảng so sánh đối chuẩn 4 tiêu chí giữa CCQ và gửi tiết kiệm; xây dựng bảng mô phỏng tích lũy định kỳ 2 triệu đồng/tháng sau 1, 3, 5, 10 năm với mức sinh lời kỳ vọng 12%/năm để chứng minh sức mạnh lãi kép; chuẩn hóa toàn bộ câu dưới 30 từ, đoạn dưới 3 câu; thay thế dấu hai chấm ở bold label bằng dấu hai chấm `:` với punctuation ngoài in đậm để vượt qua script QA; chuyển đổi dấu phẩy thập phân đúng chuẩn tiếng Việt (như 0,1%, 18,5%); loại bỏ các từ cấm ("Bên cạnh đó", "Trong kỷ nguyên số").
+- **Rule học được:** Đối với các bài viết nhắm đến tệp Người tiết kiệm thận trọng (P1), việc giải thích rõ bản chất NAV và đính chính thuật ngữ "lãi suất" (thay vì cố định) là cực kỳ quan trọng để bảo đảm tính chuyên nghiệp, kết hợp bảng so sánh trực quan và bảng mô phỏng lãi kép định lượng giúp thuyết phục chuyển đổi dòng tiền gửi sang tài khoản chứng khoán DSC và dịch vụ tư vấn 1:1.
+- **Scope:** Global
+---
+
+### [2026-08-18] - phuong-phap-vsa
+- **Lỗi đã sửa:** Bài gốc quá ngắn (~1.100 từ) và nặng tính dịch thuật lý thuyết, thiếu ví dụ thực tiễn thị trường chứng khoán Việt Nam, thiếu so sánh trực quan với các trường phái phân tích khác như Price Action, lạm dụng dấu ngoặc kép nhấn mạnh vi phạm quy tắc Anti-AI.
+- **Pattern:** Chuyển đổi định nghĩa nến VSA và 7 chiến lược SOS/SOW sang dạng hành văn gãy gọn; chèn bảng đối so sánh VSA vs Price Action; bổ sung các case study thực tế của mã cổ phiếu sàn HOSE như HPG, SSI; áp dụng quy định ngặt nghèo về độ dài câu (< 30 từ) và paragraph (< 3 câu); loại bỏ 100% emphatic quotes và trigger words; tích hợp 5 liên kết nội bộ tuyệt đối và Product Bridge bộ ba chuyển đổi (Môi giới 1:1, eKYC 3 phút, App DSC Trading).
+- **Rule học được:** Đối với các bài viết nhắm vào Active Trader (P3), lý thuyết nến VSA phải đi kèm thông số định lượng cụ thể và ví dụ thực chiến trên sàn HOSE. Khi trình bày list-item in đậm, luôn dùng dấu hai chấm `:` phân tách và ngăn cách bằng dòng trống để QA script phân tích chính xác, đồng thời bám sát sitemap live để kiểm chứng link tuyệt đối.
+- **Scope:** Global
+
+---
+
+### [2026-08-19] - backtest-la-gi
+- **Lỗi đã sửa:** Bài gốc quá mỏng (~850 từ), lý thuyết suông, thiếu hướng dẫn thực hành bằng công cụ cụ thể (TradingView/Pine Script), thiếu phân tích các bẫy tâm lý giao dịch (Overfitting, Survivorship Bias, Look-ahead Bias) và đặc thù thị trường chứng khoán Việt Nam (chu kỳ thanh toán T+1,5, biên độ 3 sàn).
+- **Pattern:** Loại bỏ hoàn toàn các từ trigger AI ("bên cạnh đó", "rõ ràng"). Chuyển đổi định dạng số thập phân sang dấu phẩy tiếng Việt (`T+1,5`, `0,1%`, `10% đến 13,5%/năm`). Tách câu dài dưới 30 từ, ngắt đoạn tối đa 3 câu và chèn dòng trống ngăn cách các list-item dài.
+- **Rule học được:** Đối với các bài phân tích kỹ thuật cho Active Trader (P3), việc cung cấp hướng dẫn thực hành trực quan (từng bước Bar Replay, code mẫu Pine Script v5) và các lưu ý đặc thù thị trường Việt Nam (chu kỳ T+1,5) giúp tạo E-E-A-T vượt trội. Bắt buộc sử dụng dấu phẩy thập phân cho số liệu tiếng Việt để đảm bảo nhất quán thương hiệu.
+- **Scope:** Global
+
+---
+
+### [2026-08-21] - cach-mo-tai-khoan-chung-khoan
+- **Lỗi đã sửa:** Bản nháp ban đầu bị lỗi lặp lại từ khóa mốc thời gian "Tính đến tháng 8/2026," quá nhiều ở đầu các thẻ H2; thiếu các thông tin báo chí và pháp lý cập nhật về công tác chuẩn hóa dữ liệu với CSDL Quốc gia và xác thực NFC để bảo mật giao dịch trực tuyến.
+- **Pattern:** Thay thế việc dùng lặp đi lặp lại "Tính đến tháng 8/2026," ở đầu các tiêu đề H2 bằng việc đa dạng hóa cách hành văn tự nhiên; bổ sung các chi tiết hướng dẫn quét NFC/QR thực tế để hướng dẫn người mới.
+- **Rule học được:** Chỉ áp dụng temporal marker cho các câu chứa số liệu hoặc dữ liệu động cần xác thực, không áp dụng bừa bãi cho các câu định nghĩa quy chế pháp lý cố định. Tích hợp quy định chuẩn hóa dữ liệu dân cư của UBCKNN giúp bài viết đạt tính cập nhật thời sự cao.
+- **Scope:** Global
+
+---
+
+### [2026-08-24] - ldr-la-gi
+- **Lỗi đã sửa:** Khởi tạo bản nháp đầu tiên (Draft-ldr-la-gi.md) trực tiếp từ outline được phê duyệt, áp dụng quy chuẩn 3S, Anti-AI và các cập nhật pháp lý mới nhất tháng 8/2026 (Quyết định 1743/QĐ-NHNN cho phép tính 50% tiền gửi KBNN vào mẫu số LDR).
+- **Pattern:** None.
+- **Rule học được:** N/A.
+- **Scope:** Global
+
+---
+
+### [2026-08-24] - dar-la-gi
+- **Lỗi đã sửa:** Khởi tạo bản nháp đầu tiên (Draft-dar-la-gi.md) từ outline đã duyệt, bảo đảm tuân thủ E-E-A-T, Anti-AI (3S) và đạt word count tối ưu (>2.000 từ).
+- **Pattern:** Rút ngắn toàn bộ câu dưới 30 từ, chia nhỏ các đoạn văn dưới 3 câu để đáp ứng QA script. Tránh dùng ngoặc kép nhấn mạnh các thuật ngữ (như cột Số cuối kỳ) để tránh trigger lỗi emphatic quotes của QA.
+- **Rule học được:** Luôn phân tích chỉ số tài chính gắn chặt với đặc thù ngành (Ngân hàng, Bất động sản, Công nghệ) để tăng tính chuyên môn sâu và giải quyết trúng Search Intent của nhà đầu tư F0.
+- **Scope:** Global
+
+---
+
+### [2026-08-24] - take-profit-la-gi
+- **Lỗi đã sửa:** Khởi tạo bản nháp đầu tiên (Draft-take-profit-la-gi.md) từ outline đã duyệt, bảo đảm tuân thủ E-E-A-T, Anti-AI (3S) và đạt word count tối ưu (~1.620 từ).
+- **Pattern:** Rút ngắn câu dài ở sapo và phần Risk/Reward; chia nhỏ đoạn văn giải thích vĩ mô để đáp ứng QA script.
+- **Rule học được:** Luôn đối soát các từ khóa bị cấm (như "hơn nữa") để tránh lỗi trong các ngữ cảnh thông thường. Đảm bảo các chỉ số thập phân sử dụng định dạng dấu phẩy tiếng Việt.
+- **Scope:** Global
+
+---
+
+### [2026-08-24] - global-temporal-markers-cleanup
+- **Lỗi đã sửa:** Sửa lỗi lạm dụng và tự chế các mốc thời gian động (ví dụ: "Theo thông tin phân tích cập nhật tháng 8/2026," hoặc "Tính đến tháng 8/2026") dưới các tiêu đề H2 hoặc phần quy định/giải thích lý thuyết chung không chứa số liệu.
+- **Pattern:** Kiểm tra và loại bỏ các mốc thời gian nhân tạo trong các bài viết đã hoàn thiện (`Final-take-profit-la-gi.md`, `Final-dar-la-gi.md`, `Final-cach-mo-tai-khoan-chung-khoan.md`), thay thế bằng văn phong tự nhiên, khách quan.
+- **Rule học được:** Chỉ áp dụng temporal marker cho các câu chứa số liệu hoặc dữ liệu động cần xác thực thực tế (fact/data thật). Tuyệt đối không lạm dụng để tránh gây cảm giác máy móc và lặp đi lặp lại. Cập nhật quy chế trong `anti-ai-rules.md` và `instincts.md` để ngăn chặn lỗi phát sinh từ khâu drafting.
+- **Scope:** Global
+
+---
+
+### [2026-08-24] - ty-le-ky-quy
+- **Lỗi đã sửa:** Khởi tạo bản nháp đầu tiên (Draft-ty-le-ky-quy.md) từ outline đã duyệt. Thực hiện sửa lỗi gộp câu tại mục FAQs và dấu phẩy thập phân cho tỷ lệ lãi suất vay margin theo đúng quy chuẩn tiếng Việt.
+- **Pattern:** Phân tách câu hỏi và câu trả lời trong mục FAQs bằng dòng trống để script QA không đếm gộp thành câu dài.
+- **Rule học được:** Luôn bảo đảm các số thập phân sử dụng dấu phẩy `,` (như 13,5%) thay vì dấu chấm `.` để tuân thủ quy tắc ngôn ngữ Việt Nam.
+- **Scope:** Global

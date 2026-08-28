@@ -9,7 +9,7 @@ Cho phép người dùng phê duyệt một bản nháp, outline, hoặc bản t
 
 ## 🔄 Context Load (Trước khi thực thi)
 1. `knowledge/4-content/topic-clusters.md` — để xác định slug và cập nhật trạng thái
-2. `.antigravity/memory/instincts.md` — để ghi nhận bài học mới (nếu có)
+2. `.antigravity/memory/instincts-archive.md` & `.antigravity/memory/instincts.md` — để ghi nhận và đồng bộ bài học mới
 3. `knowledge/3-pipeline/revision-log.md` — để log revision
 
 ## Quy trình thực thi
@@ -28,17 +28,22 @@ Xác định file đang ở stage nào dựa trên tên file hoặc stage đang 
   > *"Ngoài các chỉnh sửa đã trao đổi trong chat, bạn có tự sửa thêm gì trong file không? Mô tả ngắn để tôi ghi log. (Gõ 'không' để bỏ qua.)"*
 - Tổng hợp **toàn bộ** những gì đã sửa trong session này (từ chat + file trực tiếp nếu user khai báo) → ghi vào `knowledge/3-pipeline/revision-log.md` theo format chuẩn.
 - **BẮT BUỘC**: Di chuyển file sang `knowledge/4-content/3-finalized/Final-[slug].md`.
+- **BẮT BUỘC**: Xóa file outline gốc `knowledge/4-content/1-outlines/[slug].md` (nếu tồn tại) để dọn dẹp hệ thống.
 - Cập nhật `knowledge/4-content/topic-clusters.md` → trạng thái `Finalized`.
 - Auto-trigger: Kích hoạt skill `.antigravity/skills/content-feedback-loop/SKILL.md` để tổng hợp bài học.
 - Cập nhật `knowledge/3-pipeline/anchor-index.md` — thêm entry mới cho bài vừa finalized.
 
 **Nếu stage là Optimize (`knowledge/4-content/2-drafts/Optimize-[slug].md`):**
+- **BẮT BUỘC — Hỏi trước khi finalize:**
+  > *"Ngoài các chỉnh sửa đã trao đổi trong chat, bạn có tự sửa thêm gì trong file không? Mô tả ngắn để tôi ghi log. (Gõ 'không' để bỏ qua.)"*
+- Tổng hợp **toàn bộ** những gì đã sửa trong session này (từ chat + file trực tiếp nếu user khai báo) → ghi vào `knowledge/3-pipeline/revision-log.md` theo format chuẩn.
 - Ghi đè bản nâng cấp lên file gốc: `knowledge/4-content/3-finalized/Final-[slug].md`.
-- Xóa file `Optimize-[slug].md` trong `2-drafts/`.
+- Xóa file `Optimize-[slug].md` và file `Proposal-[slug].md` (nếu có) trong `2-drafts/`.
 - Cập nhật `knowledge/4-content/topic-clusters.md` → trạng thái `Finalized`.
+- Auto-trigger: Kích hoạt skill `.antigravity/skills/content-feedback-loop/SKILL.md` để tổng hợp bài học.
 
 ### Bước 3: Xác nhận
 Sau khi hoàn thành, báo cáo cho người dùng:
 - Đường dẫn file final.
 - Trạng thái mới trong topic-clusters.md.
-- (Nếu Draft approve): Tóm tắt bài học mới từ Content Feedback Loop.
+- Tóm tắt bài học mới từ Content Feedback Loop.

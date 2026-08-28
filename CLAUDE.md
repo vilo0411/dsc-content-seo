@@ -19,7 +19,7 @@ All operations must strictly follow the rules defined in:
 > 1. `knowledge/1-brand/profile.md`
 > 2. `knowledge/3-pipeline/anti-ai-rules.md`
 > 3. `knowledge/3-pipeline/glossary.md`
-> 4. `.antigravity/memory/instincts.md`
+> 4. `.antigravity/memory/instincts.md` (Bản rút gọn - tiết kiệm token). *Chi tiết lịch sử gốc ở `.antigravity/memory/instincts-archive.md`.*
 > 5. _(Agent-specific files theo từng agent's Context Loading block)_
 
 ## ✍️ Content Edit Rule (Áp dụng cho mọi yêu cầu sửa nội dung — kể cả chat trực tiếp)
@@ -29,6 +29,7 @@ All operations must strictly follow the rules defined in:
 > 3. Chạy Self-Audit Checklist (Phần 6 của anti-ai-rules.md) trên bản sửa trước khi trình bày
 >
 > **Không có exception.** Yêu cầu "sửa nhanh" hay "sửa 1 câu" vẫn phải qua bước này.
+> *Lưu ý:* Khi học bản năng mới (`/learn`), ghi metadata vào `instincts-archive.md` rồi chạy `python scripts/optimize_instincts.py` để đồng bộ sang `instincts.md`.
 
 ---
 

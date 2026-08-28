@@ -15,7 +15,7 @@ Dùng sau khi Outline đã được `/approve`. Chỉ thực hiện Phase 3 (Dra
 3. `knowledge/1-brand/service-operations.md`
 4. `knowledge/3-pipeline/anti-ai-rules.md`
 5. `knowledge/3-pipeline/glossary.md`
-6. `knowledge/3-pipeline/anchor-index.md` — Danh sách bài để link nội bộ
+6. `knowledge/3-pipeline/anchor-index.md` — **Không đọc toàn bộ.** Chỉ Grep theo topic khi đến Bước 2 (Internal Linking). Xem hướng dẫn tại `.antigravity/skills/internal-linking/SKILL.md`.
 7. `.antigravity/memory/instincts.md`
 8. `knowledge/1-brand/writers/[Writer_Profile].md` — Đọc field `Writer_Profile` trong outline YAML, load file tương ứng (`educational` / `analytical` / `comparison`). Nếu không có field này → dùng `educational` làm default.
 
@@ -28,7 +28,8 @@ Dùng sau khi Outline đã được `/approve`. Chỉ thực hiện Phase 3 (Dra
 
 ### Bước 2: Internal Linking
 - Kích hoạt skill `.antigravity/skills/internal-linking/SKILL.md` → Mode: Contextual Insertion.
-- Chèn tối thiểu 2 internal links từ `anchor-index.md` vào draft.
+- Chèn tối thiểu 2-4 internal links từ `anchor-index.md` và Sitemap DSC vào draft.
+- **BẮT BUỘC:** Luôn chèn ít nhất 01 link chuyển đổi dẫn về trang **Mở tài khoản chứng khoán DSC** (`https://www.dsc.com.vn/mo-tai-khoan`) tại phần Product Bridge hoặc CTA cuối bài.
 
 ### Bước 3: Quality Guardian (QA — BẮT BUỘC)
 - Kích hoạt agent `.antigravity/agents/quality-guardian.md`.

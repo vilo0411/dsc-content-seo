@@ -86,8 +86,8 @@
 
 ---
 
-## 3. Kết quả 7 Sweeps Audit
-Đánh giá chất lượng copy hiện tại dựa trên Framework 7 Bước Quét:
+## 3. Kết quả 8 Sweeps Audit
+Đánh giá chất lượng copy hiện tại dựa trên Framework 8 Bước Quét:
 
 | Bước Quét | Đánh giá (1-10) | Vấn đề chính | Ghi chú cải thiện |
 | :--- | :--- | :--- | :--- |
@@ -98,6 +98,7 @@
 | **Specificity** | /10 | | |
 | **Emotion** | /10 | | |
 | **Zero Risk** | /10 | | |
+| **GEO/AEO** | /10 | [VD: 3/6 H2 không có Load-Bearing Claim; 4 data point thiếu temporal marker; 2 câu bị động che khuất DSC] | [Thêm claim cứng vào H2 yếu + chuẩn hóa "Tháng M/Y:" + đổi chủ từ sang DSC] |
 
 ---
 
@@ -146,3 +147,20 @@ Dựa trên phân tích đối thủ (SERP), đây là các phần nội dung b�
 | Anchor Text đề xuất | Bài đích (slug) | Vị trí chèn |
 | :--- | :--- | :--- |
 | [Cụm từ tự nhiên trong bài] | [slug-bài-đích] | H2: [Tên section] |
+
+---
+
+## 7. Chiến lược Hình ảnh (Image Strategy & Preservation)
+> Đảm bảo không làm mất hình ảnh gốc và gợi ý vị trí tối ưu hình ảnh mới cho SEO.
+
+### 7.1 Danh sách hình ảnh GỐC cần bảo toàn (BẮT BUỘC)
+| Cú pháp Markdown ảnh gốc | Vị trí hiện tại | Hướng xử lý |
+| :--- | :--- | :--- |
+| `![alt](url)` | Dưới H2: [Tên section] | [Giữ nguyên / Cập nhật alt text tối ưu SEO] |
+
+### 7.2 Gợi ý vị trí đặt ảnh mới (Tối ưu SEO & UX)
+> Gợi ý các vị trí chèn ảnh mới (minh họa, biểu đồ, infographic) giúp ngắt mạch văn dài hoặc giải thích trực quan các khái niệm phức tạp.
+
+| Vị trí đề xuất | Concept ảnh gợi ý | Alt text tối ưu SEO chứa keyword |
+| :--- | :--- | :--- |
+| Dưới H2: [Tên section] | [Mô tả hình ảnh: ví dụ Biểu đồ thể hiện...] | `[alt text chứa từ khóa chính/phụ]` |

@@ -39,6 +39,9 @@ Core_Products: # Lấy từ Knowledge Base của dự án hiện tại
 Anti_AI_Flags:
   - [List các cụm từ cần tránh từ anti-ai-rules.md]
 
+# GEO/AEO
+GEO_Compliance: true  # Mỗi H2 phải có Load-Bearing Claim theo Phần 8 của anti-ai-rules.md
+
 # Cluster info
 Cluster: [Tên Cluster]
 Cluster_Role: [Pillar | Cluster]
@@ -71,6 +74,7 @@ Internal_Links: []
 - **Nội dung chính:** [Nhiệm vụ của đoạn này, các luận điểm chính]
 - **Entities & Keywords:** [List cụ thể]
 - **Bằng chứng thực tế:** [BẮT BUỘC: Số liệu %, sự kiện thị trường]
+- **GEO_Load_Bearing:** [BẮT BUỘC: 1 câu extract-friendly — entity + số liệu + temporal marker. VD: "Tính đến tháng 8/2026, DSC thu phí giao dịch 0,1% — thấp hơn mức TB 0,25% của 5 CTCK lớn (nguồn: UBCKNN)."]
 - **Target:** [Số từ]
 
 #### H3: [Tiêu đề con của H2]

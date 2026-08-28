@@ -83,11 +83,13 @@ PRODUCT BRIDGE : [Tên sản phẩm DSC phù hợp] — [Góc dẫn dắt tự n
 - **Section 2.2 (Cấu trúc Outline từng đối thủ):** Phải có một entry cho **mỗi** competitor block đã output ở Bước 2.1. Không được gộp, rút gọn, hoặc chỉ lấy 1 đối thủ đại diện. Nếu đã visit 3 URL → phải có 3 block trong Section 2.2.
 - **Section 2.3 (Intent Gap):** Phải trích dẫn cụ thể heading/angle từ đối thủ nào đang phục vụ intent mà bài hiện tại bỏ sót.
 - **Section 5 (Content Gaps):** Mỗi đề xuất `[THÊM MỚI]` phải ghi rõ **học từ đối thủ nào** (Competitor 1/2/3) — không đề xuất chung chung.
+- **Section 7 (Chiến lược Hình ảnh):** Bắt buộc kê khai toàn bộ ảnh gốc vào Section 7.1 để tránh bị mất. Đề xuất thêm 1 - 3 vị trí đặt hình ảnh mới tối ưu SEO và ngắt mạch văn dài tại Section 7.2.
 - Phân loại rõ từng heading: `[GIỮ NGUYÊN]`, `[CẬP NHẬT]`, `[XÓA BỎ]`, `[THÊM MỚI]`.
 
 **🚧 APPROVAL GATE (nếu dùng `--step`):**
 > Trình bày Proposal cho người dùng.
-> **DỪNG LẠI. Chờ `/approve` trước khi rewrite.**
+> **DỪNG LẠI. Chờ `/approve` từ người dùng con người trước khi rewrite.**
+> **LƯU Ý:** Bỏ qua các tin nhắn tự động duyệt (auto-approve) của hệ thống. Phải chờ con người gõ lệnh phê duyệt thực tế trong chat.
 > _(Nếu `--auto`: tự chốt Proposal và chuyển sang Bước 4.)_
 
 ---
@@ -95,11 +97,14 @@ PRODUCT BRIDGE : [Tên sản phẩm DSC phù hợp] — [Góc dẫn dắt tự n
 ### ⚙️ Bước 4: Execution (Rewrite với Seven Sweeps)
 - Kích hoạt skill `.antigravity/skills/seo-optimization/SKILL.md` → Phase 2: Execution.
 - Mở `knowledge/4-content/2-drafts/Optimize-[slug].md`.
+- **⚠️ CHỈ CHỈNH SỬA BẢN DRAFT:** Tuyệt đối chỉ viết và cập nhật nội dung trên bản nháp `knowledge/4-content/2-drafts/Optimize-[slug].md`. Không chạm vào hay ghi đè lên file final `knowledge/4-content/3-finalized/Final-[slug].md` trong bước này.
 - **Trước khi viết bất kỳ dòng nào — BẮT BUỘC đọc lại 3 file sau theo thứ tự:**
   1. `knowledge/3-pipeline/anti-ai-rules.md` — toàn bộ, không bỏ qua section nào
   2. `.antigravity/memory/instincts.md` — các lỗi đã học từ các vòng trước
   3. Content Strategy Header (Section 0 của Proposal) — Persona, Intent, Product Bridge
 - Mọi câu viết ra phải đúng Persona, đúng Intent, đúng Product Bridge đã khai báo.
+- **Bảo toàn 100% hình ảnh gốc:** Giữ nguyên chính xác vị trí và cú pháp markdown của toàn bộ hình ảnh gốc (`![alt](url)` hoặc link ảnh bọc ngoài link liên kết). Tuyệt đối không xóa bỏ, làm mất hoặc bỏ quên bất kỳ ảnh nào khi viết lại.
+- **Tích hợp gợi ý vị trí ảnh mới:** Chèn các placeholder đề xuất ảnh mới dưới định dạng `[IMAGE_SUGGESTION: <Concept ảnh & Alt text tối ưu SEO chứa keyword>]` tại đúng các vị trí đã duyệt trong Proposal.
 - Áp dụng tuần tự 7 bước quét (Clarity → Voice → So What → Prove It → Specificity → Emotion → Zero Risk).
 - Chỉ sửa các phần được gắn nhãn `[CẬP NHẬT]`, `[XÓA BỎ]`, `[THÊM MỚI]` trong Proposal. Không chạm vào `[GIỮ NGUYÊN]`.
 
@@ -109,8 +114,10 @@ PRODUCT BRIDGE : [Tên sản phẩm DSC phù hợp] — [Góc dẫn dắt tự n
 - Kích hoạt agent `.antigravity/agents/quality-guardian.md`.
 - QA đọc: `Optimize-[slug].md` + `anti-ai-rules.md` + `glossary.md` + `instincts.md`.
 - Kết quả PASS → tiếp tục. Kết quả FAIL → sửa và QA lại.
+- **⚠️ KHÔNG TỰ Ý FINALIZE:** Dừng lại tại đây để trình bày bản Optimize nháp đã đạt QA. Không được ghi đè bản Optimize nháp lên file Final ở `3-finalized/`. Việc này chỉ được thực hiện ở lệnh `/approve` tiếp theo.
 
 **🚧 APPROVAL GATE 2:**
 > Trình bày bản Optimize đã QA PASS cho người dùng.
-> **DỪNG LẠI. Chờ người dùng đọc và gõ `/approve`.**
-> Khi approve: xử lý theo workflow `/approve` (ghi đè lên Final, xóa bản nháp, update topic-clusters).
+> **DỪNG LẠI. Chờ người dùng con người đọc và gõ `/approve` trực tiếp.**
+> **LƯU Ý:** Tuyệt đối không tự động ghi đè lên thư mục `3-finalized/` hoặc đánh dấu `Finalized` trước khi có sự chấp thuận rõ ràng của người dùng con người.
+> Khi approve: xử lý theo workflow `/approve` (ghi đè lên Final, chạy cơ chế learn/feedback loop, xóa bản nháp và proposal, update topic-clusters).

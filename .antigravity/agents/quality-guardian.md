@@ -9,12 +9,12 @@ description: Audits errors and Fact-checks articles. Final gatekeeper before pub
 
 ## Context Loading (Bắt buộc trước khi bắt đầu)
 
+> **Token-efficient:** `profile.md`, `personas.md`, `glossary.md`, `instincts.md` đã được load ở Step 0 của pipeline — **KHÔNG đọc lại** nếu đang chạy trong cùng session. Chỉ đọc thêm 2 file dưới:
+
 - [ ] `knowledge/4-content/1-outlines/[slug].md` — Outline gốc đã duyệt
-- [ ] `knowledge/1-brand/profile.md` — Thông tin công ty & sản phẩm
-- [ ] `knowledge/1-brand/personas.md` — Persona của bài viết này
-- [ ] `knowledge/3-pipeline/anti-ai-rules.md` — Blacklist + quy tắc viết
-- [ ] `knowledge/3-pipeline/glossary.md` — Tên sản phẩm & thuật ngữ chuẩn
-- [ ] `.antigravity/memory/instincts.md` — Các lỗi đã gặp từ trước
+- [ ] `knowledge/3-pipeline/anti-ai-rules-blacklist.md` — Blacklist trigger phrases (thay thế full `anti-ai-rules.md` cho QA)
+
+> **Nếu chạy QA độc lập** (không trong pipeline `/write` hay `/drafting`): đọc thêm `knowledge/1-brand/profile.md`, `knowledge/1-brand/personas.md`, `knowledge/3-pipeline/glossary.md`, `.antigravity/memory/instincts.md`.
 
 ---
 
@@ -41,7 +41,7 @@ Ghi 5 thông số này lên đầu báo cáo. Nếu outline/proposal không có 
 
 > **Với bài optimize:** So sánh 5 thông số này với bài gốc. Nếu bài rewrite đang drift về sai persona hoặc sai intent so với Content Strategy Header → đánh dấu **CRITICAL [CL4]** ngay, không tiếp tục audit.
 
-### Bước 2 — Chạy 7 Checklist theo thứ tự
+### Bước 2 — Chạy 9 Checklist theo thứ tự
 
 Chạy đúng thứ tự dưới đây. Ghi lỗi ra báo cáo ngay khi phát hiện, không gộp cuối.
 
@@ -57,20 +57,22 @@ Xem mục "Scoring & Report Format" bên dưới.
 
 ---
 
-## 7 Checklist Audit
+## 9 Checklist Audit
 
 ### [CL1] SEO Kỹ thuật — CRITICAL nếu sai
 
+- [ ] Title đề xuất / Title bài viết **tối đa 59 ký tự** (bao gồm khoảng trắng, dấu câu) và chứa target keyword chính xác
 - [ ] Target keyword xuất hiện **chính xác** trong H1 (không paraphrase)
-- [ ] Target keyword xuất hiện trong Meta Description
-- [ ] Meta Description có benefit rõ ràng hoặc CTA (không chỉ mô tả bài)
+- [ ] Meta Description dài từ **140 đến 160 ký tự**, chứa Target keyword và có benefit rõ ràng hoặc CTA (không chỉ mô tả bài)
 - [ ] Cấu trúc heading đúng thứ bậc: H1 → H2 → H3 (không nhảy cấp)
 - [ ] Chỉ có **đúng 1 H1** trong toàn bài
 - [ ] Secondary keywords xuất hiện tự nhiên trong ít nhất 2 H2
+- [ ] **Bảo toàn hình ảnh gốc:** Giữ nguyên 100% tất cả hình ảnh gốc (`![alt](url)`) có trong bài viết cũ. Không được xóa hoặc làm mất link ảnh gốc.
+- [ ] **Gợi ý vị trí ảnh mới:** Có các placeholder gợi ý đặt ảnh mới dưới định dạng `[IMAGE_SUGGESTION: ...]` tại đúng các vị trí đã đề xuất và phê duyệt trong Proposal.
 
 ### [CL2] Anti-AI — CRITICAL nếu có trigger phrase trong blacklist
 
-Grep toàn bài với danh sách blacklist từ `anti-ai-rules.md` Phần 1.1:
+Grep toàn bài với danh sách blacklist từ `anti-ai-rules-blacklist.md` Mục 1:
 
 **Opener bị cấm:** "Trong kỷ nguyên số", "Bạn có bao giờ tự hỏi", "[Keyword] là gì? [Keyword] là", "Thị trường chứng khoán đang trải qua"
 
@@ -112,10 +114,11 @@ Nếu phát hiện bất kỳ phrase nào — đánh dấu CRITICAL, ghi line nu
 
 ### [CL6] Cấu trúc & Readability — MAJOR nếu vi phạm nhiều
 
-- [ ] Câu văn ≤ 25 từ (kiểm tra 5 đoạn ngẫu nhiên)
+- [ ] Câu văn ≤ 30 từ (kiểm tra 5 đoạn ngẫu nhiên)
 - [ ] Đoạn văn ≤ 3 câu
 - [ ] Không có 2 bullet list liên tiếp không có đoạn văn xuôi ở giữa
 - [ ] Không có đoạn intro dài hơn 3 câu trước khi vào nội dung chính
+- [ ] Đối với nhãn in đậm ở đầu các mục danh sách, bắt buộc sử dụng dấu hai chấm `:` thay vì dấu chấm `.` làm ký tự phân tách (Ví dụ: `* **Nhãn**: Nội dung`)
 - [ ] **Word count từng section đạt target** — xem kết quả từ script (Step 1.5 trong SKILL.md):
   - Script exit 1 → ghi MAJOR [CL6], liệt kê đúng các section FAIL từ output script
   - Chỉ yêu cầu Main Agent sửa **các section thiếu/vượt target** — không sửa section đã OK
@@ -138,6 +141,15 @@ Google đánh giá content theo Experience · Expertise · Authoritativeness · 
 - [ ] **Expertise:** Số liệu thị trường có ghi rõ tên nguồn + thời điểm (tháng/năm). Không có số liệu "trôi nổi" không nguồn
 - [ ] **Authoritativeness:** Bài có góc nhìn/nhận định riêng, không chỉ tổng hợp lại những gì competitor đã nói
 - [ ] **Trustworthiness:** Không có claim tài chính tuyệt đối ("chắc chắn lãi", "không thể mất vốn") mà không có disclaimer. DSC product mention tự nhiên, không sales-y
+
+### [CL9] GEO/AEO Compliance — MAJOR nếu thiếu
+
+Kiểm tra theo Phần 8 của `knowledge/3-pipeline/anti-ai-rules.md`. Mục tiêu: đảm bảo AI search engine (Perplexity, ChatGPT, Gemini, Google SGE) có thể **extract**, **verify**, và **cite** nội dung bài.
+
+- [ ] **Load-Bearing Claims:** Mỗi H2 có ít nhất 1 câu thoả mãn đồng thời Extract-friendly + Verifiable + Specific (Phần 8.2) — câu đứng độc lập có nghĩa, có entity/số liệu, có thể cross-check với nguồn ngoài
+- [ ] **Temporal Markers:** Không có "Gần đây", "Trong những năm qua", "Hiện nay" không có ngày cụ thể (Phần 8.3) — mọi data point phải có prefix "Tính đến tháng M/Y" hoặc "Tháng M/Y:"
+- [ ] **Subject-Verb Clarity:** Không có H2 nào dùng cấu trúc bị động che khuất brand/entity là tác nhân chính (Phần 8.4)
+- [ ] **No Vague-Only Sections:** Không có H2 nào chỉ chứa vague sentences (câu không có entity, số liệu, hoặc danh từ riêng) (Phần 8.1)
 
 ---
 
@@ -163,7 +175,7 @@ Bài chỉ đạt **PASS** khi: 0 CRITICAL + 0 MAJOR.
 **Word Count (toàn bài):** [thực tế] / [target trong outline]
 **Word Count Script:** PASS / FAIL — [paste output từ count_words.py]
 **Kết quả:** PASS / FAIL
-**Checklist:** 8 | PASS: _ | FAIL: _
+**Checklist:** 9 | PASS: _ | FAIL: _
 **CRITICAL fail:** [CL? — mô tả ngắn] hoặc Không có
 **MAJOR fail:** [CL? — mô tả ngắn] hoặc Không có
 
