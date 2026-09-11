@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mô Hình Kiến Trúc Internal Link DSC — Silo, Pyramid & Link Wheel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #070a12;
+            --bg-card: rgba(15, 23, 42, 0.75);
+            --bg-card-hover: rgba(30, 41, 67, 0.85);
+            --border-color: rgba(255, 255, 255, 0.08);
+            
+            --primary: #00e5ff;
+            --primary-glow: rgba(0, 229, 255, 0.25);
+            --secondary: #7c4dff;
+            --accent: #ff007a;
+            --success: #00e676;
+            --warning: #ffab00;
+            
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --text-dim: #64748b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            min-height: 100vh;
+            line-height: 1.6;
+            background-image: 
+                radial-gradient(circle at 10% 15%, rgba(124, 77, 255, 0.18) 0%, transparent 40%),
+                radial-gradient(circle at 90% 85%, rgba(0, 229, 255, 0.15) 0%, transparent 45%),
+                radial-gradient(circle at 50% 50%, rgba(255, 0, 122, 0.06) 0%, transparent 60%);
+            background-attachment: fixed;
+            padding-bottom: 60px;
+        }
+
+        .container {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 30px 24px;
+        }
+
+        /* HEADER */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 36px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+            position: relative;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 250px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+            box-shadow: 0 0 12px var(--primary);
+        }
+
+        .brand-title {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .logo-badge {
+            background: linear-gradient(135deg, #00e5ff, #7c4dff);
+            color: #000;
+            font-weight: 800;
+            font-size: 20px;
+            padding: 10px 18px;
+            border-radius: 14px;
+            box-shadow: 0 0 20px rgba(0, 229, 255, 0.4);
+            letter-spacing: 1px;
+        }
+
+        .title-group h1 {
+            font-size: 24px;
+            font-weight: 700;
+            background: linear-gradient(90deg, #ffffff, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .title-group p {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        /* TOPOLOGY SELECTOR TABS */
+        .topology-nav {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 32px;
+            background: var(--bg-card);
+            padding: 8px;
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+            backdrop-filter: blur(16px);
+            width: fit-content;
+        }
+
+        .topo-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+            padding: 14px 28px;
+            border-radius: 14px;
+            font-weight: 700;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .topo-btn:hover {
+            color: var(--text-main);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .topo-btn.active {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: #000;
+            box-shadow: 0 4px 25px rgba(0, 229, 255, 0.35);
+        }
+
+        .topo-btn.active.pink {
+            background: linear-gradient(135deg, var(--accent), var(--secondary));
+            color: #fff;
+            box-shadow: 0 4px 25px rgba(255, 0, 122, 0.35);
+        }
+
+        .topo-btn.active.gold {
+            background: linear-gradient(135deg, var(--warning), var(--primary));
+            color: #000;
+            box-shadow: 0 4px 25px rgba(255, 171, 0, 0.35);
+        }
+
+        /* SECTION WRAPPER */
+        .topo-section {
+            display: none;
+            animation: fadeIn 0.4s ease;
+        }
+
+        .topo-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(12px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .card-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            padding: 32px;
+            backdrop-filter: blur(16px);
+            margin-bottom: 32px;
+            position: relative;
+        }
+
+        .section-header {
+            margin-bottom: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .section-header h2 {
+            font-size: 22px;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .desc-text {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 24px;
+            line-height: 1.7;
+            max-width: 1000px;
+        }
+
+        /* 1. SILO STRUCTURE DIAGRAM */
+        .silo-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+        }
+
+        .silo-column {
+            background: rgba(10, 16, 30, 0.8);
+            border: 2px solid rgba(0, 229, 255, 0.2);
+            border-radius: 20px;
+            padding: 24px;
+            position: relative;
+        }
+
+        .silo-column.pink-silo {
+            border-color: rgba(255, 0, 122, 0.2);
+        }
+
+        .silo-header {
+            text-align: center;
+            padding: 14px;
+            border-radius: 12px;
+            font-weight: 800;
+            font-size: 16px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .silo-column .silo-header { background: linear-gradient(135deg, rgba(0, 229, 255, 0.2), rgba(124, 77, 255, 0.2)); border: 1px solid var(--primary); color: var(--primary); }
+        .silo-column.pink-silo .silo-header { background: linear-gradient(135deg, rgba(255, 0, 122, 0.2), rgba(124, 77, 255, 0.2)); border: 1px solid var(--accent); color: var(--accent); }
+
+        .silo-level {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .silo-node {
+            background: rgba(30, 41, 67, 0.6);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 14px 18px;
+            font-size: 13px;
+            transition: all 0.3s ease;
+        }
+
+        .silo-node:hover {
+            border-color: var(--primary);
+            box-shadow: 0 0 15px var(--primary-glow);
+            transform: translateX(4px);
+        }
+
+        .silo-arrow {
+            text-align: center;
+            color: var(--primary);
+            font-size: 18px;
+            font-weight: 800;
+            margin: -6px 0;
+        }
+
+        .arrow-up {
+            color: var(--success);
+            font-size: 12px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        /* 2. PYRAMID STRUCTURE DIAGRAM */
+        .pyramid-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 20px 0;
+        }
+
+        .pyramid-tier {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            width: 100%;
+        }
+
+        .pyr-node {
+            background: rgba(15, 23, 42, 0.85);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 16px 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .pyr-tier-1 { width: 360px; border-color: var(--success); background: rgba(0, 230, 118, 0.1); box-shadow: 0 0 30px rgba(0, 230, 118, 0.2); }
+        .pyr-tier-2 { width: 420px; border-color: var(--primary); background: rgba(0, 229, 255, 0.08); }
+        .pyr-tier-3 { width: 280px; border-color: var(--secondary); background: rgba(124, 77, 255, 0.08); }
+        .pyr-tier-4 { width: 200px; border-color: var(--border-color); font-size: 12px; }
+
+        .pyr-badge {
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            padding: 3px 8px;
+            border-radius: 6px;
+            display: inline-block;
+            margin-bottom: 6px;
+        }
+
+        .tier-1-b { background: var(--success); color: #000; }
+        .tier-2-b { background: var(--primary); color: #000; }
+        .tier-3-b { background: var(--secondary); color: #fff; }
+        .tier-4-b { background: rgba(255, 255, 255, 0.1); color: var(--text-muted); }
+
+        /* 3. LINK WHEEL DIAGRAM */
+        .wheel-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 480px;
+        }
+
+        .wheel-center {
+            position: absolute;
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(0, 229, 255, 0.2) 0%, rgba(124, 77, 255, 0.1) 70%);
+            border: 2px solid var(--primary);
+            box-shadow: 0 0 40px rgba(0, 229, 255, 0.3);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            z-index: 2;
+        }
+
+        .wheel-node {
+            position: absolute;
+            width: 170px;
+            padding: 12px;
+            background: rgba(15, 23, 42, 0.9);
+            border: 1px solid var(--secondary);
+            border-radius: 14px;
+            font-size: 12px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(124, 77, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .wheel-node:hover {
+            border-color: var(--accent);
+            box-shadow: 0 0 25px rgba(255, 0, 122, 0.4);
+            transform: scale(1.08);
+        }
+
+        /* Circle positions */
+        .wn-1 { top: 20px; left: 50%; transform: translateX(-50%); }
+        .wn-2 { top: 110px; right: 80px; }
+        .wn-3 { bottom: 110px; right: 80px; }
+        .wn-4 { bottom: 20px; left: 50%; transform: translateX(-50%); }
+        .wn-5 { bottom: 110px; left: 80px; }
+        .wn-6 { top: 110px; left: 80px; }
+
+        /* COMPARISON TABLE */
+        .comp-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .comp-table th {
+            background: rgba(15, 23, 42, 0.9);
+            padding: 16px;
+            color: var(--text-muted);
+            font-size: 13px;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .comp-table td {
+            padding: 16px;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            color: var(--text-dim);
+            font-size: 13px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 24px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- HEADER -->
+    <header>
+        <div class="brand-title">
+            <div class="logo-badge">DSC</div>
+            <div class="title-group">
+                <h1>Kiến Trúc Internal Link: Silo, Pyramid & Link Wheel</h1>
+                <p>Mô hình liên kết nội bộ 3 cấu trúc chuẩn SEO Enterprise đẩy Top chủ đề Mở Tài Khoản & Cách Chơi</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- TOPOLOGY SELECTOR TABS -->
+    <div class="topology-nav">
+        <button class="topo-btn active" onclick="switchTopo('silo')">
+            <span>🏰</span> Cấu Trúc Silo (Silo Architecture)
+        </button>
+        <button class="topo-btn pink" onclick="switchTopo('pyramid')">
+            <span>🔺</span> Cấu Trúc Kim Tự Tháp (Pyramid)
+        </button>
+        <button class="topo-btn gold" onclick="switchTopo('wheel')">
+            <span>🎡</span> Cấu Trúc Bánh Xe (Link Wheel)
+        </button>
+        <button class="topo-btn" onclick="switchTopo('comparison')">
+            <span>⚖️</span> So Sánh & Ứng Dụng Thực Chiến
+        </button>
+    </div>
+
+    <!-- 1. SILO STRUCTURE SECTION -->
+    <div id="silo" class="topo-section active">
+        <div class="card-box">
+            <div class="section-header">
+                <h2><span>🏰</span> Cấu Trúc Silo Cô Lập Tầng (Strict Vertical Silo)</h2>
+            </div>
+            <p class="desc-text">
+                <strong>Nguyên lý Silo:</strong> Mỗi nhóm chủ đề (Cluster) được cô lập thành một "Tháp Silo" riêng biệt. Bài viết vệ tinh (Spoke) thuộc Silo nào chỉ truyền Link Juice đi lên bài Hub của Silo đó và bài Conversion Page. **Tuyệt đối không link chéo sang Silo khác** để giữ độ liên quan chủ đề (Topical Relevance) tinh khiết 100%.
+            </p>
+
+            <div class="silo-grid">
+                <!-- SILO 1: MỞ TÀI KHOẢN CHỨNG KHOÁN -->
+                <div class="silo-column">
+                    <div class="silo-header">SILO A: CHỦ ĐỀ MỞ TÀI KHOẢN CHỨNG KHOÁN</div>
+
+                    <div class="silo-level">
+                        <div class="silo-node" style="border-color: var(--success); background: rgba(0, 230, 118, 0.12); text-align: center;">
+                            <strong style="color: var(--success);">🏆 TARGET CONVERSION PAGE</strong><br>
+                            https://www.dsc.com.vn/mo-tai-khoan (eKYC)
+                        </div>
+                    </div>
+
+                    <div class="arrow-up">▲ Tất cả các tầng đều dồn Link Juice về eKYC ▲</div>
+                    <div class="silo-arrow">↑</div>
+
+                    <div class="silo-level">
+                        <div class="silo-node" style="border-color: var(--primary); background: rgba(0, 229, 255, 0.1);">
+                            <strong style="color: var(--primary);">PILLAR HUB A (Bài Trụ Cột)</strong><br>
+                            Hướng dẫn cách mở tài khoản chứng khoán cho người mới<br>
+                            <span style="font-size: 11px; color: var(--text-muted);">URL: /kien-thuc/cach-mo-tai-khoan-chung-khoan</span>
+                        </div>
+                    </div>
+
+                    <div class="silo-arrow">↑</div>
+
+                    <div class="silo-level">
+                        <div class="silo-node">
+                            <strong>SUB-HUB A1:</strong> Nên mở tài khoản chứng khoán ở đâu tốt nhất?<br>
+                            <span style="font-size: 11px; color: var(--text-muted);">Anchor 👉 "hướng dẫn mở tài khoản chứng khoán"</span>
+                        </div>
+                        <div class="silo-node">
+                            <strong>SUB-HUB A2:</strong> Phí mở tài khoản chứng khoán & Phí lưu ký<br>
+                            <span style="font-size: 11px; color: var(--text-muted);">Anchor 👉 "mở tài khoản trực tuyến eKYC"</span>
+                        </div>
+                    </div>
+
+                    <div class="silo-arrow">↑</div>
+
+                    <div class="silo-level">
+                        <div class="silo-node"><strong>SPOKE 1:</strong> Lãi suất tiết kiệm ACB 2026</div>
+                        <div class="silo-node"><strong>SPOKE 2:</strong> Lãi suất tiết kiệm BIDV 2026</div>
+                        <div class="silo-node"><strong>SPOKE 3:</strong> So sánh phí giao dịch chứng khoán</div>
+                    </div>
+                </div>
+
+                <!-- SILO 2: CÁCH CHƠI CHỨNG KHOÁN -->
+                <div class="silo-column pink-silo">
+                    <div class="silo-header">SILO B: CHỦ ĐỀ CÁCH CHƠI / ĐẦU TƯ CHỨNG KHOÁN</div>
+
+                    <div class="silo-level">
+                        <div class="silo-node" style="border-color: var(--success); background: rgba(0, 230, 118, 0.12); text-align: center;">
+                            <strong style="color: var(--success);">🏆 TARGET CONVERSION PAGE</strong><br>
+                            https://www.dsc.com.vn/mo-tai-khoan (eKYC)
+                        </div>
+                    </div>
+
+                    <div class="arrow-up">▲ Tất cả các tầng đều dồn Link Juice về eKYC ▲</div>
+                    <div class="silo-arrow">↑</div>
+
+                    <div class="silo-level">
+                        <div class="silo-node" style="border-color: var(--accent); background: rgba(255, 0, 122, 0.1);">
+                            <strong style="color: var(--accent);">PILLAR HUB B (Bài Trụ Cột)</strong><br>
+                            Cách chơi chứng khoán cho người mới bắt đầu A-Z<br>
+                            <span style="font-size: 11px; color: var(--text-muted);">URL: /kien-thuc/cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau</span>
+                        </div>
+                    </div>
+
+                    <div class="silo-arrow">↑</div>
+
+                    <div class="silo-level">
+                        <div class="silo-node">
+                            <strong>SUB-HUB B1:</strong> Cách chơi chứng khoán cho sinh viên vốn nhỏ<br>
+                            <span style="font-size: 11px; color: var(--text-muted);">Anchor 👉 "cách chơi chứng khoán cho người mới"</span>
+                        </div>
+                        <div class="silo-node">
+                            <strong>SUB-HUB B2:</strong> Các thuật ngữ chứng khoán cẩm nang F0<br>
+                            <span style="font-size: 11px; color: var(--text-muted);">Anchor 👉 "cách đầu tư chứng khoán"</span>
+                        </div>
+                    </div>
+
+                    <div class="silo-arrow">↑</div>
+
+                    <div class="silo-level">
+                        <div class="silo-node"><strong>SPOKE 1:</strong> Chỉ báo RSI là gì & Chiến lược giao dịch</div>
+                        <div class="silo-node"><strong>SPOKE 2:</strong> Mô hình nến đảo chiều trong trading</div>
+                        <div class="silo-node"><strong>SPOKE 3:</strong> Quản trị rủi ro trong đầu tư cổ phiếu</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. PYRAMID STRUCTURE SECTION -->
+    <div id="pyramid" class="topo-section">
+        <div class="card-box">
+            <div class="section-header">
+                <h2><span>🔺</span> Cấu Trúc Kim Tự Tháp (Tiered Pyramid Architecture)</h2>
+            </div>
+            <p class="desc-text">
+                <strong>Nguyên lý Kim Tự Tháp:</strong> Phân chia bài viết thành 4 Tầng uy quyền (Topical Authority Tiers). Càng lên tầng cao, lượng đường liên kết đổ về càng lớn để nâng trọng số thẩm quyền cho Trang Đích Money Page (Mở Tài Khoản eKYC).
+            </p>
+
+            <div class="pyramid-container">
+                <!-- TIER 1 -->
+                <div class="pyramid-tier">
+                    <div class="pyr-node pyr-tier-1">
+                        <span class="pyr-badge tier-1-b">TIER 1 — MONEY / CONVERSION PAGE</span>
+                        <div style="font-weight: 800; font-size: 16px; color: #fff;">Trang Đích Mở Tài Khoản DSC</div>
+                        <div style="font-size: 12px; color: var(--success); font-family: monospace;">https://www.dsc.com.vn/mo-tai-khoan</div>
+                    </div>
+                </div>
+
+                <div style="color: var(--success); font-size: 18px; font-weight: 800;">▲ 100% Backlinks & Internal Links Dồn Về Đỉnh Kim Tự Tháp ▲</div>
+
+                <!-- TIER 2 -->
+                <div class="pyramid-tier">
+                    <div class="pyr-node pyr-tier-2">
+                        <span class="pyr-badge tier-2-b">TIER 2 — CORE PILLAR HUBS</span>
+                        <div style="font-weight: 700; font-size: 14px; color: #fff;">Hub 1: Hướng dẫn mở tài khoản chứng khoán | Hub 2: Cách chơi chứng khoán F0</div>
+                        <div style="font-size: 12px; color: var(--primary);">Link ngược lại Tier 1 với Anchor Text: "mở tài khoản DSC", "đăng ký eKYC"</div>
+                    </div>
+                </div>
+
+                <div style="color: var(--primary); font-size: 18px; font-weight: 800;">▲ Tier 3 Truyền Link Juice Lên Tier 2 ▲</div>
+
+                <!-- TIER 3 -->
+                <div class="pyramid-tier">
+                    <div class="pyr-node pyr-tier-3">
+                        <span class="pyr-badge tier-3-b">TIER 3 — SUB-HUBS</span>
+                        <div style="font-weight: 600; font-size: 13px;">Chủ đề Lãi suất, Phí giao dịch, Thuật ngữ F0, Sinh viên đầu tư</div>
+                    </div>
+                    <div class="pyr-node pyr-tier-3">
+                        <span class="pyr-badge tier-3-b">TIER 3 — SUB-HUBS</span>
+                        <div style="font-weight: 600; font-size: 13px;">Phân tích Kỹ thuật: RSI, Bollinger, Mô hình nến, VSA</div>
+                    </div>
+                </div>
+
+                <div style="color: var(--secondary); font-size: 18px; font-weight: 800;">▲ Tier 4 (860 Bài Viết) Đẩy Trọng Số Uy Quyền Tận Cùng Upward ▲</div>
+
+                <!-- TIER 4 -->
+                <div class="pyramid-tier">
+                    <div class="pyr-node pyr-tier-4">
+                        <span class="pyr-badge tier-4-b">TIER 4 (860 ARTICLES)</span>
+                        <div>860 Bài viết Vệ tinh Long-tail từ Sitemap Live & Finalized</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. LINK WHEEL STRUCTURE SECTION -->
+    <div id="wheel" class="topo-section">
+        <div class="card-box">
+            <div class="section-header">
+                <h2><span>🎡</span> Cấu Trúc Bánh Xe / Vòng Nhẫn (Link Wheel / Ring Architecture)</h2>
+            </div>
+            <p class="desc-text">
+                <strong>Nguyên lý Bánh Xe:</strong> Các bài viết vệ tinh (Spokes) trong cùng một Cluster không chỉ chỉ link về Hub trung tâm mà còn **nối đuôi nhau tạo thành một Vòng Khép Kín (Closed Loop Ring)**: Spoke 1 ➔ Spoke 2 ➔ Spoke 3 ➔ Spoke 4 ➔ Spoke 1. Giúp Googlebot cào toàn bộ mạng lưới không bị cụt (Dead-end) và giữ chân người đọc lâu hơn (Increase Time-on-site).
+            </p>
+
+            <div class="wheel-container">
+                <!-- CENTER HUB -->
+                <div class="wheel-center">
+                    <span class="node-tag hub-t" style="margin-bottom: 6px;">CENTER HUB</span>
+                    <strong style="color: #fff; font-size: 14px;">Mở Tài Khoản & Cách Chơi Chứng Khoán</strong>
+                    <div style="font-size: 11px; color: var(--primary); margin-top: 4px;">Tất cả 6 bài Spoke đều bắn Link vào Hub Trung Tâm</div>
+                </div>
+
+                <!-- RING NODES -->
+                <div class="wheel-node wn-1">
+                    <strong style="color: var(--primary);">Spoke 1: Lãi suất ACB</strong><br>
+                    🔗 Link ➔ Spoke 2 & Hub
+                </div>
+
+                <div class="wheel-node wn-2">
+                    <strong style="color: var(--primary);">Spoke 2: Phí giao dịch</strong><br>
+                    🔗 Link ➔ Spoke 3 & Hub
+                </div>
+
+                <div class="wheel-node wn-3">
+                    <strong style="color: var(--primary);">Spoke 3: Phí lưu ký</strong><br>
+                    🔗 Link ➔ Spoke 4 & Hub
+                </div>
+
+                <div class="wheel-node wn-4">
+                    <strong style="color: var(--accent);">Spoke 4: Chỉ báo RSI</strong><br>
+                    🔗 Link ➔ Spoke 5 & Hub
+                </div>
+
+                <div class="wheel-node wn-5">
+                    <strong style="color: var(--accent);">Spoke 5: Mô hình Nến</strong><br>
+                    🔗 Link ➔ Spoke 6 & Hub
+                </div>
+
+                <div class="wheel-node wn-6">
+                    <strong style="color: var(--accent);">Spoke 6: Thuật ngữ F0</strong><br>
+                    🔗 Link ➔ Spoke 1 & Hub
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. COMPARISON SECTION -->
+    <div id="comparison" class="topo-section">
+        <div class="card-box">
+            <div class="section-header">
+                <h2><span>⚖️</span> So Sánh 3 Cấu Trúc Internal Link Trong Dự Án SEO DSC</h2>
+            </div>
+
+            <table class="comp-table">
+                <thead>
+                    <tr>
+                        <th>Mô Hình Cấu Trúc</th>
+                        <th>Cách Thức Liên Kết</th>
+                        <th>Ưu Điểm Nổi Bật</th>
+                        <th>Ứng Dụng Thực Tế Tại Dự Án DSC</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong style="color: var(--primary);">Silo Structure</strong></td>
+                        <td>Cô lập giữa các Cluster. Chỉ link Dọc (Spoke ➔ Sub-hub ➔ Hub). Không link ngang sang Cluster khác.</td>
+                        <td>Giữ độ liên quan chủ đề (Topical Relevance) 100%. Tránh pha loãng PageRank.</td>
+                        <td>Áp dụng cho bài viết chuyên sâu nhóm <strong>Phân tích Kỹ thuật</strong> và <strong>Kinh tế Vĩ mô</strong>.</td>
+                    </tr>
+                    <tr>
+                        <td><strong style="color: var(--accent);">Pyramid Structure</strong></td>
+                        <td>Phân tầng 4 cấp. Dồn 100% trọng số Link Juice từ 860 bài viết về Đỉnh Kim Tự Tháp (Trang Mở Tài Khoản eKYC).</td>
+                        <td>Tối đa hóa tỷ lệ chuyển đổi (CRO) và đẩy thẩm quyền cao nhất cho Money Page.</td>
+                        <td>Áp dụng làm **Mô hình Tổng thể** cho toàn bộ 860 bài viết trên Website DSC.</td>
+                    </tr>
+                    <tr>
+                        <td><strong style="color: var(--warning);">Link Wheel</strong></td>
+                        <td>Nối đuôi các bài Spoke trong cùng Cluster tạo thành vòng khép kín + Đẩy về Hub trung tâm.</td>
+                        <td>Tăng chỉ số Time-on-Site, giúp Googlebot Index bài viết mới cực nhanh.</td>
+                        <td>Áp dụng cho nhóm bài viết **So sánh Lãi suất ngân hàng** & **Hướng dẫn cho người mới F0**.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 DSC Content SEO Agent — Internal Linking Topology Framework</p>
+    </footer>
+</div>
+
+<script>
+    function switchTopo(topoId) {
+        document.querySelectorAll('.topo-btn').forEach(btn => btn.classList.remove('active'));
+        document.querySelectorAll('.topo-section').forEach(sec => sec.classList.remove('active'));
+
+        event.currentTarget.classList.add('active');
+        document.getElementById(topoId).classList.add('active');
+    }
+</script>
+
+</body>
+</html>

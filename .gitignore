@@ -1,6 +1,15 @@
 # API Keys — không commit lên git
 .antigravity/config/api-keys.md
 
+# GSC credentials & token — tuyệt đối không commit
+.antigravity/config/gsc-credentials.json
+.antigravity/config/gsc-token.json
+
+# GSC data cache (gitignored — chứa data nhạy cảm về traffic)
+knowledge/raw/gsc/queries.csv
+knowledge/raw/gsc/pages.csv
+knowledge/raw/gsc/cache-meta.json
+
 # Local scratch / editor state
 .antigravity/brain/
 knowledge/4-content/.obsidian/
@@ -166,3 +175,7 @@ scripts/optimize_mapping.py
 scripts/search_existing_hubs.py
 scripts/update_hub_types.py
 temp_qa.py
+
+# Python cache & workflow backups
+__pycache__/
+*.bak

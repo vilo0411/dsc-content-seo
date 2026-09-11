@@ -1,8 +1,9 @@
 ---
-description: Tối ưu bài cũ — Brand audit + rewrite + QA (Seven Sweeps Framework)
+name: optimize
+description: Tối ưu bài cũ — Brand audit + rewrite + QA (Seven Sweeps Framework).
 ---
 
-# Lệnh: /optimize [slug] [options]
+# Tối Ưu Bài Viết Cũ (Optimize)
 
 ## Options Hỗ Trợ
 - `--step`: Tối ưu chi tiết từng bước — dừng chờ `/approve` sau Proposal.
@@ -71,6 +72,52 @@ PRODUCT BRIDGE : [Tên sản phẩm DSC phù hợp] — [Góc dẫn dắt tự n
 - Kích hoạt agent `.antigravity/agents/brand-guardian.md`.
 - Phân tích bài cũ: tìm vi phạm anti-ai-rules, thông tin sản phẩm lỗi thời, giọng văn sai persona.
 - Output: danh sách lỗi cụ thể (dòng, loại lỗi, gợi ý sửa).
+
+**Bước 2.3 — GSC Performance Audit:**
+
+> Bước này không block workflow — nếu không có data thì bỏ qua hoàn toàn.
+
+**Part A — Performance Metrics (2 cấp lookup):**
+
+Cấp 1: Tìm `[slug]` trong `knowledge/3-pipeline/gsc-opportunities.md`
+  - Tìm thấy → dùng data pre-processed (đã có opportunity analysis đầy đủ)
+
+Cấp 2 (fallback): Tìm URL `https://www.dsc.com.vn/kien-thuc/[slug]` trong `knowledge/raw/gsc/pages.csv`
+  - Tìm thấy → lấy raw metrics: clicks, impressions, ctr, position
+  - Không tìm thấy hoặc file CSV không tồn tại → log `[GSC] Chưa có data cho bài này — bỏ qua` và chuyển sang Bước 3
+
+Nếu có data → bổ sung vào **Proposal Section 1** dưới heading `📊 GSC Performance Context`:
+```
+📊 GSC Performance Context:
+- Impressions: [X] | CTR: [Y]% | Position: [Z]
+- Flag title rewrite: [CÓ nếu CTR < 3%] / [KHÔNG]
+- Keyword ngủ quên (từ knowledge/raw/gsc/queries.csv, lọc theo page URL này):
+  → "[query 1]" — [clicks] clicks, pos [pos] — Đề xuất: thêm H2/section
+  → "[query 2]" — [clicks] clicks, pos [pos] — Đề xuất: thêm vào intro/body
+  (Chỉ liệt kê tối đa 5 queries có clicks ≥ 5 và position ≤ 20)
+```
+
+**Part B — Backfill Link Opportunities:**
+
+Mục tiêu: tìm bài published khác nên link ĐẾN bài đang optimize.
+
+Quy trình:
+1. Đọc `knowledge/3-pipeline/anchor-index.md` — tìm tối đa 10 bài có related keywords với target keyword của `[slug]`
+2. Lọc bài chưa có link đến `https://www.dsc.com.vn/kien-thuc/[slug]`
+3. Ưu tiên bài có clicks cao trong `knowledge/raw/gsc/pages.csv` (nếu có data)
+4. Với tối đa 5 bài được chọn:
+   - Đọc `knowledge/4-content/3-finalized/Final-[source-slug].md`
+   - Tìm câu/đoạn có ngữ nghĩa liên quan → đề xuất anchor text cụ thể từ text trong bài nguồn (KHÔNG dùng exact match keyword)
+
+Bổ sung vào Proposal dưới heading `📎 Backfill Link Suggestions`:
+```
+📎 Backfill Link Suggestions:
+| Bài nguồn (slug) | Đoạn gợi ý chèn link | Anchor text | Clicks/kỳ |
+|------------------|----------------------|-------------|-----------|
+| [source-slug]    | "[...trích đoạn...]" | "[anchor]"  | [N]       |
+```
+
+Bỏ qua Part B hoàn toàn nếu: không tìm được bài related rõ ràng trong anchor-index.md, hoặc file Final-[source-slug].md không tồn tại.
 
 ---
 

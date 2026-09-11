@@ -392,6 +392,36 @@ Mỗi khi người dùng đưa ra phản hồi chỉnh sửa, hãy trích xuất
 - **Bản năng:** Phân tách câu hỏi và câu trả lời trong mục FAQs bằng dòng trống để script QA không đếm gộp thành câu dài.
 - **Phạm vi:** Global
 
+---
+
+### Đối soát Internal Link với Sitemap Live từ nguồn chính thức
+- **Trạng thái:** ACTIVE
+- **Nguồn:** chi-so-ps
+- **Phản hồi từ User:** "các internal link đang bị sai. Bạn có đúng là lấy tư sitemap DSC ko?"
+- **Bản năng:** 100% URL internal link và conversion link phải dùng Absolute URL đầy đủ khớp chính xác từng ký tự với sitemap_knowledge.xml (hoặc sitemap-cache.json). Tuyệt đối không tự suy đoán slug ngắn hơn và không tự ý chèn dấu / ở cuối URL khi sitemap không có.
+- **Phạm vi:** Global
+
+---
+
+### Phân tích liên thị trường và tác động chuỗi cung ứng cho chỉ số chứng khoán quốc tế
+- **Trạng thái:** ACTIVE
+- **Nguồn:** chi-so-kospi
+- **Phản hồi từ User:** Phê duyệt bài viết Chỉ số Kospi thành công.
+- **Bản năng:** Khi phân tích các chỉ số chứng khoán quốc tế (như KOSPI, Nikkei 225, Dow Jones), luôn tích hợp góc nhìn Phân tích liên thị trường (Intermarket Analysis) kết nối với thị trường Việt Nam (tác động chuỗi cung ứng, dòng vốn FDI, độ lệch múi giờ giao dịch) và các cơ chế quản trị rủi ro hạ nhiệt thị trường (Circuit Breaker) để cung cấp giá trị thực chiến vượt trội cho Active Trader (P3).
+- **Phạm vi:** Global
+
+---
+
+### Ma trận 2D kết hợp QoQ x YoY và Bóc tách bẫy mùa vụ cho chỉ số kết quả kinh doanh quý
+- **Trạng thái:** ACTIVE
+- **Nguồn:** chi-so-qoq
+- **Phản hồi từ User:** Phê duyệt bài viết Chỉ số QoQ thành công.
+- **Bản năng:** Đối với các bài viết về chỉ số tài chính kết quả kinh doanh quý (như QoQ), luôn tích hợp Ma trận 2D kết hợp giữa QoQ và YoY (4 kịch bản: Tăng tốc, Phục hồi, Cảnh báo, Suy thoái) và phân tích chiều sâu về bẫy mùa vụ (Seasonality) trong các ngành đặc thù (bán lẻ Q4, bất động sản) để nâng cao tính định lượng thực chiến cho nhà đầu tư (P3 & P2).
+- **Phạm vi:** Global
+
+
+
+
 
 
 

@@ -1,8 +1,9 @@
 ---
-description: Kích hoạt Content Feedback Loop để học hỏi từ lịch sử sửa bài
+name: learn
+description: Kích hoạt Content Feedback Loop để học hỏi từ lịch sử sửa bài.
 ---
 
-# Lệnh: /learn [slug?]
+# Content Feedback Loop
 
 Phân tích lịch sử chỉnh sửa và cập nhật bộ quy tắc của hệ thống.
 

@@ -1,8 +1,9 @@
 ---
-description: Chuyển Outline đã duyệt thành bài viết nháp chuẩn Human-centric (Phase 3)
+name: drafting
+description: Chuyển Outline đã duyệt thành bài viết nháp chuẩn Human-centric (Phase 3).
 ---
 
-# Lệnh: /drafting [slug]
+# Drafting
 
 Dùng sau khi Outline đã được `/approve`. Chỉ thực hiện Phase 3 (Drafting + QA).
 `[slug]` là tên file outline, ví dụ: `lai-suat-tiet-kiem-acb`.

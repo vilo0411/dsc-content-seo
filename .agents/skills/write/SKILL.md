@@ -1,8 +1,9 @@
 ---
-description: Kích hoạt quy trình viết bài SEO chuẩn Framework (Full Pipeline)
+name: write
+description: Kích hoạt quy trình viết bài SEO chuẩn Framework (Full Pipeline).
 ---
 
-# Lệnh: /write [keyword] [options]
+# Quy Trình Viết Bài SEO Full Pipeline
 
 ## Options Hỗ Trợ
 - `--step`: Viết từng bước, dừng lại chờ `/approve` tại mỗi gate.

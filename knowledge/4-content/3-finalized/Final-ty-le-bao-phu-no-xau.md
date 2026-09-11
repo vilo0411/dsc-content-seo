@@ -80,7 +80,7 @@ Nhóm ngân hàng tư nhân như Techcombank (TCB) và ACB cũng giữ vững b�
 
 ### Kết hợp tỷ lệ LLR và tỷ lệ nợ xấu NPL
 
-Khi phân tích cổ phiếu ngân hàng, nhà đầu tư không nên chỉ nhìn vào tỷ lệ nợ xấu đứng độc lập. Ngân hàng có nợ xấu tăng nhưng duy trì LLR cao vẫn an toàn hơn đơn vị có nợ xấu thấp nhưng bộ đệm dự phòng mỏng.
+Khi phân tích cổ phiếu ngân hàng, nhà đầu tư không nên chỉ nhìn vào tỷ lệ [nợ xấu](https://www.dsc.com.vn/kien-thuc/no-xau-trong-cac-co-phieu-ngan-hang-la-gi) đứng độc lập. Ngân hàng có nợ xấu tăng nhưng duy trì LLR cao vẫn an toàn hơn đơn vị có nợ xấu thấp nhưng bộ đệm dự phòng mỏng.
 
 Việc theo dõi xu hướng biến động LLR qua các quý giúp bạn nhận diện sớm rủi ro tín dụng. Nếu tỷ lệ bao phủ nợ xấu liên tục sụt giảm, lợi nhuận của ngân hàng trong các quý tiếp theo sẽ phải gánh chi phí dự phòng lớn.
 

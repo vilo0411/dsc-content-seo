@@ -1,8 +1,9 @@
 ---
-description: Nghiên cứu SERP và tạo Expert Outline (Phase 1 & 2 của write pipeline)
+name: outlining
+description: Nghiên cứu SERP và tạo Expert Outline (Phase 1 & 2 của write pipeline).
 ---
 
-# Lệnh: /outlining [keyword]
+# Nghiên cứu SERP & Tạo Expert Outline
 
 Dùng khi bạn chỉ muốn thực hiện bước Research + Outline mà chưa cần viết bài ngay.
 Tương đương với `Phase 1` và `Phase 2` của lệnh `/write`.

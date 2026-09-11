@@ -1,8 +1,9 @@
 ---
-description: Tạo Topic Cluster map từ file keyword csv hoặc raw file
+name: cluster
+description: Tạo Topic Cluster map từ file keyword csv hoặc raw file.
 ---
 
-# Lệnh: /cluster [csv|raw file]
+# Phân nhóm từ khóa (Topic Clustering)
 
 ## Nhiệm vụ
 Phân nhóm từ khóa (Topic Clustering) từ file dữ liệu đầu vào.

@@ -1,8 +1,9 @@
 ---
-description: Sửa nội dung bài viết theo yêu cầu chat — có context load bắt buộc
+name: revise
+description: Sửa nội dung bài viết theo yêu cầu chat — có context load bắt buộc.
 ---
 
-# Lệnh: /revise [slug]
+# Chỉnh Sửa Bài Viết (Revise)
 
 ## Nhiệm vụ
 Chỉnh sửa một đoạn / section cụ thể trong bài viết theo yêu cầu của người dùng, đảm bảo bản sửa không vi phạm anti-ai-rules.

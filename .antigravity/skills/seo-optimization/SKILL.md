@@ -21,6 +21,46 @@ Kỹ năng này chuyên dùng để chẩn đoán và nâng cấp các bài vi�
 
 ## 🛠️ Procedures
 
+### Phase 0: Source Acquisition (Tự động — chỉ chạy nếu file chưa có)
+
+**Mục đích:** Nếu `knowledge/4-content/3-finalized/Final-[slug].md` chưa tồn tại, tự động crawl từ URL live thay vì yêu cầu người dùng tải file thủ công.
+
+**Bước 0.1 — Resolve slug & URL:**
+- Nếu input là full URL (`https://www.dsc.com.vn/kien-thuc/[slug]`) → extract slug từ path cuối
+- Nếu input là slug → lookup trong `.antigravity/skills/internal-linking/scripts/sitemap-cache.json` (`mapping.[slug]`) để lấy URL đầy đủ
+- Nếu slug không khớp trong sitemap cache → báo lỗi và dừng:
+  > "Slug `[slug]` chưa được publish hoặc sitemap cache cũ — chạy `python .antigravity/skills/internal-linking/scripts/sync_sitemap.py` để cập nhật rồi thử lại."
+- Nếu file `Final-[slug].md` đã tồn tại → bỏ qua Phase 0, chuyển sang Phase 1 ngay.
+
+**Bước 0.2 — Crawl content:**
+```
+WebFetch: https://r.jina.ai/https://www.dsc.com.vn/kien-thuc/[slug]
+```
+- Nếu response < 500 ký tự hoặc lỗi HTTP → dừng và yêu cầu user paste nội dung thủ công vào file `Final-[slug].md`.
+
+**Bước 0.3 — Extract main content (bỏ nav/header/footer):**
+- Tìm **H1 đầu tiên** (`# ...`) → đây là điểm bắt đầu nội dung
+- Cắt tại block footer: cụm links ngắn liên tiếp (`[Chính sách]`, `[Liên hệ]`, `[Facebook]`...) xuất hiện sau đoạn nội dung thực cuối cùng
+- Giữ nguyên 100% images (`![alt](url)`), headings, tables, code blocks trong vùng nội dung
+
+**Bước 0.4 — Lưu file:**
+- Tạo file `knowledge/4-content/3-finalized/Final-[slug].md` với frontmatter:
+  ```
+  ---
+  source_url: https://www.dsc.com.vn/kien-thuc/[slug]
+  fetched_at: [YYYY-MM-DD]
+  ---
+  ```
+  theo sau là toàn bộ nội dung đã extract.
+- Thông báo: "✓ Đã crawl và lưu `Final-[slug].md` từ URL live. Tiếp tục Phase 1..."
+
+> **Input formats được hỗ trợ:**
+> - `/optimize chi-so-ps` — slug thuần
+> - `/optimize https://www.dsc.com.vn/kien-thuc/chi-so-ps` — full URL
+> - `/optimize Final-chi-so-ps.md` — path file local (bỏ qua Phase 0)
+
+---
+
 ### Phase 1: Content Audit & Proposal (Khám bệnh & Đề xuất)
 1. **Health Check & Analysis:**
    - Phân tích On-page SEO (H1, Meta, Mật độ từ khóa).

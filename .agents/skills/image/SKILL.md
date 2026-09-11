@@ -1,8 +1,9 @@
 ---
-description: Tạo chiến lược hình ảnh và Gemini prompts cho bài viết đã có draft hoặc finalized
+name: image
+description: Tạo chiến lược hình ảnh và Gemini prompts cho bài viết đã có draft hoặc finalized.
 ---
 
-# Lệnh: /image [slug]
+# Chiến lược hình ảnh & Gemini Prompts
 
 Kích hoạt Visual Architect + SEO Image Skill để tạo hệ thống hình ảnh cho bài viết.
 Output: Gemini prompts sẵn sàng paste — lưu file + show inline.

@@ -122,6 +122,9 @@
 ### Bảng so sánh đa chiều các loại giá trị cổ phiếu
 - Đối với các bài viết giải thích khái niệm dễ gây nhầm lẫn (như Thị giá cổ phiếu - P2/F0), bắt buộc phải tích hợp một Bảng đối sánh đa chiều (Mệnh giá vs Giá trị sổ sách vs Thị giá) để triệt tiêu hoàn toàn sự mơ hồ. Hãy luôn duy trì 100% liên kết tuyệt đối khớp với sitemap live của DSC và đặt dấu hai chấm `:` ở cuối nhãn in đậm trong danh sách để tuân thủ định dạng.
 
+### Đối soát Internal Link với Sitemap Live từ nguồn chính thức
+- 100% URL internal link và conversion link phải dùng Absolute URL đầy đủ khớp chính xác từng ký tự với sitemap_knowledge.xml (hoặc sitemap-cache.json). Tuyệt đối không tự suy đoán slug ngắn hơn và không tự ý chèn dấu / ở cuối URL khi sitemap không có.
+
 ## Sản phẩm & Thương hiệu (Products & Brand Context)
 
 ### Ưu tiên Môi giới 1:1 trong Product Bridge
@@ -151,4 +154,10 @@
 ### Tiết giảm mốc thời gian động và bổ sung quy định NFC/CCCD
   1. Tránh lạm dụng mốc thời gian động (ví dụ: "Tính đến tháng 8/2026,") ở đầu mọi tiêu đề H2 hoặc phần quy định pháp luật chung. Chỉ dùng mốc thời gian động ở những câu thực sự chứa số liệu/thống kê biến động (như biểu phí, số lượng tài khoản, lãi suất). Đa dạng hóa cách viết tự nhiên (ví dụ: "Theo quy chế hiện hành...", "Thống kê nội bộ tháng 8/2026 cho thấy...", "Theo thông tin dịch vụ cập nhật tháng 8/2026...").
   2. Cập nhật các dữ liệu thực tế và quy chế mới nhất của cơ quan quản lý (như quy định bắt buộc của UBCKNN về quét NFC trên thẻ CCCD gắn chip để đồng bộ thông tin với Cơ sở dữ liệu quốc gia về dân cư) làm luận cứ tăng tính E-E-A-T và thời sự cho bài viết hướng dẫn mở tài khoản.
+
+### Phân tích liên thị trường và tác động chuỗi cung ứng cho chỉ số chứng khoán quốc tế
+- Khi phân tích các chỉ số chứng khoán quốc tế (như KOSPI, Nikkei 225, Dow Jones), luôn tích hợp góc nhìn Phân tích liên thị trường (Intermarket Analysis) kết nối với thị trường Việt Nam (tác động chuỗi cung ứng, dòng vốn FDI, độ lệch múi giờ giao dịch) và các cơ chế quản trị rủi ro hạ nhiệt thị trường (Circuit Breaker) để cung cấp giá trị thực chiến vượt trội cho Active Trader (P3).
+
+### Ma trận 2D kết hợp QoQ x YoY và Bóc tách bẫy mùa vụ cho chỉ số kết quả kinh doanh quý
+- Đối với các bài viết về chỉ số tài chính kết quả kinh doanh quý (như QoQ), luôn tích hợp Ma trận 2D kết hợp giữa QoQ và YoY (4 kịch bản: Tăng tốc, Phục hồi, Cảnh báo, Suy thoái) và phân tích chiều sâu về bẫy mùa vụ (Seasonality) trong các ngành đặc thù (bán lẻ Q4, bất động sản) để nâng cao tính định lượng thực chiến cho nhà đầu tư (P3 & P2).
 

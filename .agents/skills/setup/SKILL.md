@@ -1,8 +1,9 @@
 ---
-description: Build Knowledge Base — chạy 1 lần khi khởi tạo project
+name: setup
+description: Build Knowledge Base cho hệ thống content pipeline.
 ---
 
-# Lệnh: /setup [all|company|market|audience|icp]
+# Khởi Tạo Knowledge Base
 
 ## Nhiệm vụ
 Khởi tạo và xây dựng Knowledge Base cho hệ thống.

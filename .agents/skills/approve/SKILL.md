@@ -1,8 +1,9 @@
 ---
-description: Phê duyệt giai đoạn hiện tại (Outline → Draft/Final/Optimize)
+name: approve
+description: Phê duyệt giai đoạn hiện tại (Outline → Draft/Final/Optimize) trong Content Pipeline.
 ---
 
-# Lệnh: /approve
+# Phê duyệt giai đoạn hiện tại
 
 ## Nhiệm vụ
 Cho phép người dùng phê duyệt một bản nháp, outline, hoặc bản tối ưu để đẩy nó sang giai đoạn tiếp theo trong Content Pipeline.
