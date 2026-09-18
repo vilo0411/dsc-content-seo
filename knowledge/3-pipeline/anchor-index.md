@@ -14,6 +14,10 @@ File này là danh sách tập trung của tất cả bài viết trên website 
 
 | Anchor Text Gợi ý | URL | Từ khóa Liên quan | Trạng thái |
 | :--- | :--- | :--- | :--- |
+| chi phí biên là gì | https://www.dsc.com.vn/kien-thuc/chi-phi-bien-la-gi | Chi Phí Biên Là Gì? Công Thức, Ý Nghĩa & Cách Tính Cho F0 | Finalized (Mới) |
+| chỉ báo MACD là gì | https://www.dsc.com.vn/kien-thuc/macd-la-gi | MACD Là Gì? Cấu Tạo 3 Thành Phần & Bộ Lọc Nhiễu 3 Lớp | Finalized (Mới) |
+| phân biệt cổ phiếu và trái phiếu | https://www.dsc.com.vn/kien-thuc/phan-biet-co-phieu-va-trai-phieu | Phân Biệt Cổ Phiếu Và Trái Phiếu: 10 Khác Biệt & Cách Chọn | Finalized (Mới) |
+| vốn lưu động là gì | https://www.dsc.com.vn/kien-thuc/von-luu-dong-la-gi | Vốn Lưu Động Là Gì? Công Thức, Ý Nghĩa & Cách Tính Cho F0 | Finalized (Mới) |
 | 1 triệu có chơi được chứng khoán không | https://www.dsc.com.vn/kien-thuc/1-trieu-co-choi-duoc-chung-khoan-khong | 1 triệu có chơi được chứng khoán không, kiến thức DSC | Live Published |
 | chứng khoán phái sinh là gì | https://www.dsc.com.vn/kien-thuc/chung-khoan-phai-sinh-la-gi-huong-dan-dau-tu-cho-nguoi-moi-bat-dau | Chứng Khoán Phái Sinh Là Gì? Hướng Dẫn Đầu Tư An Toàn Cho F0 | Finalized (Mới) |
 | 20 nguyên tắc giao dịch của Richard Donchian | https://www.dsc.com.vn/kien-thuc/20-nguyen-tac-giao-dich-cua-richard-donchian | 20 nguyên tắc giao dịch của Richard Donchian, kiến thức DSC | Live Published |
@@ -22,6 +26,11 @@ File này là danh sách tập trung của tất cả bài viết trên website 
 | cổ phiếu penny là gì | https://www.dsc.com.vn/kien-thuc/co-phieu-penny-la-gi | Cổ Phiếu Penny Là Gì? 3 Rủi Ro & Bộ Lọc Penny An Toàn Cho F0 | Finalized (Mới) |
 | lợi thế cạnh tranh là gì | https://www.dsc.com.vn/kien-thuc/loi-the-canh-tranh-la-gi | Lợi Thế Cạnh Tranh Là Gì? 5 Con Hào Kinh Tế Chọn Cổ Phiếu | Finalized (Mới) |
 | nợ xấu trong các cổ phiếu ngân hàng là gì | https://www.dsc.com.vn/kien-thuc/no-xau-trong-cac-co-phieu-ngan-hang-la-gi | Nợ Xấu Cổ Phiếu Ngân Hàng Là Gì? 5 Nhóm Nợ & Cách Phân Tích | Finalized (Mới) |
+| lỗ kép là gì | https://www.dsc.com.vn/kien-thuc/lo-kep-la-gi | Lỗ Kép Là Gì? Nguyên Nhân, Tác Hại & 4 Cách Phòng Tránh | Finalized (Mới) |
+| free float là gì | https://www.dsc.com.vn/kien-thuc/free-float-la-gi | Free Float Là Gì? Ý Nghĩa, Công Thức Tính & 3 Lưu Ý Tránh Bẫy Cổ Phiếu Bo Cung | Finalized (Mới) |
+| báo cáo tài chính hợp nhất là gì | https://www.dsc.com.vn/kien-thuc/bao-cao-tai-chinh-hop-nhat | Báo Cáo Tài Chính Hợp Nhất Là Gì? Vai Trò & 4 Thành Phần Cốt Lõi | Finalized (Mới) |
+| phương pháp quả cầu tuyết | https://www.dsc.com.vn/kien-thuc/phuong-phap-qua-cau-tuyet | Phương Pháp Quả Cầu Tuyết: 4 Bước Trả Nợ Dave Ramsey | Finalized (Mới) |
+| sàn giao dịch tiền điện tử | https://www.dsc.com.vn/kien-thuc/san-giao-dich-tien-dien-tu | Top 7 Sàn Giao Dịch Tiền Điện Tử Uy Tín Nhất 2026 | Finalized (Mới) |
 | 5 chỉ số quan trọng cua phân tích cơ bản trong chu | https://www.dsc.com.vn/kien-thuc/5-chi-so-quan-trong-cua-phan-tich-co-ban-trong-chung-khoan | 5 chỉ số quan trọng cua phân tích cơ bản trong chu, kiến thức DSC | Live Published |
 | ETF là gì | https://www.dsc.com.vn/kien-thuc/etf-la-gi | ETF là gì, kiến thức DSC | Live Published |
 | Margin là gì | https://www.dsc.com.vn/kien-thuc/margin-la-gi | Margin là gì, kiến thức DSC | Live Published |
@@ -362,7 +371,7 @@ File này là danh sách tập trung của tất cả bài viết trên website 
 | hệ số tuong quan là gì | https://www.dsc.com.vn/kien-thuc/he-so-tuong-quan-la-gi | hệ số tuong quan là gì, kiến thức DSC | Live Published |
 | hiểu rõ về khai niem gio hang va tác động đến tieu | https://www.dsc.com.vn/kien-thuc/hieu-ro-ve-khai-niem-gio-hang-va-tac-dong-den-tieu-dung | hiểu rõ về khai niem gio hang va tác động đến tieu, kiến thức DSC | Live Published |
 | hop dong mo tài khoản chứng khoán | https://www.dsc.com.vn/kien-thuc/hop-dong-mo-tai-khoan-chung-khoan | hop dong mo tài khoản chứng khoán, kiến thức DSC | Live Published |
-| huong dan cách doc bao cao tài chính nhung thong t | https://www.dsc.com.vn/kien-thuc/huong-dan-cach-doc-bao-cao-tai-chinh-nhung-thong-tin-quan-trong | huong dan cách doc bao cao tài chính nhung thong t, kiến thức DSC | Live Published |
+| cách đọc báo cáo tài chính | https://www.dsc.com.vn/kien-thuc/huong-dan-cach-doc-bao-cao-tai-chinh-nhung-thong-tin-quan-trong | Cách Đọc Báo Cáo Tài Chính Cho F0: 5 Bước Chuẩn & 4 Bẫy Cần Tránh | Finalized (Mới) |
 | huong dan cách doc bao cao thuong nien hiệu quả | https://www.dsc.com.vn/kien-thuc/huong-dan-cach-doc-bao-cao-thuong-nien-hieu-qua | huong dan cách doc bao cao thuong nien hiệu quả, kiến thức DSC | Live Published |
 | hướng dẫn cách mở tài khoản chứng khoán cho n | https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan | Hướng dẫn cách mở tài khoản chứng khoán cho người mới | Finalized (Mới) |
 | huong dan cách mua cổ phiếu ssi tai chứng khoán ds | https://www.dsc.com.vn/kien-thuc/huong-dan-cach-mua-co-phieu-ssi-tai-chung-khoan-dsc | huong dan cách mua cổ phiếu ssi tai chứng khoán ds, kiến thức DSC | Live Published |
@@ -402,7 +411,7 @@ File này là danh sách tập trung của tất cả bài viết trên website 
 | lenh ato atc lo mp là gì | https://www.dsc.com.vn/kien-thuc/lenh-ato-atc-lo-mp-la-gi | lenh ato atc lo mp là gì, kiến thức DSC | Live Published |
 | lenh mtl trong giao dịch chứng khoán là gì | https://www.dsc.com.vn/kien-thuc/lenh-mtl-trong-giao-dich-chung-khoan-la-gi | lenh mtl trong giao dịch chứng khoán là gì, kiến thức DSC | Live Published |
 | lợi nhuận ròng và lợi nhuận sau thuế khác gì | https://www.dsc.com.vn/kien-thuc/loi-nhuan-rong-va-loi-nhuan-sau-thue | Lợi nhuận ròng và lợi nhuận sau thuế khác gì nhau? [2026] | Finalized (Mới) |
-| luu ky chứng khoán moi dieu ban cần biết | https://www.dsc.com.vn/kien-thuc/luu-ky-chung-khoan-moi-dieu-ban-can-biet | luu ky chứng khoán moi dieu ban cần biết, kiến thức DSC | Live Published |
+| lưu ký chứng khoán là gì | https://www.dsc.com.vn/kien-thuc/luu-ky-chung-khoan-moi-dieu-ban-can-biet | Lưu ký chứng khoán là gì? Vai trò, quy trình & lưu ý 2026 | Finalized (Đã tối ưu) |
 | ly thuyet buoc di ngau nhien va phi ngau nhien cua | https://www.dsc.com.vn/kien-thuc/ly-thuyet-buoc-di-ngau-nhien-va-phi-ngau-nhien-cua-gia | ly thuyet buoc di ngau nhien va phi ngau nhien cua, kiến thức DSC | Live Published |
 | ly thuyet dow va ung dung trong phân tích kỹ thuật | https://www.dsc.com.vn/kien-thuc/ly-thuyet-dow-va-ung-dung-trong-phan-tich-ky-thuat | ly thuyet dow va ung dung trong phân tích kỹ thuật, kiến thức DSC | Live Published |
 | m a là gì | https://www.dsc.com.vn/kien-thuc/m-a-la-gi | m a là gì, kiến thức DSC | Live Published |
@@ -618,7 +627,7 @@ File này là danh sách tập trung của tất cả bài viết trên website 
 | mo hinh cai nem là gì | https://www.dsc.com.vn/kien-thuc/mo-hinh-cai-nem-la-gi | mo hinh cai nem là gì, kiến thức DSC | Live Published |
 | mo hinh capm là gì | https://www.dsc.com.vn/kien-thuc/mo-hinh-capm-la-gi | mo hinh capm là gì, kiến thức DSC | Live Published |
 | mo hinh chu nhat là gì | https://www.dsc.com.vn/kien-thuc/mo-hinh-chu-nhat-la-gi | mo hinh chu nhat là gì, kiến thức DSC | Live Published |
-| mo hinh co duoi nheo là gì | https://www.dsc.com.vn/kien-thuc/mo-hinh-co-duoi-nheo-la-gi | mo hinh co duoi nheo là gì, kiến thức DSC | Live Published |
+| mô hình cờ đuôi nheo là gì | https://www.dsc.com.vn/kien-thuc/mo-hinh-co-duoi-nheo-la-gi | Mô hình cờ đuôi nheo là gì? Cách giao dịch cờ đuôi nheo | Finalized (Mới) |
 | mo hinh coc tay cam là gì | https://www.dsc.com.vn/kien-thuc/mo-hinh-coc-tay-cam-la-gi | mo hinh coc tay cam là gì, kiến thức DSC | Live Published |
 | mo hinh kinh doanh là gì | https://www.dsc.com.vn/kien-thuc/mo-hinh-kinh-doanh-la-gi | mo hinh kinh doanh là gì, kiến thức DSC | Live Published |
 | mo hinh la co là gì | https://www.dsc.com.vn/kien-thuc/mo-hinh-la-co-la-gi | mo hinh la co là gì, kiến thức DSC | Live Published |
@@ -743,7 +752,7 @@ File này là danh sách tập trung của tất cả bài viết trên website 
 | drawdown trong đầu tư là gì | https://www.dsc.com.vn/kien-thuc/drawdown-trong-dau-tu-la-gi | drawdown trong đầu tư là gì, kiến thức DSC | Live Published |
 | due diligence la gi | https://www.dsc.com.vn/kien-thuc/due-diligence-la-gi | Final-due-diligence-la-gi | Finalized (Mới) |
 | ecb là gì vai tro va chuc nang cua ngân hàng trung | https://www.dsc.com.vn/kien-thuc/ecb-la-gi-vai-tro-va-chuc-nang-cua-ngan-hang-trung-uong-chau-au | ecb là gì vai tro va chuc nang cua ngân hàng trung, kiến thức DSC | Live Published |
-| fomo trong đầu tư chứng khoán là gì | https://www.dsc.com.vn/kien-thuc/fomo-trong-dau-tu-chung-khoan-la-gi | fomo trong đầu tư chứng khoán là gì, kiến thức DSC | Live Published |
+| fomo trong đầu tư chứng khoán là gì | https://www.dsc.com.vn/kien-thuc/fomo-trong-dau-tu-chung-khoan-la-gi | FOMO Trong Đầu Tư Chứng Khoán Là Gì? 5 Cách Vượt Bẫy | Finalized (Mới) |
 | full Margin là gì loi khuyen cho nhà đầu tư moi | https://www.dsc.com.vn/kien-thuc/full-margin-la-gi-loi-khuyen-cho-nha-dau-tu-moi | full Margin là gì loi khuyen cho nhà đầu tư moi, kiến thức DSC | Live Published |
 | gia cổ phiếu tang nhung khoi luong giam he lo dieu | https://www.dsc.com.vn/kien-thuc/gia-co-phieu-tang-nhung-khoi-luong-giam-he-lo-dieu-gi-cho-nha-dau-tu | gia cổ phiếu tang nhung khoi luong giam he lo dieu, kiến thức DSC | Live Published |
 | giá trị doanh nghiệp là gì | https://www.dsc.com.vn/kien-thuc/gia-tri-doanh-nghiep-la-gi | Giá Trị Doanh Nghiệp Là Gì? 5 Cách Định Giá Cổ Phiếu | Finalized (Mới) |

@@ -39,7 +39,7 @@
 ---
 
 ## 2. Phân tích Đối thủ SERP (Competitor Analysis)
-> Dữ liệu thực tế thu thập từ Top 3–5 kết quả Bing/DuckDuckGo cho từ khóa chính. Đây là căn cứ cho mọi đề xuất ở Section 4 và 5.
+> Dữ liệu thực tế thu thập từ Top 3–5 kết quả Google Việt Nam (DataForSEO qua `serp_research.py`) cho từ khóa chính. Đây là căn cứ cho mọi đề xuất ở Section 4 và 5.
 
 ### 2.1 Bảng so sánh tổng quan
 

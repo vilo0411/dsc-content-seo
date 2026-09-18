@@ -25,10 +25,12 @@ This agent is the primary executor of **Step 1 (Context Collection)** and **Step
 **🔍 Search Protocol (BẮT BUỘC — đọc trước khi search):**
 - **Dùng skill `.antigravity/skills/web-serp/SKILL.md`** — không dùng browser trực tiếp.
 - **Query = Target Keyword** — Luôn dùng từ khóa mục tiêu (ví dụ: `lãi suất tiết kiệm ACB 2025`) làm search query. Tuyệt đối không dùng tiêu đề bài viết, URL slug, hoặc tên file.
-- **SERP Lookup**: WebFetch `https://r.jina.ai/https://www.bing.com/search?q=<từ+khóa+url+encoded>` → parse markdown lấy top 5–10 URLs hợp lệ. Lọc bỏ: `bing.com`, `microsoft.com`, `facebook.com`, `youtube.com`, URL ads.
-- **Content Extraction — SONG SONG**: Gọi đồng thời tất cả URLs qua `https://r.jina.ai/{url}`. Bỏ qua URL trả về nội dung rỗng hoặc < 200 ký tự — không retry.
+- **SERP Lookup + Content Extraction — 1 lệnh duy nhất**:
+  `python .antigravity/skills/web-serp/scripts/serp_research.py "<keyword>" --top 10 --extract 5`
+  Script tự gọi DataForSEO (Google VN) + Jina song song, có cache 30 ngày. **Không thêm `--no-cache`** trừ khi user yêu cầu refresh (API có phí — xem mục 💰 trong `web-serp/SKILL.md`).
+- URL nào script ghi `Lỗi: Không extract được` → bỏ qua, không retry; chỉ fallback WebFetch `https://r.jina.ai/{url}` khi ≥ 3 URL lỗi.
 
-1.  **Competitor Analysis:** Với mỗi URL hợp lệ trong Top 3–5, trích xuất từ Jina markdown output:
+1.  **Competitor Analysis:** Với mỗi block `### Competitor N` trong output script (Top 3–5), bổ sung:
     *   Full Heading structures (H1–H4) theo đúng thứ tự xuất hiện.
     *   Intent từng section — section đó trả lời câu hỏi gì của người dùng?
     *   High-value data points: số liệu thực, ngày cập nhật, bảng so sánh, calculator.

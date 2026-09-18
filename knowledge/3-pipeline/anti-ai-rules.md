@@ -324,21 +324,22 @@ Câu viết chung chung không chỉ bị xếp hạng thấp — nó **bị lo�
 - `"Tính đến tháng [M/Y], ..."` — cho số liệu tích lũy hoặc trạng thái hiện tại
 - `"Tháng [M/Y]: ..."` — cho dữ liệu snapshot của một mốc cụ thể
 
-**CẢNH BÁO LẠM DỤNG (BẮT BUỘC TUÂN THỦ):**
-- **Không tự chế hoặc chèn bừa bãi** các mốc thời gian giả tạo (như `"Theo thông tin phân tích cập nhật tháng 8/2026,"` hoặc `"Tháng 8/2026: ..."`) trước các định nghĩa kinh điển, khái niệm lý thuyết, hoặc các câu giải thích chung không chứa số liệu.
-- **Chỉ sử dụng mốc thời gian khi thực sự có số liệu/dữ liệu thực tế** cần xác thực tính cập nhật (ví dụ: lãi suất tiết kiệm, số lượng tài khoản, biểu phí giao dịch, hoặc quy định pháp lý có ngày có hiệu lực thực tế).
-- Việc lặp đi lặp lại mốc thời gian một cách máy móc dưới mỗi tiêu đề (heading) H2 sẽ làm giảm chất lượng bài viết và gây trải nghiệm xấu cho người đọc.
+**CẢNH BÁO LẠM DỤNG & CẬP NHẬT THỜI GIAN (BẮT BUỘC TUÂN THỦ):**
+- **Cập nhật thời gian thực tế:** Hiện tại là **tháng 9/2026** (hoặc quý/năm thực tế tại thời điểm viết bài). Tuyệt đối không dùng lại mốc cũ gượng ép (như tháng 8/2026).
+- **Không tự chế hoặc chèn bừa bãi** các mốc thời gian giả tạo (như `"Tính đến tháng 9/2026,"`, `"Theo thông tin phân tích cập nhật..."`) trước các định nghĩa kinh điển, khái niệm lý thuyết, hoặc các câu giải thích chung không chứa số liệu.
+- **Chỉ sử dụng mốc thời gian khi thực sự có số liệu/dữ liệu thực tế** cần xác thực tính cập nhật (ví dụ: lãi suất tiết kiệm, số lượng tài khoản, biểu phí giao dịch, hoặc quy định pháp lý có ngày có hiệu lực thực tế) và phải viết thành câu tự nhiên (ví dụ: `"Năm 2026, HPG mở rộng dự án Dung Quất 2..."`).
+- Việc lặp đi lặp lại cụm từ `"Tính đến tháng..."` một cách máy móc ở đầu câu/đoạn văn sẽ làm bài viết bị gượng ép, giảm chất lượng trôi chảy và tạo văn phong AI.
 
 **Blacklist bổ sung** (thêm vào Phần 1.1):
 
 | ❌ Cấm dùng | ✅ Thay bằng |
 | :--- | :--- |
-| "Gần đây, lãi suất tiết kiệm..." | "Tháng 7/2026, lãi suất tiết kiệm kỳ hạn 12 tháng..." |
-| "Trong những năm qua, thị trường..." | "Từ 2021 đến tháng 8/2026, VN-Index đã..." |
-| "Hiện nay, DSC đang cung cấp..." | "Tính đến tháng 8/2026, DSC cung cấp..." |
+| "Gần đây, lãi suất tiết kiệm..." | "Tháng 9/2026, lãi suất tiết kiệm kỳ hạn 12 tháng..." |
+| "Trong những năm qua, thị trường..." | "Từ 2021 đến 2026, VN-Index đã..." |
+| "Hiện nay, DSC đang cung cấp..." | "DSC đang áp dụng phí giao dịch..." (hoặc "Năm 2026, DSC áp dụng...") |
 | "Thời gian gần đây có nhiều F0..." | "Trong Q1–Q2/2026, số tài khoản F0 mở mới đạt..." |
 
-> **Ghi chú:** S3 đã yêu cầu tháng/năm — GEO chuẩn hóa format để AI parse được mốc thời gian và đánh giá độ tươi mới (recency) của dữ liệu.
+> **Ghi chú:** S3 đã yêu cầu tháng/năm — GEO chuẩn hóa format để AI parse được mốc thời gian, nhưng phải đảm bảo tính tự nhiên và chính xác theo mốc thời gian hiện tại.
 
 ---
 

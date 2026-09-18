@@ -15,6 +15,7 @@ Tài liệu này quản lý các nhóm chủ đề được phân tách từ d�
 | `/kien-thuc/lai-suat-tiet-kiem-vib/` | Lãi suất tiết kiệm ngân hàng VIB | 90 | Finalized |
 | `/kien-thuc/bao-cao-luu-chuyen-tien-te/` | Báo cáo lưu chuyển tiền tệ là gì | 1.900 | Finalized |
 | `/kien-thuc/bao-cao-lai-lo/` | Báo cáo lãi lỗ | - | Finalized |
+| `/kien-thuc/bao-cao-tai-chinh-hop-nhat/` | Báo cáo tài chính hợp nhất là gì | - | Finalized |
 | `/kien-thuc/bien-loi-nhuan-rong/` | Biên lợi nhuận ròng là gì | 1.300 | Finalized |
 | `/kien-thuc/loi-nhuan-rong-va-loi-nhuan-sau-thue/` | Lợi nhuận ròng và lợi nhuận sau thuế khác gì nhau | - | Finalized |
 | `/kien-thuc/casa-la-gi/` | CASA là gì | 5.400 | Finalized |
@@ -23,25 +24,31 @@ Tài liệu này quản lý các nhóm chủ đề được phân tách từ d�
 | `/kien-thuc/ldr-la-gi/` | Chỉ số LDR | - | Finalized |
 | `/kien-thuc/dar-la-gi/` | Chỉ số DAR | - | Finalized |
 | `/kien-thuc/chi-so-ros/` | chỉ số ROS | - | Finalized |
+| `/kien-thuc/chi-so-roa-la-gi-y-nghia-va-cach-su-dung/` | chỉ số ROA là gì | - | Finalized |
 | `/kien-thuc/chi-so-ps/` | Chỉ số P/S | - | Finalized |
 | `/kien-thuc/nen-mo-tai-khoan-chung-khoan-o-dau/` | Nên mở tài khoản chứng khoán ở đâu tốt nhất 2026 | - | Finalized |
+| `/kien-thuc/so-sanh-dau-tu-co-phieu-va-dau-tu-chung-chi-quy/` | So sánh cổ phiếu và chứng chỉ quỹ | - | Finalized |
 | `/kien-thuc/nen-gui-tiet-kiem-hay-dau-tu-chung-khoan/` | Nên gửi tiết kiệm hay đầu tư chứng khoán | - | Optimizing |
 | `/kien-thuc/cach-mo-tai-khoan-chung-khoan/` | Hướng dẫn cách mở tài khoản chứng khoán cho người mới | - | Finalized |
 | `/kien-thuc/phi-giao-dich-chung-khoan/` | Phí giao dịch chứng khoán | 1.500 | Finalized |
 | `/kien-thuc/phi-luu-ky-chung-khoan/` | Phí lưu ký chứng khoán | - | Finalized |
+| `/kien-thuc/luu-ky-chung-khoan-moi-dieu-ban-can-biet/` | Lưu ký chứng khoán là gì | - | Finalized |
 | `/kien-thuc/gio-giao-dich-chung-khoan/` | Giờ giao dịch chứng khoán | - | Finalized |
 | `/kien-thuc/bien-do-giao-dong-gia-co-phieu-la-gi/` | biên độ giao động giá cổ phiếu | - | Finalized |
 | `/kien-thuc/thi-gia-co-phieu-la-gi/` | thị giá cổ phiếu | - | Finalized |
 | `/kien-thuc/giao-dich-thoa-thuan-la-gi/` | Giao dịch thỏa thuận là gì | - | Finalized |
 | `/kien-thuc/cac-chi-so-phan-tich-bao-cao-tai-chinh/` | Các chỉ số phân tích báo cáo tài chính | - | Finalized |
 | `/kien-thuc/chi-phi-co-dinh/` | chi phí cố định | - | Finalized |
+| [/kien-thuc/chi-phi-bien-la-gi/](file:///e:/project/seo-writer-agent-main/knowledge/4-content/3-finalized/Final-chi-phi-bien-la-gi.md) | Chi phí biên là gì | - | Finalized |
 | `/kien-thuc/cach-chon-co-phieu-tot/` | cách chọn cổ phiếu tốt | - | Finalized |
 | `/kien-thuc/co-phieu-penny-la-gi/` | cổ phiếu penny | - | Finalized |
 | `/kien-thuc/cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau/` | cách chơi chứng khoán cho người mới bắt đầu | - | Finalized |
+| `/kien-thuc/cach-mua-co-phieu-online-cho-nguoi-moi-bat-dau/` | cách mua cổ phiếu online cho người mới bắt đầu | - | Optimizing |
 | `/kien-thuc/cach-choi-chung-khoan-cho-sinh-vien/` | cách chơi chứng khoán cho sinh viên | - | Finalized |
 | `/kien-thuc/sinh-vien-nen-dau-tu-gi/` | sinh viên nên đầu tư gì | - | Finalized |
 | `/kien-thuc/co-tien-nen-dau-tu-bac/` | có tiền nên đầu tư bạc | - | Finalized |
 | `/kien-thuc/ebit-la-gi/` | Chỉ số EBIT là gì | - | Finalized |
+| `/kien-thuc/cagr-la-gi/` | CAGR là gì | - | Finalized |
 | `/kien-thuc/von-hoa-thi-truong-la-gi/` | vốn hóa thị trường là gì | - | Finalized |
 | `/kien-thuc/cach-dau-tu-tien-ao/` | cách đầu tư tiền ảo | - | Finalized |
 | `/kien-thuc/cac-thuat-ngu-trong-chung-khoan/` | các thuật ngữ trong chứng khoán | - | Finalized |
@@ -49,6 +56,14 @@ Tài liệu này quản lý các nhóm chủ đề được phân tách từ d�
 | [/kien-thuc/co-phieu-uu-dai-la-gi/](file:///e:/project/seo-writer-agent-main/knowledge/4-content/3-finalized/Final-co-phieu-uu-dai-la-gi.md) | cổ phiếu ưu đãi là gì | 1.400.000 | Finalized |
 | [/kien-thuc/lai-suat-dieu-hanh-la-gi/](file:///e:/project/seo-writer-agent-main/knowledge/4-content/3-finalized/Final-lai-suat-dieu-hanh-la-gi.md) | lãi suất điều hành là gì | - | Finalized |
 | [/kien-thuc/lai-suat-huy-dong-la-gi/](file:///e:/project/seo-writer-agent-main/knowledge/4-content/3-finalized/Final-lai-suat-huy-dong-la-gi.md) | lãi suất huy động là gì | - | Finalized |
+| [/kien-thuc/free-float-la-gi/](file:///e:/project/seo-writer-agent-main/knowledge/4-content/3-finalized/Final-free-float-la-gi.md) | free float là gì | - | Finalized |
+| `/kien-thuc/san-giao-dich-tien-dien-tu/` | sàn giao dịch tiền điện tử | - | Finalized |
+| `/kien-thuc/huong-dan-cach-doc-bao-cao-tai-chinh-nhung-thong-tin-quan-trong/` | Hướng dẫn cách đọc báo cáo tài chính chi tiết cho người mới | - | Finalized |
+| `/kien-thuc/full-margin-la-gi-loi-khuyen-cho-nha-dau-tu-moi/` | Full margin là gì | - | Finalized |
+| [/kien-thuc/von-luu-dong-la-gi/](file:///e:/project/seo-writer-agent-main/knowledge/4-content/3-finalized/Final-von-luu-dong-la-gi.md) | Vốn lưu động là gì | - | Finalized |
+| [/kien-thuc/room-tin-dung-trong-linh-vuc-ngan-hang-la-gi-nhu-the-nao-la-tot/](file:///e:/project/seo-writer-agent-main/knowledge/4-content/3-finalized/Final-room-tin-dung-trong-linh-vuc-ngan-hang-la-gi-nhu-the-nao-la-tot.md) | Room tín dụng trong ngành ngân hàng là gì | - | Finalized |
+| [/kien-thuc/phan-biet-co-phieu-va-trai-phieu/](file:///e:/project/seo-writer-agent-main/knowledge/4-content/3-finalized/Final-phan-biet-co-phieu-va-trai-phieu.md) | Phân biệt cổ phiếu và trái phiếu | - | Finalized |
+
 
 
 
@@ -86,8 +101,12 @@ Tài liệu này quản lý các nhóm chủ đề được phân tách từ d�
 | `/kien-thuc/backtest-la-gi/` | backtest là gì | - | Finalized |
 | `/kien-thuc/take-profit-la-gi/` | take profit là gì | - | Finalized |
 | `/kien-thuc/ty-le-ky-quy/` | tỷ lệ ký quỹ | - | Finalized |
+| [/kien-thuc/mo-hinh-co-duoi-nheo-la-gi/](file:///e:/project/seo-writer-agent-main/knowledge/4-content/3-finalized/Final-mo-hinh-co-duoi-nheo-la-gi.md) | mô hình cờ đuôi nheo là gì | - | Finalized |
 | `/kien-thuc/chi-so-tam-ly/` | Chỉ số tâm lý | - | Finalized |
+| `/kien-thuc/fomo-trong-dau-tu-chung-khoan-la-gi/` | FOMO trong đầu tư chứng khoán là gì | - | Finalized |
 | [/kien-thuc/pivot-points-la-gi/](file:///e:/project/seo-writer-agent-main/knowledge/4-content/3-finalized/Final-pivot-points-la-gi.md) | Pivot points là gì | - | Finalized |
+| `/kien-thuc/macd-la-gi/` | MACD là gì | - | Finalized |
+| `/kien-thuc/mo-hinh-coc-tay-cam-la-gi/` | mô hình cốc tay cầm | - | Optimizing |
 
 
 
@@ -144,6 +163,8 @@ Tài liệu này quản lý các nhóm chủ đề được phân tách từ d�
 | `/kien-thuc/due-diligence-la-gi/` | due diligence là gì | - | Finalized |
 | `/kien-thuc/phuong-phap-canslim-trong-dau-tu-chung-khoan-la-gi/` | phương pháp canslim | - | Finalized |
 | `/kien-thuc/phan-tich-nganh-la-gi/` | Phân tích ngành là gì | - | Finalized |
+| `/kien-thuc/lo-kep-la-gi/` | Lỗ kép là gì | - | Finalized |
+| `/kien-thuc/phuong-phap-qua-cau-tuyet/` | phương pháp quả cầu tuyết | - | Finalized |
 
 
 

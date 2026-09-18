@@ -1,90 +1,119 @@
-import os
+#!/usr/bin/env python3
+"""Internal-link audit across finalized articles.
+
+Builds an in/out link matrix for knowledge/4-content/3-finalized/*.md using the
+absolute https://www.dsc.com.vn/kien-thuc/<slug> URLs found in each article, classifies
+inbound anchors against anchor-index.md (Exact / Partial / Generic) and writes
+knowledge/3-pipeline/internal-link-dashboard.md.
+
+Usage:  python .antigravity/skills/internal-linking/scripts/link_audit.py [--orphans]
+"""
+
+from __future__ import annotations
+
+import argparse
+import io
 import re
-from pathlib import Path
+import sys
 from datetime import datetime
+from pathlib import Path
 
-# Configuration
-CONTENT_DIR = Path("content/blog/3-finalized")
-OUTPUT_FILE = Path("knowledge/3-pipeline/internal-link-dashboard.md")
-INDEX_FILE = Path("knowledge/3-pipeline/anchor-index.md")
+if hasattr(sys.stdout, "buffer"):
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 
-# Regex
-LINK_REGEX = re.compile(r'\[([^\]]+)\]\(([^)]+)\)')
+ROOT = Path(__file__).resolve().parents[4]
+CONTENT_DIR = ROOT / "knowledge/4-content/3-finalized"
+OUTPUT_FILE = ROOT / "knowledge/3-pipeline/internal-link-dashboard.md"
+INDEX_FILE = ROOT / "knowledge/3-pipeline/anchor-index.md"
 
-def get_anchor_index():
-    index = {} # filename -> {exact: "", partial: []}
+KB_URL = re.compile(r"\[([^\]]+)\]\((https://www\.dsc\.com\.vn/kien-thuc/([^)\s/?#]+))[^)]*\)")
+
+
+def get_anchor_index() -> dict[str, dict]:
+    """slug -> {exact: anchor text, partial: [related keywords]}"""
+    index: dict[str, dict] = {}
     if not INDEX_FILE.exists():
         return index
-    
-    with open(INDEX_FILE, 'r', encoding='utf-8') as f:
-        lines = f.readlines()
-        for line in lines:
-            if "|" in line and "[" in line:
-                cells = [c.strip() for c in line.split("|")]
-                if len(cells) >= 4:
-                    file_match = re.search(r'\[(.*?)\]', cells[1])
-                    if file_match:
-                        filename = file_match.group(1)
-                        exact = cells[2].lower()
-                        partials = [p.strip().lower() for p in cells[3].split(",")]
-                        index[filename] = {"exact": exact, "partial": partials}
+    for line in INDEX_FILE.read_text(encoding="utf-8").splitlines():
+        if not line.startswith("|"):
+            continue
+        cells = [c.strip() for c in line.strip().strip("|").split("|")]
+        if len(cells) < 4 or not cells[1].startswith("http"):
+            continue
+        slug = cells[1].rstrip("/").rsplit("/", 1)[-1]
+        index[slug] = {"exact": cells[0].lower(),
+                       "partial": [p.strip().lower() for p in cells[2].split(",") if p.strip()]}
     return index
 
-def classify_anchor(anchor, filename, index):
-    anchor_clean = anchor.lower().strip()
-    entry = index.get(filename, {})
-    if anchor_clean == entry.get("exact", ""): return "Exact"
-    if anchor_clean in entry.get("partial", []): return "Partial"
-    return "Generic/Title"
 
-def audit():
+def classify_anchor(anchor: str, slug: str, index: dict) -> str:
+    a = anchor.lower().strip()
+    entry = index.get(slug, {})
+    if a == entry.get("exact", ""):
+        return "Exact"
+    if any(a == p or a in p for p in entry.get("partial", [])):
+        return "Partial"
+    return "Generic"
+
+
+def article_slug(path: Path, text: str) -> str:
+    m = re.search(r"^Slug:\s*(.+)$", text, re.M)
+    if m:
+        return m.group(1).strip().strip("/")
+    return re.sub(r"^(Final|Draft|Optimize)-", "", path.stem)
+
+
+def audit(show_orphans: bool) -> None:
     index = get_anchor_index()
     if not CONTENT_DIR.exists():
-        print("Content directory not found.")
+        print(f"Content directory not found: {CONTENT_DIR}")
         return
-    
-    files = list(CONTENT_DIR.glob("*.md"))
-    data = {}
+    data: dict[str, dict] = {}
+    for path in sorted(CONTENT_DIR.glob("*.md")):
+        text = path.read_text(encoding="utf-8", errors="ignore")
+        src = article_slug(path, text)
+        data.setdefault(src, {"file": path.name, "out": [], "in": []})
+        for anchor, url, dest in KB_URL.findall(text):
+            if dest == src:
+                continue
+            data[src]["out"].append((anchor, dest))
+            data.setdefault(dest, {"file": "", "out": [], "in": []})["in"].append((anchor, src))
 
-    for file_path in files:
-        rel_path = file_path.name
-        with open(file_path, 'r', encoding='utf-8') as f:
-            content = f.read()
-        
-        if rel_path not in data:
-            data[rel_path] = {"out_links": [], "in_links": []}
+    rows, orphans = [], []
+    for slug in sorted(data):
+        st = data[slug]
+        if not st["file"]:
+            continue  # link target that isn't a local finalized article (live-only URL)
+        n_in, n_out = len(st["in"]), len(st["out"])
+        kinds = [classify_anchor(a, slug, index) for a, _ in st["in"]]
+        ex, pa = kinds.count("Exact"), kinds.count("Partial")
+        ge = n_in - ex - pa
+        dist = f"{ex}/{pa}/{ge}"
+        if n_in == 0:
+            health, orphans = "🔴 Orphan", orphans + [slug]
+        elif n_in and ex / n_in > 0.6:
+            health = "🟠 Over-exact"
+        elif n_out < 3:
+            health = "🟡 Few out-links"
+        else:
+            health = "🟢 OK"
+        rows.append(f"| {slug} | {n_out} | {n_in} | {dist} | {health} |")
 
-        links = LINK_REGEX.findall(content)
-        for anchor, url in links:
-            if "Final-" in url or "3-finalized" in url:
-                dest_file = os.path.basename(url)
-                data[rel_path]["out_links"].append({"anchor": anchor, "dest": dest_file})
-                
-                if dest_file not in data:
-                    data[dest_file] = {"out_links": [], "in_links": []}
-                data[dest_file]["in_links"].append({"anchor": anchor, "source": rel_path})
+    report = ["# Internal Linking Dashboard",
+              f"> Updated: {datetime.now():%Y-%m-%d %H:%M:%S} · {len(rows)} bài · {len(orphans)} orphan",
+              "> Chỉ tính link giữa các file trong `3-finalized/` — inbound từ bài live cũ (không có file local) không được đếm.",
+              "", "| Slug | Out | In | Anchor (Exact/Partial/Generic) | Health |", "| :--- | :---: | :---: | :--- | :--- |"]
+    report += rows
+    if orphans:
+        report += ["", "## Orphan pages (0 inbound) — ưu tiên backfill", ""]
+        report += [f"- `{s}` → `python scripts/find_links.py --backfill {s}`" for s in orphans]
+    OUTPUT_FILE.write_text("\n".join(report) + "\n", encoding="utf-8")
+    print(f"Dashboard written: {OUTPUT_FILE} ({len(rows)} bài, {len(orphans)} orphan)")
+    if show_orphans:
+        print("\n".join(orphans))
 
-    # Generate Report
-    report = "# Internal Linking Dashboard\n"
-    report += f"> Updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n"
-    report += "| Page (File) | Out | In | Distribution (E/P/T) | Health |\n"
-    report += "| :--- | :---: | :---: | :--- | :--- |\n"
-
-    for file_name in sorted(data.keys()):
-        stats = data[file_name]
-        in_count = len(stats["in_links"])
-        exact = sum(1 for il in stats["in_links"] if classify_anchor(il["anchor"], file_name, index) == "Exact")
-        partial = sum(1 for il in stats["in_links"] if classify_anchor(il["anchor"], file_name, index) == "Partial")
-        title = in_count - exact - partial
-        
-        ratio_str = f"{exact/in_count:.0%}/{partial/in_count:.0%}/{title/in_count:.0%}" if in_count > 0 else "0/0/0"
-        health = "✅ Healthy" if in_count >= 3 else "🔍 Needs Links"
-        report += f"| `{file_name}` | {len(stats['out_links'])} | {in_count} | {ratio_str} | {health} |\n"
-
-    os.makedirs(OUTPUT_FILE.parent, exist_ok=True)
-    with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
-        f.write(report)
-    print(f"Audit completed: {OUTPUT_FILE}")
 
 if __name__ == "__main__":
-    audit()
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--orphans", action="store_true", help="Also print orphan slugs to stdout")
+    audit(ap.parse_args().orphans)

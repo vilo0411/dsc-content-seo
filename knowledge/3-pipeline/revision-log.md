@@ -19,7 +19,83 @@ File này ghi lại các chỉnh sửa thực tế mà người dùng thực hi�
 
 ---
 
-## Log
+### [2026-09-17] - cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau
+- **Lỗi đã sửa:** Bài gốc mỏng (~1.100 từ), chưa có Bảng đối sánh 5 tiêu chí Đầu tư chủ động vs Bị động, chưa có Bộ lọc 4 tiêu chí chọn cổ phiếu an toàn cho F0 (Lợi nhuận >15%, ROE >15%, vị thế đầu ngành, MA20), chưa giải thích rõ bước giá/lô 100 CP và 4 lệnh giao dịch cơ bản, số liệu minh họa cũ và chưa có chuyên mục FAQs Schema cho F0.
+- **Pattern:** Tối ưu hóa toàn diện theo Seven Sweeps Framework: Mở rộng dung lượng lên ~2.350 từ (chuẩn 94/100 PASS QA, 0 CRITICAL, 0 MAJOR, 0 câu >30 từ), bổ sung mốc số liệu VSDC 13,66M tài khoản (tháng 8/2026) và VN-Index 1.700 điểm, lồng ghép Bảng đối sánh 5 tiêu chí Đầu tư chủ động vs Bị động, Bộ lọc 4 tiêu chí chọn cổ phiếu F0, quy định lô 100 CP & 4 loại lệnh cơ bản (LO, MP, ATO, ATC), và chuyên mục FAQs Schema 4 câu hỏi thực tế F0. Tạo 2 hình ảnh 3D Vector Isometric mới chuẩn Brand Guidelines DSC (no-text, palette DSC, cấm màu đỏ) và bảo toàn 100% 4 hình ảnh gốc. Tích hợp 14 internal links tự nhiên và Product Bridge hệ sinh thái DSC (eKYC 3 phút, Nạp tiền BIDV 963369, Môi giới 1:1, App DSC Trading).
+- **Rule học được:** Luôn lồng ghép Bảng đối sánh 5 tiêu chí Đầu tư chủ động vs Bị động kết hợp Bộ lọc 4 tiêu chí chọn cổ phiếu an toàn và chuyên mục FAQs Schema giải đáp thắc mắc nạp rút tiền/đặt lệnh khi viết/tối ưu các bài hướng dẫn nhập môn chứng khoán cho nhà đầu tư F0 (P2).
+- **Scope:** Global
+
+### [2026-09-16] - mo-hinh-co-duoi-nheo-la-gi
+- **Lỗi đã sửa:** Bài gốc mỏng (~550 từ) được cào từ URL live (chưa có trên local repo); mở bài dạo đầu AI ("Mô hình cờ đuôi nheo là gì và cách ứng dụng..."); dính từ hứa hẹn mơ hồ và kết bài vi phạm Anti-AI rules ("Hy vọng bài viết..."); thiếu Bảng phân biệt Cờ đuôi nheo (Pennant) vs Mô hình lá cờ (Flag) vs Mô hình tam giác (Triangle); thiếu phân tích quy luật biến động Khối lượng giao dịch (Volume Profile); thiếu chiến lược retest kiểm tra lại cạnh cờ và quản trị bẫy bứt phá giả (False Breakout).
+- **Pattern:** Tối ưu hóa toàn diện theo Seven Sweeps Framework: Mở rộng dung lượng lên ~1.850 từ (chuẩn 100/100 PASS QA, 0 CRITICAL, 0 MAJOR, 0 MINOR, 0 câu >30 từ), bổ sung mốc số liệu giao dịch 2026, lồng ghép Bảng đối sánh 4 tiêu chí Cờ đuôi nheo vs Lá cờ vs Tam giác, quy luật 3 giai đoạn thanh khoản (Cột cờ - Thân cờ cạn vol - Breakout bùng nổ 1,5–2 lần MA20), công thức định lượng Target Price & Stop Loss, chiến lược phân bổ vốn 2 giai đoạn phòng ngự bẫy giá giả. Tạo 1 hình ảnh 3D Isometric mới chuẩn Brand Guidelines DSC (no-text, palette DSC, cấm màu đỏ) và bảo toàn 100% 4 hình ảnh gốc. Tích hợp Product Bridge hệ sinh thái DSC (App DSC Trading, eKYC 3 phút, Môi giới 1:1, Margin S9 10–13,5%/năm).
+- **Rule học được:** Luôn lồng ghép Bảng đối sánh Cờ đuôi nheo vs Lá cờ vs Tam giác kết hợp quy luật biến động thanh khoản Volume Profile 3 giai đoạn và phương pháp xử lý bẫy breakout giả khi viết/tối ưu các mô hình giá tiếp diễn cho nhà đầu tư ngắn hạn Active Trader (P3).
+- **Scope:** Global
+
+### [2026-09-16] - cagr-la-gi
+- **Lỗi đã sửa:** Bài gốc mỏng (~650 từ) được cào từ URL live (chưa có trên local repo); mở bài dạo đầu AI vĩ mô ("Trong thế giới đầu tư chứng khoán đầy biến động..."); dính nhiều emphatic quotes ("bức tranh lớn", "thước đo vàng", "lọc nhiễu", "siêu cổ phiếu", "đánh bại"); thiếu Bảng phân biệt CAGR vs AAGR (Tăng trưởng kép vs Tăng trưởng bình quân đơn) và CAGR vs IRR; thiếu Case study thực chiến cổ phiếu Việt Nam (FPT 2021–2026).
+- **Pattern:** Tối ưu hóa toàn diện theo Seven Sweeps Framework: Mở rộng dung lượng lên ~1.500 từ (chuẩn 99/100 PASS QA, 0 CRITICAL, 0 MAJOR, 0 câu >30 từ), bổ sung mốc số liệu thực tế giai đoạn 2021–2026, lồng ghép Bảng so sánh 4 tiêu chí CAGR vs AAGR, Bảng so sánh CAGR vs IRR, 3 phương pháp bấm Excel chi tiết (Công thức toán, Hàm RRI, Hàm RATE), Case study tính Revenue CAGR của FPT (đạt 18,26%/năm), 3 tiêu chí lọc cổ phiếu tăng trưởng bền vững (Revenue CAGR > 10%, EPS CAGR > 15%, CAGR > VN-Index 7–8%). Tạo 2 hình ảnh 3D Isometric chuẩn Brand Guidelines DSC (no-text, palette DSC, cấm màu đỏ) và bảo toàn 100% hình ảnh gốc. Tích hợp Product Bridge hệ sinh thái DSC (App DSC Trading, eKYC 3 phút, Môi giới 1:1).
+- **Rule học được:** Luôn lồng ghép Bảng đối sánh CAGR vs AAGR (chỉ rõ bẫy biến động AAGR hòa vốn 0% nhưng CAGR âm -13,4%/năm khi năm 1 +50% năm 2 -50%) kết hợp Bảng phân biệt CAGR vs IRR và Case study tính CAGR thực tế của doanh nghiệp niêm yết (FPT) khi viết/tối ưu bài về tỷ lệ tăng trưởng kép hàng năm cho nhà đầu tư (P2 & P3).
+- **Scope:** Global
+
+### [2026-09-16] - chi-phi-bien-la-gi
+- **Lỗi đã sửa:** Bài gốc mỏng (~980 từ) chưa có trên local repo (đã cào từ live URL); mở bài dạo đầu AI; thiếu đồ thị đường MC dạng chữ U và quy tắc tối đa hóa lợi nhuận khi Doanh thu biên bằng Chi phí biên (MR = MC); thiếu Product Bridge DSC; link internal ROCE bị gán sai URL trỏ nhầm sang bài lãi suất liên ngân hàng và dùng từ "Xem thêm".
+- **Pattern:** Tối ưu hóa toàn diện theo Seven Sweeps Framework: Mở rộng dung lượng lên 1.350 từ (chuẩn 99/100 PASS QA, 0 CRITICAL, 0 MAJOR, 0 câu >30 từ), bổ sung mốc thời gian cập nhật BCTC HPG/FPT (tháng 8/2026), lồng ghép đồ thị MC chữ U (hiệu ứng quy mô kinh tế vs phi kinh tế), 3 kịch bản MR vs MC (MR > MC, MR = MC, MR < MC), ví dụ tính toán số liệu cụ thể 1.000 sản phẩm, Bảng đối sánh MC vs ATC, sửa link internal BCTC hợp nhất và các chỉ số phân tích BCTC, tích hợp Product Bridge hệ sinh thái DSC (App DSC Trading, eKYC 3 phút, Môi giới 1:1).
+- **Rule học được:** Luôn lồng ghép đồ thị đường Chi phí biên (MC) dạng chữ U kết hợp quy tắc tối đa hóa lợi nhuận MR = MC và các ví dụ thực tiễn doanh nghiệp niêm yết (HPG, FPT) khi viết/tối ưu bài về Chi phí biên cho nhà đầu tư F0 (P2).
+- **Scope:** Global
+
+### [2026-09-16] - phan-biet-co-phieu-va-trai-phieu
+- **Lỗi đã sửa:** Bài gốc mỏng (~780 từ), bảng so sánh 9 tiêu chí sơ sài thiếu các khía cạnh pháp lý (nghĩa vụ thuế TNDN, hạ tầng HNX/HOSE), mở/kết bài vi phạm Anti-AI Rules, thiếu quy trình thanh lý tài sản khi doanh nghiệp giải thể và thiếu ma trận phân bổ vốn theo độ tuổi cho F0.
+- **Pattern:** Tối ưu hóa toàn diện theo Seven Sweeps Framework: Mở rộng dung lượng lên 1.850 từ (chuẩn 100/100 PASS QA, 0 CRITICAL, 0 MAJOR, 0 MINOR, 0 câu >30 từ), bổ sung mốc số liệu VSDC 13,66M tài khoản (tháng 8/2026) và giao dịch 15.000 tỷ/phiên trên HOSE, lồng ghép Siêu bảng so sánh 10 tiêu chí cốt lõi, 5 bước thanh lý tài sản theo Điều 208 Luật Doanh nghiệp 2020, Ma trận phân bổ vốn (Quy tắc 100 trừ tuổi) kèm ví dụ 100 triệu VNĐ, bóc tách 3 sai lầm F0 (bẫy TPDN 3 Không) và bộ 4 câu hỏi FAQs Schema. Tích hợp 1 hình ảnh 3D Isometric mới chuẩn Brand Guidelines DSC (no-text, palette DSC, cấm màu đỏ) và bảo toàn 100% 2 hình ảnh gốc. Tích hợp Product Bridge hệ sinh thái DSC (App DSC Trading, eKYC 3 phút, Môi giới 1:1, Nạp tiền BIDV 963369).
+- **Rule học được:** Luôn lồng ghép Siêu bảng 10 tiêu chí đối chiếu kết hợp 5 bước thanh lý tài sản khi doanh nghiệp giải thể theo Luật Doanh nghiệp 2020 và Ma trận phân bổ vốn theo Quy tắc 100 trừ độ tuổi khi viết/tối ưu bài phân biệt cổ phiếu và trái phiếu cho nhà đầu tư F0 (P2).
+- **Scope:** Global
+
+### [2026-09-16] - room-tin-dung-trong-linh-vuc-ngan-hang-la-gi-nhu-the-nao-la-tot
+- **Lỗi đã sửa:** Bài gốc mỏng (~730 từ), lý thuyết đại trà thiếu chiều sâu phân tích chứng khoán; thiếu cập nhật cơ chế giao 100% room tín dụng 15% tự động ngay đầu năm của NHNN giai đoạn 2024–2026; thiếu phân tích tác động nới room/cạn room tới cổ phiếu ngân hàng và thị trường chứng khoán (VN-Index); thiếu Siêu bảng phân bổ 5 tiêu chí CAMELS.
+- **Pattern:** Tối ưu hóa toàn diện theo Seven Sweeps Framework: Mở rộng dung lượng lên 1.830 từ (chuẩn 98/100 PASS QA, 0 CRITICAL, 0 MAJOR, 0 câu >30 từ), bổ sung mốc thời gian NHNN định hướng dư nợ 15% (tháng 8/2026), lồng ghép Siêu bảng 5 tiêu chí CAMELS và phân nhóm dư nợ ngân hàng, phân tích bối cảnh nới room bơm thanh khoản kích hoạt sóng cổ phiếu tăng 15–30%, 3 chiến lược đầu tư đón sóng room tín dụng tại Chứng khoán DSC, 2 hình ảnh 3D Isometric chuẩn Brand Guidelines DSC (no-text, palette DSC, cấm màu đỏ) và bộ 3 câu hỏi FAQs Schema. Tích hợp Product Bridge hệ sinh thái DSC (App DSC Trading, eKYC 3 phút, Môi giới 1:1, Margin 10–13,5%/năm).
+- **Rule học được:** Khi tối ưu bài viết thuộc chủ đề room tín dụng và chính sách điều hành tiền tệ ngân hàng, bắt buộc phải lồng ghép cơ chế giao room tự động mới nhất của NHNN kết hợp Siêu bảng 5 tiêu chí CAMELS và 3 chiến lược đầu tư đón sóng cổ phiếu ngân hàng có dư địa dư nợ cao nhắm đến đối tượng Active Trader (P3).
+- **Scope:** Global
+
+### [2026-09-16] - luu-ky-chung-khoan-moi-dieu-ban-can-biet
+- **Lỗi đã sửa:** Bài gốc mỏng (~900 từ), thiếu mốc số liệu VSDC 2026, thiếu phân tích cơ chế an toàn tài sản tách biệt khi CTCK gặp sự cố/phá sản theo Luật Chứng khoán 2019, thiếu ví dụ định lượng tính phí lưu ký và thiếu chuyên mục FAQs cho F0.
+- **Pattern:** Tối ưu hóa toàn diện theo Seven Sweeps Framework: Mở rộng dung lượng lên 2.088 từ (chuẩn 100% PASS QA, 0 câu >30 từ), bổ sung mốc thời gian VSDC 13,66M tài khoản (tháng 8/2026), lồng ghép Siêu bảng Mô hình lưu ký 2 cấp, phân tích cơ chế bảo vệ tài sản tách biệt tại VSDC theo Luật Chứng khoán 2019, tính phí định lượng 10.000 CP HPG = 2.700 VNĐ/tháng, 2 hình ảnh 3D Isometric chuẩn Brand Guidelines DSC và bộ 3 câu hỏi FAQs Schema. Tích hợp Product Bridge hệ sinh thái DSC (eKYC 3 phút, Môi giới 1:1, nạp tiền BIDV 963369).
+- **Rule học được:** Luôn lồng ghép Siêu bảng Mô hình lưu ký 2 cấp (VSDC & CTCK) kết hợp phân tích cơ chế an toàn tài sản tách biệt 100% tại VSDC theo Luật Chứng khoán 2019 và ví dụ đếm phí định lượng thực tế khi viết bài hướng dẫn về lưu ký chứng khoán cho nhà đầu tư mới (P2).
+- **Scope:** Global
+
+### [2026-09-16] - von-luu-dong-la-gi
+- **Lỗi đã sửa:** Bài gốc mỏng (~450 từ), ví dụ công ty giả định ABC/XYZ thiếu tính thực tiễn; các URL đối thủ thu thập ban đầu bị lỗi 404 được khắc phục bằng cách quét trực tiếp các URL live 200 OK (Bizzi, TOPI, Luật Việt Nam); ảnh minh họa sinh lần đầu bị dán chữ tiếng Anh rác được làm lại 100% no-text theo quy chuẩn Brand Guidelines DSC.
+- **Pattern:** Tối ưu hóa toàn diện theo Seven Sweeps Framework: Mở rộng dung lượng lên 1.850 từ (chuẩn 100% PASS QA), bổ sung mốc số liệu VSDC 13,66M tài khoản (tháng 8/2026), lồng ghép Vòng quay vốn lưu động & Chu kỳ chuyển đổi tiền mặt (CCC), 4 bẫy tài chính từ NWC (phải thu ảo, tồn kho ứ đọng, nợ ngắn hạn tài trợ dài hạn), Case study đối sánh thực tế giữa HPG (ngành sản xuất NWC dương dồi dào) và MWG (ngành bán lẻ NWC âm do chiếm dụng vốn nhà cung cấp).
+- **Rule học được:** Luôn đối chiếu trực tiếp các URL đối thủ trên SERP để đảm bảo 100% HTTP 200 OK live status, đồng thời gạt bỏ các ví dụ doanh nghiệp giả định ABC/XYZ để thay bằng các doanh nghiệp niêm yết lớn trên sàn HOSE (như HPG vs MWG) khi giải thích đặc thù vốn lưu động theo ngành.
+- **Scope:** Global
+
+### [2026-09-16] - huong-dan-cach-doc-bao-cao-tai-chinh-nhung-thong-tin-quan-trong
+- **Lỗi đã sửa:** Bài gốc quá mỏng (~300 từ) được mở rộng thành bài hướng dẫn chuyên sâu 2.500 từ chuẩn P2 (F0); hệ thống sinh ảnh AI mặc định bị dán chữ tiếng Anh rác và sai màu thương hiệu DSC được khắc phục bằng cách cập nhật quy chuẩn `image` skill: thiết lập `no-text: true`, tuyệt đối cấm màu đỏ, chuẩn hóa bảng màu DSC (`#00AD14`, `#2BE841`, `#10E7B3`, `#0D1B2A`).
+- **Pattern:** Chuẩn hóa quy trình 5 bước đọc BCTC từ Báo cáo kiểm toán ➔ Bảng cân đối kế toán ➔ Báo cáo KQKD ➔ Báo cáo LCTT ➔ Thuyết minh BCTC; lồng ghép 4 bẫy tài chính phổ biến (CFO âm, Phải thu lớn, D/E cao, Kiểm toán ngoại trừ); tạo bộ ảnh 3D Isometric chuẩn Brand Guidelines DSC và lưu tại `knowledge/4-content/images/`.
+- **Rule học được:** Khi sinh hình ảnh AI minh họa cho các bài content tài chính, luôn kích hoạt `no-text: true` trong prompt tiếng Anh để tránh dán chữ tiếng Anh rác hoặc méo font tiếng Việt, tuân thủ nghiêm ngặt Palette màu thương hiệu DSC và tự động sao chép ảnh về thư mục `knowledge/4-content/images/`.
+- **Scope:** Global
+
+### [2026-09-15] - san-giao-dich-tien-dien-tu
+- **Lỗi đã sửa:** Không có lỗi. Bài viết hoàn thành 100% PASS Quality Guardian QA (0 CRITICAL, 0 MAJOR), đáp ứng 100% word count target per section (2.369 từ) sau pre-check script. Tối ưu theo 3S Rule (Specific, Story, Statistics) và chuẩn GEO/AEO cho đối tượng P2 & P3 dạng Toplist.
+- **Pattern:** Lồng ghép 7 sàn giao dịch tiền điện tử hàng đầu 2026 (Binance, Coinbase, OKX, Bybit, Kraken, Bitget, KuCoin) với số liệu thanh khoản thực tế, 5 tiêu chí thẩm định an toàn (Proof of Reserves, Ví lạnh, Fee, P2P), phân tích khoảng trống pháp lý của tiền điện tử tại Việt Nam và so sánh đối chuẩn với kênh đầu tư chứng khoán chính thống tại DSC.
+- **Rule học được:** Khi viết các bài thuộc dạng Toplist đánh giá sản phẩm/dịch vụ tài chính hoặc thị trường tiền điện tử, bắt buộc phải phân rã target word count chi tiết cho từng mục H3 trong outline, công khai báo cáo Proof of Reserves (PoR) và phân tích đối sánh rủi ro ngắt kết nối pháp lý so với kênh đầu tư được UBCKNN bảo hộ.
+- **Scope:** Global
+
+### [2026-09-15] - phuong-phap-qua-cau-tuyet
+- **Lỗi đã sửa:** Không có lỗi. Bài viết hoàn thành 100% PASS Quality Guardian QA (0 CRITICAL, 0 MAJOR), đáp ứng 100% word count target (2.167 từ) sau pre-check script. Tối ưu theo 3S Rule (Specific, Story, Statistics) và chuẩn GEO/AEO cho đối tượng P1 & P2.
+- **Pattern:** Lồng ghép nghiên cứu Harvard Business Review về hiệu ứng Small Wins, quy trình 4 bước trả nợ Dave Ramsey (Baby Step 2), Siêu bảng so sánh Snowball vs Avalanche 5 tiêu chí, Case study thực tế 12 tháng trả nợ của Minh (28 tuổi, Hà Nội), và lộ trình chuyển dịch dòng tiền thặng dư sang tích lũy đầu tư chứng khoán tại DSC.
+- **Rule học được:** Đối với các chủ đề về phương pháp tài chính cá nhân/trả nợ (như Quả cầu tuyết), luôn kết hợp cơ sở tâm lý học hành vi (Small Wins) với bảng mô phỏng lộ trình dòng tiền thực tế từng tháng và lộ trình chuyển dịch thặng dư sang kênh đầu tư tích lũy DSC.
+- **Scope:** Global
+
+### [2026-09-15] - bao-cao-tai-chinh-hop-nhat
+- **Lỗi đã sửa:** Không có lỗi. Bài viết hoàn thành 100% PASS 9 checklist QA ngay từ lần kiểm thử đầu tiên, tối ưu theo 3S Rule (Specific, Story, Statistics) và chuẩn GEO/AEO cho đối tượng P2 (F0). Rút gọn toàn bộ 21 câu dài (>30 từ) về chuẩn <25–30 từ và loại bỏ 100% cụm từ blacklist ("bên cạnh đó").
+- **Pattern:** Tách các câu dài thành 2 câu đơn độc lập, đưa định nghĩa Featured Snippet lên H2 ngay dưới H1, bổ sung Siêu bảng so sánh BCTC hợp nhất vs BCTC riêng lẻ, phân tích bản chất loại trừ giao dịch nội bộ và Case study bẫy nợ ẩn F0 An (2024).
+- **Rule học được:** Luôn lồng ghép Siêu bảng phân biệt BCTC hợp nhất và BCTC riêng lẻ kết hợp phân tích kỹ thuật loại trừ giao dịch nội bộ và case study bẫy nợ ẩn tại công ty con khi viết bài về phân tích báo cáo tài chính tập đoàn cho nhà đầu tư mới (P2).
+- **Scope:** Global
+
+### [2026-09-15] - free-float-la-gi
+- **Lỗi đã sửa:** Tiêu đề chưa tuân thủ chuẩn Sentence case, công thức tính từng chứa cú pháp KaTeX/LaTeX.
+- **Pattern:** Chuyển toàn bộ Title và Headings (H1, H2) về chuẩn Sentence case, viết lại công thức tính tỷ lệ Free float bằng văn bản Unicode thuần.
+- **Rule học được:** Luôn áp dụng định dạng tiêu đề Sentence case và hiển thị công thức tính toán tài chính bằng văn bản Unicode thay vì KaTeX/LaTeX cho toàn bộ bài viết trong Content Pipeline.
+- **Scope:** Global
 
 ### [2026-09-11] - pivot-points-la-gi
 - **Lỗi đã sửa:** Bài gốc rất mỏng (~800 từ), lý thuyết rời rạc, tiêu đề H2 vi phạm lỗi chính tả ("tích" -> "tính"), mở/kết bài sáo rỗng vi phạm Anti-AI Rules, thiếu Siêu bảng so sánh 5 phương pháp tính Pivot Points (Standard, Fibonacci, Camarilla, Woodie, DeMark), thiếu mốc số liệu GEO/AEO 2026 và chưa có hướng dẫn quản trị rủi ro bẫy phá vỡ giả (Fakeout).
@@ -227,7 +303,21 @@ File này ghi lại các chỉnh sửa thực tế mà người dùng thực hi�
 
 ---
 
-*Agent tự động append log mới vào đây sau mỗi /approve draft. Người dùng cũng có thể ghi thủ công.*
+### [2026-09-15] - lo-kep-la-gi
+- **Lỗi đã sửa:** Không có lỗi. Bài viết hoàn thành 100% PASS 9 checklist QA ngay từ lần đầu kiểm thử, tối ưu theo 3S Rule (Specific, Story, Statistics) và chuẩn GEO/AEO cho đối tượng P2 (F0). Điều chỉnh H1 theo phản hồi người dùng sang dạng trực diện: "Lỗ kép là gì? Nguyên nhân, tác hại và 4 cách phòng tránh trong đầu tư".
+- **Pattern:** Đưa H1 tiêu đề về dạng câu hỏi chính xác từ khóa + cụ thể hóa các mục tiêu "Nguyên nhân, tác hại và 4 cách phòng tránh" giúp bài viết tự nhiên, chuẩn SEO và không bị trùng lặp cảm giác giật gân.
+- **Rule học được:** Luôn ưu tiên H1 chứa target keyword chính xác kết hợp bộ ba cấu trúc [Khái niệm + Nguyên nhân/Tác hại + Giải pháp phòng tránh] khi viết các bài về quản trị rủi ro đầu tư cho F0.
+- **Scope:** Global
+
+---
+
+---
+
+### [2026-09-16] - chi-so-roa-la-gi-y-nghia-va-cach-su-dung
+- **Lỗi đã sửa:** Bài gốc sơ sài (~850 từ), mở bài dính câu hỏi tu từ AI, thiếu bảng định mức ROA theo ngành và chưa kết nối mô hình DuPont (ROA x Đòn bẩy = ROE). Đã tối ưu lên ~1.400 từ với score QA LINT **99/100 (PASS)**.
+- **Pattern:** Phân tích định lượng ngưỡng ROA theo đặc thù từng nhóm ngành kinh doanh (Ngân hàng >1,5%, BĐS 3-5%, Bán lẻ/Sản xuất 7-10%+, Công nghệ >12%) và bổ sung mô hình DuPont để bóc tách bẫy đòn bẩy tài chính.
+- **Rule học được:** Luôn tích hợp Bảng định mức chỉ số theo ngành và mô hình DuPont khi tối ưu bài viết về các tỷ số tài chính sinh lời (ROA, ROE, ROS).
+- **Scope:** Global
 
 ### [2026-05-21] - cac-mo-hinh-gia-chung-khoan
 - **Lỗi đã sửa:** Không có sửa đổi thêm.
@@ -425,7 +515,8 @@ File này ghi lại các chỉnh sửa thực tế mà người dùng thực hi�
 - **Rule học được:** Đối với các câu hỏi FAQ có phần in đậm ở đầu, dấu chấm/hỏi chấm phân tách câu nên nằm ngoài dấu `**` hoặc đổi hẳn tiêu đề in đậm thành khẳng định và chấm ngoài dấu `**`. Chia nhỏ đoạn văn mô tả ví dụ tính toán vĩ mô dưới 3 câu để tránh lỗi paragraph quá dài.
 - **Scope:** Global
 
-### [2026-06-10] - von-oda-la-gi
+
+### [2026-06-10] - von-oda-la-gi
 - **Lỗi đã sửa:** Tối ưu hóa cấu trúc outline cũ, sắp xếp lại theo bối cảnh Vietcap. Bổ sung các ví dụ thực tế (JICA, cầu Nhật Tân) và đặc điểm ràng buộc của vốn ODA. Phân tích sâu các rủi ro kinh tế vĩ mô quan trọng như rủi ro tỷ giá dài hạn (USD/JPY/EUR), chi phí thực tế cao, và áp lực nợ công. Sửa đổi các câu dài quá 25 từ và đoạn văn dài hơn 3 câu ở phần Sapo và phần Kết luận để vượt qua QA test. Loại bỏ cụm từ bị cấm "Để hiểu rõ hơn về" và thay thế thuật ngữ "cơ chế truyền dẫn" bằng "tác động".
 - **Pattern:** Thay đổi "cơ chế truyền dẫn" thành "tác động"; chia nhỏ các đoạn văn giải thích vĩ mô và CTA thành các câu ngắn và tách thành nhiều đoạn nhỏ dưới 3 câu.
 - **Rule học được:** Luôn bảo đảm các câu CTA kết luận hoặc Sapo mở bài được tách nhỏ đoạn văn logic dưới 3 câu. Rà soát các từ ngữ bị cấm trong bộ công cụ kiểm tra (temp_qa.py) trước khi xuất bản.
@@ -820,10 +911,38 @@ File này ghi lại các chỉnh sửa thực tế mà người dùng thực hi�
 - **Rule học được:** Luôn tích hợp phân tích Lãi suất thực tế (trừ tỷ lệ lạm phát CPI), công thức Lãi kép khi tái tục sổ tiết kiệm, chỉ số thanh khoản LDR (85%) và Siêu bảng so sánh 4 kênh sinh lời kết hợp mô hình phân bổ tài sản phòng thủ 80/20 khi tối ưu bài viết hướng dẫn về lãi suất huy động ngân hàng cho đối tượng Persona P1 (Người tiết kiệm thận trọng).
 - **Scope:** Global
 
+---
 
+### [2026-09-18] - lai-suat-huy-dong-la-gi
+- **Lỗi đã sửa:** Cập nhật mốc thời gian từ Tháng 8/2026 lên Tháng 9/2026; lấp đầy Content Gaps bằng việc bổ sung H2 phân loại 6 dạng Lãi suất huy động phổ biến (Không kỳ hạn, Có kỳ hạn, Online, Bậc thang, Trả trước/định kỳ/cuối kỳ, Cố định vs Thả nổi), H2 Trần lãi suất huy động & vai trò điều tiết của NHNN, và H2 FAQ giải đáp quy định rút trước hạn theo Thông tư 04/2022/TT-NHNN & mối quan hệ NIM với Lãi suất cho vay.
+- **Pattern:** Tối ưu hóa toàn diện theo Seven Sweeps Framework: Mở rộng dung lượng lên 1.850 từ (PASS 100/100 QA Lint, 0 câu >30 từ), cập nhật SEO Title & Meta Description chứa mốc thời gian Tháng 9/2026, bảo toàn 100% hình ảnh gốc, bổ sung 2 ảnh AI 3D Isometric chuẩn Brand Guidelines DSC, và đối soát 5 Internal Links khớp 100% với Sitemap Live.
+- **Rule học được:** Luôn phân loại 6 dạng lãi suất huy động, giải thích trần lãi suất vĩ mô và đính kèm căn cứ Thông tư 04/2022/TT-NHNN khi tối ưu các bài viết cẩm nang về lãi suất tiền gửi ngân hàng cho Persona P1.
+- **Scope:** Global
 
+### [2026-09-18] - full-margin-la-gi-loi-khuyen-cho-nha-dau-tu-moi
+- **Lỗi đã sửa:** Bài gốc mỏng (~750 từ) cào từ URL live (chưa có trong repo local); mở bài và kết bài vi phạm Anti-AI Blacklist ("bài viết dưới đây của DSC", "Hy vọng rằng, thông qua bài viết này..."); dính Emphatic Quotes; thiếu công thức tính Tỷ lệ ký quỹ thực tế (R_m); thiếu dấu hiệu nhận biết tài khoản chạm ngưỡng Full Margin; thiếu Bảng phân biệt Call Margin vs Force Sell vs Rũ Margin; lời khuyên cho F0 mang tính giáo điều thiếu định lượng thực chiến cho Active Trader (P3).
+- **Pattern:** Tối ưu hóa toàn diện theo Seven Sweeps Framework: Mở rộng dung lượng lên ~1.550 từ (chuẩn 99/100 PASS QA, 0 CRITICAL, 0 MAJOR, 0 câu >30 từ), bổ sung mốc thời gian quy chế UBCKNN năm 2026 và mốc thời gian hạ margin quý 2026, lồng ghép công thức tính R_m, 3 dấu hiệu hết sức mua trên App DSC Trading, Bảng đối sánh 4 tiêu chí Call Margin vs Force Sell vs Rũ Margin, 5 chiến lược quản trị rủi ro đòn bẩy thực chiến (Stop-loss 5-7%, giữ tiền mặt 15-20%, hạ đòn bẩy khi gãy MA20, chọn VN30 thanh khoản >1 triệu CP/phiên). Tạo 2 hình ảnh 3D Isometric chuẩn Brand Guidelines DSC (no-text, palette DSC, cấm màu đỏ) và bảo toàn 100% hình ảnh gốc. Tích hợp Product Bridge Margin DSC (lãi suất 10-13,5%/năm, hạn mức 90 ngày tự động gia hạn, eKYC 3 phút, Môi giới 1:1).
+- **Rule học được:** Luôn lồng ghép Công thức tính Tỷ lệ ký quỹ thực tế (R_m) kết hợp Bảng phân biệt Call Margin vs Force Sell vs Rũ Margin và 5 quy tắc quản trị đòn bẩy ngắn hạn khi viết/tối ưu các bài về vay ký quỹ (Margin) cho Active Trader (P3 & P2).
+- **Scope:** Global
 
+---
 
+## QA Score Log (auto — qa_lint.py)
 
-
-
+| Ngày | Slug | Score | C/M/m | Theo nhóm |
+|---|---|---:|---|---|
+| 2026-09-16 | phan-biet-co-phieu-va-trai-phieu | 100 | 0/0/0 | anti=100 seo=100 read=100 link=100 geo=100 |
+| 2026-09-16 | fomo-trong-dau-tu-chung-khoan-la-gi | 95 | 0/0/8 | anti=100 seo=100 read=76 link=100 geo=100 |
+| 2026-09-16 | chi-so-roa-la-gi-y-nghia-va-cach-su-dung | 99 | 0/0/2 | anti=100 seo=100 read=94 link=100 geo=100 |
+| 2026-09-16 | chi-so-roa-la-gi-y-nghia-va-cach-su-dung | 99 | 0/0/2 | anti=100 seo=100 read=94 link=100 geo=100 |
+| 2026-09-16 | macd-la-gi | 99 | 0/0/1 | anti=100 seo=100 read=97 link=100 geo=100 |
+| 2026-09-16 | chi-phi-bien-la-gi | 99 | 0/0/1 | anti=100 seo=100 read=97 link=100 geo=100 |
+| 2026-09-16 | chi-phi-bien-la-gi | 99 | 0/0/1 | anti=100 seo=100 read=97 link=100 geo=100 |
+| 2026-09-16 | chi-phi-bien-la-gi | 99 | 0/0/1 | anti=100 seo=100 read=97 link=100 geo=100 |
+| 2026-09-16 | cagr-la-gi | 99 | 0/0/1 | anti=100 seo=100 read=97 link=100 geo=100 |
+| 2026-09-16 | mo-hinh-co-duoi-nheo-la-gi | 100 | 0/0/0 | anti=100 seo=100 read=100 link=100 geo=100 |
+| 2026-09-17 | cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau | 94 | 0/0/10 | anti=100 seo=100 read=70 link=100 geo=100 |
+| 2026-09-18 | lai-suat-huy-dong-la-gi | 86 | 2/1/0 | anti=100 seo=50 read=90 link=100 geo=100 |
+| 2026-09-18 | lai-suat-huy-dong-la-gi | 100 | 0/0/0 | anti=100 seo=100 read=100 link=100 geo=100 |
+| 2026-09-18 | full-margin-la-gi-loi-khuyen-cho-nha-dau-tu-moi | 99 | 0/0/2 | anti=100 seo=100 read=94 link=100 geo=100 |
+| 2026-09-18 | so-sanh-dau-tu-co-phieu-va-dau-tu-chung-chi-quy | 100 | 0/0/0 | anti=100 seo=100 read=100 link=100 geo=100 |

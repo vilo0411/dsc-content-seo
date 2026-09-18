@@ -40,7 +40,8 @@ Ghi vào **đúng file** theo loại bài học:
 - **Bản năng:** [Quy tắc hành động cụ thể]
 - **Phạm vi:** [Global / Chỉ topic: X]
 ```
-2. **Đồng bộ bản rút gọn:** Chạy script `python scripts/optimize_instincts.py` để tự động tổng hợp, phân loại và cập nhật lại bản rút gọn tiết kiệm token tại `.antigravity/memory/instincts.md`.
+2. **Đồng bộ bản rút gọn:** Chạy `python scripts/optimize_instincts.py`. Script tự: dedupe tiêu đề trùng, chuyển các bản năng đã được `qa_lint.py` kiểm tra máy sang bảng "Đã tự động hoá", tách bản năng có `Phạm vi: Chỉ topic: X` sang `instincts-by-scope/<x>.md`, và cảnh báo nếu `instincts.md` vượt 8.000 ký tự. **Không sửa tay `instincts.md`** — mọi thay đổi đi qua archive.
+3. **Trước khi thêm bản năng mới, tự hỏi:** lỗi này `qa_lint.py` có bắt được bằng regex không? Nếu có → thêm check vào `scripts/qa_lint.py` (hoặc thêm cụm từ vào `anti-ai-rules-blacklist.md` — lint đọc file này) **thay vì** thêm instinct. Instinct chỉ dành cho judgment call máy không làm được.
 
 4. **Report to User**: Báo cáo tóm tắt: *"Đã học X bài học mới — Y rule mới vào anti-ai-rules, Z bản năng mới vào instincts."*
 

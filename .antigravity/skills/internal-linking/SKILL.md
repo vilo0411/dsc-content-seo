@@ -29,19 +29,29 @@ description: >
 3. **Chọn Anchor Text Tự nhiên:** Chọn từ khóa đại diện chuẩn cho bài viết đích, xuất hiện tự nhiên trong mạch văn mà không gây gượng ép.
 
 ### Mode: Contextual Insertion (During Drafting & Optimization)
-1. **Identify Targets:** Sử dụng `sitemap-cache.json` và `knowledge/3-pipeline/anchor-index.md` để lấy 3–5 URL bài viết liên quan trực tiếp nhất.
+1. **Identify Targets — KHÔNG đọc `anchor-index.md` (180 KB):**
+   ```bash
+   python scripts/find_links.py "[keyword chính]" --top 8 --exclude [slug]
+   python scripts/find_links.py "[keyword phụ từ outline]" --top 5 --exclude [slug]   # nếu cần
+   ```
+   Script đã đối soát với `sitemap-cache.json` — chỉ dùng dòng có cột **Sitemap ✓**. Nếu ✗ → chạy `sync_sitemap.py` rồi thử lại, hoặc bỏ URL đó.
 2. **Find Opportunities:** Tìm các cụm từ khóa có liên hệ logic trong nội dung nháp.
 3. **Insert Links:** Đặt link vào anchor text phù hợp (tối đa 1 link trên 100 - 150 từ, tránh nhồi nhét).
+4. **Verify:** `qa_lint.py` sẽ tự bắt URL không khớp sitemap, link relative/local, thiếu link mở tài khoản, anchor "Xem thêm".
 
 ### Mode: Backfill (After Publishing)
-1. **Source Search:** Quét `knowledge/4-content/3-finalized/` để tìm các bài cũ có thể trỏ ngược lại bài viết mới vừa xuất bản (tạo liên kết 2 chiều).
-2. **Update:** Bổ sung anchor text và link vào bài cũ một cách tự nhiên.
-3. **Register Index:** Cập nhật ngay bài viết mới vào `knowledge/3-pipeline/anchor-index.md` kèm theo URL chính thức trên sitemap.
+1. **Source Search — 1 lệnh, không đọc file Final nào:**
+   ```bash
+   python scripts/find_links.py --backfill [slug] --top 5
+   ```
+   Output: bài nguồn + số dòng + trích đoạn có thể chèn anchor, ưu tiên bài có clicks GSC cao (nếu có `knowledge/raw/gsc/pages.csv`).
+2. **Update:** Chỉ mở đúng file/dòng script chỉ ra, chèn anchor lấy từ chính câu trong trích đoạn.
+3. **Register Index:** Cập nhật ngay bài viết mới vào `knowledge/3-pipeline/anchor-index.md` (chèn 1 dòng vào cluster phù hợp, không đọc cả file) kèm theo URL chính thức trên sitemap.
 
 ### Mode: Audit (Health Check)
-1. **Execute Script:** Chạy `python .antigravity/skills/internal-linking/scripts/link_audit.py`.
-2. **Analyze Dashboard:** Xem báo cáo tại `knowledge/3-pipeline/internal-link-dashboard.md`.
-3. **Fix Issues:** Khắc phục tình trạng "Orphan pages" (bài không có link trỏ tới) hoặc "Over-optimized anchors".
+1. **Execute Script:** Chạy `python .antigravity/skills/internal-linking/scripts/link_audit.py --orphans`.
+2. **Analyze Dashboard:** Xem báo cáo tại `knowledge/3-pipeline/internal-link-dashboard.md` (chỉ tính link giữa các file trong `3-finalized/`).
+3. **Fix Issues:** Với mỗi orphan → `find_links.py --backfill [slug]`; với "Over-exact" → đa dạng hoá anchor.
 
 ---
 

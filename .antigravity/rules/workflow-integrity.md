@@ -1,7 +1,7 @@
 # Rule: Workflow Integrity
 
 1.  **Phase-Gate Protocol**: Never skip phases. Every task must follow: `Research -> Outline -> User Approve -> Draft -> QA -> User Approve -> Finalize -> Learn`.
-    *   **Research Requirement**: Must use `.antigravity/skills/web-serp/SKILL.md` (Jina AI) for SERP lookup and competitor extraction. Do not use browser directly. Do not rely on snippets.
+    *   **Research Requirement**: Must use `.antigravity/skills/web-serp/SKILL.md` (`serp_research.py`: DataForSEO + Jina, cached — do not bypass cache) for SERP lookup and competitor extraction. Do not use browser directly. Do not rely on snippets.
 
 2.  **Mandatory Context Loading**: Before starting ANY phase or agent, load the full context set:
     *   `knowledge/1-brand/profile.md`

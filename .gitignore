@@ -10,6 +10,9 @@ knowledge/raw/gsc/queries.csv
 knowledge/raw/gsc/pages.csv
 knowledge/raw/gsc/cache-meta.json
 
+# SERP cache từ DataForSEO (serp_research.py) — sinh lại được, không track
+knowledge/raw/serp/
+
 # Local scratch / editor state
 .antigravity/brain/
 knowledge/4-content/.obsidian/

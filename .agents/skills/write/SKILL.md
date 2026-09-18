@@ -18,11 +18,16 @@ description: Kích hoạt quy trình viết bài SEO chuẩn Framework (Full Pip
 ### 🔄 Bước 0: System Context Load (BẮT BUỘC — trước mọi bước)
 Trước khi làm bất cứ việc gì, hệ thống phải đọc:
 1. `knowledge/1-brand/profile.md`
-2. `knowledge/1-brand/personas.md`
-3. `knowledge/3-pipeline/anti-ai-rules.md`
-4. `knowledge/3-pipeline/glossary.md`
-5. `knowledge/4-content/topic-clusters.md` — xác nhận keyword chưa có bài, cập nhật trạng thái thành `In Progress`
-6. `.antigravity/memory/instincts.md` — nạp bài học từ các vòng viết trước
+2. `knowledge/3-pipeline/anti-ai-rules.md`
+3. `knowledge/3-pipeline/glossary.md`
+4. `.antigravity/memory/instincts.md` — bản rút gọn; nếu topic có file `instincts-by-scope/<topic>.md` (được liệt kê ở đầu instincts.md) → đọc thêm file đó
+5. **Không đọc `topic-clusters.md`** — dùng script:
+   ```bash
+   python scripts/topic_status.py --find "[keyword]"        # xác nhận chưa có bài / lấy slug
+   python scripts/topic_status.py [slug] --set "In Progress"
+   ```
+   Nếu chưa có dòng nào → thêm 1 dòng vào cluster phù hợp trong `topic-clusters.md` (chỉ chèn dòng, không đọc cả file).
+6. `knowledge/1-brand/personas.md` — **chỉ đọc section của persona được chọn** sau khi Bước 1.2 xác định P1–P4 (không load cả 4 persona ở Step 0).
 
 ---
 
@@ -46,7 +51,7 @@ Trước khi làm bất cứ việc gì, hệ thống phải đọc:
 **🚧 APPROVAL GATE 1:**
 > Trình bày Outline kèm summary SERP findings cho người dùng.
 > **DỪNG LẠI. Chờ người dùng gõ `/approve`.**
-> Khi được approve: cập nhật `topic-clusters.md` → `Outline-Approved`.
+> Khi được approve: `python scripts/topic_status.py [slug] --set Outline-Approved`.
 
 ---
 
@@ -61,15 +66,23 @@ Trước khi làm bất cứ việc gì, hệ thống phải đọc:
 
 **Bước 2.2 — Internal Linking:**
 - Kích hoạt skill `.antigravity/skills/internal-linking/SKILL.md` → Mode: Contextual Insertion.
-- Scan `knowledge/3-pipeline/anchor-index.md` và Sitemap live để tìm link nội bộ phù hợp.
-- Chèn tối thiểu 3-5 internal links vào draft.
+- **Không đọc `anchor-index.md`** (180 KB). Lấy ứng viên bằng script:
+  ```bash
+  python scripts/find_links.py "[keyword]" --top 8 --exclude [slug]
+  ```
+  Chỉ dùng URL có cột Sitemap ✓. Có thể gọi thêm 1–2 lần với từ khoá phụ của outline.
+- Chèn tối thiểu 3-5 internal links vào draft, đặt tự nhiên trong câu.
 - **BẮT BUỘC:** Luôn có ít nhất 01 link chuyển đổi mở tài khoản chứng khoán DSC (`https://www.dsc.com.vn/mo-tai-khoan`) tại phần Product Bridge hoặc CTA cuối bài.
 
-**Bước 2.3 — Quality Guardian (QA):**
-- Kích hoạt agent `.antigravity/agents/quality-guardian.md`.
-- QA chỉ cần đọc thêm: Outline gốc + `anti-ai-rules-blacklist.md` (context pipeline đã có sẵn từ Step 0).
+**Bước 2.3 — Lint + Quality Guardian (QA):**
+- Chạy lint trước, sửa cơ học tự động:
+  ```bash
+  python scripts/qa_lint.py knowledge/4-content/2-drafts/Draft-[slug].md --outline knowledge/4-content/1-outlines/[slug].md --fix
+  ```
+  Exit 1 → sửa đúng các dòng CRITICAL/MAJOR trong bảng, chạy lại. Chưa gọi Quality Guardian khi lint chưa PASS.
+- Lint PASS → kích hoạt agent `.antigravity/agents/quality-guardian.md` (chỉ checklist ngữ nghĩa; context đã có từ Step 0, QA chỉ đọc thêm Outline gốc).
 - Kết quả: `PASS` hoặc `FAIL` với danh sách lỗi có số dòng.
-- Nếu `FAIL`: sửa và chạy lại QA cho đến khi `PASS`.
+- **Giới hạn vòng lặp:** Nếu `FAIL` → sửa và QA lại **tối đa 2 vòng**. Sau vòng 2 vẫn FAIL → dừng, trình bày draft kèm mục `⚠️ Remaining issues` (liệt kê CRITICAL/MAJOR còn lại) cho người dùng quyết định. Không tự lặp vòng 3.
 
 **🚧 APPROVAL GATE 2:**
 > Trình bày Draft + QA PASS report cho người dùng.
@@ -83,7 +96,8 @@ Trước khi làm bất cứ việc gì, hệ thống phải đọc:
 **Bước 3.1 — File Management (BẮT BUỘC):**
 - Di chuyển `knowledge/4-content/2-drafts/Draft-[slug].md` → `knowledge/4-content/3-finalized/Final-[slug].md`.
 - Xóa file outline gốc `knowledge/4-content/1-outlines/[slug].md` (nếu tồn tại) để dọn dẹp hệ thống.
-- Cập nhật `knowledge/4-content/topic-clusters.md` → trạng thái `Finalized`.
+- `python scripts/topic_status.py [slug] --set Finalized`
+- `python scripts/qa_lint.py knowledge/4-content/3-finalized/Final-[slug].md --log` — ghi score vào `revision-log.md`.
 
 **Bước 3.2 — Content Feedback Loop (Auto-trigger):**
 - Kích hoạt skill `.antigravity/skills/content-feedback-loop/SKILL.md`.

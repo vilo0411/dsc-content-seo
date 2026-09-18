@@ -40,15 +40,17 @@ Nếu người dùng không chỉ rõ slug hoặc section → hỏi lại trư�
 
 ## Bước 3: Self-Audit (BẮT BUỘC trước khi trình bày bản sửa)
 
-Grep bản sửa cho từng pattern sau. Nếu phát hiện → sửa ngay, không trình bày bản có lỗi:
+**3a. Lint máy** — sau khi ghi bản sửa vào file (hoặc vào file tạm), chạy:
+```bash
+python scripts/qa_lint.py [path/to/file]
+```
+Lint bắt: blacklist trigger phrases, emphatic quotes, hedge words, forbidden terms, câu > 30 từ, đoạn > 3 câu, link sai, mốc thời gian mơ hồ… Nếu bản sửa tạo thêm CRITICAL/MAJOR ở các dòng vừa sửa → sửa ngay. (Lỗi có sẵn ở phần khác của bài không thuộc phạm vi — chỉ báo cho user.)
 
-- [ ] Không có trigger phrase trong Blacklist (Phần 1.1 của anti-ai-rules.md)
-- [ ] Không có emphatic quotes quanh từ thông thường (Phần 1.2)
-- [ ] Không có hedge words: "tương đối", "khá", "có thể nói rằng", "nhìn chung"
-- [ ] Không có transition AI: "Hơn nữa,", "Bên cạnh đó,", "Đáng chú ý là,"
+**3b. Đọc lại bằng mắt** (phần lint không làm được):
 - [ ] Câu đầu không phải opener vĩ mô (nếu sửa mở bài)
 - [ ] Câu kết không phải summary/closer AI (nếu sửa kết bài)
-- [ ] Mọi số liệu có thời điểm hoặc ghi `[CẦN XÁC NHẬN]`
+- [ ] Mọi số liệu có nguồn + thời điểm hoặc ghi `[CẦN XÁC NHẬN]`
+- [ ] Đúng Persona / Product Bridge của bài
 
 ---
 

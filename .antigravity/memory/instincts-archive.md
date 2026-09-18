@@ -28,6 +28,20 @@ Mỗi khi người dùng đưa ra phản hồi chỉnh sửa, hãy trích xuất
 
 ## Bản năng Active
 
+### Bảng đối sánh Cờ đuôi nheo vs Lá cờ vs Tam giác & Volume Profile 3 giai đoạn
+- **Trạng thái:** ACTIVE
+- **Nguồn:** mo-hinh-co-duoi-nheo-la-gi
+- **Phản hồi từ User:** "Optimize bài mô hình cờ đuôi nheo"
+- **Bản năng:** Luôn lồng ghép Bảng đối sánh Cờ đuôi nheo (Pennant) vs Mô hình lá cờ (Flag) vs Mô hình tam giác (Triangle) kết hợp quy luật biến động thanh khoản Volume Profile 3 giai đoạn (Cột cờ - Thân cờ cạn vol - Breakout bùng nổ 1,5–2 lần MA20) và phương pháp xử lý bẫy breakout giả khi viết/tối ưu các mô hình giá tiếp diễn cho Active Trader (P3).
+- **Phạm vi:** Global
+
+### Loại bỏ mốc thời gian máy móc và gượng ép
+- **Trạng thái:** ACTIVE
+- **Nguồn:** chi-phi-bien-la-gi
+- **Phản hồi từ User:** "phần Tính đến tháng 8/2026 bị gượng ép, bỏ rule đi hoặc cải tiến. Thứ 1 là bây giờ đã tháng 9, thứ 2 là khi đọc cả câu thì thấy phần đó thêm vào ko phù hợp"
+- **Bản năng:** Tuyệt đối không chèn máy móc hoặc lặp đi lặp lại cụm từ "Tính đến tháng M/Y," ở đầu câu khi giải thích lý thuyết. Chỉ chèn mốc thời gian (như "năm 2026", "tháng 9/2026") một cách tự nhiên và đúng thời điểm thực tế (hiện tại là tháng 9/2026) khi thực sự dẫn chứng số liệu thống kê biến động thực tế.
+- **Phạm vi:** Global
+
 ### Tránh mở bài vĩ mô
 - **Trạng thái:** ACTIVE
 - **Nguồn:** Feedback chung
@@ -189,6 +203,15 @@ Mỗi khi người dùng đưa ra phản hồi chỉnh sửa, hãy trích xuất
   1. Khi viết các yếu tố tác động vĩ mô (ví dụ: yếu tố tác động đến giá vàng, giá dầu), luôn trình bày dưới dạng danh sách gạch đầu dòng có in đậm tiêu đề để tăng tính trực quan và dễ skim ý chính cho người đọc.
   2. Phần dẫn dắt chuyển dịch dòng tiền (Product Bridge) từ các kênh phòng thủ (như vàng, gửi tiết kiệm) sang kênh cổ phiếu tăng trưởng/chứng chỉ quỹ của DSC phải được lập luận bằng logic tài chính (rủi ro mua đuổi vùng đỉnh, chênh lệch spread rộng của vàng vật chất, tính chất không sinh dòng tiền thụ động của vàng so với lợi thế cổ tức tiền mặt của cổ phiếu) để tạo động lực chuyển dịch tài sản một cách tự nhiên và thuyết phục.
 - **Phạm vi:** Global
+---
+
+### Bỏ qua tạo ảnh fallback khối vuông khi gặp lỗi Quota
+- **Trạng thái:** ACTIVE
+- **Nguồn:** chi-so-roa-la-gi-y-nghia-va-cach-su-dung
+- **Phản hồi từ User:** "khi bị quota thì tôi muốn ko tạo ảnh nữa"
+- **Bản năng:** Khi công cụ sinh ảnh AI (`generate_image`) bị báo lỗi Quota (429 RESOURCE_EXHAUSTED), tuyệt đối không sinh các hình ảnh fallback khối vuông 3D bằng script Python PIL. Hãy bỏ qua việc tạo ảnh mới, bảo toàn 100% hình ảnh gốc của bài viết và trình bày bài viết chuẩn văn bản/bảng biểu trực quan.
+- **Phạm vi:** Global
+
 ---
 
 ### Tránh sử dụng dấu ngoặc kép trong YAML front matter
@@ -418,6 +441,26 @@ Mỗi khi người dùng đưa ra phản hồi chỉnh sửa, hãy trích xuất
 - **Phản hồi từ User:** Phê duyệt bài viết Chỉ số QoQ thành công.
 - **Bản năng:** Đối với các bài viết về chỉ số tài chính kết quả kinh doanh quý (như QoQ), luôn tích hợp Ma trận 2D kết hợp giữa QoQ và YoY (4 kịch bản: Tăng tốc, Phục hồi, Cảnh báo, Suy thoái) và phân tích chiều sâu về bẫy mùa vụ (Seasonality) trong các ngành đặc thù (bán lẻ Q4, bất động sản) để nâng cao tính định lượng thực chiến cho nhà đầu tư (P3 & P2).
 - **Phạm vi:** Global
+
+---
+
+### Mô phỏng lộ trình thặng dư và chuyển dịch dòng tiền cho bài viết quản lý nợ cá nhân
+- **Trạng thái:** ACTIVE
+- **Nguồn:** phuong-phap-qua-cau-tuyet
+- **Phản hồi từ User:** Phê duyệt bài viết Phương pháp quả cầu tuyết thành công.
+- **Bản năng:** Đối với các chủ đề về phương pháp tài chính cá nhân/trả nợ (như Quả cầu tuyết), luôn kết hợp cơ sở tâm lý học hành vi (Small Wins) với bảng mô phỏng lộ trình dòng tiền thực tế từng tháng và lộ trình chuyển dịch thặng dư sang kênh đầu tư tích lũy DSC.
+- **Phạm vi:** Global
+
+---
+
+### Phân rã Target word count cho dạng Toplist và Đối sánh rủi ro pháp lý tài sản số
+- **Trạng thái:** ACTIVE
+- **Nguồn:** san-giao-dich-tien-dien-tu
+- **Phản hồi từ User:** Phê duyệt bài viết Top 7 sàn giao dịch tiền điện tử dạng Toplist thành công.
+- **Bản năng:** Khi viết các bài thuộc dạng Toplist đánh giá sản phẩm/dịch vụ tài chính hoặc tiền điện tử, luôn phân rã target word count chi tiết cho từng mục H3 trong outline để script QA đếm chính xác, đồng thời tích hợp Bằng chứng dự trữ (Proof of Reserves) và bảng đối sánh rủi ro ngắt kết nối pháp lý giữa thị trường tiền điện tử và kênh đầu tư chứng khoán chính thống được UBCKNN bảo hộ.
+- **Phạm vi:** Global
+
+
 
 
 

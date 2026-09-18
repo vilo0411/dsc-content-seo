@@ -24,7 +24,7 @@ Tương đương với `Phase 1` và `Phase 2` của lệnh `/write`.
 - Dùng skill `.antigravity/skills/web-serp/SKILL.md` — SERP Lookup + Content Extraction song song qua Jina AI. KHÔNG dùng browser.
 - Thu thập: H-tag structure, số liệu cụ thể, content gaps, UX elements.
 - **Chạy Competitor Gap Synthesis** (theo format trong `web-serp/SKILL.md`) sau khi extract xong tất cả competitors.
-- **Internal Link Planning**: Đọc `knowledge/3-pipeline/anchor-index.md`, identify 2–3 bài phù hợp để link, ghi vào `Internal_Links:` trong outline YAML.
+- **Internal Link Planning**: `python scripts/find_links.py "[keyword]" --top 6` (không đọc `anchor-index.md`), chọn 2–3 URL có Sitemap ✓, ghi vào `Internal_Links:` trong outline YAML.
 
 > **30-second Rule:** Nếu trong lúc research gặp data/insight hay mà không dùng ngay vào bài này → save 1 dòng vào `knowledge/raw/intel/dump.md` (ngày + nguồn + mô tả ngắn) trong 30 giây. Categorize thành file riêng sau.
 

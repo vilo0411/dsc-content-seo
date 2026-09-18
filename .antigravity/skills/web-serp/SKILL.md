@@ -1,84 +1,122 @@
 ---
 name: Web SERP
 description: >
-  SERP lookup via DuckDuckGo HTML + competitor content extraction via Jina AI Reader.
-  Fallback chain: DuckDuckGo HTML → Jina AI → Firecrawl script → Manual paste.
+  SERP lookup via DataForSEO (Google, Vietnam, vi) + competitor content extraction (local Scrapling parser → Jina AI Reader),
+  gộp trong 1 script có cache. Fallback: DataForSEO → DuckDuckGo HTML → Manual paste; extraction: local parser → Jina (cả 2 trong script) → Firecrawl script → Manual paste.
 ---
 
 # Skill: Web SERP (Fast Research Layer)
 
 Skill này thay thế toàn bộ browser-based browsing trong các bước SERP research và competitor extraction.
 
-- **SERP Discovery:** DuckDuckGo HTML search — không cần API key
-- **Content Extraction:** Jina AI Reader (`r.jina.ai`) — clean markdown, miễn phí, không cần API key
-- **Extraction Fallback:** Firecrawl script — xử lý được JavaScript, Cloudflare
+- **SERP Discovery:** DataForSEO `serp/google/organic/live/advanced` — Google thật, `location_code=2704` (Vietnam), `language_code=vi`. Trả về organic + People Also Ask + Featured Snippet + Related Searches trong **1 call**.
+- **Content Extraction:** 2 tầng ngay trong script, song song (ThreadPool 5):
+  1. **Local** — `urllib` + Scrapling parser + markdownify (~1s/trang, không API, không rate-limit). Chọn container nhiều chữ nhất trong `article`/`main`/`.post-content`…, bỏ nav/header/footer/aside, xuất markdown ATX.
+  2. **Jina AI Reader** (`r.jina.ai`, miễn phí, ~8s/trang) — chỉ khi local trả về < 300 từ (trang render bằng JS như vcbs.com.vn, hdbank.com.vn).
+  Cần `pip install scrapling markdownify` (**parser only** — không cài `scrapling[fetchers]`, xem Lưu ý AV bên dưới). Thiếu package → script tự bỏ qua tầng local, dùng Jina như cũ. Cache ghi `source: local|jina` cho từng competitor.
+- **Cache:** `knowledge/raw/serp/<slug>.json`, 30 ngày. Có cache → **0 API call**.
+
+---
+
+## 💰 Nguyên tắc chi phí (BẮT BUỘC)
+
+DataForSEO **có phí** (~$0.002 / keyword). Để tiết kiệm:
+
+1. **1 keyword = 1 call.** Script luôn kiểm tra cache trước; chỉ gọi API khi chưa có cache hoặc cache > 30 ngày.
+2. **Không dùng `--no-cache`** trừ khi user yêu cầu refresh rõ ràng.
+3. **Không gọi lại** cho biến thể keyword gần giống (ví dụ "ROA là gì" vs "chỉ số ROA là gì") — dùng cache của keyword chính.
+4. Chỉ `--extract` đúng số URL cần (mặc định 5, tối đa 7). Local parser nhanh, Jina chậm; kết quả extract cũng được cache.
+
+> **⚠️ Lưu ý AV (máy công ty):** chỉ cài `pip install scrapling markdownify`. **Không** cài `scrapling[fetchers]` / `scrapling install` — gói `curl-cffi` (giả TLS fingerprint) và `patchright` đã khiến Kaspersky Endpoint xóa `python.exe` (18/09/2026). Khôi phục bằng `py install --force 3.14` rồi cài lại `pillow scrapling markdownify`.
+5. Script không retry khi lỗi — đọc message, sửa nguyên nhân rồi chạy lại.
+6. Dòng `Cost: $...` cuối output là chi phí thực của lần chạy — báo lại user nếu > $0.01.
 
 ---
 
 ## ⚙️ Cách hoạt động
 
 ```
-Bước 1: DuckDuckGo HTML → top URLs
-              ↓ (fail) → Manual Paste
-
-Bước 2: r.jina.ai/{url} × N → content extraction song song
-              ↓ (429 / rỗng) → scrape.py (Firecrawl) × N
-              ↓ (vẫn fail) → Manual Paste từng URL
+python serp_research.py "<keyword>" --top 10 --extract 5
+   ├─ cache hit  → in kết quả ngay ([cache], $0)
+   └─ cache miss → DataForSEO 1 call → lưu cache
+        ↓ (fail) → DuckDuckGo HTML (WebFetch)
+        ↓ (fail) → Manual Paste
+   └─ --extract N → local parser × N song song (ThreadPool 5) → block Competitor
+        ↓ (< 300 từ / lỗi HTTP / thiếu scrapling) → r.jina.ai cho URL đó
+        ↓ (URL lỗi / rỗng) → ghi "Lỗi: Không extract được", không retry
+        ↓ (nhiều URL fail) → scrape.py (Firecrawl) cho các URL đó
+        ↓ (vẫn fail) → Manual Paste từng URL
 ```
 
 ---
 
-## 🔍 Function 1: SERP Lookup (DuckDuckGo)
+## 🔍 Function 1 + 2: `serp_research.py` (lệnh mặc định — luôn dùng cái này)
 
-**Mục đích:** Lấy top URLs từ search cho một keyword.
-
-**Cách gọi:**
-```
-WebFetch: https://html.duckduckgo.com/html/?q={keyword_url_encoded}
+```bash
+python .antigravity/skills/web-serp/scripts/serp_research.py "{keyword}" --top 10 --extract 5
 ```
 
-**Ví dụ:**
+| Flag | Mặc định | Ý nghĩa |
+|---|---|---|
+| `--top N` | 10 | Số organic hiển thị (tối đa 10 — script luôn fetch depth 10) |
+| `--extract N` | 0 | Extract nội dung N URL đầu tiên **theo thứ tự rank** (local parser, Jina fallback). Env `LOCAL_FETCH=0` để ép dùng Jina |
+| `--content` | — | In **toàn văn** markdown đã lọc của các competitor đã extract (đọc kỹ 1 bài, không dùng làm input Outline) |
+| `--json` | — | Output JSON (dùng khi cần parse tự động) |
+| `--no-cache` | — | Bỏ qua cache, gọi API lại (**tốn tiền** — chỉ khi user yêu cầu) |
+| `--raw` | — | Dump payload gốc DataForSEO (debug, cũng tốn 1 call) |
+
+**Output (text):**
+1. `### SERP Results` — top URLs: rank / title / URL / description (đã lọc google, facebook, youtube, tiktok, mạng xã hội)
+2. `### Featured Snippet` — nếu Google đang hiện (domain + đoạn text) → quyết định Featured Snippet target
+3. `### People Also Ask` — dùng trực tiếp làm gợi ý FAQ section
+4. `### Related Searches` — gợi ý secondary keywords / H2
+5. `### Competitor N: {domain}` × N (khi `--extract`):
+   - `Tổng`: số từ, số section, số internal/external link
+   - `Outline`: từng H1–H4 (kể cả `[Intro]`) kèm **số từ của section** và **câu chủ đề** → biết đối thủ đào sâu chỗ nào
+   - `Entities`: tên riêng / acronym / ticker xuất hiện nhiều (ROE×12, Forbes, VN-Index...) → phủ entity khi viết
+   - `Data points`: tối đa 8 câu có số liệu
+   - `Internal links (anchor → URL)`: cách đối thủ link nội bộ → gợi ý cluster/anchor cho bài mình
+   - `External links`: domain nguồn tham khảo
+   - `Special elements`, dòng `Gap so với bài mình: [điền]`
+6. Khung trống `## Competitor Gap Synthesis` — agent **phải điền** trước khi sang Outline
+7. `Cost: $x.xxxx`
+
+**Cấu hình (1 lần):** thêm vào `.antigravity/config/api-keys.md` (đã gitignore):
 ```
-Keyword: lãi suất tiết kiệm ACB 2025
-URL: https://html.duckduckgo.com/html/?q=l%C3%A3i+su%E1%BA%A5t+ti%E1%BA%BFt+ki%E1%BB%87m+ACB+2025
+DATAFORSEO_LOGIN=...
+DATAFORSEO_PASSWORD=...
 ```
+Lấy tại https://app.dataforseo.com/api-access. Xem `.antigravity/config/api-keys.example.md`.
 
-**Parse HTML output — lấy top URLs:**
-- Tìm các thẻ `<a class="result__url">` hoặc `<a class="result__a">` → lấy href
-- Lọc và decode redirect URLs nếu cần
+**Lỗi thường gặp:**
 
-**Lọc URLs:**
-- Bỏ: `google.com`, `facebook.com`, `youtube.com`, `tiktok.com`, ads redirect
-- Ưu tiên: domain `.vn`, báo lớn (vnexpress, cafef, tinnhanhchungkhoan, vneconomy, vietstock)
-- Lấy top 5–7 URLs hợp lệ để extract
-
-**Fallback nếu DuckDuckGo thất bại:**
-
-| Tình huống | Fallback |
+| Message | Xử lý |
 |---|---|
-| DuckDuckGo không trả về kết quả | Xuất **Manual Paste Template** (xem cuối file), yêu cầu user paste SERP |
+| `Missing config: DATAFORSEO_...` | Chưa điền `api-keys.md` |
+| `DataForSEO HTTP 401` | Sai login/password API (password API ≠ password web) |
+| `DataForSEO task error 40201/40202` | Hết tiền / quá rate limit → báo user nạp tiền, không chạy lại |
+| Script lỗi mạng | Fallback DuckDuckGo: `WebFetch https://html.duckduckgo.com/html/?q={keyword_url_encoded}`, parse `<a class="result__a">` |
+| Cả hai fail | Xuất **Manual Paste Template** (cuối file) |
 
 ---
 
-## 📄 Function 2: Content Extraction
+**Đọc toàn văn 1 bài đối thủ** (khi cần hiểu cách họ triển khai, không chỉ heading):
+```bash
+python .antigravity/skills/web-serp/scripts/serp_research.py "{keyword}" --extract 3 --content
+```
+Nội dung đã cache cùng SERP → $0, in ngay. Chỉ dùng khi thật cần vì tốn context (~1.500–2.000 từ/bài).
 
-**Mục đích:** Trích xuất heading structure và data points từ một competitor URL.
+---
 
-**Cách gọi:**
+## 📄 Extraction thủ công (chỉ khi `--extract` không lấy được URL nào đó)
+
 ```
 WebFetch: https://r.jina.ai/{competitor_url}
 ```
 
-**Ví dụ:**
-```
-WebFetch: https://r.jina.ai/https://cafef.vn/bai-viet-ve-lai-suat.html
-```
+Jina trả về toàn bộ trang dạng markdown kể cả header/footer/nav. Quy tắc lọc (script đã tự làm; làm tay khi fallback):
 
-**Bước 1 — Xác định vùng nội dung chính (bắt buộc trước khi extract):**
-
-Jina trả về toàn bộ trang dưới dạng markdown, bao gồm cả header/footer/nav. Phải loại bỏ các vùng sau trước khi parse:
-
-| Vùng cần loại bỏ | Dấu hiệu nhận biết trong markdown |
+| Vùng cần loại bỏ | Dấu hiệu |
 |---|---|
 | Header / Nav | Cụm links ngắn liên tiếp ở đầu file (`[Trang chủ]`, `[Danh mục]`, `[Đăng nhập]`...) |
 | Footer | Cụm links ngắn liên tiếp ở cuối file (`[Chính sách]`, `[Liên hệ]`, `[Facebook]`...) |
@@ -86,109 +124,50 @@ Jina trả về toàn bộ trang dưới dạng markdown, bao gồm cả header/
 | Breadcrumb | Dòng dạng `Home > Danh mục > Bài viết` |
 | Author / Meta block | Dòng ngắn chứa ngày đăng, tên tác giả đứng độc lập |
 
-**Quy tắc xác định vùng nội dung chính:**
-- Tìm **H1 đầu tiên** (`# ...`) → đây là điểm bắt đầu của bài viết
-- Tìm điểm kết thúc: section cuối cùng có nội dung thực sự (đoạn văn > 2 câu), trước khi xuất hiện cụm links footer
-- Chỉ extract trong vùng H1-đầu → cuối-nội-dung, bỏ phần còn lại
+- Bắt đầu từ **H1 đầu tiên**, kết thúc ở section cuối có nội dung thật (đoạn > 2 câu) trước footer. Giữ tối đa 2.000 từ đầu.
+- Extract: Headings (`#`–`####`), Data points (số, %, bảng `|`, ngày cụ thể), Intent từng section, Special elements (`calculator`, `FAQ`, `bảng so sánh`).
 
-**Bước 2 — Extract từ vùng nội dung chính:**
-- **Headings**: Dòng bắt đầu bằng `#`, `##`, `###`, `####` → H1–H4
-- **Data points**: Số liệu, %, bảng (dòng bắt đầu `|`), ngày tháng cụ thể
-- **Intent**: Đoạn đầu của mỗi section — trả lời câu hỏi gì của reader?
-- **Special elements**: Tìm từ khóa `calculator`, `FAQ`, `bảng so sánh`, `câu hỏi`
-
----
-
-## ⚡ Parallel Execution (BẮT BUỘC)
-
-Sau khi có danh sách URLs từ Function 1, **gọi tất cả Function 2 song song** trong một lượt WebFetch — không gọi tuần tự.
-
-```
-# Đúng — song song
-Gọi đồng thời: r.jina.ai/URL1, r.jina.ai/URL2, r.jina.ai/URL3, r.jina.ai/URL4, r.jina.ai/URL5
-
-# Sai — tuần tự (chậm)
-Gọi URL1 → đợi → gọi URL2 → đợi → ...
-```
-
-Thời gian ước tính: ~5–10s cho cả 5 URLs song song (so với 2–3 phút browser tuần tự).
-
----
-
-## ⚠️ Fallback & Error Handling
-
-| Tình huống | Xử lý |
-|---|---|
-| Jina trả về 429 (rate limit) | Đợi 5s, retry một lần. Nếu vẫn lỗi → chuyển sang **Script Fallback** |
-| Jina trả về nội dung rỗng / < 200 ký tự | Chuyển sang **Script Fallback** cho URL đó |
-| DuckDuckGo không có URL .vn | Dùng kết quả .com hoặc báo user thiếu SERP data |
-| Heading structure không parse được | Extract toàn bộ text, để Main Agent tự identify sections |
-
----
-
-## 🛠️ Script Fallback: Firecrawl (khi Jina quá tải)
-
-**File:** `.antigravity/skills/web-serp/scripts/scrape.py`
-
-**Yêu cầu (cài 1 lần):**
-```bash
-pip install firecrawl-py
-```
-
-Thêm API key vào `.antigravity/config/api-keys.md`:
-```
-FIRECRAWL_API_KEY=fc-your_key_here
-```
-Lấy key tại: https://firecrawl.dev (có free tier)
-
-**Cách dùng:**
-
-```bash
-# Scrape nhiều URLs cùng lúc (chạy song song)
-python .antigravity/skills/web-serp/scripts/scrape.py \
-  https://cafef.vn/bai-1.html \
-  https://vnexpress.net/bai-2.html \
-  https://vietstock.vn/bai-3.html
-
-# Hoặc từ file (mỗi dòng 1 URL)
-python .antigravity/skills/web-serp/scripts/scrape.py --file urls.txt
-```
-
-**Output:** Cùng format với Jina extraction — paste thẳng vào Outline generation, không cần chỉnh.
-
-**Ưu điểm so với Jina:** Xử lý được JavaScript, Cloudflare, và hầu hết bot protection.
+Fallback tiếp theo khi Jina 429 / rỗng nhiều URL: `python .antigravity/skills/web-serp/scripts/scrape.py <url1> <url2> ...` (Firecrawl, cần `FIRECRAWL_API_KEY`, `pip install firecrawl-py`). Output cùng format.
 
 ---
 
 ## 📋 Output Format (Chuẩn cho mọi caller)
 
-Sau khi chạy xong cả 2 functions, output theo format sau trước khi chuyển sang Outline generation:
+Đây chính là format script in ra; khi làm tay phải theo đúng format này:
 
 ```
 ### SERP Results: {keyword}
-Top URLs tìm được: {N} URLs hợp lệ
+Organic hợp lệ: {N}
 
 ---
 
 ### Competitor 1: {domain}
 - URL: {full url}
-- Headings:
-  - H1: ...
-  - H2: ... → [intent]
-  - H2: ... → [intent]
-    - H3: ...
-- Data points: [số liệu / bảng / ngày cụ thể]
-- Special elements: [FAQ / calculator / bảng so sánh]
+- Tổng: ~1342 từ | 6 sections | 7 internal links | 0 external links
+- Outline (số từ / section — câu chủ đề):
+  - [Intro] (67 từ) — ...
+  - H2: 1. ROA là gì? (143 từ) — ROA là viết tắt của...
+  - H2: 3. Công thức ROA (277 từ) — ...
+    - H3: ... (120 từ) — ...
+- Entities: ROA×26, ROE×8, Việt Nam×2, WACC
+- Data points:
+  - Theo Forbes, ROA trên 5% được coi là tốt...
+- Internal links (anchor → URL):
+  - "Chỉ số ROE" → https://.../chi-so-roe
+- External links: forbes.com
+- Special elements: So sánh, List
 - Gap so với bài mình: [họ có gì, mình chưa có]
 
 ### Competitor 2: ...
 ```
 
+Agent chỉ cần điền `Gap so với bài mình` và (tuỳ chọn) ghi `→ [intent]` cạnh H2 nếu câu chủ đề chưa đủ rõ.
+
 ---
 
 ## 📊 Competitor Gap Synthesis (BẮT BUỘC sau khi extract xong tất cả competitors)
 
-Sau khi có đủ output từ tất cả competitors, tổng hợp thành 1 block trước khi chuyển sang Outline generation:
+Điền khung script đã in:
 
 ```
 ## Competitor Gap Synthesis: {keyword}
@@ -207,10 +186,10 @@ Sau khi có đủ output từ tất cả competitors, tổng hợp thành 1 bloc
 
 ### Recommended Featured Snippet target:
 - Dạng: [Paragraph | List | Table | None]
-- Lý do: [vì top 1-3 hiện tại không có / vì query dạng how-to / vì có bảng so sánh rõ]
+- Lý do: [dựa vào block Featured Snippet hiện tại + dạng query]
 ```
 
-Block này là input trực tiếp cho Outline generation — giúp tránh lặp lại những gì competitors đã làm.
+Block này là input trực tiếp cho Outline generation — giúp tránh lặp lại những gì competitors đã làm. Dùng `People Also Ask` cho FAQ và `Related Searches` cho secondary keywords.
 
 ---
 
@@ -235,7 +214,7 @@ URL5: https://...
 ─────────────────────────────────────────
 ```
 
-Sau khi user paste URLs → tiếp tục Function 2 bình thường.
+Sau khi user paste URLs → extract thủ công qua Jina như trên.
 
 ---
 
@@ -243,4 +222,4 @@ Sau khi user paste URLs → tiếp tục Function 2 bình thường.
 
 - `.antigravity/agents/seo-collector.md` — Step 1 SERP research
 - `.antigravity/skills/seo-outlining/SKILL.md` — Step 1 Plan
-- `.antigravity/skills/seo-optimization/SKILL.md` — Phase 1 Audit (khi cần SERP freshness check)
+- `.agents/skills/optimize/SKILL.md` — Bước 2.1 SERP Lookup
