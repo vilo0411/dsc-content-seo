@@ -43,10 +43,17 @@ JINA_TIMEOUT = 40
 LOCAL_TIMEOUT = 20
 LOCAL_MIN_WORDS = 300  # below this the page is probably JS-rendered -> fall back to Jina
 MAX_WORDS = 2000       # keep only the first N words of each competitor page
+OWN_DOMAIN = "dsc.com.vn"  # flag PAA answers Google already takes from our site
+PAA_MAX_DEPTH = 4      # DataForSEO people_also_ask_click_depth upper bound
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", "..", "..", ".."))
 CONFIG = os.path.join(ROOT, ".antigravity", "config", "api-keys.md")
 CACHE_DIR = os.path.join(ROOT, "knowledge", "raw", "serp")
+# Keyword plans: an API call is only made for keywords listed here unless --force is passed.
+PLAN_FILES = (
+    os.path.join(ROOT, "knowledge", "4-content", "topic-clusters.md"),
+    os.path.join(ROOT, "knowledge", "4-content", "sprint-backlog.md"),
+)
 
 # Domains that are never useful as competitor references.
 BLOCKLIST = (
@@ -81,6 +88,23 @@ def slugify(text):
     return re.sub(r"[^a-z0-9]+", "-", text).strip("-") or "keyword"
 
 
+def keyword_planned(keyword):
+    """True if the keyword (accent-insensitive) appears in any plan file. Missing files -> True (no gate)."""
+    files = [f for f in PLAN_FILES if os.path.exists(f)]
+    if not files:
+        return True
+    needle = slugify(keyword)
+    for f in files:
+        with open(f, encoding="utf-8-sig") as fh:
+            for line in fh:
+                if not line.startswith("|"):
+                    continue
+                for cell in line.split("|"):
+                    if slugify(cell.replace("**", "").replace("[HUB]", "")) == needle:
+                        return True
+    return False
+
+
 def cache_path(keyword):
     return os.path.join(CACHE_DIR, slugify(keyword) + ".json")
 
@@ -104,15 +128,22 @@ def save_cache(keyword, data):
 
 # ---------------------------------------------------------------- DataForSEO
 
-def fetch_serp(cfg, keyword, timeout):
-    """One live/advanced call. Exits on any error — no retry, no extra cost."""
-    body = json.dumps([{
+def fetch_serp(cfg, keyword, timeout, paa_depth=0):
+    """One live/advanced call. Exits on any error — no retry, no extra cost.
+
+    paa_depth > 0 sets people_also_ask_click_depth (1-4): Google expands the PAA tree on click,
+    each level adds more questions. Costs extra — only for pillar articles.
+    """
+    task = {
         "keyword": keyword,
         "location_code": LOCATION_CODE,
         "language_code": LANGUAGE_CODE,
         "device": "desktop",
         "depth": DEPTH,
-    }]).encode()
+    }
+    if paa_depth:
+        task["people_also_ask_click_depth"] = min(paa_depth, PAA_MAX_DEPTH)
+    body = json.dumps([task]).encode()
     token = base64.b64encode(
         ("%s:%s" % (cfg["DATAFORSEO_LOGIN"], cfg["DATAFORSEO_PASSWORD"])).encode()
     ).decode()
@@ -155,7 +186,18 @@ def parse_serp(payload, top):
                 "description": (item.get("description") or "").strip(),
             })
         elif t == "people_also_ask":
-            paa += [q.get("title") for q in item.get("items") or [] if q.get("title")]
+            for q in item.get("items") or []:
+                if not q.get("title"):
+                    continue
+                # expanded_element = the answer Google currently shows under the question
+                exp = (q.get("expanded_element") or [{}])[0]
+                paa.append({
+                    "question": q["title"].strip(),
+                    "answer_snippet": (exp.get("description") or "").strip()[:400],
+                    "source_title": (exp.get("title") or "").strip(),
+                    "source_url": exp.get("url") or "",
+                    "source_domain": (exp.get("domain") or "").lower(),
+                })
         elif t == "related_searches":
             related += [k for k in item.get("items") or [] if isinstance(k, str)]
         elif t == "featured_snippet" and snippet is None:
@@ -173,6 +215,48 @@ def parse_serp(payload, top):
         "se_results_count": result.get("se_results_count"),
         "cost": task.get("cost") or 0,
     }
+
+
+def normalize_paa(paa):
+    """Old cache files store PAA as plain strings; newer ones as dicts. Always return dicts."""
+    out = []
+    for q in paa or []:
+        if isinstance(q, str):
+            out.append({"question": q, "answer_snippet": "", "source_title": "",
+                        "source_url": "", "source_domain": ""})
+        elif isinstance(q, dict) and q.get("question"):
+            out.append(q)
+    return out
+
+
+_VI_STOP = {"la", "gi", "co", "cua", "va", "cac", "nhung", "de", "khi", "nao", "the", "thi",
+            "nen", "bao", "nhieu", "cach", "lam", "sao", "o", "dau", "toi", "ban", "can", "muon",
+            "khong", "phai", "hay", "voi", "cho", "ve", "tu", "su", "giua", "biet", "khac"}
+
+
+def _bigrams(text):
+    """Accent-stripped word bigrams minus stopwords. Bigrams keep compound terms apart
+    (chứng khoán ≠ chứng chỉ quỹ) where single tokens would collide on "chứng"."""
+    ws = [w for w in slugify(text).split("-") if len(w) > 1 and w not in _VI_STOP]
+    return {(ws[i], ws[i + 1]) for i in range(len(ws) - 1)} if len(ws) > 1 else set(ws)
+
+
+def paa_coverage(paa, competitors):
+    """For each PAA question, list competitor domains with a heading covering it
+    (every question bigram appears in the heading). Heuristic — good enough to spot gaps."""
+    rows = []
+    for q in paa:
+        qb = _bigrams(q["question"])
+        hit = []
+        for c in competitors or []:
+            if c.get("error"):
+                continue
+            for _, title in c.get("headings") or []:
+                if qb and qb <= _bigrams(title):
+                    hit.append(c.get("domain") or urllib.parse.urlparse(c["url"]).netloc)
+                    break
+        rows.append((q, hit))
+    return rows
 
 
 # ---------------------------------------------------------------- local extraction (Scrapling parser)
@@ -531,13 +615,22 @@ def print_text(keyword, data, from_cache):
         print("### Featured Snippet")
         print("- %s — %s" % (fs.get("domain"), fs.get("url")))
         print("- %s\n" % fs.get("text"))
-    if data.get("people_also_ask"):
-        print("### People Also Ask")
-        print("\n".join("- " + q for q in data["people_also_ask"]) + "\n")
-    if data.get("related_searches"):
-        print("### Related Searches")
-        print("\n".join("- " + k for k in data["related_searches"]) + "\n")
     comps = data.get("competitors") or []
+    paa = normalize_paa(data.get("people_also_ask"))
+    if paa:
+        print("### People Also Ask (%d) — mỗi câu phải thành H2/H3 hoặc FAQ trong Outline" % len(paa))
+        for q, hit in paa_coverage(paa, comps):
+            print("- Q: %s" % q["question"])
+            if q.get("answer_snippet"):
+                own = "  ⚑ DSC đang giữ PAA này" if OWN_DOMAIN in q.get("source_domain", "") else ""
+                print("  Google answer (%s):%s" % (q.get("source_domain") or "?", own))
+                print("    %s" % q["answer_snippet"][:250])
+            if comps:
+                print("  Heading khớp ở: %s" % (", ".join(sorted(set(hit))) if hit else "không đối thủ nào → gap tiềm năng, xác nhận bằng outline bên dưới"))
+        print()
+    if data.get("related_searches"):
+        print("### Related Searches — cùng intent → Secondary/LSI; khác intent → spin-off candidate")
+        print("\n".join("- " + k for k in data["related_searches"]) + "\n")
     if comps:
         print("---\n")
         for i, c in enumerate(comps, 1):
@@ -547,6 +640,7 @@ def print_text(keyword, data, from_cache):
         print("### Unique angles DSC có thể khai thác:\n- \n")
         print("### Content format gaps:\n- \n")
         print("### Recommended Featured Snippet target:\n- Dạng: [Paragraph | List | Table | None]\n- Lý do: \n")
+        print("### PAA plan:\n- Thân bài (H2/H3): \n- FAQ: \n- Spin-off từ Related Searches: \n")
     print("Cost: $%.4f%s" % (data.get("cost") or 0, " (cached, no API call)" if from_cache else ""))
 
 
@@ -559,8 +653,15 @@ def main():
     ap.add_argument("--json", action="store_true", help="print results as JSON")
     ap.add_argument("--raw", action="store_true", help="dump the raw DataForSEO payload (forces API call)")
     ap.add_argument("--no-cache", action="store_true", help="ignore cache and call the API again (costs money)")
+    ap.add_argument("--force", action="store_true",
+                    help="call the API even if the keyword is not listed in topic-clusters.md / sprint-backlog.md")
+    ap.add_argument("--paa-depth", type=int, default=0, metavar="N",
+                    help="expand People Also Ask tree N levels (1-4, extra cost; pillar articles only)")
     ap.add_argument("--timeout", type=int, default=90)
     args = ap.parse_args()
+    args.keyword = args.keyword.strip()
+    if not args.keyword:
+        sys.exit("Empty keyword — refusing to call the API.")
     top = min(args.top, DEPTH)
 
     cfg = load_config()
@@ -568,15 +669,19 @@ def main():
     from_cache = data is not None
 
     if data is None:
+        if not args.force and not keyword_planned(args.keyword):
+            sys.exit("Keyword \"%s\" không có trong topic-clusters.md / sprint-backlog.md — có thể gõ nhầm. "
+                     "Kiểm tra lại, hoặc thêm --force để gọi API (có phí)." % args.keyword)
         missing = [k for k in ("DATAFORSEO_LOGIN", "DATAFORSEO_PASSWORD") if not cfg.get(k)]
         if missing:
             sys.exit("Missing config: %s (set as env var or in %s)" % (", ".join(missing), CONFIG))
-        payload = fetch_serp(cfg, args.keyword, args.timeout)
+        payload = fetch_serp(cfg, args.keyword, args.timeout, args.paa_depth)
         if args.raw:
             print(json.dumps(payload, ensure_ascii=False, indent=2))
             return
         data = parse_serp(payload, DEPTH)
         data["keyword"] = args.keyword
+        data["paa_depth"] = args.paa_depth
         data["fetched_at"] = time.strftime("%Y-%m-%d %H:%M")
         data["competitors"] = []
         save_cache(args.keyword, data)
@@ -599,7 +704,8 @@ def main():
     else:
         data["competitors"] = []
 
-    view = dict(data, organic=data["organic"][:top])
+    view = dict(data, organic=data["organic"][:top],
+                people_also_ask=normalize_paa(data.get("people_also_ask")))
     if args.content:
         print_content(view)
     elif args.json:

@@ -61,6 +61,7 @@ PRODUCT BRIDGE : [Tên sản phẩm DSC phù hợp] — [Góc dẫn dắt tự n
 - Kích hoạt agent `.antigravity/agents/seo-collector.md` (chỉ Step 1: SERP Research, không tạo Outline).
 - **Quy trình thu thập & cào cấu trúc đối thủ tiết kiệm Token (Token-Efficient Flow):**
   1. **SERP Lookup (DataForSEO)**: `python .antigravity/skills/web-serp/scripts/serp_research.py "<keyword>" --top 5` → top 5 URLs Google VN + PAA + Featured Snippet (cache 30 ngày, không dùng `--no-cache`). Bỏ URL của chính dsc.com.vn.
+     - **PAA refresh (bắt buộc ghi vào Proposal):** đối chiếu từng câu trong block `### People Also Ask` với FAQ + heading của bài cũ. Câu chưa có → `[THÊM MỚI]` vào FAQ (câu đầu ≤ 60 từ, có số liệu + mốc thời gian) hoặc nâng thành H2/H3 nếu thuộc intent chính; câu FAQ cũ không còn trong PAA và không có traffic GSC → cân nhắc `[XÓA BỎ]`. Nếu `Google answer` đang thuộc đối thủ, viết đáp án ngắn hơn/cụ thể hơn đoạn đó. Ghi `PAA_Questions:` vào YAML của Proposal để `qa_lint.py --outline` đối chiếu ở Bước 5.
   2. **Automated Crawl & Filter (Chạy Script python `scripts/analyze_competitors.py`)**:
      - Chạy lệnh: `python scripts/analyze_competitors.py <url1> <url2> <url3> ...`
      - Script sẽ tự động xác thực HTTP status, **bỏ qua ngay lập tức** các URL lỗi (4xx, 5xx) hoặc các URL có dung lượng quá ít (thin content / link rác / error redirect < 200 từ).
@@ -158,8 +159,9 @@ Bỏ qua Part B hoàn toàn nếu script trả về "Không có bài nào phù h
 ### ⚙️ Bước 5: QA (BẮT BUỘC trước khi trình bày)
 - Chạy lint trước (kiểm tra luôn bảo toàn ảnh gốc):
   ```bash
-  python scripts/qa_lint.py knowledge/4-content/2-drafts/Optimize-[slug].md --original knowledge/4-content/3-finalized/Final-[slug].md --fix
+  python scripts/qa_lint.py knowledge/4-content/2-drafts/Optimize-[slug].md --original knowledge/4-content/3-finalized/Final-[slug].md --outline knowledge/4-content/1-outlines/Proposal-[slug].md --fix
   ```
+  (`--outline` trỏ tới Proposal để lint check `PAA-missing` / `FAQ-*`; bỏ nếu Proposal không có `PAA_Questions:`.)
   Exit 1 → sửa đúng các dòng CRITICAL/MAJOR, chạy lại. Chưa gọi Quality Guardian khi lint chưa PASS.
 - Lint PASS → kích hoạt agent `.antigravity/agents/quality-guardian.md`. QA chỉ đọc thêm `Optimize-[slug].md` + Content Strategy Header — **không đọc lại** `anti-ai-rules.md` / `glossary.md` / `instincts.md` (đã có từ Step 0).
 - Kết quả PASS → tiếp tục. FAIL → sửa và QA lại **tối đa 2 vòng**; sau vòng 2 vẫn FAIL → dừng, trình bày kèm `⚠️ Remaining issues`.

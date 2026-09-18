@@ -54,16 +54,22 @@ This agent is the primary executor of **Step 1 (Context Collection)** and **Step
 
     Output này là nguồn dữ liệu bắt buộc cho Section 2 của Proposal. Mỗi URL một block riêng biệt — không merge.
 
-3.  **Internal Comparison:** Reference internal market comparison files to find unique brand advantages.
-4.  **Entity Extraction:** Identify key entities (People, Organizations, Laws, Concepts) frequently mentioned in Top 1-3.
-5.  **Real Data Collection:** Gather industry-specific data, statistics, or expert insights from Knowledge Base. **CRITICAL: If no real data found on SERP, report to user. DO NOT hallucinate.**
+3.  **PAA & Related Searches Mapping (BẮT BUỘC):** Script in sẵn block `### People Also Ask` (kèm đáp án Google đang hiển thị + domain nguồn + đối thủ nào có heading khớp) và `### Related Searches`. Điền block `### PAA plan` ở cuối output script:
+    *   Mỗi câu PAA phải được xếp vào **một** trong hai: `body` (câu hỏi thuộc intent chính → thành H2/H3, giữ dạng câu hỏi) hoặc `faq` (câu hỏi phụ → H2 FAQ). Không được bỏ câu nào không giải thích.
+    *   Câu PAA mà "không đối thủ nào" có heading khớp → ưu tiên `body`, đây là gap dễ chiếm.
+    *   Câu PAA đã có `⚑ DSC đang giữ` → vẫn giữ trong bài (củng cố), không viết bài mới trùng.
+    *   Đáp án Google đang hiển thị (`Google answer`) là chuẩn về độ dài/format cần vượt — ghi vào `Bằng chứng thực tế` của section tương ứng.
+    *   Related Searches: tách `same_intent` (→ Secondary/LSI) và `spin_off` (khác intent / hẹp hơn, ví dụ "cách mua cổ phiếu Vingroup" khi bài là "cách mua cổ phiếu online") → **không nhồi** vào bài; chạy `find_links.py` xem đã có bài chưa để link.
+4.  **Internal Comparison:** Reference internal market comparison files to find unique brand advantages.
+5.  **Entity Extraction:** Identify key entities (People, Organizations, Laws, Concepts) frequently mentioned in Top 1-3.
+6.  **Real Data Collection:** Gather industry-specific data, statistics, or expert insights from Knowledge Base. **CRITICAL: If no real data found on SERP, report to user. DO NOT hallucinate.**
 
 ### Step 2: Expert Outline Generation
 Generate a Content Brief following the standard project template.
 
 **MANDATORY Requirements for every Outline:**
 1.  **Template Standard:** Must strictly follow the structure in `.antigravity/skills/seo-outlining/references/brief-template.md`.
-2.  **Rich Metadata (YAML):** Every brief must start with a YAML block containing `Target_Keyword`, `Secondary_Keywords`, `Entities`, `Persona`, `Core_Products`, and `Anti_AI_Flags`.
+2.  **Rich Metadata (YAML):** Every brief must start with a YAML block containing `Target_Keyword`, `Secondary_Keywords`, `Entities`, `Persona`, `Core_Products`, `Anti_AI_Flags`, and `PAA_Questions` + `Related_Searches` (from step 3; `qa_lint.py --outline` checks every `PAA_Questions` entry appears in the draft).
 3.  **SERP-Driven (Real Evidence):** Must include a `## 2. SERP Data Points` section with verified data from the current month (May 2026).
 4.  **Anti-AI Internalization:** Do not just list rules. **Internalize** the standards from `knowledge/3-pipeline/anti-ai-rules.md` so the outline itself is free of AI-typical language and structures. The outline must be a blueprint for a human-like article.
 5.  **Product Integration:** Map relevant brand products (found in brand profile/knowledge base) to the content context.
@@ -74,6 +80,7 @@ Generate a Content Brief following the standard project template.
 - **Section 3: Heading Structure (H1-H3)**
     - For each heading, specify: Nội dung chính, Entities & Keywords, Target word count.
     - One H2 must be a dedicated **DSC Product Bridge**.
+    - Every `PAA_Questions` entry with `placement: body` must appear as an H2/H3; FAQ section must contain ≥3 PAA questions, each answered in ≤60 words first sentence.
 - **Section 4: Internal/External Linking**
 - **Section 5: Brand Voice Checklist**
 

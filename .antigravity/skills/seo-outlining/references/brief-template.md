@@ -41,6 +41,15 @@ Anti_AI_Flags:
 
 # GEO/AEO
 GEO_Compliance: true  # Mỗi H2 phải có Load-Bearing Claim theo Phần 8 của anti-ai-rules.md
+PAA_Questions:  # BẮT BUỘC khi SERP_Research: true — copy nguyên văn từ output serp_research.py. qa_lint sẽ đối chiếu với Draft.
+  - q: "[Câu hỏi PAA 1]"
+    placement: body      # body = thành H2/H3 trong thân bài (intent chính) | faq = vào H2 FAQ
+    google_source: "[domain đang giữ PAA, nếu có]"
+  - q: "[Câu hỏi PAA 2]"
+    placement: faq
+Related_Searches:
+  same_intent: [từ khoá cùng intent → đưa vào Secondary_Keywords/LSI, chèn vào heading hoặc thân bài]
+  spin_off: [từ khoá khác intent / hẹp hơn → KHÔNG nhồi vào bài này; ứng viên bài mới hoặc internal link nếu đã có bài]
 
 # Cluster info
 Cluster: [Tên Cluster]
@@ -95,9 +104,12 @@ Internal_Links: []
 ---
 
 ### H2: Câu hỏi thường gặp (FAQ)
-- **Q1:** [Câu hỏi 1]
-- **Q2:** [Câu hỏi 2]
-- **Target:** Trả lời súc tích, trực diện để hỗ trợ người đọc.
+- **Nguồn câu hỏi:** Tối thiểu 3 câu lấy từ `PAA_Questions` có `placement: faq` (giữ nguyên văn hoặc Việt hoá tự nhiên, không đổi ý). Có thể thêm 1–2 câu từ `Related_Searches.same_intent`.
+- **Format mỗi câu:** `#### [Câu hỏi?]` → câu đầu tiên trả lời trực diện ≤ 60 từ, có entity + số liệu + mốc thời gian (extract-friendly cho PAA/AI Overview) → 1–2 câu bổ sung nếu cần. Không mở bằng "Câu trả lời là", "Như đã đề cập".
+- **Q1:** [Câu hỏi PAA — placement: faq]
+- **Q2:** [Câu hỏi PAA — placement: faq]
+- **Q3:** [Câu hỏi PAA — placement: faq]
+- **Target:** ~50–80 từ / câu.
 
 ### Kết bài & CTA
 - **Mục tiêu:** Tóm tắt insight đắt giá nhất + Lời khuyên chuyên gia.
@@ -109,6 +121,7 @@ Internal_Links: []
 
 - **External Links:** [Đề xuất nguồn uy tín]
 - **Internal Links:** [Đề xuất Anchor text + nội dung liên kết]
+- **Spin-off candidates (từ Related Searches / PAA khác intent):** [keyword → đã có bài? (chạy `find_links.py`) → link tới | chưa có → ghi vào `knowledge/raw/intel/dump.md` hoặc `serp-opportunities.md`]
 - **Yếu tố cạnh tranh:** [Bảng biểu / Infographic / Box chuyên gia]
 - **Brand Voice Checklist:** 
     - [ ] Thể hiện sự chuyên nghiệp, tin cậy.

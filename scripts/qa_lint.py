@@ -14,22 +14,23 @@ Rule sources (parsed at runtime, never hardcoded when a file exists):
     knowledge/3-pipeline/anti-ai-rules-blacklist.md     -> CL2 trigger phrases
     knowledge/3-pipeline/glossary.md  (section 7)        -> CL3 forbidden terms
     .antigravity/skills/internal-linking/scripts/sitemap-cache.json -> link verification
+    <outline>.md  PAA_Questions: (with --outline)         -> PAA-missing / FAQ-few-paa (AEO)
 """
 
 from __future__ import annotations
 
 import argparse
 import difflib
-import io
 import json
 import re
+import unicodedata
 import sys
 from dataclasses import dataclass, field, asdict
 from datetime import date
 from pathlib import Path
 
-if hasattr(sys.stdout, "buffer"):
-    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
+if hasattr(sys.stdout, "reconfigure"):  # reconfigure in place: a new TextIOWrapper would close the buffer when GC'd
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 ROOT = Path(__file__).resolve().parents[1]
 BLACKLIST_FILE = ROOT / "knowledge/3-pipeline/anti-ai-rules-blacklist.md"
@@ -560,6 +561,119 @@ def check_word_count(rep, draft_path: Path, outline_path: Path):
             rep.add("WC-over", "seo", "MAJOR", 1, f"[{o.title}] {actual} từ vượt max {o.max_words} — rút ~{actual - o.max_words} từ")
 
 
+# ─────────────────────────── PAA / FAQ (AEO) ───────────────────────────
+
+FAQ_HEADING = re.compile(r"^##\s+.*(faq|câu hỏi thường gặp)", re.I)
+FAQ_ITEM = re.compile(r"^(?:#{3,4}\s+(.+)|[-*+]\s+\*\*(.+?)\*\*\s*\??)")  # "### Q?" or "* **Q**?"
+FAQ_MAX_FIRST_SENTENCE = 60
+FAQ_MIN_PAA = 3
+FAQ_BAD_OPENERS = ("câu trả lời là", "như đã đề cập", "như đã nói", "như đã phân tích", "có thể nói")
+_PAA_STOP = {"la", "gi", "co", "cua", "va", "cac", "nhung", "de", "khi", "nao", "the", "thi", "nen",
+             "bao", "nhieu", "cach", "lam", "sao", "o", "dau", "toi", "ban", "can", "muon", "khong",
+             "phai", "hay", "voi", "cho", "ve", "tu", "su", "giua", "biet", "khac"}
+
+
+def _ascii_words(text: str) -> list[str]:
+    t = unicodedata.normalize("NFD", strip_md(text).lower().replace("đ", "d"))
+    t = "".join(c for c in t if unicodedata.category(c) != "Mn")
+    return [w for w in re.split(r"[^a-z0-9]+", t) if len(w) > 1 and w not in _PAA_STOP]
+
+
+def _paa_match(question: str, candidate: str) -> bool:
+    """Question is covered when ≥70% of its content words (accent-stripped) appear in candidate."""
+    q, c = _ascii_words(question), set(_ascii_words(candidate))
+    return bool(q) and sum(w in c for w in q) / len(q) >= 0.7
+
+
+def parse_outline_paa(outline_text: str) -> list[dict]:
+    """Read PAA_Questions from the outline YAML: `- q: "..."` + optional `placement: body|faq`."""
+    out, cur, inside = [], None, False
+    for line in outline_text.split("\n"):
+        if re.match(r"^PAA_Questions\s*:", line):
+            inside = True
+            continue
+        if inside:
+            if re.match(r"^[A-Za-z_]+\s*:", line) or line.strip() in ("---", "```"):
+                break
+            m = re.match(r"""^\s*-\s*q\s*:\s*["']?(.+?)["']?\s*$""", line)
+            if m:
+                cur = {"q": m.group(1).strip(), "placement": "faq"}
+                out.append(cur)
+                continue
+            m = re.match(r"^\s*placement\s*:\s*(\w+)", line)
+            if m and cur:
+                cur["placement"] = m.group(1).lower()
+    return [q for q in out if q["q"] and not q["q"].startswith("[")]
+
+
+def faq_items(lines, start) -> list[tuple[int, str, str]]:
+    """(line_no, question, answer_text) for every item under the FAQ H2."""
+    items, in_faq, i = [], False, start
+    while i < len(lines):
+        s = lines[i].strip()
+        if re.match(r"^##\s", s):
+            in_faq = bool(FAQ_HEADING.match(s))
+            i += 1
+            continue
+        m = FAQ_ITEM.match(s) if in_faq else None
+        if m:
+            heading_q = m.group(1)
+            if heading_q:  # heading item: answer is the following prose lines
+                ans, j = [], i + 1
+                while j < len(lines) and not re.match(r"^#{2,4}\s", lines[j].strip()):
+                    if lines[j].strip():
+                        ans.append(lines[j].strip())
+                    j += 1
+                items.append((i + 1, heading_q, " ".join(ans)))
+                i = j
+                continue
+            items.append((i + 1, m.group(2), s[m.end():].lstrip("? ").strip()))  # bullet item
+        i += 1
+    return items
+
+
+def check_faq_format(rep, lines, start, paa_count: int):
+    items = faq_items(lines, start)
+    rep.stats["faq_items"] = len(items)
+    if not items:
+        if paa_count:
+            rep.add("FAQ-missing", "geo", "MAJOR", start + 1,
+                    f"Outline có {paa_count} câu PAA nhưng draft không có H2 FAQ / câu hỏi thường gặp")
+        return
+    for ln, q, ans in items:
+        first = split_sentences(strip_md(ans))[:1]
+        first = first[0] if first else ""
+        n = len(first.split())
+        if n > FAQ_MAX_FIRST_SENTENCE:
+            rep.add("FAQ-long-answer", "geo", "MINOR", ln,
+                    f"Câu đầu đáp án FAQ {n} từ (> {FAQ_MAX_FIRST_SENTENCE}) — khó được trích làm PAA/AI Overview", q)
+        if any(first.lower().startswith(o) for o in FAQ_BAD_OPENERS):
+            rep.add("FAQ-indirect", "geo", "MINOR", ln, "Đáp án FAQ không trả lời trực diện ở câu đầu", first)
+
+
+def check_paa(rep, lines, start, outline_path: Path) -> int:
+    """Every PAA_Questions entry in the outline must surface as a heading or FAQ item in the draft."""
+    try:
+        paa = parse_outline_paa(outline_path.read_text(encoding="utf-8"))
+    except OSError:
+        return 0
+    rep.stats["paa_questions"] = len(paa)
+    if not paa:
+        return 0
+    headings = [strip_md(l.strip().lstrip("#").strip()) for l in lines[start:] if re.match(r"^#{2,4}\s", l.strip())]
+    faq_qs = [q for _, q, _ in faq_items(lines, start)]
+    missing = [it for it in paa if not any(_paa_match(it["q"], c) for c in headings + faq_qs)]
+    for it in missing:
+        where = "H2/H3 thân bài" if it["placement"] == "body" else "FAQ"
+        rep.add("PAA-missing", "geo", "MAJOR", start + 1, f"Câu PAA chưa xuất hiện làm {where}: “{it['q']}”")
+    in_faq = sum(1 for it in paa if any(_paa_match(it["q"], c) for c in faq_qs))
+    need = min(FAQ_MIN_PAA, len(paa))
+    if faq_qs and in_faq < need:
+        rep.add("FAQ-few-paa", "geo", "MINOR", start + 1, f"FAQ chỉ có {in_faq}/{len(paa)} câu lấy từ PAA (cần ≥ {need})")
+    rep.stats["paa_covered"] = len(paa) - len(missing)
+    return len(paa)
+
+
 # ─────────────────────────── Fix (safe, idempotent) ───────────────────────────
 
 def apply_fixes(text: str) -> tuple[str, list[str]]:
@@ -689,8 +803,11 @@ def main() -> int:
     check_geo(rep, lines, start)
     if args.original:
         check_images(rep, lines, start, Path(args.original))
+    paa_count = 0
     if args.outline:
         check_word_count(rep, path, Path(args.outline))
+        paa_count = check_paa(rep, lines, start, Path(args.outline))
+    check_faq_format(rep, lines, start, paa_count)
 
     if args.log:
         append_log(rep, slug)

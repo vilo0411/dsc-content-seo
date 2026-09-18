@@ -29,7 +29,7 @@ All operations must strictly follow the rules defined in:
 > | Đổi/kiểm tra trạng thái bài | đọc `topic-clusters.md` (17 KB) | `python scripts/topic_status.py <slug> [--set "..."]` |
 > | Tìm internal link | đọc `anchor-index.md` (180 KB) | `python scripts/find_links.py "<keyword>" --exclude <slug>` |
 > | Tìm bài cũ nên link tới bài mới | đọc 5 file Final | `python scripts/find_links.py --backfill <slug>` |
-> | Check SEO/Anti-AI/format cơ học | grep bằng mắt theo checklist | `python scripts/qa_lint.py <file> [--outline ...] [--original ...] [--fix]` |
+> | Check SEO/Anti-AI/format cơ học | grep bằng mắt theo checklist | `python scripts/qa_lint.py <file> [--outline ...] [--original ...] [--fix]` (`--outline` còn check từng câu `PAA_Questions` có mặt trong draft + format FAQ) |
 > | Đọc persona | cả `personas.md` (14 KB) | chỉ section persona đã chọn |
 > | Xem lỗi cũ của bài | cả `revision-log.md` | `grep -n "<slug>" knowledge/3-pipeline/revision-log.md` |
 
@@ -81,11 +81,12 @@ All operations must strictly follow the rules defined in:
 
 | Script | Dùng để |
 | :--- | :--- |
-| `scripts/qa_lint.py <file> [--outline] [--original] [--fix] [--json] [--log]` | Lint deterministic ~25 check (CL1/2/3/5/6, link, GEO, word count) + Score 0–100. Exit 1 = FAIL. |
+| `scripts/qa_lint.py <file> [--outline] [--original] [--fix] [--json] [--log]` | Lint deterministic ~28 check (CL1/2/3/5/6, link, GEO, word count, PAA coverage + FAQ format khi có `--outline`) + Score 0–100. Exit 1 = FAIL. |
 | `scripts/find_links.py "<kw>" [--exclude slug]` / `--backfill <slug>` | Tra anchor-index + sitemap-cache; tìm bài cũ nên link tới bài mới kèm dòng gợi ý. |
 | `scripts/topic_status.py <slug> [--set S]` / `--find` / `--list` | Đọc/ghi 1 ô trạng thái trong topic-clusters.md. |
 | `scripts/optimize_instincts.py` | Sinh lại `instincts.md` (dedupe, tách lint-covered, tách scope) từ archive. |
-| `.antigravity/skills/web-serp/scripts/serp_research.py "<kw>" [--top 10] [--extract 5]` | SERP Google VN (DataForSEO, **có phí**) + PAA + extract competitor (local Scrapling parser, Jina fallback cho trang JS). Cache 30 ngày ở `knowledge/raw/serp/` — không dùng `--no-cache` trừ khi user yêu cầu. |
+| `scripts/serp_opportunities.py [--min-count N]` | Gom PAA + Related Searches từ cache SERP → `knowledge/3-pipeline/serp-opportunities.md` (chưa có bài / có bài chưa giữ PAA / DSC đang giữ). 0 API call. Input cho `/keyword-plan`, `/optimize`. |
+| `.antigravity/skills/web-serp/scripts/serp_research.py "<kw>" [--top 10] [--extract 5] [--paa-depth N]` | SERP Google VN (DataForSEO, **có phí**) + PAA (kèm đáp án Google đang hiện + đối thủ nào có heading khớp) + Related Searches + extract competitor (local Scrapling parser, Jina fallback cho trang JS). Cache 30 ngày ở `knowledge/raw/serp/` — không dùng `--no-cache` trừ khi user yêu cầu; `--paa-depth` tốn thêm, chỉ cho pillar. Keyword chưa có trong topic-clusters/sprint-backlog → script từ chối gọi API, cần `--force`. |
 | `.antigravity/skills/internal-linking/scripts/sync_sitemap.py` | Cập nhật `sitemap-cache.json` từ sitemap live. |
 | `.antigravity/skills/internal-linking/scripts/link_audit.py [--orphans]` | Dashboard in/out link + danh sách orphan trong `3-finalized/`. |
 

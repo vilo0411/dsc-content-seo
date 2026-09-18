@@ -15,6 +15,7 @@ This skill focuses on SERP intelligence and creating high-detail Content Briefs 
         *   Intent từng section — trả lời câu hỏi gì của reader?
         *   Content gaps, unique angles, and UX elements (tables, calculators, FAQ schema).
     *   **Chạy Competitor Gap Synthesis** theo format trong `web-serp/SKILL.md` — bắt buộc trước khi sang Step 2.
+    *   **Điền `### PAA plan`** (cuối output script): mỗi câu PAA → `body` hoặc `faq`; Related Searches → `same_intent` / `spin_off`. Ghi kết quả vào YAML `PAA_Questions` + `Related_Searches` của outline (xem `brief-template.md`). Câu PAA không đối thủ nào có heading khớp = gap ưu tiên.
 2. **Consult Knowledge**: Read brand profile and anti-ai rules.
 3. **Verify Product Match**: Identify which brand product fits this specific intent.
 4. **Internal Link Planning**: **KHÔNG đọc `anchor-index.md`.** Chạy `python scripts/find_links.py "[keyword]" --top 6` (thêm 1 lần với từ khoá phụ nếu cần) — script đã đối soát sitemap. Chọn 2–3 URL có Sitemap ✓. Ghi vào field `Internal_Links:` của outline YAML theo format:

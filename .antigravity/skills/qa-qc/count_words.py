@@ -8,7 +8,6 @@ Usage:  python count_words.py <draft.md> <outline.md>
 Exit:   0 = PASS, 1 = FAIL (section under target or over max), 2 = error
 """
 
-import io
 import re
 import sys
 import difflib
@@ -16,8 +15,8 @@ from dataclasses import dataclass
 from typing import Optional
 
 # Force UTF-8 output on Windows
-if hasattr(sys.stdout, "buffer"):
-    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
+if hasattr(sys.stdout, "reconfigure"):  # reconfigure in place: a new TextIOWrapper would close the buffer when GC'd
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 
 @dataclass

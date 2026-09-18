@@ -35,7 +35,7 @@ Tương đương với `Phase 1` và `Phase 2` của lệnh `/write`.
 ### Bước 3: Expert Outline Generation
 - Tích hợp Brand Context Snippet (bao gồm Writer Profile) vào output của SERP Research.
 - Tạo Outline theo template `.antigravity/skills/seo-outlining/references/brief-template.md`.
-- Đảm bảo outline YAML có đầy đủ: `Writer_Profile:`, `Internal_Links:`, `Featured_Snippet:`.
+- Đảm bảo outline YAML có đầy đủ: `Writer_Profile:`, `Internal_Links:`, `Featured_Snippet:`, `PAA_Questions:` (mỗi câu có `placement: body|faq`), `Related_Searches:` (`same_intent` / `spin_off`).
 - Lưu tại: `knowledge/4-content/1-outlines/[slug].md`.
 - Cập nhật `topic-clusters.md` → trạng thái `Outlining`.
 

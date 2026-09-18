@@ -63,13 +63,15 @@ python .antigravity/skills/web-serp/scripts/serp_research.py "{keyword}" --top 1
 | `--content` | — | In **toàn văn** markdown đã lọc của các competitor đã extract (đọc kỹ 1 bài, không dùng làm input Outline) |
 | `--json` | — | Output JSON (dùng khi cần parse tự động) |
 | `--no-cache` | — | Bỏ qua cache, gọi API lại (**tốn tiền** — chỉ khi user yêu cầu) |
+| `--force` | — | Gọi API cho keyword **không có** trong `topic-clusters.md` / `sprint-backlog.md` (mặc định script từ chối để tránh gõ nhầm tốn tiền; cache vẫn đọc bình thường) |
+| `--paa-depth N` | 0 | Mở rộng cây People Also Ask N tầng (1–4, `people_also_ask_click_depth`) — **tốn thêm**, chỉ dùng cho bài pillar khi user đồng ý. Chỉ có tác dụng khi gọi API (kết hợp `--no-cache` nếu đã có cache) |
 | `--raw` | — | Dump payload gốc DataForSEO (debug, cũng tốn 1 call) |
 
 **Output (text):**
 1. `### SERP Results` — top URLs: rank / title / URL / description (đã lọc google, facebook, youtube, tiktok, mạng xã hội)
 2. `### Featured Snippet` — nếu Google đang hiện (domain + đoạn text) → quyết định Featured Snippet target
-3. `### People Also Ask` — dùng trực tiếp làm gợi ý FAQ section
-4. `### Related Searches` — gợi ý secondary keywords / H2
+3. `### People Also Ask (N)` — mỗi câu kèm: `Google answer (domain)` = đoạn Google đang hiển thị dưới câu hỏi (chuẩn độ dài/format cần vượt; `⚑ DSC đang giữ` nếu nguồn là dsc.com.vn) và `Heading khớp ở:` = đối thủ nào (trong số đã `--extract`) có heading trả lời câu đó theo heuristic bigram. "không đối thủ nào" = gap tiềm năng → ưu tiên đưa vào thân bài. *Cache cũ (trước 2026-09-18) chỉ có câu hỏi, không có Google answer.*
+4. `### Related Searches` — tách `same_intent` (→ Secondary/LSI) và `spin_off` (khác intent → bài mới / internal link), không nhồi hết vào 1 bài
 5. `### Competitor N: {domain}` × N (khi `--extract`):
    - `Tổng`: số từ, số section, số internal/external link
    - `Outline`: từng H1–H4 (kể cả `[Intro]`) kèm **số từ của section** và **câu chủ đề** → biết đối thủ đào sâu chỗ nào
@@ -187,9 +189,14 @@ Agent chỉ cần điền `Gap so với bài mình` và (tuỳ chọn) ghi `→ 
 ### Recommended Featured Snippet target:
 - Dạng: [Paragraph | List | Table | None]
 - Lý do: [dựa vào block Featured Snippet hiện tại + dạng query]
+
+### PAA plan:
+- Thân bài (H2/H3): [câu PAA intent chính — giữ dạng câu hỏi]
+- FAQ: [≥3 câu PAA còn lại]
+- Spin-off từ Related Searches: [keyword → đã có bài (link) | chưa có (ghi intel/dump.md)]
 ```
 
-Block này là input trực tiếp cho Outline generation — giúp tránh lặp lại những gì competitors đã làm. Dùng `People Also Ask` cho FAQ và `Related Searches` cho secondary keywords.
+Block này là input trực tiếp cho Outline generation — giúp tránh lặp lại những gì competitors đã làm. `PAA plan` map thẳng sang YAML `PAA_Questions` / `Related_Searches` của outline; `qa_lint.py --outline` sẽ đối chiếu từng câu PAA với Draft.
 
 ---
 
