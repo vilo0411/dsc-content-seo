@@ -13,6 +13,9 @@ knowledge/raw/gsc/cache-meta.json
 # SERP cache từ DataForSEO (serp_research.py) — sinh lại được, không track
 knowledge/raw/serp/
 
+# Cache HTML trang live (cta_audit.py) — ~270KB/trang, sinh lại được bằng --refresh
+knowledge/raw/pages/
+
 # Local scratch / editor state
 .antigravity/brain/
 knowledge/4-content/.obsidian/

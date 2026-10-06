@@ -202,6 +202,28 @@ def word_count(s: str) -> int:
     return len(strip_md(s).split())
 
 
+def mask_html_blocks(lines: list[str], start: int) -> list[str]:
+    """Blank out raw HTML block lines (CTA banners), keeping line indices intact.
+
+    Banners are pasted-into-CMS HTML with inline CSS. Prose checks would otherwise read
+    attribute quotes as emphatic quotes and CSS declarations as long sentences.
+    """
+    out, depth, in_fence = list(lines), 0, False
+    for i in range(start, len(lines)):
+        s = lines[i].strip()
+        if s.startswith("```"):
+            in_fence = not in_fence
+            continue
+        if in_fence:
+            continue
+        opens = len(re.findall(r"<(div|section|table|figure)\b", s, re.I))
+        closes = len(re.findall(r"</(div|section|table|figure)>", s, re.I))
+        if depth > 0 or opens:
+            out[i] = ""
+            depth = max(0, depth + opens - closes)
+    return out
+
+
 def classify(line: str) -> str:
     s = line.strip()
     if not s:
@@ -479,6 +501,12 @@ def check_links(rep, lines, start, sitemap: set[str], use_sitemap: bool):
             continue
         if in_fence:
             continue
+        # CTA banners are raw HTML (pasted into the CMS), so their link is an href, not a
+        # markdown link — without this the banner would not satisfy LINK-cta below.
+        for hm in re.finditer(r'href=["\']([^"\']+)["\']', raw):
+            href = hm.group(1)
+            if href.startswith(OPEN_ACCOUNT_URL) or href.startswith("/mo-tai-khoan"):
+                has_open = True
         for m in re.finditer(r"(!?)\[([^\]]*)\]\(([^)\s]+)[^)]*\)", raw):
             is_img, text, url = m.group(1) == "!", m.group(2), m.group(3)
             if is_img:
@@ -508,6 +536,27 @@ def check_links(rep, lines, start, sitemap: set[str], use_sitemap: bool):
     if len(internal) < MIN_INTERNAL_LINKS:
         rep.add("LINK-count", "link", "MAJOR", start + 1, f"Chỉ có {len(internal)} internal link /kien-thuc/ (cần ≥ {MIN_INTERNAL_LINKS})")
     rep.stats["internal_links"] = len(internal)
+
+
+def check_cta(rep, path: Path):
+    """CTA/banner checks — delegated to cta_audit.py so the rules live in exactly one place.
+
+    Opt-in via --cta: the finalized corpus has not been backfilled with banners yet, so running
+    this by default would fail every existing article.
+    """
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    try:
+        import cta_audit  # type: ignore
+    except ImportError:
+        rep.add("CTA", "link", "MINOR", 1, "Không import được cta_audit.py — bỏ qua CTA check")
+        return
+    art = cta_audit.audit(path)
+    for cid, sev, line, msg in art.issues:
+        if cid == "CTA-no-link":
+            continue  # LINK-cta already covers a missing open-account link
+        rep.add(cid, "link", sev, line, msg)
+    rep.stats["cta_banners"] = len(art.banners)
+    rep.stats["cta_score"] = art.score()
 
 
 def check_geo(rep, lines, start):
@@ -761,6 +810,8 @@ def main() -> int:
     ap.add_argument("--outline", help="Outline file for section word-count targets")
     ap.add_argument("--original", help="Original Final file (optimize mode) to verify image preservation")
     ap.add_argument("--keyword", help="Override Target_Keyword from front matter")
+    ap.add_argument("--cta", action="store_true",
+                    help="Bật CTA/banner checks (CTA-*). Chưa mặc định — corpus finalized chưa backfill banner")
     ap.add_argument("--fix", action="store_true", help="Apply safe idempotent fixes in place before linting")
     ap.add_argument("--json", action="store_true", help="Print JSON instead of markdown")
     ap.add_argument("--log", action="store_true", help="Append score row to revision-log.md")
@@ -793,14 +844,19 @@ def main() -> int:
     forbidden = load_forbidden_terms()
     sitemap = set() if args.no_sitemap else load_sitemap()
 
+    # Prose checks read a copy with raw HTML blocks blanked out; link/CTA checks need the real HTML.
+    prose = mask_html_blocks(lines, start)
+
     check_frontmatter(rep, fm, keyword)
     check_headings(rep, lines, start, keyword)
     check_keyword_in_sapo(rep, lines, start, keyword)
-    check_anti_ai(rep, lines, start, hard, hedge, soft, forbidden)
-    check_brand_format(rep, lines, start)
-    check_structure(rep, lines, start)
+    check_anti_ai(rep, prose, start, hard, hedge, soft, forbidden)
+    check_brand_format(rep, prose, start)
+    check_structure(rep, prose, start)
     check_links(rep, lines, start, sitemap, not args.no_sitemap)
-    check_geo(rep, lines, start)
+    check_geo(rep, prose, start)  # CSS percentages (0%, 70%) would count as data points
+    if args.cta:
+        check_cta(rep, path)
     if args.original:
         check_images(rep, lines, start, Path(args.original))
     paa_count = 0

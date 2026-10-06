@@ -72,12 +72,18 @@ Trước khi làm bất cứ việc gì, hệ thống phải đọc:
   ```
   Chỉ dùng URL có cột Sitemap ✓. Có thể gọi thêm 1–2 lần với từ khoá phụ của outline.
 - Chèn tối thiểu 3-5 internal links vào draft, đặt tự nhiên trong câu.
-- **BẮT BUỘC:** Luôn có ít nhất 01 link chuyển đổi mở tài khoản chứng khoán DSC (`https://www.dsc.com.vn/mo-tai-khoan`) tại phần Product Bridge hoặc CTA cuối bài.
+- **BẮT BUỘC:** Luôn có ít nhất 01 link chuyển đổi mở tài khoản chứng khoán DSC (`https://www.dsc.com.vn/mo-tai-khoan`) tại phần Product Bridge hoặc CTA cuối bài — theo `.antigravity/rules/cta-conversion.md`.
 
-**Bước 2.3 — Lint + Quality Guardian (QA):**
+**Bước 2.3 — CRO / CTA Banner:**
+- Kích hoạt skill `.antigravity/skills/cro-optimization/SKILL.md`.
+- Dựng đoạn Product Bridge (nếu outline chưa có) + chèn banner CTA đúng persona đã chọn ở Bước 1.2.
+- **P4 (vốn lớn): không chèn banner**, chỉ link text — xem mục giới hạn một-offer trong skill.
+- Chạy trước bước lint là cố ý: banner và đoạn Product Bridge mới phải chịu lint cùng bài.
+
+**Bước 2.4 — Lint + Quality Guardian (QA):**
 - Chạy lint trước, sửa cơ học tự động:
   ```bash
-  python scripts/qa_lint.py knowledge/4-content/2-drafts/Draft-[slug].md --outline knowledge/4-content/1-outlines/[slug].md --fix
+  python scripts/qa_lint.py knowledge/4-content/2-drafts/Draft-[slug].md --outline knowledge/4-content/1-outlines/[slug].md --cta --fix
   ```
   Exit 1 → sửa đúng các dòng CRITICAL/MAJOR trong bảng, chạy lại. Chưa gọi Quality Guardian khi lint chưa PASS.
 - Lint PASS → kích hoạt agent `.antigravity/agents/quality-guardian.md` (chỉ checklist ngữ nghĩa; context đã có từ Step 0, QA chỉ đọc thêm Outline gốc).

@@ -39,7 +39,22 @@ def normalize_title(t: str) -> str:
     return re.sub(r"[^\w\s]", "", t.lower()).strip()
 
 
+def strip_html_blocks(text: str) -> str:
+    """Drop raw HTML blocks (CTA banners) whole, then any stray tags.
+
+    Banner copy is a call to action, not editorial prose, so it must not count toward the
+    per-section word targets an outline sets.
+    """
+    for tag in ("div", "section", "figure", "table"):
+        prev = None
+        while prev != text:  # repeat to unwrap nesting from the inside out
+            prev = text
+            text = re.sub(rf"<{tag}\b[^>]*>(?:(?!<{tag}\b)[\s\S])*?</{tag}>", " ", text, flags=re.I)
+    return re.sub(r"<[^>]+>", " ", text)
+
+
 def count_words(text: str) -> int:
+    text = strip_html_blocks(text)                           # CTA banners: markup + CTA copy, not editorial prose
     text = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", text)   # inline links
     text = re.sub(r"!\[[^\]]*\]\([^)]+\)", "", text)         # images
     text = re.sub(r"```[\s\S]*?```", "", text)               # code blocks

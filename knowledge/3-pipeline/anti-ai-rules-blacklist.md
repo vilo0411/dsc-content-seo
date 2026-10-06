@@ -47,6 +47,7 @@ Không dùng dấu ngoặc kép `"..."` bao từ thông thường, tiếng lóng
 - "thủ thuật" / "chiêu trò" → dùng "chiến lược" / "phương pháp"
 - "rõ ràng" (dạng vô nghĩa: "phân biệt rõ ràng") → bỏ
 - "xương máu" → dùng "quý báu", "sống còn", "cốt lõi"
+- "Active Trader" / "trader" (trong văn xuôi tiếng Việt) → dùng "nhà đầu tư chủ động", "nhà đầu tư lướt sóng", "nhà giao dịch ngắn hạn"
 
 ---
 

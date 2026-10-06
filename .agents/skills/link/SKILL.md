@@ -18,7 +18,7 @@ description: Tự động chèn internal links phù hợp cho bài viết nháp 
    Chỉ dùng dòng có **Sitemap ✓**.
 3. Tìm kiếm các cụm từ (anchor text) phù hợp, tự nhiên trong bài và gắn URL tới các bài viết liên quan (Spoke to Hub, Spoke to Spoke).
 4. **Ưu tiên URL có traffic thực (nếu có GSC data):** Khi có nhiều candidate tương đương, ưu tiên URL có clicks cao trong `knowledge/3-pipeline/gsc-opportunities.md` (grep theo slug) — trang đang nhận traffic truyền authority mạnh hơn. Không có data → chọn theo semantic relevance.
-5. **BẮT BUỘC:** Luôn kiểm tra và chèn ít nhất 01 link chuyển đổi mở tài khoản chứng khoán DSC (`https://www.dsc.com.vn/mo-tai-khoan`) tại phần Product Bridge hoặc CTA Kết luận.
+5. **BẮT BUỘC:** Luôn kiểm tra và chèn ít nhất 01 link chuyển đổi mở tài khoản chứng khoán DSC (`https://www.dsc.com.vn/mo-tai-khoan`) tại phần Product Bridge hoặc CTA Kết luận. Rule đầy đủ về CTA ở `.antigravity/rules/cta-conversion.md`; skill này **chỉ lo link text** — banner do `/cro` phụ trách.
 6. Đảm bảo mật độ link vừa phải (1 link / 100 - 150 từ), không chèn quá nhiều, không dùng anchor chung chung (như "tại đây", "xem thêm").
 7. Đảm bảo định dạng chuẩn CMS: Không dùng code block lưu đồ ASCII (`+---+`) hoặc LaTeX formulas.
 8. Áp dụng thay đổi trực tiếp vào file.

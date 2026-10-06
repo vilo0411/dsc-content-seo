@@ -37,7 +37,28 @@
 ### Phân tích chỉ số tài chính theo ngành và xử lý lỗi ngoặc kép "Số cuối kỳ"
 - Khi phân tích các chỉ số cơ cấu tài chính (như DAR), luôn đính kèm so sánh định lượng đặc thù từng nhóm ngành cụ thể (như Ngân hàng 88%-92%, Bất động sản 55%-75%, Công nghệ 20%-35%). Tránh dùng dấu ngoặc kép bọc quanh tên các chỉ mục báo cáo tài chính (ví dụ: dùng "cột Số cuối kỳ" thay vì "cột 'Số cuối kỳ'") để tránh trigger lỗi emphatic quotes của QA script.
 
+### Hạn chế dùng thuật ngữ tiếng Anh "Active Trader" hoặc "trader" trong văn xuôi tiếng Việt
+- Đối với đối tượng Active Trader (P3) hoặc các bài phân tích kỹ thuật, tuyệt đối không chèn trực tiếp các từ tiếng Anh mượn thô như "Active Trader" hay "trader" vào văn xuôi bài viết tiếng Việt. Thay vào đó, hãy sử dụng các thuật ngữ tiếng Việt chuẩn mực tài chính Việt Nam như "nhà đầu tư chủ động", "nhà đầu tư lướt sóng", "nhà giao dịch ngắn hạn" hoặc "nhà đầu tư".
+
+### Một URL một intent — chống cannibalization giữa bài hướng dẫn và bài lựa chọn
+- Khi viết/tối ưu một bài, kiểm tra các bài DSC cùng cụm (`find_links.py`) xem có bài nào đang trả lời cùng intent không. Bài so sánh/lựa chọn (ví dụ "mở tài khoản ở đâu") chỉ được nhắc quy trình bằng 2–3 câu + link anchor đúng từ khóa sang bài hướng dẫn, không đặt H2/H3 hướng dẫn chi tiết. Anchor dạng hướng dẫn ("mở tài khoản eKYC", "cách mở...") chỉ trỏ về bài hướng dẫn; anchor dạng lựa chọn ("nên mở ở đâu") chỉ trỏ về bài lựa chọn.
+
+### Giọng văn bài hướng dẫn (How-to) của DSC
+- 1. Sapo bài hướng dẫn: câu đầu chứa keyword và tóm tắt các bước (ví dụ "Cách mở tài khoản chứng khoán online gồm 5 bước: ..."), câu sau nêu điều kiện cần; đoạn 2 nêu phạm vi bài và phần hướng dẫn riêng tại DSC. Không mở bằng "Bạn chỉ cần...". 2. Không đưa nhân vật persona có tên, tuổi, nghề (Minh, 27 tuổi...) vào bài hướng dẫn; nêu thẳng tình huống/lỗi bằng câu khách quan. 3. (…xem archive)
+
+### Copy và vị trí banner CTA trong bài hướng dẫn
+- Headline banner nêu thẳng hành động/lợi ích gắn chủ đề bài (ví dụ "Mở tài khoản chứng khoán DSC chỉ với CCCD gắn chip"), không dùng câu hỏi mồi hay lối nói đùa ("Đã có CCCD...? Bạn chỉ còn cách..."). Dòng phụ là 3 dữ kiện sản phẩm thật (eKYC 3 phút, miễn phí mở và duy trì, Môi giới 1:1, phí từ 0,1%, Mã định danh 963369). Banner cuối bài phải khác ý banner giữa bài. (…xem archive)
+
+### Target word count H2 trong outline chỉ tính thân riêng
+- Khi viết outline, `**Target:**` của H2 có H3 con chỉ ghi số từ phần thân riêng của H2 (trước H3 đầu tiên), vì `count_words.py` không cộng H3 vào H2. Câu FAQ trong outline không dùng nhãn `**Target:**` (sẽ bị gán nhầm vào H2 FAQ); phần kết bài nếu có heading thì ghi `### H2: ...` kèm target riêng.
+
+### Đối chiếu dữ liệu thực tế từ Google AI Overview cho bài toán quy mô vốn lớn
+- Khi viết các bài viết so sánh lãi suất tiền gửi quy mô vốn lớn (từ 1 tỷ VNĐ trở lên), luôn bổ sung góc nhìn thương lượng lãi suất thỏa thuận riêng tại quầy (+0,5%–1,5%/năm so với niêm yết) và các gói ưu đãi trực tuyến ngân hàng số (7,4%–9,6%/năm) bên cạnh biểu lãi suất niêm yết chuẩn, giúp bài viết chuẩn xác với kết quả Google AI Overview và thấu hiểu nhu cầu thực tế của người gửi tiền.
+
 ## Cấu trúc & Định dạng (Structure & Formatting)
+
+### Bảng ma trận hậu quả gồng lỗ & Quy tắc cắt lỗ 7-8% vs. Chốt lời 20-25% CANSLIM
+- Luôn lồng ghép Bảng ma trận hậu quả gồng lỗ (-5% hòa vốn +5,3% vs -50% hòa vốn +100%) kết hợp Quy tắc cắt lỗ 7-8% & chốt lời 20-25% CANSLIM và Hướng dẫn thời điểm bán trước vs. sau ngày chốt quyền cổ tức khi viết/tối ưu các bài tư vấn thời điểm chốt lời/cắt lỗ cho nhà đầu tư mới (P2).
 
 ### Bảng đối sánh Cờ đuôi nheo vs Lá cờ vs Tam giác & Volume Profile 3 giai đoạn
 - Luôn lồng ghép Bảng đối sánh Cờ đuôi nheo (Pennant) vs Mô hình lá cờ (Flag) vs Mô hình tam giác (Triangle) kết hợp quy luật biến động thanh khoản Volume Profile 3 giai đoạn (Cột cờ - Thân cờ cạn vol - Breakout bùng nổ 1,5–2 lần MA20) và phương pháp xử lý bẫy breakout giả khi viết/tối ưu các mô hình giá tiếp diễn cho Active Trader (P3).

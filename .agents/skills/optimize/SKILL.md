@@ -151,6 +151,11 @@ Bỏ qua Part B hoàn toàn nếu script trả về "Không có bài nào phù h
   2. Prompt sinh ảnh tuân thủ nghiêm ngặt DSC Brand Rules: 3D Vector Isometric / Abstract Finance, palette `#00AD14`, `#2BE841`, `#10E7B3`, `#0D1B2A`, `no-text: true` (`Absolutely NO TEXT, NO WORDS, NO LETTERS, NO NUMBERS`), tuyệt đối cấm màu đỏ (`NO RED COLOR`).
   3. Sao chép toàn bộ file ảnh tạo ra vào thư mục `knowledge/4-content/images/` với tên file chuẩn `[slug]-[concept].jpg`.
   4. Chèn trực tiếp đường dẫn Markdown ảnh tương đối chuẩn vào bài nháp: `![Alt text tối ưu SEO chứa keyword](../images/[slug]-[concept].jpg)`.
+- **CRO / CTA Banner (BẮT BUỘC):**
+  1. Kích hoạt skill `.antigravity/skills/cro-optimization/SKILL.md`.
+  2. Persona / Intent / Product Bridge **đọc thẳng từ Content Strategy Header** (Section 0 của Proposal) — không suy luận lại.
+  3. Dựng đoạn Product Bridge nếu bài gốc chưa có, rồi chèn banner theo giới hạn của persona. **P4: không banner**, chỉ link text.
+  4. Rule đầy đủ: `.antigravity/rules/cta-conversion.md`.
 - Áp dụng tuần tự 7 bước quét (Clarity → Voice → So What → Prove It → Specificity → Emotion → Zero Risk).
 - Chỉ sửa các phần được gắn nhãn `[CẬP NHẬT]`, `[XÓA BỎ]`, `[THÊM MỚI]` trong Proposal. Không chạm vào `[GIỮ NGUYÊN]`.
 
@@ -159,7 +164,7 @@ Bỏ qua Part B hoàn toàn nếu script trả về "Không có bài nào phù h
 ### ⚙️ Bước 5: QA (BẮT BUỘC trước khi trình bày)
 - Chạy lint trước (kiểm tra luôn bảo toàn ảnh gốc):
   ```bash
-  python scripts/qa_lint.py knowledge/4-content/2-drafts/Optimize-[slug].md --original knowledge/4-content/3-finalized/Final-[slug].md --outline knowledge/4-content/1-outlines/Proposal-[slug].md --fix
+  python scripts/qa_lint.py knowledge/4-content/2-drafts/Optimize-[slug].md --original knowledge/4-content/3-finalized/Final-[slug].md --outline knowledge/4-content/1-outlines/Proposal-[slug].md --cta --fix
   ```
   (`--outline` trỏ tới Proposal để lint check `PAA-missing` / `FAQ-*`; bỏ nếu Proposal không có `PAA_Questions:`.)
   Exit 1 → sửa đúng các dòng CRITICAL/MAJOR, chạy lại. Chưa gọi Quality Guardian khi lint chưa PASS.

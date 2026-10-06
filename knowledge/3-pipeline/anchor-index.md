@@ -14,7 +14,13 @@ File này là danh sách tập trung của tất cả bài viết trên website 
 
 | Anchor Text Gợi ý | URL | Từ khóa Liên quan | Trạng thái |
 | :--- | :--- | :--- | :--- |
+| hệ số thanh toán là gì | https://www.dsc.com.vn/kien-thuc/he-so-thanh-toan-la-gi | Hệ Số Thanh Toán Là Gì? Ý Nghĩa & Cách Phân Tích Cho F0 | Finalized (Mới) |
+| 50 triệu nên gửi tiết kiệm ngân hàng nào | https://www.dsc.com.vn/kien-thuc/50-trieu-nen-gui-tiet-kiem-ngan-hang-nao | 50 triệu nên gửi tiết kiệm ngân hàng nào lãi cao 2026? | Finalized (Mới) |
+| 100 triệu gửi ngân hàng | https://www.dsc.com.vn/kien-thuc/100-trieu-gui-ngan-hang | 100 Triệu Gửi Ngân Hàng Lãi Bao Nhieu 1 Tháng? Bảng Lãi Suất 2026 | Finalized (Mới) |
+| có 1 tỷ nên gửi ngân hàng nào | https://www.dsc.com.vn/kien-thuc/co-1-ty-nen-gui-ngan-hang-nao | Có 1 tỷ nên gửi ngân hàng nào lãi suất cao và an toàn? | Finalized (Mới) |
+| khi nào nên bán cổ phiếu | https://www.dsc.com.vn/kien-thuc/khi-nao-nen-ban-co-phieu-5-truong-hop-nha-dau-tu-can-luu-y | Khi nào nên bán cổ phiếu? 5 trường hợp & quy tắc chốt lời | Finalized (Mới) |
 | chi phí biên là gì | https://www.dsc.com.vn/kien-thuc/chi-phi-bien-la-gi | Chi Phí Biên Là Gì? Công Thức, Ý Nghĩa & Cách Tính Cho F0 | Finalized (Mới) |
+| giờ giao dịch chứng khoán việt nam | https://www.dsc.com.vn/kien-thuc/gio-giao-dich-chung-khoan-viet-nam | Giờ Giao Dịch Chứng Khoán Việt Nam Cập Nhật Mới Nhất 2026 | Finalized (Mới) |
 | chỉ báo MACD là gì | https://www.dsc.com.vn/kien-thuc/macd-la-gi | MACD Là Gì? Cấu Tạo 3 Thành Phần & Bộ Lọc Nhiễu 3 Lớp | Finalized (Mới) |
 | phân biệt cổ phiếu và trái phiếu | https://www.dsc.com.vn/kien-thuc/phan-biet-co-phieu-va-trai-phieu | Phân Biệt Cổ Phiếu Và Trái Phiếu: 10 Khác Biệt & Cách Chọn | Finalized (Mới) |
 | vốn lưu động là gì | https://www.dsc.com.vn/kien-thuc/von-luu-dong-la-gi | Vốn Lưu Động Là Gì? Công Thức, Ý Nghĩa & Cách Tính Cho F0 | Finalized (Mới) |
@@ -373,7 +379,7 @@ File này là danh sách tập trung của tất cả bài viết trên website 
 | hop dong mo tài khoản chứng khoán | https://www.dsc.com.vn/kien-thuc/hop-dong-mo-tai-khoan-chung-khoan | hop dong mo tài khoản chứng khoán, kiến thức DSC | Live Published |
 | cách đọc báo cáo tài chính | https://www.dsc.com.vn/kien-thuc/huong-dan-cach-doc-bao-cao-tai-chinh-nhung-thong-tin-quan-trong | Cách Đọc Báo Cáo Tài Chính Cho F0: 5 Bước Chuẩn & 4 Bẫy Cần Tránh | Finalized (Mới) |
 | huong dan cách doc bao cao thuong nien hiệu quả | https://www.dsc.com.vn/kien-thuc/huong-dan-cach-doc-bao-cao-thuong-nien-hieu-qua | huong dan cách doc bao cao thuong nien hiệu quả, kiến thức DSC | Live Published |
-| hướng dẫn cách mở tài khoản chứng khoán cho n | https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan | Hướng dẫn cách mở tài khoản chứng khoán cho người mới | Finalized (Mới) |
+| cách mở tài khoản chứng khoán | https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan | cách mở tài khoản chứng khoán, mở tài khoản chứng khoán online, mở tài khoản eKYC, điều kiện mở tài khoản chứng khoán, lỗi eKYC | Finalized (Mới) |
 | huong dan cách mua cổ phiếu ssi tai chứng khoán ds | https://www.dsc.com.vn/kien-thuc/huong-dan-cach-mua-co-phieu-ssi-tai-chung-khoan-dsc | huong dan cách mua cổ phiếu ssi tai chứng khoán ds, kiến thức DSC | Live Published |
 | huong dan chi tiet cách mua cổ phiếu mwg | https://www.dsc.com.vn/kien-thuc/huong-dan-chi-tiet-cach-mua-co-phieu-mwg | huong dan chi tiet cách mua cổ phiếu mwg, kiến thức DSC | Live Published |
 | huong dan giao dịch lo chan lo le | https://www.dsc.com.vn/kien-thuc/huong-dan-giao-dich-lo-chan-lo-le | huong dan giao dịch lo chan lo le, kiến thức DSC | Live Published |
@@ -577,6 +583,8 @@ File này là danh sách tập trung của tất cả bài viết trên website 
 
 | Anchor Text Gợi ý | URL | Từ khóa Liên quan | Trạng thái |
 | :--- | :--- | :--- | :--- |
+| chứng quyền là gì | https://www.dsc.com.vn/kien-thuc/chung-quyen-la-gi-chung-quyen-co-bao-dam-la-gi-tim-hieu-chung-quyen-tai-viet-nam | Chứng Quyền Là Gì? Phân Biệt, Cách Đọc Mã & Giao Dịch CW | Finalized (Mới) |
+| mô hình cánh bướm | https://www.dsc.com.vn/kien-thuc/mo-hinh-canh-buom | Mô hình Cánh bướm (Butterfly Pattern): Tỷ lệ Fibonacci | Finalized (Mới) |
 | 12+ mô hình nến đảo chiều mạnh nhất trong phâ | https://www.dsc.com.vn/kien-thuc/mo-hinh-nen-dao-chieu | 12+ mô hình nến đảo chiều mạnh nhất trong phân tích kỹ thuật chứng khoán | Finalized (Mới) |
 | adx là gì | https://www.dsc.com.vn/kien-thuc/chi-bao-adx-la-gi | phân tích kỹ thuật, chỉ báo xu hướng, ADX | Finalized (Mới) |
 | bollinger bands là gì | https://www.dsc.com.vn/kien-thuc/bollinger-bands-la-gi-cach-su-dung-trong-giao-dich-chung-khoan | Bollinger Bands là gì? cách sử dụng chỉ báo PTKT | Finalized (Mới) |
@@ -885,6 +893,7 @@ File này là danh sách tập trung của tất cả bài viết trên website 
 
 ---
 
+| co nen dau tu vao quy mo vcbf | https://www.dsc.com.vn/kien-thuc/co-nen-dau-tu-vao-quy-mo-vcbf | Có nên đầu tư vào quỹ mở VCBF? Hiệu suất & Biểu phí | Finalized (Mới) |
 ## Cluster 8: Đầu tư Vàng & Tích lũy tài sản phòng thủ (18 bài)
 
 | Anchor Text Gợi ý | URL | Từ khóa Liên quan | Trạng thái |
@@ -959,3 +968,6 @@ Khi một bài viết mới được finalized hoặc publish live, thêm một 
 
 ---
 *Cập nhật ngày: 2026-09-09 (Tổng cộng: 860 bài viết: 112 bài mới + 748 bài sitemap live)*
+| bán khống chứng khoán | https://www.dsc.com.vn/kien-thuc/tim-hieu-ve-ban-khong-chung-khoan-hoat-dong-dau-tu-lo-khong-gioi-han | bán khống chứng khoán, kiến thức DSC | Live Published |
+| quy luật giá trị là gì | https://www.dsc.com.vn/kien-thuc/quy-luat-gia-tri-la-gi-giai-thich-chi-tiet-va-day-du | Quy Luật Giá Trị Là Gì? Nội Dung, Tác Động & Ứng Dụng | Finalized (Mới) |
+| https://www.dsc.com.vn/kien-thuc/co-nen-dau-tu-vao-quy-mo-vinacapital | Có nên đầu tư vào quỹ mở VinaCapital | co-nen-dau-tu-vao-quy-mo-vinacapital | Cluster 6 | ✓ |

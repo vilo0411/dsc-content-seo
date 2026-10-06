@@ -31,7 +31,8 @@ Dùng sau khi Outline đã được `/approve`. Chỉ thực hiện Phase 3 (Dra
 - Kích hoạt skill `.antigravity/skills/internal-linking/SKILL.md` → Mode: Contextual Insertion.
 - Lấy ứng viên: `python scripts/find_links.py "[keyword]" --top 8 --exclude [slug]` — chỉ dùng URL có Sitemap ✓.
 - Chèn tối thiểu 3-5 internal links vào draft.
-- **BẮT BUỘC:** Luôn chèn ít nhất 01 link chuyển đổi dẫn về trang **Mở tài khoản chứng khoán DSC** (`https://www.dsc.com.vn/mo-tai-khoan`) tại phần Product Bridge hoặc CTA cuối bài.
+- **BẮT BUỘC:** Luôn chèn ít nhất 01 link chuyển đổi dẫn về trang **Mở tài khoản chứng khoán DSC** (`https://www.dsc.com.vn/mo-tai-khoan`) tại phần Product Bridge hoặc CTA cuối bài — rule đầy đủ ở `.antigravity/rules/cta-conversion.md`.
+- Banner CTA: kích hoạt `.antigravity/skills/cro-optimization/SKILL.md` sau bước này, trước khi lint.
 
 ### Bước 3: Lint + Quality Guardian (QA — BẮT BUỘC)
 - Lint trước:

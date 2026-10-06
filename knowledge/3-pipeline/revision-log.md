@@ -7,6 +7,42 @@ File này ghi lại các chỉnh sửa thực tế mà người dùng thực hi�
 
 ---
 
+### [2026-09-29] - lenh-mak-la-gi
+- **Lỗi đã sửa:** Thêm bài viết mới giải thích khái niệm Lệnh MAK (Match And Kill) cho nhà đầu tư tìm kiếm kiến thức giao dịch; được người dùng đính kèm ảnh chụp màn hình giao diện Đặt lệnh thực tế của App DSC Trading để đính chính việc DSC không có tùy chọn lệnh MAK; đã điều chỉnh outline và draft bài viết để giải thích chuẩn xác bản chất MAK theo quy chế SGDCK/KRX, đồng thời dẫn dắt thực tế ứng dụng DSC Trading cung cấp các lệnh thị trường tối ưu (LO, MTL, ATO, ATC) và phân tích lệnh MTL như giải pháp thay thế linh hoạt cho MAK.
+- **Pattern:** Đạt 100/100 PASS QA Lint (0 CRITICAL, 0 MAJOR, 0 MINOR, 0 câu >30 từ), bổ sung mốc số liệu giao dịch 2026, lồng ghép Bảng đối sánh 4 tiêu chí giữa 4 loại lệnh thị trường (MAK vs MOK vs MTL vs MP), giải thích chi tiết cơ chế hủy phần dư (Kill), ví dụ số liệu thực tế khớp 6.000/10.000 cổ phiếu PVS trên HNX, phân tích giải pháp lệnh MTL trên DSC Trading và chuyên mục FAQs giải đáp 3 câu hỏi thực tế. Tích hợp 4 internal links tự nhiên từ Sitemap Live (gồm link CTA mở tài khoản chứng khoán DSC eKYC 3 phút, Môi giới 1:1, Margin 10–13,5%/năm).
+- **Rule học được:** Khi viết các bài giải thích loại lệnh giao dịch (như MAK/MOK), luôn phân biệt rõ giữa định nghĩa quy chế giao dịch chung của SGDCK và tính năng thực tế trên ứng dụng DSC Trading (hiện tại ưu tiên LO, MTL, ATO, ATC). Phân tích lệnh MTL như giải pháp thay thế linh hoạt giúp khớp nhanh giá thị trường mà giữ phần dư dạng LO thay vì bị tự động hủy như MAK.
+- **Scope:** Global
+
+### [2026-09-23] - lenh-mtl-trong-giao-dich-chung-khoan-la-gi
+- **Lỗi đã sửa:** Bài gốc mỏng (~550 từ) cào từ live URL (chưa có trong repo local); thiếu ví dụ minh họa khớp lệnh bằng số liệu thực tế; thiếu Bảng so sánh 3 loại lệnh thị trường trên sàn HNX (MTL vs MOK vs MAK); thiếu section phân tích ứng dụng lệnh MTL trong thị trường chứng khoán Phái sinh (VN30F); thiếu các lưu ý thực chiến phòng tránh rủi ro trượt giá (Slippage); sapo và kết bài mang văn phong AI sáo rỗng.
+- **Pattern:** Tối ưu hóa toàn diện theo Seven Sweeps Framework: Mở rộng dung lượng lên 1.375 từ (đạt 99/100 PASS QA, 0 CRITICAL, 0 MAJOR, 0 câu >30 từ), bổ sung Bảng ví dụ khớp lệnh 5.000 cổ phiếu HPG chi tiết, xây dựng Bảng đối sánh 4 tiêu chí cốt lõi giữa 3 lệnh thị trường HNX (MTL, MOK, MAK), phân tích ứng dụng lướt sóng phái sinh và 3 lưu ý tránh bẫy trượt giá khi thanh khoản mỏng. Tạo 1 hình ảnh 3D Vector Isometric mới chuẩn Brand Guidelines DSC (no-text, palette DSC, cấm màu đỏ) và bảo toàn 100% hình ảnh gốc. Tích hợp 4 internal links tự nhiên và Product Bridge hệ sinh thái DSC (App DSC Trading, eKYC 3 phút, Môi giới 1:1, Margin 10–13,5%/năm).
+- **Rule học được:** Luôn lồng ghép Bảng đối sánh 3 loại lệnh thị trường HNX (MTL vs MOK vs MAK) kết hợp phân tích ứng dụng lướt sóng phái sinh VN30F và 3 lưu ý tránh bẫy trượt giá (Slippage) khi viết/tối ưu các bài về loại lệnh giao dịch chứng khoán cho nhà đầu tư (P2 & P3).
+- **Scope:** Global
+
+### [2026-09-23] - phuong-phap-dau-tu-theo-dong-tien-hieu-qua
+- **Lỗi đã sửa:** Bài gốc mỏng (~600 từ) cào từ live URL (chưa có trong repo local); chỉ có công thức PV cơ bản và 4 chu kỳ VSA tổng quan; thiếu các chỉ báo kỹ thuật đo lường dòng tiền chuyên sâu (MFI, CMF, OBV); thiếu quy luật luân chuyển dòng tiền theo nhóm ngành (Sector Rotation); mở bài dùng câu chào xã giao Anti-AI ("hãy tham khảo bài phân tích dưới đây của DSC nhé!"); kết bài dạo đầu AI ("được hỗ trợ tốt nhất nhé!"); thiếu Product Bridge sắc bén cho Active Trader (P3).
+- **Pattern:** Tối ưu hóa toàn diện theo Seven Sweeps Framework: Mở rộng dung lượng lên 1.585 từ (đạt 99/100 PASS QA, 0 CRITICAL, 0 MAJOR, 0 câu >30 từ), bổ sung mốc thời gian thị trường tháng 9/2026, lồng ghép 3 kỹ thuật đọc vị dòng tiền thực chiến (Công thức Price-Volume PV = %P * V, 3 chỉ báo kỹ thuật MFI/CMF/OBV, Quy luật luân chuyển dòng tiền ngành Sector Rotation), 4 giai đoạn VSA kinh điển (Tích lũy, Tăng trưởng, Phân phối, Suy thoái), 3 chiến lược đầu tư theo đà tăng trưởng Momentum Trading & Leader, 3 câu hỏi FAQ chuẩn PAA. Tạo 1 hình ảnh 3D Vector Isometric mới chuẩn Brand Guidelines DSC (no-text, palette DSC, cấm màu đỏ) và bảo toàn 100% 5 hình ảnh gốc. Tích hợp 5 internal links tự nhiên và Product Bridge hệ sinh thái DSC (Môi giới 1:1, Margin 10–13,5%/năm, mở tài khoản eKYC trên App DSC Trading).
+- **Rule học được:** Luôn lồng ghép 3 chỉ báo kỹ thuật đo lường dòng tiền (MFI, CMF, OBV) kết hợp Quy luật luân chuyển dòng tiền ngành (Sector Rotation) và 4 giai đoạn VSA khi viết/tối ưu các bài phân tích phương pháp giao dịch theo dòng tiền cho nhà đầu tư giao dịch chủ động Active Trader (P3).
+- **Scope:** Global
+
+### [2026-09-23] - khi-nao-nen-ban-co-phieu-5-truong-hop-nha-dau-tu-can-luu-y
+- **Lỗi đã sửa:** Bài gốc mỏng (~650 từ) cào từ live URL (chưa có trong repo local); thiếu quy tắc định lượng kinh điển của CANSLIM (7-8% cắt lỗ tuyệt đối, 20-25% chốt lời); thiếu tín hiệu phân tích kỹ thuật nhận diện điểm bán (RSI quá mua/phân kỳ âm, MACD Dead Cross, gãy đường hỗ trợ MA20/MA50); chưa giải đáp các câu hỏi PAA thực tế như bán trước/sau ngày chốt quyền cổ tức, thời điểm giao dịch trong ngày và chu kỳ T+2,5; tiêu đề ban đầu vượt quá 59 ký tự chuẩn SEO.
+- **Pattern:** Tối ưu hóa toàn diện theo Seven Sweeps Framework: Mở rộng dung lượng lên 1.477 từ (đạt 99/100 PASS QA, 0 CRITICAL, 0 MAJOR, 0 câu >30 từ), bổ sung mốc thời gian thị trường tháng 9/2026, lồng ghép Bảng ma trận hậu quả gồng lỗ (thua lỗ -50% cần +100% để hòa vốn), Quy tắc chốt lời 20-25% & Trailing Stop, 3 chỉ báo kỹ thuật phát tín hiệu bán kỷ luật, Giải đáp 4 câu hỏi FAQ chuẩn PAA. Tạo 1 hình ảnh 3D Vector Isometric mới chuẩn Brand Guidelines DSC (no-text, palette DSC, cấm màu đỏ) và bảo toàn 100% hình ảnh gốc. Tích hợp 4 internal links tự nhiên và Product Bridge hệ sinh thái DSC (Môi giới 1:1, Lệnh điều kiện Stop Loss/Take Profit trên App DSC Trading, mở tài khoản eKYC).
+- **Rule học được:** Luôn lồng ghép Bảng ma trận hậu quả gồng lỗ (-5% hòa vốn +5,3% vs -50% hòa vốn +100%) kết hợp Quy tắc cắt lỗ 7-8% & chốt lời 20-25% CANSLIM và Hướng dẫn thời điểm bán trước vs. sau ngày chốt quyền cổ tức khi viết/tối ưu các bài tư vấn thời điểm chốt lời/cắt lỗ cho nhà đầu tư mới (P2).
+- **Scope:** Global
+
+### [2026-09-23] - app-dau-tu-chung-khoan
+- **Lỗi đã sửa:** Bài gốc mỏng (~1.400 từ) trích xuất từ URL live (chưa có trong repo local); thiếu 2 công ty chứng khoán thuộc top 5–top 10 thị phần uy tín (HSC Trade và MBS Mobile); thiếu section H2 hướng dẫn kiểm tra và nhận diện để tránh tải nhầm app chứng khoán giả mạo; thiếu front matter YAML chuẩn SEO; một số câu dài vượt quá 30 từ và dùng dấu chấm thập phân (`0.1%`) chưa chuẩn tiếng Việt (`0,1%`).
+- **Pattern:** Tối ưu hóa toàn diện theo Seven Sweeps Framework: Mở rộng dung lượng lên ~2.570 từ (đạt 97/100 PASS QA, 0 CRITICAL, 0 MAJOR, 0 câu >30 từ), bổ sung mốc số liệu 2026, lồng ghép Bảng so sánh 5 tiêu chí lựa chọn app chứng khoán cho F0, Siêu bảng đối chiếu Top 10 app đầu tư chứng khoán uy tín nhất Việt Nam (DSC Trading, VPS SmartOne, SSI iBoard, HSC Trade, VNDirect DStock, Finhay, TCInvest, MBS Mobile, Anfin, FireAnt), 3 lưu ý tránh tải nhầm app giả mạo. Tạo 1 hình ảnh 3D Vector Isometric mới chuẩn Brand Guidelines DSC (no-text, palette DSC, cấm màu đỏ) và bảo toàn 100% 3 hình ảnh gốc. Tích hợp 3 internal links tự nhiên và Product Bridge hệ sinh thái DSC (mở tài khoản eKYC 3 phút, Môi giới 1:1, Nạp tiền BIDV 963369).
+- **Rule học được:** Luôn lồng ghép Siêu bảng so sánh Top 10 app chứng khoán uy tín kết hợp H2 hướng dẫn 3 lưu ý nhận diện app giả mạo và phân tích nổi bật vị thế Môi giới 1:1 của DSC Trading khi viết/tối ưu các bài tư vấn lựa chọn ứng dụng giao dịch chứng khoán cho nhà đầu tư mới (P2).
+- **Scope:** Global
+
+### [2026-09-22] - gio-giao-dich-chung-khoan-viet-nam
+- **Lỗi đã sửa:** Thêm thông tin không có trong Brand KB (đặt lệnh ngoài giờ 24/7 trên App DSC Trading) và đặt tiêu đề H2 gượng ép (chiến lược giao dịch đúng khung giờ); được người dùng phản hồi và điều chỉnh chuẩn xác.
+- **Pattern:** Chỉnh sửa H2 Product Bridge thành Tối ưu hiệu quả giao dịch theo từng phiên cùng App DSC Trading và Môi giới 1:1; chuẩn hóa thông tin sản phẩm về đúng Brand KB (mở tài khoản eKYC 3 phút, theo dõi bảng giá real-time mượt mà, chuyên gia Môi giới 1:1 tư vấn chiến lược trước giờ giao dịch). Tối ưu meta description về 151 ký tự.
+- **Rule học được:** Luôn đối soát thông tin sản phẩm với Brand KB (profile.md & service-operations.md), tuyệt đối không tự tạo hoặc giả định tính năng sản phẩm không có trong KB. Đặt tiêu đề H2 Product Bridge tự nhiên, tập trung vào cách giải quyết vấn đề thực tế của độc giả F0.
+- **Scope:** Global
+
 ## Format ghi log
 
 `
@@ -18,6 +54,12 @@ File này ghi lại các chỉnh sửa thực tế mà người dùng thực hi�
 `
 
 ---
+
+### [2026-09-22] - chung-quyen-la-gi-chung-quyen-co-bao-dam-la-gi-tim-hieu-chung-quyen-tai-viet-nam
+- **Lỗi đã sửa:** Bài gốc mỏng (~650 từ) cào từ live URL (chưa có trong repo local); thiếu các intent quan trọng như cách đọc mã chứng quyền, các trạng thái chứng quyền ITM/ATM/OTM, công thức tính giá và xác định lãi/lỗ khi đáo hạn, các yếu tố ảnh hưởng đến giá CW và hướng dẫn quy trình đặt lệnh giao dịch trên sàn HOSE; mở bài chưa có sapo chuẩn SEO chứa target keyword `chứng quyền là gì`; kết bài tóm tắt lý thuyết chung chung thiếu link CTA trực tiếp đến trang mở tài khoản eKYC DSC.
+- **Pattern:** Tối ưu hóa toàn diện theo Seven Sweeps Framework: Mở rộng dung lượng lên ~1.736 từ (đạt 100/100 PASS QA, 0 CRITICAL, 0 MAJOR, 0 MINOR, 0 câu >30 từ), bổ sung mốc thời gian thị trường tháng 9/2026, lồng ghép Bảng so sánh 6 tiêu chí Chứng quyền doanh nghiệp vs Covered Warrant (CW), Bảng bóc tách 3 trạng thái chứng quyền mua (ITM, ATM, OTM), Công thức tính Giá hòa vốn & Tiền thanh toán thực nhận khi đáo hạn kèm ví dụ số tiền 1.000 CW HPG, Hướng dẫn đọc mã 8 ký tự theo quy định UBCKNN (CFPT2512), 5 yếu tố tài chính quyết định giá CW, Hướng dẫn 4 bước giao dịch trên sàn HOSE (T+2,5) và chuyên mục FAQs Schema giải đáp 3 câu hỏi thực tế F0. Tạo 1 hình ảnh 3D Vector Isometric mới chuẩn Brand Guidelines DSC (no-text, palette DSC, cấm màu đỏ) và bảo toàn 100% hình ảnh gốc. Tích hợp 4 internal links tự nhiên và Product Bridge hệ sinh thái DSC (eKYC 3 phút, Môi giới 1:1, App DSC Trading).
+- **Rule học được:** Luôn lồng ghép Bảng bóc tách 3 trạng thái chứng quyền mua (ITM, ATM, OTM) kết hợp Công thức tính giá hòa vốn & tiền thanh toán thực nhận khi đáo hạn và Hướng dẫn đọc cấu trúc mã CW 8 ký tự theo quy định UBCKNN khi viết/tối ưu các bài về chứng quyền có bảo đảm cho nhà đầu tư mới (P2).
+- **Scope:** Global
 
 ### [2026-09-17] - cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau
 - **Lỗi đã sửa:** Bài gốc mỏng (~1.100 từ), chưa có Bảng đối sánh 5 tiêu chí Đầu tư chủ động vs Bị động, chưa có Bộ lọc 4 tiêu chí chọn cổ phiếu an toàn cho F0 (Lợi nhuận >15%, ROE >15%, vị thế đầu ngành, MA20), chưa giải thích rõ bước giá/lô 100 CP và 4 lệnh giao dịch cơ bản, số liệu minh họa cũ và chưa có chuyên mục FAQs Schema cho F0.
@@ -923,11 +965,16 @@ File này ghi lại các chỉnh sửa thực tế mà người dùng thực hi�
 - **Lỗi đã sửa:** Bài gốc mỏng (~750 từ) cào từ URL live (chưa có trong repo local); mở bài và kết bài vi phạm Anti-AI Blacklist ("bài viết dưới đây của DSC", "Hy vọng rằng, thông qua bài viết này..."); dính Emphatic Quotes; thiếu công thức tính Tỷ lệ ký quỹ thực tế (R_m); thiếu dấu hiệu nhận biết tài khoản chạm ngưỡng Full Margin; thiếu Bảng phân biệt Call Margin vs Force Sell vs Rũ Margin; lời khuyên cho F0 mang tính giáo điều thiếu định lượng thực chiến cho Active Trader (P3).
 - **Pattern:** Tối ưu hóa toàn diện theo Seven Sweeps Framework: Mở rộng dung lượng lên ~1.550 từ (chuẩn 99/100 PASS QA, 0 CRITICAL, 0 MAJOR, 0 câu >30 từ), bổ sung mốc thời gian quy chế UBCKNN năm 2026 và mốc thời gian hạ margin quý 2026, lồng ghép công thức tính R_m, 3 dấu hiệu hết sức mua trên App DSC Trading, Bảng đối sánh 4 tiêu chí Call Margin vs Force Sell vs Rũ Margin, 5 chiến lược quản trị rủi ro đòn bẩy thực chiến (Stop-loss 5-7%, giữ tiền mặt 15-20%, hạ đòn bẩy khi gãy MA20, chọn VN30 thanh khoản >1 triệu CP/phiên). Tạo 2 hình ảnh 3D Isometric chuẩn Brand Guidelines DSC (no-text, palette DSC, cấm màu đỏ) và bảo toàn 100% hình ảnh gốc. Tích hợp Product Bridge Margin DSC (lãi suất 10-13,5%/năm, hạn mức 90 ngày tự động gia hạn, eKYC 3 phút, Môi giới 1:1).
 - **Rule học được:** Luôn lồng ghép Công thức tính Tỷ lệ ký quỹ thực tế (R_m) kết hợp Bảng phân biệt Call Margin vs Force Sell vs Rũ Margin và 5 quy tắc quản trị đòn bẩy ngắn hạn khi viết/tối ưu các bài về vay ký quỹ (Margin) cho Active Trader (P3 & P2).
+### [2026-09-23] - thi-truong-tai-chinh-la-gi
+- **Lỗi đã sửa:** Bài gốc rất mỏng (~830 từ), văn phong giáo khoa khô cứng, thiếu Featured Snippet, thiếu Bảng so sánh phân biệt giữa Thị trường tài chính và Thị trường chứng khoán, thiếu phân loại 5 phân khu thị trường tài sản thực tế tại Việt Nam, thiếu mốc thời gian vĩ mô 2026 và chưa tích hợp Product Bridge cho nhà đầu tư F0.
+- **Pattern:** Tối ưu hóa toàn diện theo Seven Sweeps Framework: Mở rộng dung lượng lên 1.902 từ với QA Score 96/100 (PASS 100% Anti-AI, 100% SEO, 100% Link, 100% GEO), bổ sung định nghĩa Featured Snippet (≤ 60 từ), chèn 2 hình ảnh 3D Isometric Vector mới (thi-truong-tai-chinh-la-gi-so-sanh.jpg và thi-truong-tai-chinh-la-gi-cau-truc.jpg), xây dựng Siêu bảng so sánh Thị trường tài chính vs. Thị trường chứng khoán, Siêu bảng Thị trường tiền tệ vs. Thị trường vốn, bóc tách 5 phân khu tài sản tại Việt Nam, mốc số liệu 13,66 triệu tài khoản VSDC (2026) và tích hợp lộ trình 3 bước tham gia an toàn kèm dịch vụ Môi giới 1:1 + App DSC Trading.
+- **Rule học được:** Luôn lồng ghép Featured Snippet cô đọng ≤ 60 từ ở H2 đầu tiên kết hợp Bảng so sánh tập con giữa Thị trường tài chính và Thị trường chứng khoán khi viết/tối ưu các bài viết vĩ mô nền tảng cho nhà đầu tư F0.
 - **Scope:** Global
 
 ---
 
 ## QA Score Log (auto — qa_lint.py)
+
 
 | Ngày | Slug | Score | C/M/m | Theo nhóm |
 |---|---|---:|---|---|
@@ -946,3 +993,76 @@ File này ghi lại các chỉnh sửa thực tế mà người dùng thực hi�
 | 2026-09-18 | lai-suat-huy-dong-la-gi | 100 | 0/0/0 | anti=100 seo=100 read=100 link=100 geo=100 |
 | 2026-09-18 | full-margin-la-gi-loi-khuyen-cho-nha-dau-tu-moi | 99 | 0/0/2 | anti=100 seo=100 read=94 link=100 geo=100 |
 | 2026-09-18 | so-sanh-dau-tu-co-phieu-va-dau-tu-chung-chi-quy | 100 | 0/0/0 | anti=100 seo=100 read=100 link=100 geo=100 |
+| 2026-09-22 | chung-quyen-la-gi-chung-quyen-co-bao-dam-la-gi-tim-hieu-chung-quyen-tai-viet-nam | 100 | 0/0/0 | anti=100 seo=100 read=100 link=100 geo=100 |
+| 2026-09-22 | gio-giao-dich-chung-khoan-viet-nam | 96 | 0/0/6 | anti=100 seo=100 read=82 link=100 geo=100 |
+| 2026-09-23 | app-dau-tu-chung-khoan | 97 | 0/0/5 | anti=100 seo=100 read=85 link=100 geo=100 |
+| 2026-09-23 | duong-ma-la-gi | 100 | 0/0/0 | anti=100 seo=100 read=100 link=100 geo=100 |
+| 2026-09-23 | duong-ma-la-gi | 100 | 0/0/0 | anti=100 seo=100 read=100 link=100 geo=100 |
+| 2026-09-23 | khi-nao-nen-ban-co-phieu-5-truong-hop-nha-dau-tu-can-luu-y | 99 | 0/0/1 | anti=100 seo=100 read=97 link=100 geo=100 |
+| 2026-09-23 | thi-truong-tai-chinh-la-gi | 96 | 0/0/7 | anti=100 seo=100 read=79 link=100 geo=100 |
+| 2026-09-23 | phuong-phap-dau-tu-theo-dong-tien-hieu-qua | 99 | 0/0/1 | anti=100 seo=100 read=97 link=100 geo=100 |
+| 2026-09-23 | cung-tien-la-gi | 99 | 0/0/2 | anti=100 seo=100 read=94 link=100 geo=100 |
+| 2026-09-23 | lenh-mtl-trong-giao-dich-chung-khoan-la-gi | 99 | 0/0/2 | anti=100 seo=100 read=94 link=100 geo=100 |
+
+---
+
+### [2026-09-23] - tim-hieu-ve-ban-khong-chung-khoan-hoat-dong-dau-tu-lo-khong-gioi-han
+- **Lỗi đã sửa:** Bài gốc mỏng (~450 từ), mốc thời gian cũ 2023, thiếu cơ chế quy trình 4 bước, thiếu phân biệt Mua khống (Long) vs Bán khống (Short), thiếu phân tích hiện tượng Short Squeeze gây cháy tài khoản và chưa có phương pháp quản trị rủi ro cơ cấu danh mục cổ phiếu cơ sở an toàn.
+- **Pattern:** Tối ưu hóa toàn diện theo Seven Sweeps Framework và chuẩn Brand DSC: Mở rộng dung lượng lên 1.402 từ (Score 99/100 PASS QA, 0 câu >30 từ), cập nhật mốc thời gian thực tế tháng 9/2026, lồng ghép Bảng so sánh đối chuẩn Mua khống vs Bán khống, bổ sung H2 giải thích hiện tượng bẫy ép mua Short Squeeze, 4 rủi ro bán khống (lỗ không giới hạn) và 3 chiến lược bảo vệ danh mục khi thị trường sụt giảm. Tự động sinh và bảo toàn 2 hình ảnh 3D Isometric chuẩn Brand không chứa chữ. Tích hợp Product Bridge chuẩn mực với dịch vụ Môi giới 1:1 DSC & App DSC Trading (tập trung cổ phiếu cơ sở và gói vay Margin lãi suất 10–13,5%/năm, hoàn toàn không kêu gọi phái sinh).
+- **Rule học được:** Luôn tuân thủ tuyệt đối năng lực sản phẩm thực tế của thương hiệu (DSC không cung cấp chứng khoán phái sinh) — không kêu gọi mở tài khoản hay giao dịch Hợp đồng tương lai tại DSC khi viết bài về bán khống, đồng thời sử dụng prompt sinh ảnh ngặt nghèo để tránh lỗi phát sinh văn bản sai lệch trong sơ đồ 3D.
+- **Scope:** Global
+| 2026-09-23 | tim-hieu-ve-ban-khong-chung-khoan-hoat-dong-dau-tu-lo-khong-gioi-han | 99 | 0/0/1 | anti=100 seo=100 read=97 link=100 geo=100 |
+| 2026-09-23 | quy-luat-gia-tri-la-gi-giai-thich-chi-tiet-va-day-du | 98 | 0/0/3 | anti=100 seo=100 read=91 link=100 geo=100 |
+
+### [2026-09-23] - quy-luat-gia-tri-la-gi-giai-thich-chi-tiet-va-day-du
+- **Lỗi đã sửa:** Bài gốc quá mỏng (~350 từ), chỉ liệt kê 4-5 đầu dòng lý thuyết kinh tế chính trị tóm tắt, thiếu ví dụ thực tế định lượng, thiếu phân tích cơ chế vận hành giá cả thị trường xoay quanh trục giá trị thực, thiếu liên hệ thực chiến định giá cổ phiếu trên thị trường chứng khoán (Thị giá vs Giá trị nội tại).
+- **Pattern:** Tối ưu hóa toàn diện theo Seven Sweeps Framework: Mở rộng dung lượng lên 1.845 từ (QA Score 98/100 PASS, 0 CRITICAL, 0 MAJOR), bổ sung mốc thời gian vĩ mô (tháng 9/2026), bóc tách 2 quy tắc vận hành trong sản xuất (Hao phí cá biệt vs Lao động xã hội cần thiết) và lưu thông (Nguyên tắc ngang giá), lồng ghép ví dụ tính toán sản xuất vải định lượng, phân tích 3 mối quan hệ biểu hiện (Cung cầu, Cạnh tranh, Giá cả) và 3 tác động kinh tế vĩ mô. Thêm section độc quyền V: Ứng dụng quy luật giá trị trong định giá cổ phiếu (Mối quan hệ giữa Giá trị nội tại và Thị giá, bẫy tăng giá ảo ngắn hạn và tư vấn Môi giới 1:1 DSC). Bảo toàn 100% ảnh gốc, bổ sung 2 hình ảnh 3D Isometric chuẩn Brand Guidelines DSC (no-text, palette DSC) và bộ 4 câu hỏi FAQs Schema.
+- **Rule học được:** Luôn chuyển hóa các quy luật kinh tế vĩ mô lý thuyết (như quy luật giá trị) thành công cụ tư duy định giá thực chiến (Thị giá vs Giá trị nội tại doanh nghiệp) gắn với sản phẩm dịch vụ Môi giới 1:1 DSC cho nhà đầu tư mới (P2).
+- **Scope:** Global
+| 2026-09-23 | he-so-thanh-toan-la-gi | 99 | 0/0/1 | anti=100 seo=97 read=100 link=100 geo=100 |
+
+
+### [2026-09-29] - co-nen-dau-tu-vao-quy-mo-vcbf
+- **Lỗi đã sửa:** Tiêu đề H2 phần Product Bridge ban đầu chứa thuật ngữ quy trình nội bộ ("DSC Product Bridge & Đồng hành cùng nhà đầu tư"), được chỉnh sửa lại thành tiêu đề tự nhiên cho độc giả ("Giải pháp phân bổ danh mục đầu tư cùng Chứng khoán DSC"); chuẩn hóa mốc thời gian năm 2026; tách các câu dài >30 từ để đạt điểm tối đa 100/100 PASS QA.
+- **Pattern:** Thay thế tiêu đề H2 mang thuật ngữ kỹ thuật nội bộ "Product Bridge" bằng tên giải pháp tự nhiên hướng tới giá trị cho người đọc cá nhân (P1 & P2).
+- **Rule học được:** Tiêu đề H2 của phần Product Bridge trong mọi bài viết luôn phải sử dụng ngôn ngữ hướng tới giá trị thực tế cho người đọc (ví dụ: "Giải pháp phân bổ danh mục đầu tư cùng Chứng khoán DSC"), tuyệt đối không đưa tên gọi thuật ngữ quy trình nội bộ như "Product Bridge" vào tiêu đề H2 công khai.
+- **Scope:** Global
+| 2026-09-29 | co-nen-dau-tu-vao-quy-mo-vinacapital | 99 | 0/0/1 | anti=100 seo=100 read=97 link=100 geo=100 |
+| 2026-09-29 | co-nen-dau-tu-vao-quy-mo-vcbf | 100 | 0/0/0 | anti=100 seo=100 read=100 link=100 geo=100 |
+| 2026-09-29 | lenh-plo | 98 | 0/0/4 | anti=100 seo=100 read=88 link=100 geo=100 |
+| 2026-09-29 | lenh-mak-la-gi | 100 | 0/0/0 | anti=100 seo=100 read=100 link=100 geo=100 |
+| 2026-09-29 | cach-mua-co-phieu-vingroup-vic-huong-dan-moi-nhat-2024 | 100 | 0/0/0 | anti=100 seo=100 read=100 link=100 geo=100 |
+| 2026-09-29 | Cách mua cổ phiếu Vinamilk (VNM) cho người mới bắt đầu | 66 | 3/3/11 | anti=80 seo=16 read=66 link=100 geo=100 |
+| 2026-09-29 | Cách mua cổ phiếu Vinamilk (VNM) cho người mới bắt đầu | 67 | 3/3/10 | anti=80 seo=16 read=69 link=100 geo=100 |
+| 2026-09-29 | Cách mua cổ phiếu FPT cho người mới bắt đầu | 70 | 3/2/26 | anti=100 seo=16 read=60 link=100 geo=90 |
+| 2026-09-30 | Có nên mua cổ phiếu POW hay không_ Cập nhật T10_2026 | 60 | 4/2/29 | anti=65 seo=16 read=60 link=100 geo=97 |
+| 2026-10-02 | lenh-mak-la-gi | 98 | 0/0/3 | anti=100 seo=100 read=91 link=100 geo=100 |
+| 2026-10-02 | lenh-mak-la-gi | 94 | 0/0/28 | anti=100 seo=100 read=70 link=100 geo=100 |
+| 2026-10-02 | lenh-mak-la-gi | 94 | 0/0/28 | anti=100 seo=100 read=70 link=100 geo=100 |
+| 2026-10-02 | cach-mo-tai-khoan-chung-khoan | 100 | 0/0/0 | anti=100 seo=100 read=100 link=100 geo=100 |
+
+### [2026-10-02] - cach-mo-tai-khoan-chung-khoan
+- **Lỗi đã sửa:** Bài cũ (~3.300 từ) không vào top 8 cho "cách mở tài khoản chứng khoán"; Google xếp bài nen-mo-tai-khoan-chung-khoan-o-dau ở trang 2 do bài "ở đâu" có H2 hướng dẫn eKYC (cannibalization). Bài cũ để 3 H2 lý thuyết (điều kiện, pháp lý, phương thức) trước bước làm và có H2 "4 loại phí" lệch intent. Trong vòng sửa draft: sapo văn nói, banner copy dạng câu hỏi mồi, story "Minh, 27 tuổi..." trong bài hướng dẫn, đoạn dẫn H2 kiểu văn nói, H3 "tại quầy" là so sánh thay vì hướng dẫn, banner mid đặt thấp (45%).
+- **Pattern:** Viết lại theo khung chuẩn bị → 5 bước (snippet List) → làm tại DSC (App/Web/Quầy) → 6 lỗi eKYC → việc sau khi mở → Product Bridge → FAQ (2 PAA). Thêm bảng NFC vs VNeID (ghi rõ DSC chưa hỗ trợ VNeID), cú pháp nạp tiền 963369 + 6 số cuối STK + đuôi tiểu khoản. Cắt H2 hướng dẫn trong bài "ở đâu" thành 2 câu + link sang bài "cách mở"; sửa 2 anchor trỏ sai (he-so-icor, ty-le-noi-dia-hoa). Banner mid dời lên ngay sau H3 App DSC Trading (~40%). QA 100/100.
+- **Rule học được:** Mỗi URL chỉ giữ 1 intent — bài "ở đâu/chọn CTCK" không được có H2 hướng dẫn mở tài khoản. Bài hướng dẫn dùng giọng trang trọng: sapo tóm tắt các bước + phạm vi bài, không kể chuyện persona có tên tuổi, mọi H3 trong H2 hướng dẫn phải là bước làm.
+- **Scope:** Global
+| 2026-10-06 | mo-tai-khoan-chung-chi-quy | 99 | 0/0/2 | anti=100 seo=100 read=94 link=100 geo=100 |
+| 2026-10-06 | mo-tai-khoan-chung-chi-quy | 98 | 0/0/4 | anti=100 seo=100 read=88 link=100 geo=100 |
+| 2026-10-06 | mo-tai-khoan-chung-chi-quy | 99 | 0/0/1 | anti=100 seo=100 read=97 link=100 geo=100 |
+| 2026-10-06 | co-1-ty-nen-gui-ngan-hang-nao | 100 | 0/0/0 | anti=100 seo=100 read=100 link=100 geo=100 |
+
+### [2026-10-06] - co-1-ty-nen-gui-ngan-hang-nao
+- **Lỗi đã sửa:** Viết bài mới phân tích lựa chọn ngân hàng, kỳ hạn và chiến lược gửi tiết kiệm cho khoản tiền 1 tỷ đồng; cập nhật chính xác dữ liệu thực tế từ Google AI Overview khi gửi số tiền lớn (mức lãi suất thỏa thuận/thương lượng tại quầy 7,1%–9,2%/năm, ngân hàng số 7,4%–9,6%/năm); bổ sung kỹ thuật thương lượng lãi suất thỏa thuận tại quầy và mô hình phân bổ phễu tài sản 70/30 (70% tiết kiệm phòng thủ + 30% cổ phiếu/chứng chỉ quỹ tăng trưởng qua tư vấn Môi giới 1:1 DSC).
+- **Pattern:** Đạt 100/100 PASS QA Lint (0 CRITICAL, 0 MAJOR, 0 MINOR, 0 câu >30 từ), bổ sung mốc thời gian Tháng 10/2026, lồng ghép Bảng so sánh 3 nhóm ngân hàng (Big 4 vs TMCP truyền thống vs TMCP nhỏ/Ngân hàng số), Bảng tính tiền lãi thực tế 1 tỷ theo các kỳ hạn (3, 6, 12, 24 tháng), Chiến lược chia nhỏ 3 sổ tiết kiệm và Chiến lược bậc thang kỳ hạn. Tích hợp 3 internal links tự nhiên từ Sitemap Live (gồm link CTA mở tài khoản chứng khoán DSC eKYC 3 phút, Môi giới 1:1) và 1 Banner CTA HTML inline chuẩn Persona P1.
+- **Rule học được:** Luôn đối chiếu dữ liệu hiển thị từ Google AI Overview đối với các truy vấn tìm kiếm so sánh lãi suất tiền gửi quy mô lớn (từ 1 tỷ trở lên) để cập nhật bổ sung cơ chế thương lượng lãi suất thỏa thuận riêng tại quầy (+0,5%–1,5%/năm) và ưu đãi ngân hàng số linh hoạt (7,4%–9,6%/năm), giúp tăng tính thuyết phục AEO/GEO và thấu hiểu nhu cầu thực tế của người gửi tiền.
+- **Scope:** Global
+| 2026-10-06 | mo-hinh-canh-buom | 98 | 0/0/3 | anti=100 seo=100 read=91 link=100 geo=100 |
+| 2026-10-06 | 100-trieu-gui-ngan-hang | 98 | 0/0/3 | anti=100 seo=100 read=91 link=100 geo=100 |
+| 2026-10-06 | 50-trieu-nen-gui-tiet-kiem-ngan-hang-nao | 99 | 0/0/1 | anti=100 seo=100 read=97 link=100 geo=100 |
+
+
+### [2026-10-06] - 100-trieu-gui-ngan-hang
+- **Lỗi đã sửa:** Tạo bài viết mới chuẩn SEO cho từ khóa "100 triệu gửi ngân hàng". Vượt qua QA Lint với Score 98/100 PASS.
+- **Pattern:** Bổ sung mốc số liệu tháng 10/2026, bảng quy đổi tiền lãi 100 triệu ở các kỳ hạn 1–24 tháng, công thức tính tiền lãi chuẩn, so sánh lãi suất nhóm Big 4 vs TMCP, kỹ thuật chia nhỏ 2 sổ tiết kiệm (30 triệu ngắn hạn + 70 triệu 12 tháng) giữ tính thanh khoản, phân bổ 70/30 (70% tiết kiệm + 30% đầu tư chứng khoán), lồng ghép CTA banner HTML 1:1 DSC. Tích hợp 4 internal links sitemap chuẩn.
+- **Rule học được:** Đối với bài viết so sánh tiền gửi tiết kiệm và phân bổ dòng vốn nhàn rỗi 100 triệu (P1), luôn kết hợp bảng tiền lãi thực nhận theo tháng kèm bài toán lạm phát thực dương và mô hình phân bổ 70/30 sang đầu tư chứng khoán có tư vấn Môi giới 1:1.
+- **Scope:** Global

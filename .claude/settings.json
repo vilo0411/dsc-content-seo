@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python scripts/qa_lint.py /tmp/crotest/Final-test-banner.md --no-sitemap)",
+      "Bash(python -c ' *)",
+      "Bash(echo \"....\")",
+      "Bash(grep -n '^##' knowledge/4-content/3-finalized/Final-cung-tien-la-gi.md)",
+      "Bash(echo \"--- tong dong ---\")",
+      "Bash(wc -l)",
+      "Bash(cp knowledge/4-content/3-finalized/Final-cung-tien-la-gi.md /c/Users/loc.nv/AppData/Local/Temp/crotest/Final-cung-tien-la-gi.md)",
+      "Bash(python -)",
+      "Bash(echo)",
+      "Bash(python scripts/cta_audit.py \"C:\\\\Users\\\\loc.nv\\\\AppData\\\\Local\\\\Temp\\\\crotest\\\\Final-cung-tien-la-gi.md\")",
+      "Bash(cp knowledge/4-content/3-finalized/Final-cung-tien-la-gi.md \"/c/Users/loc.nv/AppData/Local/Temp/crotest/Final-cung-tien-la-gi.md\")",
+      "Bash(python scripts/qa_lint.py knowledge/4-content/3-finalized/Final-cung-tien-la-gi.md --no-sitemap)",
+      "Bash(python scripts/qa_lint.py \"C:\\\\Users\\\\loc.nv\\\\AppData\\\\Local\\\\Temp\\\\crotest\\\\Final-cung-tien-la-gi.md\" --no-sitemap --cta)",
+      "Bash(echo \"### 5. LINK-cta tren file CHI co banner HTML \\(khong co markdown link\\):\")",
+      "Bash(python scripts/qa_lint.py 'C:\\\\Users\\\\loc.nv\\\\AppData\\\\Local\\\\Temp\\\\crotest\\\\Final-test-banner.md' --no-sitemap)",
+      "Bash(python scripts/cta_audit.py --all)",
+      "Bash(time python scripts/cta_audit.py \"https://www.dsc.com.vn/kien-thuc/pha-loang-co-phieu-la-gi-anh-huong-va-cach-tinh-toan\")",
+      "Bash(time python scripts/cta_audit.py \"pha-loang-co-phieu-la-gi-anh-huong-va-cach-tinh-toan\")",
+      "Bash(PYTHONIOENCODING=utf-8 python -)",
+      "Bash(python scripts/cta_audit.py knowledge/4-content/3-finalized/Final-cach-mua-co-phieu-vingroup-vic-huong-dan-moi-nhat-2024.md)",
+      "Bash(python scripts/qa_lint.py knowledge/4-content/3-finalized/Final-cach-mua-co-phieu-vingroup-vic-huong-dan-moi-nhat-2024.md --no-sitemap --cta)",
+      "Bash(git check-ignore *)"
+    ]
+  }
+}

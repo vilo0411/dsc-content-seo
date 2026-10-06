@@ -28,6 +28,13 @@ Mỗi khi người dùng đưa ra phản hồi chỉnh sửa, hãy trích xuất
 
 ## Bản năng Active
 
+### Bảng ma trận hậu quả gồng lỗ & Quy tắc cắt lỗ 7-8% vs. Chốt lời 20-25% CANSLIM
+- **Trạng thái:** ACTIVE
+- **Nguồn:** khi-nao-nen-ban-co-phieu-5-truong-hop-nha-dau-tu-can-luu-y
+- **Phản hồi từ User:** "Optimize bài khi nào nên bán cổ phiếu"
+- **Bản năng:** Luôn lồng ghép Bảng ma trận hậu quả gồng lỗ (-5% hòa vốn +5,3% vs -50% hòa vốn +100%) kết hợp Quy tắc cắt lỗ 7-8% & chốt lời 20-25% CANSLIM và Hướng dẫn thời điểm bán trước vs. sau ngày chốt quyền cổ tức khi viết/tối ưu các bài tư vấn thời điểm chốt lời/cắt lỗ cho nhà đầu tư mới (P2).
+- **Phạm vi:** Global
+
 ### Bảng đối sánh Cờ đuôi nheo vs Lá cờ vs Tam giác & Volume Profile 3 giai đoạn
 - **Trạng thái:** ACTIVE
 - **Nguồn:** mo-hinh-co-duoi-nheo-la-gi
@@ -468,3 +475,54 @@ Mỗi khi người dùng đưa ra phản hồi chỉnh sửa, hãy trích xuất
 
 
 
+
+
+### Ràng buộc thông tin sản phẩm và Tiêu đề Product Bridge
+- Luôn đối soát 100% tính năng và thông tin sản phẩm với Brand KB (profile.md & service-operations.md), tuyệt đối không tự tạo hoặc giả định các tính năng sản phẩm chưa được xác thực (như đặt lệnh 24/7). Tiêu đề H2 cho phần Product Bridge phải được đặt tự nhiên (như Tối ưu hiệu quả giao dịch theo từng phiên cùng App DSC Trading và Môi giới 1:1), tập trung vào giải pháp cho bài toán thực tế của độc giả F0 thay vì dùng các từ gượng ép (như giao dịch đúng khung giờ).
+
+---
+
+### Hạn chế dùng thuật ngữ tiếng Anh "Active Trader" hoặc "trader" trong văn xuôi tiếng Việt
+- **Trạng thái:** ACTIVE
+- **Nguồn:** duong-ma-la-gi
+- **Phản hồi từ User:** "bỏ từ active trader đi. Sử dụng từ tiếng Việt phù hợp với văn phong tài chính Việt Nam."
+- **Bản năng:** Đối với đối tượng Active Trader (P3) hoặc các bài phân tích kỹ thuật, tuyệt đối không chèn trực tiếp các từ tiếng Anh mượn thô như "Active Trader" hay "trader" vào văn xuôi bài viết tiếng Việt. Thay vào đó, hãy sử dụng các thuật ngữ tiếng Việt chuẩn mực tài chính Việt Nam như "nhà đầu tư chủ động", "nhà đầu tư lướt sóng", "nhà giao dịch ngắn hạn" hoặc "nhà đầu tư".
+- **Phạm vi:** Global
+
+
+### Một URL một intent — chống cannibalization giữa bài hướng dẫn và bài lựa chọn
+- **Trạng thái:** ACTIVE
+- **Nguồn:** cach-mo-tai-khoan-chung-khoan
+- **Phản hồi từ User:** "hiện tại khi tìm cách mở tài khoản chứng khoán thì ra bài nen-mo-tai-khoan-chung-khoan-o-dau ở trang 2. Bạn có biết nguyên nhân ko? Dù tôi đã thực hiện link chéo giữa 2 bài"
+- **Bản năng:** Khi viết/tối ưu một bài, kiểm tra các bài DSC cùng cụm (`find_links.py`) xem có bài nào đang trả lời cùng intent không. Bài so sánh/lựa chọn (ví dụ "mở tài khoản ở đâu") chỉ được nhắc quy trình bằng 2–3 câu + link anchor đúng từ khóa sang bài hướng dẫn, không đặt H2/H3 hướng dẫn chi tiết. Anchor dạng hướng dẫn ("mở tài khoản eKYC", "cách mở...") chỉ trỏ về bài hướng dẫn; anchor dạng lựa chọn ("nên mở ở đâu") chỉ trỏ về bài lựa chọn.
+- **Phạm vi:** Global
+
+### Giọng văn bài hướng dẫn (How-to) của DSC
+- **Trạng thái:** ACTIVE
+- **Nguồn:** cach-mo-tai-khoan-chung-khoan
+- **Phản hồi từ User:** "sapo chưa ổn cho 1 bài viết SEO của DSC về hướng dẫn... ko cần phải ghi hẳn Minh, 27 tuổi... phần Có tài khoản rồi, bạn cần làm thêm 3 việc... hơi giống văn nói hơn 1 bài viết SEO hướng dẫn"
+- **Bản năng:** 1. Sapo bài hướng dẫn: câu đầu chứa keyword và tóm tắt các bước (ví dụ "Cách mở tài khoản chứng khoán online gồm 5 bước: ..."), câu sau nêu điều kiện cần; đoạn 2 nêu phạm vi bài và phần hướng dẫn riêng tại DSC. Không mở bằng "Bạn chỉ cần...". 2. Không đưa nhân vật persona có tên, tuổi, nghề (Minh, 27 tuổi...) vào bài hướng dẫn; nêu thẳng tình huống/lỗi bằng câu khách quan. 3. Đoạn dẫn H2/H3 dùng giọng trang trọng ("Sau khi tài khoản được kích hoạt, nhà đầu tư cần..."), tránh văn nói như "Có tài khoản rồi", "nhanh hơn hẳn", "thử hết mà vẫn chưa xong", "khi đã quen". 4. Mọi H3 nằm dưới H2 hướng dẫn phải là bước làm (danh sách đánh số), không phải đoạn so sánh; bảng so sánh chỉ dùng khi H2 có mục đích so sánh.
+- **Phạm vi:** Global
+
+### Copy và vị trí banner CTA trong bài hướng dẫn
+- **Trạng thái:** ACTIVE
+- **Nguồn:** cach-mo-tai-khoan-chung-khoan
+- **Phản hồi từ User:** "Nội dung của banner chưa tốt, phù hợp... banner đầu ở vị trí hơi thấp"
+- **Bản năng:** Headline banner nêu thẳng hành động/lợi ích gắn chủ đề bài (ví dụ "Mở tài khoản chứng khoán DSC chỉ với CCCD gắn chip"), không dùng câu hỏi mồi hay lối nói đùa ("Đã có CCCD...? Bạn chỉ còn cách..."). Dòng phụ là 3 dữ kiện sản phẩm thật (eKYC 3 phút, miễn phí mở và duy trì, Môi giới 1:1, phí từ 0,1%, Mã định danh 963369). Banner cuối bài phải khác ý banner giữa bài. Banner giữa bài đặt ngay sau H3 hướng dẫn sản phẩm DSC chính (khoảng 35–40% thân bài), không đợi hết toàn bộ H2.
+- **Phạm vi:** Global
+
+### Target word count H2 trong outline chỉ tính thân riêng
+- **Trạng thái:** ACTIVE
+- **Nguồn:** cach-mo-tai-khoan-chung-khoan
+- **Phản hồi từ User:** "(Phát hiện khi chạy qa_lint --outline: H2 có H3 con bị báo WC-under sai)"
+- **Bản năng:** Khi viết outline, `**Target:**` của H2 có H3 con chỉ ghi số từ phần thân riêng của H2 (trước H3 đầu tiên), vì `count_words.py` không cộng H3 vào H2. Câu FAQ trong outline không dùng nhãn `**Target:**` (sẽ bị gán nhầm vào H2 FAQ); phần kết bài nếu có heading thì ghi `### H2: ...` kèm target riêng.
+- **Phạm vi:** Global
+
+---
+
+### Đối chiếu dữ liệu thực tế từ Google AI Overview cho bài toán quy mô vốn lớn
+- **Trạng thái:** ACTIVE
+- **Nguồn:** co-1-ty-nen-gui-ngan-hang-nao
+- **Phản hồi từ User:** "tôi thử search google thì data trả về khác" (Kèm ảnh chụp màn hình kết quả Google AI Overview cho query 1 tỷ gửi ngân hàng nào)
+- **Bản năng:** Khi viết các bài viết so sánh lãi suất tiền gửi quy mô vốn lớn (từ 1 tỷ VNĐ trở lên), luôn bổ sung góc nhìn thương lượng lãi suất thỏa thuận riêng tại quầy (+0,5%–1,5%/năm so với niêm yết) và các gói ưu đãi trực tuyến ngân hàng số (7,4%–9,6%/năm) bên cạnh biểu lãi suất niêm yết chuẩn, giúp bài viết chuẩn xác với kết quả Google AI Overview và thấu hiểu nhu cầu thực tế của người gửi tiền.
+- **Phạm vi:** Global

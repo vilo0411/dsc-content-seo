@@ -11,6 +11,7 @@ All operations must strictly follow the rules defined in:
 - [.antigravity/rules/content-anti-ai.md](file:///.antigravity/rules/content-anti-ai.md)
 - [.antigravity/rules/seo-formatting.md](file:///.antigravity/rules/seo-formatting.md)
 - [.antigravity/rules/learning-loop.md](file:///.antigravity/rules/learning-loop.md)
+- [.antigravity/rules/cta-conversion.md](file:///.antigravity/rules/cta-conversion.md)
 
 ---
 
@@ -71,6 +72,7 @@ All operations must strictly follow the rules defined in:
 | `/optimize [path]` | `.agents/skills/optimize/SKILL.md` | Re-optimize bài cũ với 7 Sweeps Framework. |
 | `/learn [slug?]` | `.agents/skills/learn/SKILL.md` | Tổng hợp feedback → cập nhật anti-ai-rules + instincts. |
 | `/image [slug]` | `.agents/skills/image/SKILL.md` | Tạo chiến lược hình ảnh cho bài viết (Visual Architect). |
+| `/cro [slug]` | `.agents/skills/cro/SKILL.md` | Tối ưu chuyển đổi — audit CTA, dựng Product Bridge, chèn banner. Options: `--audit-all`, `--variants N`, `--apply`, `--utm`. Tự chạy trong `/write` & `/optimize`. |
 | `/link` | `.agents/skills/link/SKILL.md` | Backfill internal links từ bài cũ sang bài mới. |
 | `/cluster` | `.agents/skills/cluster/SKILL.md` | Keyword Clustering từ `knowledge/3-pipeline/keywords.csv`. |
 | `/keyword-plan [N] [persona]` | `.agents/skills/keyword-plan/SKILL.md` | Chọn N bài nên viết tiếp từ cluster map theo persona. |
@@ -81,9 +83,10 @@ All operations must strictly follow the rules defined in:
 
 | Script | Dùng để |
 | :--- | :--- |
-| `scripts/qa_lint.py <file> [--outline] [--original] [--fix] [--json] [--log]` | Lint deterministic ~28 check (CL1/2/3/5/6, link, GEO, word count, PAA coverage + FAQ format khi có `--outline`) + Score 0–100. Exit 1 = FAIL. |
+| `scripts/qa_lint.py <file> [--outline] [--original] [--cta] [--fix] [--json] [--log]` | Lint deterministic ~28 check (CL1/2/3/5/6, link, GEO, word count, PAA coverage + FAQ format khi có `--outline`) + Score 0–100. Exit 1 = FAIL. `--cta` bật thêm 6 check CTA-* (chưa mặc định — corpus chưa backfill banner). |
 | `scripts/find_links.py "<kw>" [--exclude slug]` / `--backfill <slug>` | Tra anchor-index + sitemap-cache; tìm bài cũ nên link tới bài mới kèm dòng gợi ý. |
 | `scripts/topic_status.py <slug> [--set S]` / `--find` / `--list` | Đọc/ghi 1 ô trạng thái trong topic-clusters.md. |
+| `scripts/cta_audit.py <file\|slug\|URL>` / `--all [--ga4 csv]` / `--refresh` | Audit tầng chuyển đổi: banner, vị trí theo % thân bài, đoạn dẫn, link mở TK, CRO score. Nhận cả URL — ưu tiên file local, không có thì fetch trang live bằng urllib (~0.6s, cache `knowledge/raw/pages/`). **Không dùng web-serp/Firecrawl cho URL dsc.com.vn.** Chỉ đọc, không ghi. |
 | `scripts/optimize_instincts.py` | Sinh lại `instincts.md` (dedupe, tách lint-covered, tách scope) từ archive. |
 | `scripts/serp_opportunities.py [--min-count N]` | Gom PAA + Related Searches từ cache SERP → `knowledge/3-pipeline/serp-opportunities.md` (chưa có bài / có bài chưa giữ PAA / DSC đang giữ). 0 API call. Input cho `/keyword-plan`, `/optimize`. |
 | `.antigravity/skills/web-serp/scripts/serp_research.py "<kw>" [--top 10] [--extract 5] [--paa-depth N]` | SERP Google VN (DataForSEO, **có phí**) + PAA (kèm đáp án Google đang hiện + đối thủ nào có heading khớp) + Related Searches + extract competitor (local Scrapling parser, Jina fallback cho trang JS). Cache 30 ngày ở `knowledge/raw/serp/` — không dùng `--no-cache` trừ khi user yêu cầu; `--paa-depth` tốn thêm, chỉ cho pillar. Keyword chưa có trong topic-clusters/sprint-backlog → script từ chối gọi API, cần `--force`. |
