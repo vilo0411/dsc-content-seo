@@ -526,3 +526,13 @@ Mỗi khi người dùng đưa ra phản hồi chỉnh sửa, hãy trích xuất
 - **Phản hồi từ User:** "tôi thử search google thì data trả về khác" (Kèm ảnh chụp màn hình kết quả Google AI Overview cho query 1 tỷ gửi ngân hàng nào)
 - **Bản năng:** Khi viết các bài viết so sánh lãi suất tiền gửi quy mô vốn lớn (từ 1 tỷ VNĐ trở lên), luôn bổ sung góc nhìn thương lượng lãi suất thỏa thuận riêng tại quầy (+0,5%–1,5%/năm so với niêm yết) và các gói ưu đãi trực tuyến ngân hàng số (7,4%–9,6%/năm) bên cạnh biểu lãi suất niêm yết chuẩn, giúp bài viết chuẩn xác với kết quả Google AI Overview và thấu hiểu nhu cầu thực tế của người gửi tiền.
 - **Phạm vi:** Global
+
+
+---
+
+### Siêu bảng tỷ lệ Fibonacci và 3 Nguyên tắc đếm sóng cho bài viết Sóng Elliott
+- **Trạng thái:** ACTIVE
+- **Nguồn:** song-elliott-va-fibonacci-la-gi
+- **Phản hồi từ User:** Phê duyệt bài viết Sóng Elliott và Fibonacci thành công.
+- **Bản năng:** Luôn lồng ghép Siêu bảng Ma trận Tỷ lệ Fibonacci cho các bước sóng 1-5 & A-B-C kết hợp 3 nguyên tắc bất biến đếm sóng (Sóng 2 không quá đáy 1, Sóng 3 không bao giờ ngắn nhất, Sóng 4 không phạm vùng giá 1), kỹ thuật xác định Vùng hội tụ Fibonacci Cluster và bảng Quản trị Rủi ro Stop Loss/Take Profit khi tối ưu bài viết về Sóng Elliott và Fibonacci cho nhà đầu tư chủ động (P3).
+- **Phạm vi:** Global

@@ -17,7 +17,7 @@ Tài liệu này quản lý các nhóm chủ đề được phân tách từ d�
 | `/kien-thuc/bao-cao-luu-chuyen-tien-te/` | Báo cáo lưu chuyển tiền tệ là gì | 1.900 | Finalized |
 | `/kien-thuc/bao-cao-lai-lo/` | Báo cáo lãi lỗ | - | Finalized |
 | `/kien-thuc/bao-cao-tai-chinh-hop-nhat/` | Báo cáo tài chính hợp nhất là gì | - | Finalized |
-| `/kien-thuc/bien-loi-nhuan-rong/` | Biên lợi nhuận ròng là gì | 1.300 | Finalized |
+| `/kien-thuc/bien-loi-nhuan-rong/` | Biên lợi nhuận ròng là gì | 1.300 | Optimizing |
 | `/kien-thuc/loi-nhuan-rong-va-loi-nhuan-sau-thue/` | Lợi nhuận ròng và lợi nhuận sau thuế khác gì nhau | - | Finalized |
 | `/kien-thuc/casa-la-gi/` | CASA là gì | 5.400 | Finalized |
 | `/kien-thuc/ty-le-bao-phu-no-xau/` | tỷ lệ bao phủ nợ xấu | - | Finalized |
@@ -26,6 +26,7 @@ Tài liệu này quản lý các nhóm chủ đề được phân tách từ d�
 | `/kien-thuc/dar-la-gi/` | Chỉ số DAR | - | Finalized |
 | `/kien-thuc/chi-so-ros/` | chỉ số ROS | - | Finalized |
 | `/kien-thuc/chi-so-roa-la-gi-y-nghia-va-cach-su-dung/` | chỉ số ROA là gì | - | Finalized |
+| `/kien-thuc/chi-so-roe-la-gi-cach-tinh-y-nghia-va-tam-quan-trong-doi-voi-nha-dau-tu/` | chỉ số ROE là gì | - | Optimizing |
 | `/kien-thuc/chi-so-ps/` | Chỉ số P/S | - | Finalized |
 | `/kien-thuc/nen-mo-tai-khoan-chung-khoan-o-dau/` | Nên mở tài khoản chứng khoán ở đâu tốt nhất 2026 | - | Finalized |
 | `/kien-thuc/co-1-ty-nen-gui-ngan-hang-nao/` | Có 1 tỷ nên gửi ngân hàng nào | - | Finalized |
@@ -34,6 +35,7 @@ Tài liệu này quản lý các nhóm chủ đề được phân tách từ d�
 | `/kien-thuc/so-sanh-dau-tu-co-phieu-va-dau-tu-chung-chi-quy/` | So sánh cổ phiếu và chứng chỉ quỹ | - | Finalized |
 | `/kien-thuc/nen-gui-tiet-kiem-hay-dau-tu-chung-khoan/` | Nên gửi tiết kiệm hay đầu tư chứng khoán | - | Optimizing |
 | `/kien-thuc/cach-mo-tai-khoan-chung-khoan/` | Hướng dẫn cách mở tài khoản chứng khoán cho người mới | - | Finalized |
+| `/kien-thuc/cac-loai-tai-khoan-chung-khoan-pho-bien-tai-viet-nam/` | Các loại tài khoản chứng khoán | - | Finalized |
 | `/kien-thuc/app-dau-tu-chung-khoan/` | app đầu tư chứng khoán | - | Finalized |
 | `/kien-thuc/phi-giao-dich-chung-khoan/` | Phí giao dịch chứng khoán | 1.500 | Finalized |
 | `/kien-thuc/phi-luu-ky-chung-khoan/` | Phí lưu ký chứng khoán | - | Finalized |
@@ -54,6 +56,7 @@ Tài liệu này quản lý các nhóm chủ đề được phân tách từ d�
 | `/kien-thuc/cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau/` | cách chơi chứng khoán cho người mới bắt đầu | - | Optimizing |
 | `/kien-thuc/cach-mua-co-phieu-online-cho-nguoi-moi-bat-dau/` | cách mua cổ phiếu online cho người mới bắt đầu | - | Optimizing |
 | `/kien-thuc/khi-nao-nen-ban-co-phieu-5-truong-hop-nha-dau-tu-can-luu-y/` | Khi nào nên bán cổ phiếu | - | Finalized |
+| `/kien-thuc/cach-ban-co-phieu-cho-nguoi-moi/` | Cách bán cổ phiếu cho người mới | - | Finalized |
 | `/kien-thuc/cach-choi-chung-khoan-cho-sinh-vien/` | cách chơi chứng khoán cho sinh viên | - | Finalized |
 | `/kien-thuc/cach-choi-chung-khoan/` | cách chơi chứng khoán | - | Outlining |
 | `/kien-thuc/sinh-vien-nen-dau-tu-gi/` | sinh viên nên đầu tư gì | - | Finalized |
@@ -87,10 +90,13 @@ Tài liệu này quản lý các nhóm chủ đề được phân tách từ d�
 | `/kien-thuc/adx-la-gi/` | ADX là gì | 1.600 | Finalized |
 | `/kien-thuc/william-r-la-gi/` | Chỉ báo William %R | - | Finalized |
 | `/kien-thuc/rsi-la-gi/` | RSI là gì | 2.400 | Finalized |
+| `/kien-thuc/phan-ky-rsi-la-gi/` | Phân kỳ RSI là gì | - | Finalized |
+| `/kien-thuc/phan-ky-an-rsi-la-gi/` | Phân kỳ ẩn RSI là gì | - | Optimizing |
 | `/kien-thuc/bollinger-bands-la-gi/` | Bollinger Bands là gì | 5.400 | Finalized |
 | `/kien-thuc/day-trading-la-gi/` | Day trading là gì | - | Finalized |
 | `/kien-thuc/ultimate-oscillator-la-gi/` | Ultimate Oscillator là gì | - | Finalized |
 | `/kien-thuc/chia-tach-co-phieu/` | Chia tách cổ phiếu là gì | - | Finalized |
+| /kien-thuc/song-elliott-va-fibonacci-la-gi/ | Sóng Elliott và Fibonacci là gì | 1.800 | Finalized |
 | `/kien-thuc/cac-mo-hinh-gia-chung-khoan/` | các mô hình giá | - | Finalized |
 | `/kien-thuc/chi-bao-momentum-la-gi/` | chỉ báo momentum là gì | - | Outline-Approved |
 | `/kien-thuc/chi-so-chung-khoan/` | chỉ số chứng khoán | - | Finalized |
@@ -112,6 +118,7 @@ Tài liệu này quản lý các nhóm chủ đề được phân tách từ d�
 | `/kien-thuc/hop-dong-tuong-lai-la-gi/` | Hợp đồng tương lai là gì | - | Optimizing |
 | `/kien-thuc/duong-trendline-la-gi-cach-su-dung-hieu-qua-trong-phan-tich-ky-thuat/` | Đường Trendline là gì? Cách sử dụng hiệu quả trong phân tích kỹ thuật | - | Finalized |
 | `/kien-thuc/phuong-phap-vsa/` | phương pháp vsa | - | Finalized |
+| `/kien-thuc/nhung-cuon-sach-hay-ve-phan-tich-ky-thuat/` | sách phân tích kỹ thuật | - | Finalized |
 | `/kien-thuc/backtest-la-gi/` | backtest là gì | - | Finalized |
 | `/kien-thuc/take-profit-la-gi/` | take profit là gì | - | Finalized |
 | `/kien-thuc/ty-le-ky-quy/` | tỷ lệ ký quỹ | - | Finalized |
@@ -208,6 +215,7 @@ Tài liệu này quản lý các nhóm chủ đề được phân tách từ d�
 | `/kien-thuc/quy-mo-la-gi/` | Quỹ mở là gì | - | Finalized |
 | /kien-thuc/co-nen-dau-tu-vao-quy-mo-vinacapital/ | Có nên đầu tư vào quỹ mở VinaCapital | P1 | Finalized |
 | `/kien-thuc/etf-la-gi/` | etf là gì | - | Finalized |
+| `/kien-thuc/cach-dau-tu-etf-tai-viet-nam-huong-dan-chi-tiet-tu-a-den-z/` | Hướng dẫn cách đầu tư ETF tại Việt Nam chi tiết A - Z | - | Finalized |
 | `/kien-thuc/chung-chi-quy-tot-nhat-hien-nay/` | chứng chỉ quỹ tốt nhất hiện nay | - | Finalized |
 | `/kien-thuc/so-sanh-co-phieu-va-chung-chi-quy-dau-tu/` | so sánh cổ phiếu và chứng chỉ quỹ đầu tư | - | Finalized |
 | `/kien-thuc/nav-la-gi-trong-dau-tu-chung-khoan/` | NAV là gì | - | Finalized |

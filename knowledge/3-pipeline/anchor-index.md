@@ -646,7 +646,7 @@ File này là danh sách tập trung của tất cả bài viết trên website 
 | mo hinh tam giac là gì | https://www.dsc.com.vn/kien-thuc/mo-hinh-tam-giac-la-gi | mo hinh tam giac là gì, kiến thức DSC | Live Published |
 | mo hinh tam giac mo rong là gì | https://www.dsc.com.vn/kien-thuc/mo-hinh-tam-giac-mo-rong-la-gi | mo hinh tam giac mo rong là gì, kiến thức DSC | Live Published |
 | mo hinh vai dau vai là gì | https://www.dsc.com.vn/kien-thuc/mo-hinh-vai-dau-vai-la-gi | mo hinh vai dau vai là gì, kiến thức DSC | Live Published |
-| phan ky RSI là gì | https://www.dsc.com.vn/kien-thuc/phan-ky-rsi-la-gi | phan ky RSI là gì, kiến thức DSC | Live Published |
+| phan ky RSI là gì | https://www.dsc.com.vn/kien-thuc/phan-ky-rsi-la-gi | Phân kỳ RSI là gì? 4 Dạng RSI phân kỳ & Cách trade chi tiết | Finalized (Tối ưu) |
 | phan ky an RSI là gì | https://www.dsc.com.vn/kien-thuc/phan-ky-an-rsi-la-gi | phan ky an RSI là gì, kiến thức DSC | Live Published |
 | phương pháp vsa | https://www.dsc.com.vn/kien-thuc/phuong-phap-vsa | Phương Pháp VSA: 7 Chiến Lược Giao Dịch Nắm Bắt Dòng Tiền | Finalized (Mới) |
 | rsi là gì | https://www.dsc.com.vn/kien-thuc/rsi-la-gi | RSI là gì? Cách dùng chỉ báo RSI trong giao dịch chứng khoán | Finalized (Mới) |
@@ -971,3 +971,4 @@ Khi một bài viết mới được finalized hoặc publish live, thêm một 
 | bán khống chứng khoán | https://www.dsc.com.vn/kien-thuc/tim-hieu-ve-ban-khong-chung-khoan-hoat-dong-dau-tu-lo-khong-gioi-han | bán khống chứng khoán, kiến thức DSC | Live Published |
 | quy luật giá trị là gì | https://www.dsc.com.vn/kien-thuc/quy-luat-gia-tri-la-gi-giai-thich-chi-tiet-va-day-du | Quy Luật Giá Trị Là Gì? Nội Dung, Tác Động & Ứng Dụng | Finalized (Mới) |
 | https://www.dsc.com.vn/kien-thuc/co-nen-dau-tu-vao-quy-mo-vinacapital | Có nên đầu tư vào quỹ mở VinaCapital | co-nen-dau-tu-vao-quy-mo-vinacapital | Cluster 6 | ✓ |
+| sách phân tích kỹ thuật | https://www.dsc.com.vn/kien-thuc/nhung-cuon-sach-hay-ve-phan-tich-ky-thuat | Top 6 Cuốn Sách Phân Tích Kỹ Thuật Chứng Khoán Hay Nhất | Finalized (Mới) |

@@ -108,6 +108,9 @@
 ### Phân rã Target word count cho dạng Toplist và Đối sánh rủi ro pháp lý tài sản số
 - Khi viết các bài thuộc dạng Toplist đánh giá sản phẩm/dịch vụ tài chính hoặc tiền điện tử, luôn phân rã target word count chi tiết cho từng mục H3 trong outline để script QA đếm chính xác, đồng thời tích hợp Bằng chứng dự trữ (Proof of Reserves) và bảng đối sánh rủi ro ngắt kết nối pháp lý giữa thị trường tiền điện tử và kênh đầu tư chứng khoán chính thống được UBCKNN bảo hộ.
 
+### Siêu bảng tỷ lệ Fibonacci và 3 Nguyên tắc đếm sóng cho bài viết Sóng Elliott
+- Luôn lồng ghép Siêu bảng Ma trận Tỷ lệ Fibonacci cho các bước sóng 1-5 & A-B-C kết hợp 3 nguyên tắc bất biến đếm sóng (Sóng 2 không quá đáy 1, Sóng 3 không bao giờ ngắn nhất, Sóng 4 không phạm vùng giá 1), kỹ thuật xác định Vùng hội tụ Fibonacci Cluster và bảng Quản trị Rủi ro Stop Loss/Take Profit khi tối ưu bài viết về Sóng Elliott và Fibonacci cho nhà đầu tư chủ động (P3).
+
 ## Sản phẩm & Thương hiệu (Products & Brand Context)
 
 ### Ưu tiên Môi giới 1:1 trong Product Bridge
