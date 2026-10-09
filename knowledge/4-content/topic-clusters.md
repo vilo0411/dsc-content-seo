@@ -18,6 +18,7 @@ Tài liệu này quản lý các nhóm chủ đề được phân tách từ d�
 | `/kien-thuc/bao-cao-lai-lo/` | Báo cáo lãi lỗ | - | Finalized |
 | `/kien-thuc/bao-cao-tai-chinh-hop-nhat/` | Báo cáo tài chính hợp nhất là gì | - | Finalized |
 | `/kien-thuc/bien-loi-nhuan-rong/` | Biên lợi nhuận ròng là gì | 1.300 | Optimizing |
+| `/kien-thuc/bien-loi-nhuan-gop-la-gi-y-nghia-cua-bien-loi-nhuan-gop-khi-lua-chon-co-phieu/` | Biên lợi nhuận gộp là gì | 1.600 | Finalized |
 | `/kien-thuc/loi-nhuan-rong-va-loi-nhuan-sau-thue/` | Lợi nhuận ròng và lợi nhuận sau thuế khác gì nhau | - | Finalized |
 | `/kien-thuc/casa-la-gi/` | CASA là gì | 5.400 | Finalized |
 | `/kien-thuc/ty-le-bao-phu-no-xau/` | tỷ lệ bao phủ nợ xấu | - | Finalized |
@@ -54,6 +55,7 @@ Tài liệu này quản lý các nhóm chủ đề được phân tách từ d�
 | `/kien-thuc/cach-chon-co-phieu-tot/` | cách chọn cổ phiếu tốt | - | Finalized |
 | `/kien-thuc/co-phieu-penny-la-gi/` | cổ phiếu penny | - | Finalized |
 | `/kien-thuc/cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau/` | cách chơi chứng khoán cho người mới bắt đầu | - | Optimizing |
+| `/kien-thuc/co-nen-dau-tu-chung-khoan-khong/` | Có nên chơi chứng khoán không | - | Optimizing |
 | `/kien-thuc/cach-mua-co-phieu-online-cho-nguoi-moi-bat-dau/` | cách mua cổ phiếu online cho người mới bắt đầu | - | Optimizing |
 | `/kien-thuc/khi-nao-nen-ban-co-phieu-5-truong-hop-nha-dau-tu-can-luu-y/` | Khi nào nên bán cổ phiếu | - | Finalized |
 | `/kien-thuc/cach-ban-co-phieu-cho-nguoi-moi/` | Cách bán cổ phiếu cho người mới | - | Finalized |
@@ -74,6 +76,7 @@ Tài liệu này quản lý các nhóm chủ đề được phân tách từ d�
 | `/kien-thuc/san-giao-dich-tien-dien-tu/` | sàn giao dịch tiền điện tử | - | Finalized |
 | `/kien-thuc/huong-dan-cach-doc-bao-cao-tai-chinh-nhung-thong-tin-quan-trong/` | Hướng dẫn cách đọc báo cáo tài chính chi tiết cho người mới | - | Finalized |
 | `/kien-thuc/full-margin-la-gi-loi-khuyen-cho-nha-dau-tu-moi/` | Full margin là gì | - | Finalized |
+| [/kien-thuc/margin-la-gi/](file:///e:/project/seo-writer-agent-main/knowledge/4-content/2-drafts/Optimize-margin-la-gi.md) | Margin là gì | - | Finalized |
 | [/kien-thuc/von-luu-dong-la-gi/](file:///e:/project/seo-writer-agent-main/knowledge/4-content/3-finalized/Final-von-luu-dong-la-gi.md) | Vốn lưu động là gì | - | Finalized |
 | [/kien-thuc/room-tin-dung-trong-linh-vuc-ngan-hang-la-gi-nhu-the-nao-la-tot/](file:///e:/project/seo-writer-agent-main/knowledge/4-content/3-finalized/Final-room-tin-dung-trong-linh-vuc-ngan-hang-la-gi-nhu-the-nao-la-tot.md) | Room tín dụng trong ngành ngân hàng là gì | - | Finalized |
 | [/kien-thuc/phan-biet-co-phieu-va-trai-phieu/](file:///e:/project/seo-writer-agent-main/knowledge/4-content/3-finalized/Final-phan-biet-co-phieu-va-trai-phieu.md) | Phân biệt cổ phiếu và trái phiếu | - | Finalized |

@@ -7,6 +7,9 @@
 
 ## Văn phong & Ngôn từ (Style & Tone)
 
+### Bảng tiêu chuẩn phân ngành & Bảng đối sánh 3 chiều chỉ số lợi nhuận
+- Khi viết/tối ưu các bài giải thích chỉ số tài chính cơ bản (như Gross Profit Margin) cho F0 (P2), luôn thay thế các ví dụ minh họa giả định nhỏ lẻ bằng bài toán tính toán số liệu thực tế từ BCTC doanh nghiệp niêm yết (như HPG) kết hợp Bảng phân ngành tiêu chuẩn và Bảng đối sánh 3 chiều giữa Lợi nhuận gộp, Lợi nhuận ròng và Lợi nhuận cận biên.
+
 ### Loại bỏ mốc thời gian máy móc và gượng ép
 - Tuyệt đối không chèn máy móc hoặc lặp đi lặp lại cụm từ "Tính đến tháng M/Y," ở đầu câu khi giải thích lý thuyết. Chỉ chèn mốc thời gian (như "năm 2026", "tháng 9/2026") một cách tự nhiên và đúng thời điểm thực tế (hiện tại là tháng 9/2026) khi thực sự dẫn chứng số liệu thống kê biến động thực tế.
 
@@ -110,6 +113,9 @@
 
 ### Siêu bảng tỷ lệ Fibonacci và 3 Nguyên tắc đếm sóng cho bài viết Sóng Elliott
 - Luôn lồng ghép Siêu bảng Ma trận Tỷ lệ Fibonacci cho các bước sóng 1-5 & A-B-C kết hợp 3 nguyên tắc bất biến đếm sóng (Sóng 2 không quá đáy 1, Sóng 3 không bao giờ ngắn nhất, Sóng 4 không phạm vùng giá 1), kỹ thuật xác định Vùng hội tụ Fibonacci Cluster và bảng Quản trị Rủi ro Stop Loss/Take Profit khi tối ưu bài viết về Sóng Elliott và Fibonacci cho nhà đầu tư chủ động (P3).
+
+### Bảng đối sánh đòn bẩy hai chiều kèm chi phí lãi vay và Bảng phân biệt Tiểu khoản 1 vs 6
+- Khi viết hoặc tối ưu các bài viết về giao dịch ký quỹ (Margin) cho nhà đầu tư mới (P2), luôn lồng ghép Bảng đối sánh kết quả đầu tư 2 chiều (kịch bản tăng giá vs kịch bản giảm giá) kèm trừ chi phí lãi vay thực tế và tính toán tỷ lệ an toàn sau biến động, đồng thời lập Bảng phân biệt rõ ràng giữa Tài khoản thường (Tiểu khoản 1) và Tài khoản ký quỹ (Tiểu khoản 6) để đảm bảo góc nhìn khách quan và cảnh báo rủi ro đòn bẩy toàn diện.
 
 ## Sản phẩm & Thương hiệu (Products & Brand Context)
 

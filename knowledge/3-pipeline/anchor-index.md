@@ -14,6 +14,7 @@ File này là danh sách tập trung của tất cả bài viết trên website 
 
 | Anchor Text Gợi ý | URL | Từ khóa Liên quan | Trạng thái |
 | :--- | :--- | :--- | :--- |
+| margin là gì | https://www.dsc.com.vn/kien-thuc/margin-la-gi | Margin Là Gì? Cách Sử Dụng Margin Trong Chứng Khoán An Toàn | Finalized (Đã tối ưu) |
 | hệ số thanh toán là gì | https://www.dsc.com.vn/kien-thuc/he-so-thanh-toan-la-gi | Hệ Số Thanh Toán Là Gì? Ý Nghĩa & Cách Phân Tích Cho F0 | Finalized (Mới) |
 | 50 triệu nên gửi tiết kiệm ngân hàng nào | https://www.dsc.com.vn/kien-thuc/50-trieu-nen-gui-tiet-kiem-ngan-hang-nao | 50 triệu nên gửi tiết kiệm ngân hàng nào lãi cao 2026? | Finalized (Mới) |
 | 100 triệu gửi ngân hàng | https://www.dsc.com.vn/kien-thuc/100-trieu-gui-ngan-hang | 100 Triệu Gửi Ngân Hàng Lãi Bao Nhieu 1 Tháng? Bảng Lãi Suất 2026 | Finalized (Mới) |

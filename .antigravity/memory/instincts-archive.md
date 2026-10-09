@@ -28,6 +28,13 @@ Mỗi khi người dùng đưa ra phản hồi chỉnh sửa, hãy trích xuất
 
 ## Bản năng Active
 
+### Bảng tiêu chuẩn phân ngành & Bảng đối sánh 3 chiều chỉ số lợi nhuận
+- **Trạng thái:** ACTIVE
+- **Nguồn:** bien-loi-nhuan-gop-la-gi-y-nghia-cua-bien-loi-nhuan-gop-khi-lua-chon-co-phieu
+- **Phản hồi từ User:** "Optimize bài biên lợi nhuận gộp là gì"
+- **Bản năng:** Khi viết/tối ưu các bài giải thích chỉ số tài chính cơ bản (như Gross Profit Margin) cho F0 (P2), luôn thay thế các ví dụ minh họa giả định nhỏ lẻ bằng bài toán tính toán số liệu thực tế từ BCTC doanh nghiệp niêm yết (như HPG) kết hợp Bảng phân ngành tiêu chuẩn và Bảng đối sánh 3 chiều giữa Lợi nhuận gộp, Lợi nhuận ròng và Lợi nhuận cận biên.
+- **Phạm vi:** Global
+
 ### Bảng ma trận hậu quả gồng lỗ & Quy tắc cắt lỗ 7-8% vs. Chốt lời 20-25% CANSLIM
 - **Trạng thái:** ACTIVE
 - **Nguồn:** khi-nao-nen-ban-co-phieu-5-truong-hop-nha-dau-tu-can-luu-y
@@ -535,4 +542,13 @@ Mỗi khi người dùng đưa ra phản hồi chỉnh sửa, hãy trích xuất
 - **Nguồn:** song-elliott-va-fibonacci-la-gi
 - **Phản hồi từ User:** Phê duyệt bài viết Sóng Elliott và Fibonacci thành công.
 - **Bản năng:** Luôn lồng ghép Siêu bảng Ma trận Tỷ lệ Fibonacci cho các bước sóng 1-5 & A-B-C kết hợp 3 nguyên tắc bất biến đếm sóng (Sóng 2 không quá đáy 1, Sóng 3 không bao giờ ngắn nhất, Sóng 4 không phạm vùng giá 1), kỹ thuật xác định Vùng hội tụ Fibonacci Cluster và bảng Quản trị Rủi ro Stop Loss/Take Profit khi tối ưu bài viết về Sóng Elliott và Fibonacci cho nhà đầu tư chủ động (P3).
+- **Phạm vi:** Global
+
+---
+
+### Bảng đối sánh đòn bẩy hai chiều kèm chi phí lãi vay và Bảng phân biệt Tiểu khoản 1 vs 6
+- **Trạng thái:** ACTIVE
+- **Nguồn:** margin-la-gi
+- **Phản hồi từ User:** Phê duyệt bài viết Margin là gì thành công (QA Score 100/100).
+- **Bản năng:** Khi viết hoặc tối ưu các bài viết về giao dịch ký quỹ (Margin) cho nhà đầu tư mới (P2), luôn lồng ghép Bảng đối sánh kết quả đầu tư 2 chiều (kịch bản tăng giá vs kịch bản giảm giá) kèm trừ chi phí lãi vay thực tế và tính toán tỷ lệ an toàn sau biến động, đồng thời lập Bảng phân biệt rõ ràng giữa Tài khoản thường (Tiểu khoản 1) và Tài khoản ký quỹ (Tiểu khoản 6) để đảm bảo góc nhìn khách quan và cảnh báo rủi ro đòn bẩy toàn diện.
 - **Phạm vi:** Global

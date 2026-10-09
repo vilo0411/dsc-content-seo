@@ -7,6 +7,12 @@ File này ghi lại các chỉnh sửa thực tế mà người dùng thực hi�
 
 ---
 
+### [2026-10-09] - bien-loi-nhuan-gop-la-gi-y-nghia-cua-bien-loi-nhuan-gop-khi-lua-chon-co-phieu
+- **Lỗi đã sửa:** Tối ưu hóa toàn diện bài viết nguồn `Biên lợi nhuận gộp là gì? Cách tính và ý nghĩa Gross Profit Margin`. Mở rộng bài viết từ ~1.200 từ lên ~1.536 từ chuẩn Seven Sweeps & Anti-AI đạt 99/100 PASS QA Lint (0 CRITICAL, 0 MAJOR); loại bỏ 100% mở bài dạo đầu AI vĩ mô và kết bài tổng kết sáo rỗng; đổi ví dụ giả định (cửa hàng quần áo) sang bài toán tính toán BCTC thực tế từ Tập đoàn Hòa Phát (HPG) năm 2026; bổ sung Bảng tiêu chuẩn biên lợi nhuận gộp theo 5 nhóm ngành (Công nghệ, Dược phẩm, FMCG, Sản xuất, Bán lẻ); xây dựng Bảng đối sánh 3 chỉ số (Biên lợi nhuận gộp vs Biên lợi nhuận ròng vs Lợi nhuận cận biên) giải quyết trọn vẹn PAA Search Intent; tích hợp 5 internal links sitemap live và Product Bridge hệ sinh thái DSC (App DSC Trading, eKYC 3 phút, Môi giới 1:1, HTML CTA Banner phối màu DSC chuẩn conversion).
+- **Pattern:** Đạt 99/100 PASS QA Lint (0 CRITICAL, 0 MAJOR, 0 câu >30 từ), bổ sung mốc thời gian 2026, bảo toàn 100% 2 hình ảnh gốc. Tích hợp 5 internal links tự nhiên và Product Bridge Môi giới 1:1 + eKYC 3 phút cho F0 (P2).
+- **Rule học được:** Khi viết/tối ưu các bài giải thích chỉ số tài chính cơ bản (như Gross Profit Margin) cho F0 (P2), luôn thay thế các ví dụ minh họa giả định nhỏ lẻ bằng bài toán tính toán số liệu thực tế từ BCTC doanh nghiệp niêm yết (như HPG) kết hợp Bảng phân ngành tiêu chuẩn và Bảng đối sánh 3 chiều giữa Lợi nhuận gộp, Lợi nhuận ròng và Lợi nhuận cận biên.
+- **Scope:** Global
+
 ### [2026-10-07] - phan-ky-rsi-la-gi
 - **Lỗi đã sửa:** Nâng cấp tối ưu hóa bài viết gốc `Phân kỳ RSI là gì? Cách giao dịch với phân kỳ RSI` từ ~450 từ sơ sài lên ~1.280 từ chuyên sâu đạt 96/100 PASS QA Lint (0 CRITICAL, 0 MAJOR); khắc phục các lỗi Anti-AI ở Sapo và Kết bài; bổ sung Bảng đối sánh 2D giữa Phân kỳ Thường (Regular) và Phân kỳ Ẩn (Hidden); lồng ghép kỹ thuật Failure Swing của J. Welles Wilder để loại bỏ 80% bẫy phân kỳ giả; bổ sung Quy trình 4 bước giao dịch thực chiến (Xác định trend, Nhận diện RSI, Vol xác nhận, Stop Loss -0,5% đến -1% / Take Profit R:R ≥ 1:2); tích hợp 2 hình ảnh 3D Isometric mới chuẩn DSC Brand Guidelines và bảo toàn 100% 5 hình ảnh gốc; tích hợp Product Bridge Môi giới 1:1 + Margin 10–13,5%/năm cho Active Trader (P3).
 - **Pattern:** Đạt 96/100 PASS QA Lint (0 CRITICAL, 0 MAJOR), bổ sung mốc thời gian thị trường tháng 9/2026, lồng ghép 7 internal links tự nhiên và HTML CTA Banner phối màu DSC chuẩn conversion.
@@ -1111,4 +1117,14 @@ File này ghi lại các chỉnh sửa thực tế mà người dùng thực hi�
 - **Lỗi đã sửa:** Bài gốc rất mỏng (~350 từ), định nghĩa sơ sài, vi phạm Anti-AI (mở bài generic thiếu specificity, kết bài summary "Hy vọng..."), tiêu đề sơ sài, thiếu bảng đối sánh scannable giữa các loại tài khoản chứng khoán, thiếu mốc thời gian 2026 và thiếu các câu hỏi PAA phổ biến.
 - **Pattern:** Tối ưu toàn diện theo Seven Sweeps Framework: Mở rộng dung lượng lên 1.581 từ, cập nhật Title chuẩn SEO (57 ký tự), mở đầu bằng số liệu VSDC 13,66 triệu tài khoản chứng khoán, giữ 100% hình ảnh gốc, tạo ảnh minh họa 3D Isometric chuẩn brand DSC, xây dựng Bảng so sánh 3 chiều giữa Tài khoản thường (tiểu khoản 1) vs Margin (tiểu khoản 6) vs Phái sinh, thêm khối PAA FAQ (4 câu hỏi cốt lõi) và tích hợp HTML CTA Banner chuyển đổi eKYC DSC Trading. QA Score đạt 94/100 (0 CRITICAL, 0 MAJOR).
 - **Rule học được:** Khi tối ưu bài tổng hợp về các loại tài khoản chứng khoán, luôn lồng ghép Bảng so sánh đa chiều (thường vs margin vs phái sinh) về đòn bẩy, chu kỳ thanh toán và rủi ro, kết hợp mã hóa tiểu khoản thực tế tại CTCK (đuôi 1 & đuôi 6) để tăng tính thực chiến cho F0.
+- **Scope:** Global
+| 2026-10-09 | bien-loi-nhuan-gop-la-gi-y-nghia-cua-bien-loi-nhuan-gop-khi-lua-chon-co-phieu | 99 | 0/0/2 | anti=100 seo=100 read=94 link=100 geo=100 |
+| 2026-10-09 | margin-la-gi | 100 | 0/0/0 | anti=100 seo=100 read=100 link=100 geo=100 |
+
+---
+
+### [2026-10-09] - margin-la-gi
+- **Lỗi đã sửa:** Bài gốc mang văn phong AI sáo rỗng ("con dao hai lưỡi", các ngoặc kép cấm "cháy tài khoản", "bắt dao rơi"), ví dụ minh họa chỉ có kịch bản 1 chiều tăng giá (bỏ qua rủi ro và chi phí lãi vay), thiếu bảng so sánh tài khoản thường vs tài khoản ký quỹ, thiếu quy trình xử lý Call Margin và thông tin sản phẩm DSC còn chung chung.
+- **Pattern:** Tối ưu hóa toàn diện theo Seven Sweeps Framework: Nâng dung lượng lên 2.267 từ (QA Score 100/100 tuyệt đối, 0 câu >30 từ, 0 CRITICAL, 0 MAJOR), xây dựng Bảng so sánh Tài khoản thường (tiểu khoản 1) vs Ký quỹ (tiểu khoản 6), Bảng đối sánh 2 kịch bản tăng/giảm giá 15% kèm chi phí lãi vay và tỷ lệ an toàn, H2 Quy trình 3 bước xử lý bình tĩnh khi bị Call Margin, cập nhật H2 4 nguyên tắc đòn bẩy an toàn và FAQ chuẩn PAA. Bảo toàn 100% 4 ảnh gốc, sinh mới 2 ảnh 3D Isometric chuẩn brand DSC (đã gắn logo Top-Left). Tích hợp Product Bridge hệ sinh thái DSC (App DSC Trading, Môi giới 1:1, Margin ưu đãi 10%–13,5%/năm, mã nộp tiền BIDV 963369, CTA Banner eKYC).
+- **Rule học được:** Luôn lồng ghép Bảng đối sánh hai chiều (kịch bản tăng vs kịch bản giảm) kèm chi phí lãi vay thực tế và Bảng phân biệt Tiểu khoản 1 vs Tiểu khoản 6 khi tối ưu các bài viết về giao dịch ký quỹ (Margin) cho F0 (P2) để đảm bảo góc nhìn khách quan và cảnh báo rủi ro toàn diện.
 - **Scope:** Global
