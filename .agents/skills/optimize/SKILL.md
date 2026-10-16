@@ -35,6 +35,14 @@ Cập nhật và tối ưu lại một bài viết cũ đang tồn tại để t
 **Bước 1.1 — Intake & Tracking:**
 - Xác nhận file gốc tồn tại tại `knowledge/4-content/3-finalized/Final-[slug].md`. Nếu không tìm thấy: DỪNG và hỏi người dùng.
 - `python scripts/topic_status.py [slug] --set Optimizing` (không đọc `topic-clusters.md`).
+- **Đo baseline bài cũ** (ghi lại số để so sánh ở Bước 5 — bản optimize không được tệ hơn):
+  ```bash
+  python scripts/qa_lint.py knowledge/4-content/3-finalized/Final-[slug].md --no-sitemap   # lỗi cơ học
+  python scripts/slop_check.py knowledge/4-content/3-finalized/Final-[slug].md -v          # nhịp, bằng chứng, trùng khung
+  python scripts/market_facts.py --verify knowledge/4-content/3-finalized/Final-[slug].md  # số liệu sai / cũ hơn 18 tháng
+  python scripts/news_feed.py --topic "[keyword]" --days 30                                # sự kiện mới để cập nhật bài
+  ```
+  `FACT-stale` ở bài cũ là tín hiệu refresh mạnh nhất: bài đang nêu số liệu không còn đúng. `news_feed` cho mốc sự kiện có ngày để thay các câu "thời gian gần đây".
 - Tạo working copy: `knowledge/4-content/2-drafts/Optimize-[slug].md`.
   - Toàn bộ chỉnh sửa diễn ra trên bản copy này. Bài gốc không bị chạm đến.
 
@@ -77,7 +85,12 @@ PRODUCT BRIDGE : [Tên sản phẩm DSC phù hợp] — [Góc dẫn dắt tự n
 
 > Bước này không block workflow — nếu không có data thì bỏ qua hoàn toàn.
 
-**Part A — Performance Metrics (2 cấp lookup):**
+**Part A — Performance Metrics (3 cấp lookup):**
+
+Cấp 0 (ưu tiên — có kỳ so sánh): SEO Dashboard. Playbook đầy đủ: `.antigravity/skills/seo-dashboard/SKILL.md`.
+  - Agent có MCP `SEO Dashboard` → gọi `query_search_analytics` (`property_url: "sc-domain:dsc.com.vn"`, `dimensions: ["query"]`, `page_value: "/kien-thuc/[slug]"`, `days: 90`, `compare_mode: "prev_period"`, `limit: 30`) → ghi nguyên JSON vào `scratch/dashboard-pq.json` → `python scripts/dashboard_cache.py save page-queries [slug] --file scratch/dashboard-pq.json`.
+  - Mọi agent (kể cả không có MCP): `python scripts/dashboard_cache.py report [slug]` → dán nguyên block in ra vào Proposal Section 1. Exit 3 = chưa có cache → xuống Cấp 1.
+  - Cannibalization: gọi thêm `query_search_analytics` (`dimensions: ["page"]`, `query_value: "[keyword]"`, `days: 90`, `limit: 10`) — có URL DSC khác cùng nhận impressions đáng kể → ghi vào Section 0 của Proposal.
 
 Cấp 1: Tìm `[slug]` trong `knowledge/3-pipeline/gsc-opportunities.md`
   - Tìm thấy → dùng data pre-processed (đã có opportunity analysis đầy đủ)
@@ -161,14 +174,24 @@ Bỏ qua Part B hoàn toàn nếu script trả về "Không có bài nào phù h
 
 ---
 
-### ⚙️ Bước 5: QA (BẮT BUỘC trước khi trình bày)
-- Chạy lint trước (kiểm tra luôn bảo toàn ảnh gốc):
+### ⚙️ Bước 5: QA 3 tầng (BẮT BUỘC trước khi trình bày)
+- **Tầng A — lint** (kiểm tra luôn bảo toàn ảnh gốc):
   ```bash
   python scripts/qa_lint.py knowledge/4-content/2-drafts/Optimize-[slug].md --original knowledge/4-content/3-finalized/Final-[slug].md --outline knowledge/4-content/1-outlines/Proposal-[slug].md --cta --fix
   ```
   (`--outline` trỏ tới Proposal để lint check `PAA-missing` / `FAQ-*`; bỏ nếu Proposal không có `PAA_Questions:`.)
   Exit 1 → sửa đúng các dòng CRITICAL/MAJOR, chạy lại. Chưa gọi Quality Guardian khi lint chưa PASS.
-- Lint PASS → kích hoạt agent `.antigravity/agents/quality-guardian.md`. QA chỉ đọc thêm `Optimize-[slug].md` + Content Strategy Header — **không đọc lại** `anti-ai-rules.md` / `glossary.md` / `instincts.md` (đã có từ Step 0).
+- **Tầng B — slop check (BLOCKING):**
+  ```bash
+  python scripts/slop_check.py knowledge/4-content/2-drafts/Optimize-[slug].md -v
+  ```
+  Exit 1 (score < 80) → sửa theo rule `SLOP-*` được báo (`anti-ai-rules.md` §8.7). **Slop score phải ≥ baseline đo ở Bước 1.1** — tối ưu mà nhịp/bằng chứng tệ hơn bài cũ là hồi quy, không phải cải thiện.
+- **Tầng dữ liệu — fact check:**
+  ```bash
+  python scripts/market_facts.py --verify knowledge/4-content/2-drafts/Optimize-[slug].md
+  ```
+  Mọi `FACT-*` có ở baseline **phải sạch** ở bản optimize — làm mới số liệu là mục đích chính của `/optimize`. Exit 3 = nguồn chết, bỏ qua.
+- Tầng A + B PASS → kích hoạt agent `.antigravity/agents/quality-guardian.md`. QA chỉ đọc thêm `Optimize-[slug].md` + Content Strategy Header — **không đọc lại** `anti-ai-rules.md` / `glossary.md` / `instincts.md` (đã có từ Step 0).
 - Kết quả PASS → tiếp tục. FAIL → sửa và QA lại **tối đa 2 vòng**; sau vòng 2 vẫn FAIL → dừng, trình bày kèm `⚠️ Remaining issues`.
 - **⚠️ KHÔNG TỰ Ý FINALIZE:** Dừng lại tại đây để trình bày bản Optimize nháp đã đạt QA. Không được ghi đè bản Optimize nháp lên file Final ở `3-finalized/`. Việc này chỉ được thực hiện ở lệnh `/approve` tiếp theo.
 

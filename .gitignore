@@ -9,6 +9,8 @@
 knowledge/raw/gsc/queries.csv
 knowledge/raw/gsc/pages.csv
 knowledge/raw/gsc/cache-meta.json
+knowledge/raw/gsc/dashboard/
+scratch/dashboard-*.json
 
 # SERP cache từ DataForSEO (serp_research.py) — sinh lại được, không track
 knowledge/raw/serp/
@@ -185,3 +187,7 @@ temp_qa.py
 # Python cache & workflow backups
 __pycache__/
 *.bak
+
+# Market / news caches (sinh lại theo yêu cầu, churn cao)
+scripts/market-cache.json
+scripts/news-cache.json

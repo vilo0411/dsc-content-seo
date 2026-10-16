@@ -40,11 +40,15 @@ Nếu người dùng không chỉ rõ slug hoặc section → hỏi lại trư�
 
 ## Bước 3: Self-Audit (BẮT BUỘC trước khi trình bày bản sửa)
 
-**3a. Lint máy** — sau khi ghi bản sửa vào file (hoặc vào file tạm), chạy:
+**3a. Lint máy** — sau khi ghi bản sửa vào file (hoặc vào file tạm), chạy cả 3 tầng:
 ```bash
 python scripts/qa_lint.py [path/to/file]
+python scripts/slop_check.py [path/to/file] -v
+python scripts/market_facts.py --verify [path/to/file]
 ```
-Lint bắt: blacklist trigger phrases, emphatic quotes, hedge words, forbidden terms, câu > 30 từ, đoạn > 3 câu, link sai, mốc thời gian mơ hồ… Nếu bản sửa tạo thêm CRITICAL/MAJOR ở các dòng vừa sửa → sửa ngay. (Lỗi có sẵn ở phần khác của bài không thuộc phạm vi — chỉ báo cho user.)
+Tầng A (`qa_lint`) bắt: blacklist trigger phrases, emphatic quotes, hedge words, forbidden terms, câu > 30 từ, đoạn > 3 câu, link sai, mốc thời gian mơ hồ… Tầng B (`slop_check`) bắt: nhịp câu phẳng, mật độ bằng chứng thấp, câu sáo rỗng (cách sửa từng rule `SLOP-*`: `anti-ai-rules.md` §8.7). Tầng dữ liệu (`market_facts --verify`) bắt số liệu sai/cũ — exit 3 = nguồn chết, bỏ qua.
+
+Nếu bản sửa tạo thêm CRITICAL/MAJOR ở các dòng vừa sửa → sửa ngay. **Slop score sau khi sửa không được thấp hơn trước khi sửa** — chạy `slop_check` trên bản gốc trước nếu cần mốc so sánh. (Lỗi có sẵn ở phần khác của bài không thuộc phạm vi — chỉ báo cho user.)
 
 **3b. Đọc lại bằng mắt** (phần lint không làm được):
 - [ ] Câu đầu không phải opener vĩ mô (nếu sửa mở bài)

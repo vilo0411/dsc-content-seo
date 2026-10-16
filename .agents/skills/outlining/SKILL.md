@@ -18,6 +18,11 @@ Tương đương với `Phase 1` và `Phase 2` của lệnh `/write`.
 5. `knowledge/4-content/topic-clusters.md`
 6. `.antigravity/memory/instincts.md`
 
+### Bước 0.5: Cannibalization Gate (trước khi gọi SERP có phí)
+- Agent có MCP `SEO Dashboard`: gọi `query_search_analytics` (`property_url: "sc-domain:dsc.com.vn"`, `dimensions: ["page"]`, `query_value: "[keyword]"`, `days: 90`, `limit: 10`). Playbook: `.antigravity/skills/seo-dashboard/SKILL.md`.
+- Không có MCP: `python scripts/find_links.py "[keyword]" --top 5` để xem bài DSC cùng chủ đề.
+- Một URL DSC đã nhận phần lớn impressions của keyword (đứng top 10) và cùng intent → **DỪNG**, đề xuất `/optimize [slug-đó]` thay vì viết bài mới, chờ user quyết. Khác intent → ghi rõ ranh giới intent vào outline và link chéo 2 chiều.
+
 ### Bước 1: SEO Collector — SERP Research + Gap Synthesis + Internal Link Planning
 - Kích hoạt agent `.antigravity/agents/seo-collector.md`.
 - Kích hoạt skill `.antigravity/skills/seo-outlining/SKILL.md` → Step 1: Plan.

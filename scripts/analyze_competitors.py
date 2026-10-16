@@ -198,7 +198,7 @@ def analyze_url(url, min_words=200):
     for sec in parser.sections:
         w_count = count_words(sec['content'])
         structured_outline.append({
-            'level': sec['level'].upper(),
+            'level': (sec['level'] or 'INTRO').upper(),
             'title': sec['title'],
             'word_count': w_count,
             'snippet': sec['content'][:150] + "..." if len(sec['content']) > 150 else sec['content']

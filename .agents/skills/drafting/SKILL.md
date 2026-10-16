@@ -34,13 +34,23 @@ Dùng sau khi Outline đã được `/approve`. Chỉ thực hiện Phase 3 (Dra
 - **BẮT BUỘC:** Luôn chèn ít nhất 01 link chuyển đổi dẫn về trang **Mở tài khoản chứng khoán DSC** (`https://www.dsc.com.vn/mo-tai-khoan`) tại phần Product Bridge hoặc CTA cuối bài — rule đầy đủ ở `.antigravity/rules/cta-conversion.md`.
 - Banner CTA: kích hoạt `.antigravity/skills/cro-optimization/SKILL.md` sau bước này, trước khi lint.
 
-### Bước 3: Lint + Quality Guardian (QA — BẮT BUỘC)
-- Lint trước:
+### Bước 3: QA 3 tầng (Lint → Slop → Fact → Quality Guardian — BẮT BUỘC)
+- **Tầng A — lint cơ học:**
   ```bash
   python scripts/qa_lint.py knowledge/4-content/2-drafts/Draft-[slug].md --outline knowledge/4-content/1-outlines/[slug].md --fix
   ```
-  Exit 1 → sửa đúng các dòng CRITICAL/MAJOR, chạy lại. Chưa gọi Quality Guardian khi lint chưa PASS.
-- Lint PASS → kích hoạt agent `.antigravity/agents/quality-guardian.md` (chỉ checklist ngữ nghĩa; context đã có từ Bước 0, QA không load lại).
+  Exit 1 → sửa đúng các dòng CRITICAL/MAJOR, chạy lại. Chưa qua tầng B khi lint chưa PASS.
+- **Tầng B — slop check (BLOCKING):**
+  ```bash
+  python scripts/slop_check.py knowledge/4-content/2-drafts/Draft-[slug].md -v
+  ```
+  Exit 1 (score < 80) → sửa theo đúng rule `SLOP-*` được báo (cách sửa từng rule: `anti-ai-rules.md` §8.7), **tối đa 2 vòng**.
+- **Tầng dữ liệu — fact check (advisory):**
+  ```bash
+  python scripts/market_facts.py --verify knowledge/4-content/2-drafts/Draft-[slug].md
+  ```
+  `FACT-index-wrong` / `FACT-ticker` → sửa bắt buộc. `FACT-stale` → thêm 1 mốc trong 18 tháng. Exit 3 = nguồn chết, bỏ qua.
+- **Tầng C** — A + B PASS → kích hoạt agent `.antigravity/agents/quality-guardian.md` (chỉ checklist ngữ nghĩa; context đã có từ Bước 0, QA không load lại).
 - Kết quả PASS → tiếp tục. FAIL → sửa và QA lại **tối đa 2 vòng**; sau vòng 2 vẫn FAIL → dừng, trình bày kèm `⚠️ Remaining issues`.
 
 ### 🚧 APPROVAL GATE:

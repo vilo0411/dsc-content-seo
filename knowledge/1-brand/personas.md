@@ -24,12 +24,12 @@ Last_Updated: 2026-05-15
 
 ## P1 — Người Tiết Kiệm Thận Trọng
 
-**Nhân vật đại diện:** Chị Lan, 38 tuổi, kế toán trưởng, Hà Nội
+**Nhân vật đại diện:** Chị Lan, 38 tuổi,Marketing trưởng, Hà Nội
 
 ### Đặc điểm
 - **Tuổi:** 30–50
 - **Nghề nghiệp:** Công chức, kế toán, nhân viên văn phòng lâu năm
-- **Thu nhập:** 15–40 triệu/tháng
+- **Thu nhập:** 20–40 triệu/tháng
 - **Tiết kiệm hiện tại:** 200 triệu – 2 tỷ đang gửi ngân hàng
 - **Kinh nghiệm đầu tư:** Gần như bằng 0
 

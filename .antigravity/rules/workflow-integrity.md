@@ -11,7 +11,14 @@
     *   **Agent-specific files** as listed in each agent's "Context Loading" block.
     *   **Failure to load context = Invalid execution.** Stop and load before proceeding.
 
-3.  **No Hallucinations**: All interest rates, market data, and facts must be grounded in SERP or Knowledge Base. If data is missing, STOP and ask the user.
+3.  **No Hallucinations**: All interest rates, market data, and facts must be grounded in SERP, the Knowledge Base, or `scripts/market_facts.py` (live OHLCV + listed-symbol list). Never write a price, index level, or ticker from memory. If the data source is unreachable (exit 3), fall back to structural facts that do not expire (biên độ HOSE 7% / HNX 10% / UPCoM 15%, T+2, lô 100 cp) — see `anti-ai-rules.md` §8.7e. If data is still missing, STOP and ask the user.
+
+3a. **Three-Layer QA (bắt buộc, không bỏ tầng nào)**: mọi file trong `knowledge/4-content/` trước khi trình bày hoặc finalize phải qua:
+    *   **Tầng A — `scripts/qa_lint.py`**: từ vựng, format, SEO, link, word count. Exit 1 = FAIL.
+    *   **Tầng B — `scripts/slop_check.py` (BLOCKING)**: nhịp câu, mật độ bằng chứng, câu sáo rỗng, trùng khung H2. Score < 80 = FAIL. Tầng A **không** thấy được các lỗi này — bài 100/100 ở tầng A vẫn có thể là slop.
+    *   **Tầng dữ liệu — `scripts/market_facts.py --verify` (advisory)**: `FACT-index-wrong` / `FACT-ticker` phải sửa; `FACT-stale` cần thêm 1 mốc trong 18 tháng. Exit 3 không chặn pipeline.
+    *   **Tầng C — Quality Guardian**: chỉ gọi khi tầng A + B đã PASS.
+    *   Vòng lặp sửa–check **tối đa 2 vòng**; vẫn FAIL → dừng, trình bày `⚠️ Remaining issues`.
 
 4.  **Mandatory Approval Gates**: 
     *   Do not proceed to Drafting without a clear `/approve` on the Outline.

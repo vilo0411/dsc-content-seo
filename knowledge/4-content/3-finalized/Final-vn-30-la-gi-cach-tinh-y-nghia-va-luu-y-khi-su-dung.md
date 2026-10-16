@@ -95,7 +95,7 @@ Mặc dù rổ VN30 tập trung các cổ phiếu chất lượng cao, nhà đ�
 Tính đến tháng 8/2026, 3 lưu ý thực chiến dưới đây giúp nhà đầu tư chủ động bảo vệ tài sản trước các biến động bất ngờ.
 
 * **Cảnh giác hiện tượng xanh vỏ đỏ lòng**: Có những phiên chỉ số VN30 và VN-Index tăng mạnh điểm số nhờ lực kéo từ 1–2 cổ phiếu vốn hóa lớn (như nhóm Ngân hàng hoặc Vingroup), nhưng phần lớn các cổ phiếu Midcap trên thị trường lại giảm giá. Nhà đầu tư không nên nhìn điểm số VN30 để vội vàng mua đuổi cổ phiếu ngoài ngành.
-* **Biến động bất ngờ phiên ATC ngày đáo hạn phái sinh**: Vào ngày thứ Năm tuần thứ 3 hàng tháng (ngày đáo hạn hợp đồng tương lai VN30), dòng tiền từ các quỹ đầu tư tổ chức và tay chơi phái sinh thường thực hiện các lệnh cân bằng vị thế lớn. Điều này có thể gây ra hiện tượng nhảy giá đột ngột (Gap) trong 15 phút ATC.
+* **Biến động bất ngờ phiên ATC [ngày đáo hạn phái sinh](https://www.dsc.com.vn/kien-thuc/dao-han-phai-sinh-la-gi)**: Vào ngày thứ Năm tuần thứ 3 hàng tháng (ngày đáo hạn hợp đồng tương lai VN30), dòng tiền từ các quỹ đầu tư tổ chức và tay chơi phái sinh thường thực hiện các lệnh cân bằng vị thế lớn. Điều này có thể gây ra hiện tượng nhảy giá đột ngột (Gap) trong 15 phút ATC.
 * **VN30 không đại diện cho toàn bộ cơ hội thị trường**: Nhóm VN30 có quy mô lớn nên tốc độ tăng trưởng giá thường mang tính ổn định thay vì bùng nổ. Nếu muốn tìm kiếm tỷ suất sinh lời cao hơn, nhà đầu tư nên kết hợp phân bổ một phần vốn sang các cổ phiếu Midcap có câu chuyện tăng trưởng riêng.
 
 ## Cảnh báo miễn trừ trách nhiệm

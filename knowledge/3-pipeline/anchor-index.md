@@ -14,6 +14,7 @@ File này là danh sách tập trung của tất cả bài viết trên website 
 
 | Anchor Text Gợi ý | URL | Từ khóa Liên quan | Trạng thái |
 | :--- | :--- | :--- | :--- |
+| sàn chứng khoán là gì | https://www.dsc.com.vn/kien-thuc/san-giao-dich-chung-khoan-la-gi | Sàn chứng khoán là gì? 3 sàn giao dịch uy tín tại Việt Nam | Finalized (Đã tối ưu) |
 | margin là gì | https://www.dsc.com.vn/kien-thuc/margin-la-gi | Margin Là Gì? Cách Sử Dụng Margin Trong Chứng Khoán An Toàn | Finalized (Đã tối ưu) |
 | hệ số thanh toán là gì | https://www.dsc.com.vn/kien-thuc/he-so-thanh-toan-la-gi | Hệ Số Thanh Toán Là Gì? Ý Nghĩa & Cách Phân Tích Cho F0 | Finalized (Mới) |
 | 50 triệu nên gửi tiết kiệm ngân hàng nào | https://www.dsc.com.vn/kien-thuc/50-trieu-nen-gui-tiet-kiem-ngan-hang-nao | 50 triệu nên gửi tiết kiệm ngân hàng nào lãi cao 2026? | Finalized (Mới) |
@@ -584,6 +585,7 @@ File này là danh sách tập trung của tất cả bài viết trên website 
 
 | Anchor Text Gợi ý | URL | Từ khóa Liên quan | Trạng thái |
 | :--- | :--- | :--- | :--- |
+| amibroker là gì | https://www.dsc.com.vn/kien-thuc/amibroker-la-gi | phần mềm amibroker, ngôn ngữ AFL, backtest | Finalized (Mới) |
 | chứng quyền là gì | https://www.dsc.com.vn/kien-thuc/chung-quyen-la-gi-chung-quyen-co-bao-dam-la-gi-tim-hieu-chung-quyen-tai-viet-nam | Chứng Quyền Là Gì? Phân Biệt, Cách Đọc Mã & Giao Dịch CW | Finalized (Mới) |
 | mô hình cánh bướm | https://www.dsc.com.vn/kien-thuc/mo-hinh-canh-buom | Mô hình Cánh bướm (Butterfly Pattern): Tỷ lệ Fibonacci | Finalized (Mới) |
 | 12+ mô hình nến đảo chiều mạnh nhất trong phâ | https://www.dsc.com.vn/kien-thuc/mo-hinh-nen-dao-chieu | 12+ mô hình nến đảo chiều mạnh nhất trong phân tích kỹ thuật chứng khoán | Finalized (Mới) |
@@ -659,10 +661,12 @@ File này là danh sách tập trung của tất cả bài viết trên website 
 
 ---
 
-## Cluster 3: Kinh tế vĩ mô & Chính sách (25 bài)
+## Cluster 3: Kinh tế vĩ mô & Chính sách (26 bài)
 
 | Anchor Text Gợi ý | URL | Từ khóa Liên quan | Trạng thái |
 | :--- | :--- | :--- | :--- |
+| độ co giãn của cầu theo giá là gì | https://www.dsc.com.vn/kien-thuc/do-co-gian-cua-cau-theo-gia-la-gi | Độ co giãn của cầu theo giá là gì? Công thức và ví dụ | Finalized (Đã tối ưu) |
+| hệ thống krx là gì | https://www.dsc.com.vn/kien-thuc/krx-la-gi | Hệ thống KRX là gì? Toàn bộ thay đổi nhà đầu tư cần biết | Finalized (Mới) |
 | chỉ số pce là gì | https://www.dsc.com.vn/kien-thuc/chi-so-pce-la-gi-giai-thich-chi-tiet-cho-nha-dau-tu | Chỉ số PCE là gì? Tác động vĩ mô đến thị trường chứng khoán | Finalized (Mới) |
 | chính sách công là gì | https://www.dsc.com.vn/kien-thuc/chinh-sach-cong-la-gi | Chính sách công là gì? 5 điều nhà đầu tư chứng khoán cần biết | Finalized (Mới) |
 | chính sách tài khóa là gì | https://www.dsc.com.vn/kien-thuc/chinh-sach-tai-khoa-la-gi | Chính sách tài khóa là gì? Tác động đến thị trường chứng khoán | Finalized (Mới) |
@@ -710,7 +714,7 @@ File này là danh sách tập trung của tất cả bài viết trên website 
 | cách đầu tư chứng khoán voi so vốn nho | https://www.dsc.com.vn/kien-thuc/cach-dau-tu-chung-khoan-voi-so-von-nho | cách đầu tư chứng khoán voi so vốn nho, kiến thức DSC | Live Published |
 | cách kiem soat tam ly trong đầu tư chứng khoán | https://www.dsc.com.vn/kien-thuc/cach-kiem-soat-tam-ly-trong-dau-tu-chung-khoan | cách kiem soat tam ly trong đầu tư chứng khoán, kiến thức DSC | Live Published |
 | cách mua cổ phiếu acb ngân hàng thương mại co phan | https://www.dsc.com.vn/kien-thuc/cach-mua-co-phieu-acb-ngan-hang-thuong-mai-co-phan-a-chau-huong-dan-chi-tiet | cách mua cổ phiếu acb ngân hàng thương mại co phan, kiến thức DSC | Live Published |
-| cách mua cổ phiếu vcb ngân hàng vietcombank | https://www.dsc.com.vn/kien-thuc/cach-mua-co-phieu-vcb-ngan-hang-vietcombank | cách mua cổ phiếu vcb ngân hàng vietcombank, kiến thức DSC | Live Published |
+| cách mua cổ phiếu vcb | https://www.dsc.com.vn/kien-thuc/cach-mua-co-phieu-vcb-ngan-hang-vietcombank | Cách Mua Cổ Phiếu VCB: Hướng Dẫn Chi Tiết 4 Bước Cho F0 | Finalized (Đã tối ưu) |
 | call force sell ban giai chap trong đầu tư chung k | https://www.dsc.com.vn/kien-thuc/call-force-sell-ban-giai-chap-trong-dau-tu-chung-khoan-la-gi | call force sell ban giai chap trong đầu tư chung k, kiến thức DSC | Live Published |
 | canh tranh hoan hao là gì | https://www.dsc.com.vn/kien-thuc/canh-tranh-hoan-hao-la-gi | canh tranh hoan hao là gì, kiến thức DSC | Live Published |
 | canh tranh là gì | https://www.dsc.com.vn/kien-thuc/canh-tranh-la-gi | canh tranh là gì, kiến thức DSC | Live Published |
@@ -852,12 +856,16 @@ File này là danh sách tập trung của tất cả bài viết trên website 
 
 ---
 
-## Cluster 5: Đánh giá & Khuyến nghị Cổ phiếu (2 bài)
+## Cluster 5: Đánh giá & Khuyến nghị Cổ phiếu (6 bài)
 
 | Anchor Text Gợi ý | URL | Từ khóa Liên quan | Trạng thái |
 | :--- | :--- | :--- | :--- |
+| top 5 cổ phiếu ngân hàng tiềm năng 2026 | https://www.dsc.com.vn/kien-thuc/top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh | Top 5 Cổ Phiếu Ngành Ngân Hàng Tiềm Năng 2026 & Định Giá | Finalized (Đã tối ưu) |
 | có nên mua cổ phiếu las năm 2026 | https://www.dsc.com.vn/kien-thuc/co-nen-mua-co-phieu-las | Có nên mua cổ phiếu LAS năm 2026? Đánh giá tiềm năng và dòng tiền cổ tức | Finalized (Mới) |
 | có nên mua cổ phiếu novaland (nvl) năm 2026 | https://www.dsc.com.vn/kien-thuc/co-nen-mua-co-phieu-novaland | Có nên mua cổ phiếu Novaland (NVL) năm 2026? Cơ hội phục hồi hay rủi ro nợ vay | Finalized (Mới) |
+| có nên mua cổ phiếu pnj năm 2026 | https://www.dsc.com.vn/kien-thuc/co-nen-mua-co-phieu-pnj-hay-khong | Có nên mua cổ phiếu PNJ? Phân tích biến cố và định giá 2026 | Finalized (Đã tối ưu) |
+| tiềm năng cổ phiếu vhm 2026 | https://www.dsc.com.vn/kien-thuc/co-phieu-vhm-tong-quan-danh-gia-va-cap-nhan-ket-qua-kinh-doanh-moi-nhat | Cổ phiếu VHM: Tiềm năng tăng trưởng và định giá năm 2026 | Finalized (Đã tối ưu) |
+| tiềm năng cổ phiếu vsc 2026 | https://www.dsc.com.vn/kien-thuc/co-phieu-vsc-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat | Cổ phiếu VSC: Tiềm năng chu kỳ cảng biển và định giá 2026 | Finalized (Đã tối ưu) |
 
 ---
 
@@ -869,6 +877,7 @@ File này là danh sách tập trung của tất cả bài viết trên website 
 | hop dong tuong lai chỉ số chứng khoán vn 30 huong | https://www.dsc.com.vn/kien-thuc/hop-dong-tuong-lai-chi-so-chung-khoan-vn-30-huong-dan-chi-tiet | hop dong tuong lai chỉ số chứng khoán vn 30 huong, kiến thức DSC | Live Published |
 | hợp đồng tương lai là gì | https://www.dsc.com.vn/kien-thuc/hop-dong-tuong-lai-la-gi | Hợp Đồng Tương Lai Là Gì? Lợi Ích Và Rủi Ro Phái Sinh | Finalized (Mới) |
 | ngày đáo hạn phái sinh là gì | https://www.dsc.com.vn/kien-thuc/dao-han-phai-sinh-la-gi | Ngày Đáo Hạn Phái Sinh Là Gì? Lịch Đáo Hạn Và Chiến Lược Giao Dịch | Finalized (Mới) |
+| giờ giao dịch phái sinh | https://www.dsc.com.vn/kien-thuc/gio-giao-dich-phai-sinh | Giờ Giao Dịch Phái Sinh Chi Tiết Các Phiên Mới Nhất 2026 | Finalized (Mới) |
 
 ---
 
@@ -891,6 +900,7 @@ File này là danh sách tập trung của tất cả bài viết trên website 
 | quỹ tương hỗ là gì | https://www.dsc.com.vn/kien-thuc/quy-tuong-ho-la-gi | Quỹ tương hỗ là gì? Phân biệt quỹ tương hỗ và ETF | Finalized (Mới) |
 | quyen chon mua cổ phiếu là gì | https://www.dsc.com.vn/kien-thuc/quyen-chon-mua-co-phieu-la-gi | quyen chon mua cổ phiếu là gì, kiến thức DSC | Live Published |
 | tỷ lệ ký quỹ | https://www.dsc.com.vn/kien-thuc/ty-le-ky-quy | Tỷ Lệ Ký Quỹ: Công Thức Tính Và Ngưỡng An Toàn Margin | Finalized (Mới) |
+| vn diamond là gì | https://www.dsc.com.vn/kien-thuc/vn-diamond-la-gi | VN Diamond là gì? Khám phá rổ cổ phiếu kim cương và ETF | Finalized (Mới) |
 
 ---
 

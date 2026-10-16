@@ -52,3 +52,7 @@ The production process is split across two skills:
 ## 🛠️ Key Utilities
 - **Internal Linking:** Use `/link` to backfill internal links from existing articles.
 - **Skill Center:** Check `.antigravity/skills/` for specialized capabilities.
+
+## 📈 Performance Data (SEO Dashboard MCP)
+- GSC / GA4 / Ads / cannibalization lấy qua MCP **SEO Dashboard** — playbook `.antigravity/skills/seo-dashboard/SKILL.md`, cấu hình Antigravity `.antigravity/config/seo-dashboard-mcp.md`.
+- Agent có MCP gọi tool rồi lưu cache bằng `python scripts/dashboard_cache.py save ...`; agent không có MCP đọc `python scripts/dashboard_cache.py report <slug>`. Không bịa số GSC.

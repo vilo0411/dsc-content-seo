@@ -12,16 +12,25 @@ Sync data từ Google Search Console API, phân tích cơ hội, và xuất báo
 - `--days=30`: Số ngày fetch data (mặc định: 30, tối đa nên dùng: 90)
 - `--force`: Bỏ qua cache TTL (7 ngày), fetch ngay kể cả khi cache còn mới
 
-## Điều kiện tiên quyết
-File credentials phải tồn tại tại `.antigravity/config/gsc-credentials.json`.
-Nếu chưa có: làm theo hướng dẫn tại `.antigravity/config/gsc-config.md`.
+## Điều kiện tiên quyết (1 trong 2 nguồn)
+- **Nguồn A — SEO Dashboard MCP (ưu tiên, không cần credentials):** agent có MCP `SEO Dashboard`. Playbook: `.antigravity/skills/seo-dashboard/SKILL.md`.
+- **Nguồn B — GSC API trực tiếp:** file credentials tại `.antigravity/config/gsc-credentials.json`. Nếu chưa có: làm theo `.antigravity/config/gsc-config.md`.
+- Không có cả hai → kiểm tra `python scripts/dashboard_cache.py status`; cache còn thì nhảy thẳng Bước 2.
 
 ---
 
 ## Quy trình thực thi
 
 ### Bước 1: Fetch GSC Data
-Chạy script sync:
+
+**Nguồn A (SEO Dashboard MCP):** gọi 2 lần `query_search_analytics` với `property_url: "sc-domain:dsc.com.vn"`, `page_value: "/kien-thuc/"`, `days: [days]`, `limit: 500`:
+1. `dimensions: ["page"]` → ghi nguyên JSON vào `scratch/dashboard-pages.json` → `python scripts/dashboard_cache.py save pages --file scratch/dashboard-pages.json`
+2. `dimensions: ["page", "query"]` → `scratch/dashboard-pq-all.json` → `python scripts/dashboard_cache.py save page-query --file scratch/dashboard-pq-all.json`
+3. (Tùy chọn) `get_cannibalization` (`days: 90`, `limit: 100`) → `save cannibalization`
+
+Script ghi `pages.csv` / `queries.csv` / `cache-meta.json` đúng schema của `sync_gsc.py` (CTR quy về tỉ lệ 0–1), nên Bước 2 chạy y hệt. Xóa file trong `scratch/` sau khi lưu.
+
+**Nguồn B (GSC API):** chạy script sync:
 ```bash
 python scripts/sync_gsc.py [--days=30] [--force]
 ```

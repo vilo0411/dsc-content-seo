@@ -361,6 +361,38 @@ Câu viết chung chung không chỉ bị xếp hạng thấp — nó **bị lo�
 
 ---
 
+### 8.7 Mỏ neo dữ liệu, nhịp câu & tính tươi của số liệu
+
+> Tầng B (`scripts/slop_check.py`) đo **hành vi** của văn bản, tầng dữ liệu (`scripts/market_facts.py`) đo **tính đúng** của số liệu. Các rule dưới đây là thứ hai script đó enforce — viết theo đúng chúng thì không phải sửa vòng hai.
+
+**(a) Mỏ neo theo ý định của H2 (`data_anchor`).** Mỗi H2 nội dung cần ≥1 mỏ neo kiểm chứng được, và mỏ neo phải thuộc về claim của chính câu đó. Loại mỏ neo chọn theo ý định của H2, không theo loại bài:
+
+| Ý định H2 | Mỏ neo bắt buộc |
+| :--- | :--- |
+| Định nghĩa | Pháp lý hoặc cấu trúc: Luật Chứng khoán, biên độ sàn, T+2, lô 100 cp |
+| Phân loại | Ngưỡng / kỳ hạn phân biệt các nhóm |
+| So sánh, "tại sao nên" | **Bắt buộc** số so sánh có nguồn |
+| Hướng dẫn thao tác | Mốc quy trình: giờ phiên, số bước, thời hạn |
+| Rủi ro | Biên độ thiệt hại: biên độ sàn, ngưỡng call margin, ví dụ lịch sử có ngày |
+| Bối cảnh thị trường hiện tại | Dữ liệu sống kèm ngày (`market_facts.py --brief`) |
+| DSC Product Bridge | Thông số sản phẩm: phí 0,1%/lệnh, lãi suất margin 10–13,5%/năm, eKYC 3 phút |
+
+Lấy số bằng `python scripts/market_facts.py --brief`, **không tự nhớ số**.
+
+**(b) Antipattern (`data_anchor_antipattern`).** CẤM nhồi số không liên quan tới claim để qua lint — ví dụ "Trên sàn HOSE với biên độ 7%, cổ phiếu là chứng chỉ sở hữu doanh nghiệp". Một H2 định nghĩa thuần chỉ cần 1 mỏ neo pháp lý/cấu trúc là đủ; mật độ thấp ở H2 định nghĩa là bình thường, miễn các H2 so sánh và rủi ro có số thật.
+
+**(c) Nhất quán thước đo (`data_measure_consistency`).** Nêu đỉnh/đáy chỉ số phải nói rõ thước đo: giá đóng cửa (mặc định DSC) hay intraday. VN-Index 2022 đỉnh 1.529 theo giá đóng cửa nhưng 1.536 intraday — trộn hai thước đo trong cùng bài là sai số liệu.
+
+**(d) Tính tươi (`data_freshness`).** Bài có số liệu thị trường phải có ≥1 mốc trong 18 tháng gần nhất; mốc cũ hơn phải ghi rõ bối cảnh thời điểm — viết "đỉnh của chu kỳ 2022", **không** viết "đỉnh lịch sử". Đỉnh/đáy cũ sẽ bị dữ liệu mới phủ định. `market_facts.py --verify` bắt lỗi này bằng rule `FACT-stale`.
+
+**(e) Dự phòng khi mất nguồn (`data_structural_fallback`).** Khi nguồn dữ liệu không truy cập được (exit 3), dùng dữ kiện cấu trúc không hết hạn: biên độ HOSE 7% / HNX 10% / UPCoM 15%, T+2, lô 100 cp, ATO 9h00–9h15, ATC 14h30–14h45. **Tuyệt đối không bịa số liệu giá.**
+
+**(f) Ngắt nhịp câu (`rhythm_break`).** Cứ 3–4 câu dài phải có ít nhất 1 câu ≤7 từ. Giới hạn 30 từ ở §4.1 chỉ chặn câu quá dài — nó không tạo nhịp. Corpus hiện tại có median `short_share` = 0,00 (bài trung bình **không có một câu nào ≤7 từ**), đây là nguồn gốc của flag `SLOP-burstiness` và `SLOP-rhythm`. Câu ngắn đặt ở chỗ cần nhấn: sau một chuỗi giải thích, trước một kết luận.
+
+**(g) Không lặp khung H2 (`SLOP-template`).** Khung H2 trùng > 55% với một bài đã có = bài đang là template cũ đổi chủ đề. Trừ bài cùng series có chủ ý (`cach-mua-co-phieu-<mã>`), phải đổi khung theo intent thật của keyword.
+
+---
+
 ### 8.5 Bổ sung vào Self-Audit Checklist (Phần 6)
 
 > Các items dưới đây được thêm vào **Checklist Bắt buộc** của Phần 6. Agent phải check trước mọi lần submit.
@@ -368,6 +400,10 @@ Câu viết chung chung không chỉ bị xếp hạng thấp — nó **bị lo�
 - [ ] **Mỗi H2 có ít nhất 1 Load-Bearing Claim** thoả mãn 3 điều kiện: Extract-friendly + Verifiable + Specific (Phần 8.2)
 - [ ] **Mọi data point có prefix mốc thời gian chuẩn** "Tính đến tháng M/Y" hoặc "Tháng M/Y:" — không dùng "Gần đây", "Trong những năm qua", "Hiện nay" không có ngày (Phần 8.3). **Chỉ dùng khi có số liệu/dữ liệu thực tế, tuyệt đối không tự chế mốc thời gian cho câu định nghĩa, giải thích lý thuyết chung.**
 - [ ] **Chủ thể câu là brand/entity cụ thể**, không dùng cấu trúc bị động che khuất thực thể (Phần 8.4)
+- [ ] **Mỗi H2 có mỏ neo đúng loại theo ý định của H2**, mỏ neo thuộc về claim của câu đó — không nhồi số cho đủ (Phần 8.7a–b)
+- [ ] **Có ≥1 mốc số liệu trong 18 tháng gần nhất**; mốc cũ hơn ghi rõ bối cảnh chu kỳ, không gọi là "lịch sử" (Phần 8.7d)
+- [ ] **Cứ 3–4 câu dài có ≥1 câu ≤7 từ** — kiểm bằng `python scripts/slop_check.py <file>` (Phần 8.7f)
+- [ ] **Số liệu thị trường lấy từ `scripts/market_facts.py`**, không viết theo ký ức; đã chạy `--verify` trên bản draft (Phần 8.7a, d)
 
 ---
 
@@ -378,7 +414,12 @@ Câu viết chung chung không chỉ bị xếp hạng thấp — nó **bị lo�
 | Muốn viết "Hiện nay lãi suất..." | Thêm mốc: "Tháng 8/2026, lãi suất..." |
 | H2 không có claim cứng (chỉ có mô tả chung) | Bắt buộc thêm 1 Load-Bearing Claim trước khi submit (Phần 8.2) |
 | Câu bị động che thực thể ("được áp dụng tại") | Đổi thành: "[Brand] + động từ chủ động + số liệu" (Phần 8.4) |
+| Cần số liệu thị trường (giá, chỉ số, KLGD) | `python scripts/market_facts.py --brief` — không viết theo ký ức (Phần 8.7a) |
+| `slop_check` báo `SLOP-rhythm` / `SLOP-burstiness` | Chèn câu ≤7 từ mỗi 3–4 câu dài, gộp/cắt câu để đổi nhịp (Phần 8.7f) |
+| `slop_check` báo `SLOP-evidence` / `SLOP-anchor` | Thêm mã CP + mốc Tháng M/YYYY + % thật vào đúng claim đang thiếu (Phần 8.7a) |
+| `market_facts --verify` báo `FACT-stale` | Bổ sung 1 mốc trong 18 tháng gần nhất (Phần 8.7d) |
+| Nguồn dữ liệu chết (exit 3) | Dùng dữ kiện cấu trúc: biên độ 7/10/15%, T+2, lô 100 (Phần 8.7e) |
 
 ---
 
-*Last updated: 2026-08-21 | Phiên bản 2.1 — Thêm Phần 8: GEO/AEO Optimization*
+*Last updated: 2026-10-16 | Phiên bản 2.2 — Thêm 8.7: mỏ neo dữ liệu, nhịp câu, tính tươi số liệu (enforce bằng `slop_check.py` + `market_facts.py`)*

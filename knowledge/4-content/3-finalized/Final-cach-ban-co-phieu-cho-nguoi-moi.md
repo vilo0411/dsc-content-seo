@@ -28,7 +28,7 @@ Bán cổ phiếu lô chẵn áp dụng cho số lượng từ 100 cổ phiếu 
 
 ![Cách bán cổ phiếu lô chẵn trên ứng dụng chứng khoán](https://extgw.dsc.com.vn/eback/uploads/cach_ban_co_phieu_lo_chan_c84bfc72c9.jpg)
 
-Lệnh bán sau khi gửi sẽ chuyển sang trạng thái chờ khớp. Hệ thống tự động khớp lệnh khi có giá đối ứng phù hợp. Bạn có thể xem thêm hướng dẫn [cách mua cổ phiếu online cho người mới](https://www.dsc.com.vn/kien-thuc/cach-mua-co-phieu-online-cho-nguoi-moi-bat-dau).
+Lệnh bán sau khi gửi sẽ chuyển sang trạng thái chờ khớp. Hệ thống tự động khớp lệnh khi có giá đối ứng phù hợp. Để nắm trọn lộ trình từ mở tài khoản đến mua bán, bạn hãy xem cẩm nang [cách chơi chứng khoán cho người mới bắt đầu](https://www.dsc.com.vn/kien-thuc/cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau) kết hợp bài hướng dẫn [cách mua cổ phiếu online cho người mới](https://www.dsc.com.vn/kien-thuc/cach-mua-co-phieu-online-cho-nguoi-moi-bat-dau).
 
 ### Cách bán cổ phiếu lô lẻ
 

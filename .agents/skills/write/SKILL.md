@@ -34,6 +34,8 @@ Trước khi làm bất cứ việc gì, hệ thống phải đọc:
 ### ⚙️ Giai đoạn 1: Outlining (SEO Research + Expert Outline)
 **Agent phụ trách:** SEO Collector + Brand Guardian (song song)
 
+**Bước 1.0 — Cannibalization Gate:** chạy đúng Bước 0.5 của `.agents/skills/outlining/SKILL.md` (SEO Dashboard MCP hoặc `find_links.py`). Có URL DSC cùng intent đang rank → dừng, đề xuất `/optimize` thay vì viết mới.
+
 **Bước 1.1 — SEO Collector (SERP Research):**
 - Kích hoạt skill `.antigravity/skills/seo-outlining/SKILL.md` → Step 1: Plan.
 - Dùng skill `.antigravity/skills/web-serp/SKILL.md` — SERP Lookup + Content Extraction song song qua Jina AI. KHÔNG dùng browser.
@@ -80,13 +82,23 @@ Trước khi làm bất cứ việc gì, hệ thống phải đọc:
 - **P4 (vốn lớn): không chèn banner**, chỉ link text — xem mục giới hạn một-offer trong skill.
 - Chạy trước bước lint là cố ý: banner và đoạn Product Bridge mới phải chịu lint cùng bài.
 
-**Bước 2.4 — Lint + Quality Guardian (QA):**
-- Chạy lint trước, sửa cơ học tự động:
+**Bước 2.4 — QA 3 tầng (Lint → Slop → Fact → Quality Guardian):**
+- **Tầng A — lint cơ học** (từ vựng, format, SEO, word count):
   ```bash
   python scripts/qa_lint.py knowledge/4-content/2-drafts/Draft-[slug].md --outline knowledge/4-content/1-outlines/[slug].md --cta --fix
   ```
-  Exit 1 → sửa đúng các dòng CRITICAL/MAJOR trong bảng, chạy lại. Chưa gọi Quality Guardian khi lint chưa PASS.
-- Lint PASS → kích hoạt agent `.antigravity/agents/quality-guardian.md` (chỉ checklist ngữ nghĩa; context đã có từ Step 0, QA chỉ đọc thêm Outline gốc).
+  Exit 1 → sửa đúng các dòng CRITICAL/MAJOR trong bảng, chạy lại. Chưa qua tầng B khi lint chưa PASS.
+- **Tầng B — slop check (BLOCKING):** bắt cái lint không thấy — nhịp câu phẳng, mật độ bằng chứng thấp, câu sáo rỗng, khung H2 trùng bài cũ.
+  ```bash
+  python scripts/slop_check.py knowledge/4-content/2-drafts/Draft-[slug].md -v
+  ```
+  Exit 1 (score < 80) → sửa **theo đúng rule `SLOP-*` được báo**, không viết lại cả bài. Cách sửa: `SLOP-rhythm`/`burstiness`/`uniform-run` → chèn câu 3–7 từ, gộp/cắt câu · `SLOP-evidence`/`anchor` → thêm mã CP + mốc Tháng M/YYYY + % thật vào đúng claim đang thiếu · `SLOP-vague` → thay cụm sáo rỗng bằng số hoặc tiêu chí · `SLOP-template` → đổi khung H2. Rule đầy đủ: `anti-ai-rules.md` §8.7. **Tối đa 2 vòng.**
+- **Tầng dữ liệu — fact check (advisory, không chặn khi mất mạng):**
+  ```bash
+  python scripts/market_facts.py --verify knowledge/4-content/2-drafts/Draft-[slug].md
+  ```
+  `FACT-index-wrong` = số liệu chỉ số sai → **sửa bắt buộc**. `FACT-ticker` = mã không niêm yết → **sửa bắt buộc**. `FACT-stale` = mọi mốc cũ hơn 18 tháng → thêm 1 mốc hiện tại. Exit 3 = nguồn dữ liệu chết → bỏ qua bước này, dùng dữ kiện cấu trúc (§8.7e).
+- **Tầng C** — tầng A + B PASS → kích hoạt agent `.antigravity/agents/quality-guardian.md` (chỉ checklist ngữ nghĩa; context đã có từ Step 0, QA chỉ đọc thêm Outline gốc).
 - Kết quả: `PASS` hoặc `FAIL` với danh sách lỗi có số dòng.
 - **Giới hạn vòng lặp:** Nếu `FAIL` → sửa và QA lại **tối đa 2 vòng**. Sau vòng 2 vẫn FAIL → dừng, trình bày draft kèm mục `⚠️ Remaining issues` (liệt kê CRITICAL/MAJOR còn lại) cho người dùng quyết định. Không tự lặp vòng 3.
 
@@ -104,6 +116,7 @@ Trước khi làm bất cứ việc gì, hệ thống phải đọc:
 - Xóa file outline gốc `knowledge/4-content/1-outlines/[slug].md` (nếu tồn tại) để dọn dẹp hệ thống.
 - `python scripts/topic_status.py [slug] --set Finalized`
 - `python scripts/qa_lint.py knowledge/4-content/3-finalized/Final-[slug].md --log` — ghi score vào `revision-log.md`.
+- `python scripts/slop_check.py knowledge/4-content/3-finalized/Final-[slug].md` — slop score của bản Final, ghi kèm vào dòng log để theo dõi xu hướng tầng B.
 
 **Bước 3.2 — Content Feedback Loop (Auto-trigger):**
 - Kích hoạt skill `.antigravity/skills/content-feedback-loop/SKILL.md`.

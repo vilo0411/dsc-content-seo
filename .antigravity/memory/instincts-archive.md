@@ -28,6 +28,100 @@ Mỗi khi người dùng đưa ra phản hồi chỉnh sửa, hãy trích xuất
 
 ## Bản năng Active
 
+### Thuật ngữ kinh tế vi mô: Trực quan hóa công thức & Liên kết sức mạnh định giá cổ phiếu
+- **Trạng thái:** ACTIVE
+- **Nguồn:** do-co-gian-cua-cau-theo-gia-la-gi
+- **Phản hồi từ User:** "ko" (duyệt draft)
+- **Bản năng:** Khi tối ưu bài viết thuật ngữ kinh tế vi mô (như độ co giãn của cầu, quy luật cung cầu) cho F0 (P2), luôn chuyển hóa các công thức học thuật thành định dạng văn bản in đậm trực quan (tránh dùng mã LaTeX $...), kết hợp ví dụ tính toán đời sống dễ hiểu và liên hệ trực tiếp với phân tích cổ phiếu thực chiến (nhận diện con hào kinh tế, năng lực định giá và phân bổ nhóm cổ phiếu phòng thủ vs chu kỳ). Tuyệt đối không dùng ký tự gạch đứng `|` (như `|Ed|`) bên trong các ô bảng Markdown vì sẽ làm hỏng cấu trúc cột (pipe delimiter); thay bằng cách viết chữ rõ nghĩa như `Trị tuyệt đối Ed`, `hệ số > 1`. Luôn áp dụng định dạng Sentence case cho Title H1, Meta Title và toàn bộ Headings.
+- **Phạm vi:** Global
+
+### Phân tích cổ phiếu Cảng biển & Logistics: M&A hạ tầng, liên minh đội tàu và chu kỳ tài sản
+- **Trạng thái:** ACTIVE
+- **Nguồn:** co-phieu-vsc-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat
+- **Phản hồi từ User:** "oke. nhớ cập nhật thêm data mới nhất", "ko" (duyệt draft)
+- **Bản năng:** Khi viết hoặc tối ưu bài phân tích cổ phiếu ngành cảng biển và logistics (như VSC), bắt buộc phải cập nhật tác động từ các thương vụ M&A hạ tầng cầu bến trọng điểm (Nam Hải Đình Vũ), liên minh đội tàu feeder (HAH), sản lượng TEU thực tế, thời điểm hết khấu hao tài sản cố định làm tăng biên lợi nhuận gộp, và định giá tài sản ròng qua P/B kết hợp P/E dự phóng. Tuân thủ định dạng Sentence case cho toàn bộ tiêu đề và headings.
+- **Phạm vi:** Global
+
+### Cập nhật data BCTC mới nhất & Soát lỗi mã chứng khoán cho bài phân tích cổ phiếu
+- **Trạng thái:** ACTIVE
+- **Nguồn:** co-phieu-vhm-tong-quan-danh-gia-va-cap-nhan-ket-qua-kinh-doanh-moi-nhat
+- **Phản hồi từ User:** "oke. nhớ cập nhật thêm data mới nhất"
+- **Bản năng:** Khi tối ưu bài phân tích cổ phiếu cụ thể (ticker), luôn chủ động tra cứu BCTC và số liệu quý mới nhất của năm (doanh thu, LNST, backlog, P/B, thị giá hiện tại), rà soát kỹ các lỗi copy-paste sai mã chứng khoán ở heading phân tích kỹ thuật, và bảo toàn 100% các biểu đồ tài chính gốc đã có trên web.
+- **Phạm vi:** Global
+
+### Tiêu đề Sentence Case & Phân định pháp lý T0 / Tuyệt đối không gán phái sinh cho DSC
+- **Trạng thái:** ACTIVE
+- **Nguồn:** day-trading-la-gi
+- **Phản hồi từ User:** "sao lại có T0. Tưởng Việt Nam ko có T0", "oke. Ngoài ra tối muốn tất cả tiêu đề bài viết phải viết dạng sentences case", "DSC ko có giao dịch phái sinh"
+- **Bản năng:** 
+  1. Tất cả tiêu đề bài viết (Title H1, Meta Title) và các tiêu đề mục phụ (H2, H3, H4) bắt buộc phải viết ở dạng **Sentence case** (chỉ viết hoa chữ cái đầu tiên và danh từ riêng/viết tắt/mã cổ phiếu như DSC, HOSE, HNX, VN-Index, HPG). Tuyệt đối không dùng Title Case.
+  2. Tuyệt đối không đề cập hoặc giới thiệu giao dịch phái sinh/Hợp đồng tương lai gắn liền với sản phẩm, dịch vụ hay thương hiệu DSC (DSC không cung cấp giao dịch phái sinh).
+  3. Khi đề cập đến Day trading/Lướt sóng trong ngày tại thị trường Việt Nam, bắt buộc phải khẳng định rõ ranh giới pháp lý: thị trường cơ sở là chu kỳ T+2.5 (chưa có T0 chính thức). Bản chất thực tế của "lướt T0" tại Việt Nam là kỹ thuật giao dịch trên kho hàng cổ phiếu có sẵn (available inventory) để hạ giá vốn và ăn chênh lệch biên độ, đi kèm cảnh báo rủi ro kẹp hàng nếu giá không hồi.
+- **Phạm vi:** Global
+
+### Bảng so sánh 4 nhóm CTCK & Gom mạng lưới Hub-and-Spoke cho bài Pillar F0
+- **Trạng thái:** SUPERSEDED (2026-10-16 — thay bằng "Re-optimize pillar: kiểm lại số liệu bản trước, bảng so sánh CTCK chỉ khi có nguồn")
+- **Nguồn:** cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau
+- **Phản hồi từ User:** "Làm mới nội dung 2026, thêm phần so sánh công ty chứng khoán, gom internal link từ cả cụm “người mới” về bài này"
+- **Bản năng:** Khi tối ưu bài viết trụ cột (Pillar) nhập môn chứng khoán cho F0 (P2), luôn cập nhật bối cảnh số liệu mới nhất của năm (số tài khoản VSDC, thanh khoản HOSE, VN-Index), tích hợp Bảng đối sánh 5 tiêu chí của 4 nhóm công ty chứng khoán (Thị phần lớn, Trực thuộc ngân hàng, Fintech phí 0 đồng, và Ngân hàng Đầu tư DSC Môi giới 1:1) để định hướng mở tài khoản an toàn, và xây dựng mạng lưới internal links 2 chiều gom trọn cụm chủ đề vệ tinh (mở tài khoản, mua cổ phiếu, bán cổ phiếu, phí giao dịch).
+- **Phạm vi:** Global
+
+### Phủ sâu biến thể từ khóa phụ H2/FAQ & Siêu Bảng thông số giao dịch cổ phiếu ngân hàng
+- **Trạng thái:** ACTIVE
+- **Nguồn:** lam-the-nao-de-mua-co-phieu-mbb-ngan-hang-quan-doi
+- **Phản hồi từ User:** "Mất hiển thị nhiều hơn mất thứ hạng, nghĩa là đang rơi khỏi các từ khóa phụ. Bổ sung các biến thể như “MB Bank”, “MBB”, “mua cổ phiếu MB” vào H2 và FAQ"
+- **Bản năng:** Khi tối ưu bài hướng dẫn mua cổ phiếu ngân hàng cụ thể (như MBB) bị mất hiển thị do rơi rụng từ khóa phụ, bắt buộc phải phủ đều các biến thể tên gọi phổ biến của ngân hàng (“MB Bank”, “MBB”, “mua cổ phiếu MB”) vào tiêu đề H2 và cụm câu hỏi FAQ, kết hợp Siêu Bảng thông số kỹ thuật sàn HOSE (biên độ ±7%, lô chẵn 100 cp, bước giá, chu kỳ T+2), Bảng tính chi phí vốn thực tế 1 lô chẵn 100 cp, phân định rõ giao dịch qua CTCK vs App ngân hàng số, và xây dựng liên kết chéo chống cannibalization với bài phân tích cơ bản.
+- **Phạm vi:** Global
+
+### Siêu bảng 6 màu bảng điện tử 3 sàn & Bóc tách bẫy tâm lý Xanh vỏ đỏ lòng cho F0
+- **Trạng thái:** ACTIVE
+- **Nguồn:** cac-mau-trong-chung-khoan-y-nghia-va-tac-dong-den-nha-dau-tu
+- **Phản hồi từ User:** "/approve bài viết tối ưu các màu trong chứng khoán"
+- **Bản năng:** Khi viết hoặc tối ưu các bài giải thích về màu sắc trên bảng giá chứng khoán cho F0 (P2), luôn tích hợp Siêu bảng tra cứu 6 màu sắc chuẩn và biên độ giá 3 sàn (HOSE ±7%, HNX ±10%, UPCoM ±15%), bóc tách cơ chế đổi màu khớp lệnh theo thời gian thực (giá khớp lệnh vs giá tham chiếu/trần/sàn), phân tích hiện tượng thị trường lệch pha "Xanh vỏ đỏ lòng" (khi nhóm VN30/trụ kéo điểm ảo) vs "Đỏ vỏ xanh lòng", kết hợp 3 bẫy tâm lý F0 (FOMO đu tím, bán tháo xanh lơ, tê liệt khi sideway) và khuyến nghị kỷ luật cắt lỗ 7%–8% cùng chuyên gia Môi giới 1:1 DSC.
+- **Phạm vi:** Global
+
+### Siêu Bảng Chỉ Số Định Giá Ngân Hàng 2026 & 5 Chỉ Số Vàng Đánh Giá Cổ Phiếu Vua
+- **Trạng thái:** ACTIVE
+- **Nguồn:** top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh
+- **Phản hồi từ User:** "/approve bài viết tối ưu top 5 cổ phiếu ngành ngân hàng tiềm năng 2026"
+- **Bản năng:** Khi viết hoặc tối ưu bài toplist cổ phiếu ngân hàng cho F0 (P2), luôn tích hợp Siêu Bảng Chỉ Số Định Giá đa chiều (P/E, P/B, ROE, CASA, NPL, Giá mục tiêu, Upside), bóc tách phương pháp định giá qua 5 chỉ số vàng (NIM, CASA, NPL/LLR, CAR, P/B), ưu tiên các mã ngân hàng có CASA cao và room tín dụng ưu đãi như MBB, TCB, ACB, đồng thời lồng ghép phân tích tác động vĩ mô từ chu kỳ tín dụng và làn sóng nâng hạng FTSE Russell 2026.
+- **Phạm vi:** Global
+
+### Bảng đối sánh Sở giao dịch vs CTCK & Siêu bảng 3 sàn HOSE HNX UPCoM
+- **Trạng thái:** ACTIVE
+- **Nguồn:** san-giao-dich-chung-khoan-la-gi
+- **Phản hồi từ User:** "/approve bài viết tối ưu sàn chứng khoán là gì"
+- **Bản năng:** Khi viết/tối ưu các bài giải thích sàn chứng khoán cho F0 (P2), luôn phân định rạch ròi ngay từ đầu giữa Sở giao dịch chứng khoán (nơi tổ chức thị trường tập trung) và Công ty chứng khoán (định chế trung gian nơi F0 mở tài khoản eKYC), kết hợp Siêu Bảng đối sánh 3 sàn (HOSE vs HNX vs UPCoM về vốn điều lệ, biên độ dao động ±7%, ±10%, ±15% và lô chẵn 100 cp), Bảng khung giờ các phiên giao dịch (ATO, liên tục, ATC, thỏa thuận, PLO) và Checklist nhận diện bẫy sàn quốc tế/Forex lừa đảo.
+- **Phạm vi:** Global
+
+### Bảng đối sánh 2D RSI Phân kỳ Thường vs Ẩn & Quy trình 4 bước tiếp diễn xu hướng
+- **Trạng thái:** ACTIVE
+- **Nguồn:** phan-ky-an-rsi-la-gi
+- **Phản hồi từ User:** "/approve bài viết tối ưu phân kỳ ẩn RSI là gì"
+- **Bản năng:** Khi viết/tối ưu các bài về phân kỳ ẩn RSI cho nhà đầu tư chủ động (P3), luôn phân định rõ cơ chế xung lực tiếp diễn xu hướng của nhịp Pullback so với phân kỳ thường (đảo chiều), kết hợp Bảng đối sánh 2D, Quy trình 4 bước xác nhận thanh khoản (Vol 1,5x MA20) & tỷ lệ R:R kỷ luật (Stop Loss 0,5%–1%, Take Profit R:R ≥ 1:2), đồng thời liên kết giải pháp tư vấn Môi giới 1:1 và Margin DSC 10–13,5%/năm.
+- **Phạm vi:** Global
+
+### Phân định Cấu trúc phiên HĐTL VN30 vs TPCP và Giá trị dẫn dắt của 15 phút mở cửa sớm
+- **Trạng thái:** ACTIVE
+- **Nguồn:** gio-giao-dich-phai-sinh
+- **Phản hồi từ User:** "/approve bài viết giờ giao dịch phái sinh"
+- **Bản năng:** Khi viết bài về thời gian và các phiên giao dịch phái sinh cho F0 (P2) và Active Trader (P3), luôn phân định rõ cấu trúc phiên của HĐTL VN30 (có phiên ATO/ATC) vs HĐTL TPCP (khớp liên tục toàn phiên không có ATO/ATC), giải thích giá trị dự báo sớm của 15 phút mở cửa sớm (08:45) đối với thị trường cơ sở (HOSE 09:00), công thức tính giá FSP ngày đáo hạn chống thao túng, và giữ vững định vị thương hiệu DSC hướng nhà đầu tư về cổ phiếu cơ sở an toàn.
+- **Phạm vi:** Global
+
+### Phân định Giá trị danh nghĩa vs Tiền ký quỹ và Vốn đệm an toàn phái sinh
+- **Trạng thái:** ACTIVE
+- **Nguồn:** 1-hop-dong-phai-sinh-bao-nhieu-tien
+- **Phản hồi từ User:** "/approve bài viết 1 hợp đồng phái sinh bao nhiêu tiền"
+- **Bản năng:** Khi viết các bài giải thích số vốn và ký quỹ phái sinh cho F0 (P2), luôn phân định rạch ròi giữa Giá trị danh nghĩa của hợp đồng (120–140 triệu VNĐ) và Số tiền ký quỹ thực tế (22–27 triệu VNĐ nhờ đòn bẩy 5:1 - 6:1), bổ sung khái niệm Vốn đệm an toàn dự phòng biến động (30–35 triệu VNĐ/hợp đồng) để tránh bẫy Call Margin, đồng thời giữ vững lập trường thương hiệu DSC không cung cấp phái sinh mà ưu tiên cổ phiếu cơ sở bền vững.
+- **Phạm vi:** Global
+
+### Phân định rạch ròi Chỉ số vs ETF và Bóc tách rổ cổ phiếu kín room ngoại
+- **Trạng thái:** ACTIVE
+- **Nguồn:** vn-diamond-la-gi
+- **Phản hồi từ User:** "/approve bài viết vn diamond là gì"
+- **Bản năng:** Khi viết bài về các chỉ số chứng khoán đặc thù và quỹ ETF mô phỏng (như VN Diamond - FUEVFVND) cho F0 (P2), luôn phân định rạch ròi ngay từ đầu giữa Chỉ số tham chiếu (Index) và Sản phẩm chứng chỉ quỹ niêm yết (ETF), kết hợp Bảng đối sánh trực quan với chỉ số đại chúng (VN30), bóc tách cơ chế giới hạn tỷ lệ sở hữu nước ngoài (FOL ≥ 95%) và hướng dẫn chiến lược tích sản trung bình giá (DCA) qua App DSC Trading.
+- **Phạm vi:** Global
+
 ### Bảng tiêu chuẩn phân ngành & Bảng đối sánh 3 chiều chỉ số lợi nhuận
 - **Trạng thái:** ACTIVE
 - **Nguồn:** bien-loi-nhuan-gop-la-gi-y-nghia-cua-bien-loi-nhuan-gop-khi-lua-chon-co-phieu
@@ -551,4 +645,69 @@ Mỗi khi người dùng đưa ra phản hồi chỉnh sửa, hãy trích xuất
 - **Nguồn:** margin-la-gi
 - **Phản hồi từ User:** Phê duyệt bài viết Margin là gì thành công (QA Score 100/100).
 - **Bản năng:** Khi viết hoặc tối ưu các bài viết về giao dịch ký quỹ (Margin) cho nhà đầu tư mới (P2), luôn lồng ghép Bảng đối sánh kết quả đầu tư 2 chiều (kịch bản tăng giá vs kịch bản giảm giá) kèm trừ chi phí lãi vay thực tế và tính toán tỷ lệ an toàn sau biến động, đồng thời lập Bảng phân biệt rõ ràng giữa Tài khoản thường (Tiểu khoản 1) và Tài khoản ký quỹ (Tiểu khoản 6) để đảm bảo góc nhìn khách quan và cảnh báo rủi ro đòn bẩy toàn diện.
+- **Phạm vi:** Global
+
+
+---
+
+### Phân định năng lực hạ tầng vs Khung pháp lý và Minh họa kịch bản lệnh MTL
+- **Trạng thái:** ACTIVE
+- **Nguồn:** krx-la-gi
+- **Phản hồi từ User:** Phê duyệt bài viết Hệ thống KRX là gì thành công (QA Score 100/100).
+- **Bản năng:** Khi viết bài về các nâng cấp hạ tầng công nghệ chứng khoán (như KRX, CCP), luôn phân định rạch ròi giữa năng lực kỹ thuật đã tích hợp sẵn và điều kiện khung pháp lý/thể chế cần có để kích hoạt sản phẩm mới (T+0, bán khống), đồng thời minh họa cơ chế lệnh thị trường mới (như MTL) bằng kịch bản khớp lệnh đối ứng từng phần cụ thể để nhà đầu tư mới (P2) nắm rõ cơ chế kiểm soát rủi ro trượt giá.
+- **Phạm vi:** Global
+
+---
+
+### Bảng phân tích mã AFL thay cho code block thô và Đoạn dẫn chuẩn cho Banner CTA
+- **Trạng thái:** ACTIVE
+- **Nguồn:** amibroker-la-gi
+- **Phản hồi từ User:** Phê duyệt bài viết Amibroker là gì thành công (QA Score 100/100).
+- **Bản năng:** 1. Khi viết về các phần mềm phân tích kỹ thuật hoặc thuật toán (như Amibroker, AFL), tuyệt đối không dùng code block thô mà hãy chuyển đổi thành Bảng Markdown 2 cột (Dòng lệnh AFL | Ý nghĩa thực thi) để tương thích CMS và tối ưu trải nghiệm đọc lướt. 2. Đối với khối Banner CTA chuyển đổi, bắt buộc phải có một đoạn văn xuôi dẫn dắt trực tiếp (độ dài ≥ 10 từ) nằm ngay phía trên khối banner, không đặt danh sách gạch đầu dòng sát banner để đảm bảo cấu trúc Product Bridge liền mạch.
+- **Phạm vi:** Global
+
+---
+
+### Siêu Bảng Lịch Đáo Hạn 12 tháng kèm Trạng thái & Cơ chế tính FSP loại trừ nhiễu ATC
+- **Trạng thái:** ACTIVE
+- **Nguồn:** dao-han-phai-sinh-la-gi
+- **Phản hồi từ User:** Phê duyệt bài viết Ngày đáo hạn phái sinh là gì thành công (QA Score 100/100).
+- **Bản năng:** Khi viết hoặc tối ưu các bài viết về ngày đáo hạn phái sinh cho nhà đầu tư mới (P2), luôn tích hợp Siêu Bảng Lịch Đáo Hạn cả 12 tháng của năm hiện tại kèm cột Trạng thái cập nhật thực tế, Bảng đối sánh Ngày đáo hạn vs Ngày thanh toán T+1, và công thức tính Giá thanh toán cuối cùng (FSP) loại trừ các giá trị cực đoan trong 30 phút cuối phiên ATC để giải tỏa nỗi sợ thao túng chỉ số cho nhà đầu tư mới, kết hợp lệnh Stop-loss/Take-profit tự động trên App DSC Trading làm Product Bridge phòng thủ an toàn.
+- **Phạm vi:** Global
+
+---
+
+### Phân tích cổ phiếu biến cố tái cấu trúc & Bóc tách khoản dự phòng một lần
+- **Trạng thái:** ACTIVE
+- **Nguồn:** co-nen-mua-co-phieu-pnj-hay-khong
+- **Phản hồi từ User:** Phê duyệt bài viết Có nên mua cổ phiếu PNJ thành công (QA Score 100/100).
+- **Bản năng:** Khi viết hoặc tối ưu các bài viết phân tích cổ phiếu bluechip gặp biến cố lớn hoặc tái cấu trúc (như PNJ năm 2026), luôn cập nhật ngay số liệu tài chính mới nhất từ đại hội cổ đông bất thường, bóc tách khoản trích lập dự phòng một lần khỏi kết quả kinh doanh cốt lõi để đánh giá đúng năng lực sinh lời thực, xây dựng Bảng ma trận kịch bản đầu tư đối chuẩn giữa trường phái thận trọng đứng ngoài và trường phái bắt đáy dài hạn có kiểm soát tỷ trọng (10%–20%), đồng thời cảnh báo bẫy giá trị (Value Trap) và nghiêm cấm sử dụng đòn bẩy ký quỹ (Margin) đối với nhà đầu tư F0 (P2).
+- **Phạm vi:** Global
+
+---
+
+### Tách Intent chống Cannibalization mã cổ phiếu, Chuẩn Banner Dark Navy & Công thức CMS-ready
+- **Trạng thái:** ACTIVE
+- **Nguồn:** cach-mua-co-phieu-vcb-ngan-hang-vietcombank
+- **Phản hồi từ User:** "CTA khó nhìn, ko theo chuẩn. Công thức format này ko hiển thị đc trên CMS của tôi"
+- **Bản năng:** 1. Khi tối ưu bài hướng dẫn thực hành mua cổ phiếu (How-to / Transactional), kiên quyết loại bỏ hoàn toàn các phần phân tích cơ bản/BCTC khỏi bài để chống xung đột intent (Cannibalization) với bài phân tích tổng quan cùng mã, đồng thời xây dựng liên kết chéo 2 chiều (Cross-linking) phân luồng rõ ràng. 2. Tuyệt đối không dùng cú pháp LaTeX `$$...$$` cho các công thức tính toán tài chính; luôn chuyển đổi thành Markdown Blockquote in đậm kết hợp Bảng tính chi phí Markdown trực quan tương thích 100% với CMS. 3. Mọi banner CTA phải sử dụng chuẩn Responsive Gradient Dark Navy `#0D1B2A` phối nút Neon Green `#2BE841` (độ tương phản 10.2:1 chuẩn WCAG AA), tuyệt đối không dùng khối viền màu xanh nhạt `#E8F8F2` thiếu chuyên nghiệp.
+- **Phạm vi:** Global
+
+
+---
+
+### Re-optimize pillar: kiểm lại số liệu bản trước, bảng so sánh CTCK chỉ khi có nguồn
+- **Trạng thái:** ACTIVE
+- **Nguồn:** cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau
+- **Phản hồi từ User:** Phê duyệt bản re-optimize 16/10/2026 (lint 100, slop 94 → 97) sau khi bản 14/10 còn sai số tài khoản VSDC, giá HPG, chu kỳ T+1,5 và bảng phí đối thủ không nguồn.
+- **Bản năng:** 1. Khi optimize lại một bài đã optimize trước đó, không tin số liệu của bản trước: chạy lại `market_facts.py --brief` cho mọi mã/chỉ số trong bài và đối chiếu số tài khoản/thanh khoản với mốc chuẩn ở anti-ai-rules §S3; chu kỳ thanh toán luôn viết T+2 theo glossary. 2. Bài pillar how-to cho F0 không đặt bảng so sánh phí/chất lượng app của đối thủ (VPS, SSI, TCBS...) khi không có nguồn công khai — thay bằng bảng câu hỏi kiểm tra + cột thông số DSC, và chỉ 2–3 câu + link sang bài lựa chọn "nên mở tài khoản ở đâu". 3. Kéo query GSC của chính URL: biến thể mang nhiều click nhất (ví dụ "cách chơi cổ phiếu") phải có mặt trong sapo hoặc H2/H3; query dạng câu hỏi có impressions lớn (ví dụ "chơi chứng khoán như thế nào") nâng thành H2. 4. Phần rủi ro/sai lầm neo vào biến động thật của năm hiện tại (đỉnh–đáy VN-Index có ngày) và tin có ngày từ `news_feed.py`.
+- **Phạm vi:** Global
+
+---
+
+### Siêu bảng ma trận 4 nến đơn đối sánh & Bộ lọc thanh khoản T+2 cho nến Hammer
+- **Trạng thái:** ACTIVE
+- **Nguồn:** mo-hinh-nen-hammer-la-gi
+- **Phản hồi từ User:** Phê duyệt bài viết Mô hình nến Hammer tối ưu đạt QA Lint 100/100 và Slop 100/100.
+- **Bản năng:** 1. Khi viết hoặc tối ưu các bài về mô hình nến đơn đảo chiều (như nến Hammer/Búa), luôn tích hợp Siêu Bảng ma trận 4 chiều đối sánh rạch ròi các mẫu nến có hình dáng tương đồng (Hammer vs Hanging Man vs Inverted Hammer vs Shooting Star) theo vị trí xuất hiện (đáy vs đỉnh) và tín hiệu đảo chiều (tăng vs giảm) để dập tắt triệt để sự nhầm lẫn kỹ thuật (đặc biệt không gộp Inverted Hammer vào nến đảo chiều giảm). 2. Bắt buộc phải gắn liền tín hiệu nến rút chân với điều kiện xác nhận thanh khoản Volume (vượt 20% - 50% MA20), cây nến xác nhận tiếp theo đóng cửa vượt đỉnh, tỷ lệ R:R tối thiểu 1:2 và cảnh báo rủi ro chu kỳ thanh toán T+2 trên thị trường chứng khoán cơ sở Việt Nam.
 - **Phạm vi:** Global

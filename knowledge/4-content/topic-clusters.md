@@ -43,7 +43,9 @@ Tài liệu này quản lý các nhóm chủ đề được phân tách từ d�
 | `/kien-thuc/luu-ky-chung-khoan-moi-dieu-ban-can-biet/` | Lưu ký chứng khoán là gì | - | Finalized |
 | `/kien-thuc/gio-giao-dich-chung-khoan/` | Giờ giao dịch chứng khoán | - | Finalized |
 | /kien-thuc/gio-giao-dich-chung-khoan-viet-nam | Giờ giao dịch chứng khoán Việt Nam | - | Finalized |
+| `/kien-thuc/san-giao-dich-chung-khoan-la-gi/` | Sàn chứng khoán là gì | - | Finalized |
 | `/kien-thuc/bien-do-giao-dong-gia-co-phieu-la-gi/` | biên độ giao động giá cổ phiếu | - | Finalized |
+| `/kien-thuc/cac-mau-trong-chung-khoan-y-nghia-va-tac-dong-den-nha-dau-tu/` | các màu trong chứng khoán | - | Finalized |
 | `/kien-thuc/thi-gia-co-phieu-la-gi/` | thị giá cổ phiếu | - | Finalized |
 | `/kien-thuc/giao-dich-thoa-thuan-la-gi/` | Giao dịch thỏa thuận là gì | - | Finalized |
 | `/kien-thuc/lenh-plo-la-gi/` | Lệnh PLO là gì | - | Finalized |
@@ -54,13 +56,15 @@ Tài liệu này quản lý các nhóm chủ đề được phân tách từ d�
 | [/kien-thuc/chi-phi-bien-la-gi/](file:///e:/project/seo-writer-agent-main/knowledge/4-content/3-finalized/Final-chi-phi-bien-la-gi.md) | Chi phí biên là gì | - | Finalized |
 | `/kien-thuc/cach-chon-co-phieu-tot/` | cách chọn cổ phiếu tốt | - | Finalized |
 | `/kien-thuc/co-phieu-penny-la-gi/` | cổ phiếu penny | - | Finalized |
-| `/kien-thuc/cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau/` | cách chơi chứng khoán cho người mới bắt đầu | - | Optimizing |
+| `/kien-thuc/cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau/` | cách chơi chứng khoán cho người mới bắt đầu | - | Finalized |
 | `/kien-thuc/co-nen-dau-tu-chung-khoan-khong/` | Có nên chơi chứng khoán không | - | Optimizing |
 | `/kien-thuc/cach-mua-co-phieu-online-cho-nguoi-moi-bat-dau/` | cách mua cổ phiếu online cho người mới bắt đầu | - | Optimizing |
+| [/kien-thuc/cach-mua-co-phieu-vcb-ngan-hang-vietcombank/](file:///e:/project/seo-writer-agent-main/knowledge/4-content/3-finalized/Final-cach-mua-co-phieu-vcb-ngan-hang-vietcombank.md) | Cách mua cổ phiếu VCB | - | Finalized |
+| [/kien-thuc/lam-the-nao-de-mua-co-phieu-mbb-ngan-hang-quan-doi/](file:///e:/project/seo-writer-agent-main/knowledge/4-content/3-finalized/Final-lam-the-nao-de-mua-co-phieu-mbb-ngan-hang-quan-doi.md) | cách mua cổ phiếu MBB | - | Finalized |
 | `/kien-thuc/khi-nao-nen-ban-co-phieu-5-truong-hop-nha-dau-tu-can-luu-y/` | Khi nào nên bán cổ phiếu | - | Finalized |
 | `/kien-thuc/cach-ban-co-phieu-cho-nguoi-moi/` | Cách bán cổ phiếu cho người mới | - | Finalized |
 | `/kien-thuc/cach-choi-chung-khoan-cho-sinh-vien/` | cách chơi chứng khoán cho sinh viên | - | Finalized |
-| `/kien-thuc/cach-choi-chung-khoan/` | cách chơi chứng khoán | - | Outlining |
+| `/kien-thuc/cach-choi-chung-khoan/` | cách chơi chứng khoán | - | Merged → cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau |
 | `/kien-thuc/sinh-vien-nen-dau-tu-gi/` | sinh viên nên đầu tư gì | - | Finalized |
 | `/kien-thuc/co-tien-nen-dau-tu-bac/` | có tiền nên đầu tư bạc | - | Finalized |
 | `/kien-thuc/ebit-la-gi/` | Chỉ số EBIT là gì | - | Finalized |
@@ -89,12 +93,13 @@ Tài liệu này quản lý các nhóm chủ đề được phân tách từ d�
 
 | URL (Dự kiến) | Chủ đề / Keyword | Volume | Trạng thái |
 | :--- | :--- | :---: | :---: |
+| /kien-thuc/amibroker-la-gi/ | amibroker là gì | - | Finalized |
 | /kien-thuc/mo-hinh-canh-buom/ | Mô hình cánh bướm | - | Finalized |
 | `/kien-thuc/adx-la-gi/` | ADX là gì | 1.600 | Finalized |
 | `/kien-thuc/william-r-la-gi/` | Chỉ báo William %R | - | Finalized |
 | `/kien-thuc/rsi-la-gi/` | RSI là gì | 2.400 | Finalized |
 | `/kien-thuc/phan-ky-rsi-la-gi/` | Phân kỳ RSI là gì | - | Finalized |
-| `/kien-thuc/phan-ky-an-rsi-la-gi/` | Phân kỳ ẩn RSI là gì | - | Optimizing |
+| `/kien-thuc/phan-ky-an-rsi-la-gi/` | Phân kỳ ẩn RSI là gì | - | Finalized |
 | `/kien-thuc/bollinger-bands-la-gi/` | Bollinger Bands là gì | 5.400 | Finalized |
 | `/kien-thuc/day-trading-la-gi/` | Day trading là gì | - | Finalized |
 | `/kien-thuc/ultimate-oscillator-la-gi/` | Ultimate Oscillator là gì | - | Finalized |
@@ -111,8 +116,11 @@ Tài liệu này quản lý các nhóm chủ đề được phân tách từ d�
 | `/kien-thuc/chi-so-kospi/` | Chỉ số Kospi | - | Finalized |
 | `/kien-thuc/dao-han-phai-sinh-la-gi/` | ngày đáo hạn phái sinh | - | Finalized |
 | `/kien-thuc/chung-khoan-phai-sinh-la-gi/` | chứng khoán phái sinh là gì | - | Finalized |
+| `/kien-thuc/1-hop-dong-phai-sinh-bao-nhieu-tien/` | 1 hợp đồng phái sinh bao nhiêu tiền | - | Finalized |
+| `/kien-thuc/gio-giao-dich-phai-sinh/` | giờ giao dịch phái sinh | - | Finalized |
 | `/kien-thuc/chung-quyen-la-gi-chung-quyen-co-bao-dam-la-gi-tim-hieu-chung-quyen-tai-viet-nam/` | Chứng quyền là gì? Tìm hiểu chứng quyền tại Việt Nam | - | Finalized |
 | `/kien-thuc/mo-hinh-nen-dao-chieu/` | mô hình nến đảo chiều | - | Finalized |
+| `/kien-thuc/mo-hinh-nen-hammer-la-gi/` | mô hình nến hammer nến búa | - | Finalized |
 | `/kien-thuc/chi-bao-ky-thuat-la-gi/` | chỉ báo kỹ thuật | - | Finalized |
 | `/kien-thuc/vwap-la-gi/` | VWAP là gì | - | Optimizing |
 | `/kien-thuc/tim-hieu-ve-ban-khong-chung-khoan-hoat-dong-dau-tu-lo-khong-gioi-han` | Bán khống chứng khoán là gì | - | Finalized |
@@ -164,6 +172,8 @@ Tài liệu này quản lý các nhóm chủ đề được phân tách từ d�
 | `/kien-thuc/duong-cong-loi-suat-dao-nguoc-la-gi/` | Đường cong lợi suất đảo ngược là gì | - | Finalized |
 | `/kien-thuc/thi-truong-tai-chinh-la-gi/` | Thị trường tài chính là gì | - | Finalized |
 | `/kien-thuc/cung-tien-la-gi/` | Cung tiền là gì | - | Finalized |
+| /kien-thuc/krx-la-gi/ | KRX là gì | - | Finalized |
+| /kien-thuc/do-co-gian-cua-cau-theo-gia-la-gi | Độ co giãn của cầu theo giá là gì | 20.000 | Finalized |
 
 
 
@@ -208,6 +218,10 @@ Tài liệu này quản lý các nhóm chủ đề được phân tách từ d�
 | `/kien-thuc/co-nen-mua-co-phieu-oil/` | có nên mua cổ phiếu oil | - | Outline-Approved |
 | `/kien-thuc/co-nen-mua-co-phieu-las/` | có nên mua cổ phiếu las | - | Finalized |
 | `/kien-thuc/co-nen-mua-co-phieu-novaland/` | có nên mua cổ phiếu novaland | - | Finalized |
+| `/kien-thuc/top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh/` | cổ phiếu ngành ngân hàng | - | Finalized |
+| `/kien-thuc/co-nen-mua-co-phieu-pnj-hay-khong/` | có nên mua cổ phiếu pnj | - | Finalized |
+| [/kien-thuc/co-phieu-vhm-tong-quan-danh-gia-va-cap-nhan-ket-qua-kinh-doanh-moi-nhat/](file:///e:/project/seo-writer-agent-main/knowledge/4-content/3-finalized/Final-co-phieu-vhm-tong-quan-danh-gia-va-cap-nhan-ket-qua-kinh-doanh-moi-nhat.md) | cổ phiếu vhm | 28.644 | Finalized |
+| [/kien-thuc/co-phieu-vsc-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat/](file:///e:/project/seo-writer-agent-main/knowledge/4-content/3-finalized/Final-co-phieu-vsc-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat.md) | cổ phiếu vsc | 22.223 | Finalized |
 
 ## Cluster 6: Chứng chỉ quỹ & Quỹ đầu tư
 **Mục tiêu:** Cung cấp kiến thức toàn diện về các loại hình quỹ đầu tư (quỹ mở, ETF, quỹ đóng) giúp nhà đầu tư đa dạng hóa và tối ưu danh mục với rủi ro thấp.
@@ -233,6 +247,7 @@ Tài liệu này quản lý các nhóm chủ đề được phân tách từ d�
 
 
 | /kien-thuc/co-nen-dau-tu-vao-quy-mo-vcbf/ | Có nên đầu tư vào quỹ mở VCBF | - | Finalized |
+| /kien-thuc/vn-diamond-la-gi/ | VN Diamond là gì | - | Finalized |
 ## Cluster 7: Đầu tư Vàng & Tích lũy tài sản phòng thủ
 **Mục tiêu:** Thu hút tệp nhà đầu tư quan tâm đến kim loại quý để giới thiệu các kênh đầu tư thay thế và giải pháp phân bổ tài sản thông minh tại DSC.
 
