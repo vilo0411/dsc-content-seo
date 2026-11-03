@@ -18,7 +18,7 @@ QUERIES_CSV = CACHE_DIR / "queries.csv"
 PAGES_CSV = CACHE_DIR / "pages.csv"
 META_FILE = CACHE_DIR / "cache-meta.json"
 OUTPUT_FILE = Path("knowledge/3-pipeline/gsc-opportunities.md")
-ANCHOR_INDEX = Path("knowledge/3-pipeline/anchor-index.md")
+ANCHOR_INDEX = Path("knowledge/3-pipeline/internal-links/anchor-index.md")
 
 BASE_URL = "https://www.dsc.com.vn/kien-thuc/"
 

@@ -1,0 +1,95 @@
+<p>14h00 phiên chiều — cổ phiếu HCM đang giảm mạnh về vùng 16.000 VNĐ. Giá liên tiếp phá các đáy ngắn hạn khiến tâm lý thị trường vô cùng hoảng loạn. Tuy nhiên, chỉ báo Ultimate Oscillator lại đột ngột ghi nhận đáy sau cao hơn đáy trước.</p>
+<p>Sự phân kỳ dương này báo hiệu lực bán đã suy kiệt. Ngay sau đó, HCM bứt phá tăng mạnh lên vùng 27.000 VNĐ. Đó là ví dụ thực tế về việc áp dụng Ultimate Oscillator để tìm điểm đảo chiều xu hướng.</p>
+<p>Bài viết này từ Chứng khoán DSC sẽ phân tích sâu công thức tính toán. Chúng tôi cũng hướng dẫn chiến lược giao dịch thực chiến với chỉ báo này.</p>
+<h2><strong>Chỉ báo Ultimate Oscillator là gì?</strong></h2>
+<p>Ultimate Oscillator là chỉ báo phân tích kỹ thuật thuộc nhóm dao động động lượng dùng để đo lường sức mạnh của xu hướng. Công cụ này hoạt động trong biên độ từ 0 đến 100 nhằm xác định các vùng quá mua và quá bán của cổ phiếu.</p>
+<p>Nhà giao dịch nổi tiếng Larry Williams đã phát minh ra Ultimate Oscillator vào năm 1976. Ông nhận thấy các chỉ báo một chu kỳ như RSI hay Stochastic thường phát đi tín hiệu phân kỳ giả. Hiện tượng này xảy ra khi thị trường bước vào một siêu xu hướng.</p>
+<p>Để khắc phục nhược điểm này, Ultimate Oscillator kết hợp đồng thời ba chu kỳ thời gian khác nhau. Cơ chế đa chu kỳ giúp triệt tiêu các tín hiệu nhiễu. Từ đó, chỉ báo đem lại độ tin cậy vượt trội cho giao dịch ngắn hạn.</p>
+<p dir="ltr">&gt;&gt; Xem thêm:</p>
+<ul>
+<li><a target="_blank" href="https://www.dsc.com.vn/kien-thuc/chi-bao-dao-dong-aroon-aroon-oscillator-la-gi"><strong>Chỉ báo aroon oscillator là gì?</strong></a></li>
+<li><a target="_blank" href="https://www.dsc.com.vn/kien-thuc/chi-bao-chaikin-oscillator-la-gi"><strong>Chỉ báo chaikin oscillator là gì?</strong></a></li></ul>
+<figure class="image">
+<img src="https://extgw.dsc.com.vn/eback/uploads/ultimate_oscillator_a40989ad5d.png" alt="ultimate-oscillator.png" srcset="https://extgw.dsc.com.vn/eback/uploads/thumbnail_ultimate_oscillator_a40989ad5d.png 245w, https://extgw.dsc.com.vn/eback/uploads/small_ultimate_oscillator_a40989ad5d.png 500w, https://extgw.dsc.com.vn/eback/uploads/medium_ultimate_oscillator_a40989ad5d.png 750w, https://extgw.dsc.com.vn/eback/uploads/large_ultimate_oscillator_a40989ad5d.png 1000w" sizes="100vw" width="1200"></figure>
+<h2 id="c-ng-th-c-t-nh-ch-b-o-ultimate-oscillator-chi-ti-t"><strong>Công thức tính chỉ báo Ultimate Oscillator chi tiết</strong></h2>
+<p>Trên hệ thống <a target="_blank" href="https://trading.dsc.com.vn/"><strong>DSC Trading</strong></a> sẽ tự động tính toán chỉ báo Ultimate Oscillator giúp bạn. Tuy nhiên, việc hiểu rõ bản chất công thức sẽ giúp bạn nâng cao tư duy phân tích. &nbsp;Để tính toán Ultimate Oscillator, bạn cần thực hiện theo các bước cụ thể dưới đây:</p>
+<h3><strong>Bước 1: Tính toán áp lực mua (Buying Pressure - BP)</strong></h3>
+<ul>
+<li><strong>BP = Close - Min(Low, Prior Close)</strong></li></ul>
+<p>Trong đó, Close là giá đóng cửa phiên hiện tại. Low là mức thấp nhất hiện tại và Prior Close là giá đóng cửa phiên trước. Chỉ số này đo lường mức độ áp đảo của bên mua so với mức giá thấp nhất của phiên giao dịch.</p>
+<h3><strong>Bước 2: Tính toán Biên độ thực tế (True Range - TR)</strong></h3>
+<ul>
+<li><strong>TR = Max(High, Prior Close) - Min(Low, Prior Close)</strong></li></ul>
+<p>Trong đó, High là giá cao nhất phiên hiện tại. Chỉ số này đại diện cho biên độ biến động thực sự của phiên giao dịch sau khi đã loại bỏ các khoảng trống giá.</p>
+<h3><strong>Bước 3: Tính toán giá trị trung bình (Average - Avg) cho ba chu kỳ</strong></h3>
+<p>Thông thường, chỉ báo sử dụng ba chu kỳ thời gian mặc định lần lượt là 7 phiên, 14 phiên và 28 phiên.</p>
+<ul>
+<li><strong>Average_7 = Tổng BP (7 phiên) / Tổng TR (7 phiên)</strong></li>
+<li><strong>Average_14 = Tổng BP (14 phiên) / Tổng TR (14 phiên)</strong></li>
+<li><strong>Average_28 = Tổng BP (28 phiên) / Tổng TR (28 phiên)</strong></li></ul>
+<h3><strong>Bước 4: Tính toán giá trị Ultimate Oscillator (UO)</strong></h3>
+<ul>
+<li><strong>UO = 100 x [(4 x Average_7 + 2 x Average_14 + Average_28) / 7]</strong></li></ul>
+<p>Công thức trên áp dụng tỷ lệ trọng số vàng là 4:2:1 cho ba chu kỳ tương ứng. Chu kỳ ngắn hạn 7 phiên có trọng số cao nhất nhằm duy trì độ nhạy bén với biến động giá.</p>
+<p>Chu kỳ dài hạn 28 phiên đóng vai trò làm mượt dữ liệu. Yếu tố này giúp loại bỏ các tín hiệu nhiễu trên thị trường.</p>
+<h2 id="chi-n-l-c-3-b-c-s-d-ng-ultimate-oscillator-x-c-nh-t-n-hi-u-mua-b-n"><strong>Chiến lượcsử dụng Ultimate Oscillator xác định tín hiệu mua/bán</strong></h2>
+<p>Larry Williams đã thiết lập quy trình 3 bước nghiêm ngặt để xác nhận các tín hiệu giao dịch đảo chiều. Tuân thủ chính xác các bước này giúp hạn chế tối đa rủi ro mua bán nhầm đỉnh đáy.</p>
+<figure class="table">
+<table>
+<thead>
+<tr><th style="text-align:left;">Yếu tố so sánh</th><th style="text-align:left;">Chiến lược mua</th><th style="text-align:left;">Chiến lược bán</th></tr></thead>
+<tbody>
+<tr><td style="text-align:left;"><strong>Hiện tượng kỹ thuật</strong></td><td style="text-align:left;">Phân kỳ dương (Bullish Divergence)</td><td style="text-align:left;">Phân kỳ âm (Bearish Divergence)</td></tr>
+<tr><td style="text-align:left;"><strong>Mối quan hệ giá và UO</strong></td><td style="text-align:left;">Giá tạo đáy sau thấp hơn, UO tạo đáy sau cao hơn</td><td style="text-align:left;">Giá tạo đỉnh sau cao hơn, UO tạo đỉnh sau thấp hơn</td></tr>
+<tr><td style="text-align:left;"><strong>Ngưỡng kiểm tra bắt buộc</strong></td><td style="text-align:left;">Đáy phân kỳ của UO phải dưới mức 30</td><td style="text-align:left;">Đỉnh phân kỳ của UO phải trên mức 70</td></tr>
+<tr><td style="text-align:left;"><strong>Tín hiệu xác nhận vào lệnh</strong></td><td style="text-align:left;">UO bứt phá vượt đỉnh giữa hai đáy phân kỳ</td><td style="text-align:left;">UO cắt xuống dưới đáy giữa hai đỉnh phân kỳ</td></tr>
+<tr><td style="text-align:left;"><strong>Mã cổ phiếu ví dụ</strong></td><td style="text-align:left;">Cổ phiếu HCM (giai đoạn tháng 4–7/2022)</td><td style="text-align:left;">Cổ phiếu SSI (giai đoạn tháng 8–9/2022)</td></tr></tbody></table></figure>
+<h3 id="chi-n-l-c-mua-quy-t-c-3-b-c-c-a-larry-williams">Chiến lược mua với chỉ báo Ultimate Oscillator</h3>
+<p>Chiến lược này áp dụng để bắt đáy các nhịp điều chỉnh sâu khi lực bán đã suy kiệt hoàn toàn.</p>
+<p>Quy trình giao dịch gồm các bước sau:</p>
+<ul>
+<li><strong>Bước 1 (Xác định phân kỳ):</strong> Giá tạo đáy sau thấp hơn đáy trước, nhưng UO lại tạo đáy sau cao hơn đáy trước. Đây là tín hiệu phân kỳ dương báo hiệu động lượng giảm đang yếu dần.</li>
+<li><strong>Bước 2 (Kiểm tra vùng quá bán):</strong> Đáy phân kỳ đầu tiên phải dưới mức 30. Tiêu chí này đảm bảo cổ phiếu đã vào vùng quá bán sâu.</li>
+<li><strong>Bước 3 (Kích hoạt lệnh mua):</strong> Chờ UO bứt phá vượt đỉnh nằm giữa hai đáy phân kỳ. Phiên này xác nhận xu hướng tăng chính thức bắt đầu.</li></ul>
+<p>Ví dụ thực tế: Cổ phiếu HCM giai đoạn tháng 4–7/2022 bước vào nhịp điều chỉnh mạnh. Tháng 4/2022, UO rơi sâu dưới mức 30 vào vùng quá bán. Đến tháng 6/2022, giá HCM tiếp tục giảm và tạo đáy mới thấp hơn tại vùng 16.000 VNĐ.</p>
+<p>Tuy nhiên, UO lại tạo một đáy sau cao hơn đáy trước một cách rõ rệt. Cuối tháng 7/2022, chỉ báo UO bứt phá mạnh mẽ vượt qua mức đỉnh nằm giữa hai đáy phân kỳ.</p>
+<p>Đồng thời, đường giá của HCM cũng vượt qua đường xu hướng giảm ngắn hạn. Điểm mua này mở đường cho nhịp tăng mạnh của HCM. Giá bứt phá từ vùng 17.000 VNĐ lên 27.000 VNĐ vào tháng 9/2022.</p>
+<h3 id="chi-n-l-c-b-n-quy-t-c-3-b-c-x-c-nh-nh-o-chi-u">Chiến lược bán với chỉ báo Ultimate Oscillator</h3>
+<p>Chiến lược này áp dụng để chốt lời chủ động trước khi cổ phiếu bước vào nhịp giảm giá mạnh.</p>
+<p>Quy trình giao dịch gồm các bước sau:</p>
+<ul>
+<li><strong>Bước 1 (Xác định phân kỳ):</strong> Giá tạo đỉnh sau cao hơn, nhưng UO lại tạo đỉnh sau thấp hơn. Hiện tượng phân kỳ âm cảnh báo áp lực mua suy kiệt.</li>
+<li><strong>Bước 2 (Kiểm tra vùng quá mua):</strong> Đỉnh phân kỳ đầu tiên phải trên mức 70. Tiêu chí này xác nhận cổ phiếu đang ở vùng quá mua cực đại.</li>
+<li><strong>Bước 3 (Kích hoạt lệnh bán):</strong> Bán khi UO cắt xuống dưới đáy nằm giữa hai đỉnh phân kỳ. Đây là tín hiệu xác nhận dòng tiền bắt đầu rút lui.</li></ul>
+<p>Ví dụ: Cổ phiếu SSI giai đoạn tháng 8–9/2022 liên tục tăng giá. Giữa tháng 8/2022, SSI chạm vùng đỉnh ngắn hạn quanh 24.500 VNĐ. Sự bứt phá này đẩy UO vượt mức 70 vào vùng quá mua.</p>
+<p>Đến cuối tháng 8/2022, giá SSI tiếp tục rướn lên để tạo đỉnh mới cao hơn tại vùng 25.000 VNĐ. Tuy nhiên, chỉ báo UO lại suy yếu và tạo một đỉnh sau thấp hơn đỉnh trước, hình thành phân kỳ âm rõ nét.</p>
+<p>Đầu tháng 9/2022, UO chính thức cắt xuống dưới mức đáy nằm giữa hai đỉnh phân kỳ. Đây là tín hiệu bán xác nhận sớm giúp nhà đầu tư thoát vị thế quanh 24.000 VNĐ. Sau đó, SSI rơi sâu về vùng 18.000 VNĐ.</p>
+<h2 id="c-ch-t-i-u-h-a-chu-k-ultimate-oscillator-cho-t-ng-nh-m-c-phi-u"><strong>Cách tối ưu hóa chu kỳ Ultimate Oscillator cho từng nhóm cổ phiếu</strong></h2>
+<p>Thông số mặc định (7, 14, 28) hoạt động rất tốt. Tuy nhiên, nhà giao dịch chuyên nghiệp thường điều chỉnh chu kỳ theo đặc tính từng nhóm cổ phiếu.</p>
+<h3 id="nh-m-c-phi-u-bi-n-ng-th-p-low-volatility-"><strong>Nhóm cổ phiếu biến động thấp (Low Volatility)</strong></h3>
+<p>Nhóm này điển hình là các cổ phiếu ngành ngân hàng như VCB, BIDV, CTG. Biên độ dao động của nhóm này hẹp. Do đó, thông số mặc định thường không đẩy UO chạm các vùng giới hạn 30 hoặc 70.</p>
+<p>Để khắc phục, bạn nên rút ngắn các chu kỳ xuống mức (4, 8, 16). Điều này giúp chỉ báo nhạy bén hơn. UO sẽ dễ dàng chạm vùng quá mua/quá bán và phát tín hiệu phân kỳ kịp thời.</p>
+<h3 id="nh-m-c-phi-u-bi-n-ng-cao-high-volatility-"><strong>Nhóm cổ phiếu biến động cao (High Volatility)</strong></h3>
+<p>Nhóm này gồm các cổ phiếu ngành bất động sản như DIG, DXG, CEO hay nhóm chứng khoán như SSI, HCM. Các mã này thường có biến động giá rất lớn và thu hút dòng tiền đầu cơ mạnh mẽ.</p>
+<p>Với nhóm này, bạn nên kéo dài các chu kỳ lên mức (10, 20, 40). Chu kỳ dài giúp UO lọc bỏ các biến động nhiễu ngắn hạn. Từ đó, bạn hạn chế được tín hiệu đảo chiều giả trong xu hướng mạnh.</p>
+<h2 id="nh-ng-sai-l-m-c-t-l-i-khi-s-d-ng-ultimate-oscillator"><strong>Những sai lầm thường gặp của nhà đầu tư mới khi sử dụng Ultimate Oscillator</strong></h2>
+<p>Để bảo vệ tài khoản khỏi những thua lỗ đáng tiếc, nhà giao dịch chủ động cần tránh 2 sai lầm cốt lõi dưới đây:</p>
+<h3 id="giao-d-ch-ph-n-k-ng-c-xu-h-ng-ch-nh"><strong>Giao dịch phân kỳ ngược xu hướng chính</strong></h3>
+<p>Đây là sai lầm phổ biến nhất của các nhà giao dịch ngắn hạn. Nếu thị trường đang trong xu hướng giảm dài hạn, mua chỉ dựa vào phân kỳ dương UO có xác suất thất bại cao.</p>
+<p>Để hạn chế rủi ro, bạn cần kết hợp UO với Bollinger Bands hoặc EMA 200. Chỉ nên mua phân kỳ dương khi giá nằm trên đường EMA 200.</p>
+<h3 id="b-qua-kh-i-l-ng-giao-d-ch-volume-"><strong>Bỏ qua khối lượng giao dịch (Volume)</strong></h3>
+<p>Chỉ báo UO đo lường động lượng giá nhưng không phản ánh trực tiếp quy mô dòng tiền. Một <a target="_blank" href="https://www.dsc.com.vn/kien-thuc/break-out-trong-phan-tich-ky-thuat-co-phieu-la-gi-cach-giao-dich-va-cac-mau-hinh-pho-bien"><strong>tín hiệu breakout</strong></a> đỉnh phân kỳ của UO nhưng khối lượng giao dịch ở mức thấp rất dễ là một phá vỡ giả.</p>
+<p>Hãy luôn quan sát thanh khoản của phiên bứt phá. Lực mua chỉ thực sự đáng tin cậy khi đi kèm phiên nổ vol. Khối lượng giao dịch cần vượt tối thiểu 1,5 lần trung bình 20 phiên.</p>
+<h2 id="faqs-c-c-c-u-h-i-th-ng-g-p-v-ch-b-o-ultimate-oscillator"><strong>Các câu hỏi thường gặp về chỉ báo Ultimate Oscillator</strong></h2>
+<h3 id="ultimate-oscillator-kh-c-g-so-v-i-ch-b-o-rsi-"><strong>Ultimate Oscillator khác gì so với chỉ báo RSI?</strong></h3>
+<p><strong>Chỉ báo RSI</strong> truyền thống chỉ tính toán động lượng dựa trên một chu kỳ thời gian duy nhất (thường là 14 phiên). Điều này khiến RSI dễ xuất hiện tín hiệu phân kỳ giả khi cổ phiếu bước vào siêu xu hướng. Ultimate Oscillator giải quyết triệt để vấn đề này bằng cách kết hợp ba chu kỳ thời gian khác nhau với trọng số riêng biệt.</p>
+<h3 id="ch-b-o-uo-c-ho-t-ng-t-t-trong-xu-h-ng-i-ngang-sideway-kh-ng-"><strong>Chỉ báo UO có hoạt động tốt trong xu hướng đi ngang (sideway) không?</strong></h3>
+<p>Có, Ultimate Oscillator hoạt động vô cùng hiệu quả trong thị trường đi ngang hoặc tích lũy. Khi giá dao động trong hộp, UO liên tục chạm vùng quá mua/quá bán. Điều này giúp bạn tối ưu hóa điểm ra vào lệnh ngắn hạn.</p>
+<h3 id="l-m-c-ch-n-o-qu-t-nhanh-c-c-c-phi-u-t-v-ng-qu-b-n-uo-"><strong>Làm cách nào để quét nhanh các cổ phiếu đạt vùng quá bán UO?</strong></h3>
+<p>Nhà đầu tư có thể sử dụng bộ lọc kỹ thuật chuyên sâu tích hợp trực tiếp trên nền tảng DSC Trading. Chỉ với vài thao tác đơn giản, hệ thống tự động quét toàn sàn HOSE/HNX. Những cổ phiếu có UO dưới 30 sẽ lập tức lộ diện.</p>
+<h2 id="k-t-lu-n">Kết luận</h2>
+<p>Ultimate Oscillator là chỉ báo động lượng xuất sắc. Công cụ này giúp triệt tiêu tín hiệu giả và bắt trọn sóng đảo chiều. Hiểu sâu công thức và áp dụng linh hoạt chu kỳ theo biến động cổ phiếu là chìa khóa để làm chủ công cụ này.</p>
+<p>Khi UO phát tín hiệu mua phân kỳ dương, đòn bẩy hợp lý là vũ khí mạnh. Yếu tố này giúp bạn bứt phá hiệu suất sinh lời nhanh chóng.</p>
+<p>Chứng khoán DSC cung cấp giải pháp ký quỹ ưu việt. Lãi suất Margin cạnh tranh chỉ từ 10–13,5%/năm trên tiểu khoản đuôi 6.</p>
+<p>Quy trình mở tài khoản eKYC chỉ mất 3 phút hoàn toàn trực tuyến và sẵn sàng giao dịch ngay. Đặc biệt, bạn được kết nối với chuyên gia Môi giới 1:1 đồng hành. Chúng tôi hỗ trợ tư vấn chiến lược miễn phí để tối ưu danh mục.</p>
+<p><a target="_blank" href="https://www.dsc.com.vn/mo-tai-khoan"><strong>Mở tài khoản chứng khoán</strong></a> ngay hôm nay để đón đầu những sóng tăng bứt phá cùng DSC!</p>

@@ -41,7 +41,8 @@ Xác định file đang ở stage nào dựa trên tên file hoặc stage đang 
 - `python scripts/qa_lint.py knowledge/4-content/3-finalized/Final-[slug].md --log` — ghi score vào `revision-log.md` (theo dõi xu hướng chất lượng).
 - `python scripts/slop_check.py knowledge/4-content/3-finalized/Final-[slug].md` — ghi slop score kèm vào dòng log đó (xu hướng tầng B).
 - Auto-trigger: Kích hoạt skill `.antigravity/skills/content-feedback-loop/SKILL.md` để tổng hợp bài học → append vào `instincts-archive.md` → chạy `python scripts/optimize_instincts.py`.
-- Cập nhật `knowledge/3-pipeline/anchor-index.md` — chèn 1 dòng mới vào cluster phù hợp (không đọc cả file).
+- Cập nhật `knowledge/3-pipeline/internal-links/anchor-index.md` — chèn 1 dòng mới vào cluster phù hợp (không đọc cả file).
+- Nhắc user: **sau khi publish lên CMS**, chạy `python scripts/sync_live.py --only [slug]` (+ các bài nguồn đã chèn backfill link) để snapshot live và graph link cập nhật.
 
 **Nếu stage là Optimize (`knowledge/4-content/2-drafts/Optimize-[slug].md`):**
 - **BẮT BUỘC — Hỏi trước khi finalize:**

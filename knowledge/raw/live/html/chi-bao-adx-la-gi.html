@@ -1,0 +1,72 @@
+<p>Nhìn thấy cổ phiếu tăng 10% nhưng không dám vào vì sợ đu đỉnh? Hay nhảy vào bắt đáy khi thấy giá đi ngang nhưng rồi tài khoản cứ bào mòn dần vì phí và thuế?</p>
+<p>Nỗi đau lớn nhất của nhà đầu tư không phải là nhìn sai hướng, mà là đánh giá sai sức mạnh của xu hướng. Chỉ báo ADX (Average Directional Index) sinh ra để giải quyết đúng bài toán này: Giúp bạn biết khi nào nên tất tay theo trend và khi nào nên đứng ngoài quan sát.</p>
+<p>Ở bài viết này, hãy cùng DSC tìm hiểu thêm về chỉ báo ADX để có thể dễ dàng xác nhận được xu hướng thị trường.</p>
+<h2><strong>Chỉ báo ADX là gì?</strong></h2>
+<p>ADX (Average Directional Index) là chỉ báo đo lường cường độ của xu hướng, được phát triển bởi J. Welles Wilder vào năm 1978. Chỉ số này không dùng để xác định hướng giá tăng hay giảm mà chỉ tập trung vào sức mạnh của dòng tiền hiện tại.</p>
+<p>Chỉ số ADX dao động từ 0-100 (mặc định chu kỳ 14 phiên) và thường bao gồm 3 đường tín hiệu chính:</p>
+<ul>
+<li>Đường ADX: Đo sức mạnh tổng thể của xu hướng.</li>
+<li>Đường +DI (màu xanh): Đo lường lực tăng (phe mua).</li>
+<li>Đường -DI (màu đỏ): Đo lường lực giảm (phe bán).</li></ul>
+<p>Lưu ý: Tránh nhầm lẫn chỉ báo kỹ thuật ADX với AdEx - một nền tảng quảng cáo dựa trên blockchain.</p>
+<figure class="image">
+<img style="aspect-ratio:800/500;" src="https://extgw.dsc.com.vn/eback/uploads/chi_bao_adx_la_gi_1_963063b30d.jpg" alt="Chỉ báo ADX là gì?" width="800" height="500"></figure>
+<h2><strong>Các cấp độ sức mạnh của ADX</strong></h2>
+<p>Hầu hết tài liệu cũ chỉ dừng lại ở mốc 25. Tuy nhiên, tại thị trường chứng khoán Việt Nam với đặc thù biên độ lớn, đội ngũ DSC khuyến nghị bạn cần chú ý các mốc sau:</p>
+<figure class="table">
+<table>
+<thead>
+<tr><th style="text-align:left;">Chỉ số ADX</th><th style="text-align:left;">Xu hướng</th><th style="text-align:left;">Hành động khuyến nghị</th></tr></thead>
+<tbody>
+<tr><td style="text-align:left;"><strong>Dưới 20</strong></td><td style="text-align:left;">Xu hướng yếu / Sideway</td><td style="text-align:left;"><strong>Đứng ngoài</strong>. Tín hiệu nhiễu rất nhiều.</td></tr>
+<tr><td style="text-align:left;"><strong>20 - 25</strong></td><td style="text-align:left;">Xu hướng bắt đầu hình thành</td><td style="text-align:left;">Quan sát điểm giao cắt của +DI và -DI.</td></tr>
+<tr><td style="text-align:left;"><strong>25 - 50</strong></td><td style="text-align:left;">Xu hướng mạnh</td><td style="text-align:left;"><strong>Giao dịch theo xu hướng</strong>. Đây là vùng sinh lời chính.</td></tr>
+<tr><td style="text-align:left;"><strong>Trên 50</strong></td><td style="text-align:left;">Xu hướng cực mạnh</td><td style="text-align:left;">Cảnh báo quá đà. Chuẩn bị tâm thế chốt lời từng phần.</td></tr>
+<tr><td style="text-align:left;"><strong>Trên 75</strong></td><td style="text-align:left;">Xu hướng siêu cấp</td><td style="text-align:left;">Cực kỳ hiếm gặp. Thường báo hiệu sự cạn kiệt lực đẩy.</td></tr></tbody></table></figure>
+<h2><strong>Cách tính chỉ báo ADX</strong></h2>
+<h3><strong>Bước 1: Tính chuyển động định hướng</strong></h3>
+<ul>
+<li>+DM = Giá cao nhất phiên hiện tại − Giá cao nhất phiên trước</li>
+<li>-DM = Giá thấp nhất phiên trước − Giá thấp nhất phiên hiện tại</li></ul>
+<p>Chỉ giữ giá trị lớn hơn giữa +DM và -DM.</p>
+<h3><strong>Bước 2: Tính biên độ dao động thực (TR)</strong></h3>
+<p>TR là giá trị lớn nhất của:</p>
+<ul>
+<li>Giá cao nhất − Giá thấp nhất hiện tại</li>
+<li>Giá cao nhất − Giá đóng cửa phiên trước</li>
+<li>Giá đóng cửa phiên trước − Giá thấp nhất hiện tại</li></ul>
+<h3><strong>Bước 3: Làm mượt dữ liệu (14 phiên)</strong></h3>
+<p>Làm mượt +DM, -DM và TR theo công thức trung bình động của Wilder.</p>
+<h3><strong>Bước 4: Tính +DI và -DI</strong></h3>
+<ul>
+<li>+DI = (Smoothed +DM / Smoothed TR) × 100</li>
+<li>-DI = (Smoothed -DM / Smoothed TR) × 100</li></ul>
+<h3><strong>Bước 5: Tính DX</strong></h3>
+<ul>
+<li>DX = |+DI − -DI| / (+DI + -DI) × 100</li></ul>
+<h3><strong>Bước 6: Tính ADX</strong></h3>
+<ul>
+<li>ADX đầu tiên = Trung bình DX của 14 phiên</li>
+<li>ADX tiếp theo = (ADX trước × 13 + DX hiện tại) / 14</li></ul>
+<h2><strong>Cách sử dụng chỉ báo ADX trong giao dịch</strong></h2>
+<p>Dựa trên cấu tạo 3 đường, áp dụng quy tắc bộ lọc ADX để xác định điểm vào lệnh tối ưu:</p>
+<ul>
+<li><strong>Xác nhận Xu hướng tăng: </strong>Khi đường +DI (xanh) nằm trên đường -DI (đỏ) và ADX đang hướng lên vượt mốc 25.</li>
+<li><strong>Xác nhận Xu hướng giảm:</strong> Khi đường -DI (đỏ) nằm trên đường +DI (xanh) và ADX đang hướng lên vượt mốc 25.</li>
+<li><strong>Thị trường Sideway: </strong>Khi ADX nằm dưới mức 25. Đây là giai đoạn nên hạn chế giao dịch theo xu hướng để tránh các tín hiệu giả.</li></ul>
+<figure class="image">
+<img style="aspect-ratio:800/500;" src="https://extgw.dsc.com.vn/eback/uploads/chi_bao_adx_la_gi_2_c89c36118d.jpg" alt="Cách sử dụng chỉ báo phân tích kỹ thuật ADX" width="800" height="500"></figure>
+<h2><strong>Ứng dụng chỉ báo ADX kết hợp RSI và Volume</strong></h2>
+<p>Để tối ưu hóa lợi nhuận trong năm 2026, đừng dùng ADX đơn độc. Hãy kết hợp theo công thức:</p>
+<ul>
+<li><strong>Xác nhận Xu hướng (ADX):</strong> Kiểm tra xem thị trường có trend không (ADX &gt; 25).</li>
+<li><strong>Lọc điểm quá mua/quá bán (RSI): </strong>Nếu ADX &gt; 50 nhưng RSI đã vượt 70, hãy cẩn trọng vì dù trend mạnh nhưng giá đã vào vùng rủi ro đảo chiều ngắn hạn.</li>
+<li><strong>Xác nhận dòng tiền (Volume):</strong> Một xu hướng mạnh (ADX tăng) phải đi kèm khối lượng giao dịch tăng tiến. Nếu ADX tăng nhưng Volume sụt giảm, đó là dấu hiệu của một xu hướng rỗng, dễ sụp đổ.</li></ul>
+<h2><strong>Những lưu ý khi sử dụng chỉ báo ADX</strong></h2>
+<p>ADX là công cụ tuyệt vời nhưng luôn có độ trễ. Nếu đợi ADX vượt 25 mới vào lệnh, bạn có thể đã bỏ lỡ giai đoạn ngon nhất của con sóng.</p>
+<p>Thay vì tự mình loay hoay với các con số, nhà đầu tư tại DSC sẽ nhận được sự hỗ trợ trực tiếp từ đội ngũ chuyên gia môi giới 1:1. Các chuyên gia sẽ giúp bạn kết hợp ADX với đa khung thời gian để tìm điểm vào lệnh sớm hơn mà vẫn đảm bảo an toàn, thay vì chỉ máy móc nhìn vào một chỉ báo duy nhất.</p>
+<p><i>&gt;&gt; Xem thêm: </i><a target="_blank" href="https://www.dsc.com.vn/kien-thuc/chi-bao-know-sure-thing-kst-la-gi"><i><strong>Chỉ báo Know Sure Thing (KST) là gì?</strong></i></a></p>
+<h2><strong>Kết luận</strong></h2>
+<p>Chỉ báo ADX là kim chỉ nam giúp bạn phân biệt rõ ràng giữa thị trường màu mỡ và các bẫy nhiễu nguy hiểm. Hãy luôn nhớ: Trend is friend, nhưng ADX mới là công cụ cho bạn biết người bạn đó đang mạnh hay yếu.</p>
+<p>Để làm chủ kỹ thuật giao dịch và nhận tư vấn chiến lược sát sao cho từng mã cổ phiếu, hãy bắt đầu cùng DSC ngay hôm nay.</p>
+<p><a target="_blank" href="https://www.dsc.com.vn/mo-tai-khoan"><strong>Mở tài khoản chứng khoán DSC</strong></a> – Chỉ 3 phút qua eKYC để kích hoạt tài khoản và kết nối ngay với chuyên gia tư vấn 1:1 của chúng tôi!</p>

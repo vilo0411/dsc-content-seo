@@ -34,6 +34,12 @@ Cập nhật và tối ưu lại một bài viết cũ đang tồn tại để t
 
 **Bước 1.1 — Intake & Tracking:**
 - Xác nhận file gốc tồn tại tại `knowledge/4-content/3-finalized/Final-[slug].md`. Nếu không tìm thấy: DỪNG và hỏi người dùng.
+- **Đối chiếu với bản live (BẮT BUỘC)** — bài có thể đã được sửa thẳng trên CMS sau khi finalize (vd. đợt chèn internal link):
+  ```bash
+  python scripts/sync_live.py --only [slug]      # lấy bản đang publish
+  python scripts/sync_live.py --compare [slug]   # link chỉ có trên live + độ lệch văn bản
+  ```
+  Mọi link "chỉ có trên live" **phải được giữ** trong bản Optimize. Độ giống < 90% → báo user: live đã khác Final đáng kể, đề xuất dùng nội dung live (`knowledge/raw/live/html/[slug].html`) làm bản gốc trước khi optimize.
 - `python scripts/topic_status.py [slug] --set Optimizing` (không đọc `topic-clusters.md`).
 - **Đo baseline bài cũ** (ghi lại số để so sánh ở Bước 5 — bản optimize không được tệ hơn):
   ```bash
@@ -118,7 +124,7 @@ Quy trình (1 lệnh, không đọc `anchor-index.md` hay file Final nào):
 ```bash
 python scripts/find_links.py --backfill [slug] --top 5
 ```
-Script tự: quét `anchor-index.md` + toàn bộ `3-finalized/*.md`, lọc bài chưa link tới `https://www.dsc.com.vn/kien-thuc/[slug]`, ưu tiên clicks từ `knowledge/raw/gsc/pages.csv` (nếu có), và trả về **đúng dòng + trích đoạn** có thể chèn anchor. Bạn chỉ chọn anchor text từ trích đoạn đó (KHÔNG dùng exact match keyword).
+Script tự: quét toàn bộ bài **live** (snapshot `knowledge/raw/live`), lọc bài chưa có link ngữ cảnh tới `https://www.dsc.com.vn/kien-thuc/[slug]` (bài chỉ link qua dòng Xem thêm được đánh dấu để chuyển vào câu), ưu tiên clicks từ `knowledge/raw/gsc/pages.csv` (nếu có), và trả về **mục + đoạn** có thể bọc anchor. Sửa trên CMS rồi `sync_live.py --only <slug nguồn>`. Bạn chỉ chọn anchor text từ trích đoạn đó (KHÔNG dùng exact match keyword).
 
 Bổ sung vào Proposal dưới heading `📎 Backfill Link Suggestions`:
 ```

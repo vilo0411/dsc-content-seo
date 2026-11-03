@@ -26,7 +26,6 @@ import io
 import json
 import re
 import sys
-import urllib.request
 from dataclasses import dataclass, field
 from pathlib import Path
 
@@ -35,8 +34,7 @@ if hasattr(sys.stdout, "buffer"):
 
 ROOT = Path(__file__).resolve().parents[1]
 FINALIZED_DIR = ROOT / "knowledge/4-content/3-finalized"
-PAGE_CACHE = ROOT / "knowledge/raw/pages"
-USER_AGENT = "Mozilla/5.0 (compatible; DSC-CRO-audit/1.0)"
+LIVE_HTML = ROOT / "knowledge/raw/live/html"  # shared snapshot written by sync_live.py
 
 DSC_HOST = "https://www.dsc.com.vn"
 OPEN_ACCOUNT_URL = f"{DSC_HOST}/mo-tai-khoan"
@@ -163,21 +161,19 @@ def has_lead_in(lines: list[str], banner_start: int) -> bool:
 # ──────────────────── Live pages (own site — no scraping API needed) ────────────────────
 
 def fetch_live(url: str, refresh: bool = False) -> str:
-    """Fetch one page off our own site and cache it. Plain stdlib urllib, ~0.6s.
+    """Article body from the shared live snapshot (knowledge/raw/live/html, see sync_live.py).
 
-    Deliberately NOT the web-serp scraper: Firecrawl/Jina exist to get through competitors'
-    bot protection and cost money per call. dsc.com.vn serves us its own HTML directly.
+    Missing or --refresh → sync just that page first, so this audit and every other tool read the
+    same copy. Deliberately NOT the web-serp scraper: Firecrawl/Jina exist to get through
+    competitors' bot protection and cost money per call; dsc.com.vn serves its own HTML directly.
     """
     slug = url.rstrip("/").split("/")[-1]
-    cache = PAGE_CACHE / f"{slug}.html"
-    if cache.exists() and not refresh:
-        return cache.read_text(encoding="utf-8")
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(req, timeout=20) as r:
-        html = r.read().decode("utf-8", "replace")
-    PAGE_CACHE.mkdir(parents=True, exist_ok=True)
-    cache.write_text(html, encoding="utf-8")
-    return html
+    snap = LIVE_HTML / f"{slug}.html"
+    if refresh or not snap.exists():
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        import sync_live  # type: ignore
+        sync_live.sync({url: None}, full=False, workers=1)
+    return snap.read_text(encoding="utf-8")
 
 
 def html_to_markdown(html: str) -> str:
@@ -379,7 +375,7 @@ def print_table(arts: list[Article], traffic: dict[str, int] | None) -> None:
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("file", nargs="?", help="File .md, slug, hoặc URL bài trên dsc.com.vn")
-    ap.add_argument("--refresh", action="store_true", help="Bỏ qua cache, fetch lại trang live")
+    ap.add_argument("--refresh", action="store_true", help="Sync lại trang live vào snapshot trước khi audit")
     ap.add_argument("--all", action="store_true", help=f"Quét toàn bộ {FINALIZED_DIR.relative_to(ROOT)}")
     ap.add_argument("--ga4", help="CSV export GA4 landing page để xếp hạng theo traffic thực")
     ap.add_argument("--json", action="store_true", help="Xuất JSON")

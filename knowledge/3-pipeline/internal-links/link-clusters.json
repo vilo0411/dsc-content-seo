@@ -1,0 +1,141 @@
+{
+ "_doc": "Cluster registry cho rule internal link (xem .antigravity/skills/internal-linking/SKILL.md §Quy tắc cụm). qa_lint.py đọc file này: bài là hub/spoke trong 'groups' phải link về pillar (spoke có hub thì link cả hub); anchor trùng 'pillar_keyword' chỉ được trỏ về pillar. Bài mới: thêm slug vào 'spokes' đúng group khi outline được approve. Nguồn: archive/2026-10-30-mo-tk-cach-choi/topical-map.html.",
+ "clusters": [
+  {
+   "id": "mo-tai-khoan",
+   "name": "Mở tài khoản chứng khoán",
+   "pillar": "cach-mo-tai-khoan-chung-khoan",
+   "pillar_keyword": "cách mở tài khoản chứng khoán",
+   "pillar_anchors": [
+    "cách mở tài khoản chứng khoán",
+    "cách mở tài khoản chứng khoán online",
+    "hướng dẫn mở tài khoản chứng khoán online"
+   ],
+   "groups": [
+    {
+     "name": "Chọn nơi mở & công cụ",
+     "hub": "nen-mo-tai-khoan-chung-khoan-o-dau",
+     "spokes": [
+      "app-dau-tu-chung-khoan"
+     ]
+    },
+    {
+     "name": "Chi phí",
+     "hub": null,
+     "spokes": [
+      "mo-tai-khoan-chung-khoan-co-mat-phi-khong-can-bao-nhieu-tien",
+      "phi-giao-dich-chung-khoan",
+      "phi-luu-ky-chung-khoan-la-gi"
+     ]
+    },
+    {
+     "name": "Thủ tục & loại tài khoản",
+     "hub": null,
+     "spokes": [
+      "hop-dong-mo-tai-khoan-chung-khoan",
+      "mo-tai-khoan-chung-khoan-online-co-an-toan-khong",
+      "mot-nguoi-duoc-mo-bao-nhieu-tai-khoan-chung-khoan",
+      "cac-loai-tai-khoan-chung-khoan-pho-bien-tai-viet-nam",
+      "huong-dan-mo-tai-khoan-chung-chi-quy",
+      "cach-mo-tai-khoan-chung-khoan-my"
+     ]
+    }
+   ],
+   "cross": [
+    "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+    "cach-mua-co-phieu-online-cho-nguoi-moi-bat-dau",
+    "gio-giao-dich-chung-khoan-viet-nam",
+    "dau-tu-chung-khoan-can-bao-nhieu-tien",
+    "cac-quy-dinh-giao-dich-chung-khoan-quan-trong-ma-nguoi-moi-can-biet"
+   ]
+  },
+  {
+   "id": "cach-choi-chung-khoan",
+   "name": "Cách chơi chứng khoán",
+   "pillar": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "pillar_keyword": "cách chơi chứng khoán",
+   "pillar_anchors": [
+    "cách chơi chứng khoán",
+    "cách chơi chứng khoán cho người mới",
+    "cách đầu tư chứng khoán cho người mới"
+   ],
+   "groups": [
+    {
+     "name": "Nền tảng & quyết định",
+     "hub": null,
+     "spokes": [
+      "chung-khoan-la-gi-nhung-dieu-can-biet-truoc-khi-tham-gia-thi-truong-chung-khoan",
+      "co-phieu-la-gi-cac-loai-co-phieu-tren-thi-truong-chung-khoan-viet-nam",
+      "cac-thuat-ngu-trong-chung-khoan",
+      "co-nen-dau-tu-chung-khoan-khong",
+      "nen-gui-tiet-kiem-hay-dau-tu-chung-khoan",
+      "dau-tu-chung-khoan-can-bao-nhieu-tien",
+      "cach-dau-tu-chung-khoan-voi-so-von-nho",
+      "co-10-trieu-nen-dau-tu-gi",
+      "sinh-vien-nen-dau-tu-gi",
+      "khoa-hoc-chung-khoan",
+      "choi-chung-khoan-co-giau-khong",
+      "top-5-san-dau-tu-chung-khoan-ao-uy-tin-tai-viet-nam-luyen-choi-chung-khoan-hieu-qua"
+     ]
+    },
+    {
+     "name": "Thao tác mua / bán",
+     "hub": "cach-mua-co-phieu-online-cho-nguoi-moi-bat-dau",
+     "spokes": [
+      "dau-tu-chung-khoan-tren-dien-thoai-huong-dan-chi-tiet",
+      "cach-mua-co-phieu-tren-san-hose",
+      "cach-mua-co-phieu-tren-san-hnx",
+      "cach-mua-co-phieu-tren-san-upcom",
+      "cach-ban-co-phieu-cho-nguoi-moi",
+      "khi-nao-nen-ban-co-phieu-5-truong-hop-nha-dau-tu-can-luu-y",
+      "ung-truoc-tien-ban-chung-khoan-la-gi"
+     ]
+    },
+    {
+     "name": "Quy định & bảng giá",
+     "hub": "cac-quy-dinh-giao-dich-chung-khoan-quan-trong-ma-nguoi-moi-can-biet",
+     "spokes": [
+      "gio-giao-dich-chung-khoan-viet-nam",
+      "lenh-ato-atc-lo-mp-la-gi",
+      "khop-lenh-dinh-ky-va-khop-lenh-lien-tuc",
+      "gia-tham-chieu-la-gi",
+      "gia-tran-gia-san-la-gi",
+      "bien-do-giao-dich-san-chung-khoan-hose-hnx-upcom",
+      "bien-do-giao-dong-gia-co-phieu-la-gi",
+      "huong-dan-giao-dich-lo-chan-lo-le",
+      "san-giao-dich-chung-khoan-la-gi",
+      "cac-mau-trong-chung-khoan-y-nghia-va-tac-dong-den-nha-dau-tu",
+      "du-mua-du-ban-tren-bang-gia-chung-khoan-la-gi"
+     ]
+    },
+    {
+     "name": "Rủi ro & kinh nghiệm",
+     "hub": "cac-kinh-nghiem-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+     "spokes": [
+      "nha-dau-tu-f0-la-gi",
+      "chay-tai-khoan-chung-khoan-la-gi",
+      "cat-lo-la-gi",
+      "margin-la-gi",
+      "quan-ly-danh-muc-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+      "co-phieu-penny-la-gi"
+     ]
+    },
+    {
+     "name": "Chọn cổ phiếu",
+     "hub": null,
+     "spokes": [
+      "co-phieu-blue-chip-la-gi",
+      "dau-tu-tich-san-co-phieu-la-gi-huong-dan-chi-tiet-cho-nguoi-moi-bat-dau",
+      "phan-tich-co-ban-la-gi",
+      "cach-doc-bieu-do-nen-chung-khoan-cho-nguoi-moi-bat-dau",
+      "chi-so-vn-index-va-y-nghia-quan-trong-trong-thi-truong-chung-khoan-viet-nam"
+     ]
+    }
+   ],
+   "cross": [
+    "cach-mo-tai-khoan-chung-khoan",
+    "nen-mo-tai-khoan-chung-khoan-o-dau"
+   ]
+  }
+ ]
+}

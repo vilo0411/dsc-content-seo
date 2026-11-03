@@ -30,7 +30,7 @@ Dùng sau khi Outline đã được `/approve`. Chỉ thực hiện Phase 3 (Dra
 ### Bước 2: Internal Linking
 - Kích hoạt skill `.antigravity/skills/internal-linking/SKILL.md` → Mode: Contextual Insertion.
 - Lấy ứng viên: `python scripts/find_links.py "[keyword]" --top 8 --exclude [slug]` — chỉ dùng URL có Sitemap ✓.
-- Chèn tối thiểu 3-5 internal links vào draft.
+- Chèn tối thiểu 3-5 internal links vào draft, theo **§Quy tắc đặt link trong bài** của skill internal-linking: link nằm trong câu có lập luận ở đúng section, ưu tiên bọc cụm từ có sẵn, không dòng "Xem thêm:", bài thuộc cụm phải link pillar (`link-clusters.json`), anchor CTA có "DSC". `qa_lint.py` bắt các lỗi này (`LINK-xemthem`, `LINK-pointer`, `LINK-pillar`, `LINK-pillar-anchor`, `LINK-cta-anchor`, `LINK-hub`).
 - **BẮT BUỘC:** Luôn chèn ít nhất 01 link chuyển đổi dẫn về trang **Mở tài khoản chứng khoán DSC** (`https://www.dsc.com.vn/mo-tai-khoan`) tại phần Product Bridge hoặc CTA cuối bài — rule đầy đủ ở `.antigravity/rules/cta-conversion.md`.
 - Banner CTA: kích hoạt `.antigravity/skills/cro-optimization/SKILL.md` sau bước này, trước khi lint.
 

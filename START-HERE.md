@@ -91,4 +91,4 @@ Từ "có keyword" đến "bài đã publish":
 | `knowledge/3-pipeline/glossary.md` | Tên sản phẩm chuẩn + số liệu DSC |
 | `knowledge/1-brand/personas.md` | 4 personas + ma trận chọn tone/CTA |
 | `.antigravity/memory/instincts.md` | Lỗi đã gặp + bài học từ feedback thực tế |
-| `knowledge/3-pipeline/anchor-index.md` | Index bài đã publish (internal linking) |
+| `knowledge/3-pipeline/internal-links/anchor-index.md` | Index bài đã publish (internal linking) |

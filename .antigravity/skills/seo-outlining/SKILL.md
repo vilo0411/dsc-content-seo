@@ -18,7 +18,7 @@ This skill focuses on SERP intelligence and creating high-detail Content Briefs 
     *   **Điền `### PAA plan`** (cuối output script): mỗi câu PAA → `body` hoặc `faq`; Related Searches → `same_intent` / `spin_off`. Ghi kết quả vào YAML `PAA_Questions` + `Related_Searches` của outline (xem `brief-template.md`). Câu PAA không đối thủ nào có heading khớp = gap ưu tiên.
 2. **Consult Knowledge**: Read brand profile and anti-ai rules.
 3. **Verify Product Match**: Identify which brand product fits this specific intent.
-4. **Internal Link Planning**: **KHÔNG đọc `anchor-index.md`.** Chạy `python scripts/find_links.py "[keyword]" --top 6` (thêm 1 lần với từ khoá phụ nếu cần) — script đã đối soát sitemap. Chọn 2–3 URL có Sitemap ✓. Ghi vào field `Internal_Links:` của outline YAML theo format:
+4. **Internal Link Planning**: **KHÔNG đọc `anchor-index.md`.** Chạy `python scripts/find_links.py "[keyword]" --top 6` (thêm 1 lần với từ khoá phụ nếu cần) — script đã đối soát sitemap. Chọn 2–3 URL có Sitemap ✓. Nếu keyword thuộc cụm trong `knowledge/3-pipeline/internal-links/link-clusters.json` → bắt buộc có link pillar (+ hub của group) trong danh sách, và thêm slug mới vào `spokes` đúng group. Quy tắc đặt link: `internal-linking/SKILL.md` §Quy tắc đặt link trong bài. Ghi vào field `Internal_Links:` của outline YAML theo format:
     ```yaml
     Internal_Links:
       - anchor: "[anchor text]"

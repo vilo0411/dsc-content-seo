@@ -37,6 +37,7 @@ BLACKLIST_FILE = ROOT / "knowledge/3-pipeline/anti-ai-rules-blacklist.md"
 GLOSSARY_FILE = ROOT / "knowledge/3-pipeline/glossary.md"
 SITEMAP_CACHE = ROOT / ".antigravity/skills/internal-linking/scripts/sitemap-cache.json"
 REVISION_LOG = ROOT / "knowledge/3-pipeline/revision-log.md"
+LINK_CLUSTERS = ROOT / "knowledge/3-pipeline/internal-links/link-clusters.json"
 COUNT_WORDS_DIR = ROOT / ".antigravity/skills/qa-qc"
 
 DSC_HOST = "https://www.dsc.com.vn"
@@ -538,6 +539,80 @@ def check_links(rep, lines, start, sitemap: set[str], use_sitemap: bool):
     rep.stats["internal_links"] = len(internal)
 
 
+XEM_THEM_LINE = re.compile(r"(?i)^[\s>*_»•-]*(?:&gt;&gt;|>>)?\s*[*_]*\s*xem\s+th[eê]m\s*[*_]*\s*:")
+POINTER_PHRASE = re.compile(
+    r"(?i)(tham khảo (thêm )?(bài|tại|ở)|xem (thêm )?(bài|chi tiết tại|tại)|đọc (thêm )?(bài|tại)|"
+    r"chi tiết (xem )?tại bài)\s")
+
+
+def load_link_clusters() -> list[dict]:
+    try:
+        return json.loads(LINK_CLUSTERS.read_text(encoding="utf-8"))["clusters"]
+    except (OSError, ValueError, KeyError):
+        return []
+
+
+def check_link_rules(rep, lines, start, slug: str):
+    """Contextual-link rules from the 2026-10-30 internal-link pass (internal-linking SKILL §Quy tắc).
+
+    LINK-xemthem      ">> Xem thêm: …" line instead of a link inside a sentence           MAJOR
+    LINK-pointer      sentence exists only to send the reader away ("tham khảo bài …")    MINOR
+    LINK-pillar-anchor exact pillar anchor pointing anywhere except that pillar           MAJOR
+    LINK-cta-anchor   /mo-tai-khoan anchor without "DSC" (pillar keyword belongs to pillar) MINOR
+    LINK-pillar       hub/spoke of a registered cluster with no link to its pillar        MAJOR
+    LINK-hub          spoke in a group that has a hub, no link to that hub                MINOR
+    """
+    clusters = load_link_clusters()
+    pillar_anchor = {norm(a): c["pillar"] for c in clusters for a in [c["pillar_keyword"], *c["pillar_anchors"]]}
+    targets: set[str] = set()
+    in_fence = False
+    for i in range(start, len(lines)):
+        raw = lines[i]
+        if raw.strip().startswith("```"):
+            in_fence = not in_fence
+            continue
+        if in_fence:
+            continue
+        # (anchor, url, is_prose) — raw-HTML <a> are banner buttons, exempt from the CTA anchor rule
+        found = [(m.group(1), m.group(2), True) for m in re.finditer(r"(?<!!)\[([^\]]*)\]\(([^)\s]+)[^)]*\)", raw)]
+        found += [(re.sub(r"<[^>]+>", "", m.group(2)), m.group(1), False)
+                  for m in re.finditer(r'(?is)<a\b[^>]*href=["\']([^"\']+)["\'][^>]*>(.*?)</a>', raw)]
+        if not found:
+            continue
+        if XEM_THEM_LINE.search(raw):
+            rep.add("LINK-xemthem", "link", "MAJOR", i + 1,
+                    "Dòng “Xem thêm:” — đặt link vào 1 câu có ngữ cảnh của chính đoạn đó", raw)
+        elif POINTER_PHRASE.search(strip_md(raw)):
+            rep.add("LINK-pointer", "link", "MINOR", i + 1,
+                    "Câu chỉ để trỏ sang bài khác — anchor nên là một phần của lập luận", raw)
+        for text, url, prose in found:
+            clean = url.split("?")[0].split("#")[0].rstrip("/")
+            target = clean.rsplit("/", 1)[-1] if "/kien-thuc/" in clean else ""
+            if target:
+                targets.add(target)
+            a = norm(text)
+            if a in pillar_anchor and target != pillar_anchor[a]:
+                rep.add("LINK-pillar-anchor", "link", "MAJOR", i + 1,
+                        f"Anchor “{text}” dành riêng cho pillar {DSC_HOST}/kien-thuc/{pillar_anchor[a]}", raw)
+            elif prose and clean.startswith(OPEN_ACCOUNT_URL) and "dsc" not in a:
+                rep.add("LINK-cta-anchor", "link", "MINOR", i + 1,
+                        f"Anchor CTA “{text}” thiếu thương hiệu — dùng “mở tài khoản DSC” / “mở tài khoản tại DSC”", raw)
+
+    for c in clusters:
+        for g in c["groups"]:
+            members = ([g["hub"]] if g.get("hub") else []) + g["spokes"]
+            if slug not in members:
+                continue
+            rep.stats["link_cluster"] = f"{c['id']} / {g['name']}"
+            if c["pillar"] not in targets:
+                rep.add("LINK-pillar", "link", "MAJOR", start + 1,
+                        f"Bài thuộc cụm “{c['name']}” nhưng chưa link về pillar {DSC_HOST}/kien-thuc/{c['pillar']} "
+                        f"(anchor gợi ý: “{c['pillar_anchors'][0]}”)")
+            if g.get("hub") and slug != g["hub"] and g["hub"] not in targets:
+                rep.add("LINK-hub", "link", "MINOR", start + 1,
+                        f"Spoke nhóm “{g['name']}” chưa link về hub {DSC_HOST}/kien-thuc/{g['hub']}")
+
+
 def check_cta(rep, path: Path):
     """CTA/banner checks — delegated to cta_audit.py so the rules live in exactly one place.
 
@@ -854,6 +929,7 @@ def main() -> int:
     check_brand_format(rep, prose, start)
     check_structure(rep, prose, start)
     check_links(rep, lines, start, sitemap, not args.no_sitemap)
+    check_link_rules(rep, lines, start, slug)
     check_geo(rep, prose, start)  # CSS percentages (0%, 70%) would count as data points
     if args.cta:
         check_cta(rep, path)

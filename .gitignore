@@ -15,8 +15,8 @@ scratch/dashboard-*.json
 # SERP cache từ DataForSEO (serp_research.py) — sinh lại được, không track
 knowledge/raw/serp/
 
-# Cache HTML trang live (cta_audit.py) — ~270KB/trang, sinh lại được bằng --refresh
-knowledge/raw/pages/
+# Graph internal link sinh từ link_audit.py (~0.5 MB, chứa clicks GSC) — sinh lại bất cứ lúc nào
+knowledge/3-pipeline/internal-links/link-graph.html
 
 # Local scratch / editor state
 .antigravity/brain/

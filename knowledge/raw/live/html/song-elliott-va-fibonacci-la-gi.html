@@ -1,0 +1,48 @@
+<p>Sóng Elliott và thước đo Fibonacci là bộ đôi phân tích kỹ thuật kinh điển. Phương pháp này giúp nhà giao dịch chủ động xác định cấu trúc thị trường.</p>
+<p>Sự kết hợp này đo lường chính xác biên độ sóng và điểm giải ngân (Entry). Đồng thời, phương pháp hỗ trợ xác định mốc cắt lỗ (Stop Loss) và chốt lời (Take Profit). Bài viết hôm nay của DSC sẽ hướng dẫn chi tiết cách vận dụng bộ đôi công cụ trên vào thực chiến đầu tư.</p>
+<h2 dir="ltr"><strong>Khái niệm sóng Elliott và Fibonacci trong phân tích kỹ thuật</strong></h2>
+<h3 dir="ltr"><strong>Sóng Elliott là gì?</strong></h3>
+<p dir="ltr"><a target="_blank" href="https://www.dsc.com.vn/kien-thuc/song-elliott-la-gi"><strong>Sóng Elliott</strong></a> là một trong những lý thuyết phân tích kỹ thuật nâng cao được ứng dụng rộng rãi. Lý thuyết này biểu thị tính quy luật trong hành vi của đám đông thông qua sự thay đổi tâm lý từ lạc quan sang bi quan và ngược lại.</p>
+<p dir="ltr">Do có khả năng đo lường tâm lý thị trường, sóng Elliott thường được sử dụng phổ biến trên thị trường chứng khoán – nơi cảm xúc của các nhà đầu tư liên tục biến động và phản ánh trực tiếp lên biểu đồ giá.</p>
+<p dir="ltr">Một chu kỳ sóng Elliott đầy đủ bao gồm hai pha chính: Pha dịch chuyển theo xu hướng chủ đạo (gồm 5 sóng đẩy ký hiệu từ 1 đến 5) và Pha điều chỉnh ngược xu hướng chủ đạo (gồm 3 sóng điều chỉnh ký hiệu A, B, C).</p>
+<p><i>&gt;&gt; Xem thêm: </i><a target="_blank" href="https://www.dsc.com.vn/kien-thuc/mo-hinh-2-day-la-gi"><i><strong>Mô hình 2 đáy là gì và cách giao dịch hiệu quả</strong></i></a></p>
+<h3 dir="ltr"><strong>Chỉ báo Fibonacci là gì?</strong></h3>
+<p dir="ltr"><a target="_blank" href="https://www.dsc.com.vn/kien-thuc/fibonacci-la-gi"><strong>Chỉ báo Fibonacci</strong></a> dựa trên dãy số toán học được phát hiện bởi nhà toán học Leonardo Pisano (thường gọi là Fibonacci). Dãy số này tuân theo một quy luật tự nhiên và xuất hiện nhiều trong sinh học, nghệ thuật cũng như kiến trúc.</p>
+<p dir="ltr">Điểm đặc biệt của dãy số này là tỷ lệ giữa các số liên tiếp tiệm cận về một hằng số chung – tỷ lệ vàng Phi (ký hiệu là φ, xấp xỉ bằng 1,618 hoặc nghịch đảo của nó là 0,618). Trong phân tích kỹ thuật, các tỷ lệ Fibonacci (như 23.6%, 38.2%, 50%, 61.8%, 161.8%...) được sử dụng như các ngưỡng kháng cự và hỗ trợ tiềm năng của giá tài sản.</p>
+<h3 dir="ltr"><strong>Mối tương quan chặt chẽ giữa sóng Elliott và dãy số Fibonacci</strong></h3>
+<p dir="ltr">Lý thuyết sóng Elliott và Fibonacci có mối liên hệ mật thiết. Sóng Elliott định hình cấu trúc di chuyển của giá, trong khi các mức Fibonacci đo lường biên độ (độ sâu và độ dài) của các con sóng đó:</p>
+<figure class="table">
+<table>
+<thead>
+<tr><th style="text-align:left;">Bước sóng Elliott</th><th style="text-align:left;">Công cụ Fibonacci sử dụng</th><th style="text-align:left;">Tỷ lệ Fibonacci tiêu chuẩn</th><th style="text-align:left;">Ý nghĩa giao dịch thực chiến</th></tr></thead>
+<tbody>
+<tr><td style="text-align:left;"><strong>Sóng 2</strong></td><td style="text-align:left;">Fibonacci Retracement</td><td style="text-align:left;">50,0% – 61,8% Sóng 1</td><td style="text-align:left;">Vùng giải ngân thăm dò vị thế mua mới.</td></tr>
+<tr><td style="text-align:left;"><strong>Sóng 3</strong></td><td style="text-align:left;">Fibonacci Extension</td><td style="text-align:left;">161,8% – 261,8% Sóng 1</td><td style="text-align:left;">Sóng tăng mạnh nhất, vùng chốt lời mục tiêu chính.</td></tr>
+<tr><td style="text-align:left;"><strong>Sóng 4</strong></td><td style="text-align:left;">Fibonacci Retracement</td><td style="text-align:left;">23,6% – 38,2% Sóng 3</td><td style="text-align:left;">Vùng tích lũy gia tăng tỷ trọng cổ phiếu.</td></tr>
+<tr><td style="text-align:left;"><strong>Sóng 5</strong></td><td style="text-align:left;">Fibonacci Extension</td><td style="text-align:left;">100,0% – 161,8% Sóng 1</td><td style="text-align:left;">Vùng chốt lời toàn bộ vị thế mua.</td></tr>
+<tr><td style="text-align:left;"><strong>Sóng B</strong></td><td style="text-align:left;">Fibonacci Retracement</td><td style="text-align:left;">38,2% – 50,0% Sóng A</td><td style="text-align:left;">Nhịp hồi phục kỹ thuật (Bull Trap), vùng hạ tỷ trọng.</td></tr>
+<tr><td style="text-align:left;"><strong>Sóng C</strong></td><td style="text-align:left;">Fibonacci Extension</td><td style="text-align:left;">100,0% – 161,8% Sóng A</td><td style="text-align:left;">Nhịp giảm hoàn tất pha điều chỉnh, chuẩn bị chu kỳ mới.</td></tr></tbody></table></figure>
+<h2 dir="ltr"><strong>Hướng dẫn cách kết hợp Fibonacci và sóng Elliott trong thực tế</strong></h2>
+<p>Ví dụ dưới đây phân tích phương pháp kết hợp Fibonacci và sóng Elliott trên biểu đồ cổ phiếu HPG:</p>
+<ul>
+<li><strong>Xác định điểm bắt đầu: </strong>Sau khi Sóng 1 hình thành, nhà đầu tư dùng thước Fibonacci Retracement để đo điểm thoái lui Sóng 2.</li>
+<li><strong>Tìm điểm mua tại Sóng 2: </strong>Sóng điều chỉnh 2 kết thúc nhịp giảm khi chạm mốc Fibonacci Retracement 61,8%. Đây là vùng giải ngân vị thế thăm dò.</li>
+<li><strong>Tận dụng Sóng 3: </strong>Khi giá bứt phá vượt đỉnh Sóng 1, Sóng 3 được xác nhận. Mục tiêu chốt lời đặt tại mốc Fibonacci Extension 161,8%.</li>
+<li><strong>Vào lệnh tích lũy tại Sóng 4:</strong> Sóng 4 điều chỉnh nhẹ về mốc Fibonacci Retracement 38,2% của Sóng 3 trước khi bước vào Sóng 5.</li>
+<li><strong>Chốt lời tại Sóng 5: </strong>Nhà đầu tư chốt lời toàn bộ vị thế tại mốc Fibonacci Extension 100,0% chiều dài Sóng 1.</li></ul>
+<figure class="image">
+<img style="aspect-ratio:800/500;" src="https://extgw.dsc.com.vn/eback/uploads/song_elliott_va_fibonacci_la_gi_1_ae9d703f83.jpg" alt="Ứng dụng Fibonacci Retracement và Extension để định vị các bước sóng Elliott." width="800" height="500"></figure>
+<h2><strong>Thực hành phân tích kỹ thuật cùng hệ sinh thái Chứng khoán DSC</strong></h2>
+<p dir="ltr">Việc ứng dụng đồng thời lý thuyết sóng Elliott và chỉ báo Fibonacci đòi hỏi một nền tảng đồ thị trực quan, cập nhật dữ liệu theo thời gian thực và các công cụ vẽ chuẩn xác. Thấu hiểu nhu cầu đó, Công ty Cổ phần Chứng khoán DSC đã xây dựng hệ sinh thái công nghệ toàn diện nhằm hỗ trợ tối ưu cho quá trình phân tích của nhà đầu tư:</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><strong>Tích hợp công cụ phân tích từ TradingView:</strong> Trên cả nền tảng DSC Trading Web và ứng dụng di động DSC Trading, biểu đồ kỹ thuật được tích hợp trực tiếp dữ liệu từ TradingView. Nhà đầu tư có thể dễ dàng sử dụng đầy đủ các bộ công cụ vẽ sóng Elliott (Motive/Corrective), thước đo Fibonacci Retracement, Fibonacci Extension một cách mượt mà và trực quan.</p></li>
+<li dir="ltr">
+<p dir="ltr"><strong>Giao diện cá nhân hóa &amp; Quản trị tài sản theo thời gian thực:</strong> Hệ thống cho phép nhà đầu tư tùy chỉnh giao diện theo nhu cầu, lập danh mục theo dõi (Watchlist) riêng biệt. Đi kèm với đó là tính năng theo dõi lãi/lỗ theo thời gian thực, giúp nhà đầu tư kiểm soát chặt chẽ hiệu quả của từng chiến lược giải ngân theo sóng.</p></li>
+<li dir="ltr">
+<p dir="ltr"><strong>Nền tảng giao dịch thông minh:</strong> Hỗ trợ <a target="_blank" href="https://www.dsc.com.vn/mo-tai-khoan"><strong>mở tài khoản chứng khoán eKYC</strong></a> nhanh chóng chỉ với 3 bước đơn giản, đa dạng hóa các loại lệnh điều kiện và tốc độ khớp lệnh tối ưu giúp nhà đầu tư nắm bắt các điểm đảo chiều nhanh chóng.</p></li>
+<li dir="ltr">
+<p dir="ltr"><strong>Công cụ hỗ trợ đầu tư WeTrade &amp; Báo cáo phân tích chuyên sâu:</strong> Bên cạnh các công cụ kỹ thuật tự động, nhà đầu tư tại DSC còn nhận được sự đồng hành từ đội ngũ chuyên gia giàu kinh nghiệm. Các báo cáo nhận định thị trường, chiến lược đầu tư, phân tích vĩ mô và doanh nghiệp được cập nhật liên tục, cung cấp thêm góc nhìn khách quan bổ trợ cho việc ra quyết định.</p></li></ul>
+<h2 dir="ltr"><strong>Kết luận</strong></h2>
+<p dir="ltr">Phương pháp kết hợp sóng Elliott và chỉ báo Fibonacci là một trong những hệ thống phân tích kỹ thuật có tính logic cao, hỗ trợ đắc lực cho việc định vị xu hướng và tối ưu hóa các điểm vào - ra lệnh trên thị trường chứng khoán. Tuy nhiên, thị trường tài chính luôn vận động không ngừng và không có bất kỳ bộ công cụ nào có thể đảm bảo tính chính xác tuyệt đối trong mọi bối cảnh.</p>
+<p dir="ltr">Nhà đầu tư nên áp dụng phương pháp này một cách linh hoạt, luôn kết hợp cùng các nguyên tắc quản trị rủi ro nghiêm ngặt, quản lý quy mô vốn chặt chẽ và không ngừng thực hành trên biểu đồ thực tế để xây dựng cho mình một hệ thống giao dịch phù hợp nhất.</p>

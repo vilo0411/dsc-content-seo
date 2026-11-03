@@ -42,11 +42,11 @@ python scripts/cta_audit.py https://www.dsc.com.vn/kien-thuc/[slug]           # 
 ```
 
 **🚫 TUYỆT ĐỐI KHÔNG dùng `web-serp` / `scrape.py` / Firecrawl / Jina cho URL dsc.com.vn.**
-Những công cụ đó tồn tại để vượt bot protection của **trang đối thủ** và **tốn phí mỗi lần gọi**. Site của mình trả HTML trực tiếp: `cta_audit.py` fetch bằng `urllib` stdlib mất **~0.6 giây**, cache vào `knowledge/raw/pages/`. Gọi Firecrawl ở đây là vừa chậm vừa mất tiền vô ích.
+Những công cụ đó tồn tại để vượt bot protection của **trang đối thủ** và **tốn phí mỗi lần gọi**. Site của mình trả HTML trực tiếp: `cta_audit.py` đọc snapshot live chung `knowledge/raw/live/html/` (do `sync_live.py` tạo bằng `urllib` stdlib, ~0.6 giây/trang). Gọi Firecrawl ở đây là vừa chậm vừa mất tiền vô ích.
 
 Thứ tự phân giải (script tự làm):
 1. Có `Final-[slug].md` ở local → dùng file local. Đây là bản nguồn sửa được, luôn ưu tiên.
-2. Không có → fetch trang live, tách `<main>`, chuyển sang markdown để audit. Dùng `--refresh` nếu cần bỏ cache.
+2. Không có → đọc snapshot live (thiếu thì tự sync trang đó), chuyển sang markdown để audit. `--refresh` = sync lại trang trước khi audit.
 
 **Bài chỉ có trên web (732/824 URL hiện chưa có bản local):** chỉ audit và đề xuất được, **không ghi file**. Output là banner HTML + chỉ dẫn vị trí để bạn dán vào CMS. Không tự tạo file trong `3-finalized/` từ HTML đã render — đó là bản render, không phải bản nguồn.
 

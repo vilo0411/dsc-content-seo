@@ -1,0 +1,71 @@
+<p>Phiên giao dịch liên tục trên sàn HNX đòi hỏi phản ứng nhanh trước các biến động giá. Lệnh MTL (Market to Limit) hỗ trợ nhà đầu tư khớp lệnh mua bán tức thì. Loại lệnh này giúp kiểm soát rủi ro trượt giá cho phần khối lượng còn dư.</p>
+<p>Bài viết bóc tách chi tiết lệnh MTL là gì và cơ chế chuyển thành lệnh LO. Bạn sẽ nắm rõ bảng đối sánh MTL với MOK, MAK và cách đặt lệnh trên ứng dụng DSC Trading.</p>
+<h2 id="l-nh-mtl-l-g-"><strong>Lệnh MTL là gì?</strong></h2>
+<p>Lệnh MTL (Market to Limit) là lệnh thị trường giới hạn trên sàn HNX và thị trường Phái sinh. Lệnh ưu tiên khớp ngay khối lượng tại mức giá bán thấp nhất hoặc giá mua cao nhất.</p>
+<p>Điểm đặc biệt của lệnh MTL nằm ở cơ chế xử lý phần dư. Khối lượng chưa khớp hết sẽ tự động chuyển thành <a target="_blank" href="https://www.dsc.com.vn/kien-thuc/lenh-ato-atc-lo-mp-la-gi">lệnh LO</a>. Mức giá mới của lệnh LO chính là giá vừa khớp lệnh thành công gần nhất.</p>
+<p>Xét ví dụ minh họa thực tế đặt lệnh MTL:</p>
+<ul>
+<li><strong>Tình huống đặt lệnh</strong>: Nhà đầu tư phát lệnh MTL mua 5.000 cổ phiếu HPG trên sàn HNX.</li>
+<li><strong>Trạng thái sổ lệnh</strong>: Sổ lệnh đang bán 2.000 cổ phiếu giá 25.000 VNĐ và 3.000 cổ phiếu giá 25.100 VNĐ.</li>
+<li><strong>Kết quả khớp lệnh</strong>: Hệ thống khớp ngay 2.000 cổ phiếu tại giá tốt nhất 25.000 VNĐ.</li>
+<li><strong>Xử lý phần dư</strong>: Khối lượng 3.000 cổ phiếu còn dư tự động chuyển thành lệnh LO giá 25.000 VNĐ. Lệnh này tiếp tục nằm chờ khớp trên sổ lệnh.</li></ul>
+<p>&gt;&gt; Xem thêm: <a target="_blank" href="https://www.dsc.com.vn/kien-thuc/ung-truoc-tien-ban-chung-khoan-la-gi"><strong>Ứng trước tiền bán chứng khoán là gì?</strong></a></p>
+<h2 id="ph-n-lo-i-c-c-l-nh-mtl"><strong>Phân loại các lệnh MTL</strong></h2>
+<p>Trên thị trường tài chính, lệnh thị trường chuyển giới hạn được phân loại theo thời gian hiệu lực.</p>
+<h3 id="l-nh-gi-i-h-n-trong-ng-y-day-order-"><strong>Lệnh giới hạn trong ngày (Day Order)</strong></h3>
+<p>Các lệnh MTL trên sàn HNX và thị trường Phái sinh Việt Nam đều là lệnh giới hạn trong ngày. Lệnh có hiệu lực từ khi phát lệnh đến hết phiên giao dịch cùng ngày.</p>
+<p>Nếu phần dư chưa khớp hết khi phiên giao dịch đóng cửa lúc 14h45, hệ thống tự động hủy bỏ. Nhà đầu tư không thể duy trì phần dư MTL sang phiên ngày hôm sau.</p>
+<h3 id="l-nh-gi-i-h-n-gtc-good-til-canceled-"><strong>Lệnh giới hạn GTC (Good-Til-Canceled)</strong></h3>
+<p>Lệnh GTC duy trì hiệu lực qua nhiều phiên cho đến khi khớp đủ hoặc bị chủ động hủy. Loại lệnh này giúp nhà đầu tư treo lệnh mua bán dài hạn mà không cần đặt lại.</p>
+<p>Năm 2026, quy chế giao dịch tại Việt Nam chưa áp dụng lệnh GTC cho chứng khoán cơ sở. Nhà đầu tư cần chủ động phát lệnh mới khi bắt đầu ngày giao dịch tiếp theo.</p>
+<h2 id="so-s-nh-b-3-l-nh-th-tr-ng-tr-n-s-n-hnx-mtl-vs-mok-vs-mak"><strong>So sánh bộ 3 lệnh thị trường trên sàn HNX: MTL vs MOK vs MAK</strong></h2>
+<p>Sàn HNX áp dụng 3 loại lệnh thị trường bao gồm MTL, MOK và <a target="_blank" href="https://www.dsc.com.vn/kien-thuc/lenh-mak-la-gi"><strong>MAK</strong></a>. Bảng dưới đây đối sánh cơ chế hoạt động của 3 lệnh này:</p>
+<figure class="table">
+<table>
+<thead>
+<tr><th style="text-align:left;">Tiêu chí đối sánh</th><th style="text-align:left;">Lệnh MTL (Market to Limit)</th><th style="text-align:left;">Lệnh MOK (Match or Kill)</th><th style="text-align:left;">Lệnh MAK (Match and Kill)</th></tr></thead>
+<tbody>
+<tr><td style="text-align:left;"><strong>Cơ chế khớp lệnh</strong></td><td style="text-align:left;">Khớp một phần hoặc toàn bộ tại giá thị trường tốt nhất.</td><td style="text-align:left;">Phải khớp toàn bộ khối lượng ngay lập tức.</td><td style="text-align:left;">Khớp một phần hoặc toàn bộ tại giá thị trường tốt nhất.</td></tr>
+<tr><td style="text-align:left;"><strong>Xử lý phần dư chưa khớp</strong></td><td style="text-align:left;">Tự động chuyển thành lệnh LO tại giá khớp gần nhất.</td><td style="text-align:left;">Hủy toàn bộ lệnh ngay lập tức nếu không khớp đủ 100%.</td><td style="text-align:left;">Tự động hủy ngay phần dư chưa khớp.</td></tr>
+<tr><td style="text-align:left;"><strong>Thời hạn tồn tại trên sổ lệnh</strong></td><td style="text-align:left;">Tồn tại đến hết phiên giao dịch cùng ngày.</td><td style="text-align:left;">Không tồn tại trên sổ lệnh (hủy ngay).</td><td style="text-align:left;">Không tồn tại trên sổ lệnh (hủy ngay).</td></tr>
+<tr><td style="text-align:left;"><strong>Trường hợp áp dụng tối ưu</strong></td><td style="text-align:left;">Muốn mua/bán ngay nhưng muốn giữ giá phần dư.</td><td style="text-align:left;">Muốn mua/bán đúng đủ khối lượng lớn, tránh lẻ lệnh.</td><td style="text-align:left;">Muốn quét thanh khoản hiện có, không muốn chờ đợi.</td></tr></tbody></table></figure>
+<h2 id="-ng-d-ng-l-nh-mtl-trong-giao-d-ch-ch-ng-kho-n-ph-i-sinh"><strong>Ứng dụng lệnh MTL trong giao dịch chứng khoán Phái sinh</strong></h2>
+<p>Thị trường phái sinh (Hợp đồng tương lai VN30F) có tốc độ biến động giá rất nhanh. Việc sử dụng lệnh LO dễ dẫn đến tình trạng trượt lệnh do giá chạy trước.</p>
+<p>Lệnh MTL là công cụ tối ưu cho các nhà giao dịch phái sinh lướt sóng. Lệnh giúp mở vị thế Mua (Long) hoặc Bán (Short) ngay lập tức theo sóng tăng giảm.</p>
+<p>Khi cần đóng vị thế cắt lỗ khẩn cấp, phát lệnh MTL giúp giải phóng vị thế tức thì. Phần dư chuyển thành lệnh LO hỗ trợ bảo vệ tài khoản khỏi rủi ro trượt giá quá xa.</p>
+<h2 id="-c-i-m-u-v-nh-c-i-m-c-a-l-nh-mtl"><strong>Đặc điểm, ưu và nhược điểm của lệnh MTL</strong></h2>
+<p>Nhà đầu tư nên nắm rõ ưu điểm và nhược điểm trước khi sử dụng lệnh MTL trong giao dịch.</p>
+<h3 id="-u-i-m-n-i-b-t-c-a-l-nh-mtl"><strong>Ưu điểm nổi bật của lệnh MTL</strong></h3>
+<ul>
+<li><strong>Tốc độ khớp lệnh tối ưu</strong>: Lệnh MTL ưu tiên khớp ngay với các lệnh đối ứng giá tốt nhất. Cơ chế này giúp nhà đầu tư bắt kịp thời cơ giao dịch ngắn hạn.</li>
+<li><strong>Kiểm soát rủi ro giá phần dư</strong>: Phần dư của MTL biến thành lệnh LO tại giá khớp gần nhất. Cơ chế này ngăn chặn mua hớ giá cao hoặc bán tháo giá thấp như lệnh MP sàn HOSE.</li>
+<li><strong>Tiết kiệm thời gian thao tác</strong>: Nhà đầu tư không cần căn chỉnh từng bước giá nhỏ trên sổ lệnh. Hệ thống sẽ tự động tìm kiếm mức giá đối ứng khớp lệnh tối ưu.</li></ul>
+<h3 id="nh-c-i-m-v-r-i-ro-tr-t-gi-slippage-"><strong>Nhược điểm và rủi ro trượt giá (Slippage)</strong></h3>
+<ul>
+<li><strong>Rủi ro trượt giá khi thanh khoản mỏng</strong>: Với mã cổ phiếu có lượng chào mua bán thưa thớt, lệnh MTL dễ bị khớp ở giá chênh lệch ngoài dự kiến.</li>
+<li><strong>Đọng vốn ở phần dư chờ khớp</strong>: Phần dư chuyển thành lệnh LO sẽ nằm treo trên sổ lệnh. Nếu giá thị trường đảo chiều, lệnh LO này khó khớp và đọng vốn của bạn.</li></ul>
+<h2 id="3-l-u-quan-tr-ng-gi-p-nh-u-t-tr-nh-b-y-tr-t-gi-khi-d-ng-l-nh-mtl"><strong>3 Lưu ý quan trọng giúp nhà đầu tư tránh bẫy trượt giá khi dùng lệnh MTL</strong></h2>
+<p>Để giao dịch lệnh MTL hiệu quả và hạn chế rủi ro trượt giá, hãy áp dụng 3 lưu ý sau:</p>
+<ul>
+<li><strong>Kiểm tra độ sâu sổ lệnh trước khi đặt</strong>: Quan sát 3 mức giá chào mua bán tốt nhất cùng khối lượng. Nếu khối lượng chào bán quá ít, hạn chế đặt lệnh MTL dung lượng lớn.</li>
+<li><strong>Hạn chế dùng MTL khi thị trường biến động mạnh</strong>: Khi thị trường rung lắc mạnh trong vài phút, khoảng cách các bước giá mở rộng. Nhà đầu tư nên chuyển sang lệnh LO để chốt giá cố định.</li>
+<li><strong>Tham vấn tư vấn Môi giới 1:1 của DSC</strong>: Đội ngũ chuyên gia Môi giới 1:1 tại DSC hỗ trợ theo dõi dòng tiền real-time. Chuyên gia sẽ tư vấn thời điểm đặt lệnh MTL chuẩn xác trên HNX và Phái sinh.</li></ul>
+<h2 id="h-ng-d-n-c-ch-t-l-nh-mtl-tr-n-ng-d-ng-dsc-trading"><strong>Hướng dẫn cách đặt lệnh MTL trên ứng dụng DSC Trading</strong></h2>
+<p>Nhà đầu tư thực hiện đặt lệnh MTL trên ứng dụng DSC Trading theo 4 bước sau:</p>
+<ul>
+<li><strong>Bước 1</strong>: Đăng nhập ứng dụng <strong>DSC Trading</strong> trên điện thoại hoặc máy tính.</li>
+<li><strong>Bước 2</strong>: Truy cập màn hình <strong>Giao dịch</strong>, tìm kiếm mã chứng khoán HNX hoặc mã hợp đồng phái sinh VN30F.</li>
+<li><strong>Bước 3</strong>: Tại mục loại lệnh, nhấn chọn <strong>MTL</strong> thay cho lệnh LO. Nhập khối lượng cổ phiếu cần mua hoặc bán.</li>
+<li><strong>Bước 4</strong>: Kiểm tra tiểu khoản đuôi 1 (thường) hoặc đuôi 6 (Margin). Sau đó nhấn <strong>Xác nhận</strong> để hệ thống đẩy lệnh vào sàn.</li></ul>
+<h2 id="c-u-h-i-th-ng-g-p-v-l-nh-mtl"><strong>Câu hỏi thường gặp về lệnh MTL</strong></h2>
+<h3><strong>Lệnh MTL được sử dụng trên sàn giao dịch nào?</strong></h3>
+<p>Lệnh MTL được áp dụng trên sàn HNX và Thị trường Chứng khoán Phái sinh. Sàn HOSE sử dụng lệnh thị trường MP thay cho lệnh MTL.</p>
+<h3><strong>Phần chưa khớp của lệnh MTL xử lý thế nào?</strong></h3>
+<p>Phần dư chưa khớp của lệnh MTL tự động chuyển thành <a target="_blank" href="https://www.dsc.com.vn/kien-thuc/lenh-ato-atc-lo-mp-la-gi">lệnh LO</a> theo giá khớp gần nhất. Lệnh này tiếp tục chờ khớp trong phiên <a target="_blank" href="https://www.dsc.com.vn/kien-thuc/khop-lenh-dinh-ky-va-khop-lenh-lien-tuc">khớp lệnh liên tục</a>.</p>
+<h3><strong>Lệnh MTL khác gì so với lệnh MOK và MAK?</strong></h3>
+<p>Lệnh MTL chuyển phần dư thành lệnh LO. Lệnh MOK bắt buộc khớp đủ 100% hoặc hủy toàn bộ. Lệnh MAK khớp một phần và tự động hủy phần dư còn lại.</p>
+<h3><strong>Lệnh MTL trong phái sinh hoạt động thế nào?</strong></h3>
+<p>Trong phái sinh, lệnh MTL giúp mở hoặc đóng vị thế VN30F ngay lập tức. Phần dư chưa khớp biến thành lệnh LO tại giá vừa khớp để quản trị rủi ro.</p>
+<h2 id="k-t-lu-n"><strong>Kết luận</strong></h2>
+<p>Nắm vững cơ chế lệnh MTL giúp nhà đầu tư chủ động tốc độ khớp lệnh trên sàn HNX và thị trường phái sinh. Việc kết hợp MTL và lệnh LO giúp tối ưu thời gian giao dịch và bảo vệ tài khoản.</p>
+<p>Để trải nghiệm hạ tầng khớp lệnh tốc độ cao và nhận ưu đãi Margin từ 10%/năm, bạn hãy <a target="_blank" href="https://www.dsc.com.vn/mo-tai-khoan"><strong>mở tài khoản chứng khoán</strong></a> online qua App DSC Trading trong 3 phút. Đội ngũ chuyên gia Môi giới 1:1 của DSC luôn sẵn sàng tư vấn danh mục đầu tư cùng bạn!</p>

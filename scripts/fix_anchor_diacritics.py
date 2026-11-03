@@ -10,7 +10,7 @@ import re
 import sys
 import unicodedata
 
-INPUT_FILE = r"e:\project\seo-writer-agent-main\knowledge\3-pipeline\anchor-index.md"
+INPUT_FILE = r"e:\project\seo-writer-agent-main\knowledge\3-pipeline\internal-links\anchor-index.md"
 OUTPUT_FILE = INPUT_FILE
 
 # Vietnamese diacritic removal map (uppercase + lowercase)

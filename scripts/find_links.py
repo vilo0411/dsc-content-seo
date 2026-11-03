@@ -5,12 +5,14 @@ Modes:
   python scripts/find_links.py "từ khóa" [--top 8] [--exclude slug] [--json]
       → best-matching published articles to link TO from a new/optimized draft.
 
-  python scripts/find_links.py --backfill <slug> [--top 5] [--json]
-      → finalized articles that should link TO <slug> but don't yet, with the
-        exact paragraph/line where an anchor could be inserted.
+  python scripts/find_links.py --backfill <slug> [--top 5] [--json] [--finalized]
+      → published articles that should link TO <slug> but don't yet (no in-sentence link), with
+        the section + paragraph where an anchor could be wrapped. Scans the live snapshot
+        (knowledge/raw/live, sync_live.py); --finalized falls back to 3-finalized/*.md.
 
-Sources: knowledge/3-pipeline/anchor-index.md, sitemap-cache.json,
-         knowledge/4-content/3-finalized/*.md (backfill only),
+Sources: knowledge/3-pipeline/internal-links/anchor-index.md, sitemap-cache.json,
+         knowledge/raw/live/{html/,links.csv,pages.csv} (backfill + inlink column),
+         knowledge/4-content/3-finalized/*.md (backfill --finalized only),
          knowledge/raw/gsc/pages.csv (optional, ranks backfill sources by clicks).
 """
 
@@ -23,6 +25,8 @@ import json
 import re
 import sys
 import unicodedata
+from datetime import datetime
+from html import unescape as html_unescape
 from dataclasses import dataclass, asdict
 from pathlib import Path
 
@@ -30,7 +34,12 @@ if hasattr(sys.stdout, "buffer"):
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 
 ROOT = Path(__file__).resolve().parents[1]
-ANCHOR_INDEX = ROOT / "knowledge/3-pipeline/anchor-index.md"
+ANCHOR_INDEX = ROOT / "knowledge/3-pipeline/internal-links/anchor-index.md"
+LIVE_DIR = ROOT / "knowledge/raw/live"
+LIVE_HTML = LIVE_DIR / "html"
+LIVE_LINKS = LIVE_DIR / "links.csv"
+LIVE_PAGES = LIVE_DIR / "pages.csv"
+LIVE_META = LIVE_DIR / "_meta.json"
 SITEMAP_CACHE = ROOT / ".antigravity/skills/internal-linking/scripts/sitemap-cache.json"
 FINALIZED_DIR = ROOT / "knowledge/4-content/3-finalized"
 GSC_PAGES = ROOT / "knowledge/raw/gsc/pages.csv"
@@ -107,6 +116,24 @@ def load_gsc_clicks() -> dict[str, int]:
     return clicks
 
 
+def live_age() -> str:
+    """Human note on snapshot freshness — a stale snapshot means suggestions may already be done."""
+    try:
+        last = json.loads(LIVE_META.read_text(encoding="utf-8"))["last_run"]
+        days = (datetime.now() - datetime.fromisoformat(last)).days
+        return f"sync {last[:10]}" + (f" — ⚠ cũ {days} ngày, chạy sync_live.py" if days > 7 else "")
+    except (OSError, ValueError, KeyError):
+        return "chưa có _meta.json"
+
+
+def load_inlinks() -> dict[str, str]:
+    """slug -> contextual inlink count from the live snapshot ('' when no snapshot)."""
+    if not LIVE_PAGES.exists():
+        return {}
+    with LIVE_PAGES.open(encoding="utf-8-sig", newline="") as f:
+        return {r["slug"]: r["in_contextual"] for r in csv.DictReader(f)}
+
+
 def score(query_tokens: set[str], e: Entry) -> float:
     if not query_tokens:
         return 0.0
@@ -136,14 +163,53 @@ def mode_search(args, entries, sitemap):
                          ensure_ascii=False, indent=2))
         return
     print(f"# Internal link candidates for “{args.keyword}” (top {len(top)}/{len(ranked)} matches)\n")
-    print("| # | Anchor gợi ý | URL | Cluster | Trạng thái | Sitemap |")
-    print("|---|---|---|---|---|---|")
+    inl = load_inlinks()
+    print("| # | Anchor gợi ý | URL | Cluster | Trạng thái | Sitemap | Inlink ngữ cảnh |")
+    print("|---|---|---|---|---|---|---:|")
     for n, (sc, e) in enumerate(top, 1):
         ok = "✓" if e.url.rstrip("/") in sitemap else "✗ (không có trong cache)"
-        print(f"| {n} | {e.anchor} | {e.url} | {e.cluster} | {e.status} | {ok} |")
+        print(f"| {n} | {e.anchor} | {e.url} | {e.cluster} | {e.status} | {ok} | {inl.get(e.slug, '-')} |")
     if not top:
         print("Không có bài liên quan trong anchor-index. Cân nhắc link về hub cluster hoặc bỏ qua.")
     print("\nChỉ dùng URL có Sitemap ✓. Đặt anchor tự nhiên trong câu, không dùng 'Xem thêm'.")
+
+
+def live_backfill(target: Entry, q: set[str], core: str, clicks: dict[str, int]) -> list[dict]:
+    """Scan every live article snapshot (knowledge/raw/live, ~824 pages) instead of 3-finalized only.
+
+    Pages that already link to the target in a sentence are skipped; pages that only link via a
+    "Xem thêm" line are kept and flagged, since the fix there is to move that link into a sentence.
+    """
+    by_src: dict[str, set[str]] = {}
+    with LIVE_LINKS.open(encoding="utf-8-sig", newline="") as f:
+        for r in csv.DictReader(f):
+            if r["to"].rstrip("/") == target.url.rstrip("/"):
+                by_src.setdefault(r["from"], set()).add(r["kind"])
+    results = []
+    for path in sorted(LIVE_HTML.glob("*.html")):
+        src = path.stem
+        kinds = by_src.get(src, set())
+        if src == target.slug or "contextual" in kinds:
+            continue
+        section, best = "", None
+        for line in path.read_text(encoding="utf-8").splitlines():
+            h = re.match(r"<h[23][^>]*>(.*)", line)
+            if h:
+                section = re.sub(r"<[^>]+>", "", h.group(1)).strip()
+                continue
+            if not line.startswith(("<p", "<li")):
+                continue
+            plain = re.sub(r"\s+", " ", html_unescape(re.sub(r"<[^>]+>", "", line))).strip()
+            norm_plain = unaccent(plain).replace("-", " ")
+            hit = 2.0 if core and core in norm_plain else 0.0
+            hit += len(q & tokens(plain)) / max(1, len(q))
+            if hit >= 1.0 and (best is None or hit > best[0]):
+                best = (hit, section, plain)
+        if best:
+            results.append({"source": src, "score": round(best[0], 3), "clicks": clicks.get(DSC_KB + src, 0),
+                            "section": best[1], "excerpt": best[2], "xem_them_only": "xem-them" in kinds})
+    results.sort(key=lambda r: (-r["clicks"], -r["score"], r["source"]))
+    return results
 
 
 def mode_backfill(args, entries, sitemap):
@@ -160,6 +226,27 @@ def mode_backfill(args, entries, sitemap):
     # Core phrase = anchor without question suffix ("free float là gì" → "free float")
     core = re.sub(r"\s+(la gi|la sao|nhu the nao|co nen khong)\s*$", "", unaccent(target.anchor)).strip()
     clicks = load_gsc_clicks()
+    if LIVE_LINKS.exists() and not args.finalized:
+        res = live_backfill(target, q, core, clicks)
+        top = res[: args.top]
+        if args.json:
+            print(json.dumps(top, ensure_ascii=False, indent=2))
+            return
+        print(f"# Backfill candidates → {target.url}  (nguồn: snapshot live, {live_age()})\n")
+        print(f"Target anchor: **{target.anchor}** · {len(res)} bài live có đoạn liên quan, chưa link ngữ cảnh tới bài này\n")
+        print("| # | Bài nguồn (live) | Mục | Clicks | Đoạn gợi ý chèn link | Ghi chú |")
+        print("|---|---|---|---:|---|---|")
+        for n, r in enumerate(top, 1):
+            ex = r["excerpt"].replace("|", "\\|")
+            note = "đang link qua dòng Xem thêm → chuyển vào câu" if r["xem_them_only"] else ""
+            print(f"| {n} | {r['source']} | {r['section'][:40]} | {r['clicks'] if clicks else '-'} | "
+                  f"{ex[:160]}{'…' if len(ex) > 160 else ''} | {note} |")
+        if not top:
+            print("Không có bài nào phù hợp — bỏ qua Part B.")
+        else:
+            print("\nSửa trên CMS: bọc anchor quanh cụm có sẵn trong đoạn (không đổi chữ), xong chạy "
+                  "`python scripts/sync_live.py --only <các slug đã sửa>`. HTML hiện tại: knowledge/raw/live/html/<slug>.html")
+        return
     results = []
     for path in sorted(FINALIZED_DIR.glob("*.md")):
         text = path.read_text(encoding="utf-8", errors="ignore")
@@ -211,6 +298,8 @@ def main():
     ap.add_argument("--top", type=int, default=8)
     ap.add_argument("--exclude", help="Slug of the article being written (skip self-links)")
     ap.add_argument("--json", action="store_true")
+    ap.add_argument("--finalized", action="store_true",
+                    help="--backfill quét 3-finalized/*.md thay vì snapshot live (mặc định: live nếu có)")
     args = ap.parse_args()
     if not args.keyword and not args.backfill:
         ap.error("cần keyword hoặc --backfill <slug>")

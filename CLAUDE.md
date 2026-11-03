@@ -37,6 +37,7 @@ All operations must strictly follow the rules defined in:
 > | Tin tức / sự kiện mới quanh keyword | WebSearch tốn quota | `python scripts/news_feed.py --topic "<kw>" --days 14` |
 > | Đọc persona | cả `personas.md` (14 KB) | chỉ section persona đã chọn |
 > | Xem lỗi cũ của bài | cả `revision-log.md` | `grep -n "<slug>" knowledge/3-pipeline/revision-log.md` |
+> | Nội dung / link hiện đang live của 1 bài đã publish | mở CSV Screaming Frog cũ / file Final | `python scripts/sync_live.py --only <slug>` → `knowledge/raw/live/html/<slug>.html` · `--show <slug>` |
 | Số GSC của 1 bài (clicks, CTR, query, so kỳ trước) | đoán / mở dashboard bằng tay | SEO Dashboard MCP `query_search_analytics` → `python scripts/dashboard_cache.py save page-queries <slug>`; không có MCP: `python scripts/dashboard_cache.py report <slug>` |
 | Trước khi viết bài mới: keyword đã có URL DSC rank chưa | tạo outline luôn | SEO Dashboard MCP `query_search_analytics` dimensions `page` + `query_value` (Bước 0.5 `/outlining`) |
 
@@ -93,15 +94,16 @@ All operations must strictly follow the rules defined in:
 | `scripts/slop_check.py <file> [-v] [--json]` · `--baseline [--csv f] [--top N]` · `--thresholds` | **Tầng B** — 13 rule `SLOP-*` thống kê (burstiness, rhythm_gap, evidence/100w, unanchored, vague, template_sim…). Bắt slop mà tầng A không thấy: bài sạch 100% từ cấm vẫn có thể phẳng nhịp, không bằng chứng. Ngưỡng **relative theo corpus DSC** (baseline 2026-10-16, 182 bài → `knowledge/3-pipeline/slop-audit-2026-10-16.md`). Gate: score < 80 = FAIL. Offline, 0 API call. |
 | `scripts/market_facts.py --brief [--tickers …]` · `--ticker VCB` · `--index VNINDEX --years 2022,2026` · `--verify <file>` | **Script duy nhất có network trong pipeline viết.** OHLCV thật (VNDirect dchart) + danh sách mã niêm yết (SSI iboard), cache 24h ở `scripts/market-cache.json`. `--verify` bắt `FACT-index-wrong` (số chỉ số sai) / `FACT-ticker` (mã không niêm yết) / `FACT-stale` (mọi mốc cũ hơn 18 tháng). **Exit 3 = nguồn chết → KHÔNG chặn pipeline**, dùng dữ kiện cấu trúc thay thế. |
 | `scripts/news_feed.py --topic "<kw>" [--days N]` · `--latest` · `--feeds` | RSS 6 nguồn (CafeF ×2, VnExpress, Vietstock, Tuổi Trẻ, Dân Trí), cache 6h. Dùng để tìm góc bài + mốc sự kiện **có ngày**; KHÔNG dùng để viết lại tin — nội dung DSC là evergreen. |
-| `scripts/find_links.py "<kw>" [--exclude slug]` / `--backfill <slug>` | Tra anchor-index + sitemap-cache; tìm bài cũ nên link tới bài mới kèm dòng gợi ý. |
+| `scripts/find_links.py "<kw>" [--exclude slug]` / `--backfill <slug>` | Tra `internal-links/anchor-index.md` + sitemap-cache (+ cột inlink ngữ cảnh từ snapshot live). `--backfill` quét **toàn bộ bài live** (`knowledge/raw/live`, 825 bài) tìm bài chưa link ngữ cảnh tới slug, kèm mục + đoạn gợi ý; bài chỉ link qua dòng Xem thêm được đánh dấu. `--finalized` = quét `3-finalized/` như cũ. |
+| `scripts/sync_live.py [--only slugs] [--from-sf csv] [--show slug] [--compare slug] [--relink]` | **Nguồn sự thật cho bài đã publish.** Snapshot thân bài live mọi `/kien-thuc` + bài trong `link-clusters.json` → `knowledge/raw/live/html/<slug>.html` (1 block/dòng, git diff được) + `pages.csv` (words, link in/out, Xem thêm, CTA) + `links.csv` (from, to, anchor, kind, section). `--compare` = Final-*.md vs live (link thêm/gỡ trên CMS, độ lệch văn bản) — chạy trước `/optimize`. Stdlib, full ~3-4 phút; chỉ ghi file khi nội dung đổi. Khi nào chạy: xem `internal-linking/SKILL.md` §Mode: Live Snapshot. |
 | `scripts/topic_status.py <slug> [--set S]` / `--find` / `--list` | Đọc/ghi 1 ô trạng thái trong topic-clusters.md. |
 | `scripts/dashboard_cache.py save <kind> [slug]` · `report <slug>` · `status` | Cache dùng chung cho **SEO Dashboard MCP** (GSC/GA4/Ads/cannibalization). Agent có MCP gọi tool → `save`; agent không có MCP (Antigravity chưa cấu hình, Cursor…) đọc `report`. `save pages` / `save page-query` ghi luôn `pages.csv` / `queries.csv` theo schema `sync_gsc.py` → `process_gsc.py`, `find_links.py --backfill` chạy không cần credentials. Playbook: `.antigravity/skills/seo-dashboard/SKILL.md` · cấu hình: `.antigravity/config/seo-dashboard-mcp.md`. 0 network. |
-| `scripts/cta_audit.py <file\|slug\|URL>` / `--all [--ga4 csv]` / `--refresh` | Audit tầng chuyển đổi: banner, vị trí theo % thân bài, đoạn dẫn, link mở TK, CRO score. Nhận cả URL — ưu tiên file local, không có thì fetch trang live bằng urllib (~0.6s, cache `knowledge/raw/pages/`). **Không dùng web-serp/Firecrawl cho URL dsc.com.vn.** Chỉ đọc, không ghi. |
+| `scripts/cta_audit.py <file\|slug\|URL>` / `--all [--ga4 csv]` / `--refresh` | Audit tầng chuyển đổi: banner, vị trí theo % thân bài, đoạn dẫn, link mở TK, CRO score. Nhận cả URL — ưu tiên file local, không có thì đọc snapshot live `knowledge/raw/live/html/` (thiếu / `--refresh` → tự `sync_live` trang đó). **Không dùng web-serp/Firecrawl cho URL dsc.com.vn.** Chỉ đọc, không ghi. |
 | `scripts/optimize_instincts.py` | Sinh lại `instincts.md` (dedupe, tách lint-covered, tách scope) từ archive. |
 | `scripts/serp_opportunities.py [--min-count N]` | Gom PAA + Related Searches từ cache SERP → `knowledge/3-pipeline/serp-opportunities.md` (chưa có bài / có bài chưa giữ PAA / DSC đang giữ). 0 API call. Input cho `/keyword-plan`, `/optimize`. |
 | `.antigravity/skills/web-serp/scripts/serp_research.py "<kw>" [--top 10] [--extract 5] [--paa-depth N]` | SERP Google VN (DataForSEO, **có phí**) + PAA (kèm đáp án Google đang hiện + đối thủ nào có heading khớp) + Related Searches + extract competitor (local Scrapling parser, Jina fallback cho trang JS). Cache 30 ngày ở `knowledge/raw/serp/` — không dùng `--no-cache` trừ khi user yêu cầu; `--paa-depth` tốn thêm, chỉ cho pillar. Keyword chưa có trong topic-clusters/sprint-backlog → script từ chối gọi API, cần `--force`. |
 | `.antigravity/skills/internal-linking/scripts/sync_sitemap.py` | Cập nhật `sitemap-cache.json` từ sitemap live. |
-| `.antigravity/skills/internal-linking/scripts/link_audit.py [--orphans]` | Dashboard in/out link + danh sách orphan trong `3-finalized/`. |
+| `.antigravity/skills/internal-linking/scripts/link_audit.py [--orphans]` | Audit internal link **trên site live** (từ snapshot) → `internal-links/dashboard.md` (tuân thủ cụm pillar/hub, bài 0 inlink ngữ cảnh, bài còn Xem thêm, anchor trùng) + `internal-links/link-graph.html` (graph tương tác + bảng, mở bằng trình duyệt). |
 
 ---
 
@@ -121,7 +123,8 @@ All operations must strictly follow the rules defined in:
 knowledge/          # [THE BRAIN & FACTORY] All data and content
 ├── 1-brand/        # Identity, Personas, ICP
 ├── 2-market/       # Market Landscape
-├── 3-pipeline/     # Strategy: Keywords, Backlog, Anchor Index
+├── 3-pipeline/     # Strategy: Keywords, Backlog, rules
+│   └── internal-links/  # anchor-index.md, link-clusters.json, dashboard.md, link-graph.html, archive/
 ├── 4-content/      # Production: 1-outlines -> 3-finalized
-└── raw/            # Raw unprocessed uploads
+└── raw/            # Raw unprocessed uploads · live/ = snapshot site live (sync_live.py)
 ```

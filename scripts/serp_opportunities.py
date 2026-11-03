@@ -31,7 +31,7 @@ if hasattr(sys.stdout, "reconfigure"):
 ROOT = Path(__file__).resolve().parent.parent
 SERP_DIR = ROOT / "knowledge/raw/serp"
 SITEMAP_CACHE = ROOT / ".antigravity/skills/internal-linking/scripts/sitemap-cache.json"
-ANCHOR_INDEX = ROOT / "knowledge/3-pipeline/anchor-index.md"
+ANCHOR_INDEX = ROOT / "knowledge/3-pipeline/internal-links/anchor-index.md"
 OUT = ROOT / "knowledge/3-pipeline/serp-opportunities.md"
 OWN_DOMAIN = "dsc.com.vn"
 MATCH_RATIO = 0.7   # share of query content-words that must appear in an article slug/anchor

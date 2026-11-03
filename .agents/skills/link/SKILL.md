@@ -21,5 +21,5 @@ description: Tự động chèn internal links phù hợp cho bài viết nháp 
 5. **BẮT BUỘC:** Luôn kiểm tra và chèn ít nhất 01 link chuyển đổi mở tài khoản chứng khoán DSC (`https://www.dsc.com.vn/mo-tai-khoan`) tại phần Product Bridge hoặc CTA Kết luận. Rule đầy đủ về CTA ở `.antigravity/rules/cta-conversion.md`; skill này **chỉ lo link text** — banner do `/cro` phụ trách.
 6. Đảm bảo mật độ link vừa phải (1 link / 100 - 150 từ), không chèn quá nhiều, không dùng anchor chung chung (như "tại đây", "xem thêm").
 7. Đảm bảo định dạng chuẩn CMS: Không dùng code block lưu đồ ASCII (`+---+`) hoặc LaTeX formulas.
-8. Áp dụng thay đổi trực tiếp vào file.
+8. Áp dụng thay đổi trực tiếp vào file. Bài **đã publish** (không có file local hoặc Final đã cũ): lấy HTML hiện tại từ `knowledge/raw/live/html/[slug].html`, sửa trên CMS, xong chạy `python scripts/sync_live.py --only [slug]`.
 9. Xác minh: `python scripts/qa_lint.py [file] --no-sitemap` nếu chỉ cần check nhanh, hoặc không flag để đối soát cả sitemap — mọi `LINK-*` phải sạch.
