@@ -5,7 +5,7 @@
 <p>Quá trình này giúp bạn kiểm chứng xem một bộ quy tắc mua bán có mang lại hiệu quả sinh lời thực tế hay không. Bạn sẽ biết được kết quả trước khi mạo hiểm bằng tiền thật.</p>
 <p>Về bản chất, hoạt động này mô phỏng lại các quyết định giao dịch dựa trên các chỉ báo kỹ thuật đã định sẵn. Nếu kết quả chạy thử trong quá khứ thất bại, chiến lược đó khó có thể hoạt động hiệu quả trong tương lai.</p>
 <figure class="image">
-<img style="aspect-ratio:800/500;" alt="backtest-la-gi-1.jpg" src="https://extgw.dsc.com.vn/eback/uploads/backtest_la_gi_1_83555194b7.jpg" width="800" height="500"></figure>
+<img style="aspect-ratio:800/500;" src="https://extgw.dsc.com.vn/eback/uploads/backtest_la_gi_1_83555194b7.jpg" alt="backtest-la-gi-1.jpg" width="800" height="500"></figure>
 <h3 id="l-i-ch-c-t-l-i-c-a-vi-c-ch-y-backtest-chi-n-l-c"><strong>Lợi ích của việc chạy backtest chiến lược</strong></h3>
 <p>Việc chạy kiểm thử mang lại nhiều lợi ích sống còn cho quá trình tích lũy vốn của bạn.</p>
 <ul>
@@ -68,7 +68,7 @@
 <tr><td style="text-align:left;"><strong>Profit Factor</strong> (Hệ số lợi nhuận)</td><td style="text-align:left;"><strong>Tổng tiền lãi / Tổng tiền lỗ</strong></td><td style="text-align:left;">Thể hiện một đồng thua lỗ sẽ đổi lại được bao nhiêu đồng lợi nhuận.</td><td style="text-align:left;">Đạt từ 1.5 trở lên là hệ thống có lợi thế cạnh tranh.</td></tr></tbody></table></figure>
 <h2 id="nh-ng-r-i-ro-v-b-y-t-m-l-th-ng-g-p-khi-backtest"><strong>Những rủi ro và bẫy tâm lý thường gặp khi backtest</strong></h2>
 <figure class="image">
-<img style="aspect-ratio:800/500;" alt="Những rủi ro và bẫy tâm lý thường gặp khi backtest" src="https://extgw.dsc.com.vn/eback/uploads/backtest_la_gi_2_ef77afa74a.jpg" width="800" height="500"></figure>
+<img style="aspect-ratio:800/500;" src="https://extgw.dsc.com.vn/eback/uploads/backtest_la_gi_2_ef77afa74a.jpg" alt="Những rủi ro và bẫy tâm lý thường gặp khi backtest" width="800" height="500"></figure>
 <p>Backtest là công cụ phân tích kỹ thuật mạnh mẽ. Tuy nhiên, việc hiểu sai bản chất dữ liệu sẽ dẫn bạn vào những cái bẫy thua lỗ nghiêm trọng dưới đây.</p>
 <h3 id="c-c-lo-i-thi-n-l-ch-bias-v-b-y-overfitting-trong-backtest"><strong>Các loại thiên lệch (Bias) và bẫy Overfitting trong backtest</strong></h3>
 <p>Nhà đầu tư cá nhân thường mắc phải các lỗi hệ thống khi thiết kế mô hình kiểm thử.</p>
@@ -80,7 +80,7 @@
 <h3 id="-c-th-backtest-t-i-th-tr-ng-ch-ng-kho-n-vi-t-nam"><strong>Đặc thù backtest tại thị trường chứng khoán Việt Nam</strong></h3>
 <p>Khi kiểm thử các chiến lược cổ phiếu tại Việt Nam, Active Trader bắt buộc phải điều chỉnh mô hình theo quy định vận hành của thị trường trong nước.</p>
 <ul>
-<li><strong>Rào cản chu kỳ thanh toán T+1,5</strong>: Hiện nay, chứng khoán Việt Nam áp dụng chu kỳ thanh toán T+1,5. Cổ phiếu mua ngày T0 phải đến chiều ngày T+2 mới về tài khoản để bán. Nếu bạn chạy chiến lược lướt sóng siêu ngắn (intraday) mà không tính đến độ trễ này, kết quả kiểm thử sẽ sai lệch hoàn toàn.</li>
+<li><strong>Rào cản chu kỳ thanh toán T+2: </strong>Hiện nay, chứng khoán Việt Nam áp dụng chu kỳ thanh toán T+2. Cổ phiếu mua ngày T0 về tài khoản trưa ngày T+2 và chỉ bán được từ phiên chiều hôm đó. Nếu bạn chạy chiến lược lướt sóng siêu ngắn (intraday) mà không tính đến độ trễ này, kết quả kiểm thử sẽ sai lệch hoàn toàn.</li>
 <li><strong>Biên độ dao động giá trần - sàn</strong>: Ba sàn giao dịch tại Việt Nam đều giới hạn biên độ trong ngày (HOSE 7%, HNX 10%, UPCoM 15%). Quy định này giúp ổn định thị trường nhưng sẽ ảnh hưởng trực tiếp đến tốc độ khớp lệnh cắt lỗ tự động của bạn.</li></ul>
 <h3 id="forward-test-b-c-m-b-t-bu-c-tr-c-khi-giao-d-ch-ti-n-th-t"><strong>Forward Test: Bước đệm bắt buộc trước khi giao dịch tiền thật</strong></h3>
 <p>Sau khi tối ưu hóa hệ thống qua dữ liệu lịch sử, bạn tuyệt đối không được giao dịch vốn lớn ngay. Hãy thực hiện bước Forward Test (kiểm thử tiến trình).</p>
