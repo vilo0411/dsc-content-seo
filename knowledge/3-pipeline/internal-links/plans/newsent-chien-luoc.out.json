@@ -1,0 +1,349 @@
+[
+ {
+  "src": "daytrading-la-gi",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 22,
+  "op": "append",
+  "sentence": "So với các [chiến lược đầu tư chứng khoán] dài hơi như đầu tư giá trị, day trading đòi hỏi nhiều thời gian theo dõi bảng giá nhất.",
+  "why": "pillar · đoạn i=22"
+ },
+ {
+  "src": "trading-trong-chung-khoan-la-gi",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 5,
+  "op": "append",
+  "sentence": "Vì vậy, trading được xếp thành một nhánh riêng trong các [chiến lược đầu tư chứng khoán], bên cạnh đầu tư giá trị và đầu tư tăng trưởng.",
+  "why": "pillar · đoạn i=5"
+ },
+ {
+  "src": "rui-ro-tin-dung-la-gi",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "do-lech-chuan-la-gi",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "mo-hinh-markowitz-la-gi",
+  "target": "quan-tri-rui-ro-la-gi-2",
+  "i": 2,
+  "op": "append",
+  "sentence": "Vì đặt rủi ro ngang hàng với lợi nhuận, mô hình này là nền tảng của [quản trị rủi ro] danh mục hiện đại.",
+  "why": "hub · đoạn i=2"
+ },
+ {
+  "src": "swing-trading-la-gi",
+  "target": "trading-trong-chung-khoan-la-gi",
+  "i": 4,
+  "op": "append",
+  "sentence": "Trong các kiểu [trading chứng khoán], swing nằm giữa day trading và position trading về thời gian giữ lệnh.",
+  "why": "sub-hub · đoạn i=4"
+ },
+ {
+  "src": "danh-muc-dau-tu-hieu-qua-la-gi",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "danh-muc-dau-tu-hieu-qua-la-gi",
+  "target": "quan-tri-rui-ro-la-gi-2",
+  "i": 6,
+  "op": "append",
+  "sentence": "Vì vậy, [quản trị rủi ro] theo Markowitz là kiểm soát mức dao động của cả danh mục, thay vì chỉ tránh thua lỗ ở từng mã.",
+  "why": "hub · đoạn i=6"
+ },
+ {
+  "src": "tam-ly-dam-dong-la-gi",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 21,
+  "op": "newp",
+  "sentence": "Một [chiến lược đầu tư] viết sẵn, có điểm mua, điểm bán và tỷ trọng, giúp nhà đầu tư ít phụ thuộc vào hành động của số đông.",
+  "why": "pillar · đoạn i=21"
+ },
+ {
+  "src": "he-so-tuong-quan-la-gi",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "he-so-tuong-quan-la-gi",
+  "target": "danh-muc-dau-tu-hieu-qua-la-gi",
+  "i": 35,
+  "op": "append",
+  "sentence": "Đây cũng là nguyên tắc cốt lõi khi xây dựng [danh mục đầu tư hiệu quả]: kết hợp các tài sản ít tương quan với nhau.",
+  "why": "sub-hub · đoạn i=35"
+ },
+ {
+  "src": "quan-tri-rui-ro-la-gi-2",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "rui-ro-thi-truong-la-gi-cach-quan-tri-rui-ro-thi-truong-hieu-qua",
+  "target": "rui-ro-la-gi",
+  "i": 4,
+  "op": "append",
+  "sentence": "Trong [phân loại rủi ro], đây là rủi ro hệ thống, tác động lên cả thị trường thay vì một doanh nghiệp riêng lẻ.",
+  "why": "sub-hub · đoạn i=4"
+ },
+ {
+  "src": "rui-ro-thanh-khoan-la-gi",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "rui-ro-thanh-khoan-la-gi",
+  "target": "quan-tri-rui-ro-la-gi-2",
+  "i": 15,
+  "op": "append",
+  "sentence": "Vì vậy, [quản trị rủi ro] trong chứng khoán bắt đầu từ khâu chọn mã: ưu tiên cổ phiếu có khối lượng khớp lệnh đều qua các phiên.",
+  "why": "hub · đoạn i=15"
+ },
+ {
+  "src": "rui-ro-thanh-khoan-la-gi",
+  "target": "rui-ro-la-gi",
+  "i": 14,
+  "op": "append",
+  "sentence": "Trong [các loại rủi ro] đầu tư, đây là loại chỉ lộ rõ khi nhà đầu tư cần bán gấp.",
+  "why": "sub-hub · đoạn i=14"
+ },
+ {
+  "src": "rui-ro-la-gi",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 29,
+  "op": "append",
+  "sentence": "Phương án đó phải gắn với [chiến lược đầu tư] đang theo: người lướt sóng cần điểm cắt lỗ, người giữ dài hạn cần giới hạn tỷ trọng.",
+  "why": "pillar · đoạn i=29"
+ },
+ {
+  "src": "copy-trading-hinh-thuc-giao-dich-tai-chinh-tiet-kiem-thoi-gian-va-cong-suc",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "take-profit-la-gi",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "volatility-la-gi",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "volatility-la-gi",
+  "target": "quan-tri-rui-ro-la-gi-2",
+  "i": 4,
+  "op": "append",
+  "sentence": "Vì vậy, độ biến động là đầu vào đầu tiên của [quản trị rủi ro]: tài sản dao động càng mạnh thì tỷ trọng nắm giữ càng nên nhỏ.",
+  "why": "hub · đoạn i=4"
+ },
+ {
+  "src": "volatility-la-gi",
+  "target": "danh-muc-dau-tu-hieu-qua-la-gi",
+  "i": 9,
+  "op": "append",
+  "sentence": "Một [danh mục đầu tư hiệu quả] thường chỉ dành phần nhỏ cho nhóm tài sản biến động mạnh nhất.",
+  "why": "sub-hub · đoạn i=9"
+ },
+ {
+  "src": "cach-kiem-soat-tam-ly-trong-dau-tu-chung-khoan",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 5,
+  "op": "append",
+  "sentence": "Mọi [chiến lược đầu tư chứng khoán], từ lướt sóng đến nắm giữ dài hạn, đều chỉ hiệu quả khi người thực hiện giữ được kỷ luật.",
+  "why": "pillar · đoạn i=5"
+ },
+ {
+  "src": "chi-so-tam-ly-la-gi",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 30,
+  "op": "append",
+  "sentence": "Đây là một [phong cách đầu tư] khó theo, vì người thực hiện phải chấp nhận mua khi tin xấu còn dày đặc.",
+  "why": "pillar · đoạn i=30"
+ },
+ {
+  "src": "chi-so-tam-ly-la-gi",
+  "target": "thien-kien-nhan-thuc-la-gi",
+  "i": 40,
+  "op": "append",
+  "sentence": "Cả hai bẫy đều bắt nguồn từ [thiên kiến nhận thức], cụ thể là tâm lý bầy đàn và nỗi sợ mất mát.",
+  "why": "hub · đoạn i=40"
+ },
+ {
+  "src": "drawdown-trong-dau-tu-la-gi",
+  "target": "ty-le-risk-reward-la-gi",
+  "i": 5,
+  "op": "append",
+  "sentence": "Drawdown cho biết tài khoản đã mất bao nhiêu, còn [tỷ lệ risk/reward] cho biết mỗi lệnh đang chấp nhận lỗ bao nhiêu để kiếm bao nhiêu.",
+  "why": "sub-hub · đoạn i=5"
+ },
+ {
+  "src": "lac-quan-teu-la-gi",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "tuan-thu-18-quy-tac-cua-richard-rhodes",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 44,
+  "op": "append",
+  "sentence": "Đây cũng là tinh thần của [chiến lược đầu tư] theo xu hướng: mua khi giá đang tăng, đứng ngoài khi thị trường chưa rõ hướng.",
+  "why": "pillar · đoạn i=44"
+ },
+ {
+  "src": "buy-the-dips-la-gi-cach-ap-dung-chien-luoc-buy-the-dips",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 12,
+  "op": "append",
+  "sentence": "So với các [chiến lược đầu tư chứng khoán] theo xu hướng, cách này mua ngược chiều giá nên cần điểm cắt lỗ rõ từ đầu.",
+  "why": "pillar · đoạn i=12"
+ },
+ {
+  "src": "position-trading-la-gi",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "position-trading-la-gi",
+  "target": "trading-trong-chung-khoan-la-gi",
+  "i": 2,
+  "op": "append",
+  "sentence": "Trong các kiểu [trading chứng khoán], đây là kiểu gần với đầu tư dài hạn nhất.",
+  "why": "sub-hub · đoạn i=2"
+ },
+ {
+  "src": "fomo-trong-dau-tu-chung-khoan-la-gi",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 13,
+  "op": "append",
+  "sentence": "Một [chiến lược đầu tư] có sẵn điểm mua và tỷ trọng giúp nhà đầu tư bớt mua đuổi theo cảm xúc.",
+  "why": "pillar · đoạn i=13"
+ },
+ {
+  "src": "dau-tu-gia-tri-hay-dau-tu-tang-truong-chien-luoc-nao-phu-hop-voi-ban",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 55,
+  "op": "append",
+  "sentence": "Đây cũng là hai nhánh lớn nhất trong [các chiến lược đầu tư chứng khoán] dài hạn hiện nay.",
+  "why": "pillar · đoạn i=55"
+ },
+ {
+  "src": "phuong-phap-canslim-trong-dau-tu-chung-khoan-la-gi",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 8,
+  "op": "append",
+  "sentence": "Trong các [phương pháp đầu tư chứng khoán], CANSLIM thuộc trường phái tăng trưởng, kết hợp phân tích cơ bản với phân tích kỹ thuật.",
+  "why": "pillar · đoạn i=8"
+ },
+ {
+  "src": "phuong-phap-dau-tu-chung-khoan-cua-warren-buffett",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 26,
+  "op": "append",
+  "sentence": "Đây là mẫu [chiến lược đầu tư dài hạn] theo trường phái giá trị: mua doanh nghiệp tốt, giữ nhiều năm, chỉ bán khi lợi thế mất đi.",
+  "why": "pillar · đoạn i=26"
+ },
+ {
+  "src": "backtest-la-gi",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 3,
+  "op": "append",
+  "sentence": "Phần lớn [chiến lược đầu tư] có quy tắc, từ giao cắt đường trung bình đến lọc cổ phiếu theo định giá, đều kiểm thử được theo cách này.",
+  "why": "pillar · đoạn i=3"
+ },
+ {
+  "src": "dau-co-chung-khoan-la-gi-rui-ro-va-loi-ich",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 9,
+  "op": "append",
+  "sentence": "Vì vậy, đầu cơ được tách khỏi các [chiến lược đầu tư chứng khoán] dài hạn như đầu tư giá trị hay đầu tư tăng trưởng.",
+  "why": "pillar · đoạn i=9"
+ },
+ {
+  "src": "hieu-ung-thang-gieng-trong-dau-tu-chung-khoan-la-gi",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 18,
+  "op": "append",
+  "sentence": "Vì vậy, hiệu ứng mùa vụ chỉ nên là yếu tố phụ trong một [chiến lược đầu tư], đứng sau định giá và kết quả kinh doanh.",
+  "why": "pillar · đoạn i=18"
+ },
+ {
+  "src": "he-so-beta-la-gi-y-nghia-cua-he-so-beta-trong-chung-khoan",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 27,
+  "op": "append",
+  "sentence": "Hai lựa chọn này tương ứng với hai [phong cách đầu tư] khác nhau: phòng thủ giữ vốn và tấn công tìm lợi nhuận cao.",
+  "why": "pillar · đoạn i=27"
+ },
+ {
+  "src": "mo-hinh-capm-la-gi",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "mo-hinh-capm-la-gi",
+  "target": "quan-tri-rui-ro-la-gi-2",
+  "i": 4,
+  "op": "append",
+  "sentence": "Nguyên lý này cũng là xuất phát điểm của [quản trị rủi ro]: rủi ro cao hơn chỉ đáng nhận khi lợi nhuận kỳ vọng cao hơn tương ứng.",
+  "why": "hub · đoạn i=4"
+ },
+ {
+  "src": "hieu-ung-dam-dong-la-gi-ung-dung-trong-dau-tu-chung-khoan",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 23,
+  "op": "append",
+  "sentence": "Đây là nhóm [chiến lược đầu tư chứng khoán] quen thuộc với người giao dịch ngắn và trung hạn.",
+  "why": "pillar · đoạn i=23"
+ },
+ {
+  "src": "hieu-ung-dam-dong-la-gi-ung-dung-trong-dau-tu-chung-khoan",
+  "target": "thien-kien-nhan-thuc-la-gi",
+  "i": 2,
+  "op": "append",
+  "sentence": "Trong tài chính hành vi, đây là một dạng [thiên kiến nhận thức], khiến nhà đầu tư coi hành động của số đông là bằng chứng.",
+  "why": "hub · đoạn i=2"
+ },
+ {
+  "src": "lo-kep-la-gi",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "lo-kep-la-gi",
+  "target": "thien-kien-nhan-thuc-la-gi",
+  "i": 33,
+  "op": "append",
+  "sentence": "Đằng sau hành vi này là hai [thiên kiến nhận thức] quen thuộc: ác cảm mất mát và ngụy biện chi phí chìm.",
+  "why": "hub · đoạn i=33"
+ }
+]

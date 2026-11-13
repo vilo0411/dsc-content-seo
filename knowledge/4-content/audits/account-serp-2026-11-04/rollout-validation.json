@@ -1,0 +1,90 @@
+{
+  "primary": {
+    "lint": {
+      "pass": true,
+      "score": 99,
+      "critical": 0,
+      "major": 0,
+      "minor": 1
+    },
+    "slop": {
+      "mode": "strict",
+      "pass": false,
+      "score": 74,
+      "baseline_strict_score": 81,
+      "flags": [
+        "unanchored_ratio 66.1% > 66% proxy threshold",
+        "template similarity 55% to same original article because dated filename",
+        "evidence density 1.47/100w",
+        "paragraph shape stdev0.49"
+      ]
+    },
+    "fact_checker": {
+      "exit_code": 0,
+      "checked_dated_index_claims": 0,
+      "meaning": "No automated market-index claims found; not a blanket factual verification"
+    },
+    "correction_rounds": 2,
+    "publish_ready": false
+  },
+  "secondary": {
+    "lint": {
+      "pass": true,
+      "score": 99
+    },
+    "slop": {
+      "mode": "strict",
+      "pass": true,
+      "score": 91,
+      "baseline_strict_score": 64
+    },
+    "fact_checker": {
+      "exit_code": 0,
+      "checked_dated_index_claims": 0
+    },
+    "editorial_holds": [
+      "Original market-share graphic and SSI Top2 wording not verified as current",
+      "VNDIRECT wider channel source supplied separately"
+    ],
+    "publish_ready": false,
+    "semantic_qa": {
+      "pass": false,
+      "critical": 1,
+      "major": 2,
+      "review": "independent-review.md",
+      "findings": [
+        "Unverified graphic/alt claims",
+        "VNDIRECT source alignment",
+        "CTA implies unconditional1:1 entitlement"
+      ]
+    }
+  },
+  "state": "local-drafts-pending-review-not-published",
+  "approval_rule": ".agents/skills/optimize/SKILL.md Gate2: wait for human /approve before Final",
+  "preservation": {
+    "cach-mo-tai-khoan-chung-khoan": {
+      "original_images": 6,
+      "preserved_images": 6,
+      "original_unique_destinations": 13,
+      "preserved_destinations": 13,
+      "original_html_sha256": "188648b190b0a769eab290b5d2a1e14ed2d9dab932b51b7c6021e5060c359fae",
+      "proposed_html_sha256": "e75bd7f604d4a100b1f170e0c376cf8a4a3a68c71f94f130929e096812485e03"
+    },
+    "nen-mo-tai-khoan-chung-khoan-o-dau": {
+      "original_images": 4,
+      "preserved_images": 4,
+      "original_unique_destinations": 8,
+      "preserved_destinations": 8,
+      "original_html_sha256": "bf760ff92aa5302a72fa1b65753faceefbfded00a1e1c16a4da13868ecdb836e",
+      "proposed_html_sha256": "1dacfb2839f8782625d2c244b6c3f9d85b9362b6491fb1e8dbcb763d239a9af3"
+    }
+  },
+  "browser_validation": {
+    "js_errors": [],
+    "comparison_iframes": 4,
+    "mobile_360": {
+      "primary_scroll_width": 360,
+      "secondary_scroll_width": 360
+    }
+  }
+}

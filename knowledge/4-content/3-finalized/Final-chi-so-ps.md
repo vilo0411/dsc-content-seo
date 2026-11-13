@@ -12,7 +12,7 @@ Chỉ số P/S (Price-to-Sales Ratio) là công cụ định giá cốt lõi gi�
 
 ## SERP Data Points (Verified tháng 8/2026)
 
-Tính đến tháng 8/2026, tổng số tài khoản chứng khoán toàn thị trường đạt gần 13,66 triệu tài khoản theo số liệu từ VSDC. Thanh khoản khớp lệnh bình quân trên sàn HOSE dao động quanh mức 15.000 tỷ đồng/phiên và VN-Index tích lũy quanh vùng 1.700 – 1.735 điểm.
+Chỉ số P/S (Price to Sales) bằng vốn hóa thị trường chia doanh thu thuần 12 tháng gần nhất. P/S bằng 2 nghĩa là nhà đầu tư trả 2 đồng cho mỗi đồng doanh thu của doanh nghiệp.
 
 Trong môi trường thị trường biến động, việc đánh giá cổ phiếu chỉ dựa vào lợi nhuận ngắn hạn thường tạo ra sai lệch lớn. Chỉ số P/S đo lường quy mô doanh thu thuần, giúp nhà đầu tư nhận diện đúng giá trị cốt lõi của doanh nghiệp.
 

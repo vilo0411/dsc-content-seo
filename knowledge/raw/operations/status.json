@@ -1,0 +1,797 @@
+{
+  "generated_at": "2026-11-09T15:45:16+07:00",
+  "snapshot": "2026-11-06T13:51:02",
+  "snapshot_mode": "partial",
+  "tasks": [
+    {
+      "name": "2026-11-03-link-fix",
+      "group": "Internal link",
+      "source": "knowledge/3-pipeline/internal-links/plans/2026-11-03-link-fix.html",
+      "state": "Còn mục chưa xác nhận",
+      "evidence": "70/71 thay đổi đạt kiểm tra; không cộng các đợt vì có thể trùng nhau.",
+      "next_step": "Xem mục chưa đạt; đối chiếu CMS rồi sync và kiểm tra lại.",
+      "done": 70,
+      "total": 71,
+      "details": "Đã lên live: 70/71\n- san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong: wrap → cach-mo-tai-khoan-chung-khoan-my\n",
+      "spec": "knowledge/3-pipeline/internal-links/plans/2026-11-03-link-fix.json"
+    },
+    {
+      "name": "2026-11-03-orphan-backfill",
+      "group": "Internal link",
+      "source": "knowledge/3-pipeline/internal-links/plans/2026-11-03-orphan-backfill.html",
+      "state": "Còn mục chưa xác nhận",
+      "evidence": "84/89 thay đổi đạt kiểm tra; không cộng các đợt vì có thể trùng nhau.",
+      "next_step": "Xem mục chưa đạt; đối chiếu CMS rồi sync và kiểm tra lại.",
+      "done": 84,
+      "total": 89,
+      "details": "Đã lên live: 84/89\n- co-nen-mua-co-phieu-hpg-hay-khong: wrap → chuoi-gia-tri-nganh-thep\n- he-so-thanh-toan-la-gi: replace → ty-le-no-dai-han-tren-von-chu-so-huu-la-gi (đoạn cũ vẫn còn trên live)\n- ty-so-no-tren-tong-tai-san-la-gi: replace → ty-le-no-dai-han-tren-von-chu-so-huu-la-gi (đoạn cũ vẫn còn trên live)\n- von-luu-dong-la-gi: replace → so-ngay-phai-tra-chua-thanh-toan-la-gi (đoạn cũ vẫn còn trên live)\n- vong-quay-khoan-phai-tra-la-gi: replace → so-ngay-phai-tra-chua-thanh-toan-la-gi (đoạn cũ vẫn còn trên live)\n",
+      "spec": "knowledge/3-pipeline/internal-links/plans/2026-11-03-orphan-backfill.json"
+    },
+    {
+      "name": "2026-11-04-mo-tai-khoan-anchor-dot2",
+      "group": "Internal link",
+      "source": "knowledge/3-pipeline/internal-links/plans/2026-11-04-mo-tai-khoan-anchor-dot2.html",
+      "state": "Đạt trong snapshot",
+      "evidence": "3/3 thay đổi đạt kiểm tra; không cộng các đợt vì có thể trùng nhau.",
+      "next_step": "Xem mục chưa đạt; đối chiếu CMS rồi sync và kiểm tra lại.",
+      "done": 3,
+      "total": 3,
+      "details": "Đã lên live: 3/3\n",
+      "spec": "knowledge/3-pipeline/internal-links/plans/2026-11-04-mo-tai-khoan-anchor-dot2.json"
+    },
+    {
+      "name": "2026-11-04-mo-tai-khoan-anchor",
+      "group": "Internal link",
+      "source": "knowledge/3-pipeline/internal-links/plans/2026-11-04-mo-tai-khoan-anchor.html",
+      "state": "Còn mục chưa xác nhận",
+      "evidence": "40/49 thay đổi đạt kiểm tra; không cộng các đợt vì có thể trùng nhau.",
+      "next_step": "Xem mục chưa đạt; đối chiếu CMS rồi sync và kiểm tra lại.",
+      "done": 40,
+      "total": 49,
+      "details": "Đã lên live: 40/49\n- co-phieu-nganh-than: newp → cach-mo-tai-khoan-chung-khoan\n- do-co-gian-cua-cau-theo-gia-la-gi: newp → cach-mo-tai-khoan-chung-khoan\n- grdp-la-gi-chi-so-quan-trong-danh-gia-su-phat-trien-kinh-te-dia-phuong: append → cach-mo-tai-khoan-chung-khoan\n- thi-truong-so-cap-va-thu-cap-la-gi: append → cach-mo-tai-khoan-chung-khoan\n- top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam: newp → cach-mo-tai-khoan-chung-khoan\n- top-5-co-phieu-dang-dau-tu: append → cach-mo-tai-khoan-chung-khoan\n- top-5-co-phieu-nganh-chung-khoan-dang-dau-tu-nhat: append → cach-mo-tai-khoan-chung-khoan\n- top-chung-chi-quy-o-viet-nam-uy-tin-hang-dau-hien-nay: append → cach-mo-tai-khoan-chung-khoan\n- top-co-phieu-cang-bien-nen-dau-tu: append → cach-mo-tai-khoan-chung-khoan\n",
+      "spec": "knowledge/3-pipeline/internal-links/plans/2026-11-04-mo-tai-khoan-anchor.json"
+    },
+    {
+      "name": "2026-11-05-link-fix-con-lai",
+      "group": "Internal link",
+      "source": "knowledge/3-pipeline/internal-links/plans/2026-11-05-link-fix-con-lai.html",
+      "state": "Đạt trong snapshot",
+      "evidence": "5/5 thay đổi đạt kiểm tra; không cộng các đợt vì có thể trùng nhau.",
+      "next_step": "Xem mục chưa đạt; đối chiếu CMS rồi sync và kiểm tra lại.",
+      "done": 5,
+      "total": 5,
+      "details": "Đã lên live: 5/5\n",
+      "spec": "knowledge/3-pipeline/internal-links/plans/2026-11-05-link-fix-con-lai.json"
+    },
+    {
+      "name": "2026-11-05-mo-tai-khoan-anchor-dot3",
+      "group": "Internal link",
+      "source": "knowledge/3-pipeline/internal-links/plans/2026-11-05-mo-tai-khoan-anchor-dot3.html",
+      "state": "Đạt trong snapshot",
+      "evidence": "14/14 thay đổi đạt kiểm tra; không cộng các đợt vì có thể trùng nhau.",
+      "next_step": "Xem mục chưa đạt; đối chiếu CMS rồi sync và kiểm tra lại.",
+      "done": 14,
+      "total": 14,
+      "details": "Đã lên live: 14/14\n",
+      "spec": "knowledge/3-pipeline/internal-links/plans/2026-11-05-mo-tai-khoan-anchor-dot3.json"
+    },
+    {
+      "name": "2026-11-05-mo-tai-khoan-anchor-dot4",
+      "group": "Internal link",
+      "source": "knowledge/3-pipeline/internal-links/plans/2026-11-05-mo-tai-khoan-anchor-dot4.html",
+      "state": "Đạt trong snapshot",
+      "evidence": "2/2 thay đổi đạt kiểm tra; không cộng các đợt vì có thể trùng nhau.",
+      "next_step": "Xem mục chưa đạt; đối chiếu CMS rồi sync và kiểm tra lại.",
+      "done": 2,
+      "total": 2,
+      "details": "Đã lên live: 2/2\n",
+      "spec": "knowledge/3-pipeline/internal-links/plans/2026-11-05-mo-tai-khoan-anchor-dot4.json"
+    },
+    {
+      "name": "2026-11-05-orphan-backfill-sua-lai",
+      "group": "Internal link",
+      "source": "knowledge/3-pipeline/internal-links/plans/2026-11-05-orphan-backfill-sua-lai.html",
+      "state": "Đạt trong snapshot",
+      "evidence": "28/28 thay đổi đạt kiểm tra; không cộng các đợt vì có thể trùng nhau.",
+      "next_step": "Xem mục chưa đạt; đối chiếu CMS rồi sync và kiểm tra lại.",
+      "done": 28,
+      "total": 28,
+      "details": "Đã lên live: 28/28\n",
+      "spec": "knowledge/3-pipeline/internal-links/plans/2026-11-05-orphan-backfill-sua-lai.json"
+    },
+    {
+      "name": "2026-11-05-orphan-dot1",
+      "group": "Internal link",
+      "source": "knowledge/3-pipeline/internal-links/plans/2026-11-05-orphan-dot1.html",
+      "state": "Còn mục chưa xác nhận",
+      "evidence": "24/25 thay đổi đạt kiểm tra; không cộng các đợt vì có thể trùng nhau.",
+      "next_step": "Xem mục chưa đạt; đối chiếu CMS rồi sync và kiểm tra lại.",
+      "done": 24,
+      "total": 25,
+      "details": "Đã lên live: 24/25\n- cach-dau-tu-vang: wrap → app-dau-tu-vang\n",
+      "spec": "knowledge/3-pipeline/internal-links/plans/2026-11-05-orphan-dot1.json"
+    },
+    {
+      "name": "2026-11-05-orphan-dot2",
+      "group": "Internal link",
+      "source": "knowledge/3-pipeline/internal-links/plans/2026-11-05-orphan-dot2.html",
+      "state": "Đạt trong snapshot",
+      "evidence": "21/21 thay đổi đạt kiểm tra; không cộng các đợt vì có thể trùng nhau.",
+      "next_step": "Xem mục chưa đạt; đối chiếu CMS rồi sync và kiểm tra lại.",
+      "done": 21,
+      "total": 21,
+      "details": "Đã lên live: 21/21\n",
+      "spec": "knowledge/3-pipeline/internal-links/plans/2026-11-05-orphan-dot2.json"
+    },
+    {
+      "name": "rates-c",
+      "group": "Stale",
+      "source": "knowledge/4-content/audits/stale-content-refresh-2026-11-04.html",
+      "state": "Còn mục chưa xác nhận",
+      "evidence": "0/48 đạt; 40 còn đoạn cũ; 8 cần xác minh riêng.",
+      "next_step": "Mở bộ sửa stale; kiểm tra từng mục, title/meta cần đối chiếu CMS.",
+      "done": 0,
+      "total": 48,
+      "details": "lai-suat-gui-tiet-kiem-ngan-hang-vietcombank: Cần xác minh riêng (field/thiếu snapshot)\nlai-suat-gui-tiet-kiem-ngan-hang-vietcombank: Cần xác minh riêng (field/thiếu snapshot)\nlai-suat-gui-tiet-kiem-ngan-hang-vietcombank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietcombank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietcombank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietcombank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietcombank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietcombank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietcombank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietcombank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietcombank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Cần xác minh riêng (field/thiếu snapshot)\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Cần xác minh riêng (field/thiếu snapshot)\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vpbank: Cần xác minh riêng (field/thiếu snapshot)\nlai-suat-gui-tiet-kiem-ngan-hang-vpbank: Cần xác minh riêng (field/thiếu snapshot)\nlai-suat-gui-tiet-kiem-ngan-hang-vpbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vpbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vpbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vpbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vpbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vpbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vpbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vpbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vpbank: Còn đoạn cũ trong snapshot\nlai-suat-ngan-hang-dong-a: Cần xác minh riêng (field/thiếu snapshot)\nlai-suat-ngan-hang-dong-a: Cần xác minh riêng (field/thiếu snapshot)\nlai-suat-ngan-hang-dong-a: Còn đoạn cũ trong snapshot\nlai-suat-ngan-hang-dong-a: Còn đoạn cũ trong snapshot\nlai-suat-ngan-hang-dong-a: Còn đoạn cũ trong snapshot\nlai-suat-ngan-hang-dong-a: Còn đoạn cũ trong snapshot\nlai-suat-ngan-hang-dong-a: Còn đoạn cũ trong snapshot\nlai-suat-ngan-hang-dong-a: Còn đoạn cũ trong snapshot\nlai-suat-ngan-hang-dong-a: Còn đoạn cũ trong snapshot\nlai-suat-ngan-hang-dong-a: Còn đoạn cũ trong snapshot\nlai-suat-ngan-hang-dong-a: Còn đoạn cũ trong snapshot\nlai-suat-ngan-hang-dong-a: Còn đoạn cũ trong snapshot\nlai-suat-ngan-hang-dong-a: Còn đoạn cũ trong snapshot\nlai-suat-ngan-hang-dong-a: Còn đoạn cũ trong snapshot",
+      "spec": "knowledge/4-content/audits/edits/rates-c.json"
+    },
+    {
+      "name": "stocks-monthly",
+      "group": "Stale",
+      "source": "knowledge/4-content/audits/stale-content-refresh-2026-11-04.html",
+      "state": "Còn mục chưa xác nhận",
+      "evidence": "0/19 đạt; 15 còn đoạn cũ; 4 cần xác minh riêng.",
+      "next_step": "Mở bộ sửa stale; kiểm tra từng mục, title/meta cần đối chiếu CMS.",
+      "done": 0,
+      "total": 19,
+      "details": "co-nen-mua-co-phieu-hpg-hay-khong: Cần xác minh riêng (field/thiếu snapshot)\nco-nen-mua-co-phieu-hpg-hay-khong: Cần xác minh riêng (field/thiếu snapshot)\nco-nen-mua-co-phieu-hpg-hay-khong: Còn đoạn cũ trong snapshot\nco-nen-mua-co-phieu-hpg-hay-khong: Còn đoạn cũ trong snapshot\nco-nen-mua-co-phieu-hpg-hay-khong: Còn đoạn cũ trong snapshot\nco-nen-mua-co-phieu-hpg-hay-khong: Còn đoạn cũ trong snapshot\nco-nen-mua-co-phieu-hpg-hay-khong: Còn đoạn cũ trong snapshot\nco-nen-mua-co-phieu-hpg-hay-khong: Còn đoạn cũ trong snapshot\nco-nen-mua-co-phieu-hpg-hay-khong: Còn đoạn cũ trong snapshot\nco-nen-mua-co-phieu-hpg-hay-khong: Còn đoạn cũ trong snapshot\nco-nen-mua-co-phieu-hpg-hay-khong: Còn đoạn cũ trong snapshot\nco-nen-mua-co-phieu-hpg-hay-khong: Còn đoạn cũ trong snapshot\nco-nen-mua-co-phieu-hpg-hay-khong: Còn đoạn cũ trong snapshot\nco-nen-mua-co-phieu-hpg-hay-khong: Còn đoạn cũ trong snapshot\nco-nen-mua-co-phieu-hpg-hay-khong: Nội dung đã đổi; chưa khớp bản đề xuất\nco-nen-mua-co-phieu-hpg-hay-khong: Còn đoạn cũ trong snapshot\nco-nen-mua-co-phieu-hpg-hay-khong: Còn đoạn cũ trong snapshot\nco-nen-mua-co-phieu-hpg-hay-khong: Còn đoạn cũ trong snapshot\nco-nen-mua-co-phieu-hpg-hay-khong: Nội dung đã đổi; chưa khớp bản đề xuất",
+      "spec": "knowledge/4-content/audits/edits/stocks-monthly.json"
+    },
+    {
+      "name": "t2-settlement",
+      "group": "Stale",
+      "source": "knowledge/4-content/audits/stale-content-refresh-2026-11-04.html",
+      "state": "Còn mục chưa xác nhận",
+      "evidence": "5/38 đạt; 31 còn đoạn cũ; 2 cần xác minh riêng.",
+      "next_step": "Mở bộ sửa stale; kiểm tra từng mục, title/meta cần đối chiếu CMS.",
+      "done": 5,
+      "total": 38,
+      "details": "1-hop-dong-phai-sinh-bao-nhieu-tien: Đạt trong snapshot\n50-trieu-nen-gui-tiet-kiem-ngan-hang-nao: Còn đoạn cũ trong snapshot\nbacktest-la-gi: Nội dung đã đổi; chưa khớp bản đề xuất\ncac-mau-trong-chung-khoan-y-nghia-va-tac-dong-den-nha-dau-tu: Đạt trong snapshot\ncac-thuat-ngu-trong-chung-khoan: Còn đoạn cũ trong snapshot\ncac-thuat-ngu-trong-chung-khoan: Nội dung đã đổi; chưa khớp bản đề xuất\ncac-thuat-ngu-trong-chung-khoan: Đạt trong snapshot\ncach-dau-tu-chung-khoan-phai-sinh-tai-viet-nam: Còn đoạn cũ trong snapshot\ncach-mua-co-phieu-tren-san-upcom: Đạt trong snapshot\nchien-luoc-dau-tu-chung-khoan-ngan-han-la-gi: Đạt trong snapshot\nchung-khoan-phai-sinh-la-gi-huong-dan-dau-tu-cho-nguoi-moi-bat-dau: Còn đoạn cũ trong snapshot\nchung-quyen-la-gi-chung-quyen-co-bao-dam-la-gi-tim-hieu-chung-quyen-tai-viet-nam: Còn đoạn cũ trong snapshot\nco-nen-dau-tu-vang-thoi-diem-nay: Còn đoạn cũ trong snapshot\nco-phieu-la-gi-cac-loai-co-phieu-tren-thi-truong-chung-khoan-viet-nam: Còn đoạn cũ trong snapshot\nco-phieu-uu-dai-la-gi: Còn đoạn cũ trong snapshot\nco-phieu-vsc-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat: Còn đoạn cũ trong snapshot\ndaytrading-la-gi: Còn đoạn cũ trong snapshot\ndaytrading-la-gi: Còn đoạn cũ trong snapshot\ndaytrading-la-gi: Còn đoạn cũ trong snapshot\nduong-ma-la-gi: Còn đoạn cũ trong snapshot\nduong-ma-la-gi: Còn đoạn cũ trong snapshot\nfomo-trong-dau-tu-chung-khoan-la-gi: Còn đoạn cũ trong snapshot\ngio-giao-dich-chung-khoan-viet-nam: Còn đoạn cũ trong snapshot\ngio-giao-dich-chung-khoan-viet-nam: Còn đoạn cũ trong snapshot\nhop-dong-tuong-lai-la-gi: Còn đoạn cũ trong snapshot\nkhi-nao-nen-ban-co-phieu-5-truong-hop-nha-dau-tu-can-luu-y: Còn đoạn cũ trong snapshot\nkrx-la-gi: Còn đoạn cũ trong snapshot\nlai-suat-huy-dong-la-gi: Còn đoạn cũ trong snapshot\nmacd-la-gi: Còn đoạn cũ trong snapshot\nmacd-la-gi: Còn đoạn cũ trong snapshot\nnen-gui-tiet-kiem-hay-dau-tu-chung-khoan: Còn đoạn cũ trong snapshot\nphan-biet-thi-truong-chung-khoan-co-so-va-phai-sinh: Còn đoạn cũ trong snapshot\nphuong-phap-vsa: Còn đoạn cũ trong snapshot\nrui-ro-la-gi: Còn đoạn cũ trong snapshot\nrui-ro-va-loi-ich-khi-tham-gia-thi-truong-tai-chinh: Còn đoạn cũ trong snapshot\ntake-profit-la-gi: Còn đoạn cũ trong snapshot\nthi-truong-tai-chinh-la-gi: Còn đoạn cũ trong snapshot\ntim-hieu-ve-ban-khong-chung-khoan-hoat-dong-dau-tu-lo-khong-gioi-han: Còn đoạn cũ trong snapshot",
+      "spec": "knowledge/4-content/audits/edits/t2-settlement.json"
+    },
+    {
+      "name": "Content audit: xóa / sửa / gộp",
+      "group": "Content audit",
+      "source": "knowledge/3-pipeline/content-audit-2026-11-05-tracker.html",
+      "state": "Tiến độ ở trình duyệt",
+      "evidence": "Tracker lưu localStorage và có Xuất/Nhập tiến độ; chưa có bản xuất chung trong repo.",
+      "next_step": "Mở tracker trên trình duyệt đã dùng; xuất tiến độ để đối chiếu. Chưa suy ra hoàn tất từ file báo cáo."
+    },
+    {
+      "name": "account-serp-2026-11-04 / rollout-validation",
+      "group": "QA / SERP",
+      "source": "knowledge/4-content/audits/account-serp-2026-11-04/rollout-validation.json",
+      "state": "Có kết quả kiểm tra đã lưu",
+      "evidence": "Kết quả tại thời điểm tạo file; chưa chứng minh bản hiện tại đã publish.",
+      "next_step": "Xem báo cáo và kiểm tra lại bản cuối trước khi xuất bản."
+    },
+    {
+      "name": "account-serp-2026-11-04 / validation-nen-mo-tai-khoan-chung-khoan-o-dau",
+      "group": "QA / SERP",
+      "source": "knowledge/4-content/audits/account-serp-2026-11-04/validation-nen-mo-tai-khoan-chung-khoan-o-dau.json",
+      "state": "Có kết quả kiểm tra đã lưu",
+      "evidence": "Kết quả tại thời điểm tạo file; chưa chứng minh bản hiện tại đã publish.",
+      "next_step": "Xem báo cáo và kiểm tra lại bản cuối trước khi xuất bản."
+    },
+    {
+      "name": "account-serp-2026-11-04 / đo lường",
+      "group": "Theo dõi GSC",
+      "source": "knowledge/4-content/audits/account-serp-2026-11-04/monitoring.csv",
+      "state": "Chưa ghi nhận đo lường",
+      "evidence": "0/40 dòng có actual_date; không có nghĩa là đã đặt lịch tự động.",
+      "next_step": "Điền ngày publish thực tế và số đo ở các mốc trong file."
+    },
+    {
+      "name": "Bản Final chưa ghi nhận live",
+      "group": "Sau publish",
+      "source": "knowledge/3-pipeline/publish-ledger.csv",
+      "state": "Có việc cần đối chiếu",
+      "evidence": "42 bài thiếu mốc first_live trong ledger; seed là mốc nhập lịch sử.",
+      "next_step": "Đối chiếu CMS, publish rồi sync; Finalized chưa có nghĩa là đã lên web.",
+      "details": "100-trieu-gui-ngan-hang\napp-mua-chung-chi-quy\nbao-cao-lai-lo\nbao-cao-tai-chinh-hop-nhat\ncac-mo-hinh-gia-chung-khoan\ncach-choi-chung-khoan-cho-sinh-vien\nchi-bao-ky-thuat-la-gi\nchi-bao-stochastic-la-gi\nchi-so-chung-khoan\nchi-so-dow-jones-future\nchi-so-hnx30\nchi-so-kospi\nchi-so-ps\nchi-so-qoq\nchi-so-tam-ly\nco-nen-dau-tu-chung-chi-quy\nco-nen-dau-tu-vao-quy-mo-vinacapital\nco-tien-nen-dau-tu-bac\ncon-hao-kinh-te-la-gi\ndar-la-gi\ndau-tu-vang-nen-mua-loai-na\nduong-cong-loi-suat-dao-nguoc-la-gi\ngia-tri-noi-tai-cua-co-phieu-la-gi\nlai-suat-tiet-kiem-acb\nlai-suat-tiet-kiem-bac-a\nlai-suat-tiet-kiem-bidv\nlai-suat-tiet-kiem-vib\nlai-suat-tiet-kiem-vpbank\nldr-la-gi\nlenh-plo\nmo-tai-khoan-chung-chi-quy\nnha-tao-lap-thi-truong-la-ai\nno-chinh-phu\nphi-luu-ky-chung-khoan\nphuong-phap-dau-tu-warren-buffett\nquy-tac-72\nrsi-la-gi\nrui-ro-chung-chi-quy\ntarget-trong-chung-khoan-la-gi\nthao-tung-thi-truong-chung-khoan-la-gi\nthue-khi-ban-co-phieu\nty-le-ky-quy"
+    },
+    {
+      "name": "Bài live chưa ghi nhận backfill",
+      "group": "Sau publish",
+      "source": "knowledge/3-pipeline/publish-ledger.csv",
+      "state": "Không có mục thiếu mốc",
+      "evidence": "0 bài thiếu mốc backfill_done trong ledger; seed là mốc nhập lịch sử.",
+      "next_step": "Gom backfill bằng /weekly, xác minh rồi ghi nhận vào ledger.",
+      "details": ""
+    },
+    {
+      "name": "Bài live chưa ghi nhận kiểm tra GSC",
+      "group": "Sau publish",
+      "source": "knowledge/3-pipeline/publish-ledger.csv",
+      "state": "Không có mục thiếu mốc",
+      "evidence": "0 bài thiếu mốc gsc_checked trong ledger; seed là mốc nhập lịch sử.",
+      "next_step": "Chạy /weekly để lọc bài đến hạn 28–56 ngày; danh sách này gồm cả bài chưa đến hạn.",
+      "details": ""
+    },
+    {
+      "name": "Backlog có trạng thái lệch nguồn chính",
+      "group": "Dữ liệu tiến độ",
+      "source": "knowledge/4-content/sprint-backlog.md",
+      "state": "Cần đối chiếu",
+      "evidence": "7 từ khóa khớp chính xác nhưng khác trạng thái. Nguồn trạng thái bài: topic-clusters.md.",
+      "next_step": "Tra trạng thái bằng python scripts/topic_status.py <slug>; backlog cũ chỉ để tham khảo.",
+      "details": "có nên mua cổ phiếu las: backlog=Outline-Approved; topic-clusters=Finalized\ncó nên mua cổ phiếu novaland: backlog=Outline-Approved; topic-clusters=Finalized\nchỉ số chứng khoán: backlog=Outline-Approved; topic-clusters=Finalized\nmô hình nến đảo chiều: backlog=Outlining; topic-clusters=Finalized\ncách đầu tư chứng chỉ quỹ: backlog=Outlining; topic-clusters=Finalized\napp mua chứng chỉ quỹ: backlog=Outlining; topic-clusters=Finalized\nnên gửi tiết kiệm hay mua vàng: backlog=Outline-Pending; topic-clusters=Finalized"
+    }
+  ],
+  "catalog": [
+    {
+      "path": "knowledge/3-pipeline/anti-ai-rules-blacklist.md",
+      "name": "anti-ai-rules-blacklist.md",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/anti-ai-rules.md",
+      "name": "anti-ai-rules.md",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/archive/anti-ai-rules-v2.2-2026-10-16.md",
+      "name": "anti-ai-rules-v2.2-2026-10-16.md",
+      "group": "Pipeline",
+      "archived": true
+    },
+    {
+      "path": "knowledge/3-pipeline/boilerplate-fix-2026-11-04.md",
+      "name": "boilerplate-fix-2026-11-04.md",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/content-audit-2026-11-05-tracker.html",
+      "name": "content-audit-2026-11-05-tracker.html",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/content-audit-2026-11-05.md",
+      "name": "content-audit-2026-11-05.md",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/glossary.md",
+      "name": "glossary.md",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/gsc-opportunities.md",
+      "name": "gsc-opportunities.md",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/internal-links/anchor-index.md",
+      "name": "anchor-index.md",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/internal-links/archive/2026-10-30-mo-tk-cach-choi/edits.html",
+      "name": "edits.html",
+      "group": "Pipeline",
+      "archived": true
+    },
+    {
+      "path": "knowledge/3-pipeline/internal-links/archive/2026-10-30-mo-tk-cach-choi/plan.csv",
+      "name": "plan.csv",
+      "group": "Pipeline",
+      "archived": true
+    },
+    {
+      "path": "knowledge/3-pipeline/internal-links/archive/2026-10-30-mo-tk-cach-choi/topical-map.html",
+      "name": "topical-map.html",
+      "group": "Pipeline",
+      "archived": true
+    },
+    {
+      "path": "knowledge/3-pipeline/internal-links/archive/concept/internal_link_structure.html",
+      "name": "internal_link_structure.html",
+      "group": "Pipeline",
+      "archived": true
+    },
+    {
+      "path": "knowledge/3-pipeline/internal-links/dashboard.md",
+      "name": "dashboard.md",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/internal-links/link-clusters.json",
+      "name": "link-clusters.json",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/internal-links/link-graph.html",
+      "name": "link-graph.html",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/internal-links/plans/2026-11-03-link-fix.html",
+      "name": "2026-11-03-link-fix.html",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/internal-links/plans/2026-11-03-link-fix.json",
+      "name": "2026-11-03-link-fix.json",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/internal-links/plans/2026-11-03-orphan-backfill.html",
+      "name": "2026-11-03-orphan-backfill.html",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/internal-links/plans/2026-11-03-orphan-backfill.json",
+      "name": "2026-11-03-orphan-backfill.json",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/internal-links/plans/2026-11-04-mo-tai-khoan-anchor-dot2.html",
+      "name": "2026-11-04-mo-tai-khoan-anchor-dot2.html",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/internal-links/plans/2026-11-04-mo-tai-khoan-anchor-dot2.json",
+      "name": "2026-11-04-mo-tai-khoan-anchor-dot2.json",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/internal-links/plans/2026-11-04-mo-tai-khoan-anchor.html",
+      "name": "2026-11-04-mo-tai-khoan-anchor.html",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/internal-links/plans/2026-11-04-mo-tai-khoan-anchor.json",
+      "name": "2026-11-04-mo-tai-khoan-anchor.json",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/internal-links/plans/2026-11-05-link-fix-con-lai.html",
+      "name": "2026-11-05-link-fix-con-lai.html",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/internal-links/plans/2026-11-05-link-fix-con-lai.json",
+      "name": "2026-11-05-link-fix-con-lai.json",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/internal-links/plans/2026-11-05-mo-tai-khoan-anchor-dot3.html",
+      "name": "2026-11-05-mo-tai-khoan-anchor-dot3.html",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/internal-links/plans/2026-11-05-mo-tai-khoan-anchor-dot3.json",
+      "name": "2026-11-05-mo-tai-khoan-anchor-dot3.json",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/internal-links/plans/2026-11-05-mo-tai-khoan-anchor-dot4.html",
+      "name": "2026-11-05-mo-tai-khoan-anchor-dot4.html",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/internal-links/plans/2026-11-05-mo-tai-khoan-anchor-dot4.json",
+      "name": "2026-11-05-mo-tai-khoan-anchor-dot4.json",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/internal-links/plans/2026-11-05-orphan-backfill-sua-lai.html",
+      "name": "2026-11-05-orphan-backfill-sua-lai.html",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/internal-links/plans/2026-11-05-orphan-backfill-sua-lai.json",
+      "name": "2026-11-05-orphan-backfill-sua-lai.json",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/internal-links/plans/2026-11-05-orphan-dot1.html",
+      "name": "2026-11-05-orphan-dot1.html",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/internal-links/plans/2026-11-05-orphan-dot1.json",
+      "name": "2026-11-05-orphan-dot1.json",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/internal-links/plans/2026-11-05-orphan-dot2.html",
+      "name": "2026-11-05-orphan-dot2.html",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/internal-links/plans/2026-11-05-orphan-dot2.json",
+      "name": "2026-11-05-orphan-dot2.json",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/publish-ledger.csv",
+      "name": "publish-ledger.csv",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/qa-check-log.csv",
+      "name": "qa-check-log.csv",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/qa-score-log.csv",
+      "name": "qa-score-log.csv",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/revision-log/2026-Q2.md",
+      "name": "2026-Q2.md",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/revision-log/2026-Q3.md",
+      "name": "2026-Q3.md",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/revision-log/2026-Q4.md",
+      "name": "2026-Q4.md",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/revision-log.md",
+      "name": "revision-log.md",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/serp-opportunities.md",
+      "name": "serp-opportunities.md",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/slop-audit-2026-10-16.md",
+      "name": "slop-audit-2026-10-16.md",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-pipeline/slop-baseline.csv",
+      "name": "slop-baseline.csv",
+      "group": "Pipeline",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/audits/account-serp-2026-11-04/additional-source-vndirect.txt",
+      "name": "additional-source-vndirect.txt",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/audits/account-serp-2026-11-04/baseline-cach-mo-tai-khoan-chung-khoan.body.html",
+      "name": "baseline-cach-mo-tai-khoan-chung-khoan.body.html",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/audits/account-serp-2026-11-04/baseline-cach-mo-tai-khoan-chung-khoan.md",
+      "name": "baseline-cach-mo-tai-khoan-chung-khoan.md",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/audits/account-serp-2026-11-04/baseline-nen-mo-tai-khoan-chung-khoan-o-dau.md",
+      "name": "baseline-nen-mo-tai-khoan-chung-khoan-o-dau.md",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/audits/account-serp-2026-11-04/cach-mo-tai-khoan-chung-khoan.body.html",
+      "name": "cach-mo-tai-khoan-chung-khoan.body.html",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/audits/account-serp-2026-11-04/cach-mo-tai-khoan-chung-khoan.diff.txt",
+      "name": "cach-mo-tai-khoan-chung-khoan.diff.txt",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/audits/account-serp-2026-11-04/cach-mo-tai-khoan-chung-khoan.metadata.json",
+      "name": "cach-mo-tai-khoan-chung-khoan.metadata.json",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/audits/account-serp-2026-11-04/cach-mo-tai-khoan-chung-khoan.preview.html",
+      "name": "cach-mo-tai-khoan-chung-khoan.preview.html",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/audits/account-serp-2026-11-04/gsc-baseline.csv",
+      "name": "gsc-baseline.csv",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/audits/account-serp-2026-11-04/independent-review.md",
+      "name": "independent-review.md",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/audits/account-serp-2026-11-04/index.html",
+      "name": "index.html",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/audits/account-serp-2026-11-04/monitoring.csv",
+      "name": "monitoring.csv",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/audits/account-serp-2026-11-04/nen-mo-tai-khoan-chung-khoan-o-dau.body.html",
+      "name": "nen-mo-tai-khoan-chung-khoan-o-dau.body.html",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/audits/account-serp-2026-11-04/nen-mo-tai-khoan-chung-khoan-o-dau.diff.txt",
+      "name": "nen-mo-tai-khoan-chung-khoan-o-dau.diff.txt",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/audits/account-serp-2026-11-04/nen-mo-tai-khoan-chung-khoan-o-dau.preview.html",
+      "name": "nen-mo-tai-khoan-chung-khoan-o-dau.preview.html",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/audits/account-serp-2026-11-04/preservation-nen-mo-tai-khoan-chung-khoan-o-dau.json",
+      "name": "preservation-nen-mo-tai-khoan-chung-khoan-o-dau.json",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/audits/account-serp-2026-11-04/rollout-plan.md",
+      "name": "rollout-plan.md",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/audits/account-serp-2026-11-04/rollout-validation.json",
+      "name": "rollout-validation.json",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/audits/account-serp-2026-11-04/technical-checks.json",
+      "name": "technical-checks.json",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/audits/account-serp-2026-11-04/v2/article.html",
+      "name": "article.html",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/audits/account-serp-2026-11-04/v2/before.html",
+      "name": "before.html",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/audits/account-serp-2026-11-04/v2/cach-mo-tai-khoan-chung-khoan.body.html",
+      "name": "cach-mo-tai-khoan-chung-khoan.body.html",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/audits/account-serp-2026-11-04/v2/checks.json",
+      "name": "checks.json",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/audits/account-serp-2026-11-04/v2/facts.txt",
+      "name": "facts.txt",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/audits/account-serp-2026-11-04/v2/index.html",
+      "name": "index.html",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/audits/account-serp-2026-11-04/v2/lint.txt",
+      "name": "lint.txt",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/audits/account-serp-2026-11-04/v2/metadata.json",
+      "name": "metadata.json",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/audits/account-serp-2026-11-04/v2/style.txt",
+      "name": "style.txt",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/audits/account-serp-2026-11-04/validation-nen-mo-tai-khoan-chung-khoan-o-dau.json",
+      "name": "validation-nen-mo-tai-khoan-chung-khoan-o-dau.json",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/audits/account-serp-2026-11-04/validation-nen-mo-tai-khoan-chung-khoan-o-dau.md",
+      "name": "validation-nen-mo-tai-khoan-chung-khoan-o-dau.md",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/audits/edits/_BRIEF.md",
+      "name": "_BRIEF.md",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/audits/edits/rates-c.json",
+      "name": "rates-c.json",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/audits/edits/stocks-monthly.json",
+      "name": "stocks-monthly.json",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/audits/edits/t2-settlement.json",
+      "name": "t2-settlement.json",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/audits/stale-content-refresh-2026-11-04.html",
+      "name": "stale-content-refresh-2026-11-04.html",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/4-cms/app-mua-chung-chi-quy.html",
+      "name": "app-mua-chung-chi-quy.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/4-cms/cac-co-phieu-niem-yet-thuoc-tap-doan-vingroup-danh-sach-day-du-va-cap-nhat-nam-2024.html",
+      "name": "cac-co-phieu-niem-yet-thuoc-tap-doan-vingroup-danh-sach-day-du-va-cap-nhat-nam-2024.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/4-cms/cach-dau-tu-chung-chi-quy.html",
+      "name": "cach-dau-tu-chung-chi-quy.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/4-cms/cach-mo-tai-khoan-chung-khoan.html",
+      "name": "cach-mo-tai-khoan-chung-khoan.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/4-cms/cach-mua-co-phieu-flc.html",
+      "name": "cach-mua-co-phieu-flc.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/4-cms/cach-mua-co-phieu-vingroup-vic-huong-dan-moi-nhat-2024.html",
+      "name": "cach-mua-co-phieu-vingroup-vic-huong-dan-moi-nhat-2024.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/4-cms/co-nen-dau-tu-chung-chi-quy.html",
+      "name": "co-nen-dau-tu-chung-chi-quy.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/4-cms/rui-ro-chung-chi-quy.html",
+      "name": "rui-ro-chung-chi-quy.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/4-cms/top-5-co-phieu-dang-dau-tu.html",
+      "name": "top-5-co-phieu-dang-dau-tu.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/4-cms/top-5-co-phieu-dau-khi-se-huong-loi-trong-nam-2024-khi-gia-dau-tang.html",
+      "name": "top-5-co-phieu-dau-khi-se-huong-loi-trong-nam-2024-khi-gia-dau-tang.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/topic-clusters.md",
+      "name": "topic-clusters.md",
+      "group": "Nội dung",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/sprint-backlog.md",
+      "name": "sprint-backlog.md",
+      "group": "Nội dung",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-content/index.html",
+      "name": "index.html",
+      "group": "Nội dung",
+      "archived": false
+    }
+  ]
+}

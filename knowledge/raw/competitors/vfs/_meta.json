@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-04",
+  "sitemap_urls": 2363,
+  "crawled_pages": 386,
+  "archive_pages": 33,
+  "archive_candidates": 189,
+  "knowledge_articles": 169,
+  "link_occurrences": 42975,
+  "body_links": 1097,
+  "failures": 0,
+  "scope": "Toàn bộ phân trang kiến thức tìm thấy (tối đa 100 archive); trang dịch vụ/hub từ sitemap; 120 URL hiện đại lấy mẫu seed 20261104; mở rộng tối đa 250 đích body. Không phải full-site crawl, không đo backlink từ website bên ngoài; không chạy JavaScript hoặc trích liên kết bên trong PDF.",
+  "sitemaps": {
+    "https://www.vfs.com.vn/post-sitemap1.xml": 200,
+    "https://www.vfs.com.vn/post-sitemap2.xml": 200,
+    "https://www.vfs.com.vn/post-sitemap3.xml": 200,
+    "https://www.vfs.com.vn/post-sitemap4.xml": 200,
+    "https://www.vfs.com.vn/post-sitemap5.xml": 200,
+    "https://www.vfs.com.vn/post-sitemap6.xml": 200,
+    "https://www.vfs.com.vn/post-sitemap7.xml": 200,
+    "https://www.vfs.com.vn/post-sitemap8.xml": 200,
+    "https://www.vfs.com.vn/post-sitemap9.xml": 200,
+    "https://www.vfs.com.vn/post-sitemap10.xml": 200,
+    "https://www.vfs.com.vn/post-sitemap11.xml": 200,
+    "https://www.vfs.com.vn/post-sitemap12.xml": 25,
+    "https://www.vfs.com.vn/page-sitemap.xml": 117,
+    "https://www.vfs.com.vn/tuyen-dung-sitemap.xml": 9,
+    "https://www.vfs.com.vn/category-sitemap.xml": 12
+  }
+}

@@ -1,0 +1,12 @@
+# QA LINT — knowledge\4-content\2-drafts\serp-2026-11-04-v2\Optimize-cach-mo-tai-khoan-chung-khoan.md
+
+**Kết quả:** PASS · CRITICAL 0 · MAJOR 0 · MINOR 1 · **Score 99/100** (anti_ai 100, seo 100, readability 97, link 100, geo 100)
+Stats: keyword=cách mở tài khoản chứng khoán, long_sentences=1, long_paragraphs=0, internal_links=12, h2=4, temporal_markers=0, data_points=0, cta_banners=1, cta_score=100, images_original=6, images_missing=0, faq_items=0
+
+## MINOR (1)
+
+| Dòng | Check | Vấn đề | Trích |
+|---:|---|---|---|
+| 34 | CL6-sentence | Câu dài 32 từ (>30) | Theo khoản 3 Điều 6 Thông tư 120/2020/TT-BTC, bạn được mở tài khoản tại nhiều công ty chứng khoán khác nhau (xem một ngư |
+
+Lint PASS. Quality Guardian chỉ cần kiểm tra: CL4 Persona, CL5 số liệu thị trường, So-What / Prove-It, Load-Bearing Claim.

@@ -1,0 +1,514 @@
+{
+ "title": "Internal link — dồn anchor \"mở tài khoản chứng khoán\" về bài chính (2026-11-04)",
+ "intro": "<details class=\"box\" open><summary>Đọc trước khi sửa</summary><ul>\n<li><b>Mục tiêu</b>: bài <code>cach-mo-tai-khoan-chung-khoan</code> nhận cụm \"mở / cách mở / hướng dẫn mở / tạo / đăng ký tài khoản chứng khoán\"; bài <code>nen-mo-...-o-dau</code> chỉ giữ cụm \"ở đâu / công ty nào\"; <code>/mo-tai-khoan</code> nhận anchor thương hiệu (\"mở tài khoản DSC\", \"mở tài khoản tại DSC\").</li>\n<li><b>Làm sau khi bản Final 04/11 của bài chính đã lên CMS.</b></li>\n<li><b>Chuyển anchor (Cách A)</b>: link CTA về <code>/mo-tai-khoan</code> vẫn giữ, chỉ đổi chữ; thêm 1 câu ngắn có link về bài chính trong cùng đoạn (hoặc đoạn mới ngay sau).</li>\n<li>Sửa xong chạy <code>python scripts/sync_live.py --only …</code> rồi <code>python scripts/link_plan.py verify knowledge/3-pipeline/internal-links/plans/2026-11-04-mo-tai-khoan-anchor.json</code>.</li>\n<li>Đo lại GSC giữa tháng 12/2026: 3 query \"mở / cách mở / mở … online\" phải về bài chính.</li></ul></details>",
+ "groups": {
+  "anchor": "Chuyển anchor về bài chính",
+  "backfill": "Link mới",
+  "fix": "Sửa link sai đích"
+ },
+ "edits": [
+  {
+   "src": "nen-mo-tai-khoan-chung-khoan-o-dau",
+   "op": "append",
+   "find": "Để giải quyết băn khoăn này",
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Đưa link về bài chính lên mở bài (hiện chỉ có ở H3 DSC gần cuối) → tách vai trò 2 bài",
+   "sentence": "Nếu đã chọn được công ty, bạn có thể làm theo [hướng dẫn mở tài khoản chứng khoán online] từng bước trên điện thoại."
+  },
+  {
+   "src": "top-5-co-phieu-dang-dau-tu",
+   "op": "replace",
+   "find": "Dù bạn đang cân nhắc",
+   "old_text": "<a target=\"_blank\" href=\"https://www.dsc.com.vn/mo-tai-khoan\"><strong>mở tài khoản chứng khoán</strong></a>",
+   "sentence": "[<strong>mở tài khoản tại DSC</strong>]",
+   "to": "https://www.dsc.com.vn/mo-tai-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Đổi chữ CTA: giữ link về /mo-tai-khoan, bỏ anchor đúng nguyên cụm"
+  },
+  {
+   "src": "top-5-co-phieu-dang-dau-tu",
+   "op": "append",
+   "find": "Dù bạn đang cân nhắc",
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Link ngữ cảnh về bài chính",
+   "sentence": "Người mới có thể xem trước [cách mở tài khoản chứng khoán] để biết cần chuẩn bị những gì."
+  },
+  {
+   "src": "top-5-co-phieu-nganh-chung-khoan-dang-dau-tu-nhat",
+   "op": "replace",
+   "find": "nhóm cổ phiếu chứng khoán nói riêng",
+   "old_text": "<a target=\"_blank\" href=\"https://www.dsc.com.vn/mo-tai-khoan\"><strong>mở tài khoản chứng khoán</strong></a> liên hệ ngay",
+   "sentence": "[<strong>mở tài khoản</strong>] và liên hệ ngay",
+   "to": "https://www.dsc.com.vn/mo-tai-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Đổi chữ CTA: giữ link về /mo-tai-khoan, bỏ anchor đúng nguyên cụm"
+  },
+  {
+   "src": "top-5-co-phieu-nganh-chung-khoan-dang-dau-tu-nhat",
+   "op": "append",
+   "find": "nhóm cổ phiếu chứng khoán nói riêng",
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Link ngữ cảnh về bài chính",
+   "sentence": "Các bước [mở tài khoản chứng khoán] online được hướng dẫn chi tiết trong bài riêng."
+  },
+  {
+   "src": "lai-suat-ngan-hang-dong-a",
+   "op": "replace",
+   "find": "DSC ngay để bắt đầu hành trình gia tăng tài sản",
+   "old_text": "<a target=\"_blank\" href=\"https://www.dsc.com.vn/mo-tai-khoan\"><strong>Mở tài khoản chứng khoán</strong></a><strong> </strong>DSC",
+   "sentence": "[<strong>Mở tài khoản</strong>] DSC",
+   "to": "https://www.dsc.com.vn/mo-tai-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Đổi chữ CTA: giữ link về /mo-tai-khoan, bỏ anchor đúng nguyên cụm"
+  },
+  {
+   "src": "lai-suat-ngan-hang-dong-a",
+   "op": "append",
+   "find": "DSC ngay để bắt đầu hành trình gia tăng tài sản",
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Link ngữ cảnh về bài chính",
+   "sentence": "Nếu chưa từng đầu tư, bạn có thể xem cách [tạo tài khoản chứng khoán] trước khi chuyển một phần tiền tiết kiệm sang cổ phiếu."
+  },
+  {
+   "src": "do-co-gian-cua-cau-theo-gia-la-gi",
+   "op": "replace",
+   "find": "ứng dụng các nguyên lý kinh tế vào giao dịch thực tế",
+   "old_text": "<a target=\"_blank\" href=\"https://www.dsc.com.vn/mo-tai-khoan\"><strong>Mở tài khoản chứng khoán</strong></a>",
+   "sentence": "[<strong>Mở tài khoản</strong>]",
+   "to": "https://www.dsc.com.vn/mo-tai-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Đổi chữ CTA: giữ link về /mo-tai-khoan, bỏ anchor đúng nguyên cụm"
+  },
+  {
+   "src": "do-co-gian-cua-cau-theo-gia-la-gi",
+   "op": "newp",
+   "find": "ứng dụng các nguyên lý kinh tế vào giao dịch thực tế",
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Link ngữ cảnh về bài chính",
+   "sentence": "Bài [hướng dẫn mở tài khoản chứng khoán online] liệt kê giấy tờ cần có và các bước trên App DSC Trading."
+  },
+  {
+   "src": "top-co-phieu-cang-bien-nen-dau-tu",
+   "op": "replace",
+   "find": "DSC ngay để truy cập Wetrade",
+   "old_text": "<a target=\"_blank\" href=\"https://www.dsc.com.vn/mo-tai-khoan\"><strong>Mở tài khoản chứng khoán</strong></a>",
+   "sentence": "[<strong>Mở tài khoản</strong>]",
+   "to": "https://www.dsc.com.vn/mo-tai-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Đổi chữ CTA: giữ link về /mo-tai-khoan, bỏ anchor đúng nguyên cụm"
+  },
+  {
+   "src": "top-co-phieu-cang-bien-nen-dau-tu",
+   "op": "append",
+   "find": "DSC ngay để truy cập Wetrade",
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Link ngữ cảnh về bài chính",
+   "sentence": "Việc xác thực dùng CCCD gắn chip, các bước còn lại có trong bài [cách mở tài khoản chứng khoán online]."
+  },
+  {
+   "src": "co-phieu-vinfast-mua-o-dau",
+   "op": "replace",
+   "find": "Chuẩn bị kiến thức và kinh nghiệm đầu tư",
+   "old_text": "<a target=\"_blank\" href=\"https://www.dsc.com.vn/mo-tai-khoan\"><strong>mở tài khoản chứng khoán</strong></a><strong> </strong>tại DSC",
+   "sentence": "[<strong>mở tài khoản</strong>] tại DSC",
+   "to": "https://www.dsc.com.vn/mo-tai-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Đổi chữ CTA: giữ link về /mo-tai-khoan, bỏ anchor đúng nguyên cụm"
+  },
+  {
+   "src": "co-phieu-vinfast-mua-o-dau",
+   "op": "replace",
+   "find": "Chuẩn bị kiến thức và kinh nghiệm đầu tư",
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Link ngữ cảnh về bài chính",
+   "sentence": "trước khi tham gia các sàn quốc tế. Người chưa có tài khoản có thể xem [cách mở tài khoản chứng khoán] trong nước trước.</li>",
+   "old_text": "trước khi tham gia các sàn quốc tế.</li>"
+  },
+  {
+   "src": "canh-tranh-doc-quyen-la-gi",
+   "op": "replace",
+   "find": "online qua định danh eKYC tại DSC chỉ trong 3 phút",
+   "old_text": "<a target=\"_blank\" href=\"https://www.dsc.com.vn/mo-tai-khoan\"><strong>mở tài khoản chứng khoán</strong></a>",
+   "sentence": "[<strong>mở tài khoản</strong>]",
+   "to": "https://www.dsc.com.vn/mo-tai-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Đổi chữ CTA: giữ link về /mo-tai-khoan, bỏ anchor đúng nguyên cụm"
+  },
+  {
+   "src": "canh-tranh-doc-quyen-la-gi",
+   "op": "append",
+   "find": "online qua định danh eKYC tại DSC chỉ trong 3 phút",
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Link ngữ cảnh về bài chính",
+   "sentence": "Nếu làm lần đầu, bạn nên đọc trước cách [đăng ký tài khoản chứng khoán] để tránh lỗi khi xác thực khuôn mặt."
+  },
+  {
+   "src": "thi-truong-so-cap-va-thu-cap-la-gi",
+   "op": "replace",
+   "find": "tại DSC ngay hôm nay để tham gia thị trường và nhận tư vấn",
+   "old_text": "<a target=\"_blank\" href=\"https://www.dsc.com.vn/mo-tai-khoan\"><strong>Mở tài khoản chứng khoán</strong></a>",
+   "sentence": "[<strong>Mở tài khoản</strong>]",
+   "to": "https://www.dsc.com.vn/mo-tai-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Đổi chữ CTA: giữ link về /mo-tai-khoan, bỏ anchor đúng nguyên cụm"
+  },
+  {
+   "src": "thi-truong-so-cap-va-thu-cap-la-gi",
+   "op": "append",
+   "find": "tại DSC ngay hôm nay để tham gia thị trường và nhận tư vấn",
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Link ngữ cảnh về bài chính",
+   "sentence": "Hồ sơ và từng bước thực hiện có trong bài [mở tài khoản chứng khoán] cho người mới."
+  },
+  {
+   "src": "co-phieu-nganh-y-te",
+   "op": "replace",
+   "find": "điểm giải ngân cho các mã y tế",
+   "old_text": "<a target=\"_blank\" href=\"https://www.dsc.com.vn/mo-tai-khoan\"><strong>mở tài khoản chứng khoán</strong></a>",
+   "sentence": "[<strong>mở tài khoản</strong>]",
+   "to": "https://www.dsc.com.vn/mo-tai-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Đổi chữ CTA: giữ link về /mo-tai-khoan, bỏ anchor đúng nguyên cụm"
+  },
+  {
+   "src": "co-phieu-nganh-y-te",
+   "op": "append",
+   "find": "điểm giải ngân cho các mã y tế",
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Link ngữ cảnh về bài chính",
+   "sentence": "Chưa có tài khoản? Xem [hướng dẫn mở tài khoản chứng khoán online] trước khi đặt lệnh mã y tế đầu tiên."
+  },
+  {
+   "src": "san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong",
+   "op": "replace",
+   "find": "hotline (+84) 24 3880 3456",
+   "old_text": "<a target=\"_blank\" href=\"https://www.dsc.com.vn/mo-tai-khoan\"><strong>Mở tài khoản chứng khoán</strong></a>",
+   "sentence": "[<strong>Mở tài khoản</strong>]",
+   "to": "https://www.dsc.com.vn/mo-tai-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Đổi chữ CTA: giữ link về /mo-tai-khoan, bỏ anchor đúng nguyên cụm"
+  },
+  {
+   "src": "san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong",
+   "op": "append",
+   "find": "hotline (+84) 24 3880 3456",
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Link ngữ cảnh về bài chính",
+   "sentence": "Tài khoản này dùng để giao dịch cổ phiếu trong nước, các bước thực hiện có trong bài [cách mở tài khoản chứng khoán]."
+  },
+  {
+   "src": "quy-luat-gia-tri-la-gi-giai-thich-chi-tiet-va-day-du",
+   "op": "replace",
+   "find": "eKYC online trong 3 phút để kết nối ngay",
+   "old_text": "<a target=\"_blank\" href=\"https://www.dsc.com.vn/mo-tai-khoan\">mở tài khoản chứng khoán</a>",
+   "sentence": "[mở tài khoản]",
+   "to": "https://www.dsc.com.vn/mo-tai-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Đổi chữ CTA: giữ link về /mo-tai-khoan, bỏ anchor đúng nguyên cụm"
+  },
+  {
+   "src": "quy-luat-gia-tri-la-gi-giai-thich-chi-tiet-va-day-du",
+   "op": "append",
+   "find": "eKYC online trong 3 phút để kết nối ngay",
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Link ngữ cảnh về bài chính",
+   "sentence": "Nếu muốn xem trước từng màn hình, hãy đọc [cách mở tài khoản chứng khoán online]."
+  },
+  {
+   "src": "grdp-la-gi-chi-so-quan-trong-danh-gia-su-phat-trien-kinh-te-dia-phuong",
+   "op": "replace",
+   "find": "Hãy biến kiến thức thành lợi nhuận",
+   "old_text": "<a target=\"_blank\" href=\"https://www.dsc.com.vn/mo-tai-khoan\"><strong>Mở tài khoản chứng khoán</strong></a>",
+   "sentence": "[<strong>Mở tài khoản</strong>]",
+   "to": "https://www.dsc.com.vn/mo-tai-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Đổi chữ CTA: giữ link về /mo-tai-khoan, bỏ anchor đúng nguyên cụm"
+  },
+  {
+   "src": "grdp-la-gi-chi-so-quan-trong-danh-gia-su-phat-trien-kinh-te-dia-phuong",
+   "op": "append",
+   "find": "Hãy biến kiến thức thành lợi nhuận",
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Link ngữ cảnh về bài chính",
+   "sentence": "Bạn có thể xem các bước [tạo tài khoản chứng khoán] trước khi bắt đầu."
+  },
+  {
+   "src": "top-chung-chi-quy-o-viet-nam-uy-tin-hang-dau-hien-nay",
+   "op": "replace",
+   "find": "Hãy biến lựa chọn của bạn thành hành động",
+   "old_text": "<a target=\"_blank\" href=\"https://www.dsc.com.vn/mo-tai-khoan\"><strong>Mở tài khoản chứng khoán</strong></a>",
+   "sentence": "[<strong>Mở tài khoản</strong>]",
+   "to": "https://www.dsc.com.vn/mo-tai-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Đổi chữ CTA: giữ link về /mo-tai-khoan, bỏ anchor đúng nguyên cụm"
+  },
+  {
+   "src": "top-chung-chi-quy-o-viet-nam-uy-tin-hang-dau-hien-nay",
+   "op": "append",
+   "find": "Hãy biến lựa chọn của bạn thành hành động",
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Link ngữ cảnh về bài chính",
+   "sentence": "Nếu muốn mua thêm cổ phiếu ngoài chứng chỉ quỹ, bạn xem [cách mở tài khoản chứng khoán] trên App DSC Trading."
+  },
+  {
+   "src": "co-phieu-nganh-than",
+   "op": "replace",
+   "find": "chinh phục lợi nhuận từ",
+   "old_text": "<a target=\"_blank\" href=\"https://www.dsc.com.vn/mo-tai-khoan\"><strong>mở tài khoản chứng khoán</strong></a>",
+   "sentence": "[<strong>mở tài khoản</strong>]",
+   "to": "https://www.dsc.com.vn/mo-tai-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Đổi chữ CTA: giữ link về /mo-tai-khoan, bỏ anchor đúng nguyên cụm"
+  },
+  {
+   "src": "co-phieu-nganh-than",
+   "op": "newp",
+   "find": "chinh phục lợi nhuận từ",
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Link ngữ cảnh về bài chính",
+   "sentence": "Thủ tục mở online được hướng dẫn trong bài [cách mở tài khoản chứng khoán]."
+  },
+  {
+   "src": "co-phieu-nganh-nong-nghiep",
+   "op": "replace",
+   "find": "tư vấn danh mục đầu tư tối ưu nhất cho riêng bạn",
+   "old_text": "<a target=\"_blank\" href=\"https://www.dsc.com.vn/mo-tai-khoan\"><strong>Mở tài khoản chứng khoán</strong></a>",
+   "sentence": "[<strong>Mở tài khoản</strong>]",
+   "to": "https://www.dsc.com.vn/mo-tai-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Đổi chữ CTA: giữ link về /mo-tai-khoan, bỏ anchor đúng nguyên cụm"
+  },
+  {
+   "src": "co-phieu-nganh-nong-nghiep",
+   "op": "append",
+   "find": "tư vấn danh mục đầu tư tối ưu nhất cho riêng bạn",
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Link ngữ cảnh về bài chính",
+   "sentence": "Lần đầu mở tài khoản, bạn tham khảo [hướng dẫn mở tài khoản chứng khoán online] để chuẩn bị đủ giấy tờ."
+  },
+  {
+   "src": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "op": "replace",
+   "find": "tư vấn lựa chọn cổ phiếu bất động sản",
+   "old_text": "<a target=\"_blank\" href=\"https://www.dsc.com.vn/mo-tai-khoan\"><strong>Mở tài khoản chứng khoán</strong></a>",
+   "sentence": "[<strong>Mở tài khoản</strong>]",
+   "to": "https://www.dsc.com.vn/mo-tai-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Đổi chữ CTA: giữ link về /mo-tai-khoan, bỏ anchor đúng nguyên cụm"
+  },
+  {
+   "src": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "op": "newp",
+   "find": "tư vấn lựa chọn cổ phiếu bất động sản",
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Link ngữ cảnh về bài chính",
+   "sentence": "Quy trình [mở tài khoản chứng khoán] online được DSC hướng dẫn theo từng bước."
+  },
+  {
+   "src": "app-dau-tu-vang",
+   "op": "replace",
+   "find": "Bên cạnh vàng, chứng khoán cũng là kênh",
+   "old_text": "<a target=\"_blank\" href=\"https://www.dsc.com.vn/mo-tai-khoan\"><strong>Mở tài khoản chứng khoán</strong></a>",
+   "sentence": "[<strong>Mở tài khoản</strong>]",
+   "to": "https://www.dsc.com.vn/mo-tai-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Đổi chữ CTA: giữ link về /mo-tai-khoan, bỏ anchor đúng nguyên cụm"
+  },
+  {
+   "src": "app-dau-tu-vang",
+   "op": "replace",
+   "find": "Bên cạnh vàng, chứng khoán cũng là kênh",
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Link ngữ cảnh về bài chính",
+   "sentence": "tối ưu lợi nhuận. Bạn có thể xem [cách mở tài khoản chứng khoán online] trước khi đăng ký.</p>",
+   "old_text": "tối ưu lợi nhuận</p>"
+  },
+  {
+   "src": "nen-dau-tu-quy-etf-nao",
+   "op": "replace",
+   "find": "giao dịch mua quỹ ETF đầu tiên của bạn",
+   "old_text": "<a target=\"_blank\" href=\"https://www.dsc.com.vn/mo-tai-khoan\"><strong>Mở tài khoản chứng khoán</strong></a>",
+   "sentence": "[<strong>Mở tài khoản</strong>]",
+   "to": "https://www.dsc.com.vn/mo-tai-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Đổi chữ CTA: giữ link về /mo-tai-khoan, bỏ anchor đúng nguyên cụm"
+  },
+  {
+   "src": "nen-dau-tu-quy-etf-nao",
+   "op": "replace",
+   "find": "giao dịch mua quỹ ETF đầu tiên của bạn",
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Link ngữ cảnh về bài chính",
+   "sentence": "trong năm 2026. Bài [hướng dẫn mở tài khoản chứng khoán] có đủ các bước nếu bạn chưa có tài khoản.</p>",
+   "old_text": "trong năm 2026</p>"
+  },
+  {
+   "src": "chi-bao-stochastic-rsi-la-gi",
+   "op": "replace",
+   "find": "Sẵn sàng áp dụng Stochastic RSI vào thực chiến",
+   "old_text": "<a target=\"_blank\" href=\"https://www.dsc.com.vn/mo-tai-khoan\"><strong>Mở tài khoản chứng khoán</strong></a>",
+   "sentence": "[<strong>Mở tài khoản</strong>]",
+   "to": "https://www.dsc.com.vn/mo-tai-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Đổi chữ CTA: giữ link về /mo-tai-khoan, bỏ anchor đúng nguyên cụm"
+  },
+  {
+   "src": "chi-bao-stochastic-rsi-la-gi",
+   "op": "append",
+   "find": "Sẵn sàng áp dụng Stochastic RSI vào thực chiến",
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Link ngữ cảnh về bài chính",
+   "sentence": "Nếu chưa biết bắt đầu từ đâu, xem [cách mở tài khoản chứng khoán] trên App DSC Trading."
+  },
+  {
+   "src": "co-5-trieu-nen-dau-tu-gi",
+   "op": "wrap",
+   "find": "Với công nghệ eKYC hiện nay",
+   "anchor": "mở tài khoản chứng khoán online",
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Cụm có sẵn, chưa gắn link"
+  },
+  {
+   "src": "chi-so-vn-index-va-y-nghia-quan-trong-trong-thi-truong-chung-khoan-viet-nam",
+   "op": "href",
+   "old": "https://www.dsc.com.vn/dich-vu/mo-tai-khoan",
+   "to": "https://www.dsc.com.vn/mo-tai-khoan",
+   "group": "fix",
+   "pri": "P2",
+   "why": "URL đích cũ/sai (redirect, trang ngoài, link rác google.com/goto)"
+  },
+  {
+   "src": "co-15-trieu-nen-dau-tu-gi",
+   "op": "href",
+   "old": "https://www.dsc.com.vn/dich-vu/mo-tai-khoan",
+   "to": "https://www.dsc.com.vn/mo-tai-khoan",
+   "group": "fix",
+   "pri": "P2",
+   "why": "URL đích cũ/sai (redirect, trang ngoài, link rác google.com/goto)"
+  },
+  {
+   "src": "phan-ky-an-rsi-la-gi",
+   "op": "href",
+   "old": "https://www.dsc.com.vn/mo-tai-khoan-chung-khoan-online",
+   "to": "https://www.dsc.com.vn/mo-tai-khoan",
+   "group": "fix",
+   "pri": "P2",
+   "why": "URL đích cũ/sai (redirect, trang ngoài, link rác google.com/goto)"
+  },
+  {
+   "src": "cach-mua-co-phieu-tren-san-upcom",
+   "op": "href",
+   "old": "https://www.dsc.com.vn/huong-dan/mo-tai-khoan-chung-khoan",
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "group": "fix",
+   "pri": "P2",
+   "why": "URL đích cũ/sai (redirect, trang ngoài, link rác google.com/goto)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-lpb-hay-khong",
+   "op": "href",
+   "old": "https://trading.dsc.com.vn/dsctrade/account-register?utm_source=wepro&amp;utm_medium=header&amp;utm_campaign=button_mtk",
+   "to": "https://www.dsc.com.vn/mo-tai-khoan",
+   "group": "fix",
+   "pri": "P2",
+   "why": "URL đích cũ/sai (redirect, trang ngoài, link rác google.com/goto)"
+  },
+  {
+   "src": "3-cach-chon-co-phieu-tot-va-co-tiem-nang-tang-gia-de-dau-tu",
+   "op": "href",
+   "old": "https://www.google.com/goto?url=CAESWwHrOzAVpBgCfQEYUcUMYEqKfCHI43yCCljL-hBvokA4uE4IuaGuKAcRCuxtDf6pyv3vOfNZjB-KB8azX-tDPat8wTpwAIQVWXQdzndD897Kq6EtjXMpmEJn86s",
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "group": "fix",
+   "pri": "P2",
+   "why": "URL đích cũ/sai (redirect, trang ngoài, link rác google.com/goto)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-acb-hay-khong",
+   "op": "href",
+   "old": "https://www.dsc.com.vn/huong-dan/mo-tai-khoan-chung-khoan-ekyc",
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "group": "fix",
+   "pri": "P2",
+   "why": "Link 'Hướng dẫn mở tài khoản' trỏ trang hướng dẫn eKYC web (không còn dùng) → về bài chính"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-ssi-hay-khong",
+   "op": "href",
+   "old": "https://www.dsc.com.vn/huong-dan/mo-tai-khoan-chung-khoan-ekyc",
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "group": "fix",
+   "pri": "P2",
+   "why": "Link 'Hướng dẫn mở tài khoản' trỏ trang hướng dẫn eKYC web (không còn dùng) → về bài chính"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-lpb-hay-khong",
+   "op": "href",
+   "old": "https://www.dsc.com.vn/huong-dan/mo-tai-khoan-chung-khoan-ekyc",
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "group": "fix",
+   "pri": "P2",
+   "why": "Link 'Hướng dẫn mở tài khoản' trỏ trang hướng dẫn eKYC web (không còn dùng) → về bài chính"
+  }
+ ]
+}

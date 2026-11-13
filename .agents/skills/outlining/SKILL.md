@@ -5,46 +5,38 @@ description: Nghiên cứu SERP và tạo Expert Outline (Phase 1 & 2 của writ
 
 # Nghiên cứu SERP & Tạo Expert Outline
 
-Dùng khi bạn chỉ muốn thực hiện bước Research + Outline mà chưa cần viết bài ngay.
-Tương đương với `Phase 1` và `Phase 2` của lệnh `/write`.
+Dùng khi chỉ muốn làm Research + Outline, chưa viết bài. Tương đương Giai đoạn 1 của `/write`.
+**Quy tắc chi tiết nằm ở `.antigravity/skills/seo-outlining/SKILL.md`** — file này chỉ là thứ tự các bước.
 
-## Quy trình thực thi
+## Quy trình
 
-### 🔄 Bước 0: Context Load (BẮT BUỘC)
-1. `knowledge/1-brand/profile.md`
-2. `knowledge/1-brand/personas.md`
-3. `knowledge/3-pipeline/anti-ai-rules.md`
-4. `knowledge/3-pipeline/glossary.md`
-5. `knowledge/4-content/topic-clusters.md`
-6. `.antigravity/memory/instincts.md`
+### Bước 0: Context Load (1 lần / session)
+`knowledge/1-brand/profile.md` · `knowledge/3-pipeline/anti-ai-rules.md` · `knowledge/3-pipeline/glossary.md` · `.antigravity/memory/instincts.md` (+ `instincts-by-scope/<topic>.md` nếu bài thuộc topic đó).
+- Trạng thái bài: `python scripts/topic_status.py <slug>`. Không đọc `topic-clusters.md`.
+- Persona: `python scripts/persona.py P<n>` sau Bước 2 (không mở `personas.md`).
 
 ### Bước 0.5: Cannibalization Gate (trước khi gọi SERP có phí)
-- Agent có MCP `SEO Dashboard`: gọi `query_search_analytics` (`property_url: "sc-domain:dsc.com.vn"`, `dimensions: ["page"]`, `query_value: "[keyword]"`, `days: 90`, `limit: 10`). Playbook: `.antigravity/skills/seo-dashboard/SKILL.md`.
-- Không có MCP: `python scripts/find_links.py "[keyword]" --top 5` để xem bài DSC cùng chủ đề.
-- Một URL DSC đã nhận phần lớn impressions của keyword (đứng top 10) và cùng intent → **DỪNG**, đề xuất `/optimize [slug-đó]` thay vì viết bài mới, chờ user quyết. Khác intent → ghi rõ ranh giới intent vào outline và link chéo 2 chiều.
+- Có MCP `SEO Dashboard`: `query_search_analytics` (`property_url: "sc-domain:dsc.com.vn"`, `dimensions: ["page"]`, `query_value: "[keyword]"`, `days: 90`, `limit: 10`).
+- Không có MCP: `python scripts/find_links.py "[keyword]" --top 5`.
+- Đã có URL DSC cùng intent đang ở top 10 → **DỪNG**, đề xuất `/optimize [slug]`. Khác intent → ghi ranh giới vào mục Gap Synthesis + link chéo 2 chiều.
 
-### Bước 1: SEO Collector — SERP Research + Gap Synthesis + Internal Link Planning
-- Kích hoạt agent `.antigravity/agents/seo-collector.md`.
-- Kích hoạt skill `.antigravity/skills/seo-outlining/SKILL.md` → Step 1: Plan.
-- Dùng skill `.antigravity/skills/web-serp/SKILL.md` — SERP Lookup + Content Extraction song song qua Jina AI. KHÔNG dùng browser.
-- Thu thập: H-tag structure, số liệu cụ thể, content gaps, UX elements.
-- **Chạy Competitor Gap Synthesis** (theo format trong `web-serp/SKILL.md`) sau khi extract xong tất cả competitors.
-- **Internal Link Planning**: `python scripts/find_links.py "[keyword]" --top 6` (không đọc `anchor-index.md`), chọn 2–3 URL có Sitemap ✓, ghi vào `Internal_Links:` trong outline YAML. Bài thuộc cụm trong `knowledge/3-pipeline/internal-links/link-clusters.json` → bắt buộc kèm link pillar (+ hub của group) và thêm slug vào `spokes` của group đó.
+### Bước 1: SEO Collector — SERP, khung bài, dữ liệu, link
+Agent `.antigravity/agents/seo-collector.md` chạy Step 1–3 của `seo-outlining/SKILL.md`:
+1. `serp_research.py` → **chốt khung bài theo block `SERP Format & Intent`** (toplist / how-to / định nghĩa / so sánh…).
+2. SERP degraded → báo user trước khi đi tiếp.
+3. Dữ liệu: `market_facts.py --brief`, `news_feed.py`. Ưu tiên số năm hiện tại.
+4. Internal links: `find_links.py`, 3–6 link `/kien-thuc/`.
 
-> **30-second Rule:** Nếu trong lúc research gặp data/insight hay mà không dùng ngay vào bài này → save 1 dòng vào `knowledge/raw/intel/dump.md` (ngày + nguồn + mô tả ngắn) trong 30 giây. Categorize thành file riêng sau.
+> **30-second Rule:** data/insight hay nhưng không dùng cho bài này → ghi 1 dòng vào `knowledge/raw/intel/dump.md` (ngày + nguồn + mô tả).
 
-### Bước 2: Brand Guardian — Brand Context + Writer Profile
-- Kích hoạt agent `.antigravity/agents/brand-guardian.md`.
-- Output: `Brand Context Snippet` gồm Persona, **Writer Profile** (educational/analytical/comparison) + 3 tone characteristics, mandatory USPs, Anti-AI checklist cho bài này.
+### Bước 2: Brand Guardian — Brand Context
+Agent `.antigravity/agents/brand-guardian.md` → Writer Profile + 3 đặc điểm tone, USP, lỗi cũ, xung đột instinct ↔ phản hồi user. Ghi vào **mục 4 Brand Context** của outline (không để chỉ trong chat).
 
-### Bước 3: Expert Outline Generation
-- Tích hợp Brand Context Snippet (bao gồm Writer Profile) vào output của SERP Research.
-- Tạo Outline theo template `.antigravity/skills/seo-outlining/references/brief-template.md`.
-- Đảm bảo outline YAML có đầy đủ: `Writer_Profile:`, `Internal_Links:`, `Featured_Snippet:`, `PAA_Questions:` (mỗi câu có `placement: body|faq`), `Related_Searches:` (`same_intent` / `spin_off`).
-- Lưu tại: `knowledge/4-content/1-outlines/[slug].md`.
-- Cập nhật `topic-clusters.md` → trạng thái `Outlining`.
+### Bước 3: Dựng outline + Gate
+- Theo `.antigravity/skills/seo-outlining/references/brief-template.md`, lưu tại `knowledge/4-content/1-outlines/[slug].md`.
+- `python scripts/outline_lint.py knowledge/4-content/1-outlines/[slug].md` → FAIL thì sửa, tối đa 2 vòng.
+- `python scripts/topic_status.py [slug] --set Outlining`.
 
-### 🚧 APPROVAL GATE:
-> Trình bày Outline + SERP summary cho người dùng.
-> **DỪNG LẠI. Chờ `/approve` trước khi tiếp tục sang drafting.**
-> Khi approve: cập nhật `topic-clusters.md` → `Outline-Approved`.
+### 🚧 APPROVAL GATE
+> Trình bày: khung bài đã chọn + bảng SERP Format, Thesis, cây H2/H3, kết quả lint.
+> **DỪNG. Chờ `/approve`.** Khi approve: `python scripts/topic_status.py [slug] --set Outline-Approved`.

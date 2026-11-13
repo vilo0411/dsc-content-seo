@@ -11,3 +11,5 @@ Format mỗi entry:
 ---
 
 <!-- Thêm entries mới vào đây -->
+
+- 2026-11-09 · SERP related "app mua chứng chỉ quỹ" · spin-off chưa có bài: "chứng chỉ quỹ Techcombank", "bảng giá chứng chỉ quỹ", "rủi ro chứng chỉ quỹ"

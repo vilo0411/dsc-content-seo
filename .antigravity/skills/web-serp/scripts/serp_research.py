@@ -117,7 +117,14 @@ def load_cache(keyword):
     if age_days > CACHE_DAYS:
         return None
     with open(path, encoding="utf-8-sig") as fh:  # tolerate BOM from hand-edited files
-        return json.load(fh)
+        data = json.load(fh)
+    # Caches written before the Google /goto fix (2026-11-09) have no `serp_features` and lost
+    # their organic list (every result looked like google.com). Treat them as expired → refetch.
+    if "serp_features" not in data and not data.get("serp_source") and len(data.get("organic") or []) < 5:
+        print("Cache %s hỏng (lỗi link google /goto 11/2026, %d organic) → gọi lại API."
+              % (os.path.basename(path), len(data.get("organic") or [])), file=sys.stderr)
+        return None
+    return data
 
 
 def save_cache(keyword, data):
@@ -167,24 +174,104 @@ def fetch_serp(cfg, keyword, timeout, paa_depth=0):
     return payload
 
 
+# ---------------------------------------------------------------- Google /goto unwrapping
+# Since ~2026-11 DataForSEO returns organic URLs as opaque Google redirects
+# (https://google.com/goto?url=CAES...) with domain "google.com". The real host only survives in
+# `breadcrumb` ("https://acbs.com.vn › Kiến thức"). We follow the redirect (no API cost); Google
+# throttles after a few hops with a <meta refresh="N;url=..."> page — we honour the wait once,
+# then fall back to the breadcrumb host (URL unknown -> competitor extraction skipped).
+GOTO_BUDGET_S = 90      # total seconds allowed for unwrapping one SERP
+GOTO_MAX_WAIT = 20      # longest meta-refresh wait we accept
+SOCIAL_HINTS = ("facebook", "tiktok", "youtube", "instagram", "threads", "zalo", "reddit")
+
+
+class _NoRedirect(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, *a, **k):
+        return None
+
+
+_GOTO_OPENER = urllib.request.build_opener(_NoRedirect)
+
+
+def _is_google_wrapper(url):
+    p = urllib.parse.urlparse(url or "")
+    return "google." in p.netloc and p.path.startswith(("/goto", "/url"))
+
+
+def _breadcrumb_host(item):
+    m = re.match(r"\s*(https?://[^\s›]+)", item.get("breadcrumb") or "")
+    return urllib.parse.urlparse(m.group(1)).netloc.lower() if m else ""
+
+
+def resolve_google_url(url, deadline):
+    """Follow Google /goto redirects to the publisher URL. Returns the URL or None."""
+    for _ in range(5):
+        if time.time() > deadline:
+            return None
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        try:
+            with _GOTO_OPENER.open(req, timeout=15) as r:
+                body = r.read(6000).decode("utf-8", "replace")
+            m = re.search(r'content="(\d+);\s*url=([^"]+)"', body)
+            if not m:
+                m2 = re.search(r'href="(https?://(?![^"]*google\.)[^"]+)"', body)
+                return m2.group(1) if m2 else None
+            wait = int(m.group(1))
+            if wait > GOTO_MAX_WAIT or time.time() + wait > deadline:
+                return None
+            time.sleep(wait)  # throttle interstitial: wait as asked, then follow
+            url = urllib.parse.urljoin(url, m.group(2).replace("&amp;", "&"))
+        except urllib.error.HTTPError as e:
+            loc = e.headers.get("Location")
+            if not loc:
+                return None
+            loc = urllib.parse.urljoin(url, loc)
+            if "google." not in urllib.parse.urlparse(loc).netloc:
+                return loc
+            url = loc
+        except Exception:
+            return None
+    return None
+
+
+def unwrap_organic(item, deadline):
+    """Return (url, host, resolved_flag) for an organic item, unwrapping Google redirects."""
+    link = item.get("url") or ""
+    if not _is_google_wrapper(link):
+        return link, urllib.parse.urlparse(link).netloc.lower(), True
+    real = resolve_google_url(link, deadline)
+    if real:
+        return real, urllib.parse.urlparse(real).netloc.lower(), True
+    host = _breadcrumb_host(item)
+    if not host and any(h in (item.get("website_name") or "").lower() for h in SOCIAL_HINTS):
+        host = "facebook.com" if "facebook" in (item.get("website_name") or "").lower() else "social"
+    return ("https://%s/" % host if host else ""), host, False
+
+
 def parse_serp(payload, top):
     task = payload["tasks"][0]
     result = (task.get("result") or [{}])[0]
-    organic, paa, related, snippet = [], [], [], None
+    organic, paa, related, snippet, ai_overview = [], [], [], None, None
+    features = []  # non-organic SERP blocks (ai_overview, video, local_pack...) -> intent signal
+    deadline = time.time() + GOTO_BUDGET_S
     for item in result.get("items") or []:
         t = item.get("type")
+        if t and t != "organic" and t not in features:
+            features.append(t)
         if t == "organic":
-            link = item.get("url") or ""
-            host = urllib.parse.urlparse(link).netloc.lower()
-            if not link.startswith("http") or any(b in host for b in BLOCKLIST):
+            link, host, resolved = unwrap_organic(item, deadline)
+            if not link.startswith("http") or host == "social" or any(b in host for b in BLOCKLIST):
                 continue
-            organic.append({
+            row = {
                 "rank": item.get("rank_group") or len(organic) + 1,
                 "title": (item.get("title") or "").strip(),
                 "url": link,
                 "domain": host,
                 "description": (item.get("description") or "").strip(),
-            })
+            }
+            if not resolved:
+                row["url_unresolved"] = True  # only the host is known (from breadcrumb)
+            organic.append(row)
         elif t == "people_also_ask":
             for q in item.get("items") or []:
                 if not q.get("title"):
@@ -200,6 +287,8 @@ def parse_serp(payload, top):
                 })
         elif t == "related_searches":
             related += [k for k in item.get("items") or [] if isinstance(k, str)]
+        elif t == "ai_overview" and ai_overview is None:
+            ai_overview = _parse_ai_overview(item)
         elif t == "featured_snippet" and snippet is None:
             snippet = {
                 "domain": item.get("domain"),
@@ -212,9 +301,41 @@ def parse_serp(payload, top):
         "people_also_ask": paa,
         "related_searches": related,
         "featured_snippet": snippet,
+        "ai_overview": ai_overview,
+        "serp_features": features,
         "se_results_count": result.get("se_results_count"),
         "cost": task.get("cost") or 0,
     }
+
+
+def _parse_ai_overview(item):
+    """Text + cited sources of the AI Overview block, when the API returns them.
+    Reads whichever of markdown/text/description and references exist; nothing is assumed."""
+    texts, refs = [], []
+
+    def walk(node):
+        if not isinstance(node, dict):
+            return
+        for key in ("markdown", "text", "description"):
+            v = node.get(key)
+            if isinstance(v, str) and v.strip():
+                texts.append(v.strip())
+                break
+        for r in node.get("references") or []:
+            if isinstance(r, dict) and (r.get("url") or r.get("domain")):
+                refs.append({"domain": (r.get("domain") or "").lower(), "url": r.get("url") or "",
+                             "title": (r.get("title") or "").strip()})
+        for child in node.get("items") or []:
+            walk(child)
+
+    walk(item)
+    seen, uniq = set(), []
+    for r in refs:
+        k = r["url"] or r["domain"]
+        if k not in seen:
+            seen.add(k)
+            uniq.append(r)
+    return {"text": "\n".join(dict.fromkeys(texts))[:1500], "references": uniq[:10]}
 
 
 def normalize_paa(paa):
@@ -345,7 +466,7 @@ def _is_nav_line(line):
     return bool(s) and (LINK_ONLY.match(s) is not None or len(s.split()) <= 3)
 
 
-def trim_main_content(md):
+def trim_main_content(md, cap=True):
     """Keep the article body only:
     - drop Jina preamble (Title:/URL Source:/Markdown Content:)
     - start at the first H1 if present
@@ -401,7 +522,7 @@ def trim_main_content(md):
         body.pop()
     text = re.sub(r"\n{3,}", "\n\n", "\n".join(body)).strip()
     words = text.split(" ")
-    return " ".join(words[:MAX_WORDS])
+    return " ".join(words[:MAX_WORDS]) if cap else text
 
 
 MD_LINK = re.compile(r"\[([^\]]+)\]\((https?://[^)\s]+)")
@@ -552,19 +673,484 @@ def extract_competitors(cfg, urls):
         if not md:
             return {"url": url, "error": "Không extract được"}
         data = extract(url, trim_main_content(md))
+        # word_count is measured on the capped text; keep the real length for the median
+        data["word_count_full"] = len(_clean_text(trim_main_content(md, cap=False)).split())
         data["source"] = source
         return data
     with ThreadPoolExecutor(max_workers=5) as pool:
         return list(pool.map(work, urls))
 
 
+# ---------------------------------------------------------------- topic coverage (cross-competitor)
+
+MIN_COMPETITOR_WORDS = 300
+JUNK_PAGE = re.compile(r"(?i)performing security verification|just a moment|access denied|"
+                       r"verify you are human|attention required|enable javascript")
+SOCIAL_SOURCES = ("facebook.", "youtube.", "tiktok.", "zalo.", "twitter.", "x.com", "instagram.",
+                  "linkedin.", "t.me", "apple.com", "google.com", "play.google")
+# Function words: a term may not start or end with one (keeps "chứng chỉ quỹ", drops "quỹ là").
+TERM_STOP = set("""và là của có các những cho với trong khi để thì mà này đó được bị sẽ đã đang cũng như hay
+hoặc nếu vì do nên tại từ về theo trên dưới ra vào lên xuống một hai ba không rất hơn nhất bạn người nào gì
+sao thế vậy còn lại đến tới qua sau trước giữa ngoài cần phải muốn ở đây kia ấy nhiều ít mỗi mọi cả việc
+giúp càng rằng nhưng tuy bởi nhằm chưa đều thường luôn chính thêm khác ai đâu bao lúc nhé nha à ơi ta họ
+tôi chúng mình nó the of and to in for a is on""".split())
+TERM_BOILERPLATE = ("bài viết", "xem thêm", "liên hệ", "đăng ký", "chia sẻ", "bình luận", "mục lục",
+                    "trang chủ", "tin tức", "tải app", "tải ứng dụng", "hotline", "tham khảo", "tìm hiểu",
+                    "lưu ý", "ví dụ", "hiện nay", "sau đây", "dưới đây", "tổng hợp", "thông tin")
+# Everyday words that are frequent on a topic's SERP without being a concept of it. The background
+# file cannot separate these from real finance terms ("cổ tức" is as common as "trường hợp"), so they are listed.
+TERM_COMMON = set("""số lượng|chấp nhận|phân biệt|trường hợp|câu hỏi|yêu cầu|tối đa|tối thiểu|bổ sung|thuật ngữ|hoàn toàn
+chuyên gia|nguyên nhân|năng lực|tập trung|chủ động|hiểu rõ|gia tăng|tương ứng|kết hợp|thiết lập|tự động|điều kiện
+quan tâm|rõ ràng|nguy cơ|thời gian|mục tiêu|tham gia|cá nhân|hiệu quả|quyết định|lựa chọn|phù hợp|quan trọng|cơ bản
+phổ biến|đặc điểm|ưu điểm|nhược điểm|lợi ích|hạn chế|kinh nghiệm|khái niệm|định nghĩa|ý nghĩa|vai trò|mức độ|khả năng
+xác định|thực hiện|sử dụng|áp dụng|đảm bảo|cung cấp|hỗ trợ|bao gồm|liên quan|tương tự|đơn giản|chi tiết|cụ thể
+hình thức|phương pháp|quy trình|điểm khác biệt|cao hơn|thấp hơn|so với|tổng giá trị|số vốn|huy động|điều hành
+đầu tiên|cân nhắc|đáp ứng|nắm giữ|trạng thái|triệu đồng|tiền mặt|hình thức đầu tư|đầu tư hiệu quả|chuyên gia đầu tư""".replace("\n", "|").split("|"))
+MUST_DF = 3    # a term used by >= 3 competitors is expected by the SERP
+MUST_MAX = 15  # strongest terms only: the list gates the outline and the draft, noise there costs rewrites
+_TERM_SPLIT = re.compile(r"[.!?:;,()\[\]|/\"“”–—\n]+")
+_TERM_WORD = re.compile(r"[^\W\d_]+")
+
+
+def usable_competitors(competitors):
+    """Extracted pages worth comparing against: no errors, no bot-check pages, no stubs, not our own site."""
+    out = []
+    for c in competitors or []:
+        if c.get("error") or OWN_DOMAIN in (c.get("domain") or ""):
+            continue
+        if (c.get("word_count") or 0) < MIN_COMPETITOR_WORDS:
+            continue
+        if any(JUNK_PAGE.search(h[1]) for h in c.get("headings") or []):
+            continue
+        out.append(c)
+    return out
+
+
+def _term_counts(text):
+    """{n-gram: tf} for 2-4 word lowercase n-grams inside one sentence, function words trimmed."""
+    counts = {}
+    for sent in _TERM_SPLIT.split(_clean_text(text).lower()):
+        ws = _TERM_WORD.findall(sent)
+        for n in (2, 3, 4):
+            for i in range(len(ws) - n + 1):
+                g = ws[i:i + n]
+                if g[0] in TERM_STOP or g[-1] in TERM_STOP or any(len(w) > 12 for w in g):
+                    continue
+                t = " ".join(g)
+                counts[t] = counts.get(t, 0) + 1
+    return counts
+
+
+BACKGROUND_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "term-background.json")
+LIVE_HTML_DIR = os.path.join(ROOT, "knowledge", "raw", "live", "html")
+GENERIC_SHARE = {"serp": 0.30, "live": 0.25}  # share of pages a term must reach to count as generic vocabulary
+_BG = None
+
+
+def build_background():
+    """Count in how many pages each term appears, over (a) every cached competitor page and
+    (b) the live DSC corpus. Terms common to unrelated pages ("nhà đầu tư", "thị trường") say
+    nothing about one topic. Saved once; rebuild with --rebuild-background after the corpus grows."""
+    out = {"built": time.strftime("%Y-%m-%d"), "serp_pages": 0, "live_pages": 0, "serp": {}, "live": {}}
+    try:
+        names = [n for n in os.listdir(CACHE_DIR) if n.endswith(".json")]
+    except OSError:
+        names = []
+    for name in names:
+        try:
+            with open(os.path.join(CACHE_DIR, name), encoding="utf-8-sig") as f:
+                other = json.load(f)
+        except (OSError, ValueError):
+            continue
+        for c in usable_competitors(other.get("competitors") if isinstance(other, dict) else None):
+            out["serp_pages"] += 1
+            for t in _term_counts(c.get("content") or ""):
+                out["serp"][t] = out["serp"].get(t, 0) + 1
+    try:
+        pages = [n for n in os.listdir(LIVE_HTML_DIR) if n.endswith(".html")]
+    except OSError:
+        pages = []
+    for name in pages:
+        try:
+            with open(os.path.join(LIVE_HTML_DIR, name), encoding="utf-8") as f:
+                text = re.sub(r"<[^>]+>", " ", f.read())
+        except OSError:
+            continue
+        out["live_pages"] += 1
+        for t in _term_counts(text):
+            out["live"][t] = out["live"].get(t, 0) + 1
+    # keep only terms that could ever cross the threshold (file stays small)
+    for kind, pages_n in (("serp", out["serp_pages"]), ("live", out["live_pages"])):
+        floor = max(3, pages_n * GENERIC_SHARE[kind] * 0.6)
+        out[kind] = {t: n for t, n in out[kind].items() if n >= floor}
+    with open(BACKGROUND_FILE, "w", encoding="utf-8") as f:
+        json.dump(out, f, ensure_ascii=False)
+    return out
+
+
+def _generic_terms(own_df):
+    """Set of generic terms. own_df = {term: pages of THIS keyword using it}; those pages are
+    subtracted from the SERP counts so a topic term is not penalised by its own cache."""
+    global _BG
+    if _BG is None:
+        try:
+            with open(BACKGROUND_FILE, encoding="utf-8") as f:
+                _BG = json.load(f)
+        except (OSError, ValueError):
+            _BG = build_background()
+    own_pages = max(own_df.values()) if own_df else 0
+    generic = set()
+    if _BG["live_pages"] >= 50:
+        generic |= {t for t, n in _BG["live"].items() if n >= _BG["live_pages"] * GENERIC_SHARE["live"]}
+    rest = _BG["serp_pages"] - own_pages
+    if rest >= 15:
+        generic |= {t for t, n in _BG["serp"].items() if n - own_df.get(t, 0) >= rest * GENERIC_SHARE["serp"]}
+    return generic
+
+
+def _neighbours(text, wanted):
+    """{term: ({prev_word: n}, {next_word: n})} — used to spot fragments of longer phrases."""
+    out = {t: ({}, {}) for t in wanted}
+    for sent in _TERM_SPLIT.split(_clean_text(text).lower()):
+        ws = _TERM_WORD.findall(sent)
+        for n in (2, 3, 4):
+            for i in range(len(ws) - n + 1):
+                t = " ".join(ws[i:i + n])
+                if t in out:
+                    prev = ws[i - 1] if i else ""
+                    nxt = ws[i + n] if i + n < len(ws) else ""
+                    out[t][0][prev] = out[t][0].get(prev, 0) + 1
+                    out[t][1][nxt] = out[t][1].get(nxt, 0) + 1
+    return out
+
+
+def content_headings(c):
+    """H2/H3 of the article itself: drops nav/widget headings (links, repeats, footer blocks)."""
+    out, seen = [], set()
+    for s in c.get("sections") or []:
+        title = s["title"]
+        if s["level"] not in ("H2", "H3") or "](" in title or title in seen:
+            continue
+        if any(h in title.lower() for h in FOOTER_HINTS) or JUNK_PAGE.search(title):
+            continue
+        seen.add(title)
+        out.append(s)
+    # a real H3 sits under an H2 of the article; pages whose headings are all widgets have no H2
+    return out if any(s["level"] == "H2" for s in out) else []
+
+
+def topic_coverage(data, limit=25):
+    """What the ranking pages have in common: the input for entity coverage.
+       terms    n-grams used by >= 2 competitors (df = number of competitors, tf = total uses)
+       must     subset with df >= MUST_DF: the outline/draft is expected to cover these
+       topics   sub-topics (H2/H3) that >= 2 competitors cover
+       sources  external domains competitors cite
+    Computed from the cache on every call, so old cache files work without migration."""
+    # Every cached page that still ranks, not just the ones printed: the digest and the linters
+    # (which read the raw cache) must compute the same list.
+    ranking = {r["url"] for r in data.get("organic") or []}
+    pool = data.get("competitors_all") or data.get("competitors")
+    comps = [c for c in usable_competitors(pool) if not ranking or c["url"] in ranking]
+    kw_words = set(_TERM_WORD.findall((data.get("keyword") or "").lower()))
+
+    df, tf = {}, {}
+    for c in comps:
+        for t, n in _term_counts(c.get("content") or "").items():
+            df[t] = df.get(t, 0) + 1
+            tf[t] = tf.get(t, 0) + n
+    generic = _generic_terms(df)
+    cands = []
+    for t, d in df.items():
+        ws = t.split()
+        if d < 2 or tf[t] < 3 or t in generic or t in TERM_COMMON or any(b in t for b in TERM_BOILERPLATE):
+            continue
+        if sum(w in kw_words for w in ws) * 2 > len(ws):  # mostly the keyword itself
+            continue
+        cands.append((t, d, tf[t]))
+    # Fragment filter: "ty quản lý quỹ" is always preceded by "công", "vốn tự" always followed by "có".
+    left, right = {}, {}
+    wanted = {t for t, _, _ in cands}
+    for c in comps:
+        for t, (lp, rn) in _neighbours(c.get("content") or "", wanted).items():
+            for w, n in lp.items():
+                left.setdefault(t, {})[w] = left.get(t, {}).get(w, 0) + n
+            for w, n in rn.items():
+                right.setdefault(t, {})[w] = right.get(t, {}).get(w, 0) + n
+
+    def fragment(t, total):
+        for side in (left.get(t, {}), right.get(t, {})):
+            w, n = max(side.items(), key=lambda kv: kv[1], default=("", 0))
+            if w and n >= total * 0.5:
+                return True
+        return False
+
+    cands = [x for x in cands if not fragment(x[0], x[2])]
+    cands.sort(key=lambda x: (-x[1], -len(x[0].split()), -x[2], x[0]))
+    picked = []
+    for t, d, n in cands:
+        # a fragment of a longer phrase with the same reach adds nothing
+        pad = " " + t + " "
+        if any(d == pd and (pad in " " + pt + " " or " " + pt + " " in pad) for pt, pd, _ in picked):
+            continue
+        picked.append((t, d, n))
+    picked.sort(key=lambda x: (-x[1], -x[2], x[0]))
+    terms = [{"term": t, "df": d, "tf": n} for t, d, n in picked[:limit]]
+
+    clusters = []  # [{"bigrams", "titles", "domains"}]
+    for c in comps:
+        for sec in content_headings(c):
+            title = sec["title"]
+            bg = {b for b in _bigrams(title) if isinstance(b, tuple)}
+            if not bg:
+                continue
+            for cl in clusters:
+                if len(bg & cl["bigrams"]) / min(len(bg), len(cl["bigrams"])) >= 0.6:
+                    cl["titles"].append(title)
+                    cl["domains"].add(c.get("domain"))
+                    break
+            else:
+                clusters.append({"bigrams": bg, "titles": [title], "domains": {c.get("domain")}})
+    topics = [{"topic": min(cl["titles"], key=len), "n": len(cl["domains"]), "domains": sorted(cl["domains"])}
+              for cl in clusters if len(cl["domains"]) >= 2]
+    topics.sort(key=lambda x: -x["n"])
+
+    src = {}
+    for c in comps:
+        hosts = {urllib.parse.urlparse(l["url"]).netloc.replace("www.", "") for l in c.get("external_links") or []}
+        for host in hosts:
+            if host and not any(x in host for x in SOCIAL_SOURCES):
+                src[host] = src.get(host, 0) + 1
+    used = {c["url"] for c in comps}
+    return {
+        "competitors_used": len(comps),
+        "competitors_dropped": [c.get("domain") or c.get("url") for c in pool or [] if c.get("url") not in used],
+        "terms": terms,
+        "must": [t["term"] for t in terms if t["df"] >= MUST_DF][:MUST_MAX],
+        "topics": topics[:15],
+        "sources": sorted(src.items(), key=lambda kv: (-kv[1], kv[0]))[:10],
+    }
+
+
+def print_topic_coverage(tc):
+    if not tc["competitors_used"]:
+        return
+    print("### Topic Coverage — gộp từ %d đối thủ hợp lệ%s" % (
+        tc["competitors_used"],
+        " (loại: %s)" % ", ".join(tc["competitors_dropped"]) if tc["competitors_dropped"] else ""))
+    if tc["must"]:
+        print("- **Thuật ngữ BẮT BUỘC phủ** (≥ %d đối thủ dùng) → copy vào `Entities:` của outline; bỏ cụm nào"
+              " phải ghi `Entities_Skipped:` kèm lý do:\n  %s" % (MUST_DF, " · ".join(tc["must"])))
+    rest = [t for t in tc["terms"] if t["term"] not in tc["must"]]
+    if rest:
+        print("- Thuật ngữ nên có: " + " · ".join(t["term"] for t in rest))
+    if tc["topics"]:
+        print("- Chủ đề con nhiều đối thủ cùng có (số đối thủ):")
+        for t in tc["topics"]:
+            print("  - %s (%d)" % (t["topic"], t["n"]))
+    if tc["sources"]:
+        print("- Nguồn đối thủ trích (gợi ý nguồn gốc để link): " + ", ".join(
+            "%s×%d" % (h, n) if n > 1 else h for h, n in tc["sources"]))
+    print()
+
+
+# ---------------------------------------------------------------- SERP format / intent
+
+FORMAT_LABELS = {
+    "toplist": "Toplist (Top N / N mục đánh số)",
+    "comparison": "So sánh (A vs B / phân biệt)",
+    "howto": "How-to (hướng dẫn, các bước)",
+    "definition": "Định nghĩa (X là gì)",
+    "review": "Review / có nên",
+    "news": "Tin tức / bài báo",
+    "guide": "Guide tổng hợp (không rõ khung)",
+}
+# Accent-stripped, space-separated patterns (matched against _fold(title)).
+_NUM_UNITS = r"(?:phantram|nam|thang|ngay|tuan|gio|phut|ty|trieu|nghin|ngan|dong|usd|vnd|diem|lan|phien|buoc)\b"
+FORMAT_RULES = (
+    ("toplist", (r"\btop\s*\d+", r"(?:^|[\s:,(])\d{1,2}\s+(?!" + _NUM_UNITS + r")[a-z]{2,}",
+                 r"\b(?:tot|uy tin|re|cao|pho bien|hieu qua|an toan|hang dau) nhat\b",
+                 r"\bdanh sach\b", r"\bbang xep hang\b")),
+    ("comparison", (r"\bso sanh\b", r"\bvs\b", r"\bkhac nhau\b", r"\bphan biet\b",
+                    r"\b\w+ hay (?!nhat\b|khong\b)\w+")),
+    ("howto", (r"\bcach\b", r"\bhuong dan\b", r"\bcac buoc\b", r"\b\d+ buoc\b", r"\blam sao\b",
+               r"\blam the nao\b", r"\bquy trinh\b", r"\bthu tuc\b")),
+    ("definition", (r"\bla gi\b", r"\bkhai niem\b", r"\bdinh nghia\b", r"\bnghia la\b")),
+    ("review", (r"\bdanh gia\b", r"\breview\b", r"\bco nen\b", r"\bco tot khong\b",
+                r"\bco an toan khong\b", r"\bco lua dao\b")),
+)
+# "Những / các X" with no number = soft list signal (list article without a count).
+SOFT_LIST = re.compile(r"^(?:nhung|cac)\s+\w+")
+NEWS_DOMAINS = (
+    "vnexpress", "cafef", "vietstock", "tuoitre", "dantri", "vneconomy", "nhadautu", "vnbusiness",
+    "thanhnien", "baodautu", "tinnhanhchungkhoan", "znews", "vtv", "laodong", "vietnamnet",
+    "nld.com", "kinhtechungkhoan", "thoibaonganhang", "bnews", "vov.vn", "baomoi", "plo.vn",
+)
+NUMBERED_HEADING = re.compile(r"^(?:top\s*)?\d{1,2}\s+\S")  # matched on _fold(): "1. X" -> "1 x"
+INTENT_RULES = (
+    ("Transactional", (r"\bmo tai khoan\b", r"\bdang ky\b", r"\btai app\b", r"\bmua\b", r"\bgia\b", r"\bphi\b")),
+    ("Commercial", (r"\btot nhat\b", r"\bnao tot\b", r"\btop\b", r"\breview\b", r"\bdanh gia\b",
+                    r"\bso sanh\b", r"\bco nen\b", r"\buy tin\b", r"\bapp\b", r"\bsan nao\b")),
+    ("Informational", (r"\bla gi\b", r"\bcach\b", r"\btai sao\b", r"\bvi sao\b", r"\brui ro\b",
+                       r"\by nghia\b", r"\bcong thuc\b", r"\bhuong dan\b")),
+)
+
+
+def _fold(text):
+    return slugify(text or "").replace("-", " ")
+
+
+def classify_format(title, domain="", headings=None):
+    """Return (format, [signals], list_count|None) for one SERP result.
+
+    The pattern that appears EARLIEST in the title wins ("X là gì? Cách dùng" = definition,
+    "7 cách ..." = toplist). Numbered headings only decide when the title has no signal,
+    because how-to articles number their steps too."""
+    t = _fold((title or "").replace("%", " phantram "))
+    found = []  # (position, order, fmt, matched text)
+    for order, (fmt, pats) in enumerate(FORMAT_RULES):
+        best = None
+        for p in pats:
+            m = re.search(p, t)
+            if m and (best is None or m.start() < best.start()):
+                best = m
+        if best:
+            found.append((best.start(), order, fmt, best.group(0).strip()))
+    found.sort()
+    signals = ["title~'%s'" % f[3] for f in found]
+    count = None
+    m = re.search(r"top\s*(\d{1,2})", t) or re.search(
+        r"(?:^|[\s:,(])(\d{1,2})\s+(?!" + _NUM_UNITS + r")[a-z]{2,}", t)
+    if m and int(m.group(1)) >= 3:
+        count = int(m.group(1))
+    elif found and found[0][2] == "toplist" and m:
+        found = [f for f in found if f[2] != "toplist"]  # "1 hợp đồng", "2 loại" is not a list article
+    numbered = sum(1 for lvl, h in headings or [] if lvl in ("H2", "H3") and NUMBERED_HEADING.match(_fold(h)))
+    if numbered >= 3:
+        signals.append("%d heading đánh số" % numbered)
+    if found:
+        fmt = found[0][2]
+        return fmt, signals, count if fmt == "toplist" else None
+    if numbered >= 3:
+        return "toplist", signals, numbered
+    if SOFT_LIST.match(t):
+        return "toplist", ["title 'những/các …' (list không đánh số)"], None
+    if any(n in (domain or "") for n in NEWS_DOMAINS):
+        return "news", ["domain báo"], None
+    return "guide", signals, None
+
+
+def guess_intent(keyword, features):
+    k = _fold(keyword)
+    for intent, pats in INTENT_RULES:
+        if any(re.search(p, k) for p in pats):
+            return intent
+    if any(f in (features or []) for f in ("shopping", "local_pack", "paid")):
+        return "Transactional"
+    return "Informational"
+
+
+def serp_format_summary(data, top=10):
+    """Classify each organic result; weight top 3 ×2. Dominant format = what the outline must follow."""
+    comps = {c["url"]: c for c in data.get("competitors") or [] if not c.get("error")}
+    usable = {c["url"] for c in usable_competitors(data.get("competitors"))}
+    rows, weights = [], {}
+    for r in data.get("organic", [])[:top]:
+        c = comps.get(r["url"])
+        fmt, signals, count = classify_format(r.get("title", ""), r.get("domain", ""),
+                                              c.get("headings") if c else None)
+        w = 2 if (r.get("rank") or 99) <= 3 else 1
+        weights[fmt] = weights.get(fmt, 0) + w
+        rows.append({"rank": r.get("rank"), "domain": r.get("domain", "").replace("www.", ""),
+                     "title": r.get("title", ""), "format": fmt, "signals": signals, "count": count,
+                     "words": (c.get("word_count_full") or c.get("word_count"))
+                     if c and c["url"] in usable else None})
+    total = sum(weights.values()) or 1
+    ranked = sorted(weights.items(), key=lambda kv: -kv[1])
+    # news/guide are "no clear frame" — never the format to copy; dominant = best structural frame.
+    structural = [(f, w) for f, w in ranked if f not in ("news", "guide")]
+    dominant, share = (structural[0][0], structural[0][1] / total) if structural else ("guide", 0)
+    tie = [f for f, w in structural if structural and w == structural[0][1]]
+    if len(tie) > 1:  # equal weight: prefer the frame of the best-ranked result, but call it mixed
+        best = next((r for r in data.get("organic", [])[:top]
+                     if classify_format(r.get("title", ""), r.get("domain", ""),
+                                        (comps.get(r["url"]) or {}).get("headings"))[0] in tie), None)
+        if best:
+            dominant = classify_format(best.get("title", ""), best.get("domain", ""),
+                                       (comps.get(best["url"]) or {}).get("headings"))[0]
+    counts = sorted(r["count"] for r in rows if r["format"] == "toplist" and r["count"])
+    words = sorted(r["words"] for r in rows[:5] if r["words"])
+    organic_n = len(data.get("organic") or [])
+    degraded = organic_n < 5 or (data.get("serp_source") not in (None, "dataforseo"))
+    return {
+        "rows": rows,
+        "shares": [(f, round(w / total * 100)) for f, w in ranked],
+        "dominant": dominant,
+        "share": round(share * 100),
+        "verdict": "HỖN HỢP" if len(tie) > 1 else (
+            "BẮT BUỘC" if share >= 0.5 else ("NGHIÊNG VỀ" if share >= 0.35 else "HỖN HỢP")),
+        "tie": tie if len(tie) > 1 else [],
+        "list_count_median": counts[len(counts) // 2] if counts else None,
+        "list_count_max": counts[-1] if counts else None,
+        "words_median_top5": words[len(words) // 2] if words else None,
+        "intent": guess_intent(data.get("keyword", ""), data.get("serp_features")),
+        "serp_features": data.get("serp_features"),
+        "degraded": degraded,
+        "degraded_reason": ("organic %d < 5" % organic_n if organic_n < 5 else
+                            "nguồn SERP = %s (không phải DataForSEO)" % data.get("serp_source")) if degraded else "",
+    }
+
+
+def print_format_summary(s):
+    print("### SERP Format & Intent — Outline PHẢI theo khung bài đang thắng")
+    if s["degraded"]:
+        print("⚠️ SERP_STATUS: degraded (%s) → ghi `SERP_Status: degraded` vào outline, PAA tự suy ra ghi"
+              " `source: inferred`, số từ tính theo intent (không theo đối thủ). Báo user trước khi chốt khung bài."
+              % s["degraded_reason"])
+    print("| # | Domain | Loại bài | Tín hiệu | Số mục | Số từ |\n|---|---|---|---|---|---|")
+    for r in s["rows"]:
+        print("| %s | %s | %s | %s | %s | %s |" % (
+            r["rank"], r["domain"], r["format"], "; ".join(r["signals"]) or "-",
+            r["count"] or "-", r["words"] or "-"))
+    print("\n- Tỷ trọng (top 3 ×2): " + ", ".join("%s %d%%" % (f, p) for f, p in s["shares"]))
+    print("- **Khung bài thống trị: %s — %s (%d%%)**" % (
+        FORMAT_LABELS.get(s["dominant"], s["dominant"]), s["verdict"], s["share"]))
+    if s.get("tie"):
+        print("- Hoà giữa: %s → chọn theo kết quả rank cao nhất (%s), xác nhận bằng outline top 3"
+              % (" / ".join(s["tie"]), s["dominant"]))
+    if s["dominant"] == "toplist" and s["list_count_max"]:
+        print("- Toplist: đối thủ dùng median %s mục, max %s → bài mình ≥ median, Title/H1 có con số N"
+              % (s["list_count_median"], s["list_count_max"]))
+    if s["words_median_top5"]:
+        print("- Số từ median top 5 đã extract: %d" % s["words_median_top5"])
+    unclear = sum(p for f, p in s["shares"] if f in ("news", "guide"))
+    if unclear >= 40:
+        print("- %d%% kết quả là bài báo / guide không rõ khung → đọc outline top 3 để xác nhận, đừng chỉ dựa vào nhãn" % unclear)
+    print("- Intent gợi ý theo keyword/SERP features: %s%s" % (
+        s["intent"], " | features: " + ", ".join(s["serp_features"]) if s["serp_features"] else ""))
+    print("- Quy tắc: BẮT BUỘC → `Content_Type` = khung này. NGHIÊNG VỀ → theo khung này trừ khi có lý do."
+          " HỖN HỢP → chọn khung của top 3, ghi lý do. Lệch khung → điền `Format_Deviation` + báo user.\n")
+
+
 # ---------------------------------------------------------------- output
 
-def format_competitor(i, c):
+def format_competitor(i, c, full=False):
     domain = c.get("domain") or urllib.parse.urlparse(c["url"]).netloc
     lines = ["### Competitor %d: %s" % (i, domain), "- URL: %s" % c["url"]]
     if c.get("error"):
         lines.append("- Lỗi: %s" % c["error"])
+        return "\n".join(lines)
+    if not full:
+        # Compact digest: heading tree + word counts. Terms / sources are merged once in Topic Coverage.
+        capped = not c.get("word_count_full") and c["word_count"] >= MAX_WORDS - 50
+        lines.append("- ~%d%s từ | %s" % (
+            c.get("word_count_full") or c["word_count"], "+" if capped else "",
+            ", ".join(c.get("special_elements") or []) or "không có bảng/FAQ"))
+        heads = content_headings(c)
+        for s in heads:
+            lines.append("%s- %s: %s (%d)" % ("  " if s["level"] == "H2" else "    ",
+                                             s["level"], s["title"], s["word_count"]))
+        if not heads:
+            lines.append("  - (không có heading nội dung — bài báo liền mạch)")
         return "\n".join(lines)
     indent = {"Intro": "  ", "H1": "  ", "H2": "  ", "H3": "    ", "H4": "      "}
     sections = c.get("sections") or []
@@ -601,14 +1187,24 @@ def print_content(data):
         print()
 
 
-def print_text(keyword, data, from_cache):
+def print_text(keyword, data, from_cache, full=False):
     print("### SERP Results: %s  (Google VN, vi)%s" % (keyword, "  [cache]" if from_cache else ""))
     print("Organic hợp lệ: %d\n" % len(data["organic"]))
     for i, r in enumerate(data["organic"], 1):
         print("%2d. %s" % (i, r["title"] or "(no title)"))
-        print("    %s" % r["url"])
+        print("    %s%s" % (r["url"], "  [chỉ biết domain — Google không cho giải link, không extract]"
+                               if r.get("url_unresolved") else ""))
         if r["description"]:
             print("    %s" % r["description"][:200])
+        print()
+    print_format_summary(serp_format_summary(data))
+    ao = data.get("ai_overview")
+    if ao and (ao.get("text") or ao.get("references")):
+        print("### AI Overview — Google đang trả lời thế nào, trích ai")
+        if ao.get("text"):
+            print("- %s" % ao["text"][:600].replace("\n", " "))
+        if ao.get("references"):
+            print("- Nguồn được trích: " + ", ".join(r["domain"] or r["url"] for r in ao["references"]))
         print()
     fs = data.get("featured_snippet")
     if fs:
@@ -632,24 +1228,32 @@ def print_text(keyword, data, from_cache):
         print("### Related Searches — cùng intent → Secondary/LSI; khác intent → spin-off candidate")
         print("\n".join("- " + k for k in data["related_searches"]) + "\n")
     if comps:
-        print("---\n")
+        print_topic_coverage(topic_coverage(data))
         for i, c in enumerate(comps, 1):
-            print(format_competitor(i, c) + "\n")
-        print("## Competitor Gap Synthesis: %s\n" % keyword)
-        print("### Gaps — tất cả/hầu hết competitors đều bỏ qua:\n1. \n2. \n")
-        print("### Unique angles DSC có thể khai thác:\n- \n")
-        print("### Content format gaps:\n- \n")
-        print("### Recommended Featured Snippet target:\n- Dạng: [Paragraph | List | Table | None]\n- Lý do: \n")
-        print("### PAA plan:\n- Thân bài (H2/H3): \n- FAQ: \n- Spin-off từ Related Searches: \n")
+            print(format_competitor(i, c, full) + "\n")
+        if full:
+            print("## Competitor Gap Synthesis: %s\n" % keyword)
+            print("### Gaps — tất cả/hầu hết competitors đều bỏ qua:\n1. \n2. \n")
+            print("### Unique angles DSC có thể khai thác:\n- \n")
+            print("### Content format gaps:\n- \n")
+            print("### Recommended Featured Snippet target:\n- Dạng: [Paragraph | List | Table | None]\n- Lý do: \n")
+            print("### PAA plan:\n- Thân bài (H2/H3): \n- FAQ: \n- Spin-off từ Related Searches: \n")
+        else:
+            print("→ Điền mục 2 “Competitor Gap Synthesis” của brief-template từ dữ liệu trên. Cần câu chủ đề,"
+                  " data point, link của từng đối thủ: thêm `--full`.\n")
     print("Cost: $%.4f%s" % (data.get("cost") or 0, " (cached, no API call)" if from_cache else ""))
 
 
 def main():
     ap = argparse.ArgumentParser(description="DataForSEO SERP + competitor extraction (local parser, Jina fallback), cached")
-    ap.add_argument("keyword")
+    ap.add_argument("keyword", nargs="?", default="")
+    ap.add_argument("--rebuild-background", action="store_true",
+                    help="rebuild term-background.json (generic vocabulary) from SERP cache + live corpus, then exit")
     ap.add_argument("--top", type=int, default=10, help="organic results to show (max 10)")
     ap.add_argument("--extract", type=int, default=0, metavar="N", help="extract content of top N URLs (local parser first, Jina fallback)")
     ap.add_argument("--content", action="store_true", help="print full trimmed markdown of extracted competitors")
+    ap.add_argument("--full", action="store_true",
+                    help="per-competitor detail (topic sentences, entities, data points, links): ~3x longer digest")
     ap.add_argument("--json", action="store_true", help="print results as JSON")
     ap.add_argument("--raw", action="store_true", help="dump the raw DataForSEO payload (forces API call)")
     ap.add_argument("--no-cache", action="store_true", help="ignore cache and call the API again (costs money)")
@@ -659,6 +1263,11 @@ def main():
                     help="expand People Also Ask tree N levels (1-4, extra cost; pillar articles only)")
     ap.add_argument("--timeout", type=int, default=90)
     args = ap.parse_args()
+    if args.rebuild_background:
+        bg = build_background()
+        print("term-background.json: %d SERP pages, %d live pages, %d + %d terms kept" % (
+            bg["serp_pages"], bg["live_pages"], len(bg["serp"]), len(bg["live"])))
+        return
     args.keyword = args.keyword.strip()
     if not args.keyword:
         sys.exit("Empty keyword — refusing to call the API.")
@@ -686,9 +1295,10 @@ def main():
         data["competitors"] = []
         save_cache(args.keyword, data)
 
+    all_cached = list(data.get("competitors") or [])
     # Extract only URLs not already in cache; Jina is free but slow.
     if args.extract:
-        wanted = [r["url"] for r in data["organic"][:args.extract]]
+        wanted = [r["url"] for r in data["organic"][:args.extract] if not r.get("url_unresolved")]
         # Re-extract entries from older cache files that lack stored content.
         have = {c["url"] for c in data.get("competitors", []) if not c.get("error") and c.get("sections")}
         todo = [u for u in wanted if u not in have]
@@ -697,6 +1307,7 @@ def main():
             keep = [c for c in data.get("competitors", []) if c["url"] not in todo]
             data["competitors"] = keep + fresh
             save_cache(args.keyword, data)
+            all_cached = list(data["competitors"])
         order = {u: i for i, u in enumerate(wanted)}
         data["competitors"] = sorted(
             [c for c in data["competitors"] if c["url"] in order], key=lambda c: order[c["url"]]
@@ -704,15 +1315,18 @@ def main():
     else:
         data["competitors"] = []
 
-    view = dict(data, organic=data["organic"][:top],
+    view = dict(data, organic=data["organic"][:top], competitors_all=all_cached,
                 people_also_ask=normalize_paa(data.get("people_also_ask")))
     if args.content:
         print_content(view)
     elif args.json:
+        view["topic_coverage"] = topic_coverage(view)
         view["competitors"] = [{k: v for k, v in c.items() if k != "content"} for c in view["competitors"]]
+        view.pop("competitors_all")
+        view["format_summary"] = serp_format_summary(view)
         print(json.dumps(view, ensure_ascii=False, indent=2))
     else:
-        print_text(args.keyword, view, from_cache)
+        print_text(args.keyword, view, from_cache, args.full)
 
 
 if __name__ == "__main__":

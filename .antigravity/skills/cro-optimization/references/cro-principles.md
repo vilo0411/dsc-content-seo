@@ -53,7 +53,7 @@ Người đọc chỉ nhận lời mời sau khi đã nhận ra vấn đề. Th�
 
 - Banner trong 25% đầu bài informational: người đọc chưa nhận ra vấn đề → bị coi là quảng cáo chen ngang.
 - Điểm tốt nhất giữa bài: ngay sau section giải quyết xong nỗi đau chính, khi người đọc vừa thấy "à, hoá ra là vậy".
-- Kết bài: `anti-ai-rules.md:174` — kết bài phải là CTA hoặc bước tiếp theo, không phải tóm tắt.
+- Kết bài: `anti-ai-rules.md` §3.4 — kết bài phải là CTA hoặc bước tiếp theo, không phải tóm tắt.
 - Hai banner cách nhau < 300 từ → cảm giác bị ép.
 
 ## 5. Sinh biến thể A/B
@@ -76,7 +76,7 @@ Không UTM thì không tách được biến thể trong cùng một bài — ch
 - [ ] Dòng phụ ≤ 3 yếu tố, mọi con số kiểm chứng được
 - [ ] Text nút không nằm trong danh sách chung chung
 - [ ] Nút hứa đúng thứ URL giao
-- [ ] Cường độ khớp persona (`personas.md` — ma trận CTA)
+- [ ] Cường độ khớp persona (`python scripts/persona.py --matrix` — ma trận CTA)
 - [ ] Không nhắc sản phẩm trong cột "Tránh" của persona
 - [ ] Banner đứng sau đoạn Product Bridge, không mồ côi
 - [ ] Không nằm trong 25% đầu bài informational

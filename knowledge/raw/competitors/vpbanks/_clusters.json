@@ -1,0 +1,99 @@
+{
+ "clusters": [
+  {
+   "name": "Kiến thức chung",
+   "pillar": "co-phieu-la-gi",
+   "groups": [
+    {
+     "name": "Kiến thức chung",
+     "hub": null,
+     "spokes": [
+      "dau-tu-co-phieu",
+      "etf-la-gi",
+      "ipo-la-gi",
+      "chung-khoan-phai-sinh-la-gi",
+      "thuat-ngu-chung-khoan",
+      "lenh-mp-trong-chung-khoan",
+      "ebit-la-gi",
+      "pb-la-gi",
+      "trai-phieu-la-gi",
+      "vnindex-la-gi",
+      "huong-dan-choi-chung-khoan-phai-sinh",
+      "roa-la-gi",
+      "roe-la-gi",
+      "thanh-khoan-chung-khoan-la-gi",
+      "cong-thuc-tinh-gdp",
+      "lenh-mok-la-gi",
+      "pe-la-gi",
+      "doc-bang-gia-chung-khoan",
+      "gia-tran-gia-san-la-gi",
+      "trai-phieu-chuyen-doi-la-gi",
+      "otc-la-gi",
+      "quy-tac-chon-co-phieu-tiem-nang",
+      "ty-le-ky-quy-la-gi",
+      "co-tuc-la-gi",
+      "co-phieu-penny-la-gi",
+      "bat-day-chung-khoan",
+      "bollinger-bands-la-gi",
+      "lenh-act-la-gi",
+      "phan-bo-danh-muc-dau-tu-the-nao-cho-hieu-qua",
+      "nhap-mon-chung-khoan",
+      "5-bai-hoc-dau-tu-chung-khoan-tu-nha-dau-tu-huyen-thoai-warren-buffett",
+      "mo-tai-khoan-chung-khoan",
+      "tu-doanh-chung-khoan",
+      "khau-vi-rui-ro-la-gi",
+      "danh-gia-vpbanks",
+      "lenh-lo-la-gi"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Sản phẩm đầu tư",
+   "pillar": "cach-choi-chung-khoan",
+   "groups": [
+    {
+     "name": "Sản phẩm đầu tư",
+     "hub": null,
+     "spokes": [
+      "margin-la-gi",
+      "cach-doc-bao-cao-tai-chinh",
+      "chung-chi-quy-la-gi",
+      "cac-phien-giao-dich-chung-khoan",
+      "san-giao-dich-chung-khoan",
+      "eps-la-gi",
+      "chung-quyen-co-bao-dam-la-gi",
+      "cach-choi-chung-khoan-tren-dien-thoai",
+      "co-phieu-va-chung-chi-quy",
+      "giao-dich-hang-hoa-phai-sinh",
+      "phan-biet-co-phieu-va-trai-phieu",
+      "bullish-la-gi",
+      "quy-can-bang-la-gi",
+      "quy-mo-la-gi",
+      "cho-vay-cam-co-trai-phieu-la-gi",
+      "chung-khoan-vpbank-manh-ghep-dau-tu-cho-tai-chinh-thinh-vuong",
+      "app-chung-khoan",
+      "nen-mua-trai-phieu-hay-gui-tiet-kiem",
+      "co-phieu-bluechip-la-gi",
+      "co-phieu-uu-dai-la-gi",
+      "quy-dau-tu-dang-dong"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Tài khoản đầu tư",
+   "pillar": "nguyen-nhan-khong-mua-ban-duoc-co-phieu",
+   "groups": [
+    {
+     "name": "Tài khoản đầu tư",
+     "hub": null,
+     "spokes": [
+      "phi-giao-dich-chung-khoan",
+      "mo-tai-khoan-chung-khoan-khong-dung-co-sao-khong"
+     ]
+    }
+   ]
+  }
+ ]
+}

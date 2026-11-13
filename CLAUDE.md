@@ -15,28 +15,51 @@ All operations must strictly follow the rules defined in:
 
 ---
 
+## 🎯 Thế nào là output tốt
+Bài tốt = bài **rank được và được AI trích**. Sạch từ cấm / đúng format chỉ là điều kiện cần. Mỗi bài phải đạt 5 điều, đều có check máy:
+
+| Tiêu chí | Outline (`outline_lint`) | Draft (`qa_lint`) |
+|---|---|---|
+| Đúng intent, đúng khung SERP | `FMT-*`, `SERP-paa-fake` | `PAA-missing`, `FAQ-*` |
+| Phủ entity / chủ đề con đối thủ đều có | `ENT-outline` | `ENT-missing`, `ENT-acronym` |
+| Có giá trị mới so với top 5 | `IG-shape`, `IG-not-new` | `IG-missing`, `DUP-h2`, `DUP-faq` |
+| Tin được (E-E-A-T, YMYL) | `DATA-source` | `SRC-*`, `YMYL-disclaimer`, `EEAT-firsthand`, `CL5-fact` |
+| AI đọc và trích được | Sapo trả lời thẳng | `GEO-h2-answer`, `GEO-*`, `FAQ-long-answer` |
+
+Điểm `coverage` / `trust` thấp mà điểm hình thức cao = bài chưa có lý do để rank → báo user, không trình bày như bài đạt. Bài đứng tên **Chứng khoán DSC**; link ngoài chỉ tới nguồn trong `source-whitelist.md`.
+
+---
+
 ## 🔄 Mandatory Context Protocol
 > Mọi agent/skill phải load context sau **trước tiên** — không có exception:
 > 1. `knowledge/1-brand/profile.md`
 > 2. `knowledge/3-pipeline/anti-ai-rules.md`
 > 3. `knowledge/3-pipeline/glossary.md`
-> 4. `.antigravity/memory/instincts.md` (bản rút gọn, sinh tự động) + `instincts-by-scope/<topic>.md` **chỉ khi** bài thuộc topic đó (danh sách ở đầu instincts.md). *Lịch sử gốc ở `instincts-archive.md` — không load khi viết.*
+> 4. `.antigravity/memory/instincts.md` (~8 KB, sinh tự động, rule đầy đủ không cắt) + `instincts-by-scope/<topic>.md` **chỉ khi** bài thuộc topic đó (danh sách ở đầu instincts.md). *Không mở `instincts-archive.md` (~130 KB) — cần 1 rule / ghi chú cũ của 1 bài thì `python scripts/optimize_instincts.py --show <ID|tag|slug>`.* *Lịch sử gốc ở `instincts-archive.md` — không load khi viết.*
 > 5. _(Agent-specific files theo từng agent's Context Loading block)_
 >
 > **Load 1 lần / session.** Các bước sau (QA, rewrite, approve) không đọc lại các file trên. Đọc tối thiểu, tra cứu bằng script:
 >
 > | Việc | KHÔNG làm | Làm |
 > |---|---|---|
-> | Đổi/kiểm tra trạng thái bài | đọc `topic-clusters.md` (17 KB) | `python scripts/topic_status.py <slug> [--set "..."]` |
-> | Tìm internal link | đọc `anchor-index.md` (180 KB) | `python scripts/find_links.py "<keyword>" --exclude <slug>` |
+> | Đổi/kiểm tra trạng thái bài | đọc `topic-clusters.md` (27 KB) | `python scripts/topic_status.py <slug> [--set "..."]` · tổng quan cho `/keyword-plan`: `--summary` |
+> | Tìm internal link | đọc `anchor-index.md` (189 KB) | `python scripts/find_links.py "<keyword>" --exclude <slug>` |
 > | Tìm bài cũ nên link tới bài mới | đọc 5 file Final | `python scripts/find_links.py --backfill <slug>` |
 > | Check SEO/Anti-AI/format cơ học | grep bằng mắt theo checklist | `python scripts/qa_lint.py <file> [--outline ...] [--original ...] [--fix]` (`--outline` còn check từng câu `PAA_Questions` có mặt trong draft + format FAQ) |
 > | Check nhịp câu / mật độ bằng chứng / trùng khung (AI slop) | đọc lại bài rồi đoán "nghe như AI" | `python scripts/slop_check.py <file> [-v]` · `--baseline` để lấy lại phân bố corpus |
 > | Lấy số liệu thị trường để viết | tự nhớ giá, chỉ số | `python scripts/market_facts.py --brief [--tickers VCB,HPG]` |
 > | Kiểm chứng số liệu trong bài | đọc lại bằng mắt | `python scripts/market_facts.py --verify <file>` |
 > | Tin tức / sự kiện mới quanh keyword | WebSearch tốn quota | `python scripts/news_feed.py --topic "<kw>" --days 14` |
-> | Đọc persona | cả `personas.md` (14 KB) | chỉ section persona đã chọn |
-> | Xem lỗi cũ của bài | cả `revision-log.md` | `grep -n "<slug>" knowledge/3-pipeline/revision-log.md` |
+> | Đọc persona | cả `personas.md` (14 KB) | `python scripts/persona.py P2 [--part bridge]` · `--matrix` |
+> | Xem lỗi cũ của bài | cả `revision-log.md` | `grep -rn "<slug>" knowledge/3-pipeline/revision-log*` |
+> | Ghi revision-log (/approve, /write) | mở `revision-log.md` (95 KB) rồi Edit | `python scripts/revision_log.py add <slug> --fix … --pattern … --rule … --scope …` |
+> | `/learn` không slug | đọc cả revision-log | `python scripts/revision_log.py brief` (mục từ lần /learn trước) → cuối: `mark-learn` |
+> | User đã sửa gì so với bản AI trình | đọc 2 bản bài | `python scripts/article_snapshot.py <slug> --diff` |
+> | QA draft (tầng A+B+dữ liệu) | chạy 3 script, đọc 3 báo cáo | `python scripts/qa_gate.py <draft>` · vòng 2 QG: `--changed` |
+> | Bài cần phủ thuật ngữ / chủ đề con nào để ngang đối thủ | đọc từng bài đối thủ | block `Topic Coverage` của `serp_research.py "<kw>" --extract 5` (đọc cache, 0 phí) |
+> | Link ra nguồn nào được phép | tự chọn nguồn | `knowledge/3-pipeline/source-whitelist.md` (cơ quan quản lý, sở, văn bản luật) |
+> | Thêm bài mới vào anchor-index / topic-clusters | mở file rồi Edit | `find_links.py --add-anchor <slug> --anchor … --cluster …` · `topic_status.py <slug> --add --keyword … --cluster …` |
+> | Trình bày outline / draft / proposal ở gate | dán cả file vào chat | tóm tắt ≤ 25 dòng + đường dẫn file |
 > | Nội dung / link hiện đang live của 1 bài đã publish | mở CSV Screaming Frog cũ / file Final | `python scripts/sync_live.py --only <slug>` → `knowledge/raw/live/html/<slug>.html` · `--show <slug>` |
 | Số GSC của 1 bài (clicks, CTR, query, so kỳ trước) | đoán / mở dashboard bằng tay | SEO Dashboard MCP `query_search_analytics` → `python scripts/dashboard_cache.py save page-queries <slug>`; không có MCP: `python scripts/dashboard_cache.py report <slug>` |
 | Trước khi viết bài mới: keyword đã có URL DSC rank chưa | tạo outline luôn | SEO Dashboard MCP `query_search_analytics` dimensions `page` + `query_value` (Bước 0.5 `/outlining`) |
@@ -45,13 +68,13 @@ All operations must strictly follow the rules defined in:
 > **Bất kỳ khi nào được yêu cầu sửa / viết lại / chỉnh đoạn trong file thuộc `knowledge/4-content/`**, dù là slash command hay chat tự do, đều phải:
 > 1. Đọc `knowledge/3-pipeline/anti-ai-rules.md` trước khi viết bất kỳ dòng nào (nếu chưa có trong session)
 > 2. Đọc `.antigravity/memory/instincts.md` để tránh lặp lỗi cũ (nếu chưa có trong session)
-> 3. Chạy cả 3 tầng check trên bản sửa — `python scripts/qa_lint.py <file>` (tầng A: từ vựng/format) → `python scripts/slop_check.py <file>` (tầng B: nhịp câu, mật độ bằng chứng; score < 80 = FAIL) → `python scripts/market_facts.py --verify <file>` (tầng dữ liệu: số liệu sai/cũ, advisory) — rồi Self-Audit phần ngữ nghĩa (mở/kết bài, nguồn số liệu, persona) trước khi trình bày. Cách sửa từng rule `SLOP-*`: `knowledge/3-pipeline/anti-ai-rules.md` §8.7
+> 3. Chạy cả 3 tầng check trên bản sửa bằng 1 lệnh — `python scripts/qa_gate.py <file>` = tầng A `qa_lint` (hình thức + thực chất: `coverage`, `trust`) → tầng B `slop_check` (nhịp câu, mật độ bằng chứng; score < 80 = FAIL) → tầng dữ liệu `market_facts --verify` (advisory) — rồi Self-Audit phần ngữ nghĩa (mở/kết bài, nguồn số liệu, persona) trước khi trình bày. Cách sửa từng rule `SLOP-*`: `knowledge/3-pipeline/anti-ai-rules.md` §8.7
 >
 > **Không có exception.** Yêu cầu "sửa nhanh" hay "sửa 1 câu" vẫn phải qua bước này.
 >
 > **Vòng lặp QA có giới hạn:** FAIL → sửa → QA lại **tối đa 2 vòng**. Vẫn FAIL → dừng, trình bày kèm `⚠️ Remaining issues` cho người dùng quyết định. Không tự lặp vòng 3.
 >
-> *Lưu ý:* Khi học bản năng mới (`/learn`), ghi metadata vào `instincts-archive.md` rồi chạy `python scripts/optimize_instincts.py`. Nếu lỗi đó máy bắt được bằng regex → thêm vào `qa_lint.py` / `anti-ai-rules-blacklist.md` thay vì thêm instinct.
+> *Lưu ý:* Khi học bản năng mới (`/learn`): qua cổng nhận rule (lặp ở bài khác? máy bắt được? đã có rule cùng Tag → sửa tại chỗ theo ID), rồi `python scripts/optimize_instincts.py --check`. Nếu lỗi đó máy bắt được bằng regex → thêm vào `qa_lint.py` / `anti-ai-rules-blacklist.md` thay vì thêm instinct.
 
 ---
 
@@ -85,25 +108,10 @@ All operations must strictly follow the rules defined in:
 | `/keyword-plan [N] [persona]` | `.agents/skills/keyword-plan/SKILL.md` | Chọn N bài nên viết tiếp từ cluster map theo persona. |
 | `/setup` | `.agents/skills/setup/SKILL.md` | Build Knowledge Base lần đầu (chạy 1 lần). |
 | `/gsc-sync` | `.agents/skills/gsc-sync/SKILL.md` | Đồng bộ Google Search Console → `gsc-opportunities.md`. Nguồn: SEO Dashboard MCP (ưu tiên) hoặc GSC API. |
+| `/weekly` | `.agents/skills/weekly/SKILL.md` | Việc sau publish gom 1 lần/tuần: sync live, backfill link theo lô, đo GSC bài 4–8 tuần (→ `/optimize`), dọn log. Nguồn: `publish-ledger.csv`. |
 
-## 🛠️ Helper Scripts (chạy thay vì đọc file lớn)
-
-| Script | Dùng để |
-| :--- | :--- |
-| `scripts/qa_lint.py <file> [--outline] [--original] [--cta] [--fix] [--json] [--log]` | Lint deterministic ~28 check (CL1/2/3/5/6, link, GEO, word count, PAA coverage + FAQ format khi có `--outline`) + Score 0–100. Exit 1 = FAIL. `--cta` bật thêm 6 check CTA-* (chưa mặc định — corpus chưa backfill banner). |
-| `scripts/slop_check.py <file> [-v] [--json]` · `--baseline [--csv f] [--top N]` · `--thresholds` | **Tầng B** — 13 rule `SLOP-*` thống kê (burstiness, rhythm_gap, evidence/100w, unanchored, vague, template_sim…). Bắt slop mà tầng A không thấy: bài sạch 100% từ cấm vẫn có thể phẳng nhịp, không bằng chứng. Ngưỡng **relative theo corpus DSC** (baseline 2026-10-16, 182 bài → `knowledge/3-pipeline/slop-audit-2026-10-16.md`). Gate: score < 80 = FAIL. Offline, 0 API call. |
-| `scripts/market_facts.py --brief [--tickers …]` · `--ticker VCB` · `--index VNINDEX --years 2022,2026` · `--verify <file>` | **Script duy nhất có network trong pipeline viết.** OHLCV thật (VNDirect dchart) + danh sách mã niêm yết (SSI iboard), cache 24h ở `scripts/market-cache.json`. `--verify` bắt `FACT-index-wrong` (số chỉ số sai) / `FACT-ticker` (mã không niêm yết) / `FACT-stale` (mọi mốc cũ hơn 18 tháng). **Exit 3 = nguồn chết → KHÔNG chặn pipeline**, dùng dữ kiện cấu trúc thay thế. |
-| `scripts/news_feed.py --topic "<kw>" [--days N]` · `--latest` · `--feeds` | RSS 6 nguồn (CafeF ×2, VnExpress, Vietstock, Tuổi Trẻ, Dân Trí), cache 6h. Dùng để tìm góc bài + mốc sự kiện **có ngày**; KHÔNG dùng để viết lại tin — nội dung DSC là evergreen. |
-| `scripts/find_links.py "<kw>" [--exclude slug]` / `--backfill <slug>` | Tra `internal-links/anchor-index.md` + sitemap-cache (+ cột inlink ngữ cảnh từ snapshot live). `--backfill` quét **toàn bộ bài live** (`knowledge/raw/live`, 825 bài) tìm bài chưa link ngữ cảnh tới slug, kèm mục + đoạn gợi ý; bài chỉ link qua dòng Xem thêm được đánh dấu. `--finalized` = quét `3-finalized/` như cũ. |
-| `scripts/sync_live.py [--only slugs] [--from-sf csv] [--show slug] [--compare slug] [--relink]` | **Nguồn sự thật cho bài đã publish.** Snapshot thân bài live mọi `/kien-thuc` + bài trong `link-clusters.json` → `knowledge/raw/live/html/<slug>.html` (1 block/dòng, git diff được) + `pages.csv` (words, link in/out, Xem thêm, CTA) + `links.csv` (from, to, anchor, kind, section). `--compare` = Final-*.md vs live (link thêm/gỡ trên CMS, độ lệch văn bản) — chạy trước `/optimize`. Stdlib, full ~3-4 phút; chỉ ghi file khi nội dung đổi. Khi nào chạy: xem `internal-linking/SKILL.md` §Mode: Live Snapshot. |
-| `scripts/topic_status.py <slug> [--set S]` / `--find` / `--list` | Đọc/ghi 1 ô trạng thái trong topic-clusters.md. |
-| `scripts/dashboard_cache.py save <kind> [slug]` · `report <slug>` · `status` | Cache dùng chung cho **SEO Dashboard MCP** (GSC/GA4/Ads/cannibalization). Agent có MCP gọi tool → `save`; agent không có MCP (Antigravity chưa cấu hình, Cursor…) đọc `report`. `save pages` / `save page-query` ghi luôn `pages.csv` / `queries.csv` theo schema `sync_gsc.py` → `process_gsc.py`, `find_links.py --backfill` chạy không cần credentials. Playbook: `.antigravity/skills/seo-dashboard/SKILL.md` · cấu hình: `.antigravity/config/seo-dashboard-mcp.md`. 0 network. |
-| `scripts/cta_audit.py <file\|slug\|URL>` / `--all [--ga4 csv]` / `--refresh` | Audit tầng chuyển đổi: banner, vị trí theo % thân bài, đoạn dẫn, link mở TK, CRO score. Nhận cả URL — ưu tiên file local, không có thì đọc snapshot live `knowledge/raw/live/html/` (thiếu / `--refresh` → tự `sync_live` trang đó). **Không dùng web-serp/Firecrawl cho URL dsc.com.vn.** Chỉ đọc, không ghi. |
-| `scripts/optimize_instincts.py` | Sinh lại `instincts.md` (dedupe, tách lint-covered, tách scope) từ archive. |
-| `scripts/serp_opportunities.py [--min-count N]` | Gom PAA + Related Searches từ cache SERP → `knowledge/3-pipeline/serp-opportunities.md` (chưa có bài / có bài chưa giữ PAA / DSC đang giữ). 0 API call. Input cho `/keyword-plan`, `/optimize`. |
-| `.antigravity/skills/web-serp/scripts/serp_research.py "<kw>" [--top 10] [--extract 5] [--paa-depth N]` | SERP Google VN (DataForSEO, **có phí**) + PAA (kèm đáp án Google đang hiện + đối thủ nào có heading khớp) + Related Searches + extract competitor (local Scrapling parser, Jina fallback cho trang JS). Cache 30 ngày ở `knowledge/raw/serp/` — không dùng `--no-cache` trừ khi user yêu cầu; `--paa-depth` tốn thêm, chỉ cho pillar. Keyword chưa có trong topic-clusters/sprint-backlog → script từ chối gọi API, cần `--force`. |
-| `.antigravity/skills/internal-linking/scripts/sync_sitemap.py` | Cập nhật `sitemap-cache.json` từ sitemap live. |
-| `.antigravity/skills/internal-linking/scripts/link_audit.py [--orphans]` | Audit internal link **trên site live** (từ snapshot) → `internal-links/dashboard.md` (tuân thủ cụm pillar/hub, bài 0 inlink ngữ cảnh, bài còn Xem thêm, anchor trùng) + `internal-links/link-graph.html` (graph tương tác + bảng, mở bằng trình duyệt). |
+## 🛠️ Helper Scripts
+Bảng đầy đủ (cờ, output, khi nào chạy): [`scripts/README.md`](scripts/README.md) — **chỉ mở khi cần chi tiết 1 script**; việc thường ngày dùng bảng "Việc → Làm" ở trên. Mọi script có `--help`.
 
 ---
 
@@ -125,6 +133,6 @@ knowledge/          # [THE BRAIN & FACTORY] All data and content
 ├── 2-market/       # Market Landscape
 ├── 3-pipeline/     # Strategy: Keywords, Backlog, rules
 │   └── internal-links/  # anchor-index.md, link-clusters.json, dashboard.md, link-graph.html, archive/
-├── 4-content/      # Production: 1-outlines -> 3-finalized
+├── 4-content/      # Production: 1-outlines -> 3-finalized -> 4-cms (HTML dán CMS)
 └── raw/            # Raw unprocessed uploads · live/ = snapshot site live (sync_live.py)
 ```

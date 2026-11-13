@@ -1,0 +1,32 @@
+[
+  {
+    "url": "https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan",
+    "http": 200,
+    "final_url": "https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan",
+    "canonical": [
+      "https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan"
+    ],
+    "x_robots_tag": null,
+    "meta_robots": [],
+    "h1": [
+      "Cách mở tài khoản chứng khoán online 3 phút cho người mới"
+    ],
+    "ssr_body_has_article_keyword": true,
+    "inspection_verdict": "not checked; HTML checks do not prove Google indexing"
+  },
+  {
+    "url": "https://www.dsc.com.vn/kien-thuc/nen-mo-tai-khoan-chung-khoan-o-dau",
+    "http": 200,
+    "final_url": "https://www.dsc.com.vn/kien-thuc/nen-mo-tai-khoan-chung-khoan-o-dau",
+    "canonical": [
+      "https://www.dsc.com.vn/kien-thuc/nen-mo-tai-khoan-chung-khoan-o-dau"
+    ],
+    "x_robots_tag": null,
+    "meta_robots": [],
+    "h1": [
+      "Nên mở tài khoản chứng khoán ở đâu? Top 7 công ty uy tín"
+    ],
+    "ssr_body_has_article_keyword": true,
+    "inspection_verdict": "not checked; HTML checks do not prove Google indexing"
+  }
+]

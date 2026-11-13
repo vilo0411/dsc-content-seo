@@ -1,0 +1,42 @@
+{
+ "title": "Internal link — \"mở tài khoản chứng khoán\" đợt 2 (2026-11-04)",
+ "intro": "<details class=\"box\" open><summary>Đọc trước khi sửa</summary><ul><li>4 mục còn lại sau đợt 1: 1 lỗi dán, 1 đoạn viết lại (Top 5 cổ phiếu), 1 link bài chính đặt lại vị trí (Inside Bar → mục Lưu ý), 1 CTA còn nguyên cụm từ khóa.</li><li>Xong chạy <code>python scripts/sync_live.py --only nen-inside-bar-la-gi-bi-kip-giao-dich-hieu-qua-cho-trader,top-5-co-phieu-dang-dau-tu,co-phieu-vinfast-mua-o-dau</code> rồi <code>python scripts/link_plan.py verify knowledge/3-pipeline/internal-links/plans/2026-11-04-mo-tai-khoan-anchor-dot2.json</code>.</li></ul></details>",
+ "groups": {
+  "anchor": "Chuyển anchor về bài chính",
+  "fix": "Sửa lỗi dán"
+ },
+ "edits": [
+  {
+   "src": "nen-inside-bar-la-gi-bi-kip-giao-dich-hieu-qua-cho-trader",
+   "op": "replace",
+   "find": "áp dụng hiệu quả các mẫu hình nến như Inside Bar",
+   "old_text": "<a target=\"_blank\" href=\"https://www.dsc.com.vn/mo-tai-khoan\"><strong>mở tài khoản tại DSC</strong></a> tại DSC",
+   "sentence": "[<strong>mở tài khoản tại DSC</strong>]",
+   "to": "https://www.dsc.com.vn/mo-tai-khoan",
+   "group": "fix",
+   "pri": "P1",
+   "why": "Lỗi dán: \"tại DSC tại DSC\""
+  },
+  {
+   "src": "nen-inside-bar-la-gi-bi-kip-giao-dich-hieu-qua-cho-trader",
+   "op": "newp",
+   "find": "Cần quản lý vốn và đặt điểm cắt lỗ hợp lý",
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "sentence": "Nếu chưa có tài khoản giao dịch, bạn có thể xem [cách mở tài khoản chứng khoán] trước khi thử vào lệnh theo mô hình này.",
+   "why": "Đặt ở mục Lưu ý (người đọc đang chuẩn bị vào lệnh) thay vì gắn sau CTA ở Kết luận"
+  },
+  {
+   "src": "co-phieu-vinfast-mua-o-dau",
+   "op": "replace",
+   "find": "Chuẩn bị kiến thức và kinh nghiệm đầu tư",
+   "old_text": "<a target=\"_blank\" href=\"https://www.dsc.com.vn/mo-tai-khoan\"><strong>mở tài khoản chứng khoán tại DSC</strong></a><strong> </strong>",
+   "sentence": "[<strong>mở tài khoản tại DSC</strong>] ",
+   "to": "https://www.dsc.com.vn/mo-tai-khoan",
+   "group": "anchor",
+   "pri": "P2",
+   "why": "CTA còn chứa nguyên cụm \"mở tài khoản chứng khoán\""
+  }
+ ]
+}

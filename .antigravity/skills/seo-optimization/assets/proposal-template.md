@@ -1,3 +1,20 @@
+---
+# Khối máy đọc: qa_lint --outline / qa_gate đối chiếu bản Optimize với các trường này. Giữ đúng tên trường.
+Target_Keyword: [từ khoá chính]
+Thesis: "[1–2 câu: sau khi tối ưu, bài kết luận gì mà top 5 chưa nói]"
+Entities: [...]                       # mục "Thuật ngữ BẮT BUỘC phủ" của block Topic Coverage (serp_research.py) + thực thể riêng của bài
+Entities_Skipped: []                  # [cụm — lý do]
+Information_Gain:                     # ≥ 2 mục; qa_lint tìm đúng `proof` trong bản Optimize
+  - claim: "[điều cụ thể top 5 KHÔNG có mà bản mới sẽ có]"
+    h2: "[tiêu đề H2 giao nó]"
+    type: calc | dsc-data | regulation | screenshot | comparison
+    proof: "[con số / cụm từ chắc chắn xuất hiện trong bài]"
+Featured_Snippet: Paragraph | List | Table | None
+PAA_Questions:
+  - q: "[câu PAA nguyên văn]"
+    placement: body | faq
+---
+
 # 📋 BÁO CÁO TỐI ƯU SEO (SEO Optimization Proposal)
 
 ## 0. Content Strategy Header ⚠️ ĐỌC TRƯỚC KHI XEM BẤT KỲ MỤC NÀO
@@ -52,12 +69,8 @@
 ### 2.2 Cấu trúc Outline từng đối thủ
 
 **Đối thủ 1: [Tên domain] — [URL]**
-- **H1:** [Tiêu đề chính]
 - **Intent chính:** [Người dùng đang tìm gì? Ví dụ: so sánh lãi suất để quyết định gửi tiền]
-- **Cấu trúc nội dung:**
-  - H2: [Tên] → [Mô tả ngắn nội dung section này làm gì, angle gì]
-  - H2: [Tên] → [...]
-  - H3: [Tên] → [...]
+- **Mục họ có mà bài mình chưa có:** [chỉ ghi H2/H3 khác biệt + angle — không chép cả cây heading, nó nằm trong cache SERP]
 - **Yếu tố đặc biệt:** [Bảng so sánh / Calculator / FAQ schema / Expert quote / Video embed / ...]
 - **Content Gap (so với bài của mình):** [Họ có gì mình không có]
 

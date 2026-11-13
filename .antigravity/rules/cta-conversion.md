@@ -34,7 +34,7 @@ Mỗi banner mid-article phải đứng sau một đoạn Product Bridge: **2–
 
 Giới hạn cứng do `qa_lint.py` áp: **tối đa 3 câu/đoạn** (`CL6-paragraph`) và **tối đa 30 từ/câu** (`CL6-sentence`). Viết 4 câu là chắc chắn dính MINOR.
 
-Luận điểm **lấy từ** `knowledge/1-brand/personas.md` → section `### DSC Product Bridge` của persona bài đó:
+Luận điểm **lấy từ** `python scripts/persona.py P<n> --part bridge` (personas.md) → section `### DSC Product Bridge` của persona bài đó:
 - **Ưu tiên** — sản phẩm được phép nhắc
 - **Góc dẫn dắt** — luận điểm chính, dùng làm xương sống đoạn văn
 - **Tránh** — sản phẩm/cách nói bị cấm với persona này
@@ -58,7 +58,7 @@ Tối đa 3 yếu tố giảm ma sát, cách nhau bằng `•`. Chỉ nêu đi�
 Động từ + tính tức thì. Cấm text chung chung: "Xem thêm", "Tại đây", "Click vào đây", "Tìm hiểu", "Chi tiết".
 
 ### Cường độ theo persona
-Tra ma trận `knowledge/1-brand/personas.md` (mục *Ma trận nhanh: Persona → Điều chỉnh khi viết*, hàng **CTA**):
+Tra ma trận `python scripts/persona.py --matrix` (personas.md) (mục *Ma trận nhanh: Persona → Điều chỉnh khi viết*, hàng **CTA**):
 
 | Persona | Cường độ nút |
 | :--- | :--- |

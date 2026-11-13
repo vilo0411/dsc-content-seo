@@ -8,7 +8,7 @@ Layer B = this script: measures *behaviour* of the text, not banned words - flat
 Layer C = Quality Guardian CL1-CL10 (judgement).
 
 Usage:
-    python scripts/slop_check.py <file.md> [--json] [--verbose]
+    python scripts/slop_check.py <file.md> [--json] [--verbose] [--mode auto|strict|relative]
     python scripts/slop_check.py --baseline [--glob 3-finalized] [--csv out.csv] [--top 15]
     python scripts/slop_check.py --thresholds
 
@@ -68,7 +68,32 @@ T = {
     "inline_header_major": 3,     # "**Tu:** Tu do giup..." pseudo-headings
     "inline_header_minor": 1,
     "thin_table_minor": 0,        # tables with <=2 data rows (rule `bang_thua`)
+    "filler_major": 4,            # empty 4-7-word sentences ("Đây là bước then chốt.")
+    "filler_minor": 2,            # corpus p90 = 0 - they only appeared once the rhythm gate existed
 }
+
+# STRICT - applied to new work (files under knowledge/4-content/2-drafts/): a draft must
+# match the *median* of recent pipeline articles (Final files 2026-10, fillers excluded),
+# not merely beat the tail of the legacy corpus. Step 1 toward the ABSOLUTE targets above;
+# tighten again once most new drafts clear it.
+T_STRICT = {**T,
+            "burstiness_major": 4.2, "burstiness_minor": 5.0,
+            "uniform_run_major": 14, "uniform_run_minor": 11,
+            "rhythm_gap_major": 55, "rhythm_gap_minor": 35,
+            "evidence_major": 1.3, "evidence_minor": 2.0,
+            "unanchored_major": 0.66, "unanchored_minor": 0.5,
+            "filler_major": 3, "filler_minor": 1}
+DRAFTS_DIR = FINAL_DIR.parent / "2-drafts"
+
+
+def thresholds_for(path: Path, mode: str) -> tuple[dict, str]:
+    """auto = strict for files in 2-drafts/ (new or re-optimised work), relative elsewhere."""
+    if mode == "auto":
+        try:
+            mode = "strict" if path.resolve().is_relative_to(DRAFTS_DIR.resolve()) else "relative"
+        except (OSError, ValueError):
+            mode = "relative"
+    return (T_STRICT if mode == "strict" else T), mode
 
 SEVERITY_PENALTY = {"CRITICAL": 25, "MAJOR": 10, "MINOR": 3}
 # A single MAJOR is a warning, not a block: 13 independent rules at ~p90 each would fail
@@ -78,6 +103,9 @@ PASS_SCORE = 80
 # --------------------- Lexical resources ---------------------
 HEDGE = ["nên", "cần", "có lẽ", "có thể nói", "phần nào", "thường thì", "tùy trường hợp",
          "khá là", "tương đối", "nhìn chung"]
+DEFINITION_H2 = re.compile(r"(?i)\blà gì\b|\bkhái niệm\b|\bđịnh nghĩa\b|\bnghĩa là\b")
+# "Có nên …" / "Nên … hay …" articles answer with "nên / không nên": that is the verdict, not a hedge.
+VERDICT_SLUG = re.compile(r"(^|-)nen(-|$)")
 
 SYNONYM_GROUPS = {
     "broker": ["công ty chứng khoán", "ctck", "nhà môi giới", "công ty môi giới",
@@ -91,7 +119,12 @@ SYNONYM_GROUPS = {
 
 TICKER_STOP = {"VND", "USD", "CEO", "CFO", "GDP", "CPI", "IPO", "NAV", "ROE", "ROA",
                "EPS", "ETF", "FDI", "VAT", "ATO", "ATC", "LTD", "JSC", "FAQ", "SEO", "CTA",
-               "API", "PDF", "KPI", "MMO", "TNC", "VIP", "AND", "THE", "FOR", "MUA", "BAN"}
+               "API", "PDF", "KPI", "MMO", "TNC", "VIP", "AND", "THE", "FOR", "MUA", "BAN",
+               "DSC"}
+
+# The brand naming itself is not evidence: "DSC hỗ trợ bạn tận tình" verifies nothing.
+# Stripped before anchor detection so a self-mention cannot launder an empty sentence.
+RE_BRAND = re.compile(r"(App\s+)?(Chứng khoán\s+)?DSC(\s+(Trading|Invest|Smart\w*))?|Môi giới 1:1", re.I)
 
 RE_TICKER = re.compile(r"\b[A-Z]{3}\b")
 RE_EXCHANGE = re.compile(r"\b(HOSE|HNX|UPCoM|UPCOM|VN-?Index|HNX-?Index|VN30|VN100)\b", re.I)
@@ -253,7 +286,10 @@ class Doc:
 
             sents = split_sentences(clean)
             if pending_h2 and sents:
-                self.h2_first_sentence.append(sents[0])
+                # Under a "X là gì" / "Khái niệm X" heading, opening with "X là …" is the answer
+                # an answer engine lifts, not a template: leave it out of SLOP-h2-open.
+                if not (self.h2s and DEFINITION_H2.search(self.h2s[-1])):
+                    self.h2_first_sentence.append(sents[0])
                 pending_h2 = False
             cur.extend(sents)
             for sn in sents:
@@ -289,15 +325,50 @@ def evidence_hits(text: str) -> int:
     return n
 
 
+def has_anchor(sent: str) -> bool:
+    """Number, named entity (other than the brand itself) or legal/market reference."""
+    if evidence_hits(sent):
+        return True
+    return bool(RE_PROPER.search(RE_BRAND.sub(" ", sent[1:])))   # skip sentence-initial capital
+
+
 def is_unanchored(sent: str) -> bool:
     """No verifiable anchor: no number, no named entity, no legal/market reference.
     A proxy, not a semantic judgement - a conceptual sentence can be legitimately
-    unanchored, which is why the rule only ever fires at corpus-tail density."""
+    unanchored, which is why the rule only ever fires at corpus-tail density.
+    Short sentences are judged by is_filler() instead."""
     if len(sent.split()) < 8:
         return False
-    if evidence_hits(sent):
+    return not has_anchor(sent)
+
+
+# Short sentences written to satisfy the rhythm rule rather than to say something:
+# "Đây là chỉ báo rất nhạy." / "Quy tắc này áp dụng nhất quán." - a demonstrative
+# subject pointing back at the previous sentence, or a bare evaluative tail.
+RE_FILLER = [
+    re.compile(r"^(đây|đó|điều này|điều đó)\b", re.I),
+    re.compile(r"^(\S+\s+){0,2}(này|đó)\s+(là|rất|khá|luôn|thường|đều|cũng|vẫn|áp dụng|hoạt động|"
+               r"mang|có|giúp|đóng|cho thấy|phản ánh)\b", re.I),
+    re.compile(r"\b(rất|khá|vô cùng|cực kỳ|hết sức|hoàn toàn|luôn)\s+\S+[.!…]?$", re.I),
+    re.compile(r"\b(nhất quán|đáng chú ý|đáng kể|quan trọng|cần thiết|hữu ích|hiệu quả)[.!…]?$", re.I),
+]
+FILLER_MIN_WORDS, FILLER_MAX_WORDS = 4, 7
+# A negation takes a stance ("Hoàn toàn không.", "Đây không phải chân lý.") - that is the
+# punchy short sentence the rhythm rule asks for, not filler.
+RE_STANCE = re.compile(r"(?<!\w)(không|chưa|đừng|chẳng)(?!\w)", re.I)
+
+
+def is_filler(sent: str) -> bool:
+    """A 4-7-word sentence that carries no anchor, takes no stance and matches a filler
+    shape. Counted by SLOP-filler and excluded from the rhythm metrics, so padding an
+    article with empty short sentences can no longer buy a better rhythm score."""
+    n = len(sent.split())
+    if not FILLER_MIN_WORDS <= n <= FILLER_MAX_WORDS or has_anchor(sent):
         return False
-    return not RE_PROPER.search(sent[1:])              # skip sentence-initial capital
+    s = strip_md(sent).strip()
+    if RE_STANCE.search(s):
+        return False
+    return any(rx.search(s) for rx in RE_FILLER)
 
 
 #) Labels that stay a hit even in a data-rich sentence - these are pure filler.
@@ -332,11 +403,16 @@ def ttr_windows(words: list[str], win: int = 300) -> list[float]:
 
 
 def measure(doc: Doc) -> dict:
-    lens = [len(s.split()) for _, s in doc.sentences]
+    fillers = [(ln, s) for ln, s in doc.sentences if is_filler(s)]
+    rhythm = [(ln, s) for ln, s in doc.sentences if not is_filler(s)]   # fillers do not count as rhythm
+    lens = [len(s.split()) for _, s in rhythm]
     m: dict = {}
     m["words"] = doc.all_text_words
-    m["n_sent"] = len(lens)
+    m["n_sent"] = len(doc.sentences)
     m["n_h2"] = len(doc.h2s)
+    m["filler_n"] = len(fillers)
+    m["filler_per_1000w"] = (len(fillers) / doc.all_text_words * 1000) if doc.all_text_words else 0.0
+    m["_filler"] = fillers[:8]
 
     m["burstiness"] = statistics.pstdev(lens) if len(lens) > 1 else 0.0
     m["mean_sent"] = statistics.mean(lens) if lens else 0.0
@@ -346,7 +422,7 @@ def measure(doc: Doc) -> dict:
     for i, L in enumerate(lens):
         if 14 <= L <= 24:
             if run == 0:
-                run_at = doc.sentences[i][0]
+                run_at = rhythm[i][0]
             run += 1
         else:
             run = 0
@@ -362,7 +438,7 @@ def measure(doc: Doc) -> dict:
             gap = 0
         else:
             if gap == 0:
-                gap_at = doc.sentences[i][0]
+                gap_at = rhythm[i][0]
             gap += 1
         if gap > worst:
             worst, worst_at = gap, gap_at
@@ -382,9 +458,10 @@ def measure(doc: Doc) -> dict:
     m["_vague"] = vg[:6]
 
     hedge_max = 0
+    hedges = [h for h in HEDGE if not (h == "nên" and VERDICT_SLUG.search(doc.slug or ""))]
     for p in doc.paragraphs:
         txt = " ".join(p).lower()
-        c = sum(len(re.findall(r"(?<!\w)" + re.escape(h) + r"(?!\w)", txt)) for h in HEDGE)
+        c = sum(len(re.findall(r"(?<!\w)" + re.escape(h) + r"(?!\w)", txt)) for h in hedges)
         hedge_max = max(hedge_max, c)
     m["hedge_para_max"] = hedge_max
 
@@ -435,23 +512,24 @@ def template_similarity(target: Doc, corpus: list[tuple[str, set[str]]]) -> tupl
 
 
 # --------------------- Findings ---------------------
-def judge(m: dict, tmpl: tuple[float, str]) -> list[tuple[str, str, str]]:
-    """Return [(rule_id, severity, message)]."""
+def judge(m: dict, tmpl: tuple[float, str], t: dict | None = None) -> list[tuple[str, str, str]]:
+    """Return [(rule_id, severity, message)]. `t` = threshold set (default: relative T)."""
+    t = t or T
     f: list[tuple[str, str, str]] = []
 
     def cmp_low(key, mj, mi, cid, fmt):      # lower value = worse
         v = m[key]
-        if v < T[mj]:
-            f.append((cid, "MAJOR", fmt.format(v=v, t=T[mj])))
-        elif v < T[mi]:
-            f.append((cid, "MINOR", fmt.format(v=v, t=T[mi])))
+        if v < t[mj]:
+            f.append((cid, "MAJOR", fmt.format(v=v, t=t[mj])))
+        elif v < t[mi]:
+            f.append((cid, "MINOR", fmt.format(v=v, t=t[mi])))
 
     def cmp_high(key, mj, mi, cid, fmt):     # higher value = worse
         v = m[key]
-        if v > T[mj]:
-            f.append((cid, "MAJOR", fmt.format(v=v, t=T[mj])))
-        elif v > T[mi]:
-            f.append((cid, "MINOR", fmt.format(v=v, t=T[mi])))
+        if v > t[mj]:
+            f.append((cid, "MAJOR", fmt.format(v=v, t=t[mj])))
+        elif v > t[mi]:
+            f.append((cid, "MINOR", fmt.format(v=v, t=t[mi])))
 
     cmp_low("burstiness", "burstiness_major", "burstiness_minor", "SLOP-burstiness",
             "Nhịp câu phẳng: stdev độ dài câu {v:.1f} từ (chuẩn >= {t}) - thêm câu ngắn 3-7 từ và câu dài 30+ từ")
@@ -477,15 +555,22 @@ def judge(m: dict, tmpl: tuple[float, str]) -> list[tuple[str, str, str]]:
             "Mọi đoạn cùng hình dạng: stdev số câu/đoạn {v:.2f} (chuẩn >= {t})")
     cmp_high("inline_headers", "inline_header_major", "inline_header_minor", "SLOP-inline-header",
              "{v:.0f} pseudo-heading `**Từ:**` (tối đa {t}) - viết thành đoạn văn hoặc dùng H4")
-    if m["thin_tables"] > T["thin_table_minor"]:
+    if m["filler_n"] >= t["filler_major"]:
+        f.append(("SLOP-filler", "MAJOR",
+                  f"{m['filler_n']:.0f} câu ngắn rỗng kiểu \"Đây là bước then chốt.\" (tối đa {t['filler_major'] - 1})"
+                  " - câu ngắn phải mang số, thực thể hoặc lập trường; xem danh sách bằng -v"))
+    elif m["filler_n"] >= t["filler_minor"]:
+        f.append(("SLOP-filler", "MINOR",
+                  f"{m['filler_n']:.0f} câu ngắn rỗng (tối đa {t['filler_minor'] - 1}) - xem danh sách bằng -v"))
+    if m["thin_tables"] > t["thin_table_minor"]:
         f.append(("SLOP-table-thin", "MINOR",
                   f"{m['thin_tables']:.0f} bảng mỏng (<3 cột & <4 dòng) - dùng bullet list"))
 
     sim, who = tmpl
-    if sim > T["template_major"]:
+    if sim > t["template_major"]:
         f.append(("SLOP-template", "MAJOR",
                   f"Khung H2 trùng {sim:.0%} với bài `{who}` - bài đang là template cũ đổi chủ đề"))
-    elif sim > T["template_minor"]:
+    elif sim > t["template_minor"]:
         f.append(("SLOP-template", "MINOR", f"Khung H2 trùng {sim:.0%} với bài `{who}`"))
     return f
 
@@ -526,7 +611,7 @@ BASELINE_KEYS = [
     ("synonym_variants", "{:.0f}", "high"), ("h2_def_open", "{:.2f}", "high"),
     ("para_shape_sd", "{:.2f}", "low"), ("ttr_min", "{:.2f}", "-"),
     ("inline_headers", "{:.0f}", "high"), ("thin_tables", "{:.0f}", "high"),
-    ("template_sim", "{:.2f}", "high"), ("words", "{:.0f}", "-"),
+    ("template_sim", "{:.2f}", "high"), ("filler_n", "{:.0f}", "high"), ("words", "{:.0f}", "-"),
 ]
 
 
@@ -583,18 +668,19 @@ def run_baseline(files: list[Path], csv_out: Path | None, top: int) -> int:
 
 
 # --------------------- Single file ---------------------
-def run_one(path: Path, as_json: bool, verbose: bool) -> int:
+def run_one(path: Path, as_json: bool, verbose: bool, mode: str = "auto") -> int:
     doc = Doc(path)
     m = measure(doc)
     _, idx = build_corpus(sorted(FINAL_DIR.glob("Final-*.md")))
     sim, who = template_similarity(doc, idx)
     m["template_sim"] = sim
-    fs = judge(m, (sim, who))
+    t, mode = thresholds_for(path, mode)
+    fs = judge(m, (sim, who), t)
     score = slop_score(fs)
     ok = score >= PASS_SCORE
 
     if as_json:
-        print(json.dumps({"file": str(path), "pass": ok, "slop_score": score,
+        print(json.dumps({"file": str(path), "pass": ok, "slop_score": score, "mode": mode,
                           "metrics": {k: v for k, v in m.items() if not k.startswith("_")},
                           "twin": who,
                           "findings": [{"check": c, "severity": s, "message": g} for c, s, g in fs]},
@@ -602,7 +688,7 @@ def run_one(path: Path, as_json: bool, verbose: bool) -> int:
         return 0 if ok else 1
 
     print(f"\nSLOP CHECK - {path.name}")
-    print(f"{'PASS' if ok else 'FAIL'}  ·  Slop score {score}/100  ·  {m['words']:.0f} từ, "
+    print(f"{'PASS' if ok else 'FAIL'}  ·  Slop score {score}/100  ·  ngưỡng {mode}  ·  {m['words']:.0f} từ, "
           f"{m['n_sent']:.0f} câu, {m['n_h2']:.0f} H2")
     print("-" * 78)
     if not fs:
@@ -616,6 +702,10 @@ def run_one(path: Path, as_json: bool, verbose: bool) -> int:
         g, used = m["_synonym"]
         if used:
             print(f"  synonym group '{g}': {', '.join(used)}")
+        if m["_filler"]:
+            print("\n-- Câu ngắn rỗng (SLOP-filler) --")
+            for ln, s in m["_filler"]:
+                print(f"  L{ln}: {s[:100]}")
         if m["_vague"]:
             print("\n-- Câu sáo rỗng --")
             for ln, label, s in m["_vague"]:
@@ -637,11 +727,14 @@ def main() -> int:
     ap.add_argument("--json", action="store_true")
     ap.add_argument("--verbose", "-v", action="store_true")
     ap.add_argument("--thresholds", action="store_true")
+    ap.add_argument("--mode", choices=["auto", "strict", "relative"], default="auto",
+                    help="auto = strict cho file trong 2-drafts/, relative cho phần còn lại")
     args = ap.parse_args()
 
     if args.thresholds:
+        print(f"{'key':<24} {'relative':>9} {'strict':>9}")
         for k, v in T.items():
-            print(f"{k:<24} {v}")
+            print(f"{k:<24} {v:>9} {T_STRICT[k]:>9}")
         return 0
     if args.baseline:
         base = FINAL_DIR if args.glob == "3-finalized" else FINAL_DIR.parent / args.glob
@@ -656,7 +749,7 @@ def main() -> int:
     if not p.exists():
         print(f"Khong tim thay {p}", file=sys.stderr)
         return 2
-    return run_one(p, args.json, args.verbose)
+    return run_one(p, args.json, args.verbose, args.mode)
 
 
 if __name__ == "__main__":

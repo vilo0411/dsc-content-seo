@@ -21,82 +21,23 @@ description: >
 
 ## Quy trình thực thi
 
-### Step 1 — Load context (chỉ phần chưa có trong session)
+Mỗi phần chỉ có 1 nguồn — file này không chép lại:
 
-```
-- knowledge/4-content/2-drafts/[slug].md       ← Bài cần audit
-- knowledge/4-content/1-outlines/[slug].md     ← Outline gốc để đối chiếu
-```
-Nếu chạy QA **độc lập** (ngoài pipeline) thì thêm: `personas.md`, `glossary.md`, `profile.md`, `instincts.md`.
-**Không** đọc `anti-ai-rules.md` cho QA — blacklist đã nằm trong lint.
-
-### Step 1.5 — Lint deterministic (Bắt buộc, chạy trước checklist ngữ nghĩa)
-
-```bash
-python scripts/qa_lint.py knowledge/4-content/2-drafts/[slug].md \
-  --outline knowledge/4-content/1-outlines/[slug].md
-# Bài optimize: thêm  --original knowledge/4-content/3-finalized/Final-[slug].md
-# Sửa nhanh lỗi cơ học (unicode ẩn, VN-Index, dấu thập phân, callout, nhãn bold, ---):  thêm --fix
-```
-
-Lint gộp luôn word count từng section (logic `count_words.py`) + ~25 check cơ học của CL1/CL2/CL3/CL5/CL6/Link/GEO. Output là bảng CRITICAL/MAJOR/MINOR có số dòng + Score 0–100.
-
-| Kết quả | Hành động |
-|---|---|
-| Exit 0 (PASS) | Paste dòng Score vào báo cáo → Step 2 |
-| Exit 1 (FAIL) | **Dừng ngay.** Gửi bảng CRITICAL/MAJOR cho Main Agent. **Chỉ sửa đúng các dòng được liệt kê — không rewrite toàn bài.** Re-run sau khi nhận bản sửa. |
-| Exit 2 (error) | Kiểm tra đường dẫn file, báo lỗi cho user |
-
-> Lint FAIL = bài không thể PASS, kể cả khi checklist ngữ nghĩa đều OK.
-
-### Step 2 — Invoke Quality Guardian (chỉ checklist ngữ nghĩa)
-
-Chạy theo `.antigravity/agents/quality-guardian.md`:
-
-| Checklist | Phạm vi (phần máy không làm được) | Mức fail |
+| Bước | Làm gì | Nguồn chi tiết |
 |---|---|---|
-| CL1 — SEO ngữ nghĩa | Secondary keyword trong H2, bám outline | MAJOR |
-| CL2 — Anti-AI cấu trúc | Ưu/nhược giả tạo, mở/kết bài, mô tả vs tình huống | CRITICAL |
-| CL3 — Glossary & Brand | Dùng đúng sản phẩm theo ngữ cảnh | CRITICAL |
-| CL4 — Persona Alignment | Tone, CTA, product bridge, jargon level | MAJOR |
-| CL5 — Fact Accuracy | Số liệu thị trường có nguồn + thời điểm | CRITICAL |
-| CL6 — So-What · Prove-It · E-E-A-T | Mỗi H2 có lợi ích + bằng chứng | MAJOR |
-| CL7 — Instincts ngoài lint | Product bridge, cấu trúc bảng, v.v. | MAJOR |
-| CL9 — GEO/AEO | Load-bearing claim, chủ thể rõ | MAJOR |
+| 1. Gate máy (tầng A + B + dữ liệu) | `python scripts/qa_gate.py <draft>` (tự tìm outline; `--fix` sửa lỗi cơ học; bài optimize thêm `--original Final-<slug>.md`). FAIL → sửa **đúng dòng được báo**, không viết lại cả bài, chạy lại đúng lệnh này | `scripts/README.md` |
+| 2. Tầng C — checklist ngữ nghĩa | Quality Guardian: CL1–CL9 + truy từng mục Information_Gain. Chỉ chạy khi gate PASS, dùng output gate đã có, không chạy lại lint | `.antigravity/agents/quality-guardian.md` |
+| 3. Vòng lặp | Tối đa 2 vòng sửa. Vòng 2 QG chỉ đọc `qa_gate.py <draft> --changed`. Còn FAIL → dừng, trình bày kèm `⚠️ Remaining issues` | `.antigravity/rules/workflow-integrity.md` |
+| 4. Finalize | Chỉ sau PASS + user `/approve` | `.agents/skills/approve/SKILL.md` |
 
-### Step 3 — Output báo cáo
+**PASS** = gate exit 0 (0 CRITICAL, 0 MAJOR, slop ≥ 80) **và** 0 CRITICAL + 0 MAJOR ngữ nghĩa. Có MINOR → PASS with notes.
 
-Dùng template trong `quality-guardian.md`.
+Điểm gate gồm 2 nhóm: hình thức (`anti_ai`, `readability`, `seo`, `link`, `geo`) và **thực chất** (`coverage`: thuật ngữ đối thủ, Information_Gain, PAA, trùng lặp · `trust`: nguồn gốc, miễn trừ, bằng chứng thực tế, hằng số DSC). Bài sạch hình thức nhưng `coverage` / `trust` thấp là bài chưa có lý do để rank — báo rõ 2 điểm này cho user.
 
-**PASS** (lint 0 + 0 CRITICAL + 0 MAJOR): Chuyển sang Step 4.
-**FAIL**: Gửi báo cáo cho Main Agent sửa → quay lại Step 1.5.
-**Giới hạn: tối đa 2 vòng sửa.** Sau vòng 2 vẫn FAIL → dừng, trình bày cho user kèm `⚠️ Remaining issues`. Không lặp vòng 3.
+## Gotchas
 
-### Step 4 — Finalization (chỉ sau khi PASS + user `/approve`)
-
-1. Di chuyển: `2-drafts/[slug].md` → `3-finalized/Final-[slug].md`
-2. `python scripts/topic_status.py [slug] --set Finalized`
-3. `python scripts/qa_lint.py knowledge/4-content/3-finalized/Final-[slug].md --log` — ghi score vào `revision-log.md` để theo dõi xu hướng
-4. Trigger `content-feedback-loop` skill để học từ vòng viết này
-5. Confirm đường dẫn file cuối với user
-
----
-
-## PASS / FAIL Criteria
-
-| Kết quả | Điều kiện |
-|---|---|
-| **PASS** | 0 CRITICAL + 0 MAJOR |
-| **PASS with notes** | 0 CRITICAL + 0 MAJOR + có MINOR |
-| **FAIL** | Bất kỳ 1 CRITICAL hoặc 1+ MAJOR |
-
----
-
-## Gotchas — Những lỗi thường bỏ sót
-
-- **Tin tưởng mù quáng Main Agent:** Luôn đối chiếu draft với outline gốc — Main Agent hay bỏ sót section hoặc đổi angle mà không báo
-- **Fact-check từ internet:** Chỉ dùng `knowledge/1-brand/profile.md` cho số liệu DSC — không Google
-- **Bỏ qua instincts.md:** Chỉ đọc các mục ngoài bảng "Đã tự động hoá" — phần còn lại lint đã bắt
-- **PASS không có output lint:** Không có dòng Score từ `qa_lint.py` → không được ghi PASS
-- **Lặp lại việc của lint bằng mắt:** Đếm câu, tìm blacklist, check title dài… là việc của script — tốn token và kém chính xác hơn
-- **Sửa thay vì báo cáo:** Quality Guardian không sửa bài — chỉ audit và báo lỗi chi tiết để Main Agent sửa
+- **Tin tưởng mù quáng Main Agent:** luôn đối chiếu draft với outline gốc — hay bỏ section hoặc đổi angle mà không báo.
+- **Không có outline:** gate in cảnh báo; Information_Gain / PAA không được kiểm → báo user, không ghi PASS.
+- **Fact-check:** số liệu DSC theo `profile.md`; quy định / phí / hạn mức đối chiếu với URL nguồn đã khai trong outline, không tra cứu tự do.
+- **Lặp lại việc của máy bằng mắt:** đếm câu, tìm từ cấm, đếm thuật ngữ… là việc của script.
+- **Sửa thay vì báo cáo:** Quality Guardian chỉ audit và báo lỗi có số dòng.

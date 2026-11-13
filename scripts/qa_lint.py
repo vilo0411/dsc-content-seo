@@ -15,6 +15,11 @@ Rule sources (parsed at runtime, never hardcoded when a file exists):
     knowledge/3-pipeline/glossary.md  (section 7)        -> CL3 forbidden terms
     .antigravity/skills/internal-linking/scripts/sitemap-cache.json -> link verification
     <outline>.md  PAA_Questions: (with --outline)         -> PAA-missing / FAQ-few-paa (AEO)
+    <outline>.md  Entities / Information_Gain             -> ENT-missing / IG-missing (coverage)
+    knowledge/raw/serp/<keyword>.json                    -> terms >= 3 ranking pages share (ENT-missing)
+    knowledge/3-pipeline/source-whitelist.md             -> SRC-* (primary sources a claim may link to)
+
+Score categories: anti_ai, readability, seo, link, geo (form) + coverage, trust (substance).
 """
 
 from __future__ import annotations
@@ -51,7 +56,10 @@ MAX_PROSE_RUN = 3
 MIN_INTERNAL_LINKS = 3
 
 # Composite score weights (sum = 100)
-WEIGHTS = {"anti_ai": 30, "seo": 25, "readability": 20, "link": 15, "geo": 10}
+WEIGHTS = {"anti_ai": 20, "seo": 20, "readability": 15, "link": 10, "geo": 10, "coverage": 15, "trust": 10}
+SUBSTANCE = ("coverage", "trust")  # MAJOR here blocks /approve: these decide ranking, not polish
+WHITELIST_FILE = ROOT / "knowledge/3-pipeline/source-whitelist.md"
+AUTHOR = "Chứng khoán DSC"
 PENALTY = {"CRITICAL": 25, "MAJOR": 10, "MINOR": 3}
 MINOR_CAP = 30  # MINOR findings can cost a category at most this many points
 
@@ -222,6 +230,9 @@ def mask_html_blocks(lines: list[str], start: int) -> list[str]:
         if depth > 0 or opens:
             out[i] = ""
             depth = max(0, depth + opens - closes)
+        elif re.fullmatch(r"<img\b[^>]*>", s, re.I):
+            # Standalone CMS image tag: attribute quotes are not prose.
+            out[i] = ""
     return out
 
 
@@ -277,6 +288,8 @@ def check_frontmatter(rep: Report, fm: dict, keyword: str):
     for k, v in fm.items():
         if v.startswith('"') and v.endswith('"'):
             rep.add("FM-quotes", "seo", "MINOR", 1, f"Front matter `{k}` bọc trong ngoặc kép", v)
+    if fm.get("Author") and fm["Author"].strip('"') != AUTHOR:
+        rep.add("CL1-author", "trust", "MINOR", 1, f"Author `{fm['Author']}` — bài đứng tên tổ chức: `{AUTHOR}` (--fix tự sửa)")
 
 
 def check_headings(rep: Report, lines, start, keyword):
@@ -396,20 +409,20 @@ def check_brand_format(rep, lines, start):
                 if "phí giao dịch" in sl:
                     for p in pcts:
                         if float(p.replace(",", ".")) > 0.5:
-                            rep.add("CL5-fact", "seo", "MAJOR", i + 1,
+                            rep.add("CL5-fact", "trust", "MAJOR", i + 1,
                                     f"Phí giao dịch DSC ghi {p}% — chuẩn là từ 0,1% [CẦN XÁC NHẬN]", sent)
                 if "margin" in sl:
                     for p in pcts:
                         v = float(p.replace(",", "."))
                         if not (10 <= v <= 13.5):
-                            rep.add("CL5-fact", "seo", "MAJOR", i + 1,
+                            rep.add("CL5-fact", "trust", "MAJOR", i + 1,
                                     f"Lãi margin DSC ghi {p}% — chuẩn 10–13,5%/năm [CẦN XÁC NHẬN]", sent)
                 if "ekyc" in sl and re.search(r"\d+\s*phút", sl) and "3 phút" not in sl:
-                    rep.add("CL5-fact", "seo", "MAJOR", i + 1, "Thời gian eKYC DSC chuẩn là 3 phút", sent)
+                    rep.add("CL5-fact", "trust", "MAJOR", i + 1, "Thời gian eKYC DSC chuẩn là 3 phút", sent)
                 if "định danh" in sl:
                     for m in re.finditer(r"\b\d{6}\b", sent):
                         if m.group(0) != "963369":
-                            rep.add("CL5-fact", "seo", "MAJOR", i + 1, "Mã định danh nạp tiền DSC chuẩn là 963369", sent)
+                            rep.add("CL5-fact", "trust", "MAJOR", i + 1, "Mã định danh nạp tiền DSC chuẩn là 963369", sent)
         if re.search(r"\$\$?[^$\n]{1,80}\$\$?", raw) and "VNĐ" not in raw and "USD" not in raw:
             rep.add("FMT-latex", "readability", "MAJOR", i + 1, "Công thức LaTeX `$...$` — viết bằng in đậm thường", raw)
         if classify(raw) == "list":
@@ -563,7 +576,8 @@ def check_link_rules(rep, lines, start, slug: str):
     LINK-hub          spoke in a group that has a hub, no link to that hub                MINOR
     """
     clusters = load_link_clusters()
-    pillar_anchor = {norm(a): c["pillar"] for c in clusters for a in [c["pillar_keyword"], *c["pillar_anchors"]]}
+    pillar_anchor = {norm(a): c["pillar"] for c in clusters if c.get("pillar")
+                     for a in [c.get("pillar_keyword") or "", *c.get("pillar_anchors", [])] if a}
     targets: set[str] = set()
     in_fence = False
     for i in range(start, len(lines)):
@@ -604,13 +618,17 @@ def check_link_rules(rep, lines, start, slug: str):
             if slug not in members:
                 continue
             rep.stats["link_cluster"] = f"{c['id']} / {g['name']}"
-            if c["pillar"] not in targets:
+            if c.get("pillar") and not g.get("pillar_exempt") and c["pillar"] not in targets:
                 rep.add("LINK-pillar", "link", "MAJOR", start + 1,
                         f"Bài thuộc cụm “{c['name']}” nhưng chưa link về pillar {DSC_HOST}/kien-thuc/{c['pillar']} "
                         f"(anchor gợi ý: “{c['pillar_anchors'][0]}”)")
             if g.get("hub") and slug != g["hub"] and g["hub"] not in targets:
                 rep.add("LINK-hub", "link", "MINOR", start + 1,
                         f"Spoke nhóm “{g['name']}” chưa link về hub {DSC_HOST}/kien-thuc/{g['hub']}")
+            for b in g.get("branches", []):
+                if slug in b["spokes"] and b.get("subhub") and b["subhub"] not in targets:
+                    rep.add("LINK-subhub", "link", "MINOR", start + 1,
+                            f"Bài thuộc nhánh “{b['id']} {b['name']}” chưa link về sub-hub {DSC_HOST}/kien-thuc/{b['subhub']}")
 
 
 def check_cta(rep, path: Path):
@@ -632,6 +650,22 @@ def check_cta(rep, path: Path):
         rep.add(cid, "link", sev, line, msg)
     rep.stats["cta_banners"] = len(art.banners)
     rep.stats["cta_score"] = art.score()
+
+
+# Stats that agents pasted into many unrelated articles as a generic "data anchor".
+# Each entry: (regex, short label). A fresh figure for the same metric will not match.
+BOILERPLATE_STATS = [
+    (re.compile(r"13[,.]66\s*triệu"), "13,66 triệu tài khoản (VSDC 8/2026)"),
+]
+
+
+def check_boilerplate_stats(rep, lines, start):
+    for i in range(start, len(lines)):
+        for rx, label in BOILERPLATE_STATS:
+            if rx.search(lines[i]):
+                rep.add("DATA-boilerplate", "geo", "MAJOR", i + 1,
+                        f"Số liệu rập khuôn “{label}” đã lặp ở hơn 10 bài; bỏ, hoặc dùng mỏ neo đúng chủ đề (§S3)",
+                        lines[i])
 
 
 def check_geo(rep, lines, start):
@@ -656,8 +690,11 @@ def check_images(rep, lines, start, original: Path):
         rep.add("CL1-images", "seo", "MAJOR", 1, f"Không đọc được bài gốc: {e}")
         return
     body = "\n".join(lines[start:])
-    orig_imgs = re.findall(r"!\[[^\]]*\]\(([^)\s]+)", orig)
-    missing = [u for u in orig_imgs if u not in body]
+    img_rx = r"!\[[^\]]*\]\(([^)\s]+)|<img\b[^>]*\bsrc=\"([^\"]+)\""
+    orig_imgs = list(dict.fromkeys(a or b for a, b in re.findall(img_rx, orig, re.I)))
+    # Match by file name: the CMS rewrites hosts (extgw.dsc.com.vn/eback/uploads -> /uploads).
+    body_files = {(a or b).rsplit("/", 1)[-1] for a, b in re.findall(img_rx, body, re.I)}
+    missing = [u for u in orig_imgs if u.rsplit("/", 1)[-1] not in body_files]
     for u in missing:
         rep.add("CL1-images", "seo", "CRITICAL", start + 1, f"Mất ảnh gốc: {u}")
     rep.stats["images_original"] = len(orig_imgs)
@@ -727,6 +764,9 @@ def parse_outline_paa(outline_text: str) -> list[dict]:
             m = re.match(r"^\s*placement\s*:\s*(\w+)", line)
             if m and cur:
                 cur["placement"] = m.group(1).lower()
+            m = re.match(r"^\s*source\s*:\s*(\w+)", line)
+            if m and cur:
+                cur["source"] = m.group(1).lower()  # "inferred" = not a real Google PAA
     return [q for q in out if q["q"] and not q["q"].startswith("[")]
 
 
@@ -761,7 +801,7 @@ def check_faq_format(rep, lines, start, paa_count: int):
     rep.stats["faq_items"] = len(items)
     if not items:
         if paa_count:
-            rep.add("FAQ-missing", "geo", "MAJOR", start + 1,
+            rep.add("FAQ-missing", "coverage", "MAJOR", start + 1,
                     f"Outline có {paa_count} câu PAA nhưng draft không có H2 FAQ / câu hỏi thường gặp")
         return
     for ln, q, ans in items:
@@ -789,13 +829,323 @@ def check_paa(rep, lines, start, outline_path: Path) -> int:
     missing = [it for it in paa if not any(_paa_match(it["q"], c) for c in headings + faq_qs)]
     for it in missing:
         where = "H2/H3 thân bài" if it["placement"] == "body" else "FAQ"
-        rep.add("PAA-missing", "geo", "MAJOR", start + 1, f"Câu PAA chưa xuất hiện làm {where}: “{it['q']}”")
+        # Questions inferred from competitor FAQs (SERP had no PAA) are advisory, not a Google target.
+        sev = "MINOR" if it.get("source") == "inferred" else "MAJOR"
+        rep.add("PAA-missing", "coverage", sev, start + 1, f"Câu PAA chưa xuất hiện làm {where}: “{it['q']}”")
     in_faq = sum(1 for it in paa if any(_paa_match(it["q"], c) for c in faq_qs))
     need = min(FAQ_MIN_PAA, len(paa))
     if faq_qs and in_faq < need:
-        rep.add("FAQ-few-paa", "geo", "MINOR", start + 1, f"FAQ chỉ có {in_faq}/{len(paa)} câu lấy từ PAA (cần ≥ {need})")
+        rep.add("FAQ-few-paa", "coverage", "MINOR", start + 1, f"FAQ chỉ có {in_faq}/{len(paa)} câu lấy từ PAA (cần ≥ {need})")
     rep.stats["paa_covered"] = len(paa) - len(missing)
     return len(paa)
+
+
+# ─────────────────────────── Coverage: entities, information gain ───────────────────────────
+
+ENT_MIN_COVERAGE = 0.7
+# Abbreviations a reader (and an answer engine) cannot resolve unless the article spells them out once.
+ACRONYMS = {
+    "UBCKNN": "ủy ban chứng khoán", "NHNN": "ngân hàng nhà nước", "VSDC": "lưu ký", "VSD": "lưu ký",
+    "NAV": "giá trị tài sản ròng", "CCQ": "chứng chỉ quỹ", "CTCK": "công ty chứng khoán",
+    "BCTC": "báo cáo tài chính", "HĐQT": "hội đồng quản trị", "ĐHĐCĐ": "đại hội đồng cổ đông",
+    "TTCK": "thị trường chứng khoán", "NĐT": "nhà đầu tư", "KQKD": "kết quả kinh doanh",
+    "LNST": "lợi nhuận sau thuế", "TPDN": "trái phiếu doanh nghiệp", "HĐTL": "hợp đồng tương lai",
+}
+
+
+def _fold(text: str) -> str:
+    t = unicodedata.normalize("NFD", (text or "").lower().replace("đ", "d"))
+    t = "".join(c for c in t if unicodedata.category(c) != "Mn")
+    return re.sub(r"[^a-z0-9]+", " ", t).strip()
+
+
+def _outline_mod():
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    try:
+        import outline_lint as ol  # type: ignore
+        return ol
+    except Exception:
+        return None
+
+
+def check_entities(rep, lines, start, keyword: str, outline_path: Path | None):
+    """ENT-missing: terms that >= 3 ranking pages share (SERP cache) + the outline's Entities must be in the draft.
+    ENT-acronym / ENT-variant: one name per entity, spelled out once."""
+    body = "\n".join(lines[start:])
+    folded = " " + _fold(strip_md(body)) + " "
+    ol = _outline_mod()
+    wanted, skipped = [], set()
+    if ol and keyword:
+        try:
+            wanted += ol.must_terms(keyword)[0]
+        except Exception:
+            pass
+    if ol and outline_path:
+        try:
+            fm, _, _ = ol.parse_yaml(outline_path.read_text(encoding="utf-8").replace("\r\n", "\n"))
+            wanted += ol.yaml_list(fm.get("Entities", ""))
+            skipped = ol.skipped_terms(fm)
+        except OSError:
+            pass
+    wanted = [t for t in dict.fromkeys(wanted) if _fold(t) and _fold(t) not in skipped and "..." not in t]
+    if wanted:
+        missing = [t for t in wanted if " " + _fold(t) + " " not in folded]
+        cov = 1 - len(missing) / len(wanted)
+        rep.stats["entity_coverage"] = f"{round(cov * 100)}% ({len(wanted) - len(missing)}/{len(wanted)})"
+        if missing:
+            sev = "MAJOR" if cov < ENT_MIN_COVERAGE else "MINOR"
+            rep.add("ENT-missing", "coverage", sev, start + 1,
+                    f"Bài phủ {round(cov * 100)}% thuật ngữ đối thủ đều dùng / outline đã khai (cần ≥ {round(ENT_MIN_COVERAGE * 100)}%). "
+                    f"Chưa có: {' · '.join(missing[:12])}")
+    low = body.lower()
+    for acr, full in ACRONYMS.items():
+        m = re.search(r"(?<![\w-])" + re.escape(acr) + r"(?![\w-])", body)
+        if m and full not in low[:m.end() + 80]:
+            ln = start + body[:m.start()].count("\n") + 1
+            rep.add("ENT-acronym", "coverage", "MINOR", ln, f"`{acr}` dùng lần đầu chưa viết đầy đủ (“{full} ({acr})”)")
+    tokens = set(re.findall(r"(?<![\w-])[A-Z][A-Z0-9]*(?:-[A-Z0-9]+)+(?![\w-])", body))
+    for tok in sorted(tokens):
+        plain = tok.replace("-", "")
+        if len(plain) >= 5 and re.search(r"(?<![\w-])" + re.escape(plain) + r"(?![\w-])", body):
+            rep.add("ENT-variant", "coverage", "MINOR", start + 1, f"Cùng một thực thể viết 2 kiểu: `{tok}` và `{plain}` — chọn 1")
+
+
+def check_information_gain(rep, lines, start, outline_path: Path):
+    """IG-missing: each Information_Gain proof promised in the outline must be present in the draft."""
+    ol = _outline_mod()
+    if not ol:
+        return
+    try:
+        text = outline_path.read_text(encoding="utf-8").replace("\r\n", "\n")
+    except OSError:
+        return
+    _, yaml_raw, _ = ol.parse_yaml(text)
+    items = [it for it in ol.parse_information_gain(yaml_raw) if it.get("proof")]
+    rep.stats["information_gain"] = len(items)
+    if not items:
+        return
+    squash = lambda t: re.sub(r"\s+", " ", strip_md(t).lower())
+    sections, cur = [], ["", []]
+    for l in lines[start:]:
+        if re.match(r"^##\s", l.strip()):
+            sections.append(cur)
+            cur = [l.strip().lstrip("#").strip(), []]
+        else:
+            cur[1].append(l)
+    sections.append(cur)
+    whole = squash("\n".join(lines[start:]))
+    delivered = 0
+    for it in items:
+        proof = squash(it["proof"])
+        if proof not in whole and _fold(it["proof"]) not in _fold(whole):
+            rep.add("IG-missing", "coverage", "MAJOR", start + 1,
+                    f"Information_Gain đã hứa ở outline chưa có trong bài — proof “{it['proof']}” ({it['claim'][:70]})")
+            continue
+        delivered += 1
+        target = next((body for title, body in sections if it.get("h2") and _paa_match(it["h2"], title)), None)
+        if target is not None and proof not in squash("\n".join(target)):
+            rep.add("IG-misplaced", "coverage", "MINOR", start + 1,
+                    f"Proof “{it['proof']}” có trong bài nhưng không nằm ở H2 đã khai “{it['h2']}”")
+    rep.stats["information_gain"] = f"{delivered}/{len(items)}"
+
+
+# ─────────────────────────── Duplication across the corpus ───────────────────────────
+
+FINAL_DIR = ROOT / "knowledge/4-content/3-finalized"
+DUP_JACCARD = 0.8
+
+
+def _same_series(a: str, b: str) -> bool:
+    """cach-mua-co-phieu-<ticker> style series share a skeleton on purpose."""
+    ta, tb = a.split("-"), b.split("-")
+    return len(ta) > 3 and len(tb) > 3 and ta[:-1] == tb[:-1]
+
+
+def _similar(a: set, b: set) -> bool:
+    return bool(a) and bool(b) and len(a & b) / len(a | b) >= DUP_JACCARD
+
+
+def check_duplicates(rep, lines, start, slug: str):
+    """DUP-h2 / DUP-faq: a body H2 or FAQ question that another Final already answers.
+    Two DSC pages answering the same question split the ranking signal and say nothing new."""
+    my_h2 = [(i + 1, strip_md(l.strip()[2:].strip())) for i, l in enumerate(lines) if i >= start and re.match(r"^##\s", l.strip())]
+    my_h2 = [(ln, t, set(_ascii_words(t))) for ln, t in my_h2 if not re.search(r"(?i)faq|câu hỏi thường gặp|kết luận|lời kết", t)]
+    my_h2 = [x for x in my_h2 if len(x[2]) >= 4]  # short generic headings collide by chance
+    my_faq = [(ln, q, set(_ascii_words(q))) for ln, q, _ in faq_items(lines, start)]
+    if not (my_h2 or my_faq) or not FINAL_DIR.exists():
+        return
+    faq_hits = []
+    for f in sorted(FINAL_DIR.glob("Final-*.md")):
+        other = f.stem[len("Final-"):]
+        if other == slug or _same_series(other, slug):
+            continue
+        try:
+            ol = f.read_text(encoding="utf-8").replace("\r\n", "\n").split("\n")
+        except OSError:
+            continue
+        o_h2 = [set(_ascii_words(strip_md(l.strip()[2:]))) for l in ol if re.match(r"^##\s", l.strip())]
+        for ln, t, ws in my_h2:
+            if any(_similar(ws, o) for o in o_h2):
+                rep.add("DUP-h2", "coverage", "MAJOR", ln, f"H2 trùng với bài `{other}` — đổi góc của mục này hoặc link sang bài kia thay vì viết lại", t)
+        if my_faq:
+            o_faq = [set(_ascii_words(q)) for _, q, _ in faq_items(ol, 0)]
+            for ln, q, ws in my_faq:
+                if any(_similar(ws, o) for o in o_faq):
+                    faq_hits.append((ln, q, other))
+    seen = set()
+    for ln, q, other in faq_hits:
+        if ln in seen:
+            continue
+        seen.add(ln)
+        rep.add("DUP-faq", "coverage", "MINOR", ln, f"Câu FAQ đã có ở bài `{other}` — mỗi câu hỏi chỉ nên có 1 bài DSC trả lời", q)
+    if len(seen) >= 2:
+        rep.add("DUP-faq", "coverage", "MAJOR", min(seen), f"{len(seen)} câu FAQ trùng với bài khác trong corpus — thay bằng câu PAA riêng của keyword này")
+
+
+# ─────────────────────────── Trust: sources, disclaimer, first-hand evidence ───────────────────────────
+
+LEGAL_REF = re.compile(r"(Thông tư|Nghị định|Quyết định)\s+(số\s+)?\d+|Luật\s+[A-ZĐ][^.,;\n]{2,40}\d{4}")
+ATTRIBUTION = re.compile(r"(?i)\btheo\s+(số liệu|báo cáo|thống kê|dữ liệu|công bố|quy định)\b")
+DSC_CLAIM = re.compile(r"(?i)\b(khảo sát|thống kê|số liệu|dữ liệu|ghi nhận)\s+(nội bộ\s+)?(của\s+)?DSC\b")
+ADVICE = re.compile(r"(?i)\b(khuyến nghị (mua|bán|nắm giữ)|nên mua|nên bán|giá mục tiêu|vùng mua|(?<!thời )điểm mua|chốt lời ở|cắt lỗ ở)\b")
+NOT_TICKER = {"DSC", "ETF", "NAV", "CCQ", "USD", "VND", "VNĐ", "GDP", "CPI", "FED", "ROE", "ROA", "EPS", "IPO", "HNX", "HOSE",
+              "VSD", "VSDC", "FAQ", "APP", "OTP", "KYC", "EKYC", "RSI", "EMA", "SMA", "MACD", "VAT", "ATO", "ATC", "UBCKNN",
+              "NHNN", "CTCK", "BCTC", "TTCK", "UPCOM", "VN30", "VNINDEX", "T2", "FDI", "FII", "DCA", "PE", "PB"}
+DISCLAIMER = re.compile(r"(?i)(không (phải|cấu thành|được xem là|được coi là)\s+(là\s+)?(lời\s+)?(khuyến nghị|khuyên)|"
+                        r"chỉ mang tính (chất )?tham khảo|miễn trừ trách nhiệm)")
+FIRSTHAND_TOPIC = re.compile(r"(?i)\bapp\b|ứng dụng|mở tài khoản|đặt lệnh|nạp tiền|rút tiền|chuyển tiền")
+PHOTO_PLACEHOLDER = re.compile(r"\[ẢNH THỰC TẾ:[^\]]*\]")
+IMAGE = re.compile(r"!\[[^\]]*\]\([^)\s]+|<img\b", re.I)
+
+
+def load_whitelist() -> list[str]:
+    if not WHITELIST_FILE.exists():
+        return []
+    return re.findall(r"^\s*[-*]\s*`?([a-z0-9.-]+\.[a-z]{2,})`?", WHITELIST_FILE.read_text(encoding="utf-8"), re.M)
+
+
+def check_trust(rep, lines, prose, start, fm: dict, keyword: str, path: Path):
+    white = load_whitelist()
+    ext, good = [], 0
+    for i in range(start, len(lines)):
+        for m in re.finditer(r"(?<!!)\[([^\]]*)\]\((https?://[^)\s]+)", lines[i]):
+            host = re.sub(r"^www\.", "", m.group(2).split("/")[2].lower())
+            if host.endswith("dsc.com.vn"):
+                continue
+            ok = any(host == w or host.endswith("." + w) for w in white)
+            ext.append((i + 1, host, ok))
+            good += ok
+    rep.stats["source_links"] = good
+    for ln, host, ok in ext:
+        if not ok and white:
+            rep.add("SRC-host", "trust", "MINOR", ln,
+                    f"Link ngoài `{host}` không thuộc nguồn chính thống (source-whitelist.md) — đổi sang nguồn gốc hoặc bỏ link")
+    body = "\n".join(prose[start:])
+    legal = LEGAL_REF.search(body)
+    attributed = ATTRIBUTION.search(body)
+    if good == 0 and (legal or attributed):
+        hit = legal or attributed
+        ln = start + body[:hit.start()].count("\n") + 1
+        what = "văn bản pháp luật" if legal else "số liệu có ghi nguồn"
+        rep.add("SRC-missing", "trust", "MAJOR", ln,
+                f"Bài trích {what} (“{hit.group(0).strip()}…”) nhưng 0 link tới nguồn gốc — link văn bản / trang công bố "
+                "(domain trong source-whitelist.md) ngay tại câu trích")
+    for i in range(start, len(prose)):
+        m = DSC_CLAIM.search(prose[i])
+        if m and not (DATA_POINT.search(prose[i]) and TEMPORAL_MARKER.search(prose[i])):
+            rep.add("SRC-unshown", "trust", "MAJOR", i + 1,
+                    "Nhắc số liệu/khảo sát của DSC nhưng đoạn không có con số kèm mốc thời gian — đưa số ra hoặc bỏ câu", prose[i])
+    if not DISCLAIMER.search(body):
+        # advice counts only when the same sentence names a ticker / fund code
+        for i in range(start, len(prose)):
+            hit = next((sn for sn in split_sentences(strip_md(prose[i])) if ADVICE.search(sn) and any(
+                t not in NOT_TICKER for t in re.findall(r"(?<![\w-])[A-Z][A-Z0-9]{2,7}(?![\w-])", sn))), None)
+            if hit:
+                rep.add("YMYL-disclaimer", "trust", "MAJOR", i + 1,
+                        "Bài có nhận định mua/bán mã cụ thể nhưng thiếu câu miễn trừ (“…không phải khuyến nghị đầu tư”) — I113", hit)
+                break
+    raw = "\n".join(lines[start:])
+    placeholders = PHOTO_PLACEHOLDER.findall(raw)
+    if placeholders and path.name.startswith("Final-"):
+        rep.add("EEAT-placeholder", "trust", "CRITICAL", start + 1,
+                f"Còn {len(placeholders)} placeholder `[ẢNH THỰC TẾ: …]` trong bản Final — thay bằng ảnh chụp thật")
+    ctype = fm.get("Content_Type", "")
+    if (ctype == "Review" or FIRSTHAND_TOPIC.search(keyword or "")) and not IMAGE.search(raw) and not placeholders:
+        rep.add("EEAT-firsthand", "trust", "MAJOR", start + 1,
+                "Bài hướng dẫn thao tác / đánh giá app nhưng 0 ảnh — thêm ảnh chụp màn hình thật, hoặc đặt "
+                "`[ẢNH THỰC TẾ: mô tả màn hình cần chụp]` để người duyệt bổ sung")
+
+
+# ─────────────────────────── Answer-first (AEO) ───────────────────────────
+
+H2_SKIP = re.compile(r"(?i)faq|câu hỏi thường gặp|kết luận|dsc|lời kết")
+META_OPENER = re.compile(r"(?i)^(trong (phần|mục|bài|nội dung) (này|dưới đây)|dưới đây là|sau đây là|trước khi|để hiểu|"
+                         r"để trả lời|như đã|hãy cùng|chúng ta (hãy|sẽ)|cùng tìm hiểu|phần này)")
+H2_ANSWER_MAX = 40
+
+
+def check_answer_first(rep, lines, start, outline_path: Path | None):
+    """GEO-h2-answer: the first sentence under a body H2 is what answer engines lift — it must answer the heading."""
+    h2s, fails = 0, []
+    i = start
+    while i < len(lines):
+        m = re.match(r"^##\s+(.+)", lines[i].strip())
+        if not m or H2_SKIP.search(m.group(1)):
+            i += 1
+            continue
+        title, j = strip_md(m.group(1)), i + 1
+        while j < len(lines) and classify(lines[j]) in ("blank", "image", "html"):
+            j += 1
+        i += 1
+        if j >= len(lines) or classify(lines[j]) != "text":
+            continue  # section opens with a list / table / H3: nothing to judge
+        h2s += 1
+        sents = split_sentences(strip_md(lines[j]))
+        first = sents[0] if sents else ""
+        if len(first.split()) <= 3 and len(sents) > 1:  # "Có." / "Không." + the reason
+            first = first + " " + sents[1]
+        n = len(first.split())
+        why = ""
+        if META_OPENER.match(first):
+            why = "mở bằng câu dẫn, chưa trả lời"
+        elif n > H2_ANSWER_MAX:
+            why = f"câu đầu {n} từ (> {H2_ANSWER_MAX})"
+        elif not set(_ascii_words(title)) & set(_ascii_words(first)) and not re.match(r"(?i)^(có|không|nên|chưa|được)\b", first):
+            why = "câu đầu không nhắc đối tượng của heading (đoạn trích rời sẽ mất nghĩa)"
+        if why:
+            fails.append((j + 1, title, why, first))
+    rep.stats["h2_answer_first"] = f"{h2s - len(fails)}/{h2s}"
+    for ln, title, why, first in fails:
+        rep.add("GEO-h2-answer", "geo", "MINOR", ln, f"[{title[:50]}] {why}", first)
+    if h2s >= 3 and len(fails) > h2s / 2:
+        rep.add("GEO-h2-answer", "geo", "MAJOR", fails[0][0],
+                f"{len(fails)}/{h2s} H2 không trả lời ngay ở câu đầu — AI Overview / PAA trích câu đầu mỗi mục")
+    if not outline_path:
+        return
+    ol = _outline_mod()
+    try:
+        fm = ol.parse_yaml(outline_path.read_text(encoding="utf-8").replace("\r\n", "\n"))[0] if ol else {}
+    except OSError:
+        fm = {}
+    want = (fm.get("Featured_Snippet") or "").strip()
+    kinds = [classify(l) for l in lines]
+    body_kinds = kinds[start:]
+    if want == "Table" and "table" not in body_kinds:
+        rep.add("GEO-snippet", "geo", "MINOR", start + 1, "Outline nhắm Featured Snippet dạng Table nhưng bài không có bảng")
+    elif want == "List":
+        run = best = 0
+        for k in body_kinds:
+            run = run + 1 if k == "list" else (run if k == "blank" else 0)
+            best = max(best, run)
+        if best < 4:
+            rep.add("GEO-snippet", "geo", "MINOR", start + 1, "Outline nhắm Featured Snippet dạng List nhưng không có danh sách ≥ 4 mục")
+    elif want == "Paragraph":
+        first_h2 = next((x for x in range(start, len(lines)) if re.match(r"^##\s", lines[x].strip())), len(lines))
+        second_h2 = next((x for x in range(first_h2 + 1, len(lines)) if re.match(r"^##\s", lines[x].strip())), len(lines))
+        paras = [word_count(lines[x]) for x in range(start, second_h2) if kinds[x] == "text"]
+        if not any(40 <= w <= 60 for w in paras):
+            rep.add("GEO-snippet", "geo", "MINOR", start + 1,
+                    "Outline nhắm Featured Snippet dạng Paragraph nhưng sapo / H2 đầu không có đoạn 40–60 từ trả lời trọn ý")
 
 
 # ─────────────────────────── Fix (safe, idempotent) ───────────────────────────
@@ -818,6 +1168,10 @@ def apply_fixes(text: str) -> tuple[str, list[str]]:
             fixes.append(f"{label} ×{n}")
             body = new
 
+    new_head, n = re.subn(r"(?m)^Author:[ \t]*(?!%s[ \t]*$).*$" % re.escape(AUTHOR), "Author: " + AUTHOR, head)
+    if n:
+        head = new_head
+        fixes.append("Author → " + AUTHOR)
     sub(HIDDEN_UNICODE.pattern, "", "Xóa unicode ẩn")
     sub(r"\bVN\s?Index\b", "VN-Index", "VN Index → VN-Index")
     sub(r"(\d)\.(\d{1,2})(?!\d)(\s*%)", r"\1,\2\3", "Thập phân . → ,")
@@ -857,26 +1211,68 @@ def render(rep: Report) -> str:
             ex = f.excerpt.replace("|", "\\|")
             out.append(f"| {f.line} | {f.check} | {f.message.replace('|', '\\|')} | {ex} |")
     if rep.passed():
-        out += ["", "Lint PASS. Quality Guardian chỉ cần kiểm tra: CL4 Persona, CL5 số liệu thị trường, So-What / Prove-It, Load-Bearing Claim."]
+        out += ["", "Lint PASS. Quality Guardian chỉ cần kiểm tra: CL4 Persona, CL5 số liệu thị trường, So-What / Prove-It, "
+                    "Load-Bearing Claim, và từng mục Information_Gain có được giao đúng nghĩa không."]
     else:
         out += ["", "Sửa đúng các dòng CRITICAL/MAJOR ở trên rồi chạy lại. Tối đa 2 vòng — nếu vẫn FAIL, trình bày kèm danh sách còn lại."]
     return "\n".join(out)
 
 
-def append_log(rep: Report, slug: str):
+CHECK_LOG = ROOT / "knowledge/3-pipeline/qa-check-log.csv"
+
+
+def append_check_log(rep: Report, slug: str):
+    """One row per (article, check) — lets optimize_instincts.py --stats count how often a rule's
+    check still fires after the rule was learned (recurrence = the rule is not working)."""
+    import csv
+    counts: dict[tuple[str, str], int] = {}
+    for f in rep.findings:
+        counts[(f.check, f.severity)] = counts.get((f.check, f.severity), 0) + 1
+    new = not CHECK_LOG.exists()
+    with CHECK_LOG.open("a", encoding="utf-8", newline="") as fh:
+        w = csv.writer(fh)
+        if new:
+            w.writerow(["date", "slug", "tool", "check", "severity", "count"])
+        today = date.today().isoformat()
+        if not counts:
+            w.writerow([today, slug, "qa_lint", "-", "PASS", 0])
+        for (check, sev), n in sorted(counts.items()):
+            w.writerow([today, slug, "qa_lint", check, sev, n])
+
+
+SCORE_LOG = ROOT / "knowledge/3-pipeline/qa-score-log.csv"
+SCORE_COLS = ["date", "slug", "score", "critical", "major", "minor", "anti_ai", "seo", "readability", "link", "geo", "slop",
+              "coverage", "trust"]
+
+
+def slop_score_of(path: Path) -> str:
+    """Tầng B score for the same file, so the log row is complete without a manual edit."""
+    import subprocess
+    try:
+        r = subprocess.run([sys.executable, str(ROOT / "scripts/slop_check.py"), str(path), "--json"],
+                           capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=120)
+        return str(json.loads(r.stdout).get("slop_score", ""))
+    except Exception:
+        return ""
+
+
+def append_log(rep: Report, slug: str, path: Path | None = None):
+    """One CSV row per lint run (was a markdown table appended to revision-log.md, which bloated it)."""
+    import csv
     comp, cats = rep.score()
-    header = "## QA Score Log (auto — qa_lint.py)"
-    # Append-only, preserving the file's existing line endings (repo files mix CRLF/LF).
-    raw = REVISION_LOG.read_bytes() if REVISION_LOG.exists() else b""
-    nl = "\r\n" if b"\r\n" in raw else "\n"
-    text = raw.decode("utf-8")
-    row = (f"| {date.today().isoformat()} | {slug} | {comp} | {rep.count('CRITICAL')}/{rep.count('MAJOR')}/{rep.count('MINOR')} | "
-           + " ".join(f"{k[:4]}={v}" for k, v in cats.items()) + " |")
-    body = text.rstrip("\r\n")
-    if header not in text:
-        body += f"{nl}{nl}{header}{nl}{nl}| Ngày | Slug | Score | C/M/m | Theo nhóm |{nl}|---|---|---:|---|---|"
-    body += nl + row + nl
-    REVISION_LOG.write_bytes(body.encode("utf-8"))
+    new = not SCORE_LOG.exists()
+    if not new:  # older logs lack the substance columns: widen the header once, rows stay valid CSV
+        rows = SCORE_LOG.read_text(encoding="utf-8").split("\n")
+        if rows and "coverage" not in rows[0]:
+            rows[0] = ",".join(SCORE_COLS)
+            SCORE_LOG.write_text("\n".join(rows), encoding="utf-8")
+    with SCORE_LOG.open("a", encoding="utf-8", newline="") as fh:
+        w = csv.writer(fh)
+        if new:
+            w.writerow(SCORE_COLS)
+        w.writerow([date.today().isoformat(), slug, comp, rep.count("CRITICAL"), rep.count("MAJOR"), rep.count("MINOR"),
+                    cats.get("anti_ai", ""), cats.get("seo", ""), cats.get("readability", ""), cats.get("link", ""),
+                    cats.get("geo", ""), slop_score_of(path) if path else "", cats.get("coverage", ""), cats.get("trust", "")])
 
 
 def main() -> int:
@@ -889,7 +1285,7 @@ def main() -> int:
                     help="Bật CTA/banner checks (CTA-*). Chưa mặc định — corpus finalized chưa backfill banner")
     ap.add_argument("--fix", action="store_true", help="Apply safe idempotent fixes in place before linting")
     ap.add_argument("--json", action="store_true", help="Print JSON instead of markdown")
-    ap.add_argument("--log", action="store_true", help="Append score row to revision-log.md")
+    ap.add_argument("--log", action="store_true", help="Append score row (+ slop score) to qa-score-log.csv and per-check rows to qa-check-log.csv")
     ap.add_argument("--no-sitemap", action="store_true", help="Skip sitemap-cache URL verification")
     args = ap.parse_args()
 
@@ -911,7 +1307,11 @@ def main() -> int:
         rep.fixes = fixes
 
     fm, start, lines = split_frontmatter(text)
-    keyword = args.keyword or fm.get("Target_Keyword", "")
+    keyword = (args.keyword or fm.get("Target_Keyword", "") or fm.get("Keyword", "")
+               or fm.get("target_keyword", "")).strip('"')
+    if fm and not keyword:
+        rep.add("CL1-keyword-missing", "seo", "CRITICAL", 1,
+                "Front matter không có `Target_Keyword` — mọi check keyword (title/meta/H1/sapo) đang bị bỏ qua")
     slug = fm.get("Slug") or re.sub(r"^(Final|Draft|Optimize)-", "", path.stem)
     rep.stats["keyword"] = keyword
 
@@ -931,18 +1331,26 @@ def main() -> int:
     check_links(rep, lines, start, sitemap, not args.no_sitemap)
     check_link_rules(rep, lines, start, slug)
     check_geo(rep, prose, start)  # CSS percentages (0%, 70%) would count as data points
+    check_boilerplate_stats(rep, prose, start)
     if args.cta:
         check_cta(rep, path)
     if args.original:
         check_images(rep, lines, start, Path(args.original))
     paa_count = 0
-    if args.outline:
-        check_word_count(rep, path, Path(args.outline))
-        paa_count = check_paa(rep, lines, start, Path(args.outline))
+    outline = Path(args.outline) if args.outline else None
+    if outline:
+        check_word_count(rep, path, outline)
+        paa_count = check_paa(rep, lines, start, outline)
+        check_information_gain(rep, lines, start, outline)
     check_faq_format(rep, lines, start, paa_count)
+    check_entities(rep, prose, start, keyword, outline)
+    check_duplicates(rep, prose, start, slug)
+    check_trust(rep, lines, prose, start, fm, keyword, path)
+    check_answer_first(rep, prose, start, outline)
 
     if args.log:
-        append_log(rep, slug)
+        append_log(rep, slug, path)
+        append_check_log(rep, slug)
 
     if args.json:
         comp, cats = rep.score()

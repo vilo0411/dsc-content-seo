@@ -1,7 +1,7 @@
 # Product Bridge Patterns
 
 > Đoạn **2–3 câu, mỗi câu ≤ 30 từ** chuyển từ kiến thức bài đang nói sang lý do DSC giải quyết được việc đó. Đứng ngay trước banner CTA.
-> **Luận điểm không tự nghĩ** — lấy từ `knowledge/1-brand/personas.md` → `### DSC Product Bridge` của persona bài đó.
+> **Luận điểm không tự nghĩ** — lấy từ `python scripts/persona.py P<n> --part bridge` (personas.md) → `### DSC Product Bridge` của persona bài đó.
 > Đây là văn xuôi → chịu toàn bộ `knowledge/3-pipeline/anti-ai-rules.md`.
 
 ---

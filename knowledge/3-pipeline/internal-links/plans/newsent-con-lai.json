@@ -1,0 +1,353 @@
+{
+ "title": "6 cụm nhỏ còn lại (Mở tài khoản, Vàng, Quỹ & ETF, Học & nghề, Phái sinh, Trái phiếu) — câu mới chứa link về pillar/hub",
+ "edits": [
+  {
+   "src": "dau-tu-chung-khoan-ao-la-gi-huong-dan-chi-tiet-va-day-du",
+   "op": "append",
+   "find": "hoán ảo là kiếm lợi nhuận hoặc rèn luyện kỹ năng đầu tư mà không gặp rủi ro mất tiền thật.",
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "sentence": "Khi đã quen thao tác, bước tiếp theo là [mở tài khoản chứng khoán] thật và bắt đầu với số vốn nhỏ.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=1"
+  },
+  {
+   "src": "thue-chuyen-nhuong-chung-khoan-la-gi",
+   "op": "append",
+   "find": "g ngay khi giao dịch thành công, bất kể bạn đang lãi hay lỗ.",
+   "to": "phi-giao-dich-chung-khoan",
+   "sentence": "Khoản thuế này tách biệt với [phí giao dịch chứng khoán] mà công ty chứng khoán thu trên cả lệnh mua lẫn lệnh bán.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "sub-hub · đoạn i=7"
+  },
+  {
+   "src": "thue-khi-ban-co-phieu-la-bao-nhieu",
+   "op": "append",
+   "find": "i nhuận lớn sau 1 đến 2 năm hoạt động. Mỗi đồng phí đều quý.",
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "sentence": "Vì vậy, biểu phí là tiêu chí cần so sánh trước khi [mở tài khoản chứng khoán] tại một công ty.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=112"
+  },
+  {
+   "src": "luu-ky-chung-khoan-moi-dieu-ban-can-biet",
+   "op": "append",
+   "find": "g cổ phiếu, trái phiếu và chứng chỉ quỹ mà bạn đang nắm giữ.",
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "sentence": "Tài khoản lưu ký được tạo cùng lúc khi nhà đầu tư [mở tài khoản chứng khoán] tại một công ty chứng khoán thành viên.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=3"
+  },
+  {
+   "src": "app-dau-tu-vang",
+   "op": "append",
+   "find": "đây mọi giao dịch đều có thể thực hiện chỉ với vài cú chạm.",
+   "to": "dau-tu-vang-nen-mua-loai-nao",
+   "sentence": "Trước khi chọn app, cần xác định [đầu tư vàng nên mua loại nào], vì mỗi nhóm app chỉ bán một vài loại vàng nhất định.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "sub-hub · đoạn i=2"
+  },
+  {
+   "src": "nen-mua-vang-mieng-sjc-hay-pnj",
+   "op": "append",
+   "find": "ạng mẫu mã (vàng 10K, 14K, 18K) và vàng nhẫn tròn trơn 9999.",
+   "to": "dau-tu-vang-nen-mua-loai-nao",
+   "sentence": "Việc [chọn loại vàng] vì thế phụ thuộc vào mục đích: tích trữ dài hạn hay vừa đeo vừa giữ tài sản.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "sub-hub · đoạn i=8"
+  },
+  {
+   "src": "nen-mua-vang-o-ngan-hang-hay-tiem-vang",
+   "op": "append",
+   "find": "g miếng SJC trực tiếp đến người dân nhằm bình ổn thị trường.",
+   "to": "dau-tu-vang-nen-mua-loai-nao",
+   "sentence": "Nơi mua vì thế đi liền với việc [chọn loại vàng]: ngân hàng chỉ bán vàng miếng, còn tiệm vàng có cả nhẫn trơn và trang sức.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "sub-hub · đoạn i=14"
+  },
+  {
+   "src": "nen-mua-vang-mieng-hay-vang-nhan",
+   "op": "append",
+   "find": "ếng SJC, là kênh cất trữ an toàn và được ưa chuộng hàng đầu.",
+   "to": "dau-tu-vang-nen-mua-loai-nao",
+   "sentence": "Hai lựa chọn này là phần chính của câu hỏi [nên mua vàng loại nào để tích trữ], bên cạnh vàng trang sức và vàng tài khoản.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "sub-hub · đoạn i=34"
+  },
+  {
+   "src": "cach-dau-tu-etf-tai-viet-nam-huong-dan-chi-tiet-tu-a-den-z",
+   "op": "append",
+   "find": "như: chi phí thấp, tính thanh khoản cao, và dễ dàng đầu tư.",
+   "to": "chung-chi-quy-la-gi",
+   "sentence": "Mỗi phần vốn góp vào quỹ được gọi là [chứng chỉ quỹ], và đây chính là thứ nhà đầu tư mua bán trên sàn.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=3"
+  },
+  {
+   "src": "quy-dau-tu-mao-hiem-la-gi",
+   "op": "append",
+   "find": "startup) hoặc doanh nghiệp trẻ có tiềm năng tăng trưởng cao.",
+   "to": "quy-mo-la-gi-tong-quan-ve-quy-mo-tren-thi-truong-chung-khoan-viet-nam",
+   "sentence": "Nhà đầu tư cá nhân vốn nhỏ thường tiếp cận thị trường qua [quỹ mở], còn quỹ mạo hiểm chủ yếu dành cho tổ chức và người có vốn lớn.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "sub-hub · đoạn i=3"
+  },
+  {
+   "src": "uy-thac-dau-tu-la-gi",
+   "op": "append",
+   "find": "muốn tối ưu hiệu quả sinh lời thông qua đội ngũ chuyên gia.",
+   "to": "chung-chi-quy-la-gi",
+   "sentence": "Với số vốn nhỏ hơn, [đầu tư chứng chỉ quỹ] là cách phổ biến để nhờ chuyên gia quản lý tiền thay mình.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=5"
+  },
+  {
+   "src": "phan-biet-quy-etf-va-quy-tuong-ho",
+   "op": "append",
+   "find": "yên gia tài chính giàu kinh nghiệm trong đầu tư chứng khoán.",
+   "to": "chung-chi-quy-la-gi",
+   "sentence": "Phần vốn góp của mỗi người được ghi nhận bằng [chứng chỉ quỹ], tương tự cổ phiếu với một doanh nghiệp.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=3"
+  },
+  {
+   "src": "danh-sach-cac-dien-dan-chung-khoan-uy-tin-tai-viet-nam",
+   "op": "append",
+   "find": ", bao gồm cả người mới bắt đầu và nhà đầu tư có kinh nghiệm.",
+   "to": "khoa-hoc-chung-khoan",
+   "sentence": "Người mới nên kết hợp với một [khóa học chứng khoán] bài bản, vì thông tin trên diễn đàn rời rạc và chưa được kiểm chứng.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "sub-hub · đoạn i=10"
+  },
+  {
+   "src": "chung-chi-hanh-nghe-chung-khoan-la-gi",
+   "op": "append",
+   "find": "chứng cho kiến thức chuyên sâu và sự am hiểu về thị trường.",
+   "to": "chung-chi-tai-chinh",
+   "sentence": "Khác với [chứng chỉ tài chính quốc tế] như CFA hay CMT, đây là điều kiện pháp lý bắt buộc để hành nghề tại Việt Nam.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "sub-hub · đoạn i=2"
+  },
+  {
+   "src": "chung-chi-cmt-la-gi",
+   "op": "append",
+   "find": "quỹ, chuyên viên tư vấn đầu tư, hay nhà giao dịch độc lập..",
+   "to": "chung-chi-tai-chinh",
+   "sentence": "Trong [các chứng chỉ tài chính] quốc tế, CMT chuyên về phân tích kỹ thuật, còn CFA thiên về phân tích cơ bản và quản lý danh mục.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "sub-hub · đoạn i=12"
+  },
+  {
+   "src": "kenh-tik-tok-ve-tai-chinh",
+   "op": "append",
+   "find": "có thể học hỏi thêm kinh nghiệm và nâng cao kỹ năng đầu tư.",
+   "to": "khoa-hoc-chung-khoan",
+   "sentence": "Video ngắn hợp để làm quen; muốn có hệ thống, người mới vẫn cần một [khóa học chứng khoán] đi từ nền tảng.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "sub-hub · đoạn i=65"
+  },
+  {
+   "src": "quyen-chon-mua-co-phieu-la-gi",
+   "op": "append",
+   "find": "tạp hơn các loại chứng khoán khác như cổ phiếu, trái phiếu.",
+   "to": "chung-khoan-phai-sinh-la-gi-huong-dan-dau-tu-cho-nguoi-moi-bat-dau",
+   "sentence": "Quyền chọn là một trong bốn nhóm [chứng khoán phái sinh] cơ bản, cùng với hợp đồng tương lai, kỳ hạn và hoán đổi.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=10"
+  },
+  {
+   "src": "nen-mua-vang-mieng-sjc-hay-pnj",
+   "op": "wrap",
+   "find": "nhàn rỗi đáng kể và xác định đầu tư vàng để bảo toàn giá trị tài sản t",
+   "to": "cach-dau-tu-vang",
+   "anchor": "đầu tư vàng",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "pillar · bọc cụm có sẵn"
+  },
+  {
+   "src": "etf-la-gi",
+   "op": "wrap",
+   "find": "Khác với quỹ mở truyền thống, chứng chỉ quỹ ETF được niêm yết và giao dịc",
+   "to": "chung-chi-quy-la-gi",
+   "anchor": "chứng chỉ quỹ",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "pillar · bọc cụm có sẵn"
+  },
+  {
+   "src": "huong-dan-mo-tai-khoan-chung-chi-quy",
+   "op": "wrap",
+   "find": "bạn tích lũy dài hạn vào các quỹ mở riêng lẻ, kênh trực tiếp hoặc",
+   "to": "quy-mo-la-gi-tong-quan-ve-quy-mo-tren-thi-truong-chung-khoan-viet-nam",
+   "anchor": "quỹ mở",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "sub-hub · bọc cụm có sẵn"
+  },
+  {
+   "src": "tin-phieu-kho-bac-la-gi",
+   "op": "wrap",
+   "find": "trả lãi định kỳ (coupon) như trái phiếu thông thường. Nhà đầu tư mua",
+   "to": "trai-phieu-la-gi",
+   "anchor": "trái phiếu",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "pillar · bọc cụm có sẵn"
+  }
+ ],
+ "skipped": [
+  {
+   "src": "app-chuyen-theo-doi-thi-truong-chung-khoan-nen-dung-app-nao",
+   "target": "cach-mo-tai-khoan-chung-khoan",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "co-phieu-bi-cat-margin-nguyen-nhan-anh-huong-va-cach-xu-ly",
+   "target": "cach-mo-tai-khoan-chung-khoan",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "dau-tu-chung-khoan-ao-la-gi-huong-dan-chi-tiet-va-day-du",
+   "target": "app-dau-tu-chung-khoan",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "call-force-sell-ban-giai-chap-trong-dau-tu-chung-khoan-la-gi",
+   "target": "cach-mo-tai-khoan-chung-khoan",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "call-margin-la-gi-lam-gi-khi-bi-call-margin",
+   "target": "cach-mo-tai-khoan-chung-khoan",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "don-bay-tai-chinh-trong-dau-tu-chung-khoan-la-gi",
+   "target": "cach-mo-tai-khoan-chung-khoan",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "thue-chuyen-nhuong-chung-khoan-la-gi",
+   "target": "cach-mo-tai-khoan-chung-khoan",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "full-margin-la-gi-loi-khuyen-cho-nha-dau-tu-moi",
+   "target": "cach-mo-tai-khoan-chung-khoan",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "co-nen-ban-vang-thoi-diem-nay",
+   "target": "co-nen-dau-tu-vang-thoi-diem-nay",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "trien-vong-trien-khai-quy-etf-vang-tai-viet-nam",
+   "target": "cach-dau-tu-vang",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "nen-mua-vang-sjc-hay-9999",
+   "target": "dau-tu-vang-nen-mua-loai-nao",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "ung-dung-arbitrage-vao-dau-tu-chung-chi-quy",
+   "target": "quy-mo-la-gi-tong-quan-ve-quy-mo-tren-thi-truong-chung-khoan-viet-nam",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "quy-dau-tu-mao-hiem-la-gi",
+   "target": "chung-chi-quy-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "giao-trinh-phan-tich-bao-cao-tai-chinh",
+   "target": "nhung-cuon-sach-hay-ve-dau-tu-chung-khoan",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "khoa-hoc-chung-khoan-tan-thu",
+   "target": "khoa-hoc-chung-khoan",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "khoa-hoc-ky-thuat-thuc-chien",
+   "target": "khoa-hoc-chung-khoan",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "phi-va-thue-khi-giao-dich-chung-quyen-co-bao-dam-tai-viet-nam",
+   "target": "chung-quyen-la-gi-chung-quyen-co-bao-dam-la-gi-tim-hieu-chung-quyen-tai-viet-nam",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  }
+ ]
+}

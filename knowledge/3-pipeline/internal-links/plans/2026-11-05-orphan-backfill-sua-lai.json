@@ -1,0 +1,313 @@
+{
+ "title": "Orphan-backfill — phần còn phải sửa trên CMS (5/11)",
+ "intro": "Đối chiếu live 5/11: 63 mục đã đúng, không đụng lại. File này chỉ gồm: 15 bài đã dán câu bản cũ cần gỡ/đặt lại + 3 mục chưa làm.",
+ "edits": [
+  {
+   "src": "co-phieu-pvt-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+   "op": "replace",
+   "find": "Ở mảng tàu hàng rời, có thể đối chiếu vớ",
+   "old_text": " Ở mảng tàu hàng rời, có thể đối chiếu với <a target=\"_blank\" href=\"https://www.dsc.com.vn/kien-thuc/co-phieu-vos-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat\"><strong>cổ phiếu VOS</strong></a> của Công ty Cổ phần Vận tải Biển Việt Nam.",
+   "sentence": " Đây cũng là mảng chính của Vosco ([cổ phiếu VOS]), nên khi giá cước tàu hàng rời biến động, kết quả kinh doanh của hai doanh nghiệp thường chịu tác động cùng chiều.",
+   "to": "co-phieu-vos-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+   "group": "backfill",
+   "pri": "P1",
+   "check_text": true,
+   "why": "Đã dán bản cũ → thay câu tại chỗ: Bài orphan 29 clicks, cùng nhóm vận tải biển"
+  },
+  {
+   "src": "co-phieu-uu-dai-la-gi",
+   "op": "cut",
+   "find": "Khác biệt về quyền biểu quyết và cổ tức ",
+   "old_text": " Khác biệt về quyền biểu quyết và cổ tức giữa hai loại có trong bảng <a target=\"_blank\" href=\"https://www.dsc.com.vn/kien-thuc/so-sanh-co-phieu-thuong-va-co-phieu-uu-dai\"><strong>so sánh cổ phiếu thường và cổ phiếu ưu đãi</strong></a>.",
+   "old": "https://www.dsc.com.vn/kien-thuc/so-sanh-co-phieu-thuong-va-co-phieu-uu-dai",
+   "group": "fix",
+   "pri": "P1",
+   "why": "Gỡ câu bản cũ (không hợp ngữ cảnh)"
+  },
+  {
+   "src": "co-phieu-uu-dai-la-gi",
+   "op": "append",
+   "find": "Cổ đông nắm giữ cổ phiếu ưu đãi cổ tức không có quyền biểu quyết",
+   "to": "so-sanh-co-phieu-thuong-va-co-phieu-uu-dai",
+   "anchor": "so sánh cổ phiếu thường và cổ phiếu ưu đãi",
+   "sentence": "Đây là khác biệt rõ nhất khi [so sánh cổ phiếu thường và cổ phiếu ưu đãi], vì cổ đông phổ thông luôn có quyền biểu quyết tại ĐHĐCĐ.",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Đặt lại: Mục Cổ phiếu ưu đãi cổ tức, ngay sau câu \"không có quyền biểu quyết\"",
+   "check_text": true
+  },
+  {
+   "src": "top-co-phieu-cao-su-nen-dau-tu",
+   "op": "replace",
+   "find": "Xem doanh nghiệp nằm ở khâu nào trong ch",
+   "old_text": " Xem doanh nghiệp nằm ở khâu nào trong <a target=\"_blank\" href=\"https://www.dsc.com.vn/kien-thuc/chuoi-gia-tri-nganh-cao-su\"><strong>chuỗi giá trị ngành cao su</strong></a>, từ trồng, khai thác mủ đến chế biến, để biết ai hưởng lợi khi giá tăng.",
+   "sentence": " Với ngành cao su, cần xác định doanh nghiệp nằm ở khâu nào trong [chuỗi giá trị ngành cao su]: nhóm trồng và khai thác mủ hưởng lợi trực tiếp khi giá mủ tăng, còn nhóm chế biến chịu thêm áp lực chi phí nguyên liệu.",
+   "to": "chuoi-gia-tri-nganh-cao-su",
+   "group": "backfill",
+   "pri": "P1",
+   "check_text": true,
+   "why": "Đã dán bản cũ → thay câu tại chỗ: Bài orphan 15 clicks, nguồn 201 clicks, đoạn tiêu chí chọn mã cao su"
+  },
+  {
+   "src": "chi-bao-atr-la-gi",
+   "op": "cut",
+   "find": "Chỉ báo Supertrend dùng chính ATR để vẽ ",
+   "old_text": " <a target=\"_blank\" href=\"https://www.dsc.com.vn/kien-thuc/chi-bao-supertrend-la-gi-huong-dan-su-dung-hieu-qua-cho-nha-dau-tu\"><strong>Chỉ báo Supertrend</strong></a> dùng chính ATR để vẽ đường dừng lỗ bám theo giá, phù hợp khi bạn giao dịch theo xu hướng.",
+   "old": "https://www.dsc.com.vn/kien-thuc/chi-bao-supertrend-la-gi-huong-dan-su-dung-hieu-qua-cho-nha-dau-tu",
+   "group": "fix",
+   "pri": "P1",
+   "why": "Gỡ câu bản cũ (không hợp ngữ cảnh)"
+  },
+  {
+   "src": "chi-bao-atr-la-gi",
+   "op": "append",
+   "find": "không thể dùng ATR xác định điểm quá mua",
+   "to": "chi-bao-supertrend-la-gi-huong-dan-su-dung-hieu-qua-cho-nha-dau-tu",
+   "anchor": "Chỉ báo Supertrend",
+   "sentence": "Thay vào đó, ATR thường dùng để tính khoảng cách đặt dừng lỗ: [chỉ báo Supertrend] lấy bội số của ATR để vẽ đường dừng lỗ bám theo giá.",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Đặt lại: Mục Ví dụ ứng dụng ATR (thay vì Kết luận): nối từ \"không dùng ATR xác định quá mua/bán\"",
+   "check_text": true
+  },
+  {
+   "src": "du-mua-du-ban-tren-bang-gia-chung-khoan-la-gi",
+   "op": "cut",
+   "find": "Khi cột dư mua trống hoàn toàn ở giá sàn",
+   "old_text": " Khi cột dư mua trống hoàn toàn ở giá sàn, cổ phiếu rơi vào trạng thái <a target=\"_blank\" href=\"https://www.dsc.com.vn/kien-thuc/co-phieu-trang-ben-mua-la-gi\"><strong>trắng bên mua</strong></a> và gần như không thể bán ra trong phiên.",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-phieu-trang-ben-mua-la-gi",
+   "group": "fix",
+   "pri": "P1",
+   "why": "Gỡ câu bản cũ (không hợp ngữ cảnh)"
+  },
+  {
+   "src": "du-mua-du-ban-tren-bang-gia-chung-khoan-la-gi",
+   "op": "append",
+   "find": "nếu dư mua là 10.000 cổ phiếu",
+   "to": "co-phieu-trang-ben-mua-la-gi",
+   "anchor": "trắng bên mua",
+   "sentence": "Trường hợp cực đoan là cột dư mua trống hoàn toàn khi giá đã ở mức sàn: cổ phiếu rơi vào trạng thái [trắng bên mua] và người muốn bán gần như không khớp được lệnh.",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Đặt lại: Mục Cách đọc dư mua dư bán, ngay sau ví dụ đọc cột",
+   "check_text": true
+  },
+  {
+   "src": "lai-suat-la-gi",
+   "op": "cut",
+   "find": "Lãi suất tác động tới xu hướng thị trườn",
+   "old_text": " Lãi suất tác động tới <a target=\"_blank\" href=\"https://www.dsc.com.vn/kien-thuc/moi-quan-he-giua-lai-suat-va-xu-huong-van-dong-cua-thi-truong-chung-khoan\"><strong>xu hướng thị trường chứng khoán</strong></a> qua hai kênh: chi phí vay của doanh nghiệp và dòng tiền rời khỏi kênh tiết kiệm.",
+   "old": "https://www.dsc.com.vn/kien-thuc/moi-quan-he-giua-lai-suat-va-xu-huong-van-dong-cua-thi-truong-chung-khoan",
+   "group": "fix",
+   "pri": "P1",
+   "why": "Gỡ câu bản cũ (không hợp ngữ cảnh)"
+  },
+  {
+   "src": "lai-suat-la-gi",
+   "op": "append",
+   "find": "doanh nghiệp đang gánh khoản nợ vay 1.000 tỷ",
+   "to": "moi-quan-he-giua-lai-suat-va-xu-huong-van-dong-cua-thi-truong-chung-khoan",
+   "anchor": "xu hướng vận động của thị trường chứng khoán",
+   "sentence": "Chiều ngược lại cũng đúng: khi lãi suất tăng, chi phí vay cao hơn và dòng tiền quay về ngân hàng cùng gây áp lực lên [xu hướng vận động của thị trường chứng khoán].",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Đặt lại: Mục Mối quan hệ lãi suất và TTCK (thay vì mục CTA DSC): bổ sung chiều lãi suất tăng sau ví dụ lãi suất giảm",
+   "check_text": true
+  },
+  {
+   "src": "ty-so-no-tren-tong-tai-san-la-gi",
+   "op": "replace",
+   "find": "Với doanh nghiệp vay vốn để xây nhà máy,",
+   "old_text": " Với doanh nghiệp vay vốn để xây nhà máy, nên xem thêm <a target=\"_blank\" href=\"https://www.dsc.com.vn/kien-thuc/ty-le-no-dai-han-tren-von-chu-so-huu-la-gi\"><strong>tỷ lệ nợ dài hạn trên vốn chủ sở hữu</strong></a> để đo áp lực trả nợ nhiều năm.",
+   "sentence": " Với doanh nghiệp vay dài hạn để xây nhà máy, tách riêng [tỷ lệ nợ dài hạn trên vốn chủ sở hữu] sẽ cho thấy áp lực trả nợ trong nhiều năm tới.",
+   "to": "ty-le-no-dai-han-tren-von-chu-so-huu-la-gi",
+   "group": "backfill",
+   "pri": "P1",
+   "check_text": true,
+   "why": "Đã dán bản cũ → thay câu tại chỗ: Mục phân tích sâu cơ cấu nợ"
+  },
+  {
+   "src": "tim-hieu-phuong-phap-wyckoff-ve-phan-tich-co-phieu",
+   "op": "cut",
+   "find": "Dựa trên mô hình này, chỉ báo MCDX tách ",
+   "old_text": " Dựa trên mô hình này, <a target=\"_blank\" href=\"https://www.dsc.com.vn/kien-thuc/chi-bao-mcdx-la-gi-giai-ma-cong-cu-phan-tich-xu-huong-dong-tien-hieu-qua\"><strong>chỉ báo MCDX</strong></a> tách dòng tiền nhà tạo lập thành đường màu đỏ để nhận diện pha gom hàng.",
+   "old": "https://www.dsc.com.vn/kien-thuc/chi-bao-mcdx-la-gi-giai-ma-cong-cu-phan-tich-xu-huong-dong-tien-hieu-qua",
+   "group": "fix",
+   "pri": "P1",
+   "why": "Gỡ câu bản cũ (không hợp ngữ cảnh)"
+  },
+  {
+   "src": "tim-hieu-phuong-phap-wyckoff-ve-phan-tich-co-phieu",
+   "op": "append",
+   "find": "Chiến lược mua rải giúp nhà tạo lập",
+   "to": "chi-bao-mcdx-la-gi-giai-ma-cong-cu-phan-tich-xu-huong-dong-tien-hieu-qua",
+   "anchor": "chỉ báo MCDX",
+   "sentence": "Trên biểu đồ, pha gom hàng này có thể theo dõi bằng [chỉ báo MCDX]: đường màu đỏ (dòng tiền nhà tạo lập) đi lên trong khi giá vẫn đi ngang là dấu hiệu nhà tạo lập đang gom.",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Đặt lại: Cuối đoạn mô tả pha gom hàng (không chen giữa định nghĩa và giải thích)",
+   "check_text": true
+  },
+  {
+   "src": "cach-su-dung-4-duong-ma-pho-bien-trong-phan-tich-ky-thuat",
+   "op": "cut",
+   "find": "Khi MA50 cắt lên MA200, tín hiệu này đượ",
+   "old_text": " Khi MA50 cắt lên MA200, tín hiệu này được gọi là <a target=\"_blank\" href=\"https://www.dsc.com.vn/kien-thuc/golden-cross-va-death-cross-la-gi\"><strong>Golden Cross</strong></a>, chiều ngược lại là Death Cross.",
+   "old": "https://www.dsc.com.vn/kien-thuc/golden-cross-va-death-cross-la-gi",
+   "group": "fix",
+   "pri": "P1",
+   "why": "Gỡ câu bản cũ (không hợp ngữ cảnh)"
+  },
+  {
+   "src": "cach-su-dung-4-duong-ma-pho-bien-trong-phan-tich-ky-thuat",
+   "op": "wrap",
+   "find": "cây thánh giá vàng",
+   "to": "golden-cross-va-death-cross-la-gi",
+   "anchor": "cây thánh giá vàng",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Đặt lại: Mục Hai đường MA giao cắt có sẵn cụm \"cây thánh giá vàng\" → wrap, không cần thêm câu"
+  },
+  {
+   "src": "khoa-hoc-chung-khoan-tai-ho-chi-minh",
+   "op": "replace",
+   "find": "Người chưa từng đọc báo cáo tài chính có",
+   "old_text": " Người chưa từng đọc báo cáo tài chính có thể xem trước <a target=\"_blank\" href=\"https://www.dsc.com.vn/kien-thuc/khoa-hoc-phan-tich-chung-khoan-co-ban\"><strong>lộ trình khóa học phân tích cơ bản</strong></a> để biết nên học phần nào trước.",
+   "sentence": " Với người chưa từng đọc báo cáo tài chính, nên bắt đầu từ [lộ trình khóa học phân tích cơ bản] trước khi chuyển sang phân tích kỹ thuật.",
+   "to": "khoa-hoc-phan-tich-chung-khoan-co-ban",
+   "group": "backfill",
+   "pri": "P1",
+   "check_text": true,
+   "why": "Đã dán bản cũ → thay câu tại chỗ: Mục nội dung học phân tích cơ bản"
+  },
+  {
+   "src": "canh-tranh-hoan-hao-la-gi",
+   "op": "cut",
+   "find": "Cách các doanh nghiệp phản ứng với nhau ",
+   "old_text": " Cách các doanh nghiệp phản ứng với nhau về giá trong mô hình này có thể phân tích bằng <a target=\"_blank\" href=\"https://www.dsc.com.vn/kien-thuc/ly-thuyet-tro-choi-ung-dung-phan-tich-hanh-vi-doanh-nghiep-trong-thi-truong-canh-tranh-hoan-hao\"><strong>lý thuyết trò chơi</strong></a>.",
+   "old": "https://www.dsc.com.vn/kien-thuc/ly-thuyet-tro-choi-ung-dung-phan-tich-hanh-vi-doanh-nghiep-trong-thi-truong-canh-tranh-hoan-hao",
+   "group": "fix",
+   "pri": "P1",
+   "why": "Gỡ câu bản cũ (không hợp ngữ cảnh)"
+  },
+  {
+   "src": "canh-tranh-hoan-hao-la-gi",
+   "op": "append",
+   "find": "gần như không thể đưa ra chiến lược",
+   "to": "ly-thuyet-tro-choi-ung-dung-phan-tich-hanh-vi-doanh-nghiep-trong-thi-truong-canh-tranh-hoan-hao",
+   "anchor": "lý thuyết trò chơi",
+   "sentence": "Điều này trái với thị trường độc quyền nhóm, nơi mỗi quyết định giá của một doanh nghiệp buộc đối thủ phải phản ứng, tình huống thường được phân tích bằng [lý thuyết trò chơi].",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Đặt lại: Mục Nhược điểm; câu cũ sai kinh tế học (cạnh tranh hoàn hảo không có tương tác chiến lược về giá)",
+   "check_text": true
+  },
+  {
+   "src": "bien-loi-nhuan-rong-net-profit-margin-la-gi-giai-dap-chi-tiet-va-y-nghia-quan-trong",
+   "op": "cut",
+   "find": "Cách tính từng mức lợi nhuận, từ lợi nhu",
+   "old_text": " Cách tính từng mức lợi nhuận, từ lợi nhuận gộp đến lợi nhuận sau thuế, nằm trong các <a target=\"_blank\" href=\"https://www.dsc.com.vn/kien-thuc/chi-tieu-loi-nhuan-cua-doanh-nghiep\"><strong>chỉ tiêu lợi nhuận của doanh nghiệp</strong></a>.",
+   "old": "https://www.dsc.com.vn/kien-thuc/chi-tieu-loi-nhuan-cua-doanh-nghiep",
+   "group": "fix",
+   "pri": "P1",
+   "why": "Gỡ câu bản cũ (không hợp ngữ cảnh)"
+  },
+  {
+   "src": "bien-loi-nhuan-rong-net-profit-margin-la-gi-giai-dap-chi-tiet-va-y-nghia-quan-trong",
+   "op": "append",
+   "find": "đặt biên lợi nhuận ròng bên cạnh biên lợi nhuận gộp",
+   "to": "chi-tieu-loi-nhuan-cua-doanh-nghiep",
+   "anchor": "chỉ tiêu lợi nhuận của doanh nghiệp",
+   "sentence": "Ba mức lợi nhuận dùng làm tử số (lợi nhuận gộp, lợi nhuận hoạt động và lợi nhuận sau thuế) đều thuộc nhóm [chỉ tiêu lợi nhuận của doanh nghiệp] trên báo cáo kết quả kinh doanh.",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Đặt lại: Mục Mối quan hệ 3 chỉ số biên lợi nhuận (không chen giữa định nghĩa)",
+   "check_text": true
+  },
+  {
+   "src": "quy-trai-phieu-la-gi",
+   "op": "cut",
+   "find": "Trước khi chọn quỹ, bạn nên xem trái phi",
+   "old_text": " Trước khi chọn quỹ, bạn nên xem <a target=\"_blank\" href=\"https://www.dsc.com.vn/kien-thuc/tai-sao-nen-dau-tu-trai-phieu-trai-phieu-phu-hop-voi-nha-dau-tu-nao\"><strong>trái phiếu phù hợp với nhà đầu tư nào</strong></a> để biết kênh này có hợp với mình không.",
+   "old": "https://www.dsc.com.vn/kien-thuc/tai-sao-nen-dau-tu-trai-phieu-trai-phieu-phu-hop-voi-nha-dau-tu-nao",
+   "group": "fix",
+   "pri": "P1",
+   "why": "Gỡ câu bản cũ (không hợp ngữ cảnh)"
+  },
+  {
+   "src": "quy-trai-phieu-la-gi",
+   "op": "newli",
+   "find": "Khởi đầu với số vốn nhỏ",
+   "to": "tai-sao-nen-dau-tu-trai-phieu-trai-phieu-phu-hop-voi-nha-dau-tu-nao",
+   "anchor": "trái phiếu phù hợp với nhà đầu tư nào",
+   "sentence": "<strong>Phù hợp với nhà đầu tư ưu tiên an toàn</strong>. Câu hỏi [trái phiếu phù hợp với nhà đầu tư nào] có chung đáp án với quỹ trái phiếu: người cần dòng tiền ổn định, chấp nhận lợi nhuận vừa phải để đổi lấy biến động thấp.",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Đặt lại: H2 hứa \"đối tượng phù hợp\" nhưng list chưa có dòng nào → thêm dòng đối tượng",
+   "check_text": true
+  },
+  {
+   "src": "chinh-sach-tien-te-la-gi",
+   "op": "cut",
+   "find": "Lãi suất tác động nhanh nhất: mối quan h",
+   "old_text": " Lãi suất tác động nhanh nhất: <a target=\"_blank\" href=\"https://www.dsc.com.vn/kien-thuc/moi-quan-he-giua-lai-suat-va-xu-huong-van-dong-cua-thi-truong-chung-khoan\"><strong>mối quan hệ giữa lãi suất và thị trường chứng khoán</strong></a> quyết định tiền vào cổ phiếu hay quay về tiết kiệm.",
+   "old": "https://www.dsc.com.vn/kien-thuc/moi-quan-he-giua-lai-suat-va-xu-huong-van-dong-cua-thi-truong-chung-khoan",
+   "group": "fix",
+   "pri": "P1",
+   "why": "Gỡ câu bản cũ (không hợp ngữ cảnh)"
+  },
+  {
+   "src": "chinh-sach-tien-te-la-gi",
+   "op": "append",
+   "find": "Sự dịch chuyển của dòng tiền đầu tư",
+   "to": "moi-quan-he-giua-lai-suat-va-xu-huong-van-dong-cua-thi-truong-chung-khoan",
+   "anchor": "mối quan hệ giữa lãi suất và thị trường chứng khoán",
+   "sentence": "Vì vậy, khi phân tích [mối quan hệ giữa lãi suất và thị trường chứng khoán], lãi suất tiền gửi thường được xem là tín hiệu đi trước dòng tiền vào cổ phiếu.",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Đặt lại: Gắn vào dòng list nói về lãi suất tiền gửi ↔ dòng tiền cổ phiếu (thay vì gắn câu sau câu dẫn list)",
+   "check_text": true
+  },
+  {
+   "src": "danh-sach-cac-dien-dan-chung-khoan-uy-tin-tai-viet-nam",
+   "op": "cut",
+   "find": "Ngoài diễn đàn, nhiều nhà đầu tư trẻ còn",
+   "old_text": " Ngoài diễn đàn, nhiều nhà đầu tư trẻ còn theo dõi các <a target=\"_blank\" href=\"https://www.dsc.com.vn/kien-thuc/kenh-tik-tok-ve-tai-chinh\"><strong>kênh TikTok về tài chính</strong></a> để học kiến thức qua video ngắn.",
+   "old": "https://www.dsc.com.vn/kien-thuc/kenh-tik-tok-ve-tai-chinh",
+   "group": "fix",
+   "pri": "P1",
+   "why": "Gỡ câu bản cũ (không hợp ngữ cảnh)"
+  },
+  {
+   "src": "top-5-co-phieu-dau-khi-se-huong-loi-trong-nam-2024-khi-gia-dau-tang",
+   "op": "wrap",
+   "find": "khai thác dầu khí ở khâu thượng nguồn",
+   "to": "chuoi-gia-tri-nganh-dau-khi",
+   "anchor": "khâu thượng nguồn",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Bài orphan 27 clicks, đoạn PVS ở khâu thượng nguồn (nguồn 80 clicks)"
+  },
+  {
+   "src": "co-phieu-nganh-det-may",
+   "op": "wrap",
+   "find": "doanh nghiệp sở hữu chuỗi giá trị khép kín, tự chủ nguyên liệu",
+   "to": "chuoi-gia-tri-nganh-det-may",
+   "anchor": "chuỗi giá trị khép kín",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Bài orphan 19 clicks, sapo cổ phiếu ngành dệt may"
+  },
+  {
+   "src": "chuoi-gia-tri-nganh-xay-dung",
+   "op": "href",
+   "find": "Phân tích chuỗi giá trị ngành Điện Việt Nam",
+   "old": "https://www.dsc.com.vn/kien-thuc/chuoi-gia-tri-nganh-phan-bon",
+   "to": "chuoi-gia-tri-nganh-dien",
+   "anchor": "Phân tích chuỗi giá trị ngành Điện Việt Nam",
+   "group": "fix",
+   "pri": "P1",
+   "why": "Link sai: chữ Điện nhưng href trỏ bài ngành Phân bón"
+  }
+ ]
+}

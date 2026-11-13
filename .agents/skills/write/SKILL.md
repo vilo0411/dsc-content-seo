@@ -7,7 +7,7 @@ description: Kích hoạt quy trình viết bài SEO chuẩn Framework (Full Pip
 
 ## Options Hỗ Trợ
 - `--step`: Viết từng bước, dừng lại chờ `/approve` tại mỗi gate.
-- `--auto`: Tự động chạy toàn bộ pipeline đến Final, không cần duyệt.
+- `--auto`: Chạy đến Final không chờ duyệt; gate máy (`outline_lint`, `qa_gate`) vẫn chặn khi FAIL.
 - `--no-serp`: Bỏ qua bước SERP research (dùng khi đã có data ngoại tuyến).
 - `--sprint`: Chế độ viết hàng loạt (batch), lần lượt từng keyword trong backlog.
 
@@ -16,18 +16,13 @@ description: Kích hoạt quy trình viết bài SEO chuẩn Framework (Full Pip
 ## Quy trình thực thi chi tiết (Agent Sequencing)
 
 ### 🔄 Bước 0: System Context Load (BẮT BUỘC — trước mọi bước)
-Trước khi làm bất cứ việc gì, hệ thống phải đọc:
-1. `knowledge/1-brand/profile.md`
-2. `knowledge/3-pipeline/anti-ai-rules.md`
-3. `knowledge/3-pipeline/glossary.md`
-4. `.antigravity/memory/instincts.md` — bản rút gọn; nếu topic có file `instincts-by-scope/<topic>.md` (được liệt kê ở đầu instincts.md) → đọc thêm file đó
-5. **Không đọc `topic-clusters.md`** — dùng script:
+1. Bộ context bắt buộc ở `CLAUDE.md` §Mandatory Context Protocol — **load 1 lần / session, các giai đoạn sau không đọc lại** (kể cả outline / draft vừa viết trong session).
+2. Trạng thái (không đọc `topic-clusters.md`):
    ```bash
    python scripts/topic_status.py --find "[keyword]"        # xác nhận chưa có bài / lấy slug
-   python scripts/topic_status.py [slug] --set "In Progress"
+   python scripts/topic_status.py [slug] --set Outlining    # chưa có dòng: thêm --add --cluster "<tên cluster>"
    ```
-   Nếu chưa có dòng nào → thêm 1 dòng vào cluster phù hợp trong `topic-clusters.md` (chỉ chèn dòng, không đọc cả file).
-6. `knowledge/1-brand/personas.md` — **chỉ đọc section của persona được chọn** sau khi Bước 1.2 xác định P1–P4 (không load cả 4 persona ở Step 0).
+3. Persona — `python scripts/persona.py P<n>` sau khi Bước 1.2 xác định P1–P4. Chỉ cần Bridge: `--part bridge`. Viết bài đọc thêm `knowledge/1-brand/service-operations.md` + `knowledge/1-brand/writers/<Writer_Profile>.md`.
 
 ---
 
@@ -37,21 +32,22 @@ Trước khi làm bất cứ việc gì, hệ thống phải đọc:
 **Bước 1.0 — Cannibalization Gate:** chạy đúng Bước 0.5 của `.agents/skills/outlining/SKILL.md` (SEO Dashboard MCP hoặc `find_links.py`). Có URL DSC cùng intent đang rank → dừng, đề xuất `/optimize` thay vì viết mới.
 
 **Bước 1.1 — SEO Collector (SERP Research):**
-- Kích hoạt skill `.antigravity/skills/seo-outlining/SKILL.md` → Step 1: Plan.
-- Dùng skill `.antigravity/skills/web-serp/SKILL.md` — SERP Lookup + Content Extraction song song qua Jina AI. KHÔNG dùng browser.
-- Thu thập: cấu trúc H-tag, số liệu thực tế, content gaps, UX elements.
+- Theo `.antigravity/skills/seo-outlining/SKILL.md` Step 1–3 (1 lệnh `serp_research.py`; không cần mở `web-serp/SKILL.md`). KHÔNG dùng browser.
+- **Chốt khung bài theo block `SERP Format & Intent`** (toplist / how-to / định nghĩa / so sánh) trước khi dựng heading. Lệch khung → `Format_Deviation` + hỏi user. SERP degraded → báo user.
+- Lấy từ digest: block `Topic Coverage` (thuật ngữ bắt buộc → `Entities`, chủ đề con đối thủ đều có, nguồn họ trích), PAA nguyên văn, số liệu năm hiện tại kèm URL nguồn.
 
 **Bước 1.2 — Brand Guardian (Brand Context):**
 - Chạy song song với 1.1 hoặc ngay sau khi 1.1 hoàn thành.
 - Output: `Brand Context Snippet` — Persona, USPs bắt buộc, Anti-AI checklist riêng cho bài này.
 
 **Bước 1.3 — SEO Collector (Expert Outline):**
-- Kích hoạt skill `.antigravity/skills/seo-outlining/SKILL.md` → Step 2: Validate.
-- Tích hợp Brand Context Snippet từ Brand Guardian vào Outline.
+- `.antigravity/skills/seo-outlining/SKILL.md` → Step 4: Dựng outline (Thesis + Information_Gain ≥ 2 mục có `proof`).
+- Tích hợp Brand Context Snippet từ Brand Guardian vào mục 4 của Outline.
 - Lưu Outline tại: `knowledge/4-content/1-outlines/[slug].md`.
+- Gate: `python scripts/outline_lint.py knowledge/4-content/1-outlines/[slug].md` — FAIL thì sửa, tối đa 2 vòng.
 
 **🚧 APPROVAL GATE 1:**
-> Trình bày Outline kèm summary SERP findings cho người dùng.
+> Trình bày **tóm tắt ≤ 25 dòng + đường dẫn file** (khung bài, Thesis, từng mục Information_Gain, cây H2/H3, kết quả lint) — không dán outline vào chat.
 > **DỪNG LẠI. Chờ người dùng gõ `/approve`.**
 > Khi được approve: `python scripts/topic_status.py [slug] --set Outline-Approved`.
 
@@ -61,14 +57,13 @@ Trước khi làm bất cứ việc gì, hệ thống phải đọc:
 **Agent phụ trách:** Main Agent (drafting) + Quality Guardian (QA)
 
 **Bước 2.1 — Drafting:**
-- Kích hoạt skill `.antigravity/skills/seo-drafting/SKILL.md` → Step 1: Execute.
-- Đọc Outline đã approve từ `knowledge/4-content/1-outlines/[slug].md`.
-- Viết bài theo 3S Rule (Specific, Story, Statistics). Internalize anti-ai-rules — không chỉ liệt kê.
+- Theo `.antigravity/skills/seo-drafting/SKILL.md` Step 1 (5 lời hứa của outline: Thesis, Information_Gain, Entities, PAA, bảng dữ liệu có nguồn).
+- Outline vừa viết trong session → không mở lại file.
 - Lưu draft tại: `knowledge/4-content/2-drafts/Draft-[slug].md`.
 
 **Bước 2.2 — Internal Linking:**
-- Kích hoạt skill `.antigravity/skills/internal-linking/SKILL.md` → Mode: Contextual Insertion.
-- **Không đọc `anchor-index.md`** (180 KB). Lấy ứng viên bằng script:
+- Quy tắc đặt link: `.antigravity/skills/internal-linking/references/link-rules.md` (2 KB — không cần mở cả SKILL 13 KB).
+- **Không đọc `anchor-index.md`**. Lấy ứng viên bằng script:
   ```bash
   python scripts/find_links.py "[keyword]" --top 8 --exclude [slug]
   ```
@@ -83,27 +78,18 @@ Trước khi làm bất cứ việc gì, hệ thống phải đọc:
 - Chạy trước bước lint là cố ý: banner và đoạn Product Bridge mới phải chịu lint cùng bài.
 
 **Bước 2.4 — QA 3 tầng (Lint → Slop → Fact → Quality Guardian):**
-- **Tầng A — lint cơ học** (từ vựng, format, SEO, word count):
+- **Tầng A + B + dữ liệu — 1 lệnh** (in 1 dòng/tầng + chỉ lỗi CRITICAL/MAJOR, dừng ở tầng FAIL đầu tiên):
   ```bash
-  python scripts/qa_lint.py knowledge/4-content/2-drafts/Draft-[slug].md --outline knowledge/4-content/1-outlines/[slug].md --cta --fix
+  python scripts/qa_gate.py knowledge/4-content/2-drafts/Draft-[slug].md --cta --fix
   ```
-  Exit 1 → sửa đúng các dòng CRITICAL/MAJOR trong bảng, chạy lại. Chưa qua tầng B khi lint chưa PASS.
-- **Tầng B — slop check (BLOCKING):** bắt cái lint không thấy — nhịp câu phẳng, mật độ bằng chứng thấp, câu sáo rỗng, khung H2 trùng bài cũ.
-  ```bash
-  python scripts/slop_check.py knowledge/4-content/2-drafts/Draft-[slug].md -v
-  ```
-  Exit 1 (score < 80) → sửa **theo đúng rule `SLOP-*` được báo**, không viết lại cả bài. Cách sửa: `SLOP-rhythm`/`burstiness`/`uniform-run` → chèn câu 3–7 từ, gộp/cắt câu · `SLOP-evidence`/`anchor` → thêm mã CP + mốc Tháng M/YYYY + % thật vào đúng claim đang thiếu · `SLOP-vague` → thay cụm sáo rỗng bằng số hoặc tiêu chí · `SLOP-template` → đổi khung H2. Rule đầy đủ: `anti-ai-rules.md` §8.7. **Tối đa 2 vòng.**
-- **Tầng dữ liệu — fact check (advisory, không chặn khi mất mạng):**
-  ```bash
-  python scripts/market_facts.py --verify knowledge/4-content/2-drafts/Draft-[slug].md
-  ```
-  `FACT-index-wrong` = số liệu chỉ số sai → **sửa bắt buộc**. `FACT-ticker` = mã không niêm yết → **sửa bắt buộc**. `FACT-stale` = mọi mốc cũ hơn 18 tháng → thêm 1 mốc hiện tại. Exit 3 = nguồn dữ liệu chết → bỏ qua bước này, dùng dữ kiện cấu trúc (§8.7e).
-- **Tầng C** — tầng A + B PASS → kích hoạt agent `.antigravity/agents/quality-guardian.md` (chỉ checklist ngữ nghĩa; context đã có từ Step 0, QA chỉ đọc thêm Outline gốc).
+  Outline tự tìm theo slug. FAIL → sửa đúng dòng được báo rồi chạy lại đúng lệnh này (tầng trước chạy lại miễn phí, không đọc lại báo cáo dài). `SLOP-*`: cách sửa ở `anti-ai-rules.md` §8.7 — sửa đúng chỗ, không viết lại cả bài. `FACT-index-wrong` / `FACT-ticker` sửa bắt buộc; nguồn dữ liệu chết thì gate tự bỏ qua. Cần xem đủ chi tiết 1 tầng → chạy script riêng (`qa_lint.py` / `slop_check.py -v`).
+- **Tầng C** — gate PASS → agent `.antigravity/agents/quality-guardian.md` (checklist ngữ nghĩa + truy từng mục Information_Gain), dùng luôn output gate ở trên, không chạy lại lint. Spawn thành sub-agent thì brief theo mục "Context Loading" của file đó. Vòng 1 QG đọc cả bài; QG PASS hoặc trả lỗi → `python scripts/qa_gate.py <draft> --mark-qg`. **Vòng 2 QG chỉ đọc `python scripts/qa_gate.py <draft> --changed`** (các đoạn đã sửa + heading chứa nó), không đọc lại cả bài.
 - Kết quả: `PASS` hoặc `FAIL` với danh sách lỗi có số dòng.
 - **Giới hạn vòng lặp:** Nếu `FAIL` → sửa và QA lại **tối đa 2 vòng**. Sau vòng 2 vẫn FAIL → dừng, trình bày draft kèm mục `⚠️ Remaining issues` (liệt kê CRITICAL/MAJOR còn lại) cho người dùng quyết định. Không tự lặp vòng 3.
 
 **🚧 APPROVAL GATE 2:**
-> Trình bày Draft + QA PASS report cho người dùng.
+> `python scripts/article_snapshot.py [slug] --stage gate2` (lưu bản trình duyệt — `/learn` sẽ so với bản Final).
+> Trình bày **tóm tắt ≤ 25 dòng + đường dẫn file draft** (dòng gate: score · coverage · trust · slop; từng mục Information_Gain kèm câu trích; ảnh thực tế còn thiếu; Remaining issues) — không dán bài vào chat.
 > **DỪNG LẠI. Chờ người dùng review và gõ `/approve`.**
 
 ---
@@ -111,20 +97,7 @@ Trước khi làm bất cứ việc gì, hệ thống phải đọc:
 ### ⚙️ Giai đoạn 3: Finalize & Learn
 **Agent phụ trách:** Main Agent + Content Feedback Loop
 
-**Bước 3.1 — File Management (BẮT BUỘC):**
-- Di chuyển `knowledge/4-content/2-drafts/Draft-[slug].md` → `knowledge/4-content/3-finalized/Final-[slug].md`.
-- Xóa file outline gốc `knowledge/4-content/1-outlines/[slug].md` (nếu tồn tại) để dọn dẹp hệ thống.
-- `python scripts/topic_status.py [slug] --set Finalized`
-- `python scripts/qa_lint.py knowledge/4-content/3-finalized/Final-[slug].md --log` — ghi score vào `revision-log.md`.
-- `python scripts/slop_check.py knowledge/4-content/3-finalized/Final-[slug].md` — slop score của bản Final, ghi kèm vào dòng log để theo dõi xu hướng tầng B.
-
-**Bước 3.2 — Content Feedback Loop (Auto-trigger):**
-- Kích hoạt skill `.antigravity/skills/content-feedback-loop/SKILL.md`.
-- Phân tích sự khác biệt giữa Draft gốc và bản Final người dùng approve.
-- Ghi bài học vào:
-  - `knowledge/3-pipeline/revision-log.md` — log cụ thể theo bài
-  - `knowledge/3-pipeline/anti-ai-rules.md` — nếu phát hiện pattern mới
-  - `.antigravity/memory/instincts-archive.md` — bản năng tổng hợp đầy đủ (và chạy `python scripts/optimize_instincts.py` để đồng bộ sang `instincts.md`)
+**Bước 3.1–3.2 — Finalize + Feedback Loop:** làm đúng trình tự stage Draft của `.agents/skills/approve/SKILL.md` (nguồn duy nhất: gate, move file, snapshot, status, HTML CMS, `--log`, revision log, cổng nhận rule). Input của feedback loop: `python scripts/article_snapshot.py [slug] --diff`.
 
 **Bước 3.3 — Delivery:**
 - Xác nhận đường dẫn file Final cho người dùng.
@@ -137,7 +110,7 @@ Trước khi làm bất cứ việc gì, hệ thống phải đọc:
 ```
 /write [keyword]
   └── --step  → Dừng tại mỗi GATE, chờ /approve
-  └── --auto  → Bỏ qua GATE, chạy thẳng đến Final
+  └── --auto  → Không dừng chờ /approve, nhưng gate máy vẫn chặn: outline_lint FAIL / qa_gate FAIL sau 2 vòng → dừng, báo user
   └── --no-serp → Bỏ qua Bước 1.1, dùng data có sẵn trong KB
   └── --sprint  → Lặp lại toàn bộ pipeline cho từng keyword trong backlog
 ```

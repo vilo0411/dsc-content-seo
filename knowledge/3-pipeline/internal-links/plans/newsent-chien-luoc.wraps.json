@@ -1,0 +1,72 @@
+[
+ {
+  "src": "daytrading-la-gi",
+  "target": "trading-trong-chung-khoan-la-gi",
+  "i": 45,
+  "anchor": "lướt sóng",
+  "role": "sub-hub"
+ },
+ {
+  "src": "rui-ro-tin-dung-la-gi",
+  "target": "quan-tri-rui-ro-la-gi-2",
+  "i": 70,
+  "anchor": "quản lý rủi ro",
+  "role": "hub"
+ },
+ {
+  "src": "rui-ro-thi-truong-la-gi-cach-quan-tri-rui-ro-thi-truong-hieu-qua",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 24,
+  "anchor": "chiến lược đầu tư",
+  "role": "pillar"
+ },
+ {
+  "src": "thien-kien-nhan-thuc-la-gi",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 13,
+  "anchor": "chiến lược đầu tư",
+  "role": "pillar"
+ },
+ {
+  "src": "y-nghia-cua-sell-in-may-and-go-away-trong-dau-tu-chung-khoan-tai-viet-nam",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 3,
+  "anchor": "chiến lược đầu tư",
+  "role": "pillar"
+ },
+ {
+  "src": "drawdown-trong-dau-tu-la-gi",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 29,
+  "anchor": "chiến lược đầu tư",
+  "role": "pillar"
+ },
+ {
+  "src": "dau-tu-tang-truong-la-gi",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 3,
+  "anchor": "chiến lược đầu tư",
+  "role": "pillar"
+ },
+ {
+  "src": "he-so-beta-la-gi-y-nghia-cua-he-so-beta-trong-chung-khoan",
+  "target": "quan-tri-rui-ro-la-gi-2",
+  "i": 29,
+  "anchor": "kiểm soát rủi ro",
+  "role": "hub"
+ },
+ {
+  "src": "he-so-beta-la-gi-y-nghia-cua-he-so-beta-trong-chung-khoan",
+  "target": "danh-muc-dau-tu-hieu-qua-la-gi",
+  "i": 35,
+  "anchor": "danh mục đầu tư",
+  "role": "sub-hub"
+ },
+ {
+  "src": "khau-vi-rui-ro-trong-dau-tu-chung-khoan-la-gi-cach-xac-dinh",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "i": 32,
+  "anchor": "chiến lược đầu tư",
+  "role": "pillar"
+ }
+]

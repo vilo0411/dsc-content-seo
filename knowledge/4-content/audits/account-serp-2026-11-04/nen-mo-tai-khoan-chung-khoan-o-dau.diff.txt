@@ -1,0 +1,263 @@
+--- live-before
+
++++ proposed-after
+
+@@ -1,137 +1,146 @@
+
+-Thị trường chứng khoán Việt Nam năm 2026 ghi nhận làn sóng gia nhập mạnh mẽ của các nhà đầu tư cá nhân, đặc biệt là thế hệ trẻ dưới 35 tuổi. Sự bùng nổ của các nền tảng số hóa đã giúp việc tiếp cận thị trường tài chính trở nên dễ dàng hơn bao giờ hết. Tuy nhiên, điều này cũng đặt ra một bài toán lớn cho người mới bắt đầu:
+-Nên mở tài khoản chứng khoán ở đâu
+-để vừa đảm bảo an toàn tài sản, vừa tối ưu chi phí và nhận được sự hỗ trợ hiệu quả nhất?
+-Để giải quyết băn khoăn này, nhà đầu tư cần trang bị một bộ tiêu chí đánh giá khách quan thay vì chỉ lựa chọn theo cảm tính, đồng thời tham khảo bức tranh thực tế về thị phần và dịch vụ của các công ty chứng khoán hàng đầu hiện nay.
++Nên mở tài khoản chứng khoán ở đâu phụ thuộc vào cách bạn giao dịch: tự đặt lệnh hay cần người hỗ trợ tư vấn. Hãy so cùng loại tài khoản, kênh đặt lệnh và điều kiện phí trước khi chọn công ty.
++VPS, SSI, TCBS, HSC, VNDIRECT, VCBS và DSC đều có kênh đăng ký trực tuyến. Danh sách dưới đây giúp bạn đối chiếu dịch vụ, không phải bảng xếp hạng lợi nhuận hoặc mức độ an toàn.
+ 5 tiêu chí quan trọng khi lựa chọn công ty chứng khoán
+-Việc tìm kiếm câu trả lời cho câu hỏi nên mở tài khoản chứng khoán ở công ty nào cần dựa trên các thước đo thực tế. Dưới đây là 5 yếu tố cốt lõi giúp bạn tự đánh giá và đưa ra quyết định phù hợp với nhu cầu cá nhân.
++Tháng 11/2026:
++biểu phí DSC
++phân biệt phí theo khối quản lý tài khoản. Hai người cùng mở tại một công ty vẫn có thể chịu mức phí khác nhau.
+ Thương hiệu và tiềm lực tài chính của công ty
+-Một công ty chứng khoán uy tín bắt buộc phải được Ủy ban Chứng khoán Nhà nước cấp phép hoạt động hợp pháp. Bên cạnh đó, tiềm lực tài chính vững mạnh – thể hiện qua vốn điều lệ lớn, tổng tài sản cao và sự minh bạch trong báo cáo tài chính – chính là tấm khiên bảo vệ tài sản của bạn. Các doanh nghiệp thuộc hệ sinh thái của ngân hàng lớn hoặc nằm trong các tập đoàn tài chính uy tín thường sở hữu lợi thế lớn về hệ thống quản trị rủi ro cũng như tính thanh khoản ổn định.
+-Chi phí giao dịch và lãi suất vay ký quỹ (Margin)
+-Mọi khoản chi phí phát sinh, dù nhỏ, đều sẽ tích lũy và ảnh hưởng trực tiếp đến hiệu quả đầu tư dài hạn của bạn. Trước khi mở tài khoản, bạn nên tìm hiểu kỹ xem
++Kiểm tra tên pháp nhân, kênh liên hệ và thông tin công bố trên website chính thức. Sau đó, đọc báo cáo tài chính cùng điều kiện sử dụng dịch vụ. Đừng chỉ nhìn thương hiệu.
++Vốn điều lệ và thị phần giúp bạn tìm hiểu quy mô doanh nghiệp. Hai chỉ tiêu này không cam kết lợi nhuận hay loại bỏ rủi ro đầu tư.
++Bạn cần biết nơi tiếp nhận yêu cầu khi có sai lệch số dư, lỗi đăng nhập hoặc chậm xử lý hồ sơ.
++Chi phí giao dịch và lãi suất vay ký quỹ
++Cần tách phí mở tài khoản khỏi phí phát sinh khi sử dụng. Bài
+ mở tài khoản chứng khoán có mất phí không
+-và cần chuẩn bị tối thiểu bao nhiêu vốn để bắt đầu giao dịch.
+-Bên cạnh đó, hãy so sánh biểu
++giải thích những khoản cần kiểm tra.
++So đúng kênh đặt lệnh.
++Khi so
+ phí giao dịch chứng khoán
+-áp dụng cho tài khoản có môi giới hỗ trợ so với tài khoản tự giao dịch. Cuối cùng, đừng bỏ qua biểu phí vay ký quỹ (margin) của từng bên cùng với mức phí lưu ký chứng khoán cố định theo quy định của cơ quan quản lý để tối ưu hóa nguồn vốn sử dụng.
+-Mỗi khoản phí này gắn với một trong
++, hãy hỏi mức áp dụng cho đúng kênh đặt lệnh. Tài khoản tự giao dịch và tài khoản có tư vấn không nhất thiết dùng chung biểu phí.
++Theo biểu phí DSC có hiệu lực từ 20/08/2025, mức 0,1% được công bố riêng cho một nhóm quản lý tài khoản. Tài khoản do Môi giới quản lý áp dụng các bậc 0,15–0,3% theo giá trị giao dịch trong ngày.
++Với giao dịch trị giá 10 triệu đồng, mức 0,1% tương ứng 10.000 đồng; mức 0,3% tương ứng 30.000 đồng.
++Đây là ví dụ tính phí, chưa gồm những khoản thuế và dịch vụ khác. Biểu phí DSC chia tài khoản Môi giới quản lý thành các bậc dưới đây.
++Giá trị giao dịch trong ngày
++Phí theo biểu công khai DSC
++Dưới 100 triệu đồng
++0,3%
++Từ 100 đến 300 triệu đồng
++0,25%
++Trên 300 đến 500 triệu đồng
++0,2%
++Trên 500 triệu đồng
++0,15%
++Tháng 11/2026:
++biểu giá có chuyên viên tư vấn của SSI
++công bố phí online 0,25% cho giao dịch dưới 100 triệu đồng/ngày.
++Với cùng giá trị giao dịch 10 triệu đồng, mức 0,25% tương ứng 25.000 đồng. So với mức 0,3%, chênh lệch là 5.000 đồng cho giao dịch này. Ví dụ chỉ so phí đặt lệnh.
++Trước khi đăng ký, hãy kiểm tra hai điều kiện.
++Thời hạn của ưu đãi phí đang được quảng bá.
++Biểu phí áp dụng sau khi ưu đãi kết thúc.
++Lãi vay cần đối chiếu khi bạn định sử dụng giao dịch ký quỹ. Phân biệt
+ các loại tài khoản chứng khoán
+-: tài khoản thường, ký quỹ hay có môi giới hỗ trợ.
++giúp bạn chọn đúng dịch vụ, tránh đăng ký theo quảng cáo.
+ Hệ sinh thái sản phẩm và dịch vụ đa dạng
+-Nhu cầu của nhà đầu tư thường thay đổi và nâng cao dần theo thời gian. Một hệ sinh thái tài chính phong phú sẽ giúp bạn dễ dàng chuyển dịch dòng vốn giữa các sản phẩm như cổ phiếu, chứng khoán phái sinh, trái phiếu doanh nghiệp, hay chứng chỉ quỹ mà không cần tốn thời gian đăng ký tài khoản ở nhiều nơi khác nhau.
++Chọn công ty theo sản phẩm bạn cần: cổ phiếu, chứng chỉ quỹ hoặc trái phiếu. Kiểm tra điều kiện giao dịch của từng sản phẩm trên kênh chính thức.
++Nếu mới tìm hiểu cổ phiếu, bạn chưa cần lấy số lượng sản phẩm làm tiêu chí quyết định. Chứng khoán DSC không cung cấp giao dịch phái sinh; không nhầm dịch vụ của công ty khác với dịch vụ tại DSC.
+ Hệ thống công nghệ và trải nghiệm ứng dụng giao dịch
+-Trong kỷ nguyên giao dịch số, tốc độ khớp lệnh và sự ổn định của hệ thống là yếu tố sống còn để bạn không bỏ lỡ các cơ hội thị trường. Ứng dụng di động cần đảm bảo vận hành mượt mà, hạn chế tối đa tình trạng giật lag hoặc nghẽn lệnh vào những khung giờ giao dịch cao điểm.
+-Đồng thời, khi tiến hành đăng ký, việc hiểu rõ
++Trải nghiệm bảng giá, cách xem số dư và vị trí tìm hỗ trợ trước khi chọn nơi giao dịch. Kiểm tra cả kênh thay thế khi điện thoại hoặc ứng dụng không sử dụng được.
++Ứng dụng có nhiều công cụ chưa chắc phù hợp với người mới. Bạn cần tìm được lệnh đặt mua, lịch sử giao dịch và hướng dẫn nạp rút tiền mà không phải đoán.
++Đọc về
+ mở tài khoản chứng khoán online có an toàn không
+-sẽ giúp bạn an tâm hơn khi cung cấp thông tin qua các phương thức xác thực sinh trắc học và công nghệ định danh điện tử eKYC tích hợp đầu đọc chip CCCD qua kết nối NFC.
++trước khi cung cấp giấy tờ. Chỉ tải ứng dụng qua liên kết trên website chính thức và không chia sẻ mã xác thực.
+ Chất lượng dịch vụ tư vấn và đội ngũ môi giới đồng hành
+-Đối với nhóm nhà đầu tư mới (F0), sự đồng hành của đội ngũ chuyên viên tư vấn là cực kỳ cần thiết để định hướng chiến lược giao dịch phù hợp với khẩu vị rủi ro. Việc lựa chọn một công ty có đội ngũ tư vấn tận tâm, cung cấp các báo cáo phân tích chất lượng thường mang lại giá trị thực tế cao hơn nhiều so với việc cố gắng tiết kiệm một phần nhỏ phí giao dịch.
+-So sánh Top 7 công ty chứng khoán uy tín tại Việt Nam (Cập nhật 2026)
+-Bức tranh thị phần môi giới luôn có sự dịch chuyển không ngừng. Dưới đây là bảng tổng hợp các thông số tài chính và
+-thị phần môi giới bán niên 2026 mới nhất trên sàn HOSE
+-(do Sở Giao dịch Chứng khoán TP.HCM công bố):
++Phân biệt hỗ trợ kỹ thuật với hỗ trợ tư vấn đầu tư. Bộ phận hỗ trợ kỹ thuật xử lý tài khoản; chuyên viên tư vấn giúp bạn trao đổi về quyết định giao dịch.
++Hãy hỏi phạm vi hỗ trợ, kênh liên hệ và biểu phí của gói dịch vụ. Không mặc định một chương trình phí thấp bao gồm tư vấn riêng.
++Nếu chưa biết đọc báo cáo hoặc kiểm tra rủi ro trước lệnh đầu tiên, hãy ưu tiên hỏi phạm vi tư vấn. Khuyến nghị không bảo đảm lợi nhuận.
++So sánh Top 7 công ty chứng khoán uy tín tại Việt Nam
++Tính đến tháng 11/2026, các nguồn chính thức dưới đây mô tả những kênh đăng ký và điều kiện dịch vụ khác nhau. Bảng tập trung vào điều cần xác nhận trước khi mở, thay vì xếp hạng bằng thị phần chưa đối chiếu.
+ Công ty
+-Vốn điều lệ
+-Thị phần HOSE (Q2/2026)
+-Phí giao dịch Online
+-Phân khúc khách hàng phù hợp
++Kênh đăng ký được công bố
++Điều cần kiểm tra trước khi chọn
+ VPS
+-24.349 tỷ VNĐ
+-14,14%
+-(Top 1)
+-0,13% – 0,15%
+-Nhà đầu tư năng động, ưa thích cộng đồng lớn và hệ sinh thái đa dạng.
++SmartOne
++Phí của gói tài khoản và phạm vi hỗ trợ; đối chiếu
++hướng dẫn VPS
++.
+ SSI
+-30.000 tỷ VNĐ
+-11,16%
+-(Top 2)
+-0,15%
+-Nhà đầu tư giá trị, đề cao sự an toàn hệ thống và chiều sâu phân tích.
++Trang đăng ký iBoard
++Tự giao dịch hay có chuyên viên tư vấn; kiểm tra
++kênh đăng ký SSI
++.
+ TCBS
+-27.739 tỷ VNĐ
+-9,07%
+-(Top 3)
+-Miễn phí (tự giao dịch)
+-Khách hàng hệ sinh thái Techcombank, quan tâm quản lý tài sản số.
++Trang mở tài khoản trực tuyến
++Khoản miễn phí, khoản thu hộ và điều kiện đi kèm; đọc
++thông tin mở tài khoản TCBS
++.
+ HSC
+-15.800 tỷ VNĐ
+-7,08%
+-(Top 5)
+-0,20%
+-Nhà đầu tư có kinh nghiệm, vốn lớn, cần tư vấn chuyên sâu.
++HSC ONE hoặc website
++Yêu cầu kích hoạt và hoàn thiện hồ sơ; đối chiếu
++hướng dẫn HSC
++.
+ VNDIRECT
+-15.223 tỷ VNĐ
+-4,42%
+-(Top 7)
+-0,15%
+-Nhà đầu tư cá nhân thích tự trải nghiệm dịch vụ số hóa tự động.
++DGO, DSTOCK hoặc mydgo
++Kích hoạt tài khoản và điều kiện rút tiền; xem
++trung tâm hỗ trợ VNDIRECT
++.
+ VCBS
+-8.500 tỷ VNĐ
+-Ngoài Top 10
+-0,075% - 0,18%
+-Nhà đầu tư ưu tiên tính bảo mật và sự thuận tiện từ Vietcombank.
++VCBS Mobile, website, VCB Digibank hoặc quầy
++Gói chủ động hay tư vấn; xem
++dịch vụ VCBS tại Vietcombank
++.
+ DSC
+-2.750 tỷ VNĐ
+-(Đang cập nhật)
+-0,10%
+-Nhà đầu tư F0 chú trọng tối ưu chi phí, cần công nghệ hiện đại và hỗ trợ 1:1.
+-Để giúp nhà đầu tư có cái nhìn trực quan hơn về tương quan lực lượng giữa các bên, dưới đây là biểu đồ chi tiết về thị phần môi giới của các công ty chứng khoán hàng đầu trong nửa đầu năm:
++App DSC Trading hoặc website
++Khối quản lý tài khoản và phạm vi tư vấn; đối chiếu
++biểu phí DSC
++.
++Bảng được rà soát ngày 04/11/2026. Không xem vị trí trong danh sách là thứ hạng; điều kiện phê duyệt và chương trình phí có thể thay đổi.
++Bạn tự giao dịch thì ưu tiên chi phí của đúng gói và thao tác trên ứng dụng.
++Bạn cần người trao đổi trước khi đặt lệnh thì hỏi dịch vụ tư vấn được bao gồm. Chọn gói trước khi chọn mức phí.
++Ảnh lưu từ phiên bản trước của bài. Chưa đối chiếu nguồn số liệu trong ảnh; không dùng ảnh này để kết luận về thị phần hiện tại.
+ Công ty Cổ phần Chứng khoán VPS
+-VPS tiếp tục duy trì vị trí số một về quy mô thị phần môi giới tại Việt Nam. Đây là đơn vị thu hút được cộng đồng nhà đầu tư cá nhân vô cùng đông đảo nhờ chính sách phát triển mạng lưới cộng tác viên rộng khắp.
+-Ưu điểm:
+-Hệ sinh thái sản phẩm tích hợp trên ứng dụng VPS SmartOne phong phú, tính thanh khoản nhanh chóng và cộng đồng người dùng tương tác sôi nổi.
+-Hạn chế:
+-Sự cạnh tranh gia tăng khiến thị phần bán niên của VPS có phần thu hẹp so với các giai đoạn trước [1, 2]. Do lực lượng hỗ trợ quá lớn nên chất lượng tư vấn của đội ngũ môi giới đôi khi chưa thực sự đồng đều.
++VPS công bố hướng dẫn SmartOne
++để nhà đầu tư đăng ký trên điện thoại. Nếu bạn chọn nền tảng này, hãy xác nhận gói tài khoản cùng dịch vụ hỗ trợ đi kèm.
++Không dùng quy mô cộng đồng làm bằng chứng rằng mọi tài khoản VPS có cùng chất lượng tư vấn.
++Hãy hỏi ai phụ trách hỗ trợ và nơi gửi yêu cầu khi có vấn đề.
+ Công ty Cổ phần Chứng khoán SSI
+-Với vị thế là một trong những định chế tài chính lâu đời và có quy mô vốn điều lệ lớn nhất toàn ngành, SSI luôn là sự lựa chọn ưu tiên của nhóm khách hàng đề cao tính bền vững, an toàn hệ thống và bảo mật thông tin.
+-Ưu điểm:
+-Thương hiệu uy tín tuyệt đối, hệ thống báo cáo phân tích doanh nghiệp và vĩ mô có chất lượng chuyên môn sâu sắc hàng đầu thị trường.
+-Hạn chế:
+-Phí giao dịch online duy trì ở mức 0,15%, ít có các chương trình miễn giảm phí sâu như các đối thủ định hướng công nghệ thuần túy.
++Trang mở tài khoản SSI
++chuyển tới hệ thống đăng ký iBoard. Bạn cần đối chiếu biểu giá giữa giao dịch chủ động và dịch vụ có chuyên viên tư vấn.
++Ảnh minh họa được giữ từ phiên bản trước. Vị trí thị phần trong chú thích ảnh chưa được dùng làm tiêu chí xếp hạng ở bảng trên.
++SSI công bố riêng
++biểu giá dịch vụ có chuyên viên tư vấn
++. Đọc đúng biểu giá của gói dự định sử dụng, thay vì lấy một mức phí đại diện cho mọi tài khoản.
+ Công ty Cổ phần Chứng khoán Kỹ Thương (TCBS)
+-Hoạt động như một mảnh ghép quan trọng trong hệ sinh thái tài chính Techcombank, TCBS định vị mình là một "Wealthtech" dẫn đầu mảng quản lý gia sản số tại Việt Nam.
+-Ưu điểm:
+-Chính sách miễn phí giao dịch khi tự thao tác trên nền tảng TCInvest và ưu thế vượt trội trong việc phân phối các sản phẩm trái phiếu doanh nghiệp, chứng chỉ quỹ. Thị phần môi giới của TCBS liên tục ghi nhận sự bứt phá mạnh mẽ trong năm 2026.
+-Hạn chế:
+-Hệ thống tập trung tối đa vào vận hành tự động bằng công nghệ, do đó các dịch vụ chăm sóc trực tiếp từ nhân sự môi giới truyền thống sẽ không phải là thế mạnh tại đây.
++Trang mở tài khoản TCBS
++trình bày quyền lợi cùng các bước đăng ký trực tuyến. Nếu quan tâm ưu đãi phí, bạn cần xem khoản miễn thuộc về dịch vụ nào và còn khoản thu hộ nào.
++Miễn phí khoản nào? Không đồng nhất miễn phí mở tài khoản với miễn mọi chi phí sử dụng. Các chương trình TCBS cần được đọc cùng điều khoản áp dụng khi đăng ký.
+ Công ty Cổ phần Chứng khoán TP.HCM (HSC)
+-Với sự hậu thuẫn chuyên môn từ các quỹ đầu tư lớn, HSC định vị dịch vụ ở phân khúc cao cấp, tập trung vào việc cung cấp các báo cáo nghiên cứu chất lượng cao và dịch vụ môi giới chuẩn mực.
+-Ưu điểm:
+-Đội ngũ chuyên viên tư vấn chuyên nghiệp, am hiểu thị trường sâu sắc; nền tảng ứng dụng HSC ONE được đầu tư bài bản và vận hành ổn định.
+-Hạn chế:
+-Biểu phí giao dịch 0,2% ở mức tương đối cao, không thực sự phù hợp với các nhà đầu tư cá nhân có quy mô vốn nhỏ và tần suất giao dịch liên tục.
++HSC hướng dẫn mở tài khoản
++qua HSC ONE hoặc website. Nhà đầu tư cần kiểm tra yêu cầu kích hoạt dịch vụ sau khi hoàn tất đăng ký.
++Hãy kiểm tra gói HSC trước. Đừng suy ra HSC chỉ phù hợp người có vốn lớn từ hình ảnh thương hiệu. Đối chiếu biểu phí và điều kiện tài khoản với số tiền bạn dự kiến sử dụng.
+ Công ty Cổ phần Chứng khoán VNDIRECT
+-VNDIRECT xây dựng hình ảnh là người bạn đồng hành tin cậy, chú trọng vào việc hỗ trợ đào tạo kiến thức và cung cấp các công cụ phân tích trực quan cho cộng đồng nhà đầu tư cá nhân.
+-Ưu điểm:
+-Giao diện bảng giá DBOARD và ứng dụng DSTOCK cực kỳ dễ sử dụng, hệ thống tài liệu đào tạo F0 bài bản và dễ tiếp cận.
+-Hạn chế:
+-Thị phần môi giới của VNDIRECT trong năm 2026 đã ghi nhận mức sụt giảm đáng kể so với những năm trước [1, 2]. Người dùng cần lưu ý theo dõi sát sao tính ổn định hệ thống trong các phiên thị trường có thanh khoản đột biến.
++VNDIRECT giới thiệu đăng ký qua DSTOCK
++và công bố hướng dẫn trên trung tâm hỗ trợ. Khi chọn nền tảng, kiểm tra kênh đăng ký hiện hành được công ty dẫn tới.
++VNDIRECT có điều kiện kích hoạt riêng.
++Bạn cần xác nhận thời điểm tài khoản được phép giao dịch và điều kiện rút tiền. Đây là các bước khác với việc chỉ tạo thông tin đăng nhập thành công.
+ Công ty Cổ phần Chứng khoán VCBS
+-Thừa hưởng trọn vẹn uy tín thương hiệu và tính bảo mật nghiêm ngặt từ Ngân hàng Vietcombank, VCBS mang đến sự an tâm tối đa cho người sử dụng dịch vụ.
+-Ưu điểm:
+-Hệ thống nạp/rút tiền liên thông nhanh chóng với tài khoản Vietcombank, quy trình quản trị rủi ro chặt chẽ và an toàn.
+-Hạn chế:
+-Nền tảng công nghệ và các sản phẩm tài chính được phát triển theo hướng an toàn, truyền thống, chưa có nhiều đột phá linh hoạt như các công ty chứng khoán tư nhân khác. Hiện tại VCBS đã tạm thời rời khỏi nhóm Top 10 thị phần môi giới sàn HOSE.
++Vietcombank mô tả dịch vụ VCBS
++gồm gói chủ động và gói tư vấn đầu tư. Trang này cũng nêu lựa chọn mở qua VCBS Mobile, website hoặc VCB Digibank.
++Nếu đã sử dụng Vietcombank, hãy kiểm tra tính năng nộp tiền chứng khoán trên VCB Digibank. Sự thuận tiện của một kênh ngân hàng không thay thế việc đọc điều kiện giao dịch chứng khoán.
+ Công ty Cổ phần Chứng khoán DSC
+-Chứng khoán DSC định vị mình là công ty chứng khoán công nghệ năng động, tập trung giải quyết đồng thời hai nhu cầu thực tế của nhà đầu tư cá nhân:
+-Chi phí tối ưu
+-và
+-Dịch vụ hỗ trợ được cá nhân hóa
+-.
+-Ưu điểm:
+-Biểu phí giao dịch trực tuyến vô cùng cạnh tranh chỉ
+-0,1%
+-– thuộc nhóm thấp nhất thị trường hiện nay. DSC sở hữu hệ sinh thái công nghệ hiện đại với app DSC Trading tích hợp công cụ tư vấn WeTrade độc quyền, đi kèm chính sách hỗ trợ tư vấn 1-kèm-1 linh hoạt từ đội ngũ chuyên gia giàu kinh nghiệm.
+-Hạn chế:
+-DSC hiện đang trong giai đoạn mở rộng quy mô chi nhánh và nâng cao độ nhận diện thương hiệu để tiếp cận rộng rãi hơn tới mọi phân khúc khách hàng.
+-Để hiểu chi tiết hơn về các thao tác thực hiện cũng như những điểm cần lưu ý trong quá trình xác thực thông tin, bạn có thể tham khảo bài viết hướng dẫn chi tiết
+-cách mở tài khoản chứng khoán
+-trực tuyến an toàn của DSC.
+-Kết luận
+-Việc quyết định mở tài khoản chứng khoán ở đâu không chỉ đơn thuần là tìm kiếm một ứng dụng đặt lệnh, mà là lựa chọn một người đồng hành phù hợp với phong cách giao dịch và khả năng tài chính của bạn.
+-Khi mới bắt đầu, nhiều nhà đầu tư thường đặt ra câu hỏi liệu
++DSC
++cung cấp đăng ký trực tuyến qua App DSC Trading và website. Nếu cần hỗ trợ tư vấn đầu tư từ Môi giới 1:1, hãy xác nhận khối quản lý tài khoản và biểu phí trước khi mở.
++Theo biểu phí DSC kiểm tra tháng 11/2026, mức 0,1% không áp dụng mặc định cho mọi tài khoản. Tài khoản Môi giới quản lý có biểu phí phân bậc riêng.
++Khi chọn dịch vụ DSC, hãy hỏi kênh hỗ trợ tư vấn đầu tư và phạm vi đồng hành của Môi giới 1:1.
++Đã chọn được công ty chứng khoán, bước tiếp theo là gì?
++Sau khi chọn nơi mở, dùng bài
++hướng dẫn cách mở tài khoản chứng khoán
++của DSC để chuẩn bị giấy tờ và xử lý lỗi xác thực.
++Nếu đang cân nhắc trải nghiệm nhiều bên, xem giải đáp
+ một người được mở bao nhiêu tài khoản chứng khoán
+-. Thực tế, pháp luật không giới hạn số lượng tài khoản bạn sở hữu tại các công ty chứng khoán khác nhau. Do đó, bạn hoàn toàn có thể đăng ký trải nghiệm thử dịch vụ của vài bên trước khi đưa ra lựa chọn gắn bó lâu dài.
+-Bên cạnh những tên tuổi lớn lâu năm trên thị trường,
+-DSC
+-nổi lên như một điểm tựa vững chắc nhờ tiềm lực tài chính từ hệ sinh thái TC Group, mức phí giao dịch tối ưu 0,1% cùng dịch vụ tư vấn tận tâm. DSC luôn sẵn sàng đồng hành cùng bạn trên con đường tích lũy kiến thức và tối ưu hóa hiệu quả đầu tư.
++. Không mở nhiều tài khoản chỉ vì ưu đãi nếu bạn chưa biết cách quản lý thông tin đăng nhập.
++Trước khi xác nhận đăng ký DSC, bạn cần đối chiếu ba thông tin.
++Loại tài khoản dự định sử dụng.
++Biểu phí áp dụng cho khối quản lý tài khoản.
++Phạm vi hỗ trợ tư vấn đầu tư và kênh liên hệ.
+ Mở tài khoản eKYC DSC ngay để nhận hỗ trợ 1:1 từ chuyên gia
++Chọn đúng loại tài khoản DSC trước khi xác nhận đăng ký
++Mở tài khoản DSC

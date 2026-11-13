@@ -1,0 +1,3182 @@
+[
+ {
+  "src": "do-co-gian-cua-cau-theo-gia-la-gi",
+  "src_title": "Độ co giãn của cầu theo giá là gì? Ví dụ chi tiết cho sinh viên",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "682",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 47,
+    "h": "Ảnh hưởng đến GDP nền kinh tế",
+    "n_sent": 2,
+    "t": "Ví dụ: Những quốc gia có nhiều mặt hàng “kém co giãn” thì sẽ khá ổn định với nền kinh tế thế giới, đặc biệt là khi xuất hiện khủng hoảng. Bởi vì cho dù thế giới có khủng hoảng thì các mặt hàng đó vẫn rất khó để giảm đi lượng cầu."
+   },
+   {
+    "i": 46,
+    "h": "Ảnh hưởng đến GDP nền kinh tế",
+    "n_sent": 3,
+    "t": "GDP chính là tổng sản phẩm quốc nội mà một quốc gia sản xuất được trong một thời kỳ. Độ co giãn của cầu ảnh hưởng trực tiếp lên giá và sản lượng, mà đây lại là 2 yếu tố chính của GDP. Vì vậy độ co giãn của cầu cũng sẽ tác động rất lớn lên GDP của một quốc gia."
+   },
+   {
+    "i": 39,
+    "h": "Xác định tổng doanh thu",
+    "n_sent": 2,
+    "t": "Như đã phân tích ở ví dụ trên, bằng việc xác định được độ co giãn của cầu theo giá, ta có thể xác định được mức doanh thu, lợi nhuận tối ưu của một công ty. Từ đó có thể đưa ra những chiến lược kinh doanh hợp lý với loại hàng hóa, dịch vụ đang kinh doanh."
+   }
+  ]
+ },
+ {
+  "src": "do-co-gian-cua-cau-theo-gia-la-gi",
+  "src_title": "Độ co giãn của cầu theo giá là gì? Ví dụ chi tiết cho sinh viên",
+  "target": "kinh-te-hoc-vi-mo-la-gi-y-nghia-trong-dau-tu-chung-khoan",
+  "role": "hub",
+  "target_title": "Kinh tế học vi mô là gì? Ý nghĩa trong đầu tư chứng khoán",
+  "clicks": "682",
+  "anchors": [
+   "kinh tế học vi mô",
+   "kinh tế vi mô",
+   "kinh tế vi mô là gì",
+   "hành vi doanh nghiệp và người tiêu dùng",
+   "cung cầu"
+  ],
+  "paras": [
+   {
+    "i": 31,
+    "h": "Ý nghĩa độ co giãn của cầu theo giá",
+    "n_sent": 2,
+    "t": "Cũng không phải tự nhiên mà các doanh nghiệp thường dành phần lớn ngân sách để đầu tư tìm hiểu hành vi khách hàng. Chỉ với chỉ số độ co giãn của cầu là họ đã có được những thông tin quan trọng để tối đa hóa lợi nhuận công ty."
+   },
+   {
+    "i": 25,
+    "h": "Cầu hoàn toàn không co giãn (=0)",
+    "n_sent": 5,
+    "t": "Cầu hoàn toàn không co giãn khi hệ số co giãn bằng 0. Điều này có ý nghĩa người tiêu dùng không thay đổi nhu cầu khi có điều chỉnh tăng/giảm giá. Theo giả thuyết các sản phẩm như thuốc đặc trị hay chữa bệnh sẽ có hệ số co giãn bằng 0. Nhưng thực tế chúng ta đang sống trong thị trường cạnh tranh, nên hầu hết các sản phẩm/dịch vụ đều có sản phẩm/dịch vụ khác thay thế. Biểu đồ của hiện tượng cầu hoàn toàn không co giãn là đường thẳng song song với trục tung."
+   },
+   {
+    "i": 30,
+    "h": "Ý nghĩa độ co giãn của cầu theo giá",
+    "n_sent": 1,
+    "t": "Quan việc nghiên cứu mối quan hệ giữa độ co giãn của cầu theo giá, ta có thể ước tính được mức tổng doanh thu tối ưu nhất mà ta có thể có được, từ đó doanh nghiệp sẽ đưa ra được quyết định nên tăng hay giảm giá một loại sản phẩm, giữ nguyên hay mở rộng quy mô sản xuất."
+   }
+  ]
+ },
+ {
+  "src": "fed-la-gi-vai-tro-va-tac-dong-cua-fed-den-kinh-te-the-gioi",
+  "src_title": "FED là gì? Vai trò và tác động của FED đến kinh tế thế giới",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "417",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 24,
+    "h": "Tác động của FED đến kinh tế thế giới",
+    "n_sent": 2,
+    "t": "FED là ngân hàng trung ương của quốc gia có nền kinh tế lớn nhất thế giới, do đó các chính sách của FED có tác động lớn đến kinh tế thế giới. Các chính sách của FED có thể ảnh hưởng đến lãi suất, giá cả, lạm phát, đầu tư và thương mại ở các quốc gia khác."
+   },
+   {
+    "i": 25,
+    "h": "Tác động của FED đến kinh tế thế giới",
+    "n_sent": 2,
+    "t": "Ví dụ, khi FED tăng lãi suất, lãi suất ở các quốc gia khác cũng có thể tăng theo. Điều này khiến cho chi phí đi vay và đầu tư ở các quốc gia khác cũng tăng lên, từ đó làm chậm tốc độ tăng trưởng kinh tế."
+   },
+   {
+    "i": 26,
+    "h": "Tác động của FED đến kinh tế thế giới",
+    "n_sent": 2,
+    "t": "Ngoài ra, các chính sách của FED cũng có thể ảnh hưởng đến giá cả hàng hóa và dịch vụ trên toàn thế giới. Khi FED tăng lãi suất, chi phí sản xuất của các doanh nghiệp cũng tăng lên, từ đó có thể dẫn đến lạm phát."
+   }
+  ]
+ },
+ {
+  "src": "fed-la-gi-vai-tro-va-tac-dong-cua-fed-den-kinh-te-the-gioi",
+  "src_title": "FED là gì? Vai trò và tác động của FED đến kinh tế thế giới",
+  "target": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+  "role": "hub",
+  "target_title": "So sánh chính sách tài khóa và chính sách tiền tệ",
+  "clicks": "417",
+  "anchors": [
+   "chính sách tài khóa và chính sách tiền tệ",
+   "chính sách tài khóa và tiền tệ",
+   "so sánh chính sách tài khóa và chính sách tiền tệ",
+   "chính sách kinh tế vĩ mô",
+   "chính sách vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 24,
+    "h": "Tác động của FED đến kinh tế thế giới",
+    "n_sent": 2,
+    "t": "FED là ngân hàng trung ương của quốc gia có nền kinh tế lớn nhất thế giới, do đó các chính sách của FED có tác động lớn đến kinh tế thế giới. Các chính sách của FED có thể ảnh hưởng đến lãi suất, giá cả, lạm phát, đầu tư và thương mại ở các quốc gia khác."
+   },
+   {
+    "i": 25,
+    "h": "Tác động của FED đến kinh tế thế giới",
+    "n_sent": 2,
+    "t": "Ví dụ, khi FED tăng lãi suất, lãi suất ở các quốc gia khác cũng có thể tăng theo. Điều này khiến cho chi phí đi vay và đầu tư ở các quốc gia khác cũng tăng lên, từ đó làm chậm tốc độ tăng trưởng kinh tế."
+   },
+   {
+    "i": 26,
+    "h": "Tác động của FED đến kinh tế thế giới",
+    "n_sent": 2,
+    "t": "Ngoài ra, các chính sách của FED cũng có thể ảnh hưởng đến giá cả hàng hóa và dịch vụ trên toàn thế giới. Khi FED tăng lãi suất, chi phí sản xuất của các doanh nghiệp cũng tăng lên, từ đó có thể dẫn đến lạm phát."
+   }
+  ]
+ },
+ {
+  "src": "canh-tranh-hoan-hao-la-gi",
+  "src_title": "Cạnh tranh hoàn hảo là gì? Ví dụ về thị trường cạnh tranh hoàn hảo",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "322",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 70,
+    "h": "Thực trạng thị trường cạnh tranh hoàn hảo tại Việt Nam",
+    "n_sent": 3,
+    "t": "Nền kinh tế Việt Nam hiện nay là một nền kinh tế đang phát triển với hình thức kinh tế thị trường nhiều thành phần, vận động theo 3 yếu tố là tự do cạnh tranh - tự do định đoạt của chủ thể kinh doanh - chế độ sở hữu đa thành phần. Hiện nay xu hướng khởi nghiệp vẫn đang là xu hướng tất yếu của nền kinh tế nước ta, đặc biệt là khuyến khích những ý tưởng mới sáng tạo, những áp dụng công nghệ hiện đại đổi mới để giải quyết những vấn đề trong xã hội và giải quyết nhu cầu người dân. Do đó tính sáng tạo, ứng dụng đổi mới và tạo ra lợi thế cạnh tranh vẫn là một yếu tố chủ chốt thúc đẩy sự phát triển của nền kinh tế dù có đi theo hướng nào đi chăng nữa."
+   },
+   {
+    "i": 5,
+    "h": "Cạnh tranh hoàn hảo là gì?",
+    "n_sent": 2,
+    "t": "Cạnh tranh hoàn hảo (Perfect competition) là một thị trường lý tưởng trong đó có rất nhiều người mua và người bán, và họ đều có nguồn thông tin hoàn hảo, cân xứng. Vì thế, người bán hoàn toàn không có khả năng gì trong việc quyết định mức giá bán của thị trường, mà mức giá thị trường sẽ được tự định hình qua luật cung-cầu."
+   },
+   {
+    "i": 13,
+    "h": "Đặc điểm cơ bản của cạnh tranh hoàn hảo",
+    "n_sent": 3,
+    "t": "Thứ năm, không có rào cản gia nhập thị trường: Lượng hàng hoá là hoàn toàn như nhau về giá và chất lượng, thông tin hoàn hảo, do đó các doanh nghiệp có thể tự do gia nhập hoặc rút lui khỏi thị trường. Nếu có công ty rút lui khỏi thị trường, sản lượng thị trường giảm và đẩy giá thị trường lên trong ngắn hạn, khuyến khích các doanh nghiệp khác gia tăng sản lượng, doanh thu và lợi nhuận kinh tế của doanh nghiệp sẽ tăng. Nếu có công ty gia nhập thị trường, sản lượng tăng, bởi thế giá thị trường sẽ giảm trong ngắn hạn, khiến các doanh nghiệp khác phải giảm sản lượng, doanh thu và lợi nhuận kinh tế của doanh nghiệp giảm."
+   }
+  ]
+ },
+ {
+  "src": "canh-tranh-doc-quyen-la-gi",
+  "src_title": "Cạnh tranh độc quyền là gì? Đặc điểm và ví dụ chi tiết",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "261",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 58,
+    "h": "Ứng dụng trong đầu tư chứng khoán: Nhận diện con hào kinh tế của doanh nghiệp",
+    "n_sent": 2,
+    "t": "Để đánh giá chính xác vị thế cạnh tranh của các doanh nghiệp niêm yết trên sàn HOSE và HNX, nhà đầu tư có thể tận dụng các báo cáo phân tích chuyên sâu cùng sự đồng hành của chuyên gia tư vấn. Dịch vụ Môi giới 1:1 của DSC giúp bạn sàng lọc cổ phiếu đầu ngành và xây dựng chiến lược phân bổ danh mục bài bản theo từng chu kỳ kinh tế."
+   },
+   {
+    "i": 52,
+    "h": "Ứng dụng trong đầu tư chứng khoán: Nhận diện con hào kinh tế của doanh nghiệp",
+    "n_sent": 2,
+    "t": "Trong thị trường cạnh tranh độc quyền, lợi nhuận của doanh nghiệp thông thường sẽ bị bào mòn theo thời gian do rào cản gia nhập thấp. Tuy nhiên, những doanh nghiệp ngoại lệ có khả năng xây dựng con hào kinh tế (Economic Moat) vững chắc vẫn duy trì được biên lợi nhuận vượt trội suốt nhiều năm."
+   },
+   {
+    "i": 44,
+    "h": "Ví dụ thực tế về thị trường cạnh tranh độc quyền tại Việt Nam",
+    "n_sent": 1,
+    "t": "Trong đời sống kinh tế thường nhật, mô hình này hiện diện ở khắp các ngành bán lẻ và dịch vụ tiêu dùng."
+   }
+  ]
+ },
+ {
+  "src": "canh-tranh-doc-quyen-la-gi",
+  "src_title": "Cạnh tranh độc quyền là gì? Đặc điểm và ví dụ chi tiết",
+  "target": "kinh-te-hoc-vi-mo-la-gi-y-nghia-trong-dau-tu-chung-khoan",
+  "role": "hub",
+  "target_title": "Kinh tế học vi mô là gì? Ý nghĩa trong đầu tư chứng khoán",
+  "clicks": "261",
+  "anchors": [
+   "kinh tế học vi mô",
+   "kinh tế vi mô",
+   "kinh tế vi mô là gì",
+   "hành vi doanh nghiệp và người tiêu dùng",
+   "cung cầu"
+  ],
+  "paras": [
+   {
+    "i": 58,
+    "h": "Ứng dụng trong đầu tư chứng khoán: Nhận diện con hào kinh tế của doanh nghiệp",
+    "n_sent": 2,
+    "t": "Để đánh giá chính xác vị thế cạnh tranh của các doanh nghiệp niêm yết trên sàn HOSE và HNX, nhà đầu tư có thể tận dụng các báo cáo phân tích chuyên sâu cùng sự đồng hành của chuyên gia tư vấn. Dịch vụ Môi giới 1:1 của DSC giúp bạn sàng lọc cổ phiếu đầu ngành và xây dựng chiến lược phân bổ danh mục bài bản theo từng chu kỳ kinh tế."
+   },
+   {
+    "i": 52,
+    "h": "Ứng dụng trong đầu tư chứng khoán: Nhận diện con hào kinh tế của doanh nghiệp",
+    "n_sent": 2,
+    "t": "Trong thị trường cạnh tranh độc quyền, lợi nhuận của doanh nghiệp thông thường sẽ bị bào mòn theo thời gian do rào cản gia nhập thấp. Tuy nhiên, những doanh nghiệp ngoại lệ có khả năng xây dựng con hào kinh tế (Economic Moat) vững chắc vẫn duy trì được biên lợi nhuận vượt trội suốt nhiều năm."
+   },
+   {
+    "i": 49,
+    "h": "Ngành sữa và sản phẩm tiêu dùng nhanh (FMCG)",
+    "n_sent": 2,
+    "t": "Phân khúc sữa tươi tiệt trùng chứng kiến cuộc cạnh tranh sôi động giữa Vinamilk, TH True Milk và Nutifood. Dù cùng phục vụ nhu cầu bổ sung dinh dưỡng, các doanh nghiệp này liên tục tạo dấu ấn riêng qua các thông điệp truyền thông."
+   }
+  ]
+ },
+ {
+  "src": "tom-tat-su-kien-brexit",
+  "src_title": "Brexit là gì? Tóm tắt sự kiện Brexit và hiệu ứng Brexit ảnh hưởng trên toàn cầu",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "243",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 27,
+    "h": "Diễn biến Brexit tại Anh và kinh tế Anh sau Brexit",
+    "n_sent": 5,
+    "t": "Một phân tích năm 2019 cho thấy các công ty Anh về cơ bản đã gia tăng số lượng đầu tư đến EU sau cuộc trưng cầu dân ý Brexit, trong khi các công ty châu Âu giảm các khoản đầu tư mới vào Vương quốc Anh. Phân tích Brexit của chính phủ Anh, bị rò rỉ vào tháng 1 năm 2018, cho thấy tăng trưởng kinh tế của Anh sẽ giảm từ 2–8% trong 15 năm sau Brexit, số lượng tùy thuộc vào kịch bản rời bỏ. Các nhà kinh tế cũng cảnh báo rằng tương lai của London với tư cách là một trung tâm tài chính quốc tế phụ thuộc vào các thỏa thuận hộ chiếu với EU. Các nhà hoạt động ủng hộ Brexit và các chính trị gia đã tranh luận về việc đàm phán các thỏa thuận thương mại và di cư với các quốc gia \"CANZUK\" — các quốc gia Cana"
+   },
+   {
+    "i": 26,
+    "h": "Diễn biến Brexit tại Anh và kinh tế Anh sau Brexit",
+    "n_sent": 3,
+    "t": "Các nhà kinh tế dự báo rằng hậu Brexit sẽ gây ra những ảnh hưởng tức thời và lâu dài hơn đối với các nền kinh tế của Vương quốc Anh và ít nhất là một phần của EU27 khi EU là đối tác thương mại lớn nhất của Anh, chiếm 44% sản lượng xuất khẩu và 53% sản lượng nhập khẩu năm 2015. Đặc biệt, đã có sự đồng thuận rộng rãi giữa các nhà kinh tế và trong các tài liệu kinh tế rằng Brexit có thể sẽ làm giảm thu nhập bình quân đầu người thực tế của Vương quốc Anh trong trung và dài hạn, và bản thân cuộc trưng cầu Brexit sẽ gây thiệt hại cho nền kinh tế. Các nghiên cứu phát hiện ra rằng sự không chắc chắn do Brexit gây ra đã làm giảm GDP của Anh, thu nhập quốc dân của Anh, đầu tư của doanh nghiệp, việc là"
+   },
+   {
+    "i": 41,
+    "h": "Ảnh hưởng của Brexit đến nền kinh tế Việt Nam",
+    "n_sent": 3,
+    "t": "Bài viết trên đây đã cung cấp những thông tin tổng quan nhất về sự kiện Brexit. Nhìn chung những lý do bất mãn của Anh đối với EU cũng không hẳn là không đúng, nhưng việc để Brexit xảy ra đã tác động lớn với EU và kinh tế thế giới, và liệu trong dài hạn đây có phải là nước đi đúng đắn của chính phủ Anh, và họ sẽ vận hành đất nước trong thời kỳ mới không còn là thành viên của EU như thế nào? Mỗi người sẽ có những ý kiến và nhận định riêng, câu hỏi này xin dành lại cho bạn đọc nhé."
+   }
+  ]
+ },
+ {
+  "src": "tom-tat-su-kien-brexit",
+  "src_title": "Brexit là gì? Tóm tắt sự kiện Brexit và hiệu ứng Brexit ảnh hưởng trên toàn cầu",
+  "target": "khung-hoang-tai-chinh-la-gi-cac-giai-doan-cua-khung-hoang-tai-chinh",
+  "role": "hub",
+  "target_title": "Khủng hoảng tài chính là gì? Nguyên nhân và hậu quả",
+  "clicks": "243",
+  "anchors": [
+   "khủng hoảng tài chính",
+   "khủng hoảng tài chính là gì",
+   "khủng hoảng kinh tế",
+   "cuộc khủng hoảng",
+   "suy sụp tài chính"
+  ],
+  "paras": [
+   {
+    "i": 18,
+    "h": "Nguyên nhân dẫn đến sự kiện Brexit",
+    "n_sent": 2,
+    "t": "Thứ hai, đó là sự bất ổn chính trị từ chính trong nội bộ Anh, cuộc khủng hoảng đổ bộ dân nhập cư khiến cho tình hình an ninh tại quốc gia này không ổn định, cùng với đó là việc các thành viên của Đảng Bảo thủ luôn hoài nghi vào khả năng điều hành của Liên Minh châu Âu. Đây cũng là nguyên nhân đưa ra việc trưng cầu dân ý và kết quả là người dân nước Anh đã đồng nhất ý kiến về việc rút khỏi liên minh Châu Âu, đây có thể coi là một quyết định chấn động thế giới khi khối Liên minh Châu Âu vốn là một khối liên minh bền vững và là đối trọng trực tiếp với Mỹ."
+   },
+   {
+    "i": 26,
+    "h": "Diễn biến Brexit tại Anh và kinh tế Anh sau Brexit",
+    "n_sent": 3,
+    "t": "Các nhà kinh tế dự báo rằng hậu Brexit sẽ gây ra những ảnh hưởng tức thời và lâu dài hơn đối với các nền kinh tế của Vương quốc Anh và ít nhất là một phần của EU27 khi EU là đối tác thương mại lớn nhất của Anh, chiếm 44% sản lượng xuất khẩu và 53% sản lượng nhập khẩu năm 2015. Đặc biệt, đã có sự đồng thuận rộng rãi giữa các nhà kinh tế và trong các tài liệu kinh tế rằng Brexit có thể sẽ làm giảm thu nhập bình quân đầu người thực tế của Vương quốc Anh trong trung và dài hạn, và bản thân cuộc trưng cầu Brexit sẽ gây thiệt hại cho nền kinh tế. Các nghiên cứu phát hiện ra rằng sự không chắc chắn do Brexit gây ra đã làm giảm GDP của Anh, thu nhập quốc dân của Anh, đầu tư của doanh nghiệp, việc là"
+   },
+   {
+    "i": 27,
+    "h": "Diễn biến Brexit tại Anh và kinh tế Anh sau Brexit",
+    "n_sent": 5,
+    "t": "Một phân tích năm 2019 cho thấy các công ty Anh về cơ bản đã gia tăng số lượng đầu tư đến EU sau cuộc trưng cầu dân ý Brexit, trong khi các công ty châu Âu giảm các khoản đầu tư mới vào Vương quốc Anh. Phân tích Brexit của chính phủ Anh, bị rò rỉ vào tháng 1 năm 2018, cho thấy tăng trưởng kinh tế của Anh sẽ giảm từ 2–8% trong 15 năm sau Brexit, số lượng tùy thuộc vào kịch bản rời bỏ. Các nhà kinh tế cũng cảnh báo rằng tương lai của London với tư cách là một trung tâm tài chính quốc tế phụ thuộc vào các thỏa thuận hộ chiếu với EU. Các nhà hoạt động ủng hộ Brexit và các chính trị gia đã tranh luận về việc đàm phán các thỏa thuận thương mại và di cư với các quốc gia \"CANZUK\" — các quốc gia Cana"
+   }
+  ]
+ },
+ {
+  "src": "quan-ly-thi-truong-la-gi",
+  "src_title": "Quản lý thị trường là gì? Chức năng và Hệ thống quản lý thị trường tại Việt Nam",
+  "target": "kinh-te-hoc-vi-mo-la-gi-y-nghia-trong-dau-tu-chung-khoan",
+  "role": "hub",
+  "target_title": "Kinh tế học vi mô là gì? Ý nghĩa trong đầu tư chứng khoán",
+  "clicks": "199",
+  "anchors": [
+   "kinh tế học vi mô",
+   "kinh tế vi mô",
+   "kinh tế vi mô là gì",
+   "hành vi doanh nghiệp và người tiêu dùng",
+   "cung cầu"
+  ],
+  "paras": [
+   {
+    "i": 53,
+    "h": "Tác động đến định giá doanh nghiệp",
+    "n_sent": 3,
+    "t": "Việc kiểm soát hàng giả và hàng kém chất lượng góp phần nâng cao uy tín thương hiệu của doanh nghiệp niêm yết. Chi phí liên quan đến rủi ro pháp lý, xử lý hàng lỗi hoặc mất doanh thu vì cạnh tranh không lành mạnh cũng giảm xuống. Điều này giúp các chỉ tiêu như P/E hoặc P/B ổn định hơn và cải thiện triển vọng tăng trưởng dài hạn."
+   },
+   {
+    "i": 57,
+    "h": "Ngăn chặn lừa đảo đầu tư và bảo vệ nhà đầu tư",
+    "n_sent": 2,
+    "t": "QLTT phối hợp với các cơ quan chức năng trong việc phòng chống các hoạt động giả danh công ty chứng khoán, ứng dụng đầu tư trái phép hoặc hành vi lừa đảo tài chính. Điều này góp phần củng cố sự an toàn và minh bạch của thị trường chứng khoán, tạo môi trường đầu tư lành mạnh hơn."
+   },
+   {
+    "i": 51,
+    "h": "Ổn định môi trường cạnh tranh và giảm rủi ro kinh doanh",
+    "n_sent": 3,
+    "t": "Gian lận thương mại và hàng hóa kém chất lượng gây ra cạnh tranh không lành mạnh, ảnh hưởng đến hiệu quả hoạt động của doanh nghiệp niêm yết. Khi QLTT làm tốt nhiệm vụ kiểm soát thị trường, môi trường cạnh tranh trở nên minh bạch hơn. Doanh nghiệp giảm thiểu các rủi ro bất thường và nhà đầu tư có thêm niềm tin, đặc biệt là nhà đầu tư nước ngoài."
+   }
+  ]
+ },
+ {
+  "src": "quy-luat-gia-tri-la-gi-giai-thich-chi-tiet-va-day-du",
+  "src_title": "Quy luật giá trị là gì? Nội dung, tác động và ứng dụng",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "193",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 56,
+    "h": "Ứng dụng quy luật giá trị trong phân tích và đầu tư chứng khoán",
+    "n_sent": 2,
+    "t": "Nhiều nhà đầu tư mới (F0) thường coi thị trường chứng khoán là nơi biến động ngẫu nhiên. Tuy nhiên, quy luật giá trị vận hành chính xác trên thị trường vốn thông qua mối quan hệ giữa thị giá và giá trị nội tại."
+   },
+   {
+    "i": 30,
+    "h": "Biểu hiện của quy luật giá trị trong nền kinh tế thị trường",
+    "n_sent": 1,
+    "t": "Quy luật giá trị bộc lộ sức mạnh chi phối thông qua sự tương tác linh hoạt với các quy luật kinh tế vĩ mô khác."
+   },
+   {
+    "i": 8,
+    "h": "Quy luật giá trị là gì?",
+    "n_sent": 2,
+    "t": "Tháng 9/2026, nền kinh tế Việt Nam tiếp tục mở rộng quy mô sản xuất và thương mại. Việc vận dụng đúng quy luật giá trị giúp các doanh nghiệp tối ưu chi phí vận hành và nâng cao vị thế cạnh tranh bền vững."
+   }
+  ]
+ },
+ {
+  "src": "phan-biet-thi-truong-tien-te-va-thi-truong-von-huong-dan-chi-tiet-cho-nha-dau-tu",
+  "src_title": "Phân biệt thị trường tiền tệ và thị trường vốn chi tiết nhất",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "166",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 5,
+    "h": "1. Khái niệm",
+    "n_sent": 2,
+    "t": "Thị trường vốn: Là nơi diễn ra các hoạt động mua bán các chứng khoán dài hạn (có kỳ hạn thanh toán từ 1 năm trở lên) như cổ phiếu, trái phiếu dài hạn... nhằm đáp ứng nhu cầu vốn dài hạn cho đầu tư và phát triển."
+   },
+   {
+    "i": 22,
+    "h": "Thị trường tiền tệ",
+    "n_sent": 1,
+    "t": "Duy trì thanh khoản hệ thống tài chính: Cung cấp nguồn vốn ngắn hạn cho các ngân hàng và tổ chức tài chính để đáp ứng nhu cầu thanh toán và điều tiết thanh khoản."
+   },
+   {
+    "i": 23,
+    "h": "Thị trường tiền tệ",
+    "n_sent": 1,
+    "t": "Điều tiết chính sách tiền tệ: Ngân hàng trung ương sử dụng các công cụ thị trường tiền tệ để điều tiết chính sách tiền tệ, ảnh hưởng đến lãi suất và cung ứng tiền tệ trong nền kinh tế."
+   }
+  ]
+ },
+ {
+  "src": "phan-biet-thi-truong-tien-te-va-thi-truong-von-huong-dan-chi-tiet-cho-nha-dau-tu",
+  "src_title": "Phân biệt thị trường tiền tệ và thị trường vốn chi tiết nhất",
+  "target": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+  "role": "hub",
+  "target_title": "So sánh chính sách tài khóa và chính sách tiền tệ",
+  "clicks": "166",
+  "anchors": [
+   "chính sách tài khóa và chính sách tiền tệ",
+   "chính sách tài khóa và tiền tệ",
+   "so sánh chính sách tài khóa và chính sách tiền tệ",
+   "chính sách kinh tế vĩ mô",
+   "chính sách vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 23,
+    "h": "Thị trường tiền tệ",
+    "n_sent": 1,
+    "t": "Điều tiết chính sách tiền tệ: Ngân hàng trung ương sử dụng các công cụ thị trường tiền tệ để điều tiết chính sách tiền tệ, ảnh hưởng đến lãi suất và cung ứng tiền tệ trong nền kinh tế."
+   },
+   {
+    "i": 22,
+    "h": "Thị trường tiền tệ",
+    "n_sent": 1,
+    "t": "Duy trì thanh khoản hệ thống tài chính: Cung cấp nguồn vốn ngắn hạn cho các ngân hàng và tổ chức tài chính để đáp ứng nhu cầu thanh toán và điều tiết thanh khoản."
+   },
+   {
+    "i": 4,
+    "h": "1. Khái niệm",
+    "n_sent": 2,
+    "t": "Thị trường tiền tệ: Là nơi diễn ra các hoạt động mua bán các chứng khoán ngắn hạn (có kỳ hạn thanh toán dưới 1 năm) như tiền gửi ngân hàng, giấy kho bạc, trái phiếu ngắn hạn... nhằm đáp ứng nhu cầu vốn ngắn hạn của nền kinh tế."
+   }
+  ]
+ },
+ {
+  "src": "lam-phat-va-lai-suat-moi-quan-he-mat-thiet",
+  "src_title": "Lạm phát và lãi suất có mối quan hệ gì trong nền kinh tế?",
+  "target": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+  "role": "hub",
+  "target_title": "So sánh chính sách tài khóa và chính sách tiền tệ",
+  "clicks": "150",
+  "anchors": [
+   "chính sách tài khóa và chính sách tiền tệ",
+   "chính sách tài khóa và tiền tệ",
+   "so sánh chính sách tài khóa và chính sách tiền tệ",
+   "chính sách kinh tế vĩ mô",
+   "chính sách vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 21,
+    "h": "Ứng dụng của mối quan hệ giữa lạm phát và lãi suất",
+    "n_sent": 3,
+    "t": "Các ngân hàng trung ương sử dụng lãi suất như một công cụ chính sách tiền tệ để điều tiết lạm phát. Khi lạm phát tăng, ngân hàng trung ương sẽ tăng lãi suất để kìm hãm lạm phát. Ngược lại, khi lạm phát giảm, ngân hàng trung ương sẽ giảm lãi suất để kích thích tăng trưởng kinh tế."
+   },
+   {
+    "i": 17,
+    "h": "Lạm phát tác động đến lãi suất",
+    "n_sent": 3,
+    "t": "Khi lạm phát tăng, giá cả hàng hóa và dịch vụ tăng lên. Điều này làm giảm giá trị của tiền tệ, khiến cho người dân và doanh nghiệp có nhu cầu mua sắm nhiều hơn để tránh mất giá. Nhu cầu tiền tệ tăng lên sẽ dẫn đến việc lãi suất tăng lên để cân bằng cung - cầu tiền tệ."
+   },
+   {
+    "i": 4,
+    "h": "Lạm phát là gì?",
+    "n_sent": 2,
+    "t": "Lạm phát là sự gia tăng của mức giá chung của hàng hóa và dịch vụ trong một thời gian nhất định. Lạm phát được đo bằng chỉ số giá tiêu dùng (CPI), hay còn gọi là chỉ số giá sinh hoạt."
+   }
+  ]
+ },
+ {
+  "src": "zero-sum-game-la-gi-giai-thich-chi-tiet-va-ung-dung-thuc-te",
+  "src_title": "Zero-sum game là gì? Giải thích chi tiết và ứng dụng thực tế",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "141",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 1,
+    "h": "Zero-sum game là gì?",
+    "n_sent": 2,
+    "t": "Trong lý thuyết trò chơi và kinh tế học, zero-sum game (hay còn gọi là trò chơi có tổng bằng không) mô tả tình huống mà lợi ích của một người chơi bằng chính sự mất mát của những người chơi khác. Nói cách khác, tổng giá trị của tiền thắng và tiền thua trong trò chơi này luôn bằng 0."
+   },
+   {
+    "i": 15,
+    "h": "Phân biệt zero-sum game với non-zero-sum game",
+    "n_sent": 3,
+    "t": "Non-zero-sum game: Tổng giá trị có thể tăng hoặc giảm. Lợi ích không chỉ chuyển giao mà có thể được tạo ra mới. Ví dụ: Hợp tác kinh doanh, nghiên cứu khoa học,..."
+   },
+   {
+    "i": 17,
+    "h": "Ý nghĩa",
+    "n_sent": 1,
+    "t": "Hiểu rõ zero-sum game giúp đưa ra quyết định sáng suốt trong các tình huống cạnh tranh, tối ưu hóa lợi ích và hạn chế rủi ro."
+   }
+  ]
+ },
+ {
+  "src": "zero-sum-game-la-gi-giai-thich-chi-tiet-va-ung-dung-thuc-te",
+  "src_title": "Zero-sum game là gì? Giải thích chi tiết và ứng dụng thực tế",
+  "target": "kinh-te-hoc-vi-mo-la-gi-y-nghia-trong-dau-tu-chung-khoan",
+  "role": "hub",
+  "target_title": "Kinh tế học vi mô là gì? Ý nghĩa trong đầu tư chứng khoán",
+  "clicks": "141",
+  "anchors": [
+   "kinh tế học vi mô",
+   "kinh tế vi mô",
+   "kinh tế vi mô là gì",
+   "hành vi doanh nghiệp và người tiêu dùng",
+   "cung cầu"
+  ],
+  "paras": [
+   {
+    "i": 1,
+    "h": "Zero-sum game là gì?",
+    "n_sent": 2,
+    "t": "Trong lý thuyết trò chơi và kinh tế học, zero-sum game (hay còn gọi là trò chơi có tổng bằng không) mô tả tình huống mà lợi ích của một người chơi bằng chính sự mất mát của những người chơi khác. Nói cách khác, tổng giá trị của tiền thắng và tiền thua trong trò chơi này luôn bằng 0."
+   },
+   {
+    "i": 20,
+    "h": "Ý nghĩa",
+    "n_sent": 2,
+    "t": "Bài viết này cung cấp giải thích chi tiết về zero-sum game, đặc điểm, ứng dụng và ý nghĩa của nó. Hiểu rõ khái niệm này giúp bạn đưa ra quyết định sáng suốt và tối ưu hóa lợi ích trong nhiều lĩnh vực của cuộc sống."
+   },
+   {
+    "i": 18,
+    "h": "Ý nghĩa",
+    "n_sent": 1,
+    "t": "Nhận thức được bản chất của zero-sum game giúp thúc đẩy hợp tác và tạo ra giá trị chung cho tất cả các bên tham gia."
+   }
+  ]
+ },
+ {
+  "src": "nghiep-vu-thi-truong-mo-la-gi",
+  "src_title": "Nghiệp vụ thị trường mở là gì? Ý nghĩa và các chiến lược đầu tư",
+  "target": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+  "role": "hub",
+  "target_title": "So sánh chính sách tài khóa và chính sách tiền tệ",
+  "clicks": "73",
+  "anchors": [
+   "chính sách tài khóa và chính sách tiền tệ",
+   "chính sách tài khóa và tiền tệ",
+   "so sánh chính sách tài khóa và chính sách tiền tệ",
+   "chính sách kinh tế vĩ mô",
+   "chính sách vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 10,
+    "h": "Cơ chế hoạt động của nghiệp vụ thị trường mở",
+    "n_sent": 1,
+    "t": "Nhờ tác động trực tiếp đến cung tiền và gián tiếp đến lãi suất, nghiệp vụ thị trường mở trở thành công cụ linh hoạt giúp NHNN ổn định kinh tế vĩ mô, kiểm soát lạm phát và hỗ trợ mục tiêu chính sách tiền tệ."
+   },
+   {
+    "i": 2,
+    "h": "Nghiệp vụ thị trường mở là gì?",
+    "n_sent": 2,
+    "t": "Nghiệp vụ thị trường mở (Open Market Operations – OMO) là một công cụ quan trọng của chính sách tiền tệ, được Ngân hàng Trung ương sử dụng để điều tiết lượng tiền trong nền kinh tế. Thông qua hoạt động mua hoặc bán các giấy tờ có giá ngắn hạn cho các ngân hàng thương mại, cơ quan quản lý có thể kiểm soát cung tiền, tác động đến thanh khoản và điều chỉnh lãi suất trên thị trường."
+   },
+   {
+    "i": 39,
+    "h": "Các chiến lược đầu tư trong nghiệp vụ thị trường mở",
+    "n_sent": 2,
+    "t": "Hiểu về nghiệp vụ thị trường mở giúp nhà đầu tư nhận diện sớm những thay đổi trong chính sách tiền tệ và điều chỉnh danh mục phù hợp với diễn biến lãi suất và thanh khoản thị trường. Các chiến lược dưới đây dựa trên cách Ngân hàng Nhà nước sử dụng OMO để bơm hoặc hút tiền khỏi hệ thống."
+   }
+  ]
+ },
+ {
+  "src": "can-can-vang-lai-la-gi",
+  "src_title": "Cán cân vãng lai là gì? các yếu tố ảnh hưởng đến cán cân vãng lai",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "69",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 92,
+    "h": "Thực trạng cán cân vãng lai của việt nam",
+    "n_sent": 3,
+    "t": "Mặc dù đất nước ta đã có mức tăng trưởng kinh tế tốt trong nhiều năm vừa qua, nhưng đại dịch Covid-19 trong 2 năm gần đây đã tác động ít nhiều đến nền kinh tế Việt Nam cũng như toàn thế giới, nên thực trạng cán cân vãng lai của Việt Nam cũng có nhiều biến động. Cụ thể biến động có thể kể đến việc thâm hụt nhiên liệu ngày càng trầm trọng hơn trong bối cảnh tình hình thế giới phức tạp, giá dầu đã tăng gấp 2 trong khi giá xăng tăng gấp 4 so với cùng kỳ. Điểm sáng năm 2022 là việc nước ta sẽ mở cửa biên giới, tạo điều kiện thúc đẩy ngành du lịch hồi phục mạnh mẽ sau một thời gian dài ngưng trệ vì đại dịch."
+   },
+   {
+    "i": 8,
+    "h": "Cán cân vãng lai là gì?",
+    "n_sent": 0,
+    "t": "Nếu bên “có” > bên “nợ” => Thặng dư tài khoản vãng lai => Quốc gia xuất khẩu nhiều hơn nhập khẩu (xuất siêu), hoặc tiết kiệm nhiều hơn đầu tư"
+   },
+   {
+    "i": 9,
+    "h": "Cán cân vãng lai là gì?",
+    "n_sent": 0,
+    "t": "Nếu bên “có” < bên “nợ” => Thâm hụt tài khoản vãng lai => Quốc gia nhập khẩu nhiều hơn xuất khẩu (nhập siêu), hoặc đầu tư nhiều hơn tiết kiệm"
+   }
+  ]
+ },
+ {
+  "src": "chi-so-dxy-la-gi",
+  "src_title": "Chỉ số DXY là gì? Tác động đến tỷ giá USD/VND và VN-Index",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "68",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 17,
+    "h": "Bối cảnh ra đời",
+    "n_sent": 2,
+    "t": "Tháng 8/1971, Tổng thống Richard Nixon tuyên bố chấm dứt khả năng chuyển đổi USD sang vàng, đánh dấu sự kết thúc của hệ thống Bretton Woods. Từ đây, các đồng tiền bắt đầu thả nổi theo cơ chế thị trường tự do."
+   },
+   {
+    "i": 44,
+    "h": "Hạn chế cấu trúc của chỉ số DXY hiện đại",
+    "n_sent": 3,
+    "t": "Cấu trúc rổ tiền tệ của DXY vẫn giữ nguyên từ năm 1999 đến nay. Rổ tính toán này chưa phản ánh các đối tác thương mại lớn mới nổi như Trung Quốc hay Hàn Quốc. Vì vậy, DXY phản ánh chủ yếu tương quan giữa USD với nhóm các nền kinh tế phát triển."
+   },
+   {
+    "i": 16,
+    "h": "Bối cảnh ra đời",
+    "n_sent": 2,
+    "t": "Trước năm 1971, hệ thống tiền tệ quốc tế vận hành theo cơ chế Bretton Woods. Theo đó, các đồng tiền được neo giá cố định vào USD và USD neo vào vàng với tỷ giá 35 USD/ounce vàng."
+   }
+  ]
+ },
+ {
+  "src": "chi-so-dxy-la-gi",
+  "src_title": "Chỉ số DXY là gì? Tác động đến tỷ giá USD/VND và VN-Index",
+  "target": "can-can-thanh-toan-bop-la-gi",
+  "role": "hub",
+  "target_title": "Cán cân thanh toán (BOP) là gì? Ý nghĩa và ứng dụng đầu tư",
+  "clicks": "68",
+  "anchors": [
+   "cán cân thanh toán",
+   "cán cân thanh toán quốc tế",
+   "cán cân thanh toán là gì",
+   "BOP",
+   "dòng tiền quốc tế"
+  ],
+  "paras": [
+   {
+    "i": 3,
+    "h": "Chỉ số DXY là gì?",
+    "n_sent": 2,
+    "t": "Chỉ số DXY (viết tắt của US Dollar Index hay USD Index) đo lường giá trị của đồng Đô la Mỹ. Chỉ số này so sánh USD với một rổ gồm 6 loại tiền tệ lớn của các đối tác thương mại hàng đầu của Hoa Kỳ."
+   },
+   {
+    "i": 41,
+    "h": "Tầm quan trọng của Euro trong DXY",
+    "n_sent": 2,
+    "t": "Euro chiếm tỷ trọng áp đảo với gần 60% rổ tiền tệ. Điều này có nghĩa bất kỳ biến động nào của nền kinh tế Châu Âu hoặc quyết định chính sách từ Ngân hàng Trung ương Châu Âu (ECB) đều tác động mạnh mẽ đến USD Index."
+   },
+   {
+    "i": 44,
+    "h": "Hạn chế cấu trúc của chỉ số DXY hiện đại",
+    "n_sent": 3,
+    "t": "Cấu trúc rổ tiền tệ của DXY vẫn giữ nguyên từ năm 1999 đến nay. Rổ tính toán này chưa phản ánh các đối tác thương mại lớn mới nổi như Trung Quốc hay Hàn Quốc. Vì vậy, DXY phản ánh chủ yếu tương quan giữa USD với nhóm các nền kinh tế phát triển."
+   }
+  ]
+ },
+ {
+  "src": "cong-thuc-tinh-lam-phat",
+  "src_title": "Công thức tính lạm phát chuẩn xác và cách bảo vệ tài sản",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "63",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 88,
+    "h": "Phân loại các mức độ và nguyên nhân chính gây ra lạm phát",
+    "n_sent": 1,
+    "t": "Hiểu rõ quy mô và nguồn gốc của lạm phát giúp nhà đầu tư dự báo chính xác chu kỳ kinh tế và đưa ra hành động phân bổ tài sản phù hợp."
+   },
+   {
+    "i": 9,
+    "h": "Tầm quan trọng của việc đo lường lạm phát",
+    "n_sent": 2,
+    "t": "Đo lường tỷ lệ lạm phát đóng vai trò sống còn đối với cả nền kinh tế vĩ mô lẫn túi tiền cá nhân. Đối với cơ quan quản lý, dữ liệu lạm phát là căn cứ hàng đầu để Ngân hàng Nhà nước điều hành chính sách tiền tệ và lãi suất."
+   },
+   {
+    "i": 105,
+    "h": "Bào mòn sức mua thực tế của tiền mặt",
+    "n_sent": 3,
+    "t": "Khi giá cả hàng hóa gia tăng liên tục, một đơn vị tiền tệ sẽ mua được ít sản phẩm hơn. Nếu thu nhập hàng tháng không tăng tương ứng với tỷ lệ lạm phát, thu nhập thực tế của bạn sẽ bị sụt giảm. Điều này buộc các hộ gia đình phải cắt giảm chi tiêu cho các nhu cầu giải trí và nâng cao chất lượng cuộc sống."
+   }
+  ]
+ },
+ {
+  "src": "he-so-icor-la-gi",
+  "src_title": "Hệ số ICOR là gì? Ý nghĩa và ứng dụng trong đầu tư",
+  "target": "gdp-la-gi",
+  "role": "sub-hub",
+  "target_title": "GDP là gì? Cách tính và yếu tố ảnh hưởng đến GDP",
+  "clicks": "58",
+  "anchors": [
+   "GDP",
+   "GDP là gì",
+   "cách tính GDP",
+   "tổng sản phẩm quốc nội",
+   "tăng trưởng GDP",
+   "quy mô nền kinh tế"
+  ],
+  "paras": [
+   {
+    "i": 19,
+    "h": "Công thức tính hệ số ICOR",
+    "n_sent": 2,
+    "t": "Giả sử tổng vốn đầu tư thực hiện toàn xã hội chiếm 33% GDP trong năm. Tốc độ tăng trưởng kinh tế của năm đó đạt mức 5,7%."
+   },
+   {
+    "i": 2,
+    "h": "Hệ số ICOR là gì?",
+    "n_sent": 2,
+    "t": "Hệ số ICOR (Incremental Capital-Output Ratio) là chỉ số đo lường hiệu quả sử dụng vốn đầu tư của một nền kinh tế. Chỉ số này phản ánh cần bao nhiêu đơn vị vốn đầu tư tăng thêm để tạo ra một đơn vị sản lượng (GDP) tăng thêm."
+   },
+   {
+    "i": 23,
+    "h": "Công thức tính hệ số ICOR",
+    "n_sent": 1,
+    "t": "Kết quả này cho biết nền kinh tế cần bỏ ra 5,79 đồng vốn đầu tư để thu về 1 đồng GDP tăng thêm."
+   }
+  ]
+ },
+ {
+  "src": "cung-tien-la-gi",
+  "src_title": "Cung tiền là gì? Tác động của cung tiền tới nền kinh tế",
+  "target": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+  "role": "hub",
+  "target_title": "So sánh chính sách tài khóa và chính sách tiền tệ",
+  "clicks": "58",
+  "anchors": [
+   "chính sách tài khóa và chính sách tiền tệ",
+   "chính sách tài khóa và tiền tệ",
+   "so sánh chính sách tài khóa và chính sách tiền tệ",
+   "chính sách kinh tế vĩ mô",
+   "chính sách vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 26,
+    "h": "Vai trò của cung tiền đối với nền kinh tế",
+    "n_sent": 2,
+    "t": "Biến động cung tiền tạo ra tác động dây chuyền đến mọi hoạt động kinh doanh và đầu tư. Kiểm soát cung tiền hợp lý giúp đảm bảo mục tiêu tăng trưởng kinh tế bền vững."
+   },
+   {
+    "i": 4,
+    "h": "Cung tiền là gì?",
+    "n_sent": 2,
+    "t": "Trong phân tích kinh tế vĩ mô, quy mô cung tiền phản ánh mức độ thanh khoản của hệ thống tài chính. Sự thay đổi cung tiền tác động trực tiếp đến mặt bằng lãi suất, lạm phát và giá trị tài sản đầu tư."
+   },
+   {
+    "i": 12,
+    "h": "Ai kiểm soát cung tiền?",
+    "n_sent": 1,
+    "t": "Các công cụ này phối hợp chặt chẽ với chính sách tài khóa là gì nhằm duy trì ổn định kinh tế vĩ mô."
+   }
+  ]
+ },
+ {
+  "src": "ecb-la-gi-vai-tro-va-chuc-nang-cua-ngan-hang-trung-uong-chau-au",
+  "src_title": "ECB là gì? Vai trò và chức năng của Ngân hàng Trung ương châu Âu",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "49",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 14,
+    "h": "Thiết lập và thực hiện chính sách tiền tệ",
+    "n_sent": 2,
+    "t": "ECB chịu trách nhiệm thiết lập và thực hiện chính sách tiền tệ của Khu vực đồng Euro. Chính sách tiền tệ của ECB nhằm mục tiêu duy trì ổn định giá cả và thúc đẩy tăng trưởng kinh tế."
+   },
+   {
+    "i": 1,
+    "h": "ECB là gì?",
+    "n_sent": 3,
+    "t": "ECB là viết tắt của European Central Bank, hay Ngân hàng Trung ương châu Âu. ECB là ngân hàng trung ương của Khu vực đồng Euro, bao gồm 19 quốc gia thành viên của Liên minh châu Âu. ECB có trụ sở chính tại Frankfurt, Đức."
+   },
+   {
+    "i": 25,
+    "h": "Hỗ trợ các ngân hàng trung ương quốc gia",
+    "n_sent": 2,
+    "t": "ECB có thể hỗ trợ các ngân hàng trung ương quốc gia trong việc thực hiện các nhiệm vụ của họ. Ví dụ, ECB có thể cung cấp cho các ngân hàng trung ương quốc gia các khoản vay khẩn cấp trong trường hợp khẩn cấp."
+   }
+  ]
+ },
+ {
+  "src": "ecb-la-gi-vai-tro-va-chuc-nang-cua-ngan-hang-trung-uong-chau-au",
+  "src_title": "ECB là gì? Vai trò và chức năng của Ngân hàng Trung ương châu Âu",
+  "target": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+  "role": "hub",
+  "target_title": "So sánh chính sách tài khóa và chính sách tiền tệ",
+  "clicks": "49",
+  "anchors": [
+   "chính sách tài khóa và chính sách tiền tệ",
+   "chính sách tài khóa và tiền tệ",
+   "so sánh chính sách tài khóa và chính sách tiền tệ",
+   "chính sách kinh tế vĩ mô",
+   "chính sách vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 14,
+    "h": "Thiết lập và thực hiện chính sách tiền tệ",
+    "n_sent": 2,
+    "t": "ECB chịu trách nhiệm thiết lập và thực hiện chính sách tiền tệ của Khu vực đồng Euro. Chính sách tiền tệ của ECB nhằm mục tiêu duy trì ổn định giá cả và thúc đẩy tăng trưởng kinh tế."
+   },
+   {
+    "i": 1,
+    "h": "ECB là gì?",
+    "n_sent": 3,
+    "t": "ECB là viết tắt của European Central Bank, hay Ngân hàng Trung ương châu Âu. ECB là ngân hàng trung ương của Khu vực đồng Euro, bao gồm 19 quốc gia thành viên của Liên minh châu Âu. ECB có trụ sở chính tại Frankfurt, Đức."
+   },
+   {
+    "i": 21,
+    "h": "Phát hành đồng Euro",
+    "n_sent": 2,
+    "t": "ECB là cơ quan duy nhất có quyền phát hành đồng Euro. ECB phát hành đồng Euro để đáp ứng nhu cầu lưu thông của đồng tiền này trong Khu vực đồng Euro."
+   }
+  ]
+ },
+ {
+  "src": "canh-tranh-khong-hoan-hao-phan-tich-chi-tiet-cac-mo-hinh",
+  "src_title": "Cạnh tranh không hoàn hảo là gì? Các loại Cạnh tranh không hoàn hảo",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "48",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "Cạnh tranh không hoàn hảo là gì?",
+    "n_sent": 2,
+    "t": "Cạnh tranh không hoàn hảo là hình thức thị trường trong đó các điều kiện của cạnh tranh hoàn hảo không được đáp ứng đầy đủ. Trong mô hình này, doanh nghiệp không chỉ đóng vai trò “chấp nhận giá” mà có khả năng chi phối hoặc tác động nhất định đến mức giá trên thị trường nhờ lợi thế về quy mô, vị thế hoặc cấu trúc thị trường."
+   }
+  ]
+ },
+ {
+  "src": "canh-tranh-khong-hoan-hao-phan-tich-chi-tiet-cac-mo-hinh",
+  "src_title": "Cạnh tranh không hoàn hảo là gì? Các loại Cạnh tranh không hoàn hảo",
+  "target": "kinh-te-hoc-vi-mo-la-gi-y-nghia-trong-dau-tu-chung-khoan",
+  "role": "hub",
+  "target_title": "Kinh tế học vi mô là gì? Ý nghĩa trong đầu tư chứng khoán",
+  "clicks": "48",
+  "anchors": [
+   "kinh tế học vi mô",
+   "kinh tế vi mô",
+   "kinh tế vi mô là gì",
+   "hành vi doanh nghiệp và người tiêu dùng",
+   "cung cầu"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "Cạnh tranh không hoàn hảo là gì?",
+    "n_sent": 2,
+    "t": "Cạnh tranh không hoàn hảo là hình thức thị trường trong đó các điều kiện của cạnh tranh hoàn hảo không được đáp ứng đầy đủ. Trong mô hình này, doanh nghiệp không chỉ đóng vai trò “chấp nhận giá” mà có khả năng chi phối hoặc tác động nhất định đến mức giá trên thị trường nhờ lợi thế về quy mô, vị thế hoặc cấu trúc thị trường."
+   }
+  ]
+ },
+ {
+  "src": "imf-la-gi",
+  "src_title": "IMF là gì? Vai trò và tác động đến chứng khoán Việt Nam",
+  "target": "can-can-thanh-toan-bop-la-gi",
+  "role": "hub",
+  "target_title": "Cán cân thanh toán (BOP) là gì? Ý nghĩa và ứng dụng đầu tư",
+  "clicks": "47",
+  "anchors": [
+   "cán cân thanh toán",
+   "cán cân thanh toán quốc tế",
+   "cán cân thanh toán là gì",
+   "BOP",
+   "dòng tiền quốc tế"
+  ],
+  "paras": [
+   {
+    "i": 21,
+    "h": "Tại sao nhà đầu tư chứng khoán cần quan tâm đến IMF?",
+    "n_sent": 1,
+    "t": "Số liệu từ IMF không chỉ là những con số khô khan; chúng là \"động cơ\" thúc đẩy dòng tiền trên thị trường chứng khoán."
+   },
+   {
+    "i": 23,
+    "h": "Báo cáo Triển vọng Kinh tế Thế giới (World Economic Outlook)",
+    "n_sent": 2,
+    "t": "Định kỳ, IMF công bố dự báo tăng trưởng GDP toàn cầu và từng quốc gia. Khi IMF nâng dự báo tăng trưởng của Việt Nam, đây thường là tín hiệu tích cực (Bullish) cho chỉ số VN-Index, thu hút dòng vốn ngoại (FII) đổ vào thị trường."
+   },
+   {
+    "i": 27,
+    "h": "Giám sát tỷ giá và lạm phát",
+    "n_sent": 2,
+    "t": "IMF đưa ra các khuyến nghị về chính sách tiền tệ (lãi suất). Nhà đầu tư tại DSC luôn theo dõi sát các khuyến nghị này vì lãi suất và chứng khoán luôn là có quan hệ mật thiết với nhau – lãi suất giảm là cơ hội vàng cho giá cổ phiếu bứt phá."
+   }
+  ]
+ },
+ {
+  "src": "thi-truong-tien-te-la-gi-phan-tich-vai-tro-va-cac-thanh-phan",
+  "src_title": "Thị trường tiền tệ là gì? Phân tích vai trò và các thành phần",
+  "target": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+  "role": "hub",
+  "target_title": "So sánh chính sách tài khóa và chính sách tiền tệ",
+  "clicks": "42",
+  "anchors": [
+   "chính sách tài khóa và chính sách tiền tệ",
+   "chính sách tài khóa và tiền tệ",
+   "so sánh chính sách tài khóa và chính sách tiền tệ",
+   "chính sách kinh tế vĩ mô",
+   "chính sách vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 7,
+    "h": "Vai trò của thị trường tiền tệ",
+    "n_sent": 1,
+    "t": "Thị trường tiền tệ đóng vai trò cung cấp nguồn vốn ngắn hạn cho các tổ chức, doanh nghiệp và chính phủ để đáp ứng nhu cầu tài trợ cho hoạt động kinh doanh và đầu tư."
+   },
+   {
+    "i": 8,
+    "h": "Vai trò của thị trường tiền tệ",
+    "n_sent": 1,
+    "t": "Ngoài ra, thị trường tiền tệ còn có các nhiệm vụ khác như: Giúp cân bằng cung cầu về vốn ngắn hạn trong nền kinh tế; Tạo kênh đầu tư an toàn và sinh lời cho các nhà đầu tư; Thúc đẩy hoạt động kinh tế và phát triển thị trường tài chính."
+   },
+   {
+    "i": 4,
+    "h": "Thị trường tiền tệ là gì?",
+    "n_sent": 2,
+    "t": "Thị trường tiền tệ là thị trường vốn ngắn hạn (dưới 1 năm), nơi diễn ra các hoạt động cung và cầu về vốn ngắn hạn. Vốn ngắn hạn bao gồm giấy tờ có giá ngắn hạn, có kỳ hạn, tức là mua bán những món nợ ngắn hạn rủi ro thấp và tính thanh khoản cao."
+   }
+  ]
+ },
+ {
+  "src": "thi-truong-tien-te-la-gi-phan-tich-vai-tro-va-cac-thanh-phan",
+  "src_title": "Thị trường tiền tệ là gì? Phân tích vai trò và các thành phần",
+  "target": "chinh-sach-tien-te-la-gi",
+  "role": "sub-hub",
+  "target_title": "Chính sách tiền tệ là gì? Mục tiêu và tác động nền kinh tế",
+  "clicks": "42",
+  "anchors": [
+   "chính sách tiền tệ",
+   "chính sách tiền tệ là gì",
+   "chính sách tiền tệ mở rộng",
+   "mục tiêu của chính sách tiền tệ",
+   "điều hành tiền tệ",
+   "nới lỏng tiền tệ"
+  ],
+  "paras": [
+   {
+    "i": 4,
+    "h": "Thị trường tiền tệ là gì?",
+    "n_sent": 2,
+    "t": "Thị trường tiền tệ là thị trường vốn ngắn hạn (dưới 1 năm), nơi diễn ra các hoạt động cung và cầu về vốn ngắn hạn. Vốn ngắn hạn bao gồm giấy tờ có giá ngắn hạn, có kỳ hạn, tức là mua bán những món nợ ngắn hạn rủi ro thấp và tính thanh khoản cao."
+   },
+   {
+    "i": 7,
+    "h": "Vai trò của thị trường tiền tệ",
+    "n_sent": 1,
+    "t": "Thị trường tiền tệ đóng vai trò cung cấp nguồn vốn ngắn hạn cho các tổ chức, doanh nghiệp và chính phủ để đáp ứng nhu cầu tài trợ cho hoạt động kinh doanh và đầu tư."
+   },
+   {
+    "i": 8,
+    "h": "Vai trò của thị trường tiền tệ",
+    "n_sent": 1,
+    "t": "Ngoài ra, thị trường tiền tệ còn có các nhiệm vụ khác như: Giúp cân bằng cung cầu về vốn ngắn hạn trong nền kinh tế; Tạo kênh đầu tư an toàn và sinh lời cho các nhà đầu tư; Thúc đẩy hoạt động kinh tế và phát triển thị trường tài chính."
+   }
+  ]
+ },
+ {
+  "src": "moi-quan-he-giua-lai-suat-va-xu-huong-van-dong-cua-thi-truong-chung-khoan",
+  "src_title": "Mối quan hệ giữa lãi suất và xu hướng vận động của thị trường chứng khoán",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "33",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 21,
+    "h": "Ứng dụng thực tế trong đầu tư",
+    "n_sent": 1,
+    "t": "Ngoài ra, các nhà đầu tư cũng cần theo dõi các yếu tố khác có thể ảnh hưởng đến xu hướng vận động của thị trường chứng khoán để có thể đưa ra các quyết định đầu tư chính xác."
+   },
+   {
+    "i": 8,
+    "h": "Lãi suất tăng sẽ khiến thị trường chứng khoán giảm",
+    "n_sent": 4,
+    "t": "Khi lãi suất tăng, chi phí vốn của các doanh nghiệp sẽ tăng lên, điều này sẽ dẫn đến giảm lợi nhuận. Do đó, các nhà đầu tư sẽ có xu hướng rút vốn khỏi thị trường chứng khoán, khiến giá cổ phiếu giảm xuống. Đây là một ví dụ rõ ràng cho câu hỏi lãi suất tăng thì đầu tư tăng hay giảm — trong hầu hết các trường hợp, đầu tư sẽ giảm. Việc lãi suất tăng thì giá chứng khoán giảm cũng là kết quả tất yếu do chi phí vốn tăng và dòng tiền dịch chuyển."
+   },
+   {
+    "i": 18,
+    "h": "Ứng dụng thực tế trong đầu tư",
+    "n_sent": 3,
+    "t": "Mối quan hệ giữa lãi suất và thị trường chứng khoán có thể được sử dụng để dự đoán xu hướng vận động của thị trường chứng khoán. Khi lãi suất giảm, các nhà đầu tư có thể kỳ vọng thị trường chứng khoán sẽ tăng lên. Ngược lại, khi lãi suất tăng, các nhà đầu tư có thể kỳ vọng thị trường chứng khoán sẽ giảm xuống – phù hợp với bản chất mối quan hệ nghịch biến giữa đầu tư và lãi suất khiến cho việc đầu tư trở nên kém hấp dẫn hơn."
+   }
+  ]
+ },
+ {
+  "src": "moi-quan-he-giua-lai-suat-va-xu-huong-van-dong-cua-thi-truong-chung-khoan",
+  "src_title": "Mối quan hệ giữa lãi suất và xu hướng vận động của thị trường chứng khoán",
+  "target": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+  "role": "hub",
+  "target_title": "So sánh chính sách tài khóa và chính sách tiền tệ",
+  "clicks": "33",
+  "anchors": [
+   "chính sách tài khóa và chính sách tiền tệ",
+   "chính sách tài khóa và tiền tệ",
+   "so sánh chính sách tài khóa và chính sách tiền tệ",
+   "chính sách kinh tế vĩ mô",
+   "chính sách vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 10,
+    "h": "Mối quan hệ giữa lãi suất và giá cổ phiếu",
+    "n_sent": 5,
+    "t": "Giá cổ phiếu thường có mối quan hệ nghịch chiều với lãi suất. Điều này có nghĩa là khi lãi suất giảm, giá cổ phiếu thường sẽ tăng lên, và ngược lại. Đây cũng là minh chứng cho mối quan hệ nghịch biến giữa đầu tư và lãi suất khiến cho dòng tiền đầu tư cổ phiếu giảm khi lãi suất tăng. Tuy nhiên, mối quan hệ này không phải lúc nào cũng rõ ràng. Trong một số trường hợp, lãi suất tăng có thể khiến giá cổ phiếu tăng lên, nếu nó được coi là một dấu hiệu cho thấy nền kinh tế đang tăng trưởng."
+   },
+   {
+    "i": 19,
+    "h": "Ứng dụng thực tế trong đầu tư",
+    "n_sent": 2,
+    "t": "Tuy nhiên, cần lưu ý rằng mối quan hệ này không phải lúc nào cũng rõ ràng. Có nhiều yếu tố khác có thể ảnh hưởng đến xu hướng vận động của thị trường chứng khoán, chẳng hạn như tình hình kinh tế, lợi nhuận của doanh nghiệp và lạm phát."
+   },
+   {
+    "i": 21,
+    "h": "Ứng dụng thực tế trong đầu tư",
+    "n_sent": 1,
+    "t": "Ngoài ra, các nhà đầu tư cũng cần theo dõi các yếu tố khác có thể ảnh hưởng đến xu hướng vận động của thị trường chứng khoán để có thể đưa ra các quyết định đầu tư chính xác."
+   }
+  ]
+ },
+ {
+  "src": "ty-le-du-tru-bat-buoc-la-gi-va-moi-quan-he-voi-cung-cau-tien",
+  "src_title": "Tỷ lệ dự trữ bắt buộc là gì? Mối quan hệ với cung - cầu tiền",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "33",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 7,
+    "h": "Tỷ lệ dự trữ bắt buộc là gì?",
+    "n_sent": 2,
+    "t": "Tỷ lệ dự trữ bắt buộc (RRR - Reserve Requirement Ratio) là tỷ lệ phần trăm tối thiểu lượng tiền mà các tổ chức tín dụng (như ngân hàng) phải giữ lại tại Ngân hàng Nhà nước (NHNN). Tỷ lệ này do NHNN quy định nhằm đảm bảo khả năng thanh toán của các ngân hàng và kiểm soát lượng tiền lưu thông trong nền kinh tế."
+   },
+   {
+    "i": 16,
+    "h": "Ví dụ về tỷ lệ dự trữ bắt buộc",
+    "n_sent": 3,
+    "t": "NHNN tăng tỷ lệ dự trữ bắt buộc từ 10% lên 12%. Điều này có nghĩa là các ngân hàng phải giữ lại 12% tiền gửi của khách hàng tại NHNN thay vì 10% như trước đây. Do đó, lượng tiền mà các ngân hàng có thể cho vay sẽ giảm, dẫn đến giảm cung tiền."
+   },
+   {
+    "i": 17,
+    "h": "Ví dụ về tỷ lệ dự trữ bắt buộc",
+    "n_sent": 2,
+    "t": "NHNN giảm tỷ lệ dự trữ bắt buộc từ 10% xuống 8%. Điều này có nghĩa là các ngân hàng có thể cho vay nhiều hơn, dẫn đến tăng cung tiền."
+   }
+  ]
+ },
+ {
+  "src": "ty-le-du-tru-bat-buoc-la-gi-va-moi-quan-he-voi-cung-cau-tien",
+  "src_title": "Tỷ lệ dự trữ bắt buộc là gì? Mối quan hệ với cung - cầu tiền",
+  "target": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+  "role": "hub",
+  "target_title": "So sánh chính sách tài khóa và chính sách tiền tệ",
+  "clicks": "33",
+  "anchors": [
+   "chính sách tài khóa và chính sách tiền tệ",
+   "chính sách tài khóa và tiền tệ",
+   "so sánh chính sách tài khóa và chính sách tiền tệ",
+   "chính sách kinh tế vĩ mô",
+   "chính sách vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 16,
+    "h": "Ví dụ về tỷ lệ dự trữ bắt buộc",
+    "n_sent": 3,
+    "t": "NHNN tăng tỷ lệ dự trữ bắt buộc từ 10% lên 12%. Điều này có nghĩa là các ngân hàng phải giữ lại 12% tiền gửi của khách hàng tại NHNN thay vì 10% như trước đây. Do đó, lượng tiền mà các ngân hàng có thể cho vay sẽ giảm, dẫn đến giảm cung tiền."
+   },
+   {
+    "i": 7,
+    "h": "Tỷ lệ dự trữ bắt buộc là gì?",
+    "n_sent": 2,
+    "t": "Tỷ lệ dự trữ bắt buộc (RRR - Reserve Requirement Ratio) là tỷ lệ phần trăm tối thiểu lượng tiền mà các tổ chức tín dụng (như ngân hàng) phải giữ lại tại Ngân hàng Nhà nước (NHNN). Tỷ lệ này do NHNN quy định nhằm đảm bảo khả năng thanh toán của các ngân hàng và kiểm soát lượng tiền lưu thông trong nền kinh tế."
+   },
+   {
+    "i": 10,
+    "h": "Tỷ lệ dự trữ bắt buộc và cung tiền",
+    "n_sent": 1,
+    "t": "Khi NHNN tăng tỷ lệ dự trữ bắt buộc, các ngân hàng phải giữ lại nhiều tiền hơn, dẫn đến giảm lượng tiền cho vay và giảm cung tiền."
+   }
+  ]
+ },
+ {
+  "src": "chinh-sach-tien-te-noi-long-la-gi-tac-dong-toi-ttck",
+  "src_title": "Chính sách tiền tệ nới lỏng là gì? Tác động tới TTCK",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "29",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "Chính sách tiền tệ nới lỏng là gì?",
+    "n_sent": 2,
+    "t": "Chính sách tiền tệ nới lỏng (Easy Money) là chính sách của Ngân hàng Trung ương (NHTW) nhằm tăng cung tiền trong nền kinh tế bằng cách mua tài sản hoặc giảm lãi suất. Mục đích của chính sách này là kích thích kinh tế, thúc đẩy tăng trưởng và tạo việc làm."
+   }
+  ]
+ },
+ {
+  "src": "chinh-sach-tien-te-noi-long-la-gi-tac-dong-toi-ttck",
+  "src_title": "Chính sách tiền tệ nới lỏng là gì? Tác động tới TTCK",
+  "target": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+  "role": "hub",
+  "target_title": "So sánh chính sách tài khóa và chính sách tiền tệ",
+  "clicks": "29",
+  "anchors": [
+   "chính sách tài khóa và chính sách tiền tệ",
+   "chính sách tài khóa và tiền tệ",
+   "so sánh chính sách tài khóa và chính sách tiền tệ",
+   "chính sách kinh tế vĩ mô",
+   "chính sách vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "Chính sách tiền tệ nới lỏng là gì?",
+    "n_sent": 2,
+    "t": "Chính sách tiền tệ nới lỏng (Easy Money) là chính sách của Ngân hàng Trung ương (NHTW) nhằm tăng cung tiền trong nền kinh tế bằng cách mua tài sản hoặc giảm lãi suất. Mục đích của chính sách này là kích thích kinh tế, thúc đẩy tăng trưởng và tạo việc làm."
+   }
+  ]
+ },
+ {
+  "src": "khung-hoang-tai-chinh-la-gi-cac-giai-doan-cua-khung-hoang-tai-chinh",
+  "src_title": "Khủng hoảng tài chính là gì? Nguyên nhân và hậu quả",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "27",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "Khủng hoảng tài chính là gì?",
+    "n_sent": 2,
+    "t": "Khủng hoảng tài chính là một hiện tượng kinh tế xảy ra khi hệ thống tài chính và thị trường tài chính gặp phải sự sụp đổ hoặc giảm giá nghiêm trọng. Khủng hoảng tài chính có thể ảnh hưởng đến nền kinh tế thực, dẫn đến suy thoái kinh tế, thất nghiệp và giảm thu nhập."
+   },
+   {
+    "i": 39,
+    "h": "5 cuộc khủng hoảng tài chính trong quá khứ",
+    "n_sent": 2,
+    "t": "Các cuộc khủng hoảng tài chính trong quá khứ đã gây ra những hậu quả nghiêm trọng cho nền kinh tế toàn cầu, bao gồm suy thoái kinh tế, thất nghiệp và lạm phát. Để hạn chế những tác động tiêu cực của khủng hoảng tài chính, cần có sự phối hợp chặt chẽ giữa các chính phủ, ngân hàng trung ương và các tổ chức tài chính."
+   }
+  ]
+ },
+ {
+  "src": "canh-tranh-la-gi",
+  "src_title": "Cạnh tranh là gì? Tính chất của cạnh tranh là gì?",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "25",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 5,
+    "h": "Cạnh tranh là gì?",
+    "n_sent": 2,
+    "t": "Trong kinh tế, cạnh tranh kinh tế là sự đấu tranh giữa các nhà kinh doanh trong cùng một sản phẩm về doanh số, lợi nhuận. Từ đó đây có thể là yếu tố mạnh mẽ đòi hỏi các nhà kinh doanh phải liên tục đổi mới phương thức sản xuất kinh doanh, cải thiện biên lợi nhuận, tìm kiếm khách hàng và công nghệ mới nhằm tạo lợi thế cạnh tranh cho doanh nghiệp và đáp ứng một cách tốt nhất nhu cầu của khách hàng cũng như câu lượng khách hàng nhiều nhất."
+   },
+   {
+    "i": 10,
+    "h": "Tính chất của cạnh tranh là gì?",
+    "n_sent": 2,
+    "t": "Tính chất của cạnh tranh chính là sự ganh đua, đấu tranh giữa các chủ thể kinh tế trong sản xuất kinh doanh để thu lợi nhuận. Tuy nhiên tính cạnh tranh suy cho cùng cũng chỉ hướng tới bản thân mình, thu lợi về mình, nên tuỳ theo mức độ quyết liệt khác nhau cạnh tranh có thể mang sự lành mạnh, tích cực, như lấy đối thủ làm động lực phấn đấu cho bản thân tiến lên, hoặc không lành mạnh, tiêu cực, như hành động triệt hạ đối thủ, chiêu trò hạ thấp đối phương."
+   },
+   {
+    "i": 37,
+    "h": "Các hình thức cạnh tranh phổ biến trên thị trường là gì?",
+    "n_sent": 1,
+    "t": "Cạnh tranh giữa các ngành: Cuộc cạnh tranh giữa các chủ doanh nghiệp trong các ngành kinh tế khác nhau nhằm đạt lợi nhuận lớn nhất, nguyên nhân xuất phát từ việc các chủ doanh nghiệp luôn say mê với ngành đầu tư có lợi nhuận nên đã chuyển vốn từ ngành có ít lợi nhuận sang ngành có nhiều lợi nhuận hơn, gây ra một sự điều tiết tự nhiên theo tiếng gọi của lợi nhuận và kết quả là sau một thời gian nhất định sẽ hình thành nên một sự phân phối hợp lý giữa các ngành sản xuất và hình thành tỷ suất lợi nhuận bình quân giữa các ngành."
+   }
+  ]
+ },
+ {
+  "src": "canh-tranh-la-gi",
+  "src_title": "Cạnh tranh là gì? Tính chất của cạnh tranh là gì?",
+  "target": "kinh-te-hoc-vi-mo-la-gi-y-nghia-trong-dau-tu-chung-khoan",
+  "role": "hub",
+  "target_title": "Kinh tế học vi mô là gì? Ý nghĩa trong đầu tư chứng khoán",
+  "clicks": "25",
+  "anchors": [
+   "kinh tế học vi mô",
+   "kinh tế vi mô",
+   "kinh tế vi mô là gì",
+   "hành vi doanh nghiệp và người tiêu dùng",
+   "cung cầu"
+  ],
+  "paras": [
+   {
+    "i": 5,
+    "h": "Cạnh tranh là gì?",
+    "n_sent": 2,
+    "t": "Trong kinh tế, cạnh tranh kinh tế là sự đấu tranh giữa các nhà kinh doanh trong cùng một sản phẩm về doanh số, lợi nhuận. Từ đó đây có thể là yếu tố mạnh mẽ đòi hỏi các nhà kinh doanh phải liên tục đổi mới phương thức sản xuất kinh doanh, cải thiện biên lợi nhuận, tìm kiếm khách hàng và công nghệ mới nhằm tạo lợi thế cạnh tranh cho doanh nghiệp và đáp ứng một cách tốt nhất nhu cầu của khách hàng cũng như câu lượng khách hàng nhiều nhất."
+   },
+   {
+    "i": 10,
+    "h": "Tính chất của cạnh tranh là gì?",
+    "n_sent": 2,
+    "t": "Tính chất của cạnh tranh chính là sự ganh đua, đấu tranh giữa các chủ thể kinh tế trong sản xuất kinh doanh để thu lợi nhuận. Tuy nhiên tính cạnh tranh suy cho cùng cũng chỉ hướng tới bản thân mình, thu lợi về mình, nên tuỳ theo mức độ quyết liệt khác nhau cạnh tranh có thể mang sự lành mạnh, tích cực, như lấy đối thủ làm động lực phấn đấu cho bản thân tiến lên, hoặc không lành mạnh, tiêu cực, như hành động triệt hạ đối thủ, chiêu trò hạ thấp đối phương."
+   },
+   {
+    "i": 35,
+    "h": "Các hình thức cạnh tranh phổ biến trên thị trường là gì?",
+    "n_sent": 3,
+    "t": "Cạnh tranh trong nội bộ ngành: Cạnh tranh trong các doanh nghiệp có kinh doanh cùng một mặt hàng sản xuất hoặc dịch vị nào đó. Những doanh nghiệp chiến thắng sẽ có cơ hội mở rộng vị thế và phạm vi hoạt động của mình trên thị trường. Ngược lại, kẻ thua cuộc sẽ phải chịu việc phải thu hẹp kinh doanh thậm chí phá sản."
+   }
+  ]
+ },
+ {
+  "src": "ty-le-noi-dia-hoa-la-gi",
+  "src_title": "Tỷ lệ nội địa hóa là gì? Thông tin chi tiết cho nhà đầu tư",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "24",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 46,
+    "h": "Ngành Công nghiệp hỗ trợ và Ô tô",
+    "n_sent": 2,
+    "t": "Chính phủ đang có nhiều chính sách ưu đãi thuế thu nhập doanh nghiệp cho các dự án sản xuất sản phẩm công nghiệp hỗ trợ. Doanh nghiệp nào chứng minh được lộ trình tăng tỷ lệ nội địa hóa sẽ nhận được các gói ưu đãi đầu tư, từ đó giảm chi phí thuế và tăng tích lũy vốn."
+   },
+   {
+    "i": 4,
+    "h": "Tỷ lệ nội địa hóa là gì?",
+    "n_sent": 3,
+    "t": "Về mặt vĩ mô, chỉ số này phản ánh mức độ tự chủ chuỗi cung ứng của doanh nghiệp. Khi tỷ lệ này ở mức thấp, doanh nghiệp phụ thuộc lớn vào linh kiện nhập khẩu. Tỷ lệ này cao chứng tỏ doanh nghiệp đã làm chủ được công nghệ và nguồn cung trong nước."
+   },
+   {
+    "i": 7,
+    "h": "Bối cảnh bảo hộ thương mại 2026 và bài học đứt gãy chuỗi cung ứng",
+    "n_sent": 3,
+    "t": "Lịch sử chứng minh sự phụ thuộc nguồn cung ngoại địa sẽ tạo ra tổn thất lớn. Năm 2022, sản lượng của Toyota, Honda và Mazda sụt giảm từ 37% đến 54% do đứt gãy linh kiện nhập khẩu từ Trung Quốc. Đây là bài học đắt giá về việc tự chủ chuỗi cung ứng nhằm bảo vệ sản xuất."
+   }
+  ]
+ },
+ {
+  "src": "ty-le-noi-dia-hoa-la-gi",
+  "src_title": "Tỷ lệ nội địa hóa là gì? Thông tin chi tiết cho nhà đầu tư",
+  "target": "kinh-te-hoc-vi-mo-la-gi-y-nghia-trong-dau-tu-chung-khoan",
+  "role": "hub",
+  "target_title": "Kinh tế học vi mô là gì? Ý nghĩa trong đầu tư chứng khoán",
+  "clicks": "24",
+  "anchors": [
+   "kinh tế học vi mô",
+   "kinh tế vi mô",
+   "kinh tế vi mô là gì",
+   "hành vi doanh nghiệp và người tiêu dùng",
+   "cung cầu"
+  ],
+  "paras": [
+   {
+    "i": 46,
+    "h": "Ngành Công nghiệp hỗ trợ và Ô tô",
+    "n_sent": 2,
+    "t": "Chính phủ đang có nhiều chính sách ưu đãi thuế thu nhập doanh nghiệp cho các dự án sản xuất sản phẩm công nghiệp hỗ trợ. Doanh nghiệp nào chứng minh được lộ trình tăng tỷ lệ nội địa hóa sẽ nhận được các gói ưu đãi đầu tư, từ đó giảm chi phí thuế và tăng tích lũy vốn."
+   },
+   {
+    "i": 4,
+    "h": "Tỷ lệ nội địa hóa là gì?",
+    "n_sent": 3,
+    "t": "Về mặt vĩ mô, chỉ số này phản ánh mức độ tự chủ chuỗi cung ứng của doanh nghiệp. Khi tỷ lệ này ở mức thấp, doanh nghiệp phụ thuộc lớn vào linh kiện nhập khẩu. Tỷ lệ này cao chứng tỏ doanh nghiệp đã làm chủ được công nghệ và nguồn cung trong nước."
+   },
+   {
+    "i": 6,
+    "h": "Bối cảnh bảo hộ thương mại 2026 và bài học đứt gãy chuỗi cung ứng",
+    "n_sent": 2,
+    "t": "Bước sang năm 2026, các xung đột địa chính trị và đàm phán thương mại toàn cầu đặt ra nhiều thách thức mới. Biến động chỉ số giá tiêu dùng CPI cùng thuế quan Donald Trump đang siết chặt xuất khẩu Việt Nam."
+   }
+  ]
+ },
+ {
+  "src": "dau-tu-cong-la-gi-vai-tro-va-giai-phap-nang-cao-hieu-qua",
+  "src_title": "Đầu tư công là gì? Vai trò của đầu tư công trong nền kinh tế",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "22",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 40,
+    "h": "Tác động của Đầu tư công đến các nhóm ngành trên Thị trường Chứng khoán",
+    "n_sent": 3,
+    "t": "Đối với thị trường chứng khoán, việc đẩy mạnh đầu tư công không chỉ là một thông tin vĩ mô. Dòng vốn này khi được giải ngân sẽ tạo ra những tác động đa chiều và rõ nét đến chu kỳ kinh doanh của nhiều doanh nghiệp niêm yết. Do đó, việc phân tích các nhóm ngành chịu ảnh hưởng là một bước quan trọng để nhận diện các chuyển động của thị trường."
+   },
+   {
+    "i": 41,
+    "h": "Tác động của Đầu tư công đến các nhóm ngành trên Thị trường Chứng khoán",
+    "n_sent": 1,
+    "t": "Các tác động này có thể được phân thành hai nhóm chính dựa trên mức độ liên quan và thời điểm phát sinh."
+   },
+   {
+    "i": 7,
+    "h": "Đầu tư công là gì?",
+    "n_sent": 1,
+    "t": "Các khoản đầu tư công sẽ bao gồm xây dựng, nâng cấp và duy trì các công trình công cộng như giao thông, y tế, giáo dục, năng lượng, môi trường và các dự án khác nhằm tạo ra lợi ích chung, thúc đẩy tăng trưởng và bảo đảm an sinh xã hội."
+   }
+  ]
+ },
+ {
+  "src": "dau-tu-cong-la-gi-vai-tro-va-giai-phap-nang-cao-hieu-qua",
+  "src_title": "Đầu tư công là gì? Vai trò của đầu tư công trong nền kinh tế",
+  "target": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+  "role": "hub",
+  "target_title": "So sánh chính sách tài khóa và chính sách tiền tệ",
+  "clicks": "22",
+  "anchors": [
+   "chính sách tài khóa và chính sách tiền tệ",
+   "chính sách tài khóa và tiền tệ",
+   "so sánh chính sách tài khóa và chính sách tiền tệ",
+   "chính sách kinh tế vĩ mô",
+   "chính sách vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 40,
+    "h": "Tác động của Đầu tư công đến các nhóm ngành trên Thị trường Chứng khoán",
+    "n_sent": 3,
+    "t": "Đối với thị trường chứng khoán, việc đẩy mạnh đầu tư công không chỉ là một thông tin vĩ mô. Dòng vốn này khi được giải ngân sẽ tạo ra những tác động đa chiều và rõ nét đến chu kỳ kinh doanh của nhiều doanh nghiệp niêm yết. Do đó, việc phân tích các nhóm ngành chịu ảnh hưởng là một bước quan trọng để nhận diện các chuyển động của thị trường."
+   },
+   {
+    "i": 41,
+    "h": "Tác động của Đầu tư công đến các nhóm ngành trên Thị trường Chứng khoán",
+    "n_sent": 1,
+    "t": "Các tác động này có thể được phân thành hai nhóm chính dựa trên mức độ liên quan và thời điểm phát sinh."
+   },
+   {
+    "i": 6,
+    "h": "Đầu tư công là gì?",
+    "n_sent": 1,
+    "t": "Theo quy định của Luật Đầu tư Công số 58/2024/QH15, đầu tư công là hoạt động đầu tư của Nhà nước vào các chương trình, dự án và đối tượng đầu tư công khác theo quy định của Luật này."
+   }
+  ]
+ },
+ {
+  "src": "khoi-ngoai-la-gi-va-anh-huong-den-thi-truong-chung-khoan-nhu-the-nao",
+  "src_title": "Khối ngoại là gì? Ảnh hưởng đến thị trường chứng khoán như thế nào?",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "22",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 6,
+    "h": "Ảnh hưởng của khối ngoại đến thị trường chứng khoán",
+    "n_sent": 2,
+    "t": "Khối ngoại là một trong những yếu tố quan trọng tác động đến thị trường chứng khoán Việt Nam. Sự mua bán của khối ngoại có thể ảnh hưởng đến giá cổ phiếu, thanh khoản thị trường và tâm lý nhà đầu tư."
+   },
+   {
+    "i": 8,
+    "h": "Ảnh hưởng của khối ngoại đến thị trường chứng khoán",
+    "n_sent": 2,
+    "t": "Tác động đến thanh khoản thị trường: Khối ngoại cũng là một trong những nguồn cung cấp vốn chính cho thị trường chứng khoán Việt Nam. Sự tham gia của khối ngoại giúp tăng thanh khoản thị trường, giúp nhà đầu tư có thể mua bán cổ phiếu dễ dàng hơn."
+   },
+   {
+    "i": 1,
+    "h": "Khối ngoại là gì?",
+    "n_sent": 2,
+    "t": "Khối ngoại trên thị trường chứng khoán Việt Nam bao gồm những nhà đầu tư và tổ chức đến từ nước ngoài hoặc không thuộc quốc gia Việt Nam tham gia giao dịch và đầu tư trên thị trường chứng khoán của Việt Nam. Các khối ngoại này thường gồm các thực thể như cá nhân, quỹ đầu tư, công ty tài chính, ngân hàng đầu tư và các tổ chức tài chính khác có trụ sở ở nước ngoài."
+   }
+  ]
+ },
+ {
+  "src": "khoi-ngoai-la-gi-va-anh-huong-den-thi-truong-chung-khoan-nhu-the-nao",
+  "src_title": "Khối ngoại là gì? Ảnh hưởng đến thị trường chứng khoán như thế nào?",
+  "target": "can-can-thanh-toan-bop-la-gi",
+  "role": "hub",
+  "target_title": "Cán cân thanh toán (BOP) là gì? Ý nghĩa và ứng dụng đầu tư",
+  "clicks": "22",
+  "anchors": [
+   "cán cân thanh toán",
+   "cán cân thanh toán quốc tế",
+   "cán cân thanh toán là gì",
+   "BOP",
+   "dòng tiền quốc tế"
+  ],
+  "paras": [
+   {
+    "i": 11,
+    "h": "Cách theo dõi hoạt động của khối ngoại",
+    "n_sent": 2,
+    "t": "Để theo dõi hoạt động của khối ngoại, nhà đầu tư có thể tham khảo các báo cáo của Sở Giao dịch Chứng khoán Việt Nam (VNX) hoặc các công ty chứng khoán. Các báo cáo này thường được cập nhật hàng ngày, cung cấp thông tin về giá trị mua bán, khối lượng mua bán của khối ngoại cho từng mã cổ phiếu."
+   },
+   {
+    "i": 1,
+    "h": "Khối ngoại là gì?",
+    "n_sent": 2,
+    "t": "Khối ngoại trên thị trường chứng khoán Việt Nam bao gồm những nhà đầu tư và tổ chức đến từ nước ngoài hoặc không thuộc quốc gia Việt Nam tham gia giao dịch và đầu tư trên thị trường chứng khoán của Việt Nam. Các khối ngoại này thường gồm các thực thể như cá nhân, quỹ đầu tư, công ty tài chính, ngân hàng đầu tư và các tổ chức tài chính khác có trụ sở ở nước ngoài."
+   },
+   {
+    "i": 8,
+    "h": "Ảnh hưởng của khối ngoại đến thị trường chứng khoán",
+    "n_sent": 2,
+    "t": "Tác động đến thanh khoản thị trường: Khối ngoại cũng là một trong những nguồn cung cấp vốn chính cho thị trường chứng khoán Việt Nam. Sự tham gia của khối ngoại giúp tăng thanh khoản thị trường, giúp nhà đầu tư có thể mua bán cổ phiếu dễ dàng hơn."
+   }
+  ]
+ },
+ {
+  "src": "ly-thuyet-tro-choi-ung-dung-phan-tich-hanh-vi-doanh-nghiep-trong-thi-truong-canh-tranh-hoan-hao",
+  "src_title": "Lý thuyết trò chơi là gì? Ứng dụng trong đầu tư chứng khoán",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "21",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 41,
+    "h": "Ứng dụng thực tiễn của Lý thuyết trò chơi trong đầu tư Chứng khoán",
+    "n_sent": 2,
+    "t": "Thị trường chứng khoán là một hệ thống phức tạp với sự tham gia của hàng triệu chủ thể, từ nhà đầu tư cá nhân đến các quỹ định chế tài chính. Tại đây, lợi nhuận không chỉ đến từ việc phân tích nội tại doanh nghiệp mà còn phụ thuộc vào khả năng thấu hiểu hành vi của các thành phần tham gia thị trường."
+   },
+   {
+    "i": 36,
+    "h": "Ví dụ điển hình: Thế lưỡng nan của người tù (Prisoner’s Dilemma)",
+    "n_sent": 3,
+    "t": "Mấu chốt của vấn đề nằm ở sự thiếu tin tưởng. Vì A và B đều sợ đối phương phản bội mình (khiến mình bị tù chung thân), họ buộc phải chọn phương án an toàn nhất cho cá nhân là Thú tội. Hệ quả là cả hai đều nhận mức án 15 năm tù – một kết cục tồi tệ (trạng thái Cân bằng Nash)."
+   },
+   {
+    "i": 2,
+    "h": "Lý thuyết trò chơi là gì?",
+    "n_sent": 2,
+    "t": "Lý thuyết trò chơi (Game Theory) là một khung lý thuyết toán học dùng để phân tích các tình huống chiến lược, nơi mà kết quả của một người không chỉ phụ thuộc vào quyết định của chính họ mà còn phụ thuộc vào hành động của những người khác. Nói cách khác, đây là bộ công cụ giúp mô hình hóa hành vi và dự đoán các quyết định tối ưu trong môi trường có tính cạnh tranh và tương tác cao."
+   }
+  ]
+ },
+ {
+  "src": "ly-thuyet-tro-choi-ung-dung-phan-tich-hanh-vi-doanh-nghiep-trong-thi-truong-canh-tranh-hoan-hao",
+  "src_title": "Lý thuyết trò chơi là gì? Ứng dụng trong đầu tư chứng khoán",
+  "target": "kinh-te-hoc-vi-mo-la-gi-y-nghia-trong-dau-tu-chung-khoan",
+  "role": "hub",
+  "target_title": "Kinh tế học vi mô là gì? Ý nghĩa trong đầu tư chứng khoán",
+  "clicks": "21",
+  "anchors": [
+   "kinh tế học vi mô",
+   "kinh tế vi mô",
+   "kinh tế vi mô là gì",
+   "hành vi doanh nghiệp và người tiêu dùng",
+   "cung cầu"
+  ],
+  "paras": [
+   {
+    "i": 41,
+    "h": "Ứng dụng thực tiễn của Lý thuyết trò chơi trong đầu tư Chứng khoán",
+    "n_sent": 2,
+    "t": "Thị trường chứng khoán là một hệ thống phức tạp với sự tham gia của hàng triệu chủ thể, từ nhà đầu tư cá nhân đến các quỹ định chế tài chính. Tại đây, lợi nhuận không chỉ đến từ việc phân tích nội tại doanh nghiệp mà còn phụ thuộc vào khả năng thấu hiểu hành vi của các thành phần tham gia thị trường."
+   },
+   {
+    "i": 36,
+    "h": "Ví dụ điển hình: Thế lưỡng nan của người tù (Prisoner’s Dilemma)",
+    "n_sent": 3,
+    "t": "Mấu chốt của vấn đề nằm ở sự thiếu tin tưởng. Vì A và B đều sợ đối phương phản bội mình (khiến mình bị tù chung thân), họ buộc phải chọn phương án an toàn nhất cho cá nhân là Thú tội. Hệ quả là cả hai đều nhận mức án 15 năm tù – một kết cục tồi tệ (trạng thái Cân bằng Nash)."
+   },
+   {
+    "i": 2,
+    "h": "Lý thuyết trò chơi là gì?",
+    "n_sent": 2,
+    "t": "Lý thuyết trò chơi (Game Theory) là một khung lý thuyết toán học dùng để phân tích các tình huống chiến lược, nơi mà kết quả của một người không chỉ phụ thuộc vào quyết định của chính họ mà còn phụ thuộc vào hành động của những người khác. Nói cách khác, đây là bộ công cụ giúp mô hình hóa hành vi và dự đoán các quyết định tối ưu trong môi trường có tính cạnh tranh và tương tác cao."
+   }
+  ]
+ },
+ {
+  "src": "vo-no-la-gi",
+  "src_title": "Vỡ nợ là gì? Phân loại và ảnh hưởng của vỡ nợ trong tài chính",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "19",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 36,
+    "h": "Tầm quan trọng của việc nhận diện rủi ro vỡ nợ trong đầu tư",
+    "n_sent": 3,
+    "t": "Đối với nhà đầu tư chứng khoán, rủi ro vỡ nợ của doanh nghiệp niêm yết là yếu tố tiên quyết cần được phân tích kỹ lưỡng. Việc nhận diện sớm các dấu hiệu như: nợ ngắn hạn vượt quá tài sản lưu động, dòng tiền từ hoạt động kinh doanh âm liên tục... sẽ giúp nhà đầu tư tránh được những mã cổ phiếu rủi ro (thường gọi là các \"bẫy giá rẻ\")."
+   },
+   {
+    "i": 37,
+    "h": "Tầm quan trọng của việc nhận diện rủi ro vỡ nợ trong đầu tư",
+    "n_sent": 2,
+    "t": "Ngược lại, khi thị trường có biến động về nợ công hay lãi suất tăng cao, khả năng vỡ nợ trên diện rộng có thể gây ra những đợt điều chỉnh sâu. Đây là lúc nhà đầu tư cần sự đồng hành của các tổ chức tài chính chuyên nghiệp để quản trị danh mục."
+   },
+   {
+    "i": 14,
+    "h": "Vỡ nợ đối với khoản vay có bảo đảm",
+    "n_sent": 2,
+    "t": "Đây là tình trạng vỡ nợ liên quan đến các khoản vay có tài sản thế chấp (như bất động sản, ô tô, chứng khoán). Khi xảy ra vỡ nợ, bên cho vay có quyền phát mãi hoặc xử lý tài sản bảo đảm để thu hồi vốn theo quy định của pháp luật."
+   }
+  ]
+ },
+ {
+  "src": "can-can-thuong-mai-la-gi-vai-tro-va-tac-dong-den-nen-kinh-te",
+  "src_title": "Cán cân thương mại là gì? Vai trò và tác động đến nền kinh tế",
+  "target": "can-can-thanh-toan-bop-la-gi",
+  "role": "hub",
+  "target_title": "Cán cân thanh toán (BOP) là gì? Ý nghĩa và ứng dụng đầu tư",
+  "clicks": "17",
+  "anchors": [
+   "cán cân thanh toán",
+   "cán cân thanh toán quốc tế",
+   "cán cân thanh toán là gì",
+   "BOP",
+   "dòng tiền quốc tế"
+  ],
+  "paras": [
+   {
+    "i": 5,
+    "h": "Cán cân thương mại là gì?",
+    "n_sent": 3,
+    "t": "Cán cân thương mại là sự chênh lệch giữa giá trị xuất khẩu và nhập khẩu của một quốc gia trong một khoảng thời gian nhất định. Giá trị xuất khẩu là giá trị của hàng hóa và dịch vụ mà một quốc gia bán ra cho nước ngoài. Giá trị nhập khẩu là giá trị của hàng hóa và dịch vụ mà một quốc gia mua từ nước ngoài."
+   },
+   {
+    "i": 6,
+    "h": "Cán cân thương mại là gì?",
+    "n_sent": 4,
+    "t": "Cán cân thương mại còn được gọi là xuất khẩu ròng hoặc thặng dư thương mại. Khi giá trị xuất khẩu lớn hơn giá trị nhập khẩu, cán cân thương mại có thặng dư. Khi giá trị nhập khẩu lớn hơn giá trị xuất khẩu, cán cân thương mại có thâm hụt. Khi giá trị xuất khẩu bằng giá trị nhập khẩu, cán cân thương mại cân bằng."
+   },
+   {
+    "i": 45,
+    "h": "Chính sách thương mại",
+    "n_sent": 2,
+    "t": "Chính sách thương mại của một quốc gia có vai trò quyết định đến sản lượng xuất khẩu và nhập khẩu, từ đó tác động đến cán cân thương mại.Đối với các quốc gia có thế mạnh cạnh tranh về xuất khẩu nông nghiệp như Việt Nam, chính sách thương mại thường tập trung vào việc giảm thuế, trợ giá và xây dựng các khu nông nghiệp trọng điểm. Những biện pháp này giúp giảm chi phí sản xuất, tăng sản lượng và nâng cao tính cạnh tranh của hàng hóa trên thị trường quốc tế."
+   }
+  ]
+ },
+ {
+  "src": "thu-nhap-rong-tu-tai-san-nuoc-ngoai-nffi",
+  "src_title": "Thu nhập ròng từ tài sản nước ngoài (NFFI) là gì?",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "16",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 50,
+    "h": "Chiến lược ứng dụng NFFI trong đầu tư",
+    "n_sent": 1,
+    "t": "Để cập nhật các báo cáo phân tích vĩ mô và chiến lược đầu tư mới nhất, hãy truy cập website chính thức của DSC tại dsc.com.vn."
+   },
+   {
+    "i": 49,
+    "h": "Chiến lược ứng dụng NFFI trong đầu tư",
+    "n_sent": 2,
+    "t": "Tổng kết: NFFI là thước đo giúp nhà đầu tư nhìn xuyên thấu bản chất của tăng trưởng kinh tế. Một quốc gia có NFFI âm không hẳn là xấu, nhưng nhà đầu tư cần nhạy bén với các chu kỳ chuyển vốn của khối ngoại để tối ưu hóa danh mục chứng khoán của mình."
+   },
+   {
+    "i": 2,
+    "h": "Thu nhập ròng từ tài sản nước ngoài (NFFI) là gì?",
+    "n_sent": 1,
+    "t": "Thu nhập ròng từ tài sản nước ngoài (tiếng Anh: Net Foreign Factor Income - NFFI), hay còn gọi là Net Factor Income from Abroad (NFIA), là khoản chênh lệch giữa thu nhập mà công dân và doanh nghiệp trong nước kiếm được từ nước ngoài so với thu nhập mà người nước ngoài và tổ chức quốc tế kiếm được tại quốc gia đó."
+   }
+  ]
+ },
+ {
+  "src": "co-hoi-thi-truong-la-gi",
+  "src_title": "Cơ hội thị trường là gì? Cách tìm kiếm cơ hội thị trường đầu tư",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "14",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 17,
+    "h": "Phân tích thị trường",
+    "n_sent": 2,
+    "t": "Doanh nghiệp cần phải phân tích thị trường để hiểu rõ các yếu tố ảnh hưởng đến thị trường. đồng thời phân tích các đối thủ cạnh tranh và cơ hội mới."
+   },
+   {
+    "i": 3,
+    "h": "Cơ hội thị trường là gì?",
+    "n_sent": 2,
+    "t": "Cơ hội thị trường có thể được tận dụng bằng cách sử dụng các kỹ thuật như đầu tư, mua bán. Để tận dụng các cơ hội thị trường, các nhà đầu tư cần phải có một sự hiểu biết sâu sắc về thị trường và các yếu tố ảnh hưởng đến nó."
+   },
+   {
+    "i": 2,
+    "h": "Cơ hội thị trường là gì?",
+    "n_sent": 2,
+    "t": "Cơ hội thị trường có thể được nhận biết bằng cách xem xét các yếu tố như giá cả, lượng hàng tồn kho, nhu cầu của khách hàng, và các yếu tố thị trường khác. Vì thế, để nắm bắt các cơ hội thị trường, cần xem xét kỹ lưỡng các yếu tố này."
+   }
+  ]
+ },
+ {
+  "src": "co-hoi-thi-truong-la-gi",
+  "src_title": "Cơ hội thị trường là gì? Cách tìm kiếm cơ hội thị trường đầu tư",
+  "target": "kinh-te-hoc-vi-mo-la-gi-y-nghia-trong-dau-tu-chung-khoan",
+  "role": "hub",
+  "target_title": "Kinh tế học vi mô là gì? Ý nghĩa trong đầu tư chứng khoán",
+  "clicks": "14",
+  "anchors": [
+   "kinh tế học vi mô",
+   "kinh tế vi mô",
+   "kinh tế vi mô là gì",
+   "hành vi doanh nghiệp và người tiêu dùng",
+   "cung cầu"
+  ],
+  "paras": [
+   {
+    "i": 37,
+    "h": "Tìm hiểu cơ hội thị trường của doanh nghiệp để mua cổ phiếu",
+    "n_sent": 3,
+    "t": "Đầu tiên, nhà đầu tư cần phải tìm hiểu về lịch sử tài chính của doanh nghiệp. Điều này bao gồm việc xem xét các báo cáo tài chính của doanh nghiệp trong quá khứ, bao gồm cả báo cáo tài chính hàng năm và báo cáo tài chính hàng quý. Nhà đầu tư cũng cần phải xem xét các thông tin liên quan đến lợi nhuận, tài sản, nợ và các khoản thu nhập khác của doanh nghiệp."
+   },
+   {
+    "i": 40,
+    "h": "Tìm hiểu cơ hội thị trường của doanh nghiệp để mua cổ phiếu",
+    "n_sent": 2,
+    "t": "Nhà đầu tư cũng cần phải tìm hiểu về các điều khoản liên quan đến mua cổ phiếu của doanh nghiệp. Điều này bao gồm việc xem xét các điều khoản liên quan đến giá cổ phiếu, các điều khoản liên quan đến sự thay đổi giá cổ phiếu và các điều khoản liên quan đến sự thay đổi trong số lượng cổ phiếu."
+   },
+   {
+    "i": 41,
+    "h": "Tìm hiểu cơ hội thị trường của doanh nghiệp để mua cổ phiếu",
+    "n_sent": 2,
+    "t": "Kết lại, cơ hội thị trường mang thông điệp về lợi nhuận. Nhà đầu tư cần tìm hiểu về cơ hội thị trường của doanh nghiệp mình quan tâm để đưa ra quyết định mua cổ phiếu chính xác."
+   }
+  ]
+ },
+ {
+  "src": "chinh-sach-tai-khoa-la-gi",
+  "src_title": "Chính sách tài khóa là gì? Tác động đến thị trường chứng khoán",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "13",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 47,
+    "h": "Khi chính phủ áp dụng chính sách tài khóa mở rộng",
+    "n_sent": 2,
+    "t": "Dòng tiền từ các dự án chi tiêu công giúp cải thiện doanh thu của nhiều nhóm doanh nghiệp. Thị trường chứng khoán thường phản ứng tích cực trong giai đoạn này."
+   },
+   {
+    "i": 3,
+    "h": "Chính sách tài khóa là gì?",
+    "n_sent": 2,
+    "t": "Chính sách tài khóa (Fiscal Policy) là việc chính phủ điều chỉnh chi tiêu công và mức thuế. Mục đích nhằm điều tiết nền kinh tế vĩ mô ổn định."
+   },
+   {
+    "i": 21,
+    "h": "Thuế",
+    "n_sent": 3,
+    "t": "Khi chính phủ tăng thuế thì sẽ tác động rất nhiều đến các thành phần của nền kinh tế. Ảnh hưởng đầu tiên là làm giảm thu nhập của các thành phần trong nền kinh tế, từ đó dẫn đến chi tiêu giảm, khiến cho GDP giảm. Bên cạnh đó, thuế cũng sẽ có thể tác động nên giá cả hàng hóa làm cho có sự chênh lệch lớn với giá trị thực sự của nó, gây ra hành động đầu cơ."
+   }
+  ]
+ },
+ {
+  "src": "so-nhan-tai-khoa-la-gi",
+  "src_title": "Số nhân tài khóa là gì? Thông tin chi tiết số nhân tài khóa",
+  "target": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+  "role": "hub",
+  "target_title": "So sánh chính sách tài khóa và chính sách tiền tệ",
+  "clicks": "10",
+  "anchors": [
+   "chính sách tài khóa và chính sách tiền tệ",
+   "chính sách tài khóa và tiền tệ",
+   "so sánh chính sách tài khóa và chính sách tiền tệ",
+   "chính sách kinh tế vĩ mô",
+   "chính sách vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "Số nhân tài khóa là gì?",
+    "n_sent": 1,
+    "t": "Số nhân tài khóa (Fiscal Multiplier) là hệ số đo lường mức độ thay đổi của tổng sản phẩm quốc nội (GDP) khi có sự thay đổi ban đầu trong chi tiêu chính phủ hoặc chính sách thuế."
+   },
+   {
+    "i": 3,
+    "h": "Số nhân tài khóa là gì?",
+    "n_sent": 4,
+    "t": "Sai lầm phổ biến nhất là đánh giá tác động theo tỷ lệ 1:1, nghĩa là giả định chính phủ chi 1 đồng thì GDP chỉ tăng đúng 1 đồng. Thực tế, số nhân tài khóa vận hành dựa trên nguyên tắc dòng chu chuyển thu nhập. Khi nhà nước tăng chi tiêu cho đầu tư công, số vốn này trở thành thu nhập của các nhà thầu và người lao động. Một phần thu nhập đó tiếp tục được chi dùng cho hàng hóa, dịch vụ, từ đó tạo ra thu nhập cho các thành phần tiếp theo trong nền kinh tế."
+   },
+   {
+    "i": 9,
+    "h": "Công thức tính số nhân tài khóa",
+    "n_sent": 1,
+    "t": "Để dự báo chính xác, nhà đầu tư cần phân biệt rõ mô hình kinh tế áp dụng, tránh việc phóng đại quá mức tác động của chính sách."
+   }
+  ]
+ },
+ {
+  "src": "von-fpi-la-gi",
+  "src_title": "Vốn FPI là gì? Đặc điểm và ứng dụng trong đầu tư chứng khoán",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "9",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "Vốn FPI là gì?",
+    "n_sent": 1,
+    "t": "Vốn FPI (Foreign Portfolio Investment) là khoản đầu tư của các tổ chức hoặc cá nhân nước ngoài vào các tài sản tài chính (cổ phiếu, trái phiếu, chứng chỉ quỹ…) tại một quốc gia khác mà không nhằm mục đích nắm quyền kiểm soát hay quản lý trực tiếp doanh nghiệp phát hành."
+   },
+   {
+    "i": 3,
+    "h": "Vốn FPI là gì?",
+    "n_sent": 2,
+    "t": "Tại Việt Nam, khái niệm vốn FPI thường được nhắc đến nhiều nhất trên thị trường chứng khoán, nơi các quỹ đầu tư nước ngoài (như ETF) mua bán hàng ngày. Đây là một phần quan trọng của dòng vốn quốc tế, đóng vai trò như một nguồn lực bổ sung thanh khoản cho thị trường nội địa."
+   },
+   {
+    "i": 51,
+    "h": "Tóm lại",
+    "n_sent": 2,
+    "t": "Vốn FPI là một trong những yếu tố quan trọng tác động đến thị trường chứng khoán Việt Nam, mang lại cả cơ hội bứt phá và thách thức từ sự biến động. Việc hiểu rõ vốn FPI là gì, đặc điểm và cách vận động của dòng vốn này là chìa khóa giúp nhà đầu tư đưa ra quyết định sáng suốt, giảm thiểu rủi ro và tối ưu hóa lợi nhuận trong danh mục của mình."
+   }
+  ]
+ },
+ {
+  "src": "von-fpi-la-gi",
+  "src_title": "Vốn FPI là gì? Đặc điểm và ứng dụng trong đầu tư chứng khoán",
+  "target": "can-can-thanh-toan-bop-la-gi",
+  "role": "hub",
+  "target_title": "Cán cân thanh toán (BOP) là gì? Ý nghĩa và ứng dụng đầu tư",
+  "clicks": "9",
+  "anchors": [
+   "cán cân thanh toán",
+   "cán cân thanh toán quốc tế",
+   "cán cân thanh toán là gì",
+   "BOP",
+   "dòng tiền quốc tế"
+  ],
+  "paras": [
+   {
+    "i": 3,
+    "h": "Vốn FPI là gì?",
+    "n_sent": 2,
+    "t": "Tại Việt Nam, khái niệm vốn FPI thường được nhắc đến nhiều nhất trên thị trường chứng khoán, nơi các quỹ đầu tư nước ngoài (như ETF) mua bán hàng ngày. Đây là một phần quan trọng của dòng vốn quốc tế, đóng vai trò như một nguồn lực bổ sung thanh khoản cho thị trường nội địa."
+   },
+   {
+    "i": 37,
+    "h": "Nhà đầu tư cá nhân làm thế nào để \"đón sóng\" FPI hiệu quả?",
+    "n_sent": 2,
+    "t": "Hiểu rõ vốn FPI là gì chưa đủ, bạn cần biết cách hành động. Theo dõi dòng tiền \"cá mập\" ngoại là một chiến lược phổ biến để tối ưu hóa lợi nhuận."
+   },
+   {
+    "i": 2,
+    "h": "Vốn FPI là gì?",
+    "n_sent": 1,
+    "t": "Vốn FPI (Foreign Portfolio Investment) là khoản đầu tư của các tổ chức hoặc cá nhân nước ngoài vào các tài sản tài chính (cổ phiếu, trái phiếu, chứng chỉ quỹ…) tại một quốc gia khác mà không nhằm mục đích nắm quyền kiểm soát hay quản lý trực tiếp doanh nghiệp phát hành."
+   }
+  ]
+ },
+ {
+  "src": "xuat-sieu-la-gi",
+  "src_title": "Xuất siêu là gì? Tác động nền kinh tế và ứng dụng đầu tư",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "8",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 65,
+    "h": "Chiến lược đầu tư chứng khoán từ xu hướng xuất nhập khẩu",
+    "n_sent": 1,
+    "t": "Sự thay đổi của cán cân thương mại là một trong những chỉ báo chu kỳ quan trọng giúp các nhà đầu tư trên thị trường chứng khoán đưa ra quyết định phân bổ vốn hợp lý."
+   },
+   {
+    "i": 39,
+    "h": "Tác động của xuất siêu đến nền kinh tế vĩ mô",
+    "n_sent": 1,
+    "t": "Thặng dư thương mại có ảnh hưởng sâu sắc đến toàn bộ cấu trúc kinh tế vĩ mô của một quốc gia, mang lại cả thời cơ lẫn những thách thức đi kèm."
+   },
+   {
+    "i": 67,
+    "h": "Mối liên hệ mật thiết với thị trường tài chính",
+    "n_sent": 2,
+    "t": "Khi cán cân ngoại thương tích cực, dòng tiền FDI và FII (đầu tư gián tiếp) có xu hướng chảy mạnh vào thị trường Việt Nam nhờ sự ổn định của tỷ giá và sức mạnh kinh tế vĩ mô. Điều này hỗ trợ trực tiếp cho tính thanh khoản của thị trường chứng khoán."
+   }
+  ]
+ },
+ {
+  "src": "chi-so-gia-tieu-dung-cpi-la-gi-va-moi-quan-he-voi-thi-truong-chung-khoan",
+  "src_title": "CPI là gì? Ý nghĩa, cách tính và ảnh hưởng đến chứng khoán",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "6",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 42,
+    "h": "Mối quan hệ giữa chỉ số giá tiêu dùng CPI và thị trường chứng khoán",
+    "n_sent": 2,
+    "t": "Chỉ số CPI phản ánh sức khỏe vĩ mô và tác động trực tiếp đến thị trường tài chính. Biến động của chỉ số này quyết định xu hướng dòng tiền qua bốn kịch bản lớn dưới đây."
+   },
+   {
+    "i": 4,
+    "h": "Chỉ số giá tiêu dùng CPI là gì?",
+    "n_sent": 3,
+    "t": "Chỉ số giá tiêu dùng CPI viết tắt từ cụm Consumer Price Index. Chỉ số này phản ánh xu hướng biến động giá cả của hàng hóa tiêu dùng. Rổ hàng hóa này bao gồm các sản phẩm thiết yếu phục vụ đời sống hàng ngày."
+   },
+   {
+    "i": 45,
+    "h": "CPI tăng mạnh vượt mức kiểm soát",
+    "n_sent": 3,
+    "t": "Đồng thời, lãi suất tăng làm tăng tỷ suất chiết khấu trong mô hình định giá cổ phiếu. Điều này khiến định giá hợp lý của doanh nghiệp bị sụt giảm nhanh chóng. Nhà đầu tư sẽ có xu hướng rút tiền khỏi thị trường chứng khoán để trú ẩn."
+   }
+  ]
+ },
+ {
+  "src": "bom-tien-ra-nen-kinh-te-la-gi-tac-dong-cua-bom-tien-den-ttck",
+  "src_title": "Bơm tiền ra nền kinh tế là gì? Tác động của bơm tiền đến TTCK",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "6",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 1,
+    "h": "Bơm tiền ra nền kinh tế là gì?",
+    "n_sent": 2,
+    "t": "Bơm tiền ra nền kinh tế là một chính sách tiền tệ được thực hiện bởi ngân hàng trung ương nhằm tăng cung tiền trong lưu thông. Chính sách này thường được áp dụng trong các trường hợp nền kinh tế suy thoái, lạm phát thấp hoặc khi cần kích thích tăng trưởng kinh tế."
+   },
+   {
+    "i": 11,
+    "h": "Tác động của bơm tiền đến TTCK",
+    "n_sent": 1,
+    "t": "Bơm tiền ra nền kinh tế có thể tác động đến TTCK theo cả hai chiều hướng tích cực và tiêu cực."
+   }
+  ]
+ },
+ {
+  "src": "bom-tien-ra-nen-kinh-te-la-gi-tac-dong-cua-bom-tien-den-ttck",
+  "src_title": "Bơm tiền ra nền kinh tế là gì? Tác động của bơm tiền đến TTCK",
+  "target": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+  "role": "hub",
+  "target_title": "So sánh chính sách tài khóa và chính sách tiền tệ",
+  "clicks": "6",
+  "anchors": [
+   "chính sách tài khóa và chính sách tiền tệ",
+   "chính sách tài khóa và tiền tệ",
+   "so sánh chính sách tài khóa và chính sách tiền tệ",
+   "chính sách kinh tế vĩ mô",
+   "chính sách vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 1,
+    "h": "Bơm tiền ra nền kinh tế là gì?",
+    "n_sent": 2,
+    "t": "Bơm tiền ra nền kinh tế là một chính sách tiền tệ được thực hiện bởi ngân hàng trung ương nhằm tăng cung tiền trong lưu thông. Chính sách này thường được áp dụng trong các trường hợp nền kinh tế suy thoái, lạm phát thấp hoặc khi cần kích thích tăng trưởng kinh tế."
+   },
+   {
+    "i": 11,
+    "h": "Tác động của bơm tiền đến TTCK",
+    "n_sent": 1,
+    "t": "Bơm tiền ra nền kinh tế có thể tác động đến TTCK theo cả hai chiều hướng tích cực và tiêu cực."
+   }
+  ]
+ },
+ {
+  "src": "bong-bong-dotcom-la-gi",
+  "src_title": "Bong bóng dotcom là gì? Bài học đầu tư cho người mới",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "6",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "Bong bóng dotcom là gì?",
+    "n_sent": 1,
+    "t": "\"Bong bóng dot-com\" (tiếng Anh: dot-com bubble) là một thuật ngữ dùng để mô tả một giai đoạn của bong bóng tài chính xảy ra trong thập kỷ 1990s đến đầu thập kỷ 2000."
+   },
+   {
+    "i": 3,
+    "h": "Bong bóng dotcom là gì?",
+    "n_sent": 1,
+    "t": "Trong giai đoạn này, giá trị của các công ty công nghệ liên quan đến internet (gọi là \"dot-com\" do phần lớn tên miền internet kết thúc bằng \".com\") đã tăng vọt lên đáng kể, thường không tương xứng với giá trị thực tế của họ."
+   },
+   {
+    "i": 8,
+    "h": "Sự phát triển của bong bóng dotcom",
+    "n_sent": 3,
+    "t": "Bong bóng dotcom bắt đầu hình thành vào năm 1995, khi Netscape Communications, một công ty phần mềm web, bắt đầu niêm yết cổ phiếu. Cổ phiếu của Netscape nhanh chóng tăng giá, từ 28 USD lên 75 USD trong vòng chưa đầy một năm. Sự thành công của Netscape đã tạo ra một làn sóng đầu tư vào các công ty công nghệ khác."
+   }
+  ]
+ },
+ {
+  "src": "bong-bong-dotcom-la-gi",
+  "src_title": "Bong bóng dotcom là gì? Bài học đầu tư cho người mới",
+  "target": "khung-hoang-tai-chinh-la-gi-cac-giai-doan-cua-khung-hoang-tai-chinh",
+  "role": "hub",
+  "target_title": "Khủng hoảng tài chính là gì? Nguyên nhân và hậu quả",
+  "clicks": "6",
+  "anchors": [
+   "khủng hoảng tài chính",
+   "khủng hoảng tài chính là gì",
+   "khủng hoảng kinh tế",
+   "cuộc khủng hoảng",
+   "suy sụp tài chính"
+  ],
+  "paras": [
+   {
+    "i": 11,
+    "h": "Sự sụp đổ của bong bóng dotcom",
+    "n_sent": 3,
+    "t": "Bong bóng dotcom bắt đầu vỡ vào năm 2000. Nguyên nhân chính của sự sụp đổ là do sự thất vọng của các nhà đầu tư khi các công ty công nghệ không thể đáp ứng được kỳ vọng của họ. Nhiều công ty công nghệ không có lợi nhuận hoặc thậm chí đang thua lỗ."
+   },
+   {
+    "i": 2,
+    "h": "Bong bóng dotcom là gì?",
+    "n_sent": 1,
+    "t": "\"Bong bóng dot-com\" (tiếng Anh: dot-com bubble) là một thuật ngữ dùng để mô tả một giai đoạn của bong bóng tài chính xảy ra trong thập kỷ 1990s đến đầu thập kỷ 2000."
+   },
+   {
+    "i": 3,
+    "h": "Bong bóng dotcom là gì?",
+    "n_sent": 1,
+    "t": "Trong giai đoạn này, giá trị của các công ty công nghệ liên quan đến internet (gọi là \"dot-com\" do phần lớn tên miền internet kết thúc bằng \".com\") đã tăng vọt lên đáng kể, thường không tương xứng với giá trị thực tế của họ."
+   }
+  ]
+ },
+ {
+  "src": "von-oda-la-gi",
+  "src_title": "Vốn ODA là gì? Phân loại và tác động đến chứng khoán",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "5",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 5,
+    "h": "Vốn ODA là gì?",
+    "n_sent": 3,
+    "t": "Để dễ hình dung, nhiều công trình hạ tầng trọng điểm hàng ngày tại Việt Nam đều ghi dấu dòng vốn này. Điển hình là cầu Nhật Tân, nhà ga T2 sân bay quốc tế Nội Bài hay đường cao tốc Nội Bài - Lào Cai. Các dự án này được triển khai nhờ nguồn vốn ODA lớn từ Cơ quan Hợp tác Quốc tế Nhật Bản (JICA)."
+   },
+   {
+    "i": 3,
+    "h": "Vốn ODA là gì?",
+    "n_sent": 2,
+    "t": "Vốn ODA (Official Development Assistance) là nguồn Hỗ trợ Phát triển Chính thức. Đây là nguồn tài trợ hoặc cho vay ưu đãi từ các chính phủ nước ngoài hoặc tổ chức quốc tế."
+   },
+   {
+    "i": 4,
+    "h": "Vốn ODA là gì?",
+    "n_sent": 2,
+    "t": "Đối tượng nhận là các quốc gia đang phát triển. Mục đích cốt lõi nhằm thúc đẩy tăng trưởng kinh tế bền vững và nâng cao phúc lợi xã hội."
+   }
+  ]
+ },
+ {
+  "src": "von-oda-la-gi",
+  "src_title": "Vốn ODA là gì? Phân loại và tác động đến chứng khoán",
+  "target": "can-can-thanh-toan-bop-la-gi",
+  "role": "hub",
+  "target_title": "Cán cân thanh toán (BOP) là gì? Ý nghĩa và ứng dụng đầu tư",
+  "clicks": "5",
+  "anchors": [
+   "cán cân thanh toán",
+   "cán cân thanh toán quốc tế",
+   "cán cân thanh toán là gì",
+   "BOP",
+   "dòng tiền quốc tế"
+  ],
+  "paras": [
+   {
+    "i": 5,
+    "h": "Vốn ODA là gì?",
+    "n_sent": 3,
+    "t": "Để dễ hình dung, nhiều công trình hạ tầng trọng điểm hàng ngày tại Việt Nam đều ghi dấu dòng vốn này. Điển hình là cầu Nhật Tân, nhà ga T2 sân bay quốc tế Nội Bài hay đường cao tốc Nội Bài - Lào Cai. Các dự án này được triển khai nhờ nguồn vốn ODA lớn từ Cơ quan Hợp tác Quốc tế Nhật Bản (JICA)."
+   },
+   {
+    "i": 40,
+    "h": "Thực trạng giải ngân dòng vốn ODA tại Việt Nam",
+    "n_sent": 2,
+    "t": "Số liệu Bộ Kế hoạch và Đầu tư cho thấy Việt Nam thuộc nhóm nhận ODA lớn nhất thế giới. Tỷ lệ giải ngân vốn ODA không dàn trải mà tập trung cao độ vào một số ngành kinh tế trọng điểm."
+   },
+   {
+    "i": 3,
+    "h": "Vốn ODA là gì?",
+    "n_sent": 2,
+    "t": "Vốn ODA (Official Development Assistance) là nguồn Hỗ trợ Phát triển Chính thức. Đây là nguồn tài trợ hoặc cho vay ưu đãi từ các chính phủ nước ngoài hoặc tổ chức quốc tế."
+   }
+  ]
+ },
+ {
+  "src": "chi-phi-bien-la-gi",
+  "src_title": "Chi phí biên là gì? Cách tính và ứng dụng đầu tư chứng khoán",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "5",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 34,
+    "h": "Tại sao nhà đầu tư chứng khoán cần đặc biệt quan tâm đến MC?",
+    "n_sent": 1,
+    "t": "Phân tích chi phí biên giúp nhà đầu tư nhận diện tiềm năng bùng nổ biên lợi nhuận gộp của cổ phiếu."
+   },
+   {
+    "i": 62,
+    "h": "Ví dụ 1: Chi phí biên trong ngành Thép (Cổ phiếu HPG)",
+    "n_sent": 2,
+    "t": "Khi Đại dự án Dung Quất 2 đi vào hoạt động trong năm 2026, HPG giảm đáng kể chi phí biên trên mỗi tấn thép. Nhà đầu tư theo dõi tỷ lệ COGS trên doanh thu sẽ nhận diện chính xác thời điểm biên lợi nhuận gộp mở rộng."
+   },
+   {
+    "i": 64,
+    "h": "Ví dụ 2: Chi phí biên gần bằng 0 của ngành Công nghệ (Cổ phiếu FPT)",
+    "n_sent": 1,
+    "t": "Đối với mảng xuất khẩu phần mềm của FPT, chi phí biên cung cấp dịch vụ cho khách hàng mới luôn tiệm cận mức 0 VNĐ."
+   }
+  ]
+ },
+ {
+  "src": "chi-phi-bien-la-gi",
+  "src_title": "Chi phí biên là gì? Cách tính và ứng dụng đầu tư chứng khoán",
+  "target": "kinh-te-hoc-vi-mo-la-gi-y-nghia-trong-dau-tu-chung-khoan",
+  "role": "hub",
+  "target_title": "Kinh tế học vi mô là gì? Ý nghĩa trong đầu tư chứng khoán",
+  "clicks": "5",
+  "anchors": [
+   "kinh tế học vi mô",
+   "kinh tế vi mô",
+   "kinh tế vi mô là gì",
+   "hành vi doanh nghiệp và người tiêu dùng",
+   "cung cầu"
+  ],
+  "paras": [
+   {
+    "i": 34,
+    "h": "Tại sao nhà đầu tư chứng khoán cần đặc biệt quan tâm đến MC?",
+    "n_sent": 1,
+    "t": "Phân tích chi phí biên giúp nhà đầu tư nhận diện tiềm năng bùng nổ biên lợi nhuận gộp của cổ phiếu."
+   },
+   {
+    "i": 62,
+    "h": "Ví dụ 1: Chi phí biên trong ngành Thép (Cổ phiếu HPG)",
+    "n_sent": 2,
+    "t": "Khi Đại dự án Dung Quất 2 đi vào hoạt động trong năm 2026, HPG giảm đáng kể chi phí biên trên mỗi tấn thép. Nhà đầu tư theo dõi tỷ lệ COGS trên doanh thu sẽ nhận diện chính xác thời điểm biên lợi nhuận gộp mở rộng."
+   },
+   {
+    "i": 68,
+    "h": "Ứng dụng MC để chọn lọc cổ phiếu",
+    "n_sent": 2,
+    "t": "Điều này chứng tỏ doanh nghiệp có vị thế thương lượng mạnh và dây chuyền sản xuất hiện đại. Ngược lại, nếu MC tăng đột biến, nhà đầu tư cần cẩn trọng vì doanh nghiệp có thể chịu áp lực chi phí đầu vào."
+   }
+  ]
+ },
+ {
+  "src": "lai-suat-lien-ngan-hang-la-gi-cach-tinh-tac-dong-va-cach-tra-cuu",
+  "src_title": "Lãi suất liên ngân hàng là gì? Cách tính, tác động và cách tra cứu",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "3",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 17,
+    "h": "Vai trò đối với nền kinh tế",
+    "n_sent": 2,
+    "t": "Lãi suất liên ngân hàng giữ vai trò quan trọng trong việc duy trì sự ổn định kinh tế vĩ mô. Thông qua thị trường liên ngân hàng, dòng vốn được điều tiết linh hoạt, giúp đảm bảo thanh khoản cho hệ thống ngân hàng và hỗ trợ Ngân hàng Trung ương thực thi chính sách tiền tệ một cách hiệu quả."
+   },
+   {
+    "i": 18,
+    "h": "Vai trò đối với nền kinh tế",
+    "n_sent": 1,
+    "t": "Bằng việc điều chỉnh mặt bằng lãi suất liên ngân hàng, Ngân hàng Trung ương có thể tác động đến lượng tiền lưu thông trong nền kinh tế, qua đó kiểm soát lạm phát, thúc đẩy tăng trưởng hoặc ổn định kinh tế trong những giai đoạn biến động."
+   },
+   {
+    "i": 15,
+    "h": "Lãi suất liên ngân hàng ảnh hưởng đến nền kinh tế như thế nào?",
+    "n_sent": 1,
+    "t": "Để hiểu rõ hơn về lãi suất liên ngân hàng, cần xem xét vai trò và ý nghĩa của công cụ này đối với nền kinh tế, thị trường tài chính và hệ thống ngân hàng."
+   }
+  ]
+ },
+ {
+  "src": "lai-suat-lien-ngan-hang-la-gi-cach-tinh-tac-dong-va-cach-tra-cuu",
+  "src_title": "Lãi suất liên ngân hàng là gì? Cách tính, tác động và cách tra cứu",
+  "target": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+  "role": "hub",
+  "target_title": "So sánh chính sách tài khóa và chính sách tiền tệ",
+  "clicks": "3",
+  "anchors": [
+   "chính sách tài khóa và chính sách tiền tệ",
+   "chính sách tài khóa và tiền tệ",
+   "so sánh chính sách tài khóa và chính sách tiền tệ",
+   "chính sách kinh tế vĩ mô",
+   "chính sách vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 13,
+    "h": "Mối quan hệ giữa lãi suất liên ngân hàng và chính sách tiền tệ",
+    "n_sent": 1,
+    "t": "Lãi suất liên ngân hàng tăng cao bất thường phản ánh tình trạng thiếu hụt thanh khoản, trong khi mức lãi suất quá thấp cho thấy hệ thống dư thừa vốn, là cơ sở để NHTW điều chỉnh chính sách kịp thời nhằm ổn định thị trường tài chính và đạt các mục tiêu vĩ mô."
+   },
+   {
+    "i": 17,
+    "h": "Vai trò đối với nền kinh tế",
+    "n_sent": 2,
+    "t": "Lãi suất liên ngân hàng giữ vai trò quan trọng trong việc duy trì sự ổn định kinh tế vĩ mô. Thông qua thị trường liên ngân hàng, dòng vốn được điều tiết linh hoạt, giúp đảm bảo thanh khoản cho hệ thống ngân hàng và hỗ trợ Ngân hàng Trung ương thực thi chính sách tiền tệ một cách hiệu quả."
+   },
+   {
+    "i": 12,
+    "h": "Mối quan hệ giữa lãi suất liên ngân hàng và chính sách tiền tệ",
+    "n_sent": 1,
+    "t": "Diễn biến lãi suất liên ngân hàng, đặc biệt là lãi suất qua đêm, đóng vai trò như chỉ báo sớm về thanh khoản của hệ thống ngân hàng và mức độ căng thẳng tiền tệ."
+   }
+  ]
+ },
+ {
+  "src": "su-kien-bong-bong-hoa-tulip-bai-hoc-kinh-nghiem-cho-cac-nha-dau-tu",
+  "src_title": "Sự kiện bong bóng hoa tulip: Bài học kinh nghiệm cho nhà đầu tư",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "3",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 7,
+    "h": "Sự phát triển của nền kinh tế Hà Lan",
+    "n_sent": 2,
+    "t": "Thế kỷ 17 là thời kỳ hoàng kim của Hà Lan, khi nền kinh tế của nước này phát triển mạnh mẽ. Điều này đã dẫn đến sự gia tăng của thu nhập và tài sản của người dân, tạo ra một nguồn vốn dồi dào cho đầu tư."
+   },
+   {
+    "i": 25,
+    "h": "Không nên vay tiền để đầu tư",
+    "n_sent": 2,
+    "t": "Việc vay tiền để đầu tư có thể khiến các nhà đầu tư gặp rủi ro cao hơn. Nếu giá của tài sản đầu tư giảm, các nhà đầu tư sẽ phải gánh thêm khoản nợ, khiến họ gặp khó khăn trong việc trả nợ."
+   },
+   {
+    "i": 21,
+    "h": "Không nên đầu tư theo tâm lý đám đông",
+    "n_sent": 3,
+    "t": "Tâm lý đám đông có thể khiến các nhà đầu tư đưa ra những quyết định sai lầm. Khi giá của một loại tài sản tăng lên, nhiều người sẽ đổ xô đầu tư vào loại tài sản đó, với hy vọng kiếm được lợi nhuận cao. Tuy nhiên, điều này có thể dẫn đến việc giá của tài sản bị đẩy lên quá cao, vượt quá giá trị thực của nó."
+   }
+  ]
+ },
+ {
+  "src": "su-kien-bong-bong-hoa-tulip-bai-hoc-kinh-nghiem-cho-cac-nha-dau-tu",
+  "src_title": "Sự kiện bong bóng hoa tulip: Bài học kinh nghiệm cho nhà đầu tư",
+  "target": "khung-hoang-tai-chinh-la-gi-cac-giai-doan-cua-khung-hoang-tai-chinh",
+  "role": "hub",
+  "target_title": "Khủng hoảng tài chính là gì? Nguyên nhân và hậu quả",
+  "clicks": "3",
+  "anchors": [
+   "khủng hoảng tài chính",
+   "khủng hoảng tài chính là gì",
+   "khủng hoảng kinh tế",
+   "cuộc khủng hoảng",
+   "suy sụp tài chính"
+  ],
+  "paras": [
+   {
+    "i": 17,
+    "h": "Hậu quả của sự kiện bong bóng hoa tulip",
+    "n_sent": 3,
+    "t": "Sự kiện bong bóng hoa tulip đã gây ra những hậu quả nghiêm trọng cho nền kinh tế Hà Lan. Nhiều người đã mất trắng tiền của, dẫn đến sự suy thoái kinh tế. Chính phủ Hà Lan đã phải ban hành một số biện pháp để giải quyết tình trạng này, bao gồm cấm giao dịch hợp đồng tương lai của củ hoa tulip."
+   },
+   {
+    "i": 7,
+    "h": "Sự phát triển của nền kinh tế Hà Lan",
+    "n_sent": 2,
+    "t": "Thế kỷ 17 là thời kỳ hoàng kim của Hà Lan, khi nền kinh tế của nước này phát triển mạnh mẽ. Điều này đã dẫn đến sự gia tăng của thu nhập và tài sản của người dân, tạo ra một nguồn vốn dồi dào cho đầu tư."
+   },
+   {
+    "i": 1,
+    "h": "Sự kiện bong bóng hoa Tulip là gì?",
+    "n_sent": 3,
+    "t": "Sự kiện bong bóng hoa tulip là một sự kiện kinh tế nổi tiếng trong lịch sử, được coi là bong bóng tài chính đầu tiên được ghi nhận. Sự kiện này đã xảy ra ở Hà Lan vào thế kỷ 17, khi giá của củ hoa tulip tăng vọt một cách bất thường, sau đó lại sụp đổ một cách đột ngột. Sự kiện này đã để lại nhiều bài học kinh nghiệm cho các nhà đầu tư, giúp họ tránh được những rủi ro tương tự."
+   }
+  ]
+ },
+ {
+  "src": "chu-ky-kinh-te-la-gi-cach-van-dung-chu-ky-kinh-te-de-dau-tu-co-phieu-hieu-qua",
+  "src_title": "Chu kỳ kinh tế là gì? Các giai đoạn và ứng dụng đầu tư",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "1",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 10,
+    "h": "Vì sao có hiện tượng chu kỳ kinh tế",
+    "n_sent": 3,
+    "t": "Bên cạnh lý thuyết của Sismondi, nhiều quan điểm hiện đại nhấn mạnh tác động của các yếu tố ngoại sinh và tâm lý. Sự biến động đột ngột của giá dầu hay những thay đổi trong tâm lý người tiêu dùng được xem là những cú sốc tác động trực tiếp lên tổng cầu (chi tiêu vĩ mô). Những yếu tố này làm thay đổi biên lợi nhuận và quyết định đầu tư của doanh nghiệp, từ đó thúc đẩy sự chuyển dịch của các pha trong chu kỳ kinh tế."
+   },
+   {
+    "i": 9,
+    "h": "Vì sao có hiện tượng chu kỳ kinh tế",
+    "n_sent": 3,
+    "t": "Theo Sismondi, đây là hệ quả tất yếu của sự mất cân đối thị trường, cụ thể là tình trạng sản xuất thừa và tiêu dùng dưới mức. Khi sản lượng vượt quá nhu cầu thực tế (cung > cầu), các doanh nghiệp buộc phải tái cơ cấu bằng cách cắt giảm quy mô sản xuất và nhân sự. Hệ quả là thu nhập xã hội giảm sút, kéo theo sức mua sụt giảm, đẩy nền kinh tế vào giai đoạn suy thoái và khởi đầu một vòng lặp mới."
+   },
+   {
+    "i": 4,
+    "h": "Chu kỳ kinh tế là gì?",
+    "n_sent": 2,
+    "t": "Chu kỳ kinh tế (Business Cycle) là thuật ngữ mô tả sự biến động định kỳ của nền kinh tế, bao gồm các hoạt động thăng trầm lặp đi lặp lại theo thời gian. Sự biến động này được định lượng chủ yếu thông qua GDP thực tế, trải qua bốn giai đoạn tuần hoàn: Suy thoái, Khủng hoảng, Phục hồi và Hưng thịnh."
+   }
+  ]
+ },
+ {
+  "src": "dong-tien-nong-la-gi",
+  "src_title": "Dòng tiền nóng là gì? Bí quyết nhận diện và cách ứng phó",
+  "target": "can-can-thanh-toan-bop-la-gi",
+  "role": "hub",
+  "target_title": "Cán cân thanh toán (BOP) là gì? Ý nghĩa và ứng dụng đầu tư",
+  "clicks": "1",
+  "anchors": [
+   "cán cân thanh toán",
+   "cán cân thanh toán quốc tế",
+   "cán cân thanh toán là gì",
+   "BOP",
+   "dòng tiền quốc tế"
+  ],
+  "paras": [
+   {
+    "i": 7,
+    "h": "Phân biệt dòng tiền nóng với vốn đầu tư dài hạn (FDI)",
+    "n_sent": 2,
+    "t": "Dòng tiền nóng thường được gọi là vốn đầu tư gián tiếp (FII). Điểm khác biệt lớn nhất giữa dòng tiền nóng và vốn FDI nằm ở tính cam kết và thời gian lưu trú."
+   },
+   {
+    "i": 2,
+    "h": "Dòng tiền nóng là gì?",
+    "n_sent": 2,
+    "t": "Dòng tiền nóng (Hot Money) là dòng vốn đầu cơ di chuyển nhanh chóng giữa các thị trường tài chính toàn cầu. Mục đích duy nhất của loại vốn này là tìm kiếm lợi nhuận ngắn hạn từ sự chênh lệch lãi suất và biến động tỷ giá hối đoái."
+   },
+   {
+    "i": 40,
+    "h": "Chiến lược ứng phó thông minh với dòng tiền nóng",
+    "n_sent": 1,
+    "t": "Năm 2026 dự báo sẽ có nhiều biến động vĩ mô, đòi hỏi nhà đầu tư phải có kịch bản ứng phó linh hoạt."
+   }
+  ]
+ },
+ {
+  "src": "chi-phi-co-hoi-la-gi",
+  "src_title": "Chi phí cơ hội là gì? Ý nghĩa chi phí cơ hội trong đầu tư",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "1",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 43,
+    "h": "Ví dụ chi phí cơ hội trong đầu tư bất động sản",
+    "n_sent": 1,
+    "t": "Chi phí cơ hội: Nếu chọn đầu tư căn hộ, chi phí cơ hội là 20 triệu đồng/năm (100 triệu − 80 triệu) lợi nhuận bị bỏ lỡ từ kênh chứng khoán."
+   },
+   {
+    "i": 49,
+    "h": "Ví dụ chi phí cơ hội trong đầu tư doanh nghiệp",
+    "n_sent": 1,
+    "t": "Chi phí cơ hội: Nếu doanh nghiệp chọn đầu tư máy móc, chi phí cơ hội là 90 triệu đồng/năm – lợi nhuận tiềm năng từ chiến dịch quảng cáo."
+   },
+   {
+    "i": 28,
+    "h": "Ví dụ chi phí cơ hội giữa cổ phiếu và gửi tiết kiệm",
+    "n_sent": 2,
+    "t": "Chi phí cơ hội: Nếu bạn chọn đầu tư cổ phiếu A, chi phí cơ hội là 7%/năm. Khoản lãi bạn có thể nhận được nếu gửi tiết kiệm."
+   }
+  ]
+ },
+ {
+  "src": "chi-phi-co-hoi-la-gi",
+  "src_title": "Chi phí cơ hội là gì? Ý nghĩa chi phí cơ hội trong đầu tư",
+  "target": "kinh-te-hoc-vi-mo-la-gi-y-nghia-trong-dau-tu-chung-khoan",
+  "role": "hub",
+  "target_title": "Kinh tế học vi mô là gì? Ý nghĩa trong đầu tư chứng khoán",
+  "clicks": "1",
+  "anchors": [
+   "kinh tế học vi mô",
+   "kinh tế vi mô",
+   "kinh tế vi mô là gì",
+   "hành vi doanh nghiệp và người tiêu dùng",
+   "cung cầu"
+  ],
+  "paras": [
+   {
+    "i": 49,
+    "h": "Ví dụ chi phí cơ hội trong đầu tư doanh nghiệp",
+    "n_sent": 1,
+    "t": "Chi phí cơ hội: Nếu doanh nghiệp chọn đầu tư máy móc, chi phí cơ hội là 90 triệu đồng/năm – lợi nhuận tiềm năng từ chiến dịch quảng cáo."
+   },
+   {
+    "i": 43,
+    "h": "Ví dụ chi phí cơ hội trong đầu tư bất động sản",
+    "n_sent": 1,
+    "t": "Chi phí cơ hội: Nếu chọn đầu tư căn hộ, chi phí cơ hội là 20 triệu đồng/năm (100 triệu − 80 triệu) lợi nhuận bị bỏ lỡ từ kênh chứng khoán."
+   },
+   {
+    "i": 5,
+    "h": "Chi phí cơ hội là gì?",
+    "n_sent": 3,
+    "t": "Chi phí cơ hội được hiểu là giá trị của phương án tốt nhất bị bỏ qua khi một cá nhân, tổ chức hoặc doanh nghiệp lựa chọn một quyết định nhất định. Khái niệm này không chỉ giới hạn ở tiền bạc mà còn bao gồm thời gian, công sức và các nguồn lực khác. Việc nhận thức rõ chi phí cơ hội giúp bạn so sánh hiệu quả giữa các lựa chọn và từ đó đưa ra quyết định hợp lý, tối ưu hơn."
+   }
+  ]
+ },
+ {
+  "src": "rua-tien-la-gi-hau-qua-va-cach-phong-chong",
+  "src_title": "Rửa tiền là gì? Hậu quả và cách phòng chống",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "1",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 1,
+    "h": "Rửa tiền là gì?",
+    "n_sent": 2,
+    "t": "Rửa tiền là hành vi của tổ chức, cá nhân nhằm hợp pháp hóa nguồn gốc của tài sản do phạm tội mà có. Mục đích của rửa tiền là che giấu nguồn gốc bất hợp pháp của tài sản, tạo điều kiện cho việc sử dụng, bảo quản, đầu tư và hưởng thụ tài sản đó."
+   },
+   {
+    "i": 21,
+    "h": "Trách nhiệm hình sự đối với tội rửa tiền",
+    "n_sent": 2,
+    "t": "Theo quy định của pháp luật Việt Nam, tội rửa tiền được quy định tại Điều 324 Bộ luật Hình sự năm 2015. Tội này có thể bị phạt tiền từ 50 triệu đồng đến 2 tỷ đồng, phạt tù từ 1 năm đến 15 năm."
+   }
+  ]
+ },
+ {
+  "src": "rua-tien-la-gi-hau-qua-va-cach-phong-chong",
+  "src_title": "Rửa tiền là gì? Hậu quả và cách phòng chống",
+  "target": "khung-hoang-tai-chinh-la-gi-cac-giai-doan-cua-khung-hoang-tai-chinh",
+  "role": "hub",
+  "target_title": "Khủng hoảng tài chính là gì? Nguyên nhân và hậu quả",
+  "clicks": "1",
+  "anchors": [
+   "khủng hoảng tài chính",
+   "khủng hoảng tài chính là gì",
+   "khủng hoảng kinh tế",
+   "cuộc khủng hoảng",
+   "suy sụp tài chính"
+  ],
+  "paras": [
+   {
+    "i": 1,
+    "h": "Rửa tiền là gì?",
+    "n_sent": 2,
+    "t": "Rửa tiền là hành vi của tổ chức, cá nhân nhằm hợp pháp hóa nguồn gốc của tài sản do phạm tội mà có. Mục đích của rửa tiền là che giấu nguồn gốc bất hợp pháp của tài sản, tạo điều kiện cho việc sử dụng, bảo quản, đầu tư và hưởng thụ tài sản đó."
+   },
+   {
+    "i": 21,
+    "h": "Trách nhiệm hình sự đối với tội rửa tiền",
+    "n_sent": 2,
+    "t": "Theo quy định của pháp luật Việt Nam, tội rửa tiền được quy định tại Điều 324 Bộ luật Hình sự năm 2015. Tội này có thể bị phạt tiền từ 50 triệu đồng đến 2 tỷ đồng, phạt tù từ 1 năm đến 15 năm."
+   }
+  ]
+ },
+ {
+  "src": "giam-phat-la-gi-nguyen-nhan-hau-qua-va-cach-khac-phuc",
+  "src_title": "Giảm phát là gì? Phân biệt giảm phát và lạm phát",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "0",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 21,
+    "h": "Phân biệt giảm phát và lạm phát",
+    "n_sent": 2,
+    "t": "Bảng so sánh trên giúp bạn nhanh chóng định vị tính chất đối lập của hai khái niệm. Việc nhận diện đúng trạng thái kinh tế giúp nhà đầu tư thiết lập cơ cấu tài sản phù hợp."
+   },
+   {
+    "i": 60,
+    "h": "Tác động của giảm phát đến thị trường chứng khoán",
+    "n_sent": 2,
+    "t": "Tuy nhiên, các ngành phòng thủ có dòng tiền ổn định vẫn có thể là nơi trú ẩn an toàn. Nhà đầu tư cần chủ động cơ cấu danh mục để giảm thiểu rủi ro."
+   },
+   {
+    "i": 38,
+    "h": "Tăng gánh nặng nợ thực tế",
+    "n_sent": 2,
+    "t": "Giảm phát làm tăng giá trị thực tế của tiền tệ và các khoản nợ cũ. Ví dụ, bạn vay 100 triệu VNĐ với lãi suất cố định 10%/năm."
+   }
+  ]
+ },
+ {
+  "src": "gnp-la-gi",
+  "src_title": "GNP là gì? Phân biệt GDP, GNP và ý nghĩa trong đầu tư",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "0",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "GNP là gì?",
+    "n_sent": 2,
+    "t": "GNP viết tắt của Gross National Product, tức Tổng sản phẩm quốc dân. Đây là tổng giá trị thị trường của toàn bộ hàng hóa và dịch vụ cuối cùng do công dân của một quốc gia tạo ra trong một năm, bất kể họ sản xuất ở trong hay ngoài lãnh thổ quốc gia đó."
+   },
+   {
+    "i": 14,
+    "h": "Công thức tính GNP",
+    "n_sent": 1,
+    "t": "Phương pháp phổ biến nhất để tính toán GNP là quy đổi từ chỉ số GDP thông qua thu nhập ròng từ nước ngoài."
+   },
+   {
+    "i": 22,
+    "h": "Công thức tính GNP",
+    "n_sent": 0,
+    "t": "Công thức tính NIA: NIA = Thu nhập của công dân trong nước ở nước ngoài - Thu nhập của người nước ngoài ở trong nước"
+   }
+  ]
+ },
+ {
+  "src": "gnp-la-gi",
+  "src_title": "GNP là gì? Phân biệt GDP, GNP và ý nghĩa trong đầu tư",
+  "target": "gdp-la-gi",
+  "role": "sub-hub",
+  "target_title": "GDP là gì? Cách tính và yếu tố ảnh hưởng đến GDP",
+  "clicks": "0",
+  "anchors": [
+   "GDP",
+   "GDP là gì",
+   "cách tính GDP",
+   "tổng sản phẩm quốc nội",
+   "tăng trưởng GDP",
+   "quy mô nền kinh tế"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "GNP là gì?",
+    "n_sent": 2,
+    "t": "GNP viết tắt của Gross National Product, tức Tổng sản phẩm quốc dân. Đây là tổng giá trị thị trường của toàn bộ hàng hóa và dịch vụ cuối cùng do công dân của một quốc gia tạo ra trong một năm, bất kể họ sản xuất ở trong hay ngoài lãnh thổ quốc gia đó."
+   },
+   {
+    "i": 14,
+    "h": "Công thức tính GNP",
+    "n_sent": 1,
+    "t": "Phương pháp phổ biến nhất để tính toán GNP là quy đổi từ chỉ số GDP thông qua thu nhập ròng từ nước ngoài."
+   },
+   {
+    "i": 22,
+    "h": "Công thức tính GNP",
+    "n_sent": 0,
+    "t": "Công thức tính NIA: NIA = Thu nhập của công dân trong nước ở nước ngoài - Thu nhập của người nước ngoài ở trong nước"
+   }
+  ]
+ },
+ {
+  "src": "lam-phat-la-gi",
+  "src_title": "Lạm phát là gì? Nguyên nhân và ảnh hưởng đến chứng khoán",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "0",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 41,
+    "h": "Tác động của lạm phát đến nền kinh tế",
+    "n_sent": 2,
+    "t": "Lạm phát là thước đo phản ánh sức khỏe của nền kinh tế. Tùy vào mức độ, lạm phát có thể mang lại những tác động tích cực lẫn tiêu cực."
+   },
+   {
+    "i": 54,
+    "h": "Mối quan hệ giữa lạm phát và thị trường chứng khoán",
+    "n_sent": 2,
+    "t": "Lạm phát vĩ mô có ảnh hưởng sâu sắc đến thị trường tài chính. Đối với chứng khoán, lạm phát tác động trực tiếp qua ba kênh cốt lõi."
+   },
+   {
+    "i": 73,
+    "h": "Một số giải pháp hạn chế lạm phát",
+    "n_sent": 1,
+    "t": "Chính phủ và Ngân hàng Nhà nước áp dụng nhiều giải pháp vĩ mô để kiểm soát lạm phát và ổn định nền kinh tế."
+   }
+  ]
+ },
+ {
+  "src": "chinh-sach-cong-la-gi",
+  "src_title": "Chính sách công là gì? 5 điều nhà đầu tư chứng khoán cần biết",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "0",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 48,
+    "h": "Cách nhận diện sớm thay đổi chính sách để tối ưu vị thế đầu tư",
+    "n_sent": 2,
+    "t": "Lời khuyên từ chuyên gia: Việc đọc vị hàng trăm trang văn bản luật không phải chuyện dễ dàng với nhà đầu tư cá nhân. Tại DSC, khách hàng sẽ được chuyên gia Môi giới đồng hành để dịch những con số vĩ mô khô khan thành danh mục cổ phiếu tiềm năng, giúp bạn tiết kiệm thời gian và tránh bẫy tin tức."
+   },
+   {
+    "i": 29,
+    "h": "Tác động của chính sách công đến thị trường chứng khoán",
+    "n_sent": 1,
+    "t": "Chính sách công tác động đến thị trường chứng khoán qua 3 kênh: chính sách tài khóa, chính sách tiền tệ và chính sách ngành."
+   },
+   {
+    "i": 5,
+    "h": "Chính sách công là gì?",
+    "n_sent": 3,
+    "t": "Ví dụ: Chính phủ ban hành chính sách tăng thuế tiêu thụ đặc biệt với đồ uống có đường. Ngay lập tức, biên lợi nhuận của các doanh nghiệp ngành giải khát bị ảnh hưởng. Ngược lại, chính sách hỗ trợ chuyển đổi xanh lại mở đường cho các doanh nghiệp năng lượng tái tạo tiếp cận vốn vay giá rẻ."
+   }
+  ]
+ },
+ {
+  "src": "chinh-sach-cong-la-gi",
+  "src_title": "Chính sách công là gì? 5 điều nhà đầu tư chứng khoán cần biết",
+  "target": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+  "role": "hub",
+  "target_title": "So sánh chính sách tài khóa và chính sách tiền tệ",
+  "clicks": "0",
+  "anchors": [
+   "chính sách tài khóa và chính sách tiền tệ",
+   "chính sách tài khóa và tiền tệ",
+   "so sánh chính sách tài khóa và chính sách tiền tệ",
+   "chính sách kinh tế vĩ mô",
+   "chính sách vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 48,
+    "h": "Cách nhận diện sớm thay đổi chính sách để tối ưu vị thế đầu tư",
+    "n_sent": 2,
+    "t": "Lời khuyên từ chuyên gia: Việc đọc vị hàng trăm trang văn bản luật không phải chuyện dễ dàng với nhà đầu tư cá nhân. Tại DSC, khách hàng sẽ được chuyên gia Môi giới đồng hành để dịch những con số vĩ mô khô khan thành danh mục cổ phiếu tiềm năng, giúp bạn tiết kiệm thời gian và tránh bẫy tin tức."
+   },
+   {
+    "i": 5,
+    "h": "Chính sách công là gì?",
+    "n_sent": 3,
+    "t": "Ví dụ: Chính phủ ban hành chính sách tăng thuế tiêu thụ đặc biệt với đồ uống có đường. Ngay lập tức, biên lợi nhuận của các doanh nghiệp ngành giải khát bị ảnh hưởng. Ngược lại, chính sách hỗ trợ chuyển đổi xanh lại mở đường cho các doanh nghiệp năng lượng tái tạo tiếp cận vốn vay giá rẻ."
+   },
+   {
+    "i": 29,
+    "h": "Tác động của chính sách công đến thị trường chứng khoán",
+    "n_sent": 1,
+    "t": "Chính sách công tác động đến thị trường chứng khoán qua 3 kênh: chính sách tài khóa, chính sách tiền tệ và chính sách ngành."
+   }
+  ]
+ },
+ {
+  "src": "lai-suat-co-so-la-gi-tac-dong-cua-lai-suat-co-so-den-nen-kinh-te",
+  "src_title": "Lãi suất cơ sở là gì? Vai trò, cách tính và tác động",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "0",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 4,
+    "h": "Lãi suất cơ sở là gì?",
+    "n_sent": 2,
+    "t": "Lãi suất cơ sở (hay lãi suất cơ bản) là mức lãi suất nền tảng do Ngân hàng Nhà nước công bố và chỉ áp dụng cho các giao dịch bằng đồng Việt Nam. Đây là cơ sở để các ngân hàng thương mại xây dựng và điều chỉnh lãi suất cho vay hoặc lãi suất tiền gửi theo từng kỳ nhất định."
+   },
+   {
+    "i": 48,
+    "h": "Tổng hợp lãi suất cơ sở các ngân hàng hiện nay",
+    "n_sent": 2,
+    "t": "Lưu ý: Mức lãi suất trên chỉ mang tính tham khảo và có thể thay đổi theo từng thời kỳ. Nhà đầu tư nên kiểm tra thông tin mới nhất trực tiếp tại ngân hàng hoặc trên website chính thức trước khi đưa ra quyết định."
+   },
+   {
+    "i": 26,
+    "h": "Cách tính lãi suất cơ sở",
+    "n_sent": 1,
+    "t": "Sự kết hợp giữa lãi suất cơ sở và biên độ điều chỉnh sẽ quyết định mức lãi suất cho vay thực tế mà ngân hàng áp dụng cho khách hàng."
+   }
+  ]
+ },
+ {
+  "src": "lai-suat-co-so-la-gi-tac-dong-cua-lai-suat-co-so-den-nen-kinh-te",
+  "src_title": "Lãi suất cơ sở là gì? Vai trò, cách tính và tác động",
+  "target": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+  "role": "hub",
+  "target_title": "So sánh chính sách tài khóa và chính sách tiền tệ",
+  "clicks": "0",
+  "anchors": [
+   "chính sách tài khóa và chính sách tiền tệ",
+   "chính sách tài khóa và tiền tệ",
+   "so sánh chính sách tài khóa và chính sách tiền tệ",
+   "chính sách kinh tế vĩ mô",
+   "chính sách vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 4,
+    "h": "Lãi suất cơ sở là gì?",
+    "n_sent": 2,
+    "t": "Lãi suất cơ sở (hay lãi suất cơ bản) là mức lãi suất nền tảng do Ngân hàng Nhà nước công bố và chỉ áp dụng cho các giao dịch bằng đồng Việt Nam. Đây là cơ sở để các ngân hàng thương mại xây dựng và điều chỉnh lãi suất cho vay hoặc lãi suất tiền gửi theo từng kỳ nhất định."
+   },
+   {
+    "i": 26,
+    "h": "Cách tính lãi suất cơ sở",
+    "n_sent": 1,
+    "t": "Sự kết hợp giữa lãi suất cơ sở và biên độ điều chỉnh sẽ quyết định mức lãi suất cho vay thực tế mà ngân hàng áp dụng cho khách hàng."
+   },
+   {
+    "i": 48,
+    "h": "Tổng hợp lãi suất cơ sở các ngân hàng hiện nay",
+    "n_sent": 2,
+    "t": "Lưu ý: Mức lãi suất trên chỉ mang tính tham khảo và có thể thay đổi theo từng thời kỳ. Nhà đầu tư nên kiểm tra thông tin mới nhất trực tiếp tại ngân hàng hoặc trên website chính thức trước khi đưa ra quyết định."
+   }
+  ]
+ },
+ {
+  "src": "lai-suat-dieu-hanh-la-gi",
+  "src_title": "Lãi suất điều hành là gì? Bản chất và tác động chứng khoán",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "0",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 55,
+    "h": "Quan hệ giữa lãi suất điều hành và thị trường chứng khoán",
+    "n_sent": 2,
+    "t": "Thị trường chứng khoán thường được coi là chiếc máy đo nhạy bén nhất với các quyết định lãi suất điều hành. Việc SBV thay đổi chính sách tiền tệ tạo ra tác động trực tiếp và gián tiếp đến giá trị cổ phiếu."
+   },
+   {
+    "i": 60,
+    "h": "Quan hệ giữa lãi suất điều hành và thị trường chứng khoán",
+    "n_sent": 2,
+    "t": "Tuy nhiên, các quyết định chính sách tiền tệ thường có độ trễ 3 đến 6 tháng. Thời gian này cần thiết để tác động phản ánh vào kết quả kinh doanh của doanh nghiệp."
+   },
+   {
+    "i": 71,
+    "h": "Giai đoạn 2023–2026: 4 đợt giảm lãi suất điều hành tạo bệ đỡ vĩ mô",
+    "n_sent": 1,
+    "t": "Nhờ chính sách tiền tệ linh hoạt này, thị trường chứng khoán đã xác lập vùng đáy dài hạn và bước vào chu kỳ phục hồi bền vững."
+   }
+  ]
+ },
+ {
+  "src": "lai-suat-dieu-hanh-la-gi",
+  "src_title": "Lãi suất điều hành là gì? Bản chất và tác động chứng khoán",
+  "target": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+  "role": "hub",
+  "target_title": "So sánh chính sách tài khóa và chính sách tiền tệ",
+  "clicks": "0",
+  "anchors": [
+   "chính sách tài khóa và chính sách tiền tệ",
+   "chính sách tài khóa và tiền tệ",
+   "so sánh chính sách tài khóa và chính sách tiền tệ",
+   "chính sách kinh tế vĩ mô",
+   "chính sách vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 64,
+    "h": "Giai đoạn 2012–2014: Nới lỏng tiền tệ mở sóng VN-Index tăng 83%",
+    "n_sent": 2,
+    "t": "Trong giai đoạn này, lạm phát được kiềm chế thành công giúp Ngân hàng Nhà nước có dư địa nới lỏng chính sách. SBV đã mạnh tay cắt giảm lãi suất tái cấp vốn từ mốc 14,0%/năm về mức 6,5%/năm."
+   },
+   {
+    "i": 65,
+    "h": "Giai đoạn 2012–2014: Nới lỏng tiền tệ mở sóng VN-Index tăng 83%",
+    "n_sent": 2,
+    "t": "Mặt bằng lãi suất huy động kỳ hạn 12 tháng tại các ngân hàng thương mại lập tức giảm từ 14,0%/năm xuống còn 6,8%/năm. Dòng tiền rẻ chảy mạnh vào thị trường giúp VN-Index tăng ấn tượng từ 350 điểm lên 642 điểm, tương ứng mức tăng 83%."
+   },
+   {
+    "i": 71,
+    "h": "Giai đoạn 2023–2026: 4 đợt giảm lãi suất điều hành tạo bệ đỡ vĩ mô",
+    "n_sent": 1,
+    "t": "Nhờ chính sách tiền tệ linh hoạt này, thị trường chứng khoán đã xác lập vùng đáy dài hạn và bước vào chu kỳ phục hồi bền vững."
+   }
+  ]
+ },
+ {
+  "src": "lai-suat-la-gi",
+  "src_title": "Lãi suất là gì? Phân loại, vai trò và ứng dụng trong đầu tư",
+  "target": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+  "role": "hub",
+  "target_title": "So sánh chính sách tài khóa và chính sách tiền tệ",
+  "clicks": "0",
+  "anchors": [
+   "chính sách tài khóa và chính sách tiền tệ",
+   "chính sách tài khóa và tiền tệ",
+   "so sánh chính sách tài khóa và chính sách tiền tệ",
+   "chính sách kinh tế vĩ mô",
+   "chính sách vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 9,
+    "h": "Lãi suất là gì?",
+    "n_sent": 4,
+    "t": "Ví dụ, bạn gửi 100 triệu đồng vào ngân hàng với lãi suất tiền gửi là 5%/năm. Sau một năm, số tiền lãi bạn nhận được là 5 triệu đồng. Trong trường hợp này, 5% chính là lãi suất. Cách tính lãi suất ngân hàng này là cơ sở cho nhiều sản phẩm tài chính khác."
+   },
+   {
+    "i": 36,
+    "h": "Tầm quan trọng của lãi suất đối với nền kinh tế",
+    "n_sent": 3,
+    "t": "Để bảo vệ thị trường và người tiêu dùng, luật pháp Việt Nam quy định rất chặt chẽ về giới hạn lãi suất. Cụ thể, Điều 468 Bộ luật Dân sự 2015 quy định trần lãi suất cho vay trong các giao dịch dân sự không được vượt quá 20%/năm. Mọi giao dịch vượt quá mức trần này đều bị coi là vi phạm pháp luật và không có hiệu lực pháp lý."
+   },
+   {
+    "i": 2,
+    "h": "Lãi suất là gì?",
+    "n_sent": 2,
+    "t": "Lãi suất là gì (hay interest rate trong tiếng Anh) được hiểu là tỷ lệ phần trăm giữa số tiền lãi phải trả hoặc nhận được so với số tiền gốc ban đầu trong một khoảng thời gian nhất định (thường tính theo năm). Đây chính là chi phí mà người vay phải trả cho việc sử dụng vốn, đồng thời là lợi tức sinh lời mà người cho vay hoặc người gửi tiết kiệm nhận được từ khoản tiền của mình."
+   }
+  ]
+ },
+ {
+  "src": "lai-suat-omo-la-gi-giai-ma-cong-cu-dieu-tiet-thi-truong-tien-te-hieu-qua",
+  "src_title": "Lãi suất OMO là gì? Giải mã công cụ điều tiết thị trường tiền tệ",
+  "target": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+  "role": "hub",
+  "target_title": "So sánh chính sách tài khóa và chính sách tiền tệ",
+  "clicks": "0",
+  "anchors": [
+   "chính sách tài khóa và chính sách tiền tệ",
+   "chính sách tài khóa và tiền tệ",
+   "so sánh chính sách tài khóa và chính sách tiền tệ",
+   "chính sách kinh tế vĩ mô",
+   "chính sách vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 24,
+    "h": "Một số lưu ý về lãi suất OMO",
+    "n_sent": 3,
+    "t": "Lãi suất OMO chỉ là một trong nhiều công cụ điều tiết tiền tệ mà NHNN sử dụng. NHNN sẽ phối hợp sử dụng lãi suất OMO với các công cụ khác như lãi suất tái cấp vốn, tỷ lệ dự trữ bắt buộc, v.v. để đạt được mục tiêu chính sách tiền tệ."
+   },
+   {
+    "i": 25,
+    "h": "Một số lưu ý về lãi suất OMO",
+    "n_sent": 2,
+    "t": "Lãi suất OMO có thể thay đổi thường xuyên tùy thuộc vào điều kiện kinh tế vĩ mô. Do đó, các nhà đầu tư và doanh nghiệp cần theo dõi sát sao biến động của lãi suất OMO để có thể đưa ra quyết định đầu tư và kinh doanh phù hợp."
+   },
+   {
+    "i": 16,
+    "h": "Cách thức hoạt động của lãi suất OMO",
+    "n_sent": 4,
+    "t": "NHNN thực hiện giao dịch OMO thông qua các phiên đấu giá được tổ chức trên Sở Giao dịch Chứng khoán TP. Hồ Chí Minh (HOSE). NHTM có thể tham gia đấu giá mua hoặc bán TPCP với các kỳ hạn khác nhau, từ 1 ngày đến 1 năm. Lãi suất trúng thầu trong các phiên đấu giá OMO chính là lãi suất OMO."
+   }
+  ]
+ },
+ {
+  "src": "no-chinh-phu-la-gi",
+  "src_title": "Nợ chính phủ là gì? Tác động đến kinh tế và thị trường chứng khoán",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "0",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 47,
+    "h": "Nhóm ngành hưởng lợi từ Đầu tư công",
+    "n_sent": 2,
+    "t": "Khi Chính phủ vay nợ để đẩy mạnh giải ngân đầu tư công, dòng tiền lớn sẽ chảy trực tiếp vào túi các doanh nghiệp Xây dựng hạ tầng, Vật liệu xây dựng (thép, đá, nhựa đường). Nhà đầu tư có thể đón đầu sóng ngành này khi Chính phủ công bố các gói thầu quy mô lớn."
+   },
+   {
+    "i": 61,
+    "h": "Những lưu ý về nợ chính phủ với nhà đầu tư chứng khoán",
+    "n_sent": 2,
+    "t": "Hiểu về nợ chính phủ giúp bạn không còn là một người ngoài cuộc trước các biến động vĩ mô. Tuy nhiên, để biến những kiến thức này thành lợi nhuận thực tế, bạn cần một người đồng hành chuyên nghiệp để giải mã các con số thành hành động mua/bán cụ thể."
+   },
+   {
+    "i": 14,
+    "h": "Phân loại và cấu trúc nợ chính phủ",
+    "n_sent": 2,
+    "t": "Để quản lý nợ hiệu quả, Chính phủ sử dụng nhiều công cụ khác nhau. Nhà đầu tư chứng khoán cần đặc biệt quan tâm đến kỳ hạn của các công cụ này vì chúng ảnh hưởng trực tiếp đến đường cong lãi suất."
+   }
+  ]
+ },
+ {
+  "src": "no-chinh-phu-la-gi",
+  "src_title": "Nợ chính phủ là gì? Tác động đến kinh tế và thị trường chứng khoán",
+  "target": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+  "role": "hub",
+  "target_title": "So sánh chính sách tài khóa và chính sách tiền tệ",
+  "clicks": "0",
+  "anchors": [
+   "chính sách tài khóa và chính sách tiền tệ",
+   "chính sách tài khóa và tiền tệ",
+   "so sánh chính sách tài khóa và chính sách tiền tệ",
+   "chính sách kinh tế vĩ mô",
+   "chính sách vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 10,
+    "h": "Nợ Chính phủ là gì?",
+    "n_sent": 2,
+    "t": "Khi bạn mua một tờ Trái phiếu Chính phủ, thực chất bạn đang trở thành chủ nợ của Nhà nước. Đây được coi là tài sản an toàn nhất trong nền kinh tế vì khả năng vỡ nợ của một quốc gia là cực kỳ thấp."
+   },
+   {
+    "i": 47,
+    "h": "Nhóm ngành hưởng lợi từ Đầu tư công",
+    "n_sent": 2,
+    "t": "Khi Chính phủ vay nợ để đẩy mạnh giải ngân đầu tư công, dòng tiền lớn sẽ chảy trực tiếp vào túi các doanh nghiệp Xây dựng hạ tầng, Vật liệu xây dựng (thép, đá, nhựa đường). Nhà đầu tư có thể đón đầu sóng ngành này khi Chính phủ công bố các gói thầu quy mô lớn."
+   },
+   {
+    "i": 61,
+    "h": "Những lưu ý về nợ chính phủ với nhà đầu tư chứng khoán",
+    "n_sent": 2,
+    "t": "Hiểu về nợ chính phủ giúp bạn không còn là một người ngoài cuộc trước các biến động vĩ mô. Tuy nhiên, để biến những kiến thức này thành lợi nhuận thực tế, bạn cần một người đồng hành chuyên nghiệp để giải mã các con số thành hành động mua/bán cụ thể."
+   }
+  ]
+ },
+ {
+  "src": "no-chinh-phu-la-gi",
+  "src_title": "Nợ chính phủ là gì? Tác động đến kinh tế và thị trường chứng khoán",
+  "target": "chinh-sach-tai-khoa-la-gi",
+  "role": "sub-hub",
+  "target_title": "Chính sách tài khóa là gì? Tác động đến thị trường chứng khoán",
+  "clicks": "0",
+  "anchors": [
+   "chính sách tài khóa",
+   "chính sách tài khóa là gì",
+   "chính sách tài khóa mở rộng",
+   "chi tiêu công",
+   "thuế và chi tiêu chính phủ"
+  ],
+  "paras": [
+   {
+    "i": 9,
+    "h": "Nợ Chính phủ là gì?",
+    "n_sent": 3,
+    "t": "Hãy tưởng tượng Chính phủ như một hộ gia đình quy mô lớn. Để xây dựng những công trình hạ tầng khổng lồ như đường cao tốc Bắc - Nam hay sân bay Long Thành, nguồn thu từ thuế đôi khi không đủ. Khi đó, Chính phủ phải đi vay từ người dân, doanh nghiệp hoặc các tổ chức quốc tế."
+   },
+   {
+    "i": 61,
+    "h": "Những lưu ý về nợ chính phủ với nhà đầu tư chứng khoán",
+    "n_sent": 2,
+    "t": "Hiểu về nợ chính phủ giúp bạn không còn là một người ngoài cuộc trước các biến động vĩ mô. Tuy nhiên, để biến những kiến thức này thành lợi nhuận thực tế, bạn cần một người đồng hành chuyên nghiệp để giải mã các con số thành hành động mua/bán cụ thể."
+   },
+   {
+    "i": 14,
+    "h": "Phân loại và cấu trúc nợ chính phủ",
+    "n_sent": 2,
+    "t": "Để quản lý nợ hiệu quả, Chính phủ sử dụng nhiều công cụ khác nhau. Nhà đầu tư chứng khoán cần đặc biệt quan tâm đến kỳ hạn của các công cụ này vì chúng ảnh hưởng trực tiếp đến đường cong lãi suất."
+   }
+  ]
+ },
+ {
+  "src": "du-tru-ngoai-hoi-nha-nuoc-la-gi",
+  "src_title": "Dự trữ ngoại hối nhà nước là gì? Thông tin chi tiết từ A - Z",
+  "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích vĩ mô trong đầu tư chứng khoán là gì?",
+  "clicks": "0",
+  "anchors": [
+   "phân tích vĩ mô",
+   "phân tích kinh tế vĩ mô",
+   "phân tích vĩ mô trong đầu tư chứng khoán",
+   "yếu tố vĩ mô",
+   "bối cảnh vĩ mô"
+  ],
+  "paras": [
+   {
+    "i": 52,
+    "h": "Quỹ dự trữ ngoại hối Việt Nam",
+    "n_sent": 3,
+    "t": "Việc dự trữ giảm chủ yếu do NHNN phải bán ngoại tệ để ổn định tỷ giá trong bối cảnh áp lực quốc tế lớn, nhập lậu vàng và găm giữ ngoại tệ gia tăng. Tuy nhiên, dự kiến cuối 2025, dự trữ có thể cải thiện nếu FDI, xuất khẩu và kiều hối phục hồi. Quỹ này bao gồm ngoại tệ mạnh, vàng, SDR và các tài sản thanh khoản cao, đóng vai trò then chốt trong việc duy trì ổn định kinh tế vĩ mô."
+   },
+   {
+    "i": 3,
+    "h": "Dự trữ ngoại hối nhà nước là gì?",
+    "n_sent": 2,
+    "t": "Nói một cách đơn giản, dự trữ ngoại hối là gì? Đó là một \"kho bạc\" gồm các loại tiền tệ của các quốc gia khác và những tài sản có giá trị được chấp nhận trên phạm vi quốc tế mà chính phủ sở hữu, dùng để đối phó với các biến động kinh tế vĩ mô."
+   },
+   {
+    "i": 2,
+    "h": "Dự trữ ngoại hối nhà nước là gì?",
+    "n_sent": 1,
+    "t": "Dự trữ ngoại hối nhà nước (foreign exchange reserves hay forex reserves) là tổng lượng tài sản bằng ngoại tệ và các tài sản có tính thanh khoản cao khác mà Ngân hàng Trung ương của một quốc gia (ví dụ: Ngân hàng Nhà nước Việt Nam) nắm giữ."
+   }
+  ]
+ },
+ {
+  "src": "hieu-ro-ve-khai-niem-gio-hang-va-tac-dong-den-tieu-dung",
+  "src_title": "Giỏ hàng tiêu dùng là gì? Tác động giỏ hàng tiêu dùng tới nền kinh tế",
+  "target": "kinh-te-hoc-vi-mo-la-gi-y-nghia-trong-dau-tu-chung-khoan",
+  "role": "hub",
+  "target_title": "Kinh tế học vi mô là gì? Ý nghĩa trong đầu tư chứng khoán",
+  "clicks": "0",
+  "anchors": [
+   "kinh tế học vi mô",
+   "kinh tế vi mô",
+   "kinh tế vi mô là gì",
+   "hành vi doanh nghiệp và người tiêu dùng",
+   "cung cầu"
+  ],
+  "paras": [
+   {
+    "i": 13,
+    "h": "Tác động của giỏ hàng tiêu dùng đối với kinh tế",
+    "n_sent": 2,
+    "t": "Giỏ hàng tiêu dùng không chỉ là một chỉ số đo lường sự biến động giá cả mà còn phản ánh tình hình kinh tế tổng thể. Khi giá cả của những mặt hàng cơ bản như thực phẩm và năng lượng tăng lên, có thể tạo ra áp lực lớn đối với người tiêu dùng và doanh nghiệp."
+   },
+   {
+    "i": 4,
+    "h": "Giỏ hàng tiêu dùng là gì?",
+    "n_sent": 3,
+    "t": "Giỏ hàng tiêu dùng (Basket of Consumer Goods) là một tập hợp các hàng hóa và dịch vụ mà người tiêu dùng thường xuyên mua để đáp ứng nhu cầu hàng ngày của họ. Điều này bao gồm những thứ như thực phẩm, nước uống, quần áo, điện nước, xăng dầu, và nhiều mặt hàng khác. Chủ yếu, giỏ hàng này đại diện cho những chi phí cố định và biến động mà người tiêu dùng phải chi trả hàng tháng."
+   },
+   {
+    "i": 14,
+    "h": "Tác động của giỏ hàng tiêu dùng đối với kinh tế",
+    "n_sent": 2,
+    "t": "Ngoài ra, CPI cũng có ảnh hưởng lớn đến quyết định chính sách kinh tế. Các chính trị gia và ngân hàng trung ương thường xuyên theo dõi CPI để đưa ra quyết định về lãi suất và các biện pháp khác để kiểm soát lạm phát và duy trì ổn định kinh tế."
+   }
+  ]
+ }
+]

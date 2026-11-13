@@ -5,204 +5,126 @@ description: Tối ưu bài cũ — Brand audit + rewrite + QA (Seven Sweeps Fra
 
 # Tối Ưu Bài Viết Cũ (Optimize)
 
-## Options Hỗ Trợ
-- `--step`: Tối ưu chi tiết từng bước — dừng chờ `/approve` sau Proposal.
-- `--auto`: Tối ưu nhanh — tự động chốt Proposal và rewrite không cần duyệt.
+> **Nguồn quy trình duy nhất** cho `/optimize`. `.antigravity/skills/seo-optimization/` chỉ còn chứa template Proposal + tài liệu tham khảo — không cần mở `SKILL.md` của nó.
+
+## Options
+- `--step`: dừng chờ `/approve` sau Proposal.
+- `--auto`: tự chốt Proposal và rewrite không cần duyệt.
+
+Input: `/optimize chi-so-ps` · `/optimize https://www.dsc.com.vn/kien-thuc/chi-so-ps` · `/optimize Final-chi-so-ps.md`.
 
 ## Nhiệm vụ
-Cập nhật và tối ưu lại một bài viết cũ đang tồn tại để tăng thứ hạng, đảm bảo tính cập nhật của Brand và tiêu chuẩn SEO mới. Không xóa trắng viết lại — giữ "SEO Juice" của bài gốc.
+Cập nhật bài đang publish để tăng thứ hạng, đúng Brand và chuẩn SEO mới. Không xóa trắng viết lại — giữ "SEO Juice" của bài gốc: không đổi slug, không đổi H1 nếu Proposal không ghi.
 
 ---
 
-## Quy trình thực thi chi tiết (Agent Sequencing)
+### 🔄 Bước 0: System Context Load (BẮT BUỘC — 1 lần/session)
+1. `knowledge/1-brand/profile.md` · `knowledge/1-brand/service-operations.md`
+2. `knowledge/3-pipeline/anti-ai-rules.md` · `knowledge/3-pipeline/glossary.md`
+3. `.antigravity/memory/instincts.md` (+ `instincts-by-scope/<topic>.md` nếu có) + `python scripts/optimize_instincts.py --show [slug]` (ghi chú ARTICLE của chính bài này). Không mở `instincts-archive.md`.
+4. Lịch sử sửa bài: `grep -rn "[slug]" knowledge/3-pipeline/revision-log*` (không đọc cả file). Outline gốc nếu có: `python scripts/article_snapshot.py [slug] --path outline`
+5. Bài gốc `knowledge/4-content/3-finalized/Final-[slug].md` (chưa có → Bước 1.1)
+6. Persona — `python scripts/persona.py P<n>` sau Bước 1.2 (không mở `personas.md`)
 
-### 🔄 Bước 0: System Context Load (BẮT BUỘC — trước mọi bước)
-1. `knowledge/1-brand/profile.md` — Brand identity, USPs hiện tại
-2. `knowledge/1-brand/personas.md` — **chỉ đọc section persona được chọn** sau Bước 1.2 (không load cả 4 persona)
-3. `knowledge/1-brand/service-operations.md` — Thông tin sản phẩm/dịch vụ mới nhất
-4. `knowledge/3-pipeline/anti-ai-rules.md` — Bộ quy tắc Anti-AI
-5. `knowledge/3-pipeline/glossary.md` — Thuật ngữ chuẩn thương hiệu
-6. `knowledge/3-pipeline/revision-log.md` — **chỉ grep theo `[slug]`** (`grep -n "[slug]" knowledge/3-pipeline/revision-log.md`), không đọc cả file
-7. `.antigravity/memory/instincts.md` — Bản năng rút gọn (+ `instincts-by-scope/<topic>.md` nếu có)
-8. `knowledge/4-content/3-finalized/Final-[slug].md` — Bài gốc cần tối ưu
-
-> Đây là lần load context **duy nhất** trong session. Các bước sau (kể cả QA ở Bước 5) không đọc lại các file này.
+Các bước sau (kể cả QA ở Bước 5) không đọc lại các file này.
 
 ---
 
-### ⚙️ Bước 1: Intake & Persona Declaration (BẮT BUỘC trước mọi audit)
+### ⚙️ Bước 1: Intake & Persona
 
-**Bước 1.1 — Intake & Tracking:**
-- Xác nhận file gốc tồn tại tại `knowledge/4-content/3-finalized/Final-[slug].md`. Nếu không tìm thấy: DỪNG và hỏi người dùng.
-- **Đối chiếu với bản live (BẮT BUỘC)** — bài có thể đã được sửa thẳng trên CMS sau khi finalize (vd. đợt chèn internal link):
+**1.1 — Bản gốc & baseline**
+- Đồng bộ bản live (bài có thể đã sửa thẳng trên CMS):
   ```bash
-  python scripts/sync_live.py --only [slug]      # lấy bản đang publish
+  python scripts/sync_live.py --only [slug]      # bản đang publish → knowledge/raw/live/html/[slug].html
   python scripts/sync_live.py --compare [slug]   # link chỉ có trên live + độ lệch văn bản
   ```
-  Mọi link "chỉ có trên live" **phải được giữ** trong bản Optimize. Độ giống < 90% → báo user: live đã khác Final đáng kể, đề xuất dùng nội dung live (`knowledge/raw/live/html/[slug].html`) làm bản gốc trước khi optimize.
-- `python scripts/topic_status.py [slug] --set Optimizing` (không đọc `topic-clusters.md`).
-- **Đo baseline bài cũ** (ghi lại số để so sánh ở Bước 5 — bản optimize không được tệ hơn):
+  - **Chưa có `Final-[slug].md`:** dùng `knowledge/raw/live/html/[slug].html` làm bản gốc (giữ nguyên 100% ảnh, heading, bảng), lưu thành `Final-[slug].md` với front matter `source: https://www.dsc.com.vn/kien-thuc/[slug]` + `fetched_at`. Slug không có trên live → dừng, báo user.
+  - Link "chỉ có trên live" **phải giữ** trong bản Optimize. Độ giống < 90% → báo user, đề xuất dùng nội dung live làm bản gốc.
+- `python scripts/topic_status.py [slug] --set Optimizing`
+- Baseline (bản optimize không được tệ hơn):
   ```bash
-  python scripts/qa_lint.py knowledge/4-content/3-finalized/Final-[slug].md --no-sitemap   # lỗi cơ học
-  python scripts/slop_check.py knowledge/4-content/3-finalized/Final-[slug].md -v          # nhịp, bằng chứng, trùng khung
-  python scripts/market_facts.py --verify knowledge/4-content/3-finalized/Final-[slug].md  # số liệu sai / cũ hơn 18 tháng
-  python scripts/news_feed.py --topic "[keyword]" --days 30                                # sự kiện mới để cập nhật bài
+  python scripts/qa_lint.py knowledge/4-content/3-finalized/Final-[slug].md --no-sitemap
+  python scripts/slop_check.py knowledge/4-content/3-finalized/Final-[slug].md -v
+  python scripts/market_facts.py --verify knowledge/4-content/3-finalized/Final-[slug].md
+  python scripts/news_feed.py --topic "[keyword]" --days 30
   ```
-  `FACT-stale` ở bài cũ là tín hiệu refresh mạnh nhất: bài đang nêu số liệu không còn đúng. `news_feed` cho mốc sự kiện có ngày để thay các câu "thời gian gần đây".
-- Tạo working copy: `knowledge/4-content/2-drafts/Optimize-[slug].md`.
-  - Toàn bộ chỉnh sửa diễn ra trên bản copy này. Bài gốc không bị chạm đến.
+  `FACT-stale` = tín hiệu refresh mạnh nhất. `news_feed` cho mốc sự kiện có ngày thay cho "thời gian gần đây".
+- Working copy: `knowledge/4-content/2-drafts/Optimize-[slug].md` — mọi chỉnh sửa trên bản này.
 
-**Bước 1.2 — Intent & Persona Declaration (BẮT BUỘC — thực hiện trước khi chạy bất kỳ audit nào):**
-
-Đọc bài gốc + `personas.md`, sau đó xác định và **ghi rõ** 4 thông số sau. Đây là "hiến pháp" cho toàn bộ quá trình optimize — mọi quyết định rewrite phải nhất quán với 4 thông số này:
-
+**1.2 — Content Strategy Header (BẮT BUỘC trước mọi audit)**
+Đọc bài gốc + persona, ghi rõ — đây là "hiến pháp" cho mọi quyết định rewrite:
 ```
-TARGET KEYWORD : [từ khóa chính của bài]
-SEARCH INTENT  : [Informational / Transactional / Commercial / Navigational]
-               → [Mô tả cụ thể: người dùng đang tìm gì, ở giai đoạn nào trong hành trình quyết định?]
-PERSONA        : [P1 / P2 / P3 / P4] — [Tên persona]
-               → [1 câu mô tả tại sao bài này phục vụ đúng persona này, không phải persona khác]
-PRODUCT BRIDGE : [Tên sản phẩm DSC phù hợp] — [Góc dẫn dắt tự nhiên]
+TARGET KEYWORD : [từ khóa chính]
+SEARCH INTENT  : [Informational / Transactional / Commercial / Navigational] → [người đọc tìm gì, ở giai đoạn nào]
+PERSONA        : [P1–P4] — [tên] → [vì sao đúng persona này]
+PRODUCT BRIDGE : [sản phẩm DSC] — [góc dẫn dắt]
 ```
-
-> **Nếu bài gốc đang phục vụ sai intent hoặc sai persona so với keyword:** Ghi rõ sự lệch lạc này vào Proposal (Section 0) và đề xuất hướng chỉnh — KHÔNG âm thầm giữ sai intent khi rewrite.
+Bài gốc lệch intent/persona → ghi vào Proposal Section 0 và đề xuất hướng chỉnh, không âm thầm giữ sai.
 
 ---
 
-### ⚙️ Bước 2: Audit (Thu thập bối cảnh & Khám bệnh)
+### ⚙️ Bước 2: Audit
 
-**Bước 2.1 — SEO Collector (SERP Competitor Analysis & Ultra-lightweight Script Crawl):**
-- Kích hoạt agent `.antigravity/agents/seo-collector.md` (chỉ Step 1: SERP Research, không tạo Outline).
-- **Quy trình thu thập & cào cấu trúc đối thủ tiết kiệm Token (Token-Efficient Flow):**
-  1. **SERP Lookup (DataForSEO)**: `python .antigravity/skills/web-serp/scripts/serp_research.py "<keyword>" --top 5` → top 5 URLs Google VN + PAA + Featured Snippet (cache 30 ngày, không dùng `--no-cache`). Bỏ URL của chính dsc.com.vn.
-     - **PAA refresh (bắt buộc ghi vào Proposal):** đối chiếu từng câu trong block `### People Also Ask` với FAQ + heading của bài cũ. Câu chưa có → `[THÊM MỚI]` vào FAQ (câu đầu ≤ 60 từ, có số liệu + mốc thời gian) hoặc nâng thành H2/H3 nếu thuộc intent chính; câu FAQ cũ không còn trong PAA và không có traffic GSC → cân nhắc `[XÓA BỎ]`. Nếu `Google answer` đang thuộc đối thủ, viết đáp án ngắn hơn/cụ thể hơn đoạn đó. Ghi `PAA_Questions:` vào YAML của Proposal để `qa_lint.py --outline` đối chiếu ở Bước 5.
-  2. **Automated Crawl & Filter (Chạy Script python `scripts/analyze_competitors.py`)**:
-     - Chạy lệnh: `python scripts/analyze_competitors.py <url1> <url2> <url3> ...`
-     - Script sẽ tự động xác thực HTTP status, **bỏ qua ngay lập tức** các URL lỗi (4xx, 5xx) hoặc các URL có dung lượng quá ít (thin content / link rác / error redirect < 200 từ).
-     - Script chỉ bóc tách cấu trúc Headings (H1, H2, H3, H4) và thống kê Word Count từng section, loại bỏ toàn bộ HTML rác/nav/header/footer để **tối ưu 95%+ token** (không load toàn bộ raw page vào context).
-  3. **Đọc báo cáo kết quả**: Sử dụng kết quả xuất ra tại console hoặc file `knowledge/raw/competitors_analysis.json` để điền trực tiếp vào Section 2 của Proposal.
+**2.1 — SERP & đối thủ** (làm trực tiếp — không cần mở `seo-collector.md`, `seo-outlining/SKILL.md` hay `brief-template.md`)
+1. `python .antigravity/skills/web-serp/scripts/serp_research.py "<keyword>" --top 10 --extract 5` (cache 30 ngày, không `--no-cache`; trang dsc.com.vn tự bị loại khỏi phần so sánh).
+   - **Topic Coverage → khối máy đọc của Proposal:** `Thuật ngữ BẮT BUỘC phủ` → `Entities:` (bỏ cụm nào ghi `Entities_Skipped`); `Chủ đề con nhiều đối thủ cùng có` mà bài chưa có → `[THÊM MỚI]` ở Section 5; `Nguồn đối thủ trích` → nguồn gốc cần link.
+   - **Information_Gain (≥ 2 mục có `proof`):** điều bản mới sẽ có mà top 5 không có. Bài gốc không có gì riêng → đây là việc chính của lần optimize, không phải sửa câu chữ.
+   - **PAA refresh (ghi vào Proposal):** câu PAA chưa có trong bài → `[THÊM MỚI]` vào FAQ (câu đầu ≤ 60 từ, có số + mốc thời gian) hoặc nâng thành H2/H3 nếu thuộc intent chính. Câu FAQ cũ không còn trong PAA và không có traffic GSC → cân nhắc `[XÓA BỎ]`. `Google answer` thuộc đối thủ → viết đáp án ngắn và cụ thể hơn. Ghi `PAA_Questions:` vào YAML Proposal.
+2. `python scripts/analyze_competitors.py <url1> <url2> …` → heading + số từ từng section (tự bỏ URL lỗi/thin). Kết quả in console + `knowledge/raw/competitors_analysis.json` → điền Section 2.
 
-**Bước 2.2 — Brand Guardian (Anti-AI + Brand Audit):**
-- Kích hoạt agent `.antigravity/agents/brand-guardian.md`.
-- Phân tích bài cũ: tìm vi phạm anti-ai-rules, thông tin sản phẩm lỗi thời, giọng văn sai persona.
-- Output: danh sách lỗi cụ thể (dòng, loại lỗi, gợi ý sửa).
+**2.2 — Brand Guardian** (`.antigravity/agents/brand-guardian.md`): vi phạm anti-AI, thông tin sản phẩm lỗi thời, giọng sai persona → danh sách (dòng, loại lỗi, gợi ý sửa).
 
-**Bước 2.3 — GSC Performance Audit:**
+**2.3 — GSC** (không block — không có data thì bỏ qua). Playbook: `.antigravity/skills/seo-dashboard/SKILL.md`.
+- Có MCP `SEO Dashboard`: `query_search_analytics` (`property_url: "sc-domain:dsc.com.vn"`, `dimensions: ["query"]`, `page_value: "/kien-thuc/[slug]"`, `days: 90`, `compare_mode: "prev_period"`, `limit: 30`) → lưu JSON `scratch/dashboard-pq.json` → `python scripts/dashboard_cache.py save page-queries [slug] --file scratch/dashboard-pq.json`.
+  Cannibalization: thêm `query_search_analytics` (`dimensions: ["page"]`, `query_value: "[keyword]"`, `days: 90`, `limit: 10`) — URL DSC khác nhận impressions đáng kể → Section 0.
+- Mọi agent: `python scripts/dashboard_cache.py report [slug]` → dán block vào Proposal Section 1 (`📊 GSC Performance Context`). Từ đó: CTR < 3% → flag rewrite Title; tối đa 5 query clicks ≥ 5, position ≤ 20 chưa được bài phục vụ → đề xuất thêm H2/section hoặc đưa vào sapo. **Exit 3 (chưa có cache) → ghi `[GSC] Chưa có data — bỏ qua`**.
 
-> Bước này không block workflow — nếu không có data thì bỏ qua hoàn toàn.
-
-**Part A — Performance Metrics (3 cấp lookup):**
-
-Cấp 0 (ưu tiên — có kỳ so sánh): SEO Dashboard. Playbook đầy đủ: `.antigravity/skills/seo-dashboard/SKILL.md`.
-  - Agent có MCP `SEO Dashboard` → gọi `query_search_analytics` (`property_url: "sc-domain:dsc.com.vn"`, `dimensions: ["query"]`, `page_value: "/kien-thuc/[slug]"`, `days: 90`, `compare_mode: "prev_period"`, `limit: 30`) → ghi nguyên JSON vào `scratch/dashboard-pq.json` → `python scripts/dashboard_cache.py save page-queries [slug] --file scratch/dashboard-pq.json`.
-  - Mọi agent (kể cả không có MCP): `python scripts/dashboard_cache.py report [slug]` → dán nguyên block in ra vào Proposal Section 1. Exit 3 = chưa có cache → xuống Cấp 1.
-  - Cannibalization: gọi thêm `query_search_analytics` (`dimensions: ["page"]`, `query_value: "[keyword]"`, `days: 90`, `limit: 10`) — có URL DSC khác cùng nhận impressions đáng kể → ghi vào Section 0 của Proposal.
-
-Cấp 1: Tìm `[slug]` trong `knowledge/3-pipeline/gsc-opportunities.md`
-  - Tìm thấy → dùng data pre-processed (đã có opportunity analysis đầy đủ)
-
-Cấp 2 (fallback): Tìm URL `https://www.dsc.com.vn/kien-thuc/[slug]` trong `knowledge/raw/gsc/pages.csv`
-  - Tìm thấy → lấy raw metrics: clicks, impressions, ctr, position
-  - Không tìm thấy hoặc file CSV không tồn tại → log `[GSC] Chưa có data cho bài này — bỏ qua` và chuyển sang Bước 3
-
-Nếu có data → bổ sung vào **Proposal Section 1** dưới heading `📊 GSC Performance Context`:
-```
-📊 GSC Performance Context:
-- Impressions: [X] | CTR: [Y]% | Position: [Z]
-- Flag title rewrite: [CÓ nếu CTR < 3%] / [KHÔNG]
-- Keyword ngủ quên (từ knowledge/raw/gsc/queries.csv, lọc theo page URL này):
-  → "[query 1]" — [clicks] clicks, pos [pos] — Đề xuất: thêm H2/section
-  → "[query 2]" — [clicks] clicks, pos [pos] — Đề xuất: thêm vào intro/body
-  (Chỉ liệt kê tối đa 5 queries có clicks ≥ 5 và position ≤ 20)
-```
-
-**Part B — Backfill Link Opportunities:**
-
-Mục tiêu: tìm bài published khác nên link ĐẾN bài đang optimize.
-
-Quy trình (1 lệnh, không đọc `anchor-index.md` hay file Final nào):
-```bash
-python scripts/find_links.py --backfill [slug] --top 5
-```
-Script tự: quét toàn bộ bài **live** (snapshot `knowledge/raw/live`), lọc bài chưa có link ngữ cảnh tới `https://www.dsc.com.vn/kien-thuc/[slug]` (bài chỉ link qua dòng Xem thêm được đánh dấu để chuyển vào câu), ưu tiên clicks từ `knowledge/raw/gsc/pages.csv` (nếu có), và trả về **mục + đoạn** có thể bọc anchor. Sửa trên CMS rồi `sync_live.py --only <slug nguồn>`. Bạn chỉ chọn anchor text từ trích đoạn đó (KHÔNG dùng exact match keyword).
-
-Bổ sung vào Proposal dưới heading `📎 Backfill Link Suggestions`:
-```
-📎 Backfill Link Suggestions:
-| Bài nguồn (slug) | Đoạn gợi ý chèn link | Anchor text | Clicks/kỳ |
-|------------------|----------------------|-------------|-----------|
-| [source-slug]    | "[...trích đoạn...]" | "[anchor]"  | [N]       |
-```
-
-Bỏ qua Part B hoàn toàn nếu script trả về "Không có bài nào phù hợp".
+**2.4 — Backfill link tới bài này:** `python scripts/find_links.py --backfill [slug] --top 5` (quét snapshot live, kèm mục + đoạn bọc anchor được). Ghi bảng `📎 Backfill Link Suggestions` (Bài nguồn · Đoạn · Anchor · Clicks) vào Proposal; anchor lấy từ trích đoạn, không exact-match keyword. Script báo "Không có bài nào phù hợp" → bỏ qua.
 
 ---
 
-### ⚙️ Bước 3: Proposal (Đề xuất Tối ưu)
-- Kích hoạt skill `.antigravity/skills/seo-optimization/SKILL.md` → Phase 1: Audit & Proposal.
-- Tổng hợp kết quả từ Bước 2.1 và 2.2.
-- Xuất **Báo cáo Đề xuất** theo đúng template tại `.antigravity/skills/seo-optimization/assets/proposal-template.md`.
+### ⚙️ Bước 3: Proposal
+Điền đúng template `.antigravity/skills/seo-optimization/assets/proposal-template.md`, tổng hợp Bước 2:
+- Đánh giá sơ bộ theo 7 Sweeps (danh sách ở Bước 4).
+- Section 2.2: **mỗi** đối thủ đã crawl một block — không gộp. Section 2.3: trích heading/angle cụ thể của đối thủ phục vụ intent bài đang bỏ sót. Section 5: mỗi `[THÊM MỚI]` ghi học từ Competitor nào.
+- Section 7.1: kê khai **toàn bộ** ảnh gốc. Section 7.2: 1–3 vị trí ảnh mới.
+- Nhãn từng heading: `[GIỮ NGUYÊN]` / `[CẬP NHẬT]` / `[XÓA BỎ]` / `[THÊM MỚI]`.
+- Điền **khối máy đọc đầu file** (`Target_Keyword`, `Thesis`, `Entities`, `Information_Gain`, `Featured_Snippet`, `PAA_Questions`) — `qa_gate` ở Bước 5 đối chiếu bản Optimize với khối này.
+- **Giới hạn tái cấu trúc theo thứ hạng** (bài học rollback pillar `cach-dau-tu-chung-khoan`, 10/2026: đổi khung bài đang top 3 làm vị trí 6,4 → 11,5): GSC ở Bước 2.3 cho thấy keyword chính đang ở **vị trí trung bình ≤ 5** → Proposal chỉ được `[GIỮ NGUYÊN]` / `[CẬP NHẬT]` số liệu / `[THÊM MỚI]` mục còn thiếu; **không đổi H1, không đổi thứ tự hay gộp/xoá H2 đang có**. Muốn làm khác → ghi rõ rủi ro ở Section 0 và chờ user đồng ý.
+- **Tự kiểm trước khi in** (`outline_lint` không đọc được Proposal): Title ≤ 59 ký tự có keyword · Meta 140–160 ký tự có keyword + CTA · văn bản Proposal cũng theo anti-AI (không ngoặc kép nhấn mạnh, không cụm trong blacklist, không opener/closer vĩ mô).
 
-**Ràng buộc bắt buộc khi điền proposal:**
-- **Section 2.2 (Cấu trúc Outline từng đối thủ):** Phải có một entry cho **mỗi** competitor block đã output ở Bước 2.1. Không được gộp, rút gọn, hoặc chỉ lấy 1 đối thủ đại diện. Nếu đã visit 3 URL → phải có 3 block trong Section 2.2.
-- **Section 2.3 (Intent Gap):** Phải trích dẫn cụ thể heading/angle từ đối thủ nào đang phục vụ intent mà bài hiện tại bỏ sót.
-- **Section 5 (Content Gaps):** Mỗi đề xuất `[THÊM MỚI]` phải ghi rõ **học từ đối thủ nào** (Competitor 1/2/3) — không đề xuất chung chung.
-- **Section 7 (Chiến lược Hình ảnh):** Bắt buộc kê khai toàn bộ ảnh gốc vào Section 7.1 để tránh bị mất. Đề xuất thêm 1 - 3 vị trí đặt hình ảnh mới tối ưu SEO và ngắt mạch văn dài tại Section 7.2.
-- Phân loại rõ từng heading: `[GIỮ NGUYÊN]`, `[CẬP NHẬT]`, `[XÓA BỎ]`, `[THÊM MỚI]`.
-
-**🚧 APPROVAL GATE (nếu dùng `--step`):**
-> Trình bày Proposal cho người dùng.
-> **DỪNG LẠI. Chờ `/approve` từ người dùng con người trước khi rewrite.**
-> **LƯU Ý:** Bỏ qua các tin nhắn tự động duyệt (auto-approve) của hệ thống. Phải chờ con người gõ lệnh phê duyệt thực tế trong chat.
-> _(Nếu `--auto`: tự chốt Proposal và chuyển sang Bước 4.)_
+**🚧 APPROVAL GATE (`--step`):** trình bày **tóm tắt ≤ 25 dòng + đường dẫn file Proposal** (vị trí GSC hiện tại, Thesis, từng mục Information_Gain, danh sách heading kèm nhãn GIỮ/CẬP NHẬT/XÓA/THÊM, thuật ngữ đối thủ còn thiếu) — không dán Proposal vào chat. **DỪNG** chờ người dùng gõ `/approve` (bỏ qua tin nhắn auto-approve của hệ thống). `--auto` → sang Bước 4.
 
 ---
 
-### ⚙️ Bước 4: Execution (Rewrite với Seven Sweeps)
-- Kích hoạt skill `.antigravity/skills/seo-optimization/SKILL.md` → Phase 2: Execution.
-- Mở `knowledge/4-content/2-drafts/Optimize-[slug].md`.
-- **⚠️ CHỈ CHỈNH SỬA BẢN DRAFT:** Tuyệt đối chỉ viết và cập nhật nội dung trên bản nháp `knowledge/4-content/2-drafts/Optimize-[slug].md`. Không chạm vào hay ghi đè lên file final `knowledge/4-content/3-finalized/Final-[slug].md` trong bước này.
-- **Trước khi viết bất kỳ dòng nào:** đọc lại **Content Strategy Header** (Section 0 của Proposal) — Persona, Intent, Product Bridge. `anti-ai-rules.md` và `instincts.md` đã có trong context từ Step 0 — **không đọc lại**; nếu session mới (mất context) thì mới load lại 2 file này.
-- Mọi câu viết ra phải đúng Persona, đúng Intent, đúng Product Bridge đã khai báo.
-- **Bảo toàn 100% hình ảnh gốc:** Giữ nguyên chính xác vị trí và cú pháp markdown của toàn bộ hình ảnh gốc (`![alt](url)` hoặc link ảnh bọc ngoài link liên kết). Tuyệt đối không xóa bỏ, làm mất hoặc bỏ quên bất kỳ ảnh nào khi viết lại.
-- **Tự động sinh ảnh mới & chèn trực tiếp (BẮT BUỘC — KHÔNG chỉ để placeholder):**
-  1. Ngay tại Bước 4 (Execution), đối với các vị trí đề xuất ảnh mới tại Section 7.2 của Proposal, kích hoạt skill `image` (`.agents/skills/image/SKILL.md` / tool `generate_image`) để sinh ảnh trực tiếp.
-  2. Prompt sinh ảnh tuân thủ nghiêm ngặt DSC Brand Rules: 3D Vector Isometric / Abstract Finance, palette `#00AD14`, `#2BE841`, `#10E7B3`, `#0D1B2A`, `no-text: true` (`Absolutely NO TEXT, NO WORDS, NO LETTERS, NO NUMBERS`), tuyệt đối cấm màu đỏ (`NO RED COLOR`).
-  3. Sao chép toàn bộ file ảnh tạo ra vào thư mục `knowledge/4-content/images/` với tên file chuẩn `[slug]-[concept].jpg`.
-  4. Chèn trực tiếp đường dẫn Markdown ảnh tương đối chuẩn vào bài nháp: `![Alt text tối ưu SEO chứa keyword](../images/[slug]-[concept].jpg)`.
-- **CRO / CTA Banner (BẮT BUỘC):**
-  1. Kích hoạt skill `.antigravity/skills/cro-optimization/SKILL.md`.
-  2. Persona / Intent / Product Bridge **đọc thẳng từ Content Strategy Header** (Section 0 của Proposal) — không suy luận lại.
-  3. Dựng đoạn Product Bridge nếu bài gốc chưa có, rồi chèn banner theo giới hạn của persona. **P4: không banner**, chỉ link text.
-  4. Rule đầy đủ: `.antigravity/rules/cta-conversion.md`.
-- Áp dụng tuần tự 7 bước quét (Clarity → Voice → So What → Prove It → Specificity → Emotion → Zero Risk).
-- Chỉ sửa các phần được gắn nhãn `[CẬP NHẬT]`, `[XÓA BỎ]`, `[THÊM MỚI]` trong Proposal. Không chạm vào `[GIỮ NGUYÊN]`.
+### ⚙️ Bước 4: Execution (rewrite với 7 Sweeps)
+- **Chỉ sửa `Optimize-[slug].md`.** Không chạm `3-finalized/` ở bước này.
+- Trước khi viết: đọc lại Content Strategy Header. `anti-ai-rules.md` + `instincts.md` đã có trong context — chỉ load lại nếu session mới.
+- Chỉ sửa phần gắn `[CẬP NHẬT]` / `[XÓA BỎ]` / `[THÊM MỚI]`; `[GIỮ NGUYÊN]` không chạm.
+- **Ảnh:** giữ nguyên vị trí và cú pháp 100% ảnh gốc. Vị trí ảnh mới ở Section 7.2 → chạy skill `/image` (`.agents/skills/image/SKILL.md` — prompt, palette, luật cấm chữ/cấm đỏ nằm ở đó), lưu `knowledge/4-content/images/[slug]-[concept].jpg`, chèn thẳng `![alt có keyword](../images/[slug]-[concept].jpg)` — không để placeholder.
+- **Internal link:** URL tuyệt đối `https://www.dsc.com.vn/...`, lấy từ `find_links.py` (không đoán slug); `qa_gate` kiểm khớp sitemap.
+- **CRO (BẮT BUỘC):** `.antigravity/skills/cro-optimization/SKILL.md` — Persona/Intent/Bridge đọc từ Content Strategy Header; dựng Product Bridge nếu thiếu, chèn banner theo giới hạn persona (**P4: không banner**, chỉ link text). Rule: `.antigravity/rules/cta-conversion.md`.
+- **7 Sweeps** theo thứ tự:
+  1. **Clarity** — một câu một ý, bỏ thuật ngữ không cần.
+  2. **Voice** — POV chuyên gia DSC, đúng persona.
+  3. **So What** — tính năng → lợi ích người đọc.
+  4. **Prove It** — số liệu có nguồn + thời điểm (`market_facts.py --brief`), không tự nhớ.
+  5. **Specificity** — thay "tốt, nhanh, rẻ" bằng số hoặc ví dụ.
+  6. **Emotion** — chạm pain point / mục tiêu của persona.
+  7. **Zero Risk** — trả lời lo ngại, bước tiếp theo rõ ràng.
+- Từ cấm, câu dài, đoạn dài, định dạng list: để `qa_gate` bắt ở Bước 5 — không grep tay.
 
 ---
 
 ### ⚙️ Bước 5: QA 3 tầng (BẮT BUỘC trước khi trình bày)
-- **Tầng A — lint** (kiểm tra luôn bảo toàn ảnh gốc):
+- **Tầng A + B + dữ liệu — 1 lệnh** (kiểm cả bảo toàn ảnh gốc; Proposal tự tìm theo slug):
   ```bash
-  python scripts/qa_lint.py knowledge/4-content/2-drafts/Optimize-[slug].md --original knowledge/4-content/3-finalized/Final-[slug].md --outline knowledge/4-content/1-outlines/Proposal-[slug].md --cta --fix
+  python scripts/qa_gate.py knowledge/4-content/2-drafts/Optimize-[slug].md --original knowledge/4-content/3-finalized/Final-[slug].md --cta --fix --all
   ```
-  (`--outline` trỏ tới Proposal để lint check `PAA-missing` / `FAQ-*`; bỏ nếu Proposal không có `PAA_Questions:`.)
-  Exit 1 → sửa đúng các dòng CRITICAL/MAJOR, chạy lại. Chưa gọi Quality Guardian khi lint chưa PASS.
-- **Tầng B — slop check (BLOCKING):**
-  ```bash
-  python scripts/slop_check.py knowledge/4-content/2-drafts/Optimize-[slug].md -v
-  ```
-  Exit 1 (score < 80) → sửa theo rule `SLOP-*` được báo (`anti-ai-rules.md` §8.7). **Slop score phải ≥ baseline đo ở Bước 1.1** — tối ưu mà nhịp/bằng chứng tệ hơn bài cũ là hồi quy, không phải cải thiện.
-- **Tầng dữ liệu — fact check:**
-  ```bash
-  python scripts/market_facts.py --verify knowledge/4-content/2-drafts/Optimize-[slug].md
-  ```
-  Mọi `FACT-*` có ở baseline **phải sạch** ở bản optimize — làm mới số liệu là mục đích chính của `/optimize`. Exit 3 = nguồn chết, bỏ qua.
-- Tầng A + B PASS → kích hoạt agent `.antigravity/agents/quality-guardian.md`. QA chỉ đọc thêm `Optimize-[slug].md` + Content Strategy Header — **không đọc lại** `anti-ai-rules.md` / `glossary.md` / `instincts.md` (đã có từ Step 0).
-- Kết quả PASS → tiếp tục. FAIL → sửa và QA lại **tối đa 2 vòng**; sau vòng 2 vẫn FAIL → dừng, trình bày kèm `⚠️ Remaining issues`.
-- **⚠️ KHÔNG TỰ Ý FINALIZE:** Dừng lại tại đây để trình bày bản Optimize nháp đã đạt QA. Không được ghi đè bản Optimize nháp lên file Final ở `3-finalized/`. Việc này chỉ được thực hiện ở lệnh `/approve` tiếp theo.
+  FAIL → sửa đúng dòng được báo, chạy lại. `SLOP-*`: cách sửa ở `anti-ai-rules.md` §8.7. **Slop score ≥ baseline Bước 1.1**; mọi `FACT-*` có ở baseline phải sạch.
+- Gate PASS → Self-audit ngữ nghĩa (`anti-ai-rules.md` §6) → agent `.antigravity/agents/quality-guardian.md` (chỉ đọc `Optimize-[slug].md` + Content Strategy Header). Sau vòng 1: `qa_gate.py <file> --mark-qg`; vòng 2 QG chỉ đọc `qa_gate.py <file> --changed`.
+- `python scripts/article_snapshot.py [slug] --stage gate2` trước khi trình bày.
+- FAIL → sửa và QA lại **tối đa 2 vòng**; vẫn FAIL → dừng, trình bày kèm `⚠️ Remaining issues`.
 
-**🚧 APPROVAL GATE 2:**
-> Trình bày bản Optimize đã QA PASS cho người dùng.
-> **DỪNG LẠI. Chờ người dùng con người đọc và gõ `/approve` trực tiếp.**
-> **LƯU Ý:** Tuyệt đối không tự động ghi đè lên thư mục `3-finalized/` hoặc đánh dấu `Finalized` trước khi có sự chấp thuận rõ ràng của người dùng con người.
-> Khi approve: xử lý theo workflow `/approve` (ghi đè lên Final, chạy cơ chế learn/feedback loop, xóa bản nháp và proposal, update topic-clusters).
+**🚧 APPROVAL GATE 2:** trình bày **tóm tắt ≤ 25 dòng + đường dẫn file** (dòng gate: score · coverage · trust · slop so với baseline; từng mục Information_Gain kèm câu trích; các H2 đã đổi; Remaining issues) — không dán bài vào chat. **DỪNG** chờ người dùng đọc và gõ `/approve` — không tự ghi đè `3-finalized/`, không tự đánh dấu `Finalized`.
+Khi approve: theo `/approve` (ghi đè Final, `article_snapshot --stage final` chuyển Proposal vào `archive/[slug]/`, xóa `Optimize-[slug].md` — đã có bản `gate2`, chạy learn/feedback loop, update topic-clusters).

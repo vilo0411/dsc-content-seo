@@ -1,0 +1,916 @@
+{
+ "title": "Vĩ mô & Chính sách — câu mới chứa link về pillar/hub",
+ "edits": [
+  {
+   "src": "do-co-gian-cua-cau-theo-gia-la-gi",
+   "op": "append",
+   "find": "hoảng thì các mặt hàng đó vẫn rất khó để giảm đi lượng cầu.",
+   "to": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "sentence": "Đây là một [yếu tố vĩ mô] nhà đầu tư cần xét khi đánh giá sức chống chịu của một nền kinh tế trước khủng hoảng.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=47"
+  },
+  {
+   "src": "do-co-gian-cua-cau-theo-gia-la-gi",
+   "op": "append",
+   "find": "những thông tin quan trọng để tối đa hóa lợi nhuận công ty.",
+   "to": "kinh-te-hoc-vi-mo-la-gi-y-nghia-trong-dau-tu-chung-khoan",
+   "sentence": "Trong [kinh tế học vi mô], độ co giãn là công cụ nền để giải thích cách doanh nghiệp định giá và phản ứng của người mua.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=31"
+  },
+  {
+   "src": "fed-la-gi-vai-tro-va-tac-dong-cua-fed-den-kinh-te-the-gioi",
+   "op": "append",
+   "find": "c doanh nghiệp cũng tăng lên, từ đó có thể dẫn đến lạm phát.",
+   "to": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "sentence": "Vì vậy, lãi suất của FED là biến số luôn có mặt trong [phân tích vĩ mô] khi nhà đầu tư đánh giá thị trường chứng khoán.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=26"
+  },
+  {
+   "src": "fed-la-gi-vai-tro-va-tac-dong-cua-fed-den-kinh-te-the-gioi",
+   "op": "append",
+   "find": "giá cả, lạm phát, đầu tư và thương mại ở các quốc gia khác.",
+   "to": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+   "sentence": "FED chỉ điều hành tiền tệ, còn thuế và chi ngân sách do chính phủ Mỹ quyết định, đúng phân vai giữa [chính sách tài khóa và tiền tệ].",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=24"
+  },
+  {
+   "src": "canh-tranh-doc-quyen-la-gi",
+   "op": "append",
+   "find": "ắc vẫn duy trì được biên lợi nhuận vượt trội suốt nhiều năm.",
+   "to": "kinh-te-hoc-vi-mo-la-gi-y-nghia-trong-dau-tu-chung-khoan",
+   "sentence": "Đây là kết luận quen thuộc của [kinh tế học vi mô]: lợi nhuận vượt trội chỉ bền khi đối thủ khó sao chép sản phẩm.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=52"
+  },
+  {
+   "src": "quan-ly-thi-truong-la-gi",
+   "op": "append",
+   "find": "đầu tư có thêm niềm tin, đặc biệt là nhà đầu tư nước ngoài.",
+   "to": "kinh-te-hoc-vi-mo-la-gi-y-nghia-trong-dau-tu-chung-khoan",
+   "sentence": "Theo [kinh tế vi mô], cạnh tranh minh bạch buộc doanh nghiệp thắng bằng chi phí và chất lượng thay vì gian lận.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=51"
+  },
+  {
+   "src": "quy-luat-gia-tri-la-gi-giai-thich-chi-tiet-va-day-du",
+   "op": "append",
+   "find": "sự tương tác linh hoạt với các quy luật kinh tế vĩ mô khác.",
+   "to": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "sentence": "Vì vậy, [phân tích vĩ mô] luôn xét giá cả cùng với cung cầu, cạnh tranh và lưu thông tiền tệ.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=30"
+  },
+  {
+   "src": "phan-biet-thi-truong-tien-te-va-thi-truong-von-huong-dan-chi-tiet-cho-nha-dau-tu",
+   "op": "append",
+   "find": "nh hưởng đến lãi suất và cung ứng tiền tệ trong nền kinh tế.",
+   "to": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+   "sentence": "Công cụ tiền tệ thường đi cùng thuế và chi ngân sách, nên cần đặt trong tương quan [chính sách tài khóa và chính sách tiền tệ].",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=23"
+  },
+  {
+   "src": "lam-phat-va-lai-suat-moi-quan-he-mat-thiet",
+   "op": "append",
+   "find": "ung ương sẽ giảm lãi suất để kích thích tăng trưởng kinh tế.",
+   "to": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+   "sentence": "Chính phủ cũng tác động đến lạm phát qua thuế và chi tiêu công, nên cần nhìn cả [chính sách tài khóa và chính sách tiền tệ].",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=21"
+  },
+  {
+   "src": "zero-sum-game-la-gi-giai-thich-chi-tiet-va-ung-dung-thuc-te",
+   "op": "append",
+   "find": "của tiền thắng và tiền thua trong trò chơi này luôn bằng 0.",
+   "to": "kinh-te-hoc-vi-mo-la-gi-y-nghia-trong-dau-tu-chung-khoan",
+   "sentence": "Khái niệm này thuộc [kinh tế học vi mô], nhánh nghiên cứu cách từng cá nhân và doanh nghiệp ra quyết định khi lợi ích đối nghịch.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=1"
+  },
+  {
+   "src": "nghiep-vu-thi-truong-mo-la-gi",
+   "op": "append",
+   "find": "ô, kiểm soát lạm phát và hỗ trợ mục tiêu chính sách tiền tệ.",
+   "to": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+   "sentence": "Công cụ này thuộc nhánh tiền tệ trong cặp [chính sách tài khóa và chính sách tiền tệ], nhánh còn lại là thuế và chi ngân sách của Chính phủ.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=10"
+  },
+  {
+   "src": "chi-so-dxy-la-gi",
+   "op": "append",
+   "find": "yếu tương quan giữa USD với nhóm các nền kinh tế phát triển.",
+   "to": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "sentence": "Khi làm [phân tích vĩ mô] cho thị trường Việt Nam, nhà đầu tư cần theo dõi cả tỷ giá USD/VND thay vì chỉ nhìn DXY.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=44"
+  },
+  {
+   "src": "cong-thuc-tinh-lam-phat",
+   "op": "append",
+   "find": "chu kỳ kinh tế và đưa ra hành động phân bổ tài sản phù hợp.",
+   "to": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "sentence": "Lạm phát cũng là biến số đầu tiên cần xét trong [phân tích vĩ mô], cùng với lãi suất, tỷ giá và tăng trưởng GDP.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=88"
+  },
+  {
+   "src": "cung-tien-la-gi",
+   "op": "append",
+   "find": "n hợp lý giúp đảm bảo mục tiêu tăng trưởng kinh tế bền vững.",
+   "to": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+   "sentence": "Cung tiền là biến số của nhánh tiền tệ trong [chính sách tài khóa và chính sách tiền tệ], hai công cụ điều tiết tổng cầu.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=26"
+  },
+  {
+   "src": "ecb-la-gi-vai-tro-va-chuc-nang-cua-ngan-hang-trung-uong-chau-au",
+   "op": "append",
+   "find": "tiêu duy trì ổn định giá cả và thúc đẩy tăng trưởng kinh tế.",
+   "to": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+   "sentence": "ECB chỉ nắm tiền tệ, còn ngân sách do từng nước thành viên quyết định, khác với thế phối hợp [chính sách tài khóa và tiền tệ] ở một nước.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=14"
+  },
+  {
+   "src": "canh-tranh-khong-hoan-hao-phan-tich-chi-tiet-cac-mo-hinh",
+   "op": "append",
+   "find": "ường nhờ lợi thế về quy mô, vị thế hoặc cấu trúc thị trường.",
+   "to": "kinh-te-hoc-vi-mo-la-gi-y-nghia-trong-dau-tu-chung-khoan",
+   "sentence": "Trong [kinh tế học vi mô], đây là nhóm cấu trúc thị trường phổ biến nhất ngoài thực tế, gồm độc quyền, độc quyền nhóm và cạnh tranh độc quyền.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=2"
+  },
+  {
+   "src": "imf-la-gi",
+   "op": "append",
+   "find": "hà đầu tư, giảm bớt đà bán tháo trên thị trường chứng khoán.",
+   "to": "can-can-thanh-toan-bop-la-gi",
+   "sentence": "Các gói này dành cho quốc gia thiếu hụt [cán cân thanh toán], tức không đủ ngoại tệ để trả nợ và nhập khẩu.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=25"
+  },
+  {
+   "src": "thi-truong-tien-te-la-gi-phan-tich-vai-tro-va-cac-thanh-phan",
+   "op": "append",
+   "find": "đáp ứng nhu cầu tài trợ cho hoạt động kinh doanh và đầu tư.",
+   "to": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+   "sentence": "Chính phủ vay ngắn hạn qua tín phiếu kho bạc tại đây, điểm giao nhau giữa [chính sách tài khóa và chính sách tiền tệ].",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=7"
+  },
+  {
+   "src": "thi-truong-tien-te-la-gi-phan-tich-vai-tro-va-cac-thanh-phan",
+   "op": "append",
+   "find": "inh lời cho các nhà đầu tư; Thúc đẩy hoạt động kinh tế và phát triển thị trường tài chính.",
+   "to": "chinh-sach-tien-te-la-gi",
+   "sentence": "Đây cũng là nơi Ngân hàng Nhà nước thực thi [chính sách tiền tệ] thông qua nghiệp vụ thị trường mở và lãi suất điều hành.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "sub-hub · đoạn i=8"
+  },
+  {
+   "src": "moi-quan-he-giua-lai-suat-va-xu-huong-van-dong-cua-thi-truong-chung-khoan",
+   "op": "append",
+   "find": "ư tình hình kinh tế, lợi nhuận của doanh nghiệp và lạm phát.",
+   "to": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "sentence": "Đó là lý do lãi suất cần được đọc trong khung [phân tích vĩ mô] đầy đủ, cùng tăng trưởng GDP, lạm phát và tỷ giá.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=19"
+  },
+  {
+   "src": "moi-quan-he-giua-lai-suat-va-xu-huong-van-dong-cua-thi-truong-chung-khoan",
+   "op": "append",
+   "find": "hứng khoán để có thể đưa ra các quyết định đầu tư chính xác.",
+   "to": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+   "sentence": "Trong đó, hướng điều hành [chính sách tài khóa và chính sách tiền tệ] quyết định mặt bằng lãi suất và lượng tiền vào thị trường.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=21"
+  },
+  {
+   "src": "ty-le-du-tru-bat-buoc-la-gi-va-moi-quan-he-voi-cung-cau-tien",
+   "op": "append",
+   "find": "ngân hàng có thể cho vay nhiều hơn, dẫn đến tăng cung tiền.",
+   "to": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "sentence": "Trong [phân tích vĩ mô], thay đổi tỷ lệ dự trữ bắt buộc là tín hiệu sớm về hướng nới lỏng hay thắt chặt tiền tệ.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=17"
+  },
+  {
+   "src": "ty-le-du-tru-bat-buoc-la-gi-va-moi-quan-he-voi-cung-cau-tien",
+   "op": "append",
+   "find": "ân hàng và kiểm soát lượng tiền lưu thông trong nền kinh tế.",
+   "to": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+   "sentence": "Đây là một công cụ thuộc nhánh tiền tệ trong bộ đôi [chính sách tài khóa và chính sách tiền tệ] mà Nhà nước dùng để điều tiết kinh tế.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=7"
+  },
+  {
+   "src": "chinh-sach-tien-te-noi-long-la-gi-tac-dong-toi-ttck",
+   "op": "append",
+   "find": "là kích thích kinh tế, thúc đẩy tăng trưởng và tạo việc làm.",
+   "to": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+   "sentence": "Chính phủ cũng kích thích kinh tế bằng chi ngân sách và giảm thuế, nên cần phân biệt [chính sách tài khóa và chính sách tiền tệ].",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=2"
+  },
+  {
+   "src": "khung-hoang-tai-chinh-la-gi-cac-giai-doan-cua-khung-hoang-tai-chinh",
+   "op": "append",
+   "find": "ác chính phủ, ngân hàng trung ương và các tổ chức tài chính.",
+   "to": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "sentence": "Với nhà đầu tư, theo dõi nợ, lãi suất và tỷ giá qua [phân tích vĩ mô] giúp nhận ra rủi ro trước khi khủng hoảng lan rộng.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=39"
+  },
+  {
+   "src": "canh-tranh-la-gi",
+   "op": "append",
+   "find": "cầu của khách hàng cũng như câu lượng khách hàng nhiều nhất.",
+   "to": "kinh-te-hoc-vi-mo-la-gi-y-nghia-trong-dau-tu-chung-khoan",
+   "sentence": "Trong [kinh tế học vi mô], mức độ cạnh tranh quyết định doanh nghiệp tự đặt giá hay phải chấp nhận giá thị trường.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=5"
+  },
+  {
+   "src": "ty-le-noi-dia-hoa-la-gi",
+   "op": "append",
+   "find": "h nghiệp đã làm chủ được công nghệ và nguồn cung trong nước.",
+   "to": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "sentence": "Trong [phân tích vĩ mô], tỷ lệ nội địa hóa bình quân của một ngành cho biết mức phụ thuộc nhập khẩu và độ nhạy với tỷ giá.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=4"
+  },
+  {
+   "src": "ty-le-noi-dia-hoa-la-gi",
+   "op": "append",
+   "find": "ưu đãi đầu tư, từ đó giảm chi phí thuế và tăng tích lũy vốn.",
+   "to": "kinh-te-hoc-vi-mo-la-gi-y-nghia-trong-dau-tu-chung-khoan",
+   "sentence": "Theo [kinh tế vi mô], ưu đãi thuế làm giảm chi phí sản xuất nên doanh nghiệp có động lực mở rộng sản lượng trong nước.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=46"
+  },
+  {
+   "src": "dau-tu-cong-la-gi-vai-tro-va-giai-phap-nang-cao-hieu-qua",
+   "op": "append",
+   "find": "bước quan trọng để nhận diện các chuyển động của thị trường.",
+   "to": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "sentence": "Trong [phân tích vĩ mô], tiến độ giải ngân đầu tư công là chỉ báo đi trước cho doanh thu nhóm xây dựng và vật liệu.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=40"
+  },
+  {
+   "src": "dau-tu-cong-la-gi-vai-tro-va-giai-phap-nang-cao-hieu-qua",
+   "op": "append",
+   "find": "i ích chung, thúc đẩy tăng trưởng và bảo đảm an sinh xã hội.",
+   "to": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+   "sentence": "Đây là kênh chi tiêu chính của nhánh tài khóa trong [chính sách tài khóa và chính sách tiền tệ], bên cạnh công cụ thuế.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=7"
+  },
+  {
+   "src": "khoi-ngoai-la-gi-va-anh-huong-den-thi-truong-chung-khoan-nhu-the-nao",
+   "op": "append",
+   "find": "bán, khối lượng mua bán của khối ngoại cho từng mã cổ phiếu.",
+   "to": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "sentence": "Kết hợp số liệu này với [phân tích vĩ mô] về tỷ giá và lãi suất giúp giải thích vì sao khối ngoại mua hay bán ròng.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=11"
+  },
+  {
+   "src": "khoi-ngoai-la-gi-va-anh-huong-den-thi-truong-chung-khoan-nhu-the-nao",
+   "op": "append",
+   "find": "trường, giúp nhà đầu tư có thể mua bán cổ phiếu dễ dàng hơn.",
+   "to": "can-can-thanh-toan-bop-la-gi",
+   "sentence": "Dòng vốn này được ghi nhận ở cán cân tài chính trong [cán cân thanh toán quốc tế] của Việt Nam.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=8"
+  },
+  {
+   "src": "ly-thuyet-tro-choi-ung-dung-phan-tich-hanh-vi-doanh-nghiep-trong-thi-truong-canh-tranh-hoan-hao",
+   "op": "append",
+   "find": "tối ưu trong môi trường có tính cạnh tranh và tương tác cao.",
+   "to": "kinh-te-hoc-vi-mo-la-gi-y-nghia-trong-dau-tu-chung-khoan",
+   "sentence": "Trong [kinh tế học vi mô], lý thuyết trò chơi được dùng để phân tích thị trường độc quyền nhóm, nơi vài doanh nghiệp chi phối giá.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=2"
+  },
+  {
+   "src": "can-can-thuong-mai-la-gi-vai-tro-va-tac-dong-den-nen-kinh-te",
+   "op": "newp",
+   "find": "ất khẩu bằng giá trị nhập khẩu, cán cân thương mại cân bằng.",
+   "to": "can-can-thanh-toan-bop-la-gi",
+   "sentence": "Cán cân thương mại là cấu phần lớn nhất của cán cân vãng lai, một trong các tài khoản chính của [cán cân thanh toán quốc tế].",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=6"
+  },
+  {
+   "src": "chinh-sach-tai-khoa-la-gi",
+   "op": "append",
+   "find": "ệch lớn với giá trị thực sự của nó, gây ra hành động đầu cơ.",
+   "to": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "sentence": "Vì vậy, thay đổi thuế suất là dữ kiện cần đưa vào [phân tích vĩ mô] khi dự báo tiêu dùng và lợi nhuận doanh nghiệp.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=21"
+  },
+  {
+   "src": "so-nhan-tai-khoa-la-gi",
+   "op": "append",
+   "find": "dụng, tránh việc phóng đại quá mức tác động của chính sách.",
+   "to": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+   "sentence": "Số nhân cũng thay đổi theo lãi suất, nên kết quả phụ thuộc vào cách phối hợp [chính sách tài khóa và chính sách tiền tệ].",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=9"
+  },
+  {
+   "src": "von-fpi-la-gi",
+   "op": "append",
+   "find": "p\" ngoại là một chiến lược phổ biến để tối ưu hóa lợi nhuận.",
+   "to": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "sentence": "Bước đầu là [phân tích vĩ mô]: chênh lệch lãi suất và tỷ giá USD/VND quyết định hướng đi của dòng vốn này.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=37"
+  },
+  {
+   "src": "von-fpi-la-gi",
+   "op": "append",
+   "find": "hư một nguồn lực bổ sung thanh khoản cho thị trường nội địa.",
+   "to": "can-can-thanh-toan-bop-la-gi",
+   "sentence": "Trong [cán cân thanh toán quốc tế], vốn FPI được ghi ở cán cân tài chính, cùng với FDI và các khoản vay nước ngoài.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=3"
+  },
+  {
+   "src": "xuat-sieu-la-gi",
+   "op": "append",
+   "find": "thị trường chứng khoán đưa ra quyết định phân bổ vốn hợp lý.",
+   "to": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "sentence": "Trong [phân tích vĩ mô], số liệu xuất nhập khẩu hằng tháng được đọc cùng tỷ giá và dự trữ ngoại hối.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=65"
+  },
+  {
+   "src": "bom-tien-ra-nen-kinh-te-la-gi-tac-dong-cua-bom-tien-den-ttck",
+   "op": "append",
+   "find": "động đến TTCK theo cả hai chiều hướng tích cực và tiêu cực.",
+   "to": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "sentence": "Vì vậy, [phân tích vĩ mô] cần xét cả quy mô bơm tiền lẫn lạm phát kỳ vọng trước khi kết luận tác động đến cổ phiếu.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=11"
+  },
+  {
+   "src": "bom-tien-ra-nen-kinh-te-la-gi-tac-dong-cua-bom-tien-den-ttck",
+   "op": "append",
+   "find": ", lạm phát thấp hoặc khi cần kích thích tăng trưởng kinh tế.",
+   "to": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+   "sentence": "Biện pháp này thuộc nhánh tiền tệ, khác với kích thích bằng chi ngân sách trong cặp [chính sách tài khóa và chính sách tiền tệ].",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=1"
+  },
+  {
+   "src": "bong-bong-dotcom-la-gi",
+   "op": "append",
+   "find": "đáng kể, thường không tương xứng với giá trị thực tế của họ.",
+   "to": "khung-hoang-tai-chinh-la-gi-cac-giai-doan-cua-khung-hoang-tai-chinh",
+   "sentence": "Bong bóng tài sản vỡ là điểm khởi đầu quen thuộc của một cuộc [khủng hoảng tài chính], khi tài sản mất giá nhanh hơn khả năng trả nợ.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=3"
+  },
+  {
+   "src": "von-oda-la-gi",
+   "op": "append",
+   "find": "ẩy tăng trưởng kinh tế bền vững và nâng cao phúc lợi xã hội.",
+   "to": "can-can-thanh-toan-bop-la-gi",
+   "sentence": "Trong [cán cân thanh toán quốc tế], phần ODA vay ưu đãi được ghi nhận là dòng vốn vào ở cán cân tài chính.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=4"
+  },
+  {
+   "src": "chi-phi-bien-la-gi",
+   "op": "append",
+   "find": "nhận diện tiềm năng bùng nổ biên lợi nhuận gộp của cổ phiếu.",
+   "to": "kinh-te-hoc-vi-mo-la-gi-y-nghia-trong-dau-tu-chung-khoan",
+   "sentence": "Khái niệm này đến từ [kinh tế học vi mô], nơi doanh nghiệp tối đa hóa lợi nhuận tại mức sản lượng có doanh thu biên bằng chi phí biên.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=34"
+  },
+  {
+   "src": "lai-suat-lien-ngan-hang-la-gi-cach-tinh-tac-dong-va-cach-tra-cuu",
+   "op": "append",
+   "find": "trưởng hoặc ổn định kinh tế trong những giai đoạn biến động.",
+   "to": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "sentence": "Vì vậy, lãi suất qua đêm là số liệu được cập nhật hằng ngày trong [phân tích vĩ mô] của nhà đầu tư chứng khoán.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=18"
+  },
+  {
+   "src": "lai-suat-lien-ngan-hang-la-gi-cach-tinh-tac-dong-va-cach-tra-cuu",
+   "op": "append",
+   "find": "nhằm ổn định thị trường tài chính và đạt các mục tiêu vĩ mô.",
+   "to": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+   "sentence": "Thanh khoản hệ thống còn chịu tác động từ tiền gửi Kho bạc, điểm nối giữa [chính sách tài khóa và chính sách tiền tệ].",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=13"
+  },
+  {
+   "src": "su-kien-bong-bong-hoa-tulip-bai-hoc-kinh-nghiem-cho-cac-nha-dau-tu",
+   "op": "append",
+   "find": ", bao gồm cấm giao dịch hợp đồng tương lai của củ hoa tulip.",
+   "to": "khung-hoang-tai-chinh-la-gi-cac-giai-doan-cua-khung-hoang-tai-chinh",
+   "sentence": "Diễn biến này mang đủ các giai đoạn của một cuộc [khủng hoảng tài chính]: giá tăng nóng, hoảng loạn bán tháo và suy thoái.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=17"
+  },
+  {
+   "src": "chu-ky-kinh-te-la-gi-cach-van-dung-chu-ky-kinh-te-de-dau-tu-co-phieu-hieu-qua",
+   "op": "append",
+   "find": "đó thúc đẩy sự chuyển dịch của các pha trong chu kỳ kinh tế.",
+   "to": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "sentence": "Theo dõi các yếu tố này chính là nội dung của [phân tích vĩ mô] khi nhà đầu tư xác định nền kinh tế đang ở pha nào.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=10"
+  },
+  {
+   "src": "dong-tien-nong-la-gi",
+   "op": "append",
+   "find": "hạn từ sự chênh lệch lãi suất và biến động tỷ giá hối đoái.",
+   "to": "can-can-thanh-toan-bop-la-gi",
+   "sentence": "Trong [cán cân thanh toán quốc tế], dòng tiền nóng nằm ở mục đầu tư gián tiếp của cán cân tài chính.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=2"
+  },
+  {
+   "src": "chi-phi-co-hoi-la-gi",
+   "op": "append",
+   "find": "các lựa chọn và từ đó đưa ra quyết định hợp lý, tối ưu hơn.",
+   "to": "kinh-te-hoc-vi-mo-la-gi-y-nghia-trong-dau-tu-chung-khoan",
+   "sentence": "Đây là khái niệm nền của [kinh tế học vi mô], xuất phát từ việc nguồn lực luôn khan hiếm so với nhu cầu.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=5"
+  },
+  {
+   "src": "giam-phat-la-gi-nguyen-nhan-hau-qua-va-cach-khac-phuc",
+   "op": "append",
+   "find": "ái kinh tế giúp nhà đầu tư thiết lập cơ cấu tài sản phù hợp.",
+   "to": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "sentence": "Muốn nhận diện đúng, nhà đầu tư cần [phân tích vĩ mô] qua CPI, tăng trưởng tín dụng và sức mua bán lẻ.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=21"
+  },
+  {
+   "src": "gnp-la-gi",
+   "op": "append",
+   "find": ", bất kể họ sản xuất ở trong hay ngoài lãnh thổ quốc gia đó.",
+   "to": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "sentence": "Cùng với GDP, GNP là thước đo sản lượng được dùng trong [phân tích vĩ mô] khi so sánh quy mô các nền kinh tế.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=2"
+  },
+  {
+   "src": "lam-phat-la-gi",
+   "op": "append",
+   "find": "m phát có thể mang lại những tác động tích cực lẫn tiêu cực.",
+   "to": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "sentence": "Vì vậy, [phân tích vĩ mô] xem mức lạm phát đi kèm tốc độ tăng trưởng thay vì đánh giá riêng một con số.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=41"
+  },
+  {
+   "src": "chinh-sach-cong-la-gi",
+   "op": "append",
+   "find": "chính sách tài khóa, chính sách tiền tệ và chính sách ngành.",
+   "to": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+   "sentence": "Hai kênh đầu có công cụ và độ trễ khác nhau, nên cần nắm khác biệt giữa [chính sách tài khóa và chính sách tiền tệ].",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=29"
+  },
+  {
+   "src": "lai-suat-co-so-la-gi-tac-dong-cua-lai-suat-co-so-den-nen-kinh-te",
+   "op": "append",
+   "find": "suất cho vay hoặc lãi suất tiền gửi theo từng kỳ nhất định.",
+   "to": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+   "sentence": "Lãi suất này là một công cụ của nhánh tiền tệ trong cặp [chính sách tài khóa và chính sách tiền tệ].",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=4"
+  },
+  {
+   "src": "lai-suat-dieu-hanh-la-gi",
+   "op": "append",
+   "find": "ể tác động phản ánh vào kết quả kinh doanh của doanh nghiệp.",
+   "to": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "sentence": "Vì vậy, [phân tích vĩ mô] cần đi trước kết quả kinh doanh: nhà đầu tư theo dõi tín hiệu lãi suất trước khi lợi nhuận thay đổi.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=60"
+  },
+  {
+   "src": "lai-suat-dieu-hanh-la-gi",
+   "op": "append",
+   "find": "c lập vùng đáy dài hạn và bước vào chu kỳ phục hồi bền vững.",
+   "to": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+   "sentence": "Lãi suất chỉ là một vế; vế còn lại là thuế và chi ngân sách trong cặp [chính sách tài khóa và chính sách tiền tệ].",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=71"
+  },
+  {
+   "src": "lai-suat-omo-la-gi-giai-ma-cong-cu-dieu-tiet-thi-truong-tien-te-hieu-qua",
+   "op": "append",
+   "find": "trữ bắt buộc, v.v. để đạt được mục tiêu chính sách tiền tệ.",
+   "to": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+   "sentence": "Ở tầng cao hơn, toàn bộ nhóm công cụ này lại được phối hợp với thuế và chi ngân sách trong [chính sách tài khóa và chính sách tiền tệ].",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=24"
+  },
+  {
+   "src": "no-chinh-phu-la-gi",
+   "op": "append",
+   "find": "óng ngành này khi Chính phủ công bố các gói thầu quy mô lớn.",
+   "to": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "sentence": "Đây là ví dụ về cách [phân tích vĩ mô] chuyển một quyết định ngân sách thành lựa chọn nhóm ngành cụ thể.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=47"
+  },
+  {
+   "src": "no-chinh-phu-la-gi",
+   "op": "append",
+   "find": "cụ này vì chúng ảnh hưởng trực tiếp đến đường cong lãi suất.",
+   "to": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+   "sentence": "Đường cong lãi suất là nơi [chính sách tài khóa và tiền tệ] gặp nhau: Bộ Tài chính phát hành trái phiếu, Ngân hàng Nhà nước điều tiết thanh khoản.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=14"
+  },
+  {
+   "src": "no-chinh-phu-la-gi",
+   "op": "append",
+   "find": "đi vay từ người dân, doanh nghiệp hoặc các tổ chức quốc tế.",
+   "to": "chinh-sach-tai-khoa-la-gi",
+   "sentence": "Mức vay này là kết quả của [chính sách tài khóa]: chi ngân sách vượt thu thì phần thiếu hụt được bù bằng nợ.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "sub-hub · đoạn i=9"
+  },
+  {
+   "src": "du-tru-ngoai-hoi-nha-nuoc-la-gi",
+   "op": "append",
+   "find": "vai trò then chốt trong việc duy trì ổn định kinh tế vĩ mô.",
+   "to": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "sentence": "Vì vậy, quy mô dự trữ tính theo số tuần nhập khẩu là chỉ tiêu quen thuộc trong [phân tích vĩ mô] về sức chịu đựng tỷ giá.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=52"
+  },
+  {
+   "src": "hieu-ro-ve-khai-niem-gio-hang-va-tac-dong-den-tieu-dung",
+   "op": "append",
+   "find": "ể tạo ra áp lực lớn đối với người tiêu dùng và doanh nghiệp.",
+   "to": "kinh-te-hoc-vi-mo-la-gi-y-nghia-trong-dau-tu-chung-khoan",
+   "sentence": "[Kinh tế vi mô] giải thích phản ứng này: khi giá hàng thiết yếu tăng, hộ gia đình cắt chi tiêu cho hàng không thiết yếu.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=13"
+  },
+  {
+   "src": "he-so-icor-la-gi",
+   "op": "wrap",
+   "find": "tư tăng thêm để tạo ra một đơn vị sản lượng (GDP) tăng thêm.",
+   "to": "gdp-la-gi",
+   "anchor": "GDP",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "sub-hub · bọc cụm có sẵn"
+  },
+  {
+   "src": "gnp-la-gi",
+   "op": "wrap",
+   "find": "quy đổi từ chỉ số GDP thông qua thu nhập ròng từ nước ngoài.",
+   "to": "gdp-la-gi",
+   "anchor": "GDP",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "sub-hub · bọc cụm có sẵn"
+  }
+ ],
+ "skipped": [
+  {
+   "src": "canh-tranh-hoan-hao-la-gi",
+   "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "canh-tranh-doc-quyen-la-gi",
+   "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "tom-tat-su-kien-brexit",
+   "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "tom-tat-su-kien-brexit",
+   "target": "khung-hoang-tai-chinh-la-gi-cac-giai-doan-cua-khung-hoang-tai-chinh",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "phan-biet-thi-truong-tien-te-va-thi-truong-von-huong-dan-chi-tiet-cho-nha-dau-tu",
+   "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "zero-sum-game-la-gi-giai-thich-chi-tiet-va-ung-dung-thuc-te",
+   "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "can-can-vang-lai-la-gi",
+   "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "chi-so-dxy-la-gi",
+   "target": "can-can-thanh-toan-bop-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "ecb-la-gi-vai-tro-va-chuc-nang-cua-ngan-hang-trung-uong-chau-au",
+   "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "canh-tranh-khong-hoan-hao-phan-tich-chi-tiet-cac-mo-hinh",
+   "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "chinh-sach-tien-te-noi-long-la-gi-tac-dong-toi-ttck",
+   "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "canh-tranh-la-gi",
+   "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "ly-thuyet-tro-choi-ung-dung-phan-tich-hanh-vi-doanh-nghiep-trong-thi-truong-canh-tranh-hoan-hao",
+   "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "vo-no-la-gi",
+   "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "thu-nhap-rong-tu-tai-san-nuoc-ngoai-nffi",
+   "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "co-hoi-thi-truong-la-gi",
+   "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "co-hoi-thi-truong-la-gi",
+   "target": "kinh-te-hoc-vi-mo-la-gi-y-nghia-trong-dau-tu-chung-khoan",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "chi-so-gia-tieu-dung-cpi-la-gi-va-moi-quan-he-voi-thi-truong-chung-khoan",
+   "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "bong-bong-dotcom-la-gi",
+   "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "von-oda-la-gi",
+   "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "chi-phi-bien-la-gi",
+   "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "su-kien-bong-bong-hoa-tulip-bai-hoc-kinh-nghiem-cho-cac-nha-dau-tu",
+   "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "chi-phi-co-hoi-la-gi",
+   "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "rua-tien-la-gi-hau-qua-va-cach-phong-chong",
+   "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "rua-tien-la-gi-hau-qua-va-cach-phong-chong",
+   "target": "khung-hoang-tai-chinh-la-gi-cac-giai-doan-cua-khung-hoang-tai-chinh",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "chinh-sach-cong-la-gi",
+   "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "lai-suat-co-so-la-gi-tac-dong-cua-lai-suat-co-so-den-nen-kinh-te",
+   "target": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "lai-suat-la-gi",
+   "target": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  }
+ ]
+}

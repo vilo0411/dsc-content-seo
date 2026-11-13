@@ -1,0 +1,1266 @@
+[
+ {
+  "src": "npv-va-irr-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 49,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], hai chỉ số này cũng là nền của các mô hình định giá dựa trên dòng tiền tương lai.",
+  "why": "pillar · đoạn i=49"
+ },
+ {
+  "src": "npv-va-irr-la-gi",
+  "target": "cach-dinh-gia-co-phieu-cho-nguoi-moi-bat-dau",
+  "i": 10,
+  "op": "append",
+  "sentence": "Logic chiết khấu này cũng được dùng khi [định giá cổ phiếu], chỉ khác là dòng tiền đến từ doanh nghiệp thay vì một dự án.",
+  "why": "hub · đoạn i=10"
+ },
+ {
+  "src": "npv-va-irr-la-gi",
+  "target": "dcf-la-gi",
+  "i": 5,
+  "op": "append",
+  "sentence": "Cùng nguyên lý đó, [phương pháp DCF] chiết khấu dòng tiền tự do của doanh nghiệp để ra giá trị nội tại của cổ phiếu.",
+  "why": "sub-hub · đoạn i=5"
+ },
+ {
+  "src": "he-so-kha-nang-thanh-toan-lai-vay-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 23,
+  "op": "append",
+  "sentence": "Vì vậy, trong [phân tích cơ bản], chỉ số này cần được so với doanh nghiệp cùng ngành thay vì một ngưỡng chung.",
+  "why": "pillar · đoạn i=23"
+ },
+ {
+  "src": "he-so-kha-nang-thanh-toan-lai-vay-la-gi",
+  "target": "he-so-thanh-toan-la-gi",
+  "i": 2,
+  "op": "append",
+  "sentence": "Chỉ số này thuộc nhóm [hệ số khả năng thanh toán], nhưng đo khả năng trả lãi thay vì trả nợ gốc ngắn hạn.",
+  "why": "sub-hub · đoạn i=2"
+ },
+ {
+  "src": "yoy-la-gi-cach-tinh-va-y-nghia-cua-chi-so-yoy",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 5,
+  "op": "append",
+  "sentence": "Đây là phép so sánh cơ bản nhất khi [phân tích cơ bản doanh nghiệp] qua báo cáo kết quả kinh doanh từng quý.",
+  "why": "pillar · đoạn i=5"
+ },
+ {
+  "src": "yoy-la-gi-cach-tinh-va-y-nghia-cua-chi-so-yoy",
+  "target": "chi-tieu-loi-nhuan-cua-doanh-nghiep",
+  "i": 39,
+  "op": "append",
+  "sentence": "Cách so sánh này áp dụng cho mọi [chỉ tiêu lợi nhuận], từ lợi nhuận gộp đến lợi nhuận sau thuế.",
+  "why": "sub-hub · đoạn i=39"
+ },
+ {
+  "src": "goodwill-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 48,
+  "op": "append",
+  "sentence": "Khi [phân tích cơ bản], nhà đầu tư cần xem goodwill chiếm bao nhiêu trong tổng tài sản để tránh đánh giá quá cao vốn chủ sở hữu.",
+  "why": "pillar · đoạn i=48"
+ },
+ {
+  "src": "goodwill-la-gi",
+  "target": "cach-phan-tich-bao-cao-tai-chinh",
+  "i": 46,
+  "op": "append",
+  "sentence": "Khoản chênh lệch này được ghi vào tài sản vô hình, nên khi [phân tích báo cáo tài chính] cần tách goodwill khỏi tài sản hữu hình.",
+  "why": "hub · đoạn i=46"
+ },
+ {
+  "src": "goodwill-la-gi",
+  "target": "huong-dan-cach-doc-bao-cao-tai-chinh-nhung-thong-tin-quan-trong",
+  "i": 1,
+  "op": "append",
+  "sentence": "Khi [đọc báo cáo tài chính], goodwill nằm trong nhóm tài sản dài hạn của bảng cân đối kế toán hợp nhất.",
+  "why": "sub-hub · đoạn i=1"
+ },
+ {
+  "src": "gia-tri-so-sach-la-gi-cach-tinh-gia-tri-so-sach-cua-co-phieu",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 14,
+  "op": "append",
+  "sentence": "Vì vậy, giá trị sổ sách là điểm xuất phát quen thuộc của [phân tích cơ bản] trước khi tính P/B.",
+  "why": "pillar · đoạn i=14"
+ },
+ {
+  "src": "phan-tich-bao-cao-tai-chinh-vinamilk",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 20,
+  "op": "append",
+  "sentence": "Sức khỏe bảng cân đối là nội dung đầu tiên cần xem khi [phân tích cơ bản doanh nghiệp] hàng tiêu dùng như Vinamilk.",
+  "why": "pillar · đoạn i=20"
+ },
+ {
+  "src": "phan-tich-bao-cao-tai-chinh-hoa-phat",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 244,
+  "op": "append",
+  "sentence": "Dòng tiền kinh doanh đủ tự tài trợ đầu tư là tín hiệu mà [phân tích cơ bản] ưu tiên hơn con số lợi nhuận kế toán.",
+  "why": "pillar · đoạn i=244"
+ },
+ {
+  "src": "phan-tich-bao-cao-tai-chinh-vietcombank-vcb",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 0,
+  "op": "skip",
+  "sentence": "",
+  "reason": "không có đoạn phù hợp"
+ },
+ {
+  "src": "tra-co-tuc-bang-co-phieu-la-gi-loi-ich-va-han-che",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 14,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], nhà đầu tư cần xem phần vốn giữ lại được tái đầu tư hiệu quả đến đâu qua ROE các năm sau.",
+  "why": "pillar · đoạn i=14"
+ },
+ {
+  "src": "vong-quay-khoan-phai-tra-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 32,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], chỉ số này đi cùng vòng quay hàng tồn kho và khoản phải thu để đánh giá chu kỳ tiền mặt.",
+  "why": "pillar · đoạn i=32"
+ },
+ {
+  "src": "phan-tich-bao-cao-tai-chinh-mwg",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 33,
+  "op": "append",
+  "sentence": "Đối chiếu lợi nhuận với dòng tiền như vậy là thao tác cơ bản khi [phân tích cơ bản doanh nghiệp] bán lẻ.",
+  "why": "pillar · đoạn i=33"
+ },
+ {
+  "src": "ty-so-no-tren-tong-tai-san-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 14,
+  "op": "append",
+  "sentence": "Khi [phân tích cơ bản], tỷ số này cần đặt cạnh mức trung bình ngành, vì ngân hàng và bất động sản dùng nợ cao hơn hẳn.",
+  "why": "pillar · đoạn i=14"
+ },
+ {
+  "src": "he-so-thanh-toan-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 6,
+  "op": "append",
+  "sentence": "Đây là nhóm chỉ số cần kiểm tra đầu tiên khi [phân tích cơ bản doanh nghiệp] có nợ vay ngắn hạn lớn.",
+  "why": "pillar · đoạn i=6"
+ },
+ {
+  "src": "phan-tich-bao-cao-tai-chinh-vingroup",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 7,
+  "op": "append",
+  "sentence": "Với tập đoàn đa ngành như VIC, [phân tích cơ bản] cần tách riêng từng mảng để thấy mảng nào đang tạo lợi nhuận.",
+  "why": "pillar · đoạn i=7"
+ },
+ {
+  "src": "ty-le-don-bay-tai-chinh-gearing-ratio-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 1,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], gearing ratio thuộc nhóm chỉ số cơ cấu vốn, đi cùng tỷ số nợ trên tổng tài sản.",
+  "why": "pillar · đoạn i=1"
+ },
+ {
+  "src": "ty-le-don-bay-tai-chinh-gearing-ratio-la-gi",
+  "target": "don-bay-tai-chinh-la-gi-uu-va-nhuoc-diem-cach-su-dung",
+  "i": 20,
+  "op": "append",
+  "sentence": "Đây là mặt trái của [đòn bẩy tài chính]: lợi nhuận được khuếch đại khi thuận lợi nhưng rủi ro cũng tăng theo.",
+  "why": "sub-hub · đoạn i=20"
+ },
+ {
+  "src": "phan-tich-bao-cao-tai-chinh-cong-ty-kinh-do",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 3,
+  "op": "append",
+  "sentence": "Năm khó khăn như vậy là lúc [phân tích cơ bản] cần tách nguyên nhân từ giá vốn, chi phí bán hàng hay chi phí tài chính.",
+  "why": "pillar · đoạn i=3"
+ },
+ {
+  "src": "ty-so-thanh-toan-nhanh-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 5,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], chỉ số này hữu ích nhất với doanh nghiệp có hàng tồn kho lớn hoặc khó bán.",
+  "why": "pillar · đoạn i=5"
+ },
+ {
+  "src": "phan-tich-bao-cao-tai-chinh-pnj",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 11,
+  "op": "append",
+  "sentence": "Khi [phân tích cơ bản doanh nghiệp] bán lẻ trang sức, chất lượng hàng tồn kho và nợ vay là hai điểm cần xem trước.",
+  "why": "pillar · đoạn i=11"
+ },
+ {
+  "src": "so-sanh-co-phieu-thuong-va-co-phieu-uu-dai",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 12,
+  "op": "append",
+  "sentence": "Khi [phân tích cơ bản], cần kiểm tra doanh nghiệp có cổ phiếu ưu đãi không, vì loại này ảnh hưởng tới lợi nhuận dành cho cổ đông thường.",
+  "why": "pillar · đoạn i=12"
+ },
+ {
+  "src": "phan-tich-bao-cao-tai-chinh-fpt",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 28,
+  "op": "append",
+  "sentence": "Dòng tiền kinh doanh bám sát lợi nhuận là dấu hiệu [phân tích cơ bản] dùng để đánh giá chất lượng lợi nhuận của FPT.",
+  "why": "pillar · đoạn i=28"
+ },
+ {
+  "src": "dcf-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 26,
+  "op": "append",
+  "sentence": "Vì dựa trên dòng tiền nội tại, DCF là công cụ định giá trung tâm của [phân tích cơ bản].",
+  "why": "pillar · đoạn i=26"
+ },
+ {
+  "src": "dcf-la-gi",
+  "target": "cach-dinh-gia-co-phieu-cho-nguoi-moi-bat-dau",
+  "i": 80,
+  "op": "append",
+  "sentence": "Bảng so sánh các [phương pháp định giá cổ phiếu] giúp chọn cách kiểm tra chéo phù hợp với từng loại doanh nghiệp.",
+  "why": "hub · đoạn i=80"
+ },
+ {
+  "src": "doanh-nghiep-mua-lai-co-phieu-de-lam-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 7,
+  "op": "append",
+  "sentence": "Vì vậy trong [phân tích cơ bản], tăng trưởng EPS cần được đối chiếu với tăng trưởng lợi nhuận để loại trừ tác động mua lại.",
+  "why": "pillar · đoạn i=7"
+ },
+ {
+  "src": "doanh-nghiep-mua-lai-co-phieu-de-lam-gi",
+  "target": "so-sanh-co-phieu-thuong-va-co-phieu-uu-dai",
+  "i": 5,
+  "op": "append",
+  "sentence": "Hoạt động này áp dụng với cổ phiếu phổ thông, còn [cổ phần ưu đãi] hoàn lại có cơ chế mua lại riêng theo điều lệ.",
+  "why": "sub-hub · đoạn i=5"
+ },
+ {
+  "src": "ty-so-thanh-toan-bang-tien-mat-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 3,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], cash ratio hay được dùng để kiểm tra doanh nghiệp trong giai đoạn khó huy động vốn.",
+  "why": "pillar · đoạn i=3"
+ },
+ {
+  "src": "vong-quay-khoan-phai-thu-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 4,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], chỉ số này cho thấy doanh thu có chuyển thành tiền thật hay chỉ nằm trên sổ sách.",
+  "why": "pillar · đoạn i=4"
+ },
+ {
+  "src": "vong-quay-khoan-phai-thu-la-gi",
+  "target": "cac-chi-so-phan-tich-bao-cao-tai-chinh",
+  "i": 24,
+  "op": "newp",
+  "sentence": "Trong các [chỉ số tài chính], vòng quay khoản phải thu thuộc nhóm hiệu quả hoạt động, cùng vòng quay hàng tồn kho và tổng tài sản.",
+  "why": "hub · đoạn i=24"
+ },
+ {
+  "src": "so-ngay-phai-tra-chua-thanh-toan-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 8,
+  "op": "append",
+  "sentence": "Với nhà đầu tư, DPO là một trong các chỉ số vốn lưu động cần xem khi [phân tích cơ bản doanh nghiệp].",
+  "why": "pillar · đoạn i=8"
+ },
+ {
+  "src": "chi-phi-co-dinh-la-gi-tim-hieu-chi-tiet-ve-chi-phi-co-dinh-trong-kinh-doanh",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 7,
+  "op": "append",
+  "sentence": "Với nhà đầu tư, tỷ trọng chi phí cố định là thông tin [phân tích cơ bản] dùng để đánh giá độ nhạy của lợi nhuận theo doanh thu.",
+  "why": "pillar · đoạn i=7"
+ },
+ {
+  "src": "chi-phi-co-dinh-la-gi-tim-hieu-chi-tiet-ve-chi-phi-co-dinh-trong-kinh-doanh",
+  "target": "cach-phan-tich-bao-cao-tai-chinh",
+  "i": 89,
+  "op": "append",
+  "sentence": "Khi [phân tích báo cáo tài chính], đặc điểm này giải thích vì sao lợi nhuận của một số ngành biến động mạnh hơn doanh thu.",
+  "why": "hub · đoạn i=89"
+ },
+ {
+  "src": "chi-phi-co-dinh-la-gi-tim-hieu-chi-tiet-ve-chi-phi-co-dinh-trong-kinh-doanh",
+  "target": "chi-tieu-loi-nhuan-cua-doanh-nghiep",
+  "i": 68,
+  "op": "append",
+  "sentence": "Hiệu ứng này thể hiện rõ ở các [chỉ tiêu lợi nhuận] như biên lợi nhuận gộp và biên lợi nhuận hoạt động.",
+  "why": "sub-hub · đoạn i=68"
+ },
+ {
+  "src": "huong-dan-cach-doc-bao-cao-thuong-nien-hieu-qua",
+  "target": "cach-phan-tich-bao-cao-tai-chinh",
+  "i": 32,
+  "op": "append",
+  "sentence": "Báo cáo thường niên cho bối cảnh, còn [phân tích báo cáo tài chính] cho con số để kiểm chứng những gì ban lãnh đạo trình bày.",
+  "why": "hub · đoạn i=32"
+ },
+ {
+  "src": "loi-nhuan-rong-va-loi-nhuan-sau-thue",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 69,
+  "op": "append",
+  "sentence": "Vì vậy, [phân tích cơ bản] luôn đối chiếu lợi nhuận ròng với dòng tiền từ hoạt động kinh doanh.",
+  "why": "pillar · đoạn i=69"
+ },
+ {
+  "src": "loi-nhuan-rong-va-loi-nhuan-sau-thue",
+  "target": "cac-chi-so-phan-tich-bao-cao-tai-chinh",
+  "i": 67,
+  "op": "append",
+  "sentence": "Sai lệch này ảnh hưởng trực tiếp tới các [chỉ số tài chính] dùng lợi nhuận làm tử số như EPS, ROE và P/E.",
+  "why": "hub · đoạn i=67"
+ },
+ {
+  "src": "co-phieu-esop-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 22,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], lượng cổ phiếu ESOP phát hành hằng năm cần được tính vào mức pha loãng EPS.",
+  "why": "pillar · đoạn i=22"
+ },
+ {
+  "src": "co-phieu-esop-la-gi",
+  "target": "co-tuc-la-gi",
+  "i": 31,
+  "op": "append",
+  "sentence": "Khác với [cổ tức tiền mặt] chia đều theo tỷ lệ sở hữu, ESOP chỉ đến tay nhóm người lao động được chọn.",
+  "why": "hub · đoạn i=31"
+ },
+ {
+  "src": "chi-phi-von-capex-la-gi-y-nghia-va-cach-tinh-chi-phi-von",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 44,
+  "op": "append",
+  "sentence": "Vì vậy, [phân tích cơ bản] luôn đặt CAPEX cạnh dòng tiền kinh doanh để tính dòng tiền tự do.",
+  "why": "pillar · đoạn i=44"
+ },
+ {
+  "src": "chi-phi-von-capex-la-gi-y-nghia-va-cach-tinh-chi-phi-von",
+  "target": "cach-phan-tich-bao-cao-tai-chinh",
+  "i": 68,
+  "op": "append",
+  "sentence": "Khi [phân tích báo cáo tài chính], CAPEX nằm ở mục dòng tiền đầu tư trên báo cáo lưu chuyển tiền tệ.",
+  "why": "hub · đoạn i=68"
+ },
+ {
+  "src": "chi-phi-von-capex-la-gi-y-nghia-va-cach-tinh-chi-phi-von",
+  "target": "chi-tieu-loi-nhuan-cua-doanh-nghiep",
+  "i": 33,
+  "op": "append",
+  "sentence": "Khác với CAPEX, OpEx đi thẳng vào chi phí trong kỳ nên tác động ngay tới các [chỉ tiêu lợi nhuận] của doanh nghiệp.",
+  "why": "sub-hub · đoạn i=33"
+ },
+ {
+  "src": "pha-loang-co-phieu-la-gi-anh-huong-va-cach-tinh-toan",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 2,
+  "op": "append",
+  "sentence": "Vì vậy, [phân tích cơ bản] cần theo dõi kế hoạch phát hành thêm khi dự phóng EPS các năm tới.",
+  "why": "pillar · đoạn i=2"
+ },
+ {
+  "src": "gia-tri-doanh-nghiep-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 40,
+  "op": "append",
+  "sentence": "Với nhóm chu kỳ, [phân tích cơ bản] hay kết hợp P/B hoặc EV/EBITDA để tránh định giá sai ở đỉnh lợi nhuận.",
+  "why": "pillar · đoạn i=40"
+ },
+ {
+  "src": "thi-gia-co-phieu-la-gi-cach-tinh-phan-tich-va-cac-yeu-to-anh-huong",
+  "target": "cach-dinh-gia-co-phieu-cho-nguoi-moi-bat-dau",
+  "i": 30,
+  "op": "append",
+  "sentence": "Khoảng chênh này là lý do nhà đầu tư cần [định giá cổ phiếu] độc lập trước khi so với thị giá.",
+  "why": "hub · đoạn i=30"
+ },
+ {
+  "src": "co-cau-von-capital-structure-la-gi-cach-ap-dung-vao-phan-tich-co-ban-co-phieu",
+  "target": "don-bay-tai-chinh-la-gi-uu-va-nhuoc-diem-cach-su-dung",
+  "i": 2,
+  "op": "append",
+  "sentence": "Tỷ trọng vốn vay càng cao thì mức [đòn bẩy tài chính] càng lớn, kéo theo cả lợi nhuận kỳ vọng lẫn rủi ro.",
+  "why": "sub-hub · đoạn i=2"
+ },
+ {
+  "src": "ty-suat-co-tuc-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 5,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], tỷ suất cổ tức cần đọc cùng tỷ lệ chi trả để biết mức chia đó có bền vững hay không.",
+  "why": "pillar · đoạn i=5"
+ },
+ {
+  "src": "co-phieu-thuong-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 8,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], cổ phiếu thưởng không làm tăng giá trị doanh nghiệp, chỉ chia giá trị đó cho nhiều cổ phần hơn.",
+  "why": "pillar · đoạn i=8"
+ },
+ {
+  "src": "co-phieu-thuong-la-gi",
+  "target": "so-sanh-co-phieu-thuong-va-co-phieu-uu-dai",
+  "i": 4,
+  "op": "append",
+  "sentence": "Cổ phiếu thưởng là cổ phần phổ thông, khác với [cổ phần ưu đãi] có quyền lợi riêng về cổ tức hoặc biểu quyết.",
+  "why": "sub-hub · đoạn i=4"
+ },
+ {
+  "src": "no-phai-tra-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 5,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], cơ cấu nợ ngắn hạn và dài hạn cho biết áp lực trả nợ của doanh nghiệp đến sớm hay muộn.",
+  "why": "pillar · đoạn i=5"
+ },
+ {
+  "src": "no-phai-tra-la-gi",
+  "target": "cach-phan-tich-bao-cao-tai-chinh",
+  "i": 29,
+  "op": "append",
+  "sentence": "Khi [phân tích báo cáo tài chính], cần so nợ phải trả qua nhiều kỳ để thấy doanh nghiệp đang tăng hay giảm vay.",
+  "why": "hub · đoạn i=29"
+ },
+ {
+  "src": "no-phai-tra-la-gi",
+  "target": "huong-dan-cach-doc-bao-cao-tai-chinh-nhung-thong-tin-quan-trong",
+  "i": 16,
+  "op": "append",
+  "sentence": "Khi [đọc báo cáo tài chính], nợ dài hạn cần đối chiếu với tài sản dài hạn mà khoản vay đó tài trợ.",
+  "why": "sub-hub · đoạn i=16"
+ },
+ {
+  "src": "ty-le-no-dai-han-tren-von-chu-so-huu-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 6,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], chỉ số này đi cùng tỷ số nợ trên tổng tài sản để đánh giá rủi ro cơ cấu vốn.",
+  "why": "pillar · đoạn i=6"
+ },
+ {
+  "src": "ty-le-no-dai-han-tren-von-chu-so-huu-la-gi",
+  "target": "don-bay-tai-chinh-la-gi-uu-va-nhuoc-diem-cach-su-dung",
+  "i": 2,
+  "op": "append",
+  "sentence": "Đây là một thước đo [đòn bẩy tài chính] dài hạn, tập trung vào các khoản vay có kỳ hạn trên một năm.",
+  "why": "sub-hub · đoạn i=2"
+ },
+ {
+  "src": "co-tuc-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 33,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], tỷ lệ chi trả cần so với tăng trưởng lợi nhuận để biết doanh nghiệp còn dư địa tái đầu tư.",
+  "why": "pillar · đoạn i=33"
+ },
+ {
+  "src": "chi-so-p-b-la-gi-cach-ap-dung-de-tim-doanh-nghiep-dang-bi-dinh-gia-thap",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 9,
+  "op": "append",
+  "sentence": "Vì vậy, [phân tích cơ bản] dùng P/B cùng ROE thay vì nhìn riêng một con số.",
+  "why": "pillar · đoạn i=9"
+ },
+ {
+  "src": "chi-so-p-b-la-gi-cach-ap-dung-de-tim-doanh-nghiep-dang-bi-dinh-gia-thap",
+  "target": "cach-dinh-gia-co-phieu-cho-nguoi-moi-bat-dau",
+  "i": 24,
+  "op": "append",
+  "sentence": "P/B là một trong nhiều [phương pháp định giá cổ phiếu], phù hợp nhất với doanh nghiệp có tài sản hữu hình lớn như ngân hàng.",
+  "why": "hub · đoạn i=24"
+ },
+ {
+  "src": "vong-quay-tai-san-co-dinh-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 3,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], chỉ số này quan trọng với doanh nghiệp sản xuất có nhà máy, máy móc chiếm phần lớn tài sản.",
+  "why": "pillar · đoạn i=3"
+ },
+ {
+  "src": "vong-quay-tai-san-co-dinh-la-gi",
+  "target": "cac-chi-so-phan-tich-bao-cao-tai-chinh",
+  "i": 32,
+  "op": "append",
+  "sentence": "Chỉ số này nằm trong nhóm hiệu quả hoạt động của các [chỉ số tài chính], cùng vòng quay tổng tài sản và hàng tồn kho.",
+  "why": "hub · đoạn i=32"
+ },
+ {
+  "src": "cach-mua-co-phieu-ipo",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 17,
+  "op": "append",
+  "sentence": "Khi thiếu dữ liệu lịch sử, [phân tích cơ bản] dựa nhiều hơn vào mô hình kinh doanh, ngành và chất lượng ban lãnh đạo.",
+  "why": "pillar · đoạn i=17"
+ },
+ {
+  "src": "co-phieu-uu-dai-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 57,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], EPS cần tính trên phần lợi nhuận còn lại sau khi trừ cổ tức ưu đãi.",
+  "why": "pillar · đoạn i=57"
+ },
+ {
+  "src": "con-hao-kinh-te-la-gi-cach-tao-ra-va-tam-quan-trong-cua-con-hao-kinh-te",
+  "target": "phan-tich-doanh-nghiep-trong-dau-tu-chung-khoan-la-gi",
+  "i": 48,
+  "op": "append",
+  "sentence": "Bước này nối phần [phân tích định tính] về lợi thế cạnh tranh với số liệu tài chính thực tế.",
+  "why": "hub · đoạn i=48"
+ },
+ {
+  "src": "phuong-phap-top-down-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 5,
+  "op": "append",
+  "sentence": "Ở mỗi bước, [phân tích cơ bản] cung cấp dữ liệu để thu hẹp danh sách từ ngành xuống từng doanh nghiệp.",
+  "why": "pillar · đoạn i=5"
+ },
+ {
+  "src": "phuong-phap-top-down-la-gi",
+  "target": "phan-tich-doanh-nghiep-trong-dau-tu-chung-khoan-la-gi",
+  "i": 4,
+  "op": "append",
+  "sentence": "Bước cuối của quy trình là [phân tích doanh nghiệp] để chọn mã có nền tảng tốt nhất trong ngành tiềm năng.",
+  "why": "hub · đoạn i=4"
+ },
+ {
+  "src": "dong-tien-tu-hoat-dong-kinh-doanh-ocf-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 2,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], OCF được so với lợi nhuận sau thuế để kiểm tra chất lượng lợi nhuận.",
+  "why": "pillar · đoạn i=2"
+ },
+ {
+  "src": "dong-tien-tu-hoat-dong-kinh-doanh-ocf-la-gi",
+  "target": "cach-phan-tich-bao-cao-tai-chinh",
+  "i": 33,
+  "op": "append",
+  "sentence": "Khi [phân tích báo cáo tài chính], OCF được đọc cùng dòng tiền đầu tư và dòng tiền tài chính để thấy tiền đi đâu.",
+  "why": "hub · đoạn i=33"
+ },
+ {
+  "src": "dong-tien-tu-hoat-dong-kinh-doanh-ocf-la-gi",
+  "target": "huong-dan-cach-doc-bao-cao-tai-chinh-nhung-thong-tin-quan-trong",
+  "i": 26,
+  "op": "append",
+  "sentence": "Khi [đọc báo cáo tài chính], chỉ tiêu này nằm ở phần đầu báo cáo lưu chuyển tiền tệ.",
+  "why": "sub-hub · đoạn i=26"
+ },
+ {
+  "src": "cach-dinh-gia-co-phieu-cho-nguoi-moi-bat-dau",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 16,
+  "op": "append",
+  "sentence": "Đây là phương pháp gắn chặt nhất với [phân tích cơ bản], vì mọi giả định đều đến từ đánh giá ngành và doanh nghiệp.",
+  "why": "pillar · đoạn i=16"
+ },
+ {
+  "src": "vong-quay-tong-tai-san-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 3,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], chỉ số này là một thành phần của mô hình DuPont khi tách ROE.",
+  "why": "pillar · đoạn i=3"
+ },
+ {
+  "src": "cach-phan-tich-bao-cao-tai-chinh",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 5,
+  "op": "append",
+  "sentence": "Đây là phần định lượng của [phân tích cơ bản], đi sau bước tìm hiểu mô hình kinh doanh và ngành.",
+  "why": "pillar · đoạn i=5"
+ },
+ {
+  "src": "chi-tieu-loi-nhuan-cua-doanh-nghiep",
+  "target": "cach-phan-tich-bao-cao-tai-chinh",
+  "i": 20,
+  "op": "append",
+  "sentence": "Các chỉ tiêu này lấy từ báo cáo kết quả kinh doanh, nên cần nắm [cách phân tích báo cáo tài chính] trước khi so sánh.",
+  "why": "hub · đoạn i=20"
+ },
+ {
+  "src": "vong-quay-von-luu-dong-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 12,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], so sánh theo thời gian giúp phát hiện doanh nghiệp đang tồn đọng vốn ở hàng tồn kho hay khoản phải thu.",
+  "why": "pillar · đoạn i=12"
+ },
+ {
+  "src": "co-phieu-bi-huy-niem-yet-nha-dau-tu-can-luu-y-nhung-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 37,
+  "op": "append",
+  "sentence": "Vì vậy, [phân tích cơ bản] cần kiểm tra lịch sử kiểm toán và công bố thông tin trước khi mua cổ phiếu nhỏ.",
+  "why": "pillar · đoạn i=37"
+ },
+ {
+  "src": "co-phieu-bi-huy-niem-yet-nha-dau-tu-can-luu-y-nhung-gi",
+  "target": "niem-yet-chung-khoan-ipo-la-gi-nhung-dieu-can-biet",
+  "i": 17,
+  "op": "append",
+  "sentence": "Các tiêu chuẩn đó chính là [điều kiện niêm yết chứng khoán] mà doanh nghiệp đã phải đáp ứng khi lên sàn.",
+  "why": "sub-hub · đoạn i=17"
+ },
+ {
+  "src": "cac-chi-so-phan-tich-bao-cao-tai-chinh",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 3,
+  "op": "append",
+  "sentence": "Bộ chỉ số này là phần định lượng của [phân tích cơ bản], dùng sau khi đã hiểu mô hình kinh doanh.",
+  "why": "pillar · đoạn i=3"
+ },
+ {
+  "src": "bien-loi-nhuan-gop-la-gi-y-nghia-cua-bien-loi-nhuan-gop-khi-lua-chon-co-phieu",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 3,
+  "op": "append",
+  "sentence": "Vì vậy, [phân tích cơ bản] luôn so biên gộp qua nhiều năm và với đối thủ cùng ngành.",
+  "why": "pillar · đoạn i=3"
+ },
+ {
+  "src": "current-ratio-la-gi-cach-tinh-va-y-nghia-cua-he-so-nay",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 19,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], ngưỡng này cần điều chỉnh theo ngành, vì bán lẻ và sản xuất có chu kỳ vốn lưu động khác nhau.",
+  "why": "pillar · đoạn i=19"
+ },
+ {
+  "src": "thoi-gian-thu-hoi-tien-hang-ton-dong-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 7,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], DSO tăng nhanh hơn doanh thu là dấu hiệu doanh nghiệp đang nới bán chịu để giữ tăng trưởng.",
+  "why": "pillar · đoạn i=7"
+ },
+ {
+  "src": "tin-dung-doanh-nghiep-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 11,
+  "op": "append",
+  "sentence": "Vì vậy, [phân tích cơ bản] cần đặt tỷ lệ nợ vay của doanh nghiệp trong bối cảnh chu kỳ lãi suất.",
+  "why": "pillar · đoạn i=11"
+ },
+ {
+  "src": "tin-dung-doanh-nghiep-la-gi",
+  "target": "cac-chi-so-phan-tich-bao-cao-tai-chinh",
+  "i": 10,
+  "op": "append",
+  "sentence": "Mức độ ảnh hưởng tới từng doanh nghiệp đọc được qua các [chỉ số tài chính] như D/E và hệ số khả năng trả lãi.",
+  "why": "hub · đoạn i=10"
+ },
+ {
+  "src": "von-chu-so-huu-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 43,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], vốn chủ sở hữu là mẫu số của ROE và nền tảng để tính giá trị sổ sách.",
+  "why": "pillar · đoạn i=43"
+ },
+ {
+  "src": "chi-so-roic-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 3,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], ROIC duy trì cao hơn chi phí vốn qua nhiều năm là dấu hiệu doanh nghiệp có lợi thế cạnh tranh bền.",
+  "why": "pillar · đoạn i=3"
+ },
+ {
+  "src": "chi-so-p-e-la-gi-cach-ap-dung-de-tim-co-phieu-tot",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 10,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], P/E chỉ có nghĩa khi đặt cạnh tốc độ tăng trưởng lợi nhuận và P/E trung bình ngành.",
+  "why": "pillar · đoạn i=10"
+ },
+ {
+  "src": "chia-tach-co-phieu-la-gi-muc-dich-cua-viec-chia-tach-co-phieu",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 26,
+  "op": "append",
+  "sentence": "Với [phân tích cơ bản], chia tách không thay đổi giá trị doanh nghiệp, nên EPS và giá mục tiêu chỉ cần điều chỉnh theo tỷ lệ.",
+  "why": "pillar · đoạn i=26"
+ },
+ {
+  "src": "chia-tach-co-phieu-la-gi-muc-dich-cua-viec-chia-tach-co-phieu",
+  "target": "so-sanh-co-phieu-thuong-va-co-phieu-uu-dai",
+  "i": 1,
+  "op": "append",
+  "sentence": "Hoạt động này áp dụng cho cổ phiếu phổ thông và không làm thay đổi [loại cổ phần] mà cổ đông đang nắm giữ.",
+  "why": "sub-hub · đoạn i=1"
+ },
+ {
+  "src": "chi-so-q-o-q-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 26,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], QoQ và YoY cần đọc cùng nhau để tách xu hướng thật khỏi yếu tố mùa vụ.",
+  "why": "pillar · đoạn i=26"
+ },
+ {
+  "src": "chi-so-q-o-q-la-gi",
+  "target": "cach-phan-tich-bao-cao-tai-chinh",
+  "i": 28,
+  "op": "append",
+  "sentence": "Đây là cách [phân tích báo cáo tài chính] theo quý giúp phát hiện điểm đảo chiều sớm hơn so với chỉ nhìn số năm.",
+  "why": "hub · đoạn i=28"
+ },
+ {
+  "src": "chi-so-q-o-q-la-gi",
+  "target": "chi-tieu-loi-nhuan-cua-doanh-nghiep",
+  "i": 4,
+  "op": "append",
+  "sentence": "Các [chỉ tiêu lợi nhuận] hay được theo dõi theo QoQ là lợi nhuận gộp, lợi nhuận hoạt động và lợi nhuận sau thuế.",
+  "why": "sub-hub · đoạn i=4"
+ },
+ {
+  "src": "phan-tich-dupont-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 36,
+  "op": "append",
+  "sentence": "Đây là lý do DuPont là công cụ quen thuộc trong [phân tích cơ bản] khi so sánh các doanh nghiệp cùng ngành.",
+  "why": "pillar · đoạn i=36"
+ },
+ {
+  "src": "wacc-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 3,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], WACC là ngưỡng để so với ROIC khi đánh giá doanh nghiệp có tạo ra giá trị hay không.",
+  "why": "pillar · đoạn i=3"
+ },
+ {
+  "src": "wacc-la-gi",
+  "target": "cach-dinh-gia-co-phieu-cho-nguoi-moi-bat-dau",
+  "i": 39,
+  "op": "append",
+  "sentence": "WACC cũng là tỷ lệ chiết khấu dùng khi [định giá doanh nghiệp] bằng mô hình FCFF.",
+  "why": "hub · đoạn i=39"
+ },
+ {
+  "src": "co-phieu-quy-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 3,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], cổ phiếu quỹ cần trừ khỏi số cổ phiếu lưu hành khi tính EPS và giá trị sổ sách.",
+  "why": "pillar · đoạn i=3"
+ },
+ {
+  "src": "co-phieu-quy-la-gi",
+  "target": "so-sanh-co-phieu-thuong-va-co-phieu-uu-dai",
+  "i": 5,
+  "op": "append",
+  "sentence": "Cổ phiếu quỹ vẫn là cổ phiếu phổ thông, khác với [cổ phần ưu đãi] có quyền lợi riêng ghi trong điều lệ.",
+  "why": "sub-hub · đoạn i=5"
+ },
+ {
+  "src": "von-co-phan-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 41,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], tăng vốn cổ phần cần đi cùng tăng lợi nhuận, nếu không EPS sẽ bị pha loãng.",
+  "why": "pillar · đoạn i=41"
+ },
+ {
+  "src": "bang-can-doi-ke-toan-va-cach-ap-dung-vao-dau-tu-chung-khoan",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 49,
+  "op": "append",
+  "sentence": "Vì vậy, [phân tích cơ bản] luôn đọc bảng cân đối qua nhiều kỳ thay vì một thời điểm.",
+  "why": "pillar · đoạn i=49"
+ },
+ {
+  "src": "bang-can-doi-ke-toan-va-cach-ap-dung-vao-dau-tu-chung-khoan",
+  "target": "cach-phan-tich-bao-cao-tai-chinh",
+  "i": 46,
+  "op": "append",
+  "sentence": "Đây là điểm xuất phát khi [phân tích báo cáo tài chính], trước khi chuyển sang báo cáo kết quả kinh doanh và lưu chuyển tiền tệ.",
+  "why": "hub · đoạn i=46"
+ },
+ {
+  "src": "bang-can-doi-ke-toan-va-cach-ap-dung-vao-dau-tu-chung-khoan",
+  "target": "huong-dan-cach-doc-bao-cao-tai-chinh-nhung-thong-tin-quan-trong",
+  "i": 48,
+  "op": "append",
+  "sentence": "Muốn so sánh đúng giữa các kỳ, nhà đầu tư cần nắm [cách đọc báo cáo tài chính] theo từng khoản mục tài sản và nguồn vốn.",
+  "why": "sub-hub · đoạn i=48"
+ },
+ {
+  "src": "bao-cao-lai-lo-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 4,
+  "op": "append",
+  "sentence": "Đây là báo cáo được dùng nhiều nhất trong [phân tích cơ bản], vì phần lớn chỉ số sinh lời lấy số liệu từ đây.",
+  "why": "pillar · đoạn i=4"
+ },
+ {
+  "src": "bao-cao-lai-lo-la-gi",
+  "target": "cach-phan-tich-bao-cao-tai-chinh",
+  "i": 2,
+  "op": "append",
+  "sentence": "Đây là một trong ba báo cáo chính khi [phân tích báo cáo tài chính], cùng bảng cân đối kế toán và báo cáo lưu chuyển tiền tệ.",
+  "why": "hub · đoạn i=2"
+ },
+ {
+  "src": "bao-cao-lai-lo-la-gi",
+  "target": "huong-dan-cach-doc-bao-cao-tai-chinh-nhung-thong-tin-quan-trong",
+  "i": 47,
+  "op": "append",
+  "sentence": "Trường hợp này cần [đọc báo cáo tài chính] phần thuyết minh để tìm nguồn của khoản lợi nhuận bất thường.",
+  "why": "sub-hub · đoạn i=47"
+ },
+ {
+  "src": "bao-cao-tai-chinh-hop-nhat-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 38,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], các chỉ số như EPS và ROE của tập đoàn luôn tính trên số liệu hợp nhất.",
+  "why": "pillar · đoạn i=38"
+ },
+ {
+  "src": "bao-cao-tai-chinh-hop-nhat-la-gi",
+  "target": "huong-dan-cach-doc-bao-cao-tai-chinh-nhung-thong-tin-quan-trong",
+  "i": 19,
+  "op": "append",
+  "sentence": "Khi [đọc báo cáo tài chính] của tập đoàn, bản hợp nhất là căn cứ chính, còn bản riêng lẻ dùng để xem công ty mẹ.",
+  "why": "sub-hub · đoạn i=19"
+ },
+ {
+  "src": "chi-so-roa-la-gi-y-nghia-va-cach-su-dung",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 6,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], ROA hữu ích nhất khi so các doanh nghiệp cùng ngành có cấu trúc tài sản tương đồng.",
+  "why": "pillar · đoạn i=6"
+ },
+ {
+  "src": "chi-so-roa-la-gi-y-nghia-va-cach-su-dung",
+  "target": "cac-chi-so-phan-tich-bao-cao-tai-chinh",
+  "i": 46,
+  "op": "append",
+  "sentence": "Vì vậy, ROA và ROE cần được đọc cùng nhau trong nhóm [chỉ số tài chính] về khả năng sinh lời.",
+  "why": "hub · đoạn i=46"
+ },
+ {
+  "src": "gia-tri-noi-tai-cua-co-phieu-la-gi-cach-tinh-gia-tri-noi-tai-cua-co-phieu",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 3,
+  "op": "append",
+  "sentence": "Ước tính con số này là mục tiêu cuối cùng của [phân tích cơ bản].",
+  "why": "pillar · đoạn i=3"
+ },
+ {
+  "src": "thang-du-von-co-phan-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 9,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], thặng dư vốn cổ phần lớn cho thấy doanh nghiệp từng huy động vốn với giá cao hơn mệnh giá.",
+  "why": "pillar · đoạn i=9"
+ },
+ {
+  "src": "von-dieu-le-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 67,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], phần EPS tăng nhờ giảm vốn cần tách khỏi tăng trưởng lợi nhuận thực.",
+  "why": "pillar · đoạn i=67"
+ },
+ {
+  "src": "bien-loi-nhuan-rong-net-profit-margin-la-gi-giai-dap-chi-tiet-va-y-nghia-quan-trong",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 54,
+  "op": "append",
+  "sentence": "Vì vậy, [phân tích cơ bản] ưu tiên xu hướng biên ròng nhiều năm hơn con số của một quý.",
+  "why": "pillar · đoạn i=54"
+ },
+ {
+  "src": "bien-loi-nhuan-rong-net-profit-margin-la-gi-giai-dap-chi-tiet-va-y-nghia-quan-trong",
+  "target": "cac-chi-so-phan-tich-bao-cao-tai-chinh",
+  "i": 37,
+  "op": "append",
+  "sentence": "Ba biên lợi nhuận này thuộc nhóm sinh lời trong các [chỉ số tài chính] cần đọc cùng nhau.",
+  "why": "hub · đoạn i=37"
+ },
+ {
+  "src": "ebitda-la-gi-giai-ma-chi-tiet-ve-chi-so-tai-chinh-quan-trong-nay",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 4,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], EBITDA hữu ích khi so các doanh nghiệp có mức khấu hao và đòn bẩy khác nhau.",
+  "why": "pillar · đoạn i=4"
+ },
+ {
+  "src": "roce-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 40,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], xu hướng ROCE nhiều năm cho biết lợi thế cạnh tranh đang mạnh lên hay yếu đi.",
+  "why": "pillar · đoạn i=40"
+ },
+ {
+  "src": "roce-la-gi",
+  "target": "cac-chi-so-phan-tich-bao-cao-tai-chinh",
+  "i": 38,
+  "op": "append",
+  "sentence": "ROCE nằm trong nhóm chỉ số sinh lời của các [chỉ số tài chính], cùng ROE, ROA và ROIC.",
+  "why": "hub · đoạn i=38"
+ },
+ {
+  "src": "quy-tac-72-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 6,
+  "op": "append",
+  "sentence": "Quy tắc này hữu ích khi so kênh đầu tư, còn chọn cổ phiếu cụ thể vẫn cần [phân tích cơ bản doanh nghiệp].",
+  "why": "pillar · đoạn i=6"
+ },
+ {
+  "src": "quy-tac-72-la-gi",
+  "target": "cach-dinh-gia-co-phieu-cho-nguoi-moi-bat-dau",
+  "i": 3,
+  "op": "append",
+  "sentence": "Cùng logic lãi kép, các mô hình [định giá cổ phiếu] chiết khấu dòng tiền tương lai về hiện tại.",
+  "why": "hub · đoạn i=3"
+ },
+ {
+  "src": "quy-tac-72-la-gi",
+  "target": "dcf-la-gi",
+  "i": 18,
+  "op": "append",
+  "sentence": "Phép chiết khấu ngược của lãi kép chính là nền tảng của [phương pháp DCF] khi đưa dòng tiền tương lai về hiện tại.",
+  "why": "sub-hub · đoạn i=18"
+ },
+ {
+  "src": "von-luu-dong-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 25,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], vốn lưu động ròng âm chưa chắc là xấu, cần xem doanh nghiệp đang chiếm dụng vốn nhà cung cấp hay thiếu tiền thật.",
+  "why": "pillar · đoạn i=25"
+ },
+ {
+  "src": "von-luu-dong-la-gi",
+  "target": "cac-chi-so-phan-tich-bao-cao-tai-chinh",
+  "i": 48,
+  "op": "append",
+  "sentence": "Các [chỉ số tài chính] như vòng quay khoản phải thu và số ngày thu tiền giúp phát hiện sớm tình trạng này.",
+  "why": "hub · đoạn i=48"
+ },
+ {
+  "src": "von-phap-dinh-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 36,
+  "op": "append",
+  "sentence": "Vì vậy, [phân tích cơ bản] nhóm tài chính cần theo dõi cả hệ số an toàn vốn bên cạnh lợi nhuận.",
+  "why": "pillar · đoạn i=36"
+ },
+ {
+  "src": "von-phap-dinh-la-gi",
+  "target": "von-chu-so-huu-la-gi",
+  "i": 17,
+  "op": "append",
+  "sentence": "Khi vốn điều lệ đạt chuẩn, nhà đầu tư cần xem tiếp [vốn chủ sở hữu] để biết lỗ lũy kế có đang bào mòn phần vốn này hay không.",
+  "why": "sub-hub · đoạn i=17"
+ },
+ {
+  "src": "chi-so-eps-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 10,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], EPS pha loãng là con số an toàn hơn khi doanh nghiệp có trái phiếu chuyển đổi hoặc ESOP.",
+  "why": "pillar · đoạn i=10"
+ },
+ {
+  "src": "chi-so-roe-la-gi-cach-tinh-y-nghia-va-tam-quan-trong-doi-voi-nha-dau-tu",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 7,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], ROE cần so với trung bình ngành và đọc cùng mức nợ vay.",
+  "why": "pillar · đoạn i=7"
+ },
+ {
+  "src": "cagr-la-gi",
+  "target": "cach-dinh-gia-co-phieu-cho-nguoi-moi-bat-dau",
+  "i": 100,
+  "op": "append",
+  "sentence": "Tốc độ CAGR lợi nhuận cũng là đầu vào chính khi [định giá cổ phiếu] bằng P/E dự phóng hoặc PEG.",
+  "why": "hub · đoạn i=100"
+ },
+ {
+  "src": "cagr-la-gi",
+  "target": "dcf-la-gi",
+  "i": 3,
+  "op": "append",
+  "sentence": "Khi dựng [mô hình DCF], CAGR lịch sử là điểm tham chiếu để đặt giả định tăng trưởng dòng tiền.",
+  "why": "sub-hub · đoạn i=3"
+ },
+ {
+  "src": "chi-so-npv-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 3,
+  "op": "append",
+  "sentence": "Nguyên lý giá trị thời gian của tiền cũng là nền của các mô hình định giá trong [phân tích cơ bản].",
+  "why": "pillar · đoạn i=3"
+ },
+ {
+  "src": "chi-so-p-s-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 16,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], P/S vì vậy là chỉ số thay thế khi lợi nhuận chưa phản ánh đúng quy mô kinh doanh.",
+  "why": "pillar · đoạn i=16"
+ },
+ {
+  "src": "chi-so-p-s-la-gi",
+  "target": "cach-dinh-gia-co-phieu-cho-nguoi-moi-bat-dau",
+  "i": 17,
+  "op": "append",
+  "sentence": "P/S cần dùng cùng các [phương pháp định giá cổ phiếu] khác vì chỉ số này bỏ qua biên lợi nhuận.",
+  "why": "hub · đoạn i=17"
+ },
+ {
+  "src": "don-bay-tai-chinh-la-gi-uu-va-nhuoc-diem-cach-su-dung",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 6,
+  "op": "append",
+  "sentence": "Ở góc độ doanh nghiệp, [phân tích cơ bản] đo mức đòn bẩy qua tỷ lệ nợ trên vốn chủ sở hữu và hệ số trả lãi.",
+  "why": "pillar · đoạn i=6"
+ },
+ {
+  "src": "don-bay-tai-chinh-la-gi-uu-va-nhuoc-diem-cach-su-dung",
+  "target": "cac-chi-so-phan-tich-bao-cao-tai-chinh",
+  "i": 17,
+  "op": "append",
+  "sentence": "Hệ số nhân này cũng là một thành phần trong nhóm [chỉ số tài chính] cơ cấu vốn khi tách ROE theo DuPont.",
+  "why": "hub · đoạn i=17"
+ },
+ {
+  "src": "vong-quay-hang-ton-kho-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 6,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], vòng quay hàng tồn kho giảm kéo dài hay đi trước các đợt trích lập dự phòng giảm giá hàng tồn kho.",
+  "why": "pillar · đoạn i=6"
+ },
+ {
+  "src": "free-float-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 35,
+  "op": "append",
+  "sentence": "Ngoài số liệu tài chính, [phân tích cơ bản] cũng xem cơ cấu cổ đông để đánh giá rủi ro thanh khoản của cổ phiếu.",
+  "why": "pillar · đoạn i=35"
+ },
+ {
+  "src": "free-float-la-gi",
+  "target": "so-sanh-co-phieu-thuong-va-co-phieu-uu-dai",
+  "i": 3,
+  "op": "append",
+  "sentence": "Chỉ số này chỉ tính cổ phiếu phổ thông, nên cần phân biệt rõ từng [loại cổ phần] khi đọc cơ cấu sở hữu.",
+  "why": "sub-hub · đoạn i=3"
+ },
+ {
+  "src": "niem-yet-chung-khoan-ipo-la-gi-nhung-dieu-can-biet",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 14,
+  "op": "append",
+  "sentence": "Với nhà đầu tư, cổ phiếu mới niêm yết vẫn cần [phân tích cơ bản] như mọi mã khác thay vì dựa vào sức hút thương hiệu.",
+  "why": "pillar · đoạn i=14"
+ },
+ {
+  "src": "bao-cao-luu-chuyen-tien-te-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 4,
+  "op": "append",
+  "sentence": "Vì vậy, [phân tích cơ bản] dùng báo cáo này để kiểm tra lợi nhuận kế toán có chuyển thành tiền hay không.",
+  "why": "pillar · đoạn i=4"
+ },
+ {
+  "src": "bao-cao-luu-chuyen-tien-te-la-gi",
+  "target": "cach-phan-tich-bao-cao-tai-chinh",
+  "i": 3,
+  "op": "append",
+  "sentence": "Đây là báo cáo hay bị bỏ qua nhất khi [phân tích báo cáo tài chính], dù nó phản ánh trực tiếp khả năng tạo tiền.",
+  "why": "hub · đoạn i=3"
+ },
+ {
+  "src": "danh-gia-chi-tieu-doanh-thu-cua-doanh-nghiep",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 26,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], doanh thu là điểm bắt đầu trước khi xét tới biên lợi nhuận và dòng tiền.",
+  "why": "pillar · đoạn i=26"
+ },
+ {
+  "src": "danh-gia-chi-tieu-doanh-thu-cua-doanh-nghiep",
+  "target": "cach-phan-tich-bao-cao-tai-chinh",
+  "i": 30,
+  "op": "append",
+  "sentence": "Các phép so sánh này là bước cơ bản khi [phân tích báo cáo tài chính] theo chiều ngang và chiều dọc.",
+  "why": "hub · đoạn i=30"
+ },
+ {
+  "src": "danh-gia-chi-tieu-doanh-thu-cua-doanh-nghiep",
+  "target": "chi-tieu-loi-nhuan-cua-doanh-nghiep",
+  "i": 27,
+  "op": "append",
+  "sentence": "Doanh thu tăng chỉ có ý nghĩa khi đi cùng các [chỉ tiêu lợi nhuận] cải thiện theo.",
+  "why": "sub-hub · đoạn i=27"
+ },
+ {
+  "src": "diem-hoa-von-la-gi",
+  "target": "cach-phan-tich-bao-cao-tai-chinh",
+  "i": 3,
+  "op": "append",
+  "sentence": "Khi [phân tích báo cáo tài chính], điểm hòa vốn giúp ước tính doanh thu tối thiểu mà doanh nghiệp cần trong mỗi quý.",
+  "why": "hub · đoạn i=3"
+ },
+ {
+  "src": "diem-hoa-von-la-gi",
+  "target": "chi-tieu-loi-nhuan-cua-doanh-nghiep",
+  "i": 49,
+  "op": "append",
+  "sentence": "Vượt điểm hòa vốn, mỗi sản phẩm bán thêm sẽ cải thiện nhanh các [chỉ tiêu lợi nhuận] nhờ chi phí cố định đã được bù.",
+  "why": "sub-hub · đoạn i=49"
+ },
+ {
+  "src": "huong-dan-cach-doc-bao-cao-tai-chinh-nhung-thong-tin-quan-trong",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 5,
+  "op": "append",
+  "sentence": "Đọc được báo cáo tài chính là kỹ năng nền của [phân tích cơ bản] trước khi tính bất kỳ chỉ số nào.",
+  "why": "pillar · đoạn i=5"
+ },
+ {
+  "src": "huong-dan-cach-doc-bao-cao-tai-chinh-nhung-thong-tin-quan-trong",
+  "target": "cach-phan-tich-bao-cao-tai-chinh",
+  "i": 23,
+  "op": "append",
+  "sentence": "Sau khi đọc xong các báo cáo, bước tiếp theo là [phân tích báo cáo tài chính] bằng chỉ số và so sánh nhiều kỳ.",
+  "why": "hub · đoạn i=23"
+ },
+ {
+  "src": "chi-so-ebit-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 36,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], EBIT giúp so các doanh nghiệp có cơ cấu nợ và mức thuế khác nhau trên cùng một mặt bằng.",
+  "why": "pillar · đoạn i=36"
+ },
+ {
+  "src": "chi-so-ros-la-gi",
+  "target": "cac-chi-so-phan-tich-bao-cao-tai-chinh",
+  "i": 58,
+  "op": "append",
+  "sentence": "Vì vậy, ROS cần đọc cùng các [chỉ số tài chính] về dòng tiền thay vì đứng riêng.",
+  "why": "hub · đoạn i=58"
+ },
+ {
+  "src": "peg-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 66,
+  "op": "append",
+  "sentence": "Trong [phân tích cơ bản], PEG và PEGY bổ sung cho P/E khi so các doanh nghiệp có tốc độ tăng trưởng khác nhau.",
+  "why": "pillar · đoạn i=66"
+ },
+ {
+  "src": "m-a-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 0,
+  "op": "skip",
+  "sentence": "",
+  "reason": "không có đoạn phù hợp"
+ },
+ {
+  "src": "m-a-la-gi",
+  "target": "niem-yet-chung-khoan-ipo-la-gi-nhung-dieu-can-biet",
+  "i": 0,
+  "op": "skip",
+  "sentence": "",
+  "reason": "không có đoạn phù hợp"
+ },
+ {
+  "src": "ngay-giao-dich-khong-huong-quyen-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 10,
+  "op": "newp",
+  "sentence": "Điều chỉnh giá sau ngày không hưởng quyền không làm thay đổi giá trị doanh nghiệp, nên [phân tích cơ bản] cần tính định giá trên số cổ phiếu mới.",
+  "why": "pillar · đoạn i=10"
+ },
+ {
+  "src": "phan-tich-bao-cao-tai-chinh-cong-ty-bibica",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 3,
+  "op": "append",
+  "sentence": "Lợi nhuận tăng nhanh hơn doanh thu là tín hiệu mà [phân tích cơ bản] cần kiểm tra nguồn gốc, từ biên gộp hay thu nhập bất thường.",
+  "why": "pillar · đoạn i=3"
+ },
+ {
+  "src": "due-diligence-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 70,
+  "op": "append",
+  "sentence": "Đây là một trong các bước kiểm tra mà [phân tích cơ bản doanh nghiệp] cần làm trước khi giải ngân.",
+  "why": "pillar · đoạn i=70"
+ },
+ {
+  "src": "due-diligence-la-gi",
+  "target": "phan-tich-doanh-nghiep-trong-dau-tu-chung-khoan-la-gi",
+  "i": 55,
+  "op": "append",
+  "sentence": "Tư duy này gần với [phân tích doanh nghiệp] mà nhà đầu tư cá nhân có thể tự làm từ báo cáo tài chính và tài liệu công bố.",
+  "why": "hub · đoạn i=55"
+ },
+ {
+  "src": "loi-the-canh-tranh-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 3,
+  "op": "append",
+  "sentence": "Đánh giá lợi thế này là phần định tính của [phân tích cơ bản], trước khi kiểm chứng bằng số liệu.",
+  "why": "pillar · đoạn i=3"
+ },
+ {
+  "src": "loi-the-canh-tranh-la-gi",
+  "target": "phan-tich-doanh-nghiep-trong-dau-tu-chung-khoan-la-gi",
+  "i": 24,
+  "op": "append",
+  "sentence": "Vì vậy, [phân tích doanh nghiệp] luôn kiểm chứng lợi thế cạnh tranh bằng ROE và biên lợi nhuận nhiều năm.",
+  "why": "hub · đoạn i=24"
+ },
+ {
+  "src": "mo-hinh-kinh-doanh-la-gi",
+  "target": "phan-tich-co-ban-la-gi",
+  "i": 29,
+  "op": "append",
+  "sentence": "Mỗi mô hình có cấu trúc chi phí riêng, nên [phân tích cơ bản] luôn so doanh nghiệp với đối thủ cùng mô hình.",
+  "why": "pillar · đoạn i=29"
+ },
+ {
+  "src": "mo-hinh-kinh-doanh-la-gi",
+  "target": "phan-tich-doanh-nghiep-trong-dau-tu-chung-khoan-la-gi",
+  "i": 6,
+  "op": "append",
+  "sentence": "Hiểu mô hình kinh doanh là bước đầu tiên của [phân tích doanh nghiệp] trước khi đánh giá con số tài chính.",
+  "why": "hub · đoạn i=6"
+ }
+]

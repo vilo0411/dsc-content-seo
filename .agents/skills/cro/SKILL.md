@@ -24,7 +24,7 @@ Chèn tầng chuyển đổi vào bài viết: đoạn Product Bridge dẫn từ
 2. `knowledge/3-pipeline/anti-ai-rules.md` — bước dựng Product Bridge là viết văn xuôi, không có exception
 3. `.antigravity/rules/cta-conversion.md` — rule cứng về CTA
 4. `.antigravity/memory/instincts.md` — bản rút gọn
-5. `knowledge/1-brand/personas.md` — **chỉ section persona của bài** (xác định ở Bước 2), gồm `### DSC Product Bridge`
+5. Persona của bài (xác định ở Bước 2) — `python scripts/persona.py P<n> --part bridge` (+ `--part tone` nếu viết đoạn dẫn); ma trận CTA: `python scripts/persona.py --matrix`
 
 > Đây là lần load context **duy nhất** trong session. Các bước sau không đọc lại.
 > **Không đọc `glossary.md`** — skill này không viết nội dung chuyên môn mới.
@@ -122,9 +122,9 @@ Sau đó Self-Audit ngữ nghĩa theo checklist trong `.antigravity/skills/cro-o
 
 ### 📁 Bước 6: Ghi nhận
 
-- `python scripts/qa_lint.py [file] --log` — ghi score vào `revision-log.md`.
+- `python scripts/qa_lint.py [file] --log` — ghi score (+ slop) vào `qa-score-log.csv`.
 - Có chạy A/B → ghi biến thể đang dùng của từng bài vào `knowledge/3-pipeline/cta-variants.md` (tạo file nếu chưa có) để lần đo sau biết bài nào chạy gì.
-- Phát hiện pattern copy lặp lỗi → `/learn`, ghi vào `instincts-archive.md` rồi chạy `python scripts/optimize_instincts.py`. Lỗi nào bắt được bằng regex thì thêm vào `qa_lint.py` thay vì thêm instinct.
+- Phát hiện pattern copy lặp lỗi → `/learn` (sửa rule tag `banner` / `product-bridge`: `optimize_instincts.py --show banner`), rồi `python scripts/optimize_instincts.py --check`. Lỗi nào bắt được bằng regex thì thêm vào `qa_lint.py` thay vì thêm instinct.
 
 ---
 

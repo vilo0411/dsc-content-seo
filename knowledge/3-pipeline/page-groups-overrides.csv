@@ -1,0 +1,74 @@
+slug,subgroup,note
+margin-la-gi,1a,registry 2c -> topic margin
+cat-lo-la-gi,6c,registry 2c -> topic quản trị rủi ro
+co-phieu-penny-la-gi,5k,registry 2c -> loại cổ phiếu
+quan-ly-danh-muc-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau,6c,registry 2c -> danh mục
+cach-doc-bieu-do-nen-chung-khoan-cho-nguoi-moi-bat-dau,3d,registry 5k -> mô hình nến
+chi-so-vn-index-va-y-nghia-quan-trong-trong-thi-truong-chung-khoan-viet-nam,2d,registry 5k -> chỉ số
+phan-tich-co-ban-la-gi,4a,registry 5k -> PTCB
+dau-tu-tich-san-co-phieu-la-gi-huong-dan-chi-tiet-cho-nguoi-moi-bat-dau,6b,registry 5k -> chiến lược
+co-10-trieu-nen-dau-tu-gi,10b,registry 2a -> kênh đầu tư theo số vốn
+sinh-vien-nen-dau-tu-gi,10b,registry 2a -> kênh đầu tư
+nen-gui-tiet-kiem-hay-dau-tu-chung-khoan,10b,registry 2a -> kênh đầu tư
+khoa-hoc-chung-khoan,13a,registry 2a -> khoá học
+khoa-hoc-phan-tich-ky-thuat-chung-khoan,13a,khoá học
+khoa-hoc-phan-tich-bao-cao-tai-chinh,13a,khoá học
+nhung-cuon-sach-hay-ve-phan-tich-ky-thuat,13a,sách
+sach-phan-tich-bao-cao-tai-chinh,13a,sách
+sach-dau-tu-vang,11a,về cụm vàng
+giao-trinh-phan-tich-bao-cao-tai-chinh,13a,sách
+nhung-cuon-sach-dau-tu-hay-ve-warren-buffett,13a,sách
+nhung-cuon-sach-hay-ve-phuong-phap-dau-tu-gia-tri,13a,sách
+tuan-thu-18-quy-tac-cua-richard-rhodes,6a,nhà đầu tư nổi tiếng
+co-phieu-ltg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat,5h,ticker LTG
+co-phieu-npt-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025,5c,ticker NTP (Nhựa Tiền Phong)
+co-phieu-nt-2-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025,5d,ticker NT2
+co-phieu-pc-1-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025,5d,ticker PC1
+co-phieu-vinfast-mua-o-dau,5e,VinFast (ô tô)
+cach-mua-co-phieu-flc,5b,FLC (BĐS)
+co-nen-mua-co-phieu-novaland,5b,NVL
+cac-co-phieu-niem-yet-thuoc-tap-doan-vingroup-danh-sach-day-du-va-cap-nhat-nam-2024,5b,Vingroup
+chu-ky-co-phieu-la-gi,5j,chu kỳ ngành/cổ phiếu
+lai-suat-chung-chi-quy,7a,quỹ
+ung-dung-arbitrage-vao-dau-tu-chung-chi-quy,7a,quỹ
+trien-vong-trien-khai-quy-etf-vang-tai-viet-nam,11a,về cụm vàng
+gio-giao-dich-phai-sinh,8a,phái sinh
+phi-va-thue-khi-giao-dich-chung-quyen-co-bao-dam-tai-viet-nam,8b,chứng quyền
+stop-loss-la-gi-cach-su-dung-lenh-stop-loss-trong-chung-khoan,1b,lệnh
+thi-truong-so-cap-va-thu-cap-la-gi,2f,thị trường
+dau-tu-chung-khoan-ao-la-gi-huong-dan-chi-tiet-va-day-du,1a,chứng khoán ảo / app
+chi-phi-bien-la-gi,9e,khái niệm kinh tế
+chi-phi-co-hoi-la-gi,9e,khái niệm kinh tế
+cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat,3a,chỉ báo xu hướng
+chi-so-p-e-la-gi-cach-ap-dung-de-tim-co-phieu-tot,4c,rule co-phieu-tot -> chỉ số định giá
+day-la-5-co-phieu-tich-san-cuc-tot-se-khien-ban-kiem-duoc-bon-tien,5o,danh sách cổ phiếu
+ly-thuyet-buoc-di-ngau-nhien-va-phi-ngau-nhien-cua-gia,3h,lý thuyết giá
+cac-chi-so-phan-tich-bao-cao-tai-chinh,4b,bài tổng hợp chỉ số tài chính -> hub 4b/4d
+dong-tien-tu-hoat-dong-kinh-doanh-ocf-la-gi,4a,"OCF = dòng tiền BCTC, không phải PTKT"
+dong-tien-nong-la-gi,9d,hot money = dòng vốn ngoại
+moi-quan-he-giua-lai-suat-va-xu-huong-van-dong-cua-thi-truong-chung-khoan,9b,lãi suất vĩ mô
+can-can-vang-lai-la-gi,9d,vãng lai ≠ vàng
+chi-so-q-o-q-la-gi,4a,QoQ dùng đọc BCTC
+yoy-la-gi-cach-tinh-va-y-nghia-cua-chi-so-yoy,4a,YoY dùng đọc BCTC
+chu-ky-la-gi,5j,chu kỳ trong đầu tư CK
+phuong-phap-qua-cau-tuyet,10d,ngoài phạm vi: trả nợ cá nhân
+50-trieu-nen-gui-tiet-kiem-ngan-hang-nao,10a,chọn ngân hàng gửi tiết kiệm
+so-sanh-thi-truong-chung-khoan-va-thi-truong-ngoai-hoi,10d,ngoài phạm vi: forex
+no-xau-trong-cac-co-phieu-ngan-hang-la-gi,5p,chỉ số phân tích CP ngân hàng
+don-bay-tai-chinh-trong-dau-tu-chung-khoan-la-gi,1a,đòn bẩy của nhà đầu tư = margin
+co-cau-von-capital-structure-la-gi-cach-ap-dung-vao-phan-tich-co-ban-co-phieu,4d,cơ cấu vốn = đòn bẩy DN
+lap-gap-trong-chung-khoan-co-hoi-bung-no,3f,gap
+cach-chon-co-phieu-de-dau-tu-dai-han-tai-viet-nam,5o,top 10 mã dài hạn
+kinh-te-hoc-vi-mo-la-gi-y-nghia-trong-dau-tu-chung-khoan,9e,hub khái niệm kinh tế học
+5-chi-so-quan-trong-cua-phan-tich-co-ban-trong-chung-khoan,4b,bài tổng hợp chỉ số -> nhóm chỉ số
+rui-ro-tin-dung-la-gi,6c,loại rủi ro
+vo-no-la-gi,9f,vỡ nợ = sự kiện tài chính
+tin-dung-doanh-nghiep-la-gi,4d,sức khoẻ tín dụng DN = đòn bẩy/nợ
+nen-dau-tu-vang-hay-bac,11a,cầu nối vàng–bạc (cross của cụm bạc)
+nav-la-gi-trong-dau-tu-chung-khoan,7a,NAV của quỹ
+uy-thac-dau-tu-la-gi,7a,uỷ thác = sản phẩm quản lý tài sản
+hoat-dong-uy-thac-dau-tu-chung-khoan-la-gi,7a,trùng uy-thac-dau-tu-la-gi -> 301
+y-nghia-cua-sell-in-may-and-go-away-trong-dau-tu-chung-khoan-tai-viet-nam,6b,chiến lược theo mùa vụ
+hieu-ung-thang-gieng-trong-dau-tu-chung-khoan-la-gi,6b,chiến lược theo mùa vụ
+huong-dan-mo-tai-khoan-chung-chi-quy,7a,mở TK quỹ -> cụm quỹ
+spread-la-gi,2f,thuật ngữ

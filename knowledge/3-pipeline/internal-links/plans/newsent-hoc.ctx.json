@@ -1,0 +1,239 @@
+[
+ {
+  "src": "danh-sach-cac-dien-dan-chung-khoan-uy-tin-tai-viet-nam",
+  "src_title": "Top 5 diễn đàn chứng khoán uy tín tại Việt Nam",
+  "target": "khoa-hoc-chung-khoan",
+  "role": "sub-hub",
+  "target_title": "Khóa học chứng khoán cho người mới, lộ trình chi tiết cho F0",
+  "clicks": "210",
+  "anchors": [
+   "khóa học chứng khoán",
+   "khóa học đầu tư chứng khoán",
+   "học đầu tư chứng khoán",
+   "lớp học chứng khoán",
+   "học chứng khoán",
+   "học đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 10,
+    "h": "Đối tượng phù hợp với diễn đàn chứng khoán",
+    "n_sent": 1,
+    "t": "Diễn đàn chứng khoán phù hợp với tất cả các nhà đầu tư, bao gồm cả người mới bắt đầu và nhà đầu tư có kinh nghiệm."
+   },
+   {
+    "i": 34,
+    "h": "Kết bài",
+    "n_sent": 2,
+    "t": "Diễn đàn chứng khoán là một nguồn thông tin hữu ích cho các nhà đầu tư. Tuy nhiên, bạn cần tìm hiểu kỹ các diễn đàn uy tín và tham gia một cách có trách nhiệm."
+   }
+  ]
+ },
+ {
+  "src": "chung-chi-hanh-nghe-chung-khoan-la-gi",
+  "src_title": "Chứng chỉ hành nghề chứng khoán là gì? Thông tin chi tiết",
+  "target": "chung-chi-tai-chinh",
+  "role": "sub-hub",
+  "target_title": "Top 10 chứng chỉ tài chính uy tín hàng đầu hiện nay",
+  "clicks": "192",
+  "anchors": [
+   "chứng chỉ tài chính",
+   "các chứng chỉ tài chính",
+   "chứng chỉ tài chính quốc tế",
+   "bằng cấp tài chính",
+   "chứng chỉ nghề"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "Chứng chỉ hành nghề chứng khoán là gì?",
+    "n_sent": 2,
+    "t": "Chứng chỉ hành nghề chứng khoán là một loại giấy phép do Ủy ban Chứng khoán Nhà nước cấp, nhằm xác nhận cá nhân đáp ứng đủ các tiêu chuẩn về năng lực và đạo đức để thực hiện các nghiệp vụ chuyên môn trong lĩnh vực chứng khoán. Việc sở hữu chứng chỉ này không chỉ là yêu cầu bắt buộc đối với nhiều vị trí công việc quan trọng trong ngành tài chính – chứng khoán mà còn là minh chứng cho kiến thức chuyên sâu và sự am hiểu về thị trường."
+   },
+   {
+    "i": 20,
+    "h": "Điều kiện cấp chứng chỉ hành nghề chứng khoán",
+    "n_sent": 2,
+    "t": "Để có thể hành nghề trong lĩnh vực chứng khoán tại Việt Nam, đặc biệt là với vai trò môi giới chứng khoán, cá nhân cần có chứng chỉ hành nghề chứng khoán do Ủy ban Chứng khoán Nhà nước (UBCKNN) cấp. Điều kiện để được cấp chứng chỉ hành nghề chứng khoán được quy định rõ ràng nhằm đảm bảo chất lượng nguồn nhân lực và tính chuyên nghiệp của thị trường."
+   },
+   {
+    "i": 44,
+    "h": "Lệ phí cấp chứng chỉ chứng khoán",
+    "n_sent": 2,
+    "t": "Để được cấp chứng chỉ hành nghề chứng khoán tại Việt Nam, điều kiện cần là bạn phải hoàn thành các bài thi theo quy định của Ủy ban Chứng khoán Nhà nước và đóng đầy đủ các khoản lệ phí. Lệ phí này được quy định chi tiết tại Thông tư 25/2022/TT-BTC ban hành ngày 28/4/2022 của Bộ trưởng Bộ Tài chính, bao gồm khoản phí nộp hồ sơ và phí cấp chứng chỉ."
+   }
+  ]
+ },
+ {
+  "src": "chung-chi-cmt-la-gi",
+  "src_title": "Chứng chỉ CMT là gì? Thông tin chi tiết về chứng chỉ CMT",
+  "target": "chung-chi-tai-chinh",
+  "role": "sub-hub",
+  "target_title": "Top 10 chứng chỉ tài chính uy tín hàng đầu hiện nay",
+  "clicks": "148",
+  "anchors": [
+   "chứng chỉ tài chính",
+   "các chứng chỉ tài chính",
+   "chứng chỉ tài chính quốc tế",
+   "bằng cấp tài chính",
+   "chứng chỉ nghề"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "Chứng chỉ CMT là gì?",
+    "n_sent": 2,
+    "t": "Chứng chỉ CMT (Chartered Market Technician) là một trong những chứng nhận chuyên môn cao cấp nhất trong lĩnh vực phân tích kỹ thuật tài chính, được cấp bởi Hiệp hội Phân tích Kỹ thuật Thị trường (MTA – Market Technicians Association). Chứng chỉ này công nhận kiến thức chuyên sâu và khả năng ứng dụng các phương pháp phân tích kỹ thuật để dự đoán xu hướng giá, đưa ra quyết định giao dịch và quản lý rủi ro trên thị trường tài chính."
+   },
+   {
+    "i": 65,
+    "h": "Lệ phí thi chứng chỉ CMT",
+    "n_sent": 3,
+    "t": "Ngoài ra, các ứng viên cũng cần tính đến phí thành viên hàng năm của Hiệp hội CMT Association, thường là khoảng 325 USD. Phí này không bắt buộc đối với ứng viên thi Level I nhưng là yêu cầu bắt buộc để đăng ký thi Level II và Level III, cũng như để duy trì tư cách thành viên và chứng chỉ sau khi hoàn thành. Việc chi trả lệ phí thi chứng chỉ CMT cần được thực hiện cẩn thận theo hướng dẫn của Hiệp hội."
+   },
+   {
+    "i": 12,
+    "h": "Chứng chỉ CMT là gì?",
+    "n_sent": 1,
+    "t": "Sở hữu CMT chứng chỉ không chỉ khẳng định năng lực chuyên môn mà còn mở ra nhiều cơ hội nghề nghiệp trong các vai trò như nhà phân tích kỹ thuật, quản lý quỹ, chuyên viên tư vấn đầu tư, hay nhà giao dịch độc lập.."
+   }
+  ]
+ },
+ {
+  "src": "kenh-tik-tok-ve-tai-chinh",
+  "src_title": "Top 4 kênh TikTok về tài chính cho người mới (Update 2026)",
+  "target": "khoa-hoc-chung-khoan",
+  "role": "sub-hub",
+  "target_title": "Khóa học chứng khoán cho người mới, lộ trình chi tiết cho F0",
+  "clicks": "48",
+  "anchors": [
+   "khóa học chứng khoán",
+   "khóa học đầu tư chứng khoán",
+   "học đầu tư chứng khoán",
+   "lớp học chứng khoán",
+   "học chứng khoán",
+   "học đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 55,
+    "h": "Dương Lớ Chứng Khoán",
+    "n_sent": 2,
+    "t": "Dương Lớ Chứng Khoán (@duonglostock) là một trong những kênh TikTok tài chính được cộng đồng đầu tư yêu thích nhờ phong cách chia sẻ gần gũi, thực tế và dễ hiểu. Chủ kênh – Dương Lớ – là nhà đầu tư trẻ nhưng có cách giải thích vấn đề vô cùng rõ ràng, đặc biệt phù hợp với người mới bước chân vào thị trường chứng khoán."
+   },
+   {
+    "i": 65,
+    "h": "Dương Lớ Chứng Khoán",
+    "n_sent": 2,
+    "t": "Bên cạnh video ngắn, Dương Lớ còn thường xuyên trả lời comment, tương tác và livestream giải đáp thắc mắc. Điều này tạo nên một cộng đồng nhà đầu tư trẻ năng động, nơi người xem có thể học hỏi thêm kinh nghiệm và nâng cao kỹ năng đầu tư."
+   },
+   {
+    "i": 64,
+    "h": "Dương Lớ Chứng Khoán",
+    "n_sent": 2,
+    "t": "Điểm nổi bật của kênh là khả năng đơn giản hóa kiến thức phức tạp, giúp người xem hiểu bản chất vấn đề mà không bị “ngợp” bởi thuật ngữ chuyên môn. Nhiều ví dụ thực tế, câu chuyện thị trường và diễn giải minh họa giúp người xem dễ áp dụng hơn vào giao dịch thật."
+   }
+  ]
+ },
+ {
+  "src": "giao-trinh-phan-tich-bao-cao-tai-chinh",
+  "src_title": "Top 3 giáo trình phân tích báo cáo tài chính cho sinh viên",
+  "target": "nhung-cuon-sach-hay-ve-dau-tu-chung-khoan",
+  "role": "sub-hub",
+  "target_title": "Top 10 cuốn sách đầu tư chứng khoán phải đọc 2026",
+  "clicks": "26",
+  "anchors": [
+   "sách đầu tư chứng khoán",
+   "sách hay về đầu tư chứng khoán",
+   "sách chứng khoán",
+   "sách đầu tư",
+   "đầu sách"
+  ],
+  "paras": [
+   {
+    "i": 44,
+    "h": "Giáo trình phân tích báo cáo tài chính Nguyễn Ngọc Quang",
+    "n_sent": 2,
+    "t": "Tại DSC, chúng tôi tin rằng sự am hiểu về tài chính chính là vũ khí mạnh mẽ nhất của nhà đầu tư. Bên cạnh việc trau dồi kiến thức từ sách vở, đừng quên kết hợp với các công cụ phân tích hiện đại và báo cáo cập nhật thị trường hàng ngày từ DSC để tối ưu hóa hiệu quả đầu tư của mình."
+   },
+   {
+    "i": 5,
+    "h": "Giáo trình phân tích báo cáo tài chính GS. TS. Nguyễn Văn Công",
+    "n_sent": 1,
+    "t": "Cuốn sách cung cấp một cái nhìn toàn diện và sâu sắc về các khía cạnh cơ bản và nâng cao của phân tích báo cáo tài chính, giúp người học nắm vững kiến thức phân tích tài chính doanh nghiệp một cách có hệ thống."
+   },
+   {
+    "i": 17,
+    "h": "Giáo trình phân tích báo cáo tài chính PGS. TS. Nguyễn Năng Phúc",
+    "n_sent": 4,
+    "t": "Giáo trình phân tích báo cáo tài chính của PGS. TS. Nguyễn Năng Phúc là một trong những tài liệu học tập và nghiên cứu uy tín, phổ biến tại các trường đại học, đặc biệt là dành cho sinh viên chuyên ngành kinh tế, tài chính - ngân hàng và kế toán. Cuốn sách cung cấp một cái nhìn toàn diện và sâu sắc về các kỹ thuật, phương pháp phân tích báo cáo tài chính của doanh nghiệp."
+   }
+  ]
+ },
+ {
+  "src": "khoa-hoc-chung-khoan-tan-thu",
+  "src_title": "Khóa học tân thủ chứng khoán miễn phí",
+  "target": "khoa-hoc-chung-khoan",
+  "role": "sub-hub",
+  "target_title": "Khóa học chứng khoán cho người mới, lộ trình chi tiết cho F0",
+  "clicks": "0",
+  "anchors": [
+   "khóa học chứng khoán",
+   "khóa học đầu tư chứng khoán",
+   "học đầu tư chứng khoán",
+   "lớp học chứng khoán",
+   "học chứng khoán",
+   "học đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 66,
+    "h": "Nội dung khóa học",
+    "n_sent": 2,
+    "t": "Bạn đã nắm kiến thức chứng khoán cơ bản? Học tiếp Khóa học kỹ thuật thực chiến để đào sâu RSI, trendline, mẫu hình giá và quản lý vốn."
+   },
+   {
+    "i": 34,
+    "h": "Nội dung khóa học",
+    "n_sent": 1,
+    "t": "Khóa học gồm 4 buổi livestream, mỗi buổi 45 – 60 phút, kết hợp lý thuyết với thao tác trực tiếp."
+   }
+  ]
+ },
+ {
+  "src": "khoa-hoc-ky-thuat-thuc-chien",
+  "src_title": "Khóa học kỹ thuật thực chiến chứng khoán cho nhà đầu tư",
+  "target": "khoa-hoc-chung-khoan",
+  "role": "sub-hub",
+  "target_title": "Khóa học chứng khoán cho người mới, lộ trình chi tiết cho F0",
+  "clicks": "0",
+  "anchors": [
+   "khóa học chứng khoán",
+   "khóa học đầu tư chứng khoán",
+   "học đầu tư chứng khoán",
+   "lớp học chứng khoán",
+   "học chứng khoán",
+   "học đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 34,
+    "h": "Nội dung khóa học",
+    "n_sent": 2,
+    "t": "Khóa học gồm 4 buổi video học trên DSC Tài Chính Số và 2 buổi Zoom hỏi đáp. Mỗi buổi 1 – 3 có bài tập, được chữa trên forum khóa học."
+   },
+   {
+    "i": 101,
+    "h": "Vĩ mô thực chiến: lạm phát, lãi suất, tỷ giá",
+    "n_sent": 2,
+    "t": "Bạn là người mới bắt đầu? Tham khảo ngay khóa học chứng khoán Tân thủ, hoàn toàn miễn phí của DSC."
+   },
+   {
+    "i": 71,
+    "h": "Vĩ mô thực chiến: lạm phát, lãi suất, tỷ giá",
+    "n_sent": 1,
+    "t": "Theo dõi ba yếu tố này ở đâu, chúng tác động thế nào tới thị trường chứng khoán và cách chọn thời điểm ra quyết định đầu tư."
+   }
+  ]
+ }
+]

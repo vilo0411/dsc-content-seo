@@ -1,0 +1,260 @@
+{
+ "title": "Backfill bài 0 inlink — đợt 1 (top 20 theo clicks)",
+ "intro": "16/20 bài có chỗ tự nhiên; bỏ qua quy-luat-gia-tri, DIG, khóa học HN, khóa học HCM (không bài nào nhắc đúng chủ đề).",
+ "edits": [
+  {
+   "src": "chi-so-s-p-500-la-gi",
+   "op": "wrap",
+   "find": "Chỉ số S&P 500 (viết tắt của Standard & Poor's 500) là một c",
+   "to": "san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong",
+   "anchor": "NYSE",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Định nghĩa S&P 500: niêm yết trên NYSE và NASDAQ"
+  },
+  {
+   "src": "chi-so-dow-jones-la-gi-y-nghia-cua-chi-so-dow-jones",
+   "op": "wrap",
+   "find": "DJIA theo dõi hiệu suất của 30 công ty blue chip hàng đầu nư",
+   "to": "san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong",
+   "anchor": "Sàn NYSE",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Định nghĩa Dow Jones: niêm yết trên Sàn NYSE"
+  },
+  {
+   "src": "gio-giao-dich-chung-khoan-quoc-te",
+   "op": "wrap",
+   "find": "Tại các sàn chứng khoán Mỹ như NYSE và NASDAQ, phiên chính t",
+   "to": "san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong",
+   "anchor": "NYSE",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Giờ giao dịch các sàn Mỹ như NYSE"
+  },
+  {
+   "src": "cach-chon-co-phieu-de-dau-tu-dai-han-tai-viet-nam",
+   "op": "wrap",
+   "find": "Bài viết này của DSC sẽ cung cấp cái nhìn toàn diện từ lợi í",
+   "to": "day-la-5-co-phieu-tich-san-cuc-tot-se-khien-ban-kiem-duoc-bon-tien",
+   "anchor": "danh mục tích sản",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Mở bài nói xây danh mục tích sản dài hạn"
+  },
+  {
+   "src": "co-phieu-nganh-than",
+   "op": "wrap",
+   "find": "Tỷ suất cổ tức (Dividend Yield) của nhóm này thường dao động",
+   "to": "day-la-5-co-phieu-tich-san-cuc-tot-se-khien-ban-kiem-duoc-bon-tien",
+   "anchor": "danh mục tích sản",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Đoạn cổ tức tiền mặt cho danh mục tích sản"
+  },
+  {
+   "src": "khung-hoang-kinh-te-la-gi-co-nen-dau-tu-trong-giai-doan-khung-hoang",
+   "op": "wrap",
+   "find": "Quản lý thị trường hiệu quả: Tăng cường kiểm soát giá cả, ch",
+   "to": "quan-ly-thi-truong-la-gi",
+   "anchor": "Quản lý thị trường",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Giải pháp chính phủ: quản lý thị trường, chống hàng giả — đúng nghĩa QLTT"
+  },
+  {
+   "src": "toc-do-tang-truong-kinh-te-la-gi",
+   "op": "wrap",
+   "find": "Ở cấp độ địa phương, một số tỉnh thành tiếp tục là đầu tàu k",
+   "to": "grdp-la-gi-chi-so-quan-trong-danh-gia-su-phat-trien-kinh-te-dia-phuong",
+   "anchor": "GRDP",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Tăng trưởng cấp địa phương, nêu GRDP Hải Phòng"
+  },
+  {
+   "src": "chuoi-gia-tri-nganh-dien",
+   "op": "wrap",
+   "find": "Than đá: Đây vẫn là nguồn nhiên liệu chủ chốt cho các nhà má",
+   "to": "co-phieu-nganh-than",
+   "anchor": "Tập đoàn Công nghiệp Than - Khoáng sản Việt Nam (TKV)",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Thượng nguồn ngành điện: nguồn than từ TKV (các mã than niêm yết là công ty con TKV)"
+  },
+  {
+   "src": "chi-so-vn-index-va-y-nghia-quan-trong-trong-thi-truong-chung-khoan-viet-nam",
+   "op": "wrap",
+   "find": "Lãi suất và lạm phát: Lãi suất thấp thường kích thích dòng t",
+   "to": "lam-phat-va-lai-suat-moi-quan-he-mat-thiet",
+   "anchor": "Lãi suất và lạm phát",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Yếu tố vĩ mô tác động VN-Index"
+  },
+  {
+   "src": "huong-dan-phan-tich-nganh-trong-dau-tu-chung-khoan",
+   "op": "wrap",
+   "find": "Đánh giá sức khỏe của nền kinh tế chung qua GDP",
+   "to": "lam-phat-va-lai-suat-moi-quan-he-mat-thiet",
+   "anchor": "lạm phát và lãi suất",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Phân tích vĩ mô qua GDP, lạm phát và lãi suất"
+  },
+  {
+   "src": "no-chinh-phu-la-gi",
+   "op": "wrap",
+   "find": "Tin tức về trần nợ công hay phát hành trái phiếu chính phủ t",
+   "to": "lam-phat-va-lai-suat-moi-quan-he-mat-thiet",
+   "anchor": "lãi suất và lạm phát",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Mở bài: nợ chính phủ điều tiết lãi suất và lạm phát"
+  },
+  {
+   "src": "top-5-co-phieu-dang-dau-tu",
+   "op": "wrap",
+   "find": "Thời tiết ủng hộ: Theo báo cáo từ Trung tâm Dự báo Khí hậu t",
+   "to": "co-phieu-nganh-nong-nghiep",
+   "anchor": "ngành nông nghiệp",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Luận điểm DCM: ngành nông nghiệp phục hồi"
+  },
+  {
+   "src": "co-phieu-baf-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+   "op": "wrap",
+   "find": "Với tiềm năng lớn của ngành nông nghiệp Việt Nam, nhiều nhà ",
+   "to": "co-phieu-nganh-nong-nghiep",
+   "anchor": "ngành nông nghiệp Việt Nam",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Mở bài BAF: dòng vốn vào ngành nông nghiệp"
+  },
+  {
+   "src": "chuoi-gia-tri-nganh-dau-khi",
+   "op": "wrap",
+   "find": "Phân khúc Phân phối bán lẻ: PLX (Petrolimex) và OIL (PVOIL) ",
+   "to": "co-nen-mua-co-phieu-oil",
+   "anchor": "OIL (PVOIL)",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Hạ nguồn: phân phối bán lẻ PLX, OIL"
+  },
+  {
+   "src": "thi-truong-tai-chinh-la-gi",
+   "op": "wrap",
+   "find": "Nhiều nhà đầu tư mới (F0) thường nhầm lẫn thị trường tài chí",
+   "to": "phan-biet-thi-truong-tien-te-va-thi-truong-von-huong-dan-chi-tiet-cho-nha-dau-tu",
+   "anchor": "thị trường vốn",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Mục phân biệt TTTC và TTCK: TTCK thuộc thị trường vốn"
+  },
+  {
+   "src": "tin-phieu-kho-bac-la-gi",
+   "op": "wrap",
+   "find": "Tín phiếu kho bạc là chứng khoán nợ ngắn hạn do Kho bạc Nhà ",
+   "to": "phan-biet-thi-truong-tien-te-va-thi-truong-von-huong-dan-chi-tiet-cho-nha-dau-tu",
+   "anchor": "thị trường tiền tệ",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Tín phiếu kho bạc là công cụ của thị trường tiền tệ"
+  },
+  {
+   "src": "bao-cao-tai-chinh-hop-nhat-la-gi",
+   "op": "wrap",
+   "find": "Thứ nhất là khoản mục Lợi thế thương mại (Goodwill) thuộc ph",
+   "to": "goodwill-la-gi",
+   "anchor": "Lợi thế thương mại (Goodwill)",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "BCĐKT hợp nhất: khoản mục Lợi thế thương mại"
+  },
+  {
+   "src": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+   "op": "wrap",
+   "find": "Lãi suất online ngày 01/04/2026 chứng kiến sự bứt phá mạnh m",
+   "to": "lai-suat-gui-tiet-kiem-ngan-hang-agribank",
+   "anchor": "Agribank",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "So sánh lãi suất online: Big 4 (Agribank) tăng lãi suất"
+  },
+  {
+   "src": "chuoi-gia-tri-nganh-nhua",
+   "op": "wrap",
+   "find": "Ngành nhựa không chỉ là một phần tất yếu trong đời sống sinh",
+   "to": "co-phieu-nganh-nhua",
+   "anchor": "Ngành nhựa",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Mở bài chuỗi giá trị ngành nhựa"
+  },
+  {
+   "src": "co-phieu-bmp-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "wrap",
+   "find": "Thị trường chứng khoán Việt Nam chưa bao giờ thiếu những cổ ",
+   "to": "co-phieu-nganh-nhua",
+   "anchor": "ngành nhựa",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Mở bài BMP: thị phần trong ngành nhựa"
+  },
+  {
+   "src": "cach-dau-tu-vang",
+   "op": "wrap",
+   "find": "Hãy chọn ứng dụng được Ngân hàng Nhà nước cấp phép",
+   "to": "app-dau-tu-vang",
+   "anchor": "ứng dụng được Ngân hàng Nhà nước cấp phép",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Mục Đầu tư vàng online qua ứng dụng"
+  },
+  {
+   "src": "nen-mua-vang-sjc-hay-9999",
+   "op": "wrap",
+   "find": "Công nghệ phát triển đã mang đến hình thức đầu tư vàng onlin",
+   "to": "app-dau-tu-vang",
+   "anchor": "các ứng dụng của ngân hàng hoặc công ty tài chính",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Mục vàng vật chất hay vàng online"
+  },
+  {
+   "src": "top-co-phieu-nganh-duoc-nen-dau-tu",
+   "op": "wrap",
+   "find": "Sau đại dịch Covid - 19, trong những năm gần đây, cổ phiếu c",
+   "to": "co-phieu-nganh-y-te",
+   "anchor": "nhóm ngành chăm sóc sức khỏe",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Mở bài cổ phiếu dược: nhóm ngành chăm sóc sức khỏe"
+  },
+  {
+   "src": "nen-harami-la-gi",
+   "op": "newp",
+   "find": "Cây nến thứ hai (nến con)",
+   "to": "nen-inside-bar-la-gi-bi-kip-giao-dich-hieu-qua-cho-trader",
+   "anchor": "nến Inside Bar",
+   "check_text": true,
+   "group": "backfill",
+   "pri": "P2",
+   "sentence": "Cấu trúc này gần giống [nến Inside Bar], điểm khác là Inside Bar yêu cầu cả bóng nến con nằm trong biên độ cao – thấp của nến mẹ, còn Harami chỉ xét phần thân.",
+   "why": "Ngay sau list cấu tạo Harami (nến mẹ – nến con): so sánh với mẫu hình gần nhất"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-hpg-hay-khong",
+   "op": "append",
+   "find": "Tuy KQKD chưa khả quan, nhưng tài chính của HPG vẫn được giữ ổn định",
+   "to": "phan-tich-bao-cao-tai-chinh-hoa-phat",
+   "anchor": "phân tích báo cáo tài chính Hòa Phát",
+   "check_text": true,
+   "group": "backfill",
+   "pri": "P2",
+   "sentence": "Các số liệu trên thuộc giai đoạn 2022–2023; từ năm 2025, khi capex giảm sau chu kỳ đầu tư mạnh 2022–2024, bức tranh tài chính đã khác và được cập nhật trong bài [phân tích báo cáo tài chính Hòa Phát].",
+   "why": "Mục 'Đánh giá tiêu chí BCTC HPG' dùng số 2022–2023 → báo cho người đọc số liệu mới hơn"
+  }
+ ]
+}

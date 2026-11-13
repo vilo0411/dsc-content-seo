@@ -1,0 +1,1955 @@
+[
+ {
+  "src": "daytrading-la-gi",
+  "src_title": "Day trading là gì? Cách áp dụng hiệu quả tại Việt Nam",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "192",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 22,
+    "h": "Đánh giá ưu điểm và hạn chế của chiến lược day trading",
+    "n_sent": 2,
+    "t": "Bất kỳ phương pháp nào cũng có tính hai mặt. Cơ hội lớn luôn đi liền với thách thức tương ứng."
+   },
+   {
+    "i": 45,
+    "h": "Bước 4: Dứt khoát đóng mọi vị thế trước giờ đóng cửa",
+    "n_sent": 3,
+    "t": "Không có ngoại lệ. Dù lệnh đang lãi hay lỗ, bạn cần tất toán vị thế trước 14h45. Tuyệt đối không biến một vị thế lướt sóng thua lỗ thành khoản đầu tư dài hạn bất đắc dĩ."
+   },
+   {
+    "i": 51,
+    "h": "Chiến lược breakout (giao dịch phá ngưỡng)",
+    "n_sent": 3,
+    "t": "Phương pháp này dựa trên động lực giá tiếp diễn. Người giao dịch tìm kiếm các vùng tích lũy chặt chẽ. Khi giá vượt ngưỡng kháng cự đi kèm khối lượng giao dịch bùng nổ, lệnh mua sẽ được kích hoạt tức thì."
+   }
+  ]
+ },
+ {
+  "src": "daytrading-la-gi",
+  "src_title": "Day trading là gì? Cách áp dụng hiệu quả tại Việt Nam",
+  "target": "trading-trong-chung-khoan-la-gi",
+  "role": "sub-hub",
+  "target_title": "Trading là gì trong đầu tư chứng khoán? Lời khuyên cho trader",
+  "clicks": "192",
+  "anchors": [
+   "trading chứng khoán",
+   "trading là gì",
+   "trading trong đầu tư chứng khoán",
+   "giao dịch ngắn hạn",
+   "lướt sóng"
+  ],
+  "paras": [
+   {
+    "i": 57,
+    "h": "Thực tế day trading tại Việt Nam: Quy định T+2.5 và kỹ thuật lướt trên hàng có sẵn",
+    "n_sent": 1,
+    "t": "Nhiều nhà đầu tư thường thắc mắc: Thị trường chứng khoán Việt Nam có giao dịch T0 được không?"
+   },
+   {
+    "i": 59,
+    "h": "Thực tế day trading tại Việt Nam: Quy định T+2.5 và kỹ thuật lướt trên hàng có sẵn",
+    "n_sent": 2,
+    "t": "Tuy nhiên, nhà đầu tư tại Việt Nam vẫn có thể áp dụng chiến lược giao dịch trong ngày linh hoạt. Giải pháp tối ưu chính là: Kỹ thuật lướt trên danh mục cổ phiếu có sẵn (trading available inventory)."
+   },
+   {
+    "i": 45,
+    "h": "Bước 4: Dứt khoát đóng mọi vị thế trước giờ đóng cửa",
+    "n_sent": 3,
+    "t": "Không có ngoại lệ. Dù lệnh đang lãi hay lỗ, bạn cần tất toán vị thế trước 14h45. Tuyệt đối không biến một vị thế lướt sóng thua lỗ thành khoản đầu tư dài hạn bất đắc dĩ."
+   }
+  ]
+ },
+ {
+  "src": "trading-trong-chung-khoan-la-gi",
+  "src_title": "Trading là gì trong đầu tư chứng khoán? Lời khuyên cho trader",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "101",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 5,
+    "h": "Trading là gì trong chứng khoán?",
+    "n_sent": 3,
+    "t": "Trading trong chứng khoán là hoạt động mua và bán các loại tài sản tài chính như cổ phiếu, trái phiếu, chứng chỉ quỹ... nhằm mục tiêu kiếm lợi nhuận từ sự chênh lệch giá trong khoảng thời gian ngắn (từ vài phút đến vài tuần). Khác với đầu tư dài hạn, các nhà giao dịch (trader) thường tận dụng biến động của thị trường và sử dụng các công cụ phân tích kỹ thuật để xác định thời điểm \"vào lệnh\" và \"thoát hàng\" tối ưu nhất."
+   },
+   {
+    "i": 7,
+    "h": "Trader là gì?",
+    "n_sent": 2,
+    "t": "Trader là người tham gia giao dịch mua, bán các sản phẩm có mặt trên thị trường tài chính như: Cổ phiếu, trái phiếu, ngoại hối hay tiền điện tử và cả vàng, bạc…. Mục tiêu của họ là lợi dụng biến động giá để tạo ra lợi nhuận."
+   }
+  ]
+ },
+ {
+  "src": "rui-ro-tin-dung-la-gi",
+  "src_title": "Rủi ro tín dụng là gì? Phân loại, nguyên nhân và biện pháp",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "91",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 85,
+    "h": "Các biện pháp giảm thiểu rủi ro tín dụng",
+    "n_sent": 2,
+    "t": "Trên đây là những thông tin về rủi ro tín dụng và các hệ thống nhận diện, đo lường đánh giá, dự phòng và quản trị rủi ro tín dụng đã và đang được một số ngân hàng nước ta áp dụng hiện nay. Hy vọng bài viết sẽ đem lại góc nhìn tổng quan với các bạn về loại rủi ro trọng yếu đối với ngân hàng này."
+   },
+   {
+    "i": 28,
+    "h": "Nguyên nhân rủi ro tín dụng",
+    "n_sent": 1,
+    "t": "Như đã nêu ở phân loại rủi ro trên, nguyên nhân của rủi ro tín dụng có thể xuất phát từ việc khách hàng có tình hình kinh doanh không tốt, gặp vấn đề gì đó khiến không trả nợ đúng hạn hoặc không có khả năng trả nợ, cũng có thể xuất phát từ chính ngân hàng cho vay khi xảy ra những vấn đề sai sót trong quy trình cho vay, đánh giá khách hàng, sai sót đến từ cán bộ ngân hàng trong quá trình cho vay, quản lý danh mục cho vay,..."
+   },
+   {
+    "i": 5,
+    "h": "Rủi ro tín dụng là gì?",
+    "n_sent": 2,
+    "t": "Ví dụ đơn giản, doanh nghiệp A vay vốn ngân hàng B một số vốn lớn để kinh doanh, để chấp nhận cho vay ngân hàng B sẽ phải có những bước thẩm định doanh nghiệp này xem liệu họ có khả năng trả nợ đúng hạn hay không. Tuy nhiên trong quá trình thẩm định rất dễ xảy ra những sai sót hay bỏ qua những tiểu tiết xấu mà doanh nghiệp này có thể đã khéo léo “giấu đi”."
+   }
+  ]
+ },
+ {
+  "src": "rui-ro-tin-dung-la-gi",
+  "src_title": "Rủi ro tín dụng là gì? Phân loại, nguyên nhân và biện pháp",
+  "target": "quan-tri-rui-ro-la-gi-2",
+  "role": "hub",
+  "target_title": "Quản trị rủi ro là gì? Quy trình và phân loại rủi ro chuẩn 2026",
+  "clicks": "91",
+  "anchors": [
+   "quản trị rủi ro",
+   "quản lý rủi ro",
+   "quản trị rủi ro là gì",
+   "quản trị rủi ro trong đầu tư",
+   "kiểm soát rủi ro",
+   "phòng ngừa rủi ro"
+  ],
+  "paras": [
+   {
+    "i": 28,
+    "h": "Nguyên nhân rủi ro tín dụng",
+    "n_sent": 1,
+    "t": "Như đã nêu ở phân loại rủi ro trên, nguyên nhân của rủi ro tín dụng có thể xuất phát từ việc khách hàng có tình hình kinh doanh không tốt, gặp vấn đề gì đó khiến không trả nợ đúng hạn hoặc không có khả năng trả nợ, cũng có thể xuất phát từ chính ngân hàng cho vay khi xảy ra những vấn đề sai sót trong quy trình cho vay, đánh giá khách hàng, sai sót đến từ cán bộ ngân hàng trong quá trình cho vay, quản lý danh mục cho vay,..."
+   },
+   {
+    "i": 85,
+    "h": "Các biện pháp giảm thiểu rủi ro tín dụng",
+    "n_sent": 2,
+    "t": "Trên đây là những thông tin về rủi ro tín dụng và các hệ thống nhận diện, đo lường đánh giá, dự phòng và quản trị rủi ro tín dụng đã và đang được một số ngân hàng nước ta áp dụng hiện nay. Hy vọng bài viết sẽ đem lại góc nhìn tổng quan với các bạn về loại rủi ro trọng yếu đối với ngân hàng này."
+   },
+   {
+    "i": 3,
+    "h": "Rủi ro tín dụng là gì?",
+    "n_sent": 0,
+    "t": "Như đã nói ở trên, tín dụng là hoạt động tạo ra tiền trực tiếp cho ngân hàng, vì thế những rủi ro về tín dụng sẽ gây ra tổn thất lớn về việc thất thoát tài sản ngân hàng, nghiêm trọng hơn có thể khiến giá trị vốn hoá của ngân hàng suy giảm, hoạt động kinh doanh thua lỗ và nặng hơn có thể đẩy ngân hàng đến bờ vực phá sản"
+   }
+  ]
+ },
+ {
+  "src": "do-lech-chuan-la-gi",
+  "src_title": "Độ lệch chuẩn là gì? Ý nghĩa và cách tính độ lệch chuẩn",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "83",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 197,
+    "h": "Hướng dẫn cách tính độ lệch chuẩn của danh mục đầu tư",
+    "n_sent": 1,
+    "t": "Sau khi xác định mức biến động của danh mục, nhà đầu tư nên đưa kết quả này vào kế hoạch quản trị rủi ro để lựa chọn tỷ trọng phân bổ và giới hạn thua lỗ phù hợp."
+   },
+   {
+    "i": 176,
+    "h": "Hướng dẫn cách tính độ lệch chuẩn của danh mục đầu tư",
+    "n_sent": 2,
+    "t": "Độ lệch chuẩn của danh mục đầu tư dùng để đo mức độ biến động (rủi ro) của toàn bộ danh mục, dựa trên mức sinh lời và tỷ trọng của từng cổ phiếu trong danh mục đó. Chỉ số này giúp nhà đầu tư đánh giá mức độ ổn định và so sánh rủi ro giữa các danh mục khác nhau."
+   },
+   {
+    "i": 190,
+    "h": "Hướng dẫn cách tính độ lệch chuẩn của danh mục đầu tư",
+    "n_sent": 2,
+    "t": "Bước tiếp theo là tính hiệp phương sai giữa các cổ phiếu, nhằm đánh giá mức độ các mã biến động cùng chiều hay ngược chiều. Yếu tố này ảnh hưởng trực tiếp đến rủi ro chung của danh mục."
+   }
+  ]
+ },
+ {
+  "src": "mo-hinh-markowitz-la-gi",
+  "src_title": "Mô hình Markowitz là gì? Ứng dụng Markowitz trong đầu tư",
+  "target": "quan-tri-rui-ro-la-gi-2",
+  "role": "hub",
+  "target_title": "Quản trị rủi ro là gì? Quy trình và phân loại rủi ro chuẩn 2026",
+  "clicks": "81",
+  "anchors": [
+   "quản trị rủi ro",
+   "quản lý rủi ro",
+   "quản trị rủi ro là gì",
+   "quản trị rủi ro trong đầu tư",
+   "kiểm soát rủi ro",
+   "phòng ngừa rủi ro"
+  ],
+  "paras": [
+   {
+    "i": 12,
+    "h": "5 bước ứng dụng mô hình Markowitz tối ưu danh mục đầu tư hiệu quả",
+    "n_sent": 2,
+    "t": "Để biến lý thuyết thành thực tiễn, việc xây dựng danh mục đầu tư theo Markowitz đòi hỏi một quy trình phân tích có hệ thống. Tại DSC, chúng tôi nhận thấy rằng việc tuân thủ các bước sau sẽ giúp nhà đầu tư, dù là cá nhân hay chuyên nghiệp, có thể áp dụng phương pháp đầu tư khoa học này một cách hiệu quả trên thị trường chứng khoán Việt Nam."
+   },
+   {
+    "i": 2,
+    "h": "Mô hình Markowitz là gì?",
+    "n_sent": 2,
+    "t": "Mô hình Markowitz, còn được biết đến với tên gọi Lý thuyết danh mục đầu tư hiện đại (Modern Portfolio Theory - MPT), là một lý thuyết đầu tư do Harry Markowitz phát triển vào năm 1952, giúp ông đạt giải Nobel Kinh tế năm 1990. Đây là một phương pháp toán học nhằm tối ưu hóa danh mục đầu tư bằng cách lựa chọn tỷ trọng phân bổ vốn vào các tài sản khác nhau để đạt được lợi nhuận kỳ vọng cao nhất với một mức rủi ro nhất định, hoặc giảm thiểu rủi ro đến mức thấp nhất cho một mức lợi nhuận kỳ vọng."
+   },
+   {
+    "i": 28,
+    "h": "Bước 4: Vẽ Đường biên hiệu quả Markowitz và xác định Danh mục đầu tư tối ưu",
+    "n_sent": 2,
+    "t": "Sử dụng các thông số đã tính toán (lợi nhuận kỳ vọng, độ lệch chuẩn, ma trận hiệp phương sai), bạn có thể sử dụng các công cụ như Excel Solver để chạy các kịch bản phân bổ tỷ trọng vốn khác nhau cho các tài sản. Tập hợp các danh mục đầu tư cho ra kết quả tối ưu (lợi nhuận cao nhất cho mỗi mức rủi ro) sẽ tạo thành Đường biên hiệu quả Markowitz."
+   }
+  ]
+ },
+ {
+  "src": "swing-trading-la-gi",
+  "src_title": "Swing Trading là gì? Hướng dẫn giao dịch swing trading",
+  "target": "trading-trong-chung-khoan-la-gi",
+  "role": "sub-hub",
+  "target_title": "Trading là gì trong đầu tư chứng khoán? Lời khuyên cho trader",
+  "clicks": "55",
+  "anchors": [
+   "trading chứng khoán",
+   "trading là gì",
+   "trading trong đầu tư chứng khoán",
+   "giao dịch ngắn hạn",
+   "lướt sóng"
+  ],
+  "paras": [
+   {
+    "i": 15,
+    "h": "Chiến lược giao dịch Swing Trading vào giao dịch chứng khoán",
+    "n_sent": 2,
+    "t": "Swing Trading là phương pháp giao dịch chứng khoán sinh ra phục vụ cho các nhà đầu tư nhỏ lẻ vì không yêu cầu số vốn quá lớn. Theo nguyên tắc “Xu hướng là bạn”, chúng ta không nên giao dịch ngược xu hướng và dòng tiền lớn vì điều này tiềm ẩn rất nhiều rủi ro."
+   },
+   {
+    "i": 16,
+    "h": "Chiến lược giao dịch Swing Trading vào giao dịch chứng khoán",
+    "n_sent": 1,
+    "t": "Hiện nay ngoài phân tích kỹ thuật ra thì thông tin vĩ mô được các nhà đầu tư dùng làm kim chỉ nam khi tìm kiếm xu hướng chính."
+   },
+   {
+    "i": 4,
+    "h": "Swing Trading là gì?",
+    "n_sent": 2,
+    "t": "Swing Trading hay còn gọi là cách đầu tư bằng dự đoán đỉnh và đáy, thường được đặc biệt sử dụng trong thị trường sideway để NĐT giao dịch theo nhịp. Việc giao dịch trong sideway hay đoán đỉnh, đáy luôn tiềm ẩn rất nhiều rủi ro nên phương pháp này chỉ nên được thực hiện trong trường hợp tỷ lệ lợi nhuận/rủi ro đủ hấp dẫn."
+   }
+  ]
+ },
+ {
+  "src": "danh-muc-dau-tu-hieu-qua-la-gi",
+  "src_title": "Danh mục đầu tư hiệu quả là gì? Tối ưu danh mục Markowitz",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "30",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 6,
+    "h": "Danh mục đầu tư hiệu quả là gì?",
+    "n_sent": 2,
+    "t": "Rủi ro theo nghĩa thông thường được các nhà đầu tư hiểu là khả năng mất tiền, tuy nhiên, thuật ngữ “rủi ro” trong lý thuyết Markowitz nghĩa là khả năng biến động của giá theo cả chiều tăng lẫn chiều giảm. Để đo lường rủi ro, lý thuyết Markowitz đo lường độ lệch chuẩn của giá trong quá khứ (độ lệch chuẩn là đại lượng thống kê đo lường sự phân tán của một tập các dữ liệu so với giá trị trung bình của chúng)."
+   },
+   {
+    "i": 4,
+    "h": "Danh mục đầu tư hiệu quả là gì?",
+    "n_sent": 3,
+    "t": "Danh mục đầu tư hiệu quả là danh mục mà trong đó các tài sản tài chính được kết hợp để tạo ra mức lợi tức kỳ vọng tốt nhất có thể đối với 1 mức rủi ro – hoặc mức rủi ro thấp nhất đối với 1 mức lợi tức kỳ vọng. Ví dụ, với cùng 1 khoản tiền, danh mục của anh A và anh B có cùng 1 mức rủi ro nhưng lợi tức anh A nhận được lại cao hơn anh B. Khi đó, danh mục của anh A được cho là có hiệu quả cao hơn anh B."
+   },
+   {
+    "i": 7,
+    "h": "Danh mục đầu tư hiệu quả là gì?",
+    "n_sent": 1,
+    "t": "Ví dụ: tài sản có rủi ro cao có thể kể đến như bitcoin với độ tăng/giảm rất mạnh, ngược lại, các cổ phiếu mang tính chất đầu tư để phòng vệ hoặc ăn cổ tức có biến động giá thấp thì có rủi ro thấp hơn."
+   }
+  ]
+ },
+ {
+  "src": "danh-muc-dau-tu-hieu-qua-la-gi",
+  "src_title": "Danh mục đầu tư hiệu quả là gì? Tối ưu danh mục Markowitz",
+  "target": "quan-tri-rui-ro-la-gi-2",
+  "role": "hub",
+  "target_title": "Quản trị rủi ro là gì? Quy trình và phân loại rủi ro chuẩn 2026",
+  "clicks": "30",
+  "anchors": [
+   "quản trị rủi ro",
+   "quản lý rủi ro",
+   "quản trị rủi ro là gì",
+   "quản trị rủi ro trong đầu tư",
+   "kiểm soát rủi ro",
+   "phòng ngừa rủi ro"
+  ],
+  "paras": [
+   {
+    "i": 6,
+    "h": "Danh mục đầu tư hiệu quả là gì?",
+    "n_sent": 2,
+    "t": "Rủi ro theo nghĩa thông thường được các nhà đầu tư hiểu là khả năng mất tiền, tuy nhiên, thuật ngữ “rủi ro” trong lý thuyết Markowitz nghĩa là khả năng biến động của giá theo cả chiều tăng lẫn chiều giảm. Để đo lường rủi ro, lý thuyết Markowitz đo lường độ lệch chuẩn của giá trong quá khứ (độ lệch chuẩn là đại lượng thống kê đo lường sự phân tán của một tập các dữ liệu so với giá trị trung bình của chúng)."
+   },
+   {
+    "i": 7,
+    "h": "Danh mục đầu tư hiệu quả là gì?",
+    "n_sent": 1,
+    "t": "Ví dụ: tài sản có rủi ro cao có thể kể đến như bitcoin với độ tăng/giảm rất mạnh, ngược lại, các cổ phiếu mang tính chất đầu tư để phòng vệ hoặc ăn cổ tức có biến động giá thấp thì có rủi ro thấp hơn."
+   },
+   {
+    "i": 4,
+    "h": "Danh mục đầu tư hiệu quả là gì?",
+    "n_sent": 3,
+    "t": "Danh mục đầu tư hiệu quả là danh mục mà trong đó các tài sản tài chính được kết hợp để tạo ra mức lợi tức kỳ vọng tốt nhất có thể đối với 1 mức rủi ro – hoặc mức rủi ro thấp nhất đối với 1 mức lợi tức kỳ vọng. Ví dụ, với cùng 1 khoản tiền, danh mục của anh A và anh B có cùng 1 mức rủi ro nhưng lợi tức anh A nhận được lại cao hơn anh B. Khi đó, danh mục của anh A được cho là có hiệu quả cao hơn anh B."
+   }
+  ]
+ },
+ {
+  "src": "tam-ly-dam-dong-la-gi",
+  "src_title": "Tâm lý đám đông là gì? Các loại tâm lý đám đông trong đầu tư",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "29",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 22,
+    "h": "Cách thoát bẫy tâm lý đám đông trong đầu tư chứng khoán",
+    "n_sent": 2,
+    "t": "Thị trường chứng khoán là nơi bạn rất có thể bị mắc các bẫy tâm lý đám đông dẫn đến các khoản đầu tư thua lỗ, kém hiệu quả. Ngoài việc hiểu và chuẩn bị phương pháp phòng tránh từ trước, bạn có thể bắt đầu đầu tư với số vốn nhỏ và tích lũy kinh nghiệm cho đến khi tâm lý đã đủ vững vàng trước những cám dỗ của thị trường."
+   },
+   {
+    "i": 8,
+    "h": "Vì sao nhà đầu tư thường mắc bẫy hiệu ứng tâm lý đám đông?",
+    "n_sent": 2,
+    "t": "Bắt nguồn từ tâm lý “ham giàu nhanh” của đại đa số nhà đầu tư cá nhân mới tham gia thị trường, họ thường chỉ chú ý đến khoản lợi nhuận “béo bở” trước mắt mà quên mất việc đánh giá rủi ro của khoản đầu tư một cách cẩn trọng. Thậm chí là một số người mặc dù đã biết trước những rủi ro đó nhưng lại bỏ qua nó chỉ vì nghĩ rằng sẽ có kẻ ngốc hơn mình mua lại cổ phiếu này."
+   },
+   {
+    "i": 21,
+    "h": "Cách thoát bẫy tâm lý đám đông trong đầu tư chứng khoán",
+    "n_sent": 4,
+    "t": "Đặc điểm của tâm lý đám đông là mất đi những nhận định cá nhân mà hành động theo những gì đám đông đang làm. Để tránh việc bị cuốn theo tâm lý đám đông, trước hết, nhà đầu tư nên trang bị cho bản thân kiến thức để có thể tự mình đánh giá doanh nghiệp, cổ phiếu. Tiếp theo, nhà đầu tư cần đưa ra những luận điểm, luận cứ về việc mua/bán cổ phiếu đó. Dựa vào những luận điểm này, nhà đầu tư có thể tự mình hành động mà không bị ảnh hưởng bởi ý kiến của các cá nhân khác trên thị trường."
+   }
+  ]
+ },
+ {
+  "src": "he-so-tuong-quan-la-gi",
+  "src_title": "Hệ số tương quan là gì? Ứng dụng hệ số tương quan trong đầu tư",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "28",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 22,
+    "h": "Cách sử dụng hệ số tương quan trong đầu tư chứng khoán",
+    "n_sent": 2,
+    "t": "Hệ số tương quan là công cụ thống kê quan trọng giúp nhà đầu tư đánh giá mức độ liên kết giữa các tài sản hoặc giữa tài sản với các yếu tố thị trường. Nhờ đó, nhà đầu tư có thể xây dựng danh mục tối ưu, kiểm soát rủi ro và dự báo tác động từ các biến động bên ngoài."
+   },
+   {
+    "i": 43,
+    "h": "Đánh giá hiệu suất đầu tư",
+    "n_sent": 1,
+    "t": "Nhà đầu tư có thể sử dụng tương quan để so sánh hiệu quả của quỹ tương hỗ với chỉ số tham chiếu hoặc với các loại tài sản khác nhằm đánh giá mức độ phù hợp và hiệu quả của chiến lược quản lý quỹ."
+   },
+   {
+    "i": 45,
+    "h": "Đánh giá hiệu suất đầu tư",
+    "n_sent": 2,
+    "t": "Qua bài viết, bạn đã biết hệ số tương quan là gì và vì sao chỉ số này hữu ích trong việc phân tích mối quan hệ giữa các tài sản. Dù mang lại nhiều giá trị trong quản lý rủi ro và xây dựng danh mục, hệ số tương quan vẫn cần được sử dụng cùng các chỉ số và dữ liệu khác để đưa ra quyết định đầu tư chính xác và toàn diện hơn."
+   }
+  ]
+ },
+ {
+  "src": "he-so-tuong-quan-la-gi",
+  "src_title": "Hệ số tương quan là gì? Ứng dụng hệ số tương quan trong đầu tư",
+  "target": "danh-muc-dau-tu-hieu-qua-la-gi",
+  "role": "sub-hub",
+  "target_title": "Danh mục đầu tư hiệu quả là gì? Tối ưu danh mục Markowitz",
+  "clicks": "28",
+  "anchors": [
+   "danh mục đầu tư hiệu quả",
+   "danh mục đầu tư tối ưu",
+   "đa dạng hóa danh mục đầu tư",
+   "danh mục đầu tư",
+   "phân bổ danh mục"
+  ],
+  "paras": [
+   {
+    "i": 43,
+    "h": "Đánh giá hiệu suất đầu tư",
+    "n_sent": 1,
+    "t": "Nhà đầu tư có thể sử dụng tương quan để so sánh hiệu quả của quỹ tương hỗ với chỉ số tham chiếu hoặc với các loại tài sản khác nhằm đánh giá mức độ phù hợp và hiệu quả của chiến lược quản lý quỹ."
+   },
+   {
+    "i": 45,
+    "h": "Đánh giá hiệu suất đầu tư",
+    "n_sent": 2,
+    "t": "Qua bài viết, bạn đã biết hệ số tương quan là gì và vì sao chỉ số này hữu ích trong việc phân tích mối quan hệ giữa các tài sản. Dù mang lại nhiều giá trị trong quản lý rủi ro và xây dựng danh mục, hệ số tương quan vẫn cần được sử dụng cùng các chỉ số và dữ liệu khác để đưa ra quyết định đầu tư chính xác và toàn diện hơn."
+   },
+   {
+    "i": 35,
+    "h": "Quản lý rủi ro danh mục",
+    "n_sent": 2,
+    "t": "Theo dõi hệ số tương quan giữa các tài sản giúp nhà đầu tư đánh giá mức độ biến động tổng thể của danh mục. Điều này đảm bảo danh mục luôn nằm trong ngưỡng rủi ro chấp nhận được và không bị phụ thuộc quá nhiều vào một nhóm tài sản."
+   }
+  ]
+ },
+ {
+  "src": "quan-tri-rui-ro-la-gi-2",
+  "src_title": "Quản trị rủi ro là gì? Quy trình và phân loại rủi ro chuẩn 2026",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "25",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 68,
+    "h": "Góc nhìn đầu tư: Cách đánh giá năng lực quản trị rủi ro của doanh nghiệp niêm yết",
+    "n_sent": 1,
+    "t": "Đối với nhà đầu tư cá nhân trên thị trường chứng khoán, việc nhận diện sớm doanh nghiệp có nền tảng quản trị rủi ro tốt giúp bảo toàn vốn và tránh được các bẫy giảm giá sâu."
+   },
+   {
+    "i": 88,
+    "h": "Chất lượng dòng tiền thuần từ hoạt động kinh doanh (CFO)",
+    "n_sent": 2,
+    "t": "Lợi nhuận kế toán trên báo cáo kết quả kinh doanh có thể bị bóp méo bởi các thủ thuật ghi nhận doanh thu trước. Doanh nghiệp quản trị rủi ro tốt phải chứng minh được dòng tiền thực thu về tài khoản thông qua chỉ số lưu chuyển tiền thuần từ hoạt động kinh doanh (CFO) dương liên tục trong 3 - 5 năm gần nhất."
+   },
+   {
+    "i": 90,
+    "h": "Mức độ trích lập dự phòng rủi ro đầy đủ",
+    "n_sent": 2,
+    "t": "Nhà đầu tư cần kiểm tra phần thuyết minh báo cáo tài chính để xem xét tỷ lệ trích lập dự phòng giảm giá hàng tồn kho và dự phòng phải thu khó đòi. Doanh nghiệp chủ động trích lập dự phòng thể hiện tính thận trọng của ban lãnh đạo, giúp công ty không bị sốc tài chính khi các khoản nợ xấu phát sinh thực tế."
+   }
+  ]
+ },
+ {
+  "src": "rui-ro-thi-truong-la-gi-cach-quan-tri-rui-ro-thi-truong-hieu-qua",
+  "src_title": "Rủi ro thị trường là gì? Cách quản trị rủi ro thị trường hiệu quả",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "24",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 18,
+    "h": "1. Đa dạng hóa danh mục đầu tư",
+    "n_sent": 2,
+    "t": "Đầu tư vào nhiều loại tài sản khác nhau giúp giảm thiểu rủi ro do biến động giá của một tài sản. Việc này tạo ra sự cân bằng trong danh mục đầu tư và giảm khả năng tổn thất lớn khi một phần của thị trường biến động mạnh."
+   },
+   {
+    "i": 4,
+    "h": "Rủi ro thị trường là gì?",
+    "n_sent": 2,
+    "t": "Rủi ro thị trường là nguy cơ tổn thất tài chính mà nhà đầu tư và doanh nghiệp phải đối mặt do sự không dự đoán được và biến động của các yếu tố chung trên thị trường tài chính. Các yếu tố này có thể bao gồm sự biến động của giá cả, thay đổi lãi suất, tình hình kinh tế toàn cầu, bất ổn chính trị, thiên tai, dịch bệnh và nhiều yếu tố khác có thể ảnh hưởng đến giá trị của các tài sản đầu tư."
+   },
+   {
+    "i": 20,
+    "h": "2. Phòng vệ (Hedging)",
+    "n_sent": 2,
+    "t": "Sử dụng các công cụ phòng ngừa rủi ro như hợp đồng tương lai để giảm thiểu rủi ro do biến động giá. Những công cụ này có thể giúp bạn bảo vệ đầu tư của mình trước những biến động không lường trước được."
+   }
+  ]
+ },
+ {
+  "src": "rui-ro-thi-truong-la-gi-cach-quan-tri-rui-ro-thi-truong-hieu-qua",
+  "src_title": "Rủi ro thị trường là gì? Cách quản trị rủi ro thị trường hiệu quả",
+  "target": "rui-ro-la-gi",
+  "role": "sub-hub",
+  "target_title": "Rủi ro là gì? Phân loại và cách phòng tránh rủi ro đầu tư",
+  "clicks": "24",
+  "anchors": [
+   "rủi ro là gì",
+   "các loại rủi ro",
+   "rủi ro đầu tư",
+   "phân loại rủi ro",
+   "rủi ro trong đầu tư",
+   "mức độ rủi ro"
+  ],
+  "paras": [
+   {
+    "i": 18,
+    "h": "1. Đa dạng hóa danh mục đầu tư",
+    "n_sent": 2,
+    "t": "Đầu tư vào nhiều loại tài sản khác nhau giúp giảm thiểu rủi ro do biến động giá của một tài sản. Việc này tạo ra sự cân bằng trong danh mục đầu tư và giảm khả năng tổn thất lớn khi một phần của thị trường biến động mạnh."
+   },
+   {
+    "i": 4,
+    "h": "Rủi ro thị trường là gì?",
+    "n_sent": 2,
+    "t": "Rủi ro thị trường là nguy cơ tổn thất tài chính mà nhà đầu tư và doanh nghiệp phải đối mặt do sự không dự đoán được và biến động của các yếu tố chung trên thị trường tài chính. Các yếu tố này có thể bao gồm sự biến động của giá cả, thay đổi lãi suất, tình hình kinh tế toàn cầu, bất ổn chính trị, thiên tai, dịch bệnh và nhiều yếu tố khác có thể ảnh hưởng đến giá trị của các tài sản đầu tư."
+   },
+   {
+    "i": 5,
+    "h": "Rủi ro thị trường là gì?",
+    "n_sent": 3,
+    "t": "Rủi ro thị trường có thể tác động đến những nhóm chủ thể khác nhau, bao gồm nhà đầu tư, doanh nghiệp, và thậm chí là toàn bộ nền kinh tế. Khi thị trường biến động mạnh, giá trị của các tài sản đầu tư có thể giảm, dẫn đến lỗ lớn cho những người đầu tư. Đối với doanh nghiệp, biến động thị trường có thể ảnh hưởng đến doanh thu, lợi nhuận và hoạt động kinh doanh nói chung."
+   }
+  ]
+ },
+ {
+  "src": "rui-ro-thanh-khoan-la-gi",
+  "src_title": "Rủi ro thanh khoản là gì? Biện pháp hạn chế rủi ro thanh khoản",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "11",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 14,
+    "h": "Rủi ro thanh khoản trong đầu tư chứng khoán",
+    "n_sent": 2,
+    "t": "Trong thị trường chứng khoán, rủi ro thanh khoản xuất hiện khi nhà đầu tư gặp khó khăn trong việc mua hoặc bán cổ phiếu, trái phiếu hay các tài sản tài chính khác mà không làm biến động mạnh giá thị trường. Cổ phiếu có thanh khoản thấp khiến việc thoát vị thế trở nên khó khăn, đặc biệt khi thị trường biến động mạnh, dẫn đến nguy cơ bị “kẹt vốn” hoặc chấp nhận lỗ sâu."
+   },
+   {
+    "i": 15,
+    "h": "Rủi ro thanh khoản trong đầu tư chứng khoán",
+    "n_sent": 2,
+    "t": "Những thị trường có nhiều cổ phiếu penny, cổ phiếu doanh nghiệp nhỏ – như thị trường Việt Nam – thường đối mặt với rủi ro thanh khoản cao hơn. Khi không có đủ lực cầu hoặc lực cung, giao dịch dễ bị gián đoạn, gây bất lợi cho nhà đầu tư."
+   },
+   {
+    "i": 9,
+    "h": "Rủi ro thanh khoản trong ngân hàng",
+    "n_sent": 3,
+    "t": "Nguyên nhân phổ biến đến từ việc mất cân đối kỳ hạn giữa tài sản và nguồn vốn. Nhiều ngân hàng sử dụng nguồn vốn huy động ngắn hạn để cho vay dài hạn. Khi niềm tin khách hàng giảm sút, hiện tượng rút tiền hàng loạt (bank run) có thể khiến ngân hàng rơi vào tình trạng nguy hiểm."
+   }
+  ]
+ },
+ {
+  "src": "rui-ro-thanh-khoan-la-gi",
+  "src_title": "Rủi ro thanh khoản là gì? Biện pháp hạn chế rủi ro thanh khoản",
+  "target": "quan-tri-rui-ro-la-gi-2",
+  "role": "hub",
+  "target_title": "Quản trị rủi ro là gì? Quy trình và phân loại rủi ro chuẩn 2026",
+  "clicks": "11",
+  "anchors": [
+   "quản trị rủi ro",
+   "quản lý rủi ro",
+   "quản trị rủi ro là gì",
+   "quản trị rủi ro trong đầu tư",
+   "kiểm soát rủi ro",
+   "phòng ngừa rủi ro"
+  ],
+  "paras": [
+   {
+    "i": 14,
+    "h": "Rủi ro thanh khoản trong đầu tư chứng khoán",
+    "n_sent": 2,
+    "t": "Trong thị trường chứng khoán, rủi ro thanh khoản xuất hiện khi nhà đầu tư gặp khó khăn trong việc mua hoặc bán cổ phiếu, trái phiếu hay các tài sản tài chính khác mà không làm biến động mạnh giá thị trường. Cổ phiếu có thanh khoản thấp khiến việc thoát vị thế trở nên khó khăn, đặc biệt khi thị trường biến động mạnh, dẫn đến nguy cơ bị “kẹt vốn” hoặc chấp nhận lỗ sâu."
+   },
+   {
+    "i": 15,
+    "h": "Rủi ro thanh khoản trong đầu tư chứng khoán",
+    "n_sent": 2,
+    "t": "Những thị trường có nhiều cổ phiếu penny, cổ phiếu doanh nghiệp nhỏ – như thị trường Việt Nam – thường đối mặt với rủi ro thanh khoản cao hơn. Khi không có đủ lực cầu hoặc lực cung, giao dịch dễ bị gián đoạn, gây bất lợi cho nhà đầu tư."
+   },
+   {
+    "i": 26,
+    "h": "Nguyên nhân của rủi ro thanh khoản",
+    "n_sent": 2,
+    "t": "Ngoài ra, rủi ro thanh khoản cũng có thể phát sinh từ nội tại của ngân hàng. Với một chiến lược quản trị thanh khoản thiếu tính đúng đắn có thể gây ảnh hưởng nghiêm trọng, hoặc cũng có thể do tác động dây chuyền và nhanh chóng lan tỏa trong toàn hệ thống ngân hàng khi có một ngân hàng phát sinh rủi ro."
+   }
+  ]
+ },
+ {
+  "src": "rui-ro-thanh-khoan-la-gi",
+  "src_title": "Rủi ro thanh khoản là gì? Biện pháp hạn chế rủi ro thanh khoản",
+  "target": "rui-ro-la-gi",
+  "role": "sub-hub",
+  "target_title": "Rủi ro là gì? Phân loại và cách phòng tránh rủi ro đầu tư",
+  "clicks": "11",
+  "anchors": [
+   "rủi ro là gì",
+   "các loại rủi ro",
+   "rủi ro đầu tư",
+   "phân loại rủi ro",
+   "rủi ro trong đầu tư",
+   "mức độ rủi ro"
+  ],
+  "paras": [
+   {
+    "i": 14,
+    "h": "Rủi ro thanh khoản trong đầu tư chứng khoán",
+    "n_sent": 2,
+    "t": "Trong thị trường chứng khoán, rủi ro thanh khoản xuất hiện khi nhà đầu tư gặp khó khăn trong việc mua hoặc bán cổ phiếu, trái phiếu hay các tài sản tài chính khác mà không làm biến động mạnh giá thị trường. Cổ phiếu có thanh khoản thấp khiến việc thoát vị thế trở nên khó khăn, đặc biệt khi thị trường biến động mạnh, dẫn đến nguy cơ bị “kẹt vốn” hoặc chấp nhận lỗ sâu."
+   },
+   {
+    "i": 15,
+    "h": "Rủi ro thanh khoản trong đầu tư chứng khoán",
+    "n_sent": 2,
+    "t": "Những thị trường có nhiều cổ phiếu penny, cổ phiếu doanh nghiệp nhỏ – như thị trường Việt Nam – thường đối mặt với rủi ro thanh khoản cao hơn. Khi không có đủ lực cầu hoặc lực cung, giao dịch dễ bị gián đoạn, gây bất lợi cho nhà đầu tư."
+   },
+   {
+    "i": 3,
+    "h": "Rủi ro thanh khoản là gì?",
+    "n_sent": 1,
+    "t": "Nói cách khác, khi ngân hàng không thể đáp ứng các nghĩa vụ nợ ngắn hạn của mình thì sẽ phải đối mặt với rủi ro thanh khoản."
+   }
+  ]
+ },
+ {
+  "src": "rui-ro-la-gi",
+  "src_title": "Rủi ro là gì? Phân loại và cách phòng tránh rủi ro đầu tư",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "10",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 29,
+    "h": "Các chiến lược quản trị và phòng tránh rủi ro trong đầu tư chứng khoán",
+    "n_sent": 2,
+    "t": "Nhận diện rủi ro là bước đầu tiên, nhưng để tồn tại và chiến thắng trên thị trường, nhà đầu tư cần có phương án hành động cụ thể. Rủi ro không chỉ dừng lại ở việc thua lỗ (giảm NAV) mà còn bao gồm rủi ro thanh khoản (kẹp hàng) hay rủi ro pháp lý."
+   },
+   {
+    "i": 2,
+    "h": "Rủi ro là gì?",
+    "n_sent": 1,
+    "t": "Trong lĩnh vực kinh tế - tài chính, Rủi ro (Risk) được định nghĩa là khả năng kết quả thực tế sai lệch so với mục tiêu hoặc lợi nhuận kỳ vọng."
+   },
+   {
+    "i": 7,
+    "h": "Rủi ro là gì?",
+    "n_sent": 1,
+    "t": "Nguồn gốc của rủi ro đến từ sự cộng hưởng giữa các yếu tố Chủ quan (sai lầm trong phân tích, quản lý) và Khách quan (biến động thị trường, thiên tai, chính sách vĩ mô)."
+   }
+  ]
+ },
+ {
+  "src": "copy-trading-hinh-thuc-giao-dich-tai-chinh-tiet-kiem-thoi-gian-va-cong-suc",
+  "src_title": "Copy trading là gì? Phân loại, ưu nhược điểm Copy trade",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "8",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 10,
+    "h": "Copy trading tự động",
+    "n_sent": 1,
+    "t": "Đây là hình thức phổ biến nhất của Copy Trading, nơi mà các giao dịch của nhà đầu tư chuyên nghiệp được sao chép tự động vào tài khoản của người theo dõi thông qua các hệ thống giao dịch tự động."
+   },
+   {
+    "i": 18,
+    "h": "Ví dụ về phương thức Copy Trading",
+    "n_sent": 2,
+    "t": "Nếu B lãi 1.000.000 VND từ giao dịch đó, A cũng sẽ nhận được lợi nhuận tương ứng 100.000 VND. Điều này thể hiện cách Copy Trading sao chép giao dịch chứng khoán một cách tỷ lệ cho nhà đầu tư mới."
+   },
+   {
+    "i": 12,
+    "h": "Tín hiệu giao dịch",
+    "n_sent": 2,
+    "t": "Loại Copy Trading này liên kết người theo dõi với các nhà đầu tư chuyên nghiệp thông qua cung cấp tín hiệu giao dịch. Người theo dõi quyết định thực hiện giao dịch dựa trên tín hiệu được cung cấp bởi nhà đầu tư chuyên nghiệp."
+   }
+  ]
+ },
+ {
+  "src": "take-profit-la-gi",
+  "src_title": "Take Profit là gì? 3 Chiến lược chốt lời tối ưu cho F0",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "5",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 28,
+    "h": "3 Chiến lược chốt lời tối ưu cho nhà đầu tư mới",
+    "n_sent": 2,
+    "t": "Việc xác định điểm chốt lời chính xác đòi hỏi sự kết hợp giữa các phương pháp kỹ thuật và kỷ luật quản trị vốn. Dưới đây là 3 chiến lược đơn giản và hiệu quả nhất dành cho bạn."
+   },
+   {
+    "i": 2,
+    "h": "Take Profit (Chốt lời) là gì trong chứng khoán?",
+    "n_sent": 2,
+    "t": "Theo quy chế giao dịch hiện hành tại sàn HOSE và HNX, nhà đầu tư được phép sử dụng các công cụ đặt lệnh dừng hoặc lệnh điều kiện để tự động hóa hoạt động bán chứng khoán. Điều này giúp tối ưu hóa hiệu quả giao dịch và bảo toàn thành quả đầu tư."
+   },
+   {
+    "i": 31,
+    "h": "Chốt lời theo tỷ lệ rủi ro/lợi nhuận cố định (Risk/Reward Ratio)",
+    "n_sent": 2,
+    "t": "Trong quản trị vốn tại sàn HOSE, chiến lược chốt lời theo tỷ lệ Risk/Reward tối thiểu 1:2 là nguyên tắc cơ bản. Quy tắc này giúp tài khoản tăng trưởng bền vững qua các chu kỳ."
+   }
+  ]
+ },
+ {
+  "src": "volatility-la-gi",
+  "src_title": "Volatility là gì? Ứng dụng độ biến động trong đầu tư chứng khoán",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "5",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 9,
+    "h": "So sánh Volatility giữa thị trường chứng khoán và crypto",
+    "n_sent": 2,
+    "t": "Mặc dù cả hai thị trường đều tồn tại volatility, nhưng cường độ và cơ chế vận hành của chúng có sự khác biệt rõ rệt. Nhà đầu tư cần nắm rõ sự khác biệt này để phân bổ tỷ trọng vốn hợp lý vào danh mục."
+   },
+   {
+    "i": 4,
+    "h": "Volatility là gì?",
+    "n_sent": 2,
+    "t": "Sự biến động này thường được tính toán dựa trên độ lệch chuẩn của giá. Khi một tài sản có độ biến động cao, giá của nó có thể dao động rất xa so với giá trị trung bình chỉ trong thời gian ngắn."
+   },
+   {
+    "i": 5,
+    "h": "Volatility là gì?",
+    "n_sent": 2,
+    "t": "Ngược lại, tài sản có độ biến động thấp thường có xu hướng dịch chuyển ổn định và dễ dự đoán hơn. Độ biến động thường bùng phát mạnh mẽ khi thị trường đối mặt với các sự kiện kinh tế vĩ mô, báo cáo tài chính gây sốc hoặc những thay đổi đột ngột trong chính sách tiền tệ."
+   }
+  ]
+ },
+ {
+  "src": "volatility-la-gi",
+  "src_title": "Volatility là gì? Ứng dụng độ biến động trong đầu tư chứng khoán",
+  "target": "quan-tri-rui-ro-la-gi-2",
+  "role": "hub",
+  "target_title": "Quản trị rủi ro là gì? Quy trình và phân loại rủi ro chuẩn 2026",
+  "clicks": "5",
+  "anchors": [
+   "quản trị rủi ro",
+   "quản lý rủi ro",
+   "quản trị rủi ro là gì",
+   "quản trị rủi ro trong đầu tư",
+   "kiểm soát rủi ro",
+   "phòng ngừa rủi ro"
+  ],
+  "paras": [
+   {
+    "i": 9,
+    "h": "So sánh Volatility giữa thị trường chứng khoán và crypto",
+    "n_sent": 2,
+    "t": "Mặc dù cả hai thị trường đều tồn tại volatility, nhưng cường độ và cơ chế vận hành của chúng có sự khác biệt rõ rệt. Nhà đầu tư cần nắm rõ sự khác biệt này để phân bổ tỷ trọng vốn hợp lý vào danh mục."
+   },
+   {
+    "i": 3,
+    "h": "Volatility là gì?",
+    "n_sent": 1,
+    "t": "Volatility là một chỉ số thống kê đo lường mức độ phân tán của các mức tỷ suất sinh lời của một loại tài sản tài chính như cổ phiếu, trái phiếu hay tiền mã hóa."
+   },
+   {
+    "i": 4,
+    "h": "Volatility là gì?",
+    "n_sent": 2,
+    "t": "Sự biến động này thường được tính toán dựa trên độ lệch chuẩn của giá. Khi một tài sản có độ biến động cao, giá của nó có thể dao động rất xa so với giá trị trung bình chỉ trong thời gian ngắn."
+   }
+  ]
+ },
+ {
+  "src": "volatility-la-gi",
+  "src_title": "Volatility là gì? Ứng dụng độ biến động trong đầu tư chứng khoán",
+  "target": "danh-muc-dau-tu-hieu-qua-la-gi",
+  "role": "sub-hub",
+  "target_title": "Danh mục đầu tư hiệu quả là gì? Tối ưu danh mục Markowitz",
+  "clicks": "5",
+  "anchors": [
+   "danh mục đầu tư hiệu quả",
+   "danh mục đầu tư tối ưu",
+   "đa dạng hóa danh mục đầu tư",
+   "danh mục đầu tư",
+   "phân bổ danh mục"
+  ],
+  "paras": [
+   {
+    "i": 9,
+    "h": "So sánh Volatility giữa thị trường chứng khoán và crypto",
+    "n_sent": 2,
+    "t": "Mặc dù cả hai thị trường đều tồn tại volatility, nhưng cường độ và cơ chế vận hành của chúng có sự khác biệt rõ rệt. Nhà đầu tư cần nắm rõ sự khác biệt này để phân bổ tỷ trọng vốn hợp lý vào danh mục."
+   },
+   {
+    "i": 3,
+    "h": "Volatility là gì?",
+    "n_sent": 1,
+    "t": "Volatility là một chỉ số thống kê đo lường mức độ phân tán của các mức tỷ suất sinh lời của một loại tài sản tài chính như cổ phiếu, trái phiếu hay tiền mã hóa."
+   },
+   {
+    "i": 4,
+    "h": "Volatility là gì?",
+    "n_sent": 2,
+    "t": "Sự biến động này thường được tính toán dựa trên độ lệch chuẩn của giá. Khi một tài sản có độ biến động cao, giá của nó có thể dao động rất xa so với giá trị trung bình chỉ trong thời gian ngắn."
+   }
+  ]
+ },
+ {
+  "src": "thien-kien-nhan-thuc-la-gi",
+  "src_title": "Thiên kiến nhận thức là gì? Phân loại và tác động đến đầu tư",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "5",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 19,
+    "h": "Hiệu ứng khung tâm lý",
+    "n_sent": 3,
+    "t": "Trong đầu tư chứng khoán, hiệu ứng này xuất hiện khi nhà đầu tư bị ảnh hưởng bởi cách truyền thông hoặc chuyên gia “định khung” dữ liệu thị trường. Cùng một kết quả kinh doanh có thể được diễn giải là “tăng trưởng chậm lại” (khung tiêu cực) hoặc “vẫn duy trì tăng trưởng” (khung tích cực), từ đó dẫn đến quyết định mua – bán khác nhau. Tương tự, các tiêu đề tin tức như “thị trường giảm nhẹ” so với “VN-Index mất điểm” có thể tạo ra tác động tâm lý hoàn toàn khác dù mức biến động là như nhau."
+   },
+   {
+    "i": 12,
+    "h": "Hiệu ứng ám ảnh về sự mất mát và Hiệu ứng sở hữu",
+    "n_sent": 2,
+    "t": "Trong đầu tư chứng khoán, hiệu ứng ám ảnh về sự mất mát khiến nhà đầu tư sợ thua lỗ hơn mức họ mong muốn kiếm lời. Điều này dẫn đến hai hành vi phổ biến: bán quá sớm những cổ phiếu đang có lãi để “bảo vệ lợi nhuận nhỏ”, và giữ quá lâu những cổ phiếu đang giảm vì không muốn hiện thực hóa thua lỗ."
+   },
+   {
+    "i": 13,
+    "h": "Hiệu ứng ám ảnh về sự mất mát và Hiệu ứng sở hữu",
+    "n_sent": 3,
+    "t": "Hiệu ứng sở hữu làm tình huống trở nên trầm trọng hơn. Khi đã nắm giữ một cổ phiếu, nhà đầu tư có xu hướng đánh giá quá cao giá trị của nó chỉ vì mình sở hữu nó. Điều này dẫn đến sự gắn bó cảm tính, khiến họ khó bán cổ phiếu dù doanh nghiệp đã xấu đi hoặc không còn phù hợp với chiến lược đầu tư."
+   }
+  ]
+ },
+ {
+  "src": "cach-kiem-soat-tam-ly-trong-dau-tu-chung-khoan",
+  "src_title": "5 cách kiểm soát tâm lý trong đầu tư chứng khoán",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "4",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 5,
+    "h": "Tại sao cần kiểm soát tâm lý trong đầu tư chứng khoán?",
+    "n_sent": 2,
+    "t": "Thị trường chứng khoán không chỉ là nơi luân chuyển dòng vốn mà còn là sự phản ánh tâm lý của hàng triệu nhà đầu tư. Khi tâm lý ổn định, nhà đầu tư có khả năng thực thi các chiến lược dựa trên dữ liệu khách quan và logic."
+   },
+   {
+    "i": 18,
+    "h": "Tham gia các khóa học, hội thảo về đầu tư chứng khoán",
+    "n_sent": 2,
+    "t": "Tham gia các khóa học chứng khoán, hội thảo về đầu tư chứng khoán sẽ giúp nhà đầu tư nâng cao kiến thức và kỹ năng đầu tư. Từ đó, nhà đầu tư sẽ có khả năng đưa ra những quyết định đầu tư sáng suốt hơn."
+   },
+   {
+    "i": 6,
+    "h": "Tại sao cần kiểm soát tâm lý trong đầu tư chứng khoán?",
+    "n_sent": 2,
+    "t": "Ngược lại, khi bị chi phối bởi các trạng thái như tham lam (greed) hoặc sợ hãi (fear), nhà đầu tư dễ rơi vào các bẫy tâm lý, dẫn đến sai lầm trong việc định thời điểm thị trường (market timing) hoặc vi phạm các nguyên tắc quản trị rủi ro. Việc kiểm soát tốt hệ thống cảm xúc giúp bảo vệ nguồn vốn và duy trì hiệu suất sinh lời bền vững trong dài hạn."
+   }
+  ]
+ },
+ {
+  "src": "chi-so-tam-ly-la-gi",
+  "src_title": "Chỉ số tâm lý là gì? Ứng dụng chỉ số tâm lý trong đầu tư",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "4",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 39,
+    "h": "Nhận diện bẫy tâm lý phổ biến",
+    "n_sent": 2,
+    "t": "Bẫy FOMO (Fear of Missing Out) xuất hiện khi chỉ số tâm lý vượt ngưỡng 80 điểm. Nhà đầu tư liên tục chứng kiến cổ phiếu tăng trần, dẫn đến tâm lý sợ bỏ lỡ cơ hội và lao vào mua đuổi ngay vùng đỉnh ngắn hạn."
+   },
+   {
+    "i": 40,
+    "h": "Nhận diện bẫy tâm lý phổ biến",
+    "n_sent": 2,
+    "t": "Bẫy Panic Selling xuất hiện khi chỉ số tâm lý lùi sâu dưới 15 điểm. Áp lực cắt lỗ dồn dập khiến nhà đầu tư bán tháo toàn bộ danh mục đúng ngay thời điểm thị trường tạo đáy và chuẩn bị bước vào sóng phục hồi mạnh."
+   },
+   {
+    "i": 30,
+    "h": "Nguyên lý giao dịch Contrarian",
+    "n_sent": 2,
+    "t": "Đám đông nhà đầu tư cá nhân thường đúng ở giữa xu hướng nhưng luôn luôn sai tại 2 vùng cực trị đỉnh và đáy. Chiến lược giao dịch ngược dòng (Contrarian Trading) đòi hỏi Active Trader phải đi ngược lại cảm xúc tự nhiên của số đông: Mua khi đám đông tuyệt vọng và Bán khi đám đông hưng phấn."
+   }
+  ]
+ },
+ {
+  "src": "chi-so-tam-ly-la-gi",
+  "src_title": "Chỉ số tâm lý là gì? Ứng dụng chỉ số tâm lý trong đầu tư",
+  "target": "thien-kien-nhan-thuc-la-gi",
+  "role": "hub",
+  "target_title": "Thiên kiến nhận thức là gì? Phân loại và tác động đến đầu tư",
+  "clicks": "4",
+  "anchors": [
+   "thiên kiến nhận thức",
+   "thiên kiến nhận thức là gì",
+   "các loại thiên kiến",
+   "thiên kiến",
+   "bẫy tâm lý"
+  ],
+  "paras": [
+   {
+    "i": 39,
+    "h": "Nhận diện bẫy tâm lý phổ biến",
+    "n_sent": 2,
+    "t": "Bẫy FOMO (Fear of Missing Out) xuất hiện khi chỉ số tâm lý vượt ngưỡng 80 điểm. Nhà đầu tư liên tục chứng kiến cổ phiếu tăng trần, dẫn đến tâm lý sợ bỏ lỡ cơ hội và lao vào mua đuổi ngay vùng đỉnh ngắn hạn."
+   },
+   {
+    "i": 3,
+    "h": "Chỉ số tâm lý là gì?",
+    "n_sent": 2,
+    "t": "Chỉ số tâm lý (Market Sentiment Index) là công cụ định lượng đo lường trạng thái cảm xúc chung của cộng đồng nhà đầu tư trên thị trường tại một thời điểm nhất định. Chỉ số này thường dao động trong thang điểm từ 0 đến 100, phản ánh 2 trạng thái cực trị chính: Sợ hãi cực độ (Extreme Fear) và Tham lam cực độ (Extreme Greed)."
+   },
+   {
+    "i": 40,
+    "h": "Nhận diện bẫy tâm lý phổ biến",
+    "n_sent": 2,
+    "t": "Bẫy Panic Selling xuất hiện khi chỉ số tâm lý lùi sâu dưới 15 điểm. Áp lực cắt lỗ dồn dập khiến nhà đầu tư bán tháo toàn bộ danh mục đúng ngay thời điểm thị trường tạo đáy và chuẩn bị bước vào sóng phục hồi mạnh."
+   }
+  ]
+ },
+ {
+  "src": "y-nghia-cua-sell-in-may-and-go-away-trong-dau-tu-chung-khoan-tai-viet-nam",
+  "src_title": "Sell in may and go away là gì? 4 lưu ý cho nhà đầu tư",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "3",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 24,
+    "h": "Thực tế hiệu ứng Sell in May tại thị trường chứng khoán Việt Nam (VN-Index)",
+    "n_sent": 1,
+    "t": "Tại thị trường chứng khoán Việt Nam, hiệu ứng Sell in May không mang tính quy luật tuyệt đối mà chịu sự chi phối mạnh mẽ của chu kỳ thông tin doanh nghiệp."
+   },
+   {
+    "i": 22,
+    "h": "Hiệu ứng Sell in May có thực sự hiệu quả? Dữ liệu thống kê quốc tế",
+    "n_sent": 3,
+    "t": "Tại các thị trường mới nổi, quy luật này thường xuyên bị phá vỡ. Điển hình tại thị trường chứng khoán Trung Quốc giai đoạn 2017 – 2020, chỉ số chứng khoán tăng hơn 20% trong giai đoạn từ tháng 5 đến tháng 10. Việc áp dụng máy móc chiến lược bán tháo sẽ khiến nhà đầu tư bỏ lỡ những con sóng tăng trưởng lớn."
+   },
+   {
+    "i": 12,
+    "h": "Hiệu ứng Sell in May có thực sự hiệu quả? Dữ liệu thống kê quốc tế",
+    "n_sent": 1,
+    "t": "Nhiều nghiên cứu thống kê dài hạn trên các thị trường tài chính phát triển đã chứng minh hiệu ứng mùa vụ này từng tồn tại rõ nét trong quá khứ."
+   }
+  ]
+ },
+ {
+  "src": "drawdown-trong-dau-tu-la-gi",
+  "src_title": "Drawdown là gì trong đầu tư? Tỷ lệ Drawdown bao nhiêu là tốt?",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "2",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 5,
+    "h": "Drawdown là gì?",
+    "n_sent": 3,
+    "t": "Drawdown (Mức sụt giảm vốn) là chỉ số đo lường mức độ sụt giảm giá trị của một danh mục đầu tư hoặc tài khoản giao dịch, tính từ điểm đỉnh cao nhất (Peak) đến điểm đáy thấp nhất (Trough) trong một giai đoạn nhất định. Đây là thước đo rủi ro then chốt, giúp nhà đầu tư nhận diện mức thua lỗ tối đa mà họ có thể phải đối mặt. Cần lưu ý, Drawdown phản ánh mức lỗ tạm thời trên giá trị tài sản ròng (NAV) và chỉ trở thành lỗ thực tế khi nhà đầu tư quyết định đóng vị thế (bán cổ phiếu)."
+   },
+   {
+    "i": 36,
+    "h": "Tỷ lệ Drawdown bao nhiêu là tốt?",
+    "n_sent": 2,
+    "t": "Lời khuyên từ DSC: Để duy trì sự bền vững, nhà đầu tư nên kiểm soát Drawdown không quá 20%. Nếu vượt quá con số này, bạn cần nhanh chóng rà soát lại danh mục và thắt chặt kỷ luật dừng lỗ để bảo vệ nguồn vốn."
+   },
+   {
+    "i": 12,
+    "h": "Cách tính Drawdown",
+    "n_sent": 1,
+    "t": "Tỷ lệ Drawdown được xác định dựa trên mức chênh lệch giữa điểm cao nhất (đỉnh) và điểm thấp nhất (đáy) của vốn trong một khoảng thời gian cụ thể."
+   }
+  ]
+ },
+ {
+  "src": "drawdown-trong-dau-tu-la-gi",
+  "src_title": "Drawdown là gì trong đầu tư? Tỷ lệ Drawdown bao nhiêu là tốt?",
+  "target": "ty-le-risk-reward-la-gi",
+  "role": "sub-hub",
+  "target_title": "Tỷ lệ Risk/Reward (rủi ro trên lợi nhuận) là gì? Ý nghĩa trong giao dịch chứng khoán",
+  "clicks": "2",
+  "anchors": [
+   "tỷ lệ risk/reward",
+   "tỷ lệ R:R",
+   "tỷ lệ rủi ro trên lợi nhuận",
+   "risk reward",
+   "tỷ lệ lời lỗ",
+   "R:R"
+  ],
+  "paras": [
+   {
+    "i": 5,
+    "h": "Drawdown là gì?",
+    "n_sent": 3,
+    "t": "Drawdown (Mức sụt giảm vốn) là chỉ số đo lường mức độ sụt giảm giá trị của một danh mục đầu tư hoặc tài khoản giao dịch, tính từ điểm đỉnh cao nhất (Peak) đến điểm đáy thấp nhất (Trough) trong một giai đoạn nhất định. Đây là thước đo rủi ro then chốt, giúp nhà đầu tư nhận diện mức thua lỗ tối đa mà họ có thể phải đối mặt. Cần lưu ý, Drawdown phản ánh mức lỗ tạm thời trên giá trị tài sản ròng (NAV) và chỉ trở thành lỗ thực tế khi nhà đầu tư quyết định đóng vị thế (bán cổ phiếu)."
+   },
+   {
+    "i": 36,
+    "h": "Tỷ lệ Drawdown bao nhiêu là tốt?",
+    "n_sent": 2,
+    "t": "Lời khuyên từ DSC: Để duy trì sự bền vững, nhà đầu tư nên kiểm soát Drawdown không quá 20%. Nếu vượt quá con số này, bạn cần nhanh chóng rà soát lại danh mục và thắt chặt kỷ luật dừng lỗ để bảo vệ nguồn vốn."
+   },
+   {
+    "i": 12,
+    "h": "Cách tính Drawdown",
+    "n_sent": 1,
+    "t": "Tỷ lệ Drawdown được xác định dựa trên mức chênh lệch giữa điểm cao nhất (đỉnh) và điểm thấp nhất (đáy) của vốn trong một khoảng thời gian cụ thể."
+   }
+  ]
+ },
+ {
+  "src": "lac-quan-teu-la-gi",
+  "src_title": "Lạc quan tếu là gì? Bẫy tâm lý trong đầu tư chứng khoán",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "2",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 41,
+    "h": "Yếu tố văn hóa và câu chuyện thời đại",
+    "n_sent": 2,
+    "t": "Trong mỗi chu kỳ bong bóng, luôn có một \"câu chuyện thời đại mới\" được vẽ ra để thuyết phục công chúng: từ đường sắt (cuối thế kỷ 19), ô tô và điện lực (thập niên 1920) đến Internet (thập niên 1990) và gần đây là công nghệ AI, tiền mã hóa. Truyền thông thường ưu tiên các câu chuyện giật gân, khơi gợi lòng tham hơn là các phân tích số liệu tài chính tẻ nhạt."
+   },
+   {
+    "i": 2,
+    "h": "Lạc quan tếu là gì?",
+    "n_sent": 1,
+    "t": "Lạc quan tếu (Irrational Exuberance) là trạng thái hưng phấn quá mức của nhà đầu tư đối với giá trị tài sản, không dựa trên nền tảng thực tế mà xuất phát từ tâm lý đám đông và kỳ vọng phi lý."
+   },
+   {
+    "i": 3,
+    "h": "Lạc quan tếu là gì?",
+    "n_sent": 2,
+    "t": "Thuật ngữ này lần đầu tiên được cựu Chủ tịch Cục Dự trữ Liên bang Mỹ (FED) - Alan Greenspan đưa ra vào năm 1996. Sau đó, nó đã được Robert Shiller sử dụng làm tiêu đề cho cuốn sách nổi tiếng của mình nhằm cảnh báo về sự bong bóng của thị trường chứng khoán cuối thập niên 1990."
+   }
+  ]
+ },
+ {
+  "src": "tuan-thu-18-quy-tac-cua-richard-rhodes",
+  "src_title": "18 quy tắc của Richard Rhodes nhà đầu tư chứng khoán cần nắm vững",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "1",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 43,
+    "h": "Quy tắc 16: Chiến đấu cùng phe chiến thắng",
+    "n_sent": 1,
+    "t": "Nhà đầu tư cần suy nghĩ như một chiến binh du kích: chiến đấu ở phía thị trường đang chiến thắng, không lãng phí thời gian và vốn liếng vào những nỗ lực vô ích để đạt được danh tiếng bằng cách mua mức thấp hoặc bán mức cao."
+   },
+   {
+    "i": 44,
+    "h": "Quy tắc 16: Chiến đấu cùng phe chiến thắng",
+    "n_sent": 2,
+    "t": "Nhiệm vụ của nhà đầu tư là kiếm được lợi nhuận bằng cách chiến đấu bên cạnh các lực lượng chiến thắng. Nếu không bên nào chiến thắng, không cần phải chiến đấu gì cả (đứng ngoài thị trường)."
+   },
+   {
+    "i": 4,
+    "h": "Richard Rhodes là ai?",
+    "n_sent": 2,
+    "t": "Kinh nghiệm đúc kết cả thập kỷ giao dịch cho thấy phương pháp đơn giản đem lại hiệu quả giao dịch cao. Việc áp dụng quá nhiều chỉ báo dao động (Stochastics) phức tạp như đường trung bình động có trọng số tuyến tính, kỹ thuật làm mịn, số Fibonacci thường gây bối rối cho nhà đầu tư khi đưa ra quyết định."
+   }
+  ]
+ },
+ {
+  "src": "buy-the-dips-la-gi-cach-ap-dung-chien-luoc-buy-the-dips",
+  "src_title": "Buy the dips là gì? Cách áp dụng chiến lược buy the dips",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "1",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 12,
+    "h": "4. Rủi ro của buy the dips",
+    "n_sent": 2,
+    "t": "Buy the dips là một chiến lược giao dịch có rủi ro cao. Nếu giá cổ phiếu không tăng lên, nhà đầu tư có thể bị thua lỗ."
+   },
+   {
+    "i": 10,
+    "h": "3. Các loại buy the dips",
+    "n_sent": 2,
+    "t": "Buy the dips theo phân tích cơ bản: Loại buy the dips này ít phổ biến hơn. Nhà đầu tư sẽ xác định thời điểm giá cổ phiếu chạm đáy dựa trên các yếu tố cơ bản của doanh nghiệp, chẳng hạn như báo cáo tài chính, triển vọng kinh doanh, v.v."
+   },
+   {
+    "i": 9,
+    "h": "3. Các loại buy the dips",
+    "n_sent": 2,
+    "t": "Buy the dips theo phân tích kỹ thuật: Đây là loại buy the dips phổ biến nhất. Nhà đầu tư sẽ sử dụng các chỉ báo kỹ thuật để xác định thời điểm giá cổ phiếu chạm đáy."
+   }
+  ]
+ },
+ {
+  "src": "position-trading-la-gi",
+  "src_title": "Position Trading là gì? Bí quyết giao dịch vị thế hiệu quả",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "1",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "Position trading là gì?",
+    "n_sent": 3,
+    "t": "Position trading (giao dịch vị thế) là phương pháp giao dịch có khung thời gian dài nhất trong các loại hình giao dịch phổ biến. Một Position Trader sẽ tìm kiếm lợi nhuận bằng cách đi theo các xu hướng chủ đạo (Primary Trends) của thị trường thay vì quan tâm đến những biến động giá nhỏ (noise) hàng ngày. Họ có thể giữ lệnh từ vài tháng đến vài năm, cho đến khi xu hướng đó có dấu hiệu đảo chiều."
+   },
+   {
+    "i": 36,
+    "h": "Tuyệt chiêu quản lý vốn và rủi ro - Đặt Stop Loss thông minh",
+    "n_sent": 2,
+    "t": "Vì mục tiêu lợi nhuận lớn, bạn cần đặt Stop Loss xa hơn bình thường để tránh bị \"quét\" bởi biến động ngắn hạn. Tuy nhiên, hãy đảm bảo tỷ lệ R:R (Risk/Reward) luôn đạt ít nhất 1:3."
+   }
+  ]
+ },
+ {
+  "src": "position-trading-la-gi",
+  "src_title": "Position Trading là gì? Bí quyết giao dịch vị thế hiệu quả",
+  "target": "trading-trong-chung-khoan-la-gi",
+  "role": "sub-hub",
+  "target_title": "Trading là gì trong đầu tư chứng khoán? Lời khuyên cho trader",
+  "clicks": "1",
+  "anchors": [
+   "trading chứng khoán",
+   "trading là gì",
+   "trading trong đầu tư chứng khoán",
+   "giao dịch ngắn hạn",
+   "lướt sóng"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "Position trading là gì?",
+    "n_sent": 3,
+    "t": "Position trading (giao dịch vị thế) là phương pháp giao dịch có khung thời gian dài nhất trong các loại hình giao dịch phổ biến. Một Position Trader sẽ tìm kiếm lợi nhuận bằng cách đi theo các xu hướng chủ đạo (Primary Trends) của thị trường thay vì quan tâm đến những biến động giá nhỏ (noise) hàng ngày. Họ có thể giữ lệnh từ vài tháng đến vài năm, cho đến khi xu hướng đó có dấu hiệu đảo chiều."
+   },
+   {
+    "i": 36,
+    "h": "Tuyệt chiêu quản lý vốn và rủi ro - Đặt Stop Loss thông minh",
+    "n_sent": 2,
+    "t": "Vì mục tiêu lợi nhuận lớn, bạn cần đặt Stop Loss xa hơn bình thường để tránh bị \"quét\" bởi biến động ngắn hạn. Tuy nhiên, hãy đảm bảo tỷ lệ R:R (Risk/Reward) luôn đạt ít nhất 1:3."
+   }
+  ]
+ },
+ {
+  "src": "fomo-trong-dau-tu-chung-khoan-la-gi",
+  "src_title": "FOMO là gì? Cách vượt qua FOMO trong đầu tư chứng khoán",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "1",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 12,
+    "h": "FOMO trong đầu tư chứng khoán là gì?",
+    "n_sent": 2,
+    "t": "FOMO trong đầu tư chứng khoán là hành vi nhà đầu tư vội vàng mua cổ phiếu ở vùng giá cao. Nỗi sợ mất cơ hội thôi thúc họ giải ngân khi thị trường tăng nóng."
+   },
+   {
+    "i": 13,
+    "h": "FOMO trong đầu tư chứng khoán là gì?",
+    "n_sent": 3,
+    "t": "Tâm lý này khiến nhà đầu tư phá vỡ nguyên tắc cắt lỗ và kế hoạch quản trị rủi ro. Thống kê HOSE tháng 8/2026 cho thấy khi chỉ số chứng khoán VN-Index tiệm cận mốc 1.735,78 điểm, thanh khoản đạt 15.000 tỷ đồng/phiên. Dòng tiền này chủ yếu đến từ lực mua đuổi của F0."
+   },
+   {
+    "i": 6,
+    "h": "FOMO là gì?",
+    "n_sent": 3,
+    "t": "Tính đến tháng 8/2026, VSDC ghi nhận toàn thị trường có hơn 13,66 triệu tài khoản chứng khoán cá nhân. Sự bùng nổ của mạng xã hội khiến tin tức khoe tài khoản sinh lời lan truyền nhanh chóng. Áp lực này kích hoạt phản ứng bản năng, khiến nhà đầu tư vội vàng bắt chước đám đông mà bỏ qua bước đánh giá rủi ro."
+   }
+  ]
+ },
+ {
+  "src": "dau-tu-gia-tri-hay-dau-tu-tang-truong-chien-luoc-nao-phu-hop-voi-ban",
+  "src_title": "Đầu tư giá trị hay đầu tư tăng trưởng: Chọn chiến lược nào?",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "0",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 5,
+    "h": "Tổng quan về trường phái đầu tư giá trị (Value Investing)",
+    "n_sent": 2,
+    "t": "Trường phái đầu tư giá trị là chiến lược tìm kiếm cổ phiếu giao dịch thấp hơn giá trị nội tại của cổ phiếu. Nhà đầu tư tin rằng thị trường luôn xuất hiện những lúc định giá sai do tâm lý hoảng loạn ngắn hạn."
+   },
+   {
+    "i": 23,
+    "h": "Tổng quan về trường phái đầu tư tăng trưởng (Growth Investing)",
+    "n_sent": 2,
+    "t": "Trái ngược với việc tìm món hời giá rẻ, chiến lược đầu tư tăng trưởng tập trung vào doanh nghiệp bứt phá lợi nhuận. Nhà đầu tư sẵn sàng trả định giá cao hiện tại để đổi lấy tiềm năng sinh lời vượt trội trong tương lai."
+   },
+   {
+    "i": 55,
+    "h": "So sánh đầu tư giá trị và đầu tư tăng trưởng chi tiết",
+    "n_sent": 2,
+    "t": "Nhà đầu tư giá trị luôn tìm kiếm sự an tâm từ bảng cân đối kế toán lành mạnh. Trái lại, nhà đầu tư tăng trưởng tìm kiếm siêu cổ phiếu có thể nhân tài khoản nhiều lần."
+   }
+  ]
+ },
+ {
+  "src": "dau-tu-tang-truong-la-gi",
+  "src_title": "Đầu tư tăng trưởng là gì? Cách chọn cổ phiếu tăng trưởng",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "0",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 30,
+    "h": "Cách lựa chọn cổ phếu theo trường phái đầu tư tăng trưởng hiệu quả",
+    "n_sent": 4,
+    "t": "Phương pháp đầu tư tăng trưởng là gì hiệu quả nhất? CANSLIM là một trong những hệ thống được công nhận rộng rãi nhất, được phát triển bởi nhà đầu tư huyền thoại William J. O'Neil. Đây là một bộ lọc gồm 7 tiêu chí quan trọng để xác định các cổ phiếu tăng trưởng tiềm năng."
+   },
+   {
+    "i": 18,
+    "h": "Phân biệt hai trường phái: đầu tư tăng trưởng và đầu tư giá trị",
+    "n_sent": 1,
+    "t": "Hiểu rõ sự khác biệt giữa hai trường phái đầu tư phổ biến nhất sẽ giúp bạn định hình chiến lược phù hợp với khẩu vị rủi ro và mục tiêu của bản thân."
+   },
+   {
+    "i": 3,
+    "h": "Đầu tư tăng trưởng là gì?",
+    "n_sent": 1,
+    "t": "Đầu tư tăng trưởng (Growth Investing) là một chiến lược đầu tư tập trung vào việc mua cổ phiếu của các công ty được kỳ vọng sẽ tăng trưởng với tốc độ nhanh hơn nhiều so với phần còn lại của thị trường."
+   }
+  ]
+ },
+ {
+  "src": "phuong-phap-canslim-trong-dau-tu-chung-khoan-la-gi",
+  "src_title": "Phương pháp CANSLIM: 7 tiêu chí Lọc cổ phiếu tăng trưởng",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "0",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 3,
+    "h": "Phương pháp CANSLIM là gì?",
+    "n_sent": 2,
+    "t": "Tháng 8/2026, thống kê từ VSDC cho thấy toàn thị trường có hơn 13,58 triệu tài khoản cá nhân. Tuy nhiên, nhiều nhà đầu tư F0 vẫn loay hoay mua các cổ phiếu giá rẻ nhưng chôn vốn nhiều năm."
+   },
+   {
+    "i": 5,
+    "h": "Phương pháp CANSLIM là gì?",
+    "n_sent": 2,
+    "t": "Sau khi chuyển sang nghiên cứu phương pháp CANSLIM, anh tập trung lọc các doanh nghiệp có tăng trưởng EPS đột phá. Anh đã gặt hái lợi nhuận 35% nhờ chọn đúng cổ phiếu dẫn đầu sóng tăng."
+   },
+   {
+    "i": 8,
+    "h": "Phương pháp CANSLIM là gì?",
+    "n_sent": 2,
+    "t": "CANSLIM là hệ thống đầu tư do huyền thoại William O'Neil phát triển. Ông là người sáng lập tạp chí tài chính danh tiếng Investor's Business Daily."
+   }
+  ]
+ },
+ {
+  "src": "phuong-phap-dau-tu-chung-khoan-cua-warren-buffett",
+  "src_title": "Phương pháp đầu tư chứng khoán của Warren Buffett",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "0",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 26,
+    "h": "Bước 4: Nắm giữ và định kỳ rà soát",
+    "n_sent": 3,
+    "t": "Thị trường chứng khoán là nơi chuyển tiền từ người thiếu kiên nhẫn sang người kiên nhẫn. Tuy nhiên, nắm giữ dài hạn không có nghĩa là phó mặc. Bạn cần định kỳ đánh giá lại xem lợi thế cạnh tranh của doanh nghiệp có còn duy trì hay đang bị đe dọa bởi các yếu tố mới."
+   },
+   {
+    "i": 9,
+    "h": "Lợi thế cạnh tranh bền vững (Economic Moat)",
+    "n_sent": 2,
+    "t": "Doanh nghiệp tốt giống như một tòa lâu đài và con hào kinh tế càng rộng thì đối thủ càng khó tấn công. Tại Việt Nam, lợi thế này thường đến từ thương hiệu mạnh (FPT, Vinamilk), mạng lưới phân phối độc quyền (Thế Giới Di Động) hoặc quy mô sản xuất vượt trội (Hòa Phát)."
+   },
+   {
+    "i": 12,
+    "h": "Biên an toàn (Margin of Safety)",
+    "n_sent": 2,
+    "t": "Ví dụ thực tế: Nếu định giá thực của cổ phiếu HPG là 35.000 VNĐ, mức giá mua an toàn nên nằm trong vùng 25.000 – 28.000 VNĐ. Khoảng chênh lệch 20–30% này là lá chắn bảo vệ vốn của bạn trước những biến động bất ngờ."
+   }
+  ]
+ },
+ {
+  "src": "backtest-la-gi",
+  "src_title": "Backtest là gì? 5 bước kiểm thử chiến lược thực chiến",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "0",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 16,
+    "h": "Quy trình 5 bước chạy backtest thực chiến cho nhà đầu tư chứng khoán",
+    "n_sent": 1,
+    "t": "Để tiến hành kiểm thử hiệu quả, bạn cần thực hiện theo một quy trình khoa học gồm 5 bước chặt chẽ dưới đây."
+   },
+   {
+    "i": 58,
+    "h": "Bước 5: Đánh giá hiệu suất qua các chỉ số cốt lõi",
+    "n_sent": 1,
+    "t": "Sau khi hoàn thành lượt chạy, bạn cần đánh giá hệ thống thông qua bảng chỉ số hiệu suất tiêu chuẩn dưới đây."
+   },
+   {
+    "i": 3,
+    "h": "Backtest là gì trong giao dịch tài chính?",
+    "n_sent": 1,
+    "t": "Backtest (kiểm thử lịch sử) là phương pháp sử dụng dữ liệu thị trường quá khứ để chạy thử nghiệm chiến lược giao dịch."
+   }
+  ]
+ },
+ {
+  "src": "dau-co-chung-khoan-la-gi-rui-ro-va-loi-ich",
+  "src_title": "Đầu cơ chứng khoán là gì? Phân biệt đầu cơ và đầu tư",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "0",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 26,
+    "h": "Phân biệt đầu cơ chứng khoán và đầu tư chứng khoán",
+    "n_sent": 2,
+    "t": "Đầu cơ chứng khoán và đầu tư chứng khoán đều hướng đến mục tiêu tìm kiếm lợi nhuận từ thị trường cổ phiếu. Tuy nhiên, hai hoạt động này có sự khác biệt rõ rệt về phương pháp, thời gian và mức độ rủi ro."
+   },
+   {
+    "i": 8,
+    "h": "Đầu cơ chứng khoán là gì?",
+    "n_sent": 2,
+    "t": "Đầu cơ chứng khoán là việc mua và bán cổ phiếu với mục đích kiếm lợi nhuận từ sự biến động giá cả trong ngắn hạn. Các nhà đầu cơ sẽ đặt cược vào việc dự đoán hướng di chuyển của giá cổ phiếu trong tương lai để có lợi nhuận."
+   },
+   {
+    "i": 9,
+    "h": "Đầu cơ chứng khoán là gì?",
+    "n_sent": 2,
+    "t": "Khác với đầu tư chứng khoán, đầu cơ chứng khoán không quan tâm đến giá trị nội tại của cổ phiếu. Nhà đầu cơ chỉ quan tâm đến việc mua cổ phiếu khi giá thấp và bán cổ phiếu khi giá cao để kiếm lợi nhuận."
+   }
+  ]
+ },
+ {
+  "src": "hieu-ung-thang-gieng-trong-dau-tu-chung-khoan-la-gi",
+  "src_title": "Hiệu ứng tháng Giêng trong đầu tư chứng khoán là gì?",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "0",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 17,
+    "h": "3. Tác động của hiệu ứng tháng Giêng đến thị trường chứng khoán",
+    "n_sent": 2,
+    "t": "Về mặt tích cực, hiệu ứng tháng Giêng có thể giúp thị trường chứng khoán khởi đầu năm mới một cách tích cực. Điều này có thể tạo ra tâm lý lạc quan cho các nhà đầu tư và thu hút dòng tiền vào thị trường."
+   },
+   {
+    "i": 18,
+    "h": "3. Tác động của hiệu ứng tháng Giêng đến thị trường chứng khoán",
+    "n_sent": 2,
+    "t": "Tuy nhiên, hiệu ứng tháng Giêng cũng có thể dẫn đến việc các nhà đầu tư bị mua theo đám đông. Điều này có thể khiến giá cổ phiếu bị đẩy lên cao một cách không bền vững, từ đó dẫn đến rủi ro thua lỗ cho các nhà đầu tư."
+   },
+   {
+    "i": 16,
+    "h": "3. Tác động của hiệu ứng tháng Giêng đến thị trường chứng khoán",
+    "n_sent": 1,
+    "t": "Hiệu ứng tháng Giêng có thể có tác động tích cực hoặc tiêu cực đến thị trường chứng khoán."
+   }
+  ]
+ },
+ {
+  "src": "he-so-beta-la-gi-y-nghia-cua-he-so-beta-trong-chung-khoan",
+  "src_title": "Hệ số beta là gì? Ý nghĩa của hệ số beta trong chứng khoán",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "0",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 29,
+    "h": "Xây dựng danh mục đầu tư tối ưu",
+    "n_sent": 1,
+    "t": "Nhà đầu tư sử dụng hệ số Beta để cân bằng danh mục, kết hợp cổ phiếu có Beta khác nhau nhằm kiểm soát rủi ro tổng thể.Ví dụ: Danh mục gồm 50% cổ phiếu Beta = 1.4 và 50% cổ phiếu Beta = 0.6 có Beta danh mục = 1.0, biến động tương đương thị trường."
+   },
+   {
+    "i": 27,
+    "h": "Đánh giá rủi ro cổ phiếu",
+    "n_sent": 2,
+    "t": "Nhà đầu tư thận trọng ưu tiên cổ phiếu Beta thấp (dưới 1) như nhóm ngành tiện ích, thực phẩm. Nhà đầu tư chấp nhận rủi ro cao chọn cổ phiếu Beta cao (trên 1.5) như nhóm chứng khoán, bất động sản."
+   },
+   {
+    "i": 26,
+    "h": "Đánh giá rủi ro cổ phiếu",
+    "n_sent": 1,
+    "t": "Hệ số Beta đo lường rủi ro hệ thống (systematic risk) của cổ phiếu, giúp nhà đầu tư so sánh mức độ rủi ro giữa các mã và lựa chọn cổ phiếu phù hợp với khẩu vị rủi ro cá nhân."
+   }
+  ]
+ },
+ {
+  "src": "he-so-beta-la-gi-y-nghia-cua-he-so-beta-trong-chung-khoan",
+  "src_title": "Hệ số beta là gì? Ý nghĩa của hệ số beta trong chứng khoán",
+  "target": "quan-tri-rui-ro-la-gi-2",
+  "role": "hub",
+  "target_title": "Quản trị rủi ro là gì? Quy trình và phân loại rủi ro chuẩn 2026",
+  "clicks": "0",
+  "anchors": [
+   "quản trị rủi ro",
+   "quản lý rủi ro",
+   "quản trị rủi ro là gì",
+   "quản trị rủi ro trong đầu tư",
+   "kiểm soát rủi ro",
+   "phòng ngừa rủi ro"
+  ],
+  "paras": [
+   {
+    "i": 26,
+    "h": "Đánh giá rủi ro cổ phiếu",
+    "n_sent": 1,
+    "t": "Hệ số Beta đo lường rủi ro hệ thống (systematic risk) của cổ phiếu, giúp nhà đầu tư so sánh mức độ rủi ro giữa các mã và lựa chọn cổ phiếu phù hợp với khẩu vị rủi ro cá nhân."
+   },
+   {
+    "i": 27,
+    "h": "Đánh giá rủi ro cổ phiếu",
+    "n_sent": 2,
+    "t": "Nhà đầu tư thận trọng ưu tiên cổ phiếu Beta thấp (dưới 1) như nhóm ngành tiện ích, thực phẩm. Nhà đầu tư chấp nhận rủi ro cao chọn cổ phiếu Beta cao (trên 1.5) như nhóm chứng khoán, bất động sản."
+   },
+   {
+    "i": 29,
+    "h": "Xây dựng danh mục đầu tư tối ưu",
+    "n_sent": 1,
+    "t": "Nhà đầu tư sử dụng hệ số Beta để cân bằng danh mục, kết hợp cổ phiếu có Beta khác nhau nhằm kiểm soát rủi ro tổng thể.Ví dụ: Danh mục gồm 50% cổ phiếu Beta = 1.4 và 50% cổ phiếu Beta = 0.6 có Beta danh mục = 1.0, biến động tương đương thị trường."
+   }
+  ]
+ },
+ {
+  "src": "he-so-beta-la-gi-y-nghia-cua-he-so-beta-trong-chung-khoan",
+  "src_title": "Hệ số beta là gì? Ý nghĩa của hệ số beta trong chứng khoán",
+  "target": "danh-muc-dau-tu-hieu-qua-la-gi",
+  "role": "sub-hub",
+  "target_title": "Danh mục đầu tư hiệu quả là gì? Tối ưu danh mục Markowitz",
+  "clicks": "0",
+  "anchors": [
+   "danh mục đầu tư hiệu quả",
+   "danh mục đầu tư tối ưu",
+   "đa dạng hóa danh mục đầu tư",
+   "danh mục đầu tư",
+   "phân bổ danh mục"
+  ],
+  "paras": [
+   {
+    "i": 29,
+    "h": "Xây dựng danh mục đầu tư tối ưu",
+    "n_sent": 1,
+    "t": "Nhà đầu tư sử dụng hệ số Beta để cân bằng danh mục, kết hợp cổ phiếu có Beta khác nhau nhằm kiểm soát rủi ro tổng thể.Ví dụ: Danh mục gồm 50% cổ phiếu Beta = 1.4 và 50% cổ phiếu Beta = 0.6 có Beta danh mục = 1.0, biến động tương đương thị trường."
+   },
+   {
+    "i": 26,
+    "h": "Đánh giá rủi ro cổ phiếu",
+    "n_sent": 1,
+    "t": "Hệ số Beta đo lường rủi ro hệ thống (systematic risk) của cổ phiếu, giúp nhà đầu tư so sánh mức độ rủi ro giữa các mã và lựa chọn cổ phiếu phù hợp với khẩu vị rủi ro cá nhân."
+   },
+   {
+    "i": 27,
+    "h": "Đánh giá rủi ro cổ phiếu",
+    "n_sent": 2,
+    "t": "Nhà đầu tư thận trọng ưu tiên cổ phiếu Beta thấp (dưới 1) như nhóm ngành tiện ích, thực phẩm. Nhà đầu tư chấp nhận rủi ro cao chọn cổ phiếu Beta cao (trên 1.5) như nhóm chứng khoán, bất động sản."
+   }
+  ]
+ },
+ {
+  "src": "khau-vi-rui-ro-trong-dau-tu-chung-khoan-la-gi-cach-xac-dinh",
+  "src_title": "Khẩu vị rủi ro là gì? Cách xác định khẩu vị trong đầu tư",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "0",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 35,
+    "h": "Chiến lược đầu tư chứng khoán theo từng khẩu vị rủi ro",
+    "n_sent": 2,
+    "t": "Sau khi đã xác định được mức độ chấp nhận rủi ro, nhà đầu tư cần xây dựng một danh mục phù hợp. Dưới đây là các chiến lược và sản phẩm chứng khoán tương ứng với từng nhóm khẩu vị."
+   },
+   {
+    "i": 32,
+    "h": "Tác động của khẩu vị rủi ro đến đầu tư chứng khoán",
+    "n_sent": 2,
+    "t": "Vì vậy, nhà đầu tư cần xác định khẩu vị rủi ro của mình một cách chính xác để lựa chọn danh mục đầu tư và chiến lược đầu tư phù hợp. Nếu xác định khẩu vị rủi ro không chính xác, nhà đầu tư có thể gặp phải những rủi ro không mong muốn."
+   },
+   {
+    "i": 51,
+    "h": "Nhóm khẩu vị rủi ro cao",
+    "n_sent": 2,
+    "t": "Nhà đầu tư nhóm này có tâm lý vững vàng và kiến thức sâu rộng. Họ xem biến động là cơ hội và sẵn sàng sử dụng các chiến lược phức tạp để theo đuổi mức lợi nhuận đột phá."
+   }
+  ]
+ },
+ {
+  "src": "mo-hinh-capm-la-gi",
+  "src_title": "Mô hình CAPM là gì? Cách tính và ứng dụng đầu tư",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "0",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 24,
+    "h": "Ví dụ CAPM đơn giản",
+    "n_sent": 2,
+    "t": "Điều này có nghĩa nhà đầu tư chỉ nên mua cổ phiếu này nếu tỷ suất sinh lời kỳ vọng của nó >= 13.2%. Nếu thấp hơn, cổ phiếu có thể đang định giá quá cao."
+   },
+   {
+    "i": 4,
+    "h": "Mô hình CAPM là gì?",
+    "n_sent": 1,
+    "t": "CAPM được xây dựng trên nguyên lý: Nhà đầu tư cần được bù đắp cho giá trị thời gian của tiền và mức độ rủi ro mà họ chấp nhận."
+   },
+   {
+    "i": 3,
+    "h": "Mô hình CAPM là gì?",
+    "n_sent": 2,
+    "t": "Mô hình CAPM (Capital Asset Pricing Model) là mô hình định giá tài sản vốn giúp xác định tỷ suất sinh lời kỳ vọng của một tài sản (như cổ phiếu) dựa trên rủi ro hệ thống (beta) và phần bù rủi ro thị trường. Đây là mô hình quan trọng trong tài chính, được dùng rộng rãi để định giá chứng khoán, tính chi phí vốn chủ sở hữu, và đánh giá mức độ hợp lý của lợi nhuận so với rủi ro."
+   }
+  ]
+ },
+ {
+  "src": "mo-hinh-capm-la-gi",
+  "src_title": "Mô hình CAPM là gì? Cách tính và ứng dụng đầu tư",
+  "target": "quan-tri-rui-ro-la-gi-2",
+  "role": "hub",
+  "target_title": "Quản trị rủi ro là gì? Quy trình và phân loại rủi ro chuẩn 2026",
+  "clicks": "0",
+  "anchors": [
+   "quản trị rủi ro",
+   "quản lý rủi ro",
+   "quản trị rủi ro là gì",
+   "quản trị rủi ro trong đầu tư",
+   "kiểm soát rủi ro",
+   "phòng ngừa rủi ro"
+  ],
+  "paras": [
+   {
+    "i": 3,
+    "h": "Mô hình CAPM là gì?",
+    "n_sent": 2,
+    "t": "Mô hình CAPM (Capital Asset Pricing Model) là mô hình định giá tài sản vốn giúp xác định tỷ suất sinh lời kỳ vọng của một tài sản (như cổ phiếu) dựa trên rủi ro hệ thống (beta) và phần bù rủi ro thị trường. Đây là mô hình quan trọng trong tài chính, được dùng rộng rãi để định giá chứng khoán, tính chi phí vốn chủ sở hữu, và đánh giá mức độ hợp lý của lợi nhuận so với rủi ro."
+   },
+   {
+    "i": 4,
+    "h": "Mô hình CAPM là gì?",
+    "n_sent": 1,
+    "t": "CAPM được xây dựng trên nguyên lý: Nhà đầu tư cần được bù đắp cho giá trị thời gian của tiền và mức độ rủi ro mà họ chấp nhận."
+   },
+   {
+    "i": 24,
+    "h": "Ví dụ CAPM đơn giản",
+    "n_sent": 2,
+    "t": "Điều này có nghĩa nhà đầu tư chỉ nên mua cổ phiếu này nếu tỷ suất sinh lời kỳ vọng của nó >= 13.2%. Nếu thấp hơn, cổ phiếu có thể đang định giá quá cao."
+   }
+  ]
+ },
+ {
+  "src": "hieu-ung-dam-dong-la-gi-ung-dung-trong-dau-tu-chung-khoan",
+  "src_title": "Hiệu ứng đám đông là gì? Ứng dụng trong đầu tư chứng khoán",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "0",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 21,
+    "h": "Cách tận dụng hiệu ứng đám đông trong đầu tư",
+    "n_sent": 2,
+    "t": "Hiểu và tận dụng hiệu ứng đám đông là một nghệ thuật, đòi hỏi sự tỉnh táo và chiến lược rõ ràng. Thay vì bị cuốn theo một cách vô thức, nhà đầu tư thông minh có thể biến tâm lý thị trường thành lợi thế của mình."
+   },
+   {
+    "i": 13,
+    "h": "Ảnh hưởng của hiệu ứng đám đông trong đầu tư chứng khoán",
+    "n_sent": 1,
+    "t": "Hiệu ứng đám đông có thể mang lại cả lợi ích và rủi ro cho các nhà đầu tư chứng khoán."
+   },
+   {
+    "i": 23,
+    "h": "Đầu tư theo xu hướng",
+    "n_sent": 3,
+    "t": "Xu hướng được tạo ra bởi đám đông. Chiến lược này là nương theo dòng tiền đang chảy mạnh vào một cổ phiếu hoặc một nhóm ngành. Dấu hiệu nhận biết là giá và khối lượng giao dịch cùng tăng đột biến."
+   }
+  ]
+ },
+ {
+  "src": "hieu-ung-dam-dong-la-gi-ung-dung-trong-dau-tu-chung-khoan",
+  "src_title": "Hiệu ứng đám đông là gì? Ứng dụng trong đầu tư chứng khoán",
+  "target": "thien-kien-nhan-thuc-la-gi",
+  "role": "hub",
+  "target_title": "Thiên kiến nhận thức là gì? Phân loại và tác động đến đầu tư",
+  "clicks": "0",
+  "anchors": [
+   "thiên kiến nhận thức",
+   "thiên kiến nhận thức là gì",
+   "các loại thiên kiến",
+   "thiên kiến",
+   "bẫy tâm lý"
+  ],
+  "paras": [
+   {
+    "i": 21,
+    "h": "Cách tận dụng hiệu ứng đám đông trong đầu tư",
+    "n_sent": 2,
+    "t": "Hiểu và tận dụng hiệu ứng đám đông là một nghệ thuật, đòi hỏi sự tỉnh táo và chiến lược rõ ràng. Thay vì bị cuốn theo một cách vô thức, nhà đầu tư thông minh có thể biến tâm lý thị trường thành lợi thế của mình."
+   },
+   {
+    "i": 26,
+    "h": "Đầu tư ngược đám đông",
+    "n_sent": 1,
+    "t": "Đây là chiến lược của những nhà đầu tư huyền thoại: Mua vào khi thị trường hoảng loạn và bán ra khi đám đông hưng phấn tột độ."
+   },
+   {
+    "i": 2,
+    "h": "Hiệu ứng đám đông là gì?",
+    "n_sent": 2,
+    "t": "Hiệu ứng đám đông (herd mentality) là một hiện tượng tâm lý trong đó một nhóm người có xu hướng hành động theo nhau, bất kể hành động đó là đúng hay sai. Hiệu ứng này có thể được tìm thấy trong nhiều lĩnh vực khác nhau của cuộc sống, bao gồm cả đầu tư chứng khoán."
+   }
+  ]
+ },
+ {
+  "src": "lo-kep-la-gi",
+  "src_title": "Lỗ kép là gì? Nguyên nhân, tác hại và 4 cách phòng tránh",
+  "target": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+  "role": "pillar",
+  "target_title": "Các chiến lược đầu tư chứng khoán phổ biến và hiệu quả",
+  "clicks": "0",
+  "anchors": [
+   "chiến lược đầu tư chứng khoán",
+   "các chiến lược đầu tư chứng khoán",
+   "phương pháp đầu tư chứng khoán",
+   "chiến lược đầu tư dài hạn",
+   "chiến lược đầu tư",
+   "phong cách đầu tư"
+  ],
+  "paras": [
+   {
+    "i": 40,
+    "h": "Tác hại nguy hiểm của lỗ kép đối với nhà đầu tư",
+    "n_sent": 3,
+    "t": "Tác hại lớn hơn nằm ở áp lực tâm lý. Thua lỗ kéo dài dễ gây ra trạng thái hoảng loạn, hoài nghi bản thân và mất phương hướng. Nhiều nhà đầu tư rơi vào bẫy giao dịch trả thù, liên tục mua bán vô kỷ luật và dẫn đến nguy cơ cháy tài khoản chứng khoán."
+   },
+   {
+    "i": 31,
+    "h": "Đầu tư không kế hoạch và thiếu kỷ luật cắt lỗ",
+    "n_sent": 2,
+    "t": "Việc trì hoãn cắt lỗ biến một khoản rủi ro nhỏ 5% ban đầu thành khoản lỗ nặng 30–50%. Khi khoản lỗ phình to, nhà đầu tư rơi vào trạng thái đóng băng hành động và để mặc tài sản tiếp tục sụt giảm."
+   },
+   {
+    "i": 41,
+    "h": "Tác hại nguy hiểm của lỗ kép đối với nhà đầu tư",
+    "n_sent": 1,
+    "t": "Khi sử dụng thêm đòn bẩy Margin trong giai đoạn lỗ kép, công ty chứng khoán sẽ phát tín hiệu Call Margin hoặc thực hiện Force Sell cổ phiếu, khiến tài sản bị dọn sạch nhanh chóng."
+   }
+  ]
+ },
+ {
+  "src": "lo-kep-la-gi",
+  "src_title": "Lỗ kép là gì? Nguyên nhân, tác hại và 4 cách phòng tránh",
+  "target": "thien-kien-nhan-thuc-la-gi",
+  "role": "hub",
+  "target_title": "Thiên kiến nhận thức là gì? Phân loại và tác động đến đầu tư",
+  "clicks": "0",
+  "anchors": [
+   "thiên kiến nhận thức",
+   "thiên kiến nhận thức là gì",
+   "các loại thiên kiến",
+   "thiên kiến",
+   "bẫy tâm lý"
+  ],
+  "paras": [
+   {
+    "i": 40,
+    "h": "Tác hại nguy hiểm của lỗ kép đối với nhà đầu tư",
+    "n_sent": 3,
+    "t": "Tác hại lớn hơn nằm ở áp lực tâm lý. Thua lỗ kéo dài dễ gây ra trạng thái hoảng loạn, hoài nghi bản thân và mất phương hướng. Nhiều nhà đầu tư rơi vào bẫy giao dịch trả thù, liên tục mua bán vô kỷ luật và dẫn đến nguy cơ cháy tài khoản chứng khoán."
+   },
+   {
+    "i": 33,
+    "h": "Tâm lý gỡ gạc và bẫy trung bình giá xuống",
+    "n_sent": 2,
+    "t": "Khi tài khoản bị âm, tâm lý muốn đòi lại số tiền đã mất khiến nhà đầu tư đưa ra các quyết định cảm tính. Hành vi phổ biến nhất là liên tục bơm thêm vốn để mua trung bình giá xuống ở một cổ phiếu đang trong xu hướng giảm đà."
+   },
+   {
+    "i": 30,
+    "h": "Đầu tư không kế hoạch và thiếu kỷ luật cắt lỗ",
+    "n_sent": 2,
+    "t": "Nhiều nhà đầu tư F0 bước vào thị trường mà không xác định rõ điểm dừng rủi ro trước khi đặt lệnh. Họ thường giữ tâm lý chờ đợi cổ phiếu phục hồi thay vì chủ động xử lý vị thế sai lầm."
+   }
+  ]
+ }
+]

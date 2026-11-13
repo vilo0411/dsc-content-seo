@@ -1,5 +1,5 @@
 {
- "_doc": "Cluster registry cho rule internal link (xem .antigravity/skills/internal-linking/SKILL.md §Quy tắc cụm). qa_lint.py đọc file này: bài là hub/spoke trong 'groups' phải link về pillar (spoke có hub thì link cả hub); anchor trùng 'pillar_keyword' chỉ được trỏ về pillar. Bài mới: thêm slug vào 'spokes' đúng group khi outline được approve. Nguồn: archive/2026-10-30-mo-tk-cach-choi/topical-map.html.",
+ "_doc": "Cluster registry cho rule internal link (xem .antigravity/skills/internal-linking/SKILL.md §Quy tắc cụm). qa_lint.py đọc file này: bài là hub/spoke trong 'groups' phải link về pillar (spoke có hub thì link cả hub); anchor trùng 'pillar_keyword' chỉ được trỏ về pillar. Bài mới: thêm slug vào 'spokes' đúng group khi outline được approve. Nguồn: archive/2026-10-30-mo-tk-cach-choi/topical-map.html. Cụm c3–c14 (2026-11-10) sinh từ knowledge/3-pipeline/page-groups.csv (scripts/page_groups.py): group = nhóm con, hub = bài tổng của nhóm; pillar null = cụm chưa có bài pillar (qa_lint chỉ kiểm hub); group có pillar_exempt = bài lệch chủ đề với pillar, không bắt link pillar (chỉ kiểm hub). Bài đã thuộc cụm mo-tai-khoan / cach-choi-chung-khoan không lặp lại ở cụm khác. Tầng 3: group.branches (sinh bởi plans/2026-11-10-tier3.gen.py — chạy lại sau gen-clusters): spoke trong branch link về subhub (LINK-subhub); peer=true = các bài cùng nhánh link chéo, không có subhub.",
  "clusters": [
   {
    "id": "mo-tai-khoan",
@@ -16,7 +16,8 @@
      "name": "Chọn nơi mở & công cụ",
      "hub": "nen-mo-tai-khoan-chung-khoan-o-dau",
      "spokes": [
-      "app-dau-tu-chung-khoan"
+      "app-dau-tu-chung-khoan",
+      "app-mua-chung-chi-quy"
      ]
     },
     {
@@ -36,8 +37,63 @@
       "mo-tai-khoan-chung-khoan-online-co-an-toan-khong",
       "mot-nguoi-duoc-mo-bao-nhieu-tai-khoan-chung-khoan",
       "cac-loai-tai-khoan-chung-khoan-pho-bien-tai-viet-nam",
-      "huong-dan-mo-tai-khoan-chung-chi-quy",
       "cach-mo-tai-khoan-chung-khoan-my"
+     ]
+    },
+    {
+     "name": "1a Tài khoản, app, phí & margin",
+     "hub": null,
+     "spokes": [
+      "app-chuyen-theo-doi-thi-truong-chung-khoan-nen-dung-app-nao",
+      "call-force-sell-ban-giai-chap-trong-dau-tu-chung-khoan-la-gi",
+      "call-margin-la-gi-lam-gi-khi-bi-call-margin",
+      "co-phieu-bi-cat-margin-nguyen-nhan-anh-huong-va-cach-xu-ly",
+      "dau-tu-chung-khoan-ao-la-gi-huong-dan-chi-tiet-va-day-du",
+      "don-bay-tai-chinh-trong-dau-tu-chung-khoan-la-gi",
+      "full-margin-la-gi-loi-khuyen-cho-nha-dau-tu-moi",
+      "luu-ky-chung-khoan-moi-dieu-ban-can-biet",
+      "thue-chuyen-nhuong-chung-khoan-la-gi",
+      "thue-khi-ban-co-phieu-la-bao-nhieu"
+     ],
+     "branches": [
+      {
+       "id": "1a.1",
+       "name": "Mở & loại tài khoản",
+       "subhub": null,
+       "spokes": [
+        "luu-ky-chung-khoan-moi-dieu-ban-can-biet"
+       ]
+      },
+      {
+       "id": "1a.2",
+       "name": "Phí & thuế giao dịch",
+       "subhub": "phi-giao-dich-chung-khoan",
+       "spokes": [
+        "thue-chuyen-nhuong-chung-khoan-la-gi",
+        "thue-khi-ban-co-phieu-la-bao-nhieu"
+       ]
+      },
+      {
+       "id": "1a.3",
+       "name": "Margin & đòn bẩy",
+       "subhub": "margin-la-gi",
+       "spokes": [
+        "call-force-sell-ban-giai-chap-trong-dau-tu-chung-khoan-la-gi",
+        "call-margin-la-gi-lam-gi-khi-bi-call-margin",
+        "co-phieu-bi-cat-margin-nguyen-nhan-anh-huong-va-cach-xu-ly",
+        "full-margin-la-gi-loi-khuyen-cho-nha-dau-tu-moi",
+        "don-bay-tai-chinh-trong-dau-tu-chung-khoan-la-gi"
+       ]
+      },
+      {
+       "id": "1a.4",
+       "name": "App, sàn ảo & chọn CTCK",
+       "subhub": "app-dau-tu-chung-khoan",
+       "spokes": [
+        "dau-tu-chung-khoan-ao-la-gi-huong-dan-chi-tiet-va-day-du",
+        "app-chuyen-theo-doi-thi-truong-chung-khoan-nen-dung-app-nao"
+       ]
+      }
      ]
     }
    ],
@@ -130,12 +186,2544 @@
       "cach-doc-bieu-do-nen-chung-khoan-cho-nguoi-moi-bat-dau",
       "chi-so-vn-index-va-y-nghia-quan-trong-trong-thi-truong-chung-khoan-viet-nam"
      ]
+    },
+    {
+     "name": "1b Lệnh, quy định & phiên giao dịch",
+     "hub": "lenh-ato-atc-lo-mp-la-gi",
+     "spokes": [
+      "giao-dich-thoa-thuan-la-gi",
+      "gio-giao-dich-chung-khoan-quoc-te",
+      "krx-la-gi",
+      "lenh-mak-la-gi",
+      "lenh-mtl-trong-giao-dich-chung-khoan-la-gi",
+      "lenh-plo-la-gi",
+      "lenh-stop-limit-la-gi",
+      "stop-loss-la-gi-cach-su-dung-lenh-stop-loss-trong-chung-khoan"
+     ],
+     "branches": [
+      {
+       "id": "1b.1",
+       "name": "Lệnh & khớp lệnh",
+       "subhub": null,
+       "spokes": [
+        "stop-loss-la-gi-cach-su-dung-lenh-stop-loss-trong-chung-khoan",
+        "giao-dich-thoa-thuan-la-gi",
+        "lenh-mtl-trong-giao-dich-chung-khoan-la-gi",
+        "lenh-stop-limit-la-gi",
+        "lenh-plo-la-gi",
+        "lenh-mak-la-gi"
+       ]
+      },
+      {
+       "id": "1b.2",
+       "name": "Giờ, biên độ, giá & bảng giá",
+       "subhub": "cac-quy-dinh-giao-dich-chung-khoan-quan-trong-ma-nguoi-moi-can-biet",
+       "spokes": [
+        "gio-giao-dich-chung-khoan-quoc-te",
+        "krx-la-gi"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "2a Nền tảng, kinh nghiệm & rủi ro cho người mới",
+     "hub": null,
+     "spokes": [
+      "1-trieu-co-choi-duoc-chung-khoan-khong",
+      "doi-lai-chung-khoan-la-gi-cach-nhan-biet-va-tranh-bi-lua-dao",
+      "nha-dau-tu-chung-khoan-chuyen-nghiep-la-gi",
+      "phan-tich-chung-khoan-la-gi",
+      "von-it-co-nen-dau-tu-chung-khoan"
+     ]
+    },
+    {
+     "name": "2b Thao tác mua/bán",
+     "hub": "cach-mua-co-phieu-online-cho-nguoi-moi-bat-dau",
+     "spokes": [
+      "co-phieu-otc-la-gi-mua-co-phieu-otc-o-dau",
+      "khi-nao-nen-mua-co-phieu"
+     ]
+    },
+    {
+     "name": "2d Chỉ số chứng khoán VN & thế giới",
+     "hub": "chi-so-chung-khoan-la-gi",
+     "spokes": [
+      "cac-chi-so-chung-khoan-chau-a-noi-bat",
+      "cac-chi-so-chung-khoan-viet-nam-hieu-ro-ve-vn-index-vn-30-hnx-index-va-nhieu-chi-so-khac",
+      "chi-so-bien-dong-vix-la-gi",
+      "chi-so-dax-la-gi",
+      "chi-so-dow-jones-future-la-gi",
+      "chi-so-dow-jones-la-gi-y-nghia-cua-chi-so-dow-jones",
+      "chi-so-hang-seng-index-la-gi",
+      "chi-so-hnx-30-la-gi",
+      "chi-so-hnx-index-la-gi",
+      "chi-so-kospi-la-gi",
+      "chi-so-msci-la-gi",
+      "chi-so-nasdaq-chi-so-chung-khoan-cong-nghe-hang-dau-the-gioi",
+      "chi-so-nikkei-la-gi",
+      "chi-so-s-p-500-la-gi",
+      "chi-so-set-la-gi",
+      "chi-so-shanghai-la-gi",
+      "top-10-chi-so-chung-khoan-quan-trong-can-theo-doi",
+      "vn-30-la-gi-cach-tinh-y-nghia-va-luu-y-khi-su-dung",
+      "vn-diamond-la-gi"
+     ],
+     "pillar_exempt": "chỉ số thế giới lệch chủ đề pillar người mới — bài chỉ số VN link pillar khi hợp ngữ cảnh",
+     "branches": [
+      {
+       "id": "2d.1",
+       "name": "Chỉ số Việt Nam",
+       "subhub": "cac-chi-so-chung-khoan-viet-nam-hieu-ro-ve-vn-index-vn-30-hnx-index-va-nhieu-chi-so-khac",
+       "spokes": [
+        "vn-30-la-gi-cach-tinh-y-nghia-va-luu-y-khi-su-dung",
+        "chi-so-hnx-30-la-gi",
+        "vn-diamond-la-gi",
+        "chi-so-hnx-index-la-gi"
+       ]
+      },
+      {
+       "id": "2d.2",
+       "name": "Chỉ số thế giới",
+       "subhub": "cac-chi-so-chung-khoan-chau-a-noi-bat",
+       "spokes": [
+        "top-10-chi-so-chung-khoan-quan-trong-can-theo-doi",
+        "chi-so-hang-seng-index-la-gi",
+        "chi-so-dow-jones-la-gi-y-nghia-cua-chi-so-dow-jones",
+        "chi-so-nikkei-la-gi",
+        "chi-so-dow-jones-future-la-gi",
+        "chi-so-kospi-la-gi",
+        "chi-so-nasdaq-chi-so-chung-khoan-cong-nghe-hang-dau-the-gioi",
+        "chi-so-bien-dong-vix-la-gi",
+        "chi-so-msci-la-gi",
+        "chi-so-shanghai-la-gi",
+        "chi-so-s-p-500-la-gi",
+        "chi-so-set-la-gi",
+        "chi-so-dax-la-gi"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "2f Thị trường, chủ thể & thuật ngữ",
+     "hub": null,
+     "spokes": [
+      "bay-thanh-khoan-trong-dau-tu-chung-khoan-la-gi",
+      "cac-cong-cu-tai-chinh-pho-bien-tai-viet-nam",
+      "ce-trong-chung-khoan-la-gi",
+      "diem-trong-chung-khoan-la-gi-cach-tinh-va-y-nghia",
+      "doi-tu-doanh-tren-thi-truong-chung-khoan-la-gi",
+      "giao-dich-noi-gian-tren-thi-truong-chung-khoan-la-gi",
+      "nha-tao-lap-thi-truong-la-ai-vai-tro-va-y-nghia-trong-thi-truong-tai-chinh",
+      "phan-tich-lien-thi-truong-la-gi-huong-dan-toan-dien-cho-nha-dau-tu",
+      "repo-chung-khoan-la-gi",
+      "san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong",
+      "sec-la-gi-giai-thich-chi-tiet-ve-uy-ban-chung-khoan-va-hoi-doai-hoa-ky",
+      "spread-la-gi",
+      "target-trong-dau-tu-chung-khoan-la-gi",
+      "thanh-khoan-la-gi",
+      "thao-tung-thi-truong-chung-khoan-khai-niem-hinh-thuc-hau-qua-va-bien-phap-xu-ly",
+      "thi-truong-bo-va-thi-truong-gau-y-nghia-va-cach-nhan-biet",
+      "thi-truong-phan-hoa-hieu-ro-nguyen-nhan-va-dac-diem",
+      "thi-truong-so-cap-va-thu-cap-la-gi",
+      "thi-truong-tai-chinh-la-gi",
+      "thi-truong-von-la-gi-cach-tiep-can-cho-nha-dau-tu-ca-nhan",
+      "tieu-diem-thi-truong-la-gi",
+      "tim-hieu-nguon-goc-cua-giao-dich-chung-khoan",
+      "tim-hieu-ve-ban-khong-chung-khoan-hoat-dong-dau-tu-lo-khong-gioi-han",
+      "top-10-nguoi-giau-nhat-tren-thi-truong-chung-khoan-viet-nam-1",
+      "wash-out-trong-chung-khoan-la-gi"
+     ],
+     "branches": [
+      {
+       "id": "2f.1",
+       "name": "Thị trường tài chính & cấu trúc",
+       "subhub": "thi-truong-tai-chinh-la-gi",
+       "spokes": [
+        "sec-la-gi-giai-thich-chi-tiet-ve-uy-ban-chung-khoan-va-hoi-doai-hoa-ky",
+        "thi-truong-so-cap-va-thu-cap-la-gi",
+        "thi-truong-bo-va-thi-truong-gau-y-nghia-va-cach-nhan-biet",
+        "san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong",
+        "thi-truong-phan-hoa-hieu-ro-nguyen-nhan-va-dac-diem",
+        "cac-cong-cu-tai-chinh-pho-bien-tai-viet-nam",
+        "tieu-diem-thi-truong-la-gi",
+        "thi-truong-von-la-gi-cach-tiep-can-cho-nha-dau-tu-ca-nhan",
+        "nha-tao-lap-thi-truong-la-ai-vai-tro-va-y-nghia-trong-thi-truong-tai-chinh",
+        "tim-hieu-nguon-goc-cua-giao-dich-chung-khoan"
+       ]
+      },
+      {
+       "id": "2f.2",
+       "name": "Chủ thể & hành vi trên thị trường",
+       "subhub": null,
+       "spokes": [
+        "wash-out-trong-chung-khoan-la-gi",
+        "tim-hieu-ve-ban-khong-chung-khoan-hoat-dong-dau-tu-lo-khong-gioi-han",
+        "top-10-nguoi-giau-nhat-tren-thi-truong-chung-khoan-viet-nam-1",
+        "giao-dich-noi-gian-tren-thi-truong-chung-khoan-la-gi",
+        "doi-tu-doanh-tren-thi-truong-chung-khoan-la-gi",
+        "thao-tung-thi-truong-chung-khoan-khai-niem-hinh-thuc-hau-qua-va-bien-phap-xu-ly"
+       ]
+      },
+      {
+       "id": "2f.3",
+       "name": "Thuật ngữ giao dịch",
+       "subhub": "cac-thuat-ngu-trong-chung-khoan",
+       "spokes": [
+        "target-trong-dau-tu-chung-khoan-la-gi",
+        "spread-la-gi",
+        "diem-trong-chung-khoan-la-gi-cach-tinh-va-y-nghia",
+        "ce-trong-chung-khoan-la-gi",
+        "repo-chung-khoan-la-gi",
+        "bay-thanh-khoan-trong-dau-tu-chung-khoan-la-gi",
+        "thanh-khoan-la-gi",
+        "phan-tich-lien-thi-truong-la-gi-huong-dan-toan-dien-cho-nha-dau-tu"
+       ]
+      }
+     ]
     }
    ],
    "cross": [
     "cach-mo-tai-khoan-chung-khoan",
     "nen-mo-tai-khoan-chung-khoan-o-dau"
    ]
+  },
+  {
+   "id": "c3-phan-tich-ky-thuat",
+   "name": "Phân tích kỹ thuật & Chỉ báo",
+   "pillar": "phan-tich-ky-thuat-la-gi",
+   "pillar_keyword": "phân tích kỹ thuật là gì",
+   "pillar_anchors": [
+    "phân tích kỹ thuật là gì"
+   ],
+   "cross": [],
+   "groups": [
+    {
+     "name": "3a Chỉ báo xu hướng (MA, MACD, ADX…)",
+     "hub": "cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat",
+     "spokes": [
+      "cach-su-dung-4-duong-ma-pho-bien-trong-phan-tich-ky-thuat",
+      "chi-bao-adx-la-gi",
+      "chi-bao-aroon-la-gi",
+      "chi-bao-dao-dong-aroon-aroon-oscillator-la-gi",
+      "chi-bao-distance-from-moving-average-la-gi",
+      "chi-bao-dmi-directional-movement-index-danh-gia-xu-huong-va-suc-manh-thi-truong-hieu-qua",
+      "chi-bao-macd-histogram-la-gi",
+      "chi-bao-moving-average-envelope-mae-la-gi",
+      "chi-bao-supertrend-la-gi-huong-dan-su-dung-hieu-qua-cho-nha-dau-tu",
+      "chien-luoc-giao-dich-ket-hop-bollinger-bands-va-duong-ma",
+      "dai-trung-binh-dong-moving-average-ribbon-la-gi",
+      "duong-ema-la-gi",
+      "duong-ma-la-gi",
+      "duong-ma200-la-gi",
+      "duong-trung-binh-dong-hull-hma-la-gi",
+      "duong-trung-binh-dong-luy-thua-dema-la-gi",
+      "duong-wma-la-gi",
+      "golden-cross-va-death-cross-la-gi",
+      "huong-dan-du-bao-xu-huong-gia-tu-chi-bao-parabolic-sar",
+      "huong-dan-ket-hop-3-duong-ma-trong-giao-dich-va-dau-tu-hieu-qua",
+      "ichimoku-la-gi",
+      "macd-la-gi"
+     ],
+     "branches": [
+      {
+       "id": "3a.1",
+       "name": "Đường trung bình động",
+       "subhub": "duong-ma-la-gi",
+       "spokes": [
+        "duong-ma200-la-gi",
+        "duong-ema-la-gi",
+        "cach-su-dung-4-duong-ma-pho-bien-trong-phan-tich-ky-thuat",
+        "chi-bao-moving-average-envelope-mae-la-gi",
+        "huong-dan-ket-hop-3-duong-ma-trong-giao-dich-va-dau-tu-hieu-qua",
+        "chi-bao-distance-from-moving-average-la-gi",
+        "duong-wma-la-gi",
+        "duong-trung-binh-dong-luy-thua-dema-la-gi",
+        "dai-trung-binh-dong-moving-average-ribbon-la-gi",
+        "duong-trung-binh-dong-hull-hma-la-gi",
+        "golden-cross-va-death-cross-la-gi",
+        "chi-bao-dmi-directional-movement-index-danh-gia-xu-huong-va-suc-manh-thi-truong-hieu-qua",
+        "chien-luoc-giao-dich-ket-hop-bollinger-bands-va-duong-ma"
+       ]
+      },
+      {
+       "id": "3a.2",
+       "name": "MACD",
+       "subhub": "macd-la-gi",
+       "spokes": [
+        "chi-bao-macd-histogram-la-gi"
+       ]
+      },
+      {
+       "id": "3a.3",
+       "name": "Chỉ báo sức mạnh/hướng xu hướng (ADX, DMI, Aroon, SAR, Ichimoku, Supertrend)",
+       "subhub": null,
+       "spokes": [
+        "chi-bao-supertrend-la-gi-huong-dan-su-dung-hieu-qua-cho-nha-dau-tu",
+        "chi-bao-adx-la-gi",
+        "huong-dan-du-bao-xu-huong-gia-tu-chi-bao-parabolic-sar",
+        "chi-bao-aroon-la-gi",
+        "ichimoku-la-gi",
+        "chi-bao-dao-dong-aroon-aroon-oscillator-la-gi"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "3b Chỉ báo động lượng/dao động (RSI, Stoch…)",
+     "hub": null,
+     "spokes": [
+      "chi-bao-cci-la-gi",
+      "chi-bao-connors-rsi-la-gi",
+      "chi-bao-momentum-la-gi",
+      "chi-bao-rate-of-change-roc-la-gi",
+      "chi-bao-stochastic-rsi-la-gi",
+      "chi-bao-williams-r-la-gi",
+      "chi-so-rs-la-gi",
+      "chi-so-rsi-la-gi",
+      "chien-luoc-giao-dich-hieu-qua-voi-rsi-ket-hop-rsi-voi-cac-chi-bao-khac",
+      "phan-ky-an-rsi-la-gi",
+      "phan-ky-la-gi",
+      "phan-ky-rsi-la-gi",
+      "vung-qua-mua-la-gi-giai-dap-chi-tiet-cho-nha-dau-tu"
+     ],
+     "branches": [
+      {
+       "id": "3b.1",
+       "name": "RSI & phân kỳ",
+       "subhub": "chi-so-rsi-la-gi",
+       "spokes": [
+        "phan-ky-rsi-la-gi",
+        "phan-ky-an-rsi-la-gi",
+        "phan-ky-la-gi",
+        "chi-bao-stochastic-rsi-la-gi",
+        "chien-luoc-giao-dich-hieu-qua-voi-rsi-ket-hop-rsi-voi-cac-chi-bao-khac",
+        "chi-bao-connors-rsi-la-gi",
+        "vung-qua-mua-la-gi-giai-dap-chi-tiet-cho-nha-dau-tu"
+       ]
+      },
+      {
+       "id": "3b.2",
+       "name": "Dao động khác (CCI, Momentum, ROC, Williams, RS)",
+       "subhub": null,
+       "spokes": [
+        "chi-so-rs-la-gi",
+        "chi-bao-cci-la-gi",
+        "chi-bao-momentum-la-gi",
+        "chi-bao-rate-of-change-roc-la-gi",
+        "chi-bao-williams-r-la-gi"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "3c Khối lượng & dòng tiền",
+     "hub": "phuong-phap-dau-tu-theo-dong-tien-hieu-qua",
+     "spokes": [
+      "chi-bao-chaikin-oscillator-la-gi",
+      "chi-bao-dong-tien-chaikin-cmf-la-gi",
+      "chi-bao-dong-tien-mfi-la-gi",
+      "chi-bao-mcdx-la-gi-giai-ma-cong-cu-phan-tich-xu-huong-dong-tien-hieu-qua",
+      "chi-bao-on-balance-volume-obv-la-gi",
+      "duong-phan-phoi-tich-luy-a-d-la-gi",
+      "gia-co-phieu-tang-nhung-khoi-luong-giam-he-lo-dieu-gi-cho-nha-dau-tu",
+      "khoi-luong-giao-dich-la-gi",
+      "phuong-phap-vsa",
+      "vwap-la-gi"
+     ]
+    },
+    {
+     "name": "3d Mô hình nến",
+     "hub": "tu-dien-30-mo-hinh-nen-pho-bien-tren-thi-truong-chung-khoan",
+     "spokes": [
+      "mau-hinh-nen-bao-trum-la-gi",
+      "mo-hinh-nen-bua-nguoc-inverted-hammer-la-gi",
+      "mo-hinh-nen-dao-chieu",
+      "mo-hinh-nen-dark-cloud-cover-la-gi",
+      "mo-hinh-nen-hammer-la-gi",
+      "nen-doji-la-gi",
+      "nen-evening-star-la-gi",
+      "nen-hanging-man-la-gi",
+      "nen-harami-la-gi",
+      "nen-heikin-ashi-la-gi",
+      "nen-inside-bar-la-gi-bi-kip-giao-dich-hieu-qua-cho-trader",
+      "nen-marubozu-la-gi",
+      "nen-pin-bar-la-gi",
+      "nen-sao-mai-la-gi",
+      "nen-shooting-star-la-gi",
+      "ung-dung-mo-hinh-3-chang-linh-trang-va-mo-hinh-3-con-qua-den"
+     ]
+    },
+    {
+     "name": "3e Mô hình giá",
+     "hub": "cac-mo-hinh-gia-trong-chung-khoan",
+     "spokes": [
+      "mo-hinh-2-day-la-gi",
+      "mo-hinh-2-dinh-la-gi",
+      "mo-hinh-3-day-la-gi",
+      "mo-hinh-3-dinh-la-gi",
+      "mo-hinh-cai-nem-la-gi",
+      "mo-hinh-canh-buom",
+      "mo-hinh-chu-nhat-la-gi",
+      "mo-hinh-co-duoi-nheo-la-gi",
+      "mo-hinh-coc-tay-cam-la-gi",
+      "mo-hinh-la-co-la-gi",
+      "mo-hinh-tam-giac-la-gi",
+      "mo-hinh-tam-giac-mo-rong-la-gi",
+      "mo-hinh-vai-dau-vai-la-gi"
+     ]
+    },
+    {
+     "name": "3f Hỗ trợ–kháng cự, xu hướng, trap, gap",
+     "hub": null,
+     "spokes": [
+      "bear-trap-la-gi-cach-xac-dinh-va-phong-tranh-trong-phan-tich-ky-thuat",
+      "break-out-trong-phan-tich-ky-thuat-co-phieu-la-gi-cach-giao-dich-va-cac-mau-hinh-pho-bien",
+      "bull-trap-la-gi",
+      "bullish-la-gi-xu-huong-tang-gia-trong-thi-truong-chung-khoan",
+      "dao-chieu-xu-huong-la-gi",
+      "downtrend-la-gi-cach-nhan-biet-va-giao-dich-trong-downtrend",
+      "duong-ho-tro-va-khang-cu-la-gi",
+      "duong-trendline-la-gi-cach-su-dung-hieu-qua-trong-phan-tich-ky-thuat",
+      "giao-dich-theo-xu-huong-trend-following-la-gi",
+      "kenh-gia-la-gi",
+      "kenh-gia-song-song-cong-cu-phan-tich-ky-thuat-hieu-qua",
+      "khoang-trong-gia-gap-la-gi",
+      "lap-gap-trong-chung-khoan-co-hoi-bung-no",
+      "phan-phoi-dinh-la-gi",
+      "pivot-points-la-gi",
+      "pullback-trading-la-gi-chien-luoc-giao-dich-hieu-qua-cho-nha-dau-tu",
+      "sideway-la-gi",
+      "uptrend-la-gi-cach-nhan-biet-va-dau-tu-hieu-qua-trong-xu-huong-uptrend",
+      "vung-bay-gia-la-gi",
+      "vung-dinh-va-day-la-gi"
+     ],
+     "branches": [
+      {
+       "id": "3f.1",
+       "name": "Hỗ trợ – kháng cự & đỉnh đáy",
+       "subhub": "duong-ho-tro-va-khang-cu-la-gi",
+       "spokes": [
+        "pivot-points-la-gi",
+        "vung-dinh-va-day-la-gi",
+        "phan-phoi-dinh-la-gi"
+       ]
+      },
+      {
+       "id": "3f.2",
+       "name": "Xu hướng & kênh giá",
+       "subhub": "giao-dich-theo-xu-huong-trend-following-la-gi",
+       "spokes": [
+        "sideway-la-gi",
+        "pullback-trading-la-gi-chien-luoc-giao-dich-hieu-qua-cho-nha-dau-tu",
+        "bullish-la-gi-xu-huong-tang-gia-trong-thi-truong-chung-khoan",
+        "uptrend-la-gi-cach-nhan-biet-va-dau-tu-hieu-qua-trong-xu-huong-uptrend",
+        "kenh-gia-song-song-cong-cu-phan-tich-ky-thuat-hieu-qua",
+        "downtrend-la-gi-cach-nhan-biet-va-giao-dich-trong-downtrend",
+        "duong-trendline-la-gi-cach-su-dung-hieu-qua-trong-phan-tich-ky-thuat",
+        "dao-chieu-xu-huong-la-gi",
+        "kenh-gia-la-gi"
+       ]
+      },
+      {
+       "id": "3f.3",
+       "name": "Bẫy giá, breakout & gap",
+       "subhub": null,
+       "spokes": [
+        "bull-trap-la-gi",
+        "khoang-trong-gia-gap-la-gi",
+        "lap-gap-trong-chung-khoan-co-hoi-bung-no",
+        "bear-trap-la-gi-cach-xac-dinh-va-phong-tranh-trong-phan-tich-ky-thuat",
+        "break-out-trong-phan-tich-ky-thuat-co-phieu-la-gi-cach-giao-dich-va-cac-mau-hinh-pho-bien",
+        "vung-bay-gia-la-gi"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "3g Chỉ báo khác (ATR, Bollinger, Keltner…)",
+     "hub": "chi-bao-ky-thuat",
+     "spokes": [
+      "bollinger-bands-la-gi-cach-su-dung-trong-giao-dich-chung-khoan",
+      "chi-bao-atr-la-gi",
+      "chi-bao-bollinger-band-b-la-gi",
+      "chi-bao-envelope-la-gi",
+      "chi-bao-force-index-la-gi",
+      "chi-bao-kenh-keltner-la-gi",
+      "chi-bao-klinger-oscillator-la-gi",
+      "chi-bao-know-sure-thing-kst-la-gi",
+      "chi-bao-special-k-la-gi",
+      "chi-bao-ttm-squeeze-la-gi",
+      "chi-bao-ultimate-oscillator-uo-la-gi",
+      "chi-bao-vortex-indicator-vi-la-gi"
+     ]
+    },
+    {
+     "name": "3h Lý thuyết, phương pháp & công cụ PTKT",
+     "hub": null,
+     "spokes": [
+      "amibroker-la-gi",
+      "bieu-do-chung-khoan-la-gi-cach-xem-bieu-do-chung-khoan",
+      "do-thi-ky-thuat-la-gi",
+      "duong-phan-tu-quadrant-line-la-gi",
+      "duong-zigzag-la-gi",
+      "fibonacci-la-gi",
+      "fibonacci-thoai-lui-cach-su-dung-trong-phan-tich-ky-thuat",
+      "kenh-hoi-quy-raff-raff-regression-channel-la-gi",
+      "ly-thuyet-buoc-di-ngau-nhien-va-phi-ngau-nhien-cua-gia",
+      "ly-thuyet-dow-va-ung-dung-trong-phan-tich-ky-thuat",
+      "phan-biet-phan-tich-co-ban-va-phan-tich-ky-thuat",
+      "price-action-hanh-dong-gia-la-gi",
+      "song-elliott-la-gi",
+      "song-elliott-va-fibonacci-la-gi",
+      "tim-hieu-phuong-phap-wyckoff-ve-phan-tich-co-phieu"
+     ],
+     "branches": [
+      {
+       "id": "3h.1",
+       "name": "Lý thuyết giá (Dow, Elliott, Fibonacci, Wyckoff)",
+       "subhub": null,
+       "spokes": [
+        "fibonacci-thoai-lui-cach-su-dung-trong-phan-tich-ky-thuat",
+        "tim-hieu-phuong-phap-wyckoff-ve-phan-tich-co-phieu",
+        "song-elliott-la-gi",
+        "fibonacci-la-gi",
+        "song-elliott-va-fibonacci-la-gi",
+        "ly-thuyet-dow-va-ung-dung-trong-phan-tich-ky-thuat",
+        "phan-biet-phan-tich-co-ban-va-phan-tich-ky-thuat",
+        "ly-thuyet-buoc-di-ngau-nhien-va-phi-ngau-nhien-cua-gia"
+       ]
+      },
+      {
+       "id": "3h.2",
+       "name": "Biểu đồ & công cụ vẽ",
+       "subhub": "bieu-do-chung-khoan-la-gi-cach-xem-bieu-do-chung-khoan",
+       "spokes": [
+        "price-action-hanh-dong-gia-la-gi",
+        "duong-zigzag-la-gi",
+        "duong-phan-tu-quadrant-line-la-gi",
+        "do-thi-ky-thuat-la-gi",
+        "amibroker-la-gi",
+        "kenh-hoi-quy-raff-raff-regression-channel-la-gi"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "Pillar yếu (0 click, pos 16) — cần viết lại."
+  },
+  {
+   "id": "c4-phan-tich-co-ban",
+   "name": "Phân tích cơ bản & Tài chính DN",
+   "pillar": "phan-tich-co-ban-la-gi",
+   "pillar_keyword": "phân tích cơ bản là gì",
+   "pillar_anchors": [
+    "phân tích cơ bản là gì"
+   ],
+   "cross": [],
+   "groups": [
+    {
+     "name": "4a BCTC, kế toán & chi phí",
+     "hub": "cach-phan-tich-bao-cao-tai-chinh",
+     "spokes": [
+      "bang-can-doi-ke-toan-va-cach-ap-dung-vao-dau-tu-chung-khoan",
+      "bao-cao-lai-lo-la-gi",
+      "bao-cao-luu-chuyen-tien-te-la-gi",
+      "bao-cao-tai-chinh-hop-nhat-la-gi",
+      "chi-phi-co-dinh-la-gi-tim-hieu-chi-tiet-ve-chi-phi-co-dinh-trong-kinh-doanh",
+      "chi-phi-von-capex-la-gi-y-nghia-va-cach-tinh-chi-phi-von",
+      "chi-so-q-o-q-la-gi",
+      "chi-tieu-loi-nhuan-cua-doanh-nghiep",
+      "danh-gia-chi-tieu-doanh-thu-cua-doanh-nghiep",
+      "diem-hoa-von-la-gi",
+      "dong-tien-tu-hoat-dong-kinh-doanh-ocf-la-gi",
+      "goodwill-la-gi",
+      "huong-dan-cach-doc-bao-cao-tai-chinh-nhung-thong-tin-quan-trong",
+      "huong-dan-cach-doc-bao-cao-thuong-nien-hieu-qua",
+      "no-phai-tra-la-gi",
+      "yoy-la-gi-cach-tinh-va-y-nghia-cua-chi-so-yoy",
+      "dong-tien-tu-do-la-gi"
+     ],
+     "branches": [
+      {
+       "id": "4a.1",
+       "name": "Báo cáo tài chính & cách đọc",
+       "subhub": "huong-dan-cach-doc-bao-cao-tai-chinh-nhung-thong-tin-quan-trong",
+       "spokes": [
+        "goodwill-la-gi",
+        "dong-tien-tu-hoat-dong-kinh-doanh-ocf-la-gi",
+        "no-phai-tra-la-gi",
+        "huong-dan-cach-doc-bao-cao-thuong-nien-hieu-qua",
+        "bao-cao-lai-lo-la-gi",
+        "bao-cao-luu-chuyen-tien-te-la-gi",
+        "bang-can-doi-ke-toan-va-cach-ap-dung-vao-dau-tu-chung-khoan",
+        "bao-cao-tai-chinh-hop-nhat-la-gi"
+       ]
+      },
+      {
+       "id": "4a.2",
+       "name": "Doanh thu, chi phí & lợi nhuận",
+       "subhub": "chi-tieu-loi-nhuan-cua-doanh-nghiep",
+       "spokes": [
+        "yoy-la-gi-cach-tinh-va-y-nghia-cua-chi-so-yoy",
+        "chi-phi-von-capex-la-gi-y-nghia-va-cach-tinh-chi-phi-von",
+        "chi-phi-co-dinh-la-gi-tim-hieu-chi-tiet-ve-chi-phi-co-dinh-trong-kinh-doanh",
+        "chi-so-q-o-q-la-gi",
+        "danh-gia-chi-tieu-doanh-thu-cua-doanh-nghiep",
+        "diem-hoa-von-la-gi"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "4b Chỉ số sinh lời",
+     "hub": "cac-chi-so-phan-tich-bao-cao-tai-chinh",
+     "spokes": [
+      "5-chi-so-quan-trong-cua-phan-tich-co-ban-trong-chung-khoan",
+      "bien-loi-nhuan-gop-la-gi-y-nghia-cua-bien-loi-nhuan-gop-khi-lua-chon-co-phieu",
+      "bien-loi-nhuan-rong-net-profit-margin-la-gi-giai-dap-chi-tiet-va-y-nghia-quan-trong",
+      "chi-so-ebit-la-gi",
+      "chi-so-eps-la-gi",
+      "chi-so-roa-la-gi-y-nghia-va-cach-su-dung",
+      "chi-so-roe-la-gi-cach-tinh-y-nghia-va-tam-quan-trong-doi-voi-nha-dau-tu",
+      "chi-so-roic-la-gi",
+      "chi-so-ros-la-gi",
+      "ebitda-la-gi-giai-ma-chi-tiet-ve-chi-so-tai-chinh-quan-trong-nay",
+      "loi-nhuan-rong-va-loi-nhuan-sau-thue",
+      "phan-tich-dupont-la-gi",
+      "roce-la-gi"
+     ]
+    },
+    {
+     "name": "4c Định giá cổ phiếu & doanh nghiệp",
+     "hub": "cach-dinh-gia-co-phieu-cho-nguoi-moi-bat-dau",
+     "spokes": [
+      "cagr-la-gi",
+      "chi-so-npv-la-gi",
+      "chi-so-p-b-la-gi-cach-ap-dung-de-tim-doanh-nghiep-dang-bi-dinh-gia-thap",
+      "chi-so-p-e-la-gi-cach-ap-dung-de-tim-co-phieu-tot",
+      "chi-so-p-s-la-gi",
+      "dcf-la-gi",
+      "gia-tri-doanh-nghiep-la-gi",
+      "gia-tri-noi-tai-cua-co-phieu-la-gi-cach-tinh-gia-tri-noi-tai-cua-co-phieu",
+      "gia-tri-so-sach-la-gi-cach-tinh-gia-tri-so-sach-cua-co-phieu",
+      "npv-va-irr-la-gi",
+      "peg-la-gi",
+      "quy-tac-72-la-gi",
+      "thi-gia-co-phieu-la-gi-cach-tinh-phan-tich-va-cac-yeu-to-anh-huong",
+      "wacc-la-gi"
+     ],
+     "branches": [
+      {
+       "id": "4c.1",
+       "name": "Chỉ số định giá tương đối",
+       "subhub": null,
+       "spokes": [
+        "gia-tri-so-sach-la-gi-cach-tinh-gia-tri-so-sach-cua-co-phieu",
+        "chi-so-p-b-la-gi-cach-ap-dung-de-tim-doanh-nghiep-dang-bi-dinh-gia-thap",
+        "chi-so-p-e-la-gi-cach-ap-dung-de-tim-co-phieu-tot",
+        "peg-la-gi",
+        "thi-gia-co-phieu-la-gi-cach-tinh-phan-tich-va-cac-yeu-to-anh-huong",
+        "chi-so-p-s-la-gi"
+       ]
+      },
+      {
+       "id": "4c.2",
+       "name": "Định giá chiết khấu dòng tiền",
+       "subhub": "dcf-la-gi",
+       "spokes": [
+        "npv-va-irr-la-gi",
+        "gia-tri-noi-tai-cua-co-phieu-la-gi-cach-tinh-gia-tri-noi-tai-cua-co-phieu",
+        "cagr-la-gi",
+        "quy-tac-72-la-gi",
+        "gia-tri-doanh-nghiep-la-gi",
+        "chi-so-npv-la-gi",
+        "wacc-la-gi"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "4d Thanh khoản, đòn bẩy, hiệu quả hoạt động",
+     "hub": "cac-chi-so-phan-tich-bao-cao-tai-chinh",
+     "spokes": [
+      "chi-so-dar-la-gi",
+      "co-cau-von-capital-structure-la-gi-cach-ap-dung-vao-phan-tich-co-ban-co-phieu",
+      "current-ratio-la-gi-cach-tinh-va-y-nghia-cua-he-so-nay",
+      "don-bay-tai-chinh-la-gi-uu-va-nhuoc-diem-cach-su-dung",
+      "he-so-kha-nang-thanh-toan-lai-vay-la-gi",
+      "he-so-thanh-toan-la-gi",
+      "so-ngay-phai-tra-chua-thanh-toan-la-gi",
+      "thoi-gian-thu-hoi-tien-hang-ton-dong-la-gi",
+      "tin-dung-doanh-nghiep-la-gi",
+      "ty-le-don-bay-tai-chinh-gearing-ratio-la-gi",
+      "ty-le-no-dai-han-tren-von-chu-so-huu-la-gi",
+      "ty-so-no-tren-tong-tai-san-la-gi",
+      "ty-so-thanh-toan-bang-tien-mat-la-gi",
+      "ty-so-thanh-toan-nhanh-la-gi",
+      "von-luu-dong-la-gi",
+      "vong-quay-hang-ton-kho-la-gi",
+      "vong-quay-khoan-phai-thu-la-gi",
+      "vong-quay-khoan-phai-tra-la-gi",
+      "vong-quay-tai-san-co-dinh-la-gi",
+      "vong-quay-tong-tai-san-la-gi",
+      "vong-quay-von-luu-dong-la-gi"
+     ],
+     "branches": [
+      {
+       "id": "4d.1",
+       "name": "Khả năng thanh toán",
+       "subhub": "he-so-thanh-toan-la-gi",
+       "spokes": [
+        "current-ratio-la-gi-cach-tinh-va-y-nghia-cua-he-so-nay",
+        "ty-so-thanh-toan-nhanh-la-gi",
+        "he-so-kha-nang-thanh-toan-lai-vay-la-gi",
+        "ty-so-thanh-toan-bang-tien-mat-la-gi",
+        "tin-dung-doanh-nghiep-la-gi",
+        "von-luu-dong-la-gi"
+       ]
+      },
+      {
+       "id": "4d.2",
+       "name": "Đòn bẩy & cơ cấu nợ",
+       "subhub": "don-bay-tai-chinh-la-gi-uu-va-nhuoc-diem-cach-su-dung",
+       "spokes": [
+        "ty-le-don-bay-tai-chinh-gearing-ratio-la-gi",
+        "co-cau-von-capital-structure-la-gi-cach-ap-dung-vao-phan-tich-co-ban-co-phieu",
+        "chi-so-dar-la-gi",
+        "ty-so-no-tren-tong-tai-san-la-gi",
+        "ty-le-no-dai-han-tren-von-chu-so-huu-la-gi"
+       ]
+      },
+      {
+       "id": "4d.3",
+       "name": "Hiệu quả hoạt động (vòng quay)",
+       "subhub": null,
+       "spokes": [
+        "vong-quay-von-luu-dong-la-gi",
+        "vong-quay-khoan-phai-tra-la-gi",
+        "vong-quay-khoan-phai-thu-la-gi",
+        "thoi-gian-thu-hoi-tien-hang-ton-dong-la-gi",
+        "vong-quay-tong-tai-san-la-gi",
+        "so-ngay-phai-tra-chua-thanh-toan-la-gi",
+        "vong-quay-hang-ton-kho-la-gi",
+        "vong-quay-tai-san-co-dinh-la-gi"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "4e Vốn, cổ phần & niêm yết",
+     "hub": null,
+     "spokes": [
+      "cach-mua-co-phieu-ipo",
+      "chia-tach-co-phieu-la-gi-muc-dich-cua-viec-chia-tach-co-phieu",
+      "co-phieu-bi-huy-niem-yet-nha-dau-tu-can-luu-y-nhung-gi",
+      "co-phieu-quy-la-gi",
+      "co-phieu-thuong-la-gi",
+      "co-phieu-uu-dai-la-gi",
+      "doanh-nghiep-mua-lai-co-phieu-de-lam-gi",
+      "free-float-la-gi",
+      "m-a-la-gi",
+      "niem-yet-chung-khoan-ipo-la-gi-nhung-dieu-can-biet",
+      "pha-loang-co-phieu-la-gi-anh-huong-va-cach-tinh-toan",
+      "so-sanh-co-phieu-thuong-va-co-phieu-uu-dai",
+      "thang-du-von-co-phan-la-gi",
+      "von-chu-so-huu-la-gi",
+      "von-co-phan-la-gi",
+      "von-dieu-le-la-gi",
+      "von-hoa-thi-truong-la-gi",
+      "von-phap-dinh-la-gi"
+     ],
+     "branches": [
+      {
+       "id": "4e.1",
+       "name": "Vốn doanh nghiệp",
+       "subhub": "von-chu-so-huu-la-gi",
+       "spokes": [
+        "thang-du-von-co-phan-la-gi",
+        "von-co-phan-la-gi",
+        "von-hoa-thi-truong-la-gi",
+        "von-dieu-le-la-gi",
+        "von-phap-dinh-la-gi"
+       ]
+      },
+      {
+       "id": "4e.2",
+       "name": "Loại cổ phần & sự kiện cổ phần",
+       "subhub": "so-sanh-co-phieu-thuong-va-co-phieu-uu-dai",
+       "spokes": [
+        "co-phieu-thuong-la-gi",
+        "chia-tach-co-phieu-la-gi-muc-dich-cua-viec-chia-tach-co-phieu",
+        "co-phieu-quy-la-gi",
+        "co-phieu-uu-dai-la-gi",
+        "pha-loang-co-phieu-la-gi-anh-huong-va-cach-tinh-toan",
+        "doanh-nghiep-mua-lai-co-phieu-de-lam-gi",
+        "free-float-la-gi"
+       ]
+      },
+      {
+       "id": "4e.3",
+       "name": "IPO, niêm yết & M&A",
+       "subhub": "niem-yet-chung-khoan-ipo-la-gi-nhung-dieu-can-biet",
+       "spokes": [
+        "co-phieu-bi-huy-niem-yet-nha-dau-tu-can-luu-y-nhung-gi",
+        "cach-mua-co-phieu-ipo",
+        "m-a-la-gi"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "4f Cổ tức & quyền cổ đông",
+     "hub": "co-tuc-la-gi",
+     "spokes": [
+      "chien-luoc-dau-tu-co-tuc-la-gi-cach-thuc-uu-diem-va-nhuoc-diem",
+      "co-phieu-esop-la-gi",
+      "ngay-giao-dich-khong-huong-quyen-la-gi",
+      "tra-co-tuc-bang-co-phieu-la-gi-loi-ich-va-han-che",
+      "ty-suat-co-tuc-la-gi"
+     ]
+    },
+    {
+     "name": "4g Phân tích BCTC doanh nghiệp cụ thể",
+     "hub": "cach-phan-tich-bao-cao-tai-chinh",
+     "spokes": [
+      "phan-tich-bao-cao-tai-chinh-cong-ty-bibica",
+      "phan-tich-bao-cao-tai-chinh-cong-ty-kinh-do",
+      "phan-tich-bao-cao-tai-chinh-fpt",
+      "phan-tich-bao-cao-tai-chinh-hoa-phat",
+      "phan-tich-bao-cao-tai-chinh-mwg",
+      "phan-tich-bao-cao-tai-chinh-pnj",
+      "phan-tich-bao-cao-tai-chinh-vietcombank-vcb",
+      "phan-tich-bao-cao-tai-chinh-vinamilk",
+      "phan-tich-bao-cao-tai-chinh-vingroup"
+     ]
+    },
+    {
+     "name": "4h Phân tích định tính doanh nghiệp",
+     "hub": "phan-tich-doanh-nghiep-trong-dau-tu-chung-khoan-la-gi",
+     "spokes": [
+      "con-hao-kinh-te-la-gi-cach-tao-ra-va-tam-quan-trong-cua-con-hao-kinh-te",
+      "due-diligence-la-gi",
+      "loi-the-canh-tranh-la-gi",
+      "mo-hinh-kinh-doanh-la-gi",
+      "phuong-phap-top-down-la-gi"
+     ]
+    }
+   ],
+   "note": "Pillar chỉ 6% bài cụm link về — cần nâng cấp."
+  },
+  {
+   "id": "c5-co-phieu-nganh",
+   "name": "Cổ phiếu cụ thể & Ngành",
+   "pillar": null,
+   "pillar_keyword": "",
+   "pillar_anchors": [],
+   "cross": [],
+   "groups": [
+    {
+     "name": "5a CP Ngân hàng",
+     "hub": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+     "spokes": [
+      "cach-mua-co-phieu-acb-ngan-hang-thuong-mai-co-phan-a-chau-huong-dan-chi-tiet",
+      "cach-mua-co-phieu-bid",
+      "cach-mua-co-phieu-ctg",
+      "cach-mua-co-phieu-hdb",
+      "cach-mua-co-phieu-shb",
+      "cach-mua-co-phieu-stb",
+      "cach-mua-co-phieu-tpb",
+      "cach-mua-co-phieu-vcb-ngan-hang-vietcombank",
+      "co-nen-mua-co-phieu-acb-hay-khong",
+      "co-nen-mua-co-phieu-bid-hay-khong",
+      "co-nen-mua-co-phieu-lpb-hay-khong",
+      "co-nen-mua-co-phieu-tcb-techcombank-hay-khong",
+      "co-nen-mua-co-phieu-vcb-vietcombank-hay-khong",
+      "co-nen-mua-co-phieu-vib-hay-khong-1",
+      "co-nen-mua-co-phieu-vpb-hay-khong",
+      "co-phieu-acb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-bid-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-ctg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-hdb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-lpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-mbb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-msb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-ocb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-shb",
+      "co-phieu-ssb",
+      "co-phieu-stb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-tcb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-tpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-vcb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-vib-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-vpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "huong-dan-cach-mua-co-phieu-tcb-ngan-hang-techcombank",
+      "lam-the-nao-de-mua-co-phieu-mbb-ngan-hang-quan-doi"
+     ],
+     "branches": [
+      {
+       "id": "5a.0",
+       "name": "Mã chỉ có 1 bài + trang ngành (link thẳng hub nhóm)",
+       "subhub": null,
+       "spokes": [
+        "co-phieu-ssb",
+        "co-phieu-ocb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-msb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat"
+       ]
+      },
+      {
+       "id": "5a.ACB",
+       "name": "Mã ACB",
+       "subhub": "co-phieu-acb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+       "spokes": [
+        "co-nen-mua-co-phieu-acb-hay-khong",
+        "cach-mua-co-phieu-acb-ngan-hang-thuong-mai-co-phan-a-chau-huong-dan-chi-tiet"
+       ]
+      },
+      {
+       "id": "5a.BID",
+       "name": "Mã BID",
+       "subhub": "co-phieu-bid-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+       "spokes": [
+        "co-nen-mua-co-phieu-bid-hay-khong",
+        "cach-mua-co-phieu-bid"
+       ]
+      },
+      {
+       "id": "5a.CTG",
+       "name": "Mã CTG",
+       "subhub": "co-phieu-ctg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+       "spokes": [
+        "cach-mua-co-phieu-ctg"
+       ]
+      },
+      {
+       "id": "5a.HDB",
+       "name": "Mã HDB",
+       "subhub": "co-phieu-hdb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+       "spokes": [
+        "cach-mua-co-phieu-hdb"
+       ]
+      },
+      {
+       "id": "5a.LPB",
+       "name": "Mã LPB",
+       "subhub": "co-phieu-lpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+       "spokes": [
+        "co-nen-mua-co-phieu-lpb-hay-khong"
+       ]
+      },
+      {
+       "id": "5a.MBB",
+       "name": "Mã MBB",
+       "subhub": "co-phieu-mbb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+       "spokes": [
+        "lam-the-nao-de-mua-co-phieu-mbb-ngan-hang-quan-doi"
+       ]
+      },
+      {
+       "id": "5a.SHB",
+       "name": "Mã SHB",
+       "subhub": "co-phieu-shb",
+       "spokes": [
+        "cach-mua-co-phieu-shb"
+       ]
+      },
+      {
+       "id": "5a.STB",
+       "name": "Mã STB",
+       "subhub": "co-phieu-stb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+       "spokes": [
+        "cach-mua-co-phieu-stb"
+       ]
+      },
+      {
+       "id": "5a.TCB",
+       "name": "Mã TCB",
+       "subhub": "co-phieu-tcb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+       "spokes": [
+        "co-nen-mua-co-phieu-tcb-techcombank-hay-khong",
+        "huong-dan-cach-mua-co-phieu-tcb-ngan-hang-techcombank"
+       ]
+      },
+      {
+       "id": "5a.TPB",
+       "name": "Mã TPB",
+       "subhub": "co-phieu-tpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+       "spokes": [
+        "cach-mua-co-phieu-tpb"
+       ]
+      },
+      {
+       "id": "5a.VCB",
+       "name": "Mã VCB",
+       "subhub": "co-phieu-vcb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+       "spokes": [
+        "cach-mua-co-phieu-vcb-ngan-hang-vietcombank",
+        "co-nen-mua-co-phieu-vcb-vietcombank-hay-khong"
+       ]
+      },
+      {
+       "id": "5a.VIB",
+       "name": "Mã VIB",
+       "subhub": "co-phieu-vib-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+       "spokes": [
+        "co-nen-mua-co-phieu-vib-hay-khong-1"
+       ]
+      },
+      {
+       "id": "5a.VPB",
+       "name": "Mã VPB",
+       "subhub": "co-phieu-vpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+       "spokes": [
+        "co-nen-mua-co-phieu-vpb-hay-khong"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5b CP BĐS, KCN, xây dựng",
+     "hub": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+     "spokes": [
+      "cac-co-phieu-niem-yet-thuoc-tap-doan-vingroup-danh-sach-day-du-va-cap-nhat-nam-2024",
+      "cach-mua-co-phieu-flc",
+      "cach-mua-co-phieu-nvl",
+      "cach-mua-co-phieu-vhm",
+      "cach-mua-co-phieu-vingroup-vic-huong-dan-moi-nhat-2024",
+      "cach-mua-co-phieu-vre",
+      "co-nen-mua-co-phieu-dig-hay-khong",
+      "co-nen-mua-co-phieu-idj-hay-khong",
+      "co-nen-mua-co-phieu-novaland",
+      "co-nen-mua-co-phieu-scr-hay-khong",
+      "co-phieu-bcm",
+      "co-phieu-ctd-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-cti-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-dig-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-dxg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-fcn-tong-quanh-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-hbc-tong-quanh-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-hdc-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-hdg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025",
+      "co-phieu-htn-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-idc-tong-quan-nhan-dinh-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-idv-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-itc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-kbc-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-kdh-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-nganh-xay-dung",
+      "co-phieu-nlg-tong-quan-nhan-dinh-va-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-sip-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-szc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-tch-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-vcg-tong-quanh-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-vhm-tong-quan-danh-gia-va-cap-nhan-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-vic",
+      "co-phieu-vre-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+      "top-co-phieu-dau-tu-cong-nen-dau-tu"
+     ],
+     "branches": [
+      {
+       "id": "5b.0",
+       "name": "Mã chỉ có 1 bài + trang ngành (link thẳng hub nhóm)",
+       "subhub": null,
+       "spokes": [
+        "co-phieu-dxg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-tch-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-szc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-vcg-tong-quanh-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+        "co-nen-mua-co-phieu-scr-hay-khong",
+        "co-phieu-hdc-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-htn-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-nlg-tong-quan-nhan-dinh-va-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-kdh-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-ctd-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-fcn-tong-quanh-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-kbc-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-idc-tong-quan-nhan-dinh-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-bcm",
+        "co-nen-mua-co-phieu-idj-hay-khong",
+        "co-phieu-cti-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-sip-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-hdg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025",
+        "co-phieu-hbc-tong-quanh-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-itc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-idv-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat"
+       ]
+      },
+      {
+       "id": "5b.0",
+       "name": "Trang ngành / bài chung",
+       "subhub": null,
+       "spokes": [
+        "cach-mua-co-phieu-flc",
+        "co-phieu-nganh-xay-dung",
+        "top-co-phieu-dau-tu-cong-nen-dau-tu"
+       ]
+      },
+      {
+       "id": "5b.DIG",
+       "name": "Mã DIG",
+       "subhub": "co-phieu-dig-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+       "spokes": [
+        "co-nen-mua-co-phieu-dig-hay-khong"
+       ]
+      },
+      {
+       "id": "5b.NVL",
+       "name": "Mã NVL",
+       "subhub": null,
+       "spokes": [
+        "co-nen-mua-co-phieu-novaland",
+        "cach-mua-co-phieu-nvl"
+       ]
+      },
+      {
+       "id": "5b.VHM",
+       "name": "Mã VHM",
+       "subhub": "co-phieu-vhm-tong-quan-danh-gia-va-cap-nhan-ket-qua-kinh-doanh-moi-nhat",
+       "spokes": [
+        "cach-mua-co-phieu-vhm"
+       ]
+      },
+      {
+       "id": "5b.VIC",
+       "name": "Mã VIC",
+       "subhub": "co-phieu-vic",
+       "spokes": [
+        "cac-co-phieu-niem-yet-thuoc-tap-doan-vingroup-danh-sach-day-du-va-cap-nhat-nam-2024",
+        "cach-mua-co-phieu-vingroup-vic-huong-dan-moi-nhat-2024"
+       ]
+      },
+      {
+       "id": "5b.VRE",
+       "name": "Mã VRE",
+       "subhub": "co-phieu-vre-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+       "spokes": [
+        "cach-mua-co-phieu-vre"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5c CP Thép, VLXD, nhựa",
+     "hub": "top-5-co-phieu-nganh-thep-co-co-ban-tot-sap-buoc-vao-chu-ky-tang-truong-moi",
+     "spokes": [
+      "cach-mua-co-phieu-hoa-phat-hpg-nhanh-chong-va-an-toan",
+      "co-nen-mua-co-phieu-hpg-hay-khong",
+      "co-nen-mua-co-phieu-ttf-hay-khong",
+      "co-phieu-acg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-bmp-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-hpg-tong-quan-dinh-gia-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-hsg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-ksb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025",
+      "co-phieu-nganh-nhua",
+      "co-phieu-nkg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-npt-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025",
+      "co-phieu-ptb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-vcs-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat"
+     ],
+     "branches": [
+      {
+       "id": "5c.0",
+       "name": "Mã chỉ có 1 bài + trang ngành (link thẳng hub nhóm)",
+       "subhub": null,
+       "spokes": [
+        "co-phieu-nkg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-hsg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-vcs-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+        "co-nen-mua-co-phieu-ttf-hay-khong",
+        "co-phieu-bmp-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-acg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-ksb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025",
+        "co-phieu-ptb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat"
+       ]
+      },
+      {
+       "id": "5c.0",
+       "name": "Trang ngành / bài chung",
+       "subhub": "co-phieu-npt-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025",
+       "spokes": [
+        "co-phieu-nganh-nhua"
+       ]
+      },
+      {
+       "id": "5c.HPG",
+       "name": "Mã HPG",
+       "subhub": "co-phieu-hpg-tong-quan-dinh-gia-ket-qua-kinh-doanh-moi-nhat",
+       "spokes": [
+        "co-nen-mua-co-phieu-hpg-hay-khong",
+        "cach-mua-co-phieu-hoa-phat-hpg-nhanh-chong-va-an-toan"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5d CP Dầu khí, điện, năng lượng",
+     "hub": "co-phieu-nganh-nang-luong",
+     "spokes": [
+      "cach-mua-co-phieu-plx-petrolimex",
+      "cach-mua-co-phieu-pow",
+      "cach-mua-co-phieu-pvd",
+      "co-nen-mua-co-phieu-gas-hay-khong",
+      "co-nen-mua-co-phieu-oil",
+      "co-nen-mua-co-phieu-pet-hay-khong",
+      "co-nen-mua-co-phieu-plx-hay-khong",
+      "co-nen-mua-co-phieu-pow-hay-khong",
+      "co-nen-mua-co-phieu-ree-hay-khong",
+      "co-phieu-bsr-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-gas-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-nganh-than",
+      "co-phieu-nt-2-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025",
+      "co-phieu-pc-1-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025",
+      "co-phieu-plc-tong-quan-nhan-dinh-va-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-plx-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-pvd-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-pvs-tong-quan-nhan-dinh-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-nam",
+      "co-phieu-pvt-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-qtp-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-ree-tong-quan-nhan-dinh-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-vsh-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "top-5-co-phieu-dau-khi-se-huong-loi-trong-nam-2024-khi-gia-dau-tang",
+      "top-co-phieu-dien-luc-nganh-dien"
+     ],
+     "branches": [
+      {
+       "id": "5d.0",
+       "name": "Mã chỉ có 1 bài + trang ngành (link thẳng hub nhóm)",
+       "subhub": null,
+       "spokes": [
+        "co-phieu-bsr-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-pvt-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-pvs-tong-quan-nhan-dinh-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-nam",
+        "co-phieu-qtp-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+        "co-nen-mua-co-phieu-pet-hay-khong",
+        "co-phieu-plc-tong-quan-nhan-dinh-va-ket-qua-kinh-doanh-moi-nhat",
+        "co-nen-mua-co-phieu-oil",
+        "co-phieu-vsh-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat"
+       ]
+      },
+      {
+       "id": "5d.0",
+       "name": "Trang ngành / bài chung",
+       "subhub": "co-phieu-pc-1-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025",
+       "spokes": [
+        "top-co-phieu-dien-luc-nganh-dien",
+        "top-5-co-phieu-dau-khi-se-huong-loi-trong-nam-2024-khi-gia-dau-tang",
+        "co-phieu-nt-2-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025",
+        "co-phieu-nganh-than"
+       ]
+      },
+      {
+       "id": "5d.GAS",
+       "name": "Mã GAS",
+       "subhub": "co-phieu-gas-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+       "spokes": [
+        "co-nen-mua-co-phieu-gas-hay-khong"
+       ]
+      },
+      {
+       "id": "5d.PLX",
+       "name": "Mã PLX",
+       "subhub": "co-phieu-plx-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+       "spokes": [
+        "co-nen-mua-co-phieu-plx-hay-khong",
+        "cach-mua-co-phieu-plx-petrolimex"
+       ]
+      },
+      {
+       "id": "5d.POW",
+       "name": "Mã POW",
+       "subhub": null,
+       "spokes": [
+        "co-nen-mua-co-phieu-pow-hay-khong",
+        "cach-mua-co-phieu-pow"
+       ]
+      },
+      {
+       "id": "5d.PVD",
+       "name": "Mã PVD",
+       "subhub": "co-phieu-pvd-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+       "spokes": [
+        "cach-mua-co-phieu-pvd"
+       ]
+      },
+      {
+       "id": "5d.REE",
+       "name": "Mã REE",
+       "subhub": "co-phieu-ree-tong-quan-nhan-dinh-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+       "spokes": [
+        "co-nen-mua-co-phieu-ree-hay-khong"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5e CP Bán lẻ, tiêu dùng",
+     "hub": "co-phieu-nganh-ban-le",
+     "spokes": [
+      "cach-mua-co-phieu-sab",
+      "cach-mua-co-phieu-vinamilk-vnm-cho-nguoi-moi-bat-dau",
+      "co-nen-mua-co-phieu-frt-hay-khong",
+      "co-nen-mua-co-phieu-mwg-hay-khong",
+      "co-nen-mua-co-phieu-pnj-hay-khong",
+      "co-phieu-dgw-tong-quan-dinh-gia-phan-tich-ky-thuat-va-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-frt-tong-quan-dinh-gia-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-hax-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-msn",
+      "co-phieu-mwg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-nganh-o-to",
+      "co-phieu-nganh-thuc-pham",
+      "co-phieu-pnj-tong-quan-nhan-dinh-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-sab-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-vinfast-mua-o-dau",
+      "co-phieu-vnm-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+      "huong-dan-chi-tiet-cach-mua-co-phieu-mwg"
+     ],
+     "branches": [
+      {
+       "id": "5e.0",
+       "name": "Trang ngành / bài chung",
+       "subhub": null,
+       "spokes": [
+        "co-phieu-vinfast-mua-o-dau",
+        "co-phieu-nganh-thuc-pham",
+        "co-phieu-nganh-o-to"
+       ]
+      },
+      {
+       "id": "5e.0",
+       "name": "Mã chỉ có 1 bài + trang ngành (link thẳng hub nhóm)",
+       "subhub": null,
+       "spokes": [
+        "co-phieu-dgw-tong-quan-dinh-gia-phan-tich-ky-thuat-va-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-msn",
+        "co-phieu-hax-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat"
+       ]
+      },
+      {
+       "id": "5e.FRT",
+       "name": "Mã FRT",
+       "subhub": "co-phieu-frt-tong-quan-dinh-gia-ket-qua-kinh-doanh-moi-nhat",
+       "spokes": [
+        "co-nen-mua-co-phieu-frt-hay-khong"
+       ]
+      },
+      {
+       "id": "5e.MWG",
+       "name": "Mã MWG",
+       "subhub": "co-phieu-mwg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+       "spokes": [
+        "co-nen-mua-co-phieu-mwg-hay-khong",
+        "huong-dan-chi-tiet-cach-mua-co-phieu-mwg"
+       ]
+      },
+      {
+       "id": "5e.PNJ",
+       "name": "Mã PNJ",
+       "subhub": "co-phieu-pnj-tong-quan-nhan-dinh-ket-qua-kinh-doanh-moi-nhat",
+       "spokes": [
+        "co-nen-mua-co-phieu-pnj-hay-khong"
+       ]
+      },
+      {
+       "id": "5e.SAB",
+       "name": "Mã SAB",
+       "subhub": "co-phieu-sab-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+       "spokes": [
+        "cach-mua-co-phieu-sab"
+       ]
+      },
+      {
+       "id": "5e.VNM",
+       "name": "Mã VNM",
+       "subhub": "co-phieu-vnm-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+       "spokes": [
+        "cach-mua-co-phieu-vinamilk-vnm-cho-nguoi-moi-bat-dau"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5f CP Chứng khoán, bảo hiểm",
+     "hub": "top-5-co-phieu-nganh-chung-khoan-dang-dau-tu-nhat",
+     "spokes": [
+      "cach-mua-co-phieu-bvh",
+      "co-nen-mua-co-phieu-ssi-hay-khong",
+      "co-phieu-bvh-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-fts-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-hcm-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-mbs-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-nganh-bao-hiem",
+      "co-phieu-ssi-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-vci-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-vds-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-vnd-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+      "huong-dan-cach-mua-co-phieu-ssi-tai-chung-khoan-dsc"
+     ],
+     "branches": [
+      {
+       "id": "5f.0",
+       "name": "Mã chỉ có 1 bài + trang ngành (link thẳng hub nhóm)",
+       "subhub": null,
+       "spokes": [
+        "co-phieu-vci-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-fts-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-vds-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-vnd-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-mbs-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-hcm-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-nganh-bao-hiem"
+       ]
+      },
+      {
+       "id": "5f.BVH",
+       "name": "Mã BVH",
+       "subhub": "co-phieu-bvh-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+       "spokes": [
+        "cach-mua-co-phieu-bvh"
+       ]
+      },
+      {
+       "id": "5f.SSI",
+       "name": "Mã SSI",
+       "subhub": "co-phieu-ssi-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+       "spokes": [
+        "co-nen-mua-co-phieu-ssi-hay-khong",
+        "huong-dan-cach-mua-co-phieu-ssi-tai-chung-khoan-dsc"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5g CP Cảng biển & logistics",
+     "hub": "top-co-phieu-cang-bien-nen-dau-tu",
+     "spokes": [
+      "co-phieu-gmd-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-hah-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-scs-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-vos-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-vsc-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+      "top-3-co-phieu-nganh-xuat-nhap-khau-huong-loi-cuc-lon-trong-giai-doan-sap-toi"
+     ],
+     "branches": [
+      {
+       "id": "5g.0",
+       "name": "Mã chỉ có 1 bài + trang ngành (link thẳng hub nhóm)",
+       "subhub": null,
+       "spokes": [
+        "co-phieu-vsc-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-hah-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-gmd-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-vos-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-scs-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+        "top-3-co-phieu-nganh-xuat-nhap-khau-huong-loi-cuc-lon-trong-giai-doan-sap-toi"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5h CP Nông nghiệp, thuỷ sản, cao su",
+     "hub": "co-phieu-nganh-nong-nghiep",
+     "spokes": [
+      "cach-mua-co-phieu-gvr",
+      "co-nen-mua-co-phieu-hag-hay-khong",
+      "co-nen-mua-co-phieu-sbt-hay-khong",
+      "co-nen-mua-co-phieu-tar-hay-khong",
+      "co-phieu-acl-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-anv-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-baf-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-dbc-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-gvr",
+      "co-phieu-idi-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-ltg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-nganh-thuy-san",
+      "co-phieu-phr-tong-quan-nhan-dinh-va-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-qns-tong-quan-nhan-dinh-va-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-vhc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "top-co-phieu-cao-su-nen-dau-tu"
+     ],
+     "branches": [
+      {
+       "id": "5h.0",
+       "name": "Mã chỉ có 1 bài + trang ngành (link thẳng hub nhóm)",
+       "subhub": null,
+       "spokes": [
+        "co-nen-mua-co-phieu-hag-hay-khong",
+        "co-phieu-idi-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-dbc-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-qns-tong-quan-nhan-dinh-va-ket-qua-kinh-doanh-moi-nhat",
+        "co-nen-mua-co-phieu-sbt-hay-khong",
+        "co-phieu-anv-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+        "co-nen-mua-co-phieu-tar-hay-khong",
+        "co-phieu-acl-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-baf-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-phr-tong-quan-nhan-dinh-va-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-vhc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat"
+       ]
+      },
+      {
+       "id": "5h.0",
+       "name": "Trang ngành / bài chung",
+       "subhub": "co-phieu-ltg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+       "spokes": [
+        "top-co-phieu-cao-su-nen-dau-tu",
+        "co-phieu-nganh-thuy-san"
+       ]
+      },
+      {
+       "id": "5h.GVR",
+       "name": "Mã GVR",
+       "subhub": "co-phieu-gvr",
+       "spokes": [
+        "cach-mua-co-phieu-gvr"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5i CP Công nghệ & truyền thông",
+     "hub": "co-phieu-nganh-cong-nghe",
+     "spokes": [
+      "cach-mua-co-phieu-fpt-cong-ty-co-phan-tap-doan-fpt",
+      "co-phieu-ctr-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025",
+      "co-phieu-fpt",
+      "co-phieu-nganh-truyen-thong"
+     ],
+     "branches": [
+      {
+       "id": "5i.0",
+       "name": "Mã chỉ có 1 bài + trang ngành (link thẳng hub nhóm)",
+       "subhub": null,
+       "spokes": [
+        "co-phieu-nganh-truyen-thong",
+        "co-phieu-ctr-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025"
+       ]
+      },
+      {
+       "id": "5i.FPT",
+       "name": "Mã FPT",
+       "subhub": "co-phieu-fpt",
+       "spokes": [
+        "cach-mua-co-phieu-fpt-cong-ty-co-phan-tap-doan-fpt"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5j Chuỗi giá trị & phân tích ngành",
+     "hub": "huong-dan-phan-tich-nganh-trong-dau-tu-chung-khoan",
+     "spokes": [
+      "chu-ky-co-phieu-la-gi",
+      "chu-ky-la-gi",
+      "chuoi-gia-tri-nganh-bat-dong-san",
+      "chuoi-gia-tri-nganh-cao-su",
+      "chuoi-gia-tri-nganh-dau-khi",
+      "chuoi-gia-tri-nganh-det-may",
+      "chuoi-gia-tri-nganh-dien",
+      "chuoi-gia-tri-nganh-ngan-hang",
+      "chuoi-gia-tri-nganh-nhua",
+      "chuoi-gia-tri-nganh-phan-bon",
+      "chuoi-gia-tri-nganh-thep",
+      "chuoi-gia-tri-nganh-xay-dung"
+     ]
+    },
+    {
+     "name": "5k Loại cổ phiếu & cách chọn",
+     "hub": "co-phieu-la-gi-cac-loai-co-phieu-tren-thi-truong-chung-khoan-viet-nam",
+     "spokes": [
+      "3-cach-chon-co-phieu-tot-va-co-tiem-nang-tang-gia-de-dau-tu",
+      "co-phieu-midcap-la-gi-khi-nao-nen-dau-tu-co-phieu-midcap",
+      "co-phieu-phong-thu-la-gi",
+      "co-phieu-trang-ben-mua-la-gi",
+      "co-phieu-tru-la-gi",
+      "dac-diem-cua-co-phieu-sap-but-pha-va-vi-du-minh-hoa"
+     ]
+    },
+    {
+     "name": "5l CP Hàng không",
+     "hub": "top-co-phieu-hang-khong-nen-dau-tu",
+     "spokes": [
+      "cach-mua-co-phieu-vjc",
+      "co-nen-mua-co-phieu-acv-hay-khong",
+      "co-nen-mua-co-phieu-vietnam-airlines-hvn-hay-khong",
+      "co-nen-mua-co-phieu-vjc-hay-khong",
+      "co-phieu-hvn-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-vjc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat"
+     ],
+     "branches": [
+      {
+       "id": "5l.0",
+       "name": "Mã chỉ có 1 bài + trang ngành (link thẳng hub nhóm)",
+       "subhub": null,
+       "spokes": [
+        "co-nen-mua-co-phieu-acv-hay-khong"
+       ]
+      },
+      {
+       "id": "5l.HVN",
+       "name": "Mã HVN",
+       "subhub": "co-phieu-hvn-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+       "spokes": [
+        "co-nen-mua-co-phieu-vietnam-airlines-hvn-hay-khong"
+       ]
+      },
+      {
+       "id": "5l.VJC",
+       "name": "Mã VJC",
+       "subhub": "co-phieu-vjc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+       "spokes": [
+        "co-nen-mua-co-phieu-vjc-hay-khong",
+        "cach-mua-co-phieu-vjc"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5m CP Hoá chất, phân bón",
+     "hub": "co-phieu-nganh-hoa-chat",
+     "spokes": [
+      "co-nen-mua-co-phieu-las",
+      "co-phieu-dcm-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-dgc-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-dpm-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat"
+     ],
+     "branches": [
+      {
+       "id": "5m.0",
+       "name": "Mã chỉ có 1 bài + trang ngành (link thẳng hub nhóm)",
+       "subhub": null,
+       "spokes": [
+        "co-phieu-dcm-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+        "co-nen-mua-co-phieu-las",
+        "co-phieu-dpm-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-dgc-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5n CP Dệt may",
+     "hub": "co-phieu-nganh-det-may",
+     "spokes": [
+      "co-phieu-gil-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-msh-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-stk-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-tcm-tong-quan-nhan-dinh-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+      "co-phieu-tng-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat"
+     ],
+     "branches": [
+      {
+       "id": "5n.0",
+       "name": "Mã chỉ có 1 bài + trang ngành (link thẳng hub nhóm)",
+       "subhub": null,
+       "spokes": [
+        "co-phieu-gil-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-msh-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-tcm-tong-quan-nhan-dinh-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-tng-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+        "co-phieu-stk-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5o Danh sách cổ phiếu tiềm năng",
+     "hub": "top-5-co-phieu-dang-dau-tu",
+     "spokes": [
+      "cach-chon-co-phieu-de-dau-tu-dai-han-tai-viet-nam",
+      "co-phieu-nganh-du-lich",
+      "co-phieu-nganh-y-te",
+      "day-la-5-co-phieu-tich-san-cuc-tot-se-khien-ban-kiem-duoc-bon-tien",
+      "top-5-co-phieu-sieu-dau-co-cua-tung-nhom-nganh-rui-ro-cao-loi-nhuan-cao",
+      "top-co-phieu-nganh-duoc-nen-dau-tu"
+     ]
+    },
+    {
+     "name": "5p Chỉ số phân tích ngân hàng (NIM, CASA, LDR…)",
+     "hub": null,
+     "spokes": [
+      "casa-trong-linh-vuc-ngan-hang-la-gi-casa-nhu-the-nao-la-tot",
+      "chi-so-ldr-la-gi",
+      "cir-trong-linh-vuc-ngan-hang-la-gi",
+      "nim-trong-linh-vuc-ngan-hang-la-gi-nim-nhu-the-nao-la-tot",
+      "no-xau-trong-cac-co-phieu-ngan-hang-la-gi",
+      "room-tin-dung-trong-linh-vuc-ngan-hang-la-gi-nhu-the-nao-la-tot",
+      "ty-le-bao-phu-no-xau"
+     ]
+    }
+   ],
+   "note": "CHƯA CÓ PILLAR — cần viết trang tổng cổ phiếu theo ngành. Hub = trang ngành / top ngành."
+  },
+  {
+   "id": "c6-chien-luoc-rui-ro",
+   "name": "Chiến lược, Phương pháp & Quản trị rủi ro",
+   "pillar": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+   "pillar_keyword": "các chiến lược đầu tư chứng khoán phổ biến",
+   "pillar_anchors": [
+    "các chiến lược đầu tư chứng khoán phổ biến"
+   ],
+   "cross": [],
+   "groups": [
+    {
+     "name": "6a Trường phái & nhà đầu tư nổi tiếng",
+     "hub": null,
+     "spokes": [
+      "20-nguyen-tac-giao-dich-cua-richard-donchian",
+      "dau-tu-gia-tri-hay-dau-tu-tang-truong-chien-luoc-nao-phu-hop-voi-ban",
+      "dau-tu-gia-tri-la-gi",
+      "dau-tu-tang-truong-la-gi",
+      "phuong-phap-canslim-trong-dau-tu-chung-khoan-la-gi",
+      "phuong-phap-dau-tu-chung-khoan-cua-warren-buffett",
+      "tuan-thu-18-quy-tac-cua-richard-rhodes"
+     ]
+    },
+    {
+     "name": "6b Chiến lược giao dịch",
+     "hub": null,
+     "spokes": [
+      "backtest-la-gi",
+      "buy-the-dips-la-gi-cach-ap-dung-chien-luoc-buy-the-dips",
+      "chien-luoc-dau-tu-chung-khoan-ngan-han-la-gi",
+      "copy-trading-hinh-thuc-giao-dich-tai-chinh-tiet-kiem-thoi-gian-va-cong-suc",
+      "dau-co-chung-khoan-la-gi-rui-ro-va-loi-ich",
+      "dau-tu-thu-dong-la-gi-uu-nhuoc-diem-va-cach-dau-tu-hieu-qua",
+      "daytrading-la-gi",
+      "dca-trong-dau-tu-chung-khoan-la-gi",
+      "hieu-ung-thang-gieng-trong-dau-tu-chung-khoan-la-gi",
+      "market-timing-trong-dau-tu-chung-khoan-hieu-ro-ban-chat-loi-ich-va-rui-ro",
+      "position-trading-la-gi",
+      "quantitative-trading-la-gi",
+      "swing-trading-la-gi",
+      "trading-trong-chung-khoan-la-gi",
+      "y-nghia-cua-sell-in-may-and-go-away-trong-dau-tu-chung-khoan-tai-viet-nam"
+     ],
+     "branches": [
+      {
+       "id": "6b.1",
+       "name": "Phong cách giao dịch theo thời gian",
+       "subhub": "trading-trong-chung-khoan-la-gi",
+       "spokes": [
+        "daytrading-la-gi",
+        "chien-luoc-dau-tu-chung-khoan-ngan-han-la-gi",
+        "swing-trading-la-gi",
+        "position-trading-la-gi"
+       ]
+      },
+      {
+       "id": "6b.2",
+       "name": "Chiến lược & công cụ đầu tư",
+       "subhub": null,
+       "spokes": [
+        "dca-trong-dau-tu-chung-khoan-la-gi",
+        "copy-trading-hinh-thuc-giao-dich-tai-chinh-tiet-kiem-thoi-gian-va-cong-suc",
+        "y-nghia-cua-sell-in-may-and-go-away-trong-dau-tu-chung-khoan-tai-viet-nam",
+        "quantitative-trading-la-gi",
+        "market-timing-trong-dau-tu-chung-khoan-hieu-ro-ban-chat-loi-ich-va-rui-ro",
+        "backtest-la-gi",
+        "dau-tu-thu-dong-la-gi-uu-nhuoc-diem-va-cach-dau-tu-hieu-qua",
+        "buy-the-dips-la-gi-cach-ap-dung-chien-luoc-buy-the-dips",
+        "dau-co-chung-khoan-la-gi-rui-ro-va-loi-ich",
+        "hieu-ung-thang-gieng-trong-dau-tu-chung-khoan-la-gi"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "6c Quản trị rủi ro & danh mục",
+     "hub": "quan-tri-rui-ro-la-gi-2",
+     "spokes": [
+      "danh-muc-dau-tu-hieu-qua-la-gi",
+      "do-lech-chuan-la-gi",
+      "drawdown-trong-dau-tu-la-gi",
+      "he-so-beta-la-gi-y-nghia-cua-he-so-beta-trong-chung-khoan",
+      "he-so-tuong-quan-la-gi",
+      "huong-dan-phan-bo-va-da-dang-hoa-tai-san",
+      "khau-vi-rui-ro-trong-dau-tu-chung-khoan-la-gi-cach-xac-dinh",
+      "mo-hinh-capm-la-gi",
+      "mo-hinh-markowitz-la-gi",
+      "rui-ro-la-gi",
+      "rui-ro-thanh-khoan-la-gi",
+      "rui-ro-thi-truong-la-gi-cach-quan-tri-rui-ro-thi-truong-hieu-qua",
+      "rui-ro-tin-dung-la-gi",
+      "rui-ro-va-loi-ich-khi-tham-gia-thi-truong-tai-chinh",
+      "take-profit-la-gi",
+      "ty-le-risk-reward-la-gi",
+      "volatility-la-gi"
+     ],
+     "branches": [
+      {
+       "id": "6c.1",
+       "name": "Các loại rủi ro & khẩu vị",
+       "subhub": "rui-ro-la-gi",
+       "spokes": [
+        "rui-ro-tin-dung-la-gi",
+        "rui-ro-thanh-khoan-la-gi",
+        "khau-vi-rui-ro-trong-dau-tu-chung-khoan-la-gi-cach-xac-dinh",
+        "rui-ro-thi-truong-la-gi-cach-quan-tri-rui-ro-thi-truong-hieu-qua",
+        "rui-ro-va-loi-ich-khi-tham-gia-thi-truong-tai-chinh"
+       ]
+      },
+      {
+       "id": "6c.2",
+       "name": "Lý thuyết danh mục: Markowitz, CAPM, beta, độ lệch chuẩn, tương quan",
+       "subhub": "danh-muc-dau-tu-hieu-qua-la-gi",
+       "spokes": [
+        "do-lech-chuan-la-gi",
+        "volatility-la-gi",
+        "mo-hinh-capm-la-gi",
+        "he-so-tuong-quan-la-gi",
+        "he-so-beta-la-gi-y-nghia-cua-he-so-beta-trong-chung-khoan",
+        "huong-dan-phan-bo-va-da-dang-hoa-tai-san",
+        "mo-hinh-markowitz-la-gi"
+       ]
+      },
+      {
+       "id": "6c.3",
+       "name": "Kỷ luật giao dịch: chốt lời, cắt lỗ, R:R, drawdown",
+       "subhub": "ty-le-risk-reward-la-gi",
+       "spokes": [
+        "drawdown-trong-dau-tu-la-gi",
+        "take-profit-la-gi"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "6d Tâm lý & hành vi",
+     "hub": "thien-kien-nhan-thuc-la-gi",
+     "spokes": [
+      "cach-kiem-soat-tam-ly-trong-dau-tu-chung-khoan",
+      "chi-so-tam-ly-la-gi",
+      "fomo-trong-dau-tu-chung-khoan-la-gi",
+      "hieu-ung-dam-dong-la-gi-ung-dung-trong-dau-tu-chung-khoan",
+      "lac-quan-teu-la-gi",
+      "lo-kep-la-gi",
+      "tam-ly-dam-dong-la-gi"
+     ]
+    }
+   ],
+   "note": "Pillar tạm (pos 40) — cân nhắc viết bài phương pháp đầu tư."
+  },
+  {
+   "id": "c7-quy-etf",
+   "name": "Quỹ & ETF",
+   "pillar": "chung-chi-quy-la-gi",
+   "pillar_keyword": "chứng chỉ quỹ là gì",
+   "pillar_anchors": [
+    "chứng chỉ quỹ là gì"
+   ],
+   "cross": [
+    "quy-trai-phieu-la-gi"
+   ],
+   "groups": [
+    {
+     "name": "7a Chứng chỉ quỹ, quỹ mở & ETF",
+     "hub": null,
+     "spokes": [
+      "cach-dau-tu-etf-tai-viet-nam-huong-dan-chi-tiet-tu-a-den-z",
+      "co-nen-dau-tu-vao-quy-mo-vcbf",
+      "co-nen-dau-tu-vao-quy-mo-vina-capital-khong",
+      "etf-la-gi",
+      "hoat-dong-uy-thac-dau-tu-chung-khoan-la-gi",
+      "huong-dan-mo-tai-khoan-chung-chi-quy",
+      "lai-suat-chung-chi-quy",
+      "nav-la-gi-trong-dau-tu-chung-khoan",
+      "nen-dau-tu-quy-etf-nao",
+      "nen-dau-tu-quy-mo-hay-quy-etf",
+      "phan-biet-quy-etf-va-quy-tuong-ho",
+      "quy-dau-tu-mao-hiem-la-gi",
+      "quy-dong-la-gi",
+      "quy-dragon-capital-la-gi",
+      "quy-mo-la-gi-tong-quan-ve-quy-mo-tren-thi-truong-chung-khoan-viet-nam",
+      "quy-trai-phieu-la-gi",
+      "quy-trinh-hoan-doi-danh-muc-etf",
+      "quy-tuong-ho-la-gi",
+      "so-sanh-dau-tu-co-phieu-va-dau-tu-chung-chi-quy",
+      "top-chung-chi-quy-o-viet-nam-uy-tin-hang-dau-hien-nay",
+      "ung-dung-arbitrage-vao-dau-tu-chung-chi-quy",
+      "uy-thac-dau-tu-la-gi"
+     ],
+     "branches": [
+      {
+       "id": "7a.1",
+       "name": "Quỹ mở & chứng chỉ quỹ",
+       "subhub": "quy-mo-la-gi-tong-quan-ve-quy-mo-tren-thi-truong-chung-khoan-viet-nam",
+       "spokes": [
+        "top-chung-chi-quy-o-viet-nam-uy-tin-hang-dau-hien-nay",
+        "quy-dragon-capital-la-gi",
+        "ung-dung-arbitrage-vao-dau-tu-chung-chi-quy",
+        "quy-tuong-ho-la-gi",
+        "so-sanh-dau-tu-co-phieu-va-dau-tu-chung-chi-quy",
+        "quy-dau-tu-mao-hiem-la-gi",
+        "co-nen-dau-tu-vao-quy-mo-vcbf",
+        "quy-trai-phieu-la-gi",
+        "co-nen-dau-tu-vao-quy-mo-vina-capital-khong",
+        "huong-dan-mo-tai-khoan-chung-chi-quy",
+        "lai-suat-chung-chi-quy",
+        "quy-dong-la-gi"
+       ]
+      },
+      {
+       "id": "7a.2",
+       "name": "ETF",
+       "subhub": "etf-la-gi",
+       "spokes": [
+        "cach-dau-tu-etf-tai-viet-nam-huong-dan-chi-tiet-tu-a-den-z",
+        "nen-dau-tu-quy-etf-nao",
+        "quy-trinh-hoan-doi-danh-muc-etf",
+        "nen-dau-tu-quy-mo-hay-quy-etf",
+        "phan-biet-quy-etf-va-quy-tuong-ho"
+       ]
+      },
+      {
+       "id": "7a.3",
+       "name": "Uỷ thác & NAV",
+       "subhub": null,
+       "spokes": [
+        "nav-la-gi-trong-dau-tu-chung-khoan",
+        "uy-thac-dau-tu-la-gi",
+        "hoat-dong-uy-thac-dau-tu-chung-khoan-la-gi"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "Pillar yếu (pos 41.8) — cần làm lại."
+  },
+  {
+   "id": "c8-phai-sinh",
+   "name": "Phái sinh & Chứng quyền",
+   "pillar": "chung-khoan-phai-sinh-la-gi-huong-dan-dau-tu-cho-nguoi-moi-bat-dau",
+   "pillar_keyword": "chứng khoán phái sinh là gì",
+   "pillar_anchors": [
+    "chứng khoán phái sinh là gì"
+   ],
+   "cross": [],
+   "groups": [
+    {
+     "name": "8a Phái sinh",
+     "hub": null,
+     "spokes": [
+      "1-hop-dong-phai-sinh-bao-nhieu-tien",
+      "cach-dau-tu-chung-khoan-phai-sinh-tai-viet-nam",
+      "dao-han-phai-sinh-la-gi",
+      "gio-giao-dich-phai-sinh",
+      "hop-dong-tuong-lai-la-gi",
+      "phan-biet-thi-truong-chung-khoan-co-so-va-phai-sinh",
+      "quyen-chon-mua-co-phieu-la-gi"
+     ]
+    },
+    {
+     "name": "8b Chứng quyền",
+     "hub": "chung-quyen-la-gi-chung-quyen-co-bao-dam-la-gi-tim-hieu-chung-quyen-tai-viet-nam",
+     "spokes": [
+      "cach-dau-tu-chung-quyen-co-bao-dam-tai-viet-nam",
+      "phi-va-thue-khi-giao-dich-chung-quyen-co-bao-dam-tai-viet-nam"
+     ],
+     "pillar_exempt": "chứng quyền không thuộc phái sinh — link pillar chỉ khi đoạn văn so sánh"
+    }
+   ]
+  },
+  {
+   "id": "c9-vi-mo",
+   "name": "Vĩ mô & Chính sách",
+   "pillar": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "pillar_keyword": "phân tích vĩ mô trong đầu tư chứng khoán",
+   "pillar_anchors": [
+    "phân tích vĩ mô trong đầu tư chứng khoán"
+   ],
+   "cross": [],
+   "groups": [
+    {
+     "name": "9a Chỉ số kinh tế",
+     "hub": null,
+     "spokes": [
+      "chi-so-gia-tieu-dung-cpi-la-gi-va-moi-quan-he-voi-thi-truong-chung-khoan",
+      "chi-so-pce-la-gi-giai-thich-chi-tiet-cho-nha-dau-tu",
+      "chi-so-pmi-la-gi",
+      "chi-so-ppi-la-gi",
+      "chi-so-san-xuat-cong-nghiep-iip-la-gi",
+      "chu-ky-kinh-te-la-gi-cach-van-dung-chu-ky-kinh-te-de-dau-tu-co-phieu-hieu-qua",
+      "cong-thuc-tinh-lam-phat",
+      "gdp-la-gi",
+      "gdp-ppp-la-gi-giai-thich-chi-tiet-va-so-sanh-voi-gdp-binh-thuong",
+      "giam-phat-la-gi-nguyen-nhan-hau-qua-va-cach-khac-phuc",
+      "gnp-la-gi",
+      "gpi-la-gi",
+      "grdp-la-gi-chi-so-quan-trong-danh-gia-su-phat-trien-kinh-te-dia-phuong",
+      "he-so-icor-la-gi",
+      "lam-phat-la-gi",
+      "sieu-lam-phat-la-gi",
+      "su-khac-biet-giua-cpi-cot-loi-cpi-thuc-va-cpi-co-ban",
+      "suy-thoai-kinh-te-la-gi",
+      "thu-nhap-rong-tu-tai-san-nuoc-ngoai-nffi",
+      "toc-do-tang-truong-kinh-te-la-gi"
+     ],
+     "branches": [
+      {
+       "id": "9a.1",
+       "name": "Tăng trưởng & sản lượng",
+       "subhub": "gdp-la-gi",
+       "spokes": [
+        "grdp-la-gi-chi-so-quan-trong-danh-gia-su-phat-trien-kinh-te-dia-phuong",
+        "chi-so-pmi-la-gi",
+        "gdp-ppp-la-gi-giai-thich-chi-tiet-va-so-sanh-voi-gdp-binh-thuong",
+        "he-so-icor-la-gi",
+        "chi-so-san-xuat-cong-nghiep-iip-la-gi",
+        "thu-nhap-rong-tu-tai-san-nuoc-ngoai-nffi",
+        "toc-do-tang-truong-kinh-te-la-gi",
+        "gpi-la-gi",
+        "gnp-la-gi"
+       ]
+      },
+      {
+       "id": "9a.2",
+       "name": "Lạm phát & chỉ số giá",
+       "subhub": "lam-phat-la-gi",
+       "spokes": [
+        "chi-so-pce-la-gi-giai-thich-chi-tiet-cho-nha-dau-tu",
+        "chi-so-gia-tieu-dung-cpi-la-gi-va-moi-quan-he-voi-thi-truong-chung-khoan",
+        "cong-thuc-tinh-lam-phat",
+        "chi-so-ppi-la-gi",
+        "sieu-lam-phat-la-gi",
+        "giam-phat-la-gi-nguyen-nhan-hau-qua-va-cach-khac-phuc",
+        "su-khac-biet-giua-cpi-cot-loi-cpi-thuc-va-cpi-co-ban"
+       ]
+      },
+      {
+       "id": "9a.3",
+       "name": "Chu kỳ & suy thoái",
+       "subhub": "chu-ky-kinh-te-la-gi-cach-van-dung-chu-ky-kinh-te-de-dau-tu-co-phieu-hieu-qua",
+       "spokes": [
+        "suy-thoai-kinh-te-la-gi"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "9b Chính sách tiền tệ, tài khoá & lãi suất",
+     "hub": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+     "spokes": [
+      "bom-tien-ra-nen-kinh-te-la-gi-tac-dong-cua-bom-tien-den-ttck",
+      "cau-tien-la-gi-tac-dong-cua-cau-tien-toi-nen-kinh-te-va-thi-truong-chung-khoan",
+      "chinh-sach-cong-la-gi",
+      "chinh-sach-tai-khoa-la-gi",
+      "chinh-sach-tien-te-la-gi",
+      "chinh-sach-tien-te-noi-long-la-gi-tac-dong-toi-ttck",
+      "cung-tien-la-gi",
+      "dau-tu-cong-la-gi-vai-tro-va-giai-phap-nang-cao-hieu-qua",
+      "ecb-la-gi-vai-tro-va-chuc-nang-cua-ngan-hang-trung-uong-chau-au",
+      "fed-la-gi-vai-tro-va-tac-dong-cua-fed-den-kinh-te-the-gioi",
+      "lai-suat-co-so-la-gi-tac-dong-cua-lai-suat-co-so-den-nen-kinh-te",
+      "lai-suat-dieu-hanh-la-gi",
+      "lai-suat-la-gi",
+      "lai-suat-lien-ngan-hang-la-gi-cach-tinh-tac-dong-va-cach-tra-cuu",
+      "lai-suat-omo-la-gi-giai-ma-cong-cu-dieu-tiet-thi-truong-tien-te-hieu-qua",
+      "lai-suat-thuc-la-gi",
+      "lam-phat-va-lai-suat-moi-quan-he-mat-thiet",
+      "moi-quan-he-giua-lai-suat-va-xu-huong-van-dong-cua-thi-truong-chung-khoan",
+      "nghiep-vu-thi-truong-mo-la-gi",
+      "no-chinh-phu-la-gi",
+      "phan-biet-thi-truong-tien-te-va-thi-truong-von-huong-dan-chi-tiet-cho-nha-dau-tu",
+      "so-nhan-tai-khoa-la-gi",
+      "thi-truong-tien-te-la-gi-phan-tich-vai-tro-va-cac-thanh-phan",
+      "ty-le-du-tru-bat-buoc-la-gi-va-moi-quan-he-voi-cung-cau-tien"
+     ],
+     "branches": [
+      {
+       "id": "9b.1",
+       "name": "Chính sách tiền tệ & ngân hàng trung ương",
+       "subhub": "chinh-sach-tien-te-la-gi",
+       "spokes": [
+        "ty-le-du-tru-bat-buoc-la-gi-va-moi-quan-he-voi-cung-cau-tien",
+        "cung-tien-la-gi",
+        "fed-la-gi-vai-tro-va-tac-dong-cua-fed-den-kinh-te-the-gioi",
+        "cau-tien-la-gi-tac-dong-cua-cau-tien-toi-nen-kinh-te-va-thi-truong-chung-khoan",
+        "bom-tien-ra-nen-kinh-te-la-gi-tac-dong-cua-bom-tien-den-ttck",
+        "nghiep-vu-thi-truong-mo-la-gi",
+        "chinh-sach-tien-te-noi-long-la-gi-tac-dong-toi-ttck",
+        "ecb-la-gi-vai-tro-va-chuc-nang-cua-ngan-hang-trung-uong-chau-au",
+        "phan-biet-thi-truong-tien-te-va-thi-truong-von-huong-dan-chi-tiet-cho-nha-dau-tu",
+        "thi-truong-tien-te-la-gi-phan-tich-vai-tro-va-cac-thanh-phan"
+       ]
+      },
+      {
+       "id": "9b.2",
+       "name": "Chính sách tài khoá",
+       "subhub": "chinh-sach-tai-khoa-la-gi",
+       "spokes": [
+        "dau-tu-cong-la-gi-vai-tro-va-giai-phap-nang-cao-hieu-qua",
+        "no-chinh-phu-la-gi",
+        "so-nhan-tai-khoa-la-gi",
+        "chinh-sach-cong-la-gi"
+       ]
+      },
+      {
+       "id": "9b.3",
+       "name": "Lãi suất",
+       "subhub": "lai-suat-la-gi",
+       "spokes": [
+        "lam-phat-va-lai-suat-moi-quan-he-mat-thiet",
+        "lai-suat-omo-la-gi-giai-ma-cong-cu-dieu-tiet-thi-truong-tien-te-hieu-qua",
+        "moi-quan-he-giua-lai-suat-va-xu-huong-van-dong-cua-thi-truong-chung-khoan",
+        "lai-suat-thuc-la-gi",
+        "lai-suat-co-so-la-gi-tac-dong-cua-lai-suat-co-so-den-nen-kinh-te",
+        "lai-suat-dieu-hanh-la-gi",
+        "lai-suat-lien-ngan-hang-la-gi-cach-tinh-tac-dong-va-cach-tra-cuu"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "9d Tỷ giá, thương mại, dòng vốn ngoại",
+     "hub": "can-can-thanh-toan-bop-la-gi",
+     "spokes": [
+      "can-can-thuong-mai-la-gi-vai-tro-va-tac-dong-den-nen-kinh-te",
+      "can-can-vang-lai-la-gi",
+      "chi-so-dxy-la-gi",
+      "dong-tien-nong-la-gi",
+      "du-tru-ngoai-hoi-nha-nuoc-la-gi",
+      "imf-la-gi",
+      "khoi-ngoai-la-gi-va-anh-huong-den-thi-truong-chung-khoan-nhu-the-nao",
+      "von-fpi-la-gi",
+      "von-oda-la-gi",
+      "xuat-sieu-la-gi"
+     ]
+    },
+    {
+     "name": "9e Khái niệm kinh tế học",
+     "hub": "kinh-te-hoc-vi-mo-la-gi-y-nghia-trong-dau-tu-chung-khoan",
+     "spokes": [
+      "canh-tranh-doc-quyen-la-gi",
+      "canh-tranh-hoan-hao-la-gi",
+      "canh-tranh-khong-hoan-hao-phan-tich-chi-tiet-cac-mo-hinh",
+      "canh-tranh-la-gi",
+      "chi-phi-bien-la-gi",
+      "chi-phi-co-hoi-la-gi",
+      "co-hoi-thi-truong-la-gi",
+      "do-co-gian-cua-cau-theo-gia-la-gi",
+      "hieu-ro-ve-khai-niem-gio-hang-va-tac-dong-den-tieu-dung",
+      "ly-thuyet-tro-choi-ung-dung-phan-tich-hanh-vi-doanh-nghiep-trong-thi-truong-canh-tranh-hoan-hao",
+      "quan-ly-thi-truong-la-gi",
+      "quy-luat-gia-tri-la-gi-giai-thich-chi-tiet-va-day-du",
+      "ty-le-noi-dia-hoa-la-gi",
+      "zero-sum-game-la-gi-giai-thich-chi-tiet-va-ung-dung-thuc-te"
+     ],
+     "branches": [
+      {
+       "id": "9e.1",
+       "name": "Cạnh tranh & cấu trúc thị trường",
+       "subhub": "canh-tranh-la-gi",
+       "spokes": [
+        "ly-thuyet-tro-choi-ung-dung-phan-tich-hanh-vi-doanh-nghiep-trong-thi-truong-canh-tranh-hoan-hao",
+        "quan-ly-thi-truong-la-gi",
+        "canh-tranh-doc-quyen-la-gi",
+        "zero-sum-game-la-gi-giai-thich-chi-tiet-va-ung-dung-thuc-te",
+        "canh-tranh-hoan-hao-la-gi",
+        "canh-tranh-khong-hoan-hao-phan-tich-chi-tiet-cac-mo-hinh"
+       ]
+      },
+      {
+       "id": "9e.2",
+       "name": "Cung cầu, giá & chi phí",
+       "subhub": null,
+       "spokes": [
+        "chi-phi-bien-la-gi",
+        "quy-luat-gia-tri-la-gi-giai-thich-chi-tiet-va-day-du",
+        "do-co-gian-cua-cau-theo-gia-la-gi",
+        "chi-phi-co-hoi-la-gi",
+        "ty-le-noi-dia-hoa-la-gi",
+        "hieu-ro-ve-khai-niem-gio-hang-va-tac-dong-den-tieu-dung",
+        "co-hoi-thi-truong-la-gi"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "9f Khủng hoảng & sự kiện",
+     "hub": "khung-hoang-tai-chinh-la-gi-cac-giai-doan-cua-khung-hoang-tai-chinh",
+     "spokes": [
+      "bong-bong-dotcom-la-gi",
+      "khung-hoang-kinh-te-la-gi-co-nen-dau-tu-trong-giai-doan-khung-hoang",
+      "rua-tien-la-gi-hau-qua-va-cach-phong-chong",
+      "su-kien-bong-bong-hoa-tulip-bai-hoc-kinh-nghiem-cho-cac-nha-dau-tu",
+      "su-kien-thien-nga-den-la-gi",
+      "tom-tat-su-kien-brexit",
+      "vo-no-la-gi"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c10-tiet-kiem-kenh-dau-tu",
+   "name": "Tiết kiệm & Kênh đầu tư",
+   "pillar": "co-tien-nen-dau-tu-gi-luc-nay",
+   "pillar_keyword": "có tiền nên đầu tư gì",
+   "pillar_anchors": [
+    "có tiền nên đầu tư gì"
+   ],
+   "cross": [],
+   "groups": [
+    {
+     "name": "10a Lãi suất tiết kiệm & so sánh ngân hàng",
+     "hub": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+     "spokes": [
+      "100-trieu-gui-ngan-hang-lai-bao-nhieu-1-thang",
+      "50-trieu-nen-gui-tiet-kiem-ngan-hang-nao",
+      "co-1-ty-nen-gui-ngan-hang-nao",
+      "lai-suat-gui-tiet-kiem-ngan-hang-acb",
+      "lai-suat-gui-tiet-kiem-ngan-hang-agribank",
+      "lai-suat-gui-tiet-kiem-ngan-hang-bac-a-bank",
+      "lai-suat-gui-tiet-kiem-ngan-hang-bidv",
+      "lai-suat-gui-tiet-kiem-ngan-hang-hd-bank",
+      "lai-suat-gui-tiet-kiem-ngan-hang-lpbank",
+      "lai-suat-gui-tiet-kiem-ngan-hang-mb-bank",
+      "lai-suat-gui-tiet-kiem-ngan-hang-sacombank",
+      "lai-suat-gui-tiet-kiem-ngan-hang-shb",
+      "lai-suat-gui-tiet-kiem-ngan-hang-vib",
+      "lai-suat-gui-tiet-kiem-ngan-hang-vietcombank",
+      "lai-suat-gui-tiet-kiem-ngan-hang-vietinbank",
+      "lai-suat-gui-tiet-kiem-ngan-hang-vpbank",
+      "lai-suat-huy-dong-la-gi",
+      "lai-suat-ngan-hang-dong-a"
+     ]
+    },
+    {
+     "name": "10b Kênh đầu tư & phân bổ tiền nhàn rỗi",
+     "hub": null,
+     "spokes": [
+      "co-1-ty-nen-dau-tu-gi",
+      "co-15-trieu-nen-dau-tu-gi",
+      "co-150-trieu-nen-dau-tu-gi",
+      "co-2-trieu-nen-dau-tu-gi",
+      "co-20-trieu-nen-dau-tu-gi",
+      "co-200-trieu-nen-dau-tu-gi",
+      "co-3-trieu-nen-dau-tu-gi",
+      "co-30-trieu-nen-dau-tu-gi",
+      "co-300-trieu-nen-dau-tu-gi",
+      "co-40-trieu-nen-dau-tu-gi",
+      "co-400-trieu-nen-dau-tu-gi",
+      "co-5-trieu-nen-dau-tu-gi",
+      "co-50-trieu-nen-dau-tu-gi",
+      "co-600-trieu-nen-dau-tu-gi",
+      "co-70-trieu-nen-dau-tu-gi",
+      "co-nen-gui-tiet-kiem-ngan-hang-khong",
+      "dau-tu-gi-voi-100-trieu-5-goi-y-dau-tu-sinh-loi-cao-an-toan",
+      "lai-kep-trong-dau-tu-chung-khoan-la-gi-cach-tan-dung-lai-kep-de-dau-tu-sinh-loi",
+      "lam-phat-nen-dau-tu-gi-cac-kenh-dau-tu-phu-hop"
+     ],
+     "branches": [
+      {
+       "id": "10b.1",
+       "name": "Vốn nhỏ (≤ 20 triệu, sinh viên)",
+       "subhub": null,
+       "spokes": [
+        "co-5-trieu-nen-dau-tu-gi",
+        "co-2-trieu-nen-dau-tu-gi",
+        "co-15-trieu-nen-dau-tu-gi",
+        "co-3-trieu-nen-dau-tu-gi",
+        "co-20-trieu-nen-dau-tu-gi"
+       ],
+       "peer": true
+      },
+      {
+       "id": "10b.2",
+       "name": "Vốn vừa (30–200 triệu)",
+       "subhub": null,
+       "spokes": [
+        "co-50-trieu-nen-dau-tu-gi",
+        "co-200-trieu-nen-dau-tu-gi",
+        "co-30-trieu-nen-dau-tu-gi",
+        "co-40-trieu-nen-dau-tu-gi",
+        "co-150-trieu-nen-dau-tu-gi",
+        "co-70-trieu-nen-dau-tu-gi",
+        "dau-tu-gi-voi-100-trieu-5-goi-y-dau-tu-sinh-loi-cao-an-toan"
+       ],
+       "peer": true
+      },
+      {
+       "id": "10b.3",
+       "name": "Vốn lớn (≥ 300 triệu)",
+       "subhub": null,
+       "spokes": [
+        "co-1-ty-nen-dau-tu-gi",
+        "co-300-trieu-nen-dau-tu-gi",
+        "co-400-trieu-nen-dau-tu-gi",
+        "co-600-trieu-nen-dau-tu-gi"
+       ],
+       "peer": true
+      },
+      {
+       "id": "10b.4",
+       "name": "So sánh kênh & nguyên tắc",
+       "subhub": null,
+       "spokes": [
+        "co-nen-gui-tiet-kiem-ngan-hang-khong",
+        "lai-kep-trong-dau-tu-chung-khoan-la-gi-cach-tan-dung-lai-kep-de-dau-tu-sinh-loi",
+        "lam-phat-nen-dau-tu-gi-cac-kenh-dau-tu-phu-hop"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "10d Ngoài phạm vi: tiền số, forex, tài chính cá nhân",
+     "hub": null,
+     "spokes": [
+      "cach-dau-tu-tien-ao",
+      "phuong-phap-qua-cau-tuyet",
+      "san-giao-dich-tien-dien-tu",
+      "so-sanh-thi-truong-chung-khoan-va-thi-truong-ngoai-hoi",
+      "tieu-san-la-gi-phan-biet-tieu-san-va-tai-san"
+     ],
+     "pillar_exempt": "ngoài phạm vi chứng khoán/tiết kiệm"
+    }
+   ],
+   "note": "Pillar = bài kênh đầu tư tổng (109 clicks). 10d = ngoài phạm vi, không bắt link pillar."
+  },
+  {
+   "id": "c11-vang",
+   "name": "Vàng",
+   "pillar": "cach-dau-tu-vang",
+   "pillar_keyword": "cách đầu tư vàng",
+   "pillar_anchors": [
+    "cách đầu tư vàng"
+   ],
+   "cross": [
+    "dau-tu-bac-co-nen-khong"
+   ],
+   "groups": [
+    {
+     "name": "11a Vàng",
+     "hub": null,
+     "spokes": [
+      "app-dau-tu-vang",
+      "co-100-trieu-nen-mua-vang-hay-gui-tiet-kiem",
+      "co-nen-ban-vang-thoi-diem-nay",
+      "co-nen-dau-tu-vang-thoi-diem-nay",
+      "dau-tu-vang-nen-mua-loai-nao",
+      "nen-dau-tu-vang-hay-bac",
+      "nen-gui-tiet-kiem-hay-mua-vang",
+      "nen-mua-vang-mieng-hay-vang-nhan",
+      "nen-mua-vang-mieng-sjc-hay-pnj",
+      "nen-mua-vang-o-ngan-hang-hay-tiem-vang",
+      "nen-mua-vang-sjc-hay-9999",
+      "sach-dau-tu-vang",
+      "san-giao-dich-vang",
+      "so-sanh-kenh-dau-tu-vang-va-dau-tu-chung-khoan",
+      "trien-vong-trien-khai-quy-etf-vang-tai-viet-nam",
+      "yeu-to-anh-huong-den-gia-vang"
+     ],
+     "branches": [
+      {
+       "id": "11a.0",
+       "name": "Tài liệu & kênh gián tiếp",
+       "subhub": null,
+       "spokes": [
+        "sach-dau-tu-vang",
+        "trien-vong-trien-khai-quy-etf-vang-tai-viet-nam"
+       ]
+      },
+      {
+       "id": "11a.1",
+       "name": "Chọn loại vàng & nơi mua",
+       "subhub": "dau-tu-vang-nen-mua-loai-nao",
+       "spokes": [
+        "san-giao-dich-vang",
+        "app-dau-tu-vang",
+        "nen-mua-vang-mieng-sjc-hay-pnj",
+        "nen-mua-vang-o-ngan-hang-hay-tiem-vang",
+        "nen-mua-vang-sjc-hay-9999",
+        "nen-mua-vang-mieng-hay-vang-nhan"
+       ]
+      },
+      {
+       "id": "11a.2",
+       "name": "Thời điểm & giá vàng",
+       "subhub": "co-nen-dau-tu-vang-thoi-diem-nay",
+       "spokes": [
+        "co-nen-ban-vang-thoi-diem-nay",
+        "yeu-to-anh-huong-den-gia-vang"
+       ]
+      },
+      {
+       "id": "11a.3",
+       "name": "So sánh kênh (vàng vs tiết kiệm / chứng khoán / bạc)",
+       "subhub": null,
+       "spokes": [
+        "so-sanh-kenh-dau-tu-vang-va-dau-tu-chung-khoan",
+        "co-100-trieu-nen-mua-vang-hay-gui-tiet-kiem",
+        "nen-dau-tu-vang-hay-bac",
+        "nen-gui-tiet-kiem-hay-mua-vang"
+       ],
+       "peer": true
+      }
+     ]
+    }
+   ],
+   "note": "Pillar yếu (pos 19.6) — /optimize trước khi chèn link."
+  },
+  {
+   "id": "c12-trai-phieu",
+   "name": "Trái phiếu",
+   "pillar": "trai-phieu-la-gi",
+   "pillar_keyword": "trái phiếu là gì",
+   "pillar_anchors": [
+    "trái phiếu là gì"
+   ],
+   "cross": [
+    "quy-trai-phieu-la-gi"
+   ],
+   "groups": [
+    {
+     "name": "12a Trái phiếu & lợi suất",
+     "hub": null,
+     "spokes": [
+      "bond-yield-la-gi-tim-hieu-chi-tiet-ve-loi-suat-trai-phieu",
+      "duong-cong-loi-suat-dao-nguoc-la-gi-giai-thich-chi-tiet-va-anh-huong",
+      "huong-dan-mua-trai-phieu-doanh-nghiep-cho-nguoi-moi-bat-dau",
+      "phan-biet-co-phieu-va-trai-phieu",
+      "tai-sao-nen-dau-tu-trai-phieu-trai-phieu-phu-hop-voi-nha-dau-tu-nao",
+      "tin-phieu-kho-bac-la-gi",
+      "trai-phieu-chinh-phu-la-gi",
+      "trai-phieu-chuyen-doi-la-gi-so-sanh-trai-phieu-thuong-va-trai-phieu-chuyen-doi",
+      "trai-phieu-doanh-nghiep-la-gi",
+      "trai-phieu-ngan-hang-la-gi"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c13-hoc-nghe",
+   "name": "Học & nghề tài chính",
+   "pillar": null,
+   "pillar_keyword": "",
+   "pillar_anchors": [],
+   "cross": [],
+   "groups": [
+    {
+     "name": "13a Khoá học & sách",
+     "hub": null,
+     "spokes": [
+      "danh-sach-cac-dien-dan-chung-khoan-uy-tin-tai-viet-nam",
+      "giao-trinh-phan-tich-bao-cao-tai-chinh",
+      "hoc-dau-tu-chung-khoan-online",
+      "kenh-tik-tok-ve-tai-chinh",
+      "khoa-hoc-chung-khoan-tai-da-nang",
+      "khoa-hoc-chung-khoan-tai-ha-noi",
+      "khoa-hoc-chung-khoan-tai-ho-chi-minh",
+      "khoa-hoc-chung-khoan-tan-thu",
+      "khoa-hoc-ky-thuat-thuc-chien",
+      "khoa-hoc-phan-tich-bao-cao-tai-chinh",
+      "khoa-hoc-phan-tich-chung-khoan-co-ban",
+      "khoa-hoc-phan-tich-ky-thuat-chung-khoan",
+      "nhung-cuon-sach-dau-tu-hay-ve-warren-buffett",
+      "nhung-cuon-sach-hay-ve-dau-tu-chung-khoan",
+      "nhung-cuon-sach-hay-ve-phan-tich-ky-thuat",
+      "nhung-cuon-sach-hay-ve-phuong-phap-dau-tu-gia-tri",
+      "sach-phan-tich-bao-cao-tai-chinh",
+      "top-10-cuon-sach-hay-ve-dau-tu-tai-chinh-giup-ban-lam-giau"
+     ],
+     "branches": [
+      {
+       "id": "13a.1",
+       "name": "Khoá học & nguồn học",
+       "subhub": "khoa-hoc-chung-khoan",
+       "spokes": [
+        "danh-sach-cac-dien-dan-chung-khoan-uy-tin-tai-viet-nam",
+        "khoa-hoc-phan-tich-bao-cao-tai-chinh",
+        "khoa-hoc-chung-khoan-tai-ho-chi-minh",
+        "kenh-tik-tok-ve-tai-chinh",
+        "khoa-hoc-chung-khoan-tai-ha-noi",
+        "hoc-dau-tu-chung-khoan-online",
+        "khoa-hoc-chung-khoan-tai-da-nang",
+        "khoa-hoc-phan-tich-chung-khoan-co-ban",
+        "khoa-hoc-chung-khoan-tan-thu",
+        "khoa-hoc-ky-thuat-thuc-chien",
+        "khoa-hoc-phan-tich-ky-thuat-chung-khoan"
+       ]
+      },
+      {
+       "id": "13a.2",
+       "name": "Sách & giáo trình (link về pillar chủ đề: PTKT → C3, BCTC → C4)",
+       "subhub": "nhung-cuon-sach-hay-ve-dau-tu-chung-khoan",
+       "spokes": [
+        "top-10-cuon-sach-hay-ve-dau-tu-tai-chinh-giup-ban-lam-giau",
+        "nhung-cuon-sach-hay-ve-phan-tich-ky-thuat",
+        "giao-trinh-phan-tich-bao-cao-tai-chinh",
+        "nhung-cuon-sach-dau-tu-hay-ve-warren-buffett",
+        "sach-phan-tich-bao-cao-tai-chinh",
+        "nhung-cuon-sach-hay-ve-phuong-phap-dau-tu-gia-tri"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "13b Chứng chỉ & nghề nghiệp",
+     "hub": null,
+     "spokes": [
+      "acca-va-cfa",
+      "chung-chi-cfa-la-gi",
+      "chung-chi-cmt-la-gi",
+      "chung-chi-hanh-nghe-chung-khoan-la-gi",
+      "chung-chi-tai-chinh",
+      "chuyen-vien-tai-chinh-la-gi",
+      "moi-gioi-chung-khoan-la-gi-tim-hieu-nghe-nghiep-hap-dan-va-day-tiem-nang",
+      "muc-luong-nganh-tai-chinh",
+      "tu-van-chung-khoan-la-gi",
+      "tu-van-dau-tu-la-gi",
+      "tu-van-tai-chinh-la-gi"
+     ],
+     "branches": [
+      {
+       "id": "13b.1",
+       "name": "Chứng chỉ",
+       "subhub": "chung-chi-tai-chinh",
+       "spokes": [
+        "chung-chi-hanh-nghe-chung-khoan-la-gi",
+        "chung-chi-cmt-la-gi",
+        "acca-va-cfa",
+        "chung-chi-cfa-la-gi"
+       ]
+      },
+      {
+       "id": "13b.2",
+       "name": "Nghề tư vấn, môi giới & thu nhập",
+       "subhub": null,
+       "spokes": [
+        "muc-luong-nganh-tai-chinh",
+        "tu-van-chung-khoan-la-gi",
+        "tu-van-dau-tu-la-gi",
+        "tu-van-tai-chinh-la-gi",
+        "chuyen-vien-tai-chinh-la-gi",
+        "moi-gioi-chung-khoan-la-gi-tim-hieu-nghe-nghiep-hap-dan-va-day-tiem-nang"
+       ],
+       "peer": true
+      }
+     ]
+    }
+   ],
+   "note": "Không có pillar bắt buộc: sách/khoá học link về pillar của chủ đề (PTKT → C3, BCTC → C4)."
+  },
+  {
+   "id": "c14-bac",
+   "name": "Bạc",
+   "pillar": "dau-tu-bac-co-nen-khong",
+   "pillar_keyword": "đầu tư bạc",
+   "pillar_anchors": [
+    "đầu tư bạc"
+   ],
+   "cross": [
+    "nen-dau-tu-vang-hay-bac"
+   ],
+   "groups": [
+    {
+     "name": "14a Bạc",
+     "hub": null,
+     "spokes": [
+      "mua-bac-dau-tu-o-dau"
+     ]
+    }
+   ],
+   "note": "Cầu nối với C11: nen-dau-tu-vang-hay-bac (thuộc C11, link cả 2 pillar)."
   }
  ]
 }

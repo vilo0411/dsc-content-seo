@@ -1,7 +1,7 @@
 # Anti-AI Blacklist (QA Fast-Check)
 
 > **Dùng cho:** Quality Guardian, Brand Guardian — thay thế đọc toàn bộ `anti-ai-rules.md`.
-> Drafting Agent vẫn phải đọc `anti-ai-rules.md` đầy đủ.
+> Drafting Agent đọc thêm `anti-ai-rules.md` (v3.0, ~10 KB — phần phán đoán; danh sách cụm cấm chỉ nằm ở file này).
 
 ---
 
@@ -15,6 +15,7 @@
 - "[Keyword] là gì? [Keyword] là..."
 - "Thị trường chứng khoán Việt Nam đang trải qua..."
 - "Để hiểu rõ hơn về [topic], trước tiên chúng ta cần..."
+- "Bài viết này sẽ..." / "Bài viết này giúp..." / "Bài viết dưới đây..." — sapo tự giới thiệu bài; nói thẳng điều người đọc nhận được
 
 **Kết bài:**
 - "Tóm lại, bài viết đã cung cấp..."
@@ -46,7 +47,8 @@ Không dùng dấu ngoặc kép `"..."` bao từ thông thường, tiếng lóng
 - "cơ chế truyền dẫn" → dùng "tác động"
 - "thủ thuật" / "chiêu trò" → dùng "chiến lược" / "phương pháp"
 - "rõ ràng" (dạng vô nghĩa: "phân biệt rõ ràng") → bỏ
-- "xương máu" → dùng "quý báu", "sống còn", "cốt lõi"
+- "xương máu" → dùng "quý báu", "cốt lõi"
+- "sống còn" / "siêu bảng" / "bí quyết vàng" / "chỉ số vàng" / "cổ phiếu vua" → bỏ từ cường điệu, gọi đúng tên ("bảng so sánh", "5 chỉ số định giá", "yếu tố quyết định")
 - "Active Trader" / "trader" (trong văn xuôi tiếng Việt) → dùng "nhà đầu tư chủ động", "nhà đầu tư lướt sóng", "nhà giao dịch ngắn hạn"
 
 ---

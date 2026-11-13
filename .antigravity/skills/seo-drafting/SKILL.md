@@ -1,33 +1,26 @@
 # Skill: SEO Drafting (Phase 3 & 4)
 
-This skill focuses on converting an approved Outline into a high-quality, human-centric draft and learning from feedback.
+Chuyển Outline đã duyệt thành draft. Quy tắc viết nằm ở `anti-ai-rules.md` + `instincts.md` (đã load ở Step 0) — file này chỉ ghi thứ tự làm và những điểm máy sẽ kiểm.
 
-## 🛠️ Execution Strategy: Execute & Finalize
+## Step 1: Execute (Drafting & Quality)
 
-### Step 1: Execute (Drafting & Quality)
-1. **Context Loading**: Read the approved Outline from `knowledge/4-content/1-outlines/`.
-2. **Anti-AI Drafting**: Write the draft by **demonstrating** the rules in `anti-ai-rules.md`. 
-    *   Avoid all "AI-vibe" phrases and structures.
-    *   Use the **3S Rule** (Specific, Story, Statistics) throughout.
-    *   Maintain the **Persona** (Senior Expert) and **POV**.
-    *   **Ngắt đoạn theo ngữ nghĩa (Semantic Grouping)**: Tránh ngắt đoạn cơ học (chia mỗi câu thành 1 đoạn). Hãy gộp các câu liên quan mật thiết thành các đoạn văn ngắn từ 2-3 câu để bài viết trôi chảy tự nhiên, đồng thời vẫn đáp ứng chuẩn Mobile-First (độ dài đoạn ≤ 3 câu, độ dài câu ≤ 30 từ).
-    *   **Định dạng Danh sách**: Khi viết danh sách liệt kê, trước mỗi danh sách phải có câu dẫn dắt có dấu hai chấm `:`. Đối với các nhãn in đậm ở đầu mục danh sách, bắt buộc sử dụng dấu hai chấm `:` thay vì dấu chấm `.` làm ký tự phân tách nhãn và nội dung (Ví dụ: `* **Nhãn**: Nội dung`).
-    *   Embed internal links theo `Internal_Links:` đã plan trong outline — đặt tự nhiên trong câu, không thêm riêng cuối bài. Toàn bộ link BẮT BUỘC phải dùng URL tuyệt đối (`https://www.dsc.com.vn/...`) đối soát chính xác từ sitemap live `https://www.dsc.com.vn/sitemap/sitemap_knowledge.xml`, tuyệt đối không dùng đường dẫn file cục bộ (`file:///...`) hay relative path.
-3. **4-Sweep Quality Check (BẮT BUỘC trước khi present)**: Sau khi viết xong, tự kiểm tra 4 sweeps sau trên toàn bài. Nếu fail bất kỳ điểm nào → sửa trước khi trình bày:
-    - **So What?** — Mỗi H2 phải có ít nhất 1 câu trả lời rõ ràng "tại sao reader phải quan tâm đến section này?" Không chỉ mô tả — phải có lợi ích cụ thể.
-    - **Prove It** — Mỗi claim/nhận định phải có số liệu, ví dụ cụ thể, hoặc case thực tế đi kèm. Sử dụng cơ sở dữ liệu chứng khoán tham chiếu 2026 tại `knowledge/3-pipeline/anti-ai-rules.md` để lấy dẫn chứng nhanh. Scan toàn bài: mọi câu dạng "[X] là quan trọng/tốt/hiệu quả" mà không có bằng chứng → rewrite.
-    - **Specificity** — Grep các từ: "tốt", "nhanh", "hiệu quả", "đáng kể", "nhiều", "một số". Mỗi từ tìm được → thay bằng con số hoặc ví dụ cụ thể, hoặc xóa.
-    - **GEO Check** — Scan từng H2: (1) Có ít nhất 1 câu thoả mãn Load-Bearing Claim (Extract-friendly + Verifiable + Specific) theo Phần 8.2 của `anti-ai-rules.md` không? (2) Mọi data point có prefix "Tính đến tháng M/Y" hoặc "Tháng M/Y:" không? (3) Chủ thể câu có phải brand/entity cụ thể không, hay đang bị động che khuất? Nếu fail bất kỳ H2 nào → thêm/sửa claim trước khi present.
-4. **Internal QA**: Self-audit based on `anti-ai-rules.md`. If AI patterns are found, rewrite before presenting.
-5. **Present Draft**: Deliver the draft to the user with a Feedback Table.
+1. **Outline** là hợp đồng: `knowledge/4-content/1-outlines/[slug].md`. Vừa viết trong session thì không mở lại.
+2. **Viết theo 5 lời hứa của outline** (mỗi lời hứa có check máy ở `qa_lint.py`):
+   - **Thesis** là kết luận thật của bài; mọi H2 phục vụ nó.
+   - **Information_Gain**: mỗi mục phải xuất hiện đúng ở `h2` đã khai, chứa đúng `proof`, và được giải thích đủ để người đọc dùng được (`IG-missing`). Đây là phần đối thủ không có — viết kỹ nhất ở đây, không phải ở phần ai cũng viết.
+   - **Entities**: dùng tự nhiên các thuật ngữ trong `Entities:` (`ENT-missing`, cần ≥ 70%). Viết tắt (UBCKNN, NAV, CTCK…) phải viết đầy đủ ở lần đầu; một thực thể chỉ có một cách viết.
+   - **PAA_Questions**: từng câu thành H2/H3 hoặc FAQ, giữ dạng câu hỏi (`PAA-missing`). Không dùng lại H2 / câu FAQ đã có ở bài DSC khác (`DUP-h2`, `DUP-faq`) — link sang bài đó.
+   - **Bảng dữ liệu mục 3**: chỉ dùng số trong bảng. Câu trích quy định / số liệu có nguồn thì **link thẳng tới URL nguồn gốc** của dòng đó (domain trong `knowledge/3-pipeline/source-whitelist.md`), anchor là tên văn bản / báo cáo (`SRC-missing`). Không viết "theo khảo sát của DSC" nếu không có số + mốc thời gian (`SRC-unshown`).
+3. **Trả lời trước, giải thích sau** (`GEO-h2-answer`): câu đầu dưới mỗi H2 ≤ 40 từ, nhắc đúng đối tượng của heading và trả lời luôn; đọc rời khỏi bài vẫn đủ nghĩa. Dưới H2 dạng "X là gì" mở bằng "X là …" là đúng. Không mở mục bằng câu dẫn ("Trong phần này…", "Để hiểu…").
+4. **Trình bày:** đoạn 2–3 câu gộp theo ý (không tách mỗi câu một đoạn), câu ≤ 30 từ. Trước danh sách có câu dẫn kết thúc bằng `:`; nhãn đầu mục viết `**Nhãn**: nội dung`. Link nội bộ theo `Internal_Links:` của outline, URL tuyệt đối `https://www.dsc.com.vn/...`, đặt trong câu.
+5. **Bằng chứng thực tế:** bài hướng dẫn thao tác / đánh giá app cần ảnh chụp màn hình thật. Chưa có ảnh → đặt `[ẢNH THỰC TẾ: màn hình cần chụp]` đúng vị trí và báo user (placeholder còn sót ở bản Final là CRITICAL). Bài có nhận định mua/bán mã cụ thể → thêm câu miễn trừ (I113).
+6. **Tự soát trước khi chạy gate** — 3 câu hỏi cho từng H2:
+   - *So what?* Có câu nói rõ vì sao người đọc cần mục này không.
+   - *Prove it:* nhận định nào ("quan trọng", "hiệu quả", "đáng kể", "nhiều") chưa có số / ví dụ → thay bằng số trong bảng dữ liệu hoặc xoá.
+   - *Load-bearing:* có ít nhất 1 câu gồm thực thể + con số + mốc thời gian (anti-ai-rules §8.2). Mốc thời gian chỉ gắn với số liệu, không gắn trước định nghĩa (§8.3).
+7. **Gate:** `python scripts/qa_gate.py knowledge/4-content/2-drafts/Draft-[slug].md --fix` → Quality Guardian (xem `.antigravity/skills/qa-qc/SKILL.md`).
+8. **Trình bày cho user — tóm tắt ≤ 25 dòng + đường dẫn file draft, không dán bài vào chat:** dòng kết quả gate (score · coverage · trust · slop), từng mục Information_Gain kèm 1 câu trích, số từ so với target, ảnh thực tế còn thiếu, `⚠️ Remaining issues` nếu có.
 
-### Step 2: Finalize & Learn
-1. **Iterative Revision**: Revise the draft based on user feedback rounds.
-2. **Final Approval**: User issues `/approve` to finalize the article.
-3. **File Management (MANDATORY)**: 
-    *   Move the approved file from `knowledge/4-content/2-drafts/` to `knowledge/4-content/3-finalized/`.
-    *   Rename the file to `Final-[slug].md`.
-    *   Delete the original outline file `[slug].md` in `knowledge/4-content/1-outlines/` (if it exists) to clean up the repository.
-    *   Update `knowledge/4-content/topic-clusters.md` status to `Finalized`.
-4. **Learning**: Trigger **`content-feedback-loop`** skill to analyze revisions and update project rules in `.antigravity/memory/instincts.md`.
-5. **Delivery**: Confirm finalized paths to the user.
+## Step 2: Finalize & Learn
+
+Sau khi user `/approve`: làm đúng trình tự ở `.agents/skills/approve/SKILL.md` (nguồn duy nhất cho move file, snapshot, status, HTML CMS, log, feedback loop).

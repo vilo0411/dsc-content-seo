@@ -1,0 +1,218 @@
+{
+ "title": "Backfill bài 0 inlink — đợt 2",
+ "intro": "14 bài có chỗ tự nhiên (gồm DIG bỏ sót ở đợt 1 do lỗi quét). Bỏ qua: BCTC Vinamilk, TTF, cách mua VNM, trading, SSB, vàng SJC hay PNJ, SCR.",
+ "edits": [
+  {
+   "src": "san-giao-dich-tien-dien-tu",
+   "op": "wrap",
+   "find": "Coinbase là sàn giao dịch tiền điện tử duy nhất tại Mỹ niêm ",
+   "to": "sec-la-gi-giai-thich-chi-tiet-ve-uy-ban-chung-khoan-va-hoi-doai-hoa-ky",
+   "anchor": "Ủy ban Chứng khoán Mỹ (SEC)",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Coinbase tuân thủ quy định của SEC"
+  },
+  {
+   "src": "phan-tich-bao-cao-tai-chinh-pnj",
+   "op": "wrap",
+   "find": "Trong bối cảnh thị trường vàng biến động mạnh mẽ và sức mua ",
+   "to": "co-nen-mua-co-phieu-pnj-hay-khong",
+   "anchor": "Công ty Cổ phần Vàng bạc Đá quý Phú Nhuận (PNJ)",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Mở bài phân tích BCTC PNJ → bài đánh giá có nên mua"
+  },
+  {
+   "src": "50-trieu-nen-gui-tiet-kiem-ngan-hang-nao",
+   "op": "wrap",
+   "find": "Tháng 10/2026, ACB niêm yết lãi suất gửi tiết kiệm online kỳ",
+   "to": "lai-suat-gui-tiet-kiem-ngan-hang-sacombank",
+   "anchor": "Ngân hàng Sacombank",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "So sánh lãi suất gửi 50 triệu: Sacombank 7,05–7,8%"
+  },
+  {
+   "src": "co-phieu-lpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "wrap",
+   "find": "Cổ phiếu LPB, đại diện cho Ngân hàng TMCP Bưu điện Liên Việt",
+   "to": "co-nen-mua-co-phieu-lpb-hay-khong",
+   "anchor": "Cổ phiếu LPB",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Mở bài tổng quan LPB → bài có nên mua"
+  },
+  {
+   "src": "co-15-trieu-nen-dau-tu-gi",
+   "op": "wrap",
+   "find": "Hiện nay, các ngân hàng thường đưa ra nhiều kỳ hạn gửi khác ",
+   "to": "lai-suat-gui-tiet-kiem-ngan-hang-mb-bank",
+   "anchor": "MBBank",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Mục gửi tiết kiệm: liệt kê ngân hàng nên gửi"
+  },
+  {
+   "src": "no-chinh-phu-la-gi",
+   "op": "wrap",
+   "find": "Mục đích sử dụng vốn vay: Hãy ưu tiên các giai đoạn nợ tăng ",
+   "to": "top-co-phieu-dau-tu-cong-nen-dau-tu",
+   "anchor": "nhóm Đầu tư công",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Nợ công tăng để làm hạ tầng → tín hiệu cho nhóm Đầu tư công"
+  },
+  {
+   "src": "co-nen-dau-tu-vao-quy-mo-vina-capital-khong",
+   "op": "wrap",
+   "find": "Chị Lan (38 tuổi, kế toán tại Hà Nội) có 300 triệu VNĐ tiền ",
+   "to": "co-300-trieu-nen-dau-tu-gi",
+   "anchor": "300 triệu VNĐ tiền nhàn rỗi",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Ví dụ chị Lan có 300 triệu nhàn rỗi"
+  },
+  {
+   "src": "cach-mua-co-phieu-shb",
+   "op": "wrap",
+   "find": "Cân nhắc khả năng tài chính cá nhân và phân bổ vốn vào SHB t",
+   "to": "co-phieu-tpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "anchor": "TPB (TPBank)",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Gợi ý đa dạng hóa nhóm ngân hàng tư nhân: TPB"
+  },
+  {
+   "src": "cach-mua-co-phieu-hdb",
+   "op": "wrap",
+   "find": "Cổ phiếu HDB thuộc chỉ số VN30 với vốn hóa thị trường dao độ",
+   "to": "co-phieu-tpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "anchor": "TPB (TPBank)",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Nhóm ngân hàng tư nhân VN30 cân nhắc song song: TPB"
+  },
+  {
+   "src": "cach-mua-co-phieu-hdb",
+   "op": "wrap",
+   "find": "Cân nhắc khả năng tài chính cá nhân và phân bổ vốn phù hợp t",
+   "to": "co-nen-mua-co-phieu-vpb-hay-khong",
+   "anchor": "VPB (VPBank)",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Gợi ý so sánh VPB (FE Credit) với HDB"
+  },
+  {
+   "src": "co-phieu-vpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "wrap",
+   "find": "Cổ phiếu VPB, đại diện cho Ngân hàng TMCP Việt Nam Thịnh Vượ",
+   "to": "co-nen-mua-co-phieu-vpb-hay-khong",
+   "anchor": "Cổ phiếu VPB",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Mở bài tổng quan VPB → bài có nên mua"
+  },
+  {
+   "src": "co-phieu-plx-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "wrap",
+   "find": "Tập đoàn Xăng dầu Việt Nam (Petrolimex - PLX) là một trong n",
+   "to": "co-nen-mua-co-phieu-plx-hay-khong",
+   "anchor": "Tập đoàn Xăng dầu Việt Nam (Petrolimex - PLX)",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Mô hình kinh doanh PLX → bài có nên mua"
+  },
+  {
+   "src": "chuoi-gia-tri-nganh-dau-khi",
+   "op": "wrap",
+   "find": "Phân khúc Phân phối bán lẻ: PLX (Petrolimex) và OIL (PVOIL) ",
+   "to": "co-nen-mua-co-phieu-plx-hay-khong",
+   "anchor": "PLX (Petrolimex)",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Hạ nguồn: phân phối bán lẻ PLX"
+  },
+  {
+   "src": "cong-thuc-tinh-lam-phat",
+   "op": "wrap",
+   "find": "Doanh nghiệp thuộc nhóm ngành phòng thủ. Nhóm ngành điện nướ",
+   "to": "top-co-phieu-nganh-duoc-nen-dau-tu",
+   "anchor": "dược phẩm",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Nhóm ngành phòng thủ vượt lạm phát: điện nước, dược phẩm"
+  },
+  {
+   "src": "chinh-sach-tien-te-la-gi",
+   "op": "wrap",
+   "find": "Trong chu kỳ tiền tệ thắt chặt (Tiền đắt): Nhà đầu tư nên tá",
+   "to": "top-co-phieu-nganh-duoc-nen-dau-tu",
+   "anchor": "dược phẩm",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Doanh nghiệp phòng thủ trong chu kỳ thắt chặt: điện, nước, dược phẩm"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-mwg-hay-khong",
+   "op": "append",
+   "find": "MWG là doanh nghiệp đầu ngành trong mảng bán lẻ các thiết bị điện máy",
+   "to": "phan-tich-bao-cao-tai-chinh-mwg",
+   "anchor": "phân tích báo cáo tài chính MWG",
+   "check_text": true,
+   "group": "backfill",
+   "pri": "P2",
+   "sentence": "Số liệu trên dừng ở năm 2022; kết quả các năm gần nhất, gồm giai đoạn MWG cắt giảm mạnh capex năm 2024, được cập nhật trong bài [phân tích báo cáo tài chính MWG].",
+   "why": "Mục 'Đánh giá tiêu chí BCTC MWG' dùng số 2018–2022 → báo cho người đọc số liệu mới hơn (giống bài HPG đợt 1)"
+  },
+  {
+   "src": "co-phieu-nganh-du-lich",
+   "op": "wrap",
+   "find": "Khi tần suất chuyến bay tăng để đón 25 triệu khách quốc tế, ",
+   "to": "co-phieu-scs-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "anchor": "SCS",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Mục Cổ phiếu SCS & SGN: hưởng lợi khi chuyến bay tăng"
+  },
+  {
+   "src": "bien-loi-nhuan-rong-net-profit-margin-la-gi-giai-dap-chi-tiet-va-y-nghia-quan-trong",
+   "op": "wrap",
+   "find": "Ví dụ, SCS đạt biên lợi nhuận ròng 61,6% năm 2024 đi kèm biê",
+   "to": "co-phieu-scs-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "anchor": "SCS",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Ví dụ SCS biên ròng 61,6%, biên gộp 78,3%"
+  },
+  {
+   "src": "co-phieu-nganh-ban-le",
+   "op": "wrap",
+   "find": "Điểm nhấn: Thị phần trang sức có thương hiệu tại Việt Nam vẫ",
+   "to": "co-nen-mua-co-phieu-pnj-hay-khong",
+   "anchor": "PNJ",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Mục Cổ phiếu PNJ trong bài cổ phiếu ngành bán lẻ"
+  },
+  {
+   "src": "top-5-co-phieu-sieu-dau-co-cua-tung-nhom-nganh-rui-ro-cao-loi-nhuan-cao",
+   "op": "wrap",
+   "find": "DIG là đơn vị phát triển bất động sản có quỹ đất khủng hàng ",
+   "to": "co-nen-mua-co-phieu-dig-hay-khong",
+   "anchor": "DIG",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Mục DIG: các dự án tiêu biểu"
+  },
+  {
+   "src": "chi-bao-ultimate-oscillator-uo-la-gi",
+   "op": "wrap",
+   "find": "Nhóm này gồm các cổ phiếu ngành bất động sản như DIG, DXG, C",
+   "to": "co-nen-mua-co-phieu-dig-hay-khong",
+   "anchor": "DIG",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Nhóm cổ phiếu biến động cao: bất động sản như DIG"
+  }
+ ]
+}

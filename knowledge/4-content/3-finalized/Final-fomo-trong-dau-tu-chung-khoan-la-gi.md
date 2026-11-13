@@ -19,7 +19,7 @@ FOMO là viết tắt của cụm từ Fear of Missing Out. Dịch sang tiếng 
 
 Về mặt tâm lý học hành vi, đây là trạng thái lo âu về việc bị bỏ lại. Cá nhân lo sợ người xung quanh đang gặt hái lợi nhuận lớn mà mình đứng ngoài cuộc.
 
-Tính đến tháng 8/2026, VSDC ghi nhận toàn thị trường có hơn 13,66 triệu tài khoản chứng khoán cá nhân. Sự bùng nổ của mạng xã hội khiến tin tức khoe tài khoản sinh lời lan truyền nhanh chóng. Áp lực này kích hoạt phản ứng bản năng, khiến nhà đầu tư vội vàng bắt chước đám đông mà bỏ qua bước đánh giá rủi ro.
+Sự bùng nổ của mạng xã hội khiến tin tức khoe tài khoản sinh lời lan truyền nhanh chóng. Áp lực này kích hoạt phản ứng bản năng, khiến nhà đầu tư vội vàng bắt chước đám đông mà bỏ qua bước đánh giá rủi ro.
 
 >> Xem thêm: [Các thuật ngữ trong chứng khoán](https://www.dsc.com.vn/kien-thuc/cac-thuat-ngu-trong-chung-khoan) cho người mới bắt đầu.
 

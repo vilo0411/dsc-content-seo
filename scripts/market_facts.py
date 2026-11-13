@@ -207,7 +207,7 @@ CLAIM_INDEX = re.compile(
 TICKER = re.compile(
     r"[A-ZĐÁÀẢÃẠÂẤẦẨẪẬĂẮẰẲẴẶÉÈẺẼẸÊẾỀỂỄỆÍÌỈĨỊÓÒỎÕỌÔỐỒỔỖỘƠỚỜỞỠỢÚÙỦŨỤƯỨỪỬỮỰÝỲỶỸỴ][\wÀ-ỹ]*\s*\(([A-Z]{3})\)"
     r"|(?i:mã|cổ phiếu|ticker)\s+(?:[a-zà-ỹ]+\s+){0,2}([A-Z]{3})\b")
-TICKER_STOP = {"VND", "USD", "CEO", "CFO", "GDP", "CPI", "IPO", "NAV", "ROE", "ROA",
+TICKER_STOP = {"VND", "USD", "EUR", "JPY", "GBP", "CAD", "SEK", "CHF", "ECB", "BOJ", "FED", "DXY", "ICE", "CEO", "CFO", "GDP", "CPI", "IPO", "NAV", "ROE", "ROA",
                "EPS", "ETF", "FDI", "VAT", "ATO", "ATC", "FAQ", "SEO", "CTA", "API", "PDF",
                "KPI", "VIP", "AND", "THE", "FOR", "OHLC", "RSI", "MACD", "MUA", "BAN", "LC",
                "FA", "TA", "BCTC", "HOSE", "HNX", "VSD", "SSC", "D1", "W1", "CFA", "CPA",

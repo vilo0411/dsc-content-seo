@@ -1,6 +1,6 @@
-# Instincts — Chỉ topic: Vĩ mô
+# Instincts — Vĩ mô
 
-> Chỉ load khi bài viết thuộc phạm vi **Chỉ topic: Vĩ mô**. Sinh tự động từ instincts-archive.md.
+> Chỉ load khi bài viết thuộc phạm vi **Vĩ mô**. Sinh tự động từ instincts-archive.md.
 
-### Sử dụng số liệu vĩ mô thực tế tại Việt Nam
-- Đối với các bài viết phân tích vĩ mô, bắt buộc phải sử dụng các số liệu thực tế đã được công bố của Việt Nam trong các giai đoạn gần nhất (ví dụ: giai đoạn phục hồi 2021-2025, mục tiêu 2026) thay vì sử dụng các số liệu giả định chung chung. Điều này nhằm tối đa hóa độ tin cậy và chiều sâu phân tích của DSC.
+### [I126] Vĩ mô: số Việt Nam gần nhất, biến số quốc tế gắn tác động trong nước
+- Dùng số liệu vĩ mô Việt Nam đã công bố gần nhất, không số giả định. Biến số quốc tế (DXY, Fed, KOSPI, giờ sàn Mỹ) gắn với tác động tại Việt Nam (tỷ giá, dòng vốn ngoại, VN-Index) ngay ở H1/Meta; giờ quốc tế quy đổi UTC+7 có DST. Bridge từ vàng/tiết kiệm sang cổ phiếu lập luận bằng logic tài chính; nhắc cá nhân VN chưa được tự mua cổ phiếu nước ngoài.

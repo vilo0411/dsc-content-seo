@@ -1,0 +1,438 @@
+{
+ "group": "rate",
+ "priority": "P0",
+ "issue": "Bài lãi suất gắn tháng 10/2026 trong title/H2; biểu lãi suất cần cập nhật theo tháng 11/2026.",
+ "edits": [
+  {
+   "slug": "lai-suat-gui-tiet-kiem-ngan-hang-vietcombank",
+   "field": "title",
+   "find": "Lãi suất gửi tiết kiệm ngân hàng Vietcombank [10/2026]",
+   "replace": "Lãi suất gửi tiết kiệm ngân hàng Vietcombank [11/2026]",
+   "sources": [
+    "https://vietnambiz.vn/lai-suat-ngan-hang-hom-nay-211-nhom-big4-bidv-agribank-vietcombank-vietinbank-dien-bien-ra-sao-202611210527213.htm"
+   ]
+  },
+  {
+   "slug": "lai-suat-gui-tiet-kiem-ngan-hang-vietcombank",
+   "field": "meta",
+   "find": "",
+   "replace": "Lãi suất tiết kiệm Vietcombank tháng 11/2026: kỳ hạn 12 tháng 5,4%/năm, 24 tháng 5,5%/năm sau đợt giảm ngày 20/10. Bảng tại quầy, online và cách tính tiền lãi.",
+   "sources": [
+    "https://cafef.vn/sang-20-10-lai-suat-tiet-kiem-dong-loat-giam-tai-vietcombank-vietinbank-va-hang-chuc-ngan-hang-tu-nhan-188261020084623437.chn",
+    "https://vietnambiz.vn/lai-suat-ngan-hang-hom-nay-211-nhom-big4-bidv-agribank-vietcombank-vietinbank-dien-bien-ra-sao-202611210527213.htm"
+   ]
+  },
+  {
+   "slug": "lai-suat-gui-tiet-kiem-ngan-hang-vietcombank",
+   "find": "<p>Trong bối cảnh thị trường tài chính tháng 10/2026 có những biến động mới, Ngân hàng Thương mại Cổ phần Ngoại thương Việt Nam (Vietcombank) đã thực hiện điều chỉnh biểu lãi suất huy động nhằm tối ưu hóa nguồn vốn.</p>",
+   "replace": "<p>Từ ngày 20/10/2026, Ngân hàng Thương mại Cổ phần Ngoại thương Việt Nam (Vietcombank) giảm 0,5 điểm phần trăm lãi suất tiết kiệm tại quầy cho các kỳ hạn từ 6 tháng trở lên, sau chỉ đạo giảm mặt bằng lãi suất của Ngân hàng Nhà nước. Kỳ hạn 12 tháng còn 5,4%/năm. Biểu này giữ nguyên đến ngày 02/11/2026.</p>",
+   "sources": [
+    "https://cafef.vn/sang-20-10-lai-suat-tiet-kiem-dong-loat-giam-tai-vietcombank-vietinbank-va-hang-chuc-ngan-hang-tu-nhan-188261020084623437.chn",
+    "https://vietnambiz.vn/lai-suat-ngan-hang-hom-nay-211-nhom-big4-bidv-agribank-vietcombank-vietinbank-dien-bien-ra-sao-202611210527213.htm"
+   ]
+  },
+  {
+   "slug": "lai-suat-gui-tiet-kiem-ngan-hang-vietcombank",
+   "find": "<p><strong>Bảng lãi suất huy động VND tại quầy (Tháng 10/2026):</strong></p>",
+   "replace": "<p><strong>Bảng lãi suất huy động VND tại quầy (biểu áp dụng từ 20/10/2026, kiểm tra ngày 02/11/2026):</strong></p>",
+   "sources": [
+    "https://cafef.vn/sang-20-10-lai-suat-tiet-kiem-dong-loat-giam-tai-vietcombank-vietinbank-va-hang-chuc-ngan-hang-tu-nhan-188261020084623437.chn",
+    "https://vietnambiz.vn/lai-suat-ngan-hang-hom-nay-211-nhom-big4-bidv-agribank-vietcombank-vietinbank-dien-bien-ra-sao-202611210527213.htm"
+   ]
+  },
+  {
+   "slug": "lai-suat-gui-tiet-kiem-ngan-hang-vietcombank",
+   "find": "<table>\n<tbody>\n<tr><td>Kỳ hạn</td><td>Lãi suất (%/năm)</td></tr>\n<tr><td>1 tháng</td><td>2,1%</td></tr>\n<tr><td>3 tháng</td><td>2,4%</td></tr>\n<tr><td>6 tháng</td><td>3,5%</td></tr>\n<tr><td>9 tháng</td><td>3,5%</td></tr>\n<tr><td>12 tháng</td><td>5,9%</td></tr>\n<tr><td>24 tháng</td><td>6,0%</td></tr></tbody></table>",
+   "replace": "<table>\n<tbody>\n<tr><td>Kỳ hạn</td><td>Lãi suất (%/năm)</td></tr>\n<tr><td>1 tháng</td><td>2,1%</td></tr>\n<tr><td>3 tháng</td><td>2,4%</td></tr>\n<tr><td>6 tháng</td><td>3,0%</td></tr>\n<tr><td>9 tháng</td><td>3,0%</td></tr>\n<tr><td>12 tháng</td><td>5,4%</td></tr>\n<tr><td>24 tháng</td><td>5,5%</td></tr>\n<tr><td>36 - 60 tháng</td><td>4,8%</td></tr></tbody></table>",
+   "sources": [
+    "https://cafef.vn/sang-20-10-lai-suat-tiet-kiem-dong-loat-giam-tai-vietcombank-vietinbank-va-hang-chuc-ngan-hang-tu-nhan-188261020084623437.chn",
+    "https://vietnambiz.vn/lai-suat-ngan-hang-hom-nay-211-nhom-big4-bidv-agribank-vietcombank-vietinbank-dien-bien-ra-sao-202611210527213.htm"
+   ],
+   "note": "Dán đè cả bảng tại quầy. Đã giảm 0,5 điểm % kỳ hạn 6-60 tháng từ 20/10/2026 (12 tháng 5,9% -> 5,4%; 24 tháng 6,0% -> 5,5%). Thêm dòng 36-60 tháng 4,8%."
+  },
+  {
+   "slug": "lai-suat-gui-tiet-kiem-ngan-hang-vietcombank",
+   "find": "<p>Ở hình thức gửi tại quầy, mức lãi suất cao nhất ghi nhận là <strong>6,0%/năm</strong> áp dụng cho kỳ hạn 12 tháng. Các kỳ hạn ngắn từ 1 đến 3 tháng dao động trong khoảng 2,1% - 2,4%/năm, phù hợp cho nhu cầu tích lũy ngắn hạn với tính an toàn tuyệt đối.</p>",
+   "replace": "<p>Ở hình thức gửi tại quầy, mức lãi suất cao nhất là <strong>5,5%/năm</strong> cho kỳ hạn 24 tháng. Kỳ hạn 12 tháng còn 5,4%/năm, thấp hơn 0,5 điểm phần trăm so với trước ngày 20/10/2026. Các kỳ hạn ngắn từ 1 đến 3 tháng giữ nguyên 2,1% - 2,4%/năm, phù hợp cho nhu cầu tích lũy ngắn hạn.</p>",
+   "sources": [
+    "https://cafef.vn/sang-20-10-lai-suat-tiet-kiem-dong-loat-giam-tai-vietcombank-vietinbank-va-hang-chuc-ngan-hang-tu-nhan-188261020084623437.chn",
+    "https://vietnambiz.vn/lai-suat-ngan-hang-hom-nay-211-nhom-big4-bidv-agribank-vietcombank-vietinbank-dien-bien-ra-sao-202611210527213.htm"
+   ]
+  },
+  {
+   "slug": "lai-suat-gui-tiet-kiem-ngan-hang-vietcombank",
+   "find": "<p><strong>Bảng lãi suất huy động VND trực tuyến (tháng 10/2026):</strong></p>",
+   "replace": "<p><strong>Bảng lãi suất huy động VND trực tuyến (biểu niêm yết, kiểm tra ngày 02/11/2026):</strong></p>",
+   "sources": [
+    "https://vietnambiz.vn/lai-suat-ngan-hang-hom-nay-211-nhom-big4-bidv-agribank-vietcombank-vietinbank-dien-bien-ra-sao-202611210527213.htm"
+   ]
+  },
+  {
+   "slug": "lai-suat-gui-tiet-kiem-ngan-hang-vietcombank",
+   "find": "<table>\n<tbody>\n<tr><td>Kỳ hạn</td><td>Lãi suất (%/năm)</td></tr>\n<tr><td>1 tháng</td><td>2,1%</td></tr>\n<tr><td>3 tháng</td><td>2,4%</td></tr>\n<tr><td>6 tháng</td><td>3,4%</td></tr>\n<tr><td>9 tháng</td><td>3,4%</td></tr>\n<tr><td>12 tháng</td><td>4,5%</td></tr>\n<tr><td>24 tháng</td><td>4,5%</td></tr></tbody></table>",
+   "replace": "<table>\n<tbody>\n<tr><td>Kỳ hạn</td><td>Lãi suất (%/năm)</td></tr>\n<tr><td>1 tháng</td><td>2,1%</td></tr>\n<tr><td>3 tháng</td><td>2,4%</td></tr>\n<tr><td>6 tháng</td><td>3,0%</td></tr>\n<tr><td>9 tháng</td><td>3,0%</td></tr>\n<tr><td>12 tháng</td><td>5,4%</td></tr>\n<tr><td>24 tháng</td><td>5,5%</td></tr></tbody></table>",
+   "sources": [
+    "https://vietnambiz.vn/lai-suat-ngan-hang-hom-nay-211-nhom-big4-bidv-agribank-vietcombank-vietinbank-dien-bien-ra-sao-202611210527213.htm",
+    "https://vnexpress.net/lai-suat-tiet-kiem-the-nao-sau-chi-dao-cua-ngan-hang-nha-nuoc-5136844.html"
+   ],
+   "note": "Dán đè cả bảng online. Biểu niêm yết online bằng tại quầy theo Vietnambiz 02/11/2026; VnExpress 27/10 cũng ghi biểu online niêm yết 6-12 tháng là 3%-5,4%. Lưu ý CafeF 30/10 và VietNamNet 31/10 ghi Vietcombank online 6,6% (6 tháng)/6,8% (12 tháng): theo VnExpress đây là lãi suất thực tế qua app, không phải biểu niêm yết. Nên mở VCB Digibank đối chiếu trước khi đăng."
+  },
+  {
+   "slug": "lai-suat-gui-tiet-kiem-ngan-hang-vietcombank",
+   "find": "<p>Dữ liệu cho thấy trong tháng 10/2026, Vietcombank áp dụng mức lãi suất tương đồng giữa kênh trực tuyến và kênh truyền thống. Tuy nhiên, ưu điểm của gửi tiền online là giúp khách hàng quản lý dòng tiền hiệu quả hơn thông qua các tính năng tự động tái tục hoặc nhận lãi định kỳ qua tài khoản thanh toán.</p>",
+   "replace": "<p>Theo biểu niêm yết ngày 02/11/2026, Vietcombank áp dụng cùng mức lãi suất cho kênh trực tuyến và tại quầy ở các kỳ hạn 1-24 tháng. VnExpress (27/10/2026) ghi nhận khách gửi từ 3 triệu đồng trên ứng dụng có thể nhận lãi suất thực tế tới 6,8%/năm, tùy chương trình từng thời điểm. Bạn nên xem mức áp dụng trên VCB Digibank trước khi gửi. Gửi online còn giúp bạn quản lý dòng tiền qua tính năng tự động tái tục hoặc nhận lãi định kỳ về tài khoản thanh toán.</p>",
+   "sources": [
+    "https://vietnambiz.vn/lai-suat-ngan-hang-hom-nay-211-nhom-big4-bidv-agribank-vietcombank-vietinbank-dien-bien-ra-sao-202611210527213.htm",
+    "https://vnexpress.net/lai-suat-tiet-kiem-the-nao-sau-chi-dao-cua-ngan-hang-nha-nuoc-5136844.html"
+   ],
+   "note": "Mức 6,8% là lãi suất thực tế qua app do VnExpress khảo sát, không phải biểu niêm yết."
+  },
+  {
+   "slug": "lai-suat-gui-tiet-kiem-ngan-hang-vietcombank",
+   "find": "<p><strong>Ví dụ thực tế:</strong> Khi gửi tiết kiệm 1 tỷ VNĐ kỳ hạn 12 tháng với lãi suất 5,2%/năm, lợi nhuận dự kiến nhận được khi đáo hạn là: (1.000.000.000 x 5,2%) = <strong>52.000.000 VNĐ</strong>.</p>",
+   "replace": "<p><strong>Ví dụ thực tế:</strong> Khi gửi tiết kiệm 1 tỷ VNĐ kỳ hạn 12 tháng với lãi suất 5,4%/năm (biểu từ 20/10/2026), tiền lãi nhận được khi đáo hạn là: (1.000.000.000 x 5,4%) = <strong>54.000.000 VNĐ</strong>.</p>",
+   "sources": [
+    "https://vietnambiz.vn/lai-suat-ngan-hang-hom-nay-211-nhom-big4-bidv-agribank-vietcombank-vietinbank-dien-bien-ra-sao-202611210527213.htm"
+   ]
+  },
+  {
+   "slug": "lai-suat-gui-tiet-kiem-ngan-hang-vietcombank",
+   "find": "<p><i>Lưu ý: Thông tin lãi suất trên được tổng hợp dựa trên dữ liệu tháng 10/2026 và có thể thay đổi",
+   "replace": "<p><i>Lưu ý: Thông tin lãi suất trên được tổng hợp theo biểu Vietcombank áp dụng từ ngày 20/10/2026, kiểm tra lại ngày 02/11/2026, và có thể thay đổi",
+   "sources": [
+    "https://cafef.vn/sang-20-10-lai-suat-tiet-kiem-dong-loat-giam-tai-vietcombank-vietinbank-va-hang-chuc-ngan-hang-tu-nhan-188261020084623437.chn",
+    "https://vietnambiz.vn/lai-suat-ngan-hang-hom-nay-211-nhom-big4-bidv-agribank-vietcombank-vietinbank-dien-bien-ra-sao-202611210527213.htm"
+   ]
+  },
+  {
+   "slug": "lai-suat-gui-tiet-kiem-ngan-hang-vietinbank",
+   "field": "title",
+   "find": "Lãi suất gửi tiết kiệm ngân hàng VietinBank tháng 10/2026",
+   "replace": "Lãi suất gửi tiết kiệm ngân hàng VietinBank tháng 11/2026",
+   "sources": [
+    "https://www.vietinbank.vn/ca-nhan/cong-cu-tien-ich/lai-suat-khcn"
+   ]
+  },
+  {
+   "slug": "lai-suat-gui-tiet-kiem-ngan-hang-vietinbank",
+   "field": "meta",
+   "find": "",
+   "replace": "Lãi suất tiết kiệm VietinBank tháng 11/2026: tại quầy 12 tháng 5,4%/năm, từ 24 tháng 5,5%/năm sau đợt giảm 20/10. Xem bảng tại quầy, online và cách tính lãi.",
+   "sources": [
+    "https://www.vietinbank.vn/ca-nhan/cong-cu-tien-ich/lai-suat-khcn",
+    "https://cafef.vn/sang-20-10-lai-suat-tiet-kiem-dong-loat-giam-tai-vietcombank-vietinbank-va-hang-chuc-ngan-hang-tu-nhan-188261020084623437.chn"
+   ]
+  },
+  {
+   "slug": "lai-suat-gui-tiet-kiem-ngan-hang-vietinbank",
+   "find": "Bước sang tháng 10/2026, VietinBank đã có những điều chỉnh mới về biểu lãi suất huy động nhằm gia tăng lợi ích cho khách hàng cá nhân.</p>",
+   "replace": "Từ ngày 20/10/2026, VietinBank giảm 0,5 điểm phần trăm lãi suất tiết kiệm tại quầy cho các kỳ hạn từ 6 tháng trở lên. Biểu mới vẫn được áp dụng khi DSC kiểm tra ngày 04/11/2026.</p>",
+   "sources": [
+    "https://cafef.vn/sang-20-10-lai-suat-tiet-kiem-dong-loat-giam-tai-vietcombank-vietinbank-va-hang-chuc-ngan-hang-tu-nhan-188261020084623437.chn",
+    "https://www.vietinbank.vn/ca-nhan/cong-cu-tien-ich/lai-suat-khcn"
+   ]
+  },
+  {
+   "slug": "lai-suat-gui-tiet-kiem-ngan-hang-vietinbank",
+   "find": "<p><strong>Bảng Lãi suất gửi tiết kiệm ngân hàng VietinBank tại quầy (Tháng 10/2026):</strong></p>",
+   "replace": "<p><strong>Bảng Lãi suất gửi tiết kiệm ngân hàng VietinBank tại quầy (áp dụng từ 20/10/2026, kiểm tra ngày 04/11/2026):</strong></p>",
+   "sources": [
+    "https://www.vietinbank.vn/ca-nhan/cong-cu-tien-ich/lai-suat-khcn",
+    "https://cafef.vn/sang-20-10-lai-suat-tiet-kiem-dong-loat-giam-tai-vietcombank-vietinbank-va-hang-chuc-ngan-hang-tu-nhan-188261020084623437.chn"
+   ]
+  },
+  {
+   "slug": "lai-suat-gui-tiet-kiem-ngan-hang-vietinbank",
+   "find": "<table>\n<tbody>\n<tr><td>Kỳ hạn</td><td>Lãi suất (%/năm)</td></tr>\n<tr><td>Dưới 1 tháng</td><td>0,2%</td></tr>\n<tr><td>1 tháng</td><td>2,1%</td></tr>\n<tr><td>3 tháng</td><td>2,4%</td></tr>\n<tr><td>6 - 11 tháng</td><td>3,5%</td></tr>\n<tr><td><strong>Từ 12 tháng trở lên</strong></td><td><strong>5,9 - 6%</strong></td></tr></tbody></table>",
+   "replace": "<table>\n<tbody>\n<tr><td>Kỳ hạn</td><td>Lãi suất (%/năm)</td></tr>\n<tr><td>Không kỳ hạn</td><td>0,1%</td></tr>\n<tr><td>Dưới 1 tháng</td><td>0,2%</td></tr>\n<tr><td>1 - dưới 3 tháng</td><td>2,1%</td></tr>\n<tr><td>3 - dưới 6 tháng</td><td>2,4%</td></tr>\n<tr><td>6 - dưới 12 tháng</td><td>3,0%</td></tr>\n<tr><td>12 - dưới 24 tháng</td><td>5,4%</td></tr>\n<tr><td><strong>Từ 24 tháng trở lên</strong></td><td><strong>5,5%</strong></td></tr></tbody></table>",
+   "sources": [
+    "https://www.vietinbank.vn/ca-nhan/cong-cu-tien-ich/lai-suat-khcn",
+    "https://cafef.vn/sang-20-10-lai-suat-tiet-kiem-dong-loat-giam-tai-vietcombank-vietinbank-va-hang-chuc-ngan-hang-tu-nhan-188261020084623437.chn",
+    "https://vietnambiz.vn/lai-suat-ngan-hang-hom-nay-211-nhom-big4-bidv-agribank-vietcombank-vietinbank-dien-bien-ra-sao-202611210527213.htm"
+   ],
+   "note": "Dán đè cả bảng tại quầy. Số lấy từ trang lãi suất KHCN của vietinbank.vn (xem ngày 04/11/2026), khớp CafeF 20/10 và Vietnambiz 02/11."
+  },
+  {
+   "slug": "lai-suat-gui-tiet-kiem-ngan-hang-vietinbank",
+   "find": "<p>Ở hình thức này, lãi suất gửi tiết kiệm ngân hàng VietinBank cao nhất ghi nhận là <strong>6%/năm</strong> áp dụng cho các kỳ hạn dài từ 24 tháng trở lên. Nhóm kỳ hạn trung hạn từ 12 tháng vẫn duy trì mức ổn định 5,2%/năm, đáp ứng kỳ vọng của nhóm khách hàng ưu tiên sự ổn định và an toàn.</p>",
+   "replace": "<p>Ở hình thức này, lãi suất gửi tiết kiệm ngân hàng VietinBank cao nhất là <strong>5,5%/năm</strong> cho các kỳ hạn từ 24 tháng trở lên. Kỳ hạn 12 đến dưới 24 tháng ở mức 5,4%/năm. Cả hai đều thấp hơn 0,5 điểm phần trăm so với trước ngày 20/10/2026.</p>",
+   "sources": [
+    "https://www.vietinbank.vn/ca-nhan/cong-cu-tien-ich/lai-suat-khcn",
+    "https://cafef.vn/sang-20-10-lai-suat-tiet-kiem-dong-loat-giam-tai-vietcombank-vietinbank-va-hang-chuc-ngan-hang-tu-nhan-188261020084623437.chn"
+   ]
+  },
+  {
+   "slug": "lai-suat-gui-tiet-kiem-ngan-hang-vietinbank",
+   "find": "Theo ghi nhận trong tháng 10/2026, lãi suất gửi tiết kiệm trực tuyến ngân hàng Vietinbank thường có xu hướng ưu đãi hơn ở các kỳ hạn ngắn so với gửi tại quầy.</p>",
+   "replace": "Theo khảo sát lãi suất trực tuyến của CafeF ngày 30/10/2026, mức online của VietinBank cao hơn tại quầy ở mọi kỳ hạn được khảo sát. Đợt giảm ngày 20/10 chỉ áp dụng tại quầy, kênh online giữ nguyên (VietNamNet, 31/10/2026).</p>",
+   "sources": [
+    "https://cafef.vn/lai-suat-ngay-30-10-tai-agribank-vietcombank-bidv-vietinbank-mb-vpbank-techcombank-sacombank-hdbank-18826103008064422.chn",
+    "https://vietnamnet.vn/29-ngan-hang-giam-lai-suat-huy-dong-co-noi-giam-toi-0-7-diem-phan-tram-2570154.html"
+   ]
+  },
+  {
+   "slug": "lai-suat-gui-tiet-kiem-ngan-hang-vietinbank",
+   "find": "<table>\n<tbody>\n<tr><td>Kỳ hạn Online</td><td>Lãi suất (%/năm)</td></tr>\n<tr><td>1 tháng</td><td>2,4%</td></tr>\n<tr><td>3 tháng</td><td>2,8%</td></tr>\n<tr><td><strong>6 tháng</strong></td><td><strong>3,9%</strong></td></tr>\n<tr><td>9 tháng</td><td>3,9%</td></tr>\n<tr><td><strong>12 tháng</strong></td><td><strong>4,7%</strong></td></tr></tbody></table>",
+   "replace": "<table>\n<tbody>\n<tr><td>Kỳ hạn Online</td><td>Lãi suất (%/năm)</td></tr>\n<tr><td>3 tháng</td><td>4,75%</td></tr>\n<tr><td><strong>6 tháng</strong></td><td><strong>6,6%</strong></td></tr>\n<tr><td>9 tháng</td><td>6,6%</td></tr>\n<tr><td><strong>12 tháng</strong></td><td><strong>6,8%</strong></td></tr>\n<tr><td>18 tháng</td><td>6,8%</td></tr></tbody></table>",
+   "sources": [
+    "https://cafef.vn/lai-suat-ngay-30-10-tai-agribank-vietcombank-bidv-vietinbank-mb-vpbank-techcombank-sacombank-hdbank-18826103008064422.chn",
+    "https://vietnamnet.vn/29-ngan-hang-giam-lai-suat-huy-dong-co-noi-giam-toi-0-7-diem-phan-tram-2570154.html"
+   ],
+   "note": "Dán đè cả bảng online. Số từ bảng khảo sát lãi suất trực tuyến CafeF 30/10/2026 và VietNamNet 31/10/2026; không có nguồn chính thức cho kỳ hạn 1 tháng nên bỏ dòng này. Chưa xác minh được trên iPay: VnExpress 27/10 cho biết với Vietcombank, mức 6,8% là lãi suất thực tế qua app còn biểu online niêm yết bằng tại quầy, VietinBank có thể tương tự. Nên mở iPay đối chiếu trước khi đăng."
+  },
+  {
+   "slug": "lai-suat-gui-tiet-kiem-ngan-hang-vietinbank",
+   "find": "<p><strong>Nhận xét:</strong> Việc sử dụng kênh online tại Vietinbank giúp khách hàng hưởng mức lãi suất tiết kiệm cao hơn đáng kể ở các kỳ hạn từ 1 đến 9 tháng.",
+   "replace": "<p><strong>Nhận xét:</strong> Theo số liệu khảo sát cuối tháng 10/2026, kênh online tại Vietinbank cao hơn tại quầy 1,4 - 3,6 điểm phần trăm. Chênh lệch lớn nhất ở kỳ hạn 6-9 tháng: 6,6% so với 3,0%.",
+   "sources": [
+    "https://cafef.vn/lai-suat-ngay-30-10-tai-agribank-vietcombank-bidv-vietinbank-mb-vpbank-techcombank-sacombank-hdbank-18826103008064422.chn",
+    "https://www.vietinbank.vn/ca-nhan/cong-cu-tien-ich/lai-suat-khcn"
+   ]
+  },
+  {
+   "slug": "lai-suat-gui-tiet-kiem-ngan-hang-vietinbank",
+   "find": "mức sinh lời từ 5,2% - 5,3% chỉ mang tính chất bảo toàn vốn",
+   "replace": "mức sinh lời 5,4% - 5,5%/năm tại quầy (biểu từ 20/10/2026) chỉ mang tính chất bảo toàn vốn",
+   "sources": [
+    "https://www.vietinbank.vn/ca-nhan/cong-cu-tien-ich/lai-suat-khcn"
+   ]
+  },
+  {
+   "slug": "lai-suat-gui-tiet-kiem-ngan-hang-vietinbank",
+   "find": "danh mục cổ phiếu tiềm năng nhất quý 1/2026.</p>",
+   "replace": "danh mục cổ phiếu tiềm năng nhất quý 4/2026.</p>",
+   "sources": [],
+   "note": "Mốc quý 1/2026 đã cũ, đổi sang quý hiện tại."
+  },
+  {
+   "slug": "lai-suat-gui-tiet-kiem-ngan-hang-vietinbank",
+   "find": "<p><i><strong>Lưu ý: Thông tin lãi suất được tổng hợp dựa trên dữ liệu tháng 10/2026 và chỉ mang tính chất tham khảo.",
+   "replace": "<p><i><strong>Lưu ý: Biểu lãi suất tại quầy được kiểm tra trên website VietinBank ngày 04/11/2026 (áp dụng từ 20/10/2026), lãi suất online lấy theo khảo sát ngày 30/10/2026, chỉ mang tính chất tham khảo.",
+   "sources": [
+    "https://www.vietinbank.vn/ca-nhan/cong-cu-tien-ich/lai-suat-khcn",
+    "https://cafef.vn/lai-suat-ngay-30-10-tai-agribank-vietcombank-bidv-vietinbank-mb-vpbank-techcombank-sacombank-hdbank-18826103008064422.chn"
+   ]
+  },
+  {
+   "slug": "lai-suat-gui-tiet-kiem-ngan-hang-vpbank",
+   "field": "title",
+   "find": "Lãi suất gửi tiết kiệm ngân hàng VPBank tháng 10/2026",
+   "replace": "Lãi suất gửi tiết kiệm ngân hàng VPBank tháng 11/2026",
+   "sources": [
+    "https://baolamdong.vn/lai-suat-ngan-hang-ngay-26102026-vpbank-ha-04-diem-phan-tram-o-cac-ky-han-6-13-thang-471425.html"
+   ]
+  },
+  {
+   "slug": "lai-suat-gui-tiet-kiem-ngan-hang-vpbank",
+   "field": "meta",
+   "find": "",
+   "replace": "Lãi suất tiết kiệm VPBank tháng 11/2026: online kỳ hạn 12 tháng 6,7%/năm, cao nhất 7,4%/năm (15-18 tháng) sau hai đợt giảm cuối tháng 10. Xem bảng chi tiết.",
+   "sources": [
+    "https://baolamdong.vn/lai-suat-ngan-hang-ngay-26102026-vpbank-ha-04-diem-phan-tram-o-cac-ky-han-6-13-thang-471425.html",
+    "https://vietnamnet.vn/29-ngan-hang-giam-lai-suat-huy-dong-co-noi-giam-toi-0-7-diem-phan-tram-2570154.html"
+   ]
+  },
+  {
+   "slug": "lai-suat-gui-tiet-kiem-ngan-hang-vpbank",
+   "find": "Trong tháng 10/2026, VPBank tiếp tục duy trì mức lãi suất hấp dẫn, đặc biệt là sự ưu tiên dành cho nhóm khách hàng sử dụng ứng dụng VPBank NEO.</p>",
+   "replace": "Cuối tháng 10/2026, VPBank giảm lãi suất tiết kiệm online hai đợt: ngày 20/10 giảm 0,5 điểm phần trăm kỳ hạn 15-18 tháng, ngày 26/10 giảm 0,4 điểm phần trăm kỳ hạn 6-13 tháng. Mức online cao nhất vẫn là 7,4%/năm.</p>",
+   "sources": [
+    "https://cafef.vn/vpbank-dong-loat-giam-lai-suat-cho-vay-va-huy-dong-188261021083511993.chn",
+    "https://baolamdong.vn/lai-suat-ngan-hang-ngay-26102026-vpbank-ha-04-diem-phan-tram-o-cac-ky-han-6-13-thang-471425.html"
+   ]
+  },
+  {
+   "slug": "lai-suat-gui-tiet-kiem-ngan-hang-vpbank",
+   "find": "<strong>Lãi suất gửi tiết kiệm ngân hàng VPBank hôm nay (cập nhật tháng 10/2026)</strong></h2>",
+   "replace": "<strong>Lãi suất gửi tiết kiệm ngân hàng VPBank hôm nay (cập nhật tháng 11/2026)</strong></h2>",
+   "sources": [
+    "https://baolamdong.vn/lai-suat-ngan-hang-ngay-26102026-vpbank-ha-04-diem-phan-tram-o-cac-ky-han-6-13-thang-471425.html",
+    "https://cafef.vn/lai-suat-ngay-30-10-tai-agribank-vietcombank-bidv-vietinbank-mb-vpbank-techcombank-sacombank-hdbank-18826103008064422.chn"
+   ],
+   "note": "Đổi heading: kiểm tra mục lục/anchor id cũ trên CMS. id hiện tại còn chứa 'th-ng-5-2026'."
+  },
+  {
+   "slug": "lai-suat-gui-tiet-kiem-ngan-hang-vpbank",
+   "find": "<p>VPBank áp dụng lãi suất bậc thang theo 5 hạn mức tiền gửi. Dưới đây là bảng lãi suất tham khảo cho kênh Online:</p>",
+   "replace": "<p>Biểu online dành cho khách hàng cá nhân chia theo số dư dưới 10 tỷ đồng và từ 10 tỷ đồng. Bảng dưới là biểu áp dụng từ ngày 26/10/2026, đối chiếu với khảo sát của CafeF ngày 30/10/2026:</p>",
+   "sources": [
+    "https://baolamdong.vn/lai-suat-ngan-hang-ngay-26102026-vpbank-ha-04-diem-phan-tram-o-cac-ky-han-6-13-thang-471425.html",
+    "https://cafef.vn/lai-suat-ngay-30-10-tai-agribank-vietcombank-bidv-vietinbank-mb-vpbank-techcombank-sacombank-hdbank-18826103008064422.chn"
+   ]
+  },
+  {
+   "slug": "lai-suat-gui-tiet-kiem-ngan-hang-vpbank",
+   "find": "<table>\n<thead>\n<tr><th style=\"text-align:left;\">Kỳ hạn</th><th style=\"text-align:center;\">Dưới 1 tỷ (%/năm)</th><th style=\"text-align:center;\">1 tỷ - dưới 3 tỷ (%/năm)</th><th style=\"text-align:center;\">3 tỷ - dưới 10 tỷ (%/năm)</th><th style=\"text-align:center;\">Trên 10 tỷ (%/năm)</th></tr></thead>\n<tbody>\n<tr><td style=\"text-align:left;\">1 tháng</td><td style=\"text-align:center;\">2.6%</td><td style=\"text-align:center;\">2.7%</td><td style=\"text-align:center;\">2.8%</td><td style=\"text-align:center;\">2.9%</td></tr>\n<tr><td style=\"text-align:left;\">6 tháng</td><td style=\"text-align:center;\">4.6%</td><td style=\"text-align:center;\">4.7%</td><td style=\"text-align:center;\">4.8%</td><td style=\"text-align:center;\">4.9%</td></tr>\n<tr><td style=\"text-align:left;\">12 tháng</td><td style=\"text-align:center;\">5.0%</td><td style=\"text-align:center;\">5.1%</td><td style=\"text-align:center;\">5.2%</td><td style=\"text-align:center;\">5.3%</td></tr>\n<tr><td style=\"text-align:left;\">24 tháng</td><td style=\"text-align:center;\">5.2%</td><td style=\"text-align:center;\"><strong>5.3%</strong></td><td style=\"text-align:center;\"><strong>5.4%</strong></td><td style=\"text-align:center;\"><strong>5.4%</strong></td></tr></tbody></table>",
+   "replace": "<table>\n<thead>\n<tr><th style=\"text-align:left;\">Kỳ hạn</th><th style=\"text-align:center;\">Dưới 10 tỷ (%/năm)</th><th style=\"text-align:center;\">Từ 10 tỷ (%/năm)</th></tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align:left;\">1 - 5 tháng</td><td style=\"text-align:center;\">4,75%</td><td style=\"text-align:center;\">4,75%</td></tr>\n<tr><td style=\"text-align:left;\">6 - 11 tháng</td><td style=\"text-align:center;\">6,6%</td><td style=\"text-align:center;\">7,0%</td></tr>\n<tr><td style=\"text-align:left;\">12 - 13 tháng</td><td style=\"text-align:center;\">6,7%</td><td style=\"text-align:center;\">7,1%</td></tr>\n<tr><td style=\"text-align:left;\">15 - 18 tháng</td><td style=\"text-align:center;\"><strong>7,4%</strong></td><td style=\"text-align:center;\"><strong>7,4%</strong></td></tr>\n<tr><td style=\"text-align:left;\">24 tháng</td><td style=\"text-align:center;\">7,1%</td><td style=\"text-align:center;\">7,1%</td></tr>\n<tr><td style=\"text-align:left;\">36 tháng</td><td style=\"text-align:center;\">6,0%</td><td style=\"text-align:center;\">6,0%</td></tr></tbody></table>",
+   "sources": [
+    "https://baolamdong.vn/lai-suat-ngan-hang-ngay-26102026-vpbank-ha-04-diem-phan-tram-o-cac-ky-han-6-13-thang-471425.html",
+    "https://cafef.vn/lai-suat-ngay-30-10-tai-agribank-vietcombank-bidv-vietinbank-mb-vpbank-techcombank-sacombank-hdbank-18826103008064422.chn",
+    "https://vietnamnet.vn/29-ngan-hang-giam-lai-suat-huy-dong-co-noi-giam-toi-0-7-diem-phan-tram-2570154.html"
+   ],
+   "note": "Dán đè cả bảng online (cấu trúc mới 2 hạn mức thay cho 4 hạn mức cũ). Kỳ hạn 1-5, 6-11, 12-13, 15-18 tháng khớp 2 nguồn (Báo Lâm Đồng 26/10, CafeF 30/10); 24 tháng 7,1% và 36 tháng 6,0% chỉ có từ Báo Lâm Đồng. Báo Lâm Đồng ghi các kỳ hạn ngoài 6-13 tháng của hạn mức từ 10 tỷ bằng hạn mức dưới 10 tỷ. Nên đối chiếu biểu PDF trên vpbank.com.vn."
+  },
+  {
+   "slug": "lai-suat-gui-tiet-kiem-ngan-hang-vpbank",
+   "find": "<p>Đối với hình thức gửi tiền truyền thống tại chi nhánh, lãi suất thường thấp hơn kênh online khoảng 0.1% - 0.2%.</p>",
+   "replace": "<p>Đối với hình thức gửi tiền truyền thống tại chi nhánh, lãi suất thường thấp hơn kênh online. Bảng dưới để bạn tham khảo, hãy hỏi chi nhánh mức áp dụng trước khi gửi.</p>",
+   "sources": [],
+   "note": "KHÔNG xác minh được biểu tại quầy VPBank sau đợt giảm 20/10 và 26/10/2026 (báo chỉ đăng biểu online). Bảng tại quầy bên dưới giữ nguyên số cũ (12 tháng 4,8-4,9%), lệch xa biểu online 6,7%. Biên tập viên nên lấy biểu PDF tại quầy trên vpbank.com.vn (Tài liệu biểu mẫu > Lãi suất huy động > Khách hàng cá nhân > 2026) để thay bảng."
+  },
+  {
+   "slug": "lai-suat-gui-tiet-kiem-ngan-hang-vpbank",
+   "find": "<li><strong>Gửi tại quầy:</strong> Lãi suất thường thấp hơn kênh Online từ <strong>0.1% - 0.2%</strong> ở hầu hết các kỳ hạn.</li>",
+   "replace": "<li><strong>Gửi tại quầy:</strong> Lãi suất thường thấp hơn kênh Online ở hầu hết các kỳ hạn. Mức chênh cụ thể bạn nên hỏi chi nhánh hoặc hotline.</li>",
+   "sources": [],
+   "note": "Bỏ mức chênh 0,1-0,2% vì chưa xác minh được biểu tại quầy mới."
+  },
+  {
+   "slug": "lai-suat-gui-tiet-kiem-ngan-hang-vpbank",
+   "find": "<li><strong>Lãi suất cao nhất:</strong> Ngưỡng <strong>5.4%/năm</strong> đang là mức trần huy động cho các khoản tiền gửi lớn ở kỳ hạn dài (từ 24 tháng trở lên).</li>",
+   "replace": "<li><strong>Lãi suất cao nhất:</strong> <strong>7,4%/năm</strong> là mức cao nhất trong biểu online áp dụng từ ngày 26/10/2026, cho kỳ hạn 15-18 tháng.</li>",
+   "sources": [
+    "https://baolamdong.vn/lai-suat-ngan-hang-ngay-26102026-vpbank-ha-04-diem-phan-tram-o-cac-ky-han-6-13-thang-471425.html",
+    "https://vietnamnet.vn/29-ngan-hang-giam-lai-suat-huy-dong-co-noi-giam-toi-0-7-diem-phan-tram-2570154.html"
+   ]
+  },
+  {
+   "slug": "lai-suat-gui-tiet-kiem-ngan-hang-vpbank",
+   "find": "<p>Tuy nhiên, với mức lãi suất tối đa khoảng 5.4%,",
+   "replace": "<p>Tuy nhiên, với mức lãi suất online tối đa 7,4%/năm (biểu từ 26/10/2026),",
+   "sources": [
+    "https://baolamdong.vn/lai-suat-ngan-hang-ngay-26102026-vpbank-ha-04-diem-phan-tram-o-cac-ky-han-6-13-thang-471425.html"
+   ]
+  },
+  {
+   "slug": "lai-suat-gui-tiet-kiem-ngan-hang-vpbank",
+   "find": "Trong khi lãi suất tiết kiệm chỉ dừng ở mức khoảng 5%, thị trường chứng khoán với sự góp mặt của các doanh nghiệp đầu ngành thường mang lại lợi suất từ <strong>12 - 18%/năm</strong> trong dài hạn. Khoảng chênh lệch 7-13% mỗi năm này",
+   "replace": "Trong khi lãi suất tiết kiệm online tại VPBank ở mức 6,6-7,4%/năm cho kỳ hạn 6-18 tháng (biểu từ 26/10/2026), thị trường chứng khoán với sự góp mặt của các doanh nghiệp đầu ngành thường mang lại lợi suất từ <strong>12 - 18%/năm</strong> trong dài hạn. Khoảng chênh lệch 5-11 điểm phần trăm mỗi năm này",
+   "sources": [
+    "https://baolamdong.vn/lai-suat-ngan-hang-ngay-26102026-vpbank-ha-04-diem-phan-tram-o-cac-ky-han-6-13-thang-471425.html"
+   ],
+   "note": "Chỉ cập nhật lãi suất VPBank và mức chênh; giữ nguyên mức 12-18%/năm của bài gốc (không có nguồn, nên cân nhắc dẫn nguồn)."
+  },
+  {
+   "slug": "lai-suat-ngan-hang-dong-a",
+   "field": "title",
+   "find": "Lãi suất gửi tiết kiệm ngân hàng Đông Á tháng 10/2026",
+   "replace": "Lãi suất gửi tiết kiệm ngân hàng Đông Á tháng 11/2026",
+   "sources": [
+    "https://vikkibank.vn/lai-suat-tiet-kiem-bang-vnd/"
+   ]
+  },
+  {
+   "slug": "lai-suat-ngan-hang-dong-a",
+   "field": "meta",
+   "find": "",
+   "replace": "Lãi suất tiết kiệm Đông Á (Vikki Bank) tháng 11/2026: tại quầy 4,7-6,1%/năm theo biểu từ 03/11, online cao nhất 6,2%/năm kỳ hạn 13 tháng. Kèm cách tính lãi.",
+   "sources": [
+    "https://vikkibank.vn/lai-suat-tiet-kiem-bang-vnd/",
+    "https://vikkibank.vn/lai-suat-huy-dong-tiet-kiem-bang-vnd-online/"
+   ]
+  },
+  {
+   "slug": "lai-suat-ngan-hang-dong-a",
+   "find": "<p>Bước sang tháng 10/2026, biểu lãi suất huy động tại Vikki Bank ghi nhận những điều chỉnh tăng hấp dẫn, đặc biệt là các chương trình ưu đãi cho tiền gửi online và các khoản tiền lớn.",
+   "replace": "<p>Vikki Bank áp dụng biểu lãi suất tiết kiệm tại quầy mới từ ngày 03/11/2026. Tại quầy, mức cao nhất cho khoản gửi thông thường là 6,10%/năm (kỳ hạn 13 tháng). Kênh online cao hơn, tối đa 6,20%/năm.",
+   "sources": [
+    "https://vikkibank.vn/lai-suat-tiet-kiem-bang-vnd/",
+    "https://vikkibank.vn/lai-suat-huy-dong-tiet-kiem-bang-vnd-online/"
+   ]
+  },
+  {
+   "slug": "lai-suat-ngan-hang-dong-a",
+   "find": "<h2><strong>Lãi suất gửi tiết kiệm Vikki Bank (Đông Á) tại quầy hôm nay (10/2026)</strong></h2>",
+   "replace": "<h2><strong>Lãi suất gửi tiết kiệm Vikki Bank (Đông Á) tại quầy hôm nay (11/2026)</strong></h2>",
+   "sources": [
+    "https://vikkibank.vn/lai-suat-tiet-kiem-bang-vnd/"
+   ],
+   "note": "Đổi heading: kiểm tra mục lục/anchor id cũ trên CMS."
+  },
+  {
+   "slug": "lai-suat-ngan-hang-dong-a",
+   "find": "<p>Trong tháng 10, Vikki Bank duy trì mức lãi suất tại quầy khá cạnh tranh, dao động từ 4,7% đến 6,6%/năm cho các kỳ hạn phổ biến.</p>",
+   "replace": "<p>Theo biểu áp dụng từ ngày 03/11/2026, lãi suất tại quầy của Vikki Bank (trả lãi cuối kỳ, tính trên 365 ngày) dao động từ 4,70% đến 6,10%/năm cho các kỳ hạn từ 1 đến 36 tháng.</p>",
+   "sources": [
+    "https://vikkibank.vn/lai-suat-tiet-kiem-bang-vnd/"
+   ]
+  },
+  {
+   "slug": "lai-suat-ngan-hang-dong-a",
+   "find": "<table>\n<tbody>\n<tr><td>Kỳ hạn</td><td>Trả lãi hàng tháng (%)</td><td>Trả lãi hàng quý (%)</td><td>Trả lãi cuối kỳ (%)</td></tr>\n<tr><td><strong>Không kỳ hạn</strong></td><td>-</td><td>-</td><td>0,50</td></tr>\n<tr><td><strong>1 - 5 tháng</strong></td><td>4,66 - 4,69</td><td>-</td><td><strong>4,70</strong></td></tr>\n<tr><td><strong>6 tháng</strong></td><td>6,32</td><td>6,35</td><td><strong>5,90</strong></td></tr>\n<tr><td><strong>9 tháng</strong></td><td>6,08</td><td>6,11</td><td>5,7</td></tr>\n<tr><td><strong>12 tháng</strong></td><td>6,31</td><td>6,35</td><td><strong>6,0</strong></td></tr>\n<tr><td><strong>13 tháng (Thông thường)</strong></td><td>6,39</td><td>-</td><td><strong>6,10</strong></td></tr>\n<tr><td><strong>13 tháng (Đặc biệt)*</strong></td><td>-</td><td>-</td><td><strong>7,9</strong></td></tr>\n<tr><td><strong>18 - 36 tháng</strong></td><td>5,78 - 6,03</td><td>5,81 - 6,07</td><td>5,80</td></tr></tbody></table>",
+   "replace": "<table>\n<tbody>\n<tr><td>Kỳ hạn</td><td>Trả lãi hàng tháng (%)</td><td>Trả lãi hàng quý (%)</td><td>Trả lãi cuối kỳ (%)</td></tr>\n<tr><td><strong>Không kỳ hạn</strong></td><td>-</td><td>-</td><td>0,50</td></tr>\n<tr><td><strong>1 - 5 tháng</strong></td><td>4,66 - 4,69</td><td>-</td><td><strong>4,70</strong></td></tr>\n<tr><td><strong>6 tháng</strong></td><td>5,83</td><td>5,86</td><td><strong>5,90</strong></td></tr>\n<tr><td><strong>9 tháng</strong></td><td>5,59</td><td>5,62</td><td>5,70</td></tr>\n<tr><td><strong>12 tháng</strong></td><td>5,84</td><td>5,87</td><td><strong>6,00</strong></td></tr>\n<tr><td><strong>13 tháng (Thông thường)</strong></td><td>5,92</td><td>-</td><td><strong>6,10</strong></td></tr>\n<tr><td><strong>13 tháng (Đặc biệt)*</strong></td><td>-</td><td>-</td><td><strong>7,40</strong></td></tr>\n<tr><td><strong>18 - 36 tháng</strong></td><td>5,36 - 5,57</td><td>5,38 - 5,60</td><td>5,80</td></tr></tbody></table>",
+   "sources": [
+    "https://vikkibank.vn/lai-suat-tiet-kiem-bang-vnd/"
+   ],
+   "note": "Dán đè cả bảng tại quầy. Số theo trang 'Lãi suất tiết kiệm bằng VND' trên vikkibank.vn, hiệu lực từ 03/11/2026, cột tính trên 365 ngày. Kỳ hạn 1 tháng chỉ có trả lãi cuối kỳ; khoảng 4,66-4,69 là kỳ hạn 2-5 tháng."
+  },
+  {
+   "slug": "lai-suat-ngan-hang-dong-a",
+   "find": "<p><i>Lưu ý: Mức lãi suất đặc biệt <strong>7,9%/năm</strong> áp dụng cho khoản tiền gửi từ <strong>999 tỷ đồng trở lên</strong>. Đây là mức lãi suất thuộc nhóm cao nhất hệ thống ngân hàng hiện nay.</i></p>",
+   "replace": "<p><i>Lưu ý: Mức lãi suất đặc biệt <strong>7,40%/năm</strong> (kỳ hạn 13 tháng, trả lãi cuối kỳ) áp dụng cho khoản tiền gửi từ <strong>999 tỷ đồng trở lên</strong>, theo biểu từ ngày 03/11/2026. Mức này không cộng thêm các chương trình khuyến mãi khác.</i></p>",
+   "sources": [
+    "https://vikkibank.vn/lai-suat-tiet-kiem-bang-vnd/"
+   ]
+  },
+  {
+   "slug": "lai-suat-ngan-hang-dong-a",
+   "find": "<table>\n<tbody>\n<tr><td>Kỳ hạn Online</td><td>Lãi suất cuối kỳ (%/năm)</td></tr>\n<tr><td>1 tuần</td><td>0,50%</td></tr>\n<tr><td>1 - 3 tháng</td><td>4,70%</td></tr>\n<tr><td><strong>6 tháng</strong></td><td><strong>6,50%</strong></td></tr>\n<tr><td><strong>12 tháng</strong></td><td><strong>6,60%</strong></td></tr>\n<tr><td><strong>13 tháng</strong></td><td><strong>6,70%</strong></td></tr></tbody></table>",
+   "replace": "<table>\n<tbody>\n<tr><td>Kỳ hạn Online</td><td>Lãi suất cuối kỳ (%/năm)</td></tr>\n<tr><td>1 tuần</td><td>0,50%</td></tr>\n<tr><td>1 - 5 tháng</td><td>4,70%</td></tr>\n<tr><td><strong>6 - 11 tháng</strong></td><td><strong>6,00%</strong></td></tr>\n<tr><td><strong>12 tháng</strong></td><td><strong>6,10%</strong></td></tr>\n<tr><td><strong>13 tháng</strong></td><td><strong>6,20%</strong></td></tr>\n<tr><td>15 - 36 tháng</td><td>6,10%</td></tr></tbody></table>",
+   "sources": [
+    "https://vikkibank.vn/lai-suat-huy-dong-tiet-kiem-bang-vnd-online/",
+    "https://vietnamnet.vn/29-ngan-hang-giam-lai-suat-huy-dong-co-noi-giam-toi-0-7-diem-phan-tram-2570154.html",
+    "https://cafef.vn/lai-suat-ngay-30-10-tai-agribank-vietcombank-bidv-vietinbank-mb-vpbank-techcombank-sacombank-hdbank-18826103008064422.chn"
+   ],
+   "note": "Dán đè cả bảng online. Số theo trang 'Lãi suất huy động tiết kiệm bằng VND Online' (sản phẩm Phú Quý, trả lãi cuối kỳ) trên vikkibank.vn, trang ghi hiệu lực từ 02/06/2026; VietNamNet 31/10 và CafeF 30/10/2026 xác nhận 6 tháng 6%, 12 tháng 6,1%, 18 tháng 6,1% không đổi trong tháng 10. Mức cũ 6,5-6,7% trong bài không khớp nguồn nào."
+  },
+  {
+   "slug": "lai-suat-ngan-hang-dong-a",
+   "find": "<p><strong>Nhận xét:</strong> Lãi suất Online tại Vikki Bank cao hơn tại quầy khoảng <strong>0,1% - 0,2%</strong> ở các kỳ hạn chủ chốt như 6 và 12 tháng.",
+   "replace": "<p><strong>Nhận xét:</strong> Lãi suất Online tại Vikki Bank cao hơn tại quầy <strong>0,1 điểm phần trăm</strong> ở kỳ hạn 6, 12 và 13 tháng, và 0,3 điểm phần trăm ở kỳ hạn 15-36 tháng (6,10% so với 5,80%).",
+   "sources": [
+    "https://vikkibank.vn/lai-suat-tiet-kiem-bang-vnd/",
+    "https://vikkibank.vn/lai-suat-huy-dong-tiet-kiem-bang-vnd-online/"
+   ]
+  },
+  {
+   "slug": "lai-suat-ngan-hang-dong-a",
+   "find": "<p><strong>Ví dụ:</strong> Bạn gửi 1 tỷ đồng kỳ hạn 12 tháng online với lãi suất 6,6%/năm.</p>",
+   "replace": "<p><strong>Ví dụ:</strong> Bạn gửi 1 tỷ đồng kỳ hạn 12 tháng online với lãi suất 6,1%/năm.</p>",
+   "sources": [
+    "https://vikkibank.vn/lai-suat-huy-dong-tiet-kiem-bang-vnd-online/"
+   ]
+  },
+  {
+   "slug": "lai-suat-ngan-hang-dong-a",
+   "find": "<li>Số tiền lãi nhận được sau 1 năm: (1.000.000.000 x 6,6% x 365) / 365 = <strong>66.000.000 VNĐ</strong>.</li>",
+   "replace": "<li>Số tiền lãi nhận được sau 1 năm: (1.000.000.000 x 6,1% x 365) / 365 = <strong>61.000.000 VNĐ</strong>.</li>",
+   "sources": [
+    "https://vikkibank.vn/lai-suat-huy-dong-tiet-kiem-bang-vnd-online/"
+   ]
+  },
+  {
+   "slug": "lai-suat-ngan-hang-dong-a",
+   "find": "<p>Lãi suất 6,6% - 6,7% của Vikki Bank phù hợp",
+   "replace": "<p>Lãi suất online 6,0% - 6,2%/năm của Vikki Bank phù hợp",
+   "sources": [
+    "https://vikkibank.vn/lai-suat-huy-dong-tiet-kiem-bang-vnd-online/"
+   ]
+  },
+  {
+   "slug": "lai-suat-ngan-hang-dong-a",
+   "find": "Thay vì \"giam vốn\" 12 tháng để nhận 6,6% lãi suất,",
+   "replace": "Thay vì \"giam vốn\" 12 tháng để nhận 6,1% lãi suất,",
+   "sources": [
+    "https://vikkibank.vn/lai-suat-huy-dong-tiet-kiem-bang-vnd-online/"
+   ]
+  },
+  {
+   "slug": "lai-suat-ngan-hang-dong-a",
+   "find": "<p><i>Thông tin lãi suất trên được cập nhật vào tháng 10/2026 và chỉ mang tính chất tham khảo.",
+   "replace": "<p><i>Thông tin lãi suất trên được kiểm tra trên website Vikki Bank ngày 04/11/2026 (biểu tại quầy áp dụng từ 03/11/2026) và chỉ mang tính chất tham khảo.",
+   "sources": [
+    "https://vikkibank.vn/lai-suat-tiet-kiem-bang-vnd/",
+    "https://vikkibank.vn/lai-suat-huy-dong-tiet-kiem-bang-vnd-online/"
+   ]
+  }
+ ]
+}

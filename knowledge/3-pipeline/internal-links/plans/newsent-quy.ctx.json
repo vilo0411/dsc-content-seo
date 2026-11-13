@@ -1,0 +1,259 @@
+[
+ {
+  "src": "cach-dau-tu-etf-tai-viet-nam-huong-dan-chi-tiet-tu-a-den-z",
+  "src_title": "Cách đầu tư ETF tại Việt Nam chi tiết A - Z cho người mới",
+  "target": "chung-chi-quy-la-gi",
+  "role": "pillar",
+  "target_title": "Chứng chỉ quỹ là gì? Thông tin chi tiết về chứng chỉ quỹ",
+  "clicks": "40",
+  "anchors": [
+   "chứng chỉ quỹ",
+   "chứng chỉ quỹ là gì",
+   "đầu tư chứng chỉ quỹ",
+   "giao dịch chứng chỉ quỹ",
+   "đầu tư qua quỹ",
+   "quỹ đầu tư chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 56,
+    "h": "Lựa chọn nền tảng giao dịch và hỗ trợ uy tín",
+    "n_sent": 2,
+    "t": "Việc mở tài khoản tại các công ty chứng khoán lớn như DSC giúp nhà đầu tư tiếp cận hệ thống khớp lệnh hiện đại, giảm thiểu độ trễ khi thị trường biến động. Đặc biệt, các báo cáo phân tích chuyên sâu tại DSC sẽ giúp bạn hiểu rõ danh mục của từng quỹ ETF đang nắm giữ những gì, từ đó đưa ra quyết định phân bổ vốn chính xác hơn thay vì đầu tư cảm tính."
+   },
+   {
+    "i": 3,
+    "h": "Cách đầu tư ETF tại Việt Nam cho người mới bắt đầu",
+    "n_sent": 2,
+    "t": "ETF là một loại quỹ tương hỗ giao dịch trên sàn chứng khoán, có mục tiêu mô phỏng hiệu suất của một chỉ số chứng khoán cụ thể. ETF có nhiều ưu điểm như: chi phí thấp, tính thanh khoản cao, và dễ dàng đầu tư."
+   },
+   {
+    "i": 53,
+    "h": "Nhận diện các rủi ro hệ thống và thanh khoản",
+    "n_sent": 3,
+    "t": "Đầu tư ETF không đồng nghĩa với rủi ro bằng 0. Giá ETF vẫn sẽ giảm nếu thị trường chung đi xuống (rủi ro hệ thống). Ngoài ra, với một số quỹ ETF mới hoặc có quy mô nhỏ, bạn có thể gặp rủi ro thanh khoản – nghĩa là khó mua hoặc bán số lượng lớn với mức giá như ý."
+   }
+  ]
+ },
+ {
+  "src": "ung-dung-arbitrage-vao-dau-tu-chung-chi-quy",
+  "src_title": "Arbitrage là gì? Ứng dụng kinh doanh chênh lệch giá vào đầu tư chứng chỉ quỹ",
+  "target": "quy-mo-la-gi-tong-quan-ve-quy-mo-tren-thi-truong-chung-khoan-viet-nam",
+  "role": "sub-hub",
+  "target_title": "Quỹ mở là gì? Ưu nhược điểm và cách đầu tư hiệu quả",
+  "clicks": "5",
+  "anchors": [
+   "quỹ mở",
+   "quỹ mở là gì",
+   "đầu tư quỹ mở",
+   "chứng chỉ quỹ mở",
+   "quỹ mở tại Việt Nam",
+   "đầu tư qua quỹ mở"
+  ],
+  "paras": [
+   {
+    "i": 10,
+    "h": "Ứng dụng kinh doanh chênh lệch giá vào đầu tư chứng chỉ quỹ",
+    "n_sent": 2,
+    "t": "Ví dụ: Khi thị trường chứng khoán Việt Nam đang trong xu hướng tăng, kéo theo E1VFVN30 tăng từ 15.000đ/ccq lên 20.000đ/ccq. Nhà đầu tư sẽ thực hiện mua vào các chứng khoán cơ sở là các cổ phiếu trong rổ VN30 để đổi lấy chứng chỉ quỹ và bán các chứng chỉ quỹ với giá thị trường 20.000đ và thu lợi nhuận 5.000đ/ccq (chưa trừ phí, thuế,...)."
+   },
+   {
+    "i": 12,
+    "h": "Ứng dụng kinh doanh chênh lệch giá vào đầu tư chứng chỉ quỹ",
+    "n_sent": 2,
+    "t": "Ví dụ: Khi thị trường chứng khoán Việt Nam có xu hướng đi xuống, giá chứng chỉ quỹ E1VFVN30 giảm từ 15.000đ/ccq xuống 10.000đ/ccq. Nhà đầu tư sẽ thực hiện mua chứng chỉ quỹ E1VFVN30 trên thị trường với giá 10.000đ/ccq để đổi lấy chứng khoán cơ sở là các cổ phiếu trong rổ VN30 và thực hiện bán cổ phiếu trên thị trường chứng khoán thứ cấp ở mức giá tương ứng NAV ban đầu là 15.000đ/ccq, từ đó thu lợi nhuận 5.000đ (chưa trừ phí, thuế,...)."
+   },
+   {
+    "i": 11,
+    "h": "Ứng dụng kinh doanh chênh lệch giá vào đầu tư chứng chỉ quỹ",
+    "n_sent": 3,
+    "t": "Ngược lại, nếu giá chứng chỉ quỹ biến động đi xuống, các nhà tạo lập sẽ dùng chứng chỉ quỹ để hoán đổi lấy chứng khoán cơ cấu trên thị trường sơ cấp. Sau đó bán lại chứng khoán trên thị trường thứ cấp để có lợi nhuận. Nhìn chung, lợi nhuận đến từ việc đầu tư chứng chỉ quỹ đến từ giá cả cổ phiếu và giá chứng chỉ quỹ ETF trên thị trường."
+   }
+  ]
+ },
+ {
+  "src": "etf-la-gi",
+  "src_title": "ETF là gì? Cách thức hoạt động và ưu, nhược điểm quỹ ETF",
+  "target": "chung-chi-quy-la-gi",
+  "role": "pillar",
+  "target_title": "Chứng chỉ quỹ là gì? Thông tin chi tiết về chứng chỉ quỹ",
+  "clicks": "3",
+  "anchors": [
+   "chứng chỉ quỹ",
+   "chứng chỉ quỹ là gì",
+   "đầu tư chứng chỉ quỹ",
+   "giao dịch chứng chỉ quỹ",
+   "đầu tư qua quỹ",
+   "quỹ đầu tư chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 73,
+    "h": "Hướng dẫn cách đầu tư chứng chỉ quỹ ETF",
+    "n_sent": 1,
+    "t": "Để tìm hiểu chi tiết hơn về cách lựa chọn và phân tích, bạn có thể tham khảo bài viết hướng dẫn cách đầu tư ETF hiệu quả cho người mới bắt đầu của chúng tôi."
+   },
+   {
+    "i": 6,
+    "h": "Quỹ ETF là gì?",
+    "n_sent": 2,
+    "t": "Khác với quỹ mở truyền thống, chứng chỉ quỹ ETF được niêm yết và giao dịch trực tiếp trên sàn chứng khoán giống như một cổ phiếu. Nhờ đó, nhà đầu tư có thể mua bán ETF linh hoạt trong phiên, đồng thời dễ dàng đa dạng hóa danh mục mà không cần sở hữu từng tài sản riêng lẻ."
+   },
+   {
+    "i": 9,
+    "h": "Cách thức hoạt động của quỹ ETF",
+    "n_sent": 2,
+    "t": "Về bản chất, quỹ ETF là một rổ chứa nhiều loại tài sản (cổ phiếu, trái phiếu,...) được quản lý bởi một công ty quản lý quỹ. Điểm độc đáo là chứng chỉ của quỹ này được giao dịch trên sàn chứng khoán như một cổ phiếu thông thường."
+   }
+  ]
+ },
+ {
+  "src": "quy-dau-tu-mao-hiem-la-gi",
+  "src_title": "Quỹ đầu tư mạo hiểm là gì? Top 7 quỹ đầu tư mạo hiểm tại VN",
+  "target": "chung-chi-quy-la-gi",
+  "role": "pillar",
+  "target_title": "Chứng chỉ quỹ là gì? Thông tin chi tiết về chứng chỉ quỹ",
+  "clicks": "2",
+  "anchors": [
+   "chứng chỉ quỹ",
+   "chứng chỉ quỹ là gì",
+   "đầu tư chứng chỉ quỹ",
+   "giao dịch chứng chỉ quỹ",
+   "đầu tư qua quỹ",
+   "quỹ đầu tư chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 4,
+    "h": "Khái niệm quỹ đầu tư mạo hiểm là gì?",
+    "n_sent": 3,
+    "t": "Khác với các hình thức cấp tín dụng truyền thống, quỹ đầu tư mạo hiểm không yêu cầu tài sản đảm bảo. Thay vào đó, quỹ sẽ thực hiện góp vốn cổ phần (Equity Investment) để trở thành cổ đông của doanh nghiệp. Mục tiêu chính của loại hình này là thu được lợi nhuận vượt trội thông qua việc gia tăng giá trị doanh nghiệp trước khi thực hiện thoái vốn tại các thời điểm quan trọng như IPO hoặc mua bán sáp nhập (M&A)."
+   },
+   {
+    "i": 3,
+    "h": "Khái niệm quỹ đầu tư mạo hiểm là gì?",
+    "n_sent": 1,
+    "t": "Quỹ đầu tư mạo hiểm là một loại hình định chế tài chính chuyên huy động vốn từ các tổ chức và cá nhân có tiềm lực tài chính lớn để đầu tư vào các công ty khởi nghiệp (startup) hoặc doanh nghiệp trẻ có tiềm năng tăng trưởng cao."
+   }
+  ]
+ },
+ {
+  "src": "quy-dau-tu-mao-hiem-la-gi",
+  "src_title": "Quỹ đầu tư mạo hiểm là gì? Top 7 quỹ đầu tư mạo hiểm tại VN",
+  "target": "quy-mo-la-gi-tong-quan-ve-quy-mo-tren-thi-truong-chung-khoan-viet-nam",
+  "role": "sub-hub",
+  "target_title": "Quỹ mở là gì? Ưu nhược điểm và cách đầu tư hiệu quả",
+  "clicks": "2",
+  "anchors": [
+   "quỹ mở",
+   "quỹ mở là gì",
+   "đầu tư quỹ mở",
+   "chứng chỉ quỹ mở",
+   "quỹ mở tại Việt Nam",
+   "đầu tư qua quỹ mở"
+  ],
+  "paras": [
+   {
+    "i": 4,
+    "h": "Khái niệm quỹ đầu tư mạo hiểm là gì?",
+    "n_sent": 3,
+    "t": "Khác với các hình thức cấp tín dụng truyền thống, quỹ đầu tư mạo hiểm không yêu cầu tài sản đảm bảo. Thay vào đó, quỹ sẽ thực hiện góp vốn cổ phần (Equity Investment) để trở thành cổ đông của doanh nghiệp. Mục tiêu chính của loại hình này là thu được lợi nhuận vượt trội thông qua việc gia tăng giá trị doanh nghiệp trước khi thực hiện thoái vốn tại các thời điểm quan trọng như IPO hoặc mua bán sáp nhập (M&A)."
+   },
+   {
+    "i": 3,
+    "h": "Khái niệm quỹ đầu tư mạo hiểm là gì?",
+    "n_sent": 1,
+    "t": "Quỹ đầu tư mạo hiểm là một loại hình định chế tài chính chuyên huy động vốn từ các tổ chức và cá nhân có tiềm lực tài chính lớn để đầu tư vào các công ty khởi nghiệp (startup) hoặc doanh nghiệp trẻ có tiềm năng tăng trưởng cao."
+   }
+  ]
+ },
+ {
+  "src": "uy-thac-dau-tu-la-gi",
+  "src_title": "Ủy thác đầu tư là gì? Thông tin chi tiết về ủy thác đầu tư",
+  "target": "chung-chi-quy-la-gi",
+  "role": "pillar",
+  "target_title": "Chứng chỉ quỹ là gì? Thông tin chi tiết về chứng chỉ quỹ",
+  "clicks": "1",
+  "anchors": [
+   "chứng chỉ quỹ",
+   "chứng chỉ quỹ là gì",
+   "đầu tư chứng chỉ quỹ",
+   "giao dịch chứng chỉ quỹ",
+   "đầu tư qua quỹ",
+   "quỹ đầu tư chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 63,
+    "h": "Rủi ro từ biến động thị trường và hiệu quả hoạt động của bên nhận ủy thác",
+    "n_sent": 4,
+    "t": "Không có khoản đầu tư nào là không có rủi ro. Giá trị danh mục của bạn có thể biến động theo tình hình chung của thị trường. Hơn nữa, hiệu quả hoạt động của bên nhận ủy thác cũng có thể không như kỳ vọng. Để giảm thiểu, hãy chọn đối tác có chiến lược quản trị rủi ro rõ ràng và đa dạng hóa danh mục."
+   },
+   {
+    "i": 4,
+    "h": "Ủy thác đầu tư là gì?",
+    "n_sent": 2,
+    "t": "Ủy thác đầu tư là hình thức nhà đầu tư giao vốn cho một tổ chức hoặc cá nhân chuyên nghiệp để họ thay mặt thực hiện các hoạt động đầu tư trên thị trường với mục tiêu sinh lời. Theo đó, bên nhận ủy thác sẽ đảm nhiệm việc quản lý danh mục, ra quyết định mua bán và chịu trách nhiệm thực hiện chiến lược đầu tư theo các điều khoản đã được thỏa thuận trong hợp đồng."
+   },
+   {
+    "i": 5,
+    "h": "Ủy thác đầu tư là gì?",
+    "n_sent": 1,
+    "t": "Hình thức ủy thác đầu tư phù hợp với những người có nguồn vốn nhàn rỗi nhưng không có nhiều thời gian, kiến thức hoặc kinh nghiệm đầu tư chuyên sâu, muốn tối ưu hiệu quả sinh lời thông qua đội ngũ chuyên gia."
+   }
+  ]
+ },
+ {
+  "src": "huong-dan-mo-tai-khoan-chung-chi-quy",
+  "src_title": "Hướng dẫn mở tài khoản chứng chỉ quỹ online qua 4 bước",
+  "target": "quy-mo-la-gi-tong-quan-ve-quy-mo-tren-thi-truong-chung-khoan-viet-nam",
+  "role": "sub-hub",
+  "target_title": "Quỹ mở là gì? Ưu nhược điểm và cách đầu tư hiệu quả",
+  "clicks": "0",
+  "anchors": [
+   "quỹ mở",
+   "quỹ mở là gì",
+   "đầu tư quỹ mở",
+   "chứng chỉ quỹ mở",
+   "quỹ mở tại Việt Nam",
+   "đầu tư qua quỹ mở"
+  ],
+  "paras": []
+ },
+ {
+  "src": "phan-biet-quy-etf-va-quy-tuong-ho",
+  "src_title": "Phân biệt quỹ ETF và quỹ tương hỗ: Có gì khác nhau?",
+  "target": "chung-chi-quy-la-gi",
+  "role": "pillar",
+  "target_title": "Chứng chỉ quỹ là gì? Thông tin chi tiết về chứng chỉ quỹ",
+  "clicks": "0",
+  "anchors": [
+   "chứng chỉ quỹ",
+   "chứng chỉ quỹ là gì",
+   "đầu tư chứng chỉ quỹ",
+   "giao dịch chứng chỉ quỹ",
+   "đầu tư qua quỹ",
+   "quỹ đầu tư chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 29,
+    "h": "Khác nhau",
+    "n_sent": 3,
+    "t": "Hy vọng qua bài viết hôm nay của DSC, bạn đọc đã có thể phân biệt quỹ ETF và quỹ tương hỗ. Dựa vào một số tiêu chí so sánh trên giữa quỹ ETF và quỹ tương hỗ sẽ giúp nhà đầu tư hiểu rõ 2 sản phẩm chứng khoán này và có quyết định đầu tư phù hợp. Chúc nhà đầu tư giao dịch hiệu quả và thành công."
+   },
+   {
+    "i": 3,
+    "h": "Quỹ ETF là gì?",
+    "n_sent": 2,
+    "t": "Quỹ tương hỗ là hình thức góp vốn của nhiều nhà đầu tư tạo nên một quỹ chung và được mang đi đầu tư các loại tài sản như cổ phiếu, trái phiếu,... Quỹ tương hỗ được quản lý và vận hành bởi các chuyên gia tài chính giàu kinh nghiệm trong đầu tư chứng khoán."
+   },
+   {
+    "i": 2,
+    "h": "Quỹ ETF là gì?",
+    "n_sent": 2,
+    "t": "Quỹ ETF là quỹ đầu tư vào một danh mục cổ phiếu khác nhau và gắn chặt với sự biến động của các cổ phiếu trong danh mục. Quỹ ETFs giải quyết được vấn đề đa dạng danh mục, giảm thiểu rủi ro đầu tư cho nhà đầu tư."
+   }
+  ]
+ }
+]

@@ -1,0 +1,89 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Link-fix — 4 mục còn lại (5/11)</title>
+<style>
+:root{--ink:#172033;--muted:#5b6478;--line:#e3e7ef;--bg:#fff;--soft:#f6f8fa;--box:#fbfcfe;--acc:#2a78d6;--ok:#1f9d55}
+@media(prefers-color-scheme:dark){:root{--ink:#e6e9ef;--muted:#9aa3b5;--line:#2c3342;--bg:#14181f;--soft:#1b212b;--box:#181d26;--acc:#3987e5}}
+body{font:15px/1.55 Arial,sans-serif;max-width:1240px;margin:auto;padding:24px;color:var(--ink);background:var(--bg)}
+h1{margin:0 0 6px;font-size:24px}h2{margin:0;font-size:18px}a{color:var(--acc)}code{background:var(--soft);padding:1px 5px;border-radius:4px}
+.lead{color:var(--muted);margin:0 0 14px}
+.toolbar{position:sticky;top:0;z-index:10;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px 14px;box-shadow:0 3px 14px #0002;display:flex;gap:12px;align-items:end;flex-wrap:wrap}
+.toolbar label{display:grid;gap:4px;font-weight:600;font-size:13px}
+.toolbar select,.toolbar input,button{padding:6px 9px;font:inherit;font-weight:400;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:6px;cursor:pointer}
+.summary{margin-left:auto;font-weight:700;font-size:14px}
+.progress{height:6px;background:var(--soft);border-radius:9px;overflow:hidden;width:100%}.progress i{display:block;height:100%;background:var(--ok);width:0}
+details.box{border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:14px 0;background:var(--box)}details.box summary{font-weight:700;cursor:pointer}
+article{border-top:2px solid var(--line);margin-top:26px;padding-top:14px}
+article.done,.chg.done{opacity:.4}article[hidden],.chg[hidden]{display:none}
+.head{display:flex;justify-content:space-between;gap:16px;align-items:start}
+.badge{display:inline-block;background:var(--soft);border-radius:999px;padding:2px 9px;font-size:12px;margin:4px 5px 0 0}
+.badge.P1{background:#fde8e1;color:#9a2f10;font-weight:700}
+.badge.g-fix{background:#fdeee6;color:#8a3d13}.badge.g-cluster{background:#e3eefc;color:#174f96}.badge.g-backfill{background:#e4f4ea;color:#1d6b3a}
+.chg{border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:12px 0;background:var(--bg)}
+.chg-head{display:flex;justify-content:space-between;gap:12px;align-items:start}
+.complete{white-space:nowrap;background:var(--soft);padding:6px 10px;border-radius:7px;font-size:13px;cursor:pointer}
+.links{margin:6px 0 4px;padding-left:18px;font-size:13.5px}.links li{margin:3px 0}.why{color:var(--muted)}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:14px}.cols h3{font-size:13px;margin:6px 0;display:flex;justify-content:space-between;align-items:center}
+pre{white-space:pre-wrap;word-break:break-word;background:var(--soft);padding:10px;font-size:12.5px;max-height:320px;overflow:auto;margin:0;border-radius:6px}
+.preview{border:1px dashed var(--line);border-radius:8px;padding:8px 12px;font-size:14px;max-height:320px;overflow:auto}
+.preview a.new{background:#d7f5e5;outline:2px solid var(--ok);border-radius:3px;color:#0b4a2a}
+del.old{background:#fde2e2;color:#8a1c1c}
+.copy.ok{background:var(--ok);color:#fff;border-color:var(--ok)}
+@media(max-width:860px){.cols{grid-template-columns:1fr}.summary{width:100%;margin-left:0}.head,.chg-head{display:block}}
+</style>
+<h1>Link-fix — 4 mục còn lại (5/11)</h1>
+<p class="lead">Snapshot live: 2026-11-05 15:10. Mỗi bài gom mọi thay đổi trong 1 lần mở CMS. Cột <b>Sau</b> là block HTML thay thế: mở source view của CMS, tìm block <b>Trước</b>, dán đè bằng <b>Sau</b>. Link mới được tô <span style="background:#d7f5e5;outline:2px solid #1f9d55;color:#0b4a2a">xanh</span> trong bản xem trước.</p>
+Phần còn lại của 2026-11-03-link-fix. Hai mục chèn câu đã rà lại theo luật ngữ cảnh.
+<div class="toolbar">
+<label>Nhóm việc<select id="fG"><option value="all">Tất cả</option></select></label>
+<label>Ưu tiên<select id="fP"><option value="all">P1 + P2</option><option value="P1">Chỉ P1</option><option value="P2">Chỉ P2</option></select></label>
+<label>Tìm bài<input id="fQ" placeholder="slug / tiêu đề" size="20"></label>
+<label>Mục đã sửa<select id="fD"><option value="dim">Làm mờ</option><option value="hide">Ẩn</option></select></label>
+<button type="button" id="exp">Copy danh sách slug đã sửa</button>
+<span class="summary" id="sum"></span>
+<div class="progress"><i id="bar"></i></div>
+</div>
+<div id="list"></div>
+<script>
+const DATA={"arts": [{"slug": "san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong", "title": "Sàn chứng khoán NYSE là gì? Vai trò và cách thức hoạt động", "url": "https://www.dsc.com.vn/kien-thuc/san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong", "clicks": 90, "pri": "P2", "group": ["fix"], "items": [{"pos": "Các chỉ số chứng khoán của NYSE", "before": "<p><i>&gt;&gt; Xem thêm: <\/i><a target=\"_blank\" href=\"https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan-my\"><i><strong>Hướng dẫn cách mở tài khoản chứng khoán Mỹ an toàn<\/strong><\/i><\/a><\/p>", "after": "", "links": [{"to": "cach-mo-tai-khoan-chung-khoan-my", "url": "", "anchor": "", "op": "cut", "group": "fix", "pri": "P2", "why": "Gỡ dòng Xem thêm (link đã chuyển vào câu trong mục Cách thức hoạt động)"}], "group": ["fix"], "pri": "P2"}, {"pos": "Cách thức hoạt động của NYSE", "before": "<p>NYSE vận hành theo cơ chế đấu giá tập trung: các lệnh mua và bán được tổng hợp vào một sổ lệnh chung, sau đó được khớp lệnh theo nguyên tắc ưu tiên giá — thời gian. <a target=\"_blank\" href=\"https://www.dsc.com.vn/kien-thuc/gio-giao-dich-chung-khoan-viet-nam\"><strong>Phiên giao dịch<\/strong><\/a> chính thức diễn ra từ 9h30 đến 16h00 theo giờ EST (tương đương 20h30 – 3h00 sáng hôm sau theo giờ Việt Nam).<\/p>", "after": "<p>NYSE vận hành theo cơ chế đấu giá tập trung: các lệnh mua và bán được tổng hợp vào một sổ lệnh chung, sau đó được khớp lệnh theo nguyên tắc ưu tiên giá — thời gian. <a target=\"_blank\" href=\"https://www.dsc.com.vn/kien-thuc/gio-giao-dich-chung-khoan-viet-nam\"><strong>Phiên giao dịch<\/strong><\/a> chính thức diễn ra từ 9h30 đến 16h00 theo giờ EST (tương đương 20h30 – 3h00 sáng hôm sau theo giờ Việt Nam). Muốn trực tiếp mua cổ phiếu niêm yết trên NYSE, nhà đầu tư Việt Nam cần <a target=\"_blank\" href=\"https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan-my\">mở tài khoản chứng khoán Mỹ<\/a> tại một công ty môi giới nước ngoài, vì tài khoản trong nước chỉ giao dịch được HoSE, HNX và UPCoM.<\/p>", "links": [{"to": "cach-mo-tai-khoan-chung-khoan-my", "url": "https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan-my", "anchor": "mở tài khoản chứng khoán Mỹ", "op": "append", "group": "fix", "pri": "P2", "why": "Mục Cách thức hoạt động (giờ giao dịch theo giờ VN) → câu hỏi tiếp theo của người đọc là mua bằng cách nào"}], "group": ["fix"], "pri": "P2"}]}, {"slug": "top-5-san-dau-tu-chung-khoan-ao-uy-tin-tai-viet-nam-luyen-choi-chung-khoan-hieu-qua", "title": "Top 5 sàn đầu tư chứng khoán ảo uy tín tại Việt Nam", "url": "https://www.dsc.com.vn/kien-thuc/top-5-san-dau-tu-chung-khoan-ao-uy-tin-tai-viet-nam-luyen-choi-chung-khoan-hieu-qua", "clicks": 65, "pri": "P2", "group": ["fix"], "items": [{"pos": "Estock - Sàn Giao Dịch Chứng Khoán Ảo", "before": "<li><a target=\"_blank\" href=\"https://www.dsc.com.vn/kien-thuc/dau-tu-chung-khoan-ao-co-an-toan-khong\"><strong>Đầu tư chứng khoán ảo có an toàn không?<\/strong><\/a><\/li><\/ul>", "after": "<\/ul>", "links": [{"to": "dau-tu-chung-khoan-ao-co-an-toan-khong", "url": "", "anchor": "", "op": "remove", "group": "fix", "pri": "P2", "why": "URL cũ redirect về chính bài này"}], "group": ["fix"], "pri": "P2"}]}, {"slug": "choi-chung-khoan-co-giau-khong", "title": "Chơi chứng khoán có giàu không? [2026]", "url": "https://www.dsc.com.vn/kien-thuc/choi-chung-khoan-co-giau-khong", "clicks": 17, "pri": "P2", "group": ["fix"], "items": [{"pos": "2. Kinh nghiệm thực chiến", "before": "<p>Học hỏi từ những nhà đầu tư thành công như Warren Buffett, Peter Lynch, <a target=\"_blank\" href=\"https://www.dsc.com.vn/kien-thuc/cach-chon-co-phieu-tot-theo-benjamin-graham\"><strong>Benjamin Graham<\/strong><\/a> và tích lũy kinh nghiệm thực tế qua từng giao dịch. Ghi chép nhật ký giao dịch để rút kinh nghiệm từ cả thành công lẫn thất bại.<\/p>", "after": "<p>Học hỏi từ những nhà đầu tư thành công như Warren Buffett, Peter Lynch, <a target=\"_blank\" href=\"https://www.dsc.com.vn/kien-thuc/3-cach-chon-co-phieu-tot-va-co-tiem-nang-tang-gia-de-dau-tu\"><strong>Benjamin Graham<\/strong><\/a> và tích lũy kinh nghiệm thực tế qua từng giao dịch. Ghi chép nhật ký giao dịch để rút kinh nghiệm từ cả thành công lẫn thất bại.<\/p>", "links": [{"to": "3-cach-chon-co-phieu-tot-va-co-tiem-nang-tang-gia-de-dau-tu", "url": "https://www.dsc.com.vn/kien-thuc/3-cach-chon-co-phieu-tot-va-co-tiem-nang-tang-gia-de-dau-tu", "anchor": "Benjamin Graham", "op": "href", "group": "fix", "pri": "P2", "why": "URL cũ redirect"}], "group": ["fix"], "pri": "P2"}]}, {"slug": "dau-tu-chung-khoan-tren-dien-thoai-huong-dan-chi-tiet", "title": "Cách chơi chứng khoán trên điện thoại cho người mới", "url": "https://www.dsc.com.vn/kien-thuc/dau-tu-chung-khoan-tren-dien-thoai-huong-dan-chi-tiet", "clicks": 9, "pri": "P2", "group": ["cluster"], "items": [{"pos": "Cách đặt lệnh mua/bán chứng khoán trên điện thoại", "before": "<li><strong>Kiểm tra và Xác nhận:<\/strong> Xem lại thông tin lệnh một lần nữa rồi xác nhận bằng mật khẩu hoặc sinh trắc học.<\/li><\/ol>", "after": "<li><strong>Kiểm tra và Xác nhận:<\/strong> Xem lại thông tin lệnh một lần nữa rồi xác nhận bằng mật khẩu hoặc sinh trắc học.<\/li><\/ol>\n<p>Các bước này giống hệt khi <a target=\"_blank\" href=\"https://www.dsc.com.vn/kien-thuc/cach-mua-co-phieu-online-cho-nguoi-moi-bat-dau\">mua cổ phiếu online<\/a> trên máy tính, chỉ khác giao diện app được thu gọn cho màn hình nhỏ.<\/p>", "links": [{"to": "cach-mua-co-phieu-online-cho-nguoi-moi-bat-dau", "url": "https://www.dsc.com.vn/kien-thuc/cach-mua-co-phieu-online-cho-nguoi-moi-bat-dau", "anchor": "mua cổ phiếu online", "op": "newp", "group": "cluster", "pri": "P2", "why": "Ngay sau list 'Cách đặt lệnh mua/bán trên điện thoại' (thay vì câu dẫn đầu mục Cách giao dịch)"}], "group": ["cluster"], "pri": "P2"}]}], "groups": {}};const KEY="linkplan:2026-11-05-link-fix-con-lai";
+const st=JSON.parse(localStorage.getItem(KEY)||"{}");const save=()=>localStorage.setItem(KEY,JSON.stringify(st));
+const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const GN={fix:"Sửa link sai",cluster:"Link pillar/hub",backfill:"Link tới bài traffic cao",...DATA.groups};
+const fG=document.getElementById("fG");for(const g of [...new Set(DATA.arts.flatMap(a=>a.group))])fG.add(new Option(GN[g]||g,g));
+function preview(after,item){const d=document.createElement("div");d.innerHTML=after;
+  const urls=new Set(item.links.filter(l=>l.op!=="unlink").map(l=>l.url));
+  d.querySelectorAll("a").forEach(a=>{if(urls.has(a.getAttribute("href")))a.className="new";a.removeAttribute("target");a.onclick=e=>e.preventDefault()});
+  d.querySelectorAll("img").forEach(i=>i.remove());return d.innerHTML}
+function render(){const L=document.getElementById("list");L.innerHTML="";
+ DATA.arts.forEach(a=>{const art=document.createElement("article");art.dataset.slug=a.slug;
+  art.innerHTML=`<div class="head"><div><h2>${esc(a.title)}</h2><a href="${a.url}" target="_blank">${a.slug}</a>
+   <div>${a.group.map(g=>`<span class="badge g-${g}">${GN[g]||g}</span>`).join("")}<span class="badge ${a.pri}">${a.pri}</span>
+   <span class="badge">${a.clicks} clicks GSC</span><span class="badge">${a.items.length} block</span></div></div>
+   <label class="complete"><input type="checkbox" data-art="${a.slug}"> Đã sửa xong bài này</label></div>`;
+  a.items.forEach((it,k)=>{const id=a.slug+"#"+k;const c=document.createElement("div");c.className="chg";c.dataset.id=id;
+   c.dataset.g=it.group.join(" ");c.dataset.p=it.pri;
+   c.innerHTML=`<div class="chg-head"><div><b>${k+1}. ${esc(it.pos)}</b>
+    <ul class="links">${it.links.map(l=>`<li><span class="badge g-${l.group}">${l.op}</span> ${l.op==="unlink"||l.op==="remove"||l.op==="cut"?`${l.op==="remove"?"xoá dòng":l.op==="cut"?"gỡ câu chứa link":"bỏ link"} <code>${l.to}</code>`:`→ <code>${l.to}</code> «${esc(l.anchor)}»`} <span class="why">— ${esc(l.why)}</span></li>`).join("")}</ul></div>
+    <label class="complete"><input type="checkbox" data-id="${id}"> Xong</label></div>
+    <div class="cols"><div><h3>Trước (tìm trong CMS) <button class="copy" data-t="b">Copy</button></h3><pre>${esc(it.before)}</pre></div>
+    <div><h3>Sau (dán đè) <button class="copy" data-t="a">Copy</button></h3><pre>${it.after?esc(it.after):"(xoá cả block này)"}</pre></div></div>
+    <h3 style="font-size:13px">Xem trước</h3><div class="preview">${preview(it.after,it)}</div>`;
+   c.querySelectorAll(".copy").forEach(b=>b.onclick=()=>{navigator.clipboard.writeText(b.dataset.t==="a"?it.after:it.before);b.classList.add("ok");b.textContent="Đã copy";setTimeout(()=>{b.classList.remove("ok");b.textContent="Copy"},1200)});
+   art.appendChild(c)});
+  L.appendChild(art)});
+ document.querySelectorAll("input[data-id]").forEach(x=>{x.checked=!!st[x.dataset.id];x.onchange=()=>{st[x.dataset.id]=x.checked;sync(x.closest("article"));save();apply()}});
+ document.querySelectorAll("input[data-art]").forEach(x=>{x.onchange=()=>{x.closest("article").querySelectorAll("input[data-id]").forEach(y=>{y.checked=x.checked;st[y.dataset.id]=x.checked});save();apply()}});
+ document.querySelectorAll("article").forEach(sync);apply()}
+function sync(art){const ys=[...art.querySelectorAll("input[data-id]")];art.querySelector("input[data-art]").checked=ys.every(y=>y.checked)}
+function apply(){const g=fG.value,p=document.getElementById("fP").value,q=document.getElementById("fQ").value.toLowerCase(),hide=document.getElementById("fD").value==="hide";
+ let tot=0,dn=0;
+ document.querySelectorAll("article").forEach(art=>{const a=DATA.arts.find(x=>x.slug===art.dataset.slug);let vis=0;
+  art.querySelectorAll(".chg").forEach(c=>{const d=!!st[c.dataset.id];tot++;dn+=d;c.classList.toggle("done",d);
+   const show=(g==="all"||c.dataset.g.split(" ").includes(g))&&(p==="all"||c.dataset.p===p)&&!(hide&&d);c.hidden=!show;vis+=show});
+  const allDone=[...art.querySelectorAll(".chg")].every(c=>st[c.dataset.id]);art.classList.toggle("done",allDone);
+  art.hidden=!vis||(q&&!(a.slug+" "+a.title).toLowerCase().includes(q))});
+ document.getElementById("sum").textContent=`${dn}/${tot} block đã sửa · ${DATA.arts.length} bài`;document.getElementById("bar").style.width=(tot?100*dn/tot:0)+"%"}
+["fG","fP","fQ","fD"].forEach(i=>document.getElementById(i).addEventListener("input",apply));
+document.getElementById("exp").onclick=()=>{const s=DATA.arts.filter(a=>a.items.some((_,k)=>st[a.slug+"#"+k])).map(a=>a.slug);
+ navigator.clipboard.writeText("python scripts/sync_live.py --only "+s.join(","));document.getElementById("exp").textContent="Đã copy lệnh sync ("+s.length+" bài)"};
+render();
+</script>

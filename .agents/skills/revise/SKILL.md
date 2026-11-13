@@ -12,7 +12,7 @@ Chỉnh sửa một đoạn / section cụ thể trong bài viết theo yêu c�
 
 ## Bước 0: Context Load (BẮT BUỘC — đọc đủ 4 file trước khi chạm vào bất kỳ nội dung nào)
 
-1. `knowledge/3-pipeline/anti-ai-rules.md` — toàn bộ, không skip section nào
+1. `knowledge/3-pipeline/anti-ai-rules.md` — phần phán đoán (~10 KB); cụm cấm ở blacklist do lint bắt
 2. `.antigravity/memory/instincts.md` — lỗi đã học từ các vòng sửa trước
 3. `knowledge/3-pipeline/glossary.md` — thuật ngữ chuẩn thương hiệu
 4. File cần sửa (Draft hoặc Final tương ứng với slug)
@@ -42,9 +42,7 @@ Nếu người dùng không chỉ rõ slug hoặc section → hỏi lại trư�
 
 **3a. Lint máy** — sau khi ghi bản sửa vào file (hoặc vào file tạm), chạy cả 3 tầng:
 ```bash
-python scripts/qa_lint.py [path/to/file]
-python scripts/slop_check.py [path/to/file] -v
-python scripts/market_facts.py --verify [path/to/file]
+python scripts/qa_gate.py [path/to/file] --all
 ```
 Tầng A (`qa_lint`) bắt: blacklist trigger phrases, emphatic quotes, hedge words, forbidden terms, câu > 30 từ, đoạn > 3 câu, link sai, mốc thời gian mơ hồ… Tầng B (`slop_check`) bắt: nhịp câu phẳng, mật độ bằng chứng thấp, câu sáo rỗng (cách sửa từng rule `SLOP-*`: `anti-ai-rules.md` §8.7). Tầng dữ liệu (`market_facts --verify`) bắt số liệu sai/cũ — exit 3 = nguồn chết, bỏ qua.
 

@@ -1,170 +1,218 @@
 ---
-title: "Cách mua cổ phiếu online 5 bước cho người mới bắt đầu"
-description: "Hướng dẫn cách mua cổ phiếu online 5 bước đơn giản cho người mới: mở tài khoản, nạp tiền, chọn cổ phiếu muốn mua, đặt lệnh mua và quản lý danh mục đầu tư"
-keyword: "cách mua cổ phiếu online"
-slug: "cach-mua-co-phieu-online-cho-nguoi-moi-bat-dau"
+Target_Keyword: cách mua cổ phiếu online
+Title: Cách mua cổ phiếu online: Hướng dẫn 5 bước chuẩn cho F0
+Meta_Description: Hướng dẫn cách mua cổ phiếu online chi tiết trong 5 bước: mở tài khoản eKYC 3 phút, nạp tiền nhanh, đặt lệnh chuẩn và quản lý rủi ro hiệu quả cùng DSC.
+Status: Finalized
+Persona: P2 — F0: Nhà Đầu Tư Mới
 ---
 
-# Cách mua cổ phiếu online 5 bước cho người mới bắt đầu
+# Cách mua cổ phiếu online: Hướng dẫn 5 bước chuẩn cho F0
 
-Mua cổ phiếu ở đâu? Cách mua cổ phiếu online như thế nào để an toàn và hiệu quả?
+Cách mua cổ phiếu online gồm 5 bước: mở tài khoản eKYC, nạp tiền, chọn mã cổ phiếu, đặt lệnh và quản lý danh mục. Để bắt đầu, bạn chỉ cần chuẩn bị căn cước công dân gắn chip cùng tài khoản ngân hàng chính chủ.
 
-Hiện nay, cách mua cổ phiếu rất đơn giản chỉ với 5 bước:
-
-- Bước 1: Mở tài khoản giao dịch chứng khoán (online hoặc trực tuyến)
-- Bước 2: Nạp tiền vào tài khoản giao dịch
-- Bước 3: Chọn cổ phiếu tiềm năng để đầu tư
-- Bước 4: Đặt lệnh mua cổ phiếu trên nền tảng DSC
-- Bước 5: Theo dõi và quản lý danh mục đầu tư hiệu quả
-
-Theo dõi bài hướng dẫn hôm nay của DSC để hiểu chi tiết các bước mua cổ phiếu cho người mới an toàn, hiệu quả nhất!
+Năm 2026, các công ty chứng khoán đã số hóa toàn bộ quy trình giao dịch trên điện thoại thông minh. Bài viết này hướng dẫn chi tiết từng thao tác thực hành giúp nhà đầu tư mới tự tin giải ngân an toàn.
 
 ![cách mua cổ phiếu online](https://extgw.dsc.com.vn/eback/uploads/cach_mua_co_phieu_online_252a9267f8.jpg)
 
-## Hướng dẫn cách mua cổ phiếu online 5 bước chi tiết cho nhà đầu tư F0
+## Hướng dẫn 5 bước mua cổ phiếu online chi tiết cho người mới
+
+Quy trình giao dịch trên thị trường chứng khoán Việt Nam được chuẩn hóa nhằm bảo vệ quyền lợi hợp pháp của nhà đầu tư. Bạn có thể hoàn thành toàn bộ thao tác mua cổ phiếu online theo lộ trình 5 bước sau:
+
+- **Bước 1**: Mở tài khoản giao dịch chứng khoán trực tuyến qua công nghệ eKYC.
+- **Bước 2**: Nạp tiền vào tài khoản chứng khoán qua mã định danh ngân hàng.
+- **Bước 3**: Lựa chọn mã cổ phiếu tiềm năng và xác định quy mô vốn giải ngân.
+- **Bước 4**: Đặt lệnh mua cổ phiếu trên ứng dụng giao dịch theo đúng khung giờ.
+- **Bước 5**: Theo dõi trạng thái khớp lệnh và quản lý danh mục theo chu kỳ T+2.
+
+![Quy trình 5 bước cách mua cổ phiếu online cho người mới bắt đầu](../images/cach-mua-co-phieu-online-cho-nguoi-moi-bat-dau-quy-trinh-5-buoc.jpg)
 
 ### Bước 1: Mở tài khoản giao dịch chứng khoán
 
-#### Chuẩn bị giấy tờ
+Để sở hữu cổ phiếu niêm yết, bạn bắt buộc phải có tài khoản chứng khoán chính chủ. Tài khoản này đóng vai trò như ví lưu ký tài sản tài chính. Cơ chế lưu ký được quản lý bởi Tổng công ty Lưu ký và Bù trừ chứng khoán Việt Nam (VSDC).
 
-Để mở tài khoản chứng khoán nhanh chóng và thuận lợi, bạn chỉ cần chuẩn bị 2 mục sau:
+#### Chuẩn bị hồ sơ
 
-- CMND hoặc CCCD: Ảnh chụp bản gốc rõ nét (cả 2 mặt), không bị mất góc hay mờ thông tin để xác thực danh tính.
-- Tài khoản ngân hàng: Cung cấp chính xác số tài khoản và tên chi nhánh để liên kết nộp/rút tiền giao dịch.
+Nhà đầu tư cá nhân tại Việt Nam chỉ cần chuẩn bị hai yếu tố cơ bản trước khi đăng ký:
 
-[**Quy trình mở tài khoản chứng khoán**](https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan) thường cần những bước xác thực chặt chẽ để đảm bảo an toàn cho cả nhà đầu tư và sàn giao dịch. Việc chuẩn bị giấy tờ một cách kỹ lưỡng từ phía bạn sẽ giúp giảm thiểu thời gian và rắc rối trong quá trình này.
+- **Căn cước công dân (CCCD)**: Bản gốc gắn chip còn thời hạn sử dụng, rõ số và không bị mờ ảnh chân dung.
+- **Tài khoản ngân hàng cá nhân**: Đứng tên chính chủ để liên kết phục vụ việc nộp và rút tiền đầu tư.
 
-#### Chọn công ty chứng khoán
+Quy trình [mở tài khoản chứng khoán](https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan) diễn ra hoàn toàn trên môi trường số. Thao tác này rất nhanh. Bạn không cần chuẩn bị bản công chứng hay ký hợp đồng giấy phức tạp.
 
-Nhiều bạn đọc gặp khó khăn trong việc [**nên mở tài khoản chứng khoán công ty nào**](https://www.dsc.com.vn/kien-thuc/nen-mo-tai-khoan-chung-khoan-o-dau). Hiện nay, có rất nhiều CTCK uy tín trên thị trường, bạn có thể lựa chọn CTCK phù hợp với nhu cầu và mục tiêu đầu tư của mình.
+#### Lựa chọn công ty chứng khoán phù hợp
 
-Bạn có thể tham khảo các tiêu chí sau để lựa chọn CTCK:
+Người mới bắt đầu thường băn khoăn [nên mở tài khoản chứng khoán ở đâu](https://www.dsc.com.vn/kien-thuc/nen-mo-tai-khoan-chung-khoan-o-dau) giữa hàng chục định chế tài chính. Bạn nên cân nhắc ba tiêu chí cốt lõi: uy tín thương hiệu, hạ tầng công nghệ ứng dụng và chất lượng tư vấn hỗ trợ.
 
-- Uy tín của CTCK
-- Phí giao dịch
-- Chất lượng dịch vụ
+Công ty Cổ phần Chứng khoán DSC là định chế tài chính hiện đại định vị theo mô hình Ngân hàng Đầu tư và Quản lý tài sản số. DSC cung cấp nền tảng giao dịch vượt trội cùng dịch vụ chuyên gia tư vấn đồng hành sát sao cho từng khách hàng cá nhân.
 
-[**Công ty Cổ phần Chứng khoán DSC**](https://www.dsc.com.vn/) (DSC) là một công ty chứng khoán uy tín tại Việt Nam. DSC được thành lập từ năm 2006 và có trụ sở chính tại Hà Nội. DSC cung cấp đầy đủ các dịch vụ chứng khoán, bao gồm môi giới chứng khoán, bảo lãnh phát hành chứng khoán, lưu ký chứng khoán, tự doanh chứng khoán, và tư vấn đầu tư chứng khoán.
+#### Thao tác mở tài khoản trực tuyến
 
-DSC có bề dày kinh nghiệm, uy tín trên thị trường và được nhiều nhà đầu tư tin tưởng lựa chọn. DSC cũng đã đạt được nhiều giải thưởng uy tín. Với những yếu tố này, DSC là một công ty chứng khoán uy tín mà bạn có thể cân nhắc lựa chọn.
+Hình thức mở tài khoản online qua công nghệ định danh điện tử (eKYC) giúp tiết kiệm tối đa thời gian di chuyển. Quy trình mở tài khoản gồm 4 bước đơn giản:
 
-#### Mở tài khoản chứng khoán
+1. Tải ứng dụng giao dịch chứng khoán về điện thoại di động (iOS hoặc Android).
+2. Nhập số điện thoại, địa chỉ email và xác thực mã OTP gửi về tin nhắn.
+3. Chụp ảnh hai mặt CCCD gắn chip và quét khuôn mặt theo chỉ dẫn tự động.
+4. Kiểm tra thông tin cá nhân và ký hợp đồng điện tử trực tiếp trên màn hình.
 
-Bạn phải sở hữu một tài khoản chứng khoán đứng tên mình để bắt đầu mua cổ phiếu. Hiện nay, quy trình này đã được các công ty chứng khoán tối giản hóa, mang đến sự thuận tiện tối đa cho nhà đầu tư với hai phương thức chính:
-
-- **Mở tài khoản trực tuyến (Online):** Đây là lựa chọn tối ưu cho những người bận rộn. Bằng việc ứng dụng công nghệ định danh điện tử (eKYC) online chỉ với vài thao tác trên điện thoại hoặc máy tính. Quá trình này thường chỉ mất từ 3 - 5 phút để hoàn tất đăng ký và kích hoạt tài khoản ngay mà không cần đến trực tiếp quầy giao dịch.
-- **Mở tài khoản trực tiếp:** Nếu bạn muốn được tư vấn kỹ lưỡng về các điều khoản hoặc cần hỗ trợ trực tiếp về thủ tục, bạn có thể mang CMND/CCCD đến các phòng giao dịch của công ty chứng khoán. Tại đây, đội ngũ nhân viên sẽ hướng dẫn bạn hoàn thiện hồ sơ và giải đáp các thắc mắc liên quan đến quy trình vận hành của thị trường.
+Hệ thống sẽ cấp mã số tài khoản giao dịch ngay sau khi dữ liệu eKYC được xác thực thành công. Bạn cũng có thể đến trực tiếp phòng giao dịch nếu muốn nhận hợp đồng bản cứng và trao đổi trực tiếp với nhân viên tư vấn.
 
 ### Bước 2: Nạp tiền vào tài khoản giao dịch
 
+Sau khi tài khoản được kích hoạt, bạn cần nạp tiền vào để bắt đầu mua bán cổ phiếu. Hệ thống tài chính hiện đại cho phép dòng tiền được ghi nhận tức thì vào tài khoản chứng khoán 24/7.
+
 ![Nạp tiền vào tài khoản giao dịch](https://extgw.dsc.com.vn/eback/uploads/mua_co_phieu_o_dau_6af95a19a6.jpg)
 
-Bạn có thể nạp tiền vào tài khoản giao dịch chứng khoán thông qua tài khoản ngân hàng của mình. Bạn cần cung cấp thông tin số tài khoản chứng khoán và số tiền muốn nạp cho CTCK.
+#### Nạp tiền nhanh qua mã định danh tự động
 
-Có nhiều phương thức nạp tiền vào tài khoản giao dịch chứng khoán, bạn có thể lựa chọn phương thức phù hợp với mình.
+Phương thức tối ưu nhất hiện nay là chuyển khoản ngân hàng thông qua mã định danh tài khoản chuyên dụng. Cách thức này loại bỏ hoàn toàn rủi ro sai sót nội dung chuyển tiền hoặc treo lệnh ngoài giờ hành chính.
 
-Một số phương thức nạp tiền phổ biến bao gồm:
+Tại Chứng khoán DSC, khách hàng nạp tiền trực tiếp qua ngân hàng đối tác BIDV bằng công thức tài khoản ảo thông minh:
 
-- Chuyển khoản ngân hàng
-- Nạp tiền tại quầy giao dịch của CTCK
+- **Ngân hàng thụ hưởng**: BIDV (Ngân hàng TMCP Đầu tư và Phát triển Việt Nam).
+- **Số tài khoản thụ hưởng**: Cú pháp `963369` + 6 số cuối số tài khoản chứng khoán + số tiểu khoản.
+- **Tên người thụ hưởng**: Họ và tên chính chủ tài khoản chứng khoán hiển thị tự động.
 
-### Bước 3: Chọn cổ phiếu để mua
+Ví dụ: Tài khoản chứng khoán của bạn là `024C123456`, muốn nạp vào tiểu khoản thường (đuôi 1), số tài khoản thụ hưởng sẽ là `9633691234561`. Tiền sẽ được cộng vào sức mua của bạn chỉ sau vài giây.
 
-#### Tìm hiểu về cổ phiếu
+#### Chuyển khoản qua các ngân hàng liên kết
 
-Trước khi mua cổ phiếu, bạn cần tìm hiểu kỹ về cổ phiếu đó. Bạn có thể tham khảo các thông tin về cổ phiếu trên các trang web tài chính, báo chí, hoặc tham gia các [**khóa học đầu tư chứng khoán**](https://www.dsc.com.vn/kien-thuc/khoa-hoc-chung-khoan) để có thêm kiến thức và kinh nghiệm lựa chọn cổ phiếu.
+Ngoài mã định danh, bạn có thể nạp tiền từ ứng dụng ngân hàng số của Vietcombank, Techcombank, VPBank hoặc MB Bank. Hãy chọn tính năng chuyển tiền chứng khoán hoặc chuyển khoản nhanh 24/7 Napas vào số tài khoản tổng của công ty chứng khoán theo đúng cú pháp hướng dẫn.
 
-Một số thông tin quan trọng cần tìm hiểu bao gồm:
+### Bước 3: Chọn cổ phiếu tiềm năng để mua
 
-- Tên công ty
-- Ngành nghề kinh doanh
-- Tình hình tài chính
-- Kết quả kinh doanh
-- Triển vọng phát triển
+Lựa chọn đúng doanh nghiệp quyết định trực tiếp đến sự an toàn của dòng vốn. Đây là bước then chốt. Nhà đầu tư mới không nên mua theo tin đồn trên mạng xã hội mà cần dựa trên những tiêu chí phân tích cơ bản khách quan.
 
-#### Lựa chọn cổ phiếu tốt để mua
+#### Tiêu chí đánh giá cổ phiếu cho người mới
 
-Sau khi đã có tài khoản và nguồn vốn, việc đầu tư các mã [**cổ phiếu tiềm năng**](https://www.dsc.com.vn/kien-thuc/top-5-co-phieu-dang-dau-tu) là yếu tố then chốt quyết định lợi nhuận. Để đánh giá một cổ phiếu có đáng đầu tư hay không, bạn cần dựa trên 3 trụ cột chính:
+Bạn có thể áp dụng ba bộ lọc cơ bản để tìm kiếm [cách chọn cổ phiếu tốt](https://www.dsc.com.vn/kien-thuc/3-cach-chon-co-phieu-tot-va-co-tiem-nang-tang-gia-de-dau-tu) cho danh mục khởi đầu:
 
-- **Tiềm năng tăng trưởng của doanh nghiệp:** Hãy ưu tiên những công ty có sức khỏe tài chính lành mạnh, thể hiện qua doanh thu và lợi nhuận tăng trưởng đều đặn trong nhiều năm. Ngoài ra, hãy tìm hiểu về chiến lược phát triển, lợi thế cạnh tranh (con hào kinh tế) và tầm nhìn của ban lãnh đạo để đảm bảo doanh nghiệp có khả năng bứt phá trong tương lai.
-- **Định giá cổ phiếu:** Một công ty tốt chưa chắc là một khoản đầu tư tốt nếu giá mua quá cao. Bạn cần xác định xem giá thị trường hiện tại đang cao hay thấp hơn giá trị thực của doanh nghiệp. Sử dụng các chỉ số tài chính phổ biến như [**P/E**](https://www.dsc.com.vn/kien-thuc/chi-so-p-e-la-gi-cach-ap-dung-de-tim-co-phieu-tot) (Giá/Lợi nhuận mỗi cổ phiếu), P/B (Giá/Giá trị sổ sách) và so sánh với mức trung bình ngành để đánh giá mức độ đắt/rẻ của cổ phiếu.
-- [**Tính thanh khoản của thị trường**](https://www.dsc.com.vn/kien-thuc/thanh-khoan-la-gi): Đây là khả năng chuyển đổi thành tiền mặt của cổ phiếu. Bạn nên ưu tiên các cổ phiếu có khối lượng giao dịch hàng ngày lớn. Thanh khoản cao giúp bạn dễ dàng thực hiện lệnh mua/bán ngay lập tức với mức giá mong muốn mà không gặp tình trạng "mất thanh khoản" khi thị trường biến động.
+- **Sức khỏe tài chính lành mạnh**: Doanh nghiệp duy trì doanh thu và lợi nhuận sau thuế tăng trưởng đều đặn qua các năm. Tỷ lệ nợ vay ở mức an toàn và ban lãnh đạo có năng lực quản trị minh bạch.
+- **Định giá hợp lý**: Giá thị trường của cổ phiếu không vượt quá xa giá trị thực tế của công ty. Bạn nên so sánh [chỉ số P/E](https://www.dsc.com.vn/kien-thuc/chi-so-p-e-la-gi-cach-ap-dung-de-tim-co-phieu-tot) và chỉ số P/B của mã đó với mức trung bình của toàn ngành.
+- **Thanh khoản thị trường cao**: Ưu tiên cổ phiếu có khối lượng khớp lệnh hàng ngày từ vài trăm nghìn đến hàng triệu đơn vị. Yếu tố [thanh khoản thị trường](https://www.dsc.com.vn/kien-thuc/thanh-khoan-la-gi) giúp bạn dễ dàng bán ra để thu hồi tiền mặt khi cần thiết mà không bị trượt giá.
 
-### Bước 4: Đặt lệnh mua cổ phiếu
+#### Cần bao nhiêu tiền để mua một lô cổ phiếu?
 
-#### Các loại lệnh mua cổ phiếu
+Thị trường chứng khoán Việt Nam áp dụng quy định giao dịch theo lô chẵn 100 cổ phiếu trên cả ba sàn HOSE, HNX và UPCoM. Điều này có nghĩa là số lượng đặt mua tối thiểu cho một lần đặt lệnh là 100 cổ phiếu.
 
-Khi mua cổ phiếu, việc sử dụng [**các loại lệnh mua**](https://www.dsc.com.vn/kien-thuc/lenh-ato-atc-lo-mp-la-gi) là một phần quan trọng để đạt được kết quả đầu tư tối ưu. Có ba loại lệnh mua chính mà nhà đầu tư thường xuyên sử dụng để thực hiện giao dịch cổ phiếu một cách linh hoạt và hiệu quả.
+Dưới đây là bảng tính số vốn tối thiểu thực tế để sở hữu 1 lô 100 cổ phiếu của các doanh nghiệp đầu ngành:
 
-- **Lệnh mua thị trường:** Lệnh mua được khớp ngay với lệnh bán có giá tốt nhất trên thị trường.
-- **Lệnh mua giới hạn:** Lệnh mua chỉ được khớp khi giá cổ phiếu bằng hoặc thấp hơn giá giới hạn mà bạn đặt.
+| Mã cổ phiếu | Doanh nghiệp | Thị giá tham khảo (VNĐ/cp) | Vốn tối thiểu 1 lô (100 cp) | Phí giao dịch DSC (0,1%) |
+| :--- | :--- | :---: | :---: | :---: |
+| **MBB** | Ngân hàng Quân Đội | 24.500 | 2.450.000 VNĐ | 2.450 VNĐ |
+| **HPG** | Tập đoàn Hòa Phát | 28.000 | 2.800.000 VNĐ | 2.800 VNĐ |
+| **TCB** | Ngân hàng Techcombank | 23.500 | 2.350.000 VNĐ | 2.350 VNĐ |
+| **VNM** | Sữa Việt Nam (Vinamilk) | 65.000 | 6.500.000 VNĐ | 6.500 VNĐ |
+| **FPT** | Tập đoàn FPT | 135.000 | 13.500.000 VNĐ | 13.500 VNĐ |
 
-#### Cách đặt lệnh mua cổ phiếu
+Nhà đầu tư mới hoàn toàn có thể bắt đầu hành trình đầu tư chứng khoán với số vốn chỉ từ 2 đến 3 triệu đồng. Việc trải nghiệm giao dịch thực tế với số vốn nhỏ giúp bạn rèn luyện tâm lý vững vàng trước khi gia tăng quy mô tài sản.
 
-Bạn có thể đặt lệnh mua cổ phiếu trực tiếp trên hệ thống giao dịch của công ty chứng khoán. Việc đặt lệnh mua cổ phiếu đòi hỏi sự chú ý đến các thông tin như mã cổ phiếu, số lượng, loại lệnh và giá mua. Hiểu rõ cách thức này hoạt động sẽ giúp bạn thực hiện các quyết định đầu tư thông minh và có hiệu suất cao trên thị trường chứng khoán.
+![Minh họa số vốn tối thiểu mua 1 lô cổ phiếu online](../images/cach-mua-co-phieu-online-cho-nguoi-moi-bat-dau-bang-tinh-von.jpg)
 
-Các thông tin bạn cần nhập vào hệ thống khi thực hiện đặt lệnh mua cổ phiếu:
+### Bước 4: Đặt lệnh mua cổ phiếu trên ứng dụng giao dịch
 
-- Mã cổ phiếu
-- Số lượng cổ phiếu muốn mua
-- Loại lệnh mua
-- Giá mua
+Sau khi lựa chọn được mã cổ phiếu mục tiêu, bạn tiến hành nhập lệnh mua trực tiếp trên nền tảng số của công ty chứng khoán. Nắm rõ cơ chế lệnh và quy tắc giao dịch giúp lệnh mua khớp thành công với mức giá tối ưu nhất.
 
-Ngoài ra, một lưu ý quan trọng để lệnh mua của bạn được hệ thống ghi nhận và khớp thành công chính là yếu tố thời điểm. Các lệnh giao dịch chỉ có hiệu lực khi được đặt trong khung [**thời gian giao dịch chứng khoán**](https://www.dsc.com.vn/kien-thuc/gio-giao-dich-chung-khoan-viet-nam) quy định của các sàn HOSE, HNX và UPCoM.
+#### Phân biệt hai loại lệnh cơ bản cho F0
 
-Nếu bạn đặt lệnh vào khung giờ nghỉ trưa hoặc sau giờ đóng cửa, lệnh sẽ được đưa vào trạng thái "Chờ gửi" và chỉ có hiệu lực vào phiên giao dịch kế tiếp. Đặc biệt, với các loại lệnh như ATO (khớp lệnh mở cửa) hay ATC (khớp lệnh đóng cửa), việc xác định đúng khung giờ vàng là yếu tố then chốt giúp bạn mua được cổ phiếu ở mức giá tối ưu nhất ngay khi thị trường bắt đầu hoặc kết thúc phiên.
+Thị trường có nhiều công cụ giao dịch phức tạp. Tuy nhiên, nhà đầu tư mới chỉ cần nắm vững hai lệnh cơ bản trong hệ thống [các loại lệnh trong chứng khoán](https://www.dsc.com.vn/kien-thuc/lenh-ato-atc-lo-mp-la-gi):
+
+- **Lệnh giới hạn (LO)**: Lệnh mua với mức giá cụ thể do bạn tự ấn định. Lệnh chỉ khớp khi thị trường có người bán với mức giá bằng hoặc thấp hơn giá này.
+- **Lệnh thị trường (MP)**: Lệnh mua lập tức tại mức giá bán thấp nhất hiện có trên sàn. Lệnh MP giúp khớp lệnh ngay nhưng phụ thuộc vào mức giá chào bán thực tế.
+
+#### Siêu bảng thông số kỹ thuật và biên độ 3 sàn chứng khoán
+
+Mỗi sàn giao dịch tại Việt Nam có quy định riêng biệt về biên độ giá và cơ chế khớp lệnh:
+
+| Tiêu chí | Sàn HOSE (TP.HCM) | Sàn HNX (Hà Nội) | Sàn UPCoM |
+| :--- | :---: | :---: | :---: |
+| **Biên độ dao động ngày** | **±7%** | **±10%** | **±15%** |
+| **Đơn vị lô giao dịch chẵn** | 100 cổ phiếu | 100 cổ phiếu | 100 cổ phiếu |
+| **Lệnh phiên mở cửa (ATO)** | Có (9h00 – 9h15) | Không áp dụng | Không áp dụng |
+| **Lệnh phiên đóng cửa (ATC)** | Có (14h30 – 14h45) | Có (14h30 – 14h45) | Không áp dụng |
+| **Lệnh thị trường** | Lệnh MP | Lệnh MAK, MOK, MTL | Không áp dụng |
+| **Giao dịch thỏa thuận** | Từ 20.000 cổ phiếu | Từ 5.000 cổ phiếu | Từ 10.000 cổ phiếu |
+
+#### Các bước thao tác đặt lệnh mua thực tế
+
+Trên ứng dụng giao dịch, bạn thực hiện đặt lệnh theo trình tự sau:
+
+1. Đăng nhập vào ứng dụng và truy cập mục Giao dịch lệnh.
+2. Nhập mã chứng khoán bạn muốn mua (ví dụ: HPG, MBB).
+3. Chọn loại lệnh phù hợp (ưu tiên lệnh LO cho người mới).
+4. Nhập khối lượng mua (bội số của 100 cổ phiếu) và mức giá kỳ vọng.
+5. Kiểm tra lại tổng giá trị giải ngân và nhấn nút Mua, sau đó xác thực bằng mã PIN hoặc Smart OTP.
+
+Lệnh giao dịch chỉ có hiệu lực trong [giờ giao dịch chứng khoán](https://www.dsc.com.vn/kien-thuc/gio-giao-dich-chung-khoan-viet-nam) chính thức từ 9h00 đến 11h30 và từ 13h00 đến 15h00 từ thứ Hai đến thứ Sáu. Nếu bạn đặt lệnh ngoài khung giờ này, lệnh sẽ được hệ thống lưu ở trạng thái chờ và gửi lên sàn vào phiên tiếp theo.
 
 ![Lưu ý về thời gian giao dịch chứng khoán khi mua cổ phiếu](https://extgw.dsc.com.vn/eback/uploads/cach_mua_co_phieu_3_79bad3be16.jpg)
 
 ### Bước 5: Theo dõi và quản lý danh mục đầu tư
 
-#### Cách theo dõi danh mục đầu tư
+Mua xong cổ phiếu không đồng nghĩa với việc kết thúc quá trình đầu tư. Quản trị danh mục và kiểm soát rủi ro bài bản là yếu tố giúp bảo vệ dòng vốn và tối ưu hóa lợi nhuận bền vững.
 
-Trong khi theo dõi danh mục đầu tư, quan trọng nhất là không chỉ dựa vào một nguồn thông tin. Sự kết hợp giữa thông tin từ hệ thống giao dịch của công ty chứng khoán và các trang web tài chính sẽ giúp bạn xây dựng một cái nhìn đồng nhất và toàn diện nhất về danh mục của mình. Điều này sẽ giúp bạn đưa ra quyết định thông minh và linh hoạt để tối ưu hóa hiệu suất đầu tư của mình..
+#### Quy định chu kỳ thanh toán T+2
 
-Khi theo dõi danh mục đầu tư, bạn cần lưu ý các thông tin sau:
+Theo quy định của VSDC, thị trường chứng khoán Việt Nam vận hành theo chu kỳ thanh toán T+2. Khi bạn đặt lệnh mua khớp thành công vào ngày T (ví dụ thứ Hai), tiền sẽ được khấu trừ ngay lập tức.
 
-- Giá cổ phiếu
-- Lợi nhuận/lỗ của danh mục đầu tư
-- Tình hình tài chính của các công ty
+Tuy nhiên, quyền sở hữu cổ phiếu sẽ về tài khoản vào lúc 13h00 ngày làm việc thứ hai (ngày T+2). Bạn chỉ có thể thực hiện lệnh bán kể từ chiều ngày T+2 trở đi.
 
-#### Cách quản lý danh mục đầu tư
+#### Nguyên tắc quản trị danh mục cho nhà đầu tư F0
 
-Bạn cần thường xuyên theo dõi và quản lý danh mục đầu tư của mình để có thể đưa ra quyết định mua bán phù hợp. Để theo sát danh mục đầu tư, bạn cần thiết lập một lịch trình cụ thể để đánh giá và điều chỉnh danh mục của mình. Việc này bao gồm việc xem xét các thông tin thị trường, các sự kiện kinh tế toàn cầu, và tình hình tài chính của các doanh nghiệp bạn đang đầu tư. Điều này giúp bạn có cái nhìn toàn diện hơn và có khả năng thích ứng với thay đổi thị trường một cách linh hoạt.
+Để danh mục đầu tư tăng trưởng an toàn, bạn nên tuân thủ các nguyên tắc kỷ luật sau:
 
-Điều quan trọng nhất, bạn không nên đặt toàn bộ số vốn đầu tư của mình vào một cổ phiếu duy nhất. Điều này giúp giảm rủi ro và bảo vệ bạn khỏi những thay đổi đột ngột của thị trường. Nếu một cổ phiếu giảm giá mạnh, sự đa dạng sẽ giúp giảm thiểu tác động tiêu cực lên tổng giá trị danh mục của bạn.
+- **Phân bổ vốn hợp lý**: Không bao giờ dồn toàn bộ số tiền vào một mã duy nhất. Bạn nên chia nguồn vốn cho 3 đến 5 mã cổ phiếu thuộc các nhóm ngành khác nhau để phân tán rủi ro.
+- **Thiết lập mức cắt lỗ kỷ luật**: Luôn xác định ngưỡng chịu lỗ tối đa trước khi mở vị thế. Nếu giá cổ phiếu vi phạm ngưỡng giảm 7% đến 8%, bạn nên chủ động bán ra để bảo vệ vốn.
+- **Tránh tâm lý FOMO mua đuổi**: Hạn chế mua vào những cổ phiếu đã tăng trần liên tiếp nhiều phiên mà không có nền tảng cơ bản hỗ trợ.
 
-Các chủ đề xem thêm:
+Khởi đầu đầu tư có thể khiến bạn bối rối trước hàng trăm biến số thị trường và các thao tác kỹ thuật mới lạ. Sự hỗ trợ từ chuyên gia tư vấn giàu kinh nghiệm giúp người mới bắt đầu chọn đúng cổ phiếu tiềm năng và tránh các sai lầm tốn kém.
 
-- [**Cách mua cổ phiếu Vingroup**](https://www.dsc.com.vn/kien-thuc/cach-mua-co-phieu-vingroup-vic-huong-dan-moi-nhat-2024)
-- [**Cách mua cổ phiếu FPT**](https://www.dsc.com.vn/kien-thuc/cach-mua-co-phieu-fpt-cong-ty-co-phan-tap-doan-fpt)
+<div style="background: linear-gradient(135deg, #0D1B2A 0%, #0A3D2E 100%); border-radius: 12px; padding: 30px; margin: 30px 0; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 10px 30px rgba(13, 27, 42, 0.25); position: relative; overflow: hidden; color: #ffffff; gap: 20px; flex-wrap: wrap;">
+  <div aria-hidden="true" style="position: absolute; top: -50%; right: -20%; width: 300px; height: 300px; background: radial-gradient(circle, rgba(43, 232, 65, 0.18) 0%, rgba(43, 232, 65, 0) 70%); border-radius: 50%;"></div>
+  <div style="flex: 1 1 260px; position: relative; z-index: 1;">
+    <p style="font-size: 22px; line-height: 1.35; margin: 0 0 10px 0; font-weight: 700; color: #ffffff;">Mở tài khoản chứng khoán DSC chỉ với CCCD gắn chip</p>
+    <p style="font-size: 15px; line-height: 1.5; margin: 0; color: #E8F8F2;">eKYC 3 phút • Phí giao dịch chỉ từ 0,1% • Chuyên gia Môi giới 1:1 đồng hành</p>
+  </div>
+  <a href="https://www.dsc.com.vn/mo-tai-khoan" style="background: #2BE841; color: #0D1B2A; padding: 14px 32px; border-radius: 30px; text-decoration: none; font-weight: 700; font-size: 16px; display: inline-block; position: relative; z-index: 1;">Mở tài khoản — 3 phút</a>
+</div>
 
-## Cách mua cổ phiếu an toàn, đơn giản tại Công ty Chứng khoán DSC
+## Lợi thế khi giao dịch cổ phiếu online tại Chứng khoán DSC
 
-DSC là một trong những công ty chứng khoán tiên phong trong chuyển đổi số tại Việt Nam, mang đến trải nghiệm đầu tư hiện đại, nhanh chóng và hiệu quả. Với nền tảng công nghệ mạnh mẽ và đội ngũ chuyên gia phân tích giàu kinh nghiệm, DSC không chỉ cung cấp dịch vụ giao dịch mà còn là người đồng hành đáng tin cậy, giúp nhà đầu tư tối ưu hóa lợi nhuận.
+Chứng khoán DSC tập trung xây dựng hệ sinh thái số hiện đại nhằm tối ưu trải nghiệm cho khách hàng cá nhân. Nền tảng giao dịch App DSC Trading tích hợp tốc độ khớp lệnh hàng đầu cùng giao diện trực quan thân thiện.
 
-Nhà đầu tư có thể dễ dàng mở tài khoản online 100% qua định danh điện tử (eKYC), tiếp cận hệ thống công cụ hỗ trợ độc quyền như DSC ChatAI và các báo cáo phân tích chuyên sâu hàng ngày.
-
-Để bắt đầu hành trình đầu tư, bạn có thể lựa chọn một trong hai cách mở tài khoản tại DSC sau đây:
-
-- **Cách 1: Mở tài khoản online qua ứng dụng DSC Trading** – Chỉ với 3 phút thực hiện định danh eKYC, bạn sẽ sở hữu ngay tài khoản chứng khoán để giao dịch mà không cần ký kết hồ sơ giấy. Hãy tải ứng dụng DSC Trading trên App Store hoặc CH Play và thực hiện theo hướng dẫn trực quan ngay trên điện thoại.
-- **Cách 2: Mở tài khoản qua sự hỗ trợ của chuyên viên tư vấn** – Nếu bạn cần được hướng dẫn tận tình về quy trình cũng như nhận tư vấn chiến lược đầu tư ngay từ đầu, hãy liên hệ với đội ngũ chuyên viên của DSC tại các chi nhánh hoặc qua Hotline.
+Đặc biệt, DSC giải quyết triệt để nỗi lo thiếu kinh nghiệm của nhà đầu tư mới thông qua dịch vụ Môi giới 1:1. Mỗi khách hàng được kết nối trực tiếp với một chuyên viên tư vấn riêng biệt. Chuyên viên sẽ hỗ trợ giải đáp thắc mắc, cập nhật khuyến nghị và đồng hành cùng bạn.
 
 ![Cách mua cổ phiếu tại Công ty Chứng khoán DSC](https://extgw.dsc.com.vn/eback/uploads/cach_mua_co_phieu_tai_dsc_199d102fc9.jpg)
 
-Tại DSC, quy trình nạp và rút tiền được tối ưu hóa để diễn ra nhanh chóng, giúp nhà đầu tư không bỏ lỡ bất kỳ cơ hội thị trường nào. Đặc biệt, DSC hỗ trợ nhà đầu tư bắt đầu với mọi quy mô vốn, không yêu cầu số dư tối thiểu, tạo điều kiện thuận lợi nhất cho những người mới gia nhập thị trường.
+Biểu phí giao dịch tại DSC cạnh tranh hàng đầu thị trường, chỉ từ 0,1% giá trị giao dịch. Hệ thống nạp rút tiền tức thì qua mã định danh ngân hàng giúp bạn chủ động giao dịch. Dòng vốn luân chuyển nhanh chóng mà không gặp bất kỳ rào cản kỹ thuật nào.
 
-Lựa chọn giao dịch tại DSC, nhà đầu tư hoàn toàn yên tâm về tính minh bạch và an toàn. Mọi báo cáo tài chính, thông tin thị trường và khuyến nghị đầu tư đều được cập nhật liên tục, giúp bạn có cái nhìn khách quan và chính xác về sức khỏe của các doanh nghiệp. Hệ thống bảo mật đa lớp của DSC đảm bảo tài sản của bạn luôn được bảo vệ ở mức cao nhất.
+## Câu hỏi thường gặp khi mua cổ phiếu online
 
-[**Mở tài khoản chứng khoán DSC**](https://www.dsc.com.vn/mo-tai-khoan) ngay hôm nay để nhận đặc quyền tư vấn từ chuyên gia và trải nghiệm công nghệ đầu tư thông minh!
+Dưới đây là phần giải đáp các thắc mắc phổ biến nhất của nhà đầu tư khi chuẩn bị tham gia thị trường chứng khoán:
 
-## Kết luận
+### Muốn mua cổ phiếu thì mua ở đâu uy tín?
 
-Tóm lại, cách mua cổ phiếu không hề phức tạp nếu bạn nắm vững quy trình và lựa chọn được người đồng hành tin cậy. Việc thực hiện bài bản từ bước mở tài khoản, nạp tiền đến quản lý danh mục sẽ giúp bạn xây dựng một lộ trình đầu tư bền vững và an tâm. Tuy nhiên, thị trường luôn biến động, chìa khóa để thành công chính là sự chuẩn bị kỹ lưỡng về kiến thức và không ngừng học hỏi để tối ưu hóa hiệu quả dòng vốn.
+Nhà đầu tư cá nhân mua cổ phiếu qua tài khoản tại các công ty chứng khoán được UBCKNN cấp phép, như Chứng khoán DSC. Bạn không thể mua trực tiếp tại Sở giao dịch HOSE hay HNX. Tuyệt đối không giao dịch trao tay ngoài sàn vì thiếu hành lang pháp lý bảo hộ.
 
-Nếu bạn đang tìm kiếm một khởi đầu thuận lợi với nền tảng công nghệ hiện đại và sự hỗ trợ từ các chuyên gia giàu kinh nghiệm, hãy mở tài khoản tại DSC ngay hôm nay. Chúng tôi luôn sẵn sàng đồng hành cùng bạn trên mọi bước đường chinh phục mục tiêu tài chính.
+### Cần bao nhiêu tiền để bắt đầu mua cổ phiếu online?
 
-**Bài viết này đã thảo luận về chủ đề cách mua cổ phiếu. Để tìm hiểu thêm các chủ đề liên quan, bạn có thể đọc các bài viết sau từ [DSC](https://www.dsc.com.vn/):**
+Thị trường chứng khoán Việt Nam không quy định số vốn tối thiểu. Bạn chỉ cần đủ tiền mua 1 lô chẵn tối thiểu 100 cổ phiếu theo quy định của sàn. Mức vốn này tương đương từ vài trăm nghìn đến vài triệu đồng tùy từng mã.
 
-- [**Cách đầu tư chứng khoán**](https://www.dsc.com.vn/kien-thuc/cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau)
-- [**Tư vấn chứng khoán là gì?**](https://www.dsc.com.vn/kien-thuc/tu-van-chung-khoan-la-gi)
+### Mua cổ phiếu online bao lâu thì được bán?
+
+Theo quy định của VSDC, cổ phiếu mua ngày T sẽ về tài khoản lúc 13h00 ngày làm việc thứ hai (T+2). Nhà đầu tư có thể đặt lệnh bán ngay trong phiên chiều hôm đó.
+
+### Người mới bắt đầu nên chọn mua cổ phiếu nào?
+
+Nhà đầu tư mới nên ưu tiên cổ phiếu rổ VN30 có nền tảng tài chính tốt và thanh khoản dồi dào. Bạn có thể liên hệ chuyên gia Môi giới 1:1 của DSC để nhận danh mục khuyến nghị phù hợp.
+
+## Lời kết
+
+Nắm vững quy trình mua cổ phiếu online giúp bạn làm chủ kế hoạch tài chính cá nhân. Thực hiện bài bản 5 bước từ mở tài khoản eKYC đến đặt lệnh sẽ giúp bạn tự tin giao dịch.
+
+Thành công trong đầu tư luôn bắt đầu từ những bước đi bài bản và sự đồng hành của một định chế tài chính đáng tin cậy. Hãy tải ứng dụng DSC Trading để bắt đầu đầu tư và nhận đặc quyền tư vấn từ chuyên gia hàng đầu.
+
+<div style="background: linear-gradient(135deg, #0D1B2A 0%, #0A3D2E 100%); border-radius: 14px; padding: 34px 30px; margin: 36px 0; text-align: center; color: #ffffff;">
+  <p style="font-size: 23px; line-height: 1.35; margin: 0 0 12px 0; font-weight: 700; color: #ffffff;">Bắt đầu giao dịch cổ phiếu online ngay hôm nay</p>
+  <p style="font-size: 15px; line-height: 1.6; margin: 0 0 22px 0; color: #E8F8F2; max-width: 520px; margin-left: auto; margin-right: auto;">Đăng ký eKYC 100% online trong 3 phút, giao dịch với chi phí tối ưu và nhận tư vấn chiến lược 1:1 từ chuyên viên DSC.</p>
+  <a href="https://www.dsc.com.vn/mo-tai-khoan" style="background: #2BE841; color: #0D1B2A; padding: 15px 38px; border-radius: 30px; text-decoration: none; font-weight: 700; font-size: 16px; display: inline-block;">Mở tài khoản — 3 phút</a>
+</div>

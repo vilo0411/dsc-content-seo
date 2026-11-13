@@ -1,0 +1,29 @@
+{
+ "title": "Mở tài khoản — đợt 4: top-5-co-phieu-dang-dau-tu",
+ "intro": "Chuyển link pillar từ Kết luận lên mở bài; viết lại câu CTA thiếu vế chính. Thay mục top-5 của đợt 2.",
+ "edits": [
+  {
+   "src": "top-5-co-phieu-dang-dau-tu",
+   "op": "append",
+   "find": "Nên đầu tư cổ phiếu nào năm 2026",
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "anchor": "mở tài khoản giao dịch cổ phiếu",
+   "sentence": "Nếu đây là lần đầu mua cổ phiếu, bạn cần [mở tài khoản giao dịch cổ phiếu] trước, rồi nên vào lệnh với khối lượng nhỏ để quen cách đặt lệnh trước khi giải ngân theo danh sách này.",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Mở bài: người mới đang cân nhắc mua theo danh sách → bước đầu tiên là mở tài khoản"
+  },
+  {
+   "src": "top-5-co-phieu-dang-dau-tu",
+   "op": "replace",
+   "find": "Dù bạn đang cân nhắc",
+   "old_text": "<p>Dù bạn đang cân nhắc <a target=\"_blank\" href=\"https://www.dsc.com.vn/mo-tai-khoan\"><strong>mở tài khoản tại DSC</strong></a> hay đã là nhà đầu tư dày dặn, để nhận được những phân tích sâu sắc hơn, cập nhật thông tin thị trường tức thời và được tư vấn trực tiếp về điểm mua, điểm bán trong phiên giao dịch. Người mới có thể xem trước <a target=\"_blank\" href=\"https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan\"><strong>cách mở tài khoản chứng khoán</strong></a> để biết cần chuẩn bị những gì.</p>",
+   "to": "https://www.dsc.com.vn/mo-tai-khoan",
+   "sentence": "<p>Để nhận phân tích chuyên sâu, cập nhật thị trường tức thời và tư vấn trực tiếp điểm mua, điểm bán trong phiên, bạn có thể [<strong>mở tài khoản tại DSC</strong>].</p>",
+   "group": "fix",
+   "pri": "P1",
+   "check_text": true,
+   "why": "Viết lại CTA: câu gốc thiếu vế chính; gỡ câu 'xem trước cách mở tài khoản' gắn sau CTA (link đã chuyển lên mở bài)"
+  }
+ ]
+}

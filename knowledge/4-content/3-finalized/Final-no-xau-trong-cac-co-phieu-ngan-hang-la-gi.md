@@ -18,7 +18,7 @@ Về mặt kỹ thuật tại Việt Nam, nợ xấu được xác định là c
 
 Nợ xấu gia tăng làm suy giảm chất lượng tài sản của ngân hàng. Đơn vị kinh doanh buộc phải trích lập dự phòng rủi ro tín dụng từ lợi nhuận hoạt động để bù đắp tổn thất.
 
-Tính đến tháng 8/2026, toàn thị trường chứng khoán Việt Nam ghi nhận gần 13,66 triệu tài khoản giao dịch theo dữ liệu VSDC. Cổ phiếu ngân hàng chiếm tỷ trọng vốn hóa lớn nhất sàn VN-Index. Do đó, nợ xấu là chỉ số được theo dõi sát sao mỗi mùa báo cáo tài chính.
+Cổ phiếu ngân hàng là nhóm ngành chiếm tỷ trọng vốn hóa lớn nhất trong VN-Index. Do đó, nợ xấu là chỉ số được theo dõi sát sao mỗi mùa báo cáo tài chính.
 
 >> Xem thêm:
 

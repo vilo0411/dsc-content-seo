@@ -1,0 +1,1655 @@
+{
+ "title": "Câu mới chứa link về hub/pillar",
+ "edits": [
+  {
+   "src": "cach-mua-co-phieu-vingroup-vic-huong-dan-moi-nhat-2024",
+   "op": "append",
+   "find": "hư bất động sản, bán lẻ, y tế, giáo dục và công nghiệp ô tô.",
+   "to": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "sentence": "Do bất động sản là mảng lớn nhất, VIC hay được đặt cạnh VHM và VRE khi nhà đầu tư so sánh các [cổ phiếu bất động sản] trên HOSE.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=3"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-novaland",
+   "op": "append",
+   "find": "nhà đầu tư cá nhân ưa thích trường phái lướt sóng dòng tiền.",
+   "to": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "sentence": "Mức biến động này cao hơn hẳn mặt bằng chung của [nhóm bất động sản], nên vị thế với NVL cần tỷ trọng nhỏ và điểm cắt lỗ rõ.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=4"
+  },
+  {
+   "src": "top-co-phieu-dau-tu-cong-nen-dau-tu",
+   "op": "append",
+   "find": "nghiệp trong ngành ghi nhận doanh thu và lợi nhuận đáng kể.",
+   "to": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "sentence": "Hạ tầng giao thông hoàn thiện cũng mang lại lợi ích gián tiếp cho các [cổ phiếu bất động sản] có quỹ đất quanh những tuyến cao tốc mới.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=12"
+  },
+  {
+   "src": "co-phieu-tch-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "append",
+   "find": "công ty đã mở rộng thành công sang mảng bất động sản nhà ở.",
+   "to": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "sentence": "Nhờ mảng nhà ở, TCH được xếp vào [nhóm bất động sản], nhưng mảng phân phối xe tải khiến cơ cấu doanh thu khác các chủ đầu tư thuần túy.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=3"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-scr-hay-khong",
+   "op": "append",
+   "find": "u hóa biên lợi nhuận và quản lý nguồn vốn một cách hiệu quả.",
+   "to": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "sentence": "Hai mục tiêu này cũng là thước đo chung để so SCR với các [cổ phiếu bất động sản] dân dụng cùng quy mô.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=23"
+  },
+  {
+   "src": "co-phieu-nganh-xay-dung",
+   "op": "append",
+   "find": "lợi nhuận vốn đã mỏng của ngành xây dựng (trung bình 3-4%).",
+   "to": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "sentence": "Biên mỏng khiến nhà thầu phụ thuộc dòng vốn chủ đầu tư, nên sức khỏe của [nhóm bất động sản] quyết định khả năng thu tiền của ngành xây dựng.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=8"
+  },
+  {
+   "src": "co-phieu-vcg-tong-quanh-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "append",
+   "find": "còn sở hữu quỹ đất lớn để phát triển các dự án bất động sản.",
+   "to": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "sentence": "Quỹ đất này khiến VCG vừa thuộc nhóm xây dựng vừa được theo dõi cùng các [cổ phiếu bất động sản] khi thị trường nhà ở hồi phục.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=28"
+  },
+  {
+   "src": "co-phieu-hbc-tong-quanh-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+   "op": "newp",
+   "find": "ung chủ yếu tại khu vực TP. Hồ Chí Mình và các vùng phụ cận.",
+   "to": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "sentence": "Là nhà thầu dân dụng, kết quả kinh doanh của HBC phụ thuộc vào tiến độ triển khai dự án của các chủ đầu tư trong [nhóm bất động sản].",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=2"
+  },
+  {
+   "src": "co-phieu-fcn-tong-quanh-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "append",
+   "find": "ình này giúp FCN khẳng định vị thế là một trong những nhà thầu xây dựng hàng đầu Việt Nam.",
+   "to": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "sentence": "Vì nền móng là hạng mục đầu tiên của công trình, đơn hàng của FCN phản ánh sớm chu kỳ khởi công của [nhóm bất động sản] và hạ tầng.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=30"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-idj-hay-khong",
+   "op": "append",
+   "find": "giảm sút khiến tình hình của doanh nghiệp trở nên khó khăn.",
+   "to": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "sentence": "Tình trạng này cũng phổ biến ở các [cổ phiếu bất động sản] vốn hóa nhỏ có chi phí lãi vay lớn trong giai đoạn thị trường trầm lắng.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=24"
+  },
+  {
+   "src": "co-phieu-cti-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "append",
+   "find": "ín từ sản xuất vật liệu đến thi công và vận hành công trình.",
+   "to": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "sentence": "Chuỗi giá trị khép kín giúp CTI hưởng lợi cả khi đầu tư công tăng tốc lẫn khi [nhóm bất động sản] hồi phục.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=3"
+  },
+  {
+   "src": "co-phieu-ctd-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "append",
+   "find": "inh nghiệm của lĩnh vực quản lý và thi công xây dựng vốn có.",
+   "to": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "sentence": "Doanh thu xây lắp của CTD đi theo nhịp khởi công dự án mới, nên triển vọng của [nhóm bất động sản] ảnh hưởng trực tiếp tới lượng hợp đồng.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=2"
+  },
+  {
+   "src": "cach-mua-co-phieu-nvl",
+   "op": "append",
+   "find": "vào hàng lớn nhất trong ngành bất động sản tư nhân Việt Nam.",
+   "to": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "sentence": "Quy mô quỹ đất này khiến NVL luôn có mặt khi nhà đầu tư lọc các [cổ phiếu bất động sản] có tiềm năng phục hồi theo chu kỳ.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=3"
+  },
+  {
+   "src": "cach-mua-co-phieu-vhm",
+   "op": "append",
+   "find": "số VN30 và ảnh hưởng đáng kể đến biến động toàn thị trường.",
+   "to": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "sentence": "Quy mô này đưa VHM thành mã dẫn dắt của [nhóm bất động sản], giá cổ phiếu tác động trực tiếp tới tâm lý cả ngành.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=2"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-vjc-hay-khong",
+   "op": "append",
+   "find": "ính đến thời điểm hiện tại, thị phần của Vietjet đã lên tới.",
+   "to": "top-co-phieu-hang-khong-nen-dau-tu",
+   "sentence": "Với mô hình giá rẻ, VJC có cấu trúc chi phí khác hẳn hãng truyền thống trong nhóm [cổ phiếu hàng không] niêm yết.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=6"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-acv-hay-khong",
+   "op": "append",
+   "find": "ng động lực tăng trưởng trong ngắn hạn cho ngành hàng không.",
+   "to": "top-co-phieu-hang-khong-nen-dau-tu",
+   "sentence": "Khác với hãng bay, ACV thu phí theo lượt khách qua sân bay, nên ít chịu áp lực giá nhiên liệu hơn các [cổ phiếu hàng không] khác.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=45"
+  },
+  {
+   "src": "cach-mua-co-phieu-vjc",
+   "op": "append",
+   "find": "những động lực tăng trưởng rõ ràng cho VJC trong trung hạn.",
+   "to": "top-co-phieu-hang-khong-nen-dau-tu",
+   "sentence": "Nhờ quy mô này, VJC là mã đại diện của [nhóm hàng không] trong rổ VN30.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=4"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-vietnam-airlines-hvn-hay-khong",
+   "op": "append",
+   "find": "ng động lực tăng trưởng trong ngắn hạn cho ngành hàng không.",
+   "to": "top-co-phieu-hang-khong-nen-dau-tu",
+   "sentence": "Đà phục hồi này tác động lên cả [nhóm hàng không], nhưng mức hưởng lợi của từng mã khác nhau theo cơ cấu nợ và đội bay.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=49"
+  },
+  {
+   "src": "top-co-phieu-dien-luc-nganh-dien",
+   "op": "append",
+   "find": "uản lý và vận hành các đập thủy điện, cánh đồng điện gió,...",
+   "to": "co-phieu-pc-1-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025",
+   "sentence": "Ở nhánh xây lắp điện, [cổ phiếu PC1] gắn với cả thi công lưới truyền tải lẫn vận hành nhà máy thủy điện, điện gió.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "sub-hub/ngữ cảnh ngành · đoạn i=38"
+  },
+  {
+   "src": "co-phieu-midcap-la-gi-khi-nao-nen-dau-tu-co-phieu-midcap",
+   "op": "append",
+   "find": "ận tiêu chí phân loại của từng nguồn tham chiếu khi so sánh.",
+   "to": "co-phieu-la-gi-cac-loai-co-phieu-tren-thi-truong-chung-khoan-viet-nam",
+   "sentence": "Phân loại theo vốn hóa chỉ là một trong nhiều cách chia [các loại cổ phiếu], bên cạnh cách chia theo quyền lợi cổ đông hay ngành nghề.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=5"
+  },
+  {
+   "src": "co-phieu-trang-ben-mua-la-gi",
+   "op": "append",
+   "find": "tư bán tháo mạnh và có nguy cơ giảm giá xuống thấp hơn nữa.",
+   "to": "co-phieu-la-gi-cac-loai-co-phieu-tren-thi-truong-chung-khoan-viet-nam",
+   "sentence": "Hiện tượng này xảy ra với nhiều [loại cổ phiếu], kể cả mã vốn hóa lớn khi doanh nghiệp gặp tin xấu đột ngột.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=12"
+  },
+  {
+   "src": "co-phieu-tru-la-gi",
+   "op": "append",
+   "find": "nhóm VN30 - nhóm 30 công ty niêm yết lớn nhất trên sàn HOSE.",
+   "to": "co-phieu-la-gi-cac-loai-co-phieu-tren-thi-truong-chung-khoan-viet-nam",
+   "sentence": "Đây là cách gọi theo vai trò với chỉ số, khác với cách [phân loại cổ phiếu] theo quyền lợi như cổ phiếu phổ thông hay ưu đãi.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=2"
+  },
+  {
+   "src": "3-cach-chon-co-phieu-tot-va-co-tiem-nang-tang-gia-de-dau-tu",
+   "op": "append",
+   "find": "xác định mục tiêu và thiết lập nguyên tắc quản trị danh mục.",
+   "to": "co-phieu-la-gi-cac-loai-co-phieu-tren-thi-truong-chung-khoan-viet-nam",
+   "sentence": "Bước đầu tiên của quy trình đó là nắm [cổ phiếu là gì] và quyền lợi cổ đông, trước khi đi vào tiêu chí sàng lọc.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=13"
+  },
+  {
+   "src": "cach-mua-co-phieu-vcb-ngan-hang-vietcombank",
+   "op": "newli",
+   "find": "thuộc các ngành khác nhau để giảm thiểu rủi ro.",
+   "to": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "sentence": "<strong>Theo dõi cả ngành:</strong> Giá VCB vẫn đi theo nhịp chung của [nhóm ngân hàng] khi thị trường điều chỉnh, nên hãy xem diễn biến các mã cùng ngành trước khi mua thêm.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub ngân hàng · mục «Lưu ý cho người mới» (thay câu cũ user đã xóa)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-vib-hay-khong-1",
+   "op": "newp",
+   "find": "ôi kỳ vọng VIB sẽ có KQKD tăng trưởng tốt hơn trong 2H 2023.",
+   "to": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "sentence": "Tốc độ tăng trưởng này đặt VIB vào vị trí dẫn đầu trong [nhóm ngân hàng] tư nhân xét về mức mở rộng tài sản.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=53"
+  },
+  {
+   "src": "cach-mua-co-phieu-bid",
+   "op": "append",
+   "find": "nh toàn diện giúp BIDV phục vụ đa dạng phân khúc khách hàng.",
+   "to": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "sentence": "Dẫn đầu tín dụng doanh nghiệp lớn khiến BID khác với nhiều [cổ phiếu ngân hàng tiềm năng] thiên về bán lẻ.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=3"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-vpb-hay-khong",
+   "op": "append",
+   "find": "M TTM) của VPB đạt tới 6,31%, cao nhất toàn ngành ngân hàng.",
+   "to": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "sentence": "Cấu trúc bán lẻ này là điểm để so sánh VPB với các [cổ phiếu ngành ngân hàng] thiên về tín dụng doanh nghiệp lớn.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=53"
+  },
+  {
+   "src": "cach-mua-co-phieu-ctg",
+   "op": "append",
+   "find": "surance), chứng khoán (VietinBank Securities) và quỹ đầu tư.",
+   "to": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "sentence": "Thế mạnh tín dụng doanh nghiệp nhà nước khiến CTG có hồ sơ gần với các [cổ phiếu ngân hàng] quốc doanh còn lại.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=3"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-vcb-vietcombank-hay-khong",
+   "op": "append",
+   "find": "lớn như: Petrolimex, tập đoàn Hòa Phát, Dự án Long Thành,...",
+   "to": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "sentence": "Chất lượng tín dụng này là lý do VCB thường được nhắc đầu tiên khi so sánh các [cổ phiếu ngành ngân hàng] về mức an toàn.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=41"
+  },
+  {
+   "src": "cach-mua-co-phieu-shb",
+   "op": "newp",
+   "find": "so sánh cùng SHB khi nhà đầu tư chọn lựa danh mục ngân hàng.",
+   "to": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "sentence": "Mức P/B thấp hơn nhóm dẫn đầu là cơ sở để cân nhắc SHB cùng các [cổ phiếu ngân hàng] tư nhân khác trong VN30.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=4"
+  },
+  {
+   "src": "cach-mua-co-phieu-tpb",
+   "op": "newp",
+   "find": "c tiếp với TPB về hồ sơ tăng trưởng và chiến lược bán lẻ số.",
+   "to": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "sentence": "Tốc độ tăng trưởng này là lý do TPB hay được đặt cạnh các [cổ phiếu ngành ngân hàng] tư nhân quy mô vừa khi so sánh định giá.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub ngân hàng · đoạn i=4 (tách khỏi đoạn i=3)"
+  },
+  {
+   "src": "cach-mua-co-phieu-stb",
+   "op": "append",
+   "find": "thanh toán POS và QR lớn nhất trong nhóm ngân hàng tư nhân.",
+   "to": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "sentence": "Mạng lưới và tệp khách hàng rộng này là điểm để so sánh STB với các [cổ phiếu ngân hàng] bán lẻ khác.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=3"
+  },
+  {
+   "src": "cach-mua-co-phieu-hdb",
+   "op": "append",
+   "find": "ông thôn và ngoại ô, phân khúc còn nhiều dư địa tăng trưởng.",
+   "to": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "sentence": "Trọng tâm nông thôn và ngoại ô là điểm khác biệt khi so HDB với các [cổ phiếu ngân hàng] tập trung vào đô thị lớn.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=2"
+  },
+  {
+   "src": "chuoi-gia-tri-nganh-thep",
+   "op": "append",
+   "find": "hế cạnh tranh về chi phí và biên lợi nhuận của doanh nghiệp.",
+   "to": "huong-dan-phan-tich-nganh-trong-dau-tu-chung-khoan",
+   "sentence": "Đây là trọng tâm khi [phân tích ngành] thép, vì tích hợp dọc quyết định ai giữ được biên lợi nhuận.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=2"
+  },
+  {
+   "src": "chuoi-gia-tri-nganh-dau-khi",
+   "op": "append",
+   "find": "suốt cả 3 phân khúc: Thượng nguồn, Trung nguồn và Hạ nguồn.",
+   "to": "huong-dan-phan-tich-nganh-trong-dau-tu-chung-khoan",
+   "sentence": "Đánh giá rủi ro từng khâu trong chuỗi này là bước cốt lõi của [phân tích ngành chứng khoán] với các lĩnh vực nhạy cảm giá hàng hóa.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=7 · dời sang đoạn i=3 (đoạn cũ dẫn vào list)"
+  },
+  {
+   "src": "chuoi-gia-tri-nganh-ngan-hang",
+   "op": "append",
+   "find": "chia làm 3 giai đoạn then chốt: Đầu vào, Vận hành và Đầu ra.",
+   "to": "huong-dan-phan-tich-nganh-trong-dau-tu-chung-khoan",
+   "sentence": "Tách chuỗi theo ba giai đoạn như vậy là cách làm quen thuộc khi [phân tích ngành] ngân hàng, vì mỗi khâu có chỉ số đo hiệu quả riêng.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=7 · dời sang đoạn i=3 (đoạn cũ dẫn vào list)"
+  },
+  {
+   "src": "chuoi-gia-tri-nganh-det-may",
+   "op": "append",
+   "find": "nh nghiệp trên \"đường cong nụ cười\" (Smile Curve) của ngành.",
+   "to": "huong-dan-phan-tich-nganh-trong-dau-tu-chung-khoan",
+   "sentence": "Xác định vị thế trên chuỗi giá trị là bước đầu của [cách phân tích ngành] với các lĩnh vực xuất khẩu như dệt may.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=3"
+  },
+  {
+   "src": "chuoi-gia-tri-nganh-phan-bon",
+   "op": "append",
+   "find": "c tiêu chuẩn nông nghiệp bền vững như VietGAP hay GlobalGAP.",
+   "to": "huong-dan-phan-tich-nganh-trong-dau-tu-chung-khoan",
+   "sentence": "Mức tự chủ nguyên liệu và tốc độ chuyển sang phân hữu cơ là hai biến số chính khi đánh giá [triển vọng ngành] phân bón.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=7 · dời sang đoạn i=31 (đoạn cũ dẫn vào list)"
+  },
+  {
+   "src": "chuoi-gia-tri-nganh-bat-dong-san",
+   "op": "append",
+   "find": "quản lý, chủ đầu tư, nhà thầu xây dựng và đơn vị phân phối.",
+   "to": "huong-dan-phan-tich-nganh-trong-dau-tu-chung-khoan",
+   "sentence": "Đo từng mắt xích của chuỗi này, nhất là áp lực vốn ở khâu phát triển dự án, là bước đầu tiên khi [phân tích ngành] bất động sản.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=13 · dời sang đoạn i=3 (đoạn cũ dẫn vào list)"
+  },
+  {
+   "src": "chuoi-gia-tri-nganh-nhua",
+   "op": "newp",
+   "find": "u biểu ở phân khúc này là NSR (Lọc hóa dầu Nghi Sơn) và BSR.",
+   "to": "huong-dan-phan-tich-nganh-trong-dau-tu-chung-khoan",
+   "sentence": "Phụ thuộc nhập khẩu hạt nhựa là biến số chi phí chính khi [phân tích ngành] nhựa, vì giá dầu truyền thẳng vào biên lợi nhuận.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=11"
+  },
+  {
+   "src": "chuoi-gia-tri-nganh-dien",
+   "op": "append",
+   "find": "năng lượng sạch, mở ra thị trường cạnh tranh minh bạch hơn.",
+   "to": "huong-dan-phan-tich-nganh-trong-dau-tu-chung-khoan",
+   "sentence": "Các xu hướng này nên được đưa vào [triển vọng ngành] điện khi nhà đầu tư dự phóng dòng tiền của doanh nghiệp phát điện.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=31"
+  },
+  {
+   "src": "chuoi-gia-tri-nganh-cao-su",
+   "op": "append",
+   "find": "định đầu tư phù hợp với từng giai đoạn của chu kỳ hàng hóa.",
+   "to": "huong-dan-phan-tich-nganh-trong-dau-tu-chung-khoan",
+   "sentence": "Cách tiếp cận này là nền tảng của [phân tích ngành] hàng hóa, nơi chu kỳ giá nguyên liệu quyết định biên lợi nhuận.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=3"
+  },
+  {
+   "src": "chu-ky-co-phieu-la-gi",
+   "op": "append",
+   "find": "òng lặp của các nhóm ngành khác nhau có thời gian khác nhau.",
+   "to": "huong-dan-phan-tich-nganh-trong-dau-tu-chung-khoan",
+   "sentence": "Vì mỗi nhóm ngành có nhịp riêng, việc xác định [chu kỳ ngành] giúp nhà đầu tư chọn đúng thời điểm vào từng nhóm cổ phiếu.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=2"
+  },
+  {
+   "src": "chuoi-gia-tri-nganh-xay-dung",
+   "op": "append",
+   "find": "nhà thầu thi công nếu không có các điều khoản bù giá hợp lý.",
+   "to": "huong-dan-phan-tich-nganh-trong-dau-tu-chung-khoan",
+   "sentence": "Rủi ro biên lợi nhuận kiểu này nằm trong khung [phân tích ngành] mà nhà đầu tư cần áp dụng cho nhóm thầu xây lắp.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=13"
+  },
+  {
+   "src": "chu-ky-la-gi",
+   "op": "append",
+   "find": "ả dài hạn lẫn ngắn hạn — là động lực thúc đẩy biến động giá.",
+   "to": "huong-dan-phan-tich-nganh-trong-dau-tu-chung-khoan",
+   "sentence": "Mỗi nhóm ngành chịu tác động của chu kỳ kinh doanh theo cách khác nhau, nên [chu kỳ ngành] cần được xét riêng.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=2"
+  },
+  {
+   "src": "co-phieu-tcm-tong-quan-nhan-dinh-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "newp",
+   "find": "nh đang trở lại với tâm thức những người yêu mến thời trang.",
+   "to": "co-phieu-nganh-det-may",
+   "sentence": "Thương hiệu thời trang riêng là điểm để so sánh TCM với các [cổ phiếu ngành dệt may] chủ yếu làm gia công.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=2"
+  },
+  {
+   "src": "co-phieu-tng-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "append",
+   "find": "Store hứa hẹn TNG tăng trưởng đột phá trong thời gian tới..",
+   "to": "co-phieu-nganh-det-may",
+   "sentence": "Hướng bán trực tiếp cho nhà bán lẻ là điểm để so sánh TNG với các [cổ phiếu dệt may] làm gia công theo đơn hàng.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=3"
+  },
+  {
+   "src": "co-phieu-gil-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "newp",
+   "find": "ộng nên doanh thu và lợi nhuận chiếm tỷ trong không đáng kể.",
+   "to": "co-phieu-nganh-det-may",
+   "sentence": "Mảng balo túi xách giữ GIL trong nhóm [cổ phiếu ngành dệt may], còn hải sản và kim khí điện máy chỉ đóng góp nhỏ vào doanh thu.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=2"
+  },
+  {
+   "src": "co-phieu-msh-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "append",
+   "find": "thời luôn hoàn thành sản phẩm theo đúng tiến độ đã cam kết.",
+   "to": "co-phieu-nganh-det-may",
+   "sentence": "Năng lực đáp ứng đơn hàng này đặt MSH cạnh các [cổ phiếu dệt may] xuất khẩu có khách hàng quốc tế ổn định.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=3"
+  },
+  {
+   "src": "co-phieu-stk-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "append",
+   "find": "lĩnh vực dệt vải, nhuộm ..., nhằm hoàn chỉnh chuỗi cung ứng.",
+   "to": "co-phieu-nganh-det-may",
+   "sentence": "Khâu sợi là mắt xích đầu vào của [ngành dệt may], nên STK chịu tác động trực tiếp từ nhịp đơn hàng của các nhà máy vải.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=3"
+  },
+  {
+   "src": "co-phieu-dcm-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+   "op": "append",
+   "find": "ủ trương chính sách an ninh lương thực của Đảng và Nhà nước.",
+   "to": "co-phieu-nganh-hoa-chat",
+   "sentence": "Công suất nhà máy này là yếu tố chính khi so DCM với các [cổ phiếu phân bón] sản xuất urê khác.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=4"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-las",
+   "op": "append",
+   "find": "iệp duy trì dòng sản lượng ổn định qua nhiều chu kỳ kinh tế.",
+   "to": "co-phieu-nganh-hoa-chat",
+   "sentence": "Thị phần phía Bắc và khách hàng nông nghiệp ổn định là điểm tựa của LAS trong nhóm [cổ phiếu phân bón] niêm yết.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=3"
+  },
+  {
+   "src": "co-phieu-dpm-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "append",
+   "find": "ẳng định được vị thế dẫn đầu trong nghành phân bón Việt Nam.",
+   "to": "co-phieu-nganh-hoa-chat",
+   "sentence": "Vị thế dẫn đầu này đặt DPM cạnh các [cổ phiếu hóa chất] khác khi nhà đầu tư so sánh theo chu kỳ giá urê.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=2"
+  },
+  {
+   "src": "cach-mua-co-phieu-vhm",
+   "op": "append",
+   "find": "và sân golf Vinpearl - tạo nên hệ sinh thái sống hoàn chỉnh.",
+   "to": "co-phieu-vhm-tong-quan-danh-gia-va-cap-nhan-ket-qua-kinh-doanh-moi-nhat",
+   "sentence": "Danh mục dự án rộng này là lý do [cổ phiếu VHM] được phân tích riêng về cơ cấu doanh thu và quỹ đất.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub/ngữ cảnh ngành · đoạn i=3"
+  },
+  {
+   "src": "co-phieu-bsr-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "newp",
+   "find": "iệt Nam hoàn thiện chuỗi ngành khai thác – chế biến dầu khí.",
+   "to": "co-phieu-nganh-nang-luong",
+   "sentence": "Ở khâu hạ nguồn, BSR đại diện cho nhóm [cổ phiếu ngành năng lượng] chế biến, nơi biên lợi nhuận gắn chặt với giá dầu thô.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub năng lượng · mô hình BSR · dời sang đoạn i=3 (đoạn cũ dẫn vào list)"
+  },
+  {
+   "src": "co-phieu-pvt-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+   "op": "append",
+   "find": "động kinh doanh của PV Trans Corp ngày càng phát triển hơn.",
+   "to": "co-phieu-nganh-nang-luong",
+   "sentence": "Khác các mã khai thác, PVT là mắt xích vận tải trong nhóm [cổ phiếu dầu khí], hưởng lợi khi sản lượng dầu khí cần chuyên chở tăng.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub năng lượng · tổng quan PVT"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-plx-hay-khong",
+   "op": "append",
+   "find": "nước có tần suất điều chỉnh thấp (10 ngày điều chỉnh 1 lần).",
+   "to": "co-phieu-nganh-nang-luong",
+   "sentence": "Vì vậy khi so với [cổ phiếu năng lượng] ở khâu thượng nguồn, PLX nhạy hơn với chênh lệch giữa giá dầu thô và giá bán lẻ.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub năng lượng · kỳ vọng ngành"
+  },
+  {
+   "src": "co-phieu-pvs-tong-quan-nhan-dinh-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-nam",
+   "op": "append",
+   "find": "ngành, với trọng tâm là dầu khí, năng lượng và công nghiệp.",
+   "to": "co-phieu-nganh-nang-luong",
+   "sentence": "Mô hình tổng thầu khiến PVS gắn với chu kỳ đầu tư của [cổ phiếu ngành năng lượng], khác các mã bán sản phẩm cuối như xăng dầu.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub năng lượng · mô hình PVS"
+  },
+  {
+   "src": "co-phieu-pvd-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "newp",
+   "find": "t mức tăng trưởng cao, kết quả hoạt động kinh doanh khá tốt.",
+   "to": "co-phieu-nganh-nang-luong",
+   "sentence": "Là nhà thầu khoan, PVD thuộc nhóm [cổ phiếu dầu khí] dịch vụ, nên đơn hàng phụ thuộc kế hoạch khoan thăm dò và khai thác của chủ mỏ.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub năng lượng · tổng quan PVD"
+  },
+  {
+   "src": "co-phieu-nt-2-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025",
+   "op": "append",
+   "find": "ng vai trò chủ lực trong cung cấp điện cho khu vực phía Nam.",
+   "to": "co-phieu-nganh-nang-luong",
+   "sentence": "Nhà máy điện khí khiến NT2 thuộc nhóm [cổ phiếu ngành điện] phụ thuộc nguồn khí đầu vào, khác thủy điện vốn chịu ảnh hưởng của thời tiết.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub năng lượng · tổng quan NT2"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-gas-hay-khong",
+   "op": "append",
+   "find": "2030, trong khi hiện tại tỷ trọng của điện khí chưa tới 5%.",
+   "to": "co-phieu-nganh-nang-luong",
+   "sentence": "GAS thuộc nhóm [cổ phiếu dầu khí] ở khâu trung nguồn, hưởng lợi từ định hướng phát triển điện khí khi nhu cầu khí cho phát điện tăng.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub năng lượng · cơ bản GAS"
+  },
+  {
+   "src": "co-phieu-plc-tong-quan-nhan-dinh-va-ket-qua-kinh-doanh-moi-nhat",
+   "op": "append",
+   "find": "g dầu Việt Nam (Petrolimex) và hệ thống phân phối rộng khắp.",
+   "to": "co-phieu-nganh-nang-luong",
+   "sentence": "Nguồn nguyên liệu từ Petrolimex đặt PLC ở khâu hóa dầu thuộc [ngành dầu khí], nơi giá dầu mỏ quyết định chi phí đầu vào.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub năng lượng · mô hình PLC"
+  },
+  {
+   "src": "co-phieu-qtp-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "append",
+   "find": "iển các dự án mới nhằm mở rộng quy mô và nâng cao năng suất.",
+   "to": "co-phieu-nganh-nang-luong",
+   "sentence": "Là nhiệt điện than, QTP thuộc nhóm [cổ phiếu ngành điện] chịu ảnh hưởng của giá than đầu vào và sản lượng được huy động.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub năng lượng · tổng quan QTP"
+  },
+  {
+   "src": "cach-mua-co-phieu-plx-petrolimex",
+   "op": "append",
+   "find": "nh khoản cao và chính sách trả cổ tức bằng tiền mặt đều đặn.",
+   "to": "co-phieu-nganh-nang-luong",
+   "sentence": "Thị phần lớn khiến PLX là đại diện phân phối của nhóm [cổ phiếu năng lượng], nên giá dầu thế giới là biến số cần theo dõi.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub năng lượng · giới thiệu PLX"
+  },
+  {
+   "src": "co-phieu-pc-1-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025",
+   "op": "append",
+   "find": "ty hàng đầu trong ngành xây dựng và năng lượng tại Việt Nam.",
+   "to": "co-phieu-nganh-nang-luong",
+   "sentence": "Mảng xây lắp điện và năng lượng tái tạo đưa PC1 vào nhóm [cổ phiếu năng lượng] thiên về hạ tầng, hưởng lợi khi nhu cầu điện tăng.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub năng lượng · tổng quan PC1"
+  },
+  {
+   "src": "co-phieu-ree-tong-quan-nhan-dinh-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "append",
+   "find": "tại thì room dành cho nhà đầu tư nước ngoài đã lắp đầy 49%.",
+   "to": "co-phieu-nganh-nang-luong",
+   "sentence": "Mảng thủy điện và điện gió là lý do REE cũng được tính vào [cổ phiếu ngành năng lượng], dù gốc của doanh nghiệp là cơ điện.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub năng lượng · tổng quan REE"
+  },
+  {
+   "src": "co-phieu-vsh-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "append",
+   "find": "uất lắp đặt 70 MW, lượng điện sản xuất là 370 triệu kWh/năm.",
+   "to": "co-phieu-nganh-nang-luong",
+   "sentence": "Vĩnh Sơn là thủy điện, nên VSH thuộc nhóm [cổ phiếu ngành điện] có sản lượng phụ thuộc lượng nước các sông, khác nhiệt điện dùng than hoặc khí.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub năng lượng · tổng quan VSH"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-hpg-hay-khong",
+   "op": "append",
+   "find": "ã gặp nhiều vấn đề bất cập, chưa tiếp cận được doanh nghiệp.",
+   "to": "top-5-co-phieu-nganh-thep-co-co-ban-tot-sap-buoc-vao-chu-ky-tang-truong-moi",
+   "sentence": "Nhu cầu thép bám theo bất động sản và xây dựng, nên [cổ phiếu ngành thép] như HPG thường đi theo chu kỳ của các ngành này.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub thép · yếu tố định tính HPG"
+  },
+  {
+   "src": "co-phieu-nkg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "append",
+   "find": "hoạt động sản xuất và kinh doanh cao, tỷ suất sinh lời lớn.",
+   "to": "top-5-co-phieu-nganh-thep-co-co-ban-tot-sap-buoc-vao-chu-ky-tang-truong-moi",
+   "sentence": "Là doanh nghiệp tôn mạ, NKG thuộc nhóm [cổ phiếu thép] thành phẩm, nên biên lợi nhuận nhạy với giá thép cuộn nguyên liệu.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub thép · tổng quan NKG"
+  },
+  {
+   "src": "co-phieu-hsg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "append",
+   "find": "đã chiếm trọn niềm tin của người tiêu dùng trong nhiều năm.",
+   "to": "top-5-co-phieu-nganh-thep-co-co-ban-tot-sap-buoc-vao-chu-ky-tang-truong-moi",
+   "sentence": "Mảng tôn mạ giúp HSG đại diện cho nhóm [mã cổ phiếu ngành thép] hạ nguồn, nơi thương hiệu và kênh phân phối quyết định thị phần.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub thép · tổng quan HSG"
+  },
+  {
+   "src": "cach-mua-co-phieu-hoa-phat-hpg-nhanh-chong-va-an-toan",
+   "op": "append",
+   "find": "nh tế, giá nguyên liệu thô đầu vào và thuế bảo hộ nhập khẩu.",
+   "to": "top-5-co-phieu-nganh-thep-co-co-ban-tot-sap-buoc-vao-chu-ky-tang-truong-moi",
+   "sentence": "Vì vậy khi chọn HPG, nhà đầu tư nên đặt mã này cạnh các [cổ phiếu ngành thép] khác để so mức độ chịu ảnh hưởng của chu kỳ.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub thép · lưu ý HPG"
+  },
+  {
+   "src": "day-la-5-co-phieu-tich-san-cuc-tot-se-khien-ban-kiem-duoc-bon-tien",
+   "op": "append",
+   "find": "ị ảnh hưởng quá nhiều bởi biến động ngắn hạn của thị trường.",
+   "to": "top-5-co-phieu-dang-dau-tu",
+   "sentence": "Chiến lược này chỉ hiệu quả khi chọn đúng [cổ phiếu đáng đầu tư], vì nắm giữ nhiều năm đòi hỏi doanh nghiệp có nền tảng bền vững.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub top cổ phiếu · mục tích sản"
+  },
+  {
+   "src": "top-co-phieu-nganh-duoc-nen-dau-tu",
+   "op": "append",
+   "find": "iệp khác nhau mà DSC nhận định có giá trị tốt nhất hiện nay.",
+   "to": "top-5-co-phieu-dang-dau-tu",
+   "sentence": "Chỉ những mã có nền tảng tài chính tốt mới là [cổ phiếu đáng đầu tư], chứ không phải mọi mã cùng ngành dược đều như nhau.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub top cổ phiếu · mục mã ngành dược"
+  },
+  {
+   "src": "cach-chon-co-phieu-de-dau-tu-dai-han-tai-viet-nam",
+   "op": "append",
+   "find": "n giữ vững vị thế trong nhóm cổ phiếu tăng trưởng tiêu biểu.",
+   "to": "top-5-co-phieu-dang-dau-tu",
+   "sentence": "Doanh nghiệp đầu ngành với kênh phân phối rộng như MWG là kiểu mã thường nằm trong nhóm [cổ phiếu đáng đầu tư] cho nhà đầu tư dài hạn.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub top cổ phiếu · mục MWG"
+  },
+  {
+   "src": "co-phieu-vos-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+   "op": "append",
+   "find": "trẻ so với mức trung bình hiện nay của Việt Nam và khu vực.",
+   "to": "top-co-phieu-cang-bien-nen-dau-tu",
+   "sentence": "Vận tải biển là mắt xích liền kề của [cổ phiếu ngành cảng biển], vì sản lượng hàng qua cảng và nhu cầu chuyên chở đi cùng nhau.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub cảng biển · tổng quan VOS"
+  },
+  {
+   "src": "co-phieu-hah-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+   "op": "append",
+   "find": "tư mới, đồng bộ, hiện đại hơn so với các cảng trong khu vực.",
+   "to": "top-co-phieu-cang-bien-nen-dau-tu",
+   "sentence": "Cạnh tranh giữa các cầu cảng Hải Phòng là bối cảnh để so HAH với [cổ phiếu cảng biển] thuần khai thác cảng.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub cảng biển · tổng quan HAH"
+  },
+  {
+   "src": "top-3-co-phieu-nganh-xuat-nhap-khau-huong-loi-cuc-lon-trong-giai-doan-sap-toi",
+   "op": "append",
+   "find": "Hải An cùng một số depot (điểm thông quan nội địa) nhỏ khác.",
+   "to": "top-co-phieu-cang-bien-nen-dau-tu",
+   "sentence": "Đội tàu container gắn HAH với chu kỳ hàng hóa qua cảng, nên mã này thường được xem cùng [cổ phiếu cảng] khi đánh giá nhóm logistics hàng hải.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub cảng biển · mục HAH"
+  },
+  {
+   "src": "cach-mua-co-phieu-tpb",
+   "op": "append",
+   "find": "gười dùng, thu hút mạnh tệp khách hàng Gen Z và Millennials.",
+   "to": "co-phieu-tpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "sentence": "Nền tảng ngân hàng số này là điểm khác biệt chính khi phân tích [cổ phiếu TPB] so với các ngân hàng truyền thống.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "tổng quan TPB · giới thiệu"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-pnj-hay-khong",
+   "op": "append",
+   "find": "Doanh nghiệp chính thức niêm yết trên sàn HOSE từ năm 2009.",
+   "to": "co-phieu-nganh-ban-le",
+   "sentence": "Là doanh nghiệp kim hoàn bán lẻ, PNJ nằm trong [cổ phiếu ngành bán lẻ] nhưng chịu tác động riêng từ giá vàng và nhu cầu trang sức.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub bán lẻ · mục «Tổng quan PNJ»"
+  },
+  {
+   "src": "co-phieu-msn",
+   "op": "append",
+   "find": "ùng nội địa, đặc biệt thông qua nền tảng bán lẻ WinCommerce.",
+   "to": "co-phieu-nganh-ban-le",
+   "sentence": "Mảng bán lẻ khiến MSN được xếp vào [nhóm bán lẻ] cùng các chuỗi tiêu dùng, dù tài nguyên chiến lược làm cấu trúc lợi nhuận khác hẳn.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub bán lẻ · mục «Tổng quan MSN»"
+  },
+  {
+   "src": "co-phieu-frt-tong-quan-dinh-gia-ket-qua-kinh-doanh-moi-nhat",
+   "op": "append",
+   "find": "ới lĩnh vực phân phối điện thoại di động với 20,3% thị phần.",
+   "to": "co-phieu-nganh-ban-le",
+   "sentence": "FRT thuộc [cổ phiếu bán lẻ] chuyên về điện thoại, laptop và sản phẩm Apple, nên doanh thu gắn chặt với nhu cầu tiêu dùng công nghệ.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub bán lẻ · mục «Tổng quan FRT»"
+  },
+  {
+   "src": "co-phieu-dgw-tong-quan-dinh-gia-phan-tich-ky-thuat-va-ket-qua-kinh-doanh-moi-nhat",
+   "op": "append",
+   "find": "tương lai, góp phần củng cố vị thế của công ty trong ngành.",
+   "to": "co-phieu-nganh-ban-le",
+   "sentence": "Digiworld đứng ở khâu phân phối, sát [ngành bán lẻ] công nghệ, nên kết quả kinh doanh phụ thuộc sức tiêu thụ của các chuỗi cửa hàng.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub bán lẻ · mục «Tổng quan DGW»"
+  },
+  {
+   "src": "co-phieu-hax-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+   "op": "append",
+   "find": "ăng trong ngành ô tô, thu hút sự quan tâm lớn từ nhà đầu tư.",
+   "to": "co-phieu-nganh-ban-le",
+   "sentence": "Mô hình đại lý ủy quyền khiến HAX gần với [cổ phiếu bán lẻ] hơn nhà sản xuất, vì doanh thu đi theo sức mua xe của người tiêu dùng.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub bán lẻ · mục «Tổng quan HAX»"
+  },
+  {
+   "src": "co-phieu-mwg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "append",
+   "find": "điện thoại đi động phủ khắp 63 tỉnh thành phố tại Việt Nam.",
+   "to": "co-phieu-nganh-ban-le",
+   "sentence": "Quy mô 217 cửa hàng phủ khắp 63 tỉnh thành đặt MWG ở vị trí dẫn đầu trong [ngành bán lẻ] hiện đại.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub bán lẻ · mục «Tổng quan MWG»"
+  },
+  {
+   "src": "co-phieu-pnj-tong-quan-nhan-dinh-ket-qua-kinh-doanh-moi-nhat",
+   "op": "append",
+   "find": "g cấp các dịch vụ gia công, sửa chữa và bảo dưỡng trang sức.",
+   "to": "co-phieu-nganh-ban-le",
+   "sentence": "Cấu trúc vàng bạc đá quý đặt PNJ vào [nhóm bán lẻ] hàng tiêu dùng giá trị cao, khác với chuỗi điện máy hay thực phẩm.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub bán lẻ · mục «Mô hình kinh doanh PNJ»"
+  },
+  {
+   "src": "top-co-phieu-cao-su-nen-dau-tu",
+   "op": "append",
+   "find": "ăng, còn nhóm chế biến chịu thêm áp lực chi phí nguyên liệu.",
+   "to": "co-phieu-nganh-nong-nghiep",
+   "sentence": "Cao su thuộc [cổ phiếu ngành nông nghiệp], nơi kết quả phụ thuộc giá mủ và chu kỳ hàng hoá xuất khẩu.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub nông nghiệp · mục «Nhận định cao su»"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-hag-hay-khong",
+   "op": "append",
+   "find": "ngành chăn nuôi của Việt Nam vươn ra các thị trường quốc tế.",
+   "to": "co-phieu-nganh-nong-nghiep",
+   "sentence": "Trái cây và chăn nuôi đặt HAG vào [nhóm nông nghiệp], nơi tiềm năng xuất khẩu quyết định dư địa tăng trưởng.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub nông nghiệp · mục «Cơ bản HAG»"
+  },
+  {
+   "src": "co-phieu-anv-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "append",
+   "find": "u đảm bảo thị trường đầu ra ổn định và ngày càng phát triển.",
+   "to": "co-phieu-nganh-nong-nghiep",
+   "sentence": "Chuẩn HACCP, GMP, SQF giúp ANV nổi bật trong [ngành nông nghiệp] hướng xuất khẩu, nơi thị trường khó tính đặt ra rào cản chất lượng.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub nông nghiệp · mục «Tổng quan ANV»"
+  },
+  {
+   "src": "co-phieu-gvr",
+   "op": "append",
+   "find": ", trong đó nổi bật là phát triển khu công nghiệp và hạ tầng.",
+   "to": "co-phieu-nganh-nong-nghiep",
+   "sentence": "Chuỗi từ trồng trọt đến chế biến xếp GVR vào [cổ phiếu ngành nông nghiệp], song mảng khu công nghiệp làm cơ cấu lợi nhuận khác các mã cùng nhóm.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub nông nghiệp · mục «Tổng quan GVR»"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-sbt-hay-khong",
+   "op": "append",
+   "find": "trong nước có cơ hội cạnh tranh cao hơn trong thời gian tới.",
+   "to": "co-phieu-nganh-nong-nghiep",
+   "sentence": "Mía đường là một nhánh của [cổ phiếu nông nghiệp], nơi nguồn cung trong nước chưa theo kịp nhu cầu tiêu thụ.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub nông nghiệp · mục «Cơ bản SBT»"
+  },
+  {
+   "src": "co-phieu-phr-tong-quan-nhan-dinh-va-ket-qua-kinh-doanh-moi-nhat",
+   "op": "append",
+   "find": "các sản phẩm cao su phục vụ nhu cầu đa dạng của thị trường.",
+   "to": "co-phieu-nganh-nong-nghiep",
+   "sentence": "Trồng và khai thác cao su đưa PHR vào [nhóm nông nghiệp], nơi sản lượng phụ thuộc thời tiết và năng suất vườn cây.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub nông nghiệp · mục «Mô hình kinh doanh PHR»"
+  },
+  {
+   "src": "co-phieu-dbc-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+   "op": "append",
+   "find": "trí vững chắc trên thị trường thức ăn chăn nuôi trong nước.",
+   "to": "co-phieu-nganh-nong-nghiep",
+   "sentence": "Chăn nuôi và thức ăn chăn nuôi xếp DBC vào [cổ phiếu ngành nông nghiệp], nơi giá đầu vào và dịch bệnh tác động trực tiếp tới biên lợi nhuận.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub nông nghiệp · mục «Mô hình kinh doanh DBC» · dời sang đoạn i=3 (đoạn cũ dẫn vào list)"
+  },
+  {
+   "src": "co-phieu-qns-tong-quan-nhan-dinh-va-ket-qua-kinh-doanh-moi-nhat",
+   "op": "append",
+   "find": "ng sản phẩm mà còn góp phần vào phát triển kinh tế - xã hội.",
+   "to": "co-phieu-nganh-nong-nghiep",
+   "sentence": "Đường mía là gốc của QNS trong [ngành nông nghiệp], còn sữa đậu nành và nước giải khát giúp đa dạng nguồn thu.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub nông nghiệp · mục «Mô hình kinh doanh QNS»"
+  },
+  {
+   "src": "co-phieu-idi-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "newp",
+   "find": "các hoạt động đầu tư bất động sản để đa dạng hóa nguồn thu.",
+   "to": "co-phieu-nganh-nong-nghiep",
+   "sentence": "Chế biến cá tra xuất khẩu đưa IDI vào nhánh thủy sản của [cổ phiếu ngành nông nghiệp], nơi giá nguyên liệu quyết định biên lợi nhuận.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub nông nghiệp · mục «Mô hình kinh doanh IDI»"
+  },
+  {
+   "src": "co-phieu-vhc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "append",
+   "find": "đông lạnh, đóng gói và phân phối đến các thị trường quốc tế.",
+   "to": "co-phieu-nganh-nong-nghiep",
+   "sentence": "Cá tra là ngành hàng nông nghiệp xuất khẩu, nên VHC thường được so sánh với các mã trong [cổ phiếu nông nghiệp] có đầu ra ở nước ngoài.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub nông nghiệp · mục «Mô hình kinh doanh VHC»"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-tar-hay-khong",
+   "op": "newp",
+   "find": "hiệu gạo Việt Nam, tăng giá trị xuất khẩu và biên lợi nhuận.",
+   "to": "co-phieu-nganh-nong-nghiep",
+   "sentence": "Lúa gạo là một mảng của [cổ phiếu ngành nông nghiệp], nơi giá bán chịu tác động mạnh từ cung cầu gạo toàn cầu.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub nông nghiệp · mục «Cơ bản TAR»"
+  },
+  {
+   "src": "co-phieu-acl-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "newp",
+   "find": "hục được lòng tin của người tiêu dùng trong nước và quốc tế.",
+   "to": "co-phieu-nganh-nong-nghiep",
+   "sentence": "Nuôi trồng và chế biến thủy sản đưa ACL vào [nhóm nông nghiệp], nơi kết quả phụ thuộc giá nguyên liệu và đơn hàng xuất khẩu.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub nông nghiệp · mục «Tổng quan ACL»"
+  },
+  {
+   "src": "co-phieu-ltg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "append",
+   "find": "lược kinh doanh cũng như thích ứng với điều kiện kinh doanh.",
+   "to": "co-phieu-nganh-nong-nghiep",
+   "sentence": "Dịch vụ nông nghiệp theo mô hình liên kết dọc đặt LTG vào [cổ phiếu ngành nông nghiệp] ở cả khâu đầu vào lẫn chế biến gạo.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub nông nghiệp · mục «Tổng quan LTG»"
+  },
+  {
+   "src": "cach-mua-co-phieu-gvr",
+   "op": "append",
+   "find": "Phước và hàng loạt KCN tại Bình Dương, Đồng Nai, Bình Phước.",
+   "to": "co-phieu-nganh-nong-nghiep",
+   "sentence": "Hệ sinh thái này giúp GVR khác các mã thuần trồng trọt trong [cổ phiếu ngành nông nghiệp], nhờ đầu ra công nghiệp như săm lốp, găng tay.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub nông nghiệp · mục «Giới thiệu GVR»"
+  },
+  {
+   "src": "co-phieu-fpt",
+   "op": "append",
+   "find": "tăng trưởng chính, đóng góp lớn vào doanh thu và lợi nhuận.",
+   "to": "co-phieu-nganh-cong-nghe",
+   "sentence": "Mảng dịch vụ CNTT cho thị trường nước ngoài giúp FPT trở thành đại diện tiêu biểu của [cổ phiếu ngành công nghệ] tại Việt Nam.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub công nghệ · mục «Tổng quan FPT»"
+  },
+  {
+   "src": "cach-mua-co-phieu-fpt-cong-ty-co-phan-tap-doan-fpt",
+   "op": "append",
+   "find": "tố hỗ trợ cho tiềm năng tăng trưởng của FPT trong tương lai.",
+   "to": "co-phieu-nganh-cong-nghe",
+   "sentence": "Khi nghiên cứu FPT, nên đặt mã này cạnh [các cổ phiếu công nghệ] khác để thấy lợi thế đến từ mảng dịch vụ CNTT và đội ngũ nhân sự.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub công nghệ · mục «Nghiên cứu FPT»"
+  },
+  {
+   "src": "co-phieu-nganh-truyen-thong",
+   "op": "append",
+   "find": "ến, quảng cáo số (digital marketing), và công nghệ giải trí.",
+   "to": "co-phieu-nganh-cong-nghe",
+   "sentence": "Dịch vụ nội dung trực tuyến và công nghệ giải trí nằm sát [cổ phiếu ngành công nghệ], nên nhiều mã truyền thông mang yếu tố công nghệ.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub công nghệ · mục «Tổng quan truyền thông»"
+  },
+  {
+   "src": "cac-co-phieu-niem-yet-thuoc-tap-doan-vingroup-danh-sach-day-du-va-cap-nhat-nam-2024",
+   "op": "append",
+   "find": "ợc VFS. Vinmec (y tế) và Vinschool (giáo dục) chưa niêm yết.",
+   "to": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "sentence": "Trong 4 mã niêm yết, VHM và VRE thuộc nhóm [cổ phiếu bất động sản], còn lợi nhuận của VIC phụ thuộc lớn vào mảng địa ốc qua Vinhomes.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "viết lại theo live 11/11 · đoạn i=30"
+  },
+  {
+   "src": "top-5-co-phieu-dau-khi-se-huong-loi-trong-nam-2024-khi-gia-dau-tang",
+   "op": "append",
+   "find": "lắp (M&C), nơi tạo ra các hợp đồng giá trị lớn nhất của PVS.",
+   "to": "co-phieu-nganh-nang-luong",
+   "sentence": "Là nhà cung cấp dịch vụ kỹ thuật ở khâu thượng nguồn, PVS thuộc nhóm [cổ phiếu dầu khí] có doanh thu bám theo kế hoạch đầu tư khai thác.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "viết lại theo live 11/11 · đoạn i=10"
+  },
+  {
+   "src": "cach-mua-co-phieu-flc",
+   "op": "append",
+   "find": "26 là kênh thoái vốn đầu tiên của cổ đông sau giai đoạn này.",
+   "to": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "sentence": "Đây là rủi ro thanh khoản ít gặp với các [cổ phiếu bất động sản] đang niêm yết trên HOSE, nơi lệnh được khớp mỗi phiên.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "viết lại theo live 11/11 · đoạn i=28"
+  }
+ ],
+ "skipped": [
+  {
+   "src": "top-5-co-phieu-dau-khi-se-huong-loi-trong-nam-2024-khi-gia-dau-tang",
+   "target": "co-phieu-pc-1-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025",
+   "i": 0,
+   "op": "skip",
+   "sentence": "",
+   "reason": "bài ngành dầu khí/than, không có ngữ cảnh xây lắp điện để dẫn về PC1"
+  },
+  {
+   "src": "co-phieu-nganh-than",
+   "target": "co-phieu-pc-1-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025",
+   "i": 0,
+   "op": "skip",
+   "sentence": "",
+   "reason": "bài ngành dầu khí/than, không có ngữ cảnh xây lắp điện để dẫn về PC1"
+  },
+  {
+   "src": "huong-dan-cach-mua-co-phieu-tcb-ngan-hang-techcombank",
+   "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "op": "skip",
+   "reason": "đoạn ứng viên toàn thao tác nạp tiền/đặt lệnh, không có ý hợp để chèn so sánh ngành"
+  },
+  {
+   "src": "cach-mua-co-phieu-acb-ngan-hang-thuong-mai-co-phan-a-chau-huong-dan-chi-tiet",
+   "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "op": "skip",
+   "reason": "đoạn ứng viên toàn bước thao tác nạp tiền/truy cập hệ thống, không có ý hợp để chèn"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-pet-hay-khong",
+   "target": "co-phieu-nganh-nang-luong",
+   "op": "skip",
+   "reason": "PET là phân phối ICT, không thuộc ngành năng lượng"
+  },
+  {
+   "src": "cach-mua-co-phieu-pvd",
+   "target": "co-phieu-nganh-nang-luong",
+   "op": "skip",
+   "reason": "không có đoạn thân bài hợp (đoạn duy nhất là quy định lô giao dịch)"
+  },
+  {
+   "src": "co-phieu-nganh-nhua",
+   "target": "top-5-co-phieu-nganh-thep-co-co-ban-tot-sap-buoc-vao-chu-ky-tang-truong-moi",
+   "op": "skip",
+   "reason": "ngành nhựa không thuộc hub thép"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-ttf-hay-khong",
+   "target": "top-5-co-phieu-nganh-thep-co-co-ban-tot-sap-buoc-vao-chu-ky-tang-truong-moi",
+   "op": "skip",
+   "reason": "TTF là gỗ, không thuộc hub thép"
+  },
+  {
+   "src": "co-phieu-vcs-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-5-co-phieu-nganh-thep-co-co-ban-tot-sap-buoc-vao-chu-ky-tang-truong-moi",
+   "op": "skip",
+   "reason": "VCS là đá thạch anh, không thuộc hub thép"
+  },
+  {
+   "src": "co-phieu-npt-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025",
+   "target": "top-5-co-phieu-nganh-thep-co-co-ban-tot-sap-buoc-vao-chu-ky-tang-truong-moi",
+   "op": "skip",
+   "reason": "NTP là ống nhựa, không thuộc hub thép"
+  },
+  {
+   "src": "co-phieu-ksb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025",
+   "target": "top-5-co-phieu-nganh-thep-co-co-ban-tot-sap-buoc-vao-chu-ky-tang-truong-moi",
+   "op": "skip",
+   "reason": "KSB là đá xây dựng, không thuộc hub thép"
+  },
+  {
+   "src": "co-phieu-ptb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-5-co-phieu-nganh-thep-co-co-ban-tot-sap-buoc-vao-chu-ky-tang-truong-moi",
+   "op": "skip",
+   "reason": "PTB là chế biến gỗ/đá/ô tô, không thuộc hub thép"
+  },
+  {
+   "src": "co-phieu-bmp-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-5-co-phieu-nganh-thep-co-co-ban-tot-sap-buoc-vao-chu-ky-tang-truong-moi",
+   "op": "skip",
+   "reason": "BMP là nhựa xây dựng, không thuộc hub thép"
+  },
+  {
+   "src": "co-phieu-acg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-5-co-phieu-nganh-thep-co-co-ban-tot-sap-buoc-vao-chu-ky-tang-truong-moi",
+   "op": "skip",
+   "reason": "ACG là gỗ công nghiệp, không thuộc hub thép"
+  },
+  {
+   "src": "co-phieu-nganh-y-te",
+   "target": "top-5-co-phieu-dang-dau-tu",
+   "op": "skip",
+   "reason": "không có đoạn thân bài hợp (chỉ có đoạn dẫn danh sách)"
+  },
+  {
+   "src": "co-phieu-nganh-du-lich",
+   "target": "top-5-co-phieu-dang-dau-tu",
+   "op": "skip",
+   "reason": "đoạn du lịch không có câu tự nhiên cho hub, gượng"
+  },
+  {
+   "src": "co-phieu-scs-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-co-phieu-cang-bien-nen-dau-tu",
+   "op": "skip",
+   "reason": "SCS là dịch vụ hàng hóa hàng không, không thuộc cảng biển"
+  },
+  {
+   "src": "top-co-phieu-cao-su-nen-dau-tu",
+   "target": "co-phieu-ltg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "skip",
+   "reason": "cao su không thuộc LTG (Lộc Trời – lúa gạo)"
+  },
+  {
+   "src": "co-phieu-nganh-thuy-san",
+   "target": "co-phieu-ltg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "skip",
+   "reason": "thủy sản không thuộc LTG (Lộc Trời – lúa gạo)"
+  },
+  {
+   "src": "co-phieu-vinfast-mua-o-dau",
+   "target": "co-phieu-nganh-ban-le",
+   "op": "skip",
+   "reason": "VinFast là ô tô điện, không thuộc bán lẻ"
+  },
+  {
+   "src": "co-phieu-nganh-thuc-pham",
+   "target": "co-phieu-nganh-ban-le",
+   "op": "skip",
+   "reason": "Thực phẩm/đồ uống (MCH) không thuộc bán lẻ, gượng"
+  },
+  {
+   "src": "cach-mua-co-phieu-vinamilk-vnm-cho-nguoi-moi-bat-dau",
+   "target": "co-phieu-nganh-ban-le",
+   "op": "skip",
+   "reason": "Vinamilk là sữa, không thuộc bán lẻ"
+  },
+  {
+   "src": "co-phieu-vnm-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+   "target": "co-phieu-nganh-ban-le",
+   "op": "skip",
+   "reason": "VNM là sữa, không thuộc bán lẻ"
+  },
+  {
+   "src": "co-phieu-sab-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+   "target": "co-phieu-nganh-ban-le",
+   "op": "skip",
+   "reason": "SAB là bia, không thuộc bán lẻ"
+  },
+  {
+   "src": "co-phieu-nganh-o-to",
+   "target": "co-phieu-nganh-ban-le",
+   "op": "skip",
+   "reason": "Ngành ô tô, không thuộc bán lẻ"
+  },
+  {
+   "src": "huong-dan-chi-tiet-cach-mua-co-phieu-mwg",
+   "target": "co-phieu-nganh-ban-le",
+   "op": "skip",
+   "reason": "Bài hướng dẫn mua, không có đoạn thân bài hợp (chỉ bước nạp tiền)"
+  },
+  {
+   "src": "cach-mua-co-phieu-sab",
+   "target": "co-phieu-nganh-ban-le",
+   "op": "skip",
+   "reason": "SAB là bia, không thuộc bán lẻ"
+  },
+  {
+   "src": "co-phieu-nganh-thuy-san",
+   "target": "co-phieu-nganh-nong-nghiep",
+   "i": 2,
+   "op": "skip",
+   "sentence": "Thủy sản là một nhánh của [cổ phiếu nông nghiệp], nhưng nhịp tăng trưởng phụ thuộc nhiều vào chính sách thương mại của các thị trường lớn.",
+   "why": "hub nông nghiệp · mục «Toàn cảnh thủy sản»",
+   "reason": "mọi đoạn ứng viên đều là câu dẫn vào list"
+  },
+  {
+   "src": "co-phieu-nganh-bao-hiem",
+   "target": "top-5-co-phieu-nganh-chung-khoan-dang-dau-tu-nhat",
+   "op": "skip",
+   "reason": "Bảo hiểm không thuộc ngành chứng khoán"
+  },
+  {
+   "src": "co-phieu-bvh-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-5-co-phieu-nganh-chung-khoan-dang-dau-tu-nhat",
+   "op": "skip",
+   "reason": "BVH là bảo hiểm, không thuộc ngành chứng khoán"
+  },
+  {
+   "src": "cach-mua-co-phieu-bvh",
+   "target": "top-5-co-phieu-nganh-chung-khoan-dang-dau-tu-nhat",
+   "op": "skip",
+   "reason": "BVH là bảo hiểm, không thuộc ngành chứng khoán"
+  },
+  {
+   "src": "huong-dan-cach-mua-co-phieu-ssi-tai-chung-khoan-dsc",
+   "target": "top-5-co-phieu-nganh-chung-khoan-dang-dau-tu-nhat",
+   "op": "skip",
+   "reason": "Hướng dẫn mua SSI, đoạn ứng viên là bước thao tác/kết luận"
+  },
+  {
+   "src": "co-phieu-ctr-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025",
+   "target": "co-phieu-nganh-cong-nghe",
+   "op": "skip",
+   "reason": "CTR là xây lắp hạ tầng viễn thông, không rõ thuộc hub công nghệ"
+  },
+  {
+   "src": "cach-mua-co-phieu-vre",
+   "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "op": "skip",
+   "reason": "URL đã 301 sang bài khác"
+  },
+  {
+   "src": "cach-mua-co-phieu-pow",
+   "target": "co-phieu-nganh-nang-luong",
+   "op": "skip",
+   "reason": "URL đã 301 sang bài khác"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-dig-hay-khong",
+   "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "op": "skip",
+   "reason": "URL 301 → co-phieu-dig-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat (đã có câu cùng đích)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-lpb-hay-khong",
+   "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "op": "skip",
+   "reason": "URL 301 → co-phieu-lpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat (đã có câu cùng đích)"
+  },
+  {
+   "src": "co-phieu-plx-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "target": "co-phieu-nganh-nang-luong",
+   "op": "skip",
+   "reason": "URL 301 → co-nen-mua-co-phieu-plx-hay-khong (đã có câu cùng đích)"
+  },
+  {
+   "src": "co-phieu-gas-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+   "target": "co-phieu-nganh-nang-luong",
+   "op": "skip",
+   "reason": "URL 301 → co-nen-mua-co-phieu-gas-hay-khong (đã có câu cùng đích)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-mwg-hay-khong",
+   "target": "co-phieu-nganh-ban-le",
+   "op": "skip",
+   "reason": "URL 301 → co-phieu-mwg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat (đã có câu cùng đích)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-ree-hay-khong",
+   "target": "co-phieu-nganh-nang-luong",
+   "op": "skip",
+   "reason": "URL 301 → co-phieu-ree-tong-quan-nhan-dinh-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat (đã có câu cùng đích)"
+  },
+  {
+   "src": "co-phieu-hpg-tong-quan-dinh-gia-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-5-co-phieu-nganh-thep-co-co-ban-tot-sap-buoc-vao-chu-ky-tang-truong-moi",
+   "op": "skip",
+   "reason": "URL 301 → co-nen-mua-co-phieu-hpg-hay-khong (đã có câu cùng đích)"
+  },
+  {
+   "src": "co-phieu-vib-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "op": "skip",
+   "reason": "URL 301 → co-nen-mua-co-phieu-vib-hay-khong-1 (đã có câu cùng đích)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-bid-hay-khong",
+   "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "op": "skip",
+   "reason": "URL 301 → co-phieu-bid-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat (đã có câu cùng đích)"
+  },
+  {
+   "src": "co-phieu-vjc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-co-phieu-hang-khong-nen-dau-tu",
+   "op": "skip",
+   "reason": "URL 301 → co-nen-mua-co-phieu-vjc-hay-khong (đã có câu cùng đích)"
+  },
+  {
+   "src": "co-phieu-vre-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "op": "skip",
+   "reason": "live đã có link trong thân bài (11/11)"
+  },
+  {
+   "src": "co-phieu-dxg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "op": "skip",
+   "reason": "live đã có link trong thân bài (11/11)"
+  },
+  {
+   "src": "co-phieu-dig-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "op": "skip",
+   "reason": "live đã có link trong thân bài (11/11)"
+  },
+  {
+   "src": "co-phieu-vic",
+   "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "op": "skip",
+   "reason": "live đã có link trong thân bài (11/11)"
+  },
+  {
+   "src": "co-phieu-sip-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "op": "skip",
+   "reason": "live đã có link trong thân bài (11/11)"
+  },
+  {
+   "src": "co-phieu-hdc-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "op": "skip",
+   "reason": "live đã có link trong thân bài (11/11)"
+  },
+  {
+   "src": "co-phieu-szc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "op": "skip",
+   "reason": "live đã có link trong thân bài (11/11)"
+  },
+  {
+   "src": "co-phieu-idc-tong-quan-nhan-dinh-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "op": "skip",
+   "reason": "live đã có link trong thân bài (11/11)"
+  },
+  {
+   "src": "co-phieu-htn-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "op": "skip",
+   "reason": "live đã có link trong thân bài (11/11)"
+  },
+  {
+   "src": "co-phieu-kdh-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "op": "skip",
+   "reason": "live đã có link trong thân bài (11/11)"
+  },
+  {
+   "src": "co-phieu-kbc-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "op": "skip",
+   "reason": "live đã có link trong thân bài (11/11)"
+  },
+  {
+   "src": "co-phieu-nlg-tong-quan-nhan-dinh-va-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "op": "skip",
+   "reason": "live đã có link trong thân bài (11/11)"
+  },
+  {
+   "src": "co-phieu-itc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "op": "skip",
+   "reason": "live đã có link trong thân bài (11/11)"
+  },
+  {
+   "src": "co-phieu-hdg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025",
+   "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "op": "skip",
+   "reason": "live đã có link trong thân bài (11/11)"
+  },
+  {
+   "src": "co-phieu-idv-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "op": "skip",
+   "reason": "live đã có link trong thân bài (11/11)"
+  },
+  {
+   "src": "co-phieu-hvn-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-co-phieu-hang-khong-nen-dau-tu",
+   "op": "skip",
+   "reason": "live đã có link trong thân bài (11/11)"
+  },
+  {
+   "src": "co-phieu-nt-2-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025",
+   "target": "co-phieu-pc-1-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025",
+   "op": "skip",
+   "reason": "trùng đoạn với câu dẫn về hub năng lượng"
+  },
+  {
+   "src": "co-phieu-mbb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "op": "skip",
+   "reason": "live đã có link trong thân bài (11/11)"
+  },
+  {
+   "src": "co-phieu-shb",
+   "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "op": "skip",
+   "reason": "live đã có link trong thân bài (11/11)"
+  },
+  {
+   "src": "co-phieu-tpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "op": "skip",
+   "reason": "live đã có link trong thân bài (11/11)"
+  },
+  {
+   "src": "co-phieu-vcb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "op": "skip",
+   "reason": "live đã có link trong thân bài (11/11)"
+  },
+  {
+   "src": "co-phieu-bid-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "op": "skip",
+   "reason": "live đã có link trong thân bài (11/11)"
+  },
+  {
+   "src": "co-phieu-tcb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "op": "skip",
+   "reason": "live đã có link trong thân bài (11/11)"
+  },
+  {
+   "src": "co-phieu-ocb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "op": "skip",
+   "reason": "live đã có link trong thân bài (11/11)"
+  },
+  {
+   "src": "co-phieu-stb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "op": "skip",
+   "reason": "live đã có link trong thân bài (11/11)"
+  },
+  {
+   "src": "co-phieu-hdb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "op": "skip",
+   "reason": "live đã có link trong thân bài (11/11)"
+  },
+  {
+   "src": "co-phieu-lpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "op": "skip",
+   "reason": "live đã có link trong thân bài (11/11)"
+  },
+  {
+   "src": "co-phieu-nganh-than",
+   "target": "co-phieu-nganh-nang-luong",
+   "op": "skip",
+   "reason": "live đã có link trong thân bài (11/11)"
+  },
+  {
+   "src": "co-phieu-vci-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-5-co-phieu-nganh-chung-khoan-dang-dau-tu-nhat",
+   "op": "skip",
+   "reason": "live đã có link trong thân bài (11/11)"
+  },
+  {
+   "src": "co-phieu-vnd-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-5-co-phieu-nganh-chung-khoan-dang-dau-tu-nhat",
+   "op": "skip",
+   "reason": "live đã có link trong thân bài (11/11)"
+  },
+  {
+   "src": "co-phieu-hcm-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-5-co-phieu-nganh-chung-khoan-dang-dau-tu-nhat",
+   "op": "skip",
+   "reason": "live đã có link trong thân bài (11/11)"
+  },
+  {
+   "src": "co-phieu-fts-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-5-co-phieu-nganh-chung-khoan-dang-dau-tu-nhat",
+   "op": "skip",
+   "reason": "live đã có link trong thân bài (11/11)"
+  },
+  {
+   "src": "co-phieu-mbs-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-5-co-phieu-nganh-chung-khoan-dang-dau-tu-nhat",
+   "op": "skip",
+   "reason": "live đã có link trong thân bài (11/11)"
+  },
+  {
+   "src": "co-phieu-vds-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "target": "top-5-co-phieu-nganh-chung-khoan-dang-dau-tu-nhat",
+   "op": "skip",
+   "reason": "live đã có link trong thân bài (11/11)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-ssi-hay-khong",
+   "target": "top-5-co-phieu-nganh-chung-khoan-dang-dau-tu-nhat",
+   "op": "skip",
+   "reason": "live đã có link trong thân bài (11/11)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-acb-hay-khong",
+   "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "op": "skip",
+   "reason": "live đã có link trong thân bài (11/11)"
+  }
+ ]
+}

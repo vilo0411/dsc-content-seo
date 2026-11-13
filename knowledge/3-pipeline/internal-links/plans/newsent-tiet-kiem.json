@@ -1,0 +1,275 @@
+{
+ "title": "Cụm Tiết kiệm & Kênh đầu tư — câu mới chứa link về pillar/hub",
+ "edits": [
+  {
+   "src": "lai-suat-gui-tiet-kiem-ngan-hang-lpbank",
+   "op": "append",
+   "find": "ết kiệm có thể dẫn đến hiệu suất đầu tư chưa thực sự tối ưu.",
+   "to": "co-tien-nen-dau-tu-gi-luc-nay",
+   "sentence": "Bài toán [phân bổ tiền nhàn rỗi] vì thế nên bắt đầu từ việc tách phần tiền cần an toàn và phần tiền chịu được biến động.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=48"
+  },
+  {
+   "src": "lai-suat-gui-tiet-kiem-ngan-hang-agribank",
+   "op": "append",
+   "find": "0,2%/năm), dẫn đến sự sụt giảm đáng kể về hiệu quả sinh lời.",
+   "to": "co-tien-nen-dau-tu-gi-luc-nay",
+   "sentence": "Vì vậy, trước khi chọn kỳ hạn dài, người gửi nên [phân bổ tiền nhàn rỗi]: phần nào cần rút bất cứ lúc nào, phần nào để yên được.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=43"
+  },
+  {
+   "src": "lai-suat-gui-tiet-kiem-ngan-hang-mb-bank",
+   "op": "append",
+   "find": "khoán – kênh đầu tư có tiềm năng sinh lời từ 15% - 25%/năm.",
+   "to": "co-tien-nen-dau-tu-gi-luc-nay",
+   "sentence": "Chứng khoán chỉ là một trong các đáp án cho câu hỏi [tiền nhàn rỗi nên đầu tư vào đâu], bên cạnh vàng, trái phiếu và chứng chỉ quỹ.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=42"
+  },
+  {
+   "src": "lai-suat-gui-tiet-kiem-ngan-hang-mb-bank",
+   "op": "append",
+   "find": "ngưỡng lãi suất ổn định cho những kế hoạch tích lũy dài hạn.",
+   "to": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+   "sentence": "Để biết mức này cao hay thấp, hãy đặt cạnh [lãi suất tiết kiệm các ngân hàng] khác ở cùng kỳ hạn.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=18"
+  },
+  {
+   "src": "lai-suat-gui-tiet-kiem-ngan-hang-vietinbank",
+   "op": "append",
+   "find": "n tài chính sang thị trường chứng khoán là xu hướng tất yếu.",
+   "to": "co-tien-nen-dau-tu-gi-luc-nay",
+   "sentence": "Tỷ lệ cụ thể tùy vào cách từng người trả lời câu hỏi [có tiền nên đầu tư vào đâu]: thời hạn, mục tiêu và mức chịu rủi ro.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=45"
+  },
+  {
+   "src": "lai-suat-gui-tiet-kiem-ngan-hang-vpbank",
+   "op": "append",
+   "find": "hững cơ hội tăng trưởng mạnh mẽ hơn từ thị trường tài chính.",
+   "to": "co-tien-nen-dau-tu-gi-luc-nay",
+   "sentence": "Khi đó, câu hỏi [có tiền nên đầu tư gì] cần được trả lời trước khi chọn kỳ hạn gửi.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=37"
+  },
+  {
+   "src": "lai-suat-gui-tiet-kiem-ngan-hang-shb",
+   "op": "append",
+   "find": "2% - 0,5%), điều này làm giảm đáng kể hiệu suất sử dụng vốn.",
+   "to": "co-tien-nen-dau-tu-gi-luc-nay",
+   "sentence": "Vì vậy, việc [phân bổ tiền nhàn rỗi] nên làm trước khi gửi: chỉ khóa kỳ hạn dài với phần tiền chắc chắn chưa dùng tới.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=61"
+  },
+  {
+   "src": "lai-suat-gui-tiet-kiem-ngan-hang-bidv",
+   "op": "append",
+   "find": "iệm chỉ được duy trì ở mức ổn định thay vì gia tăng mạnh mẽ.",
+   "to": "co-tien-nen-dau-tu-gi-luc-nay",
+   "sentence": "Đây là lúc người gửi tiền bắt đầu hỏi [có tiền nên đầu tư vào đâu] ngoài sổ tiết kiệm.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=56"
+  },
+  {
+   "src": "lai-suat-gui-tiet-kiem-ngan-hang-vib",
+   "op": "append",
+   "find": "ủ trong bối cảnh các kênh đầu tư khác đang trỗi dậy mạnh mẽ.",
+   "to": "co-tien-nen-dau-tu-gi-luc-nay",
+   "sentence": "Việc cần làm là xác định [nên đầu tư gì thời điểm này] với phần tiền chưa cần dùng trong vài năm tới.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=48"
+  },
+  {
+   "src": "co-1-ty-nen-gui-ngan-hang-nao",
+   "op": "append",
+   "find": "khoản tiền 1 tỷ sẽ giảm bớt một phần sức mua trong dài hạn.",
+   "to": "co-tien-nen-dau-tu-gi-luc-nay",
+   "sentence": "Vì vậy, với phần vốn dài hạn, câu hỏi [có tiền nên đầu tư gì] ngoài tiết kiệm đáng được đặt ra song song.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=64"
+  },
+  {
+   "src": "co-1-ty-nen-gui-ngan-hang-nao",
+   "op": "append",
+   "find": "gân hàng theo độ an toàn, lãi suất và chính sách thỏa thuận.",
+   "to": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+   "sentence": "Bảng [so sánh lãi suất tiết kiệm] theo từng ngân hàng cho thấy rõ khoảng cách này ở mỗi kỳ hạn.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=3"
+  },
+  {
+   "src": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+   "op": "append",
+   "find": "ỷ suất sinh lời cao hơn để bứt phá tài sản trung và dài hạn.",
+   "to": "co-tien-nen-dau-tu-gi-luc-nay",
+   "sentence": "Phần còn lại đó đi vào kênh nào là nội dung của câu hỏi [có tiền nên đầu tư gì] trong giai đoạn hiện nay.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=84"
+  },
+  {
+   "src": "lai-suat-huy-dong-la-gi",
+   "op": "append",
+   "find": "ác trên ứng dụng di động, đây là lựa chọn rất đáng cân nhắc.",
+   "to": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+   "sentence": "Mức cụ thể của từng nhà băng nằm trong bảng [lãi suất tiết kiệm các ngân hàng] cập nhật theo tháng.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=71"
+  },
+  {
+   "src": "100-trieu-gui-ngan-hang-lai-bao-nhieu-1-thang",
+   "op": "append",
+   "find": "ãi chênh lệch này tương đương 1,0 đến 1,8 triệu VNĐ mỗi năm.",
+   "to": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+   "sentence": "Bảng [lãi suất tiết kiệm các ngân hàng] cho biết nhà băng nào đang ở đầu trên của khoảng chênh lệch này.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=39"
+  },
+  {
+   "src": "50-trieu-nen-gui-tiet-kiem-ngan-hang-nao",
+   "op": "append",
+   "find": "ng duy trì mức lãi suất từ 7,05–7,8%/năm cho các kỳ hạn dài.",
+   "to": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+   "sentence": "Số liệu đầy đủ hơn nằm trong bảng [so sánh lãi suất tiết kiệm] của toàn hệ thống.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=3"
+  },
+  {
+   "src": "lai-suat-gui-tiet-kiem-ngan-hang-bac-a-bank",
+   "op": "append",
+   "find": "ức không kỳ hạn (~0.1%), gây thiệt hại đáng kể về tài chính.",
+   "to": "co-tien-nen-dau-tu-gi-luc-nay",
+   "sentence": "Vì vậy, nên [phân bổ tiền nhàn rỗi] trước khi gửi: giữ một phần ở kỳ hạn ngắn để rút khi cần.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=21"
+  },
+  {
+   "src": "lai-suat-gui-tiet-kiem-ngan-hang-hd-bank",
+   "op": "append",
+   "find": "hường phân bổ một phần tỷ trọng sang thị trường chứng khoán.",
+   "to": "co-tien-nen-dau-tu-gi-luc-nay",
+   "sentence": "Tỷ trọng đó tùy vào cách mỗi người trả lời câu hỏi [tiền nhàn rỗi nên đầu tư vào đâu] cho mục tiêu của mình.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=46"
+  },
+  {
+   "src": "lai-suat-gui-tiet-kiem-ngan-hang-hd-bank",
+   "op": "append",
+   "find": "c nhóm cạnh tranh cao trong hệ thống các ngân hàng TMCP lớn.",
+   "to": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+   "sentence": "Để kiểm chứng, hãy đối chiếu với [lãi suất tiết kiệm các ngân hàng] cùng nhóm ở cùng kỳ hạn.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=37"
+  }
+ ],
+ "skipped": [
+  {
+   "src": "lai-suat-ngan-hang-dong-a",
+   "target": "co-tien-nen-dau-tu-gi-luc-nay",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "lai-suat-gui-tiet-kiem-ngan-hang-sacombank",
+   "target": "co-tien-nen-dau-tu-gi-luc-nay",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "lai-suat-gui-tiet-kiem-ngan-hang-vietcombank",
+   "target": "co-tien-nen-dau-tu-gi-luc-nay",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "lai-suat-gui-tiet-kiem-ngan-hang-acb",
+   "target": "co-tien-nen-dau-tu-gi-luc-nay",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "lai-kep-trong-dau-tu-chung-khoan-la-gi-cach-tan-dung-lai-kep-de-dau-tu-sinh-loi",
+   "target": "co-tien-nen-dau-tu-gi-luc-nay",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "lai-suat-huy-dong-la-gi",
+   "target": "co-tien-nen-dau-tu-gi-luc-nay",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "dau-tu-gi-voi-100-trieu-5-goi-y-dau-tu-sinh-loi-cao-an-toan",
+   "target": "co-tien-nen-dau-tu-gi-luc-nay",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "100-trieu-gui-ngan-hang-lai-bao-nhieu-1-thang",
+   "target": "co-tien-nen-dau-tu-gi-luc-nay",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "50-trieu-nen-gui-tiet-kiem-ngan-hang-nao",
+   "target": "co-tien-nen-dau-tu-gi-luc-nay",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "lai-suat-gui-tiet-kiem-ngan-hang-bac-a-bank",
+   "target": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+[
+ {
+  "src": "duong-zigzag-la-gi",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 3,
+  "anchor": "PTKT",
+  "role": "pillar"
+ },
+ {
+  "src": "price-action-hanh-dong-gia-la-gi",
+  "target": "bieu-do-chung-khoan-la-gi-cach-xem-bieu-do-chung-khoan",
+  "i": 6,
+  "anchor": "biểu đồ giá",
+  "role": "sub-hub"
+ },
+ {
+  "src": "vung-qua-mua-la-gi-giai-dap-chi-tiet-cho-nha-dau-tu",
+  "target": "chi-so-rsi-la-gi",
+  "i": 8,
+  "anchor": "RSI",
+  "role": "sub-hub"
+ },
+ {
+  "src": "bollinger-bands-la-gi-cach-su-dung-trong-giao-dich-chung-khoan",
+  "target": "chi-bao-ky-thuat",
+  "i": 3,
+  "anchor": "chỉ báo phân tích kỹ thuật",
+  "role": "hub"
+ },
+ {
+  "src": "chi-bao-know-sure-thing-kst-la-gi",
+  "target": "chi-bao-ky-thuat",
+  "i": 30,
+  "anchor": "chỉ báo kỹ thuật",
+  "role": "hub"
+ },
+ {
+  "src": "chi-bao-ultimate-oscillator-uo-la-gi",
+  "target": "chi-bao-ky-thuat",
+  "i": 4,
+  "anchor": "chỉ báo phân tích kỹ thuật",
+  "role": "hub"
+ },
+ {
+  "src": "dai-trung-binh-dong-moving-average-ribbon-la-gi",
+  "target": "cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat",
+  "i": 3,
+  "anchor": "nhận diện xu hướng",
+  "role": "hub"
+ }
+]

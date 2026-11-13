@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Content Audit /kien-thuc: theo dõi tiến độ (2026-11-05)</title>
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #fff; --text: #1d2330; --muted: #6b7280; --line: #e3e6eb;
+    --accent: #2563eb; --ok: #15803d; --warn: #b45309; --bad: #b91c1c; --skip: #9ca3af;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 14px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); }
+  header { position: sticky; top: 0; z-index: 10; background: var(--card); border-bottom: 1px solid var(--line); padding: 12px 20px; }
+  header h1 { font-size: 17px; margin: 0 0 6px; }
+  .row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .bar { flex: 1; min-width: 200px; height: 10px; background: var(--line); border-radius: 5px; overflow: hidden; }
+  .bar > span { display: block; height: 100%; background: var(--ok); transition: width .2s; }
+  .muted { color: var(--muted); }
+  main { max-width: 1150px; margin: 0 auto; padding: 16px 20px 80px; }
+  select, input[type=search], button, textarea { font: inherit; }
+  select, input[type=search] { padding: 4px 8px; border: 1px solid var(--line); border-radius: 6px; background: #fff; }
+  button { padding: 4px 10px; border: 1px solid var(--line); border-radius: 6px; background: #fff; cursor: pointer; }
+  button:hover { border-color: var(--accent); color: var(--accent); }
+  .phase { margin-top: 22px; }
+  .phase > h2 { font-size: 15px; margin: 0 0 4px; display: flex; gap: 10px; align-items: center; }
+  .phase > h2 .bar { max-width: 220px; height: 8px; }
+  .phase > p { margin: 0 0 8px; }
+  details.task { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--line); border-radius: 8px; margin: 6px 0; }
+  details.task[data-status=done] { border-left-color: var(--ok); }
+  details.task[data-status=done] summary .title { text-decoration: line-through; color: var(--muted); font-weight: 500; }
+  .tick { width: 18px; height: 18px; margin: 0; cursor: pointer; flex: none; }
+  summary { list-style: none; cursor: pointer; padding: 8px 12px; display: flex; gap: 10px; align-items: center; }
+  summary::-webkit-details-marker { display: none; }
+  summary .title { flex: 1; font-weight: 600; }
+  .badge { font-size: 11px; padding: 1px 7px; border-radius: 10px; background: #eef2ff; color: #3730a3; white-space: nowrap; }
+  .badge.t-merge { background: #ecfdf5; color: #065f46; }
+  .badge.t-redirect { background: #fef3c7; color: #92400e; }
+  .badge.t-fix { background: #eff6ff; color: #1e40af; }
+  .badge.t-split { background: #fdf2f8; color: #9d174d; }
+  .badge.t-tech { background: #f3f4f6; color: #374151; }
+  .badge.t-check { background: #fee2e2; color: #991b1b; }
+  .count { font-size: 12px; color: var(--muted); white-space: nowrap; }
+  .body { padding: 0 14px 12px 14px; border-top: 1px dashed var(--line); }
+  .why { margin: 8px 0; padding: 8px 10px; background: #f9fafb; border-radius: 6px; }
+  .pages { margin: 6px 0; padding: 0; list-style: none; }
+  .pages li { margin: 2px 0; }
+  .pages code { font-size: 12px; }
+  .role { display: inline-block; min-width: 70px; font-size: 12px; color: var(--muted); }
+  ol.steps { margin: 8px 0; padding-left: 22px; }
+  ol.steps li { padding: 2px 0; }
+  .cmd { display: inline-flex; gap: 4px; align-items: center; background: #111827; color: #e5e7eb; padding: 1px 6px; border-radius: 4px; font: 12px/1.6 ui-monospace, Consolas, monospace; margin: 2px 0; }
+  .cmd button { padding: 0 6px; font-size: 11px; background: #374151; color: #e5e7eb; border: 0; }
+  .meta { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin-top: 8px; }
+  textarea { width: 100%; min-height: 48px; border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; margin-top: 6px; }
+  .remeasure { font-size: 12px; padding: 1px 7px; border-radius: 10px; background: #fef3c7; color: #92400e; }
+  .remeasure.due { background: #fee2e2; color: #991b1b; font-weight: 600; }
+  #duePanel { margin-top: 14px; background: #fff7ed; border: 1px solid #fed7aa; border-radius: 8px; padding: 10px 14px; display: none; }
+  #duePanel ul { margin: 4px 0 0; padding-left: 18px; }
+  .hidden { display: none !important; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Content Audit /kien-thuc: theo dõi tiến độ</h1>
+  <div class="row">
+    <div class="bar"><span id="totalBar"></span></div>
+    <span id="totalText" class="muted"></span>
+  </div>
+  <div class="row" style="margin-top:8px">
+    <input type="search" id="q" placeholder="Tìm slug, mã, việc…" style="min-width:220px">
+    <select id="fType"><option value="">Mọi loại việc</option></select>
+    <select id="fStatus"><option value="">Mọi trạng thái</option></select>
+    <button id="expandAll">Mở hết</button>
+    <button id="collapseAll">Thu gọn</button>
+    <span style="flex:1"></span>
+    <button id="exportBtn" title="Tải tiến độ về máy (JSON)">Xuất tiến độ</button>
+    <button id="importBtn" title="Nạp tiến độ từ file JSON">Nhập tiến độ</button>
+    <input type="file" id="importFile" accept="application/json" class="hidden">
+  </div>
+</header>
+
+<main>
+  <p class="muted">Nguồn: <code>knowledge/3-pipeline/content-audit-2026-11-05.md</code> (v3, đã kiểm tra lại GSC cho các cặp gộp ngày 06/11/2026).
+  Tiến độ lưu trong trình duyệt (localStorage). Muốn chuyển sang máy khác hoặc gửi người khác: bấm <b>Xuất tiến độ</b> rồi <b>Nhập tiến độ</b> ở máy kia.
+  Mỗi việc chỉ có <b>một ô tick</b>: làm xong thì tick, ngày xong được ghi tự động và hiện lịch đo lại (4–6 tuần sau).
+  Bấm vào tên việc để xem hướng dẫn từng bước.</p>
+  <div id="duePanel"><b>Đến hạn đo lại</b> (đã xong từ 28 ngày trở lên):<ul id="dueList"></ul></div>
+  <div id="app"></div>
+</main>
+
+<script>
+// ---------- Data ----------
+const BASE = "https://www.dsc.com.vn/kien-thuc/";
+const STORE_KEY = "dsc-content-audit-2026-11-05";
+
+const TYPES = {
+  check: "Kiểm tra trước",
+  merge: "Gộp + 301",
+  redirect: "301",
+  fix: "Sửa nội dung",
+  split: "Tách intent",
+  tech: "Kỹ thuật",
+};
+const STATUSES = {
+  todo: "Chưa xong",
+  done: "Xong",
+};
+
+const PHASES = [
+  { id: "p0", title: "Bước 0: trước mọi 301", note: "Xuất báo cáo Google Ads → Landing pages (90 ngày). URL nào đang là trang đích của Dynamic Search Ads thì không 301." },
+  { id: "p1", title: "Tuần 1: sửa ưu tiên 1 + đổi đích 301 msn/bcm", note: "Bài vừa mất traffic vừa có chuyển đổi." },
+  { id: "p2", title: "Tuần 1–2: gộp 13 cặp mã cổ phiếu", note: "Làm theo thứ tự: LPB, VJC, ACB, VIB trước (bài phụ yếu rõ). PLX làm sau cùng. Bài tổng quan thường giữ cụm “phân tích / định giá”: bắt buộc chuyển phần đó sang bài giữ lại." },
+  { id: "p3", title: "Tuần 2: tách intent các cặp không gộp + title/meta ưu tiên 3", note: "Không 301, chỉ sửa title/H1 và link chéo." },
+  { id: "p4", title: "Tuần 3: gộp Bollinger, 301 mục 3b, sửa rửa tiền", note: "301 mục 3b chỉ làm sau khi có xác nhận từ Ads và Marketing." },
+  { id: "p5", title: "Song song: kỹ thuật (dev / Analytics)", note: "" },
+  { id: "p6", title: "Backlog: ưu tiên 2 (SEO + CRO) và ưu tiên 4 (viết lại sâu)", note: "Ưu tiên 2: nhiều traffic, 0 chuyển đổi. Ưu tiên 4: bài nền tảng xếp hạng kém." },
+];
+
+// Shared step lists. {old}/{keep} are replaced per task.
+const MERGE_STEPS = [
+  "Kiểm tra Google Ads Landing pages: <b>{old}</b> không phải trang đích Ads (nếu có → dừng, ghi chú lại)",
+  "Chuyển nội dung còn giá trị của bài gộp sang bài giữ ({moveNote})",
+  "Thêm khối dữ liệu nhanh đầu bài (giá, P/E, vốn hóa, KQKD quý gần nhất)",
+  "Sửa title/H1 bài giữ lại{titleNote}",
+  "Thêm link/CTA sang bài cách mua{cachMuaNote}",
+  "Đặt 301 trên CMS: {old} → {keep}",
+  "Sửa internal link trỏ vào URL cũ: [[python scripts/find_links.py --backfill {old}]] + [[python scripts/link_plan.py build <spec.json>]] (op href)",
+  "Kiểm tra: [[python scripts/sync_live.py --only {keep}]] rồi [[python scripts/link_plan.py verify <spec.json>]]",
+  "Gỡ URL cũ khỏi sitemap",
+];
+const REDIRECT_STEPS = [
+  "Kiểm tra Google Ads Landing pages: <b>{old}</b> không có traffic Ads",
+  "Đặt 301 trên CMS: {old} → {keep}",
+  "Sửa internal link trỏ vào URL cũ: [[python scripts/find_links.py --backfill {old}]] + [[python scripts/link_plan.py build <spec.json>]] (op href)",
+  "Kiểm tra: [[python scripts/sync_live.py --only {keep}]] rồi [[python scripts/link_plan.py verify <spec.json>]]",
+  "Gỡ URL cũ khỏi sitemap",
+];
+const TITLE_STEPS = [
+  "Xem query + CTR hiện tại: [[python scripts/dashboard_cache.py report {slug}]] (hoặc MCP query_search_analytics)",
+  "Viết lại title + meta description",
+  "Cập nhật trên CMS",
+  "Ghi ngày sửa vào ghi chú bên dưới",
+];
+const REWRITE_STEPS = [
+  "So bản live với Final: [[python scripts/sync_live.py --compare {slug}]]",
+  "Viết lại: [[/optimize {slug}]]",
+  "QA: [[python scripts/qa_lint.py <file>]] · [[python scripts/slop_check.py <file>]] · [[python scripts/market_facts.py --verify <file>]]",
+  "Đăng CMS ([[python scripts/md_to_cms_html.py {slug}]])",
+  "[[python scripts/sync_live.py --only {slug}]]",
+];
+const CRO_STEPS = [
+  "Sửa SEO: [[/optimize {slug}]]",
+  "Thêm cầu nối sang sản phẩm: [[/cro {slug}]]",
+  "QA: [[python scripts/qa_lint.py <file>]] · [[python scripts/slop_check.py <file>]]",
+  "Đăng CMS + [[python scripts/sync_live.py --only {slug}]]",
+];
+
+function merge(id, ticker, keep, old, opts = {}) {
+  return {
+    id, phase: opts.phase || "p2", type: "merge",
+    title: `${ticker}: gộp ${opts.oldLabel || "tổng quan"} → ${opts.keepLabel || "nên mua"}`,
+    pages: [{ role: "Giữ", slug: keep }, { role: "Gộp + 301", slug: old }].concat(opts.cachMua ? [{ role: "Cách mua", slug: opts.cachMua }] : []),
+    why: opts.why,
+    steps: fill(MERGE_STEPS, {
+      old, keep,
+      moveNote: opts.move || "phân tích, định giá, KQKD",
+      titleNote: opts.title ? `: ${opts.title}` : "",
+      cachMuaNote: opts.cachMua ? ` <code>${opts.cachMua}</code>` : " (chưa có bài cách mua: dùng CTA mở tài khoản)",
+    }),
+    measure: true,
+  };
+}
+function fill(list, vars) {
+  return list.map(s => s.replace(/\{(\w+)\}/g, (_, k) => vars[k] ?? `{${k}}`));
+}
+function simple(id, phase, type, title, slugs, why, steps, measure = true, prechecked = false) {
+  return { id, phase, type, title, pages: slugs.map(s => (typeof s === "string" ? { role: "Bài", slug: s } : s)), why, steps, measure, prechecked };
+}
+function titleTask(slug) {
+  return simple("t3-" + slug, "p3", "fix", `Title/meta: ${slug}`, [slug], "Ưu tiên 3: CTR thấp, chỉ cần viết lại title và meta.", fill(TITLE_STEPS, { slug }));
+}
+function rewriteTask(slug) {
+  return simple("t4-" + slug, "p6", "fix", `Viết lại sâu: ${slug}`, [slug], "Ưu tiên 4: bài nền tảng xếp hạng kém.", fill(REWRITE_STEPS, { slug }));
+}
+function croTask(slug, why) {
+  return simple("t2-" + slug, "p6", "fix", `SEO + CRO: ${slug}`, [slug], why, fill(CRO_STEPS, { slug }));
+}
+
+const ADS_URLS = [
+  "co-phieu-lpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "co-phieu-vjc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "co-phieu-acb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "co-phieu-vib-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "co-phieu-vpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "co-phieu-gas-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+  "co-phieu-hpg-tong-quan-dinh-gia-ket-qua-kinh-doanh-moi-nhat",
+  "co-phieu-ssi-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "co-nen-mua-co-phieu-dig-hay-khong",
+  "co-nen-mua-co-phieu-bid-hay-khong",
+  "co-nen-mua-co-phieu-mwg-hay-khong",
+  "co-nen-mua-co-phieu-ree-hay-khong",
+  "co-phieu-plx-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "chien-luoc-giao-dich-ket-hop-bollinger-bands-va-duong-ma",
+  "cach-mua-co-phieu-vre",
+  "cach-mua-co-phieu-pow",
+  "khoa-hoc-chung-khoan-tan-thu",
+  "khoa-hoc-ky-thuat-thuc-chien",
+  "chinh-sach-cong-la-gi",
+];
+
+const TASKS = [
+  // ---- Phase 0
+  simple("p0-ads", "p0", "check", "Xuất Google Ads → Landing pages (90 ngày) và đối chiếu mọi URL sẽ 301", [],
+    "<b>Đã kiểm tra qua GSC Dashboard MCP ngày 06/11/2026 (06/08 → 03/11):</b> GA4 kênh Paid Search có 109 landing page, tổng 18.395 sessions (khớp tổng kênh 18.391, danh sách đầy đủ đến URL 1 session). Trong 19 URL sẽ 301, chỉ <code>co-phieu-ssi-tong-quan…</code> có 4 sessions, 0 mở TK; 18 URL còn lại 0 sessions Paid. Báo cáo PMax landing pages (Google Ads, các dòng chi phí cao nhất) cũng không có URL nào trong 19 URL này. Chưa kiểm tra được kênh Cross-network trong GA4 (4.082 sessions) vì tool lỗi. Các bước đã tick sẵn; nếu muốn chắc hơn, xuất thêm báo cáo Landing pages trong giao diện Google Ads.",
+    ["Lấy dữ liệu landing page Paid Search 90 ngày (GA4 qua MCP) + PMax landing pages (Google Ads qua MCP)"].concat(ADS_URLS.map(s => `Không có traffic Ads: <code>${s}</code>`)), false, true),
+
+  // ---- Phase 1
+  simple("p1-top5", "p1", "fix", "Làm mới top-5-co-phieu-dang-dau-tu", ["top-5-co-phieu-dang-dau-tu"],
+    "Click 2.458 → 1.448 (90 ngày so với 90 ngày trước), 13 mở TK.",
+    fill(["Làm mới danh mục cổ phiếu và mốc thời gian", "Giữ nguyên CTA", ...REWRITE_STEPS.slice(2)], { slug: "top-5-co-phieu-dang-dau-tu" })),
+  simple("p1-vic", "p1", "fix", "Cập nhật năm bài cách mua VIC (giữ slug)", ["cach-mua-co-phieu-vingroup-vic-huong-dan-moi-nhat-2024"],
+    "77 mở TK, trang chuyển đổi số 2 của /kien-thuc. Slug có “2024”: <b>không đổi slug</b>.",
+    fill(["Cập nhật năm trong title/H1/nội dung", "Kiểm tra lại các bước mở tài khoản còn đúng", "Đăng CMS", "[[python scripts/sync_live.py --only {slug}]]"], { slug: "cach-mua-co-phieu-vingroup-vic-huong-dan-moi-nhat-2024" })),
+  simple("p1-vingroup", "p1", "fix", "Cập nhật năm bài danh sách cổ phiếu Vingroup (giữ URL)", ["cac-co-phieu-niem-yet-thuoc-tap-doan-vingroup-danh-sach-day-du-va-cap-nhat-nam-2024", { role: "Link tới", slug: "cach-mua-co-phieu-vingroup-vic-huong-dan-moi-nhat-2024" }],
+    "Click 1.190 → 752, 1 mở TK.",
+    fill(["Cập nhật năm trong title/H1, giữ URL", "Thêm link sang bài cách mua VIC (77 mở TK)", "Đăng CMS", "[[python scripts/sync_live.py --only {slug}]]"], { slug: "cac-co-phieu-niem-yet-thuoc-tap-doan-vingroup-danh-sach-day-du-va-cap-nhat-nam-2024" })),
+  simple("p1-online", "p1", "fix", "Kiểm tra bản Final mới của cách mua cổ phiếu online đã lên CMS", ["cach-mua-co-phieu-online-cho-nguoi-moi-bat-dau"],
+    "Click 429 → 247, 6 mở TK. Đã có bản Final mới.",
+    fill(["[[python scripts/sync_live.py --compare {slug}]]", "Nếu chưa lên: đăng bản Final ([[python scripts/md_to_cms_html.py {slug}]])", "[[python scripts/sync_live.py --only {slug}]]"], { slug: "cach-mua-co-phieu-online-cho-nguoi-moi-bat-dau" })),
+  simple("p1-daukhi", "p1", "fix", "Cập nhật năm + danh mục top 5 cổ phiếu dầu khí", ["top-5-co-phieu-dau-khi-se-huong-loi-trong-nam-2024-khi-gia-dau-tang"],
+    "Click 331 → 194, 1 mở TK.",
+    fill(["Cập nhật năm và danh mục", ...REWRITE_STEPS.slice(2)], { slug: "top-5-co-phieu-dau-khi-se-huong-loi-trong-nam-2024-khi-gia-dau-tang" })),
+  simple("p1-flc", "p1", "fix", "Viết lại cach-mua-co-phieu-flc theo góc hủy niêm yết (không xóa)", ["cach-mua-co-phieu-flc"],
+    "1 mở TK (4 key event). Góc mới: “FLC hủy niêm yết, cổ đông làm gì”. Giữ CTA.",
+    fill(["Viết lại theo góc hủy niêm yết, giữ CTA", ...REWRITE_STEPS.slice(2)], { slug: "cach-mua-co-phieu-flc" })),
+  simple("p1-msnbcm", "p1", "redirect", "Đổi đích 301 cũ của msn/bcm sang cách mua trên HOSE",
+    [{ role: "301 cũ", slug: "cach-mua-co-phieu-msn" }, { role: "301 cũ", slug: "cach-mua-co-phieu-bcm" }, { role: "Đích mới", slug: "cach-mua-co-phieu-tren-san-hose" }],
+    "Hiện 301 sang co-phieu-msn / co-phieu-bcm: lệch intent (giao dịch → phân tích). Bài đích mới có 3 mở TK.",
+    ["Đổi 301: cach-mua-co-phieu-msn → cach-mua-co-phieu-tren-san-hose", "Đổi 301: cach-mua-co-phieu-bcm → cach-mua-co-phieu-tren-san-hose", "Kiểm tra HTTP cả hai URL trả 301 về đích mới"]),
+
+  // ---- Phase 2: merges in rollout order
+  merge("m-lpb", "LPB", "co-nen-mua-co-phieu-lpb-hay-khong", "co-phieu-lpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+    { why: "Trùng 100% query. 16 tháng: nên mua 557 click, tổng quan 76.", move: "KQKD nếu mới hơn" }),
+  merge("m-vjc", "VJC", "co-nen-mua-co-phieu-vjc-hay-khong", "co-phieu-vjc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+    { cachMua: "cach-mua-co-phieu-vjc", why: "Trùng 91%. 16 tháng: nên mua 460, tổng quan 258. Tổng quan hơn ở “phân tích cổ phiếu vjc” (vị trí 3,7 so với 10,2).", move: "phần phân tích" }),
+  merge("m-acb", "ACB", "co-nen-mua-co-phieu-acb-hay-khong", "co-phieu-acb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+    { cachMua: "cach-mua-co-phieu-acb-ngan-hang-thuong-mai-co-phan-a-chau-huong-dan-chi-tiet", why: "Trùng 88%. SERP “cổ phiếu acb”: Google xếp bài nên mua ở #6." }),
+  merge("m-vib", "VIB", "co-nen-mua-co-phieu-vib-hay-khong-1", "co-phieu-vib-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+    { why: "Trùng 73%. 16 tháng: nên mua 496, tổng quan 205. Tổng quan hơn ở “phân tích” (3,7) và “định giá cổ phiếu vib” (4,2 so với 9,6).", move: "phân tích, định giá" }),
+  merge("m-vpb", "VPB", "co-nen-mua-co-phieu-vpb-hay-khong", "co-phieu-vpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+    { why: "Trùng 83%. Cả hai bài không vào top 10 cho “cổ phiếu vpb”." }),
+  merge("m-gas", "GAS", "co-nen-mua-co-phieu-gas-hay-khong", "co-phieu-gas-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+    { why: "Trùng 81%. Cả hai bài không vào top 10 cho “cổ phiếu gas”." }),
+  merge("m-hpg", "HPG", "co-nen-mua-co-phieu-hpg-hay-khong", "co-phieu-hpg-tong-quan-dinh-gia-ket-qua-kinh-doanh-moi-nhat",
+    { cachMua: "cach-mua-co-phieu-hoa-phat-hpg-nhanh-chong-va-an-toan", why: "Trùng 67%. SERP “phân tích cổ phiếu hpg”: Google xếp bài nên mua ở #1." }),
+  merge("m-ssi", "SSI", "co-nen-mua-co-phieu-ssi-hay-khong", "co-phieu-ssi-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+    { cachMua: "huong-dan-cach-mua-co-phieu-ssi-tai-chung-khoan-dsc", why: "Trùng 75%. SERP “phân tích cổ phiếu ssi”: Google xếp bài nên mua ở #1." }),
+  merge("m-dig", "DIG", "co-phieu-dig-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat", "co-nen-mua-co-phieu-dig-hay-khong",
+    { oldLabel: "nên mua", keepLabel: "tổng quan", why: "Trùng 79%, SERP 3/10. Tổng quan ở #1 cho “dig” và vị trí 3 cho “nhận định cổ phiếu dig” (82 click).", move: "phần “có nên mua”", title: "thêm “có nên mua”" }),
+  merge("m-bid", "BID", "co-phieu-bid-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat", "co-nen-mua-co-phieu-bid-hay-khong",
+    { oldLabel: "nên mua", keepLabel: "tổng quan", cachMua: "cach-mua-co-phieu-bid", why: "Query bài nên mua chỉ khác tên gọi (“bidv”). Nên mua ~15 click / 16 tháng, tổng quan ~100.", move: "phần “có nên mua”", title: "thêm “BIDV” vào title/H1" }),
+  merge("m-mwg", "MWG", "co-phieu-mwg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat", "co-nen-mua-co-phieu-mwg-hay-khong",
+    { oldLabel: "nên mua", keepLabel: "tổng quan (đảo chiều)", cachMua: "huong-dan-chi-tiet-cach-mua-co-phieu-mwg", why: "16 tháng: tổng quan 346, nên mua 153. Tổng quan thắng rõ cụm phân tích (“phân tích” 5,6 so với 18,5; “định giá” 5,9 so với 36,9). 90 ngày gần nhất nên mua nhỉnh hơn (30 so với 17).", move: "mục “MWG là gì / Thế giới Di động”", title: "thêm “có nên mua”" }),
+  merge("m-ree", "REE", "co-phieu-ree-tong-quan-nhan-dinh-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat", "co-nen-mua-co-phieu-ree-hay-khong",
+    { oldLabel: "nên mua", keepLabel: "tổng quan", why: "Hai bài cannibal nhau trên cả cụm. Nên mua giữ “cổ phiếu ree” (vị trí 11,9). Ưu tiên thấp, traffic nhỏ.", move: "phần “có nên mua”, “REE là gì”", title: "đưa “cổ phiếu REE” lên đầu" }),
+  merge("m-plx", "PLX (làm sau cùng)", "co-nen-mua-co-phieu-plx-hay-khong", "co-phieu-plx-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+    { cachMua: "cach-mua-co-phieu-plx-petrolimex", why: "Cặp lớn nhất: nên mua 875, tổng quan 694 click / 16 tháng. Tổng quan thắng “plx” và cụm phân tích (“phân tích cổ phiếu plx” 3,1 so với 9,4). Chỉ làm khi đã thấy kết quả LPB/VJC.", move: "phân tích, định giá, KQKD (bắt buộc)", title: "thêm “phân tích”" }),
+
+  // ---- Phase 3: split intent + CTR titles
+  simple("s-pnj", "p3", "split", "PNJ: tách intent (không gộp)",
+    [{ role: "Nên mua", slug: "co-nen-mua-co-phieu-pnj-hay-khong" }, { role: "Tổng quan", slug: "co-phieu-pnj-tong-quan-nhan-dinh-ket-qua-kinh-doanh-moi-nhat" }],
+    "Trùng 42%. Bài nên mua giữ “cách mua cổ phiếu pnj” (vị trí 2) và có 3 mở TK.",
+    ["Bài nên mua: đổi title sang hướng “cách mua / có nên mua PNJ”", "Bài tổng quan: đổi title sang “nhận định PNJ”", "Link chéo hai bài", "Đăng CMS + sync_live cả hai"]),
+  simple("s-frt", "p3", "split", "FRT: tách intent (không gộp)",
+    [{ role: "Nên mua", slug: "co-nen-mua-co-phieu-frt-hay-khong" }, { role: "Tổng quan", slug: "co-phieu-frt-tong-quan-dinh-gia-ket-qua-kinh-doanh-moi-nhat" }],
+    "Trùng 34%. Nên mua giữ “frt là gì”, “cổ phiếu long châu”; tổng quan giữ “frt”.",
+    ["Tổng quan: title = “cổ phiếu FRT”", "Nên mua: title = “FRT là gì / Long Châu”", "Link chéo hai bài", "Đăng CMS + sync_live cả hai"]),
+  simple("s-kinhnghiem", "p3", "split", "Bài kinh nghiệm: thôi tranh với bài người mới",
+    [{ role: "Sửa", slug: "cac-kinh-nghiem-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau" }, { role: "Bài chính", slug: "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau" }],
+    "Bài chính là trang chuyển đổi số 1 (118 mở TK). Không gộp.",
+    ["Đổi hướng title/H1 sang “kinh nghiệm / chiến lược đầu tư”, bỏ “cho người mới bắt đầu”", "Thêm link sang bài chính", "Đăng CMS + sync_live"]),
+  simple("s-quy", "p3", "split", "Quỹ mở/ETF: nhường query “nên đầu tư quỹ ETF nào”",
+    [{ role: "Sửa", slug: "nen-dau-tu-quy-mo-hay-quy-etf" }, { role: "Nhường cho", slug: "nen-dau-tu-quy-etf-nao" }],
+    "Trùng 49%. Bài kia đứng vị trí 2 cho “nên đầu tư quỹ etf nào”, bài này vị trí 16.",
+    ["Bỏ “nên đầu tư quỹ ETF nào” khỏi title/H2", "Thêm link sang nen-dau-tu-quy-etf-nao", "Đăng CMS + sync_live"]),
+  simple("s-traiphieu", "p3", "split", "Trái phiếu: thêm link thay vì gộp",
+    [{ role: "Thêm link từ", slug: "trai-phieu-la-gi" }, { role: "Tới", slug: "trai-phieu-ngan-hang-la-gi" }, { role: "Tới", slug: "tai-sao-nen-dau-tu-trai-phieu-trai-phieu-phu-hop-voi-nha-dau-tu-nao" }],
+    "Trùng chỉ 8% và 17%: khác intent.",
+    ["Link từ trai-phieu-la-gi → trai-phieu-ngan-hang-la-gi", "Link từ trai-phieu-la-gi → tai-sao-nen-dau-tu-trai-phieu-…", "Đăng CMS + sync_live"]),
+  simple("s-cachmua", "p3", "split", "10 cặp cách mua / tổng quan: tách title + link chéo", [],
+    "Khác intent (giao dịch và phân tích), bài cách mua có chuyển đổi. Không gộp.",
+    ["VCB", "CTG", "BID", "VHM", "TPB", "PVD", "SAB", "STB", "BVH", "HDB"].map(t => `${t}: tách title + link chéo cách mua ↔ tổng quan`)),
+  ...[
+    "margin-la-gi", "chi-so-dow-jones-la-gi-y-nghia-cua-chi-so-dow-jones", "cir-trong-linh-vuc-ngan-hang-la-gi",
+    "chi-bao-moving-average-envelope-mae-la-gi", "tieu-san-la-gi-phan-biet-tieu-san-va-tai-san",
+    "bullish-la-gi-xu-huong-tang-gia-trong-thi-truong-chung-khoan", "dong-tien-nong-la-gi",
+    "uptrend-la-gi-cach-nhan-biet-va-dau-tu-hieu-qua-trong-xu-huong-uptrend",
+    "bear-trap-la-gi-cach-xac-dinh-va-phong-tranh-trong-phan-tich-ky-thuat", "ce-trong-chung-khoan-la-gi",
+    "duong-phan-tu-quadrant-line-la-gi", "cagr-la-gi", "chi-bao-distance-from-moving-average-la-gi", "backtest-la-gi",
+  ].map(titleTask),
+
+  // ---- Phase 4
+  merge("m-bollinger", "Bollinger", "bollinger-bands-la-gi-cach-su-dung-trong-giao-dich-chung-khoan", "chien-luoc-giao-dich-ket-hop-bollinger-bands-va-duong-ma",
+    { phase: "p4", oldLabel: "chiến lược kết hợp MA", keepLabel: "bài chính", why: "Trùng 66%; query bài chiến lược đều là query bài chính. Bài chỉ 425 chữ, 0 chuyển đổi.", move: "phần chiến lược kết hợp MA thành một H2" }),
+  ...[
+    ["cach-mua-co-phieu-vre", "cach-mua-co-phieu-vingroup-vic-huong-dan-moi-nhat-2024", "Query duy nhất: “cách mua cổ phiếu vingroup”. Bài đích 77 mở TK."],
+    ["cach-mua-co-phieu-pow", "cach-mua-co-phieu-tren-san-hose", "3 click / 90 ngày. Cùng intent giao dịch, POW niêm yết HOSE."],
+    ["khoa-hoc-chung-khoan-tan-thu", "khoa-hoc-chung-khoan", "14 imp. Cần hỏi Marketing link có đang dùng trong email/Zalo/sự kiện."],
+    ["khoa-hoc-ky-thuat-thuc-chien", "khoa-hoc-phan-tich-ky-thuat-chung-khoan", "4 imp. Cần hỏi Marketing như trên."],
+    ["chinh-sach-cong-la-gi", "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te", "0–1 imp. Phương án 2: chinh-sach-tai-khoa-la-gi."],
+  ].map(([old, keep, why]) => ({
+    id: "r-" + old, phase: "p4", type: "redirect", title: `301: ${old} → ${keep}`,
+    pages: [{ role: "Xóa + 301", slug: old }, { role: "Đích", slug: keep }], why,
+    steps: (old.startsWith("khoa-hoc") ? ["Marketing xác nhận (link trong email/Zalo/sự kiện)"] : []).concat(fill(REDIRECT_STEPS, { old, keep })),
+    measure: true,
+  })),
+  simple("p4-ruatien", "p4", "fix", "Sửa rua-tien-la-gi (mở rộng góc chứng khoán)", ["rua-tien-la-gi-hau-qua-va-cach-phong-chong"],
+    "Từng đứng vị trí 2,8–4 (3–9,7K imp/tháng) cho “rửa tiền là gì”, rớt từ 5/2026 xuống 13–17. Bài 407 chữ. Không có đích 301 phù hợp.",
+    fill(["Mở rộng: rửa tiền qua chứng khoán, quy định phòng chống rửa tiền, KYC/eKYC khi mở tài khoản", "Thêm cầu nối tự nhiên sang mở tài khoản", ...REWRITE_STEPS.slice(2)], { slug: "rua-tien-la-gi-hau-qua-va-cach-phong-chong" })),
+
+  // ---- Phase 5
+  simple("k-soft404", "p5", "tech", "Dev: slug sai trả 404 (đang soft-404 ~700 URL)", [],
+    "URL sai chính tả đang chuyển về /kien-thuc với mã 200.",
+    ["Gửi yêu cầu cho dev", "Dev sửa: slug không tồn tại trả 404 (hoặc 301 về slug gần nhất)", "Kiểm tra lại 3 URL mẫu trả 404"], false),
+  simple("k-referral", "p5", "tech", "Analytics: thêm unwanted referrals trong GA4", [],
+    "accounts.hvsvn.com (12.445 sessions) và *.dsc.com.vn (trading, wetrade, accounts…) đang bị ghi là Referral.",
+    ["GA4 → Admin → Data streams → Configure tag settings → List unwanted referrals", "Thêm accounts.hvsvn.com", "Thêm các host *.dsc.com.vn (trading, wetrade, accounts…)", "Sau 1–2 tuần: kiểm tra Referral giảm"], false),
+  simple("k-notset", "p5", "tech", "Analytics: kiểm tra landing page (not set)", [],
+    "7.702 sessions, 2 chuyển đổi. Có thể do event không gắn page.",
+    ["Kiểm tra cấu hình GA4 (event không có page_location)", "Sửa nếu cần"], false),
+  simple("k-danhmuc", "p5", "tech", "Trang danh mục cho-nguoi-moi-bat-dau, dau-tu-hieu-qua (tùy chọn)", ["cho-nguoi-moi-bat-dau", "dau-tu-hieu-qua"],
+    "Là trang danh mục, không 301. Nếu mỏng: cân nhắc noindex và viết mô tả danh mục.",
+    ["Quyết định: noindex hay viết mô tả danh mục", "Thực hiện trên CMS"], false),
+
+  // ---- Phase 6 backlog
+  croTask("top-5-co-phieu-nganh-chung-khoan-dang-dau-tu-nhat", "1.571 sessions, click 1.879 → 1.293, 1 mở TK."),
+  croTask("lai-suat-ngan-hang-dong-a", "Mất nhiều click nhất (2.489 → 1.180) nhưng 0 chuyển đổi. Kiểm tra Đông Á Bank đã đổi tên thành Vikki Bank chưa."),
+  croTask("tu-dien-30-mo-hinh-nen-pho-bien-tren-thi-truong-chung-khoan", "1.161 sessions, 740 click, 0 mở TK."),
+  croTask("top-co-phieu-cang-bien-nen-dau-tu", "969 sessions, 778 click, 0 mở TK."),
+  croTask("lai-suat-gui-tiet-kiem-ngan-hang-lpbank", "943 sessions, 877 click, 0 mở TK. Cầu nối: so sánh lãi suất tiết kiệm với đầu tư."),
+  croTask("co-phieu-nganh-cong-nghe", "850 sessions, click 870 → 687, 0 mở TK."),
+  simple("t2-nganh", "p6", "fix", "SEO + CRO: nhóm co-phieu-nganh-*", [],
+    "70–365 sessions mỗi bài, 0 mở TK.",
+    ["nang-luong", "y-te", "thuc-pham", "nong-nghiep", "ban-le", "bao-hiem", "det-may", "du-lich", "hoa-chat", "nhua", "o-to", "than", "thuy-san", "truyen-thong", "xay-dung"]
+      .map(n => `co-phieu-nganh-${n}: /optimize + /cro`)),
+  ...[
+    "co-phieu-la-gi-cac-loai-co-phieu-tren-thi-truong-chung-khoan-viet-nam",
+    "chi-so-roe-la-gi-cach-tinh-y-nghia-va-tam-quan-trong-doi-voi-nha-dau-tu",
+    "san-giao-dich-chung-khoan-la-gi", "trai-phieu-la-gi", "chi-so-eps-la-gi",
+    "cach-dau-tu-chung-khoan-phai-sinh-tai-viet-nam", "mo-hinh-kinh-doanh-la-gi", "uy-thac-dau-tu-la-gi",
+    "lam-phat-nen-dau-tu-gi-cac-kenh-dau-tu-phu-hop", "cach-dau-tu-chung-quyen-co-bao-dam-tai-viet-nam",
+    "diem-hoa-von-la-gi", "cac-thuat-ngu-trong-chung-khoan", "huong-dan-mo-tai-khoan-chung-chi-quy",
+  ].map(rewriteTask),
+];
+
+// ---------- State ----------
+let state = load();
+function load() {
+  try { return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; } catch { return {}; }
+}
+function save() { localStorage.setItem(STORE_KEY, JSON.stringify(state)); }
+function ts(id) {
+  if (!state[id]) {
+    // Tasks verified before the tracker was first opened start pre-ticked.
+    const t = TASKS.find(x => x.id === id);
+    state[id] = t && t.prechecked
+      ? { status: "done", note: "Đã kiểm tra qua MCP ngày 2026-11-06.", done: "2026-11-06" }
+      : { status: "todo", note: "", done: "" };
+  }
+  return state[id];
+}
+
+// ---------- Helpers ----------
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+// Step text is trusted HTML from this file; [[cmd]] becomes a copyable command chip.
+function renderStep(text) {
+  return text.replace(/\[\[(.+?)\]\]/g, (_, c) => `<span class="cmd">${esc(c)}<button type="button" data-copy="${esc(c)}">copy</button></span>`);
+}
+const today = () => new Date().toISOString().slice(0, 10);
+function addDays(d, n) { const x = new Date(d + "T00:00:00"); x.setDate(x.getDate() + n); return x.toISOString().slice(0, 10); }
+function daysSince(d) { return Math.floor((new Date(today()) - new Date(d)) / 86400000); }
+
+// ---------- Render ----------
+const app = document.getElementById("app");
+const fType = document.getElementById("fType");
+const fStatus = document.getElementById("fStatus");
+for (const [k, v] of Object.entries(TYPES)) fType.add(new Option(v, k));
+for (const [k, v] of Object.entries(STATUSES)) fStatus.add(new Option(v, k));
+
+function render() {
+  const open = new Set([...app.querySelectorAll("details[open]")].map(d => d.dataset.id));
+  app.innerHTML = "";
+  for (const ph of PHASES) {
+    const tasks = TASKS.filter(t => t.phase === ph.id);
+    const sec = document.createElement("section");
+    sec.className = "phase";
+    sec.dataset.phase = ph.id;
+    sec.innerHTML = `<h2>${esc(ph.title)} <span class="bar"><span></span></span><span class="count"></span></h2>` +
+      (ph.note ? `<p class="muted">${esc(ph.note)}</p>` : "");
+    for (const t of tasks) sec.appendChild(renderTask(t, open.has(t.id)));
+    app.appendChild(sec);
+  }
+  applyFilters();
+  updateProgress();
+}
+
+function renderTask(t, isOpen) {
+  const s = ts(t.id);
+  const isDone = s.status === "done";
+  const d = document.createElement("details");
+  d.className = "task";
+  d.dataset.id = t.id;
+  d.dataset.status = isDone ? "done" : "todo";
+  d.dataset.type = t.type;
+  d.dataset.search = (t.title + " " + t.pages.map(p => p.slug).join(" ") + " " + (t.why || "")).toLowerCase();
+  if (isOpen) d.open = true;
+
+  let remeasure = "";
+  if (isDone && s.done && t.measure) {
+    const due = daysSince(s.done) >= 28;
+    remeasure = `<span class="remeasure ${due ? "due" : ""}">Đo lại ${addDays(s.done, 28)} → ${addDays(s.done, 42)}</span>`;
+  }
+  d.innerHTML = `
+    <summary>
+      <input type="checkbox" class="tick" title="Đánh dấu hoàn thành" ${isDone ? "checked" : ""}>
+      <span class="badge t-${t.type}">${TYPES[t.type]}</span>
+      <span class="title">${esc(t.title)}</span>
+      ${remeasure}
+      ${isDone && s.done ? `<span class="count">xong ${s.done}</span>` : ""}
+    </summary>
+    <div class="body">
+      ${t.why ? `<div class="why">${t.why}</div>` : ""}
+      ${t.pages.length ? `<ul class="pages">${t.pages.map(p =>
+        `<li><span class="role">${esc(p.role)}</span> <a href="${BASE + p.slug}" target="_blank" rel="noopener"><code>${esc(p.slug)}</code></a></li>`).join("")}</ul>` : ""}
+      <b>Cách làm</b>
+      <ol class="steps">${t.steps.map(st => `<li>${renderStep(st)}</li>`).join("")}</ol>
+      ${isDone ? `<div class="meta"><label>Ngày xong <input type="date" data-field="done" value="${s.done || ""}"></label></div>` : ""}
+      <textarea data-field="note" placeholder="Ghi chú (ví dụ: ngày đặt 301, số click trước/sau)…">${esc(s.note || "")}</textarea>
+    </div>`;
+
+  const tick = d.querySelector(".tick");
+  // Ticking must not open/close the details panel.
+  tick.addEventListener("click", e => e.stopPropagation());
+  tick.addEventListener("change", () => {
+    s.status = tick.checked ? "done" : "todo";
+    s.done = tick.checked ? (s.done || today()) : "";
+    save();
+    d.replaceWith(renderTask(t, d.open));
+    updateProgress();
+    applyFilters();
+  });
+  d.addEventListener("change", e => {
+    if (e.target.dataset.field === "done") { s.done = e.target.value; save(); d.replaceWith(renderTask(t, true)); updateProgress(); }
+  });
+  d.addEventListener("input", e => {
+    if (e.target.dataset.field === "note") { s.note = e.target.value; save(); }
+  });
+  return d;
+}
+
+function counted(t) { return true; }
+function updateProgress() {
+  const all = TASKS.filter(counted);
+  const done = all.filter(t => ts(t.id).status === "done").length;
+  const pct = all.length ? Math.round(done / all.length * 100) : 0;
+  document.getElementById("totalBar").style.width = pct + "%";
+  document.getElementById("totalText").textContent = `${done}/${all.length} việc xong (${pct}%)`;
+
+  for (const sec of app.querySelectorAll("section.phase")) {
+    const ts_ = TASKS.filter(t => t.phase === sec.dataset.phase && counted(t));
+    const d = ts_.filter(t => ts(t.id).status === "done").length;
+    sec.querySelector("h2 .bar > span").style.width = (ts_.length ? d / ts_.length * 100 : 0) + "%";
+    sec.querySelector("h2 .count").textContent = `${d}/${ts_.length}`;
+  }
+
+  const due = TASKS.filter(t => t.measure && ts(t.id).status === "done" && ts(t.id).done && daysSince(ts(t.id).done) >= 28);
+  document.getElementById("duePanel").style.display = due.length ? "block" : "none";
+  document.getElementById("dueList").innerHTML = due.map(t =>
+    `<li>${esc(t.title)}: xong ${ts(t.id).done} (${daysSince(ts(t.id).done)} ngày). Kiểm tra click GSC bài đích, query bài cũ đã chuyển sang chưa, Mo_tai_khoan_thanh_cong theo trang.</li>`).join("");
+}
+
+function applyFilters() {
+  const q = document.getElementById("q").value.trim().toLowerCase();
+  const ty = fType.value, st = fStatus.value;
+  for (const d of app.querySelectorAll("details.task")) {
+    const show = (!q || d.dataset.search.includes(q)) && (!ty || d.dataset.type === ty) && (!st || d.dataset.status === st);
+    d.classList.toggle("hidden", !show);
+  }
+  for (const sec of app.querySelectorAll("section.phase")) {
+    sec.classList.toggle("hidden", !sec.querySelector("details.task:not(.hidden)"));
+  }
+}
+
+// ---------- Events ----------
+document.getElementById("q").addEventListener("input", applyFilters);
+fType.addEventListener("change", applyFilters);
+fStatus.addEventListener("change", applyFilters);
+document.getElementById("expandAll").onclick = () => app.querySelectorAll("details.task:not(.hidden)").forEach(d => d.open = true);
+document.getElementById("collapseAll").onclick = () => app.querySelectorAll("details.task").forEach(d => d.open = false);
+document.addEventListener("click", e => {
+  const c = e.target.dataset && e.target.dataset.copy;
+  if (c === undefined) return;
+  e.preventDefault();
+  navigator.clipboard.writeText(c).then(() => { e.target.textContent = "✓"; setTimeout(() => e.target.textContent = "copy", 900); });
+});
+document.getElementById("exportBtn").onclick = () => {
+  const blob = new Blob([JSON.stringify({ key: STORE_KEY, exported: new Date().toISOString(), state }, null, 2)], { type: "application/json" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = `content-audit-progress-${today()}.json`;
+  a.click();
+};
+document.getElementById("importBtn").onclick = () => document.getElementById("importFile").click();
+document.getElementById("importFile").onchange = async e => {
+  const f = e.target.files[0];
+  if (!f) return;
+  try {
+    const data = JSON.parse(await f.text());
+    if (!data.state) throw new Error("File không có trường state");
+    if (!confirm("Ghi đè tiến độ hiện tại bằng file này?")) return;
+    state = data.state;
+    save();
+    render();
+  } catch (err) { alert("Không đọc được file: " + err.message); }
+  e.target.value = "";
+};
+
+render();
+</script>
+</body>
+</html>

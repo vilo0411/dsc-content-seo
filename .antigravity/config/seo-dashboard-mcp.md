@@ -4,7 +4,15 @@ Playbook dùng tool trong pipeline: `.antigravity/skills/seo-dashboard/SKILL.md`
 
 ## Claude Code / claude.ai
 
-Đã có sẵn qua connector claude.ai (tool `mcp__claude_ai_SEO_Dashboard__*`). Không cần cấu hình trong repo.
+Cài qua plugin (scope user, không cấu hình trong repo):
+
+```bash
+claude plugin marketplace add vilo0411/seo-dashboard-ai-kit
+claude plugin install seo-dashboard@seo-dashboard-ai-kit
+```
+
+Plugin khai báo MCP server tên `gsc-dashboard` (tool `mcp__plugin_seo-dashboard_gsc-dashboard__*`) + skill `seodash-*` + lệnh `/seo-plan`, `/seo-why`, `/seo-wins`. Lần đầu: `/mcp` → `gsc-dashboard` → Authenticate.
+Không thêm server `seo-dashboard` riêng bằng `claude mcp add` — sẽ trùng tool với plugin.
 Kiểm tra: trong session, gọi `list_properties` phải thấy `sc-domain:dsc.com.vn`.
 
 ## Google Antigravity

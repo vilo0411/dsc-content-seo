@@ -1,0 +1,345 @@
+[
+ {
+  "src": "co-phieu-vinfast-mua-o-dau",
+  "target": "co-phieu-nganh-ban-le",
+  "op": "skip",
+  "reason": "VinFast là ô tô điện, không thuộc bán lẻ"
+ },
+ {
+  "src": "co-phieu-nganh-thuc-pham",
+  "target": "co-phieu-nganh-ban-le",
+  "op": "skip",
+  "reason": "Thực phẩm/đồ uống (MCH) không thuộc bán lẻ, gượng"
+ },
+ {
+  "src": "co-nen-mua-co-phieu-pnj-hay-khong",
+  "target": "co-phieu-nganh-ban-le",
+  "i": 6,
+  "op": "append",
+  "sentence": "Là doanh nghiệp kim hoàn bán lẻ, PNJ nằm trong [cổ phiếu ngành bán lẻ] nhưng chịu tác động riêng từ giá vàng và nhu cầu trang sức.",
+  "why": "hub bán lẻ · mục «Tổng quan PNJ»"
+ },
+ {
+  "src": "cach-mua-co-phieu-vinamilk-vnm-cho-nguoi-moi-bat-dau",
+  "target": "co-phieu-nganh-ban-le",
+  "op": "skip",
+  "reason": "Vinamilk là sữa, không thuộc bán lẻ"
+ },
+ {
+  "src": "co-phieu-msn",
+  "target": "co-phieu-nganh-ban-le",
+  "i": 3,
+  "op": "append",
+  "sentence": "Mảng bán lẻ khiến MSN được xếp vào [nhóm bán lẻ] cùng các chuỗi tiêu dùng, dù tài nguyên chiến lược làm cấu trúc lợi nhuận khác hẳn.",
+  "why": "hub bán lẻ · mục «Tổng quan MSN»"
+ },
+ {
+  "src": "co-phieu-vnm-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+  "target": "co-phieu-nganh-ban-le",
+  "op": "skip",
+  "reason": "VNM là sữa, không thuộc bán lẻ"
+ },
+ {
+  "src": "co-phieu-frt-tong-quan-dinh-gia-ket-qua-kinh-doanh-moi-nhat",
+  "target": "co-phieu-nganh-ban-le",
+  "i": 8,
+  "op": "append",
+  "sentence": "FRT thuộc [cổ phiếu bán lẻ] chuyên về điện thoại, laptop và sản phẩm Apple, nên doanh thu gắn chặt với nhu cầu tiêu dùng công nghệ.",
+  "why": "hub bán lẻ · mục «Tổng quan FRT»"
+ },
+ {
+  "src": "co-phieu-sab-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+  "target": "co-phieu-nganh-ban-le",
+  "op": "skip",
+  "reason": "SAB là bia, không thuộc bán lẻ"
+ },
+ {
+  "src": "co-phieu-dgw-tong-quan-dinh-gia-phan-tich-ky-thuat-va-ket-qua-kinh-doanh-moi-nhat",
+  "target": "co-phieu-nganh-ban-le",
+  "i": 3,
+  "op": "append",
+  "sentence": "Digiworld đứng ở khâu phân phối, sát [ngành bán lẻ] công nghệ, nên kết quả kinh doanh phụ thuộc sức tiêu thụ của các chuỗi cửa hàng.",
+  "why": "hub bán lẻ · mục «Tổng quan DGW»"
+ },
+ {
+  "src": "co-nen-mua-co-phieu-mwg-hay-khong",
+  "target": "co-phieu-nganh-ban-le",
+  "i": 39,
+  "op": "append",
+  "sentence": "Mạng lưới cửa hàng là thước đo chính khi đặt MWG cạnh các [mã cổ phiếu ngành bán lẻ] khác.",
+  "why": "viết lại theo live 11/11 · đoạn i=39"
+ },
+ {
+  "src": "co-phieu-nganh-o-to",
+  "target": "co-phieu-nganh-ban-le",
+  "op": "skip",
+  "reason": "Ngành ô tô, không thuộc bán lẻ"
+ },
+ {
+  "src": "co-phieu-hax-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+  "target": "co-phieu-nganh-ban-le",
+  "i": 2,
+  "op": "append",
+  "sentence": "Mô hình đại lý ủy quyền khiến HAX gần với [cổ phiếu bán lẻ] hơn nhà sản xuất, vì doanh thu đi theo sức mua xe của người tiêu dùng.",
+  "why": "hub bán lẻ · mục «Tổng quan HAX»"
+ },
+ {
+  "src": "co-phieu-mwg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "co-phieu-nganh-ban-le",
+  "i": 2,
+  "op": "append",
+  "sentence": "Quy mô 217 cửa hàng phủ khắp 63 tỉnh thành đặt MWG ở vị trí dẫn đầu trong [ngành bán lẻ] hiện đại.",
+  "why": "hub bán lẻ · mục «Tổng quan MWG»"
+ },
+ {
+  "src": "huong-dan-chi-tiet-cach-mua-co-phieu-mwg",
+  "target": "co-phieu-nganh-ban-le",
+  "op": "skip",
+  "reason": "Bài hướng dẫn mua, không có đoạn thân bài hợp (chỉ bước nạp tiền)"
+ },
+ {
+  "src": "co-phieu-pnj-tong-quan-nhan-dinh-ket-qua-kinh-doanh-moi-nhat",
+  "target": "co-phieu-nganh-ban-le",
+  "i": 34,
+  "op": "append",
+  "sentence": "Cấu trúc vàng bạc đá quý đặt PNJ vào [nhóm bán lẻ] hàng tiêu dùng giá trị cao, khác với chuỗi điện máy hay thực phẩm.",
+  "why": "hub bán lẻ · mục «Mô hình kinh doanh PNJ»"
+ },
+ {
+  "src": "cach-mua-co-phieu-sab",
+  "target": "co-phieu-nganh-ban-le",
+  "op": "skip",
+  "reason": "SAB là bia, không thuộc bán lẻ"
+ },
+ {
+  "src": "top-co-phieu-cao-su-nen-dau-tu",
+  "target": "co-phieu-nganh-nong-nghiep",
+  "i": 7,
+  "op": "append",
+  "sentence": "Cao su thuộc [cổ phiếu ngành nông nghiệp], nơi kết quả phụ thuộc giá mủ và chu kỳ hàng hoá xuất khẩu.",
+  "why": "hub nông nghiệp · mục «Nhận định cao su»"
+ },
+ {
+  "src": "co-nen-mua-co-phieu-hag-hay-khong",
+  "target": "co-phieu-nganh-nong-nghiep",
+  "i": 48,
+  "op": "append",
+  "sentence": "Trái cây và chăn nuôi đặt HAG vào [nhóm nông nghiệp], nơi tiềm năng xuất khẩu quyết định dư địa tăng trưởng.",
+  "why": "hub nông nghiệp · mục «Cơ bản HAG»"
+ },
+ {
+  "src": "co-phieu-nganh-thuy-san",
+  "target": "co-phieu-nganh-nong-nghiep",
+  "i": 2,
+  "op": "skip",
+  "sentence": "Thủy sản là một nhánh của [cổ phiếu nông nghiệp], nhưng nhịp tăng trưởng phụ thuộc nhiều vào chính sách thương mại của các thị trường lớn.",
+  "why": "hub nông nghiệp · mục «Toàn cảnh thủy sản»",
+  "reason": "mọi đoạn ứng viên đều là câu dẫn vào list"
+ },
+ {
+  "src": "co-phieu-anv-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "co-phieu-nganh-nong-nghiep",
+  "i": 2,
+  "op": "append",
+  "sentence": "Chuẩn HACCP, GMP, SQF giúp ANV nổi bật trong [ngành nông nghiệp] hướng xuất khẩu, nơi thị trường khó tính đặt ra rào cản chất lượng.",
+  "why": "hub nông nghiệp · mục «Tổng quan ANV»"
+ },
+ {
+  "src": "co-phieu-gvr",
+  "target": "co-phieu-nganh-nong-nghiep",
+  "i": 3,
+  "op": "append",
+  "sentence": "Chuỗi từ trồng trọt đến chế biến xếp GVR vào [cổ phiếu ngành nông nghiệp], song mảng khu công nghiệp làm cơ cấu lợi nhuận khác các mã cùng nhóm.",
+  "why": "hub nông nghiệp · mục «Tổng quan GVR»"
+ },
+ {
+  "src": "co-nen-mua-co-phieu-sbt-hay-khong",
+  "target": "co-phieu-nganh-nong-nghiep",
+  "i": 50,
+  "op": "append",
+  "sentence": "Mía đường là một nhánh của [cổ phiếu nông nghiệp], nơi nguồn cung trong nước chưa theo kịp nhu cầu tiêu thụ.",
+  "why": "hub nông nghiệp · mục «Cơ bản SBT»"
+ },
+ {
+  "src": "co-phieu-phr-tong-quan-nhan-dinh-va-ket-qua-kinh-doanh-moi-nhat",
+  "target": "co-phieu-nganh-nong-nghiep",
+  "i": 27,
+  "op": "append",
+  "sentence": "Trồng và khai thác cao su đưa PHR vào [nhóm nông nghiệp], nơi sản lượng phụ thuộc thời tiết và năng suất vườn cây.",
+  "why": "hub nông nghiệp · mục «Mô hình kinh doanh PHR»"
+ },
+ {
+  "src": "co-phieu-dbc-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+  "target": "co-phieu-nganh-nong-nghiep",
+  "i": 3,
+  "op": "append",
+  "sentence": "Chăn nuôi và thức ăn chăn nuôi xếp DBC vào [cổ phiếu ngành nông nghiệp], nơi giá đầu vào và dịch bệnh tác động trực tiếp tới biên lợi nhuận.",
+  "why": "hub nông nghiệp · mục «Mô hình kinh doanh DBC» · dời sang đoạn i=3 (đoạn cũ dẫn vào list)"
+ },
+ {
+  "src": "co-phieu-qns-tong-quan-nhan-dinh-va-ket-qua-kinh-doanh-moi-nhat",
+  "target": "co-phieu-nganh-nong-nghiep",
+  "i": 26,
+  "op": "append",
+  "sentence": "Đường mía là gốc của QNS trong [ngành nông nghiệp], còn sữa đậu nành và nước giải khát giúp đa dạng nguồn thu.",
+  "why": "hub nông nghiệp · mục «Mô hình kinh doanh QNS»"
+ },
+ {
+  "src": "co-phieu-idi-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "co-phieu-nganh-nong-nghiep",
+  "i": 39,
+  "op": "newp",
+  "sentence": "Chế biến cá tra xuất khẩu đưa IDI vào nhánh thủy sản của [cổ phiếu ngành nông nghiệp], nơi giá nguyên liệu quyết định biên lợi nhuận.",
+  "why": "hub nông nghiệp · mục «Mô hình kinh doanh IDI»"
+ },
+ {
+  "src": "co-phieu-vhc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "co-phieu-nganh-nong-nghiep",
+  "i": 37,
+  "op": "append",
+  "sentence": "Cá tra là ngành hàng nông nghiệp xuất khẩu, nên VHC thường được so sánh với các mã trong [cổ phiếu nông nghiệp] có đầu ra ở nước ngoài.",
+  "why": "hub nông nghiệp · mục «Mô hình kinh doanh VHC»"
+ },
+ {
+  "src": "co-nen-mua-co-phieu-tar-hay-khong",
+  "target": "co-phieu-nganh-nong-nghiep",
+  "i": 46,
+  "op": "newp",
+  "sentence": "Lúa gạo là một mảng của [cổ phiếu ngành nông nghiệp], nơi giá bán chịu tác động mạnh từ cung cầu gạo toàn cầu.",
+  "why": "hub nông nghiệp · mục «Cơ bản TAR»"
+ },
+ {
+  "src": "co-phieu-acl-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "co-phieu-nganh-nong-nghiep",
+  "i": 2,
+  "op": "newp",
+  "sentence": "Nuôi trồng và chế biến thủy sản đưa ACL vào [nhóm nông nghiệp], nơi kết quả phụ thuộc giá nguyên liệu và đơn hàng xuất khẩu.",
+  "why": "hub nông nghiệp · mục «Tổng quan ACL»"
+ },
+ {
+  "src": "co-phieu-ltg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "co-phieu-nganh-nong-nghiep",
+  "i": 3,
+  "op": "append",
+  "sentence": "Dịch vụ nông nghiệp theo mô hình liên kết dọc đặt LTG vào [cổ phiếu ngành nông nghiệp] ở cả khâu đầu vào lẫn chế biến gạo.",
+  "why": "hub nông nghiệp · mục «Tổng quan LTG»"
+ },
+ {
+  "src": "cach-mua-co-phieu-gvr",
+  "target": "co-phieu-nganh-nong-nghiep",
+  "i": 3,
+  "op": "append",
+  "sentence": "Hệ sinh thái này giúp GVR khác các mã thuần trồng trọt trong [cổ phiếu ngành nông nghiệp], nhờ đầu ra công nghiệp như săm lốp, găng tay.",
+  "why": "hub nông nghiệp · mục «Giới thiệu GVR»"
+ },
+ {
+  "src": "co-phieu-vci-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-nganh-chung-khoan-dang-dau-tu-nhat",
+  "i": 30,
+  "op": "append",
+  "sentence": "Môi giới, tư vấn và bảo lãnh phát hành khiến VCI là đại diện điển hình của [cổ phiếu ngành chứng khoán], vốn theo sát thanh khoản thị trường.",
+  "why": "hub chứng khoán · mục «Mô hình kinh doanh VCI»"
+ },
+ {
+  "src": "co-phieu-vnd-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-nganh-chung-khoan-dang-dau-tu-nhat",
+  "i": 4,
+  "op": "append",
+  "sentence": "Lượng nhà đầu tư cá nhân lớn khiến lợi nhuận VND nhạy với thanh khoản, đặc điểm chung của [cổ phiếu công ty chứng khoán].",
+  "why": "hub chứng khoán · mục «Tổng quan VND»"
+ },
+ {
+  "src": "co-phieu-nganh-bao-hiem",
+  "target": "top-5-co-phieu-nganh-chung-khoan-dang-dau-tu-nhat",
+  "op": "skip",
+  "reason": "Bảo hiểm không thuộc ngành chứng khoán"
+ },
+ {
+  "src": "co-phieu-ssi-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-nganh-chung-khoan-dang-dau-tu-nhat",
+  "i": 60,
+  "op": "append",
+  "sentence": "Thị phần môi giới và quy mô vốn là hai tiêu chí chính khi đặt SSI cạnh các [cổ phiếu chứng khoán] khác.",
+  "why": "viết lại theo live 11/11 · đoạn i=60"
+ },
+ {
+  "src": "co-phieu-hcm-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-nganh-chung-khoan-dang-dau-tu-nhat",
+  "i": 3,
+  "op": "append",
+  "sentence": "HSC phục vụ cả nhà đầu tư cá nhân lẫn tổ chức, nên khi so với [cổ phiếu chứng khoán] khác cần xem tỷ trọng từng mảng khách hàng.",
+  "why": "hub chứng khoán · mục «Tổng quan HCM»"
+ },
+ {
+  "src": "co-phieu-fts-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-nganh-chung-khoan-dang-dau-tu-nhat",
+  "i": 3,
+  "op": "append",
+  "sentence": "FPTS tập trung môi giới và tư vấn đầu tư, nên diễn biến của [cổ phiếu công ty chứng khoán] này gắn chặt với thanh khoản thị trường.",
+  "why": "hub chứng khoán · mục «Tổng quan FTS»"
+ },
+ {
+  "src": "co-phieu-mbs-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-nganh-chung-khoan-dang-dau-tu-nhat",
+  "i": 4,
+  "op": "append",
+  "sentence": "MBS mở rộng sang tư vấn và ngân hàng đầu tư, hướng tới cơ cấu thu nhập đa dạng hơn mặt bằng [cổ phiếu ngành chứng khoán].",
+  "why": "hub chứng khoán · mục «Tổng quan MBS»"
+ },
+ {
+  "src": "co-phieu-bvh-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-nganh-chung-khoan-dang-dau-tu-nhat",
+  "op": "skip",
+  "reason": "BVH là bảo hiểm, không thuộc ngành chứng khoán"
+ },
+ {
+  "src": "co-phieu-vds-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-nganh-chung-khoan-dang-dau-tu-nhat",
+  "i": 4,
+  "op": "append",
+  "sentence": "Tệp khách hàng cá nhân và tổ chức khiến VDS chịu chung chu kỳ thanh khoản với toàn [nhóm chứng khoán].",
+  "why": "hub chứng khoán · mục «Tổng quan VDS»"
+ },
+ {
+  "src": "cach-mua-co-phieu-bvh",
+  "target": "top-5-co-phieu-nganh-chung-khoan-dang-dau-tu-nhat",
+  "op": "skip",
+  "reason": "BVH là bảo hiểm, không thuộc ngành chứng khoán"
+ },
+ {
+  "src": "huong-dan-cach-mua-co-phieu-ssi-tai-chung-khoan-dsc",
+  "target": "top-5-co-phieu-nganh-chung-khoan-dang-dau-tu-nhat",
+  "op": "skip",
+  "reason": "Hướng dẫn mua SSI, đoạn ứng viên là bước thao tác/kết luận"
+ },
+ {
+  "src": "co-phieu-fpt",
+  "target": "co-phieu-nganh-cong-nghe",
+  "i": 3,
+  "op": "append",
+  "sentence": "Mảng dịch vụ CNTT cho thị trường nước ngoài giúp FPT trở thành đại diện tiêu biểu của [cổ phiếu ngành công nghệ] tại Việt Nam.",
+  "why": "hub công nghệ · mục «Tổng quan FPT»"
+ },
+ {
+  "src": "cach-mua-co-phieu-fpt-cong-ty-co-phan-tap-doan-fpt",
+  "target": "co-phieu-nganh-cong-nghe",
+  "i": 20,
+  "op": "append",
+  "sentence": "Khi nghiên cứu FPT, nên đặt mã này cạnh [các cổ phiếu công nghệ] khác để thấy lợi thế đến từ mảng dịch vụ CNTT và đội ngũ nhân sự.",
+  "why": "hub công nghệ · mục «Nghiên cứu FPT»"
+ },
+ {
+  "src": "co-phieu-nganh-truyen-thong",
+  "target": "co-phieu-nganh-cong-nghe",
+  "i": 3,
+  "op": "append",
+  "sentence": "Dịch vụ nội dung trực tuyến và công nghệ giải trí nằm sát [cổ phiếu ngành công nghệ], nên nhiều mã truyền thông mang yếu tố công nghệ.",
+  "why": "hub công nghệ · mục «Tổng quan truyền thông»"
+ },
+ {
+  "src": "co-phieu-ctr-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025",
+  "target": "co-phieu-nganh-cong-nghe",
+  "op": "skip",
+  "reason": "CTR là xây lắp hạ tầng viễn thông, không rõ thuộc hub công nghệ"
+ }
+]

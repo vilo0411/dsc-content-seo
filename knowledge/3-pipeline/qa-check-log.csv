@@ -1,0 +1,3 @@
+date,slug,tool,check,severity,count
+2026-11-09,cach-dau-tu-chung-chi-quy,qa_lint,CL6-prose-run,MINOR,1
+2026-11-09,cach-dau-tu-chung-chi-quy,qa_lint,GEO-overuse,MINOR,1

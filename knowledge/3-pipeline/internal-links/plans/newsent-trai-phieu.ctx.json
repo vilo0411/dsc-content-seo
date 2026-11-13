@@ -1,0 +1,38 @@
+[
+ {
+  "src": "tin-phieu-kho-bac-la-gi",
+  "src_title": "Tín phiếu kho bạc là gì? Thông tin chi tiết cập nhật",
+  "target": "trai-phieu-la-gi",
+  "role": "pillar",
+  "target_title": "Trái phiếu là gì? Ưu, nhược điểm và cách đầu tư trái phiếu",
+  "clicks": "35",
+  "anchors": [
+   "trái phiếu là gì",
+   "đầu tư trái phiếu",
+   "cách đầu tư trái phiếu",
+   "mua trái phiếu",
+   "trái phiếu",
+   "kênh trái phiếu"
+  ],
+  "paras": [
+   {
+    "i": 29,
+    "h": "Ưu điểm và nhược điểm của tín phiếu kho bạc",
+    "n_sent": 2,
+    "t": "Tín phiếu kho bạc phù hợp với nhà đầu tư tổ chức ưu tiên bảo toàn vốn tuyệt đối. Tuy nhiên, kênh đầu tư này có những hạn chế nhất định so với các công cụ tài chính khác."
+   },
+   {
+    "i": 3,
+    "h": "Tín phiếu kho bạc là gì?",
+    "n_sent": 2,
+    "t": "Khi mua tín phiếu kho bạc, nhà đầu tư thực chất đang cho Chính phủ vay tiền trong khoảng thời gian ngắn (13 tuần, 26 tuần hoặc 52 tuần). Đổi lại, Chính phủ cam kết hoàn trả toàn bộ vốn gốc và lãi khi đáo hạn."
+   },
+   {
+    "i": 4,
+    "h": "Tín phiếu kho bạc là gì?",
+    "n_sent": 2,
+    "t": "Tại Việt Nam, tín phiếu kho bạc phát hành theo 2 phương thức chính: đấu thầu qua Ngân hàng Nhà nước (NHNN) hoặc phát hành trực tiếp cho NHNN. Nhà đầu tư cá nhân khó tiếp cận trực tiếp thị trường sơ cấp vì đây là kênh dành cho các ngân hàng thương mại và tổ chức tài chính lớn."
+   }
+  ]
+ }
+]

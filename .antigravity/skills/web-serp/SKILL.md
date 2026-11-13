@@ -61,26 +61,26 @@ python .antigravity/skills/web-serp/scripts/serp_research.py "{keyword}" --top 1
 | `--top N` | 10 | Số organic hiển thị (tối đa 10 — script luôn fetch depth 10) |
 | `--extract N` | 0 | Extract nội dung N URL đầu tiên **theo thứ tự rank** (local parser, Jina fallback). Env `LOCAL_FETCH=0` để ép dùng Jina |
 | `--content` | — | In **toàn văn** markdown đã lọc của các competitor đã extract (đọc kỹ 1 bài, không dùng làm input Outline) |
-| `--json` | — | Output JSON (dùng khi cần parse tự động) |
+| `--full` | — | Chi tiết từng đối thủ (câu chủ đề, entity, data point, link) — digest dài gấp ~3; chỉ dùng khi cần soi 1 đối thủ |
+| `--json` | — | Output JSON (dùng khi cần parse tự động; có `format_summary`, `topic_coverage`) |
+| `--rebuild-background` | — | Dựng lại `term-background.json` (từ vựng chung từ cache SERP + corpus live, dùng để lọc thuật ngữ). Chạy lại khi corpus live lớn thêm nhiều |
 | `--no-cache` | — | Bỏ qua cache, gọi API lại (**tốn tiền** — chỉ khi user yêu cầu) |
 | `--force` | — | Gọi API cho keyword **không có** trong `topic-clusters.md` / `sprint-backlog.md` (mặc định script từ chối để tránh gõ nhầm tốn tiền; cache vẫn đọc bình thường) |
 | `--paa-depth N` | 0 | Mở rộng cây People Also Ask N tầng (1–4, `people_also_ask_click_depth`) — **tốn thêm**, chỉ dùng cho bài pillar khi user đồng ý. Chỉ có tác dụng khi gọi API (kết hợp `--no-cache` nếu đã có cache) |
 | `--raw` | — | Dump payload gốc DataForSEO (debug, cũng tốn 1 call) |
 
 **Output (text):**
-1. `### SERP Results` — top URLs: rank / title / URL / description (đã lọc google, facebook, youtube, tiktok, mạng xã hội)
+1. `### SERP Results` — *từ 11/2026 DataForSEO trả URL dạng `google.com/goto?url=…`; script tự giải ra URL thật (miễn phí, ~10s, Google bắt chờ vài giây sau vài lượt). Không giải được thì lấy domain từ breadcrumb, đánh dấu `[chỉ biết domain]` và bỏ qua extract.* — top URLs: rank / title / URL / description (đã lọc google, facebook, youtube, tiktok, mạng xã hội)
+1b. `### SERP Format & Intent` — mỗi kết quả được gán khung bài (toplist / comparison / howto / definition / review / news / guide) theo tiêu đề + heading đánh số, kèm số mục và số từ. Tỷ trọng tính top 3 ×2 → **khung thống trị** + verdict `BẮT BUỘC` (≥50%) / `NGHIÊNG VỀ` (35–50%) / `HỖN HỢP`, intent gợi ý, và cảnh báo `⚠️ SERP_STATUS: degraded` khi < 5 organic hoặc nguồn fallback. Outline phải theo khung này (`outline_lint.py` tự tính lại từ cache). `--json` có key `format_summary`.
 2. `### Featured Snippet` — nếu Google đang hiện (domain + đoạn text) → quyết định Featured Snippet target
 3. `### People Also Ask (N)` — mỗi câu kèm: `Google answer (domain)` = đoạn Google đang hiển thị dưới câu hỏi (chuẩn độ dài/format cần vượt; `⚑ DSC đang giữ` nếu nguồn là dsc.com.vn) và `Heading khớp ở:` = đối thủ nào (trong số đã `--extract`) có heading trả lời câu đó theo heuristic bigram. "không đối thủ nào" = gap tiềm năng → ưu tiên đưa vào thân bài. *Cache cũ (trước 2026-09-18) chỉ có câu hỏi, không có Google answer.*
 4. `### Related Searches` — tách `same_intent` (→ Secondary/LSI) và `spin_off` (khác intent → bài mới / internal link), không nhồi hết vào 1 bài
-5. `### Competitor N: {domain}` × N (khi `--extract`):
-   - `Tổng`: số từ, số section, số internal/external link
-   - `Outline`: từng H1–H4 (kể cả `[Intro]`) kèm **số từ của section** và **câu chủ đề** → biết đối thủ đào sâu chỗ nào
-   - `Entities`: tên riêng / acronym / ticker xuất hiện nhiều (ROE×12, Forbes, VN-Index...) → phủ entity khi viết
-   - `Data points`: tối đa 8 câu có số liệu
-   - `Internal links (anchor → URL)`: cách đối thủ link nội bộ → gợi ý cluster/anchor cho bài mình
-   - `External links`: domain nguồn tham khảo
-   - `Special elements`, dòng `Gap so với bài mình: [điền]`
-6. Khung trống `## Competitor Gap Synthesis` — agent **phải điền** trước khi sang Outline
+4b. `### AI Overview` — khi API trả về: đoạn Google AI đang trả lời + domain được trích → mẫu câu trả lời cần vượt và nguồn Google đang tin.
+5. `### Topic Coverage` (khi `--extract`) — **gộp từ mọi đối thủ hợp lệ** (đã loại trang lỗi / trang chặn bot / trang < 300 từ / trang dsc.com.vn):
+   - `Thuật ngữ BẮT BUỘC phủ`: cụm 2–4 từ mà ≥ 3 đối thủ cùng dùng, đã lọc từ vựng chung và cụm cụt → vào `Entities:` của outline. `outline_lint` (`ENT-outline`) và `qa_lint` (`ENT-missing`) tính lại đúng danh sách này từ cache.
+   - `Chủ đề con nhiều đối thủ cùng có`: H2/H3 trùng ý ở ≥ 2 đối thủ → bài phải có chỗ cho từng chủ đề.
+   - `Nguồn đối thủ trích`: domain họ link ra → gợi ý nguồn gốc cho bảng dữ liệu.
+6. `### Competitor N: {domain}` × N — **bản gọn (mặc định)**: URL, số từ, yếu tố đặc biệt, cây H2/H3 kèm số từ từng mục. `--full` thêm câu chủ đề, entity, data point, internal/external link từng đối thủ và khung trống Gap Synthesis. Gap Synthesis điền ở mục 2 của brief-template.
 7. `Cost: $x.xxxx`
 
 **Cấu hình (1 lần):** thêm vào `.antigravity/config/api-keys.md` (đã gitignore):

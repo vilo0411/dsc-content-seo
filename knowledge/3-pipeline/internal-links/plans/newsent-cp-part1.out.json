@@ -1,0 +1,379 @@
+[
+ {
+  "src": "cac-co-phieu-niem-yet-thuoc-tap-doan-vingroup-danh-sach-day-du-va-cap-nhat-nam-2024",
+  "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+  "i": 30,
+  "op": "append",
+  "sentence": "Trong 4 mã niêm yết, VHM và VRE thuộc nhóm [cổ phiếu bất động sản], còn lợi nhuận của VIC phụ thuộc lớn vào mảng địa ốc qua Vinhomes.",
+  "why": "viết lại theo live 11/11 · đoạn i=30"
+ },
+ {
+  "src": "cach-mua-co-phieu-vingroup-vic-huong-dan-moi-nhat-2024",
+  "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+  "i": 3,
+  "op": "append",
+  "sentence": "Do bất động sản là mảng lớn nhất, VIC hay được đặt cạnh VHM và VRE khi nhà đầu tư so sánh các [cổ phiếu bất động sản] trên HOSE.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=3"
+ },
+ {
+  "src": "co-phieu-vre-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+  "i": 41,
+  "op": "append",
+  "sentence": "Nguồn thu cho thuê giúp VRE có dòng tiền đều hơn phần lớn [cổ phiếu bất động sản] nhà ở, vốn phụ thuộc vào tiến độ mở bán.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=41"
+ },
+ {
+  "src": "co-phieu-dxg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+  "i": 4,
+  "op": "append",
+  "sentence": "Vừa phát triển dự án vừa môi giới, lợi nhuận DXG nhạy với tốc độ bán hàng hơn nhiều [cổ phiếu bất động sản] chỉ làm chủ đầu tư.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=4"
+ },
+ {
+  "src": "co-nen-mua-co-phieu-novaland",
+  "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+  "i": 4,
+  "op": "append",
+  "sentence": "Mức biến động này cao hơn hẳn mặt bằng chung của [nhóm bất động sản], nên vị thế với NVL cần tỷ trọng nhỏ và điểm cắt lỗ rõ.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=4"
+ },
+ {
+  "src": "co-nen-mua-co-phieu-dig-hay-khong",
+  "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+  "i": 3,
+  "op": "append",
+  "sentence": "Kinh nghiệm làm khu đô thị lớn là điểm khác biệt khi đặt DIG cạnh các [cổ phiếu bất động sản] vốn hóa vừa khác.",
+  "why": "viết lại theo live 11/11 · đoạn i=3"
+ },
+ {
+  "src": "co-phieu-dig-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+  "i": 4,
+  "op": "append",
+  "sentence": "Quỹ đất này là thước đo chính khi đặt DIG cạnh các [cổ phiếu bất động sản] khu đô thị khác, vì nó quyết định nguồn hàng nhiều năm tới.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=4"
+ },
+ {
+  "src": "top-co-phieu-dau-tu-cong-nen-dau-tu",
+  "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+  "i": 12,
+  "op": "append",
+  "sentence": "Hạ tầng giao thông hoàn thiện cũng mang lại lợi ích gián tiếp cho các [cổ phiếu bất động sản] có quỹ đất quanh những tuyến cao tốc mới.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=12"
+ },
+ {
+  "src": "co-phieu-tch-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+  "i": 3,
+  "op": "append",
+  "sentence": "Nhờ mảng nhà ở, TCH được xếp vào [nhóm bất động sản], nhưng mảng phân phối xe tải khiến cơ cấu doanh thu khác các chủ đầu tư thuần túy.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=3"
+ },
+ {
+  "src": "co-phieu-vic",
+  "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+  "i": 28,
+  "op": "append",
+  "sentence": "Vì đây là mảng cốt lõi, diễn biến giá VIC gắn chặt với chu kỳ chung của [cổ phiếu bất động sản] dù tập đoàn hoạt động đa ngành.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=28"
+ },
+ {
+  "src": "co-nen-mua-co-phieu-scr-hay-khong",
+  "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+  "i": 23,
+  "op": "append",
+  "sentence": "Hai mục tiêu này cũng là thước đo chung để so SCR với các [cổ phiếu bất động sản] dân dụng cùng quy mô.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=23"
+ },
+ {
+  "src": "co-phieu-nganh-xay-dung",
+  "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+  "i": 8,
+  "op": "append",
+  "sentence": "Biên mỏng khiến nhà thầu phụ thuộc dòng vốn chủ đầu tư, nên sức khỏe của [nhóm bất động sản] quyết định khả năng thu tiền của ngành xây dựng.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=8"
+ },
+ {
+  "src": "co-phieu-sip-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+  "i": 3,
+  "op": "append",
+  "sentence": "Mảng khu công nghiệp xếp SIP vào nhánh bất động sản công nghiệp, khác các [cổ phiếu bất động sản] nhà ở về nguồn thu cho thuê dài hạn.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=3"
+ },
+ {
+  "src": "co-phieu-hdc-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+  "i": 3,
+  "op": "newp",
+  "sentence": "Quỹ đất tập trung ở Bà Rịa – Vũng Tàu là điểm khác biệt khi đặt HDC cạnh các [cổ phiếu bất động sản] có dự án nhiều tỉnh.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=3"
+ },
+ {
+  "src": "co-phieu-vcg-tong-quanh-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+  "i": 28,
+  "op": "append",
+  "sentence": "Quỹ đất này khiến VCG vừa thuộc nhóm xây dựng vừa được theo dõi cùng các [cổ phiếu bất động sản] khi thị trường nhà ở hồi phục.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=28"
+ },
+ {
+  "src": "cach-mua-co-phieu-flc",
+  "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+  "i": 28,
+  "op": "append",
+  "sentence": "Đây là rủi ro thanh khoản ít gặp với các [cổ phiếu bất động sản] đang niêm yết trên HOSE, nơi lệnh được khớp mỗi phiên.",
+  "why": "viết lại theo live 11/11 · đoạn i=28"
+ },
+ {
+  "src": "co-phieu-szc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+  "i": 2,
+  "op": "newp",
+  "sentence": "Nguồn thu cho thuê đất khu công nghiệp gắn SZC với dòng vốn FDI nhiều hơn so với các [cổ phiếu bất động sản] nhà ở.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=38 · dời sang đoạn i=2 (đoạn cũ dẫn vào list)"
+ },
+ {
+  "src": "co-phieu-idc-tong-quan-nhan-dinh-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+  "i": 4,
+  "op": "append",
+  "sentence": "Dù mở rộng sang xây lắp và năng lượng, IDC vẫn được xếp vào nhóm [cổ phiếu bất động sản] nhờ mảng hạ tầng khu công nghiệp.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=4"
+ },
+ {
+  "src": "co-phieu-htn-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+  "i": 40,
+  "op": "append",
+  "sentence": "Danh mục trải nhiều phân khúc giúp HTN ít phụ thuộc một loại sản phẩm hơn nhiều [cổ phiếu bất động sản] chỉ làm căn hộ.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=40"
+ },
+ {
+  "src": "co-phieu-kdh-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+  "i": 34,
+  "op": "append",
+  "sentence": "Phân khúc cao cấp và khu đô thị sinh thái là tiêu chí chính khi so KDH với các [cổ phiếu bất động sản] nhà ở khác.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=34"
+ },
+ {
+  "src": "co-phieu-hbc-tong-quanh-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+  "i": 2,
+  "op": "newp",
+  "sentence": "Là nhà thầu dân dụng, kết quả kinh doanh của HBC phụ thuộc vào tiến độ triển khai dự án của các chủ đầu tư trong [nhóm bất động sản].",
+  "why": "hub/ngữ cảnh ngành · đoạn i=2"
+ },
+ {
+  "src": "co-phieu-kbc-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+  "i": 3,
+  "op": "append",
+  "sentence": "Vị trí tại Bắc Ninh giúp KBC được theo dõi trong nhóm [cổ phiếu bất động sản] khu công nghiệp hưởng lợi từ dòng vốn FDI.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=3"
+ },
+ {
+  "src": "co-phieu-fcn-tong-quanh-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+  "i": 30,
+  "op": "append",
+  "sentence": "Vì nền móng là hạng mục đầu tiên của công trình, đơn hàng của FCN phản ánh sớm chu kỳ khởi công của [nhóm bất động sản] và hạ tầng.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=30"
+ },
+ {
+  "src": "co-nen-mua-co-phieu-idj-hay-khong",
+  "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+  "i": 24,
+  "op": "append",
+  "sentence": "Tình trạng này cũng phổ biến ở các [cổ phiếu bất động sản] vốn hóa nhỏ có chi phí lãi vay lớn trong giai đoạn thị trường trầm lắng.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=24"
+ },
+ {
+  "src": "co-phieu-cti-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+  "i": 3,
+  "op": "append",
+  "sentence": "Chuỗi giá trị khép kín giúp CTI hưởng lợi cả khi đầu tư công tăng tốc lẫn khi [nhóm bất động sản] hồi phục.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=3"
+ },
+ {
+  "src": "co-phieu-nlg-tong-quan-nhan-dinh-va-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+  "i": 3,
+  "op": "append",
+  "sentence": "Mô hình khép kín này giúp NLG chủ động nguồn hàng hơn nhiều [cổ phiếu bất động sản] phải mua lại dự án.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=3"
+ },
+ {
+  "src": "co-phieu-ctd-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+  "i": 2,
+  "op": "append",
+  "sentence": "Doanh thu xây lắp của CTD đi theo nhịp khởi công dự án mới, nên triển vọng của [nhóm bất động sản] ảnh hưởng trực tiếp tới lượng hợp đồng.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=2"
+ },
+ {
+  "src": "cach-mua-co-phieu-nvl",
+  "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+  "i": 3,
+  "op": "append",
+  "sentence": "Quy mô quỹ đất này khiến NVL luôn có mặt khi nhà đầu tư lọc các [cổ phiếu bất động sản] có tiềm năng phục hồi theo chu kỳ.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=3"
+ },
+ {
+  "src": "co-phieu-itc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+  "i": 47,
+  "op": "append",
+  "sentence": "Nhà đầu tư đánh giá ITC cùng các [cổ phiếu bất động sản] khác qua tiến độ dự án, quỹ đất và khả năng hoàn vốn.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=47"
+ },
+ {
+  "src": "cach-mua-co-phieu-vhm",
+  "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+  "i": 2,
+  "op": "append",
+  "sentence": "Quy mô này đưa VHM thành mã dẫn dắt của [nhóm bất động sản], giá cổ phiếu tác động trực tiếp tới tâm lý cả ngành.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=2"
+ },
+ {
+  "src": "co-phieu-hdg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025",
+  "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+  "i": 2,
+  "op": "append",
+  "sentence": "Kết hợp phát triển dự án với thi công và vận hành giúp HDG có nhiều nguồn thu hơn các [cổ phiếu bất động sản] chỉ bán sản phẩm.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=2"
+ },
+ {
+  "src": "co-phieu-idv-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+  "i": 28,
+  "op": "append",
+  "sentence": "Mảng khu công nghiệp tại miền Bắc đặt IDV vào nhóm [cổ phiếu bất động sản] công nghiệp, nơi tỷ lệ lấp đầy quyết định dòng tiền.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=28"
+ },
+ {
+  "src": "cach-mua-co-phieu-vre",
+  "target": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+  "i": 3,
+  "op": "skip",
+  "sentence": "Mô hình cho thuê mặt bằng tạo dòng tiền đều, khác các [cổ phiếu bất động sản] nhà ở phụ thuộc vào tiến độ mở bán.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=3",
+  "reason": "URL đã 301 sang bài khác"
+ },
+ {
+  "src": "co-nen-mua-co-phieu-vjc-hay-khong",
+  "target": "top-co-phieu-hang-khong-nen-dau-tu",
+  "i": 6,
+  "op": "append",
+  "sentence": "Với mô hình giá rẻ, VJC có cấu trúc chi phí khác hẳn hãng truyền thống trong nhóm [cổ phiếu hàng không] niêm yết.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=6"
+ },
+ {
+  "src": "co-phieu-hvn-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-co-phieu-hang-khong-nen-dau-tu",
+  "i": 3,
+  "op": "append",
+  "sentence": "Vị thế hãng quốc gia là điểm khác biệt chính khi đặt HVN cạnh các [cổ phiếu hàng không] khác trên sàn.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=3"
+ },
+ {
+  "src": "co-nen-mua-co-phieu-acv-hay-khong",
+  "target": "top-co-phieu-hang-khong-nen-dau-tu",
+  "i": 45,
+  "op": "append",
+  "sentence": "Khác với hãng bay, ACV thu phí theo lượt khách qua sân bay, nên ít chịu áp lực giá nhiên liệu hơn các [cổ phiếu hàng không] khác.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=45"
+ },
+ {
+  "src": "cach-mua-co-phieu-vjc",
+  "target": "top-co-phieu-hang-khong-nen-dau-tu",
+  "i": 4,
+  "op": "append",
+  "sentence": "Nhờ quy mô này, VJC là mã đại diện của [nhóm hàng không] trong rổ VN30.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=4"
+ },
+ {
+  "src": "co-nen-mua-co-phieu-vietnam-airlines-hvn-hay-khong",
+  "target": "top-co-phieu-hang-khong-nen-dau-tu",
+  "i": 49,
+  "op": "append",
+  "sentence": "Đà phục hồi này tác động lên cả [nhóm hàng không], nhưng mức hưởng lợi của từng mã khác nhau theo cơ cấu nợ và đội bay.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=49"
+ },
+ {
+  "src": "co-phieu-vjc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-co-phieu-hang-khong-nen-dau-tu",
+  "i": 6,
+  "op": "append",
+  "sentence": "Lợi thế chi phí của mô hình giá rẻ là điểm khác biệt chính khi so VJC với các [cổ phiếu hàng không] khác.",
+  "why": "viết lại theo live 11/11 · đoạn i=6"
+ },
+ {
+  "src": "top-co-phieu-dien-luc-nganh-dien",
+  "target": "co-phieu-pc-1-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025",
+  "i": 38,
+  "op": "append",
+  "sentence": "Ở nhánh xây lắp điện, [cổ phiếu PC1] gắn với cả thi công lưới truyền tải lẫn vận hành nhà máy thủy điện, điện gió.",
+  "why": "sub-hub/ngữ cảnh ngành · đoạn i=38"
+ },
+ {
+  "src": "top-5-co-phieu-dau-khi-se-huong-loi-trong-nam-2024-khi-gia-dau-tang",
+  "target": "co-phieu-pc-1-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025",
+  "i": 0,
+  "op": "skip",
+  "sentence": "",
+  "reason": "bài ngành dầu khí/than, không có ngữ cảnh xây lắp điện để dẫn về PC1"
+ },
+ {
+  "src": "co-phieu-nganh-than",
+  "target": "co-phieu-pc-1-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025",
+  "i": 0,
+  "op": "skip",
+  "sentence": "",
+  "reason": "bài ngành dầu khí/than, không có ngữ cảnh xây lắp điện để dẫn về PC1"
+ },
+ {
+  "src": "co-phieu-nt-2-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025",
+  "target": "co-phieu-pc-1-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025",
+  "i": 2,
+  "op": "append",
+  "sentence": "Cùng nhóm điện lực nhưng khác mô hình, [cổ phiếu PC1] có thêm nguồn thu từ xây lắp lưới điện bên cạnh mảng phát điện.",
+  "why": "sub-hub/ngữ cảnh ngành · đoạn i=2"
+ },
+ {
+  "src": "co-phieu-midcap-la-gi-khi-nao-nen-dau-tu-co-phieu-midcap",
+  "target": "co-phieu-la-gi-cac-loai-co-phieu-tren-thi-truong-chung-khoan-viet-nam",
+  "i": 5,
+  "op": "append",
+  "sentence": "Phân loại theo vốn hóa chỉ là một trong nhiều cách chia [các loại cổ phiếu], bên cạnh cách chia theo quyền lợi cổ đông hay ngành nghề.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=5"
+ },
+ {
+  "src": "co-phieu-trang-ben-mua-la-gi",
+  "target": "co-phieu-la-gi-cac-loai-co-phieu-tren-thi-truong-chung-khoan-viet-nam",
+  "i": 12,
+  "op": "append",
+  "sentence": "Hiện tượng này xảy ra với nhiều [loại cổ phiếu], kể cả mã vốn hóa lớn khi doanh nghiệp gặp tin xấu đột ngột.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=12"
+ },
+ {
+  "src": "co-phieu-tru-la-gi",
+  "target": "co-phieu-la-gi-cac-loai-co-phieu-tren-thi-truong-chung-khoan-viet-nam",
+  "i": 2,
+  "op": "append",
+  "sentence": "Đây là cách gọi theo vai trò với chỉ số, khác với cách [phân loại cổ phiếu] theo quyền lợi như cổ phiếu phổ thông hay ưu đãi.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=2"
+ },
+ {
+  "src": "3-cach-chon-co-phieu-tot-va-co-tiem-nang-tang-gia-de-dau-tu",
+  "target": "co-phieu-la-gi-cac-loai-co-phieu-tren-thi-truong-chung-khoan-viet-nam",
+  "i": 13,
+  "op": "append",
+  "sentence": "Bước đầu tiên của quy trình đó là nắm [cổ phiếu là gì] và quyền lợi cổ đông, trước khi đi vào tiêu chí sàng lọc.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=13"
+ }
+]

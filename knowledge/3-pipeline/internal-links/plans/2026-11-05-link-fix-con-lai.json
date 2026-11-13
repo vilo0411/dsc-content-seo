@@ -1,0 +1,58 @@
+{
+ "title": "Link-fix — 4 mục còn lại (5/11)",
+ "intro": "Phần còn lại của 2026-11-03-link-fix. Hai mục chèn câu đã rà lại theo luật ngữ cảnh.",
+ "edits": [
+  {
+   "src": "choi-chung-khoan-co-giau-khong",
+   "op": "href",
+   "old": "https://www.dsc.com.vn/kien-thuc/cach-chon-co-phieu-tot-theo-benjamin-graham",
+   "to": "3-cach-chon-co-phieu-tot-va-co-tiem-nang-tang-gia-de-dau-tu",
+   "anchor": "Benjamin Graham",
+   "group": "fix",
+   "pri": "P2",
+   "why": "URL cũ redirect"
+  },
+  {
+   "src": "top-5-san-dau-tu-chung-khoan-ao-uy-tin-tai-viet-nam-luyen-choi-chung-khoan-hieu-qua",
+   "op": "remove",
+   "old": "https://www.dsc.com.vn/kien-thuc/dau-tu-chung-khoan-ao-co-an-toan-khong",
+   "group": "fix",
+   "pri": "P2",
+   "why": "URL cũ redirect về chính bài này"
+  },
+  {
+   "src": "dau-tu-chung-khoan-tren-dien-thoai-huong-dan-chi-tiet",
+   "op": "newp",
+   "find": "Xem lại thông tin lệnh một lần nữa rồi xác nhận",
+   "to": "cach-mua-co-phieu-online-cho-nguoi-moi-bat-dau",
+   "anchor": "mua cổ phiếu online",
+   "check_text": true,
+   "sentence": "Các bước này giống hệt khi [mua cổ phiếu online] trên máy tính, chỉ khác giao diện app được thu gọn cho màn hình nhỏ.",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Ngay sau list 'Cách đặt lệnh mua/bán trên điện thoại' (thay vì câu dẫn đầu mục Cách giao dịch)"
+  },
+  {
+   "src": "san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong",
+   "op": "append",
+   "find": "NYSE vận hành theo cơ chế đấu giá tập trung",
+   "to": "cach-mo-tai-khoan-chung-khoan-my",
+   "anchor": "mở tài khoản chứng khoán Mỹ",
+   "check_text": true,
+   "sentence": "Muốn trực tiếp mua cổ phiếu niêm yết trên NYSE, nhà đầu tư Việt Nam cần [mở tài khoản chứng khoán Mỹ] tại một công ty môi giới nước ngoài, vì tài khoản trong nước chỉ giao dịch được HoSE, HNX và UPCoM.",
+   "group": "fix",
+   "pri": "P2",
+   "why": "Mục Cách thức hoạt động (giờ giao dịch theo giờ VN) → câu hỏi tiếp theo của người đọc là mua bằng cách nào"
+  },
+  {
+   "src": "san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong",
+   "op": "cut",
+   "find": "Hướng dẫn cách mở tài khoản chứng khoán Mỹ an toàn",
+   "old_text": "<p><i>&gt;&gt; Xem thêm: </i><a target=\"_blank\" href=\"https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan-my\"><i><strong>Hướng dẫn cách mở tài khoản chứng khoán Mỹ an toàn</strong></i></a></p>",
+   "old": "https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan-my",
+   "group": "fix",
+   "pri": "P2",
+   "why": "Gỡ dòng Xem thêm (link đã chuyển vào câu trong mục Cách thức hoạt động)"
+  }
+ ]
+}

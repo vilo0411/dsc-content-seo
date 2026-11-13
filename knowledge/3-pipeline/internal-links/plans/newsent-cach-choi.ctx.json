@@ -1,0 +1,2653 @@
+[
+ {
+  "src": "thi-truong-so-cap-va-thu-cap-la-gi",
+  "src_title": "Thị trường sơ cấp và thứ cấp: Phân biệt đặc điểm và chức năng",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "278",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 25,
+    "h": "Nguyên tắc hoạt động của thị trường chứng khoán",
+    "n_sent": 3,
+    "t": "Nguyên tắc trung gian trên thị trường thứ cấp là mọi giao dịch mua bán chứng khoán đều phải thực hiện qua trung gian là tổ chức hoặc cá nhân (còn gọi là giao dịch qua môi giới). Các nhà môi giới sẽ có vai trò tư vấn đầu tư và thực hiện các lệnh giao dịch mua bán và nhận hoa hồng từ nhà đầu tư. Vì vậy, muốn mua bán cổ phiếu trên thị trường thứ cấp, nhà đầu tư cần mở tài khoản giao dịch chứng khoán tại một công ty chứng khoán."
+   },
+   {
+    "i": 31,
+    "h": "Nguyên tắc hoạt động của thị trường chứng khoán",
+    "n_sent": 2,
+    "t": "Đấu giá tự động là việc các nhà môi giới nhập giá vào hệ thống của Sở giao dịch chứng khoán, hệ thống này sẽ tự động tính toán và xác định mức giá thị trường mà có khối lượng giao dịch khớp cao nhất. Đấu giá tự động thường được áp dụng trong các phiên ATO, ATC."
+   },
+   {
+    "i": 18,
+    "h": "Chức năng của thị trường chứng khoán thứ cấp",
+    "n_sent": 3,
+    "t": "Thị trường chứng khoán thứ cấp có vai trò là nơi giao dịch chứng khoán nhằm đảm bảo tính thanh khoản của các sản phẩm chứng khoán đã phát hành trên thị trường sơ cấp. Nhà đầu tư có thể tự do mua bán chứng khoán trên thị trường này và thu lợi nhuận từ việc nhận cổ tức, trái tức hoặc giao dịch để ăn chênh lệch giá thị trường. Dòng tiền gia tăng trên thị trường này không làm tăng lượng vốn đầu tư cho doanh nghiệp nhưng thực tế doanh nghiệp vẫn có lợi vì gia tăng định giá doanh nghiệp."
+   }
+  ]
+ },
+ {
+  "src": "thi-truong-so-cap-va-thu-cap-la-gi",
+  "src_title": "Thị trường sơ cấp và thứ cấp: Phân biệt đặc điểm và chức năng",
+  "target": "thi-truong-tai-chinh-la-gi",
+  "role": "sub-hub",
+  "target_title": "Thị trường tài chính là gì? Cấu trúc, chức năng và vai trò",
+  "clicks": "278",
+  "anchors": [
+   "thị trường tài chính",
+   "thị trường tài chính là gì",
+   "cấu trúc thị trường tài chính",
+   "vai trò của thị trường tài chính",
+   "hệ thống tài chính",
+   "thị trường vốn và tiền tệ"
+  ],
+  "paras": [
+   {
+    "i": 15,
+    "h": "Chức năng của thị trường chứng khoán sơ cấp",
+    "n_sent": 2,
+    "t": "Thị trường chứng khoán sơ cấp có chứng năng quan trọng nhất đó là huy động vốn cho nền kinh tế. Trong đó tổ chức phát hành đóng vai trò là người đi huy động vốn, còn người mua các sản phẩm chứng khoán (cổ phiếu, trái phiếu,...) đóng vai trò là nhà đầu tư."
+   },
+   {
+    "i": 18,
+    "h": "Chức năng của thị trường chứng khoán thứ cấp",
+    "n_sent": 3,
+    "t": "Thị trường chứng khoán thứ cấp có vai trò là nơi giao dịch chứng khoán nhằm đảm bảo tính thanh khoản của các sản phẩm chứng khoán đã phát hành trên thị trường sơ cấp. Nhà đầu tư có thể tự do mua bán chứng khoán trên thị trường này và thu lợi nhuận từ việc nhận cổ tức, trái tức hoặc giao dịch để ăn chênh lệch giá thị trường. Dòng tiền gia tăng trên thị trường này không làm tăng lượng vốn đầu tư cho doanh nghiệp nhưng thực tế doanh nghiệp vẫn có lợi vì gia tăng định giá doanh nghiệp."
+   },
+   {
+    "i": 34,
+    "h": "Mối quan hệ giữa thị trường sơ cấp và thị trường thứ cấp",
+    "n_sent": 3,
+    "t": "Thị trường sơ cấp và thị trường thứ cấp có mối quan hệ nội tại không thể tách rời. Vai trò của thị trường chứng khoán sơ cấp là cơ sở, tiền đề để lưu thông chứng khoán trên thị trường thứ cấp. Còn vai trò của thị trường chứng khoán thứ cấp là để lưu thông lượng chứng khoán được phát hành trên thị trường tới các nhà đầu tư tổ chức và cá nhân."
+   }
+  ]
+ },
+ {
+  "src": "san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong",
+  "src_title": "Sàn chứng khoán NYSE là gì? Vai trò và cách thức hoạt động",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "219",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 15,
+    "h": "Cách thức hoạt động của NYSE",
+    "n_sent": 3,
+    "t": "NYSE vận hành theo cơ chế đấu giá tập trung: các lệnh mua và bán được tổng hợp vào một sổ lệnh chung, sau đó được khớp lệnh theo nguyên tắc ưu tiên giá - thời gian. Phiên giao dịch chính thức diễn ra từ 9h30 đến 16h00 theo giờ EST (tương đương 20h30 – 3h00 sáng hôm sau theo giờ Việt Nam). Muốn trực tiếp mua cổ phiếu niêm yết trên NYSE, nhà đầu tư Việt Nam cần mở tài khoản chứng khoán Mỹ tại một công ty môi giới nước ngoài, vì tài khoản trong nước chỉ giao dịch được HoSE, HNX và UPCoM."
+   },
+   {
+    "i": 1,
+    "h": "Sàn chứng khoán NYSE là gì?",
+    "n_sent": 2,
+    "t": "Sàn chứng khoán NYSE là viết tắt của cụm từ New York Stock Exchange, là sàn giao dịch chứng khoán lâu đời và lớn nhất thế giới về kim ngạch thương mại và tổng giá trị vốn hóa. NYSE được thành lập vào năm 1792, và hiện có trụ sở chính tại số 11 phố Wall, thành phố New York, Hoa Kỳ."
+   },
+   {
+    "i": 2,
+    "h": "Sàn chứng khoán NYSE là gì?",
+    "n_sent": 2,
+    "t": "NYSE là nơi giao dịch của các loại chứng khoán như cổ phiếu, trái phiếu, chứng chỉ quỹ, chứng khoán phái sinh, v.v. Các doanh nghiệp muốn niêm yết cổ phiếu của mình trên NYSE phải đáp ứng các tiêu chuẩn nghiêm ngặt về tài chính, quản trị doanh nghiệp, v.v."
+   }
+  ]
+ },
+ {
+  "src": "san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong",
+  "src_title": "Sàn chứng khoán NYSE là gì? Vai trò và cách thức hoạt động",
+  "target": "thi-truong-tai-chinh-la-gi",
+  "role": "sub-hub",
+  "target_title": "Thị trường tài chính là gì? Cấu trúc, chức năng và vai trò",
+  "clicks": "219",
+  "anchors": [
+   "thị trường tài chính",
+   "thị trường tài chính là gì",
+   "cấu trúc thị trường tài chính",
+   "vai trò của thị trường tài chính",
+   "hệ thống tài chính",
+   "thị trường vốn và tiền tệ"
+  ],
+  "paras": [
+   {
+    "i": 13,
+    "h": "Vai trò của NYSE",
+    "n_sent": 2,
+    "t": "NYSE đóng vai trò nền tảng trong hệ thống tài chính quốc tế: huy động vốn cho các tập đoàn lớn, thúc đẩy thanh khoản thị trường và góp phần ổn định kinh tế toàn cầu. Biến động trên NYSE thường tác động trực tiếp đến thị trường chứng khoán châu Á, trong đó có thị trường Việt Nam — khiến việc nắm bắt thông tin sàn Mỹ ngày càng quan trọng với nhà đầu tư nội địa."
+   },
+   {
+    "i": 15,
+    "h": "Cách thức hoạt động của NYSE",
+    "n_sent": 3,
+    "t": "NYSE vận hành theo cơ chế đấu giá tập trung: các lệnh mua và bán được tổng hợp vào một sổ lệnh chung, sau đó được khớp lệnh theo nguyên tắc ưu tiên giá - thời gian. Phiên giao dịch chính thức diễn ra từ 9h30 đến 16h00 theo giờ EST (tương đương 20h30 – 3h00 sáng hôm sau theo giờ Việt Nam). Muốn trực tiếp mua cổ phiếu niêm yết trên NYSE, nhà đầu tư Việt Nam cần mở tài khoản chứng khoán Mỹ tại một công ty môi giới nước ngoài, vì tài khoản trong nước chỉ giao dịch được HoSE, HNX và UPCoM."
+   },
+   {
+    "i": 1,
+    "h": "Sàn chứng khoán NYSE là gì?",
+    "n_sent": 2,
+    "t": "Sàn chứng khoán NYSE là viết tắt của cụm từ New York Stock Exchange, là sàn giao dịch chứng khoán lâu đời và lớn nhất thế giới về kim ngạch thương mại và tổng giá trị vốn hóa. NYSE được thành lập vào năm 1792, và hiện có trụ sở chính tại số 11 phố Wall, thành phố New York, Hoa Kỳ."
+   }
+  ]
+ },
+ {
+  "src": "sec-la-gi-giai-thich-chi-tiet-ve-uy-ban-chung-khoan-va-hoi-doai-hoa-ky",
+  "src_title": "SEC là gì? Giải thích chi tiết về Ủy ban Chứng khoán và Hối đoái Hoa Kỳ",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "111",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 1,
+    "h": "SEC là gì?",
+    "n_sent": 3,
+    "t": "SEC là viết tắt của Ủy ban Chứng khoán và Hối đoái Hoa Kỳ (Securities and Exchange Commission). Đây là một cơ quan độc lập của chính phủ liên bang Hoa Kỳ, chịu trách nhiệm bảo vệ nhà đầu tư, duy trì sự công bằng, trật tự và hiệu quả trong các thị trường tài chính. SEC được thành lập vào năm 1934 sau vụ sụp đổ thị trường chứng khoán năm 1929."
+   },
+   {
+    "i": 11,
+    "h": "Cấu trúc tổ chức của SEC",
+    "n_sent": 4,
+    "t": "SEC được điều hành bởi một ủy ban gồm năm ủy viên do Tổng thống Hoa Kỳ bổ nhiệm và Thượng viện Hoa Kỳ xác nhận. Mỗi ủy viên có nhiệm kỳ năm năm. SEC có một đội ngũ nhân viên gồm hơn 4.000 người làm việc tại trụ sở chính ở Washington, D.C. và 11 văn phòng khu vực trên khắp Hoa Kỳ."
+   },
+   {
+    "i": 13,
+    "h": "Tác động của SEC",
+    "n_sent": 2,
+    "t": "SEC đóng vai trò quan trọng trong việc duy trì sự ổn định và hiệu quả của thị trường tài chính Hoa Kỳ. Các hoạt động của SEC giúp bảo vệ nhà đầu tư khỏi gian lận và thao túng, đồng thời thúc đẩy sự minh bạch và cạnh tranh trong thị trường."
+   }
+  ]
+ },
+ {
+  "src": "top-10-chi-so-chung-khoan-quan-trong-can-theo-doi",
+  "src_title": "Top 10 chỉ số chứng khoán thế giới quan trọng cần theo dõi",
+  "target": "cac-chi-so-chung-khoan-chau-a-noi-bat",
+  "role": "sub-hub",
+  "target_title": "Top 5 chỉ số chứng khoán Châu Á nổi bật cập nhật 2026",
+  "clicks": "89",
+  "anchors": [
+   "chỉ số chứng khoán châu Á",
+   "chứng khoán châu Á",
+   "các chỉ số chứng khoán châu Á",
+   "thị trường châu Á",
+   "chỉ số khu vực"
+  ],
+  "paras": [
+   {
+    "i": 4,
+    "h": "Chỉ số chứng khoán là gì?",
+    "n_sent": 2,
+    "t": "Chỉ số chứng khoán (Stock marketing index) là một thước đo tổng thể về giá trị của một danh mục cổ phiếu. Chỉ số chứng khoán có thể được tính theo giá trị vốn hóa thị trường, giá trị giao dịch hoặc các yếu tố khác."
+   },
+   {
+    "i": 29,
+    "h": "Chỉ số Euro Stoxx 50",
+    "n_sent": 2,
+    "t": "Chỉ số Euro Stoxx 50 là chỉ số chứng khoán chính của Châu Âu. Chỉ số này bao gồm 50 cổ phiếu của các công ty lớn nhất và có vốn hóa thị trường cao nhất trên thị trường chứng khoán Châu Âu."
+   },
+   {
+    "i": 14,
+    "h": "Chỉ số S&P 500",
+    "n_sent": 2,
+    "t": "Chỉ số S&P 500 là chỉ số chứng khoán phổ biến nhất thế giới. Chỉ số này bao gồm 500 cổ phiếu của các công ty lớn nhất và có vốn hóa thị trường cao nhất trên thị trường chứng khoán Hoa Kỳ."
+   }
+  ]
+ },
+ {
+  "src": "co-phieu-otc-la-gi-mua-co-phieu-otc-o-dau",
+  "src_title": "Cổ phiếu OTC là gì? Mua cổ phiếu OTC ở đâu?",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "70",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 27,
+    "h": "Tham gia các diễn đàn, hội nhóm đầu tư",
+    "n_sent": 1,
+    "t": "Tham gia các diễn đàn, hội nhóm đầu tư là cách để bạn có thể học hỏi kinh nghiệm từ các nhà đầu tư khác."
+   },
+   {
+    "i": 25,
+    "h": "Lựa chọn công ty chứng khoán uy tín",
+    "n_sent": 1,
+    "t": "Khi mua cổ phiếu OTC qua các công ty chứng khoán, bạn cần lựa chọn những công ty uy tín, có kinh nghiệm và đội ngũ tư vấn chuyên nghiệp."
+   },
+   {
+    "i": 7,
+    "h": "Mua cổ phiếu OTC ở đâu?",
+    "n_sent": 3,
+    "t": "Một số công ty chứng khoán cung cấp dịch vụ giao dịch cổ phiếu OTC. Dịch vụ này được thực hiện theo hình thức giới thiệu và môi giới. Công ty chứng khoán sẽ tìm kiếm người mua hoặc người bán cổ phiếu OTC cho bạn."
+   }
+  ]
+ },
+ {
+  "src": "tim-hieu-ve-ban-khong-chung-khoan-hoat-dong-dau-tu-lo-khong-gioi-han",
+  "src_title": "Bán khống là gì? Rủi ro và lưu ý về bán khống chứng khoán",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "60",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 24,
+    "h": "Thị trường chứng khoán Việt Nam đã cho phép bán khống chưa?",
+    "n_sent": 3,
+    "t": "Theo quy định của Ủy ban Chứng khoán Nhà nước, nhà đầu tư chỉ được bán cổ phiếu khi có sẵn trong tài khoản. Chứng khoán phải có ở ngày T+0 hoặc chờ về theo chu kỳ thanh toán T+1,5. Hoạt động bán khống chui không qua kênh chính thống bị nghiêm cấm để bảo vệ sự ổn định."
+   },
+   {
+    "i": 21,
+    "h": "Phân biệt Mua khống (Long) và Bán khống (Short) trong đầu tư",
+    "n_sent": 1,
+    "t": "Nhà đầu tư có thể tìm hiểu thêm về thời điểm bán cổ phiếu để tối ưu hóa quản trị rủi ro danh mục."
+   },
+   {
+    "i": 25,
+    "h": "Thị trường chứng khoán Việt Nam đã cho phép bán khống chưa?",
+    "n_sent": 2,
+    "t": "Tháng 9/2026, các cơ quan quản lý đang tích cực nghiên cứu xây dựng khung pháp lý cho vay chứng khoán SBL. Mục tiêu nhằm đáp ứng tiêu chuẩn nâng hạng thị trường của FTSE Russell trong tương lai."
+   }
+  ]
+ },
+ {
+  "src": "thi-truong-bo-va-thi-truong-gau-y-nghia-va-cach-nhan-biet",
+  "src_title": "Thị trường bò và thị trường gấu: Ý nghĩa và cách nhận biết",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "43",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 26,
+    "h": "Xem xét chỉ số chứng khoán",
+    "n_sent": 4,
+    "t": "Các chỉ số chứng khoán như VN-Index, S&P 500, Dow Jones Industrial Average,... có thể giúp các nhà đầu tư nhận biết xu hướng của thị trường. Nếu chỉ số chứng khoán tăng lên trong thời gian dài, có thể là dấu hiệu cho thấy thị trường đang trong xu hướng bò. Ngược lại, nếu chỉ số chứng khoán giảm xuống trong thời gian dài, có thể là dấu hiệu cho thấy thị trường đang trong xu hướng gấu."
+   },
+   {
+    "i": 2,
+    "h": "Bò và gấu trong chứng khoán là gì?",
+    "n_sent": 2,
+    "t": "Trong thế giới chứng khoán, bò và gấu là hai thuật ngữ được sử dụng để mô tả hai xu hướng đối nghịch nhau của thị trường. Bò biểu thị cho thị trường tăng giá, trong khi gấu biểu thị cho thị trường giảm giá."
+   },
+   {
+    "i": 16,
+    "h": "Chính sách tiền tệ",
+    "n_sent": 3,
+    "t": "Chính sách tiền tệ của ngân hàng trung ương cũng có thể ảnh hưởng đến xu hướng của thị trường chứng khoán. Khi ngân hàng trung ương hạ lãi suất, chi phí đi vay của các doanh nghiệp và cá nhân giảm xuống, điều này thúc đẩy nhu cầu đầu tư và tiêu dùng, dẫn đến giá cổ phiếu tăng lên. Ngược lại, khi ngân hàng trung ương tăng lãi suất, chi phí đi vay tăng lên, điều này khiến các doanh nghiệp và cá nhân thắt chặt chi tiêu, dẫn đến giá cổ phiếu giảm xuống."
+   }
+  ]
+ },
+ {
+  "src": "thi-truong-bo-va-thi-truong-gau-y-nghia-va-cach-nhan-biet",
+  "src_title": "Thị trường bò và thị trường gấu: Ý nghĩa và cách nhận biết",
+  "target": "thi-truong-tai-chinh-la-gi",
+  "role": "sub-hub",
+  "target_title": "Thị trường tài chính là gì? Cấu trúc, chức năng và vai trò",
+  "clicks": "43",
+  "anchors": [
+   "thị trường tài chính",
+   "thị trường tài chính là gì",
+   "cấu trúc thị trường tài chính",
+   "vai trò của thị trường tài chính",
+   "hệ thống tài chính",
+   "thị trường vốn và tiền tệ"
+  ],
+  "paras": [
+   {
+    "i": 16,
+    "h": "Chính sách tiền tệ",
+    "n_sent": 3,
+    "t": "Chính sách tiền tệ của ngân hàng trung ương cũng có thể ảnh hưởng đến xu hướng của thị trường chứng khoán. Khi ngân hàng trung ương hạ lãi suất, chi phí đi vay của các doanh nghiệp và cá nhân giảm xuống, điều này thúc đẩy nhu cầu đầu tư và tiêu dùng, dẫn đến giá cổ phiếu tăng lên. Ngược lại, khi ngân hàng trung ương tăng lãi suất, chi phí đi vay tăng lên, điều này khiến các doanh nghiệp và cá nhân thắt chặt chi tiêu, dẫn đến giá cổ phiếu giảm xuống."
+   },
+   {
+    "i": 20,
+    "h": "Thông tin kinh tế và thị trường",
+    "n_sent": 3,
+    "t": "Các thông tin kinh tế và thị trường cũng có thể ảnh hưởng đến xu hướng của thị trường chứng khoán. Ví dụ, khi có thông tin tích cực về nền kinh tế hoặc doanh nghiệp, giá cổ phiếu có xu hướng tăng lên. Ngược lại, khi có thông tin tiêu cực về nền kinh tế hoặc doanh nghiệp, giá cổ phiếu có xu hướng giảm xuống."
+   },
+   {
+    "i": 18,
+    "h": "Chính sách tài khóa",
+    "n_sent": 3,
+    "t": "Chính sách tài khóa của chính phủ cũng có thể ảnh hưởng đến xu hướng của thị trường chứng khoán. Khi chính phủ tăng chi tiêu, điều này thúc đẩy tổng cầu trong nền kinh tế, dẫn đến giá cổ phiếu tăng lên. Ngược lại, khi chính phủ cắt giảm chi tiêu, điều này khiến tổng cầu trong nền kinh tế giảm xuống, dẫn đến giá cổ phiếu giảm xuống."
+   }
+  ]
+ },
+ {
+  "src": "giao-dich-thoa-thuan-la-gi",
+  "src_title": "Giao dịch thỏa thuận là gì? Quy định sàn HOSE, HNX, UPCoM",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "40",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 23,
+    "h": "So sánh giao dịch thỏa thuận và giao dịch khớp lệnh",
+    "n_sent": 2,
+    "t": "Nhìn chung, giao dịch khớp lệnh đem lại tính linh hoạt cao cho các nhu cầu mua bán tức thời. Ngược lại, giao dịch thỏa thuận bảo vệ nhà đầu tư khỏi sự biến động bất lợi về giá khi cần chuyển nhượng lượng lớn cổ phiếu."
+   },
+   {
+    "i": 36,
+    "h": "Giao dịch khối ngoại khi cổ phiếu đã hết hạn mức sở hữu (Room ngoại)",
+    "n_sent": 1,
+    "t": "Họ chỉ có thể mua lại cổ phiếu từ một nhà đầu tư nước ngoài khác thông qua giao dịch thỏa thuận, thường chấp nhận trả thêm một khoản phí chênh lệch (Premium) ngoài biên độ giá quy định."
+   },
+   {
+    "i": 3,
+    "h": "Giao dịch thỏa thuận là gì?",
+    "n_sent": 1,
+    "t": "Giao dịch thỏa thuận (Put-through Trading) là phương thức giao dịch mà bên mua và bên bán tự thống nhất với nhau về khối lượng, mức giá và phương thức thanh toán trước khi thông báo cho công ty chứng khoán ghi nhận kết quả vào hệ thống giao dịch của Sở Giao dịch Chứng khoán."
+   }
+  ]
+ },
+ {
+  "src": "giao-dich-thoa-thuan-la-gi",
+  "src_title": "Giao dịch thỏa thuận là gì? Quy định sàn HOSE, HNX, UPCoM",
+  "target": "lenh-ato-atc-lo-mp-la-gi",
+  "role": "hub",
+  "target_title": "Lệnh ATO, ATC, LO, MP là gì? Giải thích chi tiết cho F0",
+  "clicks": "40",
+  "anchors": [
+   "lệnh ATO, ATC, LO, MP",
+   "lệnh ATO",
+   "lệnh ATC",
+   "lệnh LO",
+   "lệnh MP",
+   "các loại lệnh"
+  ],
+  "paras": [
+   {
+    "i": 23,
+    "h": "So sánh giao dịch thỏa thuận và giao dịch khớp lệnh",
+    "n_sent": 2,
+    "t": "Nhìn chung, giao dịch khớp lệnh đem lại tính linh hoạt cao cho các nhu cầu mua bán tức thời. Ngược lại, giao dịch thỏa thuận bảo vệ nhà đầu tư khỏi sự biến động bất lợi về giá khi cần chuyển nhượng lượng lớn cổ phiếu."
+   },
+   {
+    "i": 3,
+    "h": "Giao dịch thỏa thuận là gì?",
+    "n_sent": 1,
+    "t": "Giao dịch thỏa thuận (Put-through Trading) là phương thức giao dịch mà bên mua và bên bán tự thống nhất với nhau về khối lượng, mức giá và phương thức thanh toán trước khi thông báo cho công ty chứng khoán ghi nhận kết quả vào hệ thống giao dịch của Sở Giao dịch Chứng khoán."
+   },
+   {
+    "i": 36,
+    "h": "Giao dịch khối ngoại khi cổ phiếu đã hết hạn mức sở hữu (Room ngoại)",
+    "n_sent": 1,
+    "t": "Họ chỉ có thể mua lại cổ phiếu từ một nhà đầu tư nước ngoài khác thông qua giao dịch thỏa thuận, thường chấp nhận trả thêm một khoản phí chênh lệch (Premium) ngoài biên độ giá quy định."
+   }
+  ]
+ },
+ {
+  "src": "cac-chi-so-chung-khoan-viet-nam-hieu-ro-ve-vn-index-vn-30-hnx-index-va-nhieu-chi-so-khac",
+  "src_title": "Các chỉ số chứng khoán Việt Nam nhà đầu tư cần biết",
+  "target": "chi-so-chung-khoan-la-gi",
+  "role": "hub",
+  "target_title": "Chỉ số chứng khoán là gì? Các chỉ số chứng khoán cần biết",
+  "clicks": "40",
+  "anchors": [
+   "chỉ số chứng khoán",
+   "chỉ số chứng khoán là gì",
+   "các chỉ số chứng khoán",
+   "chỉ số thị trường",
+   "chỉ số giá chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 6,
+    "h": "VN-Index",
+    "n_sent": 5,
+    "t": "VN-Index là chỉ số đại diện cho toàn bộ cổ phiếu niêm yết tại Sở Giao dịch Chứng khoán TP. Hồ Chí Minh (HOSE). Được tính toán dựa trên giá và khối lượng giao dịch của các cổ phiếu trên sàn HOSE. VN-Index phản ánh mức độ biến động chung của thị trường chứng khoán Việt Nam. Đây là một trong những chỉ số quan trọng nhất cho nhà đầu tư và người theo dõi thị trường."
+   },
+   {
+    "i": 8,
+    "h": "VN30",
+    "n_sent": 3,
+    "t": "VN30 là chỉ số đại diện cho 30 cổ phiếu có vốn hóa lớn nhất và thanh khoản cao nhất niêm yết trên HOSE. Nó phản ánh biến động của nhóm cổ phiếu lớn và có ảnh hưởng lớn nhất đến thị trường chứng khoán Việt Nam. Đối với nhà đầu tư quan tâm đến cổ phiếu lớn, theo dõi VN30 là một bước quan trọng để đưa ra quyết định đầu tư chính xác."
+   },
+   {
+    "i": 12,
+    "h": "UPCOM-Index",
+    "n_sent": 3,
+    "t": "Sàn giao dịch chứng khoán không niêm yết, hay còn gọi là UPCOM, có chỉ số riêng - UPCOM-Index. Chỉ số này phản ánh mức độ biến động chung của thị trường UpCOM, nơi mà cổ phiếu không niêm yết được giao dịch. Điều này làm nổi bật vai trò của UpCOM trong hệ thống chứng khoán Việt Nam."
+   }
+  ]
+ },
+ {
+  "src": "chi-so-hang-seng-index-la-gi",
+  "src_title": "Chỉ số Hang Seng Index là gì?",
+  "target": "chi-so-chung-khoan-la-gi",
+  "role": "hub",
+  "target_title": "Chỉ số chứng khoán là gì? Các chỉ số chứng khoán cần biết",
+  "clicks": "40",
+  "anchors": [
+   "chỉ số chứng khoán",
+   "chỉ số chứng khoán là gì",
+   "các chỉ số chứng khoán",
+   "chỉ số thị trường",
+   "chỉ số giá chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 1,
+    "h": "Chỉ số Hang Seng Index là gì?",
+    "n_sent": 2,
+    "t": "Chỉ số Hang Seng Index (HSI) là chỉ số chứng khoán của thị trường chứng khoán Hồng Kông, được tính toán dựa trên giá trị thị trường của 50 cổ phiếu niêm yết có thanh khoản cao nhất trên sàn giao dịch chứng khoán Hồng Kông (HKEX). HSI được xem là chỉ số chứng khoán chính của Hồng Kông, và là một trong những chỉ số chứng khoán được theo dõi sát sao nhất trên thế giới."
+   },
+   {
+    "i": 22,
+    "h": "Ý nghĩa của chỉ số Hang Seng Index",
+    "n_sent": 3,
+    "t": "Chỉ số Hang Seng Index là một chỉ số quan trọng để đánh giá sức khỏe của thị trường chứng khoán Hồng Kông. Khi HSI tăng, điều này cho thấy thị trường chứng khoán Hồng Kông đang hoạt động tốt. Ngược lại, khi HSI giảm, điều này cho thấy thị trường chứng khoán Hồng Kông đang hoạt động kém."
+   },
+   {
+    "i": 8,
+    "h": "Cách tính chỉ số Hang Seng Index",
+    "n_sent": 2,
+    "t": "Chỉ số Hang Seng Index được tính toán theo phương pháp giá trị thị trường trọng số (market capitalization-weighted). Điều này có nghĩa là cổ phiếu có giá trị thị trường cao hơn sẽ có trọng số lớn hơn trong chỉ số."
+   }
+  ]
+ },
+ {
+  "src": "lenh-mtl-trong-giao-dich-chung-khoan-la-gi",
+  "src_title": "Lệnh MTL là gì? Đặc điểm, cách đặt và so sánh MTL MOK MAK",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "39",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 19,
+    "h": "Lệnh giới hạn GTC (Good-Til-Canceled)",
+    "n_sent": 2,
+    "t": "Năm 2026, quy chế giao dịch tại Việt Nam chưa áp dụng lệnh GTC cho chứng khoán cơ sở. Nhà đầu tư cần chủ động phát lệnh mới khi bắt đầu ngày giao dịch tiếp theo."
+   },
+   {
+    "i": 34,
+    "h": "Ứng dụng lệnh MTL trong giao dịch chứng khoán Phái sinh",
+    "n_sent": 2,
+    "t": "Khi cần đóng vị thế cắt lỗ khẩn cấp, phát lệnh MTL giúp giải phóng vị thế tức thì. Phần dư chuyển thành lệnh LO hỗ trợ bảo vệ tài khoản khỏi rủi ro trượt giá quá xa."
+   },
+   {
+    "i": 32,
+    "h": "Ứng dụng lệnh MTL trong giao dịch chứng khoán Phái sinh",
+    "n_sent": 2,
+    "t": "Thị trường phái sinh (Hợp đồng tương lai VN30F) có tốc độ biến động giá rất nhanh. Việc sử dụng lệnh LO dễ dẫn đến tình trạng trượt lệnh do giá chạy trước."
+   }
+  ]
+ },
+ {
+  "src": "cac-cong-cu-tai-chinh-pho-bien-tai-viet-nam",
+  "src_title": "Công cụ tài chính là gì? Các công cụ tài chính Việt Nam",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "38",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 8,
+    "h": "1. Cổ phiếu",
+    "n_sent": 4,
+    "t": "Cổ phiếu là chứng chỉ thể hiện quyền sở hữu của nhà đầu tư đối với một công ty. Khi mua cổ phiếu, nhà đầu tư trở thành đồng sở hữu của công ty và có quyền tham gia vào việc quản lý công ty. Cổ phiếu có thể mang lại lợi nhuận cao cho nhà đầu tư thông qua việc nhận cổ tức và lợi nhuận từ việc bán cổ phiếu khi giá tăng. Tuy nhiên, cổ phiếu cũng tiềm ẩn rủi ro cao do giá cổ phiếu có thể biến động mạnh."
+   },
+   {
+    "i": 12,
+    "h": "3. Hợp đồng phái sinh",
+    "n_sent": 3,
+    "t": "Hợp đồng phái sinh là hợp đồng tài chính được ký kết giữa hai bên nhằm mục đích chuyển giao rủi ro hoặc lợi nhuận từ một tài sản cơ sở (như cổ phiếu, trái phiếu, hàng hóa...) sang một bên khác. Hợp đồng phái sinh có thể được sử dụng để phòng ngừa rủi ro hoặc đầu cơ. Tuy nhiên, hợp đồng phái sinh là công cụ tài chính phức tạp và tiềm ẩn rủi ro cao."
+   },
+   {
+    "i": 19,
+    "h": "Lựa chọn công cụ tài chính phù hợp",
+    "n_sent": 2,
+    "t": "Lựa chọn công cụ tài chính phù hợp phụ thuộc vào nhiều yếu tố như mục tiêu đầu tư, mức độ chấp nhận rủi ro, khả năng tài chính,... Nhà đầu tư cần nghiên cứu kỹ lưỡng các công cụ tài chính trước khi quyết định đầu tư."
+   }
+  ]
+ },
+ {
+  "src": "spread-la-gi",
+  "src_title": "Spread là gì? Cách tính và áp dụng Spread trong giao dịch",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "38",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 44,
+    "h": "Nhận biết cơ hội kiếm lời từ giao dịch phái sinh thông qua Spread",
+    "n_sent": 2,
+    "t": "Đặc biệt, trong thị trường chứng khoán phái sinh, việc tận dụng Spread chênh lệch giữa các kỳ hạn hợp đồng (Basis trading) có thể mở ra cơ hội kiếm lời hấp dẫn. Để bắt đầu thực hiện các chiến lược giao dịch phái sinh hiệu quả và tận dụng tối đa các công cụ phân tích thị trường, hãy mở tài khoản chứng khoán DSC ngay hôm nay và trải nghiệm dịch vụ môi giới chuyên nghiệp và đầu tư chứng khoán hiệu quả."
+   },
+   {
+    "i": 40,
+    "h": "Nhận biết cơ hội kiếm lời từ giao dịch phái sinh thông qua Spread",
+    "n_sent": 1,
+    "t": "→ VN30F1M tăng 30 điểm còn VN30F2M tăng 20 điểm → Mức lợi nhuận thu được là 10 điểm từ hai vị thế Long, Short như trên."
+   },
+   {
+    "i": 41,
+    "h": "Nhận biết cơ hội kiếm lời từ giao dịch phái sinh thông qua Spread",
+    "n_sent": 3,
+    "t": "Cơ hội giao dịch phái sinh và ăn chênh lệch thông qua Spread ở Việt Nam là có nhưng rất hiếm gặp. Hi vọng các nhà đầu tư có thêm kiến thức về thuật ngữ tài chính từ bài viết trên từ đó có thể giao dịch hiệu quả hơn. Chúc các bạn luôn thành công!"
+   }
+  ]
+ },
+ {
+  "src": "spread-la-gi",
+  "src_title": "Spread là gì? Cách tính và áp dụng Spread trong giao dịch",
+  "target": "cac-thuat-ngu-trong-chung-khoan",
+  "role": "sub-hub",
+  "target_title": "Các thuật ngữ trong chứng khoán: cẩm nang A-Z cho F0",
+  "clicks": "38",
+  "anchors": [
+   "thuật ngữ chứng khoán",
+   "các thuật ngữ trong chứng khoán",
+   "thuật ngữ trong chứng khoán",
+   "thuật ngữ đầu tư",
+   "từ ngữ chuyên ngành"
+  ],
+  "paras": [
+   {
+    "i": 44,
+    "h": "Nhận biết cơ hội kiếm lời từ giao dịch phái sinh thông qua Spread",
+    "n_sent": 2,
+    "t": "Đặc biệt, trong thị trường chứng khoán phái sinh, việc tận dụng Spread chênh lệch giữa các kỳ hạn hợp đồng (Basis trading) có thể mở ra cơ hội kiếm lời hấp dẫn. Để bắt đầu thực hiện các chiến lược giao dịch phái sinh hiệu quả và tận dụng tối đa các công cụ phân tích thị trường, hãy mở tài khoản chứng khoán DSC ngay hôm nay và trải nghiệm dịch vụ môi giới chuyên nghiệp và đầu tư chứng khoán hiệu quả."
+   },
+   {
+    "i": 41,
+    "h": "Nhận biết cơ hội kiếm lời từ giao dịch phái sinh thông qua Spread",
+    "n_sent": 3,
+    "t": "Cơ hội giao dịch phái sinh và ăn chênh lệch thông qua Spread ở Việt Nam là có nhưng rất hiếm gặp. Hi vọng các nhà đầu tư có thêm kiến thức về thuật ngữ tài chính từ bài viết trên từ đó có thể giao dịch hiệu quả hơn. Chúc các bạn luôn thành công!"
+   },
+   {
+    "i": 43,
+    "h": "Nhận biết cơ hội kiếm lời từ giao dịch phái sinh thông qua Spread",
+    "n_sent": 2,
+    "t": "Tóm lại, Spread là một khái niệm đa nghĩa nhưng trong giao dịch tài chính, nó chủ yếu đại diện cho chênh lệch giữa Giá chào bán (Ask) và Giá chào mua (Bid). Việc nắm vững Spread là gì, cách tính và các yếu tố tác động (như thanh khoản, biến động thị trường) là vô cùng cần thiết để nhà đầu tư đưa ra quyết định tối ưu."
+   }
+  ]
+ },
+ {
+  "src": "stop-loss-la-gi-cach-su-dung-lenh-stop-loss-trong-chung-khoan",
+  "src_title": "Stop loss là gì? Cách sử dụng lệnh stop loss trong chứng khoán",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "36",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 1,
+    "h": "Stop loss là gì?",
+    "n_sent": 3,
+    "t": "Stop loss là một thuật ngữ phổ biến trong đầu tư chứng khoán, được hiểu là lệnh cắt lỗ. Khi đặt lệnh stop loss, nhà đầu tư sẽ chỉ định một mức giá mà tại đó lệnh bán sẽ được thực hiện tự động, bất kể giá thị trường đang ở mức nào. Điều này giúp nhà đầu tư hạn chế mức thua lỗ khi thị trường đi ngược với kỳ vọng của họ."
+   },
+   {
+    "i": 15,
+    "h": "Lợi ích của việc sử dụng lệnh stop loss",
+    "n_sent": 2,
+    "t": "Lệnh stop loss là một công cụ quan trọng giúp nhà đầu tư quản lý rủi ro trong đầu tư chứng khoán. Nó giúp nhà đầu tư hạn chế thua lỗ khi thị trường đi ngược với kỳ vọng, đồng thời bảo vệ vốn và lợi nhuận của họ."
+   }
+  ]
+ },
+ {
+  "src": "stop-loss-la-gi-cach-su-dung-lenh-stop-loss-trong-chung-khoan",
+  "src_title": "Stop loss là gì? Cách sử dụng lệnh stop loss trong chứng khoán",
+  "target": "lenh-ato-atc-lo-mp-la-gi",
+  "role": "hub",
+  "target_title": "Lệnh ATO, ATC, LO, MP là gì? Giải thích chi tiết cho F0",
+  "clicks": "36",
+  "anchors": [
+   "lệnh ATO, ATC, LO, MP",
+   "lệnh ATO",
+   "lệnh ATC",
+   "lệnh LO",
+   "lệnh MP",
+   "các loại lệnh"
+  ],
+  "paras": [
+   {
+    "i": 1,
+    "h": "Stop loss là gì?",
+    "n_sent": 3,
+    "t": "Stop loss là một thuật ngữ phổ biến trong đầu tư chứng khoán, được hiểu là lệnh cắt lỗ. Khi đặt lệnh stop loss, nhà đầu tư sẽ chỉ định một mức giá mà tại đó lệnh bán sẽ được thực hiện tự động, bất kể giá thị trường đang ở mức nào. Điều này giúp nhà đầu tư hạn chế mức thua lỗ khi thị trường đi ngược với kỳ vọng của họ."
+   },
+   {
+    "i": 15,
+    "h": "Lợi ích của việc sử dụng lệnh stop loss",
+    "n_sent": 2,
+    "t": "Lệnh stop loss là một công cụ quan trọng giúp nhà đầu tư quản lý rủi ro trong đầu tư chứng khoán. Nó giúp nhà đầu tư hạn chế thua lỗ khi thị trường đi ngược với kỳ vọng, đồng thời bảo vệ vốn và lợi nhuận của họ."
+   }
+  ]
+ },
+ {
+  "src": "chi-so-msci-la-gi",
+  "src_title": "Chỉ số MSCI là gì? Vai trò của chỉ số MSCI",
+  "target": "chi-so-chung-khoan-la-gi",
+  "role": "hub",
+  "target_title": "Chỉ số chứng khoán là gì? Các chỉ số chứng khoán cần biết",
+  "clicks": "36",
+  "anchors": [
+   "chỉ số chứng khoán",
+   "chỉ số chứng khoán là gì",
+   "các chỉ số chứng khoán",
+   "chỉ số thị trường",
+   "chỉ số giá chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 4,
+    "h": "Chỉ số MSCI là gì?",
+    "n_sent": 2,
+    "t": "Chỉ số MSCI là một chỉ số trọng số vốn hóa thị trường, có nghĩa là giá trị của chỉ số được xác định bởi tổng giá trị vốn hóa thị trường của các cổ phiếu trong chỉ số. Cổ phiếu có vốn hóa thị trường lớn nhất có tỷ trọng cao nhất trong chỉ số."
+   },
+   {
+    "i": 7,
+    "h": "Vai trò của chỉ số MSCI",
+    "n_sent": 2,
+    "t": "Chỉ số MSCI đóng vai trò quan trọng trong thị trường chứng khoán. Nó là một công cụ hữu ích cho các nhà đầu tư để theo dõi hiệu suất của các thị trường chứng khoán khác nhau, cũng như để so sánh hiệu suất của các danh mục đầu tư khác nhau."
+   },
+   {
+    "i": 16,
+    "h": "Cách tính chỉ số MSCI",
+    "n_sent": 2,
+    "t": "Chỉ số MSCI được tính toán bằng cách lấy tổng giá trị thị trường của các cổ phiếu trong chỉ số và chia cho một hệ số điều chỉnh. Hệ số điều chỉnh được sử dụng để đảm bảo rằng chỉ số không bị ảnh hưởng bởi các biến động giá."
+   }
+  ]
+ },
+ {
+  "src": "chi-so-msci-la-gi",
+  "src_title": "Chỉ số MSCI là gì? Vai trò của chỉ số MSCI",
+  "target": "cac-chi-so-chung-khoan-chau-a-noi-bat",
+  "role": "sub-hub",
+  "target_title": "Top 5 chỉ số chứng khoán Châu Á nổi bật cập nhật 2026",
+  "clicks": "36",
+  "anchors": [
+   "chỉ số chứng khoán châu Á",
+   "chứng khoán châu Á",
+   "các chỉ số chứng khoán châu Á",
+   "thị trường châu Á",
+   "chỉ số khu vực"
+  ],
+  "paras": [
+   {
+    "i": 7,
+    "h": "Vai trò của chỉ số MSCI",
+    "n_sent": 2,
+    "t": "Chỉ số MSCI đóng vai trò quan trọng trong thị trường chứng khoán. Nó là một công cụ hữu ích cho các nhà đầu tư để theo dõi hiệu suất của các thị trường chứng khoán khác nhau, cũng như để so sánh hiệu suất của các danh mục đầu tư khác nhau."
+   },
+   {
+    "i": 4,
+    "h": "Chỉ số MSCI là gì?",
+    "n_sent": 2,
+    "t": "Chỉ số MSCI là một chỉ số trọng số vốn hóa thị trường, có nghĩa là giá trị của chỉ số được xác định bởi tổng giá trị vốn hóa thị trường của các cổ phiếu trong chỉ số. Cổ phiếu có vốn hóa thị trường lớn nhất có tỷ trọng cao nhất trong chỉ số."
+   },
+   {
+    "i": 16,
+    "h": "Cách tính chỉ số MSCI",
+    "n_sent": 2,
+    "t": "Chỉ số MSCI được tính toán bằng cách lấy tổng giá trị thị trường của các cổ phiếu trong chỉ số và chia cho một hệ số điều chỉnh. Hệ số điều chỉnh được sử dụng để đảm bảo rằng chỉ số không bị ảnh hưởng bởi các biến động giá."
+   }
+  ]
+ },
+ {
+  "src": "top-10-nguoi-giau-nhat-tren-thi-truong-chung-khoan-viet-nam-1",
+  "src_title": "Top 10 người giàu nhất sàn chứng khoán Việt Nam",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "35",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 32,
+    "h": "Đánh giá về top 10 người giàu nhất",
+    "n_sent": 2,
+    "t": "Danh sách top 10 người giàu nhất trên thị trường chứng khoán Việt Nam vẫn được dẫn đầu bởi các tỷ phú trong lĩnh vực bất động sản, thép và bán lẻ. Tuy nhiên, trong thời gian gần đây, các tỷ phú trong lĩnh vực công nghệ cũng đang có xu hướng gia tăng tài sản."
+   },
+   {
+    "i": 34,
+    "h": "Đánh giá về top 10 người giàu nhất",
+    "n_sent": 3,
+    "t": "Thị trường chứng khoán Việt Nam trong thời gian tới vẫn sẽ tiếp tục có những biến động khó lường. Tuy nhiên, với nền kinh tế Việt Nam đang trong giai đoạn phát triển, các doanh nghiệp Việt Nam vẫn có tiềm năng tăng trưởng trong tương lai. Điều này cũng sẽ tạo cơ hội cho các tỷ phú Việt Nam tăng thêm tài sản."
+   },
+   {
+    "i": 29,
+    "h": "Phân tích những yếu tố tác động đến tài sản của các tỷ phú",
+    "n_sent": 3,
+    "t": "Thị giá cổ phiếu của các doanh nghiệp là yếu tố tác động lớn nhất đến tài sản của các tỷ phú. Theo thống kê của Forbes Việt Nam, trong vòng 6 tháng qua, chỉ số VN-Index đã giảm 20%, kéo theo đó là giá cổ phiếu của các doanh nghiệp cũng giảm mạnh. Điều này đã khiến cho tài sản của các tỷ phú cũng bị ảnh hưởng đáng kể."
+   }
+  ]
+ },
+ {
+  "src": "diem-trong-chung-khoan-la-gi-cach-tinh-va-y-nghia",
+  "src_title": "Điểm trong chứng khoán là gì? Cách tính và ý nghĩa",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "24",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 21,
+    "h": "Các yếu tố khác cần cân nhắc khi đầu tư chứng khoán",
+    "n_sent": 1,
+    "t": "Việc cân nhắc các yếu tố này một cách tổng thể sẽ giúp các nhà đầu tư đưa ra các quyết định đầu tư sáng suốt và hiệu quả."
+   },
+   {
+    "i": 14,
+    "h": "Tầm quan trọng của điểm chứng khoán",
+    "n_sent": 2,
+    "t": "Điểm chứng khoán là một chỉ số quan trọng, giúp các nhà đầu tư có thể nắm bắt được xu hướng của thị trường và đưa ra các quyết định đầu tư hợp lý. Tuy nhiên, các nhà đầu tư cần lưu ý rằng điểm chứng khoán chỉ là một yếu tố để tham khảo, không nên chỉ dựa vào điểm chứng khoán để đưa ra quyết định đầu tư."
+   },
+   {
+    "i": 4,
+    "h": "Điểm chứng khoán là gì?",
+    "n_sent": 3,
+    "t": "Điểm chứng khoán là một chỉ số thể hiện sự tăng giảm của giá cổ phiếu trên thị trường chứng khoán. Chỉ số này có thể thể hiện tình hình biến động của toàn thị trường hoặc đối với từng chỉ số riêng biệt. Nhà đầu tư có thể dựa vào sự lên xuống của điểm số để xác định xu hướng của thị trường."
+   }
+  ]
+ },
+ {
+  "src": "diem-trong-chung-khoan-la-gi-cach-tinh-va-y-nghia",
+  "src_title": "Điểm trong chứng khoán là gì? Cách tính và ý nghĩa",
+  "target": "cac-thuat-ngu-trong-chung-khoan",
+  "role": "sub-hub",
+  "target_title": "Các thuật ngữ trong chứng khoán: cẩm nang A-Z cho F0",
+  "clicks": "24",
+  "anchors": [
+   "thuật ngữ chứng khoán",
+   "các thuật ngữ trong chứng khoán",
+   "thuật ngữ trong chứng khoán",
+   "thuật ngữ đầu tư",
+   "từ ngữ chuyên ngành"
+  ],
+  "paras": [
+   {
+    "i": 21,
+    "h": "Các yếu tố khác cần cân nhắc khi đầu tư chứng khoán",
+    "n_sent": 1,
+    "t": "Việc cân nhắc các yếu tố này một cách tổng thể sẽ giúp các nhà đầu tư đưa ra các quyết định đầu tư sáng suốt và hiệu quả."
+   },
+   {
+    "i": 4,
+    "h": "Điểm chứng khoán là gì?",
+    "n_sent": 3,
+    "t": "Điểm chứng khoán là một chỉ số thể hiện sự tăng giảm của giá cổ phiếu trên thị trường chứng khoán. Chỉ số này có thể thể hiện tình hình biến động của toàn thị trường hoặc đối với từng chỉ số riêng biệt. Nhà đầu tư có thể dựa vào sự lên xuống của điểm số để xác định xu hướng của thị trường."
+   },
+   {
+    "i": 11,
+    "h": "Ý nghĩa của điểm chứng khoán",
+    "n_sent": 3,
+    "t": "Điểm chứng khoán có ý nghĩa quan trọng trong việc đánh giá xu hướng của thị trường chứng khoán. Nếu điểm chứng khoán tăng, chứng tỏ thị trường đang có xu hướng tăng và những cổ phiếu tăng giá đang chiếm ưu thế. Ngược lại, nếu điểm chứng khoán giảm, chứng tỏ thị trường đang có xu hướng giảm và nhiều nhà đầu tư đang bán tháo cổ phiếu của mình."
+   }
+  ]
+ },
+ {
+  "src": "nha-tao-lap-thi-truong-la-ai-vai-tro-va-y-nghia-trong-thi-truong-tai-chinh",
+  "src_title": "Nhà tạo lập thị trường là ai? Vai trò và cách hoạt động",
+  "target": "thi-truong-tai-chinh-la-gi",
+  "role": "sub-hub",
+  "target_title": "Thị trường tài chính là gì? Cấu trúc, chức năng và vai trò",
+  "clicks": "21",
+  "anchors": [
+   "thị trường tài chính",
+   "thị trường tài chính là gì",
+   "cấu trúc thị trường tài chính",
+   "vai trò của thị trường tài chính",
+   "hệ thống tài chính",
+   "thị trường vốn và tiền tệ"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "Nhà tạo lập thị trường là ai?",
+    "n_sent": 3,
+    "t": "Nhà tạo lập thị trường (Market Maker - MM) là tổ chức tài chính được cấp phép. Họ liên tục niêm yết giá mua và giá bán cho các chứng khoán cụ thể. Nhờ đó, giao dịch luôn thông suốt mà không cần chờ lệnh đối ứng từ bên ngoài."
+   },
+   {
+    "i": 8,
+    "h": "Nhà tạo lập thị trường là ai?",
+    "n_sent": 3,
+    "t": "Lưu ý. Để làm Market Maker, tổ chức tài chính phải đáp ứng tiêu chuẩn khắt khe về vốn. Họ cũng cần hạ tầng công nghệ và hệ thống quản trị rủi ro đạt chuẩn UBCKNN."
+   },
+   {
+    "i": 46,
+    "h": "Thị trường Trái phiếu Chính phủ",
+    "n_sent": 1,
+    "t": "Bộ Tài chính định kỳ công nhận các ngân hàng và công ty chứng khoán làm Nhà tạo lập thị trường."
+   }
+  ]
+ },
+ {
+  "src": "khi-nao-nen-mua-co-phieu",
+  "src_title": "Khi nào nên mua cổ phiếu? Chiến lược mua cổ phiếu hiệu quả",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "19",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 10,
+    "h": "Khung giờ ổn định từ 10:30 đến 14:00",
+    "n_sent": 3,
+    "t": "Tại Chứng khoán DSC, chúng tôi nhận thấy đây là giai đoạn tâm lý đám đông đã lắng dịu. Cung và cầu phản ánh thực chất nội tại thị trường, giúp việc đặt lệnh và khớp lệnh trở nên an toàn hơn. Đây là thời điểm lý tưởng để nhà đầu tư cá nhân thực hiện các quyết định mua bán dựa trên kế hoạch đã lập sẵn."
+   },
+   {
+    "i": 12,
+    "h": "Hiệu ứng thứ Hai đầu tuần",
+    "n_sent": 2,
+    "t": "Dữ liệu lịch sử cho thấy thị trường thường xuất hiện các nhịp điều chỉnh vào thứ Hai do tâm lý thận trọng sau hai ngày nghỉ hoặc phản ứng với tin tức tiêu cực từ cuối tuần. Đây thường là cơ hội để tích lũy các cổ phiếu đầu ngành như HPG hoặc MBB tại các vùng giá chiết khấu hấp dẫn trước khi thị trường ổn định trở lại vào giữa tuần."
+   },
+   {
+    "i": 26,
+    "h": "Khi thị trường xuất hiện các đợt sụt giảm mạnh",
+    "n_sent": 3,
+    "t": "Theo triết lý đầu tư của Warren Buffett, hãy tham lam khi người khác sợ hãi. Khi thị trường bán tháo do các tin tức vĩ mô không ảnh hưởng trực tiếp đến giá trị nội tại doanh nghiệp, giá cổ phiếu thường rơi xuống dưới giá trị thực. Đây là cơ hội vàng để mua gom cổ phiếu tốt với giá hời, với điều kiện nhà đầu tư phải tuân thủ nguyên tắc không sử dụng đòn bẩy tài chính trong các nhịp bắt đáy."
+   }
+  ]
+ },
+ {
+  "src": "khi-nao-nen-mua-co-phieu",
+  "src_title": "Khi nào nên mua cổ phiếu? Chiến lược mua cổ phiếu hiệu quả",
+  "target": "cach-mua-co-phieu-online-cho-nguoi-moi-bat-dau",
+  "role": "hub",
+  "target_title": "Cách mua cổ phiếu online 5 bước cho người mới bắt đầu",
+  "clicks": "19",
+  "anchors": [
+   "cách mua cổ phiếu online",
+   "cách mua cổ phiếu",
+   "hướng dẫn mua cổ phiếu",
+   "mua cổ phiếu như thế nào",
+   "mua cổ phiếu online",
+   "đặt lệnh mua cổ phiếu"
+  ],
+  "paras": [
+   {
+    "i": 20,
+    "h": "Mua cổ phiếu giai đoạn vàng trong năm",
+    "n_sent": 1,
+    "t": "Việc nắm bắt chu kỳ kinh doanh giúp nhà đầu tư trả lời câu hỏi nên mua cổ phiếu vào tháng mấy để đạt lợi nhuận tốt nhất."
+   },
+   {
+    "i": 12,
+    "h": "Hiệu ứng thứ Hai đầu tuần",
+    "n_sent": 2,
+    "t": "Dữ liệu lịch sử cho thấy thị trường thường xuất hiện các nhịp điều chỉnh vào thứ Hai do tâm lý thận trọng sau hai ngày nghỉ hoặc phản ứng với tin tức tiêu cực từ cuối tuần. Đây thường là cơ hội để tích lũy các cổ phiếu đầu ngành như HPG hoặc MBB tại các vùng giá chiết khấu hấp dẫn trước khi thị trường ổn định trở lại vào giữa tuần."
+   },
+   {
+    "i": 26,
+    "h": "Khi thị trường xuất hiện các đợt sụt giảm mạnh",
+    "n_sent": 3,
+    "t": "Theo triết lý đầu tư của Warren Buffett, hãy tham lam khi người khác sợ hãi. Khi thị trường bán tháo do các tin tức vĩ mô không ảnh hưởng trực tiếp đến giá trị nội tại doanh nghiệp, giá cổ phiếu thường rơi xuống dưới giá trị thực. Đây là cơ hội vàng để mua gom cổ phiếu tốt với giá hời, với điều kiện nhà đầu tư phải tuân thủ nguyên tắc không sử dụng đòn bẩy tài chính trong các nhịp bắt đáy."
+   }
+  ]
+ },
+ {
+  "src": "target-trong-dau-tu-chung-khoan-la-gi",
+  "src_title": "Target trong chứng khoán là gì? 3 cách tính giá mục tiêu",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "18",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 64,
+    "h": "Ví dụ minh họa về cách áp dụng Target trong giao dịch thực tế",
+    "n_sent": 2,
+    "t": "Đây là tỷ lệ quản trị vốn tối ưu giúp tài khoản của bạn tăng trưởng an toàn bền vững. Bạn có thể tự tin hành động theo kế hoạch đã lập."
+   },
+   {
+    "i": 35,
+    "h": "Phương pháp so sánh định giá P/E và P/B (FA)",
+    "n_sent": 2,
+    "t": "Phương pháp này đối chiếu chỉ số P/E và P/B của doanh nghiệp với mức trung bình ngành. Đây là bước then chốt khi thực hiện phân tích doanh nghiệp để tìm kiếm cơ hội đầu tư."
+   },
+   {
+    "i": 36,
+    "h": "Phương pháp so sánh định giá P/E và P/B (FA)",
+    "n_sent": 2,
+    "t": "Nhà phân tích ước tính lợi nhuận trên mỗi cổ phiếu (EPS) tương lai của doanh nghiệp. Sau đó, họ nhân EPS dự phóng với mức P/E hợp lý để ra giá mục tiêu."
+   }
+  ]
+ },
+ {
+  "src": "target-trong-dau-tu-chung-khoan-la-gi",
+  "src_title": "Target trong chứng khoán là gì? 3 cách tính giá mục tiêu",
+  "target": "cac-thuat-ngu-trong-chung-khoan",
+  "role": "sub-hub",
+  "target_title": "Các thuật ngữ trong chứng khoán: cẩm nang A-Z cho F0",
+  "clicks": "18",
+  "anchors": [
+   "thuật ngữ chứng khoán",
+   "các thuật ngữ trong chứng khoán",
+   "thuật ngữ trong chứng khoán",
+   "thuật ngữ đầu tư",
+   "từ ngữ chuyên ngành"
+  ],
+  "paras": [
+   {
+    "i": 41,
+    "h": "Phương pháp phân tích kỹ thuật (TA)",
+    "n_sent": 2,
+    "t": "Phương pháp này dựa vào biểu đồ giá, khối lượng và các đường chỉ báo kỹ thuật. Nhà đầu tư sử dụng các ngưỡng kháng cự mạnh hoặc dãy Fibonacci thoái lui để xác định điểm chốt lời."
+   },
+   {
+    "i": 35,
+    "h": "Phương pháp so sánh định giá P/E và P/B (FA)",
+    "n_sent": 2,
+    "t": "Phương pháp này đối chiếu chỉ số P/E và P/B của doanh nghiệp với mức trung bình ngành. Đây là bước then chốt khi thực hiện phân tích doanh nghiệp để tìm kiếm cơ hội đầu tư."
+   },
+   {
+    "i": 42,
+    "h": "Phương pháp phân tích kỹ thuật (TA)",
+    "n_sent": 3,
+    "t": "Ưu điểm của phương pháp kỹ thuật là sự linh hoạt. Bạn có thể nhanh chóng xác định điểm ra vào lệnh cho từng con sóng ngắn. Tốc độ phản ứng rất nhanh."
+   }
+  ]
+ },
+ {
+  "src": "nha-dau-tu-chung-khoan-chuyen-nghiep-la-gi",
+  "src_title": "Nhà đầu tư chứng khoán chuyên nghiệp là gì?",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "17",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": []
+ },
+ {
+  "src": "repo-chung-khoan-la-gi",
+  "src_title": "Repo chứng khoán là gì? Thông tin chi tiết từ A - Z",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "13",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "Repo chứng khoán là gì?",
+    "n_sent": 2,
+    "t": "Repo chứng khoán (tên đầy đủ là Repurchase Agreement) là một loại giao dịch mua bán chứng khoán có cam kết mua lại. Thực chất, đây là một hình thức vay vốn ngắn hạn có tài sản đảm bảo bằng chứng khoán."
+   },
+   {
+    "i": 8,
+    "h": "Repo chứng khoán là gì?",
+    "n_sent": 2,
+    "t": "Phần chênh lệch giữa giá mua lại và giá bán ban đầu được gọi là Lãi suất Repo (Repo Rate). Đây chính là chi phí vốn mà bên bán phải trả cho bên mua."
+   },
+   {
+    "i": 38,
+    "h": "Phân biệt Repo và Reverse Repo",
+    "n_sent": 3,
+    "t": "Trong giới tài chính, Repo và Reverse Repo thực chất là hai mặt của cùng một giao dịch. Tên gọi sẽ thay đổi tùy thuộc vào vị thế của bên tham gia. Nếu bên bán chứng khoán gọi đó là giao dịch Repo (đi vay), thì bên mua chứng khoán sẽ gọi đó là Reverse Repo (cho vay)."
+   }
+  ]
+ },
+ {
+  "src": "repo-chung-khoan-la-gi",
+  "src_title": "Repo chứng khoán là gì? Thông tin chi tiết từ A - Z",
+  "target": "cac-thuat-ngu-trong-chung-khoan",
+  "role": "sub-hub",
+  "target_title": "Các thuật ngữ trong chứng khoán: cẩm nang A-Z cho F0",
+  "clicks": "13",
+  "anchors": [
+   "thuật ngữ chứng khoán",
+   "các thuật ngữ trong chứng khoán",
+   "thuật ngữ trong chứng khoán",
+   "thuật ngữ đầu tư",
+   "từ ngữ chuyên ngành"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "Repo chứng khoán là gì?",
+    "n_sent": 2,
+    "t": "Repo chứng khoán (tên đầy đủ là Repurchase Agreement) là một loại giao dịch mua bán chứng khoán có cam kết mua lại. Thực chất, đây là một hình thức vay vốn ngắn hạn có tài sản đảm bảo bằng chứng khoán."
+   },
+   {
+    "i": 8,
+    "h": "Repo chứng khoán là gì?",
+    "n_sent": 2,
+    "t": "Phần chênh lệch giữa giá mua lại và giá bán ban đầu được gọi là Lãi suất Repo (Repo Rate). Đây chính là chi phí vốn mà bên bán phải trả cho bên mua."
+   },
+   {
+    "i": 38,
+    "h": "Phân biệt Repo và Reverse Repo",
+    "n_sent": 3,
+    "t": "Trong giới tài chính, Repo và Reverse Repo thực chất là hai mặt của cùng một giao dịch. Tên gọi sẽ thay đổi tùy thuộc vào vị thế của bên tham gia. Nếu bên bán chứng khoán gọi đó là giao dịch Repo (đi vay), thì bên mua chứng khoán sẽ gọi đó là Reverse Repo (cho vay)."
+   }
+  ]
+ },
+ {
+  "src": "wash-out-trong-chung-khoan-la-gi",
+  "src_title": "Hiện tượng Wash-out là gì trong chứng khoán?",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "13",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 11,
+    "h": "Tâm lý hoảng loạn của nhà đầu tư",
+    "n_sent": 2,
+    "t": "Khi thị trường giảm mạnh, tâm lý nhà đầu tư thường hoảng loạn. Họ có xu hướng bán tháo cổ phiếu để giảm thiểu thua lỗ."
+   },
+   {
+    "i": 19,
+    "h": "Loại bỏ các nhà đầu tư yếu tay",
+    "n_sent": 2,
+    "t": "Các nhà đầu tư yếu tay, không có tầm nhìn dài hạn thường sẽ bán tháo cổ phiếu trong các phiên wash-out. Điều này có thể tạo cơ hội cho các nhà đầu tư có tầm nhìn dài hạn mua vào cổ phiếu với giá thấp."
+   },
+   {
+    "i": 21,
+    "h": "Tạo cơ hội mua vào cho các nhà đầu tư có tầm nhìn dài hạn",
+    "n_sent": 2,
+    "t": "Sau khi wash-out, thị trường thường sẽ phục hồi. Vì vậy, các nhà đầu tư có tầm nhìn dài hạn có thể mua vào cổ phiếu với giá thấp trong các phiên wash-out để thu lợi nhuận trong tương lai."
+   }
+  ]
+ },
+ {
+  "src": "chi-so-bien-dong-vix-la-gi",
+  "src_title": "Chỉ báo biến động VIX là gì? Chiến Lược CVR3 trong đầu tư",
+  "target": "chi-so-chung-khoan-la-gi",
+  "role": "hub",
+  "target_title": "Chỉ số chứng khoán là gì? Các chỉ số chứng khoán cần biết",
+  "clicks": "11",
+  "anchors": [
+   "chỉ số chứng khoán",
+   "chỉ số chứng khoán là gì",
+   "các chỉ số chứng khoán",
+   "chỉ số thị trường",
+   "chỉ số giá chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "Chỉ báo biến động VIX là gì?",
+    "n_sent": 1,
+    "t": "Chỉ báo biến động CBOE (VIX - Volatility Index) là công cụ đo lường mức độ biến động kỳ vọng trong vòng 30 ngày của thị trường chứng khoán, được tính toán dựa trên giá các hợp đồng quyền chọn mua (call options) và quyền chọn bán (put options) của chỉ số S&P 500."
+   },
+   {
+    "i": 11,
+    "h": "Chiến lược CVR3 là gì?",
+    "n_sent": 1,
+    "t": "CVR3 là một chiến lược giao dịch ngắn hạn sử dụng chỉ báo biến động VIX làm công cụ định thời điểm thị trường (market timing) cho chỉ số S&P 500."
+   },
+   {
+    "i": 17,
+    "h": "Ứng dụng chỉ báo VIX để xác định tín hiệu MUA/BÁN cổ phiếu",
+    "n_sent": 1,
+    "t": "Chiến lược CVR3 sử dụng các quy tắc cụ thể dựa trên mối quan hệ giữa giá VIX và đường trung bình động 10 ngày (MA10) để đưa ra quyết định giao dịch."
+   }
+  ]
+ },
+ {
+  "src": "chi-so-bien-dong-vix-la-gi",
+  "src_title": "Chỉ báo biến động VIX là gì? Chiến Lược CVR3 trong đầu tư",
+  "target": "cac-chi-so-chung-khoan-chau-a-noi-bat",
+  "role": "sub-hub",
+  "target_title": "Top 5 chỉ số chứng khoán Châu Á nổi bật cập nhật 2026",
+  "clicks": "11",
+  "anchors": [
+   "chỉ số chứng khoán châu Á",
+   "chứng khoán châu Á",
+   "các chỉ số chứng khoán châu Á",
+   "thị trường châu Á",
+   "chỉ số khu vực"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "Chỉ báo biến động VIX là gì?",
+    "n_sent": 1,
+    "t": "Chỉ báo biến động CBOE (VIX - Volatility Index) là công cụ đo lường mức độ biến động kỳ vọng trong vòng 30 ngày của thị trường chứng khoán, được tính toán dựa trên giá các hợp đồng quyền chọn mua (call options) và quyền chọn bán (put options) của chỉ số S&P 500."
+   },
+   {
+    "i": 11,
+    "h": "Chiến lược CVR3 là gì?",
+    "n_sent": 1,
+    "t": "CVR3 là một chiến lược giao dịch ngắn hạn sử dụng chỉ báo biến động VIX làm công cụ định thời điểm thị trường (market timing) cho chỉ số S&P 500."
+   },
+   {
+    "i": 17,
+    "h": "Ứng dụng chỉ báo VIX để xác định tín hiệu MUA/BÁN cổ phiếu",
+    "n_sent": 1,
+    "t": "Chiến lược CVR3 sử dụng các quy tắc cụ thể dựa trên mối quan hệ giữa giá VIX và đường trung bình động 10 ngày (MA10) để đưa ra quyết định giao dịch."
+   }
+  ]
+ },
+ {
+  "src": "chi-so-kospi-la-gi",
+  "src_title": "Chỉ số Kospi là gì? Ý nghĩa và mối liên hệ thị trường Việt Nam",
+  "target": "cac-chi-so-chung-khoan-chau-a-noi-bat",
+  "role": "sub-hub",
+  "target_title": "Top 5 chỉ số chứng khoán Châu Á nổi bật cập nhật 2026",
+  "clicks": "11",
+  "anchors": [
+   "chỉ số chứng khoán châu Á",
+   "chứng khoán châu Á",
+   "các chỉ số chứng khoán châu Á",
+   "thị trường châu Á",
+   "chỉ số khu vực"
+  ],
+  "paras": [
+   {
+    "i": 58,
+    "h": "Mối liên hệ giữa chỉ số KOSPI và thị trường chứng khoán Việt Nam (VN-Index)",
+    "n_sent": 1,
+    "t": "Đối với nhà đầu tư Active Trader tại Việt Nam, theo dõi biến động KOSPI cung cấp nhiều tín hiệu tham chiếu quan trọng trong phân tích liên thị trường (Intermarket Analysis)."
+   },
+   {
+    "i": 59,
+    "h": "Mối liên hệ giữa chỉ số KOSPI và thị trường chứng khoán Việt Nam (VN-Index)",
+    "n_sent": 1,
+    "t": "Tính đến tháng 8/2026, Hàn Quốc tiếp tục duy trì vị thế nhà đầu tư FDI hàng đầu tại Việt Nam với tổng vốn đăng ký vượt 86 tỷ USD, khiến biến động của chỉ số KOSPI trở thành chỉ báo sớm cho nhóm doanh nghiệp phụ trợ niêm yết trên HOSE."
+   },
+   {
+    "i": 67,
+    "h": "Phân tích liên thị trường trong chiến lược giao dịch",
+    "n_sent": 2,
+    "t": "Thị trường chứng khoán Hàn Quốc mở cửa giao dịch lúc 9h00 giờ Seoul (tương đương 7h00 giờ Việt Nam). Diễn biến điểm số KOSPI vào đầu giờ sáng cung cấp chỉ báo sớm cho phiên mở cửa của VN-Index."
+   }
+  ]
+ },
+ {
+  "src": "tim-hieu-nguon-goc-cua-giao-dich-chung-khoan",
+  "src_title": "Tìm hiểu nguồn gốc của giao dịch chứng khoán",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "10",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 20,
+    "h": "Công ty giao dịch chứng khoán đầu tiên trên thế giới",
+    "n_sent": 3,
+    "t": "Công ty chứng khoán đầu tiên trên thế giới được thành lập bởi các chủ tàu khắp các miền quy tụ như Hà Lan, Pháp, Anh tại Đông Ấn được mang tên “Thống đốc và nhóm thương nhận London giao thương với Đông Ấn”. Bởi lẽ mỗi khi họp giao thương tại Đông Ấn, các chủ tàu phải chèo thuyền qua các vùng biển và gặp rất nhiều rủi ro về cướp biển và thời tiết. Công ty có giới hạn trách nhiệm của mỗi thành viên theo số tiền đầu tư ban đầu."
+   },
+   {
+    "i": 21,
+    "h": "Công ty giao dịch chứng khoán đầu tiên trên thế giới",
+    "n_sent": 2,
+    "t": "Sau này, các công ty bắt đầu huy động vốn nhanh chóng từ hình thức chào bán cổ phiếu và đã xuất hiện một số vấn đề về “bong bóng thị trường chứng khoán”, Chính phủ các nước đã kiểm soát tạm thời bằng cách cấm phát hành cổ phiếu. Đó cũng là lý do sàn giao dịch chứng khoán ra đời kèm theo các bộ luật phát hành và giao dịch để đảm bảo quyền lợi cho cả công ty và các thương nhân."
+   },
+   {
+    "i": 16,
+    "h": "Nguồn gốc của giao dịch cổ phiếu",
+    "n_sent": 4,
+    "t": "Bắt nguồn từ nhu cầu muốn mở rộng quy mô, phát triển doanh nghiệp nên các công ty đã phát hành cổ phiếu để kêu gọi vốn nhàn rỗi từ các cá nhân. Số vốn thu hút được công ty sẽ dùng vào mục đích phát triển kinh doanh của công ty, mỗi cá nhân sở hữu cổ phiếu sẽ trở thành cổ đông của công ty. Tuy nhiên, để cổ phiếu của công ty kêu gọi và được nhiều người biết đến thì cần niêm yết trên các sàn chứng khoán “chợ đầu tư”. Để niêm yết trên sàn chứng khoán thì công ty phải thỏa mãn các yêu cầu trong Luật Chứng khoán quy định tại Điều 54 Nghị định 58/2012/NĐ-CP."
+   }
+  ]
+ },
+ {
+  "src": "tim-hieu-nguon-goc-cua-giao-dich-chung-khoan",
+  "src_title": "Tìm hiểu nguồn gốc của giao dịch chứng khoán",
+  "target": "thi-truong-tai-chinh-la-gi",
+  "role": "sub-hub",
+  "target_title": "Thị trường tài chính là gì? Cấu trúc, chức năng và vai trò",
+  "clicks": "10",
+  "anchors": [
+   "thị trường tài chính",
+   "thị trường tài chính là gì",
+   "cấu trúc thị trường tài chính",
+   "vai trò của thị trường tài chính",
+   "hệ thống tài chính",
+   "thị trường vốn và tiền tệ"
+  ],
+  "paras": [
+   {
+    "i": 21,
+    "h": "Công ty giao dịch chứng khoán đầu tiên trên thế giới",
+    "n_sent": 2,
+    "t": "Sau này, các công ty bắt đầu huy động vốn nhanh chóng từ hình thức chào bán cổ phiếu và đã xuất hiện một số vấn đề về “bong bóng thị trường chứng khoán”, Chính phủ các nước đã kiểm soát tạm thời bằng cách cấm phát hành cổ phiếu. Đó cũng là lý do sàn giao dịch chứng khoán ra đời kèm theo các bộ luật phát hành và giao dịch để đảm bảo quyền lợi cho cả công ty và các thương nhân."
+   },
+   {
+    "i": 16,
+    "h": "Nguồn gốc của giao dịch cổ phiếu",
+    "n_sent": 4,
+    "t": "Bắt nguồn từ nhu cầu muốn mở rộng quy mô, phát triển doanh nghiệp nên các công ty đã phát hành cổ phiếu để kêu gọi vốn nhàn rỗi từ các cá nhân. Số vốn thu hút được công ty sẽ dùng vào mục đích phát triển kinh doanh của công ty, mỗi cá nhân sở hữu cổ phiếu sẽ trở thành cổ đông của công ty. Tuy nhiên, để cổ phiếu của công ty kêu gọi và được nhiều người biết đến thì cần niêm yết trên các sàn chứng khoán “chợ đầu tư”. Để niêm yết trên sàn chứng khoán thì công ty phải thỏa mãn các yêu cầu trong Luật Chứng khoán quy định tại Điều 54 Nghị định 58/2012/NĐ-CP."
+   },
+   {
+    "i": 17,
+    "h": "Nguồn gốc của giao dịch cổ phiếu",
+    "n_sent": 4,
+    "t": "Thị trường chứng khoán đầu tiên được hình thành vào cuối thế kỷ 13 tại thành phố Antwerp vương quốc Bỉ. Tại thị trường sơ khai đầu tiên, các thương nhân tụ tập tại tòa nhà thuộc sở hữu của Van Der Beurze và buôn bán với nhau. Sau đó, hình thức này được nhân rộng ra khắp thành phố Flanders của Hà Lan và các nước lân cận. Các sản phẩm trao đổi lúc đó là các món nợ của cá nhân, doanh nghiệp và cả Chính phủ."
+   }
+  ]
+ },
+ {
+  "src": "chi-so-set-la-gi",
+  "src_title": "Chỉ Số SET là gì? Ứng dụng chỉ số SET trong đầu tư chứng khoán",
+  "target": "chi-so-chung-khoan-la-gi",
+  "role": "hub",
+  "target_title": "Chỉ số chứng khoán là gì? Các chỉ số chứng khoán cần biết",
+  "clicks": "9",
+  "anchors": [
+   "chỉ số chứng khoán",
+   "chỉ số chứng khoán là gì",
+   "các chỉ số chứng khoán",
+   "chỉ số thị trường",
+   "chỉ số giá chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 5,
+    "h": "Chỉ số SET là gì?",
+    "n_sent": 2,
+    "t": "Bên cạnh chỉ số chung, thị trường Thái Lan còn có hai chỉ số con quan trọng là SET50 (50 cổ phiếu lớn nhất, thanh khoản cao nhất) và SET100. Các quỹ ETF quốc tế khi phân bổ vốn vào Thái Lan chủ yếu giải ngân dựa trên rổ SET50 này."
+   },
+   {
+    "i": 3,
+    "h": "Chỉ số SET là gì?",
+    "n_sent": 1,
+    "t": "Chỉ số SET là thước đo đại diện cho hiệu suất tổng thể của hơn 600 cổ phiếu niêm yết trên Sở Giao dịch Chứng khoán Thái Lan, được thành lập từ năm 1975."
+   },
+   {
+    "i": 4,
+    "h": "Chỉ số SET là gì?",
+    "n_sent": 3,
+    "t": "Tương tự như cách VN-Index đại diện cho sàn HOSE, chỉ số SET phản ánh sức khỏe của nền kinh tế Thái Lan. Điểm đặc trưng của SET là có tỷ trọng rất lớn ở 3 nhóm ngành: Năng lượng, Tài chính - Ngân hàng, và Du lịch - Dịch vụ. Đây là những ngành cực kỳ nhạy cảm với chu kỳ kinh tế toàn cầu."
+   }
+  ]
+ },
+ {
+  "src": "chi-so-shanghai-la-gi",
+  "src_title": "Chỉ số Shanghai là gì? Ý nghĩa, cách tính và lưu ý đầu tư",
+  "target": "chi-so-chung-khoan-la-gi",
+  "role": "hub",
+  "target_title": "Chỉ số chứng khoán là gì? Các chỉ số chứng khoán cần biết",
+  "clicks": "8",
+  "anchors": [
+   "chỉ số chứng khoán",
+   "chỉ số chứng khoán là gì",
+   "các chỉ số chứng khoán",
+   "chỉ số thị trường",
+   "chỉ số giá chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "Chỉ số Shanghai là gì?",
+    "n_sent": 2,
+    "t": "Chỉ số Shanghai là chỉ số tổng hợp theo trọng số vốn hóa thị trường, phản ánh hiệu suất giá của tất cả cổ phiếu niêm yết tại Sở Giao dịch Chứng khoán Thượng Hải. Cổ phiếu loại A chiếm phần lớn tỷ trọng trong chỉ số do số lượng và vốn hóa vượt trội so với cổ phiếu loại B."
+   },
+   {
+    "i": 3,
+    "h": "Chỉ số Shanghai là gì?",
+    "n_sent": 1,
+    "t": "Khác với CSI 300 chỉ theo dõi 300 cổ phiếu lớn nhất, SSE Composite bao phủ toàn bộ danh sách niêm yết — đây là điểm phân biệt quan trọng khi so sánh tín hiệu từ hai chỉ số này."
+   },
+   {
+    "i": 13,
+    "h": "Cách tính chỉ số Shanghai Composite",
+    "n_sent": 1,
+    "t": "Chỉ số SSE Composite được tính theo phương pháp Paasche — chỉ số giá tổng hợp theo trọng số vốn hóa thị trường."
+   }
+  ]
+ },
+ {
+  "src": "vn-30-la-gi-cach-tinh-y-nghia-va-luu-y-khi-su-dung",
+  "src_title": "Chỉ số VN30 là gì? Cách tính và ý nghĩa chi tiết",
+  "target": "cac-chi-so-chung-khoan-viet-nam-hieu-ro-ve-vn-index-vn-30-hnx-index-va-nhieu-chi-so-khac",
+  "role": "sub-hub",
+  "target_title": "Các chỉ số chứng khoán Việt Nam nhà đầu tư cần biết",
+  "clicks": "8",
+  "anchors": [
+   "các chỉ số chứng khoán Việt Nam",
+   "chỉ số chứng khoán Việt Nam",
+   "các chỉ số thị trường chứng khoán",
+   "VN-Index, VN30, HNX-Index",
+   "chỉ số trong nước"
+  ],
+  "paras": [
+   {
+    "i": 36,
+    "h": "Bảng so sánh chỉ số VN30, VN-Index và HNX30",
+    "n_sent": 1,
+    "t": "Để có cái nhìn tổng quan và phân biệt rõ ràng các chỉ số chính trên thị trường chứng khoán Việt Nam, nhà đầu tư có thể tham khảo bảng đối chiếu trực quan dưới đây."
+   },
+   {
+    "i": 29,
+    "h": "Ý nghĩa của chỉ số VN30 đối với thị trường chứng khoán",
+    "n_sent": 1,
+    "t": "Chỉ số VN30 giữ vị trí trung tâm trong hạ tầng phân tích tài chính tại Việt Nam, mang lại nhiều giá trị thiết thực cho cả nhà đầu tư cá nhân lẫn các định chế tài chính."
+   },
+   {
+    "i": 50,
+    "h": "3 ứng dụng thực chiến của chỉ số VN30 trong đầu tư",
+    "n_sent": 1,
+    "t": "Hiểu biết về chỉ số VN30 không dừng lại ở góc độ lý thuyết mà mang lại nhiều công cụ thực chiến hiệu quả cho nhà đầu tư cá nhân."
+   }
+  ]
+ },
+ {
+  "src": "thao-tung-thi-truong-chung-khoan-khai-niem-hinh-thuc-hau-qua-va-bien-phap-xu-ly",
+  "src_title": "Thao túng thị trường chứng khoán là gì? Dấu hiệu nhận biết",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "7",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 5,
+    "h": "Thao túng thị trường chứng khoán là gì?",
+    "n_sent": 3,
+    "t": "Hành vi làm giá làm sai lệch hoàn toàn tín hiệu thị trường. Người tham gia bị đánh lừa về giá trị thực tế của doanh nghiệp. Theo Luật Chứng khoán Việt Nam, hành vi này bị nghiêm cấm trên mọi sàn giao dịch."
+   },
+   {
+    "i": 4,
+    "h": "Thao túng thị trường chứng khoán là gì?",
+    "n_sent": 2,
+    "t": "Thao túng thị trường chứng khoán là hành vi cố ý can thiệp vào quy luật cung cầu. Hành vi này tạo ra giá cả hoặc thanh khoản giả tạo để trục lợi bất chính."
+   }
+  ]
+ },
+ {
+  "src": "thi-truong-phan-hoa-hieu-ro-nguyen-nhan-va-dac-diem",
+  "src_title": "Thị trường phân hóa là gì? dấu hiệu và chiến lược đầu tư",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "7",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 41,
+    "h": "Chiến lược đầu tư hiệu quả trong thị trường phân hóa",
+    "n_sent": 3,
+    "t": "Tập trung 60–70% danh mục vào 2–3 ngành dẫn dắt, không dàn trải. Trong thị trường phân hóa, đa dạng hóa quá mức (10+ mã từ nhiều ngành) thường dẫn đến hiệu suất bằng với thị trường chung, không khai thác được lợi thế chọn lựa. Tập trung vào 2–3 ngành đang có catalyst rõ ràng, mỗi ngành 2–3 mã đầu ngành."
+   },
+   {
+    "i": 2,
+    "h": "Thị trường chứng khoán phân hóa là gì?",
+    "n_sent": 2,
+    "t": "Thị trường chứng khoán phân hóa là trạng thái khi các cổ phiếu không cùng biến động theo một xu hướng đồng thuận — một phần nhóm tăng giá mạnh, một phần giảm, và phần còn lại đi ngang — ngay cả khi chỉ số tổng hợp như VN-Index vẫn tăng hoặc duy trì ổn định. Đây là trạng thái phổ biến nhất trên thị trường chứng khoán Việt Nam, đặc biệt trong các giai đoạn chuyển pha hoặc khi dòng tiền luân chuyển mạnh giữa các nhóm ngành."
+   },
+   {
+    "i": 42,
+    "h": "Chiến lược đầu tư hiệu quả trong thị trường phân hóa",
+    "n_sent": 2,
+    "t": "Đặt stop-loss theo nhóm ngành, không chỉ theo mã riêng lẻ. Khi nhóm ngành mà bạn đang nắm đầu bắt đầu yếu đi (A/D Ratio ngành dưới 0.6 liên tục 3 phiên), đây là tín hiệu dòng tiền đang luân chuyển ra — cần thu hẹp tỷ trọng nhóm đó ngay cả khi mã cụ thể chưa kích hoạt stop-loss cá nhân."
+   }
+  ]
+ },
+ {
+  "src": "thi-truong-phan-hoa-hieu-ro-nguyen-nhan-va-dac-diem",
+  "src_title": "Thị trường phân hóa là gì? dấu hiệu và chiến lược đầu tư",
+  "target": "thi-truong-tai-chinh-la-gi",
+  "role": "sub-hub",
+  "target_title": "Thị trường tài chính là gì? Cấu trúc, chức năng và vai trò",
+  "clicks": "7",
+  "anchors": [
+   "thị trường tài chính",
+   "thị trường tài chính là gì",
+   "cấu trúc thị trường tài chính",
+   "vai trò của thị trường tài chính",
+   "hệ thống tài chính",
+   "thị trường vốn và tiền tệ"
+  ],
+  "paras": [
+   {
+    "i": 47,
+    "h": "Thị trường phân hóa và vai trò của phân tích kỹ thuật",
+    "n_sent": 1,
+    "t": "Tại DSC, công cụ phân tích trên nền tảng DSC Trading cung cấp dữ liệu phân tích theo nhóm ngành theo thời gian thực, giúp nhà đầu tư theo dõi luân chuyển dòng tiền và xác định cơ hội trong thị trường phân hóa nhanh hơn."
+   },
+   {
+    "i": 45,
+    "h": "Thị trường phân hóa và vai trò của phân tích kỹ thuật",
+    "n_sent": 2,
+    "t": "Trong thị trường đồng thuận, phân tích kỹ thuật theo dõi VN-Index là đủ để đánh giá xu hướng chung. Trong thị trường phân hóa, nhà đầu tư cần phân tích kỹ thuật theo từng nhóm ngành thay vì chỉ nhìn chỉ số tổng hợp."
+   },
+   {
+    "i": 46,
+    "h": "Thị trường phân hóa và vai trò của phân tích kỹ thuật",
+    "n_sent": 1,
+    "t": "3 chỉ báo kỹ thuật quan trọng nhất trong môi trường phân hóa là: Relative Strength Index theo ngành (so sánh hiệu suất nhóm ngành với VN-Index), Breadth Oscillator (dao động độ rộng thị trường đo bằng A/D Ratio), và Volume by Sector (khối lượng giao dịch phân tích theo nhóm ngành để xác nhận dòng tiền)."
+   }
+  ]
+ },
+ {
+  "src": "thi-truong-von-la-gi-cach-tiep-can-cho-nha-dau-tu-ca-nhan",
+  "src_title": "Thị trường vốn là gì? Cách tiếp cận cho nhà đầu tư cá nhân",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "7",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 26,
+    "h": "Một số lưu ý khi đầu tư vào thị trường vốn",
+    "n_sent": 1,
+    "t": "Không nên đầu tư quá nhiều tiền: Nhà đầu tư cá nhân nên đầu tư một số tiền mà mình có thể chấp nhận mất."
+   },
+   {
+    "i": 24,
+    "h": "Một số lưu ý khi đầu tư vào thị trường vốn",
+    "n_sent": 1,
+    "t": "Không nên đầu tư theo đám đông: Nhà đầu tư cá nhân nên có suy nghĩ độc lập và không nên đầu tư theo đám đông."
+   },
+   {
+    "i": 25,
+    "h": "Một số lưu ý khi đầu tư vào thị trường vốn",
+    "n_sent": 1,
+    "t": "Không nên đầu tư vào các công ty mà mình không hiểu: Nhà đầu tư cá nhân nên tìm hiểu kỹ về các công ty trước khi đầu tư."
+   }
+  ]
+ },
+ {
+  "src": "chi-so-dow-jones-future-la-gi",
+  "src_title": "Chỉ số Dow Jones Future là gì? Tác động đến VN-Index",
+  "target": "cac-chi-so-chung-khoan-chau-a-noi-bat",
+  "role": "sub-hub",
+  "target_title": "Top 5 chỉ số chứng khoán Châu Á nổi bật cập nhật 2026",
+  "clicks": "6",
+  "anchors": [
+   "chỉ số chứng khoán châu Á",
+   "chứng khoán châu Á",
+   "các chỉ số chứng khoán châu Á",
+   "thị trường châu Á",
+   "chỉ số khu vực"
+  ],
+  "paras": [
+   {
+    "i": 45,
+    "h": "Tác động của Dow Jones Future đối với thị trường chứng khoán Việt Nam",
+    "n_sent": 2,
+    "t": "Thị trường chứng khoán Việt Nam chịu ảnh hưởng lớn từ tâm lý dòng tiền toàn cầu, đặc biệt là diễn biến các chỉ số tài chính Mỹ. Mối liên hệ giữa chỉ số down jones future và chỉ số VN-Index được thể hiện qua nhiều khía cạnh từ tâm lý giao dịch đến hành vi của khối ngoại."
+   },
+   {
+    "i": 46,
+    "h": "Tác động của Dow Jones Future đối với thị trường chứng khoán Việt Nam",
+    "n_sent": 1,
+    "t": "Thống kê lịch sử giao dịch giai đoạn 2024-2026 cho thấy khi chỉ số Dow Jones Future biến động hơn 1% trong phiên sáng châu Á, chỉ số VN-Index có xác suất 78% phản ứng cùng chiều ngay trong phiên ATO."
+   },
+   {
+    "i": 2,
+    "h": "Chỉ số Dow Jones Future là gì?",
+    "n_sent": 2,
+    "t": "Chỉ số down jones future (hay hợp đồng tương lai Dow Jones) là một loại chứng khoán phái sinh dựa trên tài sản cơ sở là chỉ số trung bình công nghiệp Dow Jones (DJIA). Việc giao dịch hợp đồng này cho phép nhà đầu tư đặt cược vào xu hướng tăng hoặc giảm giá trị của 30 cổ phiếu blue-chip hàng đầu thị trường Mỹ tại một thời điểm xác định trong tương lai."
+   }
+  ]
+ },
+ {
+  "src": "chi-so-nasdaq-chi-so-chung-khoan-cong-nghe-hang-dau-the-gioi",
+  "src_title": "Chỉ số Nasdaq là gì? Ý nghĩa, đặc điểm và vai trò",
+  "target": "cac-chi-so-chung-khoan-chau-a-noi-bat",
+  "role": "sub-hub",
+  "target_title": "Top 5 chỉ số chứng khoán Châu Á nổi bật cập nhật 2026",
+  "clicks": "6",
+  "anchors": [
+   "chỉ số chứng khoán châu Á",
+   "chứng khoán châu Á",
+   "các chỉ số chứng khoán châu Á",
+   "thị trường châu Á",
+   "chỉ số khu vực"
+  ],
+  "paras": [
+   {
+    "i": 9,
+    "h": "Vai trò của chỉ số Nasdaq",
+    "n_sent": 3,
+    "t": "Chỉ số Nasdaq đóng vai trò quan trọng trong thị trường chứng khoán thế giới. Đây là một chỉ số tham chiếu được các nhà đầu tư sử dụng để đánh giá hiệu quả hoạt động của các công ty công nghệ. Chỉ số Nasdaq cũng được sử dụng để đo lường sức mạnh của thị trường chứng khoán Mỹ nói chung."
+   },
+   {
+    "i": 1,
+    "h": "Chỉ số Nasdaq là gì?",
+    "n_sent": 2,
+    "t": "Chỉ số Nasdaq là một chỉ số chứng khoán tổng hợp được hình thành thông qua phép đo có trọng số về hiệu quả hoạt động của các cổ phiếu niêm yết trên sàn giao dịch Nasdaq. Đây là chỉ số chứng khoán công nghệ hàng đầu thế giới, bao gồm các công ty thuộc các lĩnh vực công nghệ, công nghiệp, tiêu dùng, v.v."
+   },
+   {
+    "i": 20,
+    "h": "Hiệu suất của chỉ số Nasdaq",
+    "n_sent": 1,
+    "t": "Trong năm 2023, chỉ số Nasdaq đã tăng 15%, đứng đầu trong số các chỉ số chứng khoán lớn trên thế giới."
+   }
+  ]
+ },
+ {
+  "src": "thanh-khoan-la-gi",
+  "src_title": "Thanh khoản là gì? Các sản phẩm đầu tư có tính thanh khoản cao",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "6",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 17,
+    "h": "Tính thanh khoản trong chứng khoán là gì?",
+    "n_sent": 2,
+    "t": "Một thực tế mà chắc hẳn bất kì nhà đầu tư nào cũng đã từng trải qua hoặc đã từng chứng kiến đó là khi chúng ta nắm trong tay rất nhiều chứng khoán nhưng không thể bán ra được, khi đó hoặc là giữ và chịu thua lỗ từng ngày hoặc là bắt buộc phải bán với một mức giá rất thấp và không thể thu hồi vốn. Rủi ro này có thể coi là một trong những rủi ro mang tính trọng yếu mà mỗi nhà đầu tư cần đề phòng và để làm được điều đó, phân tích tính thanh khoản là không thể thiếu."
+   },
+   {
+    "i": 27,
+    "h": "Tính thanh khoản có ý nghĩa như thế nào trong đầu tư?",
+    "n_sent": 2,
+    "t": "Tính thanh khoản không chỉ là một khái niệm lý thuyết mà còn có tác động thực tiễn sâu rộng đến các quyết định tài chính của nhiều chủ thể khác nhau trong nền kinh tế. Dưới đây là ý nghĩa cụ thể của tính thanh khoản đối với từng nhóm đối tượng."
+   },
+   {
+    "i": 15,
+    "h": "Tính thanh khoản trong chứng khoán là gì?",
+    "n_sent": 1,
+    "t": "Chứng khoán có thanh khoản hay không phụ thuộc vào khả năng chuyển đổi từ tiền mặt thành chứng khoán và ngược lại, từ chứng khoán thành tiền mặt. Một chứng khoán có sẵn trong thị trường và có thể dễ dàng mua bán với giá cả ổn định theo thời gian được coi là có thanh khoản,"
+   }
+  ]
+ },
+ {
+  "src": "thanh-khoan-la-gi",
+  "src_title": "Thanh khoản là gì? Các sản phẩm đầu tư có tính thanh khoản cao",
+  "target": "cac-thuat-ngu-trong-chung-khoan",
+  "role": "sub-hub",
+  "target_title": "Các thuật ngữ trong chứng khoán: cẩm nang A-Z cho F0",
+  "clicks": "6",
+  "anchors": [
+   "thuật ngữ chứng khoán",
+   "các thuật ngữ trong chứng khoán",
+   "thuật ngữ trong chứng khoán",
+   "thuật ngữ đầu tư",
+   "từ ngữ chuyên ngành"
+  ],
+  "paras": [
+   {
+    "i": 15,
+    "h": "Tính thanh khoản trong chứng khoán là gì?",
+    "n_sent": 1,
+    "t": "Chứng khoán có thanh khoản hay không phụ thuộc vào khả năng chuyển đổi từ tiền mặt thành chứng khoán và ngược lại, từ chứng khoán thành tiền mặt. Một chứng khoán có sẵn trong thị trường và có thể dễ dàng mua bán với giá cả ổn định theo thời gian được coi là có thanh khoản,"
+   },
+   {
+    "i": 17,
+    "h": "Tính thanh khoản trong chứng khoán là gì?",
+    "n_sent": 2,
+    "t": "Một thực tế mà chắc hẳn bất kì nhà đầu tư nào cũng đã từng trải qua hoặc đã từng chứng kiến đó là khi chúng ta nắm trong tay rất nhiều chứng khoán nhưng không thể bán ra được, khi đó hoặc là giữ và chịu thua lỗ từng ngày hoặc là bắt buộc phải bán với một mức giá rất thấp và không thể thu hồi vốn. Rủi ro này có thể coi là một trong những rủi ro mang tính trọng yếu mà mỗi nhà đầu tư cần đề phòng và để làm được điều đó, phân tích tính thanh khoản là không thể thiếu."
+   },
+   {
+    "i": 31,
+    "h": "Đối với ngân hàng, chủ nợ và nhà đầu tư",
+    "n_sent": 3,
+    "t": "Tính thanh khoản là thước đo quan trọng để ngân hàng, chủ nợ và nhà đầu tư đánh giá rủi ro trước khi quyết định cho vay hoặc rót vốn. Doanh nghiệp có thanh khoản tốt sẽ dễ dàng tiếp cận nguồn vốn hơn. Ngược lại, khi doanh nghiệp mất khả năng thanh toán, ngân hàng có thể yêu cầu thanh lý tài sản hoặc hỗ trợ vay thế chấp để duy trì hoạt động và thực hiện nghĩa vụ trả nợ."
+   }
+  ]
+ },
+ {
+  "src": "chi-so-dow-jones-la-gi-y-nghia-cua-chi-so-dow-jones",
+  "src_title": "Chỉ số Dow Jones là gì? Tầm quan trọng chỉ số DJIA",
+  "target": "chi-so-chung-khoan-la-gi",
+  "role": "hub",
+  "target_title": "Chỉ số chứng khoán là gì? Các chỉ số chứng khoán cần biết",
+  "clicks": "4",
+  "anchors": [
+   "chỉ số chứng khoán",
+   "chỉ số chứng khoán là gì",
+   "các chỉ số chứng khoán",
+   "chỉ số thị trường",
+   "chỉ số giá chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 43,
+    "h": "Tầm quan trọng của chỉ số Dow Jones và tác động tới thị trường Việt Nam",
+    "n_sent": 1,
+    "t": "Dưới đây là ba kênh truyền dẫn trực tiếp giúp Dow Jones tác động sâu sắc tới thị trường chứng khoán Việt Nam."
+   },
+   {
+    "i": 42,
+    "h": "Tầm quan trọng của chỉ số Dow Jones và tác động tới thị trường Việt Nam",
+    "n_sent": 2,
+    "t": "Biến động của chỉ số Dow Jones có sức lan tỏa vĩ mô cực kỳ mạnh mẽ. Đối với giới đầu tư Việt Nam, chỉ số này giống như chiếc la bàn dẫn đường cho dòng vốn liên thị trường."
+   },
+   {
+    "i": 5,
+    "h": "Chỉ số Dow Jones là gì?",
+    "n_sent": 2,
+    "t": "Chỉ số Dow Jones được Charles Dow và Edward Jones sáng lập vào năm 1896. Tên đầy đủ của chỉ số này là Dow Jones Industrial Average (DJIA)."
+   }
+  ]
+ },
+ {
+  "src": "chi-so-dow-jones-la-gi-y-nghia-cua-chi-so-dow-jones",
+  "src_title": "Chỉ số Dow Jones là gì? Tầm quan trọng chỉ số DJIA",
+  "target": "cac-chi-so-chung-khoan-chau-a-noi-bat",
+  "role": "sub-hub",
+  "target_title": "Top 5 chỉ số chứng khoán Châu Á nổi bật cập nhật 2026",
+  "clicks": "4",
+  "anchors": [
+   "chỉ số chứng khoán châu Á",
+   "chứng khoán châu Á",
+   "các chỉ số chứng khoán châu Á",
+   "thị trường châu Á",
+   "chỉ số khu vực"
+  ],
+  "paras": [
+   {
+    "i": 43,
+    "h": "Tầm quan trọng của chỉ số Dow Jones và tác động tới thị trường Việt Nam",
+    "n_sent": 1,
+    "t": "Dưới đây là ba kênh truyền dẫn trực tiếp giúp Dow Jones tác động sâu sắc tới thị trường chứng khoán Việt Nam."
+   },
+   {
+    "i": 42,
+    "h": "Tầm quan trọng của chỉ số Dow Jones và tác động tới thị trường Việt Nam",
+    "n_sent": 2,
+    "t": "Biến động của chỉ số Dow Jones có sức lan tỏa vĩ mô cực kỳ mạnh mẽ. Đối với giới đầu tư Việt Nam, chỉ số này giống như chiếc la bàn dẫn đường cho dòng vốn liên thị trường."
+   },
+   {
+    "i": 31,
+    "h": "Phân loại chỉ số Dow Jones",
+    "n_sent": 1,
+    "t": "Để nhà đầu tư dễ dàng phân biệt, dưới đây là bảng so sánh ba chỉ số lớn nhất của thị trường tài chính Mỹ."
+   }
+  ]
+ },
+ {
+  "src": "vn-diamond-la-gi",
+  "src_title": "VN Diamond là gì? Khám phá rổ cổ phiếu kim cương và ETF",
+  "target": "chi-so-chung-khoan-la-gi",
+  "role": "hub",
+  "target_title": "Chỉ số chứng khoán là gì? Các chỉ số chứng khoán cần biết",
+  "clicks": "4",
+  "anchors": [
+   "chỉ số chứng khoán",
+   "chỉ số chứng khoán là gì",
+   "các chỉ số chứng khoán",
+   "chỉ số thị trường",
+   "chỉ số giá chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 7,
+    "h": "Bản chất chỉ số VN Diamond là gì?",
+    "n_sent": 1,
+    "t": "Các định chế nước ngoài có thể mua chứng chỉ quỹ ETF thay vì gom cổ phiếu riêng lẻ trên thị trường tự do."
+   },
+   {
+    "i": 48,
+    "h": "So sánh chỉ số VN Diamond và chỉ số VN30",
+    "n_sent": 3,
+    "t": "Cả VN Diamond và VN30 đều là những bộ chỉ số uy tín hàng đầu thị trường. Tuy nhiên, mục tiêu thiết kế của hai rổ chỉ số này có sự khác biệt rõ nét. Nắm vững điều này giúp bạn phân bổ nguồn vốn phù hợp với khẩu vị cá nhân."
+   },
+   {
+    "i": 2,
+    "h": "Bản chất chỉ số VN Diamond là gì?",
+    "n_sent": 3,
+    "t": "Chỉ số VN Diamond (Vietnam Diamond Index) là bộ chỉ số cổ phiếu kim cương của sàn HOSE, được vận hành chính thức từ tháng 11/2019. Thước đo này phản ánh biến động giá của nhóm cổ phiếu đầu ngành có nền tảng tài chính vượt trội. Toàn bộ các mã thành phần đều có tỷ lệ sở hữu nước ngoài đạt từ 95% trở lên."
+   }
+  ]
+ },
+ {
+  "src": "vn-diamond-la-gi",
+  "src_title": "VN Diamond là gì? Khám phá rổ cổ phiếu kim cương và ETF",
+  "target": "cac-chi-so-chung-khoan-viet-nam-hieu-ro-ve-vn-index-vn-30-hnx-index-va-nhieu-chi-so-khac",
+  "role": "sub-hub",
+  "target_title": "Các chỉ số chứng khoán Việt Nam nhà đầu tư cần biết",
+  "clicks": "4",
+  "anchors": [
+   "các chỉ số chứng khoán Việt Nam",
+   "chỉ số chứng khoán Việt Nam",
+   "các chỉ số thị trường chứng khoán",
+   "VN-Index, VN30, HNX-Index",
+   "chỉ số trong nước"
+  ],
+  "paras": [
+   {
+    "i": 48,
+    "h": "So sánh chỉ số VN Diamond và chỉ số VN30",
+    "n_sent": 3,
+    "t": "Cả VN Diamond và VN30 đều là những bộ chỉ số uy tín hàng đầu thị trường. Tuy nhiên, mục tiêu thiết kế của hai rổ chỉ số này có sự khác biệt rõ nét. Nắm vững điều này giúp bạn phân bổ nguồn vốn phù hợp với khẩu vị cá nhân."
+   },
+   {
+    "i": 7,
+    "h": "Bản chất chỉ số VN Diamond là gì?",
+    "n_sent": 1,
+    "t": "Các định chế nước ngoài có thể mua chứng chỉ quỹ ETF thay vì gom cổ phiếu riêng lẻ trên thị trường tự do."
+   },
+   {
+    "i": 11,
+    "h": "Chỉ số VN Diamond khác gì quỹ ETF DCVFMVN Diamond?",
+    "n_sent": 3,
+    "t": "Nhiều nhà đầu tư mới thường nhầm lẫn giữa hai khái niệm này. Chỉ số VN Diamond là thước đo thống kê do sàn HOSE quản lý và tính toán. Trong khi đó, quỹ ETF DCVFMVN Diamond là sản phẩm tài chính đại chúng mô phỏng chỉ số đó."
+   }
+  ]
+ },
+ {
+  "src": "gio-giao-dich-chung-khoan-quoc-te",
+  "src_title": "Giờ giao dịch chứng khoán quốc tế chuẩn giờ Việt Nam 2026",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "3",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 50,
+    "h": "Thị trường chứng khoán quốc tế tác động thế nào đến VN-Index?",
+    "n_sent": 2,
+    "t": "Nhiều nhà đầu tư Việt Nam thường thức đêm xem chỉ số Dow Jones hay Nasdaq biến động. Họ băn khoăn liệu kết quả đó có làm đảo lộn phiên giao dịch sáng hôm sau trên sàn HOSE hay không."
+   },
+   {
+    "i": 51,
+    "h": "Thị trường chứng khoán quốc tế tác động thế nào đến VN-Index?",
+    "n_sent": 3,
+    "t": "Biến động mạnh trên 1,5% của chỉ số Dow Jones rạng sáng thường tạo quán tính tâm lý lên phiên ATO (09:00 - 09:15) trên sàn HOSE. Tuy nhiên, xác suất duy trì cùng chiều đến phiên đóng cửa ATC chỉ đạt dưới 60%. Tâm lý mở phiên thường chỉ kéo dài trong 30 đến 45 phút đầu ngày."
+   },
+   {
+    "i": 56,
+    "h": "Thị trường chứng khoán quốc tế tác động thế nào đến VN-Index?",
+    "n_sent": 3,
+    "t": "Dòng vốn nội tại chịu tác động bởi tăng trưởng tín dụng và thanh khoản hệ thống ngân hàng. Do đó, bạn chỉ nên xem chỉ số Mỹ làm kênh tham chiếu tâm lý, tránh hành động bán tháo hoảng loạn. Kỷ luật là chìa khóa thành công."
+   }
+  ]
+ },
+ {
+  "src": "gio-giao-dich-chung-khoan-quoc-te",
+  "src_title": "Giờ giao dịch chứng khoán quốc tế chuẩn giờ Việt Nam 2026",
+  "target": "lenh-ato-atc-lo-mp-la-gi",
+  "role": "hub",
+  "target_title": "Lệnh ATO, ATC, LO, MP là gì? Giải thích chi tiết cho F0",
+  "clicks": "3",
+  "anchors": [
+   "lệnh ATO, ATC, LO, MP",
+   "lệnh ATO",
+   "lệnh ATC",
+   "lệnh LO",
+   "lệnh MP",
+   "các loại lệnh"
+  ],
+  "paras": [
+   {
+    "i": 21,
+    "h": "Khung giờ giao dịch chứng khoán Mỹ (NYSE và NASDAQ)",
+    "n_sent": 2,
+    "t": "Thị trường chứng khoán Mỹ tập trung dòng vốn khổng lồ từ khắp hành tinh. Hai sàn chủ lực gồm sàn giao dịch chứng khoán New York (NYSE) và sàn công nghệ NASDAQ."
+   },
+   {
+    "i": 23,
+    "h": "Khung giờ giao dịch chứng khoán Mỹ (NYSE và NASDAQ)",
+    "n_sent": 3,
+    "t": "Quy ước giờ tiết kiệm ánh sáng ban ngày tại Mỹ làm dịch chuyển giờ giao dịch thêm 60 phút. Quy chuẩn này áp dụng từ tuần thứ hai tháng 3 đến tuần đầu tiên tháng 11 hàng năm. Sự điều chỉnh này ảnh hưởng trực tiếp đến giờ theo dõi bảng điện của nhà đầu tư Việt Nam."
+   },
+   {
+    "i": 29,
+    "h": "Phiên giao dịch chính thức (Regular trading hours)",
+    "n_sent": 3,
+    "t": "Khoảng 85% tổng giá trị giao dịch trong ngày được khớp lệnh trong phiên chính thức. Đây là thời điểm các quỹ đầu tư lớn, ngân hàng và tổ chức tài chính thực hiện lệnh. Biến động giá diễn ra nhanh và thanh khoản đạt đỉnh điểm."
+   }
+  ]
+ },
+ {
+  "src": "phan-tich-chung-khoan-la-gi",
+  "src_title": "Phân tích chứng khoán là gì? Tại sao phải phân tích chứng khoán khi đầu tư?",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "3",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 46,
+    "h": "Phương pháp phân tích nào phổ biến tại thị trường chứng khoán Việt Nam?",
+    "n_sent": 3,
+    "t": "Mặc dù đây chỉ là một vài ví dụ, nhưng rõ ràng là thông tin mới có thể thay đổi giá của chứng khoán theo những cách không hề ngẫu nhiên. Tóm lại, phân tích chứng khoán là hoạt động không thể bỏ qua trước khi quyết định đầu tư chứng khoán. Nhà đầu tư nên chuẩn bị kiến thức phù hợp với khẩu vị đầu tư của mình hoặc sử dụng dịch vụ tư vấn, phân tích chứng khoán trên thị trường bởi các công ty chứng khoán uy tín."
+   },
+   {
+    "i": 14,
+    "h": "Tại sao nhà đầu tư cần phân tích chứng khoán?",
+    "n_sent": 5,
+    "t": "Vậy chúng ta nên tin ai? Phân tích cơ bản có xứng đáng với thời gian và nỗ lực bỏ ra không? Nhà phân tích kỹ thuật có phải là thầy bói? Hay tất cả chỉ là một bài học về sự vô ích của lý thuyết bước đi ngẫu nhiên? Cách tiếp cận thị trường nào cũng trở nên hiệu quả nếu như chúng ta kiên trì dành thời gian tìm hiểu và áp dụng, trải nghiệm phương pháp đó một cách thành thục."
+   },
+   {
+    "i": 1,
+    "h": "Phân tích chứng khoán là gì?",
+    "n_sent": 2,
+    "t": "Phân tích chứng khoán là hoạt động phân tích thị trường nhằm hỗ trợ việc ra quyết định của nhà đầu tư chứng khoán. Có 2 phương pháp phổ biến trên thị trường đầu tư Việt Nam là Phân tích cơ bản và Phân tích kỹ thuật."
+   }
+  ]
+ },
+ {
+  "src": "bay-thanh-khoan-trong-dau-tu-chung-khoan-la-gi",
+  "src_title": "Bẫy thanh khoản là gì? Nguyên nhân và cách phòng tránh",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "3",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 12,
+    "h": "Chi phí cơ hội trong đầu tư chứng khoán tăng cao",
+    "n_sent": 1,
+    "t": "Trong bối cảnh thị trường kém hấp dẫn, lợi nhuận kỳ vọng từ cổ phiếu thấp, chi phí cơ hội của việc đầu tư chứng khoán trở nên không còn hấp dẫn so với việc giữ tiền mặt, khiến dòng tiền không quay lại thị trường."
+   },
+   {
+    "i": 10,
+    "h": "Lãi suất danh nghĩa giảm về mức rất thấp",
+    "n_sent": 2,
+    "t": "Khi lãi suất danh nghĩa tiến gần về 0, người dân và nhà đầu tư có xu hướng nắm giữ tiền mặt hoặc tài sản có tính thanh khoản cao, thay vì đầu tư vào các kênh sinh lời như chứng khoán. Điều này phản ánh tâm lý phòng thủ và thiếu niềm tin vào triển vọng kinh tế."
+   },
+   {
+    "i": 16,
+    "h": "Xuất hiện dấu hiệu giảm phát",
+    "n_sent": 2,
+    "t": "Khi người dân thắt chặt chi tiêu, tổng cầu trong nền kinh tế suy giảm, giá cả hàng hóa có xu hướng đi xuống. Đây là dấu hiệu rõ ràng cho thấy nền kinh tế có thể đang rơi vào bẫy thanh khoản và suy thoái kéo dài."
+   }
+  ]
+ },
+ {
+  "src": "bay-thanh-khoan-trong-dau-tu-chung-khoan-la-gi",
+  "src_title": "Bẫy thanh khoản là gì? Nguyên nhân và cách phòng tránh",
+  "target": "cac-thuat-ngu-trong-chung-khoan",
+  "role": "sub-hub",
+  "target_title": "Các thuật ngữ trong chứng khoán: cẩm nang A-Z cho F0",
+  "clicks": "3",
+  "anchors": [
+   "thuật ngữ chứng khoán",
+   "các thuật ngữ trong chứng khoán",
+   "thuật ngữ trong chứng khoán",
+   "thuật ngữ đầu tư",
+   "từ ngữ chuyên ngành"
+  ],
+  "paras": [
+   {
+    "i": 12,
+    "h": "Chi phí cơ hội trong đầu tư chứng khoán tăng cao",
+    "n_sent": 1,
+    "t": "Trong bối cảnh thị trường kém hấp dẫn, lợi nhuận kỳ vọng từ cổ phiếu thấp, chi phí cơ hội của việc đầu tư chứng khoán trở nên không còn hấp dẫn so với việc giữ tiền mặt, khiến dòng tiền không quay lại thị trường."
+   },
+   {
+    "i": 23,
+    "h": "Tâm lý ưu tiên tiết kiệm thay vì đầu tư",
+    "n_sent": 2,
+    "t": "Trong bối cảnh kinh tế suy thoái, người dân và doanh nghiệp có xu hướng tiết kiệm nhiều hơn chi tiêu và đầu tư. Cùng lúc đó, các ngân hàng thương mại thận trọng trong cho vay do lo ngại rủi ro tín dụng, khiến vốn không được luân chuyển vào hoạt động sản xuất – kinh doanh."
+   },
+   {
+    "i": 4,
+    "h": "Bẫy thanh khoản là gì?",
+    "n_sent": 2,
+    "t": "Bẫy thanh khoản (Liquidity Trap) là tình trạng lãi suất giảm xuống mức rất thấp, khiến người dân và nhà đầu tư ưu tiên nắm giữ tiền mặt hoặc tài sản có tính thanh khoản cao nhưng lợi suất thấp, thay vì đầu tư vào cổ phiếu hay trái phiếu. Trong bối cảnh này, dù Ngân hàng Nhà nước thực hiện các biện pháp nới lỏng tiền tệ, dòng tiền vẫn không chảy mạnh vào nền kinh tế, làm hiệu quả kích thích tăng trưởng bị hạn chế và gia tăng nguy cơ suy giảm kinh tế."
+   }
+  ]
+ },
+ {
+  "src": "ce-trong-chung-khoan-la-gi",
+  "src_title": "CE trong chứng khoán là gì? Cách tính và ý nghĩa",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "3",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 32,
+    "h": "Ví dụ minh họa cụ thể về cách tính giá CE",
+    "n_sent": 2,
+    "t": "Như vậy, trong phiên giao dịch hôm nay, mức giá cao nhất bạn có thể đặt lệnh mua cho mã DSC là 21.400 đồng. Nếu bạn đặt lệnh với giá 21.500 đồng, hệ thống sẽ báo lỗi lệnh không hợp lệ."
+   },
+   {
+    "i": 26,
+    "h": "Cách tính CE chính xác",
+    "n_sent": 1,
+    "t": "Riêng đối với các cổ phiếu mới niêm yết trong ngày giao dịch đầu tiên hoặc cổ phiếu sau khi bị tạm ngừng giao dịch trên 25 ngày, biên độ dao động có thể nới rộng lên tới 20% hoặc 40% tùy sàn."
+   },
+   {
+    "i": 6,
+    "h": "Định nghĩa CE là gì?",
+    "n_sent": 2,
+    "t": "Nhà đầu tư không thể đặt lệnh mua hoặc bán với mức giá cao hơn mức giá CE này. Trên bảng điện tử của các công ty chứng khoán, mức giá trần luôn được hiển thị bằng màu tím để phân biệt với giá sàn (màu xanh lơ) hay giá tham chiếu (màu vàng)."
+   }
+  ]
+ },
+ {
+  "src": "ce-trong-chung-khoan-la-gi",
+  "src_title": "CE trong chứng khoán là gì? Cách tính và ý nghĩa",
+  "target": "cac-thuat-ngu-trong-chung-khoan",
+  "role": "sub-hub",
+  "target_title": "Các thuật ngữ trong chứng khoán: cẩm nang A-Z cho F0",
+  "clicks": "3",
+  "anchors": [
+   "thuật ngữ chứng khoán",
+   "các thuật ngữ trong chứng khoán",
+   "thuật ngữ trong chứng khoán",
+   "thuật ngữ đầu tư",
+   "từ ngữ chuyên ngành"
+  ],
+  "paras": [
+   {
+    "i": 6,
+    "h": "Định nghĩa CE là gì?",
+    "n_sent": 2,
+    "t": "Nhà đầu tư không thể đặt lệnh mua hoặc bán với mức giá cao hơn mức giá CE này. Trên bảng điện tử của các công ty chứng khoán, mức giá trần luôn được hiển thị bằng màu tím để phân biệt với giá sàn (màu xanh lơ) hay giá tham chiếu (màu vàng)."
+   },
+   {
+    "i": 5,
+    "h": "Định nghĩa CE là gì?",
+    "n_sent": 2,
+    "t": "CE là viết tắt của từ Ceiling trong tiếng Anh, có nghĩa là mức giá trần. Trong thị trường chứng khoán, CE đại diện cho mức giá cao nhất mà một mã cổ phiếu có thể đạt được trong phạm vi một phiên giao dịch cụ thể."
+   },
+   {
+    "i": 17,
+    "h": "Cách tính CE chính xác",
+    "n_sent": 1,
+    "t": "Giá trần không cố định mà thay đổi theo từng phiên dựa trên giá tham chiếu của phiên giao dịch trước đó và biên độ dao động do Sở Giao dịch Chứng khoán quy định."
+   }
+  ]
+ },
+ {
+  "src": "giao-dich-noi-gian-tren-thi-truong-chung-khoan-la-gi",
+  "src_title": "Giao dịch nội gián là gì trên thị trường chứng khoán?",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "3",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "Giao dịch nội gián là gì?",
+    "n_sent": 2,
+    "t": "Giao dịch nội gián là hành vi mua hoặc bán chứng khoán bằng cách sử dụng các thông tin quan trọng chưa được công khai ra thị trường. Những thông tin này thường thuộc sở hữu của các cá nhân có vị trí đặc biệt trong doanh nghiệp như ban lãnh đạo, cổ đông lớn hoặc những người có liên quan trực tiếp đến các dự án mật của công ty."
+   },
+   {
+    "i": 3,
+    "h": "Giao dịch nội gián là gì?",
+    "n_sent": 2,
+    "t": "Mục đích chính của hành vi này là thu lợi bất chính cho bản thân hoặc cho người khác dựa trên sự chênh lệch giá chứng khoán trước và sau khi thông tin được công bố chính thức. Đây là hành vi bị nghiêm cấm nhằm đảm bảo tính công bằng và minh bạch cho mọi thành viên tham gia thị trường."
+   },
+   {
+    "i": 8,
+    "h": "Thông tin nội bộ là gì?",
+    "n_sent": 2,
+    "t": "Thông tin nội bộ đóng vai trò là chìa khóa của các vụ giao dịch nội gián. Đây là những dữ liệu có khả năng tác động mạnh mẽ đến tâm lý nhà đầu tư và giá trị cổ phiếu nhưng chưa được doanh nghiệp công bố theo đúng quy trình."
+   }
+  ]
+ },
+ {
+  "src": "chi-so-hnx-index-la-gi",
+  "src_title": "Chỉ số HNX Index là gì? Ý nghĩa của chỉ số HNX Index",
+  "target": "chi-so-chung-khoan-la-gi",
+  "role": "hub",
+  "target_title": "Chỉ số chứng khoán là gì? Các chỉ số chứng khoán cần biết",
+  "clicks": "2",
+  "anchors": [
+   "chỉ số chứng khoán",
+   "chỉ số chứng khoán là gì",
+   "các chỉ số chứng khoán",
+   "chỉ số thị trường",
+   "chỉ số giá chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 14,
+    "h": "Nhận biết được xu hướng chung của thị trường",
+    "n_sent": 2,
+    "t": "Chỉ số HNX Index tăng lên cho thấy thị trường đang đi lên, nhà đầu tư có thể cân nhắc mua thêm cổ phiếu. Ngược lại, chỉ số HNX Index giảm xuống cho thấy thị trường đang đi xuống, nhà đầu tư có thể cân nhắc bán bớt cổ phiếu."
+   },
+   {
+    "i": 9,
+    "h": "Chỉ số HNX Index là gì?",
+    "n_sent": 2,
+    "t": "Chỉ số HNX Index được tính toán dựa trên giá trị vốn hóa thị trường của tất cả cổ phiếu niêm yết và giao dịch tại HNX. Giá trị vốn hóa thị trường của một cổ phiếu được tính bằng giá trị thị trường của cổ phiếu đó nhân với số lượng cổ phiếu đang lưu hành."
+   },
+   {
+    "i": 27,
+    "h": "Hướng dẫn cách theo dõi chỉ số HNX Index",
+    "n_sent": 3,
+    "t": "Chỉ số HNX Index được cập nhật liên tục trên website của Sở Giao dịch Chứng khoán Hà Nội (HNX). Nhà đầu tư có thể truy cập website của HNX để theo dõi chỉ số này. Ngoài ra, nhà đầu tư cũng có thể theo dõi chỉ số HNX Index trên các trang web tin tức tài chính và các ứng dụng đầu tư chứng khoán."
+   }
+  ]
+ },
+ {
+  "src": "chi-so-s-p-500-la-gi",
+  "src_title": "Chỉ Số S&P 500 là gì? Ứng dụng đầu tư chứng khoán Việt Nam",
+  "target": "chi-so-chung-khoan-la-gi",
+  "role": "hub",
+  "target_title": "Chỉ số chứng khoán là gì? Các chỉ số chứng khoán cần biết",
+  "clicks": "1",
+  "anchors": [
+   "chỉ số chứng khoán",
+   "chỉ số chứng khoán là gì",
+   "các chỉ số chứng khoán",
+   "chỉ số thị trường",
+   "chỉ số giá chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 3,
+    "h": "Chỉ số S&P 500 là gì?",
+    "n_sent": 1,
+    "t": "Chỉ số S&P 500 (viết tắt của Standard & Poor's 500) là một chỉ số chứng khoán thế giới đo lường hiệu suất của 500 công ty có giá trị vốn hóa thị trường lớn nhất được niêm yết trên hai sàn giao dịch hàng đầu nước Mỹ là NYSE và NASDAQ."
+   },
+   {
+    "i": 42,
+    "h": "Áp dụng tư duy đầu tư chỉ số (ETF) tại thị trường Việt Nam",
+    "n_sent": 3,
+    "t": "Một trong những bài học thành công lớn nhất từ S&P 500 là chiến lược tích sản dài hạn thông qua quỹ chỉ số (ETF) với chi phí quản lý thấp. Nếu bạn yêu thích triết lý đầu tư an toàn, đa dạng hóa này nhưng muốn đầu tư hợp pháp tại Việt Nam, bạn hoàn toàn có thể mua các chứng chỉ quỹ ETF mô phỏng chỉ số VN30 hoặc VN Diamond. Chiến lược này giúp bạn sở hữu gián tiếp các doanh nghiệp hàng đầu Việt Nam mà không cần tốn nhiều thời gian lọc từng cổ phiếu riêng lẻ."
+   },
+   {
+    "i": 4,
+    "h": "Chỉ số S&P 500 là gì?",
+    "n_sent": 2,
+    "t": "Được xem là thước đo chuẩn xác nhất cho sức khỏe của nền kinh tế Mỹ, S&P 500 bao phủ khoảng 80% tổng vốn hóa thị trường chứng khoán Hoa Kỳ. Do đó, bất kỳ biến động nào của S&P 500 cũng phản ánh rõ nét kỳ vọng vĩ mô của giới tài chính toàn cầu."
+   }
+  ]
+ },
+ {
+  "src": "chi-so-s-p-500-la-gi",
+  "src_title": "Chỉ Số S&P 500 là gì? Ứng dụng đầu tư chứng khoán Việt Nam",
+  "target": "cac-chi-so-chung-khoan-chau-a-noi-bat",
+  "role": "sub-hub",
+  "target_title": "Top 5 chỉ số chứng khoán Châu Á nổi bật cập nhật 2026",
+  "clicks": "1",
+  "anchors": [
+   "chỉ số chứng khoán châu Á",
+   "chứng khoán châu Á",
+   "các chỉ số chứng khoán châu Á",
+   "thị trường châu Á",
+   "chỉ số khu vực"
+  ],
+  "paras": [
+   {
+    "i": 42,
+    "h": "Áp dụng tư duy đầu tư chỉ số (ETF) tại thị trường Việt Nam",
+    "n_sent": 3,
+    "t": "Một trong những bài học thành công lớn nhất từ S&P 500 là chiến lược tích sản dài hạn thông qua quỹ chỉ số (ETF) với chi phí quản lý thấp. Nếu bạn yêu thích triết lý đầu tư an toàn, đa dạng hóa này nhưng muốn đầu tư hợp pháp tại Việt Nam, bạn hoàn toàn có thể mua các chứng chỉ quỹ ETF mô phỏng chỉ số VN30 hoặc VN Diamond. Chiến lược này giúp bạn sở hữu gián tiếp các doanh nghiệp hàng đầu Việt Nam mà không cần tốn nhiều thời gian lọc từng cổ phiếu riêng lẻ."
+   },
+   {
+    "i": 3,
+    "h": "Chỉ số S&P 500 là gì?",
+    "n_sent": 1,
+    "t": "Chỉ số S&P 500 (viết tắt của Standard & Poor's 500) là một chỉ số chứng khoán thế giới đo lường hiệu suất của 500 công ty có giá trị vốn hóa thị trường lớn nhất được niêm yết trên hai sàn giao dịch hàng đầu nước Mỹ là NYSE và NASDAQ."
+   },
+   {
+    "i": 4,
+    "h": "Chỉ số S&P 500 là gì?",
+    "n_sent": 2,
+    "t": "Được xem là thước đo chuẩn xác nhất cho sức khỏe của nền kinh tế Mỹ, S&P 500 bao phủ khoảng 80% tổng vốn hóa thị trường chứng khoán Hoa Kỳ. Do đó, bất kỳ biến động nào của S&P 500 cũng phản ánh rõ nét kỳ vọng vĩ mô của giới tài chính toàn cầu."
+   }
+  ]
+ },
+ {
+  "src": "doi-tu-doanh-tren-thi-truong-chung-khoan-la-gi",
+  "src_title": "Tự doanh chứng khoán là gì? Đặc điểm, quy định tự doanh",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "1",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 42,
+    "h": "Phân biệt Môi giới chứng khoán và Tự doanh chứng khoán",
+    "n_sent": 1,
+    "t": "Dù cùng là hai nghiệp vụ cốt lõi trong hoạt động của một công ty chứng khoán và đều hướng tới mục tiêu tối ưu hóa dòng vốn, nhưng Môi giới chứng khoán và Tự doanh lại có bản chất vận hành hoàn toàn khác biệt."
+   },
+   {
+    "i": 3,
+    "h": "Tự doanh chứng khoán là gì?",
+    "n_sent": 2,
+    "t": "Tự doanh chứng khoán (Proprietary Trading) là hoạt động một công ty chứng khoán sử dụng nguồn vốn tự có của chính mình để thực hiện các giao dịch mua, bán chứng khoán. Thay vì đóng vai trò trung gian thu phí môi giới từ khách hàng, lúc này công ty chứng khoán trở thành một \"người chơi\" trực tiếp trên thị trường nhằm tìm kiếm lợi nhuận cho chính doanh nghiệp."
+   },
+   {
+    "i": 18,
+    "h": "Danh mục đầu tư đa dạng",
+    "n_sent": 2,
+    "t": "Với nguồn vốn lớn, các công ty chứng khoán có khả năng xây dựng danh mục tự doanh đa dạng, bao gồm nhiều loại tài sản khác nhau. Điều này không chỉ giúp phân tán rủi ro mà còn tối ưu hóa cơ hội sinh lời dựa trên sự am hiểu chuyên sâu về tiềm năng và rủi ro của từng loại hình sản phẩm, từ đó đạt được hiệu quả đầu tư tốt nhất."
+   }
+  ]
+ },
+ {
+  "src": "phan-tich-lien-thi-truong-la-gi-huong-dan-toan-dien-cho-nha-dau-tu",
+  "src_title": "Phân tích liên thị trường là gì? Hướng dẫn toàn diện cho nhà đầu tư",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "1",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 13,
+    "h": "Cách thực hiện phân tích liên thị trường",
+    "n_sent": 4,
+    "t": "Có nhiều cách khác nhau để thực hiện phân tích liên thị trường. Một cách phổ biến là sử dụng các chỉ báo kỹ thuật để so sánh xu hướng của các thị trường khác nhau. Ví dụ, nhà đầu tư có thể sử dụng chỉ báo MACD để so sánh xu hướng của chỉ số chứng khoán S&P 500 với chỉ số trái phiếu Barclays U.S. Aggregate Bond Index."
+   },
+   {
+    "i": 14,
+    "h": "Cách thực hiện phân tích liên thị trường",
+    "n_sent": 2,
+    "t": "Một cách khác để thực hiện phân tích liên thị trường là sử dụng các mô hình phân tích kinh tế vĩ mô để dự đoán các xu hướng chung của nền kinh tế. Ví dụ, nhà đầu tư có thể sử dụng mô hình GDP để dự đoán xu hướng của thị trường chứng khoán."
+   },
+   {
+    "i": 5,
+    "h": "Mối tương quan giữa các thị trường",
+    "n_sent": 2,
+    "t": "Các thị trường tài chính có mối tương quan với nhau vì chúng cùng chịu tác động của các yếu tố kinh tế vĩ mô như lãi suất, lạm phát, GDP,... Ví dụ, khi lãi suất tăng, giá trái phiếu thường tăng và giá cổ phiếu thường giảm."
+   }
+  ]
+ },
+ {
+  "src": "phan-tich-lien-thi-truong-la-gi-huong-dan-toan-dien-cho-nha-dau-tu",
+  "src_title": "Phân tích liên thị trường là gì? Hướng dẫn toàn diện cho nhà đầu tư",
+  "target": "cac-thuat-ngu-trong-chung-khoan",
+  "role": "sub-hub",
+  "target_title": "Các thuật ngữ trong chứng khoán: cẩm nang A-Z cho F0",
+  "clicks": "1",
+  "anchors": [
+   "thuật ngữ chứng khoán",
+   "các thuật ngữ trong chứng khoán",
+   "thuật ngữ trong chứng khoán",
+   "thuật ngữ đầu tư",
+   "từ ngữ chuyên ngành"
+  ],
+  "paras": [
+   {
+    "i": 13,
+    "h": "Cách thực hiện phân tích liên thị trường",
+    "n_sent": 4,
+    "t": "Có nhiều cách khác nhau để thực hiện phân tích liên thị trường. Một cách phổ biến là sử dụng các chỉ báo kỹ thuật để so sánh xu hướng của các thị trường khác nhau. Ví dụ, nhà đầu tư có thể sử dụng chỉ báo MACD để so sánh xu hướng của chỉ số chứng khoán S&P 500 với chỉ số trái phiếu Barclays U.S. Aggregate Bond Index."
+   },
+   {
+    "i": 14,
+    "h": "Cách thực hiện phân tích liên thị trường",
+    "n_sent": 2,
+    "t": "Một cách khác để thực hiện phân tích liên thị trường là sử dụng các mô hình phân tích kinh tế vĩ mô để dự đoán các xu hướng chung của nền kinh tế. Ví dụ, nhà đầu tư có thể sử dụng mô hình GDP để dự đoán xu hướng của thị trường chứng khoán."
+   },
+   {
+    "i": 17,
+    "h": "Lợi ích của phân tích liên thị trường",
+    "n_sent": 1,
+    "t": "Nhận biết các xu hướng chung của thị trường: Phân tích liên thị trường có thể giúp nhà đầu tư nhận biết các xu hướng chung của thị trường, từ đó đưa ra các quyết định đầu tư phù hợp."
+   }
+  ]
+ },
+ {
+  "src": "krx-la-gi",
+  "src_title": "Hệ thống KRX là gì? Toàn bộ thay đổi nhà đầu tư cần biết",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "0",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 95,
+    "h": "Tác động của hệ thống KRX đến thanh khoản và mục tiêu nâng hạng",
+    "n_sent": 2,
+    "t": "Tuy nhiên, thanh khoản tăng cao cũng đồng nghĩa với việc biến động giá trong ngày diễn ra khốc liệt hơn. Nhà đầu tư cá nhân cần tỉnh táo để nhận diện các vùng dao động giá và tránh rơi vào bẫy thanh khoản trong đầu tư chứng khoán."
+   },
+   {
+    "i": 44,
+    "h": "Lệnh MTL thay thế lệnh thị trường MP trên sàn HOSE",
+    "n_sent": 2,
+    "t": "Sàn HOSE trước đây áp dụng lệnh thị trường MP với cơ chế quét qua nhiều bước giá liên tiếp cho đến khi khớp hết khối lượng. Cơ chế này tiềm ẩn nguy cơ khớp giá bất lợi cho nhà đầu tư khi bảng điện biến động quá nhanh."
+   },
+   {
+    "i": 81,
+    "h": "Nghiệp vụ bán khống và cơ chế bù trừ trung tâm CCP",
+    "n_sent": 2,
+    "t": "Bán khống là cơ chế cho phép nhà đầu tư mượn chứng khoán để bán ra khi dự đoán giá giảm. Sau đó, bạn mua lại ở mức giá thấp hơn để hưởng lợi nhuận chênh lệch."
+   }
+  ]
+ },
+ {
+  "src": "krx-la-gi",
+  "src_title": "Hệ thống KRX là gì? Toàn bộ thay đổi nhà đầu tư cần biết",
+  "target": "cac-quy-dinh-giao-dich-chung-khoan-quan-trong-ma-nguoi-moi-can-biet",
+  "role": "sub-hub",
+  "target_title": "Các quy định giao dịch chứng khoán quan trọng cần biết",
+  "clicks": "0",
+  "anchors": [
+   "quy định giao dịch chứng khoán",
+   "các quy định giao dịch chứng khoán",
+   "quy định thời gian giao dịch chứng khoán",
+   "quy định giao dịch",
+   "luật giao dịch chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 73,
+    "h": "Bản chất giao dịch trong ngày T+0 và điều kiện cần",
+    "n_sent": 1,
+    "t": "Giao dịch T+0 cho phép nhà đầu tư mua và bán cùng một mã cổ phiếu trong cùng ngày làm việc mà không cần chờ chu kỳ thanh toán T+2,5."
+   },
+   {
+    "i": 79,
+    "h": "Bản chất giao dịch trong ngày T+0 và điều kiện cần",
+    "n_sent": 2,
+    "t": "Nghiệp vụ giao dịch trong ngày dự kiến được thí điểm trước với nhóm cổ phiếu VN30. Sau giai đoạn đánh giá ổn định, cơ quan quản lý sẽ triển khai trên toàn thị trường."
+   },
+   {
+    "i": 33,
+    "h": "4 thay đổi lớn trong giao dịch khi hệ thống KRX vận hành",
+    "n_sent": 2,
+    "t": "Các quy định giao dịch mới yêu cầu nhà đầu tư phải nắm rõ cơ chế kỹ thuật để thao tác chuẩn xác. Điều này giúp bạn hạn chế rủi ro trễ lệnh và bảo toàn quyền ưu tiên trên sổ lệnh điện tử."
+   }
+  ]
+ },
+ {
+  "src": "lenh-mak-la-gi",
+  "src_title": "Lệnh MAK là gì? Cơ chế khớp lệnh MAK sàn HNX",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "0",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "Lệnh MAK trong chứng khoán là gì?",
+    "n_sent": 3,
+    "t": "Lệnh MAK là viết tắt của cụm từ Match And Kill (nghĩa là \"Khớp và Hủy\"). Đây là một biến thể của lệnh thị trường (Market Order). Lệnh phục vụ nhu cầu vào và thoát hàng tức thì mà không để lại lượng lệnh chờ trên hệ thống."
+   },
+   {
+    "i": 50,
+    "h": "Bảng so sánh lệnh MAK với MOK, MTL và MP",
+    "n_sent": 1,
+    "t": "Để tìm hiểu chi tiết về các nhóm lệnh điều kiện khác, nhà đầu tư có thể đọc thêm bài viết về các loại lệnh ATO, ATC, LO, MP."
+   },
+   {
+    "i": 12,
+    "h": "Lệnh MAK trong chứng khoán là gì?",
+    "n_sent": 1,
+    "t": "Lưu ý: Sàn HOSE không hỗ trợ lệnh MAK mà sử dụng loại lệnh thị trường riêng là lệnh MP."
+   }
+  ]
+ },
+ {
+  "src": "lenh-plo-la-gi",
+  "src_title": "Lệnh PLO là gì? Quy định và cách giao dịch lệnh PLO sàn HNX",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "0",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 12,
+    "h": "Nguyên tắc và quy định khớp lệnh PLO",
+    "n_sent": 2,
+    "t": "Mức giá thực hiện của lệnh PLO bắt buộc bằng 100% mức giá đóng cửa của ngày giao dịch. Hệ thống từ chối mọi thao tác điều chỉnh giá từ người dùng."
+   },
+   {
+    "i": 31,
+    "h": "So sánh lệnh PLO với các loại lệnh giao dịch phổ biến",
+    "n_sent": 2,
+    "t": "Sự khác biệt lớn nhất của lệnh PLO là tính xác định về giá giao dịch. Nhà đầu tư không cần tính toán giá khớp như khi đặt lệnh ATC hay LO."
+   },
+   {
+    "i": 10,
+    "h": "Khung thời gian và sàn giao dịch áp dụng lệnh PLO",
+    "n_sent": 2,
+    "t": "Trong tổng thể giờ giao dịch chứng khoán Việt Nam, phiên PLO là cơ hội cuối ngày để xử lý vị thế. Việc nắm rõ khung giờ 14:45 – 15:00 giúp bạn chủ động phân bổ lệnh hợp lý và tránh bị từ chối."
+   }
+  ]
+ },
+ {
+  "src": "lenh-stop-limit-la-gi",
+  "src_title": "Lệnh Stop Limit là gì? Cách đặt lệnh thực chiến 2026",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "0",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 55,
+    "h": "2 rủi ro lớn nhất khi dùng Lệnh Stop Limit và cách tối ưu khoảng chênh lệch",
+    "n_sent": 2,
+    "t": "Nhà đầu tư nên thường xuyên kiểm tra nhật ký lệnh trong phiên. Nếu phát hiện lệnh bị treo do trượt giá, bạn có thể chủ động điều chỉnh lại mức Giá giới hạn cho phù hợp."
+   },
+   {
+    "i": 15,
+    "h": "Cơ chế hoạt động và 2 kịch bản sử dụng thực chiến",
+    "n_sent": 3,
+    "t": "Nhà đầu tư có thể linh hoạt sử dụng loại lệnh này cho cả vị thế mua và bán. Mọi thông số điều kiện đều được thiết lập sẵn từ trước phiên giao dịch. Khi lệnh chưa kích hoạt, nguồn vốn của bạn vẫn hoàn toàn linh hoạt mà không bị phong tỏa cứng."
+   },
+   {
+    "i": 54,
+    "h": "2 rủi ro lớn nhất khi dùng Lệnh Stop Limit và cách tối ưu khoảng chênh lệch",
+    "n_sent": 3,
+    "t": "Để tối ưu hiệu quả, bạn nên thiết lập khoảng chênh lệch (Spread) giữa Stop Price và Limit Price dựa trên biên độ sàn HOSE (±7%) hoặc HNX (±10%). Đối với các cổ phiếu thuộc nhóm VN30 có thanh khoản cao, khoảng chênh lệch hợp lý là từ 1 đến 3 bước giá. Đối với các cổ phiếu midcap có biến động mạnh, khoảng chênh lệch từ 1% đến 2% giúp tăng tỷ lệ khớp lệnh thành công."
+   }
+  ]
+ },
+ {
+  "src": "doi-lai-chung-khoan-la-gi-cach-nhan-biet-va-tranh-bi-lua-dao",
+  "src_title": "Đội lái chứng khoán là gì? Cách nhận biết và tránh bị lừa đảo",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "0",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 1,
+    "h": "Đội lái chứng khoán là ai?",
+    "n_sent": 2,
+    "t": "Đội lái chứng khoán là một thuật ngữ trong thị trường chứng khoán, được dùng để chỉ những nhóm nhà đầu tư có cùng mục tiêu là thao túng giá cổ phiếu để thu lợi nhuận. Đội lái thường có quy mô lớn, sở hữu nhiều vốn và có mối quan hệ rộng rãi trên thị trường."
+   },
+   {
+    "i": 29,
+    "h": "Lời khuyên cho nhà đầu tư",
+    "n_sent": 2,
+    "t": "Trên đây là một số thông tin về đội lái chứng khoán. Nhà đầu tư cần nắm rõ những thông tin này để tránh bị lừa đảo và bảo vệ quyền lợi của mình."
+   }
+  ]
+ },
+ {
+  "src": "chi-so-hnx-30-la-gi",
+  "src_title": "Chỉ số HNX30 là gì? Ý nghĩa và tiêu chí lựa chọn cổ phiếu",
+  "target": "cac-chi-so-chung-khoan-viet-nam-hieu-ro-ve-vn-index-vn-30-hnx-index-va-nhieu-chi-so-khac",
+  "role": "sub-hub",
+  "target_title": "Các chỉ số chứng khoán Việt Nam nhà đầu tư cần biết",
+  "clicks": "0",
+  "anchors": [
+   "các chỉ số chứng khoán Việt Nam",
+   "chỉ số chứng khoán Việt Nam",
+   "các chỉ số thị trường chứng khoán",
+   "VN-Index, VN30, HNX-Index",
+   "chỉ số trong nước"
+  ],
+  "paras": [
+   {
+    "i": 4,
+    "h": "Chỉ số HNX30 là gì?",
+    "n_sent": 2,
+    "t": "Việc theo dõi biến động HNX30 giúp nhà đầu tư đánh giá chính xác sức khỏe nhóm bluechip sàn HNX. Từ đó, bạn dễ dàng nhận diện xu hướng dịch chuyển của dòng tiền tổ chức trên thị trường chỉ số chứng khoán tổng thể."
+   },
+   {
+    "i": 3,
+    "h": "Chỉ số HNX30 là gì?",
+    "n_sent": 2,
+    "t": "Khác với phương pháp tính vốn hóa toàn bộ truyền thống, chỉ số HNX30 chỉ tính toán dựa trên lượng cổ phiếu thực sự tự do giao dịch trên thị trường. Điều này giúp loại bỏ lượng cổ phiếu bị nắm giữ lâu dài bởi cơ quan nhà nước hay cổ đông chiến lược."
+   },
+   {
+    "i": 32,
+    "h": "Chiến lược đầu tư cổ phiếu rổ HNX30 cho nhà đầu tư giao dịch năng động và F0",
+    "n_sent": 2,
+    "t": "Với biên độ giao dịch 10%/phiên tại sàn HNX, cổ phiếu rổ HNX30 mang lại cơ hội biến động giá hấp dẫn hơn so với biên độ 7% của HOSE, đòi hỏi nhà đầu tư phải có chiến lược quản trị rủi ro chặt chẽ. Biên độ rộng giúp nhà đầu tư giao dịch chủ động tối ưu hóa lợi nhuận trong các nhịp bứt phá ngắn hạn."
+   }
+  ]
+ },
+ {
+  "src": "tieu-diem-thi-truong-la-gi",
+  "src_title": "Tiêu điểm thị trường là gì? Vì sao nhà đầu tư cần theo dõi?",
+  "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Cách chơi chứng khoán cho người mới bắt đầu [2026]",
+  "clicks": "0",
+  "anchors": [
+   "cách chơi chứng khoán cho người mới",
+   "cách chơi chứng khoán",
+   "chơi chứng khoán như thế nào",
+   "hướng dẫn chơi chứng khoán",
+   "cách đầu tư chứng khoán cho người mới",
+   "chơi chứng khoán"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "Tiêu điểm thị trường là gì?",
+    "n_sent": 2,
+    "t": "Tiêu điểm thị trường (Market Focus / Market Highlights) là tập hợp những diễn biến, xu hướng và sự kiện nổi bật nhất trên thị trường tài chính tại một thời điểm nhất định. Các tiêu điểm này có thể đến từ biến động chỉ số, cổ phiếu đáng chú ý, dòng tiền lớn, hoặc các yếu tố vĩ mô tác động mạnh đến tâm lý thị trường."
+   }
+  ]
+ }
+]

@@ -1,0 +1,34 @@
+
+SLOP CHECK - Optimize-cach-mo-tai-khoan-chung-khoan.md
+PASS  ·  Slop score 94/100  ·  ngưỡng strict  ·  1576 từ, 59 câu, 4 H2
+------------------------------------------------------------------------------
+[MINOR] SLOP-evidence        Mật độ bằng chứng 1.8/100 từ (chuẩn >= 2.0) - thêm mã CP, %, sàn, mốc Tháng M/YYYY
+[MINOR] SLOP-anchor          63% câu không có mỏ neo kiểm chứng được (số / thực thể / sàn / mốc thời gian) - tối đa 50%
+
+-- Metrics --
+  burstiness           6.3
+  mean_sent            19.0
+  uniform_run          7
+  rhythm_gap           28
+  short_share          0.05
+  evidence_per_100w    1.78
+  unanchored_ratio     0.63
+  vague_per_1000w      0.00
+  hedge_para_max       2
+  synonym_variants     1
+  h2_def_open          0.00
+  para_shape_sd        0.72
+  ttr_min              0.42
+  inline_headers       1
+  thin_tables          0
+  template_sim         0.16
+  filler_n             0
+  words                1576
+  synonym group 'broker': công ty chứng khoán
+
+-- Câu không có mỏ neo (mẫu) --
+  L13: Cách mở tài khoản chứng khoán online gồm 3 bước: đăng ký thông tin, xác thực danh tính eKYC và ký hợ
+  L15: Dưới đây là giấy tờ cần có và cách thực hiện qua website, tại quầy hoặc trên App DSC Trading.
+  L21: Nếu chưa chọn được nơi mở, bài nên mở tài khoản chứng khoán ở đâu giúp bạn đối chiếu phí, ứng dụng v
+  L23: Với cá nhân trong nước tự đăng ký online, những thông tin cần chuẩn bị gồm:
+  L32: Người chưa đủ 18 tuổi làm hồ sơ cùng người đại diện theo pháp luật.

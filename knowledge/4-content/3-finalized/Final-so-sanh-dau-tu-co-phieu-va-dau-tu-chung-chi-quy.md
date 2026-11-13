@@ -16,8 +16,6 @@ Nhiều nhà đầu tư mới băn khoăn giữa việc tự mua cổ phiếu ha
 
 [**Chứng chỉ quỹ**](https://www.dsc.com.vn/kien-thuc/chung-chi-quy-la-gi): Chứng chỉ quỹ xác nhận quyền sở hữu một phần vốn trong quỹ đầu tư. Tiền của bạn được gom chung với nhà đầu tư khác. Các chuyên gia tại công ty quản lý quỹ sẽ mang đi đầu tư vào danh mục nhiều mã tài sản.
 
-Theo dữ liệu VSDC, tính đến tháng 9/2026, toàn thị trường đạt hơn 13,66 triệu tài khoản chứng khoán. Dòng tiền cá nhân đang dịch chuyển mạnh mẽ vào thị trường chứng khoán để tìm kiếm lợi nhuận.
-
 ### Phân biệt Quỹ mở và Quỹ ETF
 
 Nhà đầu tư cần phân biệt rõ hai loại chứng chỉ quỹ phổ biến hiện nay.

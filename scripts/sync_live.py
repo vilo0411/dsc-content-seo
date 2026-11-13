@@ -190,7 +190,10 @@ class LinkParser(HTMLParser):
             self._a["text"].append(data)
             return
         blk = self._stack[-1] if self._stack else None
-        if XEM_THEM.search(data):
+        m = XEM_THEM.search(data)
+        # Only a block that *opens* with "Xem thêm" (after ">>" etc.) is a Xem thêm line; "Bạn có thể
+        # xem thêm hướng dẫn …" mid-sentence is prose and its link stays contextual.
+        if m and not re.search(r"\w", data[:m.start()]) and (blk is None or (blk["plain"] == 0 and not blk["links"])):
             if blk is not None:
                 blk["xem"] = True
             else:
@@ -268,7 +271,8 @@ def sitemap_urls() -> list[str]:
         for c in json.loads(CLUSTERS.read_text(encoding="utf-8"))["clusters"]:
             for g in c["groups"]:
                 urls.update(KB + s for s in ([g["hub"]] if g.get("hub") else []) + g["spokes"])
-            urls.add(KB + c["pillar"])
+            if c.get("pillar"):
+                urls.add(KB + c["pillar"])
     return sorted(urls)
 
 

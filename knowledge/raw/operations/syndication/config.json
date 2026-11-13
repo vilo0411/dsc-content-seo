@@ -1,0 +1,17 @@
+{
+  "spreadsheet_id": "1urr2pvtQRWof_uC-X3RA_D6EMUvHLRhZJbx1PS1TBY0",
+  "tabs": {
+    "Dashboard": 1235175101,
+    "Channels": 717890887,
+    "Publishing": 196088676,
+    "Checks": 1690201662,
+    "Sync Log": 540750933,
+    "Formats": 120475619,
+    "Visual Styles": 247289682
+  },
+  "sync_mode": "agent",
+  "auth_mode": "service_account",
+  "credentials_file": "gen-lang-client-0863794209-385c2ddf2422.json",
+  "drive_folder_id": "1MYywLSKvXCyIxbNin6s9aio4WhnEOaR9",
+  "asset_auth_policy": "service_account_only_no_connected_account_fallback"
+}

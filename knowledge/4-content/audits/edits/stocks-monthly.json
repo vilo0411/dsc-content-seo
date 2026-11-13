@@ -1,0 +1,177 @@
+{
+ "group": "stock",
+ "priority": "P0",
+ "issue": "Title gắn tháng cũ (T10/2026, T5/2026); KQKD, giá và định giá cần cập nhật theo BCTC quý 3/2026.",
+ "edits": [
+  {
+   "slug": "co-nen-mua-co-phieu-hpg-hay-khong",
+   "field": "title",
+   "find": "Có nên mua cổ phiếu HPG hay không? Cập nhật T10/2026",
+   "replace": "Có nên mua cổ phiếu HPG hay không? Cập nhật T11/2026",
+   "sources": []
+  },
+  {
+   "slug": "co-nen-mua-co-phieu-hpg-hay-khong",
+   "field": "meta",
+   "find": "",
+   "replace": "Có nên mua cổ phiếu HPG? Hòa Phát lãi 8.265 tỷ đồng quý 3/2026, gấp đôi cùng kỳ, P/E khoảng 6,5 lần. Xem KQKD, nợ vay, định giá và rủi ro.",
+   "sources": [
+    "https://cafef.vn/hoa-phat-lai-8265-ty-dong-tang-106-trong-quy-32026-188261029100153096.chn"
+   ]
+  },
+  {
+   "slug": "co-nen-mua-co-phieu-hpg-hay-khong",
+   "find": "<p>Cổ phiếu HPG của Tập đoàn Hòa Phát luôn được coi là cổ phiếu quốc dân luôn được nhà đầu tư đặc biệt quan tâm. Tuy nhiên, ngành thép được dự báo còn gặp nhiều biến động liệu khả năng tăng trưởng của Hòa Phát trong giai đoạn tới sẽ thế nào? Có nên mua cổ phiếu HPG giai đoạn này hay chưa? Cùng DSC phân tích trong bài viết dưới đây nhé!</p>",
+   "replace": "<p>Cổ phiếu HPG của Tập đoàn Hòa Phát là mã thép được nhà đầu tư cá nhân theo dõi nhiều nhất trên HOSE. Quý 3/2026, Hòa Phát lãi sau thuế 8.265 tỷ đồng, gấp đôi cùng kỳ. Giá cổ phiếu thì chưa chạy theo lợi nhuận. Vậy có nên mua cổ phiếu HPG giai đoạn này hay chưa? Cùng DSC phân tích số liệu mới nhất trong bài viết dưới đây.</p>",
+   "sources": [
+    "https://cafef.vn/hoa-phat-lai-8265-ty-dong-tang-106-trong-quy-32026-188261029100153096.chn",
+    "https://vnbusiness.vn/hoa-phat-vuot-ke-hoach-loi-nhuan-nam-co-phieu-hpg-van-i-ach.html"
+   ]
+  },
+  {
+   "slug": "co-nen-mua-co-phieu-hpg-hay-khong",
+   "find": "<li>Vốn điều lệ: 76.754,65 tỷ đồng</li>",
+   "replace": "<li>Vốn điều lệ: hơn 84.430 tỷ đồng (sau đợt chia cổ tức bằng cổ phiếu tỷ lệ 10%, tháng 6/2026)</li>",
+   "sources": [
+    "https://vietnamfinance.vn/hoa-phat-tang-von-dieu-le-len-84400-ty-dong-sau-khi-chia-co-tuc-bang-co-phieu-d146005.html"
+   ]
+  },
+  {
+   "slug": "co-nen-mua-co-phieu-hpg-hay-khong",
+   "find": "<li>Số lượng cổ phiếu đang niêm yết: 5,814,785,700 cổ phiếu</li>",
+   "replace": "<li>Số lượng cổ phiếu đang niêm yết: hơn 8,44 tỷ cổ phiếu</li>",
+   "sources": [
+    "https://vietnamfinance.vn/hoa-phat-tang-von-dieu-le-len-84400-ty-dong-sau-khi-chia-co-tuc-bang-co-phieu-d146005.html"
+   ],
+   "note": "Báo chỉ nêu số làm tròn (hơn 8,44 tỷ cp). Có thể thay bằng số chính xác từ HOSE."
+  },
+  {
+   "slug": "co-nen-mua-co-phieu-hpg-hay-khong",
+   "find": "<li>Số lượng cổ phiếu đang lưu hành: 7.675.465.855 cổ phiếu</li>",
+   "replace": "<li>Số lượng cổ phiếu đang lưu hành: hơn 8,44 tỷ cổ phiếu</li>",
+   "sources": [
+    "https://vietnamfinance.vn/hoa-phat-tang-von-dieu-le-len-84400-ty-dong-sau-khi-chia-co-tuc-bang-co-phieu-d146005.html"
+   ]
+  },
+  {
+   "slug": "co-nen-mua-co-phieu-hpg-hay-khong",
+   "find": "<li>Vốn hóa thị trường: 201.500 tỷ đồng</li>",
+   "replace": "<li>Vốn hóa thị trường: khoảng 179.400 tỷ đồng (giá đóng cửa 21.250 đồng, phiên 03/11/2026)</li>",
+   "sources": [
+    "https://vietnamfinance.vn/hoa-phat-tang-von-dieu-le-len-84400-ty-dong-sau-khi-chia-co-tuc-bang-co-phieu-d146005.html",
+    "scripts/market_facts.py --ticker HPG (VNDirect dchart, giá 07/09–03/11/2026)"
+   ],
+   "note": "Vốn hóa = 8,443 tỷ cp × 21.250 đồng, DSC tự tính."
+  },
+  {
+   "slug": "co-nen-mua-co-phieu-hpg-hay-khong",
+   "find": "<li>P/E: 9.09</li>",
+   "replace": "<li>P/E: khoảng 6,5 lần (giá 03/11/2026, lợi nhuận sau thuế 4 quý Q4/2025–Q3/2026)</li>",
+   "sources": [
+    "https://cafef.vn/hoa-phat-lai-8265-ty-dong-tang-106-trong-quy-32026-188261029100153096.chn",
+    "https://tapchicongthuong.vn/hoa-phat-ghi-nhan-loi-nhuan-sau-thue-nam-2025-vuot-15-500-ty-dong-422144.htm",
+    "https://vietnamfinance.vn/hoa-phat-tang-von-dieu-le-len-84400-ty-dong-sau-khi-chia-co-tuc-bang-co-phieu-d146005.html",
+    "scripts/market_facts.py --ticker HPG (VNDirect dchart, giá 07/09–03/11/2026)"
+   ],
+   "note": "DSC tự tính: LNST 4 quý = 3.888 (Q4/2025) + 23.746 (9T/2026) = 27.634 tỷ đồng; EPS ≈ 27.634 / 8,443 tỷ cp ≈ 3.270 đồng; P/E = 21.250 / 3.270 ≈ 6,5. Dùng LNST hợp nhất (chưa trừ cổ đông thiểu số) nên P/E thực tế có thể cao hơn một chút."
+  },
+  {
+   "slug": "co-nen-mua-co-phieu-hpg-hay-khong",
+   "find": "<li>P/B: 1.44</li>",
+   "replace": "<li>P/B: chờ cập nhật theo vốn chủ sở hữu tại BCTC quý 3/2026</li>",
+   "sources": [],
+   "note": "Không tìm được vốn chủ sở hữu HPG tại 30/09/2026 từ nguồn báo chí có ngày. Nên điền P/B từ BCTC quý 3/2026 trên HOSE trước khi đăng, hoặc xoá dòng này."
+  },
+  {
+   "slug": "co-nen-mua-co-phieu-hpg-hay-khong",
+   "find": "<p>Ngành Thép đã trải qua thời kỳ tăm tối nhất kể từ năm 2022. Trong ngắn hạn, bức tranh chung nhu cầu nội địa và xuất khẩu còn yếu, đặc biệt là lĩnh vực Bất động sản khó khăn đã gây sức ép lên các doanh nghiệp thép. Hàng loạt chính sách nhằm tháo gỡ thị trường bất động sản được ban hành kể từ đầu năm 2023 đã gặp nhiều vấn đề bất cập, chưa tiếp cận được doanh nghiệp.&nbsp;</p>",
+   "replace": "<p>Ngành thép trải qua giai đoạn khó khăn nhất trong năm 2022–2023, khi bất động sản trầm lắng và nhu cầu xuất khẩu yếu. Từ năm 2025, bức tranh đổi chiều. Năm 2025, Hòa Phát lãi sau thuế 15.515 tỷ đồng, tăng 29%. Quý 3/2026, tập đoàn sản xuất 3,7 triệu tấn thép thô, tăng 85% so với cùng kỳ, và bán ra 3,8 triệu tấn, tăng 54%.&nbsp;</p>",
+   "sources": [
+    "https://tapchicongthuong.vn/hoa-phat-ghi-nhan-loi-nhuan-sau-thue-nam-2025-vuot-15-500-ty-dong-422144.htm",
+    "https://cafef.vn/hoa-phat-lai-8265-ty-dong-tang-106-trong-quy-32026-188261029100153096.chn"
+   ]
+  },
+  {
+   "slug": "co-nen-mua-co-phieu-hpg-hay-khong",
+   "find": "<p>Song, ngành Thép được đánh giá đã trải qua thời kỳ “cùng cực” nhất. Tiềm năng, ngành này sẽ được hưởng lợi nhờ (1) việc đẩy mạnh giải ngân đầu tư công trong quý 4/2023, (2) Nút thắt Bất động sản trong nước được tháo gỡ nhờ sự hỗ trợ của Chính phủ, (3) sự hồi phục của ngành Bất động sản Trung Quốc, kéo giá thép xuất khẩu tăng.</p>",
+   "replace": "<p>Động lực của Hòa Phát giai đoạn tới đến từ (1) sản lượng thép cuộn cán nóng (HRC): 9 tháng 2026 đạt 5,47 triệu tấn, tăng 59%; (2) nhà máy ray và thép đặc biệt 700.000 tấn/năm tại Dung Quất, đã hoàn thành 80%, dự kiến có sản phẩm ray từ quý 2/2027. Rủi ro lớn nhất vẫn là giá thép. Giá bán giảm sẽ thu hẹp biên lợi nhuận dù sản lượng tăng.</p>",
+   "sources": [
+    "https://cafef.vn/hoa-phat-lai-8265-ty-dong-tang-106-trong-quy-32026-188261029100153096.chn"
+   ]
+  },
+  {
+   "slug": "co-nen-mua-co-phieu-hpg-hay-khong",
+   "find": "Đến thời điểm hiện tại, sản xuất thép là lĩnh vực cốt lõi chiếm tỷ trọng 90% doanh thu và lợi nhuận toàn Tập đoàn; với công suất 8,5 triệu tấn thép thô/năm.",
+   "replace": "Trong 9 tháng năm 2026, mảng thép đóng góp 97% doanh thu và 77% lợi nhuận toàn Tập đoàn; tổng công suất thép thô đạt 16 triệu tấn/năm.",
+   "sources": [
+    "https://cafef.vn/hoa-phat-lai-8265-ty-dong-tang-106-trong-quy-32026-188261029100153096.chn"
+   ]
+  },
+  {
+   "slug": "co-nen-mua-co-phieu-hpg-hay-khong",
+   "find": "(1) Quy mô lớn với tổng sản lượng nhà máy Dung Quất là 8 triệu tấn/ năm,",
+   "replace": "(1) Quy mô lớn nhất Đông Nam Á với tổng công suất thép thô 16 triệu tấn/năm (theo Hòa Phát, tháng 10/2026),",
+   "sources": [
+    "https://cafef.vn/hoa-phat-lai-8265-ty-dong-tang-106-trong-quy-32026-188261029100153096.chn"
+   ]
+  },
+  {
+   "slug": "co-nen-mua-co-phieu-hpg-hay-khong",
+   "find": "<p>Hoạt động kinh doanh của HPG gặp nhiều khó khăn do nhu cầu yếu từ năm 2022, khiến cho doanh thu suy giảm đáng kể so với giai đoạn huy hoàng 2021. Doanh nghiệp đã bắt đầu có lợi nhuận trở lại từ Q1/2023, song biên lợi nhuận gộp vẫn tiếp tục sụt giảm (4.3%) bởi gánh nặng đến từ chi phí tài chính và quản lý doanh nghiệp gia tăng.&nbsp;</p>",
+   "replace": "<p>Kết quả kinh doanh của HPG đã phục hồi rõ sau giai đoạn 2022–2023. Quý 3/2026, doanh thu đạt 62.669 tỷ đồng, tăng 70% so với cùng kỳ; lợi nhuận sau thuế đạt 8.265 tỷ đồng, tăng 106%. Biên lợi nhuận ròng quý 3/2026 khoảng 13,2%. Lũy kế 9 tháng 2026, doanh thu đạt 171.539 tỷ đồng (tăng 54%), lợi nhuận sau thuế 23.746 tỷ đồng (tăng 104%), vượt 8% kế hoạch lợi nhuận cả năm 22.000 tỷ đồng.&nbsp;</p>",
+   "sources": [
+    "https://cafef.vn/hoa-phat-lai-8265-ty-dong-tang-106-trong-quy-32026-188261029100153096.chn"
+   ],
+   "note": "Biên ròng 13,2% = 8.265 / 62.669, DSC tự tính. Đây là kết quả Hòa Phát công bố ngày 29/10/2026."
+  },
+  {
+   "slug": "co-nen-mua-co-phieu-hpg-hay-khong",
+   "find": "<p>Tuy KQKD chưa khả quan, nhưng tài chính của HPG vẫn được giữ ổn định, khi các tài sản cốt lõi phục vụ cho kinh doanh như tài sản cố định và hàng tồn kho giữ tỷ trọng cao. Ngoài ra, công ty vẫn có động thái đầu tư vào các dự án dở dang. Điểm sáng, cơ cấu tài chính tương đối an toàn khi nợ phải trả chỉ chiếm 45% tổng nguồn vốn.</p>",
+   "replace": "<p>Điểm cần theo dõi là nợ vay. Tại ngày 30/9/2026, dư nợ vay của Hòa Phát hơn 105.736 tỷ đồng, phần lớn là vay ngắn hạn, tương đương khoảng 37% tổng nguồn vốn 283.449 tỷ đồng. Chi phí lãi vay quý 3/2026 là 1.774 tỷ đồng, gấp đôi cùng kỳ. Lợi nhuận hiện đủ sức gánh lãi vay. Nếu giá thép giảm, áp lực này sẽ lộ rõ hơn.</p>",
+   "sources": [
+    "https://viettimes.vn/no-vay-hoa-phat-lap-dinh-moi-ngay-phai-tra-17-ty-dong-tien-lai-post207713.html"
+   ],
+   "note": "Tỷ lệ 37% = 105.736 / 283.449, DSC tự tính."
+  },
+  {
+   "slug": "co-nen-mua-co-phieu-hpg-hay-khong",
+   "find": "<p>Ở thời điểm hiện tại, P/B của HPG đạt 1.49; là điểm mua hấp dẫn nếu nhà đầu tư có chiến lược nắm giữ trung và dài hạn. Chúng tôi đánh giá ngành thép đang đi vào thời kỳ hồi phục từ đáy, với mức P/B dự phóng cuối năm 2023 là 1.7</p>",
+   "replace": "<p>Với giá đóng cửa 21.250 đồng (phiên 03/11/2026), HPG có vốn hóa khoảng 179.400 tỷ đồng. Lợi nhuận sau thuế 4 quý gần nhất (Q4/2025–Q3/2026) khoảng 27.630 tỷ đồng, tương ứng EPS khoảng 3.270 đồng và P/E khoảng 6,5 lần. Lợi nhuận tăng gấp đôi nhưng giá cổ phiếu chưa tăng tương ứng. Thị trường đang chiết khấu rủi ro chu kỳ giá thép và dư nợ vay lớn, nên bạn cần theo dõi thêm biên lợi nhuận quý 4/2026 trước khi kết luận HPG rẻ hay đắt.</p>",
+   "sources": [
+    "https://cafef.vn/hoa-phat-lai-8265-ty-dong-tang-106-trong-quy-32026-188261029100153096.chn",
+    "https://tapchicongthuong.vn/hoa-phat-ghi-nhan-loi-nhuan-sau-thue-nam-2025-vuot-15-500-ty-dong-422144.htm",
+    "https://vietnamfinance.vn/hoa-phat-tang-von-dieu-le-len-84400-ty-dong-sau-khi-chia-co-tuc-bang-co-phieu-d146005.html",
+    "https://vnbusiness.vn/hoa-phat-vuot-ke-hoach-loi-nhuan-nam-co-phieu-hpg-van-i-ach.html",
+    "scripts/market_facts.py --ticker HPG (VNDirect dchart, giá 07/09–03/11/2026)"
+   ],
+   "note": "EPS, P/E do DSC tự tính từ LNST hợp nhất (xem note dòng P/E). Đã bỏ nhận định cũ 'điểm mua hấp dẫn'."
+  },
+  {
+   "slug": "co-nen-mua-co-phieu-hpg-hay-khong",
+   "find": "<p>HPG là một trong số những cổ phiếu tiêu biểu đại diện cho biến động chung của thị trường khi đã đạt đỉnh trong năm 2021 để rồi giảm rất sốc và tạo đáy vào cuối 2022. HPG đang “làm lại từ đầu” khi bật tăng từ đáy và hiện đang trong một giai đoạn điều chỉnh sau đà tăng nóng kể từ tháng 6 năm 2023. Tại thời điểm viết báo cáo, xu hướng tăng của HPG vẫn được xác định khi giá vẫn chưa điều chỉnh quá sâu. Cụ thể là mốc Fibonacci quan trọng mang tính đảo chiều là 0.382 (22.61) cũng như mốc 0.5 (20.51) vẫn chưa bị chạm tới.</p>",
+   "replace": "<p>Từ ngày 07/09 đến 03/11/2026, HPG dao động trong biên 19.600–22.200 đồng (giá trong phiên), đáy ngắn hạn 19.600 đồng ghi nhận phiên 02/10/2026. Sau khi Hòa Phát công bố lãi quý 3, cổ phiếu hồi về 21.250 đồng phiên 03/11/2026. Cùng phiên, khối ngoại mua ròng hơn 227 tỷ đồng HPG dù VN-Index giảm về 1.699 điểm.</p>",
+   "sources": [
+    "scripts/market_facts.py --ticker HPG (VNDirect dchart, giá 07/09–03/11/2026)",
+    "https://dantri.com.vn/kinh-doanh/vn-index-lai-thung-1700-diem-co-phieu-vua-thep-hoa-phat-hut-von-ngoai-20261103155727680.htm"
+   ]
+  },
+  {
+   "slug": "co-nen-mua-co-phieu-hpg-hay-khong",
+   "find": "<p>DSC đánh giá HPG sẽ khó có thể bật tăng ngay trở lại trong phần còn lại của năm 2023 mà giá sẽ có xu hướng quay trở lại vùng nền tích luỹ ở xung quanh vùng Fibonacci 0.5 (20.51) và nhận đường hỗ trợ 19.76 giống như giai đoạn đầu năm 2023 và di chuyển trong kênh song song trước khi những triển vọng về ngành thép cũng như thị trường chung được cải thiện để bật tăng lên vùng phân phối cũ (36.00) trong năm 2024.</p>",
+   "replace": "<p>Vùng 19.600–20.000 đồng là hỗ trợ ngắn hạn đã được kiểm chứng trong tháng 10/2026. Vùng 22.000–22.200 đồng là cản gần nhất. Xu hướng tăng mới chỉ được xác nhận khi giá vượt vùng cản này với khối lượng cao hơn mức bình quân 20 phiên, khoảng 18,5 triệu cổ phiếu/phiên.</p>",
+   "sources": [
+    "scripts/market_facts.py --ticker HPG (VNDirect dchart, giá 07/09–03/11/2026)"
+   ],
+   "note": "Ảnh biểu đồ kỹ thuật ngay bên dưới (image_8d217758b1.png) là chart năm 2023, cần thay ảnh mới hoặc gỡ."
+  },
+  {
+   "slug": "co-nen-mua-co-phieu-hpg-hay-khong",
+   "find": "HPG hay không? Hòa phát là một công ty đầu ngày thép sở hữu chuỗi giá trị khép kín, DSC đánh giá đây là một cổ phiếu tiềm năng cho nhà đầu tư có thể tham gia dài hạn hoặc tích sản cổ phiếu này.&nbsp;</p>",
+   "replace": "HPG hay không? Hòa Phát là doanh nghiệp đầu ngành thép sở hữu chuỗi giá trị khép kín, lợi nhuận 9 tháng 2026 đã vượt kế hoạch cả năm. Đổi lại, bạn phải chấp nhận hai rủi ro: giá thép biến động theo chu kỳ và dư nợ vay trên 105.000 tỷ đồng. HPG phù hợp hơn với nhà đầu tư nắm giữ dài hạn, giải ngân từng phần và theo dõi kết quả kinh doanh từng quý.&nbsp;</p>",
+   "sources": [
+    "https://cafef.vn/hoa-phat-lai-8265-ty-dong-tang-106-trong-quy-32026-188261029100153096.chn",
+    "https://viettimes.vn/no-vay-hoa-phat-lap-dinh-moi-ngay-phai-tra-17-ty-dong-tien-lai-post207713.html"
+   ]
+  }
+ ]
+}

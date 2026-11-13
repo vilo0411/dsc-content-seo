@@ -1,0 +1,743 @@
+{
+ "title": "Phân tích kỹ thuật & Chỉ báo — câu mới chứa link về pillar/hub",
+ "edits": [
+  {
+   "src": "mo-hinh-nen-bua-nguoc-inverted-hammer-la-gi",
+   "op": "append",
+   "find": "ược quan trọng, thường báo hiệu khả năng đảo chiều xu hướng.",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "sentence": "Trong [phân tích kỹ thuật], một mẫu nến đơn lẻ chỉ có giá trị khi đi cùng xu hướng trước đó, khối lượng và vùng hỗ trợ.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=25"
+  },
+  {
+   "src": "mo-hinh-nen-hammer-la-gi",
+   "op": "append",
+   "find": "phe bán đã kiệt sức và quyền kiểm soát chuyển sang phe mua.",
+   "to": "tu-dien-30-mo-hinh-nen-pho-bien-tren-thi-truong-chung-khoan",
+   "sentence": "Trong [các mô hình nến] đảo chiều, Hammer thuộc nhóm một nến, dễ nhận diện nhất với nhà đầu tư mới.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=7"
+  },
+  {
+   "src": "duong-ma-la-gi",
+   "op": "append",
+   "find": "iểm giải ngân khi giá cổ phiếu tích lũy nền trên đường MA50.",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "sentence": "Như mọi công cụ [phân tích kỹ thuật], tín hiệu này cần thêm xác nhận từ khối lượng giao dịch.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=40"
+  },
+  {
+   "src": "chi-bao-atr-la-gi",
+   "op": "append",
+   "find": "không cung cấp chỉ báo về hướng giá mà chỉ là sự biến động.",
+   "to": "chi-bao-ky-thuat",
+   "sentence": "Vì vậy, ATR được xếp vào nhóm đo biến động trong hệ thống [chỉ báo kỹ thuật], tách biệt với nhóm xu hướng và động lượng.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=2"
+  },
+  {
+   "src": "khoi-luong-giao-dich-la-gi",
+   "op": "append",
+   "find": "ỉ báo kỹ thuật nhằm xác lập chiến lược giao dịch hoàn chỉnh.",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "sentence": "Trong [phân tích kỹ thuật], khối lượng là dữ liệu gốc thứ hai sau giá, dùng để xác nhận mọi tín hiệu mua bán.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=7"
+  },
+  {
+   "src": "khoi-luong-giao-dich-la-gi",
+   "op": "append",
+   "find": "n quan sát và chờ tín hiệu bùng nổ thanh khoản để giải ngân.",
+   "to": "phuong-phap-dau-tu-theo-dong-tien-hieu-qua",
+   "sentence": "Đây cũng là nguyên tắc của [đầu tư theo dòng tiền]: chỉ mua khi khối lượng xác nhận tiền lớn đã quay lại.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=46"
+  },
+  {
+   "src": "duong-trendline-la-gi-cach-su-dung-hieu-qua-trong-phan-tich-ky-thuat",
+   "op": "append",
+   "find": "hản ánh xu hướng chủ đạo của thị trường trong một giai đoạn.",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "sentence": "Đây là công cụ vẽ đầu tiên người học [phân tích kỹ thuật] cần nắm, trước khi chuyển sang kênh giá và mô hình giá.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=3"
+  },
+  {
+   "src": "phuong-phap-dau-tu-theo-dong-tien-hieu-qua",
+   "op": "append",
+   "find": "theo dấu chân Smart Money để gia tăng xác suất chiến thắng.",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "sentence": "Phương pháp này là một nhánh của [phân tích kỹ thuật], vì dữ liệu đầu vào vẫn là giá và khối lượng giao dịch.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=8"
+  },
+  {
+   "src": "lap-gap-trong-chung-khoan-co-hoi-bung-no",
+   "op": "append",
+   "find": "a bởi các sự kiện bất ngờ hoặc biến động thị trường mạnh mẽ.",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "sentence": "Trong [phân tích kỹ thuật], gap được xem là vùng mất cân bằng cung cầu mà giá hay quay lại kiểm tra.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=1"
+  },
+  {
+   "src": "chi-bao-dmi-directional-movement-index-danh-gia-xu-huong-va-suc-manh-thi-truong-hieu-qua",
+   "op": "newp",
+   "find": "nh của xu hướng giảm giá. Giá trị -DI dao động từ 0 đến 100.",
+   "to": "cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat",
+   "sentence": "Cả ba đường tạo thành một trong các [chỉ báo xác định xu hướng] đầy đủ nhất: vừa cho biết hướng, vừa đo độ mạnh.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=12"
+  },
+  {
+   "src": "chien-luoc-giao-dich-hieu-qua-voi-rsi-ket-hop-rsi-voi-cac-chi-bao-khac",
+   "op": "append",
+   "find": "ỉ báo kỹ thuật khác sẽ giúp tăng độ chính xác khi giao dịch.",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "sentence": "Cách kết hợp này dựa trên nguyên tắc chung của [phân tích kỹ thuật]: mỗi tín hiệu cần ít nhất một công cụ độc lập xác nhận.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=1"
+  },
+  {
+   "src": "vwap-la-gi",
+   "op": "append",
+   "find": "nh mua được khớp dưới đường VWAP được xem là mức giá tối ưu.",
+   "to": "phuong-phap-dau-tu-theo-dong-tien-hieu-qua",
+   "sentence": "Với người [theo dõi dòng tiền], giá nằm trên VWAP kèm khối lượng lớn cho thấy tổ chức đang chấp nhận mua giá cao.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=4"
+  },
+  {
+   "src": "chi-bao-dong-tien-chaikin-cmf-la-gi",
+   "op": "append",
+   "find": "mạnh đằng sau một xu hướng tăng. Tương tự với xu hướng giảm.",
+   "to": "phuong-phap-dau-tu-theo-dong-tien-hieu-qua",
+   "sentence": "Vì vậy, CMF là công cụ quen thuộc của trường phái [đầu tư theo dòng tiền], nơi khối lượng được coi trọng ngang với giá.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=39"
+  },
+  {
+   "src": "chi-bao-mcdx-la-gi-giai-ma-cong-cu-phan-tich-xu-huong-dong-tien-hieu-qua",
+   "op": "append",
+   "find": "chỉ báo này trên nhiều phần mềm phân tích kỹ thuật phổ biến.",
+   "to": "phuong-phap-dau-tu-theo-dong-tien-hieu-qua",
+   "sentence": "Phần quan trọng hơn là cách đọc kết quả, vì MCDX được thiết kế cho [phương pháp đầu tư theo dòng tiền] của nhà tạo lập.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=18"
+  },
+  {
+   "src": "kenh-gia-song-song-cong-cu-phan-tich-ky-thuat-hieu-qua",
+   "op": "append",
+   "find": "ợc xu hướng thị trường và đưa ra quyết định đầu tư hiệu quả.",
+   "to": "giao-dich-theo-xu-huong-trend-following-la-gi",
+   "sentence": "Kênh giá vì thế là công cụ nền của [giao dịch theo xu hướng]: mua gần biên dưới kênh tăng và giữ đến khi kênh bị phá vỡ.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "sub-hub · đoạn i=7"
+  },
+  {
+   "src": "dao-chieu-xu-huong-la-gi",
+   "op": "append",
+   "find": "p tục di chuyển theo hướng ban đầu hay chính thức đảo chiều.",
+   "to": "giao-dich-theo-xu-huong-trend-following-la-gi",
+   "sentence": "Vì vậy, người [giao dịch theo xu hướng] chỉ hành động khi đảo chiều đã được xác nhận, chấp nhận bỏ qua đoạn đầu của sóng.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "sub-hub · đoạn i=2"
+  },
+  {
+   "src": "chi-bao-aroon-la-gi",
+   "op": "append",
+   "find": "ràng hay không, và độ mạnh yếu của xu hướng đó ở mức độ nào.",
+   "to": "cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat",
+   "sentence": "Vì vậy, Aroon được xếp vào nhóm [chỉ báo xác định xu hướng], cùng với ADX và các đường trung bình động.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=3"
+  },
+  {
+   "src": "kenh-gia-la-gi",
+   "op": "append",
+   "find": "iá song song hướng lên, hướng xuống hoặc đi ngang (sideway).",
+   "to": "giao-dich-theo-xu-huong-trend-following-la-gi",
+   "sentence": "Hai dạng đầu là công cụ của [giao dịch theo xu hướng], còn kênh đi ngang phù hợp với cách mua thấp bán cao trong biên độ.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "sub-hub · đoạn i=8"
+  },
+  {
+   "src": "chi-bao-dong-tien-mfi-la-gi",
+   "op": "append",
+   "find": "u đảo chiều và cực trị của giá với nhiều tín hiệu khác nhau.",
+   "to": "phuong-phap-dau-tu-theo-dong-tien-hieu-qua",
+   "sentence": "Nhờ gắn với khối lượng, MFI cũng là một công cụ đo [dòng tiền chứng khoán] vào hay ra khỏi một mã.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=3"
+  },
+  {
+   "src": "chi-bao-kenh-keltner-la-gi",
+   "op": "append",
+   "find": "nh vùng quá mua và quá bán khi thị trường không có xu hướng.",
+   "to": "chi-bao-ky-thuat",
+   "sentence": "Trong hệ thống [chỉ báo kỹ thuật], Keltner thuộc nhóm dải biến động, cùng họ với Bollinger Bands.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=2"
+  },
+  {
+   "src": "mo-hinh-nen-dao-chieu",
+   "op": "append",
+   "find": "thành một hệ thống phân tích xu hướng thị trường toàn diện.",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "sentence": "Nến đảo chiều vì thế chỉ là một lớp tín hiệu trong [phân tích kỹ thuật], bên cạnh xu hướng, khối lượng và hỗ trợ kháng cự.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=8"
+  },
+  {
+   "src": "chi-bao-connors-rsi-la-gi",
+   "op": "append",
+   "find": "có độ tin cậy cao hơn cho các chiến lược lướt sóng ngắn hạn.",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "sentence": "Như các công cụ [phân tích kỹ thuật] ngắn hạn khác, Connors RSI cần được kiểm thử trên dữ liệu quá khứ trước khi dùng tiền thật.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=4"
+  },
+  {
+   "src": "sideway-la-gi",
+   "op": "append",
+   "find": "ua và phe bán đều đang do dự chờ đợi các tín hiệu vĩ mô mới.",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "sentence": "Trong [phân tích kỹ thuật], vùng đi ngang được giới hạn bởi một đường hỗ trợ phía dưới và một đường kháng cự phía trên.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=5"
+  },
+  {
+   "src": "sideway-la-gi",
+   "op": "append",
+   "find": "lược giao dịch còn phù hợp với khẩu vị của từng nhà đầu tư.",
+   "to": "giao-dich-theo-xu-huong-trend-following-la-gi",
+   "sentence": "Người quen [giao dịch theo xu hướng] nên đứng ngoài khi thị trường đi ngang và chỉ quay lại sau phiên phá vỡ có khối lượng lớn.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "sub-hub · đoạn i=34"
+  },
+  {
+   "src": "golden-cross-va-death-cross-la-gi",
+   "op": "append",
+   "find": "phục hồi kỹ thuật ngắn hạn ngay sau khi điểm cắt xuất hiện.",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "sentence": "Vì vậy, [phân tích kỹ thuật] coi hai điểm cắt này là tín hiệu xác nhận xu hướng, không phải công cụ dự báo đỉnh đáy.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=14"
+  },
+  {
+   "src": "giao-dich-theo-xu-huong-trend-following-la-gi",
+   "op": "append",
+   "find": "g trên đà giảm và chờ đợi giá còn tiếp tục giảm sâu hơn nữa.",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "sentence": "Cả hai chiều giao dịch đều dựa vào [phân tích kỹ thuật] để xác định xu hướng, thay vì dự báo giá trị doanh nghiệp.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=4"
+  },
+  {
+   "src": "chi-bao-on-balance-volume-obv-la-gi",
+   "op": "append",
+   "find": "động giá hoặc sử dụng chỉ báo OBV để xác nhận xu hướng giá.",
+   "to": "phuong-phap-dau-tu-theo-dong-tien-hieu-qua",
+   "sentence": "Cách đọc này là nền tảng của [đầu tư theo dòng tiền]: khối lượng tích lũy tăng trước, giá tăng theo sau.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=2"
+  },
+  {
+   "src": "duong-zigzag-la-gi",
+   "op": "append",
+   "find": "n hiệu nhỏ trong xu hướng ấy, đưa ra góc nhìn toàn cảnh hơn.",
+   "to": "bieu-do-chung-khoan-la-gi-cach-xem-bieu-do-chung-khoan",
+   "sentence": "Nói cách khác, ZigZag là một lớp vẽ đè lên [biểu đồ giá] để người xem tập trung vào các đỉnh đáy chính.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "sub-hub · đoạn i=2"
+  },
+  {
+   "src": "duong-trung-binh-dong-hull-hma-la-gi",
+   "op": "append",
+   "find": "xác nhận xu hướng hoặc phát hiện sớm các tín hiệu đảo chiều.",
+   "to": "cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat",
+   "sentence": "So với các [chỉ báo xu hướng] cùng nhóm như SMA hay EMA, HMA đổi hướng sớm hơn nên cũng dễ cho tín hiệu giả hơn.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=36"
+  },
+  {
+   "src": "duong-phan-phoi-tich-luy-a-d-la-gi",
+   "op": "append",
+   "find": "đo lường dòng tiền tích lũy vào và ra khỏi một chứng khoán.",
+   "to": "phuong-phap-dau-tu-theo-dong-tien-hieu-qua",
+   "sentence": "Đây là một trong những chỉ báo gốc của trường phái [đầu tư theo dòng tiền], làm nền cho Chaikin Money Flow và Chaikin Oscillator.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=3"
+  },
+  {
+   "src": "chi-bao-chaikin-oscillator-la-gi",
+   "op": "append",
+   "find": "ó đo lường tốc độ thay đổi của dòng tiền tích lũy/phân phối.",
+   "to": "phuong-phap-dau-tu-theo-dong-tien-hieu-qua",
+   "sentence": "Với người [đầu tư theo dòng tiền], chỉ báo này cho biết tiền đang vào nhanh dần hay chậm dần, trước khi giá phản ứng.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=4"
+  },
+  {
+   "src": "bollinger-bands-la-gi-cach-su-dung-trong-giao-dich-chung-khoan",
+   "op": "append",
+   "find": "n thời gian giá cổ phiếu sẽ dao động bên trong hai dải biên.",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "sentence": "Đây là lý do [phân tích kỹ thuật] xem việc giá đóng cửa ngoài dải là tín hiệu bất thường cần chú ý.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=19"
+  },
+  {
+   "src": "chi-bao-momentum-la-gi",
+   "op": "append",
+   "find": "huộc vào từng cổ phiếu, không có con số nào đúng cho tất cả.",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "sentence": "Nguyên tắc này đúng với mọi công cụ [phân tích kỹ thuật]: tham số phải được kiểm chứng trên chính mã đang giao dịch.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=43"
+  },
+  {
+   "src": "amibroker-la-gi",
+   "op": "append",
+   "find": "i mô hình định lượng mà không bị giới hạn bởi nền tảng đóng.",
+   "to": "bieu-do-chung-khoan-la-gi-cach-xem-bieu-do-chung-khoan",
+   "sentence": "Nền tảng mạnh đến đâu thì người dùng vẫn cần nắm [cách xem biểu đồ chứng khoán] trước khi viết bộ lọc hay backtest.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "sub-hub · đoạn i=17"
+  },
+  {
+   "src": "chi-bao-adx-la-gi",
+   "op": "append",
+   "find": "y giảm mà chỉ tập trung vào sức mạnh của dòng tiền hiện tại.",
+   "to": "cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat",
+   "sentence": "Vì vậy, trong nhóm [chỉ báo xác định xu hướng], ADX đóng vai trò bộ lọc: cho biết có nên dùng chiến lược theo xu hướng hay không.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=4"
+  },
+  {
+   "src": "downtrend-la-gi-cach-nhan-biet-va-giao-dich-trong-downtrend",
+   "op": "append",
+   "find": "an bao trùm thị trường, áp lực bán hoàn toàn áp đảo lực mua.",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "sentence": "Cách xác định theo đỉnh đáy này đến từ lý thuyết Dow, nền móng của [phân tích kỹ thuật] hiện đại.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=3"
+  },
+  {
+   "src": "chi-bao-envelope-la-gi",
+   "op": "append",
+   "find": "có khả năng xảy ra sự điều chỉnh hoặc bùng nổ xu hướng mới.",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "sentence": "Trong [phân tích kỹ thuật], tín hiệu này cần thêm khối lượng hoặc một chỉ báo động lượng xác nhận trước khi vào lệnh.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=8"
+  },
+  {
+   "src": "chi-bao-dao-dong-aroon-aroon-oscillator-la-gi",
+   "op": "append",
+   "find": "tăng mạnh còn nếu xuống dưới -50 là một xu hướng giảm mạnh.",
+   "to": "cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat",
+   "sentence": "Cách đọc theo ngưỡng này khiến Aroon Oscillator trở thành một [chỉ báo xu hướng] dễ dùng cho người mới.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=9"
+  },
+  {
+   "src": "huong-dan-ket-hop-3-duong-ma-trong-giao-dich-va-dau-tu-hieu-qua",
+   "op": "append",
+   "find": "ả EMA do cách lấy trọng số rất cao cho những phiên gần nhất.",
+   "to": "cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat",
+   "sentence": "Cả ba loại đều thuộc nhóm [chỉ báo xác định xu hướng], khác nhau ở độ nhạy với các phiên gần nhất.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=6"
+  },
+  {
+   "src": "uptrend-la-gi-cach-nhan-biet-va-dau-tu-hieu-qua-trong-xu-huong-uptrend",
+   "op": "append",
+   "find": "sở hữu tài sản, tạo tiền đề cho những đợt bứt phá tiếp theo.",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "sentence": "Cách xác định theo đỉnh đáy này đến từ lý thuyết Dow, nền móng của [phân tích kỹ thuật] hiện đại.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=4"
+  },
+  {
+   "src": "chi-bao-force-index-la-gi",
+   "op": "append",
+   "find": "ái nhìn tổng quan và đáng tin cậy hơn về xu hướng trung hạn.",
+   "to": "chi-bao-ky-thuat",
+   "sentence": "Làm mượt bằng trung bình động là kỹ thuật chung của nhiều [chỉ báo kỹ thuật], từ MACD đến Stochastic.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=31"
+  },
+  {
+   "src": "duong-trung-binh-dong-luy-thua-dema-la-gi",
+   "op": "append",
+   "find": "tín hiệu đảo chiều hoặc sự thay đổi trong cấu trúc xu hướng.",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "sentence": "Như các đường trung bình khác trong [phân tích kỹ thuật], DEMA phát huy tốt khi thị trường có xu hướng và kém khi giá đi ngang.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=26"
+  },
+  {
+   "src": "phuong-phap-vsa",
+   "op": "append",
+   "find": "và hỗ trợ sẽ giúp nâng cao độ chính xác của điểm giao dịch.",
+   "to": "phuong-phap-dau-tu-theo-dong-tien-hieu-qua",
+   "sentence": "VSA cũng là công cụ cốt lõi của [đầu tư theo dòng tiền], vì cả hai đều đọc hành vi của tổ chức qua khối lượng.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=51"
+  },
+  {
+   "src": "mo-hinh-cai-nem-la-gi",
+   "op": "append",
+   "find": "một hướng (cùng lên hoặc cùng xuống) và hội tụ tại một điểm.",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "sentence": "Đây là một trong các mô hình giá cơ bản của [phân tích kỹ thuật], cùng nhóm với tam giác và cờ đuôi nheo.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=2"
+  },
+  {
+   "src": "bullish-la-gi-xu-huong-tang-gia-trong-thi-truong-chung-khoan",
+   "op": "append",
+   "find": "an và kỳ vọng giá cổ phiếu sẽ tiếp tục tăng trong tương lai.",
+   "to": "giao-dich-theo-xu-huong-trend-following-la-gi",
+   "sentence": "Thị trường bullish là môi trường thuận lợi cho [giao dịch theo xu hướng], khi mỗi nhịp điều chỉnh đều tạo đáy cao hơn đáy trước.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "sub-hub · đoạn i=1"
+  },
+  {
+   "src": "chi-bao-klinger-oscillator-la-gi",
+   "op": "append",
+   "find": "iá động lượng dòng tiền và tối ưu hóa thời điểm vào/ra lệnh.",
+   "to": "chi-bao-ky-thuat",
+   "sentence": "Trong hệ thống [chỉ báo kỹ thuật], Klinger thuộc nhóm khối lượng, cùng với OBV và Chaikin Money Flow.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=5"
+  },
+  {
+   "src": "do-thi-ky-thuat-la-gi",
+   "op": "append",
+   "find": "tích chứng khoán và dự báo sự biến động giá trong tương lai.",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "sentence": "Mọi phương pháp [phân tích kỹ thuật] đều bắt đầu từ đồ thị, vì đây là nơi giá và khối lượng được trình bày theo thời gian.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=2"
+  },
+  {
+   "src": "phan-phoi-dinh-la-gi",
+   "op": "append",
+   "find": "\" cổ phiếu từ các nhà đầu tư lớn sang các nhà đầu tư nhỏ lẻ.",
+   "to": "duong-ho-tro-va-khang-cu-la-gi",
+   "sentence": "Trên đồ thị, vùng trao tay này về sau trở thành [ngưỡng kháng cự] mạnh, vì nhiều người mua ở đây chờ bán hòa vốn.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "sub-hub · đoạn i=5"
+  },
+  {
+   "src": "duong-zigzag-la-gi",
+   "op": "wrap",
+   "find": "dự đoán xu hướng. Vì vậy, nhà PTKT thường kết hợp sóng Elliott,",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "anchor": "PTKT",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "pillar · bọc cụm có sẵn"
+  },
+  {
+   "src": "price-action-hanh-dong-gia-la-gi",
+   "op": "wrap",
+   "find": "hiểu về phân tích kỹ thuật vì biểu đồ giá thường sẽ chỉ gồm các nến, đồ",
+   "to": "bieu-do-chung-khoan-la-gi-cach-xem-bieu-do-chung-khoan",
+   "anchor": "biểu đồ giá",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "sub-hub · bọc cụm có sẵn"
+  },
+  {
+   "src": "vung-qua-mua-la-gi-giai-dap-chi-tiet-cho-nha-dau-tu",
+   "op": "wrap",
+   "find": "xác định vùng quá mua bao gồm RSI (Relative Strength Index - Ch",
+   "to": "chi-so-rsi-la-gi",
+   "anchor": "RSI",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "sub-hub · bọc cụm có sẵn"
+  },
+  {
+   "src": "dai-trung-binh-dong-moving-average-ribbon-la-gi",
+   "op": "wrap",
+   "find": "ột dải màu giúp nhà giao dịch nhận diện xu hướng, sức mạnh xu hướng và điểm và",
+   "to": "cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat",
+   "anchor": "nhận diện xu hướng",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "hub · bọc cụm có sẵn"
+  }
+ ],
+ "skipped": [
+  {
+   "src": "chi-bao-macd-histogram-la-gi",
+   "target": "phan-tich-ky-thuat-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "chi-bao-atr-la-gi",
+   "target": "phan-tich-ky-thuat-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "chi-bao-dmi-directional-movement-index-danh-gia-xu-huong-va-suc-manh-thi-truong-hieu-qua",
+   "target": "duong-ma-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "vwap-la-gi",
+   "target": "phan-tich-ky-thuat-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "chi-bao-aroon-la-gi",
+   "target": "phan-tich-ky-thuat-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "chi-bao-kenh-keltner-la-gi",
+   "target": "phan-tich-ky-thuat-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "chi-bao-on-balance-volume-obv-la-gi",
+   "target": "phan-tich-ky-thuat-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "duong-trung-binh-dong-hull-hma-la-gi",
+   "target": "phan-tich-ky-thuat-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "chi-bao-chaikin-oscillator-la-gi",
+   "target": "phan-tich-ky-thuat-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "chi-bao-bollinger-band-b-la-gi",
+   "target": "phan-tich-ky-thuat-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "chi-bao-bollinger-band-b-la-gi",
+   "target": "chi-bao-ky-thuat",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "chi-bao-adx-la-gi",
+   "target": "phan-tich-ky-thuat-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "chi-bao-ttm-squeeze-la-gi",
+   "target": "phan-tich-ky-thuat-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "chi-bao-ttm-squeeze-la-gi",
+   "target": "chi-bao-ky-thuat",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "chi-bao-moving-average-envelope-mae-la-gi",
+   "target": "cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "huong-dan-ket-hop-3-duong-ma-trong-giao-dich-va-dau-tu-hieu-qua",
+   "target": "phan-tich-ky-thuat-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "uptrend-la-gi-cach-nhan-biet-va-dau-tu-hieu-qua-trong-xu-huong-uptrend",
+   "target": "giao-dich-theo-xu-huong-trend-following-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "chi-bao-vortex-indicator-vi-la-gi",
+   "target": "phan-tich-ky-thuat-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "bullish-la-gi-xu-huong-tang-gia-trong-thi-truong-chung-khoan",
+   "target": "phan-tich-ky-thuat-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "chi-bao-special-k-la-gi",
+   "target": "phan-tich-ky-thuat-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "duong-phan-tu-quadrant-line-la-gi",
+   "target": "phan-tich-ky-thuat-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "duong-phan-tu-quadrant-line-la-gi",
+   "target": "bieu-do-chung-khoan-la-gi-cach-xem-bieu-do-chung-khoan",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "kenh-hoi-quy-raff-raff-regression-channel-la-gi",
+   "target": "phan-tich-ky-thuat-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "kenh-hoi-quy-raff-raff-regression-channel-la-gi",
+   "target": "bieu-do-chung-khoan-la-gi-cach-xem-bieu-do-chung-khoan",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  }
+ ]
+}

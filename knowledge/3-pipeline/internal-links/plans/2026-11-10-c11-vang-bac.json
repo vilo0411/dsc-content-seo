@@ -1,0 +1,151 @@
+{
+ "title": "C11 Vàng + C14 Bạc — link bài về pillar & sub-hub (wrap cụm từ có sẵn)",
+ "edits": [
+  {
+   "src": "app-dau-tu-vang",
+   "op": "wrap",
+   "find": "Để giúp bạn có cách đầu tư vàng online sinh lời hiệu quả, DSC",
+   "to": "cach-dau-tu-vang",
+   "anchor": "cách đầu tư vàng",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "pillar (block 19/79)"
+  },
+  {
+   "src": "nen-mua-vang-mieng-sjc-hay-pnj",
+   "op": "wrap",
+   "find": "khoản tiền nhàn rỗi đáng kể và xác định đầu tư vàng để bảo toàn giá trị tài sản t",
+   "to": "cach-dau-tu-vang",
+   "anchor": "đầu tư vàng",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "pillar (block 17/87)"
+  },
+  {
+   "src": "nen-mua-vang-o-ngan-hang-hay-tiem-vang",
+   "op": "wrap",
+   "find": "Uy tín là yếu tố sống còn trong đầu tư vàng. Mua vàng tại các ngân hàng q",
+   "to": "cach-dau-tu-vang",
+   "anchor": "đầu tư vàng",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "pillar (block 44/69)"
+  },
+  {
+   "src": "co-nen-ban-vang-thoi-diem-nay",
+   "op": "wrap",
+   "find": "Chênh lệch spread lớn làm giảm hiệu quả đầu tư vàng ngắn hạn. Bạn nên bán để chuy",
+   "to": "cach-dau-tu-vang",
+   "anchor": "đầu tư vàng",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "pillar (block 12/77)"
+  },
+  {
+   "src": "co-nen-dau-tu-vang-thoi-diem-nay",
+   "op": "wrap",
+   "find": "hát theo báo cáo của Tổng cục Thống kê. Đầu tư vàng là tài sản tích trữ tốt nhưng",
+   "to": "cach-dau-tu-vang",
+   "anchor": "Đầu tư vàng",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "pillar (block 30/44)"
+  },
+  {
+   "src": "co-nen-dau-tu-vang-thoi-diem-nay",
+   "op": "remove",
+   "old": "https://www.dsc.com.vn/kien-thuc/cach-dau-tu-vang",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Dòng Xem thêm trùng đích — link đã có trong câu"
+  },
+  {
+   "src": "nen-dau-tu-vang-hay-bac",
+   "op": "wrap",
+   "find": "Rủi ro khi đầu tư vàng: Giá vàng vẫn có những biến đ",
+   "to": "cach-dau-tu-vang",
+   "anchor": "đầu tư vàng",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "pillar (block 17/71)"
+  },
+  {
+   "src": "so-sanh-kenh-dau-tu-vang-va-dau-tu-chung-khoan",
+   "op": "wrap",
+   "find": "Về thanh khoản: kênh đầu tư vàng có thanh khoản cao hơn thị tr",
+   "to": "cach-dau-tu-vang",
+   "anchor": "kênh đầu tư vàng",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "pillar (block 13/21)"
+  },
+  {
+   "src": "yeu-to-anh-huong-den-gia-vang",
+   "op": "wrap",
+   "find": "Để thực hiện cách đầu tư vàng thông minh để sinh lời, bạn c",
+   "to": "cach-dau-tu-vang",
+   "anchor": "cách đầu tư vàng",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "pillar (block 48/57)"
+  },
+  {
+   "src": "yeu-to-anh-huong-den-gia-vang",
+   "op": "wrap",
+   "find": "tế bất ổn. Do đó, câu trả lời cho việc có nên đầu tư vàng khi lạm phát cao thường là có",
+   "to": "co-nen-dau-tu-vang-thoi-diem-nay",
+   "anchor": "có nên đầu tư vàng",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "sub-hub (block 18/57)"
+  },
+  {
+   "src": "sach-dau-tu-vang",
+   "op": "wrap",
+   "find": "và chênh lệch mua-bán sẽ giúp bạn biết cách đầu tư vàng không bị lừa đảo.",
+   "to": "cach-dau-tu-vang",
+   "anchor": "cách đầu tư vàng",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "pillar (block 7/43)"
+  },
+  {
+   "src": "nen-mua-vang-mieng-hay-vang-nhan",
+   "op": "wrap",
+   "find": "Việc so sánh hai loại vàng này giúp bạn chọn đúng kênh p",
+   "to": "dau-tu-vang-nen-mua-loai-nao",
+   "anchor": "loại vàng",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "sub-hub (block 6/77)"
+  },
+  {
+   "src": "nen-mua-vang-sjc-hay-9999",
+   "op": "wrap",
+   "find": "c điểm và sự khác biệt cốt lõi giữa hai loại vàng này. Đây là nền tảng quan trọ",
+   "to": "dau-tu-vang-nen-mua-loai-nao",
+   "anchor": "loại vàng",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "sub-hub (block 4/72)"
+  },
+  {
+   "src": "mua-bac-dau-tu-o-dau",
+   "op": "wrap",
+   "find": "miếng, bạc thỏi vật chất cùng giải pháp đầu tư bạc gián tiếp qua sàn chứng khoán",
+   "to": "dau-tu-bac-co-nen-khong",
+   "anchor": "đầu tư bạc",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "pillar (block 1/56)"
+  },
+  {
+   "src": "mua-bac-dau-tu-o-dau",
+   "op": "remove",
+   "old": "https://www.dsc.com.vn/kien-thuc/dau-tu-bac-co-nen-khong",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Dòng Xem thêm trùng đích — link đã có trong câu"
+  }
+ ]
+}

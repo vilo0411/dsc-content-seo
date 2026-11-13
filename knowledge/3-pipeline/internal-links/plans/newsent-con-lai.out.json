@@ -1,0 +1,257 @@
+[
+ {
+  "src": "app-chuyen-theo-doi-thi-truong-chung-khoan-nen-dung-app-nao",
+  "target": "cach-mo-tai-khoan-chung-khoan",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "co-phieu-bi-cat-margin-nguyen-nhan-anh-huong-va-cach-xu-ly",
+  "target": "cach-mo-tai-khoan-chung-khoan",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "dau-tu-chung-khoan-ao-la-gi-huong-dan-chi-tiet-va-day-du",
+  "target": "cach-mo-tai-khoan-chung-khoan",
+  "i": 1,
+  "op": "append",
+  "sentence": "Khi đã quen thao tác, bước tiếp theo là [mở tài khoản chứng khoán] thật và bắt đầu với số vốn nhỏ.",
+  "why": "pillar · đoạn i=1"
+ },
+ {
+  "src": "dau-tu-chung-khoan-ao-la-gi-huong-dan-chi-tiet-va-day-du",
+  "target": "app-dau-tu-chung-khoan",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "call-force-sell-ban-giai-chap-trong-dau-tu-chung-khoan-la-gi",
+  "target": "cach-mo-tai-khoan-chung-khoan",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "call-margin-la-gi-lam-gi-khi-bi-call-margin",
+  "target": "cach-mo-tai-khoan-chung-khoan",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "don-bay-tai-chinh-trong-dau-tu-chung-khoan-la-gi",
+  "target": "cach-mo-tai-khoan-chung-khoan",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "thue-chuyen-nhuong-chung-khoan-la-gi",
+  "target": "cach-mo-tai-khoan-chung-khoan",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "thue-chuyen-nhuong-chung-khoan-la-gi",
+  "target": "phi-giao-dich-chung-khoan",
+  "i": 7,
+  "op": "append",
+  "sentence": "Khoản thuế này tách biệt với [phí giao dịch chứng khoán] mà công ty chứng khoán thu trên cả lệnh mua lẫn lệnh bán.",
+  "why": "sub-hub · đoạn i=7"
+ },
+ {
+  "src": "full-margin-la-gi-loi-khuyen-cho-nha-dau-tu-moi",
+  "target": "cach-mo-tai-khoan-chung-khoan",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "thue-khi-ban-co-phieu-la-bao-nhieu",
+  "target": "cach-mo-tai-khoan-chung-khoan",
+  "i": 112,
+  "op": "append",
+  "sentence": "Vì vậy, biểu phí là tiêu chí cần so sánh trước khi [mở tài khoản chứng khoán] tại một công ty.",
+  "why": "pillar · đoạn i=112"
+ },
+ {
+  "src": "luu-ky-chung-khoan-moi-dieu-ban-can-biet",
+  "target": "cach-mo-tai-khoan-chung-khoan",
+  "i": 3,
+  "op": "append",
+  "sentence": "Tài khoản lưu ký được tạo cùng lúc khi nhà đầu tư [mở tài khoản chứng khoán] tại một công ty chứng khoán thành viên.",
+  "why": "pillar · đoạn i=3"
+ },
+ {
+  "src": "app-dau-tu-vang",
+  "target": "dau-tu-vang-nen-mua-loai-nao",
+  "i": 2,
+  "op": "append",
+  "sentence": "Trước khi chọn app, cần xác định [đầu tư vàng nên mua loại nào], vì mỗi nhóm app chỉ bán một vài loại vàng nhất định.",
+  "why": "sub-hub · đoạn i=2"
+ },
+ {
+  "src": "nen-mua-vang-mieng-sjc-hay-pnj",
+  "target": "dau-tu-vang-nen-mua-loai-nao",
+  "i": 8,
+  "op": "append",
+  "sentence": "Việc [chọn loại vàng] vì thế phụ thuộc vào mục đích: tích trữ dài hạn hay vừa đeo vừa giữ tài sản.",
+  "why": "sub-hub · đoạn i=8"
+ },
+ {
+  "src": "nen-mua-vang-o-ngan-hang-hay-tiem-vang",
+  "target": "dau-tu-vang-nen-mua-loai-nao",
+  "i": 14,
+  "op": "append",
+  "sentence": "Nơi mua vì thế đi liền với việc [chọn loại vàng]: ngân hàng chỉ bán vàng miếng, còn tiệm vàng có cả nhẫn trơn và trang sức.",
+  "why": "sub-hub · đoạn i=14"
+ },
+ {
+  "src": "co-nen-ban-vang-thoi-diem-nay",
+  "target": "co-nen-dau-tu-vang-thoi-diem-nay",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "trien-vong-trien-khai-quy-etf-vang-tai-viet-nam",
+  "target": "cach-dau-tu-vang",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "nen-mua-vang-mieng-hay-vang-nhan",
+  "target": "dau-tu-vang-nen-mua-loai-nao",
+  "i": 34,
+  "op": "append",
+  "sentence": "Hai lựa chọn này là phần chính của câu hỏi [nên mua vàng loại nào để tích trữ], bên cạnh vàng trang sức và vàng tài khoản.",
+  "why": "sub-hub · đoạn i=34"
+ },
+ {
+  "src": "nen-mua-vang-sjc-hay-9999",
+  "target": "dau-tu-vang-nen-mua-loai-nao",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "cach-dau-tu-etf-tai-viet-nam-huong-dan-chi-tiet-tu-a-den-z",
+  "target": "chung-chi-quy-la-gi",
+  "i": 3,
+  "op": "append",
+  "sentence": "Mỗi phần vốn góp vào quỹ được gọi là [chứng chỉ quỹ], và đây chính là thứ nhà đầu tư mua bán trên sàn.",
+  "why": "pillar · đoạn i=3"
+ },
+ {
+  "src": "ung-dung-arbitrage-vao-dau-tu-chung-chi-quy",
+  "target": "quy-mo-la-gi-tong-quan-ve-quy-mo-tren-thi-truong-chung-khoan-viet-nam",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "quy-dau-tu-mao-hiem-la-gi",
+  "target": "chung-chi-quy-la-gi",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "quy-dau-tu-mao-hiem-la-gi",
+  "target": "quy-mo-la-gi-tong-quan-ve-quy-mo-tren-thi-truong-chung-khoan-viet-nam",
+  "i": 3,
+  "op": "append",
+  "sentence": "Nhà đầu tư cá nhân vốn nhỏ thường tiếp cận thị trường qua [quỹ mở], còn quỹ mạo hiểm chủ yếu dành cho tổ chức và người có vốn lớn.",
+  "why": "sub-hub · đoạn i=3"
+ },
+ {
+  "src": "uy-thac-dau-tu-la-gi",
+  "target": "chung-chi-quy-la-gi",
+  "i": 5,
+  "op": "append",
+  "sentence": "Với số vốn nhỏ hơn, [đầu tư chứng chỉ quỹ] là cách phổ biến để nhờ chuyên gia quản lý tiền thay mình.",
+  "why": "pillar · đoạn i=5"
+ },
+ {
+  "src": "phan-biet-quy-etf-va-quy-tuong-ho",
+  "target": "chung-chi-quy-la-gi",
+  "i": 3,
+  "op": "append",
+  "sentence": "Phần vốn góp của mỗi người được ghi nhận bằng [chứng chỉ quỹ], tương tự cổ phiếu với một doanh nghiệp.",
+  "why": "pillar · đoạn i=3"
+ },
+ {
+  "src": "danh-sach-cac-dien-dan-chung-khoan-uy-tin-tai-viet-nam",
+  "target": "khoa-hoc-chung-khoan",
+  "i": 10,
+  "op": "append",
+  "sentence": "Người mới nên kết hợp với một [khóa học chứng khoán] bài bản, vì thông tin trên diễn đàn rời rạc và chưa được kiểm chứng.",
+  "why": "sub-hub · đoạn i=10"
+ },
+ {
+  "src": "chung-chi-hanh-nghe-chung-khoan-la-gi",
+  "target": "chung-chi-tai-chinh",
+  "i": 2,
+  "op": "append",
+  "sentence": "Khác với [chứng chỉ tài chính quốc tế] như CFA hay CMT, đây là điều kiện pháp lý bắt buộc để hành nghề tại Việt Nam.",
+  "why": "sub-hub · đoạn i=2"
+ },
+ {
+  "src": "chung-chi-cmt-la-gi",
+  "target": "chung-chi-tai-chinh",
+  "i": 12,
+  "op": "append",
+  "sentence": "Trong [các chứng chỉ tài chính] quốc tế, CMT chuyên về phân tích kỹ thuật, còn CFA thiên về phân tích cơ bản và quản lý danh mục.",
+  "why": "sub-hub · đoạn i=12"
+ },
+ {
+  "src": "kenh-tik-tok-ve-tai-chinh",
+  "target": "khoa-hoc-chung-khoan",
+  "i": 65,
+  "op": "append",
+  "sentence": "Video ngắn hợp để làm quen; muốn có hệ thống, người mới vẫn cần một [khóa học chứng khoán] đi từ nền tảng.",
+  "why": "sub-hub · đoạn i=65"
+ },
+ {
+  "src": "giao-trinh-phan-tich-bao-cao-tai-chinh",
+  "target": "nhung-cuon-sach-hay-ve-dau-tu-chung-khoan",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "khoa-hoc-chung-khoan-tan-thu",
+  "target": "khoa-hoc-chung-khoan",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "khoa-hoc-ky-thuat-thuc-chien",
+  "target": "khoa-hoc-chung-khoan",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "quyen-chon-mua-co-phieu-la-gi",
+  "target": "chung-khoan-phai-sinh-la-gi-huong-dan-dau-tu-cho-nguoi-moi-bat-dau",
+  "i": 10,
+  "op": "append",
+  "sentence": "Quyền chọn là một trong bốn nhóm [chứng khoán phái sinh] cơ bản, cùng với hợp đồng tương lai, kỳ hạn và hoán đổi.",
+  "why": "pillar · đoạn i=10"
+ },
+ {
+  "src": "phi-va-thue-khi-giao-dich-chung-quyen-co-bao-dam-tai-viet-nam",
+  "target": "chung-quyen-la-gi-chung-quyen-co-bao-dam-la-gi-tim-hieu-chung-quyen-tai-viet-nam",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ }
+]

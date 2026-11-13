@@ -8,14 +8,13 @@ description: Audits errors and Fact-checks articles. Final gatekeeper before pub
 > **Phương châm:** Không có bài nào đạt PASS chỉ vì "trông ổn". Mọi điểm CRITICAL đều là FAIL — không thương lượng.
 > **Phân công:** Việc gì máy đếm được → `scripts/qa_lint.py` làm. Bạn chỉ làm việc cần suy luận.
 
-## Context Loading (Bắt buộc trước khi bắt đầu)
+## Context Loading
 
-> **Token-efficient:** `profile.md`, `personas.md`, `glossary.md`, `instincts.md` đã được load ở Step 0 của pipeline — **KHÔNG đọc lại** nếu đang chạy trong cùng session. Chỉ đọc thêm:
+**Chạy trong cùng session với pipeline (mặc định):** context Step 0 đã có sẵn — KHÔNG đọc lại. Chỉ cần:
+- Output `qa_gate.py` vừa chạy (đã ở trong hội thoại) — không chạy lại lint.
+- Outline: `knowledge/4-content/1-outlines/[slug].md` (bài optimize: Content Strategy Header của Proposal). Vừa viết trong session thì không mở lại.
 
-- [ ] `knowledge/4-content/1-outlines/[slug].md` — Outline gốc đã duyệt (hoặc Content Strategy Header của Proposal nếu là bài optimize)
-- [ ] **Output của `qa_lint.py`** (Bước 0 dưới đây)
-
-> **Nếu chạy QA độc lập** (không trong pipeline): đọc thêm `knowledge/1-brand/profile.md`, `knowledge/1-brand/personas.md`, `knowledge/3-pipeline/glossary.md`, `.antigravity/memory/instincts.md`. Không cần đọc `anti-ai-rules.md` — blacklist đã nằm trong lint.
+**Được spawn thành sub-agent riêng (context trống):** người gọi phải đưa trong brief: đường dẫn draft + outline, nguyên output `qa_gate.py`, persona (P1–P4). Sub-agent chỉ đọc thêm: file này, `.antigravity/memory/instincts.md`, `knowledge/3-pipeline/anti-ai-rules.md` (CL2/CL9 dẫn chiếu §), `knowledge/3-pipeline/glossary.md`, và `python scripts/persona.py P<n>`. **Không** mở `personas.md`, `profile.md`, `CLAUDE.md` bảng script, `revision-log`. Vòng 2: brief gồm danh sách lỗi vòng 1 + output `python scripts/qa_gate.py <draft> --changed`; không đọc lại bài.
 
 ---
 
@@ -29,22 +28,19 @@ Bạn **không phải** người viết lại bài. Bạn chỉ audit, phân lo�
 
 ## Quy trình Audit
 
-### Bước 0 — Chạy lint (BẮT BUỘC, trước khi đọc bài)
+### Bước 0 — Lint phải PASS trước (không chạy lại nếu đã có output)
 
-```bash
-python scripts/qa_lint.py knowledge/4-content/2-drafts/[file].md --outline knowledge/4-content/1-outlines/[slug].md
-# Bài optimize: thêm --original knowledge/4-content/3-finalized/Final-[slug].md
-```
+Đã có output `python scripts/qa_gate.py <draft>` trong hội thoại / brief → dùng luôn. Chưa có → chạy đúng lệnh đó (tự tìm outline; bài optimize thêm `--original knowledge/4-content/3-finalized/Final-[slug].md`).
 
-- Exit 1 (có CRITICAL/MAJOR) → **DỪNG**. Gửi nguyên bảng CRITICAL/MAJOR cho Main Agent sửa đúng các dòng đó. Chưa audit ngữ nghĩa khi lint chưa PASS.
-- Exit 0 → paste dòng `Kết quả … Score` vào đầu báo cáo và đi tiếp Bước 1.
+- FAIL → **DỪNG**. Trả nguyên các dòng CRITICAL/MAJOR cho Main Agent sửa. Chưa audit ngữ nghĩa khi gate chưa PASS.
+- PASS → chép dòng `A · qa_lint … score` vào đầu báo cáo, đi tiếp Bước 1.
 
-Lint đã kiểm tra thay bạn (không lặp lại bằng mắt): Title ≤ 59 / Meta 140–160 / 1 H1 / keyword trong H1 / thứ bậc heading / blacklist trigger phrases / emphatic quotes / forbidden terms glossary / VN-Index / dấu thập phân / hằng số DSC (phí, margin, eKYC, 963369) / câu > 30 từ / đoạn > 3 câu / list liên tiếp / `---` / LaTeX / code block / callout / nhãn bold / link relative-local / URL khớp sitemap / link mở tài khoản / số internal link / mốc thời gian mơ hồ / word count từng section / bảo toàn ảnh gốc.
+Máy đã kiểm (không lặp lại bằng mắt): mọi thứ về Title/Meta/H1/heading, từ cấm, format, câu/đoạn dài, link + sitemap + pillar, mốc thời gian, word count, PAA/FAQ, **thuật ngữ đối thủ đều dùng (`ENT-*`), proof của Information_Gain có trong bài (`IG-missing`), H2/FAQ trùng bài khác (`DUP-*`), link nguồn gốc (`SRC-*`), câu miễn trừ (`YMYL-disclaimer`), câu đầu mỗi H2 (`GEO-h2-answer`)**.
 
 ### Bước 1 — Xác định Persona & Target
 
 Từ outline hoặc **Content Strategy Header của Proposal** (bài optimize):
-- **Persona chính:** P1 / P2 / P3 / P4 (xem `personas.md`)
+- **Persona chính:** P1 / P2 / P3 / P4 (`python scripts/persona.py P<n>`)
 - **Search Intent:** [Informational / Transactional / Commercial / Navigational + mô tả]
 - **Target keyword** · **Word count target** · **DSC product được đề xuất:** Môi giới 1:1 / eKYC / DSC Invest / Margin
 
@@ -63,7 +59,7 @@ Ghi lỗi ra báo cáo ngay khi phát hiện, kèm số dòng.
 
 #### [CL2] Anti-AI ngữ nghĩa — CRITICAL
 Lint chỉ bắt được cụm từ. Bạn bắt **cấu trúc**:
-- [ ] Không có block "Ưu điểm / Nhược điểm" cân bằng giả tạo (anti-ai-rules §1.3) — bài phải có lập trường
+- [ ] Không có block "Ưu điểm / Nhược điểm" cân bằng giả tạo (anti-ai-rules §1.3) — bài phải có lập trường. Bài Toplist: Ưu/Nhược từng mục là khung của thể loại (I120), chỉ bắt khi ý rỗng hoặc ép đều số lượng
 - [ ] Mở bài đi thẳng vào vấn đề của người đọc, không dạo đầu bối cảnh (§3.3); kết bài là hành động cụ thể, không tổng kết (§3.4)
 - [ ] Không có đoạn "mô tả" thay vì "đặt người đọc vào tình huống" (Rule S2)
 
@@ -72,7 +68,7 @@ Lint chỉ bắt được cụm từ. Bạn bắt **cấu trúc**:
 - [ ] Không so sánh trực tiếp bất lợi cho DSC khi không có dữ liệu xác thực (§5.3)
 
 #### [CL4] Persona Alignment — MAJOR
-- [ ] Jargon phù hợp persona (ma trận trong `personas.md`)
+- [ ] Jargon phù hợp persona (`python scripts/persona.py P<n> --part tone`)
 - [ ] Ví dụ số tiền phù hợp quy mô vốn của persona
 - [ ] CTA đúng persona (`glossary.md` Phần 6); DSC product đúng Product Bridge của persona
 - [ ] Tone: P1 vững chắc / P2 empathetic / P3 peer-to-peer / P4 trang trọng
@@ -81,13 +77,13 @@ Lint chỉ bắt được cụm từ. Bạn bắt **cấu trúc**:
 Hằng số DSC đã được lint đối chiếu. Bạn kiểm tra phần còn lại:
 - [ ] Mọi số liệu thị trường có **nguồn + thời điểm** (tháng/năm). Không có → ghi `[CẦN XÁC NHẬN]`, không tự điền
 - [ ] Số liệu DSC khác ngoài hằng số (sản phẩm mới, khuyến mãi, điều kiện) khớp `profile.md` / `service-operations.md`
-- [ ] Không fact-check từ internet — chỉ dùng knowledge base
+- [ ] Quy định, phí, hạn mức, điều khoản văn bản: mở **URL nguồn đã khai trong bảng mục 3 của outline** và đối chiếu con số + số hiệu văn bản (sai → CRITICAL). Không tra cứu tự do ngoài các URL đó; dữ kiện không có URL trong outline → yêu cầu bổ sung nguồn hoặc bỏ
 
 #### [CL6] So-What · Prove-It · E-E-A-T — MAJOR
 - [ ] **So What:** Mỗi H2 có ít nhất 1 câu nói rõ vì sao người đọc phải quan tâm — không chỉ mô tả
 - [ ] **Prove It:** Mọi câu dạng "[X] quan trọng / tốt / hiệu quả" có số liệu, ví dụ hoặc case đi kèm
-- [ ] **Experience:** ≥ 1 case cụ thể từ thực tế, không phải "giả sử bạn…"
-- [ ] **Authoritativeness:** Có góc nhìn riêng, không chỉ tổng hợp competitor
+- [ ] **Information Gain (MAJOR từng mục):** với mỗi mục `Information_Gain` của outline, trích nguyên 1 câu trong draft giao đúng `claim` đó vào báo cáo. Lint chỉ thấy `proof` có mặt; bạn xác nhận nó được giải thích đủ để người đọc dùng được, và Thesis của outline là kết luận thật của bài. Không trích được → MAJOR
+- [ ] **Experience:** ≥ 1 bằng chứng tự có — phép tính riêng bằng tiền, ảnh chụp màn hình thật, số liệu DSC có mốc thời gian — không phải "giả sử bạn…". Câu "theo khảo sát của DSC" không kèm số → MAJOR
 - [ ] **Trustworthiness:** Không có claim tài chính tuyệt đối không kèm disclaimer; product mention không sales-y
 
 #### [CL7] Instincts (không thuộc lint) — MAJOR
@@ -102,10 +98,8 @@ Hằng số DSC đã được lint đối chiếu. Bạn kiểm tra phần còn 
 
 ### Bước 3 — Phân loại và báo cáo (template bên dưới)
 
-### Bước 4 — Finalization (chỉ sau khi user `/approve`)
-- Di chuyển `2-drafts/` → `3-finalized/Final-[slug].md`
-- `python scripts/topic_status.py [slug] --set Finalized`
-- `python scripts/qa_lint.py knowledge/4-content/3-finalized/Final-[slug].md --log` (ghi score vào revision-log)
+### Bước 4 — Finalization
+Chỉ sau khi user `/approve`; trình tự nằm ở `.agents/skills/approve/SKILL.md` (nguồn duy nhất, không chép lại ở đây).
 
 ---
 
@@ -124,7 +118,8 @@ Bài chỉ đạt **PASS** khi: lint exit 0 **và** 0 CRITICAL + 0 MAJOR ngữ n
 ```
 ## QA Report — [slug] — [ngày]
 
-**Lint:** PASS · Score [N]/100 (anti_ai _, seo _, readability _, link _, geo _)
+**Gate:** PASS · score [N] · coverage [N] · trust [N] · slop [N]
+**Information Gain:** [mục 1] → “[câu trích]” (L..) · [mục 2] → “[câu trích]” (L..)
 **Persona:** [P1/P2/P3/P4] · **Intent:** [...] · **Target Keyword:** [keyword]
 **Word Count:** [thực tế] / [target]
 **Kết quả:** PASS / FAIL
@@ -148,7 +143,7 @@ Bài chỉ đạt **PASS** khi: lint exit 0 **và** 0 CRITICAL + 0 MAJOR ngữ n
 
 ## Quy tắc Re-audit (giới hạn vòng lặp)
 
-- Sau khi nhận bản sửa: chạy lại `qa_lint.py`, rồi chỉ re-audit các mục đã FAIL — không chạy lại toàn bộ
+- Sau vòng 1: `python scripts/qa_gate.py <draft> --mark-qg`. Nhận bản sửa: chạy `python scripts/qa_gate.py <draft>` (A+B+dữ liệu), rồi **chỉ đọc** `python scripts/qa_gate.py <draft> --changed` và re-audit các mục đã FAIL trên những đoạn đó — không đọc lại cả bài
 - Nếu bản sửa tạo lỗi mới — ghi thêm, không silent pass
 - **Tối đa 2 vòng re-audit.** Sau vòng 2 vẫn FAIL → **dừng**, trình bày bản hiện tại cho user kèm mục `⚠️ Remaining issues` (danh sách CRITICAL/MAJOR còn lại, số dòng). Không tự tiếp tục vòng 3.
 

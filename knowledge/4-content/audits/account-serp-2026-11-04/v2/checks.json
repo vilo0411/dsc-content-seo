@@ -1,0 +1,16 @@
+{
+  "lint": {
+    "exit_code": 0,
+    "report": "lint.txt"
+  },
+  "style": {
+    "exit_code": 0,
+    "report": "style.txt"
+  },
+  "facts": {
+    "exit_code": 0,
+    "report": "facts.txt"
+  },
+  "status": "draft-not-published; do not equate lint pass with editorial/final QA pass",
+  "reader_review": "4H2/3H3 match agreed outline; removed fee calculation/FAQ repetition; no invented screenshots; captured images kept as DSC registration-system illustrations, not verified current App version"
+}

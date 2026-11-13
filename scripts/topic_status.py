@@ -6,9 +6,12 @@ Usage:
   python scripts/topic_status.py <slug> --set "In Progress" → update the Trạng thái cell of that row
   python scripts/topic_status.py --find "từ khóa"           → search rows by keyword text
   python scripts/topic_status.py --list Optimizing          → list rows with a given status
+  python scripts/topic_status.py --summary                  → counts per cluster + rows not Finalized (/keyword-plan)
+  python scripts/topic_status.py <slug> --add --keyword "từ khóa" --cluster "tên cluster" [--set Outlining]
+                                                            → append a new row to that cluster (no file read by the LLM)
 
 Slug is matched against the URL column (`/kien-thuc/<slug>/`). Exactly one row must match for --set.
-Statuses used in the pipeline: Planned · In Progress · Outline-Approved · Optimizing · Finalized
+Statuses used in the pipeline: Planned · Outlining · Outline-Approved · Optimizing · Finalized
 """
 
 from __future__ import annotations
@@ -25,7 +28,7 @@ if hasattr(sys.stdout, "buffer"):
 
 ROOT = Path(__file__).resolve().parents[1]
 TOPIC_FILE = ROOT / "knowledge/4-content/topic-clusters.md"
-VALID_STATUS = {"Planned", "In Progress", "Outline-Approved", "Optimizing", "Finalized"}
+VALID_STATUS = {"Planned", "Outlining", "In Progress", "Outline-Approved", "Optimizing", "Finalized"}
 
 
 def unaccent(s: str) -> str:
@@ -61,6 +64,11 @@ def main():
     ap.add_argument("--set", metavar="STATUS", help="New status for the matched row")
     ap.add_argument("--find", metavar="TEXT", help="Search keyword column (accent-insensitive)")
     ap.add_argument("--list", metavar="STATUS", help="List all rows with this status")
+    ap.add_argument("--summary", action="store_true",
+                    help="Counts per cluster × status + every row not yet Finalized (input for /keyword-plan)")
+    ap.add_argument("--add", action="store_true", help="Append a new row for <slug> (needs --keyword and --cluster)")
+    ap.add_argument("--keyword", help="Keyword / topic text for --add")
+    ap.add_argument("--cluster", help="Cluster heading to add under (accent-insensitive substring) for --add")
     args = ap.parse_args()
 
     if not TOPIC_FILE.exists():
@@ -71,6 +79,23 @@ def main():
     text = raw.decode("utf-8")
     lines = text.split(nl)
     rows = list(parse_rows(lines))
+
+    if args.summary:
+        statuses = sorted({r[4] for r in rows}, key=lambda s: (s != "Finalized", s))
+        per: dict[str, dict[str, int]] = {}
+        for _, cl, _, _, st, _ in rows:
+            per.setdefault(cl, {}).setdefault(st, 0)
+            per[cl][st] += 1
+        print(f"# {len(rows)} bài · {len(per)} cluster\n")
+        print("| Cluster | " + " | ".join(statuses) + " |\n|---|" + "---|" * len(statuses))
+        for cl, cnt in per.items():
+            print(f"| {cl} | " + " | ".join(str(cnt.get(s, 0)) for s in statuses) + " |")
+        todo = [r for r in rows if r[4] != "Finalized"]
+        print(f"\n## {len(todo)} bài chưa Finalized (cột Volume nếu có)\n\n| Slug | Keyword | Volume | Trạng thái | Cluster |\n|---|---|---|---|---|")
+        for _, cl, slug, kw, st, cells in todo:
+            vol = cells[2] if len(cells) >= 4 else "-"
+            print(f"| {slug} | {kw} | {vol} | {st} | {cl} |")
+        return
 
     if args.list:
         hits = [r for r in rows if r[4].lower() == args.list.lower()]
@@ -91,6 +116,29 @@ def main():
         ap.error("cần <slug>, --find hoặc --list")
 
     slug = args.slug.strip("/").split("/")[-1]
+    if args.add:
+        if any(r[2] == slug for r in rows):
+            print(f"Đã có dòng cho '{slug}' — dùng --set để đổi trạng thái.", file=sys.stderr)
+            sys.exit(1)
+        if not args.keyword or not args.cluster:
+            ap.error("--add cần --keyword và --cluster")
+        heads = [(i, l[3:].strip()) for i, l in enumerate(lines) if l.startswith("## ")]
+        match = [(i, h) for i, h in heads if unaccent(args.cluster) in unaccent(h)]
+        if len(match) != 1:
+            print(f"--cluster '{args.cluster}' khớp {len(match)} cluster. Các cluster hiện có:", file=sys.stderr)
+            for _, h in heads:
+                print("  " + h, file=sys.stderr)
+            sys.exit(1)
+        head_idx = match[0][0]
+        in_cluster = [r[0] for r in rows if head_idx < r[0] and not any(head_idx < i <= r[0] for i, _ in heads if i != head_idx)]
+        if not in_cluster:
+            print(f"Cluster '{match[0][1]}' chưa có bảng — thêm tay 1 lần.", file=sys.stderr)
+            sys.exit(1)
+        status = (args.set or "Planned").strip()
+        lines.insert(max(in_cluster) + 1, f"| `/kien-thuc/{slug}/` | {args.keyword} | - | {status} |")
+        TOPIC_FILE.write_bytes(nl.join(lines).encode("utf-8"))
+        print(f"Đã thêm: {slug} · {args.keyword} · {status} · {match[0][1]}")
+        return
     hits = [r for r in rows if r[2] == slug]
     if not hits:
         # fallback: substring match on slug

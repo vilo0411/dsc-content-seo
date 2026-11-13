@@ -1,0 +1,152 @@
+{
+ "title": "Mở tài khoản — đợt 3: sửa câu link gắn sau CTA không hợp ngữ cảnh",
+ "intro": "8 bài có câu link về pillar gắn sau CTA ở Kết luận kiểu \"xem thêm\". 6 bài chuyển link lên đoạn thân bài có ngữ nghĩa liên quan; 2 bài (độ co giãn, GRDP) không có đoạn hợp → chỉ gỡ.",
+ "edits": [
+  {
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "src": "top-5-co-phieu-nganh-chung-khoan-dang-dau-tu-nhat",
+   "op": "append",
+   "find": "Các công ty chứng khoán ngày càng gia tăng dịch vụ và công nghệ",
+   "anchor": "đăng ký tài khoản chứng khoán",
+   "sentence": "Nhờ vậy, việc [đăng ký tài khoản chứng khoán] nay có thể làm online bằng eKYC trong vài phút thay vì phải đến quầy giao dịch.",
+   "why": "Đoạn nói CTCK cải tiến nền tảng & dịch vụ → hệ quả cụ thể với người đọc là mở tài khoản online"
+  },
+  {
+   "src": "top-5-co-phieu-nganh-chung-khoan-dang-dau-tu-nhat",
+   "op": "cut",
+   "find": "Quý nhà đầu tư có thể",
+   "old_text": " Các bước <a target=\"_blank\" href=\"https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan\"><strong>mở tài khoản chứng khoán</strong></a> online được hướng dẫn chi tiết trong bài riêng.",
+   "old": "https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan",
+   "group": "fix",
+   "pri": "P1",
+   "why": "Gỡ câu cũ sau CTA ở Kết luận (link đã chuyển lên thân bài)"
+  },
+  {
+   "src": "do-co-gian-cua-cau-theo-gia-la-gi",
+   "op": "cut",
+   "find": "liệt kê giấy tờ cần có",
+   "old_text": "<p>Bài <a target=\"_blank\" href=\"https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan\"><strong>hướng dẫn mở tài khoản chứng khoán online</strong></a> liệt kê giấy tờ cần có và các bước trên App DSC Trading.</p>",
+   "old": "https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan",
+   "group": "fix",
+   "pri": "P1",
+   "why": "Đoạn riêng sau CTA, bài kinh tế học cho sinh viên — không có chỗ hợp → gỡ cả đoạn"
+  },
+  {
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "src": "top-co-phieu-cang-bien-nen-dau-tu",
+   "op": "append",
+   "find": "dưới đây là 3 mã cổ phiếu được chuyên giá đánh giá cao",
+   "anchor": "mở một tài khoản chứng khoán",
+   "sentence": "GMD và HAH niêm yết trên HoSE, CDN trên HNX, nhưng nhà đầu tư chỉ cần [mở một tài khoản chứng khoán] là giao dịch được cả ba mã.",
+   "why": "Đoạn dẫn vào 3 mã ở 2 sàn khác nhau → giải đáp thắc mắc thật của người mới: có cần nhiều tài khoản không"
+  },
+  {
+   "src": "top-co-phieu-cang-bien-nen-dau-tu",
+   "op": "cut",
+   "find": "truy cập công cụ phân tích thị trường",
+   "old_text": " Việc xác thực dùng CCCD gắn chip, các bước còn lại có trong bài <a target=\"_blank\" href=\"https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan\"><strong>cách mở tài khoản chứng khoán online</strong></a>.",
+   "old": "https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan",
+   "group": "fix",
+   "pri": "P1",
+   "why": "Gỡ câu cũ sau CTA ở Kết luận (link đã chuyển lên thân bài)"
+  },
+  {
+   "src": "thi-truong-so-cap-va-thu-cap-la-gi",
+   "op": "append",
+   "find": "Nguyên tắc trung gian trên thị trường thứ cấp",
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "anchor": "tài khoản giao dịch chứng khoán",
+   "sentence": "Vì vậy, muốn mua bán cổ phiếu trên thị trường thứ cấp, nhà đầu tư cần mở [tài khoản giao dịch chứng khoán] tại một công ty chứng khoán.",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "Đoạn nói mọi giao dịch phải qua môi giới → hệ quả trực tiếp là cần tài khoản tại CTCK"
+  },
+  {
+   "src": "thi-truong-so-cap-va-thu-cap-la-gi",
+   "op": "cut",
+   "find": "tham gia thị trường và nhận tư vấn",
+   "old_text": " Hồ sơ và từng bước thực hiện có trong bài <a target=\"_blank\" href=\"https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan\"><strong>mở tài khoản chứng khoán</strong></a> cho người mới.",
+   "old": "https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan",
+   "group": "fix",
+   "pri": "P1",
+   "why": "Gỡ câu cũ gắn sau CTA ở Kết luận (link đã chuyển lên mục Nguyên tắc trung gian)"
+  },
+  {
+   "src": "co-phieu-nganh-than",
+   "op": "append",
+   "find": "Bạn nên thực hiện giao dịch tại các công ty chứng khoán uy tín",
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "anchor": "mở tài khoản chứng khoán online",
+   "sentence": "Nếu chưa có tài khoản, bạn có thể [mở tài khoản chứng khoán online] theo hướng dẫn từng bước trước khi đặt lệnh mua mã than đầu tiên.",
+   "group": "anchor",
+   "pri": "P1",
+   "why": "FAQ 'Mua cổ phiếu ngành than ở đâu' — người đọc đang hỏi chỗ mua, bước tiếp theo là mở tài khoản"
+  },
+  {
+   "src": "co-phieu-nganh-than",
+   "op": "cut",
+   "find": "Thủ tục mở online được hướng dẫn trong bài",
+   "old_text": "<p>Thủ tục mở online được hướng dẫn trong bài <a target=\"_blank\" href=\"https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan\"><strong>cách mở tài khoản chứng khoán</strong></a>.</p>",
+   "old": "https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan",
+   "group": "fix",
+   "pri": "P1",
+   "why": "Gỡ đoạn cũ sau CTA (link đã chuyển lên FAQ)"
+  },
+  {
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "src": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "op": "newp",
+   "find": "Cổ phiếu bất động sản có mức độ rủi ro cao hơn các ngành ổn định",
+   "anchor": "đăng ký tài khoản giao dịch chứng khoán",
+   "sentence": "Người mới nên giao dịch nhóm này bằng tiền mặt trước. Khi [đăng ký tài khoản giao dịch chứng khoán], tài khoản ký quỹ (margin) là phần đăng ký riêng nên bạn có thể chưa kích hoạt, tránh bị gọi ký quỹ lúc cổ phiếu bất động sản giảm sâu.",
+   "why": "Mục Bí quyết, ngay sau đoạn rủi ro/đầu cơ → lời khuyên cụ thể khi mở tài khoản"
+  },
+  {
+   "src": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "op": "cut",
+   "find": "được DSC hướng dẫn theo từng bước",
+   "old_text": "<p>Quy trình <a target=\"_blank\" href=\"https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan\"><strong>mở tài khoản chứng khoán</strong></a> online được DSC hướng dẫn theo từng bước.</p>",
+   "old": "https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan",
+   "group": "fix",
+   "pri": "P1",
+   "why": "Gỡ câu cũ sau CTA ở Kết luận (link đã chuyển lên thân bài)"
+  },
+  {
+   "to": "cach-mo-tai-khoan-chung-khoan",
+   "group": "anchor",
+   "pri": "P1",
+   "src": "top-chung-chi-quy-o-viet-nam-uy-tin-hang-dau-hien-nay",
+   "op": "newp",
+   "find": "FUEVFVND: Mô phỏng chỉ số VN Diamond",
+   "anchor": "tài khoản chứng khoán thông thường",
+   "sentence": "Khác với quỹ mở mua qua đại lý phân phối, hai chứng chỉ quỹ ETF này niêm yết trên HoSE nên được mua bán như cổ phiếu qua một [tài khoản chứng khoán thông thường], đặt lệnh được ngay trong phiên.",
+   "why": "Ngay sau list ETF của Dragon Capital → điểm khác biệt thật: ETF mua qua tài khoản chứng khoán"
+  },
+  {
+   "src": "top-chung-chi-quy-o-viet-nam-uy-tin-hang-dau-hien-nay",
+   "op": "cut",
+   "find": "biến lựa chọn của bạn thành hành động",
+   "old_text": " Nếu muốn mua thêm cổ phiếu ngoài chứng chỉ quỹ, bạn xem <a target=\"_blank\" href=\"https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan\"><strong>cách mở tài khoản chứng khoán</strong></a> trên App DSC Trading.",
+   "old": "https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan",
+   "group": "fix",
+   "pri": "P1",
+   "why": "Gỡ câu cũ sau CTA ở Kết luận (link đã chuyển lên thân bài)"
+  },
+  {
+   "src": "grdp-la-gi-chi-so-quan-trong-danh-gia-su-phat-trien-kinh-te-dia-phuong",
+   "op": "cut",
+   "find": "biến kiến thức thành lợi nhuận",
+   "old_text": " Bạn có thể xem các bước <a target=\"_blank\" href=\"https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan\"><strong>tạo tài khoản chứng khoán</strong></a> trước khi bắt đầu.",
+   "old": "https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan",
+   "group": "fix",
+   "pri": "P1",
+   "why": "Câu \"xem các bước tạo tài khoản\" ngay sau \"Mở tài khoản DSC ngay\" — lặp ý CTA, bài vĩ mô không có chỗ hợp → gỡ"
+  }
+ ]
+}

@@ -1,5 +1,5 @@
 ---
-Title: Cách Mua Cổ Phiếu Vingroup (VIC) Cho Người Mới 2026
+Title: Cách mua cổ phiếu Vingroup (VIC) cho người mới 2026
 Meta_Description: Hướng dẫn cách mua cổ phiếu Vingroup cho người mới 2026 với DSC. Mở tài khoản miễn phí, thủ tục online nhanh chóng, đầu tư chứng khoán an toàn.
 Target_Keyword: cách mua cổ phiếu Vingroup
 Slug: cach-mua-co-phieu-vingroup-vic-huong-dan-moi-nhat-2024
@@ -7,7 +7,7 @@ Persona: P2 — F0 (Nhà Đầu Tư Mới)
 Search_Intent: Informational & Transactional
 ---
 
-# Cách Mua Cổ Phiếu Vingroup (VIC) Cho Người Mới 2026
+# Cách mua cổ phiếu Vingroup (VIC) cho người mới 2026
 
 Nhắc đến chứng khoán Việt Nam, cổ phiếu VIC của Tập đoàn Vingroup luôn có sức ảnh hưởng lớn đến VN-Index. Hướng dẫn cách mua cổ phiếu Vingroup chi tiết giúp nhà đầu tư mới sở hữu mã cổ phiếu này an toàn và tối ưu.
 
@@ -28,7 +28,7 @@ Giới thiệu về Tập đoàn Vingroup
 * **Y tế**: Vinmec là hệ thống bệnh viện đa khoa quốc tế với trang thiết bị hiện đại.
 * **Giáo dục**: Vinschool là hệ thống trường học liên cấp từ mầm non đến trung học phổ thông.
 * **Du lịch**: Vinpearl là thương hiệu du lịch với các khu nghỉ dưỡng và giải trí cao cấp.
-* **Công nghiệp ô tô**: VinFast là nhà sản xuất ô tô Việt Nam nổi tiếng với các dòng xe điện chất lượng.
+* **Công nghiệp ô tô**: [VinFast](https://www.dsc.com.vn/kien-thuc/co-phieu-vinfast-mua-o-dau) là nhà sản xuất ô tô Việt Nam nổi tiếng với các dòng xe điện chất lượng.
 
 Tìm hiểu thêm: [**Các mã cổ phiếu của Vingroup**](https://www.dsc.com.vn/kien-thuc/cac-co-phieu-niem-yet-thuoc-tap-doan-vingroup-danh-sach-day-du-va-cap-nhat-nam-2024)
 
@@ -53,15 +53,16 @@ Sứ mệnh:
 Trước khi mua cổ phiếu Vingroup, nhà đầu tư cần xác định rõ mã chứng khoán để tránh nhầm lẫn:
 
 * **Mã cổ phiếu VIC**: Mã của Công ty Cổ phần Tập đoàn Vingroup, niêm yết trực tiếp trên sàn HoSE. Đây là lựa chọn phổ biến nhất cho nhà đầu tư tại Việt Nam.
-* **Mã cổ phiếu VFS**: Tháng 9/2026, cổ phiếu VinFast Auto Ltd niêm yết trên sàn Nasdaq Mỹ vẫn thu hút chú ý. Việc mua trực tiếp từ Việt Nam cần qua kênh quốc tế.
-* **Các mã cổ phiếu con**: Bao gồm VHM (Vinhomes), VRE (Vincom Retail) và VEF (Trung tâm Hội chợ Triển lãm).
+* **Mã cổ phiếu VFS**: Mã của VinFast Auto Ltd, niêm yết trên sàn Nasdaq (Mỹ) từ tháng 8/2023. Nhà đầu tư tại Việt Nam không mua được VFS qua tài khoản chứng khoán trong nước.
+* **Các mã cổ phiếu con**: VHM (Vinhomes), VRE (Vincom Retail) và VPL (Vinpearl, lên sàn năm 2025) giao dịch trên HoSE. VEF (Trung tâm Hội chợ Triển lãm Việt Nam) giao dịch trên UPCoM.
 
 ## Quy định giao dịch mã cổ phiếu VIC trên sàn HoSE
 
 Cổ phiếu VIC tuân thủ các quy định chung của sàn HoSE:
 
-* **Thời gian giao dịch**: Từ Thứ 2 đến Thứ 6 hàng tuần. Buổi sáng từ 9:00 đến 11:30 và buổi chiều từ 13:00 đến 14:45.
-* **Đơn vị giao dịch**: Lô tối thiểu là 100 cổ phiếu. Bạn cần chuẩn bị số vốn tương đương giá thị trường nhân 100 cộng thuế phí.
+* **Thời gian giao dịch**: Thứ 2 đến Thứ 6, sáng 9:00–11:30 (gồm ATO 9:00–9:15) và chiều 13:00–14:45 (gồm ATC 14:30–14:45).
+* **Đơn vị giao dịch**: Lô chẵn tối thiểu là 100 cổ phiếu, vốn ít hơn thì đặt lệnh lô lẻ từ 1 đến 99 cổ phiếu.
+* **Vốn cho 1 lô VIC**: Ngày 6 tháng 11/2026, VIC đóng cửa ở 236.000 đồng/cổ phiếu, nên 1 lô cần khoảng 23,6 triệu đồng cộng phí giao dịch.
 * **Biên độ dao động**: Tối đa +/- 7% so với giá tham chiếu trong ngày.
 
 ## Hướng dẫn chi tiết cách mua cổ phiếu Vingroup tại DSC
@@ -70,7 +71,7 @@ Cổ phiếu VIC tuân thủ các quy định chung của sàn HoSE:
 
 ### Bước 1: Mở tài khoản chứng khoán trực tuyến
 
-Nhà đầu tư chỉ cần tải ứng dụng DSC Trading và thực hiện định danh khách hàng eKYC. Quy trình chỉ mất vài phút để bạn có tài khoản hợp lệ mà không cần ra quầy.
+Nhà đầu tư chỉ cần tải ứng dụng DSC Trading và thực hiện định danh khách hàng eKYC. Quy trình chỉ mất vài phút để bạn có tài khoản hợp lệ mà không cần ra quầy. Nếu bước eKYC báo lỗi, [cách mở tài khoản chứng khoán online](https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan) có sẵn cách xử lý 6 lỗi thường gặp.
 
 Đối với nhà đầu tư F0, việc lựa chọn công ty chứng khoán có ứng dụng mượt mà và đội ngũ hỗ trợ 1:1 là yếu tố quan trọng. Nền tảng DSC Trading giúp bạn mở tài khoản eKYC online 100% trong 3 phút. Chuyên gia DSC luôn sẵn sàng tư vấn chiến lược mua cổ phiếu VIC tối ưu theo khẩu vị rủi ro của bạn.
 
@@ -89,7 +90,7 @@ Sau khi tài khoản kích hoạt, bạn nạp tiền từ ngân hàng cá nhân
 
 ### Bước 3: Đặt lệnh mua mã VIC
 
-Trên ứng dụng, bạn tìm kiếm mã VIC, nhập số lượng mua là bội số của 100 và mức giá mong muốn. Nếu muốn khớp lệnh ngay, bạn chọn [lệnh MP trong chứng khoán](https://www.dsc.com.vn/kien-thuc/lenh-ato-atc-lo-mp-la-gi) hoặc đặt giá bằng giá bán thấp nhất hiện có.
+Trên ứng dụng, bạn tìm kiếm mã VIC, nhập số lượng mua là bội số của 100 và mức giá mong muốn. Nếu muốn khớp lệnh ngay, bạn chọn lệnh thị trường (MP) hoặc đặt giá bằng giá bán thấp nhất hiện có.
 
 ## Những yếu tố ảnh hưởng đến biến động giá cổ phiếu Vingroup
 
@@ -109,7 +110,7 @@ Xem thêm các bài viết liên quan:
 
 Cách mua cổ phiếu Vingroup hiện nay trở nên thuận tiện hơn nhờ nền tảng công nghệ DSC Trading. Giá trị của Vingroup luôn đi kèm với những cơ hội và biến động từ các mảng kinh doanh khác nhau.
 
-Để đưa ra quyết định đầu tư bài bản, nhà đầu tư nên tham khảo báo cáo phân tích định kỳ. Bạn hãy [mở tài khoản chứng khoán](https://www.dsc.com.vn/mo-tai-khoan) tại DSC ngay hôm nay để nhận tư vấn chuyên sâu từ chuyên gia.
+Để đưa ra quyết định đầu tư bài bản, nhà đầu tư nên tham khảo báo cáo phân tích định kỳ. Bạn hãy [mở tài khoản tại DSC](https://www.dsc.com.vn/mo-tai-khoan) ngay hôm nay để nhận tư vấn chuyên sâu từ chuyên gia.
 
 <div style="background: linear-gradient(135deg, #0D1B2A 0%, #0A3D2E 100%); border-radius: 14px; padding: 34px 30px; margin: 36px 0; text-align: center; color: #ffffff;">
   <p style="font-size: 23px; line-height: 1.35; margin: 0 0 12px 0; font-weight: 700; color: #ffffff;">Sẵn sàng đầu tư cổ phiếu Vingroup cùng sự đồng hành từ chuyên gia DSC</p>

@@ -74,13 +74,17 @@ def build() -> dict:
 
     # slug -> (cluster index 1.., role, group name, hub of the group)
     member: dict[str, tuple[int, str, str, str | None]] = {}
+    exempt: set[str] = set()
     for ci, c in enumerate(clusters, 1):
-        member[c["pillar"]] = (ci, "pillar", "", None)
+        if c.get("pillar"):  # clusters may be registered before their pillar exists (pillar: null)
+            member[c["pillar"]] = (ci, "pillar", "", None)
         for g in c["groups"]:
             if g.get("hub"):
                 member[g["hub"]] = (ci, "hub", g["name"], None)
             for s in g["spokes"]:
                 member[s] = (ci, "spoke", g["name"], g.get("hub"))
+                if g.get("pillar_exempt"):
+                    exempt.add(s)
 
     idx = {p["slug"]: i for i, p in enumerate(pages)}
     out_ctx: dict[str, set] = defaultdict(set)
@@ -101,7 +105,7 @@ def build() -> dict:
         s = p["slug"]
         ci, role, group, hub = member.get(s, (0, "", "", None))
         warn = []
-        if ci and role != "pillar" and clusters[ci - 1]["pillar"] not in out_ctx[s]:
+        if ci and role != "pillar" and s not in exempt and clusters[ci - 1].get("pillar") and clusters[ci - 1]["pillar"] not in out_ctx[s]:
             warn.append("chưa link pillar")
         if hub and hub not in out_ctx[s]:
             warn.append("chưa link hub")

@@ -1,0 +1,2777 @@
+[
+ {
+  "src": "mo-hinh-nen-bua-nguoc-inverted-hammer-la-gi",
+  "src_title": "Nến búa ngược (Inverted Hammer) là gì? Ý nghĩa và ứng dụng",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "335",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 25,
+    "h": "Cách sử dụng mô hình nến búa ngược trong giao dịch chứng khoán",
+    "n_sent": 2,
+    "t": "Để sử dụng mô hình nến búa ngược (inverted hammer candlestick) hiệu quả trong giao dịch chứng khoán, các nhà đầu tư cần kết hợp nó với các chỉ báo và phân tích khác nhằm xác nhận tín hiệu. Đây là một trong những mô hình búa ngược quan trọng, thường báo hiệu khả năng đảo chiều xu hướng."
+   },
+   {
+    "i": 53,
+    "h": "2. Điểm vào lệnh và quản lý rủi ro",
+    "n_sent": 1,
+    "t": "Việc nhận diện chính xác mô hình nến búa ngược là kỹ năng quan trọng giúp nhà đầu tư đưa ra quyết định sáng suốt, đặc biệt là học sinh - sinh viên muốn làm quen với thị trường."
+   },
+   {
+    "i": 5,
+    "h": "Mô hình nến búa ngược (Inverted Hammer) là gì?",
+    "n_sent": 3,
+    "t": "khi mô hình nến búa ngược xuất hiện sau một xu hướng giảm hoặc ở đáy của một xu hướng giảm, nó thường được xem là một tín hiệu đảo chiều tăng giá. Bóng nến trên dài cho thấy trong phiên giao dịch, người mua đã cố gắng đẩy giá lên cao, nhưng sau đó đã bị phe bán đẩy lùi một phần. Tuy nhiên, việc giá đóng cửa vẫn ở mức tương đối tốt (đặc biệt là nến xanh) cho thấy lực mua vẫn đang tiềm tàng, sẵn sàng cho một đợt tăng giá."
+   }
+  ]
+ },
+ {
+  "src": "mo-hinh-nen-hammer-la-gi",
+  "src_title": "Mô hình nến Hammer là gì? Cách giao dịch nến búa thực chiến",
+  "target": "tu-dien-30-mo-hinh-nen-pho-bien-tren-thi-truong-chung-khoan",
+  "role": "hub",
+  "target_title": "30+ mô hình nến phổ biến trên thị trường chứng khoán",
+  "clicks": "273",
+  "anchors": [
+   "các mô hình nến",
+   "mô hình nến",
+   "các mẫu hình nến trong chứng khoán",
+   "các loại nến trong chứng khoán",
+   "mẫu hình nến",
+   "nến Nhật"
+  ],
+  "paras": [
+   {
+    "i": 3,
+    "h": "Mô hình nến Hammer là gì?",
+    "n_sent": 3,
+    "t": "Mô hình nến Hammer là một mô hình nến đảo chiều tăng giá xuất hiện tại đáy của xu hướng giảm. Mẫu hình có thân nến nhỏ nằm ở đỉnh và bóng nến dưới dài. Hình dạng nến tương tự một chiếc búa thẳng đứng."
+   },
+   {
+    "i": 7,
+    "h": "Mô hình nến Hammer là gì?",
+    "n_sent": 2,
+    "t": "Phe mua đẩy giá hồi phục và đóng cửa sát mức cao nhất phiên. Điều này chứng minh phe bán đã kiệt sức và quyền kiểm soát chuyển sang phe mua."
+   },
+   {
+    "i": 6,
+    "h": "Mô hình nến Hammer là gì?",
+    "n_sent": 2,
+    "t": "Trong phiên, áp lực bán ban đầu ép giá giảm sâu xuống dưới mức mở cửa. Tuy nhiên, lực cầu bắt đáy nhanh chóng hấp thụ toàn bộ lượng hàng giá thấp."
+   }
+  ]
+ },
+ {
+  "src": "duong-ma-la-gi",
+  "src_title": "Đường MA là gì? Cách dùng đường MA hiệu quả trong giao dịch",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "87",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 42,
+    "h": "Nhóm đường MA200 dài hạn",
+    "n_sent": 3,
+    "t": "Đường MA200 là thước đo xu hướng dài hạn đại diện cho gần 1 năm giao dịch của thị trường. Các quỹ đầu tư lớn thường sử dụng đường MA200 để phân định thị trường. Mốc này giúp xác định đà tăng giá (Bull market) hay suy thoái (Bear market)."
+   },
+   {
+    "i": 40,
+    "h": "Nhóm đường MA trung hạn (MA50, MA100)",
+    "n_sent": 1,
+    "t": "Nhà đầu tư cá nhân nên ưu tiên tìm kiếm điểm giải ngân khi giá cổ phiếu tích lũy nền trên đường MA50."
+   },
+   {
+    "i": 47,
+    "h": "Sử dụng MA như hỗ trợ, kháng cự động",
+    "n_sent": 2,
+    "t": "Khi giá cổ phiếu kiểm định thành công đường MA80 hoặc MA50 kèm thanh khoản gia tăng, nhà đầu tư có thể giải ngân mua lấy vị thế. Khi đường giá xuyên thủng mốc hỗ trợ MA mà không có lực hồi phục, bạn nên chốt lời để bảo vệ vốn."
+   }
+  ]
+ },
+ {
+  "src": "chi-bao-macd-histogram-la-gi",
+  "src_title": "Chỉ báo MACD Histogram là gì? Ứng dụng xác định phân kỳ đỉnh và đáy",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "77",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 57,
+    "h": "Ứng dụng chỉ báo MACD Histogram để xác định phân kỳ đỉnh và đáy",
+    "n_sent": 3,
+    "t": "Như tên gọi của nó, sự phân kỳ nghiêng hình thành mà không có đỉnh hoặc đáy được xác định rõ ràng. Thay vì hai mức cao phản ứng, chỉ đơn giản là một mức thấp hơn nghiêng khi Biểu đồ MACD di chuyển về phía đường 0. Biểu đồ MACD nghiêng về phía đường 0 phản ánh sự hội tụ giữa MACD và đường tín hiệu của nó."
+   },
+   {
+    "i": 62,
+    "h": "Ứng dụng chỉ báo MACD Histogram để xác định phân kỳ đỉnh và đáy",
+    "n_sent": 4,
+    "t": "Trên thực tế, MACD-Histogram đã tạo đáy vào cuối tháng 6 và hình thành sự phân kỳ nghiêng trong xu hướng tăng. Các đường dày màu đỏ cho thấy khoảng cách giữa MACD và đường tín hiệu của nó. Đôi khi rất khó để đánh giá khoảng cách trên biểu đồ, vì vậy những đường này làm nổi bật sự khác biệt giữa 26 tháng 6 và 8 tháng 7. Sự phân kỳ nghiêng này báo trước sự giao nhau của đường tín hiệu tăng vào giữa tháng 7 và sự tăng giá mạnh mẽ của cổ phiếu."
+   },
+   {
+    "i": 50,
+    "h": "Ứng dụng chỉ báo MACD Histogram để xác định phân kỳ đỉnh và đáy",
+    "n_sent": 4,
+    "t": "Biểu đồ 2 cho thấy Caterpillar với sự phân kỳ tăng trong Biểu đồ MACD. Lưu ý rằng MACD đã di chuyển xuống mức thấp hơn trong tháng 6-7, nhưng MACD-Histogram hình thành mức thấp hơn (đáy). Có hai đáy phân biệt. Sự phân kỳ tăng giá này báo trước sự giao nhau của đường tín hiệu tăng vào giữa tháng 7 và một đợt phục hồi lớn."
+   }
+  ]
+ },
+ {
+  "src": "chi-bao-atr-la-gi",
+  "src_title": "Chỉ báo ATR là gì? Cách dùng chỉ báo ATR trong PTKT",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "75",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 9,
+    "h": "Vùng thực tế TR là gì? Phương pháp đo lường vùng thực tế TR",
+    "n_sent": 2,
+    "t": "Mấu chốt, Wilder quan tâm đến việc đo khoảng cách giữa hai điểm chứ không phải phương hướng. Nếu biến động của giai đoạn hiện tại cao hơn biến động của giai đoạn trước và mức thấp dưới mức thấp của giai đoạn trước, thì phạm vi cao-thấp của giai đoạn hiện tại sẽ được sử dụng làm Phạm vi thực (TR)."
+   },
+   {
+    "i": 10,
+    "h": "Vùng thực tế TR là gì? Phương pháp đo lường vùng thực tế TR",
+    "n_sent": 1,
+    "t": "Hình ảnh dưới đây cho thấy các ví dụ về thời điểm phương pháp 2 và 3 là thích hợp."
+   },
+   {
+    "i": 15,
+    "h": "Vùng thực tế TR là gì? Phương pháp đo lường vùng thực tế TR",
+    "n_sent": 2,
+    "t": "Ví dụ C: Mặc dù giá đóng cửa hiện tại nằm trong phạm vi cao / thấp trước đó, nhưng phạm vi cao/thấp hiện tại khá nhỏ. Trên thực tế, nó nhỏ hơn giá trị tuyệt đối của chênh lệch giữa mức cao hiện tại và mức đóng trước đó, được sử dụng để định giá TR."
+   }
+  ]
+ },
+ {
+  "src": "chi-bao-atr-la-gi",
+  "src_title": "Chỉ báo ATR là gì? Cách dùng chỉ báo ATR trong PTKT",
+  "target": "chi-bao-ky-thuat",
+  "role": "hub",
+  "target_title": "Chỉ báo kỹ thuật là gì? Các chỉ báo trong chứng khoán phổ biến",
+  "clicks": "75",
+  "anchors": [
+   "chỉ báo kỹ thuật",
+   "các chỉ báo kỹ thuật chứng khoán",
+   "chỉ báo phân tích kỹ thuật",
+   "công cụ chỉ báo kỹ thuật",
+   "bộ chỉ báo kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 1,
+    "h": "Chỉ báo ATR là gì?",
+    "n_sent": 3,
+    "t": "Được phát triển bởi J. Welles Wilder, Chỉ báo ATR (Average True Range) trong chứng khoán là một chỉ số đo lường sự biến động. Ông đã thiết kế chỉ báo ATR áp dụng vào thị trường hàng hóa, nơi có nhiều biến động hơn cả TTCK."
+   },
+   {
+    "i": 2,
+    "h": "Chỉ báo ATR là gì?",
+    "n_sent": 3,
+    "t": "Một công thức biến động chỉ dựa trên phạm vi cao-thấp sẽ không thể nắm bắt được sự biến động từ các động thái chênh lệch hoặc giới hạn. Wilder đã tạo ra Trung bình True Range để nắm bắt sự biến động “bị thiếu” này. Điều quan trọng cần nhớ là ATR không cung cấp chỉ báo về hướng giá mà chỉ là sự biến động."
+   },
+   {
+    "i": 17,
+    "h": "Ví dụ về ứng dụng chỉ báo ATR trong PTKT",
+    "n_sent": 4,
+    "t": "ATR dựa trên Vùng thực tế, sử dụng các thay đổi giá tuyệt đối. Như vậy, ATR phản ánh sự biến động ở mức tuyệt đối. Điều này có nghĩa là cổ phiếu định giá thấp sẽ có giá trị ATR thấp hơn cổ phiếu giá cao. Ngay cả những biến động giá lớn đối với một chứng khoán, chẳng hạn như sự sụt giảm từ 70 xuống 20, có thể làm cho việc so sánh ATR dài hạn trở nên không thực tế."
+   }
+  ]
+ },
+ {
+  "src": "khoi-luong-giao-dich-la-gi",
+  "src_title": "Khối lượng giao dịch là gì? 4 cách đọc xu hướng chuẩn",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "74",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 5,
+    "h": "Khối lượng giao dịch là gì?",
+    "n_sent": 2,
+    "t": "Trên biểu đồ kỹ thuật, khối lượng thường được biểu diễn dưới dạng các cột thẳng đứng (Volume Bar) nằm ở phần dưới cùng của đồ thị. Cột màu xanh biểu thị phiên tăng giá và cột màu đỏ biểu thị phiên giảm giá so với mức giá tham chiếu hoặc giá mở cửa."
+   },
+   {
+    "i": 7,
+    "h": "Khối lượng giao dịch là gì?",
+    "n_sent": 1,
+    "t": "Để sử dụng hiệu quả công cụ này, nhà đầu tư cần kết hợp với hệ thống các chỉ báo kỹ thuật nhằm xác lập chiến lược giao dịch hoàn chỉnh."
+   },
+   {
+    "i": 6,
+    "h": "Khối lượng giao dịch là gì?",
+    "n_sent": 3,
+    "t": "Hiểu đúng về khối lượng giúp nhà đầu tư nắm bắt tương quan giữa cung và cầu thực tế. Khi nhu cầu mua vượt trội so với lượng chào bán, thanh khoản tăng mạnh sẽ đẩy giá cổ phiếu đi lên. Ngược lại, áp lực bán áp đảo sẽ kéo giá sụt giảm."
+   }
+  ]
+ },
+ {
+  "src": "khoi-luong-giao-dich-la-gi",
+  "src_title": "Khối lượng giao dịch là gì? 4 cách đọc xu hướng chuẩn",
+  "target": "phuong-phap-dau-tu-theo-dong-tien-hieu-qua",
+  "role": "hub",
+  "target_title": "Cách xem dòng tiền trong chứng khoán và 4 chiến lược",
+  "clicks": "74",
+  "anchors": [
+   "đầu tư theo dòng tiền",
+   "dòng tiền chứng khoán",
+   "dòng tiền trong chứng khoán",
+   "phương pháp đầu tư theo dòng tiền",
+   "dòng tiền thị trường",
+   "theo dõi dòng tiền"
+  ],
+  "paras": [
+   {
+    "i": 45,
+    "h": "Giá giảm kèm khối lượng giảm: Thị trường ảm đạm và cạn cung",
+    "n_sent": 2,
+    "t": "Giá giảm từ từ đi kèm thanh khoản teo tóp phản ánh tâm lý thận trọng, cả bên mua lẫn bên bán đều không hào hứng giao dịch. Điều này thường xuất hiện trong giai đoạn tích lũy lại sau các đợt rung lắc mạnh của thị trường."
+   },
+   {
+    "i": 46,
+    "h": "Giá giảm kèm khối lượng giảm: Thị trường ảm đạm và cạn cung",
+    "n_sent": 3,
+    "t": "Khối lượng cạn kiệt cho thấy áp lực bán đã suy giảm đáng kể, nguồn cung trôi nổi không còn nhiều. Khi một lượng cầu nhỏ quay trở lại, giá cổ phiếu có thể dễ dàng phục hồi. Nhà đầu tư nên kiên nhẫn quan sát và chờ tín hiệu bùng nổ thanh khoản để giải ngân."
+   },
+   {
+    "i": 4,
+    "h": "Khối lượng giao dịch là gì?",
+    "n_sent": 2,
+    "t": "Khối lượng giao dịch là tổng số đơn vị cổ phiếu, chứng chỉ quỹ hoặc hợp đồng phái sinh được trao tay thành công giữa các nhà đầu tư trong một phiên. Đơn vị đo lường phổ biến nhất là số lượng cổ phiếu khớp lệnh theo từng phiên ngày (Daily Volume), tuần hoặc tháng."
+   }
+  ]
+ },
+ {
+  "src": "duong-trendline-la-gi-cach-su-dung-hieu-qua-trong-phan-tich-ky-thuat",
+  "src_title": "Đường Trendline là gì? Cách vẽ và giao dịch thực chiến chuẩn xác",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "74",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 57,
+    "h": "Lưu ý quan trọng khi sử dụng đường trendline",
+    "n_sent": 1,
+    "t": "Khi giao dịch với đường trendline, nhà đầu tư cần ghi nhớ các nguyên tắc thực tế để hạn chế rủi ro nhiễu tín hiệu."
+   },
+   {
+    "i": 3,
+    "h": "Đường Trendline là gì?",
+    "n_sent": 2,
+    "t": "Đường trendline (đường xu hướng) là đường thẳng nối các đỉnh hoặc đáy trên biểu đồ giá. Đường thẳng này phản ánh xu hướng chủ đạo của thị trường trong một giai đoạn."
+   },
+   {
+    "i": 4,
+    "h": "Đường Trendline là gì?",
+    "n_sent": 3,
+    "t": "Trong thực tế, đường trendline hoạt động như ngưỡng hỗ trợ và kháng cự động. Khi giá tiếp cận đường xu hướng, thị trường thường phản ứng mạnh mẽ. Nhà đầu tư dựa vào đây để xác định thời điểm mua hoặc bán cổ phiếu."
+   }
+  ]
+ },
+ {
+  "src": "phuong-phap-dau-tu-theo-dong-tien-hieu-qua",
+  "src_title": "Cách xem dòng tiền trong chứng khoán và 4 chiến lược",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "55",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 14,
+    "h": "3 kỹ thuật đọc vị dòng tiền trong chứng khoán chuẩn xác",
+    "n_sent": 1,
+    "t": "Để đánh giá sức mạnh dòng tiền, nhà đầu tư kết hợp công thức định lượng, chỉ báo kỹ thuật và sự dịch chuyển dòng tiền theo nhóm ngành."
+   },
+   {
+    "i": 3,
+    "h": "Dòng tiền trong chứng khoán là gì?",
+    "n_sent": 2,
+    "t": "Dòng tiền trong chứng khoán được hình thành từ tổng giá trị và khối lượng giao dịch mua bán cổ phiếu. Đây là tấm gương phản chiếu tâm lý đám đông và hành vi tích lũy hoặc thoát hàng của các quỹ lớn."
+   },
+   {
+    "i": 8,
+    "h": "Dòng tiền trong chứng khoán là gì?",
+    "n_sent": 2,
+    "t": "Giao dịch theo dòng tiền nghĩa là xem dòng tiền lớn đang chảy vào nhóm ngành nào để chọn lọc cổ phiếu dẫn dắt (Leader). Thay vì đi ngược thị trường, bạn nên nương theo dấu chân Smart Money để gia tăng xác suất chiến thắng."
+   }
+  ]
+ },
+ {
+  "src": "lap-gap-trong-chung-khoan-co-hoi-bung-no",
+  "src_title": "Lấp Gap là gì? Chiến lược giao dịch lợi dụng lấp Gap",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "54",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 1,
+    "h": "Lấp Gap là gì?",
+    "n_sent": 1,
+    "t": "Trong thị trường chứng khoán sôi động, \"lấp gap\" hay còn gọi là \"bù gap\" là hiện tượng giá cổ phiếu di chuyển nhanh chóng để xóa bỏ khoảng trống giá (gap) được tạo ra bởi các sự kiện bất ngờ hoặc biến động thị trường mạnh mẽ."
+   }
+  ]
+ },
+ {
+  "src": "chi-bao-dmi-directional-movement-index-danh-gia-xu-huong-va-suc-manh-thi-truong-hieu-qua",
+  "src_title": "Chỉ báo DMI là gì? Giao dịch chứng khoán với chỉ báo DMI",
+  "target": "cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat",
+  "role": "hub",
+  "target_title": "Các chỉ báo xác định xu hướng đáng tin cậy trong phân tích kỹ thuật",
+  "clicks": "51",
+  "anchors": [
+   "chỉ báo xác định xu hướng",
+   "các chỉ báo xu hướng",
+   "chỉ báo xu hướng",
+   "xác định xu hướng",
+   "nhận diện xu hướng",
+   "chỉ báo theo xu hướng"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "Chỉ báo DMI là gì?",
+    "n_sent": 4,
+    "t": "Chỉ báo DMI (Directional Movement Index) là một công cụ phân tích kỹ thuật phổ biến được phát triển bởi J. Welles Wilder Jr. vào năm 1973. DMI giúp nhà đầu tư đánh giá xu hướng và sức mạnh của xu hướng trong thị trường tài chính, bao gồm chứng khoán, ngoại hối, hàng hóa phái sinh,..."
+   },
+   {
+    "i": 11,
+    "h": "Cấu tạo của Chỉ báo DMI",
+    "n_sent": 3,
+    "t": "2. Đường +DI (Positive Directional Indicator): Đo lường sức mạnh của xu hướng tăng giá. Giá trị +DI dao động từ 0 đến 100."
+   },
+   {
+    "i": 12,
+    "h": "Cấu tạo của Chỉ báo DMI",
+    "n_sent": 3,
+    "t": "3. Đường -DI (Negative Directional Indicator): Đo lường sức mạnh của xu hướng giảm giá. Giá trị -DI dao động từ 0 đến 100."
+   }
+  ]
+ },
+ {
+  "src": "chi-bao-dmi-directional-movement-index-danh-gia-xu-huong-va-suc-manh-thi-truong-hieu-qua",
+  "src_title": "Chỉ báo DMI là gì? Giao dịch chứng khoán với chỉ báo DMI",
+  "target": "duong-ma-la-gi",
+  "role": "sub-hub",
+  "target_title": "Đường MA là gì? Cách dùng đường MA hiệu quả trong giao dịch",
+  "clicks": "51",
+  "anchors": [
+   "đường MA",
+   "đường MA là gì",
+   "đường trung bình động",
+   "đường MA trong chứng khoán",
+   "trung bình động",
+   "chỉ báo MA"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "Chỉ báo DMI là gì?",
+    "n_sent": 4,
+    "t": "Chỉ báo DMI (Directional Movement Index) là một công cụ phân tích kỹ thuật phổ biến được phát triển bởi J. Welles Wilder Jr. vào năm 1973. DMI giúp nhà đầu tư đánh giá xu hướng và sức mạnh của xu hướng trong thị trường tài chính, bao gồm chứng khoán, ngoại hối, hàng hóa phái sinh,..."
+   },
+   {
+    "i": 11,
+    "h": "Cấu tạo của Chỉ báo DMI",
+    "n_sent": 3,
+    "t": "2. Đường +DI (Positive Directional Indicator): Đo lường sức mạnh của xu hướng tăng giá. Giá trị +DI dao động từ 0 đến 100."
+   },
+   {
+    "i": 12,
+    "h": "Cấu tạo của Chỉ báo DMI",
+    "n_sent": 3,
+    "t": "3. Đường -DI (Negative Directional Indicator): Đo lường sức mạnh của xu hướng giảm giá. Giá trị -DI dao động từ 0 đến 100."
+   }
+  ]
+ },
+ {
+  "src": "chien-luoc-giao-dich-hieu-qua-voi-rsi-ket-hop-rsi-voi-cac-chi-bao-khac",
+  "src_title": "Chiến Lược Giao Dịch Hiệu Quả Với RSI: Kết Hợp RSI Với Các Chỉ Báo Khác",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "51",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 1,
+    "h": "Giới Thiệu Về Chỉ Báo RSI",
+    "n_sent": 3,
+    "t": "RSI (Relative Strength Index) là một chỉ báo đo lường động lượng của giá, giúp nhà đầu tư xác định trạng thái quá mua, quá bán và tín hiệu đảo chiều. Tuy nhiên, khi sử dụng RSI độc lập, có thể gặp phải tín hiệu nhiễu, đặc biệt trong những thị trường đi ngang. Vì vậy, việc kết hợp RSI với các chỉ báo kỹ thuật khác sẽ giúp tăng độ chính xác khi giao dịch."
+   },
+   {
+    "i": 54,
+    "h": "Một Số Lưu Ý Khi Giao Dịch Với RSI",
+    "n_sent": 1,
+    "t": "RSI hiệu quả hơn trong thị trường có xu hướng rõ ràng – Hạn chế dùng RSI trong thị trường đi ngang."
+   },
+   {
+    "i": 55,
+    "h": "Một Số Lưu Ý Khi Giao Dịch Với RSI",
+    "n_sent": 1,
+    "t": "Không dùng RSI để dự đoán xu hướng dài hạn – RSI tốt nhất khi kết hợp với các công cụ xác nhận xu hướng."
+   }
+  ]
+ },
+ {
+  "src": "vwap-la-gi",
+  "src_title": "VWAP là gì? 6 chiến lược giao dịch thực chiến với VWAP",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "44",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 3,
+    "h": "Chỉ báo VWAP là gì?",
+    "n_sent": 3,
+    "t": "Đường MA chỉ tính toán dựa trên dữ liệu giá. Trong khi đó, VWAP đặt trọng số lớn hơn vào các vùng giá có thanh khoản cao. Điều này phản ánh chính xác vùng giá đồng thuận của phe mua và phe bán trong phiên."
+   },
+   {
+    "i": 4,
+    "h": "Chỉ báo VWAP là gì?",
+    "n_sent": 3,
+    "t": "Các quỹ đầu tư lớn thường sử dụng VWAP làm thước đo hiệu quả thực hiện lệnh giao dịch. Họ đánh giá hiệu quả bằng cách so sánh giá khớp thực tế với đường VWAP của phiên. Lệnh mua được khớp dưới đường VWAP được xem là mức giá tối ưu."
+   },
+   {
+    "i": 31,
+    "h": "6 chiến lược sử dụng VWAP hiệu quả trong giao dịch",
+    "n_sent": 2,
+    "t": "Hiểu được VWAP là gì mới chỉ là bước đầu tiên. Để biến chỉ báo này thành một công cụ hỗ trợ giao dịch hiệu quả, nhà đầu tư cần nắm vững các chiến lược ứng dụng thực tế dưới đây."
+   }
+  ]
+ },
+ {
+  "src": "vwap-la-gi",
+  "src_title": "VWAP là gì? 6 chiến lược giao dịch thực chiến với VWAP",
+  "target": "phuong-phap-dau-tu-theo-dong-tien-hieu-qua",
+  "role": "hub",
+  "target_title": "Cách xem dòng tiền trong chứng khoán và 4 chiến lược",
+  "clicks": "44",
+  "anchors": [
+   "đầu tư theo dòng tiền",
+   "dòng tiền chứng khoán",
+   "dòng tiền trong chứng khoán",
+   "phương pháp đầu tư theo dòng tiền",
+   "dòng tiền thị trường",
+   "theo dõi dòng tiền"
+  ],
+  "paras": [
+   {
+    "i": 31,
+    "h": "6 chiến lược sử dụng VWAP hiệu quả trong giao dịch",
+    "n_sent": 2,
+    "t": "Hiểu được VWAP là gì mới chỉ là bước đầu tiên. Để biến chỉ báo này thành một công cụ hỗ trợ giao dịch hiệu quả, nhà đầu tư cần nắm vững các chiến lược ứng dụng thực tế dưới đây."
+   },
+   {
+    "i": 4,
+    "h": "Chỉ báo VWAP là gì?",
+    "n_sent": 3,
+    "t": "Các quỹ đầu tư lớn thường sử dụng VWAP làm thước đo hiệu quả thực hiện lệnh giao dịch. Họ đánh giá hiệu quả bằng cách so sánh giá khớp thực tế với đường VWAP của phiên. Lệnh mua được khớp dưới đường VWAP được xem là mức giá tối ưu."
+   },
+   {
+    "i": 19,
+    "h": "Công thức tính chỉ báo VWAP",
+    "n_sent": 1,
+    "t": "Mặc dù hầu hết các nền tảng giao dịch hiện nay đều tự động tính toán và hiển thị chỉ báo VWAP, việc hiểu rõ công thức sẽ giúp nhà đầu tư nắm vững bản chất của công cụ này."
+   }
+  ]
+ },
+ {
+  "src": "chi-bao-dong-tien-chaikin-cmf-la-gi",
+  "src_title": "Chỉ báo dòng tiền Chaikin (CMF) là gì? Cách sử dụng CMF",
+  "target": "phuong-phap-dau-tu-theo-dong-tien-hieu-qua",
+  "role": "hub",
+  "target_title": "Cách xem dòng tiền trong chứng khoán và 4 chiến lược",
+  "clicks": "41",
+  "anchors": [
+   "đầu tư theo dòng tiền",
+   "dòng tiền chứng khoán",
+   "dòng tiền trong chứng khoán",
+   "phương pháp đầu tư theo dòng tiền",
+   "dòng tiền thị trường",
+   "theo dõi dòng tiền"
+  ],
+  "paras": [
+   {
+    "i": 41,
+    "h": "Sử dụng chỉ báo dòng tiền Chaikin để xác định áp lực MUA/BÁN",
+    "n_sent": 3,
+    "t": "Chỉ báo Chaikin Money Flow có thể được sử dụng để xác định xu hướng mua hoặc bán chung một cách đơn giản với các giá trị tích cực hoặc tiêu cực. Chỉ báo dao động trên/dưới đường 0. Nói chung, áp lực mua mạnh hơn khi chỉ báo này tích cực và áp lực bán mạnh hơn khi chỉ báo này tiêu cực."
+   },
+   {
+    "i": 42,
+    "h": "Sử dụng chỉ báo dòng tiền Chaikin để xác định áp lực MUA/BÁN",
+    "n_sent": 3,
+    "t": "Trong khi đường ngang số 0 này có vẻ đơn giản, nhưng thực tế lại phức tạp hơn nhiều. Chỉ báo dòng tiền Chaikin đôi khi chỉ nhanh chóng vượt qua vạch 0 khiến chỉ báo trở nên tích cực hoặc tiêu cực. Sau đó, không xuất hiện thêm đường nào nối tiếp và đường cắt ngang này kết thúc trở thành một tín hiệu xấu."
+   },
+   {
+    "i": 39,
+    "h": "Ý nghĩa của chỉ báo dòng tiền Chaikin",
+    "n_sent": 2,
+    "t": "CMF tích cực sẽ xác nhận một xu hướng tăng, nhưng CMF tiêu cực sẽ đặt ra câu hỏi về sức mạnh đằng sau một xu hướng tăng. Tương tự với xu hướng giảm."
+   }
+  ]
+ },
+ {
+  "src": "chi-bao-mcdx-la-gi-giai-ma-cong-cu-phan-tich-xu-huong-dong-tien-hieu-qua",
+  "src_title": "Chỉ báo MCDX là gì? Giải mã công cụ phân tích xu hướng dòng tiền hiệu quả",
+  "target": "phuong-phap-dau-tu-theo-dong-tien-hieu-qua",
+  "role": "hub",
+  "target_title": "Cách xem dòng tiền trong chứng khoán và 4 chiến lược",
+  "clicks": "40",
+  "anchors": [
+   "đầu tư theo dòng tiền",
+   "dòng tiền chứng khoán",
+   "dòng tiền trong chứng khoán",
+   "phương pháp đầu tư theo dòng tiền",
+   "dòng tiền thị trường",
+   "theo dõi dòng tiền"
+  ],
+  "paras": [
+   {
+    "i": 18,
+    "h": "Cách thức hoạt động của chỉ báo MCDX",
+    "n_sent": 1,
+    "t": "Công thức tính toán chỉ báo MCDX khá phức tạp, tuy nhiên nhà đầu tư có thể dễ dàng xem và sử dụng chỉ báo này trên nhiều phần mềm phân tích kỹ thuật phổ biến."
+   },
+   {
+    "i": 17,
+    "h": "Cách thức hoạt động của chỉ báo MCDX",
+    "n_sent": 1,
+    "t": "Chỉ báo MCDX hoạt động dựa trên dữ liệu giao dịch của cổ phiếu, bao gồm giá, khối lượng và giá trị giao dịch."
+   },
+   {
+    "i": 5,
+    "h": "Chỉ báo MCDX là gì?",
+    "n_sent": 1,
+    "t": "Chỉ báo MCDX (Multi Color Dragon Extended) được phát triển bởi nhà đầu tư nổi tiếng Nguyễn Duy Hưng dựa trên mô hình Wyckoff, giúp nhà đầu tư phân tích xu hướng dòng tiền của nhà tạo lập, nhà đầu tư nhỏ lẻ và nhà đầu cơ trên thị trường."
+   }
+  ]
+ },
+ {
+  "src": "kenh-gia-song-song-cong-cu-phan-tich-ky-thuat-hieu-qua",
+  "src_title": "Kênh giá song song: Công cụ phân tích kỹ thuật hiệu quả",
+  "target": "giao-dich-theo-xu-huong-trend-following-la-gi",
+  "role": "sub-hub",
+  "target_title": "Giao dịch theo xu hướng (Trend Following) là gì?",
+  "clicks": "40",
+  "anchors": [
+   "giao dịch theo xu hướng",
+   "trend following",
+   "chiến lược theo xu hướng",
+   "đi theo xu hướng",
+   "thuận xu hướng"
+  ],
+  "paras": [
+   {
+    "i": 19,
+    "h": "3. Ý nghĩa và cách sử dụng kênh giá song song",
+    "n_sent": 2,
+    "t": "Ngoài ra, kênh giá cũng giúp đo lường biến động giá trong xu hướng. Bằng cách quan sát khoảng cách giữa hai đường xu hướng trong kênh giá, bạn có thể đánh giá được mức độ biến động của giá và từ đó điều chỉnh chiến lược giao dịch của mình."
+   },
+   {
+    "i": 7,
+    "h": "1. Kênh giá song song là gì?",
+    "n_sent": 2,
+    "t": "Ngoài ra, kênh giá có thể xuất hiện dưới dạng kênh tăng giá, trong đó giá di chuyển lên trên giữa hai đường xu hướng, hoặc dưới dạng kênh giảm giá, khi giá di chuyển xuống dưới giữa hai đường xu hướng. Dù là kênh tăng giá hay kênh giảm giá, việc hiểu và sử dụng kênh giá song song có thể giúp bạn định hình được xu hướng thị trường và đưa ra quyết định đầu tư hiệu quả."
+   },
+   {
+    "i": 4,
+    "h": "1. Kênh giá song song là gì?",
+    "n_sent": 2,
+    "t": "Kênh giá song song là một khái niệm phổ biến trong phân tích kỹ thuật. Nó được tạo ra bởi hai đường xu hướng chính: đường xu hướng trên và đường xu hướng dưới."
+   }
+  ]
+ },
+ {
+  "src": "dao-chieu-xu-huong-la-gi",
+  "src_title": "Đảo chiều xu hướng là gì? Công cụ phân tích kỹ thuật phát hiện sớm đảo chiều xu hướng",
+  "target": "giao-dich-theo-xu-huong-trend-following-la-gi",
+  "role": "sub-hub",
+  "target_title": "Giao dịch theo xu hướng (Trend Following) là gì?",
+  "clicks": "38",
+  "anchors": [
+   "giao dịch theo xu hướng",
+   "trend following",
+   "chiến lược theo xu hướng",
+   "đi theo xu hướng",
+   "thuận xu hướng"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "Chỉ báo đảo chiều xu hướng là gì?",
+    "n_sent": 3,
+    "t": "Nói một cách đơn giản, chỉ báo đảo chiều xu hướng xảy ra khi một cổ phiếu thay đổi xu hướng và bắt đầu đi theo hướng ngược lại của hành động giá trước đó. Về mặt tâm lý, sự đảo chiều có thể cực kỳ khó khăn đối với ngay cả những nhà đầu tư có kinh nghiệm nhất để có thể phản ứng lại. Đó là bởi vì trong giai đoạn đầu của sự đảo chiều, sẽ rất khó để đoán được thị trường sẽ tiếp tục di chuyển theo hướng ban đầu hay chính thức đảo chiều."
+   },
+   {
+    "i": 35,
+    "h": "Kênh xu hướng",
+    "n_sent": 2,
+    "t": "Kênh xu hướng được tạo nên bởi hai đường hỗ trợ và kháng cự nằm song song với nhau với mức giá giao động bên trong kênh này, tạo ra một xu hướng thường là ngắn hạn cho thị trường hoặc cổ phiếu. Sự đảo chiều xu hướng xảy ra khi giá tăng/giảm phá vỡ đường kháng cự/hỗ trợ của kênh xu hướng, tạo ra một xu hướng khác ngược chiều với xu hướng trước đó."
+   },
+   {
+    "i": 27,
+    "h": "Chỉ báo EMA",
+    "n_sent": 0,
+    "t": "Mức giá cắt lên/xuống trên đường EMA 20: tín hiệu cho xu hướng thị trường tăng/giảm trong ngắn hạn;"
+   }
+  ]
+ },
+ {
+  "src": "chi-bao-aroon-la-gi",
+  "src_title": "Chỉ báo Aroon là gì? Công thức và ứng dụng trong giao dịch",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "35",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 49,
+    "h": "Những lưu ý khi sử dụng chỉ báo Aroon",
+    "n_sent": 1,
+    "t": "Mặc dù Aroon là một công cụ phân tích thời gian và xu hướng hữu ích, nhưng công cụ này vẫn có những hạn chế nhất định như tín hiệu trễ hoặc bị nhiễu trong một thị trường đi ngang biên độ rộng."
+   },
+   {
+    "i": 3,
+    "h": "Chỉ báo Aroon là gì?",
+    "n_sent": 2,
+    "t": "Chỉ báo kỹ thuật Aroon được phát triển bởi nhà thiết kế hệ thống giao dịch nổi tiếng Tushar Chande vào năm 1995. Đây là một công cụ hỗ trợ nhà đầu tư xác định xem một cổ phiếu hay thị trường chung đang có xu hướng rõ ràng hay không, và độ mạnh yếu của xu hướng đó ở mức độ nào."
+   },
+   {
+    "i": 5,
+    "h": "Chỉ báo Aroon là gì?",
+    "n_sent": 2,
+    "t": "Khác với các bộ dao động động lượng điển hình như chỉ báo UO (Ultimate Oscillator) hay chỉ báo Chaikin Oscillator vốn tập trung chủ yếu vào sự biến động của giá, chỉ báo Aroon lại tập trung vào yếu tố thời gian. Cụ thể, Aroon đo lường khoảng thời gian đã trôi qua kể từ khi giá ghi nhận mức đỉnh hoặc đáy gần nhất trong một số phiên nhất định (chu kỳ mặc định là 25 phiên)."
+   }
+  ]
+ },
+ {
+  "src": "chi-bao-aroon-la-gi",
+  "src_title": "Chỉ báo Aroon là gì? Công thức và ứng dụng trong giao dịch",
+  "target": "cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat",
+  "role": "hub",
+  "target_title": "Các chỉ báo xác định xu hướng đáng tin cậy trong phân tích kỹ thuật",
+  "clicks": "35",
+  "anchors": [
+   "chỉ báo xác định xu hướng",
+   "các chỉ báo xu hướng",
+   "chỉ báo xu hướng",
+   "xác định xu hướng",
+   "nhận diện xu hướng",
+   "chỉ báo theo xu hướng"
+  ],
+  "paras": [
+   {
+    "i": 3,
+    "h": "Chỉ báo Aroon là gì?",
+    "n_sent": 2,
+    "t": "Chỉ báo kỹ thuật Aroon được phát triển bởi nhà thiết kế hệ thống giao dịch nổi tiếng Tushar Chande vào năm 1995. Đây là một công cụ hỗ trợ nhà đầu tư xác định xem một cổ phiếu hay thị trường chung đang có xu hướng rõ ràng hay không, và độ mạnh yếu của xu hướng đó ở mức độ nào."
+   },
+   {
+    "i": 39,
+    "h": "Nhận diện sự khởi đầu của một xu hướng mới",
+    "n_sent": 2,
+    "t": "Mẹo giao dịch: Chỉ báo Aroon phát huy hiệu quả tốt khi cổ phiếu vừa trải qua một giai đoạn tích lũy đi ngang. Ngay khi đường Aroon-Up cắt lên mạnh mẽ và vượt mốc 50 từ nền tích lũy, nhà đầu tư có thể cân nhắc mở các vị thế thăm dò đầu tiên."
+   },
+   {
+    "i": 45,
+    "h": "Nhận diện giai đoạn tích lũy (Hợp nhất)",
+    "n_sent": 2,
+    "t": "Khi khoảng cách giữa hai đường thu hẹp và cùng hướng xuống dưới, điều này cho thấy thị trường đang thiếu động lực và biên độ dao động hẹp dần. Nhà đầu tư nên kiên nhẫn quan sát và chờ đợi tín hiệu bứt phá: đường nào vượt lên trên 50 và chạm mốc 100 trước sẽ là bên kích hoạt xu hướng tiếp theo."
+   }
+  ]
+ },
+ {
+  "src": "kenh-gia-la-gi",
+  "src_title": "Kênh giá là gì? Ý nghĩa và cách sử dụng kênh giá hiệu quả",
+  "target": "giao-dich-theo-xu-huong-trend-following-la-gi",
+  "role": "sub-hub",
+  "target_title": "Giao dịch theo xu hướng (Trend Following) là gì?",
+  "clicks": "33",
+  "anchors": [
+   "giao dịch theo xu hướng",
+   "trend following",
+   "chiến lược theo xu hướng",
+   "đi theo xu hướng",
+   "thuận xu hướng"
+  ],
+  "paras": [
+   {
+    "i": 8,
+    "h": "Kênh giá là gì trong phân tích kỹ thuật?",
+    "n_sent": 1,
+    "t": "Hiện nay, có nhiều biến thể khác nhau của công cụ này tùy thuộc vào độ dốc và hình dạng của xu hướng, trong đó phổ biến nhất là mô hình kênh giá song song hướng lên, hướng xuống hoặc đi ngang (sideway)."
+   },
+   {
+    "i": 1,
+    "h": "Kênh giá là gì trong phân tích kỹ thuật?",
+    "n_sent": 2,
+    "t": "Trong phân tích kỹ thuật chứng khoán, kênh giá (Price Channel) là công cụ trực quan thể hiện khoảng giới hạn biến động của giá cổ phiếu trong một xu hướng nhất định. Kênh giá được hình thành bởi hai đường xu hướng song song: đường biên trên đóng vai trò là kháng cự và đường biên dưới đóng vai trò là hỗ trợ."
+   },
+   {
+    "i": 2,
+    "h": "Kênh giá là gì trong phân tích kỹ thuật?",
+    "n_sent": 3,
+    "t": "Khi giá vận động ổn định bên trong kênh, điều này cho thấy xu hướng hiện tại đang được duy trì vững chắc. Ngược lại, những cú bứt phá (breakout) ra khỏi kênh thường báo hiệu sự thay đổi lớn về trạng thái thị trường. Để áp dụng công cụ này hiệu quả, nhà đầu tư cần hiểu rõ bản chất vận hành của đường hỗ trợ và kháng cự cấu thành nên biên độ dao động này."
+   }
+  ]
+ },
+ {
+  "src": "chi-bao-dong-tien-mfi-la-gi",
+  "src_title": "Chỉ báo dòng tiền MFI là gì? Ứng dụng chỉ báo dòng tiền",
+  "target": "phuong-phap-dau-tu-theo-dong-tien-hieu-qua",
+  "role": "hub",
+  "target_title": "Cách xem dòng tiền trong chứng khoán và 4 chiến lược",
+  "clicks": "25",
+  "anchors": [
+   "đầu tư theo dòng tiền",
+   "dòng tiền chứng khoán",
+   "dòng tiền trong chứng khoán",
+   "phương pháp đầu tư theo dòng tiền",
+   "dòng tiền thị trường",
+   "theo dõi dòng tiền"
+  ],
+  "paras": [
+   {
+    "i": 11,
+    "h": "Ý nghĩa của chỉ báo dòng tiền MFI",
+    "n_sent": 3,
+    "t": "Bạn có thể phân tích chỉ báo này giống như chỉ báo RSI. Điểm khác biệt lớn nhất là khối lượng, trong khi theo lý thuyết thì khối lượng giao dịch sẽ dẫn dắt giá nhưng chỉ báo RSI đã là một chỉ báo động lượng dẫn dắt giá. Có 3 tín hiệu cơ bản chúng ta cần để ý khi sử dụng MFI."
+   },
+   {
+    "i": 2,
+    "h": "Chỉ báo dòng tiền (Money Flow Index - MFI) là gì?",
+    "n_sent": 3,
+    "t": "Chỉ báo dòng tiền (MFI) là một chỉ báo dao động trong phân tích kỹ thuật. MFI sử dụng cả giá và khối lượng để đo áp lực mua và bán. MFI bắt đầu với mức giá điển hình cho từng thời kỳ, cụ thể là dòng tiền là dương khi giá điển hình tăng (áp lực mua) và âm khi giá điển hình giảm (áp lực bán)."
+   },
+   {
+    "i": 3,
+    "h": "Chỉ báo dòng tiền (Money Flow Index - MFI) là gì?",
+    "n_sent": 2,
+    "t": "Sau đó, một tỷ lệ giữa dòng tiền dương và âm được đưa vào công thức RSI để tạo ra một bộ dao động di chuyển trong khoảng từ 0 đến 100. Là một chỉ báo dao động xung lượng gắn liền với khối lượng, MFI phù hợp nhất để xác định các tín hiệu đảo chiều và cực trị của giá với nhiều tín hiệu khác nhau."
+   }
+  ]
+ },
+ {
+  "src": "chi-bao-kenh-keltner-la-gi",
+  "src_title": "Chỉ báo kênh Keltner là gì? Ứng dụng Kênh Keltner đầu tư",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "25",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 22,
+    "h": "Trong xu hướng tăng",
+    "n_sent": 2,
+    "t": "Kể cả khi có một xu hướng tăng mới, chúng ta vẫn nên chờ chứng khoán điều chỉnh để có điểm vào tốt hơn và tăng tỉ lệ phần thường rủi ro. Các chỉ báo dao động động lượng hoặc các chỉ báo khác có thể được sử dụng để tìm ra vùng quá bán."
+   },
+   {
+    "i": 1,
+    "h": "Chỉ báo kênh Keltner là gì?",
+    "n_sent": 4,
+    "t": "Kênh Keltner là các đường bao xung quanh dựa trên biến động giá có thể ở trên hoặc dưới đường trung bình động lũy thừa (EMA). Chỉ báo Keltner sử dụng chỉ báo Khoảng dao động trung bình thực tế (ATR) để đặt khoảng cách kênh. Thông thường, chỉ báo kênh Keltner sẽ sử dụng 2 đường ATR ở trên và dưới đường EMA 20 ngày. Đường này sẽ điều khiển hướng trong khi đường ATR sẽ điều khiển độ rộng của kênh."
+   },
+   {
+    "i": 11,
+    "h": "Ý nghĩa của kênh Keltner",
+    "n_sent": 5,
+    "t": "Kênh đi lên và vượt lên trên đường xu hướng phía trên có thể báo hiệu sự bắt đầu của một xu hướng tăng. Sự suy thoái của kênh và phá vỡ bên dưới đường xu hướng thấp hơn có thể báo hiệu sự bắt đầu của một xu hướng giảm. Đôi khi một xu hướng mạnh không được giữ sau khi kênh phá vỡ và giá dao động giữa các đường kênh. Các khoản giao dịch như vậy được nhận dạng bằng một đường trung bình động đi ngang. Giới hạn kênh sau đó có thể được sử dụng để xác định các mức mua quá mức và bán quá mức cho các giao dịch ngắn hạn."
+   }
+  ]
+ },
+ {
+  "src": "chi-bao-kenh-keltner-la-gi",
+  "src_title": "Chỉ báo kênh Keltner là gì? Ứng dụng Kênh Keltner đầu tư",
+  "target": "chi-bao-ky-thuat",
+  "role": "hub",
+  "target_title": "Chỉ báo kỹ thuật là gì? Các chỉ báo trong chứng khoán phổ biến",
+  "clicks": "25",
+  "anchors": [
+   "chỉ báo kỹ thuật",
+   "các chỉ báo kỹ thuật chứng khoán",
+   "chỉ báo phân tích kỹ thuật",
+   "công cụ chỉ báo kỹ thuật",
+   "bộ chỉ báo kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 1,
+    "h": "Chỉ báo kênh Keltner là gì?",
+    "n_sent": 4,
+    "t": "Kênh Keltner là các đường bao xung quanh dựa trên biến động giá có thể ở trên hoặc dưới đường trung bình động lũy thừa (EMA). Chỉ báo Keltner sử dụng chỉ báo Khoảng dao động trung bình thực tế (ATR) để đặt khoảng cách kênh. Thông thường, chỉ báo kênh Keltner sẽ sử dụng 2 đường ATR ở trên và dưới đường EMA 20 ngày. Đường này sẽ điều khiển hướng trong khi đường ATR sẽ điều khiển độ rộng của kênh."
+   },
+   {
+    "i": 2,
+    "h": "Chỉ báo kênh Keltner là gì?",
+    "n_sent": 2,
+    "t": "Chỉ báo kênh Keltner là chỉ báo theo sau xu hướng thường được dùng để tìm tín hiệu đảo chiều xu hướng thông qua việc phá kênh hay dựa vào hướng của kinh. Chỉ báo này cũng được sử dụng để xác định vùng quá mua và quá bán khi thị trường không có xu hướng."
+   },
+   {
+    "i": 14,
+    "h": "So sánh giữa chỉ báo Bollinger Bands và Kênh Keltner",
+    "n_sent": 4,
+    "t": "Thứ hai, Kênh Keltner cũng sử dụng đường trung bình lũy thừa, nhạy cảm hơn đường trung bình động 20 ngày được sử dụng trong Bollinger Bands. Biểu đồ bên dưới hiển thị Kênh Keltner (xanh) với đường EMA 20 ở giữa (vàng), Bollinger Bands (đỏ) với đường MA 20 (cam). Lưu ý cách các Kênh Keltner mượt mà hơn Dải Bollinger. Ngoài ra, hãy lưu ý cách Độ lệch chuẩn bao hàm một phạm vi lớn hơn Kênh của chỉ báo Kênh Keltner hay còn là đường ATR."
+   }
+  ]
+ },
+ {
+  "src": "mo-hinh-nen-dao-chieu",
+  "src_title": "12+ mô hình nến đảo chiều trong phân tích kỹ thuật",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "24",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 8,
+    "h": "Mô hình nến đảo chiều là gì?",
+    "n_sent": 1,
+    "t": "Để tối đa hóa tỷ lệ chiến thắng, bạn cần kết hợp nhuần nhuyễn Price Action từ nến với các mô hình giá để hình thành một hệ thống phân tích xu hướng thị trường toàn diện."
+   },
+   {
+    "i": 2,
+    "h": "Mô hình nến đảo chiều là gì?",
+    "n_sent": 2,
+    "t": "Mô hình nến đảo chiều là các mẫu hình nến đơn hoặc tổ hợp nhiều nến báo hiệu xu hướng giá hiện tại đang suy kiệt và chuẩn bị đảo hướng. Về mặt bản chất, đây là kết quả của sự thay đổi tương quan cung cầu tức thời giữa phe mua và phe bán tại các vùng nhạy cảm."
+   },
+   {
+    "i": 52,
+    "h": "Tweezer Bottom",
+    "n_sent": 1,
+    "t": "Tâm lý thị trường: Vùng giá đáy được kiểm chứng nhiều lần trong phiên nhưng không thể xuyên thủng, chứng tỏ đây là vùng hỗ trợ cực kỳ vững chắc do phe mua chủ động phòng ngự."
+   }
+  ]
+ },
+ {
+  "src": "chi-bao-connors-rsi-la-gi",
+  "src_title": "Chỉ báo Connors RSI là gì? Hướng dẫn ứng dụng chỉ báo CRSI",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "23",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 4,
+    "h": "Chỉ báo Connors RSI là gì?",
+    "n_sent": 3,
+    "t": "Trên thực tế, chỉ báo RSI 14 kỳ truyền thống do J. Welles Wilder phát triển thường phản ứng quá chậm đối với các biến động nhanh của thị trường, khiến các nhà giao dịch ngắn hạn dễ bỏ lỡ cơ hội. Để khắc phục nhược điểm này, Connors Research đã cải tiến và tạo ra một phiên bản RSI nhạy bén hơn, kết hợp cả động lượng tức thời, thời gian duy trì xu hướng và mức độ biến động giá để đưa ra tín hiệu nhanh chóng và có độ tin cậy cao hơn cho các chiến lược lướt sóng ngắn hạn."
+   },
+   {
+    "i": 25,
+    "h": "Ứng dụng Connors RSI để xác định điều kiện quá mua/quá bán",
+    "n_sent": 2,
+    "t": "Nhận xét từ biểu đồ thực tế: Trên đồ thị của cổ phiếu SSI, tín hiệu phân kỳ giữa đường giá và chỉ báo Connors RSI cho thấy động lượng của xu hướng tăng trước đó đang yếu dần, báo hiệu khả năng đảo chiều xảy ra. Khi Connors RSI cắt qua ngưỡng quá mua (ví dụ mốc 90), đó là những cảnh báo sớm đầu tiên cho quá trình phân phối của cổ phiếu, giúp nhà đầu tư chủ động quản trị danh mục."
+   },
+   {
+    "i": 37,
+    "h": "Thiết lập vị thế Bán/Chốt lời (Sell/Take Profit Setup):",
+    "n_sent": 1,
+    "t": "Để nâng cao xác suất thành công và hạn chế tối đa các tín hiệu nhiễu từ thị trường, nhà đầu tư nên tìm hiểu thêm các chiến lược giao dịch kết hợp RSI với các chỉ báo kỹ thuật khác như đường trung bình động (MA) hay chỉ báo xu hướng MACD."
+   }
+  ]
+ },
+ {
+  "src": "sideway-la-gi",
+  "src_title": "Sideway là gì? 4 cách nhận biết và chiến lược giao dịch",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "23",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 24,
+    "h": "So sánh chiến lược Sideway và Breakout/Breakdown",
+    "n_sent": 2,
+    "t": "Mỗi chiến lược giao dịch đều sở hữu những ưu điểm và hạn chế riêng biệt. Bảng so sánh dưới đây giúp bạn lựa chọn phương pháp phù hợp."
+   },
+   {
+    "i": 5,
+    "h": "Sideway là gì?",
+    "n_sent": 2,
+    "t": "Trạng thái này thể hiện sự cân bằng tạm thời giữa lực cung và lực cầu. Phe mua và phe bán đều đang do dự chờ đợi các tín hiệu vĩ mô mới."
+   },
+   {
+    "i": 34,
+    "h": "So sánh chiến lược Sideway và Breakout/Breakdown",
+    "n_sent": 2,
+    "t": "Nhìn chung cả 2 chiến lược đều có những ưu, nhược điểm riêng tùy vào từng giai đoạn thị trường mà chúng ta có thể áp dụng. Ngoài ra, việc chọn chiến lược giao dịch còn phù hợp với khẩu vị của từng nhà đầu tư."
+   }
+  ]
+ },
+ {
+  "src": "sideway-la-gi",
+  "src_title": "Sideway là gì? 4 cách nhận biết và chiến lược giao dịch",
+  "target": "giao-dich-theo-xu-huong-trend-following-la-gi",
+  "role": "sub-hub",
+  "target_title": "Giao dịch theo xu hướng (Trend Following) là gì?",
+  "clicks": "23",
+  "anchors": [
+   "giao dịch theo xu hướng",
+   "trend following",
+   "chiến lược theo xu hướng",
+   "đi theo xu hướng",
+   "thuận xu hướng"
+  ],
+  "paras": [
+   {
+    "i": 24,
+    "h": "So sánh chiến lược Sideway và Breakout/Breakdown",
+    "n_sent": 2,
+    "t": "Mỗi chiến lược giao dịch đều sở hữu những ưu điểm và hạn chế riêng biệt. Bảng so sánh dưới đây giúp bạn lựa chọn phương pháp phù hợp."
+   },
+   {
+    "i": 34,
+    "h": "So sánh chiến lược Sideway và Breakout/Breakdown",
+    "n_sent": 2,
+    "t": "Nhìn chung cả 2 chiến lược đều có những ưu, nhược điểm riêng tùy vào từng giai đoạn thị trường mà chúng ta có thể áp dụng. Ngoài ra, việc chọn chiến lược giao dịch còn phù hợp với khẩu vị của từng nhà đầu tư."
+   },
+   {
+    "i": 4,
+    "h": "Sideway là gì?",
+    "n_sent": 2,
+    "t": "Sideway là trạng thái đường giá biến động đi ngang trong một biên độ hẹp ổn định. Lúc này, thị trường không hình thành xu hướng tăng hay giảm rõ rệt."
+   }
+  ]
+ },
+ {
+  "src": "golden-cross-va-death-cross-la-gi",
+  "src_title": "Golden Cross và Death Cross là gì? Ý nghĩa trong giao dịch chứng khoán",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "22",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 12,
+    "h": "Điểm cắt tử thần (Death cross) là gì?",
+    "n_sent": 2,
+    "t": "Trái ngược hoàn toàn với điểm cắt vàng, điểm cắt tử thần (Death Cross) là mô hình biểu đồ kỹ thuật phản ánh sự suy yếu dài hạn của giá. Tín hiệu này xuất hiện khi đường MA ngắn hạn (MA50) cắt từ trên xuống dưới đường MA dài hạn (MA200)."
+   },
+   {
+    "i": 14,
+    "h": "Điểm cắt tử thần (Death cross) là gì?",
+    "n_sent": 2,
+    "t": "Dù có tên gọi khá đáng ngại, lịch sử thị trường cho thấy điểm cắt tử thần không phải lúc nào cũng dẫn đến một đợt sụp đổ nghiêm trọng ngay lập tức. Đôi khi nó chỉ là tín hiệu trễ của một đợt sụt giảm đã diễn ra trước đó, và thị trường có thể đi kèm những nhịp phục hồi kỹ thuật ngắn hạn ngay sau khi điểm cắt xuất hiện."
+   },
+   {
+    "i": 3,
+    "h": "Điểm cắt vàng (Golden cross) là gì?",
+    "n_sent": 3,
+    "t": "Điểm cắt vàng là một dấu hiệu xác nhận xu hướng tăng giá qua việc đường MA ngắn ngày cắt lên MA dài ngày (MA50 cắt lên MA200). Thường thì đây là một trong những dấu hiệu chắc chắn nhất về việc xu hướng đã thay đổi. Với những đường mang tính trung và dài hạn như MA50 và MA200, thì có thể xu hướng đã đảo chiều từ trước đó."
+   }
+  ]
+ },
+ {
+  "src": "giao-dich-theo-xu-huong-trend-following-la-gi",
+  "src_title": "Giao dịch theo xu hướng (Trend Following) là gì?",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "22",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 4,
+    "h": "Giao dịch theo xu hướng (Trend Following) là gì?",
+    "n_sent": 3,
+    "t": "Lý do phương pháp giao dịch theo xu hướng ít khi được xem là quan trọng vì nó quá dễ dàng. Nhà đầu tư thường thực hiện lệnh mua khi giá đã tăng tạo được đà và sẽ nắm giữ cổ phiếu vì cho rằng đà tăng còn mạnh. Ngược lại, nhà đầu tư sẽ bán khống (chưa phổ biến ở TTCK Việt Nam) loại cổ phiếu nếu giá đang trên đà giảm và chờ đợi giá còn tiếp tục giảm sâu hơn nữa."
+   },
+   {
+    "i": 7,
+    "h": "Cách xác định đường xu hướng trong đầu tư chứng khoán",
+    "n_sent": 1,
+    "t": "Trong giao dịch theo xu hướng tăng, các đỉnh và đáy sau luôn có xu hướng cao hơn đỉnh và đáy trước đó do lực cầu có xu hướng mạnh lên tại hỗ trợ và lực bán yếu dần tại các kháng cự. Điều này cũng áp dụng với xu hướng đi xuống: Nếu số đông nhà đầu tư đặt lệnh bán dẫn đến đáy sẽ thấp hơn,…"
+   },
+   {
+    "i": 3,
+    "h": "Giao dịch theo xu hướng (Trend Following) là gì?",
+    "n_sent": 4,
+    "t": "Giao dịch theo xu hướng dựa trên lý thuyết là :”Tất cả tài sản tài chính đều có một thứ chung đó là giá”. Mức giá này dao động và thay đổi dựa trên nhu cầu và nguồn cung của từng loại hàng hóa. Nếu nhiều người có nhu cầu mua một loại tài sản hơn người muốn bán, cầu sẽ tăng lên và giá cũng sẽ tăng theo. Cũng tương tự như vậy, khi ít người muốn mua một loại tài sản hơn người muốn bán, cầu sẽ giảm đi và giá sẽ giảm."
+   }
+  ]
+ },
+ {
+  "src": "chi-bao-on-balance-volume-obv-la-gi",
+  "src_title": "On Balance Volume (OBV) là gì? Ứng dụng chỉ báo OBV đầu tư",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "20",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "Chỉ báo OBV là gì?",
+    "n_sent": 3,
+    "t": "Chỉ báo OBV được phát triển bởi Joe Granville và được giới thiệu trong cuốn sách Chìa khóa mới của Granville để tạo ra lợi nhuận trên thị trường chứng khoán năm 1963 của ông. Nó là một trong những chỉ số đầu tiên để đo lưu lượng thể tích âm và dương. Các nhà biểu đồ có thể tìm kiếm sự phân kỳ giữa chỉ báo OBV và giá để dự đoán biến động giá hoặc sử dụng chỉ báo OBV để xác nhận xu hướng giá."
+   },
+   {
+    "i": 15,
+    "h": "Hướng dẫn sử dụng chỉ báo OBV",
+    "n_sent": 4,
+    "t": "Sau khi bị phá vỡ, xu hướng của chỉ báo OBV sẽ thay đổi và những điểm phá vỡ này có thể được sử dụng để tạo tín hiệu. Ngoài ra, hãy lưu ý rằng chỉ báo OBV dựa trên giá đóng cửa. Do đó, giá đóng cửa nên được xem xét khi tìm kiếm sự phân kỳ hoặc phá vỡ hỗ trợ / kháng cự. Cuối cùng, mức tăng đột biến về âm lượng đôi khi có thể làm bật chỉ báo bằng cách gây ra một động thái mạnh sẽ cần một khoảng thời gian giải quyết."
+   },
+   {
+    "i": 19,
+    "h": "Xác nhận tín hiệu Phân kì",
+    "n_sent": 3,
+    "t": "Sự phân kỳ giảm giá hình thành khi OBV di chuyển xuống thấp hơn hoặc hình thành mức thấp hơn ngay cả khi giá tăng cao hơn hoặc tạo ra mức cao cao hơn. Hay nói cách khác, phân kì là khi giá và OBV chuyển động ngược chiều nhau. Sự phân kỳ giữa OBV và giá sẽ cảnh báo các nhà biểu đồ rằng giá có thể xảy ra đảo chiều."
+   }
+  ]
+ },
+ {
+  "src": "chi-bao-on-balance-volume-obv-la-gi",
+  "src_title": "On Balance Volume (OBV) là gì? Ứng dụng chỉ báo OBV đầu tư",
+  "target": "phuong-phap-dau-tu-theo-dong-tien-hieu-qua",
+  "role": "hub",
+  "target_title": "Cách xem dòng tiền trong chứng khoán và 4 chiến lược",
+  "clicks": "20",
+  "anchors": [
+   "đầu tư theo dòng tiền",
+   "dòng tiền chứng khoán",
+   "dòng tiền trong chứng khoán",
+   "phương pháp đầu tư theo dòng tiền",
+   "dòng tiền thị trường",
+   "theo dõi dòng tiền"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "Chỉ báo OBV là gì?",
+    "n_sent": 3,
+    "t": "Chỉ báo OBV được phát triển bởi Joe Granville và được giới thiệu trong cuốn sách Chìa khóa mới của Granville để tạo ra lợi nhuận trên thị trường chứng khoán năm 1963 của ông. Nó là một trong những chỉ số đầu tiên để đo lưu lượng thể tích âm và dương. Các nhà biểu đồ có thể tìm kiếm sự phân kỳ giữa chỉ báo OBV và giá để dự đoán biến động giá hoặc sử dụng chỉ báo OBV để xác nhận xu hướng giá."
+   },
+   {
+    "i": 15,
+    "h": "Hướng dẫn sử dụng chỉ báo OBV",
+    "n_sent": 4,
+    "t": "Sau khi bị phá vỡ, xu hướng của chỉ báo OBV sẽ thay đổi và những điểm phá vỡ này có thể được sử dụng để tạo tín hiệu. Ngoài ra, hãy lưu ý rằng chỉ báo OBV dựa trên giá đóng cửa. Do đó, giá đóng cửa nên được xem xét khi tìm kiếm sự phân kỳ hoặc phá vỡ hỗ trợ / kháng cự. Cuối cùng, mức tăng đột biến về âm lượng đôi khi có thể làm bật chỉ báo bằng cách gây ra một động thái mạnh sẽ cần một khoảng thời gian giải quyết."
+   },
+   {
+    "i": 23,
+    "h": "Xác nhận tín hiệu Phân kì",
+    "n_sent": 4,
+    "t": "Biểu đồ trên là của cổ phiếu SSI. Pha tăng của cổ phiếu SSI đã bắt đầu từ ngày 06/07/2018, đây cũng là vùng mà chỉ báo OBV báo phân kì. Tuy nhiên phải đến ngày 18/7/2018 thì giá mới phá trendline để xác nhận xu hướng tăng. Tín hiệu phân kì là một tín hiệu khá sớm của chỉ báo OBV và nó có thể giúp cho nhà giao dịch có những vị thế tốt hơn."
+   }
+  ]
+ },
+ {
+  "src": "duong-zigzag-la-gi",
+  "src_title": "Đường ZigZag là gì? Ứng dụng đường ZigZag trong đầu tư",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "20",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "Đường ZigZag trong chứng khoán là gì?",
+    "n_sent": 2,
+    "t": "Đường ZigZag không phải là một chỉ báo, mà là một phương tiện để lọc ra các biến động giá nhỏ; được biểu diễn dưới dạng đường thẳng bỏ qua tất cả các biến động giá dưới 10%; chỉ những biến động giá lớn hơn 10% mới được hiển thị. Zigzag lọc ra các chuyển động nhỏ hơn giúp chúng ta có thể nhìn thấy xu hướng lớn dễ hơn tránh bị lẫn với các tín hiệu nhỏ trong xu hướng ấy, đưa ra góc nhìn toàn cảnh hơn."
+   },
+   {
+    "i": 17,
+    "h": "Ứng dụng đường ZigZag để xác định sóng Elliott",
+    "n_sent": 2,
+    "t": "Trên thực tế, việc chúng ta sử dụng đường ZigZag ở mức độ phần trăm bao nhiêu còn tùy thuộc vào bản thân của mỗi người. Trong biểu đồ ở dưới, VNINDEX trải qua 2 nhịp sóng Elliott ABC trước khi xuất hiện nỗ lực tạo đáy."
+   },
+   {
+    "i": 3,
+    "h": "Đường ZigZag trong chứng khoán là gì?",
+    "n_sent": 2,
+    "t": "Điểm lưu ý rằng đường ZigZag không có khả năng dự đoán xu hướng. Vì vậy, nhà PTKT thường kết hợp sóng Elliott, mẫu hình nến, mô hình hồi quy, Fibonacci thoái lui để dự đoán."
+   }
+  ]
+ },
+ {
+  "src": "duong-zigzag-la-gi",
+  "src_title": "Đường ZigZag là gì? Ứng dụng đường ZigZag trong đầu tư",
+  "target": "bieu-do-chung-khoan-la-gi-cach-xem-bieu-do-chung-khoan",
+  "role": "sub-hub",
+  "target_title": "Biểu đồ chứng khoán là gì? Cách xem biểu đồ chứng khoán",
+  "clicks": "20",
+  "anchors": [
+   "biểu đồ chứng khoán",
+   "cách xem biểu đồ chứng khoán",
+   "đồ thị chứng khoán",
+   "biểu đồ cổ phiếu",
+   "đọc biểu đồ",
+   "biểu đồ giá"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "Đường ZigZag trong chứng khoán là gì?",
+    "n_sent": 2,
+    "t": "Đường ZigZag không phải là một chỉ báo, mà là một phương tiện để lọc ra các biến động giá nhỏ; được biểu diễn dưới dạng đường thẳng bỏ qua tất cả các biến động giá dưới 10%; chỉ những biến động giá lớn hơn 10% mới được hiển thị. Zigzag lọc ra các chuyển động nhỏ hơn giúp chúng ta có thể nhìn thấy xu hướng lớn dễ hơn tránh bị lẫn với các tín hiệu nhỏ trong xu hướng ấy, đưa ra góc nhìn toàn cảnh hơn."
+   },
+   {
+    "i": 3,
+    "h": "Đường ZigZag trong chứng khoán là gì?",
+    "n_sent": 2,
+    "t": "Điểm lưu ý rằng đường ZigZag không có khả năng dự đoán xu hướng. Vì vậy, nhà PTKT thường kết hợp sóng Elliott, mẫu hình nến, mô hình hồi quy, Fibonacci thoái lui để dự đoán."
+   },
+   {
+    "i": 16,
+    "h": "Ứng dụng đường ZigZag để xác định sóng Elliott",
+    "n_sent": 2,
+    "t": "Đường zigzag có thể được sử dụng để loại bỏ những xu hướng nhỏ để có thể giúp chúng ta xác định sóng Elliott dễ dàng hơn. Biểu đồ bên dưới của VNINDEX với đường 5% ZigZag đã loại bỏ những chuyển động dưới 5% và dường như với đường ZigZag 5% này có thể cho chúng ta thấy được sóng Elliott một cách dễ dàng để có thể đếm sóng."
+   }
+  ]
+ },
+ {
+  "src": "duong-trung-binh-dong-hull-hma-la-gi",
+  "src_title": "Đường trung bình động Hull (HMA) là gì? Cách ứng dụng hiệu quả",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "16",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 47,
+    "h": "Xác định xu hướng dài hạn",
+    "n_sent": 2,
+    "t": "Bên cạnh HMA, thị trường chứng khoán còn có nhiều công cụ lọc độ trễ khác cũng rất phổ biến và mạnh mẽ. Nhà đầu tư có thể tìm hiểu thêm về phương pháp sử dụng đường trung bình động lũy thừa DEMA là gì để có thêm góc nhìn so sánh và lựa chọn được chỉ báo phù hợp nhất với phong cách giao dịch cá nhân của mình."
+   },
+   {
+    "i": 4,
+    "h": "Đường trung bình động Hull (HMA) là gì?",
+    "n_sent": 2,
+    "t": "Nhờ sử dụng các đường trung bình động có trọng số (WMA), chỉ báo này ưu tiên các biến động giá gần đây hơn. Kết quả là đường HMA phản ứng nhanh nhạy, bám sát đường giá hơn và hỗ trợ nhà đầu tư xác định các điểm đảo chiều sớm hơn."
+   },
+   {
+    "i": 5,
+    "h": "Đường trung bình động Hull (HMA) là gì?",
+    "n_sent": 1,
+    "t": "Trước khi đi sâu vào tìm hiểu cơ chế hoạt động của HMA, nếu bạn chưa quen thuộc với các khái niệm cơ bản về các đường trung bình động nói chung như SMA hay EMA, bạn có thể tham khảo thêm bài viết phân tích chi tiết của DSC về đường MA là gì để dễ dàng nắm vững nền tảng lý thuyết này."
+   }
+  ]
+ },
+ {
+  "src": "duong-trung-binh-dong-hull-hma-la-gi",
+  "src_title": "Đường trung bình động Hull (HMA) là gì? Cách ứng dụng hiệu quả",
+  "target": "cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat",
+  "role": "hub",
+  "target_title": "Các chỉ báo xác định xu hướng đáng tin cậy trong phân tích kỹ thuật",
+  "clicks": "16",
+  "anchors": [
+   "chỉ báo xác định xu hướng",
+   "các chỉ báo xu hướng",
+   "chỉ báo xu hướng",
+   "xác định xu hướng",
+   "nhận diện xu hướng",
+   "chỉ báo theo xu hướng"
+  ],
+  "paras": [
+   {
+    "i": 47,
+    "h": "Xác định xu hướng dài hạn",
+    "n_sent": 2,
+    "t": "Bên cạnh HMA, thị trường chứng khoán còn có nhiều công cụ lọc độ trễ khác cũng rất phổ biến và mạnh mẽ. Nhà đầu tư có thể tìm hiểu thêm về phương pháp sử dụng đường trung bình động lũy thừa DEMA là gì để có thêm góc nhìn so sánh và lựa chọn được chỉ báo phù hợp nhất với phong cách giao dịch cá nhân của mình."
+   },
+   {
+    "i": 36,
+    "h": "Ý nghĩa và cách ứng dụng đường trung bình động Hull",
+    "n_sent": 2,
+    "t": "Đường trung bình động Hull có thể được diễn giải tương tự như các đường trung bình động truyền thống nhưng sở hữu tốc độ phản hồi nhanh hơn. Chỉ báo này thường được dùng để xác nhận xu hướng hoặc phát hiện sớm các tín hiệu đảo chiều."
+   },
+   {
+    "i": 3,
+    "h": "Đường trung bình động Hull (HMA) là gì?",
+    "n_sent": 1,
+    "t": "Đường trung bình động Hull (HMA) là một chỉ báo kỹ thuật được thiết kế nhằm mục đích giảm thiểu độ trễ của các đường trung bình động truyền thống, đồng thời duy trì độ mượt mà cần thiết để lọc nhiễu tín hiệu giá."
+   }
+  ]
+ },
+ {
+  "src": "duong-phan-phoi-tich-luy-a-d-la-gi",
+  "src_title": "Đường phân phối tích lũy (A/D) là gì? Ứng dụng đầu tư",
+  "target": "phuong-phap-dau-tu-theo-dong-tien-hieu-qua",
+  "role": "hub",
+  "target_title": "Cách xem dòng tiền trong chứng khoán và 4 chiến lược",
+  "clicks": "16",
+  "anchors": [
+   "đầu tư theo dòng tiền",
+   "dòng tiền chứng khoán",
+   "dòng tiền trong chứng khoán",
+   "phương pháp đầu tư theo dòng tiền",
+   "dòng tiền thị trường",
+   "theo dõi dòng tiền"
+  ],
+  "paras": [
+   {
+    "i": 4,
+    "h": "Đường phân phối/tích lũy (A/D) là gì?",
+    "n_sent": 4,
+    "t": "Thứ nhất, hệ số nhân được tính dựa trên mối quan hệ của giá trị gần với phạm vi cao-thấp. Thứ hai, Hệ số lưu chuyển tiền được nhân với khối lượng của kỳ để tạo ra Khối lượng dòng tiền. Tổng Khối lượng Dòng tiền đang chạy tạo thành Đường phân phối Tích lũy. Các nhà PTKT có thể sử dụng chỉ báo này để xác nhận xu hướng cơ bản của chứng khoán hoặc dự đoán sự đảo chiều khi chỉ báo này phân kỳ khỏi giá chứng khoán."
+   },
+   {
+    "i": 21,
+    "h": "Phân kì",
+    "n_sent": 4,
+    "t": "Sự phân kỳ giảm và tăng là nơi nó bắt đầu của tín hiệu đảo chiều. Đường phân phối tích lũy giảm cho thấy chứng khoán tích lũy yếu dần. Về cơ bản, hãy coi đây là động lượng mua “lén lút”. Dựa trên lý thuyết rằng khối lượng đi trước giá, các nhà biểu đồ nên cảnh giác về sự đảo chiều tăng giá trên biểu đồ giá."
+   },
+   {
+    "i": 3,
+    "h": "Đường phân phối/tích lũy (A/D) là gì?",
+    "n_sent": 1,
+    "t": "Được phát triển bởi Marc Chaikin, đường phân phối tích lũy là một chỉ báo dựa trên khối lượng được thiết kế để đo lường dòng tiền tích lũy vào và ra khỏi một chứng khoán."
+   }
+  ]
+ },
+ {
+  "src": "chi-bao-chaikin-oscillator-la-gi",
+  "src_title": "Chỉ báo Chaikin Oscillator là gì? Ứng dụng trong giao dịch",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "15",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 41,
+    "h": "Phân kỳ dương (Bullish Divergence) - Dự báo đảo chiều tăng",
+    "n_sent": 2,
+    "t": "Trên biểu đồ cổ phiếu LCG, giá tạo đáy sau thấp hơn vào tháng 5/2022, nhưng chỉ báo Chaikin lại tạo đáy sau cao hơn đáy tháng 4/2022. Sự phân kỳ dương này đã dự báo chính xác nhịp phục hồi của cổ phiếu ngay sau đó."
+   },
+   {
+    "i": 34,
+    "h": "Xác định Phân kỳ âm/dương để dự báo đảo chiều giá",
+    "n_sent": 1,
+    "t": "Sự phân kỳ giữa đường giá và chỉ báo Chaikin Oscillator là tín hiệu mạnh mẽ cảnh báo sự suy yếu của xu hướng hiện tại và khả năng đảo chiều sắp diễn ra."
+   },
+   {
+    "i": 3,
+    "h": "Chỉ báo Chaikin Oscillator là gì?",
+    "n_sent": 1,
+    "t": "Chỉ báo Chaikin Oscillator là công cụ đo lường động lượng của Đường phân phối tích lũy (Accumulation Distribution Line - ADL) bằng cách áp dụng nguyên lý của chỉ báo MACD."
+   }
+  ]
+ },
+ {
+  "src": "chi-bao-chaikin-oscillator-la-gi",
+  "src_title": "Chỉ báo Chaikin Oscillator là gì? Ứng dụng trong giao dịch",
+  "target": "phuong-phap-dau-tu-theo-dong-tien-hieu-qua",
+  "role": "hub",
+  "target_title": "Cách xem dòng tiền trong chứng khoán và 4 chiến lược",
+  "clicks": "15",
+  "anchors": [
+   "đầu tư theo dòng tiền",
+   "dòng tiền chứng khoán",
+   "dòng tiền trong chứng khoán",
+   "phương pháp đầu tư theo dòng tiền",
+   "dòng tiền thị trường",
+   "theo dõi dòng tiền"
+  ],
+  "paras": [
+   {
+    "i": 12,
+    "h": "Chỉ báo Chaikin Oscillator là gì?",
+    "n_sent": 2,
+    "t": "Bằng cách đo lường khoảng cách giữa hai đường EMA này, Chaikin Oscillator giúp nhà đầu tư dự đoán được sự thay đổi trong xu hướng của ADL, từ đó gián tiếp nhận diện xu hướng chuyển động của cổ phiếu đang theo dõi. Các tín hiệu giao dịch thường được tạo ra khi chỉ báo giao cắt với đường số 0 (Zero Line) hoặc khi xuất hiện hiện tượng phân kỳ."
+   },
+   {
+    "i": 28,
+    "h": "Xác định xu hướng Mua/Bán qua đường trung tâm (Zero Line)",
+    "n_sent": 3,
+    "t": "Lưu ý về thông số cài đặt: Theo mặc định, chỉ báo thường dùng thông số (3,10). Với thiết lập ngắn hạn này, Chaikin Oscillator sẽ cho nhiều tín hiệu giao cắt liên tục, đôi khi tạo ra các tín hiệu giả (nhiễu). Để giảm nhiễu và làm mượt chỉ báo, nhà đầu tư có thể điều chỉnh thông số dài hơn như (6,20)."
+   },
+   {
+    "i": 4,
+    "h": "Chỉ báo Chaikin Oscillator là gì?",
+    "n_sent": 2,
+    "t": "Thực chất, Chaikin Oscillator là một \"chỉ báo của chỉ báo\". Thay vì phản ánh trực tiếp biến động của giá, nó đo lường tốc độ thay đổi của dòng tiền tích lũy/phân phối."
+   }
+  ]
+ },
+ {
+  "src": "price-action-hanh-dong-gia-la-gi",
+  "src_title": "Price action là gì? Ví dụ minh họa về Price action trong giao dịch",
+  "target": "bieu-do-chung-khoan-la-gi-cach-xem-bieu-do-chung-khoan",
+  "role": "sub-hub",
+  "target_title": "Biểu đồ chứng khoán là gì? Cách xem biểu đồ chứng khoán",
+  "clicks": "15",
+  "anchors": [
+   "biểu đồ chứng khoán",
+   "cách xem biểu đồ chứng khoán",
+   "đồ thị chứng khoán",
+   "biểu đồ cổ phiếu",
+   "đọc biểu đồ",
+   "biểu đồ giá"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "Price action là gì?",
+    "n_sent": 2,
+    "t": "Price action (Hành động giá) là một trong những phương pháp phân tích kỹ thuật đơn giản dựa trên sự chuyển động của giá chứng khoán được biểu diễn theo thời gian dưới dạng biểu đồ. Đây là phương pháp dựa trên chuyển động của giá hơn là các chỉ báo hoặc phân tích và thường được các nhà đầu tư sử dụng bởi độ hiệu quả cao mà nó đem lại, đặc biệt trong thị trường có tính thanh khoản và độ biến động cao."
+   },
+   {
+    "i": 15,
+    "h": "Ví dụ minh họa về Price action",
+    "n_sent": 2,
+    "t": "Trên đây là một ví dụ về biểu đồ giá của mã cổ phiếu HPG vào giai đoạn Quý 2 và Quỹ 3 năm 2020. Có thể thấy sau khi chạm đáy của đà giảm vào khoảng cuối tháng 3/2020 do dịch bệnh COVID-19 bùng phát tại Việt Nam, cổ phiếu HPG đã bước vào giai xu hướng tăng giá trong dài hạn."
+   },
+   {
+    "i": 17,
+    "h": "Ví dụ minh họa về Price action",
+    "n_sent": 1,
+    "t": "Một kỹ năng quan sát các bước giá được hình thành và đúc kết đó chính là việc tập trung tìm kiếm những phiên có biến động mạnh (trên đồ thị sẽ là những cây nến tăng thân dài) tại các vùng có các đường hỗ trợ mạnh hoặc có các tín hiệu chỉ báo kỹ thuật đáng tin cậy."
+   }
+  ]
+ },
+ {
+  "src": "vung-qua-mua-la-gi-giai-dap-chi-tiet-cho-nha-dau-tu",
+  "src_title": "Vùng quá mua là gì? Giải đáp chi tiết cho nhà đầu tư",
+  "target": "chi-so-rsi-la-gi",
+  "role": "sub-hub",
+  "target_title": "Chỉ số RSI là gì? Cách tính và ý nghĩa trong đầu tư",
+  "clicks": "12",
+  "anchors": [
+   "chỉ số RSI",
+   "chỉ báo RSI",
+   "RSI là gì",
+   "cách tính chỉ số RSI",
+   "RSI",
+   "sức mạnh tương đối"
+  ],
+  "paras": [
+   {
+    "i": 1,
+    "h": "Vùng quá mua là gì?",
+    "n_sent": 2,
+    "t": "Vùng quá mua (Overbought Zone) là một thuật ngữ trong phân tích kỹ thuật, dùng để mô tả mức giá mà một tài sản (cổ phiếu, trái phiếu, hàng hóa, v.v.) được cho là đã tăng quá cao so với giá trị thực của nó. Tại vùng quá mua, nhiều nhà đầu tư có xu hướng bán ra để chốt lời, khiến cho giá tài sản có thể giảm xuống."
+   }
+  ]
+ },
+ {
+  "src": "chi-bao-bollinger-band-b-la-gi",
+  "src_title": "Chỉ báo Bollinger Band %B là gì? Cách sử dụng trong PTKT",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "12",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 22,
+    "h": "Xác định tín hiệu quá mua và quá bán",
+    "n_sent": 3,
+    "t": "Biểu đồ phía dưới minh họa cổ phiếu PVD trong một xu hướng tăng mạnh. Đường %B đã chạm vào vùng quá bán vài lần, nhưng đây không phải là một tín hiệu bán (sell) mà chỉ là những nhịp điều chỉnh kỹ thuật ngắn hạn. Thực tế, giá cổ phiếu phần lớn thời gian di chuyển ở nửa trên của dải Bollinger (tương ứng %B > 0,5), củng cố vị thế của một xu hướng tăng giá mạnh mẽ."
+   },
+   {
+    "i": 2,
+    "h": "Chỉ báo Bollinger Band %B là gì?",
+    "n_sent": 1,
+    "t": "Chỉ báo %B giúp định lượng vị trí của giá của chứng khoán so với dải trên (Upper Band) và dải dưới (Lower Band) của dải Bollinger Band."
+   },
+   {
+    "i": 36,
+    "h": "Xác nhận xu hướng bằng cách kết hợp %B và chỉ báo MFI",
+    "n_sent": 2,
+    "t": "Đối với các nhà giao dịch chú trọng tỷ lệ rủi ro/lợi nhuận, tín hiệu này có thể xuất hiện hơi trễ và không phù hợp để mua đuổi trực tiếp. Mặc dù vậy, bạn hoàn toàn có thể sử dụng tín hiệu đồng pha này như một bộ lọc để xác định xu hướng chính, sau đó kiên nhẫn chờ các nhịp điều chỉnh đưa %B về vùng quá bán (dưới 0,2) để tìm kiếm điểm vào lệnh."
+   }
+  ]
+ },
+ {
+  "src": "chi-bao-bollinger-band-b-la-gi",
+  "src_title": "Chỉ báo Bollinger Band %B là gì? Cách sử dụng trong PTKT",
+  "target": "chi-bao-ky-thuat",
+  "role": "hub",
+  "target_title": "Chỉ báo kỹ thuật là gì? Các chỉ báo trong chứng khoán phổ biến",
+  "clicks": "12",
+  "anchors": [
+   "chỉ báo kỹ thuật",
+   "các chỉ báo kỹ thuật chứng khoán",
+   "chỉ báo phân tích kỹ thuật",
+   "công cụ chỉ báo kỹ thuật",
+   "bộ chỉ báo kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "Chỉ báo Bollinger Band %B là gì?",
+    "n_sent": 1,
+    "t": "Chỉ báo %B giúp định lượng vị trí của giá của chứng khoán so với dải trên (Upper Band) và dải dưới (Lower Band) của dải Bollinger Band."
+   },
+   {
+    "i": 36,
+    "h": "Xác nhận xu hướng bằng cách kết hợp %B và chỉ báo MFI",
+    "n_sent": 2,
+    "t": "Đối với các nhà giao dịch chú trọng tỷ lệ rủi ro/lợi nhuận, tín hiệu này có thể xuất hiện hơi trễ và không phù hợp để mua đuổi trực tiếp. Mặc dù vậy, bạn hoàn toàn có thể sử dụng tín hiệu đồng pha này như một bộ lọc để xác định xu hướng chính, sau đó kiên nhẫn chờ các nhịp điều chỉnh đưa %B về vùng quá bán (dưới 0,2) để tìm kiếm điểm vào lệnh."
+   },
+   {
+    "i": 22,
+    "h": "Xác định tín hiệu quá mua và quá bán",
+    "n_sent": 3,
+    "t": "Biểu đồ phía dưới minh họa cổ phiếu PVD trong một xu hướng tăng mạnh. Đường %B đã chạm vào vùng quá bán vài lần, nhưng đây không phải là một tín hiệu bán (sell) mà chỉ là những nhịp điều chỉnh kỹ thuật ngắn hạn. Thực tế, giá cổ phiếu phần lớn thời gian di chuyển ở nửa trên của dải Bollinger (tương ứng %B > 0,5), củng cố vị thế của một xu hướng tăng giá mạnh mẽ."
+   }
+  ]
+ },
+ {
+  "src": "bollinger-bands-la-gi-cach-su-dung-trong-giao-dich-chung-khoan",
+  "src_title": "Bollinger Bands là gì? 4 chiến lược giao dịch hiệu quả",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "11",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 37,
+    "h": "4 chiến lược sử dụng Bollinger Bands trong giao dịch chứng khoán",
+    "n_sent": 2,
+    "t": "Dưới đây là các chiến lược thực chiến áp dụng trên thị trường chứng khoán Việt Nam. Mọi ví dụ đều sử dụng các mã cổ phiếu phổ biến."
+   },
+   {
+    "i": 3,
+    "h": "Bollinger Bands là gì?",
+    "n_sent": 2,
+    "t": "Bollinger Bands là chỉ báo phân tích kỹ thuật dùng để đo lường biến động giá và xác định xu hướng thị trường. Công cụ này kết hợp đường trung bình động đơn giản (SMA) và độ lệch chuẩn để tạo ra hai dải biên."
+   },
+   {
+    "i": 66,
+    "h": "Chiến lược 4: Chiến lược kết hợp Bollinger Bands và phân kỳ RSI bắt đảo chiều",
+    "n_sent": 1,
+    "t": "Chiến lược này giúp bạn xác định các điểm đảo chiều xu hướng có độ chính xác cao bằng cách lọc tín hiệu giả."
+   }
+  ]
+ },
+ {
+  "src": "chi-bao-momentum-la-gi",
+  "src_title": "Chỉ báo Momentum là gì? Ứng dụng chỉ báo động lượng",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "11",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 34,
+    "h": "Thiết lập chu kỳ chỉ báo Momentum tối ưu cho thị trường Việt Nam",
+    "n_sent": 2,
+    "t": "Phần lớn phần mềm thiết lập chu kỳ mặc định 14 phiên. Con số này phổ biến vì Wilder dùng nó cho RSI, không phải vì nó tối ưu cho Momentum hay cho VN-Index."
+   },
+   {
+    "i": 35,
+    "h": "Thiết lập chu kỳ chỉ báo Momentum tối ưu cho thị trường Việt Nam",
+    "n_sent": 2,
+    "t": "VN-Index có chu kỳ biến động khác thị trường Mỹ: nhịp sóng ngắn hạn thường kéo dài 8–12 phiên, không phải 14. Chu kỳ 14 phiên phản ứng trễ, tín hiệu xuất hiện khi giá đã đi được 60–70% sóng."
+   },
+   {
+    "i": 43,
+    "h": "Thiết lập chu kỳ chỉ báo Momentum tối ưu cho thị trường Việt Nam",
+    "n_sent": 3,
+    "t": "Khuyến nghị: Bắt đầu với chu kỳ 10 phiên nếu bạn đang giao dịch swing. Kiểm thử back-test trên ít nhất 50 giao dịch trước khi chốt tham số. Chu kỳ tối ưu phụ thuộc vào từng cổ phiếu, không có con số nào đúng cho tất cả."
+   }
+  ]
+ },
+ {
+  "src": "bollinger-bands-la-gi-cach-su-dung-trong-giao-dich-chung-khoan",
+  "src_title": "Bollinger Bands là gì? 4 chiến lược giao dịch hiệu quả",
+  "target": "chi-bao-ky-thuat",
+  "role": "hub",
+  "target_title": "Chỉ báo kỹ thuật là gì? Các chỉ báo trong chứng khoán phổ biến",
+  "clicks": "11",
+  "anchors": [
+   "chỉ báo kỹ thuật",
+   "các chỉ báo kỹ thuật chứng khoán",
+   "chỉ báo phân tích kỹ thuật",
+   "công cụ chỉ báo kỹ thuật",
+   "bộ chỉ báo kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 3,
+    "h": "Bollinger Bands là gì?",
+    "n_sent": 2,
+    "t": "Bollinger Bands là chỉ báo phân tích kỹ thuật dùng để đo lường biến động giá và xác định xu hướng thị trường. Công cụ này kết hợp đường trung bình động đơn giản (SMA) và độ lệch chuẩn để tạo ra hai dải biên."
+   },
+   {
+    "i": 19,
+    "h": "Công thức tính dải Bollinger bands",
+    "n_sent": 3,
+    "t": "Độ lệch chuẩn là công cụ đo lường mức độ phân tán của giá so với trung bình. Trong thống kê, phạm vi 2 độ lệch chuẩn bao phủ khoảng 90% biến động giá. Điều này đồng nghĩa với việc phần lớn thời gian giá cổ phiếu sẽ dao động bên trong hai dải biên."
+   },
+   {
+    "i": 37,
+    "h": "4 chiến lược sử dụng Bollinger Bands trong giao dịch chứng khoán",
+    "n_sent": 2,
+    "t": "Dưới đây là các chiến lược thực chiến áp dụng trên thị trường chứng khoán Việt Nam. Mọi ví dụ đều sử dụng các mã cổ phiếu phổ biến."
+   }
+  ]
+ },
+ {
+  "src": "amibroker-la-gi",
+  "src_title": "Amibroker là gì? Hướng dẫn dùng và backtest thực chiến",
+  "target": "bieu-do-chung-khoan-la-gi-cach-xem-bieu-do-chung-khoan",
+  "role": "sub-hub",
+  "target_title": "Biểu đồ chứng khoán là gì? Cách xem biểu đồ chứng khoán",
+  "clicks": "10",
+  "anchors": [
+   "biểu đồ chứng khoán",
+   "cách xem biểu đồ chứng khoán",
+   "đồ thị chứng khoán",
+   "biểu đồ cổ phiếu",
+   "đọc biểu đồ",
+   "biểu đồ giá"
+  ],
+  "paras": [
+   {
+    "i": 17,
+    "h": "Amibroker là gì?",
+    "n_sent": 3,
+    "t": "Nền tảng giúp nhà giao dịch giảm thiểu các thao tác nhìn bảng giá thủ công. Dữ liệu được lưu trữ trên ổ cứng giúp bạn truy cập biểu đồ ngay cả khi không có kết nối mạng. Bạn có thể tự do sáng tạo mọi mô hình định lượng mà không bị giới hạn bởi nền tảng đóng."
+   },
+   {
+    "i": 2,
+    "h": "Amibroker là gì?",
+    "n_sent": 3,
+    "t": "Amibroker là phần mềm phân tích kỹ thuật chuyên sâu trên hệ điều hành Windows được phát triển bởi Tomasz Janeczko. Nền tảng cho phép nhà đầu tư tự thiết kế thuật toán lọc cổ phiếu và backtest chiến lược trên dữ liệu lịch sử. Phần mềm được xây dựng từ cuối thập niên 1990 tại Ba Lan và vận hành độc lập trên máy tính cá nhân."
+   },
+   {
+    "i": 3,
+    "h": "Amibroker là gì?",
+    "n_sent": 3,
+    "t": "Tốc độ xử lý dữ liệu của Amibroker rất nhanh nhờ kiến trúc mã nguồn C/C++ native tối ưu hóa mảng. Nền tảng cho phép người dùng tùy biến chỉ báo kỹ thuật theo tư duy riêng biệt. Nếu bạn đang tìm hiểu phân tích kỹ thuật là gì ở cấp độ chuyên sâu, đây là công cụ tiêu chuẩn hàng đầu."
+   }
+  ]
+ },
+ {
+  "src": "chi-bao-adx-la-gi",
+  "src_title": "ADX là gì? Cách sử dụng chỉ báo ADX trong giao dịch",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "9",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 66,
+    "h": "Những lưu ý khi sử dụng chỉ báo ADX",
+    "n_sent": 2,
+    "t": "Thay vì tự mình loay hoay với các con số, nhà đầu tư tại DSC sẽ nhận được sự hỗ trợ trực tiếp từ đội ngũ chuyên gia môi giới 1:1. Các chuyên gia sẽ giúp bạn kết hợp ADX với đa khung thời gian để tìm điểm vào lệnh sớm hơn mà vẫn đảm bảo an toàn, thay vì chỉ máy móc nhìn vào một chỉ báo duy nhất."
+   },
+   {
+    "i": 65,
+    "h": "Những lưu ý khi sử dụng chỉ báo ADX",
+    "n_sent": 2,
+    "t": "ADX là công cụ tuyệt vời nhưng luôn có độ trễ. Nếu đợi ADX vượt 25 mới vào lệnh, bạn có thể đã bỏ lỡ giai đoạn ngon nhất của con sóng."
+   },
+   {
+    "i": 4,
+    "h": "Chỉ báo ADX là gì?",
+    "n_sent": 3,
+    "t": "ADX (Average Directional Index) là chỉ báo đo lường cường độ của xu hướng, được phát triển bởi J. Welles Wilder vào năm 1978. Chỉ số này không dùng để xác định hướng giá tăng hay giảm mà chỉ tập trung vào sức mạnh của dòng tiền hiện tại."
+   }
+  ]
+ },
+ {
+  "src": "chi-bao-adx-la-gi",
+  "src_title": "ADX là gì? Cách sử dụng chỉ báo ADX trong giao dịch",
+  "target": "cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat",
+  "role": "hub",
+  "target_title": "Các chỉ báo xác định xu hướng đáng tin cậy trong phân tích kỹ thuật",
+  "clicks": "9",
+  "anchors": [
+   "chỉ báo xác định xu hướng",
+   "các chỉ báo xu hướng",
+   "chỉ báo xu hướng",
+   "xác định xu hướng",
+   "nhận diện xu hướng",
+   "chỉ báo theo xu hướng"
+  ],
+  "paras": [
+   {
+    "i": 4,
+    "h": "Chỉ báo ADX là gì?",
+    "n_sent": 3,
+    "t": "ADX (Average Directional Index) là chỉ báo đo lường cường độ của xu hướng, được phát triển bởi J. Welles Wilder vào năm 1978. Chỉ số này không dùng để xác định hướng giá tăng hay giảm mà chỉ tập trung vào sức mạnh của dòng tiền hiện tại."
+   },
+   {
+    "i": 10,
+    "h": "Chỉ báo ADX là gì?",
+    "n_sent": 1,
+    "t": "Lưu ý: Tránh nhầm lẫn chỉ báo kỹ thuật ADX với AdEx - một nền tảng quảng cáo dựa trên blockchain."
+   },
+   {
+    "i": 66,
+    "h": "Những lưu ý khi sử dụng chỉ báo ADX",
+    "n_sent": 2,
+    "t": "Thay vì tự mình loay hoay với các con số, nhà đầu tư tại DSC sẽ nhận được sự hỗ trợ trực tiếp từ đội ngũ chuyên gia môi giới 1:1. Các chuyên gia sẽ giúp bạn kết hợp ADX với đa khung thời gian để tìm điểm vào lệnh sớm hơn mà vẫn đảm bảo an toàn, thay vì chỉ máy móc nhìn vào một chỉ báo duy nhất."
+   }
+  ]
+ },
+ {
+  "src": "downtrend-la-gi-cach-nhan-biet-va-giao-dich-trong-downtrend",
+  "src_title": "Downtrend là gì? Cách nhận biết và giao dịch trong downtrend",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "8",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 3,
+    "h": "Downtrend là gì?",
+    "n_sent": 2,
+    "t": "Dưới góc nhìn kỹ thuật, một xu hướng giảm được xác lập khi biểu đồ giá hình thành cấu trúc đỉnh sau thấp hơn đỉnh trước và đáy sau thấp hơn đáy trước. Khi Downtrend xảy ra, tâm lý bi quan bao trùm thị trường, áp lực bán hoàn toàn áp đảo lực mua."
+   },
+   {
+    "i": 2,
+    "h": "Downtrend là gì?",
+    "n_sent": 1,
+    "t": "Downtrend (Xu hướng giảm) là tình trạng giá của một loại tài sản tài chính (chứng khoán, crypto, hàng hóa...) hoặc toàn bộ thị trường sụt giảm liên tục trong một khoảng thời gian dài."
+   },
+   {
+    "i": 29,
+    "h": "Cách nhận biết downtrend",
+    "n_sent": 0,
+    "t": "Mở tài khoản miễn phí • Thủ tục online chỉ 30s • Tư vấn 24/7 Mở tài khoản ngay →"
+   }
+  ]
+ },
+ {
+  "src": "chi-bao-ttm-squeeze-la-gi",
+  "src_title": "Chỉ báo TTM Squeeze là gì? Ứng dụng TTM Squeeze trong PTKT",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "8",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 14,
+    "h": "Ý nghĩa của chỉ báo TTM Squeeze",
+    "n_sent": 3,
+    "t": "Chỉ báo TTM Squeeze có thể được sử dụng ở nhiều khung thời gian khác nhau. Chúng ta có thể phân tích một chứng khoán sử dụng chỉ báo này ở những khung thời gian khác nhau để có thể xác nhận tín hiệu. Ví dụ, nếu squeeze kết thúc và bắt đầu nhịp bùng nổ ở cả biểu đồ ngày và giờ trong cùng một thời điểm thì đó là một tín hiệu mạnh hơn nếu so sánh với việc chúng ta chỉ sử dụng tín hiệu xác nhận ở một khung thời gian."
+   },
+   {
+    "i": 2,
+    "h": "Chỉ báo TTM Squeeze là gì?",
+    "n_sent": 2,
+    "t": "Phần biến động của chỉ báo TTM Squeeze đo sự nén giá bằng cách sử dụng Bollinger Bands và kênh Keltner Channel. Nếu Bollinger Bands ở trong hẳn Keltner Channel thì điều đó cho thấy đó là giai đoạn với biên độ dao động hẹp, trạng thái này được gọi là Squeeze (sự ép chặt)."
+   },
+   {
+    "i": 3,
+    "h": "Chỉ báo TTM Squeeze là gì?",
+    "n_sent": 2,
+    "t": "Khi Dải Bollinger mở rộng và di chuyển trở lại bên ngoài Kênh Keltner, Squeeze lúc này coi như đã kết thúc và chuyển sang một trạng thái khác: sự biến động gia tăng và giá có khả năng thoát khỏi giai đoạn giao dịch biên độ hẹp và có thể đi theo hai hướng tăng hoặc giảm. Chúng ta có thể xem chứng khoán có đang ở trong trạng thái Squeeze hay không bằng các chấm nhỏ trên vạch 0 của chỉ báo: các chấm đỏ thì chính là trạng thái này đang diễn ra còn chấm xanh thì chính là trạng thái này đang không diễn ra."
+   }
+  ]
+ },
+ {
+  "src": "chi-bao-ttm-squeeze-la-gi",
+  "src_title": "Chỉ báo TTM Squeeze là gì? Ứng dụng TTM Squeeze trong PTKT",
+  "target": "chi-bao-ky-thuat",
+  "role": "hub",
+  "target_title": "Chỉ báo kỹ thuật là gì? Các chỉ báo trong chứng khoán phổ biến",
+  "clicks": "8",
+  "anchors": [
+   "chỉ báo kỹ thuật",
+   "các chỉ báo kỹ thuật chứng khoán",
+   "chỉ báo phân tích kỹ thuật",
+   "công cụ chỉ báo kỹ thuật",
+   "bộ chỉ báo kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "Chỉ báo TTM Squeeze là gì?",
+    "n_sent": 2,
+    "t": "Phần biến động của chỉ báo TTM Squeeze đo sự nén giá bằng cách sử dụng Bollinger Bands và kênh Keltner Channel. Nếu Bollinger Bands ở trong hẳn Keltner Channel thì điều đó cho thấy đó là giai đoạn với biên độ dao động hẹp, trạng thái này được gọi là Squeeze (sự ép chặt)."
+   },
+   {
+    "i": 3,
+    "h": "Chỉ báo TTM Squeeze là gì?",
+    "n_sent": 2,
+    "t": "Khi Dải Bollinger mở rộng và di chuyển trở lại bên ngoài Kênh Keltner, Squeeze lúc này coi như đã kết thúc và chuyển sang một trạng thái khác: sự biến động gia tăng và giá có khả năng thoát khỏi giai đoạn giao dịch biên độ hẹp và có thể đi theo hai hướng tăng hoặc giảm. Chúng ta có thể xem chứng khoán có đang ở trong trạng thái Squeeze hay không bằng các chấm nhỏ trên vạch 0 của chỉ báo: các chấm đỏ thì chính là trạng thái này đang diễn ra còn chấm xanh thì chính là trạng thái này đang không diễn ra."
+   },
+   {
+    "i": 14,
+    "h": "Ý nghĩa của chỉ báo TTM Squeeze",
+    "n_sent": 3,
+    "t": "Chỉ báo TTM Squeeze có thể được sử dụng ở nhiều khung thời gian khác nhau. Chúng ta có thể phân tích một chứng khoán sử dụng chỉ báo này ở những khung thời gian khác nhau để có thể xác nhận tín hiệu. Ví dụ, nếu squeeze kết thúc và bắt đầu nhịp bùng nổ ở cả biểu đồ ngày và giờ trong cùng một thời điểm thì đó là một tín hiệu mạnh hơn nếu so sánh với việc chúng ta chỉ sử dụng tín hiệu xác nhận ở một khung thời gian."
+   }
+  ]
+ },
+ {
+  "src": "chi-bao-envelope-la-gi",
+  "src_title": "Chỉ báo Envelope là gì? Ứng dụng Envelopes trong đầu tư",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "7",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 8,
+    "h": "Chỉ báo Envelope là gì?",
+    "n_sent": 1,
+    "t": "Khi giá di chuyển ra khỏi phạm vi của kênh này, đó là tín hiệu cho thấy thị trường đang ở trạng thái cực đoan và có khả năng xảy ra sự điều chỉnh hoặc bùng nổ xu hướng mới."
+   },
+   {
+    "i": 3,
+    "h": "Chỉ báo Envelope là gì?",
+    "n_sent": 1,
+    "t": "Chỉ báo Envelope (hay Kênh Envelopes) là một chỉ báo kỹ thuật thuộc nhóm chỉ báo xu hướng, được tạo thành từ hai đường trung bình động (Moving Average) bao quanh hành động giá."
+   },
+   {
+    "i": 16,
+    "h": "Cấu tạo và Cách tính chỉ báo Envelopes",
+    "n_sent": 1,
+    "t": "Chỉ báo Envelope có cấu tạo tối giản, giúp nhà đầu tư dễ dàng quan sát ngay trên đồ thị."
+   }
+  ]
+ },
+ {
+  "src": "chi-bao-know-sure-thing-kst-la-gi",
+  "src_title": "Chỉ báo Know Sure Thing (KST) là gì? Ứng dụng KST trong PTKT",
+  "target": "chi-bao-ky-thuat",
+  "role": "hub",
+  "target_title": "Chỉ báo kỹ thuật là gì? Các chỉ báo trong chứng khoán phổ biến",
+  "clicks": "6",
+  "anchors": [
+   "chỉ báo kỹ thuật",
+   "các chỉ báo kỹ thuật chứng khoán",
+   "chỉ báo phân tích kỹ thuật",
+   "công cụ chỉ báo kỹ thuật",
+   "bộ chỉ báo kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 1,
+    "h": "Chỉ báo Know Sure Thing (KST) là gì?",
+    "n_sent": 3,
+    "t": "Know Sure Thing (KST) là một chỉ báo kỹ thuật dao động động lượng dựa trên tốc độ thay đổi, hay chính là chỉ báo ROC (rate-of-change). Chỉ báo KST có bốn khung thời gian ROC khác nhau và làm mượt chúng bằng cách sử dụng đường trung bình trượt đơn giản (SMA), kết hợp chúng thành một chỉ báo dao động động lượng duy nhất. KST có thể được sử dụng để tìm kiếm sự phân kỳ, giao cắt đường tín hiệu và giao cắt đường trung tâm."
+   },
+   {
+    "i": 9,
+    "h": "Xác định tín hiệu Phân kỳ",
+    "n_sent": 3,
+    "t": "Phân kỳ dương và phân kỳ âm có thể được coi là một tín hiệu nhưng mà chúng ta cần phải chọn lọc. Phân kỳ từ chỉ báo ROC sẽ không hẳn đưa ra tín hiệu đảo chiều xu hướng và tương tự với MACD hay RSI thì những tín hiệu này cũng có thể là những tín hiệu giả. Lý tưởng nhất là nếu chúng ta tìm được phân kỳ nào có độ lớn và rõ ràng."
+   },
+   {
+    "i": 10,
+    "h": "Xác định tín hiệu Phân kỳ",
+    "n_sent": 1,
+    "t": "Đồ thị của MBB ở dưới có sự xuất hiện của hai phân kỳ âm và phân kỳ dương có độ lớn và cũng đi theo ngay sau đó là giao cắt của đường tín hiệu và đường chỉ báo KST."
+   }
+  ]
+ },
+ {
+  "src": "chi-bao-dao-dong-aroon-aroon-oscillator-la-gi",
+  "src_title": "Chỉ báo dao động Aroon (Aroon Oscillator) là gì? Hướng dẫn sử dụng chỉ báo dao động Aroon kết hợp xu hướng thị trường",
+  "target": "cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat",
+  "role": "hub",
+  "target_title": "Các chỉ báo xác định xu hướng đáng tin cậy trong phân tích kỹ thuật",
+  "clicks": "4",
+  "anchors": [
+   "chỉ báo xác định xu hướng",
+   "các chỉ báo xu hướng",
+   "chỉ báo xu hướng",
+   "xác định xu hướng",
+   "nhận diện xu hướng",
+   "chỉ báo theo xu hướng"
+  ],
+  "paras": [
+   {
+    "i": 26,
+    "h": "Trong trường hợp xu hướng tăng mạnh",
+    "n_sent": 3,
+    "t": "Xu hướng tăng chung xuất hiện khi chỉ báo dương và xu hướng giảm chung xuất hiện khi chỉ báo âm. Chỉ báo này không được thiết kế cho các tín hiệu dao động truyền thống. Như với tất cả các chỉ báo kỹ thuật, Aroon Oscillator nên được sử dụng cùng với các mảng khác của phân tích kỹ thuật, chẳng hạn như phân tích mô hình biểu đồ hoặc chỉ báo động lượng."
+   },
+   {
+    "i": 9,
+    "h": "Ý nghĩa của chỉ báo dao động Aroon",
+    "n_sent": 3,
+    "t": "Trên thực tế, chỉ báo Aroon có thể ở mức dương hoặc âm trong một khoảng thời gian khá dài nên việc phân tích khá dễ dàng. Thời điểm và giá có xu hướng tăng khi chỉ báo dương và xu hướng giảm khi chỉ báo âm. Chúng ta cũng có thể sử dụng mức +50 và -50 có thể cho chúng ta những tín hiệu mạnh mẽ hơn, ví dụ như nếu chỉ báo vượt qua +50 tức là một xu hướng tăng mạnh còn nếu xuống dưới -50 là một xu hướng giảm mạnh."
+   },
+   {
+    "i": 13,
+    "h": "Trong trường hợp xu hướng chung",
+    "n_sent": 3,
+    "t": "Biểu đồ ở dưới của FCN sử dụng 2 chỉ báo Aroon 25 ngày và Aroon 75 ngày. Aroon 25 đã vượt mức 0 điểm và cho chúng ta tín hiệu của một xu hướng tăng vào giữa tháng 4/2020 và thậm chí sau đó đã xác nhận đó là một xu hướng tăng mạnh, trong khi Aroon 75 cho chúng ta xác nhận vào giữa tháng 6. Đầu tháng 4/2021, chỉ báo Aroon 25 cắt xuống dưới mức 0 cho chúng ta tín hiệu về một xu hướng giảm trong khi Aroon 75 cắt xuống dưới 0 vào cuối tháng 5/2021."
+   }
+  ]
+ },
+ {
+  "src": "chi-bao-moving-average-envelope-mae-la-gi",
+  "src_title": "Moving Average Envelope (MAE) là gì? Ứng dụng MAE đầu tư",
+  "target": "cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat",
+  "role": "hub",
+  "target_title": "Các chỉ báo xác định xu hướng đáng tin cậy trong phân tích kỹ thuật",
+  "clicks": "3",
+  "anchors": [
+   "chỉ báo xác định xu hướng",
+   "các chỉ báo xu hướng",
+   "chỉ báo xu hướng",
+   "xác định xu hướng",
+   "nhận diện xu hướng",
+   "chỉ báo theo xu hướng"
+  ],
+  "paras": [
+   {
+    "i": 16,
+    "h": "Xác nhận xu hướng",
+    "n_sent": 2,
+    "t": "MAE được sử dụng để xác nhận một xu hướng mạnh mà có thể là tín hiệu của một xu hướng lớn hơn. Biểu đồ ở dưới của SSI với chỉ báo MAE (20,10) và sử dụng đường giá dạng đường để phân tích vì những đường trung bình động được tính ra có sử dụng giá đóng cửa, nếu bạn cảm thấy việc sử dụng đường giá hình nến hiệu quả hơn thì có thể tùy chỉnh."
+   },
+   {
+    "i": 22,
+    "h": "Xác nhận xu hướng",
+    "n_sent": 3,
+    "t": "Tương tự với xu hướng giảm. Nếu đường giá đi xuống dưới dải dưới của chỉ báo MAE thì đó chính là tín hiệu của một xu hướng giảm. Biểu đồ của cổ phiếu AGR đã đi xuống dưới dải 10% của chỉ báo và bởi vì chỉ báo Stochastics RSI cũng giảm mạnh xuống dưới vùng quá mua nên chúng ta có thể chờ đợi một nhịp hồi và dự đoán nó."
+   },
+   {
+    "i": 17,
+    "h": "Xác nhận xu hướng",
+    "n_sent": 2,
+    "t": "Sau một đoạn tăng giá từ tháng 5 đến tháng 7 thì cổ phiếu đã vào giai đoạn điều chỉnh; nhưng đây cũng là tín hiệu cho thấy xu hướng tăng này có thể tiếp tục. Những người giao dịch ngắn hạn có thể tìm kiếm điểm mua trong những nhịp điều chỉnh này."
+   }
+  ]
+ },
+ {
+  "src": "huong-dan-ket-hop-3-duong-ma-trong-giao-dich-va-dau-tu-hieu-qua",
+  "src_title": "Hướng dẫn kết hợp 3 đường MA trong giao dịch và đầu tư hiệu quả",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "3",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "3 Đường MA được sử dụng trong phân tích kỹ thuật",
+    "n_sent": 2,
+    "t": "Đường trung bình đơn giản (SMA) là loại đường trung bình được sử dụng dễ dàng và phổ biến nhất trong phân tích các loại tài sản. Đường MA được tính bằng cách lấy trung bình cộng của giá đóng cửa các phiên trước."
+   },
+   {
+    "i": 5,
+    "h": "3 Đường MA được sử dụng trong phân tích kỹ thuật",
+    "n_sent": 2,
+    "t": "Đường trung bình động lũy thừa (EMA) là loại đường trung bình động nhanh hơn EMA bằng cách lấy trọng số của những phiên gần nhất cao. Việc sử dụng EMA thường gây tranh cãi do dễ mắc phải “drop-off effect”."
+   },
+   {
+    "i": 6,
+    "h": "3 Đường MA được sử dụng trong phân tích kỹ thuật",
+    "n_sent": 1,
+    "t": "Đường trung bình tuyến tính có trọng số (WMA) là đường trung bình động còn nhanh hơn cả EMA do cách lấy trọng số rất cao cho những phiên gần nhất."
+   }
+  ]
+ },
+ {
+  "src": "huong-dan-ket-hop-3-duong-ma-trong-giao-dich-va-dau-tu-hieu-qua",
+  "src_title": "Hướng dẫn kết hợp 3 đường MA trong giao dịch và đầu tư hiệu quả",
+  "target": "cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat",
+  "role": "hub",
+  "target_title": "Các chỉ báo xác định xu hướng đáng tin cậy trong phân tích kỹ thuật",
+  "clicks": "3",
+  "anchors": [
+   "chỉ báo xác định xu hướng",
+   "các chỉ báo xu hướng",
+   "chỉ báo xu hướng",
+   "xác định xu hướng",
+   "nhận diện xu hướng",
+   "chỉ báo theo xu hướng"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "3 Đường MA được sử dụng trong phân tích kỹ thuật",
+    "n_sent": 2,
+    "t": "Đường trung bình đơn giản (SMA) là loại đường trung bình được sử dụng dễ dàng và phổ biến nhất trong phân tích các loại tài sản. Đường MA được tính bằng cách lấy trung bình cộng của giá đóng cửa các phiên trước."
+   },
+   {
+    "i": 5,
+    "h": "3 Đường MA được sử dụng trong phân tích kỹ thuật",
+    "n_sent": 2,
+    "t": "Đường trung bình động lũy thừa (EMA) là loại đường trung bình động nhanh hơn EMA bằng cách lấy trọng số của những phiên gần nhất cao. Việc sử dụng EMA thường gây tranh cãi do dễ mắc phải “drop-off effect”."
+   },
+   {
+    "i": 6,
+    "h": "3 Đường MA được sử dụng trong phân tích kỹ thuật",
+    "n_sent": 1,
+    "t": "Đường trung bình tuyến tính có trọng số (WMA) là đường trung bình động còn nhanh hơn cả EMA do cách lấy trọng số rất cao cho những phiên gần nhất."
+   }
+  ]
+ },
+ {
+  "src": "uptrend-la-gi-cach-nhan-biet-va-dau-tu-hieu-qua-trong-xu-huong-uptrend",
+  "src_title": "Uptrend là gì? Cách nhận biết và đầu tư hiệu quả",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "3",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 3,
+    "h": "Uptrend là gì?",
+    "n_sent": 2,
+    "t": "Uptrend là thuật ngữ dùng để mô tả một xu hướng tăng giá kéo dài của một cổ phiếu, một nhóm ngành hoặc toàn bộ thị trường chứng khoán. Trong giai đoạn này, tâm lý lạc quan chiếm ưu thế, thúc đẩy nhu cầu mua vào mạnh mẽ hơn áp lực bán ra."
+   },
+   {
+    "i": 4,
+    "h": "Uptrend là gì?",
+    "n_sent": 2,
+    "t": "Về mặt kỹ thuật, một xu hướng được xác nhận là Uptrend khi cấu trúc giá hình thành các đỉnh sau cao hơn đỉnh trước và các đáy sau cao hơn đáy trước. Đây là biểu hiện của việc phe mua liên tục chấp nhận trả mức giá cao hơn để sở hữu tài sản, tạo tiền đề cho những đợt bứt phá tiếp theo."
+   }
+  ]
+ },
+ {
+  "src": "uptrend-la-gi-cach-nhan-biet-va-dau-tu-hieu-qua-trong-xu-huong-uptrend",
+  "src_title": "Uptrend là gì? Cách nhận biết và đầu tư hiệu quả",
+  "target": "giao-dich-theo-xu-huong-trend-following-la-gi",
+  "role": "sub-hub",
+  "target_title": "Giao dịch theo xu hướng (Trend Following) là gì?",
+  "clicks": "3",
+  "anchors": [
+   "giao dịch theo xu hướng",
+   "trend following",
+   "chiến lược theo xu hướng",
+   "đi theo xu hướng",
+   "thuận xu hướng"
+  ],
+  "paras": [
+   {
+    "i": 3,
+    "h": "Uptrend là gì?",
+    "n_sent": 2,
+    "t": "Uptrend là thuật ngữ dùng để mô tả một xu hướng tăng giá kéo dài của một cổ phiếu, một nhóm ngành hoặc toàn bộ thị trường chứng khoán. Trong giai đoạn này, tâm lý lạc quan chiếm ưu thế, thúc đẩy nhu cầu mua vào mạnh mẽ hơn áp lực bán ra."
+   },
+   {
+    "i": 4,
+    "h": "Uptrend là gì?",
+    "n_sent": 2,
+    "t": "Về mặt kỹ thuật, một xu hướng được xác nhận là Uptrend khi cấu trúc giá hình thành các đỉnh sau cao hơn đỉnh trước và các đáy sau cao hơn đáy trước. Đây là biểu hiện của việc phe mua liên tục chấp nhận trả mức giá cao hơn để sở hữu tài sản, tạo tiền đề cho những đợt bứt phá tiếp theo."
+   }
+  ]
+ },
+ {
+  "src": "chi-bao-force-index-la-gi",
+  "src_title": "Chỉ báo Force Index là gì? 7 chiến lược giao dịch hiệu quả",
+  "target": "chi-bao-ky-thuat",
+  "role": "hub",
+  "target_title": "Chỉ báo kỹ thuật là gì? Các chỉ báo trong chứng khoán phổ biến",
+  "clicks": "3",
+  "anchors": [
+   "chỉ báo kỹ thuật",
+   "các chỉ báo kỹ thuật chứng khoán",
+   "chỉ báo phân tích kỹ thuật",
+   "công cụ chỉ báo kỹ thuật",
+   "bộ chỉ báo kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 71,
+    "h": "Ưu và nhược điểm của chỉ báo Force Index",
+    "n_sent": 1,
+    "t": "Hiểu rõ hai mặt của một công cụ phân tích kỹ thuật giúp nhà đầu tư ứng dụng một cách linh hoạt và thực tế hơn."
+   },
+   {
+    "i": 3,
+    "h": "Chỉ Báo Force Index là gì?",
+    "n_sent": 2,
+    "t": "Chỉ báo Force Index (FI), hay còn được gọi là Chỉ số Sức mạnh, là một chỉ báo dao động (Oscillator) dùng để đo lường sức mạnh của phe mua (Bull Power) và phe bán (Bear Power) dựa trên các chuyển động giá thực tế. Chỉ báo này được giới thiệu lần đầu tiên bởi Alexander Elder trong cuốn sách nổi tiếng \"Trading for a Living\" xuất bản năm 1993."
+   },
+   {
+    "i": 31,
+    "h": "Công thức tính chỉ báo Force Index",
+    "n_sent": 1,
+    "t": "Việc áp dụng đường trung bình động này giúp loại bỏ bớt các biến động ngắn hạn, mang lại cái nhìn tổng quan và đáng tin cậy hơn về xu hướng trung hạn."
+   }
+  ]
+ },
+ {
+  "src": "chi-bao-ultimate-oscillator-uo-la-gi",
+  "src_title": "Ultimate Oscillator là gì? Chiến lược sử dụng UO đầu tư",
+  "target": "chi-bao-ky-thuat",
+  "role": "hub",
+  "target_title": "Chỉ báo kỹ thuật là gì? Các chỉ báo trong chứng khoán phổ biến",
+  "clicks": "3",
+  "anchors": [
+   "chỉ báo kỹ thuật",
+   "các chỉ báo kỹ thuật chứng khoán",
+   "chỉ báo phân tích kỹ thuật",
+   "công cụ chỉ báo kỹ thuật",
+   "bộ chỉ báo kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 4,
+    "h": "Chỉ báo Ultimate Oscillator là gì?",
+    "n_sent": 2,
+    "t": "Ultimate Oscillator là chỉ báo phân tích kỹ thuật thuộc nhóm dao động động lượng dùng để đo lường sức mạnh của xu hướng. Công cụ này hoạt động trong biên độ từ 0 đến 100 nhằm xác định các vùng quá mua và quá bán của cổ phiếu."
+   },
+   {
+    "i": 5,
+    "h": "Chỉ báo Ultimate Oscillator là gì?",
+    "n_sent": 3,
+    "t": "Nhà giao dịch nổi tiếng Larry Williams đã phát minh ra Ultimate Oscillator vào năm 1976. Ông nhận thấy các chỉ báo một chu kỳ như RSI hay Stochastic thường phát đi tín hiệu phân kỳ giả. Hiện tượng này xảy ra khi thị trường bước vào một siêu xu hướng."
+   },
+   {
+    "i": 6,
+    "h": "Chỉ báo Ultimate Oscillator là gì?",
+    "n_sent": 3,
+    "t": "Để khắc phục nhược điểm này, Ultimate Oscillator kết hợp đồng thời ba chu kỳ thời gian khác nhau. Cơ chế đa chu kỳ giúp triệt tiêu các tín hiệu nhiễu. Từ đó, chỉ báo đem lại độ tin cậy vượt trội cho giao dịch ngắn hạn."
+   }
+  ]
+ },
+ {
+  "src": "chi-bao-vortex-indicator-vi-la-gi",
+  "src_title": "Chỉ báo Vortex Indicator (VI) là gì? Ứng dụng VI trong đầu tư",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "3",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 1,
+    "h": "Chỉ báo Vortex Indicator (VI) là gì?",
+    "n_sent": 2,
+    "t": "Chỉ báo Vortex Indicator (VI) hay còn được gọi là chỉ báo lốc xoáy, là chỉ báo kỹ thuật bao gồm hai bộ dao động nắm bắt chuyển động xu hướng tích cực và tiêu cực. Chỉ báo này khá dễ để phân tích: tín hiệu tăng giá xuất hiện khi chỉ báo xu hướng tích cực vượt lên trên chỉ báo xu hướng tiêu cực hoặc một mức quan trọng."
+   },
+   {
+    "i": 2,
+    "h": "Chỉ báo Vortex Indicator (VI) là gì?",
+    "n_sent": 2,
+    "t": "Tín hiệu giảm giá xuất hiện khi chỉ báo xu hướng tiêu cực vượt lên trên chỉ báo xu hướng tích cực hoặc một mức quan trọng. Chỉ báo Vortex ở trên hoặc dưới các mức này, có nghĩa là nó luôn có xu hướng tăng hoặc giảm rõ ràng."
+   },
+   {
+    "i": 6,
+    "h": "Ý nghĩa của chỉ báo Vortex",
+    "n_sent": 1,
+    "t": "Một tín hiệu khác cũng có thể sử dụng chính là sự giao cắt của hai chỉ báo ở trên hay ở dưới một mức nào đó có thể cho chúng ta tín hiệu của một trend bắt đầu và những mức đó có thể được sử dụng để xác nhận hướng của xu hướng."
+   }
+  ]
+ },
+ {
+  "src": "duong-trung-binh-dong-luy-thua-dema-la-gi",
+  "src_title": "Đường trung bình động DEMA là gì? Cách ứng dụng thực chiến",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "2",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 34,
+    "h": "Phương pháp giao cắt (Crossover)",
+    "n_sent": 1,
+    "t": "Ví dụ thực tế với cổ phiếu SSI: Quan sát biểu đồ trên, các điểm giao cắt của đường DEMA được đánh dấu bằng mũi tên, trong khi các điểm giao cắt của EMA được đánh dấu bằng dấu cộng (+)."
+   },
+   {
+    "i": 26,
+    "h": "Ứng dụng đường DEMA để xác nhận xu hướng giá",
+    "n_sent": 1,
+    "t": "Về cơ bản, DEMA có các cách ứng dụng tương tự như đường EMA, nhưng nhờ ưu điểm phản hồi nhanh, chỉ báo này thường hỗ trợ nhà đầu tư phát hiện sớm các tín hiệu đảo chiều hoặc sự thay đổi trong cấu trúc xu hướng."
+   },
+   {
+    "i": 35,
+    "h": "Phương pháp giao cắt (Crossover)",
+    "n_sent": 3,
+    "t": "Dễ dàng nhận thấy ở cả hai nhịp biến động, đường DEMA đều cho tín hiệu giao cắt sớm hơn đáng kể so với EMA. Điều này giúp nhà đầu tư tối ưu hóa vị thế mua/bán sớm hơn, tránh việc bị trễ nhịp so với thị trường. Tuy nhiên, đi kèm với việc phản ứng nhanh là tần suất xuất hiện các tín hiệu nhiễu cũng sẽ cao hơn, đòi hỏi nhà đầu tư cần có sự linh hoạt trong quản trị rủi ro."
+   }
+  ]
+ },
+ {
+  "src": "phuong-phap-vsa",
+  "src_title": "Phương pháp VSA là gì? 7 chiến lược giao dịch nắm bắt dòng tiền",
+  "target": "phuong-phap-dau-tu-theo-dong-tien-hieu-qua",
+  "role": "hub",
+  "target_title": "Cách xem dòng tiền trong chứng khoán và 4 chiến lược",
+  "clicks": "2",
+  "anchors": [
+   "đầu tư theo dòng tiền",
+   "dòng tiền chứng khoán",
+   "dòng tiền trong chứng khoán",
+   "phương pháp đầu tư theo dòng tiền",
+   "dòng tiền thị trường",
+   "theo dõi dòng tiền"
+  ],
+  "paras": [
+   {
+    "i": 50,
+    "h": "Ứng dụng phương pháp VSA tại thị trường chứng khoán Việt Nam",
+    "n_sent": 2,
+    "t": "Khi áp dụng VSA tại Việt Nam, nhà đầu tư cần lưu ý đến yếu tố chu kỳ thanh toán T+2.5. Thời gian dòng tiền về tài khoản có thể ảnh hưởng đến diễn biến khối lượng trong phiên."
+   },
+   {
+    "i": 51,
+    "h": "Ứng dụng phương pháp VSA tại thị trường chứng khoán Việt Nam",
+    "n_sent": 2,
+    "t": "Ngoài ra, nhà đầu tư nên chủ động lọc nhiễu bằng cách kết hợp VSA với các công cụ bổ trợ. Việc vẽ đường xu hướng và xác định kháng cự và hỗ trợ sẽ giúp nâng cao độ chính xác của điểm giao dịch."
+   },
+   {
+    "i": 52,
+    "h": "Ứng dụng phương pháp VSA tại thị trường chứng khoán Việt Nam",
+    "n_sent": 1,
+    "t": "Để tối ưu hóa việc phân tích dòng tiền chuyên sâu, Chứng khoán DSC mang đến hệ sinh thái hỗ trợ toàn diện."
+   }
+  ]
+ },
+ {
+  "src": "mo-hinh-cai-nem-la-gi",
+  "src_title": "Mô hình cái nêm là gì? Ứng dụng mô hình nêm trong đầu tư",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "2",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 3,
+    "h": "Mô hình cái nêm là gì?",
+    "n_sent": 3,
+    "t": "Mô hình cái nêm phản ánh sự sụt giảm dần của biến động giá và khối lượng giao dịch, cho thấy thị trường đang rơi vào trạng thái nén chặt. Khi giá phá vỡ (breakout) khỏi một trong hai cạnh của nêm, thị trường thường sẽ bùng nổ mạnh mẽ theo một xu hướng mới hoặc tiếp diễn xu hướng cũ. Đây là tín hiệu quan trọng giúp nhà đầu tư xác định thời điểm \"vàng\" để mở vị thế."
+   },
+   {
+    "i": 2,
+    "h": "Mô hình cái nêm là gì?",
+    "n_sent": 2,
+    "t": "Mô hình cái nêm (Wedge Pattern) là một mẫu hình biểu đồ giá hội tụ, thường xuất hiện sau một xu hướng tăng hoặc giảm rõ rệt. Về mặt hình quan, mô hình này được cấu tạo bởi hai đường xu hướng (kháng cự và hỗ trợ) cùng dốc về một hướng (cùng lên hoặc cùng xuống) và hội tụ tại một điểm."
+   }
+  ]
+ },
+ {
+  "src": "bullish-la-gi-xu-huong-tang-gia-trong-thi-truong-chung-khoan",
+  "src_title": "Bullish là gì? Chiến lược đầu tư trong thị trường Bullish",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "2",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 1,
+    "h": "Bullish là gì trong chứng khoán?",
+    "n_sent": 2,
+    "t": "Trong thị trường chứng khoán, thuật ngữ \"bullish\" được sử dụng để mô tả xu hướng tăng giá của thị trường. Khi thị trường bullish, các nhà đầu tư thường có tâm lý lạc quan và kỳ vọng giá cổ phiếu sẽ tiếp tục tăng trong tương lai."
+   },
+   {
+    "i": 6,
+    "h": "Nguồn gốc của thuật ngữ bullish",
+    "n_sent": 2,
+    "t": "Thuật ngữ bullish bắt nguồn từ hình ảnh con bò tấn công. Khi con bò tấn công, nó sẽ dùng sừng húc lên phía trước, tương tự như xu hướng tăng giá của thị trường chứng khoán."
+   }
+  ]
+ },
+ {
+  "src": "bullish-la-gi-xu-huong-tang-gia-trong-thi-truong-chung-khoan",
+  "src_title": "Bullish là gì? Chiến lược đầu tư trong thị trường Bullish",
+  "target": "giao-dich-theo-xu-huong-trend-following-la-gi",
+  "role": "sub-hub",
+  "target_title": "Giao dịch theo xu hướng (Trend Following) là gì?",
+  "clicks": "2",
+  "anchors": [
+   "giao dịch theo xu hướng",
+   "trend following",
+   "chiến lược theo xu hướng",
+   "đi theo xu hướng",
+   "thuận xu hướng"
+  ],
+  "paras": [
+   {
+    "i": 1,
+    "h": "Bullish là gì trong chứng khoán?",
+    "n_sent": 2,
+    "t": "Trong thị trường chứng khoán, thuật ngữ \"bullish\" được sử dụng để mô tả xu hướng tăng giá của thị trường. Khi thị trường bullish, các nhà đầu tư thường có tâm lý lạc quan và kỳ vọng giá cổ phiếu sẽ tiếp tục tăng trong tương lai."
+   },
+   {
+    "i": 6,
+    "h": "Nguồn gốc của thuật ngữ bullish",
+    "n_sent": 2,
+    "t": "Thuật ngữ bullish bắt nguồn từ hình ảnh con bò tấn công. Khi con bò tấn công, nó sẽ dùng sừng húc lên phía trước, tương tự như xu hướng tăng giá của thị trường chứng khoán."
+   }
+  ]
+ },
+ {
+  "src": "chi-bao-klinger-oscillator-la-gi",
+  "src_title": "Chỉ báo Klinger Oscillator là gì? Ứng dụng đầu tư hiệu quả",
+  "target": "chi-bao-ky-thuat",
+  "role": "hub",
+  "target_title": "Chỉ báo kỹ thuật là gì? Các chỉ báo trong chứng khoán phổ biến",
+  "clicks": "2",
+  "anchors": [
+   "chỉ báo kỹ thuật",
+   "các chỉ báo kỹ thuật chứng khoán",
+   "chỉ báo phân tích kỹ thuật",
+   "công cụ chỉ báo kỹ thuật",
+   "bộ chỉ báo kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 3,
+    "h": "Chỉ báo Klinger Oscillator là gì?",
+    "n_sent": 2,
+    "t": "Chỉ báo Klinger Oscillator (KO), hay còn gọi là chỉ báo dao động Klinger (Klinger Volume Oscillator - KVO), là một công cụ phân tích kỹ thuật được phát triển bởi nhà giao dịch Stephen Klinger. Chỉ báo này đo lường xu hướng dài hạn của dòng tiền chảy vào hoặc ra khỏi một tài sản, trong khi vẫn duy trì độ nhạy cần thiết để phát hiện các biến động ngắn hạn."
+   },
+   {
+    "i": 5,
+    "h": "Chỉ báo Klinger Oscillator là gì?",
+    "n_sent": 3,
+    "t": "Không giống các chỉ báo động lượng thông thường chỉ dựa vào giá đóng cửa, Klinger Oscillator tích hợp thêm yếu tố khối lượng. Sự kết hợp này giúp đo lường \"Lực khối lượng\" (Volume Force - VF) và xác nhận sức mạnh thực tế của một xu hướng. Nhờ đó, Klinger Oscillator trở thành công cụ hỗ trợ đắc lực giúp nhà đầu tư chứng khoán đánh giá động lượng dòng tiền và tối ưu hóa thời điểm vào/ra lệnh."
+   },
+   {
+    "i": 16,
+    "h": "Công thức tính chỉ báo Klinger Oscillator",
+    "n_sent": 1,
+    "t": "Mặc dù công thức tính toán của chỉ báo Klinger Oscillator tương đối phức tạp vì tổng hợp nhiều biến số, các nền tảng giao dịch hiện đại như TradingView hay FireAnt đều đã tích hợp sẵn công cụ này."
+   }
+  ]
+ },
+ {
+  "src": "do-thi-ky-thuat-la-gi",
+  "src_title": "Đồ thị kỹ thuật là gì? Hướng dẫn cách đọc biểu đồ nến chứng khoán",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "2",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 2,
+    "h": "Đồ thị kỹ thuật là gì?",
+    "n_sent": 1,
+    "t": "Đồ thị kỹ thuật là công cụ tài chính giúp phân tích chứng khoán và dự báo sự biến động giá trong tương lai."
+   },
+   {
+    "i": 65,
+    "h": "Các công cụ vẽ phân tích kỹ thuật",
+    "n_sent": 2,
+    "t": "Hy vọng qua bài viết trên, các nhà đầu tư mới có thể học được cách đọc biểu đồ kỹ thuật từ đó có thể áp dụng chúng trong việc giao dịch một cách hiệu quả. Chúc các bạn luôn thành công!"
+   },
+   {
+    "i": 3,
+    "h": "Đồ thị kỹ thuật là gì?",
+    "n_sent": 1,
+    "t": "Có nhiều loại biểu đồ được sử dụng trên thị trường cùng mục đích khác nhau nhưng ở bài viết này DSC sẽ tập trung vào loại biểu đồ thông dụng nhất là biểu đồ dạng nến Nhật."
+   }
+  ]
+ },
+ {
+  "src": "dai-trung-binh-dong-moving-average-ribbon-la-gi",
+  "src_title": "Dải trung bình động (Moving Average Ribbon) là gì?",
+  "target": "cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat",
+  "role": "hub",
+  "target_title": "Các chỉ báo xác định xu hướng đáng tin cậy trong phân tích kỹ thuật",
+  "clicks": "0",
+  "anchors": [
+   "chỉ báo xác định xu hướng",
+   "các chỉ báo xu hướng",
+   "chỉ báo xu hướng",
+   "xác định xu hướng",
+   "nhận diện xu hướng",
+   "chỉ báo theo xu hướng"
+  ],
+  "paras": [
+   {
+    "i": 10,
+    "h": "Phân tích các dải trung bình động",
+    "n_sent": 3,
+    "t": "Nếu tất cả các đường trung bình đang di chuyển theo cùng một hướng, điều này cho thấy một xu hướng mạnh. Các đường dài hạn và ngắn hạn đều thống nhất với nhau về hướng của xu hướng. Nếu tất cả các đường trung bình động trong dải băng đều hướng lên, giá đang tăng trong mọi khung thời gian và khả năng tài sản đang trong một xu hướng tăng."
+   },
+   {
+    "i": 15,
+    "h": "Phân tích các dải trung bình động",
+    "n_sent": 2,
+    "t": "Nếu các đường ngắn hạn vượt lên trên các đường dài hạn, điều này báo hiệu một xu hướng tăng mới; xu hướng giảm được chỉ ra khi các đường trung bình động ngắn hạn cắt xuống dưới các đường trung bình dài hạn. Các nhà biểu đồ cũng có thể tìm kiếm các thanh giá vượt lên trên hoặc dưới các đường trung bình động khác nhau trong ruy-băng."
+   },
+   {
+    "i": 23,
+    "h": "Phân tích các dải trung bình động",
+    "n_sent": 1,
+    "t": "Nếu dải băng đang mở rộng (các đường trung bình động ngày càng xa nhau theo thời gian), điều này có thể đánh dấu sự kết thúc của xu hướng hiện tại."
+   }
+  ]
+ },
+ {
+  "src": "phan-phoi-dinh-la-gi",
+  "src_title": "Phân phối đỉnh là gì? Cách nhận biết phân phối đỉnh hiệu quả",
+  "target": "duong-ho-tro-va-khang-cu-la-gi",
+  "role": "sub-hub",
+  "target_title": "Hỗ trợ và kháng cự là gì? Cách xác định vùng kháng cự hỗ trợ",
+  "clicks": "0",
+  "anchors": [
+   "hỗ trợ và kháng cự",
+   "đường hỗ trợ và kháng cự",
+   "vùng hỗ trợ và kháng cự",
+   "cách xác định hỗ trợ và kháng cự",
+   "ngưỡng kháng cự",
+   "vùng hỗ trợ"
+  ],
+  "paras": [
+   {
+    "i": 3,
+    "h": "Phân phối đỉnh là gì?",
+    "n_sent": 1,
+    "t": "Phân phối đỉnh (Distribution Phase) là thuật ngữ dùng để chỉ giai đoạn giá cổ phiếu hoặc chỉ số thị trường (như VN-Index) đi ngang hoặc bắt đầu chững đà tăng sau một xu hướng tăng giá mạnh mẽ."
+   },
+   {
+    "i": 5,
+    "h": "Phân phối đỉnh là gì?",
+    "n_sent": 1,
+    "t": "Ở vùng đỉnh, bảng điện có thể vẫn xuất hiện những phiên tăng điểm tạo cảm giác hưng phấn cho nhà đầu tư cá nhân, nhưng thực chất đó là quá trình \"trao tay\" cổ phiếu từ các nhà đầu tư lớn sang các nhà đầu tư nhỏ lẻ."
+   },
+   {
+    "i": 4,
+    "h": "Phân phối đỉnh là gì?",
+    "n_sent": 1,
+    "t": "Đặc trưng của giai đoạn này là sự xuất hiện của các phiên giảm điểm mạnh hoặc các phiên biến động hẹp với khối lượng giao dịch (thanh khoản) tăng cao đột biến, vượt xa mức trung bình 20 phiên trước đó."
+   }
+  ]
+ },
+ {
+  "src": "chi-bao-special-k-la-gi",
+  "src_title": "Chỉ báo Special K là gì? Ứng dụng chỉ báo Special K",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "0",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 1,
+    "h": "Chỉ báo Special K là gì?",
+    "n_sent": 2,
+    "t": "Chỉ báo Special K là một chỉ báo động lượng (momentum indicator) được tạo ra bởi Martin Pring, kết hợp vận tốc ngắn hạn, trung hạn và dài hạn thành một chuỗi hoàn chỉnh để cung cấp chu kỳ tổng hợp thực sự của thị trường. Chỉ báo này có hai chức năng chính: xác định sự đảo ngược xu hướng chính ở giai đoạn tương đối sớm và sử dụng thông tin đó để xác định thời điểm di chuyển giá theo xu hướng ngắn hạn."
+   },
+   {
+    "i": 18,
+    "h": "Xác định chuyển động giá dài hạn",
+    "n_sent": 2,
+    "t": "Chức năng chính của Special K là xác định các điểm quay đầu xu hướng chính. Vì chỉ báo này kết hợp dữ liệu ngắn hạn trong tính toán, lợi ích phụ nằm ở việc xác định các xu hướng nhỏ hơn cho mục đích giao dịch ngắn hạn và đặt điều đó trong bối cảnh với hướng và mức độ trưởng thành của xu hướng chính."
+   },
+   {
+    "i": 15,
+    "h": "Nguyên lý hoạt động của chỉ báo Special K",
+    "n_sent": 1,
+    "t": "Biểu đồ 1 và 2 cho thấy rằng, trong hầu hết thời gian giao dịch, giá cổ phiếu và chỉ báo Special K đảo ngược xu hướng đồng thời."
+   }
+  ]
+ },
+ {
+  "src": "duong-phan-tu-quadrant-line-la-gi",
+  "src_title": "Đường phần tư (Quadrant Line) là gì? Ứng dụng trong phân tích kỹ thuật",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "0",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 7,
+    "h": "Ví dụ về đường phần tư trong chứng khoán",
+    "n_sent": 4,
+    "t": "Đường phần tư cung cấp tham chiếu trực quan về giá hiện tại so với phạm vi cao-thấp đã xác định. Các khoảng phần tư có cùng kích thước vì mỗi góc bằng 1/4 hoặc 25% phạm vi cao-thấp. Sau khi tăng trước, đường phân tư cho phép các nhà biểu đồ nhanh chóng xác định các điểm giá thoái lui 25%, 50% và 75%. Các nhà biểu đồ có thể dễ dàng xác định các khoản tăng tiến lùi lại 25%, 50% hoặc 75% của mức sụt giảm đã xác định."
+   },
+   {
+    "i": 1,
+    "h": "Đường phần tư (Quadrant Line) là gì?",
+    "n_sent": 5,
+    "t": "Đường phần tư (hay đường góc phần tư) chia vùng giá từ đỉnh đến đáy thành bốn phần bằng nhau. Đường trên cùng là đường đi qua đỉnh (high), đường dưới cùng đi qua đáy (low) và ba dòng còn lại tạo thành các phần tư. Đường giữa (midpoint) đánh dấu điểm trung bình của khoảng. Chúng được sử dụng như một thước đo cho hành động giá. “Đường phần tư” thể hiện một cách trực quan những khoảng giới hạn mà giá có thể biến động."
+   },
+   {
+    "i": 12,
+    "h": "Đường phần tư kết hợp thang đo logarit",
+    "n_sent": 2,
+    "t": "Vì lý do này, phần tư dưới cùng có thể xuất hiện lớn hơn phần tư trên cùng khi sử dụng tính năng chia tỷ lệ logarit. Mặc dù các điểm di chuyển bằng nhau, việc tăng điểm bằng nhau từ điểm xuất phát thấp hơn sẽ tạo ra mức tăng phần trăm lớn hơn, được phản ánh trong biểu đồ logarit."
+   }
+  ]
+ },
+ {
+  "src": "duong-phan-tu-quadrant-line-la-gi",
+  "src_title": "Đường phần tư (Quadrant Line) là gì? Ứng dụng trong phân tích kỹ thuật",
+  "target": "bieu-do-chung-khoan-la-gi-cach-xem-bieu-do-chung-khoan",
+  "role": "sub-hub",
+  "target_title": "Biểu đồ chứng khoán là gì? Cách xem biểu đồ chứng khoán",
+  "clicks": "0",
+  "anchors": [
+   "biểu đồ chứng khoán",
+   "cách xem biểu đồ chứng khoán",
+   "đồ thị chứng khoán",
+   "biểu đồ cổ phiếu",
+   "đọc biểu đồ",
+   "biểu đồ giá"
+  ],
+  "paras": [
+   {
+    "i": 7,
+    "h": "Ví dụ về đường phần tư trong chứng khoán",
+    "n_sent": 4,
+    "t": "Đường phần tư cung cấp tham chiếu trực quan về giá hiện tại so với phạm vi cao-thấp đã xác định. Các khoảng phần tư có cùng kích thước vì mỗi góc bằng 1/4 hoặc 25% phạm vi cao-thấp. Sau khi tăng trước, đường phân tư cho phép các nhà biểu đồ nhanh chóng xác định các điểm giá thoái lui 25%, 50% và 75%. Các nhà biểu đồ có thể dễ dàng xác định các khoản tăng tiến lùi lại 25%, 50% hoặc 75% của mức sụt giảm đã xác định."
+   },
+   {
+    "i": 1,
+    "h": "Đường phần tư (Quadrant Line) là gì?",
+    "n_sent": 5,
+    "t": "Đường phần tư (hay đường góc phần tư) chia vùng giá từ đỉnh đến đáy thành bốn phần bằng nhau. Đường trên cùng là đường đi qua đỉnh (high), đường dưới cùng đi qua đáy (low) và ba dòng còn lại tạo thành các phần tư. Đường giữa (midpoint) đánh dấu điểm trung bình của khoảng. Chúng được sử dụng như một thước đo cho hành động giá. “Đường phần tư” thể hiện một cách trực quan những khoảng giới hạn mà giá có thể biến động."
+   },
+   {
+    "i": 11,
+    "h": "Đường phần tư kết hợp thang đo logarit",
+    "n_sent": 4,
+    "t": "Các đường góc phần tư có thể trông không bằng nhau trên thang đo logarit, nhưng chúng đều nhau về mặt giá trị tuyệt đối. Tỷ lệ logarit hiển thị biến động giá theo tỷ lệ phần trăm. Biên độ tăng từ 7,1 đến 14,5 là 7.4 giá theo giá trị hoặc 103.4% theo tỷ lệ phần trăm. Mức tăng từ 14.5 lên 22 cũng là 7.5 điểm, nhưng ít hơn nhiều về tỷ lệ phần trăm (chỉ 50.3%)."
+   }
+  ]
+ },
+ {
+  "src": "kenh-hoi-quy-raff-raff-regression-channel-la-gi",
+  "src_title": "Kênh hồi quy Raff (Raff Regression Channel) là gì? Hướng dẫn cách vẽ kênh hồi quy Raff trên biểu đồ kỹ thuật",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "role": "pillar",
+  "target_title": "Phân tích kỹ thuật là gì? Ưu điểm và hạn chế khi sử dụng PTKT",
+  "clicks": "0",
+  "anchors": [
+   "phân tích kỹ thuật",
+   "phân tích kỹ thuật chứng khoán",
+   "phân tích kỹ thuật là gì",
+   "phương pháp phân tích kỹ thuật",
+   "PTKT",
+   "đọc biểu đồ kỹ thuật"
+  ],
+  "paras": [
+   {
+    "i": 4,
+    "h": "Hướng dẫn công thức tính kênh hồi quy Raff và cách vẽ",
+    "n_sent": 5,
+    "t": "Kênh hồi quy Raff (RRC) dựa trên hồi quy tuyến tính, là đường bình phương nhỏ nhất phù hợp nhất cho một chuỗi giá vận động. Biểu đồ giá phục hồi của HCM kể từ tháng 11/2022 khi áp dụng kênh giá hồi quy Raff. Vùng đáy là điểm xuất phát của đường tuyến tính hỗ trợ và giới hạn của sóng hồi phục đấy trở thành điểm đến của đường tuyến tính kháng cự. Khoảng từ đường trung vị xuống đường hỗ trợ là vùng lý tưởng để mua vào cổ phiếu và ngược lại. Trong trường hợp xu hướng mất đi (giá cổ phiếu vi phạm đường hỗ trợ) dẫn đến hành động quản trị rủi ro."
+   },
+   {
+    "i": 11,
+    "h": "Hướng dẫn công thức tính kênh hồi quy Raff và cách vẽ",
+    "n_sent": 3,
+    "t": "Kênh hồi quy Raff có thể được vẽ để bao trùm xu hướng hiện tại và sau đó xác định xu hướng. Sau khi thiết lập, các đường mở rộng có thể được vẽ để xác định các điểm hỗ trợ, kháng cự hoặc đảo chiều. Hãy nhớ rằng giá đóng cửa được sử dụng khi vẽ Kênh hồi quy Raff, nhưng mức cao và mức thấp nhất trong ngày được sử dụng để thiết lập các đường xu hướng của kênh."
+   },
+   {
+    "i": 1,
+    "h": "Kênh hồi quy Raff (Raff Regression Channel) là gì?",
+    "n_sent": 6,
+    "t": "Được phát triển bởi Gilbert Raff, Kênh hồi quy Raff là một kênh hồi quy tuyến tính với các đường xu hướng cách đều nhau ở trên và dưới. Chiều rộng của kênh dựa trên mức cao hoặc thấp xa nhất so với hồi quy tuyến tính. Xu hướng sẽ tăng miễn là giá tăng trong kênh này. Xu hướng tăng sẽ đảo ngược khi giá phá vỡ bên dưới phần mở rộng kênh. Xu hướng giảm miễn là giá giảm trong kênh. Tương tự, xu hướng giảm sẽ đảo ngược khi giá vượt lên trên phần mở rộng kênh."
+   }
+  ]
+ },
+ {
+  "src": "kenh-hoi-quy-raff-raff-regression-channel-la-gi",
+  "src_title": "Kênh hồi quy Raff (Raff Regression Channel) là gì? Hướng dẫn cách vẽ kênh hồi quy Raff trên biểu đồ kỹ thuật",
+  "target": "bieu-do-chung-khoan-la-gi-cach-xem-bieu-do-chung-khoan",
+  "role": "sub-hub",
+  "target_title": "Biểu đồ chứng khoán là gì? Cách xem biểu đồ chứng khoán",
+  "clicks": "0",
+  "anchors": [
+   "biểu đồ chứng khoán",
+   "cách xem biểu đồ chứng khoán",
+   "đồ thị chứng khoán",
+   "biểu đồ cổ phiếu",
+   "đọc biểu đồ",
+   "biểu đồ giá"
+  ],
+  "paras": [
+   {
+    "i": 4,
+    "h": "Hướng dẫn công thức tính kênh hồi quy Raff và cách vẽ",
+    "n_sent": 5,
+    "t": "Kênh hồi quy Raff (RRC) dựa trên hồi quy tuyến tính, là đường bình phương nhỏ nhất phù hợp nhất cho một chuỗi giá vận động. Biểu đồ giá phục hồi của HCM kể từ tháng 11/2022 khi áp dụng kênh giá hồi quy Raff. Vùng đáy là điểm xuất phát của đường tuyến tính hỗ trợ và giới hạn của sóng hồi phục đấy trở thành điểm đến của đường tuyến tính kháng cự. Khoảng từ đường trung vị xuống đường hỗ trợ là vùng lý tưởng để mua vào cổ phiếu và ngược lại. Trong trường hợp xu hướng mất đi (giá cổ phiếu vi phạm đường hỗ trợ) dẫn đến hành động quản trị rủi ro."
+   },
+   {
+    "i": 8,
+    "h": "Hướng dẫn công thức tính kênh hồi quy Raff và cách vẽ",
+    "n_sent": 4,
+    "t": "Cách xác định kênh hồi quy Raff xu hướng điều chỉnh thường khó xác định hơn; vì tầm nhìn đầu tư cổ phiếu với kỳ vọng giá tăng dẫn đến NĐT thường không phát hiện chu kỳ từ sớm. Điểm (1) bắt đầu sóng giảm được đặt làm điểm khởi đầu của kênh trên của RRC, điểm (2) hồi phục đầu tiên được đặt làm đường trung vị tuyến tính của RCC, còn khoảng cách của kênh trên và dưới với đường trung vị là bằng nhau. Điểm (3) và (4) tiệm cận hỗ trợ kênh dưới dẫn đến kỳ vọng giá phục hồi. Điểm (5) vượt kênh trên của RRC là điểm phá sóng giảm, mở ra xu hướng vận động mới."
+   },
+   {
+    "i": 1,
+    "h": "Kênh hồi quy Raff (Raff Regression Channel) là gì?",
+    "n_sent": 6,
+    "t": "Được phát triển bởi Gilbert Raff, Kênh hồi quy Raff là một kênh hồi quy tuyến tính với các đường xu hướng cách đều nhau ở trên và dưới. Chiều rộng của kênh dựa trên mức cao hoặc thấp xa nhất so với hồi quy tuyến tính. Xu hướng sẽ tăng miễn là giá tăng trong kênh này. Xu hướng tăng sẽ đảo ngược khi giá phá vỡ bên dưới phần mở rộng kênh. Xu hướng giảm miễn là giá giảm trong kênh. Tương tự, xu hướng giảm sẽ đảo ngược khi giá vượt lên trên phần mở rộng kênh."
+   }
+  ]
+ }
+]

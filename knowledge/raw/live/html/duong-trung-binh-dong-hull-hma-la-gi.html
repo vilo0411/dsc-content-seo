@@ -6,7 +6,7 @@
 <p>Trước khi đi sâu vào tìm hiểu cơ chế hoạt động của HMA, nếu bạn chưa quen thuộc với các khái niệm cơ bản về các đường trung bình động nói chung như SMA hay EMA, bạn có thể tham khảo thêm bài viết phân tích chi tiết của DSC về <a target="_blank" href="https://www.dsc.com.vn/kien-thuc/duong-ma-la-gi"><strong>đường MA là gì</strong></a> để dễ dàng nắm vững nền tảng lý thuyết này.</p>
 <p>Trong ví dụ dưới đây, bạn có thể thấy đường HMA (màu xanh lam) phản ứng với giá nhanh và dứt khoát hơn hẳn so với đường SMA tương ứng (màu cam).</p>
 <figure class="image">
-<img style="aspect-ratio:800/500;" alt="duong-trung-binh-dong-hull-hma-la-gi-1.jpg" src="https://extgw.dsc.com.vn/eback/uploads/duong_trung_binh_dong_hull_hma_la_gi_1_86043757a0.jpg" width="800" height="500"></figure>
+<img style="aspect-ratio:800/500;" src="https://extgw.dsc.com.vn/eback/uploads/duong_trung_binh_dong_hull_hma_la_gi_1_86043757a0.jpg" alt="duong-trung-binh-dong-hull-hma-la-gi-1.jpg" width="800" height="500"></figure>
 <h2><strong>Công thức tính đường trung bình động Hull</strong></h2>
 <p>Công thức tính HMA sử dụng hai đường trung bình động có trọng số (WMA) với hai chu kỳ khác nhau của giá, sau đó áp dụng thêm một đường WMA thứ ba để làm mượt dữ liệu thô.</p>
 <p>Quá trình tính toán gồm 3 bước cụ thể (trong đó, ký hiệu "n" là số chu kỳ do nhà đầu tư tùy chọn):</p>
@@ -34,7 +34,7 @@
 <li><strong>Bù trừ chu kỳ:</strong> Việc lấy hiệu số giữa hai đường WMA giúp dịch chuyển trọng tâm của dữ liệu về phía các biến động giá mới nhất.</li>
 <li><strong>Làm mượt tối ưu:</strong> Bước làm mượt cuối cùng sử dụng chu kỳ rất ngắn (bằng căn bậc hai của n), giúp đường HMA bám sát hành động giá thực tế mà không bị răng cưa hay quá nhiễu.</li></ul>
 <h2><strong>Ý nghĩa và cách ứng dụng đường trung bình động Hull</strong></h2>
-<p>Đường trung bình động Hull có thể được diễn giải tương tự như các đường trung bình động truyền thống nhưng sở hữu tốc độ phản hồi nhanh hơn. Chỉ báo này thường được dùng để xác nhận xu hướng hoặc phát hiện sớm các tín hiệu đảo chiều.</p>
+<p>Đường trung bình động Hull có thể được diễn giải tương tự như các đường trung bình động truyền thống nhưng sở hữu tốc độ phản hồi nhanh hơn. Chỉ báo này thường được dùng để xác nhận xu hướng hoặc phát hiện sớm các tín hiệu đảo chiều. So với các <a target="_blank" href="https://www.dsc.com.vn/kien-thuc/cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat"><strong>chỉ báo xu hướng</strong></a> cùng nhóm như SMA hay EMA, HMA đổi hướng sớm hơn nên cũng dễ cho tín hiệu giả hơn.</p>
 <h3><strong>Xác định điểm vào lệnh dựa trên sự thay đổi hướng (Turning Points)</strong></h3>
 <p>Đối với các HMA có chu kỳ ngắn, nhà đầu tư thường tìm kiếm các điểm đảo chiều của đường chỉ báo thay vì sử dụng chiến lược giao cắt (Crossover):</p>
 <ul>
@@ -47,7 +47,7 @@
 <li>Nếu đường HMA đang hướng xuống, thị trường đang nằm trong xu hướng giảm dài hạn.</li></ul>
 <p>Bên cạnh HMA, thị trường chứng khoán còn có nhiều công cụ lọc độ trễ khác cũng rất phổ biến và mạnh mẽ. Nhà đầu tư có thể tìm hiểu thêm về phương pháp sử dụng <a target="_blank" href="https://www.dsc.com.vn/kien-thuc/duong-trung-binh-dong-luy-thua-dema-la-gi"><strong>đường trung bình động lũy thừa DEMA là gì</strong></a> để có thêm góc nhìn so sánh và lựa chọn được chỉ báo phù hợp nhất với phong cách giao dịch cá nhân của mình.</p>
 <figure class="image">
-<img style="aspect-ratio:800/500;" alt="Xác định xu hướng dài hạn HMA" src="https://extgw.dsc.com.vn/eback/uploads/duong_trung_binh_dong_hull_hma_la_gi_2_ea1e9f2af4.jpg" width="800" height="500"></figure>
+<img style="aspect-ratio:800/500;" src="https://extgw.dsc.com.vn/eback/uploads/duong_trung_binh_dong_hull_hma_la_gi_2_ea1e9f2af4.jpg" alt="Xác định xu hướng dài hạn HMA" width="800" height="500"></figure>
 <h2><strong>Ứng dụng thực chiến HMA trên nền tảng Chứng khoán DSC</strong></h2>
 <p>Để áp dụng hiệu quả đường trung bình động Hull vào thực tế giao dịch tại thị trường chứng khoán Việt Nam, nhà đầu tư cần một công cụ phân tích biểu đồ mạnh mẽ và có độ chính xác cao về mặt dữ liệu.</p>
 <p>Hiện nay, hệ thống giao dịch DSC Trading của Công ty Cổ phần Chứng khoán DSC (mã cổ phiếu: DSC trên sàn HOSE) đã tích hợp đầy đủ bộ công cụ biểu đồ kỹ thuật tiêu chuẩn từ TradingView. Điều này cho phép các nhà đầu tư dễ dàng cài đặt và tùy biến chỉ báo HMA theo các bước đơn giản sau:</p>

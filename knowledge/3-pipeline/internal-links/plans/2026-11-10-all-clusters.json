@@ -1,0 +1,15 @@
+{
+ "title": "Toàn bộ cụm — link về pillar / hub / sub-hub (v2: anchor theo key chính/phụ/ngữ nghĩa, không đặt ở sapo)",
+ "edits": [
+  {
+   "src": "chien-luoc-giao-dich-ket-hop-bollinger-bands-va-duong-ma",
+   "op": "wrap",
+   "find": "u hướng thị trường. Công cụ này kết hợp đường trung bình động đơn giản (SMA) và độ lệch chu",
+   "to": "duong-ma-la-gi",
+   "anchor": "đường trung bình động",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích kỹ thuật & Chỉ báo · sub-hub · key phụ · mục «Bollinger Bands là gì?»"
+  }
+ ]
+}

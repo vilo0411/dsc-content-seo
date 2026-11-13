@@ -172,14 +172,8 @@ knowledge/raw/optimized_analysis_output.txt
 knowledge/raw/words_analysis.txt
 
 # Scripts phân tích tạm thời
-scripts/analyze_categories.py
-scripts/analyze_optimized.py
 scripts/count_words.py
-scripts/extract_empty_samples.py
-scripts/find_hubs_and_missing.py
-scripts/optimize_mapping.py
-scripts/search_existing_hubs.py
-scripts/update_hub_types.py
+scripts/archive/content-mapping-2026-05/
 temp_qa.py
 
 # Python cache & workflow backups
@@ -189,3 +183,6 @@ __pycache__/
 # Market / news caches (sinh lại theo yêu cầu, churn cao)
 scripts/market-cache.json
 scripts/news-cache.json
+knowledge/raw/audit/
+
+/gen-lang-client-0863794209-385c2ddf2422.json

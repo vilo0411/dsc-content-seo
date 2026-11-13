@@ -1,0 +1,633 @@
+{
+  "slug": "nen-mo-tai-khoan-chung-khoan-o-dau",
+  "published": false,
+  "proposal": "knowledge/4-content/1-outlines/Proposal-nen-mo-tai-khoan-chung-khoan-o-dau-serp-2026-11-04.md",
+  "draft": "knowledge\\4-content\\2-drafts\\Optimize-nen-mo-tai-khoan-chung-khoan-o-dau-serp-2026-11-04.md",
+  "body_html": "knowledge\\4-content\\audits\\account-serp-2026-11-04\\nen-mo-tai-khoan-chung-khoan-o-dau.body.html",
+  "preservation": {
+    "images_preserved": {
+      "https://extgw.dsc.com.vn/eback/uploads/nen_mo_tai_khoan_chung_khoan_o_dau_bang_tong_hop_853877fc1d.jpg": true,
+      "https://extgw.dsc.com.vn/eback/uploads/nen_mo_tai_khoan_chung_khoan_o_dau_2_c48da4352a.jpg": true,
+      "https://extgw.dsc.com.vn/eback/uploads/nen_mo_tai_khoan_chung_khoan_o_dau_3_6eda491307.jpg": true,
+      "https://extgw.dsc.com.vn/eback/uploads/nen_mo_tai_khoan_chung_khoan_o_dau_1_6c15305a69.jpg": true
+    },
+    "hrefs_preserved": {
+      "https://www.dsc.com.vn/kien-thuc/mo-tai-khoan-chung-khoan-co-mat-phi-khong-can-bao-nhieu-tien": true,
+      "https://www.dsc.com.vn/kien-thuc/phi-giao-dich-chung-khoan": true,
+      "https://www.dsc.com.vn/kien-thuc/cac-loai-tai-khoan-chung-khoan-pho-bien-tai-viet-nam": true,
+      "https://www.dsc.com.vn/kien-thuc/mo-tai-khoan-chung-khoan-online-co-an-toan-khong": true,
+      "https://www.dsc.com.vn/kien-thuc/cach-mo-tai-khoan-chung-khoan": true,
+      "https://www.dsc.com.vn/kien-thuc/mot-nguoi-duoc-mo-bao-nhieu-tai-khoan-chung-khoan": true,
+      "https://www.dsc.com.vn/": true,
+      "https://www.dsc.com.vn/mo-tai-khoan": true
+    }
+  },
+  "qa": {
+    "baseline_lint": {
+      "exit_code": 1,
+      "result": {
+        "file": "knowledge\\4-content\\audits\\account-serp-2026-11-04\\baseline-nen-mo-tai-khoan-chung-khoan-o-dau.md",
+        "pass": false,
+        "score": 74,
+        "categories": {
+          "anti_ai": 40,
+          "seo": 100,
+          "readability": 60,
+          "link": 97,
+          "geo": 100
+        },
+        "stats": {
+          "keyword": "nên mở tài khoản chứng khoán ở đâu",
+          "h1": "Nên mở tài khoản chứng khoán ở đâu? Top 7 công ty uy tín",
+          "long_sentences": 30,
+          "long_paragraphs": 0,
+          "internal_links": 6,
+          "link_cluster": "mo-tai-khoan / Chọn nơi mở & công cụ",
+          "h2": 3,
+          "temporal_markers": 4,
+          "data_points": 24,
+          "faq_items": 0
+        },
+        "fixes": [],
+        "findings": [
+          {
+            "check": "CL2-blacklist",
+            "category": "anti_ai",
+            "severity": "CRITICAL",
+            "line": 26,
+            "message": "Trigger phrase bị cấm: “Bên cạnh đó”",
+            "excerpt": "Một công ty chứng khoán uy tín bắt buộc phải được Ủy ban Chứng khoán Nhà nước cấp phép hoạt động hợp pháp. Bên cạnh đó, "
+          },
+          {
+            "check": "CL2-blacklist",
+            "category": "anti_ai",
+            "severity": "CRITICAL",
+            "line": 32,
+            "message": "Trigger phrase bị cấm: “Bên cạnh đó”",
+            "excerpt": "Bên cạnh đó, hãy so sánh biểu [**phí giao dịch chứng khoán**](https://www.dsc.com.vn/kien-thuc/phi-giao-dich-chung-khoan"
+          },
+          {
+            "check": "CL2-softban",
+            "category": "anti_ai",
+            "severity": "MAJOR",
+            "line": 42,
+            "message": "Từ bị cấm (instincts): “sống còn”",
+            "excerpt": "Trong kỷ nguyên giao dịch số, tốc độ khớp lệnh và sự ổn định của hệ thống là yếu tố sống còn để bạn không bỏ lỡ các cơ h"
+          },
+          {
+            "check": "FMT-bold-label",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 72,
+            "message": "Dấu `:` phải nằm ngoài bold — `**Nhãn**:`",
+            "excerpt": "* **Ưu điểm:** Hệ sinh thái sản phẩm tích hợp trên ứng dụng VPS SmartOne phong phú, tính thanh khoản nhanh chóng và cộng"
+          },
+          {
+            "check": "FMT-bold-label",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 73,
+            "message": "Dấu `:` phải nằm ngoài bold — `**Nhãn**:`",
+            "excerpt": "* **Hạn chế:** Sự cạnh tranh gia tăng khiến thị phần bán niên của VPS có phần thu hẹp so với các giai đoạn trước [1, 2]."
+          },
+          {
+            "check": "FMT-bold-label",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 81,
+            "message": "Dấu `:` phải nằm ngoài bold — `**Nhãn**:`",
+            "excerpt": "* **Ưu điểm:** Thương hiệu uy tín tuyệt đối, hệ thống báo cáo phân tích doanh nghiệp và vĩ mô có chất lượng chuyên môn s"
+          },
+          {
+            "check": "FMT-bold-label",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 82,
+            "message": "Dấu `:` phải nằm ngoài bold — `**Nhãn**:`",
+            "excerpt": "* **Hạn chế:** Phí giao dịch online duy trì ở mức 0,15%, ít có các chương trình miễn giảm phí sâu như các đối thủ định h"
+          },
+          {
+            "check": "FMT-bold-label",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 88,
+            "message": "Dấu `:` phải nằm ngoài bold — `**Nhãn**:`",
+            "excerpt": "* **Ưu điểm:** Chính sách miễn phí giao dịch khi tự thao tác trên nền tảng TCInvest và ưu thế vượt trội trong việc phân "
+          },
+          {
+            "check": "FMT-bold-label",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 89,
+            "message": "Dấu `:` phải nằm ngoài bold — `**Nhãn**:`",
+            "excerpt": "* **Hạn chế:** Hệ thống tập trung tối đa vào vận hành tự động bằng công nghệ, do đó các dịch vụ chăm sóc trực tiếp từ nh"
+          },
+          {
+            "check": "FMT-bold-label",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 95,
+            "message": "Dấu `:` phải nằm ngoài bold — `**Nhãn**:`",
+            "excerpt": "* **Ưu điểm:** Đội ngũ chuyên viên tư vấn chuyên nghiệp, am hiểu thị trường sâu sắc; nền tảng ứng dụng HSC ONE được đầu "
+          },
+          {
+            "check": "FMT-bold-label",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 96,
+            "message": "Dấu `:` phải nằm ngoài bold — `**Nhãn**:`",
+            "excerpt": "* **Hạn chế:** Biểu phí giao dịch 0,2% ở mức tương đối cao, không thực sự phù hợp với các nhà đầu tư cá nhân có quy mô v"
+          },
+          {
+            "check": "FMT-bold-label",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 104,
+            "message": "Dấu `:` phải nằm ngoài bold — `**Nhãn**:`",
+            "excerpt": "* **Ưu điểm:** Giao diện bảng giá DBOARD và ứng dụng DSTOCK cực kỳ dễ sử dụng, hệ thống tài liệu đào tạo F0 bài bản và d"
+          },
+          {
+            "check": "FMT-bold-label",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 105,
+            "message": "Dấu `:` phải nằm ngoài bold — `**Nhãn**:`",
+            "excerpt": "* **Hạn chế:** Thị phần môi giới của VNDIRECT trong năm 2026 đã ghi nhận mức sụt giảm đáng kể so với những năm trước [1,"
+          },
+          {
+            "check": "FMT-bold-label",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 111,
+            "message": "Dấu `:` phải nằm ngoài bold — `**Nhãn**:`",
+            "excerpt": "* **Ưu điểm:** Hệ thống nạp/rút tiền liên thông nhanh chóng với tài khoản Vietcombank, quy trình quản trị rủi ro chặt ch"
+          },
+          {
+            "check": "FMT-bold-label",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 112,
+            "message": "Dấu `:` phải nằm ngoài bold — `**Nhãn**:`",
+            "excerpt": "* **Hạn chế:** Nền tảng công nghệ và các sản phẩm tài chính được phát triển theo hướng an toàn, truyền thống, chưa có nh"
+          },
+          {
+            "check": "FMT-bold-label",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 120,
+            "message": "Dấu `:` phải nằm ngoài bold — `**Nhãn**:`",
+            "excerpt": "* **Ưu điểm:** Biểu phí giao dịch trực tuyến vô cùng cạnh tranh chỉ **0,1%** – thuộc nhóm thấp nhất thị trường hiện nay."
+          },
+          {
+            "check": "FMT-bold-label",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 121,
+            "message": "Dấu `:` phải nằm ngoài bold — `**Nhãn**:`",
+            "excerpt": "* **Hạn chế:** DSC hiện đang trong giai đoạn mở rộng quy mô chi nhánh và nâng cao độ nhận diện thương hiệu để tiếp cận r"
+          },
+          {
+            "check": "CL6-prose-run",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 133,
+            "message": "> 3 đoạn văn liên tiếp không có visual (list/bảng/ảnh)",
+            "excerpt": ""
+          },
+          {
+            "check": "CL6-sentence",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 16,
+            "message": "Câu dài 32 từ (>30)",
+            "excerpt": "Thị trường chứng khoán Việt Nam năm 2026 ghi nhận làn sóng gia nhập mạnh mẽ của các nhà đầu tư cá nhân, đặc biệt là thế "
+          },
+          {
+            "check": "CL6-sentence",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 16,
+            "message": "Câu dài 46 từ (>30)",
+            "excerpt": "Tuy nhiên, điều này cũng đặt ra một bài toán lớn cho người mới bắt đầu: Nên mở tài khoản chứng khoán ở đâu để vừa đảm bả"
+          },
+          {
+            "check": "CL6-sentence",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 18,
+            "message": "Câu dài 52 từ (>30)",
+            "excerpt": "Để giải quyết băn khoăn này, nhà đầu tư cần trang bị một bộ tiêu chí đánh giá khách quan thay vì chỉ lựa chọn theo cảm t"
+          },
+          {
+            "check": "CL6-sentence",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 26,
+            "message": "Câu dài 41 từ (>30)",
+            "excerpt": "Bên cạnh đó, tiềm lực tài chính vững mạnh – thể hiện qua vốn điều lệ lớn, tổng tài sản cao và sự minh bạch trong báo cáo"
+          },
+          {
+            "check": "CL6-sentence",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 26,
+            "message": "Câu dài 41 từ (>30)",
+            "excerpt": "Các doanh nghiệp thuộc hệ sinh thái của ngân hàng lớn hoặc nằm trong các tập đoàn tài chính uy tín thường sở hữu lợi thế"
+          },
+          {
+            "check": "CL6-sentence",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 30,
+            "message": "Câu dài 34 từ (>30)",
+            "excerpt": "Trước khi mở tài khoản, bạn nên tìm hiểu kỹ xem mở tài khoản chứng khoán có mất phí không và cần chuẩn bị tối thiểu bao "
+          },
+          {
+            "check": "CL6-sentence",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 32,
+            "message": "Câu dài 40 từ (>30)",
+            "excerpt": "Cuối cùng, đừng bỏ qua biểu phí vay ký quỹ (margin) của từng bên cùng với mức phí lưu ký chứng khoán cố định theo quy đị"
+          },
+          {
+            "check": "CL6-sentence",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 38,
+            "message": "Câu dài 51 từ (>30)",
+            "excerpt": "Một hệ sinh thái tài chính phong phú sẽ giúp bạn dễ dàng chuyển dịch dòng vốn giữa các sản phẩm như cổ phiếu, chứng khoá"
+          },
+          {
+            "check": "CL6-sentence",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 42,
+            "message": "Câu dài 32 từ (>30)",
+            "excerpt": "Trong kỷ nguyên giao dịch số, tốc độ khớp lệnh và sự ổn định của hệ thống là yếu tố sống còn để bạn không bỏ lỡ các cơ h"
+          },
+          {
+            "check": "CL6-sentence",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 44,
+            "message": "Câu dài 58 từ (>30)",
+            "excerpt": "Đồng thời, khi tiến hành đăng ký, việc hiểu rõ mở tài khoản chứng khoán online có an toàn không sẽ giúp bạn an tâm hơn k"
+          },
+          {
+            "check": "CL6-sentence",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 48,
+            "message": "Câu dài 37 từ (>30)",
+            "excerpt": "Đối với nhóm nhà đầu tư mới (F0), sự đồng hành của đội ngũ chuyên viên tư vấn là cực kỳ cần thiết để định hướng chiến lư"
+          },
+          {
+            "check": "CL6-sentence",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 48,
+            "message": "Câu dài 45 từ (>30)",
+            "excerpt": "Việc lựa chọn một công ty có đội ngũ tư vấn tận tâm, cung cấp các báo cáo phân tích chất lượng thường mang lại giá trị t"
+          },
+          {
+            "check": "CL6-sentence",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 52,
+            "message": "Câu dài 33 từ (>30)",
+            "excerpt": "Dưới đây là bảng tổng hợp các thông số tài chính và thị phần môi giới bán niên 2026 mới nhất trên sàn HOSE (do Sở Giao d"
+          },
+          {
+            "check": "CL6-sentence",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 64,
+            "message": "Câu dài 43 từ (>30)",
+            "excerpt": "Để giúp nhà đầu tư có cái nhìn trực quan hơn về tương quan lực lượng giữa các bên, dưới đây là biểu đồ chi tiết về thị p"
+          },
+          {
+            "check": "CL6-sentence",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 77,
+            "message": "Câu dài 50 từ (>30)",
+            "excerpt": "Với vị thế là một trong những định chế tài chính lâu đời và có quy mô vốn điều lệ lớn nhất toàn ngành, SSI luôn là sự lự"
+          },
+          {
+            "check": "CL6-sentence",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 86,
+            "message": "Câu dài 33 từ (>30)",
+            "excerpt": "Hoạt động như một mảnh ghép quan trọng trong hệ sinh thái tài chính Techcombank, TCBS định vị mình là một \"Wealthtech\" d"
+          },
+          {
+            "check": "CL6-sentence",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 88,
+            "message": "Câu dài 35 từ (>30)",
+            "excerpt": "Ưu điểm: Chính sách miễn phí giao dịch khi tự thao tác trên nền tảng TCInvest và ưu thế vượt trội trong việc phân phối c"
+          },
+          {
+            "check": "CL6-sentence",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 89,
+            "message": "Câu dài 40 từ (>30)",
+            "excerpt": "Hạn chế: Hệ thống tập trung tối đa vào vận hành tự động bằng công nghệ, do đó các dịch vụ chăm sóc trực tiếp từ nhân sự "
+          },
+          {
+            "check": "CL6-sentence",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 93,
+            "message": "Câu dài 43 từ (>30)",
+            "excerpt": "Với sự hậu thuẫn chuyên môn từ các quỹ đầu tư lớn, HSC định vị dịch vụ ở phân khúc cao cấp, tập trung vào việc cung cấp "
+          },
+          {
+            "check": "CL6-sentence",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 95,
+            "message": "Câu dài 32 từ (>30)",
+            "excerpt": "Ưu điểm: Đội ngũ chuyên viên tư vấn chuyên nghiệp, am hiểu thị trường sâu sắc; nền tảng ứng dụng HSC ONE được đầu tư bài"
+          },
+          {
+            "check": "CL6-sentence",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 96,
+            "message": "Câu dài 36 từ (>30)",
+            "excerpt": "Hạn chế: Biểu phí giao dịch 0,2% ở mức tương đối cao, không thực sự phù hợp với các nhà đầu tư cá nhân có quy mô vốn nhỏ"
+          },
+          {
+            "check": "CL6-sentence",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 100,
+            "message": "Câu dài 40 từ (>30)",
+            "excerpt": "VNDIRECT xây dựng hình ảnh là người bạn đồng hành tin cậy, chú trọng vào việc hỗ trợ đào tạo kiến thức và cung cấp các c"
+          },
+          {
+            "check": "CL6-sentence",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 109,
+            "message": "Câu dài 32 từ (>30)",
+            "excerpt": "Thừa hưởng trọn vẹn uy tín thương hiệu và tính bảo mật nghiêm ngặt từ Ngân hàng Vietcombank, VCBS mang đến sự an tâm tối"
+          },
+          {
+            "check": "CL6-sentence",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 112,
+            "message": "Câu dài 37 từ (>30)",
+            "excerpt": "Hạn chế: Nền tảng công nghệ và các sản phẩm tài chính được phát triển theo hướng an toàn, truyền thống, chưa có nhiều độ"
+          },
+          {
+            "check": "CL6-sentence",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 116,
+            "message": "Câu dài 45 từ (>30)",
+            "excerpt": "Chứng khoán DSC định vị mình là công ty chứng khoán công nghệ năng động, tập trung giải quyết đồng thời hai nhu cầu thực"
+          },
+          {
+            "check": "CL6-sentence",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 120,
+            "message": "Câu dài 42 từ (>30)",
+            "excerpt": "DSC sở hữu hệ sinh thái công nghệ hiện đại với app DSC Trading tích hợp công cụ tư vấn WeTrade độc quyền, đi kèm chính s"
+          },
+          {
+            "check": "CL6-sentence",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 121,
+            "message": "Câu dài 34 từ (>30)",
+            "excerpt": "Hạn chế: DSC hiện đang trong giai đoạn mở rộng quy mô chi nhánh và nâng cao độ nhận diện thương hiệu để tiếp cận rộng rã"
+          },
+          {
+            "check": "CL6-sentence",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 123,
+            "message": "Câu dài 48 từ (>30)",
+            "excerpt": "Để hiểu chi tiết hơn về các thao tác thực hiện cũng như những điểm cần lưu ý trong quá trình xác thực thông tin, bạn có "
+          },
+          {
+            "check": "CL6-sentence",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 127,
+            "message": "Câu dài 44 từ (>30)",
+            "excerpt": "Việc quyết định mở tài khoản chứng khoán ở đâu không chỉ đơn thuần là tìm kiếm một ứng dụng đặt lệnh, mà là lựa chọn một"
+          },
+          {
+            "check": "CL6-sentence",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 131,
+            "message": "Câu dài 45 từ (>30)",
+            "excerpt": "Bên cạnh những tên tuổi lớn lâu năm trên thị trường, DSC nổi lên như một điểm tựa vững chắc nhờ tiềm lực tài chính từ hệ"
+          },
+          {
+            "check": "CL6-sentence",
+            "category": "readability",
+            "severity": "MAJOR",
+            "line": 16,
+            "message": "30 câu vượt 30 từ — vi phạm nhiều",
+            "excerpt": ""
+          },
+          {
+            "check": "LINK-pointer",
+            "category": "link",
+            "severity": "MINOR",
+            "line": 123,
+            "message": "Câu chỉ để trỏ sang bài khác — anchor nên là một phần của lập luận",
+            "excerpt": "Để hiểu chi tiết hơn về các thao tác thực hiện cũng như những điểm cần lưu ý trong quá trình xác thực thông tin, bạn có "
+          }
+        ]
+      }
+    },
+    "baseline_slop_strict": {
+      "exit_code": 1,
+      "result": {
+        "file": "knowledge\\4-content\\audits\\account-serp-2026-11-04\\baseline-nen-mo-tai-khoan-chung-khoan-o-dau.md",
+        "pass": false,
+        "slop_score": 64,
+        "mode": "strict",
+        "metrics": {
+          "words": 1922,
+          "n_sent": 40,
+          "n_h2": 3,
+          "filler_n": 0,
+          "filler_per_1000w": 0.0,
+          "burstiness": 11.09459327780879,
+          "mean_sent": 34.1,
+          "uniform_run": 2,
+          "rhythm_gap": 40,
+          "short_share": 0.0,
+          "evidence_per_100w": 0.9885535900104058,
+          "unanchored_ratio": 0.675,
+          "vague_per_1000w": 1.5608740894901143,
+          "vague_n": 3,
+          "hedge_para_max": 2,
+          "synonym_variants": 1,
+          "h2_def_open": 0.0,
+          "para_shape_sd": 0.6928203230275509,
+          "n_para": 25,
+          "ttr_min": 0.5333333333333333,
+          "ttr_max": 0.63,
+          "inline_headers": 0,
+          "thin_tables": 0,
+          "template_sim": 0.4230769230769231
+        },
+        "twin": "app-dau-tu-chung-khoan",
+        "findings": [
+          {
+            "check": "SLOP-rhythm",
+            "severity": "MINOR",
+            "message": "40 câu liên tiếp không có câu nào <=7 từ (tối đa 35) - vi phạm REQUIRED rhythm_break, từ dòng 16"
+          },
+          {
+            "check": "SLOP-evidence",
+            "severity": "MAJOR",
+            "message": "Mật độ bằng chứng 1.0/100 từ (chuẩn >= 1.3) - thêm mã CP, %, sàn, mốc Tháng M/YYYY"
+          },
+          {
+            "check": "SLOP-anchor",
+            "severity": "MAJOR",
+            "message": "68% câu không có mỏ neo kiểm chứng được (số / thực thể / sàn / mốc thời gian) - tối đa 66%"
+          },
+          {
+            "check": "SLOP-vague",
+            "severity": "MAJOR",
+            "message": "1.6 câu sáo rỗng / 1000 từ (tối đa 1.1) - xem danh sách bằng -v, thay bằng số hoặc tiêu chí"
+          },
+          {
+            "check": "SLOP-template",
+            "severity": "MINOR",
+            "message": "Khung H2 trùng 42% với bài `app-dau-tu-chung-khoan`"
+          }
+        ]
+      }
+    },
+    "draft_lint": {
+      "exit_code": 0,
+      "result": {
+        "file": "knowledge\\4-content\\2-drafts\\Optimize-nen-mo-tai-khoan-chung-khoan-o-dau-serp-2026-11-04.md",
+        "pass": true,
+        "score": 99,
+        "categories": {
+          "anti_ai": 100,
+          "seo": 100,
+          "readability": 97,
+          "link": 100,
+          "geo": 100
+        },
+        "stats": {
+          "keyword": "nên mở tài khoản chứng khoán ở đâu",
+          "h1": "Nên mở tài khoản chứng khoán ở đâu? Top 7 công ty uy tín",
+          "long_sentences": 0,
+          "long_paragraphs": 0,
+          "internal_links": 6,
+          "link_cluster": "mo-tai-khoan / Chọn nơi mở & công cụ",
+          "h2": 3,
+          "temporal_markers": 6,
+          "data_points": 19,
+          "cta_banners": 1,
+          "cta_score": 100,
+          "images_original": 4,
+          "images_missing": 0,
+          "faq_items": 0
+        },
+        "fixes": [],
+        "findings": [
+          {
+            "check": "CL6-prose-run",
+            "category": "readability",
+            "severity": "MINOR",
+            "line": 40,
+            "message": "> 3 đoạn văn liên tiếp không có visual (list/bảng/ảnh)",
+            "excerpt": ""
+          }
+        ]
+      }
+    },
+    "draft_slop_strict": {
+      "exit_code": 0,
+      "result": {
+        "file": "knowledge\\4-content\\2-drafts\\Optimize-nen-mo-tai-khoan-chung-khoan-o-dau-serp-2026-11-04.md",
+        "pass": true,
+        "slop_score": 91,
+        "mode": "strict",
+        "metrics": {
+          "words": 1564,
+          "n_sent": 93,
+          "n_h2": 3,
+          "filler_n": 0,
+          "filler_per_1000w": 0.0,
+          "burstiness": 5.006228055460187,
+          "mean_sent": 16.236559139784948,
+          "uniform_run": 9,
+          "rhythm_gap": 18,
+          "short_share": 0.0967741935483871,
+          "evidence_per_100w": 2.3017902813299234,
+          "unanchored_ratio": 0.6451612903225806,
+          "vague_per_1000w": 0.0,
+          "vague_n": 0,
+          "hedge_para_max": 2,
+          "synonym_variants": 1,
+          "h2_def_open": 0.0,
+          "para_shape_sd": 0.5497194419167132,
+          "n_para": 51,
+          "ttr_min": 0.4866666666666667,
+          "ttr_max": 0.5333333333333333,
+          "inline_headers": 0,
+          "thin_tables": 0,
+          "template_sim": 0.48148148148148145
+        },
+        "twin": "nen-mo-tai-khoan-chung-khoan-o-dau",
+        "findings": [
+          {
+            "check": "SLOP-anchor",
+            "severity": "MINOR",
+            "message": "65% câu không có mỏ neo kiểm chứng được (số / thực thể / sàn / mốc thời gian) - tối đa 50%"
+          },
+          {
+            "check": "SLOP-para-shape",
+            "severity": "MINOR",
+            "message": "Mọi đoạn cùng hình dạng: stdev số câu/đoạn 0.55 (chuẩn >= 0.55)"
+          },
+          {
+            "check": "SLOP-template",
+            "severity": "MINOR",
+            "message": "Khung H2 trùng 48% với bài `nen-mo-tai-khoan-chung-khoan-o-dau`"
+          }
+        ]
+      }
+    },
+    "draft_facts": {
+      "exit_code": 0,
+      "result": {
+        "output": "\nFACT CHECK — Optimize-nen-mo-tai-khoan-chung-khoan-o-dau-serp-2026-11-04.md\n0 mốc chỉ số có ngày · 0 vấn đề\n------------------------------------------------------------------------------\nKhông phát hiện số liệu sai hoặc lỗi thời.\n",
+        "error": ""
+      }
+    },
+    "baseline_facts": {
+      "exit_code": 0,
+      "result": {
+        "output": "\nFACT CHECK — baseline-nen-mo-tai-khoan-chung-khoan-o-dau.md\n0 mốc chỉ số có ngày · 0 vấn đề\n------------------------------------------------------------------------------\nKhông phát hiện số liệu sai hoặc lỗi thời.\n",
+        "error": ""
+      }
+    }
+  },
+  "remaining_editorial": [
+    "Original HOSE market-share infographic and SSI Top2 alt were retained from live; no independently verified source for their numeric claims. Caption explicitly historical. Must resolve before CMS publication."
+  ],
+  "fact_check_scope": "market_facts checks market index/ticker/stale patterns, not all service claims; fee and onboarding claims checked separately against primary company websites."
+}

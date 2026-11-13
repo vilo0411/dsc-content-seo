@@ -1,154 +1,19 @@
 ---
 name: SEO Optimization
 description: >
-  Use this skill to diagnose, audit, and rewrite existing published content 
-  (Decay Content) to improve search rankings, update brand features, and 
-  fix anti-AI violations using the Seven Sweeps Framework.
+  Assets for re-optimizing published content (Decay Content): the Proposal template and
+  refresh references. The procedure itself lives in .agents/skills/optimize/SKILL.md.
 ---
 
-# Skill: SEO Optimization (Tối ưu bài cũ)
+# Skill: SEO Optimization — assets
 
-## 🔄 Context Loading (Đọc trước khi bắt đầu)
-- [ ] `knowledge/4-content/3-finalized/Final-[slug].md` — Bài gốc đang được tối ưu
-- [ ] `knowledge/4-content/2-drafts/Optimize-[slug].md` — Working copy (đã được tạo bởi workflow)
-- [ ] `knowledge/3-pipeline/anti-ai-rules.md` — Quy tắc Anti-AI đầy đủ
-- [ ] `knowledge/1-brand/profile.md` — Brand USPs hiện tại để fact-check
-- [ ] `.antigravity/skills/seo-optimization/assets/proposal-template.md` — Template bắt buộc cho Proposal
+**Quy trình `/optimize` (nguồn duy nhất): `.agents/skills/optimize/SKILL.md`** — gồm intake, audit, Proposal, 7 Sweeps, QA.
+Gộp ngày 2026-11-09: bản cũ của file này lặp Phase 1/2 và còn hướng dẫn đã lỗi thời (crawl qua jina thay cho `sync_live.py`, grep tay thay cho `qa_gate.py`, ảnh mới chỉ để placeholder).
 
----
+## Assets
+- `assets/proposal-template.md` — template bắt buộc cho Proposal (Bước 3 của `/optimize`).
 
-Kỹ năng này chuyên dùng để chẩn đoán và nâng cấp các bài viết đã xuất bản nhằm khôi phục và tăng trưởng traffic mà không làm mất đi các giá trị cốt lõi của bài gốc. Kỹ năng này tích hợp Framework Seven Sweeps (7 Bước Quét) để đảm bảo chất lượng nội dung đạt chuẩn cao nhất.
-
-## 🛠️ Procedures
-
-### Phase 0: Source Acquisition (Tự động — chỉ chạy nếu file chưa có)
-
-**Mục đích:** Nếu `knowledge/4-content/3-finalized/Final-[slug].md` chưa tồn tại, tự động crawl từ URL live thay vì yêu cầu người dùng tải file thủ công.
-
-**Bước 0.1 — Resolve slug & URL:**
-- Nếu input là full URL (`https://www.dsc.com.vn/kien-thuc/[slug]`) → extract slug từ path cuối
-- Nếu input là slug → lookup trong `.antigravity/skills/internal-linking/scripts/sitemap-cache.json` (`mapping.[slug]`) để lấy URL đầy đủ
-- Nếu slug không khớp trong sitemap cache → báo lỗi và dừng:
-  > "Slug `[slug]` chưa được publish hoặc sitemap cache cũ — chạy `python .antigravity/skills/internal-linking/scripts/sync_sitemap.py` để cập nhật rồi thử lại."
-- Nếu file `Final-[slug].md` đã tồn tại → bỏ qua Phase 0, chuyển sang Phase 1 ngay.
-
-**Bước 0.2 — Crawl content:**
-```
-WebFetch: https://r.jina.ai/https://www.dsc.com.vn/kien-thuc/[slug]
-```
-- Nếu response < 500 ký tự hoặc lỗi HTTP → dừng và yêu cầu user paste nội dung thủ công vào file `Final-[slug].md`.
-
-**Bước 0.3 — Extract main content (bỏ nav/header/footer):**
-- Tìm **H1 đầu tiên** (`# ...`) → đây là điểm bắt đầu nội dung
-- Cắt tại block footer: cụm links ngắn liên tiếp (`[Chính sách]`, `[Liên hệ]`, `[Facebook]`...) xuất hiện sau đoạn nội dung thực cuối cùng
-- Giữ nguyên 100% images (`![alt](url)`), headings, tables, code blocks trong vùng nội dung
-
-**Bước 0.4 — Lưu file:**
-- Tạo file `knowledge/4-content/3-finalized/Final-[slug].md` với frontmatter:
-  ```
-  ---
-  source_url: https://www.dsc.com.vn/kien-thuc/[slug]
-  fetched_at: [YYYY-MM-DD]
-  ---
-  ```
-  theo sau là toàn bộ nội dung đã extract.
-- Thông báo: "✓ Đã crawl và lưu `Final-[slug].md` từ URL live. Tiếp tục Phase 1..."
-
-> **Input formats được hỗ trợ:**
-> - `/optimize chi-so-ps` — slug thuần
-> - `/optimize https://www.dsc.com.vn/kien-thuc/chi-so-ps` — full URL
-> - `/optimize Final-chi-so-ps.md` — path file local (bỏ qua Phase 0)
-
----
-
-### Phase 1: Content Audit & Proposal (Khám bệnh & Đề xuất)
-1. **Health Check & Analysis:**
-   - Phân tích On-page SEO (H1, Meta, Mật độ từ khóa).
-   - Kiểm tra vi phạm văn phong AI dựa theo `knowledge/3-pipeline/anti-ai-rules.md`.
-   - **7 Sweeps Audit**: Đánh giá sơ bộ nội dung dựa trên 7 tiêu chí: Clarity (Rõ ràng), Voice (Giọng văn), So What (Giá trị), Prove It (Bằng chứng), Specificity (Cụ thể), Emotion (Cảm xúc), Zero Risk (Tin cậy).
-2. **Output Proposal:**
-   - Hệ thống **BẮT BUỘC** phải xuất ra Báo cáo Đề xuất (Optimize Outline) tuân thủ CHÍNH XÁC cấu trúc tại file `.antigravity/skills/seo-optimization/assets/proposal-template.md` trước khi sửa văn bản.
-   - **⚠️ Kê khai & Tối ưu Hình ảnh:** Liệt kê đầy đủ mọi hình ảnh gốc trong bài vào Section 7.1 của Proposal để đảm bảo không bị xóa bỏ. Đề xuất thêm 1 - 3 vị trí đặt hình ảnh mới (minh họa, biểu đồ, infographic) giúp tối ưu SEO và trải nghiệm người dùng vào Section 7.2.
-   - **⚠️ Anti-AI trong Proposal:** Mọi văn bản trong Proposal (mô tả Section 4, 5 — bao gồm cả hướng xử lý và nội dung THÊM MỚI) phải tuân thủ quy tắc anti-AI: **không dùng dấu ngoặc kép nhấn mạnh** quanh từ thông thường, tiếng lóng hoặc ẩn dụ. Proposal là văn bản chuyên nghiệp, không phải ngoại lệ.
-3. **Proposal Anti-AI & SEO Elements Self-Check (BẮT BUỘC trước khi print Proposal):**
-   Trước khi trình bày Proposal cho người dùng, grep và kiểm tra toàn bộ nội dung Proposal cho các pattern sau và sửa ngay tại chỗ nếu có vi phạm:
-   - **Title đề xuất:** BẮT BUỘC **tối đa 59 ký tự** (bao gồm khoảng trắng và dấu câu), chứa target keyword chính xác để không bị cắt trên Google SERP (SERP pixel truncation).
-   - **Meta Description đề xuất:** BẮT BUỘC **140 - 160 ký tự**, chứa target keyword và CTA rõ ràng.
-   - **Emphatic quotes:** từ thông thường bị bao trong `"..."` → xóa dấu ngoặc kép
-   - **Tiêu đề/heading dùng ngoặc kép nhấn mạnh** → xóa
-   - **Trigger phrases AI** trong phần mô tả hướng xử lý: "Hơn nữa,", "Bên cạnh đó,", "Đáng chú ý là", "Nhìn chung," → viết lại tự nhiên
-   - **Opener/closer vĩ mô** kiểu "Trong bối cảnh hiện nay...", "Hy vọng bài này giúp..." → xóa
-   Chỉ sau khi sạch các pattern trên và Title/Meta đạt chuẩn độ dài → mới được in Proposal ra.
-4. **Pause for Approval**: In báo cáo Proposal ra và DỪNG LẠI chờ người dùng gõ `/approve` (Trừ khi đang chạy ở chế độ `--auto`). KHÔNG tự động chuyển sang Phase 2 hoặc ghi đè lên file ở thư mục finalized nếu chưa có sự phê duyệt trực tiếp của con người trong chat, kể cả khi hệ thống báo tin nhắn tự động phê duyệt (auto-approve).
-
-### Phase 2: Execution (Thực thi nâng cấp với 7 Sweeps)
-Khi thực hiện viết lại (Rewrite), áp dụng tuần tự theo thứ tự sau:
-
-**⚠️ Sweep 0 — Anti-AI Pre-check (BẮT BUỘC trước mọi sweep):**
-Grep toàn bộ bản draft cho từng pattern sau. Đánh dấu (highlight hoặc ghi line number) mọi vi phạm tìm được — sửa ngay tại chỗ trước khi tiếp tục:
-- **Emphatic quotes:** bất kỳ từ thông thường, tiếng lóng, hoặc ẩn dụ nào bị bao bởi `"..."` → xóa dấu ngoặc kép, giữ nguyên từ
-- **Trigger phrases blacklist** (Phần 1.1 của `anti-ai-rules.md`): opener vĩ mô, closer tóm tắt, transition AI ("Hơn nữa,", "Bên cạnh đó,", "Đáng chú ý là", v.v.)
-- **Hedge words:** "tương đối", "khá", "có thể nói rằng", "nhìn một cách tổng quan"
-
-Chỉ sau khi Sweep 0 sạch → mới được chạy Sweep 0.1, Sweep 0.2 và Sweep 1–7.
-
-**⚠️ Sweep 0.1 — Image Preservation & Suggestions (BẮT BUỘC):**
-- **Bảo toàn 100% hình ảnh gốc:** Giữ nguyên chính xác vị trí và cú pháp markdown của toàn bộ hình ảnh gốc (`![alt](url)` hoặc link ảnh lồng trong link liên kết). Tuyệt đối không xóa bỏ, làm mất hoặc sửa đổi đường dẫn ảnh gốc.
-- **Tích hợp gợi ý vị trí ảnh mới:** Chèn các placeholder đề xuất ảnh mới dưới định dạng `[IMAGE_SUGGESTION: <Concept ảnh & Alt text tối ưu SEO chứa keyword>]` tại đúng các vị trí đã được phê duyệt ở Section 7.2 của Proposal.
-
-**⚠️ Sweep 0.2 — Live Sitemap Link Verification (BẮT BUỘC):**
-- **Sử dụng Link Tuyệt đối:** Toàn bộ internal links trong bài viết BẮT BUỘC phải là URL tuyệt đối (`https://www.dsc.com.vn/...`), tuyệt đối không dùng link file cục bộ (`file:///...` hoặc `.md`) hay relative path (`/kien-thuc/...`).
-- **Xác thực qua sitemap live:** Đọc và đối chiếu link trực tiếp từ sitemap `https://www.dsc.com.vn/sitemap/sitemap_knowledge.xml`. Không tự suy đoán slug của liên kết (ví dụ: `chi-bao-ky-thuat-la-gi` thực tế trong sitemap là `chi-bao-ky-thuat`).
-
-
-1.  **Clarity (Rõ ràng)**: Xóa bỏ câu cú phức tạp, thuật ngữ khó hiểu. Một câu = Một ý chính.
-2.  **Voice & Tone (Giọng văn)**: Đảm bảo đúng POV của chuyên gia DSC, thân thiện nhưng chuyên nghiệp.
-3.  **So What (Thì sao?)**: Biến tính năng thành lợi ích. Luôn trả lời câu hỏi "Tại sao khách hàng phải quan tâm?"
-4.  **Prove It (Chứng minh)**: Thêm số liệu, trích dẫn chuyên gia, bằng chứng thực tế (Statistics & Evidence). Ưu tiên áp dụng Cơ sở dữ liệu chứng khoán tham chiếu 2026 tại `knowledge/3-pipeline/anti-ai-rules.md`.
-5.  **Specificity (Cụ thể)**: Thay thế các từ chung chung (tốt, nhanh, rẻ) bằng con số hoặc ví dụ cụ thể.
-6.  **Heightened Emotion (Cảm xúc)**: Đánh vào nỗi đau (pain points) hoặc khát khao của nhà đầu tư.
-7.  **Zero Risk (Xóa bỏ rào cản)**: Address các lo ngại, thêm các cam kết/hướng dẫn bước tiếp theo rõ ràng.
-
-**⚠️ Self-Audit Gate (BẮT BUỘC sau Sweep 7 — trước khi chuyển sang QA):**
-Chạy toàn bộ Self-Audit Checklist tại Phần 6 của `knowledge/3-pipeline/anti-ai-rules.md`. Mọi điểm trong Checklist Bắt buộc phải đạt. Nếu có điểm fail → sửa ngay, không chuyển sang QA khi còn lỗi tự phát hiện được.
-
----
-
-## 📋 Quality Checklists
-
-### Word-Level Checks
-- **Cắt bỏ**: "Rất", "Thực sự", "Cực kỳ", "Để mà" (dùng "Để").
-- **Thay thế**:
-  | Từ yếu | Từ mạnh/Cụ thể |
-  | :--- | :--- |
-  | Sử dụng | Áp dụng/Triển khai |
-  | Tốt hơn | Tăng X% / Vượt trội |
-  | Nhanh chóng | Ngay lập tức / Trong 5 phút |
-
-### Sentence & Paragraph Checks
-- **Độ dài câu**: Tối đa 30 từ.
-- **Đoạn văn**: 2-3 câu (Mobile-first).
-- **Cấu trúc**: Thông tin quan trọng nhất đặt ở đầu câu/đoạn.
-- **Định dạng Danh sách**: Trước mỗi danh sách phải có câu dẫn dắt có dấu hai chấm `:`. Các nhãn in đậm ở đầu các mục danh sách bắt buộc sử dụng dấu hai chấm `:` thay vì dấu chấm `.` làm ký tự phân tách nhãn và nội dung (Ví dụ: `* **Nhãn**: Nội dung`).
-
----
-
-## 🚦 Success Assertions
-- [ ] Báo cáo Proposal xuất ra đúng template và được duyệt TRƯỚC KHI sửa bài.
-- [ ] Giữ nguyên tuyệt đối nội dung của các Heading được gắn nhãn `[GIỮ NGUYÊN]`.
-- [ ] Giữ lại toàn bộ hình ảnh gốc và chèn placeholder gợi ý ảnh mới theo đúng Proposal.
-- [ ] Nội dung sau khi sửa phải vượt qua bài kiểm tra "So What?" và "Specificity".
-- [ ] Không còn các từ ngữ sáo rỗng vi phạm `anti-ai-rules.md`.
-
----
-
-
-## 📚 References
-- [Content Refresh Checklist](references/content-refresh.md): Quy trình chi tiết để làm mới nội dung cũ.
-- [Plain Vietnamese Alternatives](references/plain-vietnamese-alternatives.md): Bảng tra cứu thay thế ngôn ngữ rườm rà.
-- [Anti-AI Rules](../../../knowledge/3-pipeline/anti-ai-rules.md): Các quy tắc viết chuẩn Anti-AI của dự án.
-
-## ⚠️ Gotchas
-- **Blind Rewriting**: Tuyệt đối không xóa trắng viết lại. Phải giữ "SEO Juice" của bài cũ.
-- **Losing SEO Juice**: Không tự ý đổi URL Slug hoặc H1 nếu không có trong Proposal.
-- **AI-Vibe**: Tránh các kết bài "Tóm lại", "Hy vọng...".
+## References (chỉ mở khi cần)
+- `references/content-refresh.md` — checklist làm mới nội dung cũ.
+- `references/plain-vietnamese-alternatives.md` — bảng thay thế cụm rườm rà.
+- `evals/evals.json` — test case của skill.

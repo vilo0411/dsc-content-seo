@@ -1,0 +1,14 @@
+[
+ {
+  "src": "he-so-icor-la-gi",
+  "target": "gdp-la-gi",
+  "i": 2,
+  "anchor": "GDP"
+ },
+ {
+  "src": "gnp-la-gi",
+  "target": "gdp-la-gi",
+  "i": 14,
+  "anchor": "GDP"
+ }
+]

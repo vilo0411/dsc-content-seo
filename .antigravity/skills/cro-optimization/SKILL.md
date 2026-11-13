@@ -17,7 +17,7 @@ Bài viết SEO tốt mà không có đường dẫn tới hành động thì ch
 ## 🔄 Context Loading (đọc trước khi bắt đầu)
 
 - [ ] `.antigravity/rules/cta-conversion.md` — rule cứng, nguồn sự thật duy nhất về CTA
-- [ ] `knowledge/1-brand/personas.md` — **chỉ section persona của bài**, gồm `### DSC Product Bridge`
+- [ ] Persona của bài — `python scripts/persona.py P<n> --part bridge` · ma trận CTA: `python scripts/persona.py --matrix`
 - [ ] `assets/product-bridge-patterns.md` — bảng tra persona + khuôn đoạn
 - [ ] `assets/banner-templates.md` — HTML template
 - [ ] `references/cro-principles.md` — công thức copy (đọc khi viết, không cần đọc trước)
@@ -42,7 +42,7 @@ Script trả về: số banner, vị trí theo % thân bài, có đoạn dẫn h
 
 1. Đọc `Persona` trong frontmatter. Không có → suy từ intent + độ sâu thuật ngữ của bài, rồi **ghi bổ sung vào frontmatter**.
 2. Tra bảng trong `assets/product-bridge-patterns.md` → lấy Góc dẫn dắt, sản phẩm được nhắc, danh sách Tránh.
-3. Tra cường độ nút theo ma trận CTA của `personas.md`.
+3. Tra cường độ nút theo ma trận CTA của `python scripts/persona.py --matrix`.
 
 **Chốt chặn theo persona** (mục "Giới hạn hiện tại: chỉ có một offer"):
 

@@ -1,0 +1,324 @@
+--- live-before
+
++++ proposed-after
+
+@@ -1,12 +1,69 @@
+
+-Cách mở tài khoản chứng khoán online gồm 5 bước: chọn công ty, đăng ký thông tin, xác thực eKYC, ký hợp đồng điện tử và liên kết ngân hàng. Nhà đầu tư cần CCCD gắn chip, điện thoại hỗ trợ NFC và không mất phí mở tài khoản.
+-Không có điện thoại NFC, bạn vẫn đăng ký tài khoản chứng khoán tại quầy giao dịch trong 3 bước. Bài viết hướng dẫn cả hai cách kèm ảnh thao tác thực tế trên App DSC Trading. Phần cuối là cách xử lý 6 lỗi eKYC và 3 việc cần làm sau khi tài khoản được kích hoạt.
++Cách mở tài khoản chứng khoán online gồm 5 bước: chọn công ty, đăng ký thông tin, xác thực eKYC, ký hợp đồng và nhận tài khoản. Bạn cần giấy tờ còn hiệu lực, số điện thoại nhận OTP và tài khoản ngân hàng đứng tên mình.
++Hướng dẫn dưới đây kèm ảnh thao tác trên App DSC Trading, cách mở tại quầy và xử lý 6 lỗi thường gặp. Với quy trình đọc chip CCCD tại DSC, hãy chuẩn bị điện thoại hỗ trợ NFC trước khi đăng ký.
++Cách mở tài khoản chứng khoán online qua 5 bước
++Quy trình mở tài khoản chứng khoán online có 5 bước chính. Tên nút và phương thức xác thực tùy công ty; phần minh họa dưới đây dùng App DSC Trading.
++Chọn công ty chứng khoán và tải ứng dụng.
++Đăng ký thông tin cá nhân và xác nhận OTP.
++Xác thực danh tính eKYC bằng CCCD và khuôn mặt.
++Ký hợp đồng mở tài khoản điện tử.
++Nhận số tài khoản và liên kết ngân hàng.
++Ảnh minh họa trong phần này chụp từ App DSC Trading. Tên nút có thể khác giữa các ứng dụng.
++Bước 1: Chọn công ty chứng khoán và tải ứng dụng
++Trước khi tải ứng dụng, kiểm tra tên công ty và đường dẫn đăng ký trên website chính thức. Chỉ so phí khi đã biết tài khoản thuộc gói tự giao dịch hay có môi giới hỗ trợ tư vấn.
++Biểu phí DSC
++áp dụng từ 20/08/2025 phân biệt nhóm phí 0,1% và tài khoản do Môi giới quản lý. Với Môi giới, giao dịch dưới 100 triệu đồng/ngày áp dụng 0,3%; hãy xác nhận nhóm tài khoản trước khi ký.
++Ví dụ minh họa, một lệnh khớp 10 triệu đồng chịu phí 10.000 đồng ở mức 0,1%, hoặc 30.000 đồng ở mức 0,3%. Hai mức thuộc điều kiện dịch vụ khác nhau, không phải lựa chọn phí cho mọi tài khoản.
++Nếu còn phân vân, bài
++nên mở tài khoản chứng khoán ở đâu
++so sánh 7 công ty theo phí, ứng dụng và dịch vụ hỗ trợ.
++Kiểm tra trước khi mở
++Bạn cần biết điều gì?
++Hành động
++Kênh đăng ký
++Website và ứng dụng có thuộc công ty chứng khoán không?
++Tải từ liên kết trên website chính thức.
++Gói dịch vụ
++Tự đặt lệnh hay cần Môi giới 1:1 hỗ trợ tư vấn đầu tư?
++Chọn gói phù hợp trước khi ký.
++Chi phí sử dụng
++Phí giao dịch, lưu ký và điều kiện ưu đãi áp dụng thế nào?
++Đọc biểu phí của đúng gói đăng ký.
++Ứng dụng tải ở bước này cũng là nơi bạn đặt lệnh hằng ngày, nên chọn
++app đầu tư chứng khoán
++có bảng giá real-time và Smart OTP.
++Bước 2: Đăng ký thông tin cá nhân và xác nhận OTP
++Mở ứng dụng chính thức, chọn
++Mở tài khoản
++rồi nhập họ tên có dấu, số giấy tờ, điện thoại và email. Dùng thông tin của chính bạn để thuận tiện nhận OTP và đối chiếu hồ sơ.
++Form đăng ký trên website DSC yêu cầu mật khẩu tối thiểu 8 ký tự, có chữ hoa, chữ thường, số và ký tự đặc biệt. Không dùng lại mật khẩu ngân hàng.
++Nhập OTP trong thời hạn ứng dụng hiển thị. Nếu mã hết hạn, kiểm tra số điện thoại rồi yêu cầu gửi lại; không chuyển mã cho người khác.
++Form đăng ký DSC có bước chọn số tài khoản. Kiểm tra gói trước khi tiếp tục.
++Bước 3: Xác thực danh tính eKYC
++eKYC là cách công ty chứng khoán xác minh bạn là ai mà không cần gặp trực tiếp. Bạn cần hoàn tất eKYC trước khi giao dịch.
++NFC là tính năng đọc chip trên giấy tờ; eKYC là quy trình xác minh danh tính trực tuyến. Công ty khác có thể dùng phương thức xác thực khác, nên hãy đọc yêu cầu thiết bị trước khi đăng ký.
++Ảnh thao tác DSC dưới đây minh họa quy trình đọc chip CCCD bằng NFC. Bạn làm theo từng yêu cầu trên ứng dụng; thứ tự kiểm tra giấy tờ và khuôn mặt tùy phiên bản.
++Quét mã QR:
++Đưa mã QR ở mặt trước CCCD vào khung camera để hệ thống tự điền thông tin cá nhân.
++Đọc chip NFC:
++Đặt thẻ sát vị trí đọc chip của điện thoại và giữ yên tới khi ứng dụng báo hoàn tất.
++Chụp CCCD và khuôn mặt:
++Chụp rõ 2 mặt thẻ, sau đó quay trái, quay phải và nhìn thẳng camera theo hướng dẫn.
++Ảnh CCCD cần rõ, không lóa. Bỏ kính, khẩu trang khi quét mặt.
++Bước 4: Ký hợp đồng mở tài khoản điện tử
++Bạn kiểm tra lại thông tin hiển thị, đọc các điều khoản rồi nhập OTP để ký. Bản
++hợp đồng mở tài khoản chứng khoán
++điện tử có giá trị pháp lý như bản giấy. Hợp đồng ghi rõ biểu phí, quyền và nghĩa vụ của hai bên, nên bạn hãy đọc kỹ phần phí giao dịch trước khi xác nhận.
++Sau khi ký bằng OTP, kiểm tra email xác nhận và yêu cầu hồ sơ bổ sung của công ty chứng khoán. Lưu hợp đồng và biểu phí.
++Bước 5: Nhận số tài khoản và liên kết ngân hàng
++Kiểm tra email hoặc SMS cấp tài khoản. Bạn đăng nhập, đổi mật khẩu ngay lần đầu và liên kết tài khoản ngân hàng đứng tên chính mình. Đây cũng là tài khoản nhận tiền khi bạn rút.
++Form DSC tách điền thông tin, xác thực OTP và chọn số tài khoản; bước eKYC và hợp đồng vẫn cần hoàn tất. Kiểm tra kích hoạt trước khi nạp.
+ Quy định tạo tài khoản chứng khoán
+-Trước khi tạo tài khoản chứng khoán, nhà đầu tư cần nắm 3 quy định: độ tuổi, giấy tờ và số tài khoản được phép mở. Các quy định này áp dụng chung cho mọi công ty chứng khoán.
++Hướng dẫn này dành cho nhà đầu tư cá nhân trong nước tự mở tài khoản chứng khoán. Trước khi đăng ký, kiểm tra 3 nhóm thông tin: độ tuổi, giấy tờ và số tài khoản đã mở.
+ Bao nhiêu tuổi được mở tài khoản chứng khoán?
+-Công dân Việt Nam từ đủ 18 tuổi, có năng lực hành vi dân sự đầy đủ được tự mở tài khoản chứng khoán. Người từ đủ 15 đến dưới 18 tuổi vẫn mở được. Điều kiện là có văn bản đồng ý của người đại diện theo pháp luật như cha, mẹ hoặc người giám hộ.
+-Trường hợp dưới 18 tuổi cần làm hồ sơ tại quầy cùng người đại diện. Tổ chức cần giấy chứng nhận đăng ký doanh nghiệp, quyết định bổ nhiệm giám đốc và kế toán trưởng, cùng CCCD của người đại diện theo pháp luật.
++Người từ đủ 18 tuổi có năng lực hành vi dân sự đầy đủ được tự đăng ký tài khoản chứng khoán. Nếu chưa đủ 18 tuổi, liên hệ công ty để kiểm tra điều kiện tiếp nhận và hồ sơ của người đại diện.
++Nhà đầu tư nước ngoài và tổ chức có bộ hồ sơ riêng. Không dùng quy trình eKYC dành cho cá nhân trong nước để thay thế các thủ tục này.
+ Mở tài khoản chứng khoán cần giấy tờ gì?
+-Nhà đầu tư cá nhân cần CCCD gắn chip, số điện thoại và tài khoản ngân hàng đứng tên chính mình. Bảng dưới đây tổng hợp 4 yêu cầu cụ thể.
++Với quy trình DSC minh họa trong bài, bạn chuẩn bị giấy tờ gắn chip và điện thoại hỗ trợ NFC. Kiểm tra 4 hạng mục sau trước khi bắt đầu.
+ Hạng mục
+ Yêu cầu
+ Lưu ý
+@@ -17,118 +74,52 @@
+
+ Có camera và hỗ trợ NFC
+ NFC dùng để đọc chip trên CCCD
+ Số điện thoại và email
+-Đứng tên chính chủ
++Dùng số điện thoại của bạn và email đang truy cập được
+ Dùng để nhận OTP và khôi phục mật khẩu
+ Tài khoản ngân hàng
+ Đứng tên chính mình
+ Tên chủ tài khoản phải trùng với tên trên CCCD
+-Thông tin bạn khai báo sẽ được đối chiếu với Cơ sở dữ liệu quốc gia về dân cư. Nếu vừa đổi CCCD, hãy chắc chắn thẻ mới đã được cập nhật trước khi đăng ký. Thiếu NFC thì ra quầy.
++Thông tin bạn khai báo phải khớp giấy tờ dùng để xác thực. Nếu vừa đổi giấy tờ hoặc không có thiết bị phù hợp, hỏi DSC cách hoàn thiện hồ sơ trước khi đăng ký.
+ Mỗi người được mở bao nhiêu tài khoản chứng khoán?
+-Mỗi nhà đầu tư chỉ được mở 1 tài khoản tại mỗi công ty chứng khoán, nhưng có thể mở ở nhiều công ty khác nhau. Người có chứng chỉ hành nghề chứng khoán chỉ được mở 1 tài khoản tại chính công ty nơi mình làm việc. Quy định chi tiết có trong bài
++Bạn được mở tài khoản tại nhiều công ty chứng khoán; từng loại tài khoản có điều kiện riêng. Chi tiết có trong bài
+ một người được mở bao nhiêu tài khoản chứng khoán
+ .
+-Cách mở tài khoản chứng khoán online qua 5 bước
+-Tháng 8/2026, Việt Nam có gần 13,66 triệu tài khoản chứng khoán, trong đó hơn 13,58 triệu thuộc nhà đầu tư cá nhân trong nước (theo VSDC). Phần lớn nhà đầu tư mới mở tài khoản theo cùng một quy trình 5 bước.
+-Chọn công ty chứng khoán và tải ứng dụng.
+-Đăng ký thông tin cá nhân và xác nhận OTP.
+-Xác thực danh tính eKYC bằng CCCD và khuôn mặt.
+-Ký hợp đồng mở tài khoản điện tử.
+-Nhận số tài khoản và liên kết ngân hàng.
+-Ảnh minh họa trong phần này chụp từ App DSC Trading. Giao diện ở công ty khác có thể khác, nhưng thứ tự các bước giống nhau.
+-Bước 1: Chọn công ty chứng khoán và tải ứng dụng
+-Chọn công ty có giấy phép của Ủy ban Chứng khoán Nhà nước (UBCKNN), tra trên ssc.gov.vn. Phí giao dịch cổ phiếu thường từ 0,1–0,4% giá trị lệnh tùy công ty (CafeF, tháng 8/2025). Chọn xong, bạn tải ứng dụng từ App Store, CH Play hoặc website chính thức.
+-Nếu còn phân vân, bài
+-nên mở tài khoản chứng khoán ở đâu
+-so sánh 7 công ty theo phí, ứng dụng và dịch vụ hỗ trợ.
+-Ứng dụng tải ở bước này cũng là nơi bạn đặt lệnh hằng ngày, nên chọn
+-app đầu tư chứng khoán
+-có bảng giá real-time và Smart OTP.
+-Bước 2: Đăng ký thông tin cá nhân và xác nhận OTP
+-Mở ứng dụng, chọn
+-Mở tài khoản
+-rồi nhập họ tên có dấu theo CCCD, số CCCD, số điện thoại, email và mật khẩu đăng nhập. Dùng số điện thoại chính, vì mọi OTP đặt lệnh và rút tiền đều gửi về đây.
+-Hệ thống gửi mã OTP gồm 6 chữ số về số điện thoại đã khai báo. Tại DSC, bạn nhập mã trong vòng 60 giây. Hết giờ thì bấm gửi lại.
+-DSC cho phép chọn số tài khoản theo sở thích ở bước này. Có mã nhân viên môi giới thì nhập luôn để được hỗ trợ từ đầu.
+-Bước 3: Xác thực danh tính eKYC
+-eKYC là cách công ty chứng khoán xác minh bạn là ai mà không cần gặp trực tiếp. Thị trường hiện có 2 phương thức xác thực phổ biến.
+-Phương thức
+-Cách làm
+-Yêu cầu
+-Áp dụng tại
+-Quét chip CCCD (NFC)
+-Chụp 2 mặt CCCD, quét khuôn mặt, áp CCCD vào lưng điện thoại
+-Điện thoại có NFC
+-Phần lớn công ty chứng khoán, gồm DSC
+-Chia sẻ qua VNeID
+-Nhập số CCCD, mở ứng dụng VNeID và xác nhận chia sẻ
+-Tài khoản VNeID định danh mức 2
+-Một số công ty chứng khoán, ví dụ VCBS
+-Chứng khoán DSC xác thực bằng quét chip NFC và chưa hỗ trợ phương thức VNeID. Quy trình quét chip trên App DSC Trading gồm 3 thao tác nối tiếp nhau.
+-Quét mã QR:
+-Đưa mã QR ở mặt trước CCCD vào khung camera để hệ thống tự điền thông tin cá nhân.
+-Đọc chip NFC:
+-Áp mặt trước CCCD sát phần lưng phía trên điện thoại, giữ yên 3–5 giây tới khi ứng dụng báo thành công.
+-Chụp CCCD và khuôn mặt:
+-Chụp rõ 2 mặt thẻ, sau đó quay trái, quay phải và nhìn thẳng camera theo hướng dẫn.
+-Không chụp ảnh mờ, lệch góc hay bị lóa. Bỏ kính, khẩu trang khi quét mặt.
+-Bước 4: Ký hợp đồng mở tài khoản điện tử
+-Bạn kiểm tra lại thông tin hiển thị, đọc các điều khoản rồi nhập OTP để ký. Bản
+-hợp đồng mở tài khoản chứng khoán
+-điện tử có giá trị pháp lý như bản giấy. Hợp đồng ghi rõ biểu phí, quyền và nghĩa vụ của hai bên, nên bạn hãy đọc kỹ phần phí giao dịch trước khi xác nhận.
+-Một số công ty yêu cầu gửi thêm hợp đồng giấy trong vài tuần sau khi mở online, nếu không tài khoản có thể bị chặn đặt lệnh. Hãy đọc kỹ email xác nhận.
+-Bước 5: Nhận số tài khoản và liên kết ngân hàng
+-Số tài khoản và mật khẩu được gửi về email hoặc tin nhắn. Bạn đăng nhập, đổi mật khẩu ngay lần đầu và liên kết tài khoản ngân hàng đứng tên chính mình. Đây cũng là tài khoản nhận tiền khi bạn rút.
+-Thời gian kích hoạt tùy công ty, từ vài phút đến 1–2 ngày làm việc. Tại DSC, tài khoản eKYC kích hoạt ngay sau khi ký hợp đồng
+ Cách mở tài khoản chứng khoán trực tiếp tại quầy
+-Mở tại quầy chậm hơn online nhưng không đòi hỏi điện thoại NFC. Bảng dưới đây so sánh 2 cách để bạn chọn.
+-Tiêu chí
+-Mở online (eKYC)
+-Mở tại quầy
+-Thời gian
+-3–10 phút, làm ở bất kỳ đâu
+-15–30 phút, cộng thời gian di chuyển
+-Giấy tờ
+-CCCD gắn chip
+-CCCD gắn chip bản gốc hoặc hộ chiếu
+-Thiết bị
+-Điện thoại có camera và NFC
+-Không cần
+-Hợp đồng
+-Ký điện tử bằng OTP
+-Ký bản giấy tại quầy
+-Phù hợp với
+-Cá nhân từ đủ 18 tuổi
+-Người dưới 18 tuổi, tổ chức, người nước ngoài, máy không có NFC
+-Nếu chọn mở tại quầy, bạn thực hiện 3 bước sau. Người dưới 18 tuổi cần đi cùng cha, mẹ hoặc người giám hộ.
++Mở tài khoản tại quầy là lựa chọn khi bạn cần hỗ trợ kiểm tra hồ sơ trực tiếp. Gọi DSC xác nhận hồ sơ trước.
++Tại quầy, bạn làm 3 việc: DSC kiểm tra hồ sơ đặc thù trước.
+ Chuẩn bị hồ sơ
+ : Mang CCCD gắn chip bản gốc còn hạn và thông tin tài khoản ngân hàng đứng tên bạn; nhà đầu tư nước ngoài mang hộ chiếu.
+ Đến văn phòng giao dịch
+ : Chuyên viên đối chiếu giấy tờ và hướng dẫn bạn điền mẫu đăng ký mở tài khoản.
+ Ký hợp đồng và nhận tài khoản
+ : Bạn ký hợp đồng bản giấy, số tài khoản và mật khẩu được gửi qua email hoặc tin nhắn.
+-Tại DSC, bạn mang CCCD gốc đến một trong 4 điểm giao dịch dưới đây. Hãy gọi Hotline DSC để xác nhận giờ làm việc trước khi đến.
+-Trụ sở chính Hà Nội
+-: Tầng 2, tòa nhà Thành Công, 80 Dịch Vọng Hậu, Cầu Giấy, Hà Nội.
+-Phòng giao dịch Hàm Long
+-: Số 14–16 Hàm Long, Hoàn Kiếm, Hà Nội.
+-Chi nhánh Đà Nẵng
+-: Tầng 3, số 130 Điện Biên Phủ, Thanh Khê, Đà Nẵng.
+-Chi nhánh TP.HCM
+-: Số 14 Nguyễn Văn Trỗi, Phú Nhuận, TP.HCM.
++Đối chiếu địa chỉ và kênh hỗ trợ trên
++trang liên hệ DSC
++trước khi đi. Không chuyển giấy tờ hoặc tiền cho người tự nhận hỗ trợ ngoài kênh chính thức.
+ Cách lập tài khoản chứng khoán tại DSC
+-Chứng khoán DSC cho phép mở tài khoản eKYC trên App DSC Trading, miễn phí mở và duy trì tài khoản. Số tài khoản có dạng 024Cxxxxxx và được kích hoạt ngay sau khi hoàn tất. Cả quy trình mất 3 phút.
++Chứng khoán DSC cho phép đăng ký online qua App DSC Trading hoặc website. Hoàn tất eKYC rồi kiểm tra kích hoạt.
+ Mở tài khoản trên App DSC Trading
+-Trên App DSC Trading, bạn làm đúng 5 bước như phần trên với điện thoại có NFC. Sau khi hoàn tất, bạn nhận số tài khoản 024Cxxxxxx gồm 2 tiểu khoản. Đuôi 1 dùng để giao dịch thường, đuôi 6 cho giao dịch ký quỹ (vay thêm tiền để mua cổ phiếu).
+-Người mới nên dùng tiểu khoản đuôi 1 cho tới khi hiểu rõ rủi ro của việc vay ký quỹ. Mỗi tài khoản mới tại DSC được gán một chuyên gia Môi giới 1:1 hỗ trợ tư vấn đầu tư ngay từ lệnh mua đầu tiên. Tiểu khoản ký quỹ chỉ là một trong
++Trên App DSC Trading, bạn thực hiện 5 bước đã minh họa phía trên. Tài khoản DSC có dạng 024Cxxxxxx; chọn tiểu khoản đuôi 1 để giao dịch bằng tiền của bạn, không vay ký quỹ.
++Với DSC, hãy xác nhận 3 nội dung trước khi sử dụng dịch vụ:
++Tài khoản:
++Kiểm tra trạng thái eKYC và hợp đồng.
++Chi phí:
++Đối chiếu nhóm tài khoản trong biểu phí.
++Hỗ trợ:
++Xác nhận Môi giới 1:1 hỗ trợ tư vấn đầu tư theo gói đăng ký.
++Tiểu khoản đuôi 6 dùng cho giao dịch ký quỹ; xem
+ các loại tài khoản chứng khoán
+-; ngoài ra còn tài khoản chứng chỉ quỹ và tài khoản của tổ chức.
++trước khi lựa chọn. Với DSC, bạn đăng ký eKYC online và hỏi về gói hỗ trợ trước lệnh đầu tiên.
++Đăng ký DSC sau khi đã kiểm tra giấy tờ
++App DSC Trading • Xác thực eKYC • Kiểm tra gói hỗ trợ trước khi giao dịch
++Mở tài khoản DSC
+ Mở tài khoản trên website DSC
+-Nếu quen thao tác trên máy tính, bạn vào trang
++Nếu thao tác trên máy tính, bạn vào trang
+ mở tài khoản DSC online
+-của DSC và điền thông tin cá nhân. Đến bước eKYC, website hiển thị mã QR để bạn quét bằng điện thoại. Bước đọc chip NFC vẫn thực hiện trên điện thoại.
+-Các bước còn lại giống trên ứng dụng. Có tài khoản rồi, bạn đăng nhập App DSC Trading để đặt lệnh.
++và điền thông tin đăng ký. Đến bước xác thực, làm theo hướng dẫn chuyển tiếp sang thiết bị phù hợp.
++Làm theo hướng dẫn trên ứng dụng. Đăng nhập App DSC Trading.
+ 6 lỗi thường gặp khi mở tài khoản chứng khoán online và cách xử lý
+-Lỗi phổ biến nhất là điện thoại không đọc được chip CCCD, chủ yếu do ốp lưng dày hoặc đặt thẻ lệch ăng-ten NFC. Tháo ốp lưng trước tiên. Bảng dưới đây tổng hợp 6 lỗi thường gặp và cách xử lý.
++Nếu điện thoại chưa đọc được chip CCCD, kiểm tra NFC, ốp lưng và vị trí đặt thẻ trước khi thử lại. Bảng dưới đây nêu 6 tình huống và bước kiểm tra tương ứng.
+ Lỗi
+ Nguyên nhân thường gặp
+ Cách xử lý
+@@ -137,20 +128,20 @@
+
+ Tháo ốp, bật NFC, di chuyển thẻ chậm quanh vùng camera hoặc giữa lưng máy
+ Điện thoại không có NFC
+ Dòng máy đời cũ hoặc giá rẻ
+-Mượn điện thoại có NFC hoặc ra quầy; DSC chưa hỗ trợ xác thực qua VNeID
++Dùng thiết bị hỗ trợ NFC do bạn trực tiếp thao tác, hoặc liên hệ DSC để được hướng dẫn tại quầy.
+ Nhận diện khuôn mặt thất bại
+ Thiếu sáng, ngược sáng, đeo kính hoặc khẩu trang
+ Đứng nơi đủ sáng, nhìn thẳng camera, bỏ kính và khẩu trang
+ Thông tin CCCD không khớp
+ Vừa đổi CCCD, dữ liệu dân cư chưa cập nhật
+-Chờ dữ liệu cập nhật hoặc liên hệ công an nơi cấp thẻ
++Kiểm tra giấy tờ đang dùng, rồi liên hệ DSC để xác định thông tin cần bổ sung.
+ Không nhận được OTP
+ Nhập sai số, chặn tin nhắn, sóng yếu
+ Kiểm tra lại số, bỏ chặn tin nhắn, chờ ít phút rồi bấm gửi lại
+ Số điện thoại không chính chủ
+ Thuê bao chưa đứng tên bạn
+ Chuẩn hóa thông tin thuê bao tại nhà mạng trước khi đăng ký
+-Đã thử các cách trên mà vẫn chưa xong? Bạn liên hệ Hotline hoặc chat trực tiếp trên App DSC Trading. Chuyên viên DSC sẽ kiểm tra hồ sơ và hướng dẫn bước tiếp theo.
++Nếu chưa hoàn tất sau khi kiểm tra, dừng thao tác và liên hệ DSC qua kênh chính thức. Mô tả bước đang lỗi; không gửi mật khẩu, mã PIN hoặc OTP.
+ Việc cần làm sau khi mở tài khoản chứng khoán
+ Sau khi tài khoản được kích hoạt, bạn cần nạp tiền và giữ an toàn tài khoản trước khi đặt lệnh đầu tiên.
+ Nạp tiền vào tài khoản chứng khoán
+@@ -161,12 +152,13 @@
+
+ : Ví dụ tài khoản 024C123456 thì lấy 123456.
+ Số đuôi tiểu khoản
+ : Số 1 cho giao dịch thường.
+-Với tài khoản 024C123456 và tiểu khoản thường, số tài khoản thụ hưởng là 9633691234561, tên thụ hưởng là tên chủ tài khoản chứng khoán. DSC cũng kết nối trực tiếp với Vietcombank, VIB, Techcombank và Vietinbank.
+-Có tiền trong tài khoản, bạn đặt lệnh trong
++Mã định danh 963369 là kênh nộp tiền DSC nêu trong hướng dẫn vận hành. Trước khi chuyển, sao chép thông tin thụ hưởng từ tài khoản của bạn và đối chiếu tên, số tài khoản, tiểu khoản.
++Khi tiền đã về, bạn đặt lệnh trong
+ giờ giao dịch chứng khoán
+-từ thứ Hai đến thứ Sáu. Trên HOSE, mỗi lệnh tối thiểu 100 cổ phiếu; các bước đặt lệnh có trong bài
++. Lô chẵn là 100 cổ phiếu; giao dịch 1–99 cổ phiếu thực hiện theo cơ chế lô lẻ.
++Các bước chọn mã và đặt lệnh có trong bài
+ cách mua cổ phiếu online cho người mới bắt đầu
+-.
++. Kiểm tra giá và khối lượng lệnh.
+ Bảo mật tài khoản giao dịch
+ Tài khoản chứng khoán gắn trực tiếp với tiền của bạn, nên cần giữ 2 nguyên tắc sau.
+ Không chia sẻ OTP
+@@ -176,14 +168,17 @@
+
+ Nếu vẫn lo rủi ro lộ thông tin, bạn có thể đọc thêm phân tích
+ mở tài khoản chứng khoán online có an toàn không
+ .
+-Câu hỏi thường gặp về tạo tài khoản chứng khoán
++Câu hỏi thường gặp khi mở tài khoản chứng khoán
+ Mở tài khoản chứng khoán có mất phí không?
+-DSC miễn phí mở và duy trì tài khoản chứng khoán. Bạn chỉ trả phí và thuế khi lệnh mua hoặc bán khớp thành công. Chi tiết từng khoản có trong bài
++Mở tài khoản DSC không đồng nghĩa mọi dịch vụ sử dụng đều miễn phí. Phí giao dịch, lưu ký và các khoản phát sinh được công bố trong
++biểu phí DSC
++.
++Phân biệt từng khoản tại bài
+ mở tài khoản chứng khoán có mất phí không
+-.
++. Đối chiếu phí của đúng gói.
+ Mở tài khoản chứng khoán vào thứ 7, Chủ nhật được không?
+-Được. Bạn đăng ký online qua eKYC vào bất kỳ ngày nào trong tuần. Tại DSC, tài khoản kích hoạt ngay sau khi ký hợp đồng điện tử, nhưng lệnh mua bán chỉ khớp trong giờ giao dịch từ thứ Hai đến thứ Sáu.
+-Ngoài giờ giao dịch, lệnh còn phải đúng lô 100 cổ phiếu và nằm trong biên độ giá, theo
++Bạn có thể gửi đăng ký online ngoài giờ hành chính. Thời điểm kích hoạt phụ thuộc việc hoàn tất hồ sơ và xác nhận của công ty; giao dịch tuân theo lịch của từng thị trường.
++Khi đặt lệnh, kiểm tra khối lượng lô chẵn hoặc lô lẻ và biên độ giá. Các điều kiện có trong
+ quy định giao dịch chứng khoán
+ của từng sàn.
+ Tạo tài khoản chứng khoán xong có cần mở thêm tài khoản lưu ký không?
+@@ -192,13 +187,24 @@
+
+ phí lưu ký chứng khoán
+ hằng tháng, tính theo số lượng chứng khoán bạn đang nắm giữ.
+ Có mở tài khoản chứng khoán trên app ngân hàng được không?
+-Một số ngân hàng có tích hợp chức năng mở tài khoản tại công ty chứng khoán cùng hệ sinh thái, ví dụ Vietcombank với VCBS. Về bản chất, tài khoản vẫn được mở tại công ty chứng khoán. Với DSC, bạn mở trên App DSC Trading và nạp tiền từ ngân hàng qua Mã định danh 963369.
++Một số ngân hàng có tích hợp chức năng mở tài khoản tại công ty chứng khoán cùng hệ sinh thái, ví dụ Vietcombank với VCBS. Tài khoản thuộc công ty chứng khoán. Với DSC, bạn mở trên App DSC Trading và nạp tiền từ ngân hàng qua Mã định danh 963369.
+ Tương tự, chứng chỉ quỹ mở có thể mua qua tài khoản chứng khoán hoặc
+ mở tài khoản chứng chỉ quỹ
+ trực tiếp tại công ty quản lý quỹ.
++Mở tài khoản chứng khoán ở đâu là tốt nhất?
++Nơi phù hợp phụ thuộc việc bạn tự giao dịch hay cần Môi giới 1:1 hỗ trợ tư vấn. So cùng gói dịch vụ và điều kiện phí trong bài
++nên mở tài khoản chứng khoán ở đâu
++.
++Mở tài khoản chứng khoán có bị gì không?
++Đăng ký không tự tạo giao dịch. Bạn cần bảo vệ thông tin và đọc điều kiện phí; rủi ro đầu tư phát sinh khi giao dịch hoặc sử dụng dịch vụ vay.
++Quy định về mở tài khoản chứng khoán là gì?
++Hồ sơ phải khớp giấy tờ xác thực, đối tượng đăng ký và điều kiện của công ty chứng khoán. Kiểm tra hợp đồng trước khi ký; tổ chức hoặc nhà đầu tư nước ngoài có thủ tục riêng.
+ Mở tài khoản và hỏi chuyên gia trước lệnh đầu tiên
+-Bước tiếp theo của bạn chỉ mất 3 phút:
++Khi đã chuẩn bị giấy tờ, bạn đăng ký tại trang
+ mở tài khoản chứng khoán DSC online
+-trên App DSC Trading. Trước khi đặt lệnh đầu tiên, hãy nhắn chuyên gia Môi giới 1:1 để được tư vấn chọn cổ phiếu phù hợp với số vốn của bạn.
++. Nếu cần Môi giới 1:1 hỗ trợ tư vấn đầu tư, xác nhận gói dịch vụ trước khi đặt lệnh đầu tiên.
++Hoàn tất đăng ký, kiểm tra trạng thái trước lệnh đầu tiên
++Giữ OTP cho riêng bạn • Xem điều kiện phí • Chọn hỗ trợ tư vấn theo nhu cầu
++Đăng ký tài khoản DSC
+ Tuyên bố miễn trừ trách nhiệm
+ : Thông tin trong bài viết chỉ mang tính chất tham khảo, không cấu thành lời khuyên đầu tư. Nhà đầu tư tự chịu trách nhiệm với quyết định giao dịch của mình.

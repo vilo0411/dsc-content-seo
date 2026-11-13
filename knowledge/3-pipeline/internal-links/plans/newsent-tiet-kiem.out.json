@@ -1,0 +1,216 @@
+[
+ {
+  "src": "lai-suat-ngan-hang-dong-a",
+  "target": "co-tien-nen-dau-tu-gi-luc-nay",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "lai-suat-gui-tiet-kiem-ngan-hang-lpbank",
+  "target": "co-tien-nen-dau-tu-gi-luc-nay",
+  "i": 48,
+  "op": "append",
+  "sentence": "Bài toán [phân bổ tiền nhàn rỗi] vì thế nên bắt đầu từ việc tách phần tiền cần an toàn và phần tiền chịu được biến động.",
+  "why": "pillar · đoạn i=48"
+ },
+ {
+  "src": "lai-suat-gui-tiet-kiem-ngan-hang-agribank",
+  "target": "co-tien-nen-dau-tu-gi-luc-nay",
+  "i": 43,
+  "op": "append",
+  "sentence": "Vì vậy, trước khi chọn kỳ hạn dài, người gửi nên [phân bổ tiền nhàn rỗi]: phần nào cần rút bất cứ lúc nào, phần nào để yên được.",
+  "why": "pillar · đoạn i=43"
+ },
+ {
+  "src": "lai-suat-gui-tiet-kiem-ngan-hang-mb-bank",
+  "target": "co-tien-nen-dau-tu-gi-luc-nay",
+  "i": 42,
+  "op": "append",
+  "sentence": "Chứng khoán chỉ là một trong các đáp án cho câu hỏi [tiền nhàn rỗi nên đầu tư vào đâu], bên cạnh vàng, trái phiếu và chứng chỉ quỹ.",
+  "why": "pillar · đoạn i=42"
+ },
+ {
+  "src": "lai-suat-gui-tiet-kiem-ngan-hang-mb-bank",
+  "target": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+  "i": 18,
+  "op": "append",
+  "sentence": "Để biết mức này cao hay thấp, hãy đặt cạnh [lãi suất tiết kiệm các ngân hàng] khác ở cùng kỳ hạn.",
+  "why": "hub · đoạn i=18"
+ },
+ {
+  "src": "lai-suat-gui-tiet-kiem-ngan-hang-sacombank",
+  "target": "co-tien-nen-dau-tu-gi-luc-nay",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "lai-suat-gui-tiet-kiem-ngan-hang-vietinbank",
+  "target": "co-tien-nen-dau-tu-gi-luc-nay",
+  "i": 45,
+  "op": "append",
+  "sentence": "Tỷ lệ cụ thể tùy vào cách từng người trả lời câu hỏi [có tiền nên đầu tư vào đâu]: thời hạn, mục tiêu và mức chịu rủi ro.",
+  "why": "pillar · đoạn i=45"
+ },
+ {
+  "src": "lai-suat-gui-tiet-kiem-ngan-hang-vpbank",
+  "target": "co-tien-nen-dau-tu-gi-luc-nay",
+  "i": 37,
+  "op": "append",
+  "sentence": "Khi đó, câu hỏi [có tiền nên đầu tư gì] cần được trả lời trước khi chọn kỳ hạn gửi.",
+  "why": "pillar · đoạn i=37"
+ },
+ {
+  "src": "lai-suat-gui-tiet-kiem-ngan-hang-vietcombank",
+  "target": "co-tien-nen-dau-tu-gi-luc-nay",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "lai-suat-gui-tiet-kiem-ngan-hang-acb",
+  "target": "co-tien-nen-dau-tu-gi-luc-nay",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "lai-suat-gui-tiet-kiem-ngan-hang-shb",
+  "target": "co-tien-nen-dau-tu-gi-luc-nay",
+  "i": 61,
+  "op": "append",
+  "sentence": "Vì vậy, việc [phân bổ tiền nhàn rỗi] nên làm trước khi gửi: chỉ khóa kỳ hạn dài với phần tiền chắc chắn chưa dùng tới.",
+  "why": "pillar · đoạn i=61"
+ },
+ {
+  "src": "lai-suat-gui-tiet-kiem-ngan-hang-bidv",
+  "target": "co-tien-nen-dau-tu-gi-luc-nay",
+  "i": 56,
+  "op": "append",
+  "sentence": "Đây là lúc người gửi tiền bắt đầu hỏi [có tiền nên đầu tư vào đâu] ngoài sổ tiết kiệm.",
+  "why": "pillar · đoạn i=56"
+ },
+ {
+  "src": "lai-suat-gui-tiet-kiem-ngan-hang-vib",
+  "target": "co-tien-nen-dau-tu-gi-luc-nay",
+  "i": 48,
+  "op": "append",
+  "sentence": "Việc cần làm là xác định [nên đầu tư gì thời điểm này] với phần tiền chưa cần dùng trong vài năm tới.",
+  "why": "pillar · đoạn i=48"
+ },
+ {
+  "src": "co-1-ty-nen-gui-ngan-hang-nao",
+  "target": "co-tien-nen-dau-tu-gi-luc-nay",
+  "i": 64,
+  "op": "append",
+  "sentence": "Vì vậy, với phần vốn dài hạn, câu hỏi [có tiền nên đầu tư gì] ngoài tiết kiệm đáng được đặt ra song song.",
+  "why": "pillar · đoạn i=64"
+ },
+ {
+  "src": "co-1-ty-nen-gui-ngan-hang-nao",
+  "target": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+  "i": 3,
+  "op": "append",
+  "sentence": "Bảng [so sánh lãi suất tiết kiệm] theo từng ngân hàng cho thấy rõ khoảng cách này ở mỗi kỳ hạn.",
+  "why": "hub · đoạn i=3"
+ },
+ {
+  "src": "lai-kep-trong-dau-tu-chung-khoan-la-gi-cach-tan-dung-lai-kep-de-dau-tu-sinh-loi",
+  "target": "co-tien-nen-dau-tu-gi-luc-nay",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+  "target": "co-tien-nen-dau-tu-gi-luc-nay",
+  "i": 84,
+  "op": "append",
+  "sentence": "Phần còn lại đó đi vào kênh nào là nội dung của câu hỏi [có tiền nên đầu tư gì] trong giai đoạn hiện nay.",
+  "why": "pillar · đoạn i=84"
+ },
+ {
+  "src": "lai-suat-huy-dong-la-gi",
+  "target": "co-tien-nen-dau-tu-gi-luc-nay",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "lai-suat-huy-dong-la-gi",
+  "target": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+  "i": 71,
+  "op": "append",
+  "sentence": "Mức cụ thể của từng nhà băng nằm trong bảng [lãi suất tiết kiệm các ngân hàng] cập nhật theo tháng.",
+  "why": "hub · đoạn i=71"
+ },
+ {
+  "src": "dau-tu-gi-voi-100-trieu-5-goi-y-dau-tu-sinh-loi-cao-an-toan",
+  "target": "co-tien-nen-dau-tu-gi-luc-nay",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "100-trieu-gui-ngan-hang-lai-bao-nhieu-1-thang",
+  "target": "co-tien-nen-dau-tu-gi-luc-nay",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "100-trieu-gui-ngan-hang-lai-bao-nhieu-1-thang",
+  "target": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+  "i": 39,
+  "op": "append",
+  "sentence": "Bảng [lãi suất tiết kiệm các ngân hàng] cho biết nhà băng nào đang ở đầu trên của khoảng chênh lệch này.",
+  "why": "hub · đoạn i=39"
+ },
+ {
+  "src": "50-trieu-nen-gui-tiet-kiem-ngan-hang-nao",
+  "target": "co-tien-nen-dau-tu-gi-luc-nay",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "50-trieu-nen-gui-tiet-kiem-ngan-hang-nao",
+  "target": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+  "i": 3,
+  "op": "append",
+  "sentence": "Số liệu đầy đủ hơn nằm trong bảng [so sánh lãi suất tiết kiệm] của toàn hệ thống.",
+  "why": "hub · đoạn i=3"
+ },
+ {
+  "src": "lai-suat-gui-tiet-kiem-ngan-hang-bac-a-bank",
+  "target": "co-tien-nen-dau-tu-gi-luc-nay",
+  "i": 21,
+  "op": "append",
+  "sentence": "Vì vậy, nên [phân bổ tiền nhàn rỗi] trước khi gửi: giữ một phần ở kỳ hạn ngắn để rút khi cần.",
+  "why": "pillar · đoạn i=21"
+ },
+ {
+  "src": "lai-suat-gui-tiet-kiem-ngan-hang-bac-a-bank",
+  "target": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "lai-suat-gui-tiet-kiem-ngan-hang-hd-bank",
+  "target": "co-tien-nen-dau-tu-gi-luc-nay",
+  "i": 46,
+  "op": "append",
+  "sentence": "Tỷ trọng đó tùy vào cách mỗi người trả lời câu hỏi [tiền nhàn rỗi nên đầu tư vào đâu] cho mục tiêu của mình.",
+  "why": "pillar · đoạn i=46"
+ },
+ {
+  "src": "lai-suat-gui-tiet-kiem-ngan-hang-hd-bank",
+  "target": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+  "i": 37,
+  "op": "append",
+  "sentence": "Để kiểm chứng, hãy đối chiếu với [lãi suất tiết kiệm các ngân hàng] cùng nhóm ở cùng kỳ hạn.",
+  "why": "hub · đoạn i=37"
+ }
+]

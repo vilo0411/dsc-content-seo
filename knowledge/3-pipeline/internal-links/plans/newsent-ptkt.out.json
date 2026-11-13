@@ -1,0 +1,554 @@
+[
+ {
+  "src": "mo-hinh-nen-bua-nguoc-inverted-hammer-la-gi",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 25,
+  "op": "append",
+  "sentence": "Trong [phân tích kỹ thuật], một mẫu nến đơn lẻ chỉ có giá trị khi đi cùng xu hướng trước đó, khối lượng và vùng hỗ trợ.",
+  "why": "pillar · đoạn i=25"
+ },
+ {
+  "src": "mo-hinh-nen-hammer-la-gi",
+  "target": "tu-dien-30-mo-hinh-nen-pho-bien-tren-thi-truong-chung-khoan",
+  "i": 7,
+  "op": "append",
+  "sentence": "Trong [các mô hình nến] đảo chiều, Hammer thuộc nhóm một nến, dễ nhận diện nhất với nhà đầu tư mới.",
+  "why": "hub · đoạn i=7"
+ },
+ {
+  "src": "duong-ma-la-gi",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 40,
+  "op": "append",
+  "sentence": "Như mọi công cụ [phân tích kỹ thuật], tín hiệu này cần thêm xác nhận từ khối lượng giao dịch.",
+  "why": "pillar · đoạn i=40"
+ },
+ {
+  "src": "chi-bao-macd-histogram-la-gi",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "chi-bao-atr-la-gi",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "chi-bao-atr-la-gi",
+  "target": "chi-bao-ky-thuat",
+  "i": 2,
+  "op": "append",
+  "sentence": "Vì vậy, ATR được xếp vào nhóm đo biến động trong hệ thống [chỉ báo kỹ thuật], tách biệt với nhóm xu hướng và động lượng.",
+  "why": "hub · đoạn i=2"
+ },
+ {
+  "src": "khoi-luong-giao-dich-la-gi",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 7,
+  "op": "append",
+  "sentence": "Trong [phân tích kỹ thuật], khối lượng là dữ liệu gốc thứ hai sau giá, dùng để xác nhận mọi tín hiệu mua bán.",
+  "why": "pillar · đoạn i=7"
+ },
+ {
+  "src": "khoi-luong-giao-dich-la-gi",
+  "target": "phuong-phap-dau-tu-theo-dong-tien-hieu-qua",
+  "i": 46,
+  "op": "append",
+  "sentence": "Đây cũng là nguyên tắc của [đầu tư theo dòng tiền]: chỉ mua khi khối lượng xác nhận tiền lớn đã quay lại.",
+  "why": "hub · đoạn i=46"
+ },
+ {
+  "src": "duong-trendline-la-gi-cach-su-dung-hieu-qua-trong-phan-tich-ky-thuat",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 3,
+  "op": "append",
+  "sentence": "Đây là công cụ vẽ đầu tiên người học [phân tích kỹ thuật] cần nắm, trước khi chuyển sang kênh giá và mô hình giá.",
+  "why": "pillar · đoạn i=3"
+ },
+ {
+  "src": "phuong-phap-dau-tu-theo-dong-tien-hieu-qua",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 8,
+  "op": "append",
+  "sentence": "Phương pháp này là một nhánh của [phân tích kỹ thuật], vì dữ liệu đầu vào vẫn là giá và khối lượng giao dịch.",
+  "why": "pillar · đoạn i=8"
+ },
+ {
+  "src": "lap-gap-trong-chung-khoan-co-hoi-bung-no",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 1,
+  "op": "append",
+  "sentence": "Trong [phân tích kỹ thuật], gap được xem là vùng mất cân bằng cung cầu mà giá hay quay lại kiểm tra.",
+  "why": "pillar · đoạn i=1"
+ },
+ {
+  "src": "chi-bao-dmi-directional-movement-index-danh-gia-xu-huong-va-suc-manh-thi-truong-hieu-qua",
+  "target": "cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat",
+  "i": 12,
+  "op": "newp",
+  "sentence": "Cả ba đường tạo thành một trong các [chỉ báo xác định xu hướng] đầy đủ nhất: vừa cho biết hướng, vừa đo độ mạnh.",
+  "why": "hub · đoạn i=12"
+ },
+ {
+  "src": "chi-bao-dmi-directional-movement-index-danh-gia-xu-huong-va-suc-manh-thi-truong-hieu-qua",
+  "target": "duong-ma-la-gi",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "chien-luoc-giao-dich-hieu-qua-voi-rsi-ket-hop-rsi-voi-cac-chi-bao-khac",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 1,
+  "op": "append",
+  "sentence": "Cách kết hợp này dựa trên nguyên tắc chung của [phân tích kỹ thuật]: mỗi tín hiệu cần ít nhất một công cụ độc lập xác nhận.",
+  "why": "pillar · đoạn i=1"
+ },
+ {
+  "src": "vwap-la-gi",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "vwap-la-gi",
+  "target": "phuong-phap-dau-tu-theo-dong-tien-hieu-qua",
+  "i": 4,
+  "op": "append",
+  "sentence": "Với người [theo dõi dòng tiền], giá nằm trên VWAP kèm khối lượng lớn cho thấy tổ chức đang chấp nhận mua giá cao.",
+  "why": "hub · đoạn i=4"
+ },
+ {
+  "src": "chi-bao-dong-tien-chaikin-cmf-la-gi",
+  "target": "phuong-phap-dau-tu-theo-dong-tien-hieu-qua",
+  "i": 39,
+  "op": "append",
+  "sentence": "Vì vậy, CMF là công cụ quen thuộc của trường phái [đầu tư theo dòng tiền], nơi khối lượng được coi trọng ngang với giá.",
+  "why": "hub · đoạn i=39"
+ },
+ {
+  "src": "chi-bao-mcdx-la-gi-giai-ma-cong-cu-phan-tich-xu-huong-dong-tien-hieu-qua",
+  "target": "phuong-phap-dau-tu-theo-dong-tien-hieu-qua",
+  "i": 18,
+  "op": "append",
+  "sentence": "Phần quan trọng hơn là cách đọc kết quả, vì MCDX được thiết kế cho [phương pháp đầu tư theo dòng tiền] của nhà tạo lập.",
+  "why": "hub · đoạn i=18"
+ },
+ {
+  "src": "kenh-gia-song-song-cong-cu-phan-tich-ky-thuat-hieu-qua",
+  "target": "giao-dich-theo-xu-huong-trend-following-la-gi",
+  "i": 7,
+  "op": "append",
+  "sentence": "Kênh giá vì thế là công cụ nền của [giao dịch theo xu hướng]: mua gần biên dưới kênh tăng và giữ đến khi kênh bị phá vỡ.",
+  "why": "sub-hub · đoạn i=7"
+ },
+ {
+  "src": "dao-chieu-xu-huong-la-gi",
+  "target": "giao-dich-theo-xu-huong-trend-following-la-gi",
+  "i": 2,
+  "op": "append",
+  "sentence": "Vì vậy, người [giao dịch theo xu hướng] chỉ hành động khi đảo chiều đã được xác nhận, chấp nhận bỏ qua đoạn đầu của sóng.",
+  "why": "sub-hub · đoạn i=2"
+ },
+ {
+  "src": "chi-bao-aroon-la-gi",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "chi-bao-aroon-la-gi",
+  "target": "cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat",
+  "i": 3,
+  "op": "append",
+  "sentence": "Vì vậy, Aroon được xếp vào nhóm [chỉ báo xác định xu hướng], cùng với ADX và các đường trung bình động.",
+  "why": "hub · đoạn i=3"
+ },
+ {
+  "src": "kenh-gia-la-gi",
+  "target": "giao-dich-theo-xu-huong-trend-following-la-gi",
+  "i": 8,
+  "op": "append",
+  "sentence": "Hai dạng đầu là công cụ của [giao dịch theo xu hướng], còn kênh đi ngang phù hợp với cách mua thấp bán cao trong biên độ.",
+  "why": "sub-hub · đoạn i=8"
+ },
+ {
+  "src": "chi-bao-dong-tien-mfi-la-gi",
+  "target": "phuong-phap-dau-tu-theo-dong-tien-hieu-qua",
+  "i": 3,
+  "op": "append",
+  "sentence": "Nhờ gắn với khối lượng, MFI cũng là một công cụ đo [dòng tiền chứng khoán] vào hay ra khỏi một mã.",
+  "why": "hub · đoạn i=3"
+ },
+ {
+  "src": "chi-bao-kenh-keltner-la-gi",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "chi-bao-kenh-keltner-la-gi",
+  "target": "chi-bao-ky-thuat",
+  "i": 2,
+  "op": "append",
+  "sentence": "Trong hệ thống [chỉ báo kỹ thuật], Keltner thuộc nhóm dải biến động, cùng họ với Bollinger Bands.",
+  "why": "hub · đoạn i=2"
+ },
+ {
+  "src": "mo-hinh-nen-dao-chieu",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 8,
+  "op": "append",
+  "sentence": "Nến đảo chiều vì thế chỉ là một lớp tín hiệu trong [phân tích kỹ thuật], bên cạnh xu hướng, khối lượng và hỗ trợ kháng cự.",
+  "why": "pillar · đoạn i=8"
+ },
+ {
+  "src": "chi-bao-connors-rsi-la-gi",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 4,
+  "op": "append",
+  "sentence": "Như các công cụ [phân tích kỹ thuật] ngắn hạn khác, Connors RSI cần được kiểm thử trên dữ liệu quá khứ trước khi dùng tiền thật.",
+  "why": "pillar · đoạn i=4"
+ },
+ {
+  "src": "sideway-la-gi",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 5,
+  "op": "append",
+  "sentence": "Trong [phân tích kỹ thuật], vùng đi ngang được giới hạn bởi một đường hỗ trợ phía dưới và một đường kháng cự phía trên.",
+  "why": "pillar · đoạn i=5"
+ },
+ {
+  "src": "sideway-la-gi",
+  "target": "giao-dich-theo-xu-huong-trend-following-la-gi",
+  "i": 34,
+  "op": "append",
+  "sentence": "Người quen [giao dịch theo xu hướng] nên đứng ngoài khi thị trường đi ngang và chỉ quay lại sau phiên phá vỡ có khối lượng lớn.",
+  "why": "sub-hub · đoạn i=34"
+ },
+ {
+  "src": "golden-cross-va-death-cross-la-gi",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 14,
+  "op": "append",
+  "sentence": "Vì vậy, [phân tích kỹ thuật] coi hai điểm cắt này là tín hiệu xác nhận xu hướng, không phải công cụ dự báo đỉnh đáy.",
+  "why": "pillar · đoạn i=14"
+ },
+ {
+  "src": "giao-dich-theo-xu-huong-trend-following-la-gi",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 4,
+  "op": "append",
+  "sentence": "Cả hai chiều giao dịch đều dựa vào [phân tích kỹ thuật] để xác định xu hướng, thay vì dự báo giá trị doanh nghiệp.",
+  "why": "pillar · đoạn i=4"
+ },
+ {
+  "src": "chi-bao-on-balance-volume-obv-la-gi",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "chi-bao-on-balance-volume-obv-la-gi",
+  "target": "phuong-phap-dau-tu-theo-dong-tien-hieu-qua",
+  "i": 2,
+  "op": "append",
+  "sentence": "Cách đọc này là nền tảng của [đầu tư theo dòng tiền]: khối lượng tích lũy tăng trước, giá tăng theo sau.",
+  "why": "hub · đoạn i=2"
+ },
+ {
+  "src": "duong-zigzag-la-gi",
+  "target": "bieu-do-chung-khoan-la-gi-cach-xem-bieu-do-chung-khoan",
+  "i": 2,
+  "op": "append",
+  "sentence": "Nói cách khác, ZigZag là một lớp vẽ đè lên [biểu đồ giá] để người xem tập trung vào các đỉnh đáy chính.",
+  "why": "sub-hub · đoạn i=2"
+ },
+ {
+  "src": "duong-trung-binh-dong-hull-hma-la-gi",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "duong-trung-binh-dong-hull-hma-la-gi",
+  "target": "cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat",
+  "i": 36,
+  "op": "append",
+  "sentence": "So với các [chỉ báo xu hướng] cùng nhóm như SMA hay EMA, HMA đổi hướng sớm hơn nên cũng dễ cho tín hiệu giả hơn.",
+  "why": "hub · đoạn i=36"
+ },
+ {
+  "src": "duong-phan-phoi-tich-luy-a-d-la-gi",
+  "target": "phuong-phap-dau-tu-theo-dong-tien-hieu-qua",
+  "i": 3,
+  "op": "append",
+  "sentence": "Đây là một trong những chỉ báo gốc của trường phái [đầu tư theo dòng tiền], làm nền cho Chaikin Money Flow và Chaikin Oscillator.",
+  "why": "hub · đoạn i=3"
+ },
+ {
+  "src": "chi-bao-chaikin-oscillator-la-gi",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "chi-bao-chaikin-oscillator-la-gi",
+  "target": "phuong-phap-dau-tu-theo-dong-tien-hieu-qua",
+  "i": 4,
+  "op": "append",
+  "sentence": "Với người [đầu tư theo dòng tiền], chỉ báo này cho biết tiền đang vào nhanh dần hay chậm dần, trước khi giá phản ứng.",
+  "why": "hub · đoạn i=4"
+ },
+ {
+  "src": "chi-bao-bollinger-band-b-la-gi",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "chi-bao-bollinger-band-b-la-gi",
+  "target": "chi-bao-ky-thuat",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "bollinger-bands-la-gi-cach-su-dung-trong-giao-dich-chung-khoan",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 19,
+  "op": "append",
+  "sentence": "Đây là lý do [phân tích kỹ thuật] xem việc giá đóng cửa ngoài dải là tín hiệu bất thường cần chú ý.",
+  "why": "pillar · đoạn i=19"
+ },
+ {
+  "src": "chi-bao-momentum-la-gi",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 43,
+  "op": "append",
+  "sentence": "Nguyên tắc này đúng với mọi công cụ [phân tích kỹ thuật]: tham số phải được kiểm chứng trên chính mã đang giao dịch.",
+  "why": "pillar · đoạn i=43"
+ },
+ {
+  "src": "amibroker-la-gi",
+  "target": "bieu-do-chung-khoan-la-gi-cach-xem-bieu-do-chung-khoan",
+  "i": 17,
+  "op": "append",
+  "sentence": "Nền tảng mạnh đến đâu thì người dùng vẫn cần nắm [cách xem biểu đồ chứng khoán] trước khi viết bộ lọc hay backtest.",
+  "why": "sub-hub · đoạn i=17"
+ },
+ {
+  "src": "chi-bao-adx-la-gi",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "chi-bao-adx-la-gi",
+  "target": "cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat",
+  "i": 4,
+  "op": "append",
+  "sentence": "Vì vậy, trong nhóm [chỉ báo xác định xu hướng], ADX đóng vai trò bộ lọc: cho biết có nên dùng chiến lược theo xu hướng hay không.",
+  "why": "hub · đoạn i=4"
+ },
+ {
+  "src": "downtrend-la-gi-cach-nhan-biet-va-giao-dich-trong-downtrend",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 3,
+  "op": "append",
+  "sentence": "Cách xác định theo đỉnh đáy này đến từ lý thuyết Dow, nền móng của [phân tích kỹ thuật] hiện đại.",
+  "why": "pillar · đoạn i=3"
+ },
+ {
+  "src": "chi-bao-ttm-squeeze-la-gi",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "chi-bao-ttm-squeeze-la-gi",
+  "target": "chi-bao-ky-thuat",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "chi-bao-envelope-la-gi",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 8,
+  "op": "append",
+  "sentence": "Trong [phân tích kỹ thuật], tín hiệu này cần thêm khối lượng hoặc một chỉ báo động lượng xác nhận trước khi vào lệnh.",
+  "why": "pillar · đoạn i=8"
+ },
+ {
+  "src": "chi-bao-dao-dong-aroon-aroon-oscillator-la-gi",
+  "target": "cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat",
+  "i": 9,
+  "op": "append",
+  "sentence": "Cách đọc theo ngưỡng này khiến Aroon Oscillator trở thành một [chỉ báo xu hướng] dễ dùng cho người mới.",
+  "why": "hub · đoạn i=9"
+ },
+ {
+  "src": "chi-bao-moving-average-envelope-mae-la-gi",
+  "target": "cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "huong-dan-ket-hop-3-duong-ma-trong-giao-dich-va-dau-tu-hieu-qua",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "huong-dan-ket-hop-3-duong-ma-trong-giao-dich-va-dau-tu-hieu-qua",
+  "target": "cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat",
+  "i": 6,
+  "op": "append",
+  "sentence": "Cả ba loại đều thuộc nhóm [chỉ báo xác định xu hướng], khác nhau ở độ nhạy với các phiên gần nhất.",
+  "why": "hub · đoạn i=6"
+ },
+ {
+  "src": "uptrend-la-gi-cach-nhan-biet-va-dau-tu-hieu-qua-trong-xu-huong-uptrend",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 4,
+  "op": "append",
+  "sentence": "Cách xác định theo đỉnh đáy này đến từ lý thuyết Dow, nền móng của [phân tích kỹ thuật] hiện đại.",
+  "why": "pillar · đoạn i=4"
+ },
+ {
+  "src": "uptrend-la-gi-cach-nhan-biet-va-dau-tu-hieu-qua-trong-xu-huong-uptrend",
+  "target": "giao-dich-theo-xu-huong-trend-following-la-gi",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "chi-bao-force-index-la-gi",
+  "target": "chi-bao-ky-thuat",
+  "i": 31,
+  "op": "append",
+  "sentence": "Làm mượt bằng trung bình động là kỹ thuật chung của nhiều [chỉ báo kỹ thuật], từ MACD đến Stochastic.",
+  "why": "hub · đoạn i=31"
+ },
+ {
+  "src": "chi-bao-vortex-indicator-vi-la-gi",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "duong-trung-binh-dong-luy-thua-dema-la-gi",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 26,
+  "op": "append",
+  "sentence": "Như các đường trung bình khác trong [phân tích kỹ thuật], DEMA phát huy tốt khi thị trường có xu hướng và kém khi giá đi ngang.",
+  "why": "pillar · đoạn i=26"
+ },
+ {
+  "src": "phuong-phap-vsa",
+  "target": "phuong-phap-dau-tu-theo-dong-tien-hieu-qua",
+  "i": 51,
+  "op": "append",
+  "sentence": "VSA cũng là công cụ cốt lõi của [đầu tư theo dòng tiền], vì cả hai đều đọc hành vi của tổ chức qua khối lượng.",
+  "why": "hub · đoạn i=51"
+ },
+ {
+  "src": "mo-hinh-cai-nem-la-gi",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 2,
+  "op": "append",
+  "sentence": "Đây là một trong các mô hình giá cơ bản của [phân tích kỹ thuật], cùng nhóm với tam giác và cờ đuôi nheo.",
+  "why": "pillar · đoạn i=2"
+ },
+ {
+  "src": "bullish-la-gi-xu-huong-tang-gia-trong-thi-truong-chung-khoan",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "bullish-la-gi-xu-huong-tang-gia-trong-thi-truong-chung-khoan",
+  "target": "giao-dich-theo-xu-huong-trend-following-la-gi",
+  "i": 1,
+  "op": "append",
+  "sentence": "Thị trường bullish là môi trường thuận lợi cho [giao dịch theo xu hướng], khi mỗi nhịp điều chỉnh đều tạo đáy cao hơn đáy trước.",
+  "why": "sub-hub · đoạn i=1"
+ },
+ {
+  "src": "chi-bao-klinger-oscillator-la-gi",
+  "target": "chi-bao-ky-thuat",
+  "i": 5,
+  "op": "append",
+  "sentence": "Trong hệ thống [chỉ báo kỹ thuật], Klinger thuộc nhóm khối lượng, cùng với OBV và Chaikin Money Flow.",
+  "why": "hub · đoạn i=5"
+ },
+ {
+  "src": "do-thi-ky-thuat-la-gi",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 2,
+  "op": "append",
+  "sentence": "Mọi phương pháp [phân tích kỹ thuật] đều bắt đầu từ đồ thị, vì đây là nơi giá và khối lượng được trình bày theo thời gian.",
+  "why": "pillar · đoạn i=2"
+ },
+ {
+  "src": "phan-phoi-dinh-la-gi",
+  "target": "duong-ho-tro-va-khang-cu-la-gi",
+  "i": 5,
+  "op": "append",
+  "sentence": "Trên đồ thị, vùng trao tay này về sau trở thành [ngưỡng kháng cự] mạnh, vì nhiều người mua ở đây chờ bán hòa vốn.",
+  "why": "sub-hub · đoạn i=5"
+ },
+ {
+  "src": "chi-bao-special-k-la-gi",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "duong-phan-tu-quadrant-line-la-gi",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "duong-phan-tu-quadrant-line-la-gi",
+  "target": "bieu-do-chung-khoan-la-gi-cach-xem-bieu-do-chung-khoan",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "kenh-hoi-quy-raff-raff-regression-channel-la-gi",
+  "target": "phan-tich-ky-thuat-la-gi",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ },
+ {
+  "src": "kenh-hoi-quy-raff-raff-regression-channel-la-gi",
+  "target": "bieu-do-chung-khoan-la-gi-cach-xem-bieu-do-chung-khoan",
+  "i": 0,
+  "op": "skip",
+  "reason": "không có đoạn hợp ngữ cảnh"
+ }
+]

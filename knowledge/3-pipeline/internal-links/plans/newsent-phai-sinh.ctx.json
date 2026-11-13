@@ -1,0 +1,74 @@
+[
+ {
+  "src": "quyen-chon-mua-co-phieu-la-gi",
+  "src_title": "Quyền chọn mua cổ phiếu là gì? Thông tin chi tiết",
+  "target": "chung-khoan-phai-sinh-la-gi-huong-dan-dau-tu-cho-nguoi-moi-bat-dau",
+  "role": "pillar",
+  "target_title": "Chứng khoán phái sinh là gì? Cơ chế, Rủi ro và lưu ý cho F0",
+  "clicks": "22",
+  "anchors": [
+   "chứng khoán phái sinh",
+   "chứng khoán phái sinh là gì",
+   "giao dịch phái sinh",
+   "đầu tư chứng khoán phái sinh",
+   "thị trường phái sinh",
+   "phái sinh"
+  ],
+  "paras": [
+   {
+    "i": 10,
+    "h": "Quyền chọn mua cổ phiếu là gì?",
+    "n_sent": 2,
+    "t": "Hiện nay, nhà đầu tư cá nhân không mua được hợp đồng quyền chọn trên thị trường chứng khoán Việt Nam nhưng có thể mua sản phẩm Chứng Quyền Có Bảo Đảm (Covered Warrant) bởi 2 loại hợp đồng này đều có cách sinh lời giống nhau cho nhà đầu tư. Tuy nhiên, các hợp đồng này phức tạp hơn các loại chứng khoán khác như cổ phiếu, trái phiếu."
+   },
+   {
+    "i": 9,
+    "h": "Quyền chọn mua cổ phiếu là gì?",
+    "n_sent": 2,
+    "t": "Quyền chọn mua cổ phiếu có đặc điểm khá giống với sản phẩm Chứng Quyền Có Bảo Đảm được phát hành và giao dịch trên thị trường chứng khoán Việt Nam. Tuy nhiên, 2 loại chứng khoán này có sự khác biệt về thị trường giao dịch, yêu cầu ký quỹ, các bên tham gia, bên thiết kế điều khoản của sản phẩm."
+   },
+   {
+    "i": 11,
+    "h": "Quyền chọn mua cổ phiếu là gì?",
+    "n_sent": 2,
+    "t": "Để sinh lời từ hợp đồng quyền chọn mua (hoặc chứng quyền), nhà đầu tư không những phải đánh cược vào việc cổ phiếu tăng giá mà còn phải tính toán xem khi nào cổ phiếu sẽ tăng, từ đó dẫn đến rất nhiều rủi ro. Vì thế, nhà đầu tư cần hết sức cẩn trọng và tìm hiểu kĩ về cổ phiếu cơ sở trước khi xuống tiền mua hợp đồng quyền chọn."
+   }
+  ]
+ },
+ {
+  "src": "phi-va-thue-khi-giao-dich-chung-quyen-co-bao-dam-tai-viet-nam",
+  "src_title": "Phí và thuế khi giao dịch chứng quyền có bảo đảm tại Việt Nam",
+  "target": "chung-quyen-la-gi-chung-quyen-co-bao-dam-la-gi-tim-hieu-chung-quyen-tai-viet-nam",
+  "role": "hub",
+  "target_title": "Chứng quyền là gì? Phân biệt, cách đọc mã và giao dịch CW",
+  "clicks": "0",
+  "anchors": [
+   "chứng quyền",
+   "chứng quyền là gì",
+   "chứng quyền có bảo đảm",
+   "giao dịch chứng quyền",
+   "CW",
+   "chứng quyền có đảm bảo"
+  ],
+  "paras": [
+   {
+    "i": 6,
+    "h": "Phí giao dịch chứng quyền có bảo đảm",
+    "n_sent": 2,
+    "t": "Phí giao dịch CW được tính dựa trên tổng giá trị giao dịch trong ngày và theo biểu phí của từng công ty chứng khoán. Hiện nay, mức phí giao dịch CW dao động từ 0,1% đến 0,3%."
+   },
+   {
+    "i": 1,
+    "h": "Giới thiệu về chứng quyền có bảo đảm",
+    "n_sent": 2,
+    "t": "Chứng quyền có bảo đảm (CW) là một loại chứng khoán phái sinh cho phép nhà đầu tư mua hoặc bán một số lượng cổ phiếu nhất định của một công ty với giá thực hiện xác định trước vào một thời điểm xác định trong tương lai. CW là một sản phẩm đầu tư mang tính đòn bẩy cao, có thể mang lại lợi nhuận lớn nhưng cũng tiềm ẩn rủi ro cao."
+   },
+   {
+    "i": 8,
+    "h": "Thuế giao dịch chứng quyền có bảo đảm",
+    "n_sent": 1,
+    "t": "Thu nhập từ chuyển nhượng CW được áp dụng thuế đối với chuyển nhượng chứng khoán, được xác định bằng giá chuyển nhượng CW từng lần nhân (x) với thuế suất 0,1%."
+   }
+  ]
+ }
+]

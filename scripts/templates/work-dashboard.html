@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Điều hành SEO — công việc và tiến độ</title>
+<style>
+body{font:15px/1.6 system-ui;background:#f4f6fa;color:#1b2c42;max-width:1400px;margin:auto;padding:28px}h1{margin-bottom:4px}a{color:#075da8}input,select,button{font:inherit;padding:9px;border:1px solid #bdc9d9;border-radius:6px;background:white}input{width:min(470px,90%)}.toolbar{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0}.notice{background:#fff4d8;border-left:4px solid #ca8c11;padding:14px}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin:20px 0}.card{background:white;padding:16px;border-radius:8px}.card b{display:block;font-size:24px}table{width:100%;border-collapse:collapse;background:white}td,th{text-align:left;vertical-align:top;border-bottom:1px solid #dae1eb;padding:13px}th{background:#e7edf6}td:first-child{min-width:200px}small{display:block;color:#526278}pre{white-space:pre-wrap;overflow-wrap:anywhere;max-height:300px;overflow:auto;background:#eef2f7;padding:10px}.table-wrap{overflow:auto}.badge{display:inline-block;background:#e9eef6;padding:3px 8px;border-radius:5px}.good{background:#ddf5e4}.warn{background:#fff0cb}nav{display:flex;gap:20px;margin:20px 0}summary{cursor:pointer}#files td{overflow-wrap:anywhere}
+</style>
+<h1>Điều hành SEO</h1><p>Một nơi để mở công việc, xem bằng chứng tiến độ và biết bước tiếp theo.</p>
+<nav><a href="#work">Công việc</a><a href="#library">Kho tài liệu</a><a href="../4-content/index.html">HTML CMS</a><a href="README.md">Hướng dẫn</a></nav>
+<div class="notice" id="freshness"></div>
+<div class="cards" id="cards"></div>
+<h2 id="work">Công việc và tiến độ</h2>
+<div class="toolbar"><input id="q" type="search" placeholder="Tìm tên đợt, slug, trạng thái…" aria-label="Tìm công việc"><select id="group" aria-label="Nhóm việc"><option value="">Tất cả nhóm</option></select><label><input id="remaining" type="checkbox" style="width:auto"> Ẩn đợt đạt trong snapshot</label></div>
+<p id="count" aria-live="polite"></p>
+<div class="table-wrap"><table><thead><tr><th>Công việc</th><th>Trạng thái</th><th>Bằng chứng</th><th>Bước tiếp theo</th></tr></thead><tbody id="tasks"></tbody></table></div>
+<h2 id="library">Kho tài liệu</h2><p>Gồm internal link, stale, content audit, QA, GSC, ledger, báo cáo cũ và HTML CMS.</p>
+<div class="toolbar"><input id="fq" type="search" placeholder="Tìm đường dẫn hoặc tên file…" aria-label="Tìm file"><label><input id="archive" type="checkbox" style="width:auto"> Hiện tài liệu lưu trữ</label></div>
+<p id="filecount" aria-live="polite"></p><div class="table-wrap"><table><thead><tr><th>Nhóm</th><th>Tài liệu / đường dẫn</th></tr></thead><tbody id="files"></tbody></table></div>
+<script>
+const D=__PAYLOAD__;
+const $=id=>document.getElementById(id);
+const norm=s=>String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d');
+function cell(tr,text){const td=document.createElement('td');td.textContent=text;tr.append(td);return td}
+function link(path,label){const a=document.createElement('a');a.href='../../'+path;a.textContent=label;return a}
+function matches(text,q){return norm(q).split(/\s+/).filter(Boolean).every(t=>norm(text).includes(t))}
+$('freshness').textContent=`Tạo bảng: ${D.generated_at}. Snapshot gần nhất: ${D.snapshot} (${D.snapshot_mode}). Đây là đối chiếu dữ liệu đã lưu, không phải kiểm tra website trực tiếp. Partial sync không làm mới mọi bài. Dấu tick trong các tracker cũ chỉ lưu tại trình duyệt và chưa được nhập vào bảng này.`;
+const groups=[...new Set(D.tasks.map(t=>t.group))];
+for(const g of groups)$('group').add(new Option(g,g));
+for(const [n,v] of [['Nhóm công việc',groups.length],['Đợt internal link',D.tasks.filter(t=>t.group==='Internal link').length],['Đợt đạt trong snapshot',D.tasks.filter(t=>t.state==='Đạt trong snapshot').length],['Tài liệu',D.catalog.length]]){const card=document.createElement('div');card.className='card';const b=document.createElement('b');b.textContent=v;card.append(b,document.createTextNode(n));$('cards').append(card)}
+function render(){
+ $('tasks').replaceChildren();
+ const rows=D.tasks.filter(t=>(!$('group').value||t.group===$('group').value)&&(!$('remaining').checked||t.state!=='Đạt trong snapshot')&&matches(JSON.stringify(t),$('q').value));
+ for(const t of rows){const tr=document.createElement('tr'),name=cell(tr,'');name.append(link(t.source,t.name));const small=document.createElement('small');small.textContent=t.group;name.append(small);
+ const state=cell(tr,'');const badge=document.createElement('span');badge.className='badge '+(t.state==='Đạt trong snapshot'?'good':'warn');badge.textContent=t.state;state.append(badge);
+ if(t.total){const p=document.createElement('progress');p.max=t.total;p.value=t.done;p.setAttribute('aria-label',`${t.done}/${t.total}`);state.append(document.createElement('br'),p)}
+ const proof=cell(tr,t.evidence);if(t.details){const d=document.createElement('details'),s=document.createElement('summary'),pre=document.createElement('pre');s.textContent='Xem chi tiết';pre.textContent=t.details;d.append(s,pre);proof.append(d)}if(t.spec)proof.append(document.createElement('br'),link(t.spec,'Dữ liệu gốc'));
+ cell(tr,t.next_step);$('tasks').append(tr)}
+ $('count').textContent=`${rows.length}/${D.tasks.length} đầu việc / đợt. Các đợt có thể trùng hoặc thay thế nhau; không cộng số thay đổi giữa các đợt.`;
+}
+function files(){
+ $('files').replaceChildren();const rows=D.catalog.filter(r=>($('archive').checked||!r.archived)&&matches(r.path,$('fq').value));
+ for(const r of rows){const tr=document.createElement('tr');cell(tr,r.group+(r.archived?' / lưu trữ':''));cell(tr,'').append(link(r.path,r.path));$('files').append(tr)}$('filecount').textContent=`${rows.length}/${D.catalog.length} tài liệu`;
+}
+for(const id of ['q','group','remaining'])$(id).addEventListener('input',render);
+for(const id of ['fq','archive'])$(id).addEventListener('input',files);
+render();files();
+</script></html>

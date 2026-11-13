@@ -1,0 +1,1881 @@
+{
+ "title": "Toàn bộ cụm — link về pillar / hub / sub-hub (v2: anchor theo key chính/phụ/ngữ nghĩa, không đặt ở sapo)",
+ "edits": [
+  {
+   "src": "lai-suat-gui-tiet-kiem-ngan-hang-lpbank",
+   "op": "wrap",
+   "find": "ng giá và tỷ lệ cổ tức tiền mặt cao hơn lãi suất tiết kiệm ngân hàng.",
+   "to": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+   "anchor": "lãi suất tiết kiệm",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Tiết kiệm & Kênh đầu tư · hub · key ngữ nghĩa · mục «Phân bổ tài sản thông minh: Từ tiết kiệm đến đầu t»"
+  },
+  {
+   "src": "lai-suat-gui-tiet-kiem-ngan-hang-lpbank",
+   "op": "remove",
+   "old": "https://www.dsc.com.vn/kien-thuc/lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Dòng Xem thêm trùng đích — link đã có trong câu"
+  },
+  {
+   "src": "canh-tranh-hoan-hao-la-gi",
+   "op": "wrap",
+   "find": "h phần, vận động theo 3 yếu tố là tự do cạnh tranh - tự do định đoạt của chủ thể",
+   "to": "canh-tranh-la-gi",
+   "anchor": "cạnh tranh",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Vĩ mô & Chính sách · sub-hub · key chính · mục «Thực trạng thị trường cạnh tranh hoàn hảo tại Việt»"
+  },
+  {
+   "src": "cach-mua-co-phieu-vingroup-vic-huong-dan-moi-nhat-2024",
+   "op": "wrap",
+   "find": "Mã cổ phiếu VIC: Đây là mã của Công ty Cổ phầ",
+   "to": "co-phieu-vic",
+   "anchor": "cổ phiếu VIC",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Cổ phiếu cụ thể & Ngành · sub-hub · key chính · mục «Phân biệt các mã cổ phiếu liên quan đến hệ sinh th»"
+  },
+  {
+   "src": "co-phieu-vhm-tong-quan-danh-gia-va-cap-nhan-ket-qua-kinh-doanh-moi-nhat",
+   "op": "wrap",
+   "find": "VHM nằm trong nhóm cổ phiếu bất động sản tiềm năng thu hút dòng vốn ng",
+   "to": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "anchor": "cổ phiếu bất động sản",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Cổ phiếu cụ thể & Ngành · hub · key chính · mục «Cơ hội đầu tư»"
+  },
+  {
+   "src": "co-phieu-vhm-tong-quan-danh-gia-va-cap-nhan-ket-qua-kinh-doanh-moi-nhat",
+   "op": "remove",
+   "old": "https://www.dsc.com.vn/kien-thuc/top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Dòng Xem thêm trùng đích — link đã có trong câu"
+  },
+  {
+   "src": "canh-tranh-doc-quyen-la-gi",
+   "op": "wrap",
+   "find": "Cạnh tranh phi giá cả diễn ra quyết liệt",
+   "to": "canh-tranh-la-gi",
+   "anchor": "Cạnh tranh",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Vĩ mô & Chính sách · sub-hub · key chính · mục «5 đặc điểm cốt lõi của thị trường cạnh tranh độc q»"
+  },
+  {
+   "src": "top-co-phieu-dien-luc-nganh-dien",
+   "op": "wrap",
+   "find": "uả, QTP hiện đang là một trong những mã cổ phiếu ngành điện thu hút sự quan tâm lớn từ cộ",
+   "to": "co-phieu-nganh-nang-luong",
+   "anchor": "cổ phiếu ngành điện",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Cổ phiếu cụ thể & Ngành · hub · key phụ · mục «Công ty Cổ phần Nhiệt điện Quảng Ninh - Mã: QTP»"
+  },
+  {
+   "src": "chi-so-ppi-la-gi",
+   "op": "wrap",
+   "find": "PPI được xem là một chỉ báo sớm cho lạm phát ở cấp độ người tiêu dùng. Khi",
+   "to": "lam-phat-la-gi",
+   "anchor": "lạm phát",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Vĩ mô & Chính sách · sub-hub · key chính · mục «Chỉ báo sớm cho lạm phát tiêu dùng»"
+  },
+  {
+   "src": "top-chung-chi-quy-o-viet-nam-uy-tin-hang-dau-hien-nay",
+   "op": "wrap",
+   "find": "cũng tương đối đa dạng và đều là chứng quỹ mở, có thể kể đến như:",
+   "to": "quy-mo-la-gi-tong-quan-ve-quy-mo-tren-thi-truong-chung-khoan-viet-nam",
+   "anchor": "quỹ mở",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Quỹ & ETF · sub-hub · key chính · mục «Chứng chỉ quỹ của Vietcombank»"
+  },
+  {
+   "src": "quan-ly-thi-truong-la-gi",
+   "op": "wrap",
+   "find": "hàng không rõ ràng sẽ gặp áp lực. Trong phân tích vĩ mô, QLTT là một phần của việc ổn",
+   "to": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "anchor": "phân tích vĩ mô",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Vĩ mô & Chính sách · pillar · key chính · mục «Hỗ trợ phân tích cơ bản và phân tích vĩ mô»"
+  },
+  {
+   "src": "quan-ly-thi-truong-la-gi",
+   "op": "wrap",
+   "find": "g mại và hàng hóa kém chất lượng gây ra cạnh tranh không lành mạnh, ảnh hưởng đế",
+   "to": "canh-tranh-la-gi",
+   "anchor": "cạnh tranh",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Vĩ mô & Chính sách · sub-hub · key chính · mục «Ổn định môi trường cạnh tranh và giảm rủi ro kinh »"
+  },
+  {
+   "src": "quy-luat-gia-tri-la-gi-giai-thich-chi-tiet-va-day-du",
+   "op": "wrap",
+   "find": "Quy luật cung cầu là công cụ truyền dẫn của quy",
+   "to": "kinh-te-hoc-vi-mo-la-gi-y-nghia-trong-dau-tu-chung-khoan",
+   "anchor": "cung cầu",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Vĩ mô & Chính sách · hub · key ngữ nghĩa · mục «Biểu hiện qua quy luật cung cầu»"
+  },
+  {
+   "src": "phan-biet-thi-truong-tien-te-va-thi-truong-von-huong-dan-chi-tiet-cho-nha-dau-tu",
+   "op": "wrap",
+   "find": "Điều tiết chính sách tiền tệ: Ngân hàng trung ương sử dụng",
+   "to": "chinh-sach-tien-te-la-gi",
+   "anchor": "chính sách tiền tệ",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Vĩ mô & Chính sách · sub-hub · key chính · mục «Thị trường tiền tệ»"
+  },
+  {
+   "src": "khoa-hoc-chung-khoan-tai-ho-chi-minh",
+   "op": "wrap",
+   "find": "Các lớp học đầu tư chứng khoán tại Hồ Chí Minh của UEH sở hữ",
+   "to": "khoa-hoc-chung-khoan",
+   "anchor": "học đầu tư chứng khoán",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Học & nghề tài chính · sub-hub · key phụ · mục «Ưu điểm»"
+  },
+  {
+   "src": "khoa-hoc-chung-khoan-tai-ho-chi-minh",
+   "op": "remove",
+   "old": "https://www.dsc.com.vn/kien-thuc/khoa-hoc-chung-khoan",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Dòng Xem thêm trùng đích — link đã có trong câu"
+  },
+  {
+   "src": "khoa-hoc-chung-khoan-tai-ha-noi",
+   "op": "wrap",
+   "find": "oán Việt Nam, SRTC mang đến đa dạng các khóa học đầu tư chứng khoán, từ kiến thức cơ bản đến các",
+   "to": "khoa-hoc-chung-khoan",
+   "anchor": "khóa học đầu tư chứng khoán",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Học & nghề tài chính · sub-hub · key phụ · mục «Trung tâm Nghiên cứu Khoa học và Đào tạo Chứng kho»"
+  },
+  {
+   "src": "khoa-hoc-chung-khoan-tai-ha-noi",
+   "op": "remove",
+   "old": "https://www.dsc.com.vn/kien-thuc/khoa-hoc-chung-khoan",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Dòng Xem thêm trùng đích — link đã có trong câu"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-pnj-hay-khong",
+   "op": "wrap",
+   "find": "ự kiến âm 6.271 tỷ đồng. Việc phân tích cổ phiếu PNJ cần chuyển dịch sang các góc",
+   "to": "co-phieu-pnj-tong-quan-nhan-dinh-ket-qua-kinh-doanh-moi-nhat",
+   "anchor": "cổ phiếu PNJ",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Cổ phiếu cụ thể & Ngành · sub-hub · key chính · mục «Đánh giá yếu tố cơ bản cổ phiếu PNJ»"
+  },
+  {
+   "src": "zero-sum-game-la-gi-giai-thich-chi-tiet-va-ung-dung-thuc-te",
+   "op": "wrap",
+   "find": "Cạnh tranh: Doanh nghiệp cạnh tranh thị",
+   "to": "canh-tranh-la-gi",
+   "anchor": "Cạnh tranh",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Vĩ mô & Chính sách · sub-hub · key chính · mục «Ứng dụng thực tế của zero-sum game»"
+  },
+  {
+   "src": "app-dau-tu-vang",
+   "op": "wrap",
+   "find": "ư nào. Ứng dụng này là một app theo dõi đầu tư vàng chuyên dụng, cung cấp thông t",
+   "to": "cach-dau-tu-vang",
+   "anchor": "đầu tư vàng",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Vàng · pillar · key ngữ nghĩa · mục «App \"Giá vàng - Tỷ Giá Ngoại Tệ\" - App theo dõi gi»"
+  },
+  {
+   "src": "gia-tri-so-sach-la-gi-cach-tinh-gia-tri-so-sach-cua-co-phieu",
+   "op": "wrap",
+   "find": "Để xác định giá trị hợp lý của cổ phiếu: Giá trị hợp lý của cổ phiếu",
+   "to": "cach-dinh-gia-co-phieu-cho-nguoi-moi-bat-dau",
+   "anchor": "giá trị hợp lý của cổ phiếu",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Phân tích cơ bản & Tài chính DN · hub · key ngữ nghĩa · mục «Ứng dụng của giá trị sổ sách của cổ phiếu trong đầ»"
+  },
+  {
+   "src": "nen-dau-tu-quy-etf-nao",
+   "op": "wrap",
+   "find": "oản cao đảm bảo bạn có thể mua hoặc bán chứng chỉ quỹ một cách nhanh chóng mà không",
+   "to": "chung-chi-quy-la-gi",
+   "anchor": "chứng chỉ quỹ",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Quỹ & ETF · pillar · key chính · mục «Quy mô quỹ (AUM) và tính thanh khoản»"
+  },
+  {
+   "src": "nen-dau-tu-quy-etf-nao",
+   "op": "wrap",
+   "find": "iếu riêng lẻ, chỉ cần mua một chứng chỉ quỹ ETF, bạn đã gián tiếp sở hữu một",
+   "to": "etf-la-gi",
+   "anchor": "quỹ ETF",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Quỹ & ETF · sub-hub · key phụ · mục «Tại sao Quỹ ETF là lựa chọn đầu tư thông minh cho »"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-oil",
+   "op": "wrap",
+   "find": "Cổ phiếu dầu khí thường có tính đầu cơ cao. Nh",
+   "to": "co-phieu-nganh-nang-luong",
+   "anchor": "Cổ phiếu dầu khí",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Cổ phiếu cụ thể & Ngành · hub · key phụ · mục «Sai lầm 1: Mua đuổi theo tâm lý FOMO»"
+  },
+  {
+   "src": "ty-le-risk-reward-la-gi",
+   "op": "wrap",
+   "find": "Quản lý rủi ro hiệu quả: Khi xác định tỷ lệ",
+   "to": "quan-tri-rui-ro-la-gi-2",
+   "anchor": "Quản lý rủi ro",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Chiến lược, Phương pháp & Quản trị rủi ro · hub · key phụ · mục «Ý nghĩa của tỷ lệ Risk/Reward (R/R)»"
+  },
+  {
+   "src": "nen-inside-bar-la-gi-bi-kip-giao-dich-hieu-qua-cho-trader",
+   "op": "wrap",
+   "find": "ến\" là một mô hình nến quan trọng trong phân tích kỹ thuật, được sử dụng để dự báo xu hư",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "anchor": "phân tích kỹ thuật",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Phân tích kỹ thuật & Chỉ báo · pillar · key chính · mục «Nến Inside Bar là gì?»"
+  },
+  {
+   "src": "sec-la-gi-giai-thich-chi-tiet-ve-uy-ban-chung-khoan-va-hoi-doai-hoa-ky",
+   "op": "wrap",
+   "find": "u quả: SEC thúc đẩy sự cạnh tranh trong thị trường tài chính và đảm bảo rằng các nhà đầu t",
+   "to": "thi-truong-tai-chinh-la-gi",
+   "anchor": "thị trường tài chính",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Cách chơi chứng khoán · sub-hub · key chính · mục «Chức năng chính của SEC»"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-tcb-techcombank-hay-khong",
+   "op": "wrap",
+   "find": "t lựa chọn để đầu tư hấp dẫn trong nhóm cổ phiếu ngành ngân hàng.",
+   "to": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "anchor": "cổ phiếu ngành ngân hàng",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Cổ phiếu cụ thể & Ngành · hub · key phụ · mục «2. Yếu tố định lượng»"
+  },
+  {
+   "src": "ty-so-no-tren-tong-tai-san-la-gi",
+   "op": "wrap",
+   "find": "0%, doanh nghiệp đang sử dụng quá nhiều đòn bẩy tài chính. Điều này có thể dẫn đến rủi",
+   "to": "don-bay-tai-chinh-la-gi-uu-va-nhuoc-diem-cach-su-dung",
+   "anchor": "đòn bẩy tài chính",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Phân tích cơ bản & Tài chính DN · sub-hub · key chính · mục «Tỷ số nợ trên tổng tài sản bao nhiêu là tốt?»"
+  },
+  {
+   "src": "bieu-do-chung-khoan-la-gi-cach-xem-bieu-do-chung-khoan",
+   "op": "wrap",
+   "find": "iểu đồ được sử dụng phổ biến nhất trong phân tích kỹ thuật chứng khoán. Biểu đồ hình nến",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "anchor": "phân tích kỹ thuật",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Phân tích kỹ thuật & Chỉ báo · pillar · key chính · mục «Các loại biểu đồ chứng khoán»"
+  },
+  {
+   "src": "nen-shooting-star-la-gi",
+   "op": "wrap",
+   "find": "Kết hợp với các công cụ phân tích kỹ thuật khác: Để nâng cao tỷ lệ thành",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "anchor": "phân tích kỹ thuật",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Phân tích kỹ thuật & Chỉ báo · pillar · key chính · mục «Cách giao dịch với nến Shooting Star hiệu quả»"
+  },
+  {
+   "src": "rui-ro-tin-dung-la-gi",
+   "op": "wrap",
+   "find": "ọn lọc và phân loại khách hàng dựa trên mức độ rủi ro của từng khách hàng",
+   "to": "rui-ro-la-gi",
+   "anchor": "mức độ rủi ro",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Chiến lược, Phương pháp & Quản trị rủi ro · sub-hub · key ngữ nghĩa · mục «Các biện pháp đo lường rủi ro tín dụng»"
+  },
+  {
+   "src": "cach-mua-co-phieu-vcb-ngan-hang-vietcombank",
+   "op": "wrap",
+   "find": "Sở hữu cổ phiếu VCB là bạn đang nắm giữ anh cả củ",
+   "to": "co-phieu-vcb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "anchor": "cổ phiếu VCB",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Cổ phiếu cụ thể & Ngành · sub-hub · key chính · mục «Học đầu tư thực chiến cùng HVS Tài Chính Số»"
+  },
+  {
+   "src": "bond-yield-la-gi-tim-hieu-chi-tiet-ve-loi-suat-trai-phieu",
+   "op": "wrap",
+   "find": "ái phiếu là một yếu tố quan trọng trong đầu tư trái phiếu. Nhà đầu tư cần hiểu rõ về lợ",
+   "to": "trai-phieu-la-gi",
+   "anchor": "đầu tư trái phiếu",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Trái phiếu · pillar · key phụ · mục «Bond yield là gì?»"
+  },
+  {
+   "src": "do-lech-chuan-la-gi",
+   "op": "wrap",
+   "find": "Độ lệch chuẩn của danh mục đầu tư dùng để đo mức độ biến động (",
+   "to": "danh-muc-dau-tu-hieu-qua-la-gi",
+   "anchor": "danh mục đầu tư",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Chiến lược, Phương pháp & Quản trị rủi ro · sub-hub · key ngữ nghĩa · mục «Hướng dẫn cách tính độ lệch chuẩn của danh mục đầu»"
+  },
+  {
+   "src": "mo-hinh-markowitz-la-gi",
+   "op": "wrap",
+   "find": "y là nền tảng vững chắc để xây dựng một chiến lược đầu tư hiệu quả, đặc biệt trong bối",
+   "to": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+   "anchor": "chiến lược đầu tư",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Chiến lược, Phương pháp & Quản trị rủi ro · pillar · key ngữ nghĩa · mục «Hạn chế của Mô hình Markowitz và cách khắc phục tr»"
+  },
+  {
+   "src": "mo-hinh-markowitz-la-gi",
+   "op": "wrap",
+   "find": "ờng cong này, mỗi điểm đại diện cho một danh mục đầu tư hiệu quả. Danh mục tối ưu nhất thường",
+   "to": "danh-muc-dau-tu-hieu-qua-la-gi",
+   "anchor": "danh mục đầu tư hiệu quả",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Chiến lược, Phương pháp & Quản trị rủi ro · sub-hub · key chính · mục «Bước 4: Vẽ Đường biên hiệu quả Markowitz và xác đị»"
+  },
+  {
+   "src": "cach-su-dung-4-duong-ma-pho-bien-trong-phan-tich-ky-thuat",
+   "op": "wrap",
+   "find": "an làm mịn dữ liệu giá để tạo thành một chỉ báo xu hướng.",
+   "to": "cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat",
+   "anchor": "chỉ báo xu hướng",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Phân tích kỹ thuật & Chỉ báo · hub · key phụ · mục «Đường trung bình động (MA) là gì?»"
+  },
+  {
+   "src": "duong-trendline-la-gi-cach-su-dung-hieu-qua-trong-phan-tich-ky-thuat",
+   "op": "wrap",
+   "find": "Đây là chiến lược giao dịch thuận xu hướng chính. Nhà đầu tư sẽ tìm kiếm",
+   "to": "giao-dich-theo-xu-huong-trend-following-la-gi",
+   "anchor": "thuận xu hướng",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Phân tích kỹ thuật & Chỉ báo · sub-hub · key ngữ nghĩa · mục «Chiến lược giao dịch tại điểm chạm (Pullback)»"
+  },
+  {
+   "src": "he-so-thanh-toan-la-gi",
+   "op": "wrap",
+   "find": "Hệ số thanh toán là nhóm chỉ số tài chính đo lường năng lực trả nợ của",
+   "to": "cac-chi-so-phan-tich-bao-cao-tai-chinh",
+   "anchor": "chỉ số tài chính",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Phân tích cơ bản & Tài chính DN · hub · key ngữ nghĩa · mục «Hệ số thanh toán (Liquidity Ratio) là gì?»"
+  },
+  {
+   "src": "app-chuyen-theo-doi-thi-truong-chung-khoan-nen-dung-app-nao",
+   "op": "wrap",
+   "find": "Stockbook là một trong những ứng dụng chứng khoán hàng đầu tại Việt Nam, lý tưở",
+   "to": "app-dau-tu-chung-khoan",
+   "anchor": "ứng dụng chứng khoán",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Mở tài khoản chứng khoán · sub-hub · key phụ · mục «Stockbook»"
+  },
+  {
+   "src": "app-chuyen-theo-doi-thi-truong-chung-khoan-nen-dung-app-nao",
+   "op": "remove",
+   "old": "https://www.dsc.com.vn/kien-thuc/app-dau-tu-chung-khoan",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Dòng Xem thêm trùng đích — link đã có trong câu"
+  },
+  {
+   "src": "quy-dragon-capital-la-gi",
+   "op": "wrap",
+   "find": "Quỹ đầu tư chứng khoán phái sinh: Đây là loại quỹ đầ",
+   "to": "chung-chi-quy-la-gi",
+   "anchor": "Quỹ đầu tư chứng khoán",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Quỹ & ETF · pillar · key ngữ nghĩa · mục «Sản phẩm và dịch vụ»"
+  },
+  {
+   "src": "dca-trong-dau-tu-chung-khoan-la-gi",
+   "op": "wrap",
+   "find": "à chiến lược trung bình giá. Đây là một chiến lược đầu tư chứng khoán đơn giản nhưng hiệu quả, giúp",
+   "to": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+   "anchor": "chiến lược đầu tư chứng khoán",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Chiến lược, Phương pháp & Quản trị rủi ro · pillar · key chính · mục «DCA là gì?»"
+  },
+  {
+   "src": "mo-hinh-2-day-la-gi",
+   "op": "wrap",
+   "find": "Mô hình hai đáy (Double Bottom) là một mô hình đảo chiều tăng giá xảy ra ở đáy của xu",
+   "to": "cac-mo-hinh-gia-trong-chung-khoan",
+   "anchor": "mô hình đảo chiều",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Phân tích kỹ thuật & Chỉ báo · hub · key ngữ nghĩa · mục «Mô hình 2 đáy là gì?»"
+  },
+  {
+   "src": "mo-hinh-2-day-la-gi",
+   "op": "remove",
+   "old": "https://www.dsc.com.vn/kien-thuc/cac-mo-hinh-gia-trong-chung-khoan",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Dòng Xem thêm trùng đích — link đã có trong câu"
+  },
+  {
+   "src": "song-elliott-va-fibonacci-la-gi",
+   "op": "wrap",
+   "find": "ng Elliott là một trong những lý thuyết phân tích kỹ thuật nâng cao được ứng dụng rộng r",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "anchor": "phân tích kỹ thuật",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Phân tích kỹ thuật & Chỉ báo · pillar · key chính · mục «Sóng Elliott là gì?»"
+  },
+  {
+   "src": "ty-le-don-bay-tai-chinh-gearing-ratio-la-gi",
+   "op": "wrap",
+   "find": "io, hay tỷ lệ đòn bẩy tài chính, là một chỉ số tài chính quan trọng đo lường mức độ mà",
+   "to": "cac-chi-so-phan-tich-bao-cao-tai-chinh",
+   "anchor": "chỉ số tài chính",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Phân tích cơ bản & Tài chính DN · hub · key ngữ nghĩa · mục «Tỷ lệ đòn bẩy tài chính là gì?»"
+  },
+  {
+   "src": "cung-tien-la-gi",
+   "op": "wrap",
+   "find": "Trong phân tích kinh tế vĩ mô, quy mô cung tiền phản ánh mứ",
+   "to": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "anchor": "phân tích kinh tế vĩ mô",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Vĩ mô & Chính sách · pillar · key phụ · mục «Cung tiền là gì?»"
+  },
+  {
+   "src": "ty-so-thanh-toan-nhanh-la-gi",
+   "op": "wrap",
+   "find": "Đánh giá khả năng thanh toán ngắn hạn dựa trên tài sản dễ",
+   "to": "he-so-thanh-toan-la-gi",
+   "anchor": "khả năng thanh toán",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Phân tích cơ bản & Tài chính DN · sub-hub · key ngữ nghĩa · mục «Tỷ số thanh toán nhanh (Quick Ratio) là gì?»"
+  },
+  {
+   "src": "ecb-la-gi-vai-tro-va-chuc-nang-cua-ngan-hang-trung-uong-chau-au",
+   "op": "wrap",
+   "find": "chịu trách nhiệm thiết lập và thực hiện chính sách tiền tệ của Khu vực đồng Euro. Chính",
+   "to": "chinh-sach-tien-te-la-gi",
+   "anchor": "chính sách tiền tệ",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Vĩ mô & Chính sách · sub-hub · key chính · mục «Thiết lập và thực hiện chính sách tiền tệ»"
+  },
+  {
+   "src": "canh-tranh-khong-hoan-hao-phan-tich-chi-tiet-cac-mo-hinh",
+   "op": "wrap",
+   "find": "Các doanh nghiệp cạnh tranh dựa trên giá cả, chất lượng,",
+   "to": "canh-tranh-la-gi",
+   "anchor": "cạnh tranh",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Vĩ mô & Chính sách · sub-hub · key chính · mục «Cạnh tranh độc quyền»"
+  },
+  {
+   "src": "chi-bao-supertrend-la-gi-huong-dan-su-dung-hieu-qua-cho-nha-dau-tu",
+   "op": "wrap",
+   "find": "rung bình thực) và xu hướng hiện tại để xác định xu hướng chính của thị trường và các đ",
+   "to": "cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat",
+   "anchor": "xác định xu hướng",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Phân tích kỹ thuật & Chỉ báo · hub · key phụ · mục «Chỉ báo Supertrend là gì?»"
+  },
+  {
+   "src": "nen-hanging-man-la-gi",
+   "op": "wrap",
+   "find": "Trong phân tích kỹ thuật chứng khoán, hai mô hình nến",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "anchor": "phân tích kỹ thuật",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Phân tích kỹ thuật & Chỉ báo · pillar · key chính · mục «Phân biệt nến Hanging Man và nến Hammer»"
+  },
+  {
+   "src": "chi-bao-dong-tien-chaikin-cmf-la-gi",
+   "op": "wrap",
+   "find": "Các nhà phân tích kỹ thuật có thể sử dụng giá trị tuyệt",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "anchor": "phân tích kỹ thuật",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Phân tích kỹ thuật & Chỉ báo · pillar · key chính · mục «Ý nghĩa của chỉ báo dòng tiền Chaikin»"
+  },
+  {
+   "src": "chi-bao-mcdx-la-gi-giai-ma-cong-cu-phan-tich-xu-huong-dong-tien-hieu-qua",
+   "op": "wrap",
+   "find": "sử dụng chỉ báo này trên nhiều phần mềm phân tích kỹ thuật phổ biến.",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "anchor": "phân tích kỹ thuật",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Phân tích kỹ thuật & Chỉ báo · pillar · key chính · mục «Cách thức hoạt động của chỉ báo MCDX»"
+  },
+  {
+   "src": "chi-so-pce-la-gi-giai-thich-chi-tiet-cho-nha-dau-tu",
+   "op": "wrap",
+   "find": "u hơn. Ngược lại, khi Fed muốn kiềm chế lạm phát, họ có thể tăng lãi suất để h",
+   "to": "lam-phat-la-gi",
+   "anchor": "lạm phát",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Vĩ mô & Chính sách · sub-hub · key chính · mục «Tầm quan trọng của Chỉ số PCE»"
+  },
+  {
+   "src": "dao-chieu-xu-huong-la-gi",
+   "op": "wrap",
+   "find": "c các nhà đầu tư ưa thích sử dụng trong phân tích kỹ thuật bởi sự linh hoạt và độ tin cậ",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "anchor": "phân tích kỹ thuật",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Phân tích kỹ thuật & Chỉ báo · pillar · key chính · mục «Các công cụ chỉ báo»"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-gas-hay-khong",
+   "op": "wrap",
+   "find": "điểm bán tại thời điểm hiện tại đối với cổ phiếu GAS có thể có thể theo dõi báo cá",
+   "to": "co-phieu-gas-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+   "anchor": "cổ phiếu GAS",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Cổ phiếu cụ thể & Ngành · sub-hub · key chính · mục «Đánh giá yếu tố kỹ thuật cổ phiếu GAS»"
+  },
+  {
+   "src": "su-kien-thien-nga-den-la-gi",
+   "op": "wrap",
+   "find": "Cuộc khủng hoảng tài chính năm 2008: Cuộc khủng hoảng nà",
+   "to": "khung-hoang-tai-chinh-la-gi-cac-giai-doan-cua-khung-hoang-tai-chinh",
+   "anchor": "khủng hoảng tài chính",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Vĩ mô & Chính sách · hub · key chính · mục «Sự kiện thiên nga đen ảnh hướng như thế nào đến th»"
+  },
+  {
+   "src": "cau-tien-la-gi-tac-dong-cua-cau-tien-toi-nen-kinh-te-va-thi-truong-chung-khoan",
+   "op": "wrap",
+   "find": "n vòng quay tiền tệ và hiệu quả của các chính sách vĩ mô:",
+   "to": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+   "anchor": "chính sách vĩ mô",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Vĩ mô & Chính sách · hub · key ngữ nghĩa · mục «Tác động của cầu tiền tới nền kinh tế»"
+  },
+  {
+   "src": "duong-ema-la-gi",
+   "op": "wrap",
+   "find": "Để xác định xu hướng giá sắp tới trong ngắn, trung",
+   "to": "cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat",
+   "anchor": "xác định xu hướng",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Phân tích kỹ thuật & Chỉ báo · hub · key phụ · mục «Bước 3: Xác định xu hướng sắp tới»"
+  },
+  {
+   "src": "duong-ema-la-gi",
+   "op": "remove",
+   "old": "https://www.dsc.com.vn/kien-thuc/cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Dòng Xem thêm trùng đích — link đã có trong câu"
+  },
+  {
+   "src": "nen-mua-vang-o-ngan-hang-hay-tiem-vang",
+   "op": "wrap",
+   "find": "Uy tín là yếu tố sống còn trong đầu tư vàng. Mua vàng tại các ngân hàng q",
+   "to": "cach-dau-tu-vang",
+   "anchor": "đầu tư vàng",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Vàng · pillar · key ngữ nghĩa · mục «Độ uy tín và minh bạch của kênh giao dịch»"
+  },
+  {
+   "src": "kenh-gia-la-gi",
+   "op": "wrap",
+   "find": "Trong phân tích kỹ thuật chứng khoán, kênh giá (Price",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "anchor": "phân tích kỹ thuật",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Phân tích kỹ thuật & Chỉ báo · pillar · key chính · mục «Kênh giá là gì trong phân tích kỹ thuật?»"
+  },
+  {
+   "src": "ty-so-thanh-toan-bang-tien-mat-la-gi",
+   "op": "wrap",
+   "find": "à một chỉ số tài chính dùng để đánh giá khả năng thanh toán các khoản nợ ngắn hạn ngay lậ",
+   "to": "he-so-thanh-toan-la-gi",
+   "anchor": "khả năng thanh toán",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Phân tích cơ bản & Tài chính DN · sub-hub · key ngữ nghĩa · mục «Tỷ số thanh toán bằng tiền mặt (Cash Ratio) là gì?»"
+  },
+  {
+   "src": "duong-cong-loi-suat-dao-nguoc-la-gi-giai-thich-chi-tiet-va-anh-huong",
+   "op": "wrap",
+   "find": "Tâm lý phòng thủ gom mua trái phiếu dài hạn. Khi nhận thấy lãi su",
+   "to": "trai-phieu-la-gi",
+   "anchor": "mua trái phiếu",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Trái phiếu · pillar · key phụ · mục «Vì sao đường cong lợi suất bị đảo ngược?»"
+  },
+  {
+   "src": "co-nen-ban-vang-thoi-diem-nay",
+   "op": "wrap",
+   "find": "Chênh lệch spread lớn làm giảm hiệu quả đầu tư vàng ngắn hạn. Bạn nên bán để chuy",
+   "to": "cach-dau-tu-vang",
+   "anchor": "đầu tư vàng",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Vàng · pillar · key ngữ nghĩa · mục «Cân nhắc bán nếu: Cần tiền mặt gấp hoặc đã đạt kỳ »"
+  },
+  {
+   "src": "mo-hinh-tam-giac-mo-rong-la-gi",
+   "op": "wrap",
+   "find": "ormation hoặc Megaphone Pattern) là một mẫu hình giá đặc trưng bởi biên độ dao độn",
+   "to": "cac-mo-hinh-gia-trong-chung-khoan",
+   "anchor": "mẫu hình giá",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Phân tích kỹ thuật & Chỉ báo · hub · key phụ · mục «Mô hình tam giác mở rộng là gì?»"
+  },
+  {
+   "src": "mo-hinh-tam-giac-mo-rong-la-gi",
+   "op": "remove",
+   "old": "https://www.dsc.com.vn/kien-thuc/cac-mo-hinh-gia-trong-chung-khoan",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Dòng Xem thêm trùng đích — link đã có trong câu"
+  },
+  {
+   "src": "tam-ly-dam-dong-la-gi",
+   "op": "wrap",
+   "find": "khoán là nơi bạn rất có thể bị mắc các bẫy tâm lý đám đông dẫn đến các khoản đầ",
+   "to": "thien-kien-nhan-thuc-la-gi",
+   "anchor": "bẫy tâm lý",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Chiến lược, Phương pháp & Quản trị rủi ro · hub · key ngữ nghĩa · mục «Cách thoát bẫy tâm lý đám đông trong đầu tư chứng »"
+  },
+  {
+   "src": "he-so-tuong-quan-la-gi",
+   "op": "wrap",
+   "find": "ài sản. Dù mang lại nhiều giá trị trong quản lý rủi ro và xây dựng danh mục, hệ số t",
+   "to": "quan-tri-rui-ro-la-gi-2",
+   "anchor": "quản lý rủi ro",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Chiến lược, Phương pháp & Quản trị rủi ro · hub · key phụ · mục «Đánh giá hiệu suất đầu tư»"
+  },
+  {
+   "src": "nen-doji-la-gi",
+   "op": "wrap",
+   "find": "n Spinning top thường bắt gặp hơn trong phân tích kỹ thuật và sự xuất hiện của nó chưa t",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "anchor": "phân tích kỹ thuật",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Phân tích kỹ thuật & Chỉ báo · pillar · key chính · mục «Phân biệt nến Doji và nến Spinning top»"
+  },
+  {
+   "src": "cac-mo-hinh-gia-trong-chung-khoan",
+   "op": "wrap",
+   "find": "Các tài liệu phân tích kỹ thuật quốc tế hiện nay phân loại tớ",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "anchor": "phân tích kỹ thuật",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Phân tích kỹ thuật & Chỉ báo · pillar · key chính · mục «Phân loại các mô hình giá cơ bản trong giao dịch c»"
+  },
+  {
+   "src": "huong-dan-cach-doc-bao-cao-thuong-nien-hieu-qua",
+   "op": "wrap",
+   "find": "oanh nghiệp là bước thu thập dữ liệu và phân tích cơ bản không thể thiếu. Báo cáo giúp",
+   "to": "phan-tich-co-ban-la-gi",
+   "anchor": "phân tích cơ bản",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Phân tích cơ bản & Tài chính DN · pillar · key chính · mục «Tại sao nhà đầu tư cần đọc báo cáo thường niên của»"
+  },
+  {
+   "src": "rui-ro-thi-truong-la-gi-cach-quan-tri-rui-ro-thi-truong-hieu-qua",
+   "op": "wrap",
+   "find": "Sử dụng các công cụ quản lý rủi ro như lệnh dừng lỗ tự động để h",
+   "to": "quan-tri-rui-ro-la-gi-2",
+   "anchor": "quản lý rủi ro",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Chiến lược, Phương pháp & Quản trị rủi ro · hub · key phụ · mục «3. Sử dụng lệnh dừng lỗ tự động»"
+  },
+  {
+   "src": "golden-cross-va-death-cross-la-gi",
+   "op": "wrap",
+   "find": "ớng: Golden Cross và Death Cross là hai chỉ báo xu hướng đối lập mạnh mẽ. Một bên dự b",
+   "to": "cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat",
+   "anchor": "chỉ báo xu hướng",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Phân tích kỹ thuật & Chỉ báo · hub · key phụ · mục «Ý nghĩa của Điểm cắt vàng, tử thần»"
+  },
+  {
+   "src": "mau-hinh-nen-bao-trum-la-gi",
+   "op": "wrap",
+   "find": "g thời hiệu quả nhất được sử dụng trong phân tích kỹ thuật.",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "anchor": "phân tích kỹ thuật",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Phân tích kỹ thuật & Chỉ báo · pillar · key chính · mục «Mẫu hình nến bao trùm là gì?»"
+  },
+  {
+   "src": "nen-evening-star-la-gi",
+   "op": "wrap",
+   "find": "n tại đỉnh của một xu hướng tăng. Trong phân tích kỹ thuật, mô hình này được coi là \"hồi",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "anchor": "phân tích kỹ thuật",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Phân tích kỹ thuật & Chỉ báo · pillar · key chính · mục «Nến Evening Star là gì?»"
+  },
+  {
+   "src": "pha-loang-co-phieu-la-gi-anh-huong-va-cach-tinh-toan",
+   "op": "wrap",
+   "find": "khi đã tính đến pha loãng do phát hành cổ phiếu ưu đãi, quyền mua cổ phiếu ESOP hoặc",
+   "to": "so-sanh-co-phieu-thuong-va-co-phieu-uu-dai",
+   "anchor": "cổ phiếu ưu đãi",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Phân tích cơ bản & Tài chính DN · sub-hub · key phụ · mục «Cách tính toán pha loãng cổ phiếu»"
+  },
+  {
+   "src": "ly-thuyet-tro-choi-ung-dung-phan-tich-hanh-vi-doanh-nghiep-trong-thi-truong-canh-tranh-hoan-hao",
+   "op": "wrap",
+   "find": "ết định tối ưu trong môi trường có tính cạnh tranh và tương tác cao.",
+   "to": "canh-tranh-la-gi",
+   "anchor": "cạnh tranh",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Vĩ mô & Chính sách · sub-hub · key chính · mục «Lý thuyết trò chơi là gì?»"
+  },
+  {
+   "src": "nen-dau-tu-vang-hay-bac",
+   "op": "wrap",
+   "find": "Rủi ro khi đầu tư vàng: Giá vàng vẫn có những biến đ",
+   "to": "cach-dau-tu-vang",
+   "anchor": "đầu tư vàng",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Vàng · pillar · key ngữ nghĩa · mục «Đầu tư vàng»"
+  },
+  {
+   "src": "gia-tri-doanh-nghiep-la-gi",
+   "op": "wrap",
+   "find": "Định giá cổ phiếu là quá trình chuyển đổi dữ li",
+   "to": "cach-dinh-gia-co-phieu-cho-nguoi-moi-bat-dau",
+   "anchor": "Định giá cổ phiếu",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Phân tích cơ bản & Tài chính DN · hub · key phụ · mục «5 phương pháp định giá doanh nghiệp phổ biến để ch»"
+  },
+  {
+   "src": "thi-gia-co-phieu-la-gi-cach-tinh-phan-tich-va-cac-yeu-to-anh-huong",
+   "op": "wrap",
+   "find": "Trong phân tích cơ bản, thị giá không phải lúc nào c",
+   "to": "phan-tich-co-ban-la-gi",
+   "anchor": "phân tích cơ bản",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Phân tích cơ bản & Tài chính DN · pillar · key chính · mục «Ứng dụng thị giá cổ phiếu trong phân tích và định »"
+  },
+  {
+   "src": "ty-suat-co-tuc-la-gi",
+   "op": "wrap",
+   "find": "lợi nhuận thực tế nhận được (dưới dạng cổ tức tiền mặt hoặc cổ phiếu) trên mỗi đồng",
+   "to": "co-tuc-la-gi",
+   "anchor": "cổ tức tiền mặt",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "Phân tích cơ bản & Tài chính DN · hub · key ngữ nghĩa · mục «Ý nghĩa của tỷ suất cổ tức»"
+  },
+  {
+   "src": "call-force-sell-ban-giai-chap-trong-dau-tu-chung-khoan-la-gi",
+   "op": "wrap",
+   "find": "ổ sung tiền hoặc chủ động giảm tỷ trọng margin.",
+   "to": "margin-la-gi",
+   "anchor": "margin",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Mở tài khoản chứng khoán · sub-hub · key chính · mục «Cách phòng tránh Call Force Sell khi giao dịch chứ»"
+  },
+  {
+   "src": "nen-heikin-ashi-la-gi",
+   "op": "wrap",
+   "find": "ật thông dụng thường được sử dụng trong phân tích kỹ thuật, nó cũng bao gồm các phần như",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "anchor": "phân tích kỹ thuật",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích kỹ thuật & Chỉ báo · pillar · key chính · mục «Cấu tạo của nến Heikin Ashi»"
+  },
+  {
+   "src": "vo-no-la-gi",
+   "op": "wrap",
+   "find": "Nguyên nhân: Khủng hoảng kinh tế toàn diện, chi tiêu công vượt",
+   "to": "khung-hoang-tai-chinh-la-gi-cac-giai-doan-cua-khung-hoang-tai-chinh",
+   "anchor": "Khủng hoảng kinh tế",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Vĩ mô & Chính sách · hub · key phụ · mục «Vỡ nợ Chính phủ (Sovereign Default)»"
+  },
+  {
+   "src": "trai-phieu-chinh-phu-la-gi",
+   "op": "wrap",
+   "find": "Người mua trái phiếu chính phủ có thể lựa chọn các",
+   "to": "trai-phieu-la-gi",
+   "anchor": "mua trái phiếu",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Trái phiếu · pillar · key phụ · mục «Nhà đầu tư mua trái phiếu chính phủ ở đâu?»"
+  },
+  {
+   "src": "duong-wma-la-gi",
+   "op": "wrap",
+   "find": "Xác định xu hướng rõ ràng hơn: Khi giá có sự dị",
+   "to": "cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat",
+   "anchor": "Xác định xu hướng",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích kỹ thuật & Chỉ báo · hub · key phụ · mục «Ý nghĩa của đường WMA»"
+  },
+  {
+   "src": "don-bay-tai-chinh-trong-dau-tu-chung-khoan-la-gi",
+   "op": "wrap",
+   "find": "n và từng mã cổ phiếu mà có thể sử dụng margin nhiều hay ít. Ngoài ra, một s",
+   "to": "margin-la-gi",
+   "anchor": "margin",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Mở tài khoản chứng khoán · sub-hub · key chính · mục «Cách sử dụng đòn bẩy tài chính trong đầu tư chứng »"
+  },
+  {
+   "src": "pivot-points-la-gi",
+   "op": "wrap",
+   "find": "ếng Pháp mang nghĩa là điểm xoay. Trong phân tích kỹ thuật, chỉ báo Pivot Points đại diệ",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "anchor": "phân tích kỹ thuật",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích kỹ thuật & Chỉ báo · pillar · key chính · mục «Pivot points là gì?»"
+  },
+  {
+   "src": "vung-dinh-va-day-la-gi",
+   "op": "wrap",
+   "find": "Vùng đỉnh trong phân tích kỹ thuật dùng để gọi vị trí mà giá cổ",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "anchor": "phân tích kỹ thuật",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích kỹ thuật & Chỉ báo · pillar · key chính · mục «Đỉnh và đáy là gì?»"
+  },
+  {
+   "src": "thu-nhap-rong-tu-tai-san-nuoc-ngoai-nffi",
+   "op": "wrap",
+   "find": "hai chỉ số kinh tế vĩ mô phổ biến nhất: GDP (Tổng sản phẩm quốc nội) và G",
+   "to": "gdp-la-gi",
+   "anchor": "GDP",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Vĩ mô & Chính sách · sub-hub · key chính · mục «NFFI: Cầu nối quan trọng phân biệt GDP và GNP»"
+  },
+  {
+   "src": "price-action-hanh-dong-gia-la-gi",
+   "op": "wrap",
+   "find": "ộng giá) là một trong những phương pháp phân tích kỹ thuật đơn giản dựa trên sự chuyển đ",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "anchor": "phân tích kỹ thuật",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích kỹ thuật & Chỉ báo · pillar · key chính · mục «Price action là gì?»"
+  },
+  {
+   "src": "huong-dan-chi-tiet-cach-mua-co-phieu-mwg",
+   "op": "wrap",
+   "find": "Theo dõi biến động giá cổ phiếu MWG sau khi mua để có thể đưa ra",
+   "to": "co-phieu-mwg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "anchor": "cổ phiếu MWG",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Cổ phiếu cụ thể & Ngành · sub-hub · key chính · mục «Bước 3: Mua cổ phiếu MWG»"
+  },
+  {
+   "src": "can-can-thanh-toan-bop-la-gi",
+   "op": "wrap",
+   "find": "Cán cân thanh toán là một công cụ phân tích vĩ mô đầy quyền năng, giúp nhà đầu",
+   "to": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "anchor": "phân tích vĩ mô",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Vĩ mô & Chính sách · pillar · key chính · mục «Tại sao nhà đầu tư chứng khoán phải quan tâm đến B»"
+  },
+  {
+   "src": "so-sanh-kenh-dau-tu-vang-va-dau-tu-chung-khoan",
+   "op": "wrap",
+   "find": "Về thanh khoản: kênh đầu tư vàng có thanh khoản cao hơn thị tr",
+   "to": "cach-dau-tu-vang",
+   "anchor": "kênh đầu tư vàng",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Vàng · pillar · key ngữ nghĩa · mục «So sánh kênh đầu tư vàng và đầu tư chứng khoán»"
+  },
+  {
+   "src": "vung-qua-mua-la-gi-giai-dap-chi-tiet-cho-nha-dau-tu",
+   "op": "wrap",
+   "find": "Overbought Zone) là một thuật ngữ trong phân tích kỹ thuật, dùng để mô tả mức giá mà một",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "anchor": "phân tích kỹ thuật",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích kỹ thuật & Chỉ báo · pillar · key chính · mục «Vùng quá mua là gì?»"
+  },
+  {
+   "src": "chien-luoc-giao-dich-ket-hop-bollinger-bands-va-duong-ma",
+   "op": "wrap",
+   "find": "là chỉ báo chậm và thường được dùng để xác định xu hướng chứ không dùng để đưa ra quyế",
+   "to": "cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat",
+   "anchor": "xác định xu hướng",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích kỹ thuật & Chỉ báo · hub · key phụ · mục «Bollinger Bands và đường MA là gì?»"
+  },
+  {
+   "src": "rui-ro-la-gi",
+   "op": "wrap",
+   "find": "ợi nhuận (High Risk, High Return). Việc quản trị rủi ro tốt có thể mở ra những cơ hội",
+   "to": "quan-tri-rui-ro-la-gi-2",
+   "anchor": "quản trị rủi ro",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Chiến lược, Phương pháp & Quản trị rủi ro · hub · key chính · mục «Rủi ro là gì?»"
+  },
+  {
+   "src": "so-nhan-tai-khoa-la-gi",
+   "op": "wrap",
+   "find": "Chính sách tài khóa mở rộng: Thường áp dụng khi k",
+   "to": "chinh-sach-tai-khoa-la-gi",
+   "anchor": "Chính sách tài khóa",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Vĩ mô & Chính sách · sub-hub · key chính · mục «Mối quan hệ chiến lược giữa số nhân và chính sách »"
+  },
+  {
+   "src": "yeu-to-anh-huong-den-gia-vang",
+   "op": "wrap",
+   "find": "Để thực hiện cách đầu tư vàng thông minh để sinh lời, bạn c",
+   "to": "cach-dau-tu-vang",
+   "anchor": "cách đầu tư vàng",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Vàng · pillar · key chính · mục «Các hình thức đầu tư vàng phổ biến và lời khuyên t»"
+  },
+  {
+   "src": "yeu-to-anh-huong-den-gia-vang",
+   "op": "wrap",
+   "find": "tế bất ổn. Do đó, câu trả lời cho việc có nên đầu tư vàng khi lạm phát cao thường là có",
+   "to": "co-nen-dau-tu-vang-thoi-diem-nay",
+   "anchor": "có nên đầu tư vàng",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Vàng · sub-hub · key phụ · mục «Lạm phát và sức mất giá của tiền tệ»"
+  },
+  {
+   "src": "break-out-trong-phan-tich-ky-thuat-co-phieu-la-gi-cach-giao-dich-va-cac-mau-hinh-pho-bien",
+   "op": "wrap",
+   "find": "trợ sau khi break-out. Do đó, các nhà đầu tư cần sử dụng các công cụ phân tích kỹ thuật khác để xác định khả năng thà",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "anchor": "phân tích kỹ thuật",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích kỹ thuật & Chỉ báo · pillar · key chính · mục «Cách giao dịch với break-out»"
+  },
+  {
+   "src": "current-ratio-la-gi-cach-tinh-va-y-nghia-cua-he-so-nay",
+   "op": "wrap",
+   "find": "ao nhiều là tốt? Tỷ lệ này càng cao thì khả năng thanh toán các khoản nợ ngắn hạn của doa",
+   "to": "he-so-thanh-toan-la-gi",
+   "anchor": "khả năng thanh toán",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích cơ bản & Tài chính DN · sub-hub · key ngữ nghĩa · mục «Ý nghĩa của hệ số current ratio là gì?»"
+  },
+  {
+   "src": "co-phieu-phong-thu-la-gi",
+   "op": "wrap",
+   "find": "cũng cần lưu ý đến những yếu tố sau khi đầu tư cổ phiếu phòng thủ:",
+   "to": "co-phieu-la-gi-cac-loai-co-phieu-tren-thi-truong-chung-khoan-viet-nam",
+   "anchor": "đầu tư cổ phiếu",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Cổ phiếu cụ thể & Ngành · hub · key phụ · mục «Lưu ý khi đầu tư cổ phiếu phòng thủ»"
+  },
+  {
+   "src": "5-chi-so-quan-trong-cua-phan-tich-co-ban-trong-chung-khoan",
+   "op": "wrap",
+   "find": "DSC tin rằng trang bị kiến thức phân tích cơ bản là bước khởi đầu cần thiết để",
+   "to": "phan-tich-co-ban-la-gi",
+   "anchor": "phân tích cơ bản",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích cơ bản & Tài chính DN · pillar · key chính · mục «Vai trò của các chỉ số phân tích chứng khoán»"
+  },
+  {
+   "src": "chi-bao-envelope-la-gi",
+   "op": "wrap",
+   "find": "áo Envelope (hay Kênh Envelopes) là một chỉ báo kỹ thuật thuộc nhóm chỉ báo xu hướng,",
+   "to": "chi-bao-ky-thuat",
+   "anchor": "chỉ báo kỹ thuật",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích kỹ thuật & Chỉ báo · hub · key chính · mục «Chỉ báo Envelope là gì?»"
+  },
+  {
+   "src": "tin-dung-doanh-nghiep-la-gi",
+   "op": "wrap",
+   "find": "oanh nghiệp phải liên tục đảo nợ do mất khả năng thanh toán từ dòng tiền kinh doanh, đây",
+   "to": "he-so-thanh-toan-la-gi",
+   "anchor": "khả năng thanh toán",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích cơ bản & Tài chính DN · sub-hub · key ngữ nghĩa · mục «Tái tài trợ và cơ cấu nợ»"
+  },
+  {
+   "src": "quy-tuong-ho-la-gi",
+   "op": "wrap",
+   "find": "hữu được thể hiện bằng việc nắm giữ các chứng chỉ quỹ. Lợi nhuận từ tăng trưởng tài",
+   "to": "chung-chi-quy-la-gi",
+   "anchor": "chứng chỉ quỹ",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Quỹ & ETF · pillar · key chính · mục «Quỹ tương hỗ là gì?»"
+  },
+  {
+   "src": "chi-so-nasdaq-chi-so-chung-khoan-cong-nghe-hang-dau-the-gioi",
+   "op": "wrap",
+   "find": "Chỉ số Nasdaq là một chỉ số chứng khoán tổng hợp được hình thành thôn",
+   "to": "chi-so-chung-khoan-la-gi",
+   "anchor": "chỉ số chứng khoán",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Cách chơi chứng khoán · hub · key chính · mục «Chỉ số Nasdaq là gì?»"
+  },
+  {
+   "src": "chi-so-nikkei-la-gi",
+   "op": "wrap",
+   "find": "ên đầy đủ: Nikkei 225 Stock Average) là chỉ số chứng khoán quan trọng nhất của Nhật Bản,",
+   "to": "chi-so-chung-khoan-la-gi",
+   "anchor": "chỉ số chứng khoán",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Cách chơi chứng khoán · hub · key chính · mục «Chỉ số Nikkei là gì?»"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-vietnam-airlines-hvn-hay-khong",
+   "op": "wrap",
+   "find": "tôi không đưa ra khuyến nghị đầu tư cho cổ phiếu HVN do tình hình tài chính chưa t",
+   "to": "co-phieu-hvn-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "anchor": "cổ phiếu HVN",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Cổ phiếu cụ thể & Ngành · sub-hub · key chính · mục «Đánh giá yếu tố cơ bản cổ phiếu HVN»"
+  },
+  {
+   "src": "toc-do-tang-truong-kinh-te-la-gi",
+   "op": "wrap",
+   "find": "GDP t-1 : GDP của kỳ trước đó (nă",
+   "to": "gdp-la-gi",
+   "anchor": "GDP",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Vĩ mô & Chính sách · sub-hub · key chính · mục «Công thức tính tốc độ tăng trưởng kinh tế»"
+  },
+  {
+   "src": "bom-tien-ra-nen-kinh-te-la-gi-tac-dong-cua-bom-tien-den-ttck",
+   "op": "wrap",
+   "find": "Bơm tiền ra nền kinh tế là một chính sách tiền tệ được thực hiện bởi ngân hàng",
+   "to": "chinh-sach-tien-te-la-gi",
+   "anchor": "chính sách tiền tệ",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Vĩ mô & Chính sách · sub-hub · key chính · mục «Bơm tiền ra nền kinh tế là gì?»"
+  },
+  {
+   "src": "trai-phieu-chuyen-doi-la-gi-so-sanh-trai-phieu-thuong-va-trai-phieu-chuyen-doi",
+   "op": "wrap",
+   "find": "Cần cân nhắc kỹ rủi ro khi đầu tư trái phiếu chuyển đổi: Nhà đầu tư cần câ",
+   "to": "trai-phieu-la-gi",
+   "anchor": "đầu tư trái phiếu",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Trái phiếu · pillar · key phụ · mục «Một số lưu ý khi đầu tư trái phiếu chuyển đổi»"
+  },
+  {
+   "src": "pullback-trading-la-gi-chien-luoc-giao-dich-hieu-qua-cho-nha-dau-tu",
+   "op": "wrap",
+   "find": "đòi hỏi nhà đầu tư phải có kiến thức về phân tích kỹ thuật, khả năng nhận diện xu hướng",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "anchor": "phân tích kỹ thuật",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích kỹ thuật & Chỉ báo · pillar · key chính · mục «3. Rủi ro của pullback trading»"
+  },
+  {
+   "src": "vung-bay-gia-la-gi",
+   "op": "wrap",
+   "find": "gặp và mắc phải vào những bẫy giá trong phân tích kỹ thuật mà không có những biện pháp q",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "anchor": "phân tích kỹ thuật",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích kỹ thuật & Chỉ báo · pillar · key chính · mục «Cách giảm thiểu rủi ro khi mắc phải bẫy giá»"
+  },
+  {
+   "src": "take-profit-la-gi",
+   "op": "wrap",
+   "find": "tại sàn HOSE, chiến lược chốt lời theo tỷ lệ Risk/Reward tối thiểu 1:2 là nguyên tắc c",
+   "to": "ty-le-risk-reward-la-gi",
+   "anchor": "tỷ lệ Risk/Reward",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Chiến lược, Phương pháp & Quản trị rủi ro · sub-hub · key chính · mục «Chốt lời theo tỷ lệ rủi ro/lợi nhuận cố định (Risk»"
+  },
+  {
+   "src": "ung-dung-arbitrage-vao-dau-tu-chung-chi-quy",
+   "op": "wrap",
+   "find": "Giá của chứng chỉ Quỹ cũng biến động như giá cổ phi",
+   "to": "chung-chi-quy-la-gi",
+   "anchor": "chứng chỉ Quỹ",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Quỹ & ETF · pillar · key chính · mục «Ứng dụng kinh doanh chênh lệch giá vào đầu tư chứn»"
+  },
+  {
+   "src": "chi-so-dax-la-gi",
+   "op": "wrap",
+   "find": "chúng ta hãy đặt nó lên bàn cân với các chỉ số chứng khoán nổi tiếng khác như chỉ số tru",
+   "to": "chi-so-chung-khoan-la-gi",
+   "anchor": "chỉ số chứng khoán",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Cách chơi chứng khoán · hub · key chính · mục «So sánh DAX với các chỉ số tài chính hàng đầu khác»"
+  },
+  {
+   "src": "phan-tich-dupont-la-gi",
+   "op": "wrap",
+   "find": "ài chính: Mô hình này chỉ tập trung vào các chỉ số tài chính, không tính đến các yếu tố ph",
+   "to": "cac-chi-so-phan-tich-bao-cao-tai-chinh",
+   "anchor": "các chỉ số tài chính",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích cơ bản & Tài chính DN · hub · key phụ · mục «Nhược điểm»"
+  },
+  {
+   "src": "von-co-phan-la-gi",
+   "op": "wrap",
+   "find": "gánh nặng nợ cho công ty và tăng cường vốn chủ sở hữu, mặc dù có thể làm pha loãng",
+   "to": "von-chu-so-huu-la-gi",
+   "anchor": "vốn chủ sở hữu",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích cơ bản & Tài chính DN · sub-hub · key chính · mục «Vốn cổ phần được huy động như thế nào?»"
+  },
+  {
+   "src": "cach-kiem-soat-tam-ly-trong-dau-tu-chung-khoan",
+   "op": "wrap",
+   "find": "ợ hãi (fear), nhà đầu tư dễ rơi vào các bẫy tâm lý, dẫn đến sai lầm trong việc đ",
+   "to": "thien-kien-nhan-thuc-la-gi",
+   "anchor": "bẫy tâm lý",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Chiến lược, Phương pháp & Quản trị rủi ro · hub · key ngữ nghĩa · mục «Tại sao cần kiểm soát tâm lý trong đầu tư chứng kh»"
+  },
+  {
+   "src": "co-nen-dau-tu-vao-quy-mo-vcbf",
+   "op": "wrap",
+   "find": "sách 0% phí mua (miễn phí đăng ký mua) chứng chỉ quỹ cho nhà đầu tư. Phí quản lý q",
+   "to": "chung-chi-quy-la-gi",
+   "anchor": "chứng chỉ quỹ",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Quỹ & ETF · pillar · key chính · mục «Chi tiết biểu phí giao dịch quỹ mở VCBF»"
+  },
+  {
+   "src": "co-nen-dau-tu-vao-quy-mo-vina-capital-khong",
+   "op": "wrap",
+   "find": "iến lược đầu tư khác nhau. Chọn đúng mã chứng chỉ quỹ (CCQ) quyết định trực tiếp đế",
+   "to": "chung-chi-quy-la-gi",
+   "anchor": "chứng chỉ quỹ",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Quỹ & ETF · pillar · key chính · mục «Danh sách các quỹ mở VinaCapital và hiệu suất sinh»"
+  },
+  {
+   "src": "suy-thoai-kinh-te-la-gi",
+   "op": "wrap",
+   "find": "Chu kỳ kinh tế bao gồm ba giai đoạn chính: p",
+   "to": "chu-ky-kinh-te-la-gi-cach-van-dung-chu-ky-kinh-te-de-dau-tu-co-phieu-hieu-qua",
+   "anchor": "Chu kỳ kinh tế",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Vĩ mô & Chính sách · sub-hub · key chính · mục «Những dấu hiệu của chu kỳ suy thoái kinh tế»"
+  },
+  {
+   "src": "chi-bao-moving-average-envelope-mae-la-gi",
+   "op": "wrap",
+   "find": "hường sẽ ưu tiên hơn việc sử dụng những đường trung bình động ngắn ngày hơn và khoảng cách",
+   "to": "duong-ma-la-gi",
+   "anchor": "đường trung bình động",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích kỹ thuật & Chỉ báo · sub-hub · key phụ · mục «Cách sử dụng chỉ báo MAE»"
+  },
+  {
+   "src": "nen-harami-la-gi",
+   "op": "wrap",
+   "find": "mô hình nến đảo chiều quan trọng trong phân tích kỹ thuật, báo hiệu sự suy yếu của xu h",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "anchor": "phân tích kỹ thuật",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích kỹ thuật & Chỉ báo · pillar · key chính · mục «Nến Harami là gì?»"
+  },
+  {
+   "src": "chi-bao-ultimate-oscillator-uo-la-gi",
+   "op": "wrap",
+   "find": "Ultimate Oscillator là chỉ báo phân tích kỹ thuật thuộc nhóm dao động động lượn",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "anchor": "phân tích kỹ thuật",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích kỹ thuật & Chỉ báo · pillar · key chính · mục «Chỉ báo Ultimate Oscillator là gì?»"
+  },
+  {
+   "src": "ly-thuyet-dow-va-ung-dung-trong-phan-tich-ky-thuat",
+   "op": "wrap",
+   "find": "thuyết Dow là một trong những lý thuyết phân tích kỹ thuật (PTKT) lâu đời và phổ biến nh",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "anchor": "phân tích kỹ thuật",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích kỹ thuật & Chỉ báo · pillar · key chính · mục «Lý thuyết Dow là gì?»"
+  },
+  {
+   "src": "bao-cao-tai-chinh-hop-nhat-la-gi",
+   "op": "wrap",
+   "find": "Phân tích báo cáo tài chính hợp nhất giúp nhà đầu tư chọn",
+   "to": "cach-phan-tich-bao-cao-tai-chinh",
+   "anchor": "Phân tích báo cáo tài chính",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích cơ bản & Tài chính DN · hub · key phụ · mục «Ứng dụng phân tích BCTC hợp nhất trong đầu tư chứn»"
+  },
+  {
+   "src": "gia-tri-noi-tai-cua-co-phieu-la-gi-cach-tinh-gia-tri-noi-tai-cua-co-phieu",
+   "op": "wrap",
+   "find": "Việc định giá cổ phiếu không chỉ là bài tập học thuậ",
+   "to": "cach-dinh-gia-co-phieu-cho-nguoi-moi-bat-dau",
+   "anchor": "định giá cổ phiếu",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích cơ bản & Tài chính DN · hub · key phụ · mục «Tại sao việc xác định giá trị nội tại lại quan trọ»"
+  },
+  {
+   "src": "chi-so-dar-la-gi",
+   "op": "wrap",
+   "find": "c hình thành từ nguồn vốn vay nợ. Trong phân tích cơ bản, đây là chỉ số nền tảng nằm t",
+   "to": "phan-tich-co-ban-la-gi",
+   "anchor": "phân tích cơ bản",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích cơ bản & Tài chính DN · pillar · key chính · mục «Chỉ số DAR là gì?»"
+  },
+  {
+   "src": "chi-so-dar-la-gi",
+   "op": "wrap",
+   "find": "Đo lường mức độ đòn bẩy tài chính: Tỷ số DAR cao chứng tỏ doanh",
+   "to": "don-bay-tai-chinh-la-gi-uu-va-nhuoc-diem-cach-su-dung",
+   "anchor": "đòn bẩy tài chính",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích cơ bản & Tài chính DN · sub-hub · key chính · mục «Ý nghĩa của chỉ số DAR trong đầu tư chứng khoán»"
+  },
+  {
+   "src": "thang-du-von-co-phan-la-gi",
+   "op": "wrap",
+   "find": "Đây là nguồn vốn mang tính chất bổ sung vốn chủ sở hữu, không phải thu nhập từ hoạt",
+   "to": "von-chu-so-huu-la-gi",
+   "anchor": "vốn chủ sở hữu",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích cơ bản & Tài chính DN · sub-hub · key chính · mục «Thặng dư vốn cổ phần không phải chịu thuế»"
+  },
+  {
+   "src": "chien-luoc-dau-tu-chung-khoan-ngan-han-la-gi",
+   "op": "wrap",
+   "find": "c với đầu tư chứng khoán dài hạn, người lướt sóng tập trung cao độ vào việc lựa",
+   "to": "trading-trong-chung-khoan-la-gi",
+   "anchor": "lướt sóng",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Chiến lược, Phương pháp & Quản trị rủi ro · sub-hub · key ngữ nghĩa · mục «Đầu tư chứng khoán ngắn hạn là gì?»"
+  },
+  {
+   "src": "lai-suat-lien-ngan-hang-la-gi-cach-tinh-tac-dong-va-cach-tra-cuu",
+   "op": "wrap",
+   "find": "ảnh hưởng: Các nhóm ngành nhạy cảm với lãi suất như ngân hàng, bất động sản,",
+   "to": "lai-suat-la-gi",
+   "anchor": "lãi suất",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Vĩ mô & Chính sách · sub-hub · key chính · mục «Ứng dụng lãi suất liên ngân hàng trong đầu tư chứn»"
+  },
+  {
+   "src": "full-margin-la-gi-loi-khuyen-cho-nha-dau-tu-moi",
+   "op": "wrap",
+   "find": "cuối mỗi quý, CTCK thường thực hiện \"rũ margin\" nhằm \"làm đẹp\" báo cáo tài c",
+   "to": "margin-la-gi",
+   "anchor": "margin",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Mở tài khoản chứng khoán · sub-hub · key chính · mục «Ảnh hưởng của Full Margin đối với thị trường»"
+  },
+  {
+   "src": "macd-la-gi",
+   "op": "wrap",
+   "find": "báo động lượng theo sau xu hướng trong phân tích kỹ thuật. MACD đo lường mối quan hệ gi",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "anchor": "phân tích kỹ thuật",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích kỹ thuật & Chỉ báo · pillar · key chính · mục «MACD là gì?»"
+  },
+  {
+   "src": "phuong-phap-vsa",
+   "op": "wrap",
+   "find": "ượng chênh lệch giá. Đây là phương pháp phân tích kỹ thuật dựa trên mối quan hệ giữa cun",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "anchor": "phân tích kỹ thuật",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích kỹ thuật & Chỉ báo · pillar · key chính · mục «Phương pháp VSA là gì?»"
+  },
+  {
+   "src": "nen-pin-bar-la-gi",
+   "op": "wrap",
+   "find": "à một loại nến đảo chiều phổ biến trong phân tích kỹ thuật và có độ tin cậy cao.",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "anchor": "phân tích kỹ thuật",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích kỹ thuật & Chỉ báo · pillar · key chính · mục «Nến Pin Bar là gì?»"
+  },
+  {
+   "src": "chi-bao-klinger-oscillator-la-gi",
+   "op": "wrap",
+   "find": "ator\" tại mục chỉ báo trên các nền tảng phân tích kỹ thuật. Các thông số mặc định tiêu c",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "anchor": "phân tích kỹ thuật",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích kỹ thuật & Chỉ báo · pillar · key chính · mục «Bước 1: Cài đặt thông số tối ưu trên biểu đồ»"
+  },
+  {
+   "src": "ebitda-la-gi-giai-ma-chi-tiet-ve-chi-so-tai-chinh-quan-trong-nay",
+   "op": "wrap",
+   "find": "oanh nghiệp, việc theo dõi và phân tích các chỉ số tài chính là vô cùng cần thiết để đánh",
+   "to": "cac-chi-so-phan-tich-bao-cao-tai-chinh",
+   "anchor": "các chỉ số tài chính",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích cơ bản & Tài chính DN · hub · key phụ · mục «Đối với các doanh nghiệp»"
+  },
+  {
+   "src": "von-luu-dong-la-gi",
+   "op": "wrap",
+   "find": "hìn đầu tư: Doanh nghiệp có nguy cơ mất khả năng thanh toán, dẫn đến phá sản nếu không có",
+   "to": "he-so-thanh-toan-la-gi",
+   "anchor": "khả năng thanh toán",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích cơ bản & Tài chính DN · sub-hub · key ngữ nghĩa · mục «Vốn lưu động âm (< 0): Cảnh báo rủi ro thanh khoản»"
+  },
+  {
+   "src": "von-hoa-thi-truong-la-gi",
+   "op": "wrap",
+   "find": "thị trường thường lớn hơn nhiều so với vốn chủ sở hữu. Chỉ số P/B lớn hơn 1 phản án",
+   "to": "von-chu-so-huu-la-gi",
+   "anchor": "vốn chủ sở hữu",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích cơ bản & Tài chính DN · sub-hub · key chính · mục «Sự khác biệt giữa vốn hóa thị trường và vốn chủ sở»"
+  },
+  {
+   "src": "dau-tu-gia-tri-la-gi",
+   "op": "wrap",
+   "find": ", nhà đầu tư cá nhân vẫn có thể sử dụng chiến lược đầu tư giá trị hiệu quả nếu dành đủ",
+   "to": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+   "anchor": "chiến lược đầu tư",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Chiến lược, Phương pháp & Quản trị rủi ro · pillar · key ngữ nghĩa · mục «Chiến lược đầu tư giá trị phù hợp với nhà đầu tư n»"
+  },
+  {
+   "src": "drawdown-trong-dau-tu-la-gi",
+   "op": "wrap",
+   "find": "lệ Drawdown càng thấp chứng tỏ khả năng quản trị rủi ro và hiệu quả đầu tư càng cao.",
+   "to": "quan-tri-rui-ro-la-gi-2",
+   "anchor": "quản trị rủi ro",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Chiến lược, Phương pháp & Quản trị rủi ro · hub · key chính · mục «Tỷ lệ Drawdown bao nhiêu là tốt?»"
+  },
+  {
+   "src": "lac-quan-teu-la-gi",
+   "op": "wrap",
+   "find": "m các thông tin ủng hộ cho niềm tin đó (thiên kiến xác nhận). Khi đa số mọi ngườ",
+   "to": "thien-kien-nhan-thuc-la-gi",
+   "anchor": "thiên kiến",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Chiến lược, Phương pháp & Quản trị rủi ro · hub · key ngữ nghĩa · mục «Yếu tố tâm lý và hành vi bầy đàn»"
+  },
+  {
+   "src": "so-sanh-dau-tu-co-phieu-va-dau-tu-chung-chi-quy",
+   "op": "wrap",
+   "find": "Quỹ mở (Open-ended Fund): Nhà đầu tư",
+   "to": "quy-mo-la-gi-tong-quan-ve-quy-mo-tren-thi-truong-chung-khoan-viet-nam",
+   "anchor": "Quỹ mở",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Quỹ & ETF · sub-hub · key chính · mục «Phân biệt Quỹ mở và Quỹ ETF»"
+  },
+  {
+   "src": "khung-hoang-kinh-te-la-gi-co-nen-dau-tu-trong-giai-doan-khung-hoang",
+   "op": "wrap",
+   "find": "rong nền kinh tế, bong bóng tài sản vỡ, khủng hoảng tài chính, hoặc các cú sốc bên ngoài nh",
+   "to": "khung-hoang-tai-chinh-la-gi-cac-giai-doan-cua-khung-hoang-tai-chinh",
+   "anchor": "khủng hoảng tài chính",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Vĩ mô & Chính sách · hub · key chính · mục «Khủng hoảng kinh tế là gì?»"
+  },
+  {
+   "src": "khung-hoang-kinh-te-la-gi-co-nen-dau-tu-trong-giai-doan-khung-hoang",
+   "op": "remove",
+   "old": "https://www.dsc.com.vn/kien-thuc/khung-hoang-tai-chinh-la-gi-cac-giai-doan-cua-khung-hoang-tai-chinh",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Dòng Xem thêm trùng đích — link đã có trong câu"
+  },
+  {
+   "src": "thue-khi-ban-co-phieu-la-bao-nhieu",
+   "op": "wrap",
+   "find": "Chi phí thuế và phí giao dịch nhìn qua có vẻ nhỏ bé, chỉ và",
+   "to": "phi-giao-dich-chung-khoan",
+   "anchor": "phí giao dịch",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Mở tài khoản chứng khoán · sub-hub · key ngữ nghĩa · mục «Chiến lược giao dịch giúp tối ưu chi phí thuế và p»"
+  },
+  {
+   "src": "mo-hinh-la-co-la-gi",
+   "op": "wrap",
+   "find": "Trong phân tích kỹ thuật, mô hình lá cờ mang lại 3 giá",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "anchor": "phân tích kỹ thuật",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích kỹ thuật & Chỉ báo · pillar · key chính · mục «Ý nghĩa thực chiến của mô hình lá cờ»"
+  },
+  {
+   "src": "mo-hinh-tam-giac-la-gi",
+   "op": "wrap",
+   "find": "p diễn nếu được xác thực hoặc trở thành mô hình đảo chiều mạnh mẽ trong trường hợp thất",
+   "to": "cac-mo-hinh-gia-trong-chung-khoan",
+   "anchor": "mô hình đảo chiều",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích kỹ thuật & Chỉ báo · hub · key ngữ nghĩa · mục «Các mẫu hình tam giác và ứng dụng trong giao dịch»"
+  },
+  {
+   "src": "mo-hinh-tam-giac-la-gi",
+   "op": "remove",
+   "old": "https://www.dsc.com.vn/kien-thuc/cac-mo-hinh-gia-trong-chung-khoan",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Dòng Xem thêm trùng đích — link đã có trong câu"
+  },
+  {
+   "src": "chi-so-roe-la-gi-cach-tinh-y-nghia-va-tam-quan-trong-doi-voi-nha-dau-tu",
+   "op": "wrap",
+   "find": "heo dõi xu hướng dài hạn và kết hợp với các chỉ số tài chính khác để đánh giá toàn diện ch",
+   "to": "cac-chi-so-phan-tich-bao-cao-tai-chinh",
+   "anchor": "các chỉ số tài chính",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích cơ bản & Tài chính DN · hub · key phụ · mục «Cách sử dụng chỉ số ROE trong đầu tư»"
+  },
+  {
+   "src": "cagr-la-gi",
+   "op": "wrap",
+   "find": "Trong phân tích cơ bản (FA), hai chỉ số CAGR sau đón",
+   "to": "phan-tich-co-ban-la-gi",
+   "anchor": "phân tích cơ bản",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích cơ bản & Tài chính DN · pillar · key chính · mục «Đánh giá sức mạnh nội tại của doanh nghiệp»"
+  },
+  {
+   "src": "chi-so-npv-la-gi",
+   "op": "wrap",
+   "find": "DCF - Discounted Cash Flow). Đây là một phương pháp định giá cổ phiếu bằng cách ước tính các dòng t",
+   "to": "cach-dinh-gia-co-phieu-cho-nguoi-moi-bat-dau",
+   "anchor": "phương pháp định giá cổ phiếu",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích cơ bản & Tài chính DN · hub · key phụ · mục «Cách ứng dụng NPV trong việc định giá cổ phiếu và »"
+  },
+  {
+   "src": "vong-quay-hang-ton-kho-la-gi",
+   "op": "wrap",
+   "find": "Kết hợp với các chỉ số tài chính khác: Chỉ số này sẽ phát huy",
+   "to": "cac-chi-so-phan-tich-bao-cao-tai-chinh",
+   "anchor": "các chỉ số tài chính",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích cơ bản & Tài chính DN · hub · key phụ · mục «Ứng dụng chỉ số vòng quay hàng tồn kho trong đầu t»"
+  },
+  {
+   "src": "sach-dau-tu-vang",
+   "op": "wrap",
+   "find": "và chênh lệch mua-bán sẽ giúp bạn biết cách đầu tư vàng không bị lừa đảo.",
+   "to": "cach-dau-tu-vang",
+   "anchor": "cách đầu tư vàng",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Vàng · pillar · key chính · mục «Nhận diện và phòng tránh các hình thức lừa đảo vàn»"
+  },
+  {
+   "src": "tieu-diem-thi-truong-la-gi",
+   "op": "wrap",
+   "find": ", xu hướng và sự kiện nổi bật nhất trên thị trường tài chính tại một thời điểm nhất định.",
+   "to": "thi-truong-tai-chinh-la-gi",
+   "anchor": "thị trường tài chính",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Cách chơi chứng khoán · sub-hub · key chính · mục «Tiêu điểm thị trường là gì?»"
+  },
+  {
+   "src": "chi-bao-distance-from-moving-average-la-gi",
+   "op": "wrap",
+   "find": "ừ đường trung bình động, là một công cụ phân tích kỹ thuật cho biết thị giá hiện tại đan",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "anchor": "phân tích kỹ thuật",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích kỹ thuật & Chỉ báo · pillar · key chính · mục «Chỉ báo Distance From Moving Average là gì?»"
+  },
+  {
+   "src": "chi-bao-distance-from-moving-average-la-gi",
+   "op": "wrap",
+   "find": "điểm, nó không thay thế cho các công cụ xác định xu hướng chính.",
+   "to": "cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat",
+   "anchor": "xác định xu hướng",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích kỹ thuật & Chỉ báo · hub · key phụ · mục «Những hạn chế và lưu ý khi sử dụng chỉ báo DIST»"
+  },
+  {
+   "src": "huong-dan-du-bao-xu-huong-gia-tu-chi-bao-parabolic-sar",
+   "op": "wrap",
+   "find": "ắt của Stop and Reverse) là một chỉ báo phân tích kỹ thuật thuộc nhóm chỉ báo theo dõi x",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "anchor": "phân tích kỹ thuật",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích kỹ thuật & Chỉ báo · pillar · key chính · mục «Chỉ báo Parabolic SAR là gì?»"
+  },
+  {
+   "src": "huong-dan-du-bao-xu-huong-gia-tu-chi-bao-parabolic-sar",
+   "op": "wrap",
+   "find": "giá chính là \"ngôn ngữ\" giúp nhà đầu tư xác định xu hướng:",
+   "to": "cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat",
+   "anchor": "xác định xu hướng",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích kỹ thuật & Chỉ báo · hub · key phụ · mục «Cấu tạo và nguyên lý vận hành của chỉ báo Paraboli»"
+  },
+  {
+   "src": "mo-hinh-2-dinh-la-gi",
+   "op": "wrap",
+   "find": "hình đảo chiều giảm giá phổ biến trong phân tích kỹ thuật. Mẫu hình này thường xuất hiệ",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "anchor": "phân tích kỹ thuật",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích kỹ thuật & Chỉ báo · pillar · key chính · mục «Mô hình 2 đỉnh là gì?»"
+  },
+  {
+   "src": "mo-hinh-3-dinh-la-gi",
+   "op": "wrap",
+   "find": "3 đỉnh, hay Triple Top Pattern, là một mô hình giá đảo chiều giảm giá, thường xu",
+   "to": "cac-mo-hinh-gia-trong-chung-khoan",
+   "anchor": "mô hình giá",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích kỹ thuật & Chỉ báo · hub · key phụ · mục «Mô hình 3 đỉnh là gì?»"
+  },
+  {
+   "src": "mo-hinh-canh-buom",
+   "op": "wrap",
+   "find": "là mẫu hình giá Harmonic nâng cao trong phân tích kỹ thuật. Mô hình gồm 5 điểm X, A, B,",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "anchor": "phân tích kỹ thuật",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích kỹ thuật & Chỉ báo · pillar · key chính · mục «Mô hình cánh bướm (Butterfly Pattern) là gì?»"
+  },
+  {
+   "src": "mo-hinh-vai-dau-vai-la-gi",
+   "op": "wrap",
+   "find": "và vai được đánh giá là một trong những mô hình đảo chiều xu hướng đáng tin cậy nhất tr",
+   "to": "cac-mo-hinh-gia-trong-chung-khoan",
+   "anchor": "mô hình đảo chiều",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích kỹ thuật & Chỉ báo · hub · key ngữ nghĩa · mục «Đặc điểm của mô hình vai đầu vai»"
+  },
+  {
+   "src": "mo-hinh-vai-dau-vai-la-gi",
+   "op": "remove",
+   "old": "https://www.dsc.com.vn/kien-thuc/cac-mo-hinh-gia-trong-chung-khoan",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Dòng Xem thêm trùng đích — link đã có trong câu"
+  },
+  {
+   "src": "phan-phoi-dinh-la-gi",
+   "op": "wrap",
+   "find": "dịch tăng cao hơn mức trung bình. Trong phân tích kỹ thuật, đây chính là hiện tượng tạo",
+   "to": "phan-tich-ky-thuat-la-gi",
+   "anchor": "phân tích kỹ thuật",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích kỹ thuật & Chỉ báo · pillar · key chính · mục «Giá cổ phiếu/chỉ số đảo chiều giảm vào cuối phiên »"
+  },
+  {
+   "src": "chi-bao-special-k-la-gi",
+   "op": "wrap",
+   "find": "Như với tất cả các chỉ báo kỹ thuật, thay vì sử dụng phương pháp",
+   "to": "chi-bao-ky-thuat",
+   "anchor": "chỉ báo kỹ thuật",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích kỹ thuật & Chỉ báo · hub · key chính · mục «Chiến lược kết hợp chỉ báo Special K với các công »"
+  },
+  {
+   "src": "chi-so-ros-la-gi",
+   "op": "wrap",
+   "find": "Trong phân tích cơ bản chứng khoán, chỉ số ROS phản",
+   "to": "phan-tich-co-ban-la-gi",
+   "anchor": "phân tích cơ bản",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích cơ bản & Tài chính DN · pillar · key chính · mục «Chỉ số ROS là gì?»"
+  },
+  {
+   "src": "peg-la-gi",
+   "op": "wrap",
+   "find": "Growth) là một chỉ số tài chính dùng để định giá cổ phiếu bằng cách so sánh tỷ lệ P/E (",
+   "to": "cach-dinh-gia-co-phieu-cho-nguoi-moi-bat-dau",
+   "anchor": "định giá cổ phiếu",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích cơ bản & Tài chính DN · hub · key phụ · mục «PEG là gì?»"
+  },
+  {
+   "src": "ngay-giao-dich-khong-huong-quyen-la-gi",
+   "op": "wrap",
+   "find": "ch không hưởng quyền là ngày quá hạn để nhận cổ tức. Nếu mua cổ phiếu sau ngày nà",
+   "to": "co-tuc-la-gi",
+   "anchor": "nhận cổ tức",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phân tích cơ bản & Tài chính DN · hub · key phụ · mục «Ngày giao dịch không hưởng quyền là gì?»"
+  },
+  {
+   "src": "khau-vi-rui-ro-trong-dau-tu-chung-khoan-la-gi-cach-xac-dinh",
+   "op": "wrap",
+   "find": "Khẩu vị rủi ro (Risk Appetite) là mức độ rủi ro mà nhà đầu tư sẵn sàng chấp n",
+   "to": "rui-ro-la-gi",
+   "anchor": "mức độ rủi ro",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Chiến lược, Phương pháp & Quản trị rủi ro · sub-hub · key ngữ nghĩa · mục «Khẩu vị rủi ro là gì?»"
+  },
+  {
+   "src": "mo-hinh-capm-la-gi",
+   "op": "wrap",
+   "find": "ể tối ưu hóa việc phân bổ tài sản trong danh mục đầu tư của mình để đạt được mục tiêu",
+   "to": "danh-muc-dau-tu-hieu-qua-la-gi",
+   "anchor": "danh mục đầu tư",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Chiến lược, Phương pháp & Quản trị rủi ro · sub-hub · key ngữ nghĩa · mục «Phân bổ danh mục đầu tư»"
+  },
+  {
+   "src": "nen-dau-tu-quy-mo-hay-quy-etf",
+   "op": "wrap",
+   "find": "Traded Fund) là một loại quỹ đầu tư có chứng chỉ quỹ có thể mua/bán trên sàn chứng",
+   "to": "chung-chi-quy-la-gi",
+   "anchor": "chứng chỉ quỹ",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Quỹ & ETF · pillar · key chính · mục «Quỹ ETF là gì?»"
+  },
+  {
+   "src": "1-hop-dong-phai-sinh-bao-nhieu-tien",
+   "op": "wrap",
+   "find": "ông ty chứng khoán áp dụng một biểu phí giao dịch phái sinh riêng. Mức phí này thường dao",
+   "to": "chung-khoan-phai-sinh-la-gi-huong-dan-dau-tu-cho-nguoi-moi-bat-dau",
+   "anchor": "giao dịch phái sinh",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phái sinh & Chứng quyền · pillar · key phụ · mục «Phí giao dịch trả công ty chứng khoán»"
+  },
+  {
+   "src": "cach-dau-tu-chung-quyen-co-bao-dam-tai-viet-nam",
+   "op": "wrap",
+   "find": "tạo lập thị trường có thể thao túng giá chứng quyền, khiến nhà đầu tư bị thiệt hạ",
+   "to": "chung-quyen-la-gi-chung-quyen-co-bao-dam-la-gi-tim-hieu-chung-quyen-tai-viet-nam",
+   "anchor": "chứng quyền",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Phái sinh & Chứng quyền · hub · key chính · mục «Rủi ro của đầu tư chứng quyền có bảo đảm»"
+  },
+  {
+   "src": "lai-suat-dieu-hanh-la-gi",
+   "op": "wrap",
+   "find": "Lãi suất tái cấp vốn là mức lãi suất m",
+   "to": "lai-suat-la-gi",
+   "anchor": "Lãi suất",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Vĩ mô & Chính sách · sub-hub · key chính · mục «Lãi suất tái cấp vốn»"
+  },
+  {
+   "src": "lai-suat-omo-la-gi-giai-ma-cong-cu-dieu-tiet-thi-truong-tien-te-hieu-qua",
+   "op": "wrap",
+   "find": "Ảnh hưởng đến lãi suất ngắn hạn: Lãi suất OMO là lãi",
+   "to": "lai-suat-la-gi",
+   "anchor": "lãi suất",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Vĩ mô & Chính sách · sub-hub · key chính · mục «Vai trò của lãi suất OMO»"
+  },
+  {
+   "src": "lai-suat-thuc-la-gi",
+   "op": "wrap",
+   "find": "nền kinh tế, từ quyết định cá nhân đến chính sách vĩ mô.",
+   "to": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+   "anchor": "chính sách vĩ mô",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Vĩ mô & Chính sách · hub · key ngữ nghĩa · mục «Ý nghĩa của lãi suất thực trong nền kinh tế»"
+  },
+  {
+   "src": "lai-suat-thuc-la-gi",
+   "op": "wrap",
+   "find": "hàng trung ương sử dụng các công cụ như lãi suất tái cấp vốn, lãi suất chiết k",
+   "to": "lai-suat-la-gi",
+   "anchor": "lãi suất",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Vĩ mô & Chính sách · sub-hub · key chính · mục «Chính sách tiền tệ của ngân hàng trung ương»"
+  },
+  {
+   "src": "huong-dan-mua-trai-phieu-doanh-nghiep-cho-nguoi-moi-bat-dau",
+   "op": "wrap",
+   "find": "Mua trực tiếp tại nơi phát hành trái phiếu của doanh nghiệp đó: với cách",
+   "to": "trai-phieu-la-gi",
+   "anchor": "trái phiếu",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Trái phiếu · pillar · key ngữ nghĩa · mục «Mua trái phiếu doanh nghiệp ở đâu? Cách mua trái p»"
+  },
+  {
+   "src": "mua-bac-dau-tu-o-dau",
+   "op": "wrap",
+   "find": "Bên cạnh việc tích trữ bạc vật chất, đầu tư bạc qua các kênh tài chính đang t",
+   "to": "dau-tu-bac-co-nen-khong",
+   "anchor": "đầu tư bạc",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Bạc · pillar · key chính · mục «Mua bạc trực tuyến ở đâu? Các nền tảng đầu tư bạc »"
+  },
+  {
+   "src": "mua-bac-dau-tu-o-dau",
+   "op": "remove",
+   "old": "https://www.dsc.com.vn/kien-thuc/dau-tu-bac-co-nen-khong",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Dòng Xem thêm trùng đích — link đã có trong câu"
+  }
+ ]
+}

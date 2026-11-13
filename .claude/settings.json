@@ -1,4 +1,7 @@
 {
+  "env": {
+    "CLAUDE_CODE_SUBAGENT_MODEL": "sonnet"
+  },
   "permissions": {
     "allow": [
       "Bash(python scripts/qa_lint.py /tmp/crotest/Final-test-banner.md --no-sitemap)",
@@ -22,7 +25,13 @@
       "Bash(PYTHONIOENCODING=utf-8 python -)",
       "Bash(python scripts/cta_audit.py knowledge/4-content/3-finalized/Final-cach-mua-co-phieu-vingroup-vic-huong-dan-moi-nhat-2024.md)",
       "Bash(python scripts/qa_lint.py knowledge/4-content/3-finalized/Final-cach-mua-co-phieu-vingroup-vic-huong-dan-moi-nhat-2024.md --no-sitemap --cta)",
-      "Bash(git check-ignore *)"
+      "Bash(git check-ignore *)",
+      "Bash(python scripts/qa_lint.py --help)",
+      "Bash(python scripts/slop_check.py --help)",
+      "Read(//tmp/**)",
+      "Bash(python scripts/topic_status.py --find \"mở tài khoản chứng khoán\")",
+      "Bash(python scripts/dashboard_cache.py report cach-mo-tai-khoan-chung-khoan)",
+      "Bash(python scripts/dashboard_cache.py status)"
     ]
   }
 }

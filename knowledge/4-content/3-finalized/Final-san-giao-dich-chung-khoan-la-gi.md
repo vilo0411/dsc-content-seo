@@ -9,7 +9,7 @@ Meta_Description: Sàn chứng khoán là gì? Khám phá 3 sàn giao dịch HOS
 
 Sàn chứng khoán là thị trường tập trung nơi diễn ra các hoạt động mua bán cổ phiếu, trái phiếu và chứng chỉ quỹ niêm yết. Tại Việt Nam, toàn bộ giao dịch chính thống được vận hành tập trung trên 3 sàn gồm HOSE, HNX và UPCoM.
 
-Tính đến tháng 8/2026, thị trường ghi nhận gần 13,66 triệu tài khoản chứng khoán theo số liệu chính thức từ VSDC. Việc hiểu rõ cơ chế vận hành của từng sàn giúp nhà đầu tư mới bảo vệ nguồn vốn và tránh các bẫy lừa đảo mạo danh.
+Mỗi sàn có biên độ giá riêng: HOSE 7%, HNX 10%, UPCoM 15%. Việc hiểu rõ cơ chế vận hành của từng sàn giúp nhà đầu tư mới bảo vệ nguồn vốn và tránh các bẫy lừa đảo mạo danh.
 
 ## Sàn giao dịch chứng khoán là gì?
 

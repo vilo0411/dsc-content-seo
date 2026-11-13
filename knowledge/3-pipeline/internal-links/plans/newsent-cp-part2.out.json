@@ -1,0 +1,374 @@
+[
+ {
+  "src": "co-phieu-mbb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+  "i": 4,
+  "op": "append",
+  "sentence": "Hệ sinh thái này giúp MBB có chỗ đứng riêng khi đặt cạnh các [cổ phiếu ngân hàng] khác trong cùng nhóm.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=4"
+ },
+ {
+  "src": "co-nen-mua-co-phieu-lpb-hay-khong",
+  "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+  "i": 2,
+  "op": "append",
+  "sentence": "Thế mạnh mạng lưới rộng giúp LPB có hồ sơ khác biệt khi so với các [cổ phiếu ngân hàng] tầm trung khác.",
+  "why": "viết lại theo live 11/11 · đoạn i=2"
+ },
+ {
+  "src": "co-phieu-shb",
+  "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+  "i": 34,
+  "op": "append",
+  "sentence": "Hướng đi này cũng là xu thế chung của [ngành ngân hàng], khi bán lẻ giúp cải thiện NIM và độ ổn định lợi nhuận.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=34"
+ },
+ {
+  "src": "cach-mua-co-phieu-vcb-ngan-hang-vietcombank",
+  "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+  "i": 29,
+  "op": "newp",
+  "sentence": "Khi so với các [cổ phiếu ngành ngân hàng] khác, VCB thường được dùng làm chuẩn về chất lượng tài sản và khả năng kiểm soát rủi ro.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=29"
+ },
+ {
+  "src": "co-nen-mua-co-phieu-vib-hay-khong-1",
+  "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+  "i": 53,
+  "op": "newp",
+  "sentence": "Tốc độ tăng trưởng này đặt VIB vào vị trí dẫn đầu trong [nhóm ngân hàng] tư nhân xét về mức mở rộng tài sản.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=53"
+ },
+ {
+  "src": "co-phieu-tpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+  "i": 2,
+  "op": "append",
+  "sentence": "Định hướng ngân hàng số giúp TPB tạo nét riêng khi đặt cạnh [các mã cổ phiếu ngân hàng] vận hành theo mô hình chi nhánh truyền thống.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=2"
+ },
+ {
+  "src": "cach-mua-co-phieu-bid",
+  "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+  "i": 3,
+  "op": "append",
+  "sentence": "Dẫn đầu tín dụng doanh nghiệp lớn khiến BID khác với nhiều [cổ phiếu ngân hàng tiềm năng] thiên về bán lẻ.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=3"
+ },
+ {
+  "src": "co-nen-mua-co-phieu-vpb-hay-khong",
+  "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+  "i": 53,
+  "op": "append",
+  "sentence": "Cấu trúc bán lẻ này là điểm để so sánh VPB với các [cổ phiếu ngành ngân hàng] thiên về tín dụng doanh nghiệp lớn.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=53"
+ },
+ {
+  "src": "co-phieu-vcb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+  "i": 3,
+  "op": "append",
+  "sentence": "Quy mô và vị thế quốc doanh khiến VCB thường đứng đầu khi nhà đầu tư lập danh sách [cổ phiếu ngân hàng] để theo dõi.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=3"
+ },
+ {
+  "src": "cach-mua-co-phieu-ctg",
+  "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+  "i": 3,
+  "op": "append",
+  "sentence": "Thế mạnh tín dụng doanh nghiệp nhà nước khiến CTG có hồ sơ gần với các [cổ phiếu ngân hàng] quốc doanh còn lại.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=3"
+ },
+ {
+  "src": "huong-dan-cach-mua-co-phieu-tcb-ngan-hang-techcombank",
+  "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+  "op": "skip",
+  "reason": "đoạn ứng viên toàn thao tác nạp tiền/đặt lệnh, không có ý hợp để chèn so sánh ngành"
+ },
+ {
+  "src": "co-phieu-bid-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+  "i": 4,
+  "op": "append",
+  "sentence": "Mạng lưới này giúp BID giữ vai trò nổi bật trong [nhóm ngân hàng] quốc doanh.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=4"
+ },
+ {
+  "src": "co-nen-mua-co-phieu-vcb-vietcombank-hay-khong",
+  "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+  "i": 41,
+  "op": "append",
+  "sentence": "Chất lượng tín dụng này là lý do VCB thường được nhắc đầu tiên khi so sánh các [cổ phiếu ngành ngân hàng] về mức an toàn.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=41"
+ },
+ {
+  "src": "co-phieu-tcb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+  "i": 3,
+  "op": "append",
+  "sentence": "Khả năng sinh lời cao là tiêu chí chính khi xếp TCB cạnh các [cổ phiếu ngân hàng] tư nhân khác.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=3"
+ },
+ {
+  "src": "cach-mua-co-phieu-shb",
+  "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+  "i": 4,
+  "op": "newp",
+  "sentence": "Mức P/B thấp hơn nhóm dẫn đầu là cơ sở để cân nhắc SHB cùng các [cổ phiếu ngân hàng] tư nhân khác trong VN30.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=4"
+ },
+ {
+  "src": "co-phieu-ocb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+  "i": 2,
+  "op": "newp",
+  "sentence": "OCB cũng thường được đặt cạnh các [cổ phiếu ngân hàng] tư nhân khi nhà đầu tư so sánh quy mô và hiệu quả hoạt động.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=2"
+ },
+ {
+  "src": "co-phieu-acb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+  "i": 44,
+  "op": "append",
+  "sentence": "Chất lượng tài sản là tiêu chí ACB nổi bật khi đặt cạnh các [cổ phiếu ngân hàng] tư nhân cùng hướng bán lẻ.",
+  "why": "viết lại theo live 11/11 · đoạn i=44"
+ },
+ {
+  "src": "co-phieu-stb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+  "i": 4,
+  "op": "append",
+  "sentence": "Trọng tâm bán lẻ khiến STB thường được so với các [cổ phiếu ngân hàng] bán lẻ khác về biên lãi và chất lượng tài sản.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=4"
+ },
+ {
+  "src": "co-phieu-vib-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+  "i": 55,
+  "op": "append",
+  "sentence": "Mức P/B này nên được so với các [cổ phiếu ngân hàng] cùng quy mô thay vì chỉ so với lịch sử của VIB.",
+  "why": "viết lại theo live 11/11 · đoạn i=55"
+ },
+ {
+  "src": "cach-mua-co-phieu-acb-ngan-hang-thuong-mai-co-phan-a-chau-huong-dan-chi-tiet",
+  "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+  "op": "skip",
+  "reason": "đoạn ứng viên toàn bước thao tác nạp tiền/truy cập hệ thống, không có ý hợp để chèn"
+ },
+ {
+  "src": "cach-mua-co-phieu-tpb",
+  "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+  "i": 3,
+  "op": "append",
+  "sentence": "Mô hình số hóa này giúp TPB khác biệt so với nhiều [cổ phiếu ngành ngân hàng] vận hành chủ yếu bằng chi nhánh.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=3"
+ },
+ {
+  "src": "cach-mua-co-phieu-stb",
+  "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+  "i": 3,
+  "op": "append",
+  "sentence": "Mạng lưới và tệp khách hàng rộng này là điểm để so sánh STB với các [cổ phiếu ngân hàng] bán lẻ khác.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=3"
+ },
+ {
+  "src": "co-nen-mua-co-phieu-bid-hay-khong",
+  "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+  "i": 4,
+  "op": "append",
+  "sentence": "Vị thế quốc doanh đặt BID cạnh VCB và CTG trong [nhóm ngân hàng] có vốn nhà nước chi phối.",
+  "why": "viết lại theo live 11/11 · đoạn i=4"
+ },
+ {
+  "src": "co-phieu-hdb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+  "i": 3,
+  "op": "append",
+  "sentence": "Thời gian hoạt động dài là cơ sở để so sánh HDB với các [cổ phiếu ngân hàng] tư nhân cùng quy mô.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=3"
+ },
+ {
+  "src": "cach-mua-co-phieu-hdb",
+  "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+  "i": 2,
+  "op": "append",
+  "sentence": "Trọng tâm nông thôn và ngoại ô là điểm khác biệt khi so HDB với các [cổ phiếu ngân hàng] tập trung vào đô thị lớn.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=2"
+ },
+ {
+  "src": "co-phieu-lpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+  "i": 3,
+  "op": "append",
+  "sentence": "LPB thường được xếp vào [nhóm ngân hàng] tư nhân khi nhà đầu tư lập danh sách so sánh theo quy mô và tăng trưởng.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=3"
+ },
+ {
+  "src": "chuoi-gia-tri-nganh-thep",
+  "target": "huong-dan-phan-tich-nganh-trong-dau-tu-chung-khoan",
+  "i": 2,
+  "op": "append",
+  "sentence": "Đây là trọng tâm khi [phân tích ngành] thép, vì tích hợp dọc quyết định ai giữ được biên lợi nhuận.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=2"
+ },
+ {
+  "src": "chuoi-gia-tri-nganh-dau-khi",
+  "target": "huong-dan-phan-tich-nganh-trong-dau-tu-chung-khoan",
+  "i": 3,
+  "op": "append",
+  "sentence": "Đánh giá rủi ro từng khâu trong chuỗi này là bước cốt lõi của [phân tích ngành chứng khoán] với các lĩnh vực nhạy cảm giá hàng hóa.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=7 · dời sang đoạn i=3 (đoạn cũ dẫn vào list)"
+ },
+ {
+  "src": "chuoi-gia-tri-nganh-ngan-hang",
+  "target": "huong-dan-phan-tich-nganh-trong-dau-tu-chung-khoan",
+  "i": 3,
+  "op": "append",
+  "sentence": "Tách chuỗi theo ba giai đoạn như vậy là cách làm quen thuộc khi [phân tích ngành] ngân hàng, vì mỗi khâu có chỉ số đo hiệu quả riêng.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=7 · dời sang đoạn i=3 (đoạn cũ dẫn vào list)"
+ },
+ {
+  "src": "chuoi-gia-tri-nganh-det-may",
+  "target": "huong-dan-phan-tich-nganh-trong-dau-tu-chung-khoan",
+  "i": 3,
+  "op": "append",
+  "sentence": "Xác định vị thế trên chuỗi giá trị là bước đầu của [cách phân tích ngành] với các lĩnh vực xuất khẩu như dệt may.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=3"
+ },
+ {
+  "src": "chuoi-gia-tri-nganh-phan-bon",
+  "target": "huong-dan-phan-tich-nganh-trong-dau-tu-chung-khoan",
+  "i": 31,
+  "op": "append",
+  "sentence": "Mức tự chủ nguyên liệu và tốc độ chuyển sang phân hữu cơ là hai biến số chính khi đánh giá [triển vọng ngành] phân bón.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=7 · dời sang đoạn i=31 (đoạn cũ dẫn vào list)"
+ },
+ {
+  "src": "chuoi-gia-tri-nganh-bat-dong-san",
+  "target": "huong-dan-phan-tich-nganh-trong-dau-tu-chung-khoan",
+  "i": 3,
+  "op": "append",
+  "sentence": "Đo từng mắt xích của chuỗi này, nhất là áp lực vốn ở khâu phát triển dự án, là bước đầu tiên khi [phân tích ngành] bất động sản.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=13 · dời sang đoạn i=3 (đoạn cũ dẫn vào list)"
+ },
+ {
+  "src": "chuoi-gia-tri-nganh-nhua",
+  "target": "huong-dan-phan-tich-nganh-trong-dau-tu-chung-khoan",
+  "i": 11,
+  "op": "newp",
+  "sentence": "Phụ thuộc nhập khẩu hạt nhựa là biến số chi phí chính khi [phân tích ngành] nhựa, vì giá dầu truyền thẳng vào biên lợi nhuận.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=11"
+ },
+ {
+  "src": "chuoi-gia-tri-nganh-dien",
+  "target": "huong-dan-phan-tich-nganh-trong-dau-tu-chung-khoan",
+  "i": 31,
+  "op": "append",
+  "sentence": "Các xu hướng này nên được đưa vào [triển vọng ngành] điện khi nhà đầu tư dự phóng dòng tiền của doanh nghiệp phát điện.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=31"
+ },
+ {
+  "src": "chuoi-gia-tri-nganh-cao-su",
+  "target": "huong-dan-phan-tich-nganh-trong-dau-tu-chung-khoan",
+  "i": 3,
+  "op": "append",
+  "sentence": "Cách tiếp cận này là nền tảng của [phân tích ngành] hàng hóa, nơi chu kỳ giá nguyên liệu quyết định biên lợi nhuận.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=3"
+ },
+ {
+  "src": "chu-ky-co-phieu-la-gi",
+  "target": "huong-dan-phan-tich-nganh-trong-dau-tu-chung-khoan",
+  "i": 2,
+  "op": "append",
+  "sentence": "Vì mỗi nhóm ngành có nhịp riêng, việc xác định [chu kỳ ngành] giúp nhà đầu tư chọn đúng thời điểm vào từng nhóm cổ phiếu.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=2"
+ },
+ {
+  "src": "chuoi-gia-tri-nganh-xay-dung",
+  "target": "huong-dan-phan-tich-nganh-trong-dau-tu-chung-khoan",
+  "i": 13,
+  "op": "append",
+  "sentence": "Rủi ro biên lợi nhuận kiểu này nằm trong khung [phân tích ngành] mà nhà đầu tư cần áp dụng cho nhóm thầu xây lắp.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=13"
+ },
+ {
+  "src": "chu-ky-la-gi",
+  "target": "huong-dan-phan-tich-nganh-trong-dau-tu-chung-khoan",
+  "i": 2,
+  "op": "append",
+  "sentence": "Mỗi nhóm ngành chịu tác động của chu kỳ kinh doanh theo cách khác nhau, nên [chu kỳ ngành] cần được xét riêng.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=2"
+ },
+ {
+  "src": "co-phieu-tcm-tong-quan-nhan-dinh-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "co-phieu-nganh-det-may",
+  "i": 2,
+  "op": "newp",
+  "sentence": "Thương hiệu thời trang riêng là điểm để so sánh TCM với các [cổ phiếu ngành dệt may] chủ yếu làm gia công.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=2"
+ },
+ {
+  "src": "co-phieu-tng-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "co-phieu-nganh-det-may",
+  "i": 3,
+  "op": "append",
+  "sentence": "Hướng bán trực tiếp cho nhà bán lẻ là điểm để so sánh TNG với các [cổ phiếu dệt may] làm gia công theo đơn hàng.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=3"
+ },
+ {
+  "src": "co-phieu-gil-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "co-phieu-nganh-det-may",
+  "i": 2,
+  "op": "newp",
+  "sentence": "Mảng balo túi xách giữ GIL trong nhóm [cổ phiếu ngành dệt may], còn hải sản và kim khí điện máy chỉ đóng góp nhỏ vào doanh thu.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=2"
+ },
+ {
+  "src": "co-phieu-msh-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "co-phieu-nganh-det-may",
+  "i": 3,
+  "op": "append",
+  "sentence": "Năng lực đáp ứng đơn hàng này đặt MSH cạnh các [cổ phiếu dệt may] xuất khẩu có khách hàng quốc tế ổn định.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=3"
+ },
+ {
+  "src": "co-phieu-stk-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "co-phieu-nganh-det-may",
+  "i": 3,
+  "op": "append",
+  "sentence": "Khâu sợi là mắt xích đầu vào của [ngành dệt may], nên STK chịu tác động trực tiếp từ nhịp đơn hàng của các nhà máy vải.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=3"
+ },
+ {
+  "src": "co-phieu-dcm-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+  "target": "co-phieu-nganh-hoa-chat",
+  "i": 4,
+  "op": "append",
+  "sentence": "Công suất nhà máy này là yếu tố chính khi so DCM với các [cổ phiếu phân bón] sản xuất urê khác.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=4"
+ },
+ {
+  "src": "co-nen-mua-co-phieu-las",
+  "target": "co-phieu-nganh-hoa-chat",
+  "i": 3,
+  "op": "append",
+  "sentence": "Thị phần phía Bắc và khách hàng nông nghiệp ổn định là điểm tựa của LAS trong nhóm [cổ phiếu phân bón] niêm yết.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=3"
+ },
+ {
+  "src": "co-phieu-dpm-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "co-phieu-nganh-hoa-chat",
+  "i": 2,
+  "op": "append",
+  "sentence": "Vị thế dẫn đầu này đặt DPM cạnh các [cổ phiếu hóa chất] khác khi nhà đầu tư so sánh theo chu kỳ giá urê.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=2"
+ },
+ {
+  "src": "cach-mua-co-phieu-vhm",
+  "target": "co-phieu-vhm-tong-quan-danh-gia-va-cap-nhan-ket-qua-kinh-doanh-moi-nhat",
+  "i": 3,
+  "op": "append",
+  "sentence": "Danh mục dự án rộng này là lý do [cổ phiếu VHM] được phân tích riêng về cơ cấu doanh thu và quỹ đất.",
+  "why": "hub/ngữ cảnh ngành · đoạn i=3"
+ }
+]

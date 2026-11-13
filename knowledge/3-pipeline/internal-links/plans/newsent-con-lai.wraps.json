@@ -1,0 +1,30 @@
+[
+ {
+  "src": "nen-mua-vang-mieng-sjc-hay-pnj",
+  "target": "cach-dau-tu-vang",
+  "i": 16,
+  "anchor": "đầu tư vàng",
+  "role": "pillar"
+ },
+ {
+  "src": "etf-la-gi",
+  "target": "chung-chi-quy-la-gi",
+  "i": 6,
+  "anchor": "chứng chỉ quỹ",
+  "role": "pillar"
+ },
+ {
+  "src": "huong-dan-mo-tai-khoan-chung-chi-quy",
+  "target": "quy-mo-la-gi-tong-quan-ve-quy-mo-tren-thi-truong-chung-khoan-viet-nam",
+  "i": 62,
+  "anchor": "quỹ mở",
+  "role": "sub-hub"
+ },
+ {
+  "src": "tin-phieu-kho-bac-la-gi",
+  "target": "trai-phieu-la-gi",
+  "i": 12,
+  "anchor": "trái phiếu",
+  "role": "pillar"
+ }
+]

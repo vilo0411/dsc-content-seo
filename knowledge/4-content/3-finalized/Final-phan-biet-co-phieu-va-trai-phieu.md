@@ -51,7 +51,7 @@ Cổ phiếu và trái phiếu đều là phương tiện huy động vốn trê
 | **Thứ tự ưu tiên trả nợ** | Nhận sau cùng khi doanh nghiệp phá sản | Ưu tiên thanh toán trước cổ đông |
 | **Hạ tầng niêm yết** | Giao dịch tập trung HOSE, HNX, UPCoM | Hệ thống TPDN riêng lẻ HNX hoặc HOSE |
 
-Tính đến tháng 8/2026, toàn thị trường chứng khoán Việt Nam ghi nhận 13,66 triệu tài khoản nhà đầu tư cá nhân theo VSDC. Sự phát triển hạ tầng giúp nhà đầu tư dễ dàng giao dịch cả hai lớp tài sản này.
+Với cùng một tài khoản chứng khoán, nhà đầu tư giao dịch được cả cổ phiếu và trái phiếu niêm yết. Trái phiếu doanh nghiệp phát hành riêng lẻ giao dịch trên hệ thống riêng của HNX, chỉ dành cho nhà đầu tư chuyên nghiệp.
 
 ## Trường hợp doanh nghiệp giải thể: Ai được trả tiền trước?
 

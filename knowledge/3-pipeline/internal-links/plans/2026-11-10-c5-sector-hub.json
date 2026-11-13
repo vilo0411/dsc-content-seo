@@ -1,0 +1,687 @@
+{
+ "title": "C5 Cổ phiếu & Ngành — link bài mã CP về trang ngành (wrap cụm từ có sẵn)",
+ "edits": [
+  {
+   "src": "cac-co-phieu-niem-yet-thuoc-tap-doan-vingroup-danh-sach-day-du-va-cap-nhat-nam-2024",
+   "op": "wrap",
+   "find": "Việt Nam, hoạt động đa ngành trong các lĩnh vực bất động sản, bán lẻ, y tế, giáo dục, du l",
+   "to": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "anchor": "lĩnh vực bất động sản",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "5b: bài mã CP → trang ngành (block 1/54)"
+  },
+  {
+   "src": "cach-mua-co-phieu-bid",
+   "op": "wrap",
+   "find": "òng giao dịch trải khắp cả nước. Đây là cổ phiếu ngân hàng được nhiều nhà đầu tư tổ chức",
+   "to": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "anchor": "cổ phiếu ngân hàng",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "5a: bài mã CP → trang ngành (block 1/39)"
+  },
+  {
+   "src": "cach-mua-co-phieu-bvh",
+   "op": "wrap",
+   "find": "00 - 70.000 tỷ đồng, thuộc nhóm dẫn đầu ngành bảo hiểm niêm yết. Bảo Việt duy trì ch",
+   "to": "co-phieu-nganh-bao-hiem",
+   "anchor": "ngành bảo hiểm",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "5f: bài mã CP → trang ngành (block 5/30)"
+  },
+  {
+   "src": "cach-mua-co-phieu-ctg",
+   "op": "wrap",
+   "find": "h hàng doanh nghiệp trung thành, CTG là cổ phiếu ngân hàng được nhiều nhà đầu tư lựa chọ",
+   "to": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "anchor": "cổ phiếu ngân hàng",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "5a: bài mã CP → trang ngành (block 1/32)"
+  },
+  {
+   "src": "cach-mua-co-phieu-hdb",
+   "op": "wrap",
+   "find": "g đều, thanh khoản giao dịch tốt. Trong nhóm ngân hàng tư nhân VN30, TPB (TPBank) và",
+   "to": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "anchor": "nhóm ngân hàng",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "5a: bài mã CP → trang ngành (block 5/32)"
+  },
+  {
+   "src": "cach-mua-co-phieu-nvl",
+   "op": "wrap",
+   "find": "n được đánh giá vào hàng lớn nhất trong ngành bất động sản tư nhân Việt Nam.",
+   "to": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "anchor": "ngành bất động sản",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "5b: bài mã CP → trang ngành (block 4/29)"
+  },
+  {
+   "src": "cach-mua-co-phieu-pow",
+   "op": "wrap",
+   "find": "ố VN30, phản ánh vị thế blue-chip trong ngành điện. Vốn hóa thị trường của POW t",
+   "to": "top-co-phieu-dien-luc-nganh-dien",
+   "anchor": "ngành điện",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "5d: bài mã CP → trang ngành (block 5/27)"
+  },
+  {
+   "src": "cach-mua-co-phieu-pvd",
+   "op": "wrap",
+   "find": "Bạn đang quan tâm đến nhóm ngành dầu khí và muốn sở hữu cổ phiếu PVD (",
+   "to": "co-phieu-nganh-nang-luong",
+   "anchor": "ngành dầu khí",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "5d: bài mã CP → trang ngành (block 1/62)"
+  },
+  {
+   "src": "cach-mua-co-phieu-shb",
+   "op": "wrap",
+   "find": "h) của SHB thường thấp hơn nhiều so với nhóm ngân hàng tư nhân dẫn đầu, tạo nên sức",
+   "to": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "anchor": "nhóm ngân hàng",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "5a: bài mã CP → trang ngành (block 5/28)"
+  },
+  {
+   "src": "cach-mua-co-phieu-stb",
+   "op": "wrap",
+   "find": "ống thanh toán POS và QR lớn nhất trong nhóm ngân hàng tư nhân.",
+   "to": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "anchor": "nhóm ngân hàng",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "5a: bài mã CP → trang ngành (block 4/31)"
+  },
+  {
+   "src": "cach-mua-co-phieu-tpb",
+   "op": "wrap",
+   "find": "khách hàng trẻ, năng động, TPB đang là cổ phiếu ngân hàng được nhiều nhà đầu tư ưa chuộ",
+   "to": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "anchor": "cổ phiếu ngân hàng",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "5a: bài mã CP → trang ngành (block 1/25)"
+  },
+  {
+   "src": "cach-mua-co-phieu-vcb-ngan-hang-vietcombank",
+   "op": "wrap",
+   "find": "tiên của các nhà đầu tư nhờ vị thế đầu ngành ngân hàng tại Việt Nam. Với tiềm năng t",
+   "to": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "anchor": "ngành ngân hàng",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "5a: bài mã CP → trang ngành (block 1/40)"
+  },
+  {
+   "src": "cach-mua-co-phieu-vhm",
+   "op": "wrap",
+   "find": "ầu tư và nhà đầu tư cá nhân. Trong cùng nhóm bất động sản VN30, cổ phiếu VRE (Vincom Re",
+   "to": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "anchor": "nhóm bất động sản",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "5b: bài mã CP → trang ngành (block 5/29)"
+  },
+  {
+   "src": "cach-mua-co-phieu-vre",
+   "op": "wrap",
+   "find": "rên cả nước — mạng lưới rộng nhất trong ngành bất động sản bán lẻ Việt Nam.",
+   "to": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "anchor": "ngành bất động sản",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "5b: bài mã CP → trang ngành (block 3/24)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-bid-hay-khong",
+   "op": "wrap",
+   "find": "rị gần 20.300 tỷ đồng, lớn nhất lịch sử ngành ngân hàng. Keb Hana cũng lấn sâu vào hệ",
+   "to": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "anchor": "ngành ngân hàng",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "5a: bài mã CP → trang ngành (block 8/98)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-hpg-hay-khong",
+   "op": "wrap",
+   "find": "hà đầu tư đặc biệt quan tâm. Tuy nhiên, ngành thép được dự báo còn gặp nhiều biế",
+   "to": "top-5-co-phieu-nganh-thep-co-co-ban-tot-sap-buoc-vao-chu-ky-tang-truong-moi",
+   "anchor": "ngành thép",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "5c: bài mã CP → trang ngành (block 1/84)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-lpb-hay-khong",
+   "op": "wrap",
+   "find": "ng khoán Việt Nam, thì không thể bỏ qua ngành ngân hàng. LPB là một trong những cổ ph",
+   "to": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "anchor": "ngành ngân hàng",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "5a: bài mã CP → trang ngành (block 1/81)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-mwg-hay-khong",
+   "op": "wrap",
+   "find": "tư Thế giới di động – Một “ông lớn” của ngành bán lẻ nước Việt Nam với nhiều chuỗi",
+   "to": "co-phieu-nganh-ban-le",
+   "anchor": "ngành bán lẻ",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "5e: bài mã CP → trang ngành (block 1/107)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-oil",
+   "op": "wrap",
+   "find": "L\" luôn trở thành tâm điểm mỗi khi nhóm ngành dầu khí nổi sóng. PVOIL (Mã: OIL) là",
+   "to": "co-phieu-nganh-nang-luong",
+   "anchor": "ngành dầu khí",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "5d: bài mã CP → trang ngành (block 3/46)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-pet-hay-khong",
+   "op": "wrap",
+   "find": "0% thị phần mảng dịch vụ catering trong ngành dầu khí. Công ty là doanh nghiệp có c",
+   "to": "co-phieu-nganh-nang-luong",
+   "anchor": "ngành dầu khí",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "5d: bài mã CP → trang ngành (block 54/91)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-plx-hay-khong",
+   "op": "wrap",
+   "find": "át cao. Cổ phiếu PLX là ông lớn dẫn đầu ngành dầu khí, được các nhà đầu tư đặc biệt",
+   "to": "co-phieu-nganh-nang-luong",
+   "anchor": "ngành dầu khí",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "5d: bài mã CP → trang ngành (block 1/75)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-scr-hay-khong",
+   "op": "wrap",
+   "find": "CR) là một doanh nghiệp hoạt động trong lĩnh vực bất động sản, niêm yết trên sàn giao dịch",
+   "to": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "anchor": "lĩnh vực bất động sản",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "5b: bài mã CP → trang ngành (block 20/51)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-tcb-techcombank-hay-khong",
+   "op": "wrap",
+   "find": "Ngành ngân hàng là một trong những ngành lớn",
+   "to": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "anchor": "Ngành ngân hàng",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "5a: bài mã CP → trang ngành (block 8/42)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-vcb-vietcombank-hay-khong",
+   "op": "wrap",
+   "find": "ờng chứng khoán Việt Nam cũng như trong ngành ngân hàng. Trong bài viết dưới đây, cùn",
+   "to": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "anchor": "ngành ngân hàng",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "5a: bài mã CP → trang ngành (block 1/73)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-vib-hay-khong-1",
+   "op": "wrap",
+   "find": "phiếu VIB hiện đang là một trong những cổ phiếu ngân hàng đang thu hút sự quan tâm từ p",
+   "to": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "anchor": "cổ phiếu ngân hàng",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "5a: bài mã CP → trang ngành (block 1/82)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-vpb-hay-khong",
+   "op": "wrap",
+   "find": "Ngành ngân hàng là một trong những ngành lớn",
+   "to": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "anchor": "Ngành ngân hàng",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "5a: bài mã CP → trang ngành (block 50/92)"
+  },
+  {
+   "src": "co-phieu-acb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "wrap",
+   "find": "Trong bối cảnh ngành ngân hàng đang có nhiều cơ hội tăng trư",
+   "to": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "anchor": "ngành ngân hàng",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "5a: bài mã CP → trang ngành (block 2/96)"
+  },
+  {
+   "src": "co-phieu-acb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "remove",
+   "old": "https://www.dsc.com.vn/kien-thuc/top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Dòng Xem thêm trùng đích — link đã có trong câu"
+  },
+  {
+   "src": "co-phieu-acl-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "wrap",
+   "find": "được nhà đầu tư quan tâm hàng đầu trong ngành thủy sản Việt Nam. Với vị thế là một t",
+   "to": "co-phieu-nganh-thuy-san",
+   "anchor": "ngành thủy sản",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "5h: bài mã CP → trang ngành (block 1/110)"
+  },
+  {
+   "src": "co-phieu-bid-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "wrap",
+   "find": "Trong bối cảnh ngành ngân hàng tiếp tục tăng trưởng mạnh mẽ,",
+   "to": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "anchor": "ngành ngân hàng",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "5a: bài mã CP → trang ngành (block 2/99)"
+  },
+  {
+   "src": "co-phieu-bid-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "remove",
+   "old": "https://www.dsc.com.vn/kien-thuc/top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Dòng Xem thêm trùng đích — link đã có trong câu"
+  },
+  {
+   "src": "co-phieu-ctd-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "wrap",
+   "find": "hông chỉ đóng góp vào sự phát triển của ngành xây dựng mà còn mang đến nhiều cơ hội",
+   "to": "co-phieu-nganh-xay-dung",
+   "anchor": "ngành xây dựng",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "5b: bài mã CP → trang ngành (block 1/146)"
+  },
+  {
+   "src": "co-phieu-dcm-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+   "op": "wrap",
+   "find": "t, mà còn là một trụ cột quan trọng của ngành nông nghiệp Việt Nam. Với sản phẩm chính",
+   "to": "co-phieu-nganh-nong-nghiep",
+   "anchor": "ngành nông nghiệp",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "5h: bài mã CP → trang ngành (block 1/107)"
+  },
+  {
+   "src": "co-phieu-dgc-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+   "op": "wrap",
+   "find": "phân bón như NPK, DAP,... cung cấp cho ngành nông nghiệp.",
+   "to": "co-phieu-nganh-nong-nghiep",
+   "anchor": "ngành nông nghiệp",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "5h: bài mã CP → trang ngành (block 46/114)"
+  },
+  {
+   "src": "co-phieu-dpm-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "wrap",
+   "find": "hông chỉ đóng góp vào sự phát triển của ngành nông nghiệp mà còn mang đến nhiều cơ hội",
+   "to": "co-phieu-nganh-nong-nghiep",
+   "anchor": "ngành nông nghiệp",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "5h: bài mã CP → trang ngành (block 1/103)"
+  },
+  {
+   "src": "co-phieu-dxg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "wrap",
+   "find": "hệ sinh thái đa dạng và bền vững trong ngành bất động sản.​",
+   "to": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "anchor": "ngành bất động sản",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "5b: bài mã CP → trang ngành (block 47/130)"
+  },
+  {
+   "src": "co-phieu-dxg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "remove",
+   "old": "https://www.dsc.com.vn/kien-thuc/top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Dòng Xem thêm trùng đích — link đã có trong câu"
+  },
+  {
+   "src": "co-phieu-fcn-tong-quanh-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "wrap",
+   "find": ", đóng góp vào sự nghiệp phát triển của ngành xây dựng công trình nói chung và ngành",
+   "to": "co-phieu-nganh-xay-dung",
+   "anchor": "ngành xây dựng",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "5b: bài mã CP → trang ngành (block 5/94)"
+  },
+  {
+   "src": "co-phieu-fpt",
+   "op": "wrap",
+   "find": "t trong những mã cổ phiếu tiêu biểu của nhóm công nghệ thông tin trên thị trường chứng khoán V",
+   "to": "co-phieu-nganh-cong-nghe",
+   "anchor": "nhóm công nghệ thông tin",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "5i: bài mã CP → trang ngành (block 1/81)"
+  },
+  {
+   "src": "co-phieu-frt-tong-quan-dinh-gia-ket-qua-kinh-doanh-moi-nhat",
+   "op": "wrap",
+   "find": ": FRT) là một doanh nghiệp uy tín trong lĩnh vực bán lẻ các sản phẩm công nghệ số tại",
+   "to": "co-phieu-nganh-ban-le",
+   "anchor": "lĩnh vực bán lẻ",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "5e: bài mã CP → trang ngành (block 1/114)"
+  },
+  {
+   "src": "co-phieu-gvr",
+   "op": "wrap",
+   "find": "m. Với lợi thế quỹ đất rộng, vị thế đầu ngành cao su thiên nhiên và tiềm năng phát",
+   "to": "top-co-phieu-cao-su-nen-dau-tu",
+   "anchor": "ngành cao su",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "5h: bài mã CP → trang ngành (block 1/98)"
+  },
+  {
+   "src": "co-phieu-hbc-tong-quanh-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+   "op": "wrap",
+   "find": "Với nhiều năm kinh nghiệm trong ngành xây dựng, HBC đã xây dựng một mô hình",
+   "to": "co-phieu-nganh-xay-dung",
+   "anchor": "ngành xây dựng",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "5b: bài mã CP → trang ngành (block 41/99)"
+  },
+  {
+   "src": "co-phieu-hdg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025",
+   "op": "wrap",
+   "find": "ởng đến giá cổ phiếu HDG trong bối cảnh ngành bất động sản đang có nhiều thay đổi.",
+   "to": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "anchor": "ngành bất động sản",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "5b: bài mã CP → trang ngành (block 1/161)"
+  },
+  {
+   "src": "co-phieu-hdg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025",
+   "op": "remove",
+   "old": "https://www.dsc.com.vn/kien-thuc/top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Dòng Xem thêm trùng đích — link đã có trong câu"
+  },
+  {
+   "src": "co-phieu-hpg-tong-quan-dinh-gia-ket-qua-kinh-doanh-moi-nhat",
+   "op": "wrap",
+   "find": "àng đầu Việt Nam, hoạt động chính trong lĩnh vực thép xây dựng, tôn mạ màu, ống thé",
+   "to": "top-5-co-phieu-nganh-thep-co-co-ban-tot-sap-buoc-vao-chu-ky-tang-truong-moi",
+   "anchor": "lĩnh vực thép",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "5c: bài mã CP → trang ngành (block 1/122)"
+  },
+  {
+   "src": "co-phieu-itc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "wrap",
+   "find": "TC) là một doanh nghiệp hoạt động trong lĩnh vực bất động sản, với nhiều dự án tại TP.HCM v",
+   "to": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "anchor": "lĩnh vực bất động sản",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "5b: bài mã CP → trang ngành (block 1/109)"
+  },
+  {
+   "src": "co-phieu-itc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "remove",
+   "old": "https://www.dsc.com.vn/kien-thuc/top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Dòng Xem thêm trùng đích — link đã có trong câu"
+  },
+  {
+   "src": "co-phieu-lpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "wrap",
+   "find": "cao hiệu quả hoạt động. Trong bối cảnh ngành ngân hàng đang có nhiều cơ hội tăng trư",
+   "to": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "anchor": "ngành ngân hàng",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "5a: bài mã CP → trang ngành (block 1/100)"
+  },
+  {
+   "src": "co-phieu-lpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "remove",
+   "old": "https://www.dsc.com.vn/kien-thuc/top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Dòng Xem thêm trùng đích — link đã có trong câu"
+  },
+  {
+   "src": "co-phieu-ltg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "wrap",
+   "find": "Ngành nông nghiệp luôn gắn liền với nhiều biến",
+   "to": "co-phieu-nganh-nong-nghiep",
+   "anchor": "Ngành nông nghiệp",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "5h: bài mã CP → trang ngành (block 1/97)"
+  },
+  {
+   "src": "co-phieu-mbb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "wrap",
+   "find": "ng những mã cổ phiếu hấp dẫn nhất trong ngành ngân hàng. Với nền tảng tài chính vững",
+   "to": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "anchor": "ngành ngân hàng",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "5a: bài mã CP → trang ngành (block 1/102)"
+  },
+  {
+   "src": "co-phieu-mbb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "remove",
+   "old": "https://www.dsc.com.vn/kien-thuc/top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Dòng Xem thêm trùng đích — link đã có trong câu"
+  },
+  {
+   "src": "co-phieu-nganh-truyen-thong",
+   "op": "wrap",
+   "find": "Doanh thu ngành công nghệ thông tin toàn cầu dự báo đạt 5.700 tỷ",
+   "to": "co-phieu-nganh-cong-nghe",
+   "anchor": "ngành công nghệ thông tin",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "5i: bài mã CP → trang ngành (block 7/155)"
+  },
+  {
+   "src": "co-phieu-nkg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "wrap",
+   "find": "được nhà đầu tư quan tâm hàng đầu trong ngành thép Việt Nam. Với vị thế là một t",
+   "to": "top-5-co-phieu-nganh-thep-co-co-ban-tot-sap-buoc-vao-chu-ky-tang-truong-moi",
+   "anchor": "ngành thép",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "5c: bài mã CP → trang ngành (block 1/154)"
+  },
+  {
+   "src": "co-phieu-sip-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "wrap",
+   "find": "ng những mã cổ phiếu nổi bật trong nhóm ngành khu công nghiệp, nhờ sở hữu quỹ đất lớn, mô h",
+   "to": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "anchor": "ngành khu công nghiệp",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "5b: bài mã CP → trang ngành (block 1/98)"
+  },
+  {
+   "src": "co-phieu-sip-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "remove",
+   "old": "https://www.dsc.com.vn/kien-thuc/top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Dòng Xem thêm trùng đích — link đã có trong câu"
+  },
+  {
+   "src": "co-phieu-stb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "wrap",
+   "find": "Trong bối cảnh ngành ngân hàng tiếp tục tăng trưởng ổn định,",
+   "to": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "anchor": "ngành ngân hàng",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "5a: bài mã CP → trang ngành (block 2/102)"
+  },
+  {
+   "src": "co-phieu-stb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "remove",
+   "old": "https://www.dsc.com.vn/kien-thuc/top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Dòng Xem thêm trùng đích — link đã có trong câu"
+  },
+  {
+   "src": "co-phieu-szc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "wrap",
+   "find": "được nhà đầu tư quan tâm hàng đầu trong lĩnh vực bất động sản công nghiệp. Với quỹ đất rộng",
+   "to": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "anchor": "lĩnh vực bất động sản",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "5b: bài mã CP → trang ngành (block 1/107)"
+  },
+  {
+   "src": "co-phieu-szc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "remove",
+   "old": "https://www.dsc.com.vn/kien-thuc/top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Dòng Xem thêm trùng đích — link đã có trong câu"
+  },
+  {
+   "src": "co-phieu-tcb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "wrap",
+   "find": "g ngừng khẳng định vị thế dẫn đầu trong ngành ngân hàng.",
+   "to": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "anchor": "ngành ngân hàng",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "5a: bài mã CP → trang ngành (block 1/101)"
+  },
+  {
+   "src": "co-phieu-tcb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "remove",
+   "old": "https://www.dsc.com.vn/kien-thuc/top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Dòng Xem thêm trùng đích — link đã có trong câu"
+  },
+  {
+   "src": "co-phieu-tch-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "wrap",
+   "find": "hu hút dòng tiền giao dịch tích cực của nhóm bất động sản. Doanh nghiệp nắm giữ quỹ đất",
+   "to": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "anchor": "nhóm bất động sản",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "5b: bài mã CP → trang ngành (block 1/117)"
+  },
+  {
+   "src": "co-phieu-tpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "wrap",
+   "find": "trong những ngân hàng tiên phong trong lĩnh vực ngân hàng số tại Việt Nam.",
+   "to": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "anchor": "lĩnh vực ngân hàng",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "5a: bài mã CP → trang ngành (block 3/102)"
+  },
+  {
+   "src": "co-phieu-tpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "remove",
+   "old": "https://www.dsc.com.vn/kien-thuc/top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Dòng Xem thêm trùng đích — link đã có trong câu"
+  },
+  {
+   "src": "co-phieu-vcb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "wrap",
+   "find": "lâu đã được xem là \"cổ phiếu vua\" trong ngành ngân hàng nhờ vào vị thế dẫn đầu, nền t",
+   "to": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "anchor": "ngành ngân hàng",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "5a: bài mã CP → trang ngành (block 1/104)"
+  },
+  {
+   "src": "co-phieu-vcb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "remove",
+   "old": "https://www.dsc.com.vn/kien-thuc/top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Dòng Xem thêm trùng đích — link đã có trong câu"
+  },
+  {
+   "src": "co-phieu-vcg-tong-quanh-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "wrap",
+   "find": "khẩu máy móc, thiết bị, vật tư phục vụ ngành xây dựng và các ngành kinh tế khác; đư",
+   "to": "co-phieu-nganh-xay-dung",
+   "anchor": "ngành xây dựng",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "5b: bài mã CP → trang ngành (block 6/95)"
+  },
+  {
+   "src": "co-phieu-vhm-tong-quan-danh-gia-va-cap-nhan-ket-qua-kinh-doanh-moi-nhat",
+   "op": "wrap",
+   "find": "VHM nằm trong nhóm cổ phiếu bất động sản tiềm năng thu hút dòng vốn ng",
+   "to": "top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "anchor": "cổ phiếu bất động sản",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "5b: bài mã CP → trang ngành (block 115/148)"
+  },
+  {
+   "src": "co-phieu-vhm-tong-quan-danh-gia-va-cap-nhan-ket-qua-kinh-doanh-moi-nhat",
+   "op": "remove",
+   "old": "https://www.dsc.com.vn/kien-thuc/top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "Dòng Xem thêm trùng đích — link đã có trong câu"
+  },
+  {
+   "src": "top-5-co-phieu-dau-khi-se-huong-loi-trong-nam-2024-khi-gia-dau-tang",
+   "op": "wrap",
+   "find": "rung phân tích 6 mã cổ phiếu thuộc nhóm ngành dầu khí đáng đầu tư để giúp bạn đưa r",
+   "to": "co-phieu-nganh-nang-luong",
+   "anchor": "ngành dầu khí",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "5d: bài mã CP → trang ngành (block 1/74)"
+  }
+ ]
+}

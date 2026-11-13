@@ -1,205 +1,334 @@
 [
   {
-    "url": "https://www.dnse.com.vn/hoc/day-trading-la-gi",
-    "title": "Day Trading là gì? Có phải là cách kiếm tiền nhanh nhất trong ngày?",
-    "description": "Day Trading được biết đến là chiến lược kiếm lợi nhuận trong thời gian ngắn, mức độ rủi ro và tần suất vào lệnh cũng thấp.",
-    "total_words": 1382,
-    "sections_count": 11,
+    "url": "https://luatvietnam.vn/linh-vuc-khac/grdp-la-gi-883-95180-article.html",
+    "title": "GRDP là gì? GRDP có gì khác GDP?",
+    "description": "GRDP là gì? GRDP có gì khác GDP? Hãy cùng chúng tôi tham khảo qua bài viết sau đây để tìm lời giải đáp cho thắc mắc này.",
+    "total_words": 2389,
+    "sections_count": 19,
     "outline": [
       {
         "level": "INTRO",
         "title": "Introduction/Sapo",
-        "word_count": 7,
-        "snippet": "Kiến thức tổng quan | 16/12/2022"
+        "word_count": 307,
+        "snippet": "Tin pháp luật Lĩnh vực khác Hành chính Thủ tục hành chính Vi phạm hành chính Công chứng - Chứng thực Cư trú Thuế - Phí Thuế Phí Lệ phí Hóa đơn Đất đai..."
+      },
+      {
+        "level": "H2",
+        "title": "1. GRDP là gì?",
+        "word_count": 189,
+        "snippet": "Căn cứ vào Quyết định 05/2023/QĐ-TTg ta có khái niệm GRDP như sau: Tổng sản phẩm trên địa bàn GRDP (Gross regional domestic product) là tổng giá trị c..."
+      },
+      {
+        "level": "H2",
+        "title": "2. Cách tính GRDP chuẩn xác và chi tiết",
+        "word_count": 54,
+        "snippet": "GRDP thường được dùng với mục đích nghiên cứu về cơ cấu và những sự biến động trong cơ cấu kinh tế theo từng ngành, nhóm ngành, các mối liên hệ với ng..."
+      },
+      {
+        "level": "H3",
+        "title": "2.1. Phương pháp tính GRDP",
+        "word_count": 386,
+        "snippet": "Theo Quyết định 05/2023/QĐ-TTg, phương pháp tính GRDP sau: Căn cứ vào phương pháp sản xuất, có thể tính GRDP theo các tiêu chí sau: Tính theo giá hiện..."
+      },
+      {
+        "level": "H3",
+        "title": "2.2. Cách tính tốc độ tăng trưởng GRDP chi tiết",
+        "word_count": 145,
+        "snippet": "Tính theo quý, 6 tháng, 9 tháng và năm Tốc độ tăng trưởng GRDP là là tỷ lệ % tăng hoặc giảm của GRDP (theo giá so sánh) tại kỳ báo cáo so với cùng kỳ ..."
+      },
+      {
+        "level": "H2",
+        "title": "3. GRDP có gì khác GDP?",
+        "word_count": 309,
+        "snippet": "GRDP và GDP là hai chỉ tiêu thường bị nhầm lẫn vì chúng có một số điểm tương đồng với nhau. Vậy sự khác nhau giữa GDP và GRDP là gì? Chúng tôi giải đá..."
+      },
+      {
+        "level": "H2",
+        "title": "4. Ý nghĩa của GRDP đối với nền kinh tế hiện nay",
+        "word_count": 223,
+        "snippet": "GRDP có ý nghĩa vô cùng quan trọng đối với nền kinh tế hiện nay. Bởi lẽ, đây chính là chỉ tiêu đánh giá chuẩn xác nhất tình hình kinh tế của một tỉnh ..."
+      },
+      {
+        "level": "H2",
+        "title": "5. Kết luận",
+        "word_count": 67,
+        "snippet": "Trên đây là GRDP là gì ? GRDP có gì khác GDP? Chúng tôi hy vọng bài viết có thể cung cấp cho bạn nhiều thông tin hữu ích về GRDP và các phân biệt GRDP..."
+      },
+      {
+        "level": "H2",
+        "title": "Tin liên quan",
+        "word_count": 67,
+        "snippet": "GNI là gì? GNI khác GDP như thế nào? GDP là gì? Chỉ số GDP ảnh hưởng thế nào tới nền kinh tế? Mục tiêu đến năm 2030, nợ công không quá 60% GDP Đến 202..."
+      },
+      {
+        "level": "H3",
+        "title": "Dự án hóa chất không tuân thủ khoảng cách an toàn bị phạt bao nhiêu?",
+        "word_count": 79,
+        "snippet": "Đối với dự án hóa chất thuộc đối tượng phải tuân thủ khoảng cách an toàn, việc không đáp ứng yêu cầu này có thể bị xử phạt hành chính. Mức phạt phụ th..."
+      },
+      {
+        "level": "H3",
+        "title": "Nghị quyết 39/2026/NQ-CP quy định về sử dụng nhãn, bao bì đã in tên cũ khi doanh nghiệp đổi tên như thế nào?",
+        "word_count": 87,
+        "snippet": "Khi doanh nghiệp thay đổi tên nhưng pháp nhân, mã số doanh nghiệp và chủ thể chịu trách nhiệm về hàng hóa không thay đổi, lượng nhãn, bao bì đã in tên..."
+      },
+      {
+        "level": "H3",
+        "title": "Hướng dẫn thu, nộp Đảng phí trực tuyến qua cổng dịch vụ công của Đảng",
+        "word_count": 46,
+        "snippet": "Việc thu, nộp đảng phí trực tuyến giúp đảng viên thực hiện nghĩa vụ đóng đảng phí thuận tiện, nhanh chóng hơn. Vậy, cách thu, nộp đảng phí trực tuyến ..."
+      },
+      {
+        "level": "H3",
+        "title": "Dự án đầu tư trong khu nông nghiệp ứng dụng công nghệ cao phải đáp ứng những tiêu chí nào?",
+        "word_count": 50,
+        "snippet": "Các dự án đầu tư trong khu nông nghiệp ứng dụng công nghệ cao phải đáp ứng những yêu cầu cụ thể về nhiều tiêu chí. Vậy dự án đầu tư trong khu nông ngh..."
+      },
+      {
+        "level": "H3",
+        "title": "Những hoạt động nào được thực hiện trong khu nông nghiệp ứng dụng công nghệ cao?",
+        "word_count": 48,
+        "snippet": "Khu nông nghiệp ứng dụng công nghệ cao được tổ chức nhằm phục vụ nghiên cứu, ứng dụng và phát triển công nghệ trong lĩnh vực nông nghiệp. Vậy những ho..."
+      },
+      {
+        "level": "H3",
+        "title": "Nghị định 274 quy định Lộ trình áp dụng lựa chọn nhà đầu tư qua mạng ra sao?",
+        "word_count": 43,
+        "snippet": "Nghị định 274/2026/NĐ-CP dành riêng Chương XI để quy định việc lựa chọn nhà đầu tư qua mạng. Vậy Nghị định 274 quy định Lộ trình áp dụng lựa chọn nhà ..."
+      },
+      {
+        "level": "H3",
+        "title": "Thông tư 63/2026/TT-BGDĐT quy định Điều lệ trường trung cấp, trường cao đẳng như thế nào?",
+        "word_count": 72,
+        "snippet": "Điều lệ trường trung cấp, trường cao đẳng, quy định về tổ chức, quản lý và hoạt động của các cơ sở giáo dục nghề nghiệp hiện nay được quy định cụ thể ..."
+      },
+      {
+        "level": "H3",
+        "title": "Mua hàng miễn thuế được thanh toán bằng những đồng tiền nào?",
+        "word_count": 49,
+        "snippet": "Khi mua hàng tại cửa hàng miễn thuế, người mua có thể sử dụng đồng Việt Nam hoặc một số loại ngoại tệ theo quy định. Vậy mua hàng miễn thuế được thanh..."
+      },
+      {
+        "level": "H3",
+        "title": "Thuyền viên nước ngoài nghỉ qua đêm trên bờ cần làm thủ tục gì?",
+        "word_count": 78,
+        "snippet": "Thuyền viên nước ngoài được phép đi bờ trong thời gian tàu thuyền neo đậu tại cửa khẩu cảng do Bộ Công an quản lý. Tuy nhiên, trường hợp muốn nghỉ qua..."
+      },
+      {
+        "level": "H3",
+        "title": "Khi nào quỹ tín dụng nhân dân được xác định mất khả năng chi trả hoặc có nguy cơ mất khả năng chi trả?",
+        "word_count": 90,
+        "snippet": "Thông tư 40/2026/TT-NHNN quy định cụ thể các trường hợp quỹ tín dụng nhân dân mất khả năng chi trả hoặc có nguy cơ mất khả năng chi trả, đồng thời xác..."
+      }
+    ]
+  },
+  {
+    "url": "https://thuvienphapluat.vn/chinh-sach-phap-luat-moi/vn/ho-tro-phap-luat/chinh-sach-moi/46807/grdp-la-gi-cach-tinh-toc-do-tang-truong-grdp",
+    "title": "GRDP là gì? Cách tính tốc độ tăng trưởng GRDP",
+    "description": "GRDP là gì và khác gì so với GDP? Cách tính tốc độ tăng trưởng GRDP được quy định thế nào?",
+    "total_words": 3044,
+    "sections_count": 13,
+    "outline": [
+      {
+        "level": "INTRO",
+        "title": "Introduction/Sapo",
+        "word_count": 48,
+        "snippet": "Chính Sách Pháp Luật mới Trang chủ THƯ VIỆN PHÁP LUẬT Pháp luật Tra cứu pháp luật Các gói dịch vụ CHÍNH SÁCH THƯƠNG MẠI CHÍNH SÁCH MỚI ÁN LỆ TƯ VẤN CỦ..."
       },
       {
         "level": "H1",
-        "title": "Day Trading là gì? Có phải là cách kiếm tiền nhanh nhất trong ngày?",
-        "word_count": 120,
-        "snippet": "Day Trading được biết đến là chiến lược kiếm lợi nhuận trong thời gian ngắn, mức độ rủi ro và chi phí lệnh thấp. Trong bài viết này, DNSE sẽ giúp bạn ..."
+        "title": "GRDP là gì? Cách tính tốc độ tăng trưởng GRDP",
+        "word_count": 21,
+        "snippet": "Tham vấn bởi Luật sư Nguyễn Thụy Hân Chuyên viên pháp lý Dương Châu Thanh 07/03/2023 09:55 AM"
       },
       {
         "level": "H2",
-        "title": "Day Trading là gì?",
-        "word_count": 148,
-        "snippet": "Day Trading hay giao dịch trong ngày là các chiến lược giao dịch ngắn hạn, Trader sẽ mở và đóng lệnh trong ngày và không giữ lệnh qua đêm. Thời gian g..."
+        "title": "GRDP là gì và khác gì so với GDP? Cách tính tốc độ tăng trưởng GRDP được quy định thế nào? - Minh Thân (Tiền Giang)",
+        "word_count": 14,
+        "snippet": "Mục\r\n                                    lục bài viết GRDP là gì? Cách tính tốc độ tăng trưởng GRDP"
       },
       {
         "level": "H2",
-        "title": "Đặc điểm của Day Trading",
-        "word_count": 151,
-        "snippet": "Phương pháp Day Trading thường chỉ được giao dịch trên những khung thời gian ngắn. Trader sẽ kiếm lợi nhuận từ những giao dịch nhỏ lẻ trong ngắn hạn, ..."
+        "title": "GRDP là gì? GRDP khác gì GDP?",
+        "word_count": 174,
+        "snippet": "GRDP là viết tắt của cụm từ tổng sản phẩm trên địa bàn Theo Quyết định 05/2023/QĐ-TTg , tổng sản phẩm trên địa bàn (GRDP) là giá trị sản phẩm vật chất..."
       },
       {
         "level": "H2",
-        "title": "Ưu và nhược điểm của phương pháp Day Trading",
-        "word_count": 13,
-        "snippet": "Tìm hiểu ưu và nhược điểm của phương pháp đầu tư ngắn hạn"
+        "title": "Phương pháp tính GRDP",
+        "word_count": 333,
+        "snippet": "Theo phương pháp sản xuất, phương pháp tính GRDP gồm: (1) Theo giá hiện hành Tổng sản phẩm trên địa bàn bằng tổng giá trị tăng thêm theo giá cơ bản củ..."
+      },
+      {
+        "level": "H2",
+        "title": "Các tính tốc độ tăng trưởng GRDP",
+        "word_count": 245,
+        "snippet": "(1) Tốc độ tăng trưởng GRDP quý, 6 tháng, 9 tháng, năm Tốc độ tăng trưởng GRDP là tỷ lệ phần trăm tăng/giảm của GRDP của kỳ báo cáo so với cùng kỳ năm..."
       },
       {
         "level": "H3",
-        "title": "Ưu điểm",
-        "word_count": 181,
-        "snippet": "Giảm thiểu rủi ro kéo dài: Day Trading sẽ là một phiên giao dịch kết thúc vào cuối ngày nên các Trader sẽ không phải lo lắng về các biến động có thể x..."
+        "title": "GDP & Thông tin kinh tế - xã hội",
+        "word_count": 319,
+        "snippet": "TP.Hồ Chí Minh quyết liệt hoàn thành mục tiêu tăng trưởng năm 2026 (13/08) Triển khai đồng bộ các giải pháp nâng cao hiệu quả quản trị và phát triển k..."
       },
       {
         "level": "H3",
-        "title": "Nhược điểm",
-        "word_count": 208,
-        "snippet": "Vấn đề về vốn: Về cơ bản, Day Trading là cách kiếm lời trong thời gian ngắn hạn, bạn sẽ kiếm lợi nhuận nhỏ từ nhiều lệnh lại với nhau. Bởi vậy, để có ..."
+        "title": "GRDP , tăng trưởng GRDP , GDP ,",
+        "word_count": 0,
+        "snippet": ""
+      },
+      {
+        "level": "H4",
+        "title": "TÌM KIẾM VĂN BẢN",
+        "word_count": 6,
+        "snippet": "Văn bản liên quan đến GRDP"
+      },
+      {
+        "level": "H4",
+        "title": "XEM NHIỀU NHẤT",
+        "word_count": 1133,
+        "snippet": "Quy trình chỉ định thầu thông thường và rút gọn theo Nghị định 214/2025/NĐ-CP ra sao? Luật Đấu thầu áp dụng 2026 và tổng hợp Nghị định, Thông tư hướng..."
+      },
+      {
+        "level": "H4",
+        "title": "THÔNG BÁO VĂN BẢN MỚI",
+        "word_count": 175,
+        "snippet": "Tiêu chuẩn xét tặng danh hiệu Lao động tiên tiến tại Văn phòng Chính phủ như thế nào? Thủ tục thi cấp chứng chỉ nghiệp vụ khai hải quan như thế nào? T..."
+      },
+      {
+        "level": "H4",
+        "title": "Thông báo",
+        "word_count": 427,
+        "snippet": "TP. HCM, ngày 20/07/2022 Thư Xin Lỗi Vì Đang Bị Tấn Công DDoS THƯ VIỆN PHÁP LUẬT chân thành xin lỗi Quý khách vì website không vào được hoặc vào rất c..."
+      },
+      {
+        "level": "H4",
+        "title": "ĐĂNG KÝ THÀNH VIÊN MIỄN PHÍ ĐỂ",
+        "word_count": 149,
+        "snippet": "Khai thác hơn 302.000 văn bản Pháp Luật Nhận Email văn bản mới hàng tuần Được hỗ trợ tra cứu trực tuyến Tra cứu Mẫu hợp đồng,\r\n                       ..."
+      }
+    ]
+  },
+  {
+    "url": "https://topi.vn/grdp-la-gi.html",
+    "title": "GRDP là gì? Ý nghĩa và công thức tính GRDP nhanh chóng",
+    "description": "Để thuận tiện cho việc thống kê sự phát triển quy mô kinh tế của các tỉnh thành, Thủ Tướng đã phê duyệt đề án chuyển đổi quy trình biên soạn số liệu GRDP vừa để tính toán tổng sản phẩm trong tỉnh vừa phù hợp với thông lệ của quốc tế.",
+    "total_words": 1649,
+    "sections_count": 19,
+    "outline": [
+      {
+        "level": "INTRO",
+        "title": "Introduction/Sapo",
+        "word_count": 60,
+        "snippet": "Trang chủ Tích lũy Chứng chỉ quỹ Vàng Cổ phiếu Tin Vay Bảo hiểm Sản phẩm Tài chính cá nhân Tính năng thị trường trên TOPI Thị trường Ý kiến chuyên gia..."
+      },
+      {
+        "level": "H1",
+        "title": "GRDP là gì? Ý nghĩa và công thức tính GRDP nhanh chóng",
+        "word_count": 54,
+        "snippet": "Để thuận tiện cho việc thống kê sự phát triển quy mô kinh tế của các tỉnh thành, Thủ Tướng đã phê duyệt đề án chuyển đổi quy trình biên soạn số liệu G..."
+      },
+      {
+        "level": "H3",
+        "title": "Các nội dung chính",
+        "word_count": 71,
+        "snippet": "1. GRDP là gì? 2. Ý nghĩa và vai trò của chỉ số GRDP 3. Phân biệt GRDP với GDP 4. Công thức tính GRDP GRDP là gì? Có phải cũng giống như GDP hay không..."
       },
       {
         "level": "H2",
-        "title": "Day Trading phù hợp với ai?",
-        "word_count": 253,
-        "snippet": "Là một trong những loại giao dịch tính có đặc thù riêng, bởi vậy không phải ai cũng là người phù hợp để bắt đầu với phương pháp Day Trading. Vậy đâu s..."
+        "title": "1. GRDP là gì?",
+        "word_count": 171,
+        "snippet": "GRDP là từ viết tắt của Gross Regional Domestic Product - Tổng sản phẩm trong địa phương (tỉnh, thành phố). Theo Tổng cục Thống kê thì GRDP là chỉ tiê..."
       },
       {
         "level": "H2",
-        "title": "Một số lưu ý đối với phương pháp Day Trading",
-        "word_count": 203,
-        "snippet": "Những lưu ý khi đấu tư Day Trading mà bạn nên biết Chiến lược giao dịch rõ ràng: Muốn có được giao dịch trong ngày thành công, các nhà đầu tư cần tìm ..."
+        "title": "2. Ý nghĩa và vai trò của chỉ số GRDP",
+        "word_count": 315,
+        "snippet": "Vai trò và ý nghĩa của GRDP Chỉ số GRDP là một chỉ tiêu tổng hợp rất quan trọng phản ánh kết quả sản xuất cuối cùng của tỉnh, thành phố trong một năm,..."
       },
       {
         "level": "H2",
-        "title": "Tạm kết",
-        "word_count": 98,
-        "snippet": "Thực tế, Day Trading được coi là chiến lược đầu tư vô cùng hấp dẫn do nó có rủi ro thấp và nhanh chóng thu được lợi nhuận. Nói là vậy nhưng phương phá..."
+        "title": "3. Phân biệt GRDP với GDP",
+        "word_count": 173,
+        "snippet": "So sánh GDP và GRDP nhanh chóng Điểm khác biệt cơ bản nhất giữa GRDP và GDP đó là: - GRDP phản ánh tổng sản phẩm tính trên phạm vi một vùng, một tỉnh ..."
+      },
+      {
+        "level": "H2",
+        "title": "4. Công thức tính GRDP",
+        "word_count": 432,
+        "snippet": "Theo hướng dẫn của Tổng cục Thống kê thì có 3 phương pháp để tính GRDP. https://imgur.com/a/FDbxP3C 4 Cách 1, áp dụng phương pháp sản xuất, ta có công..."
       },
       {
         "level": "H3",
         "title": "Bài viết liên quan",
         "word_count": 0,
         "snippet": ""
-      }
-    ]
-  },
-  {
-    "url": "https://www.vietcap.com.vn/kien-thuc/day-trading-la-gi-ky-nang-dau-tu-chung-khoan-voi-phuong-phap-day-trading",
-    "title": "Day trading là gì? Kỹ năng đầu tư chứng khoán với phương pháp Day trading",
-    "description": "Công nghệ ngày nay đã đóng một vai trò quan trọng trong việc kết nối di động tiện lợi và lan truyền thông tin thị trường tài chính vô cùng nhanh nhạy. Điều này đã kh",
-    "total_words": 3586,
-    "sections_count": 20,
-    "outline": [
-      {
-        "level": "INTRO",
-        "title": "Introduction/Sapo",
-        "word_count": 63,
-        "snippet": "Đóng Không có kết quả Hướng dẫn chung Mở tài khoản Nạp / Rút tiền Sản phẩm dịch vụ Phần mềm giao dịch Kết quả liên quan Ngôn ngữ Đăng nhập Mở tài khoả..."
       },
       {
-        "level": "H1",
-        "title": "Day trading là gì? Kỹ năng đầu tư chứng khoán với phương pháp Day trading",
-        "word_count": 115,
-        "snippet": "Tin chứng khoán Thứ ba, 28/03/2023 Công nghệ ngày nay đã đóng một vai trò quan trọng trong việc kết nối di động tiện lợi và lan truyền thông tin thị t..."
+        "level": "H4",
+        "title": "Nợ công Việt Nam hiện nay - Việt Nam nợ nước nào nhiều nhất?",
+        "word_count": 78,
+        "snippet": "Bài viết này phân tích tình hình nợ công của Việt Nam hiện nay, bao gồm số liệu nợ công tổng thể, các quốc gia và tổ chức mà Việt Nam vay nợ nhiều nhấ..."
       },
       {
-        "level": "H2",
-        "title": "Day trading là gì?",
-        "word_count": 119,
-        "snippet": "Giao dịch trong ngày hay Day trading là một chiến lược giao dịch ngắn hạn phổ biến liên quan đến việc mua và bán các công cụ tài chính, với mục đích đ..."
+        "level": "H4",
+        "title": "GNI là gì? Thu nhập quốc dân - GNI Việt Nam qua các năm",
+        "word_count": 44,
+        "snippet": "GNI và GDP là hai chỉ số quan trọng trong kinh tế học. GDP là thu nhập bình quân đầu người còn GNI là thu nhập quốc dân với ý nghĩa phản ánh sức mạnh ..."
       },
       {
-        "level": "H2",
-        "title": "Đặc điểm của phương pháp giao dịch Day Trading",
-        "word_count": 271,
-        "snippet": "Day trading có những nét đặc trưng riêng nhưng cũng tồn tại một số tính chất giống với phương pháp giao dịch lướt sóng. Do đó, các nhà đầu tư cần lưu ..."
+        "level": "H4",
+        "title": "Top 10 quốc gia có tốc độ tăng trưởng GDP nhanh trong năm 2026",
+        "word_count": 40,
+        "snippet": "Khám phá Top 10 quốc gia tăng trưởng GDP nhanh nhất 2026. Việt Nam bứt phá với GDP đạt 8,02%. Cập nhật ngay danh sách 10 quốc gia GDP cao nhất tính đế..."
       },
       {
-        "level": "H2",
-        "title": "Giao dịch trong ngày Day trading so với đầu tư dài hạn",
-        "word_count": 330,
-        "snippet": "Đầu tư theo nghĩa truyền thống thường không nhắc nhiều đến day trading. Mặc dù \"đầu tư\" là một thuật ngữ rộng, nhưng cách hiệu quả nhất để luôn kiếm đ..."
+        "level": "H4",
+        "title": "Purchasing power parity (PPP) là gì? Đặc điểm và công thức tính",
+        "word_count": 32,
+        "snippet": "Purchasing power parity là một lý thuyết kinh tế cho phép so sánh sức mua của các loại tiền tệ khác nhau trên thế giới với nhau. 31/10/2024 Xem thêm"
       },
       {
-        "level": "H2",
-        "title": "Ưu – Nhược điểm của Day Trading",
-        "word_count": 72,
-        "snippet": "Khi tìm hiểu về bất kỳ phương pháp giao dịch nào thì việc phân tích ưu, nhược điểm của nó là điều kiện tối thiểu giúp ta có thể đưa ra nhận định một c..."
+        "level": "H4",
+        "title": "GNP là gì? Ảnh hưởng của chỉ số GNP trong đầu tư",
+        "word_count": 56,
+        "snippet": "GNP - Tổng sản phẩm quốc gia được xem là một chỉ số quan trọng trong nền kinh tế vĩ mô. Đối với nhà đầu tư, việc nắm được chỉ số GNP sẽ giúp cho quá t..."
+      },
+      {
+        "level": "H4",
+        "title": "PCE là gì? So sánh chỉ số PCE với CPI",
+        "word_count": 42,
+        "snippet": "Chỉ số giá chi tiêu tiêu dùng cá nhân, thường được gọi là chỉ số giá PCE, là một trong những thước đo chính về lạm phát và chi tiêu của người tiêu dùn..."
       },
       {
         "level": "H3",
-        "title": "Ưu điểm của day Trading:",
-        "word_count": 225,
-        "snippet": "Mang lại nguồn lợi nhuận nhanh: Do tính chất của day trading là giao dịch kiếm lợi nhuận trong ngắn hạn nên khi kết thúc một ngày, các nhà đầu tư hoàn..."
+        "title": "CÔNG TY CỔ PHẦN ĐẦU TƯ VAM",
+        "word_count": 41,
+        "snippet": "Số ĐKKD: 0109662393 Địa chỉ liên lạc: Tầng 3, Tháp Văn phòng quốc tế Hòa Bình, 106 Hoàng Quốc Việt, Phường Nghĩa Đô, Thành phố Hà Nội, Việt Nam Người ..."
       },
       {
         "level": "H3",
-        "title": "Nhược điểm của day Trading:",
-        "word_count": 272,
-        "snippet": "Phải dành rất nhiều thời gian nghiên cứu và phân tích đồ thị, gần như thời gian một ngày chỉ tập trung vào giao dịch day trading mà không còn nhiều th..."
-      },
-      {
-        "level": "H2",
-        "title": "Day trading có phải là một ý tưởng tốt hay không?",
-        "word_count": 764,
-        "snippet": "Thông thường, người ta ước tính rằng 95% người giao dịch trong ngày cuối cùng bị mất tiền và thực nghiệm đã chứng minh rằng tỷ lệ cũng tương tự. Nếu b..."
-      },
-      {
-        "level": "H2",
-        "title": "Chiến lược cần thiết cho người theo phương pháp Day Trading",
-        "word_count": 65,
-        "snippet": "Day trading là một phương thức giao dịch ngắn hạn phổ biến và tập trung vào các biến động nhỏ. Nhiều nhà giao dịch trong ngày dựa vào biểu đồ giá và p..."
-      },
-      {
-        "level": "H3",
-        "title": "Dữ liệu và tin tức thị trường hằng ngày",
-        "word_count": 119,
-        "snippet": "Theo như định nghĩa, đầu tư day trading phụ thuộc vào diễn biến thị trường. Do đó, việc đầu tiên mà nhà đầu tư phải làm là truy cập thông tin thị trườ..."
-      },
-      {
-        "level": "H3",
-        "title": "Biểu đồ giá chứng khoán",
-        "word_count": 69,
-        "snippet": "Biểu đồ rất quan trọng đối với phân tích kỹ thuật chứng khoán, đây là hình thức phân tích được sử dụng phổ biến nhất cho giao dịch trong ngày. Các nhà..."
-      },
-      {
-        "level": "H3",
-        "title": "Công cụ phân tích kỹ thuật",
-        "word_count": 108,
-        "snippet": "Từ biểu đồ giá chứng khoán để khai thác được nhiều thông tin hữu ích và có quyết định đúng đắn hơn thì đòi hỏi bạn phải am hiểu kỹ năng phân tích kỹ t..."
-      },
-      {
-        "level": "H3",
-        "title": "Quản lý rủi ro - sẵn sàng cắt lỗ",
-        "word_count": 110,
-        "snippet": "Tất cả bao gồm việc sử dụng các công cụ quản lý rủi ro và có thể giữ bình tĩnh khi môi trường thị trường có nhịp độ nhanh và rủi ro cao. Các nhà giao ..."
-      },
-      {
-        "level": "H2",
-        "title": "Tâm lý khi giao dịch Day trading",
-        "word_count": 590,
-        "snippet": "Day trading là một cuộc chơi mà bạn phải tranh thủ từng giây phút, theo dõi những biến động liên tục của thị trường. Chính vì vậy, tâm lý của bạn chắc..."
-      },
-      {
-        "level": "H2",
-        "title": "Về Vietcap",
-        "word_count": 21,
-        "snippet": "Về Vietcap Tin tức Quan hệ cổ đông Cơ hội nghề nghiệp Hướng dẫn chung Góp ý & Liên hệ Văn phòng"
-      },
-      {
-        "level": "H2",
-        "title": "Dịch vụ",
-        "word_count": 22,
-        "snippet": "Tư vấn KH Cá nhân Môi giới KH tổ chức Quản lý gia sản Ngân hàng đầu tư Điều khoản sử dụng"
-      },
-      {
-        "level": "H2",
         "title": "Sản phẩm",
-        "word_count": 13,
-        "snippet": "Vietcap Trading Vietcap IQ Sản phẩm Margin AI News Vietcap Academy Vietcap Webinar"
-      },
-      {
-        "level": "H2",
-        "title": "Ứng dụng giao dịch",
         "word_count": 8,
-        "snippet": "Vietcap Mobile App Vietcap Trading Tải Vietcap Pro"
+        "snippet": "Tích lũy Chứng chỉ quỹ Vàng Cổ phiếu"
       },
       {
-        "level": "H2",
-        "title": "Kiến thức",
-        "word_count": 230,
-        "snippet": "Vietcap Academy Vietcap Webinar Nội dung chứng khoán CÔNG TY CỔ PHẦN CHỨNG KHOÁN VIETCAP Tầng 15, Tháp tài chính Bitexco, 2 Hải Triều, Phường Sài Gòn,..."
+        "level": "H3",
+        "title": "Về chúng tôi",
+        "word_count": 19,
+        "snippet": "Giới thiệu TOPI Hỗ trợ Câu hỏi thường gặp Chính sách bảo mật Điều khoản sử dụng Tuyển dụng"
+      },
+      {
+        "level": "H3",
+        "title": "Theo dõi TOPI tại",
+        "word_count": 0,
+        "snippet": ""
+      },
+      {
+        "level": "H3",
+        "title": "Liên hệ",
+        "word_count": 13,
+        "snippet": "Hotline: 1900636977 Email: [email protected] Quét mã QR để tải ứng dụng TOPI"
       }
     ]
   }

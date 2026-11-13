@@ -291,6 +291,42 @@ def mode_backfill(args, entries, sitemap):
         print("\nAnchor text phải lấy từ chính câu trong bài nguồn (không exact-match keyword). Chỉ sửa đúng dòng đã nêu.")
 
 
+def add_anchor(args, entries) -> int:
+    """Append one row to anchor-index.md under the chosen cluster (the LLM never opens the 189 KB file)."""
+    slug = args.add_anchor.strip("/").split("/")[-1]
+    url = DSC_KB + slug
+    if any(e.url.rstrip("/") == url for e in entries):
+        print(f"{slug} đã có trong anchor-index.md — không thêm.")
+        return 0
+    if not args.anchor or not args.cluster:
+        print("--add-anchor cần --anchor \"<anchor chính>\" và --cluster \"<tên cluster>\"", file=sys.stderr)
+        return 2
+    raw = ANCHOR_INDEX.read_bytes()
+    nl = "\r\n" if b"\r\n" in raw else "\n"
+    lines = raw.decode("utf-8").split(nl)
+    heads = [(i, l) for i, l in enumerate(lines) if l.startswith("## ")]
+    match = [(i, l) for i, l in heads if unaccent(args.cluster) in unaccent(l)]
+    if len(match) != 1:
+        print(f"--cluster '{args.cluster}' khớp {len(match)} cluster. Các cluster hiện có:", file=sys.stderr)
+        for _, l in heads:
+            print("  " + l[3:], file=sys.stderr)
+        return 1
+    head_idx = match[0][0]
+    end = next((i for i, _ in heads if i > head_idx), len(lines))
+    last_row = max((i for i in range(head_idx, end) if lines[i].startswith("|")), default=None)
+    if last_row is None:
+        print("Cluster chưa có bảng — thêm tay 1 lần.", file=sys.stderr)
+        return 1
+    title = args.title or args.anchor
+    lines.insert(last_row + 1, f"| {args.anchor} | {url} | {title} | Finalized (Mới) |")
+    m = re.search(r"\((\d+) bài\)\s*$", lines[head_idx])  # keep the per-cluster counter in the heading right
+    if m:
+        lines[head_idx] = lines[head_idx][:m.start(1)] + str(int(m.group(1)) + 1) + lines[head_idx][m.end(1):]
+    ANCHOR_INDEX.write_bytes(nl.join(lines).encode("utf-8"))
+    print(f"Đã thêm vào anchor-index.md: {args.anchor} → {url} · {lines[head_idx][3:]}")
+    return 0
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("keyword", nargs="?", help="Keyword / topic to find link targets for")
@@ -300,13 +336,19 @@ def main():
     ap.add_argument("--json", action="store_true")
     ap.add_argument("--finalized", action="store_true",
                     help="--backfill quét 3-finalized/*.md thay vì snapshot live (mặc định: live nếu có)")
+    ap.add_argument("--add-anchor", metavar="SLUG", help="Thêm 1 dòng cho bài mới vào anchor-index.md (cần --anchor, --cluster)")
+    ap.add_argument("--anchor", help="Anchor text chính cho --add-anchor")
+    ap.add_argument("--cluster", help="Tên cluster (khớp 1 phần, không dấu) cho --add-anchor")
+    ap.add_argument("--title", help="Title bài (cột Từ khóa liên quan) cho --add-anchor; mặc định = anchor")
     args = ap.parse_args()
-    if not args.keyword and not args.backfill:
-        ap.error("cần keyword hoặc --backfill <slug>")
+    if not args.keyword and not args.backfill and not args.add_anchor:
+        ap.error("cần keyword, --backfill <slug> hoặc --add-anchor <slug>")
     if not ANCHOR_INDEX.exists():
         print(f"Không tìm thấy {ANCHOR_INDEX}", file=sys.stderr)
         sys.exit(2)
     entries, sitemap = load_index(), load_sitemap()
+    if args.add_anchor:
+        sys.exit(add_anchor(args, entries))
     if args.backfill:
         if args.top == 8:
             args.top = 5

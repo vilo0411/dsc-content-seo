@@ -98,7 +98,7 @@ Thị trường tài chính thực hiện bốn chức năng kinh tế cốt lõ
 
 ## VI. Vai trò của thị trường tài chính đối với nhà đầu tư và nền kinh tế
 
-Năm 2026, quy mô thị trường vốn Việt Nam mở rộng với hơn 13,66 triệu tài khoản chứng khoán cá nhân (theo dữ liệu VSDC). Thị trường tài chính mang lại vai trò to lớn trên hai góc độ.
+Thị trường tài chính có vai trò trên hai góc độ: với nền kinh tế vĩ mô và với từng nhà đầu tư. Doanh nghiệp Việt Nam huy động vốn dài hạn qua cổ phiếu, trái phiếu niêm yết trên 3 sàn HOSE, HNX và UPCoM.
 
 ### 1. Vai trò đối với phát triển kinh tế vĩ mô
 

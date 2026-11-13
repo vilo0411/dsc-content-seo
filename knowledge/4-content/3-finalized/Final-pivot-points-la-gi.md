@@ -6,7 +6,9 @@ description: "Pivot points là gì? Cẩm nang tính điểm xoay Pivot Point, c
 
 # Pivot Points Là Gì? 3 Chiến Lược Giao Dịch Điểm Xoay Đảo Chiều
 
-Tính đến tháng 8/2026, thị trường chứng khoán Việt Nam ghi nhận gần 13,66 triệu tài khoản nhà đầu tư theo số liệu từ VSDC. Với thanh khoản bình quân duy trì quanh mốc 15.000 tỷ đồng/phiên trên sàn HOSE, VN-Index liên tục có những nhịp biến động phức tạp quanh vùng 1.700–1.735 điểm.
+Pivot Points là chỉ báo tính các mức hỗ trợ, kháng cự trong phiên từ giá cao nhất, thấp nhất và giá đóng cửa của phiên trước. Điểm xoay P = (Cao + Thấp + Đóng cửa) / 3.
+
+Phiên 3/11/2026, VN-Index đạt cao nhất 1.713,02, thấp nhất 1.689,32 và đóng cửa 1.699,62 điểm. Điểm xoay cho phiên 4/11/2026 vì vậy là 1.700,65 điểm.
 
 Đối với các nhà đầu tư giao dịch tích cực (Active Trader), việc xác định chính xác các điểm giá có khả năng đảo chiều trong phiên là yếu tố quyết định đến tỷ lệ thắng và hiệu quả quản trị danh mục. Chỉ báo Pivot Points được xem là bản đồ kỹ thuật giúp trader nhận diện các ngưỡng hỗ trợ, kháng cự động mà không bị chi phối bởi cảm xúc cá nhân.
 

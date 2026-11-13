@@ -17,22 +17,11 @@ description: >
   - **Anchor text BẮT BUỘC có "DSC":** `mở tài khoản DSC`, `mở tài khoản tại DSC`, `mở tài khoản eKYC tại DSC`, `mở tài khoản DSC online`. Đổi anchor cũ: có "DSC" thì bỏ "chứng khoán" (`mở tài khoản chứng khoán tại DSC` → `mở tài khoản tại DSC`); không có "DSC" thì thay bằng DSC (`mở tài khoản chứng khoán` → `mở tài khoản DSC`). *(qa_lint `LINK-cta-anchor`; nút banner HTML không áp dụng.)*
   *(Lý do: anchor đúng từ khóa "cách mở tài khoản chứng khoán" dành cho bài pillar `/kien-thuc/cach-mo-tai-khoan-chung-khoan` — link landing mà dùng anchor từ khóa sẽ tranh tín hiệu với pillar.)*
 
-### 📐 Quy tắc đặt link trong bài (từ đợt sửa cụm Mở TK & Cách chơi, 2026-10-30 — áp dụng cho mọi bài mới/optimize)
-1. **Link nằm trong câu có lập luận, không đứng riêng.** Anchor là một phần ý của câu. CẤM dòng `>> Xem thêm: …` / danh sách tiêu đề bài (qa_lint `LINK-xemthem`, MAJOR) và câu chỉ để trỏ đi kiểu "bạn có thể tham khảo bài …", "đọc thêm bài viết …" (`LINK-pointer`).
-2. **Ưu tiên gắn link vào cụm từ có sẵn** trong đoạn — chỉ bọc anchor, không đổi chữ. Không có cụm phù hợp mới viết thêm **1 câu** nối tiếp ý của chính đoạn/mục đó: ≤30 từ, ghép cuối đoạn nếu đoạn còn ≤3 câu, ngược lại tách thành đoạn mới ngay sau.
-3. **Link đúng section:** đặt link tới bài con ở H2/H3 đang nói về chủ đề đó, không gom cuối bài.
-4. **Pillar – hub – spoke** (registry: `knowledge/3-pipeline/internal-links/link-clusters.json`):
-   - Bài là hub/spoke của 1 cụm → **bắt buộc** link về pillar (`LINK-pillar`, MAJOR), anchor lấy từ `pillar_anchors`.
-   - Spoke trong group có hub → link về hub (`LINK-hub`, MINOR).
-   - Pillar link xuống từng hub/spoke ở đúng section nói về chủ đề đó.
-   - Anchor trùng `pillar_keyword` / `pillar_anchors` (vd. "cách mở tài khoản chứng khoán", "cách chơi chứng khoán cho người mới") **chỉ được trỏ về pillar** đó (`LINK-pillar-anchor`, MAJOR).
-5. **Bài mới thuộc cụm đã có:** khi outline được approve, thêm slug vào `spokes` của đúng group trong `link-clusters.json`, và chạy `find_links.py --backfill <slug>` để pillar/hub link xuống bài mới sau khi publish.
-6. **Cụm mới** (topical map mới): thêm 1 object vào `clusters` (id, pillar, pillar_keyword, pillar_anchors, groups) — qa_lint tự áp dụng.
+### 📐 Quy tắc đặt link trong bài
+Nằm ở [`references/link-rules.md`](references/link-rules.md) (2 KB, nguồn duy nhất) — viết / sửa bài chỉ cần đọc file đó.
 
 ### Mode: Live Sitemap Extraction & Verification (BẮT BUỘC KHÔNG NHẦM LẪN)
-1. **Sync Live Sitemap (Tự động):** Trước khi tạo outline hoặc viết draft có chèn internal link, BẮT BUỘC phải đồng bộ dữ liệu sitemap live bằng cách:
-   - Chạy script: `python .antigravity/skills/internal-linking/scripts/sync_sitemap.py`
-   - Hoặc đọc danh sách URL chính xác từ `.antigravity/skills/internal-linking/scripts/sitemap-cache.json` (được cào từ `https://www.dsc.com.vn/sitemap/sitemap_knowledge.xml`).
+1. **Sitemap:** URL lấy từ output `find_links.py` (cột Sitemap ✓) — script và `qa_lint.py` (`LINK-sitemap`) đã đối chiếu `sitemap-cache.json`; **không mở file cache đó (279 KB)**. Lint báo cache cũ hoặc bài mới publish chưa có trong cache → `python .antigravity/skills/internal-linking/scripts/sync_sitemap.py`.
 2. **Đối soát URL chính xác tuyệt đối:**
    - Tuyệt đối KHÔNG tự suy đoán slug hoặc đoán định dạng URL.
    - Tuyệt đối KHÔNG tự thêm dấu gạch nối cuối `/` nếu URL trên sitemap không có.
@@ -58,7 +47,7 @@ description: >
    ```
    Output: bài nguồn **trên site live** + mục H2 + đoạn có thể bọc anchor, ưu tiên bài có clicks GSC cao (nếu có `knowledge/raw/gsc/pages.csv`). Bài chỉ đang link qua dòng Xem thêm được ghi chú → chuyển link đó vào câu.
 2. **Update:** Sửa trên CMS — bọc anchor quanh cụm có sẵn trong đoạn script chỉ ra (HTML hiện tại: `knowledge/raw/live/html/<slug>.html`). Xong chạy `python scripts/sync_live.py --only <các slug nguồn>`.
-3. **Register Index:** Cập nhật ngay bài viết mới vào `knowledge/3-pipeline/internal-links/anchor-index.md` (chèn 1 dòng vào cluster phù hợp, không đọc cả file) kèm theo URL chính thức trên sitemap.
+3. **Register Index:** `python scripts/find_links.py --add-anchor <slug> --anchor "<anchor chính>" --cluster "<tên cluster>"` — script chèn 1 dòng vào `anchor-index.md`; không mở file đó.
 
 ### Mode: Live Snapshot (sau khi sửa trên CMS)
 Bản publish là nguồn sự thật — CSV Screaming Frog / file Final có thể đã cũ. Snapshot thân bài live nằm ở `knowledge/raw/live/` (git-tracked):
@@ -81,6 +70,14 @@ git diff --word-diff knowledge/raw/live/html/<slug>.html   # so bản live mới
 | Trước `/optimize [slug]` | `sync_live.py --only [slug]` + `--compare [slug]` (đã nằm trong skill optimize) |
 | Trước khi lập kế hoạch link / backfill / audit cụm | full `sync_live.py` nếu snapshot > 7 ngày (`find_links --backfill` in cảnh báo tuổi snapshot), rồi `link_audit.py` |
 | Định kỳ | full sync mỗi tuần (bắt cả sửa của người khác trên CMS, bài mới/bị gỡ), commit `knowledge/raw/live/` |
+
+### Mode: Fix Plan (sửa link bài đã publish, CMS chưa nối với project)
+1. `python scripts/link_plan.py candidates` — liệt kê việc cần làm từ snapshot live: link qua redirect / link chết / trỏ trang danh mục (kèm URL đích thật), bài trong cụm thiếu link pillar/hub, bài top clicks GSC chưa có inlink ngữ cảnh.
+2. Viết spec `knowledge/3-pipeline/internal-links/plans/<ngày>-<tên>.json` — mỗi thay đổi 1 object: `src`, `op` (`wrap` bọc cụm có sẵn · `replace` thay 1 đoạn · `append`/`newp` thêm 1 câu ≤30 từ có `[anchor]` · `cut` gỡ đoạn chữ/câu link không hợp ngữ cảnh (`old_text` nguyên văn) · `newli` thêm 1 dòng vào list có sẵn (cùng format `<strong>Nhãn:</strong>`) · `href` đổi URL · `unlink` bỏ link · `remove` xoá dòng Xem thêm chết), `find` (đoạn chữ xác định block), `to`, `group` (fix/cluster/backfill), `pri`, `why`. Câu mới theo §Quy tắc đặt link trong bài.
+   - **Câu thêm/viết mới phải khớp ngữ nghĩa với câu ngay trước VÀ câu ngay sau.** Trước khi viết mỗi mục, đọc block đó + dòng trước/sau trong `knowledge/raw/live/html/<slug>.html`. Ưu tiên `wrap` cụm có sẵn; câu thêm phải nối tiếp ý câu trước và dẫn được sang câu sau, anchor phải đúng vai ngữ pháp trong câu. Không chỗ nào hợp → bỏ bài đó, không thêm câu tuỳ tiện cho có link.
+   - Không `append`/`newp` vào câu dẫn list (kết thúc bằng `:` / ngay sau là `<ul>`/`<ol>`) — `build` sẽ báo lỗi; dùng `newli` hoặc gắn vào dòng list phù hợp.
+3. `python scripts/link_plan.py build <spec>` → `<spec>.html`: mỗi bài 1 khối, block HTML Trước/Sau copy dán vào source CMS, xem trước, checkbox lưu tiến độ trên trình duyệt, nút copy lệnh `sync_live --only` cho các bài đã tick.
+4. Sửa xong → `sync_live.py --only …` (hoặc full) → `python scripts/link_plan.py verify <spec>` để biết mục nào chưa lên live → `link_audit.py`.
 
 ### Mode: Audit (Health Check)
 1. **Execute Script:** Chạy `python .antigravity/skills/internal-linking/scripts/link_audit.py --orphans`.

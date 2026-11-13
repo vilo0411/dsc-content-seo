@@ -1,0 +1,203 @@
+{
+ "group": "rule",
+ "priority": "P1",
+ "issue": "Bài live gọi chu kỳ thanh toán là T+2,5 hoặc T+1,5, lệch với tên gọi trong quy chế (T+2).",
+ "sources": [
+  "https://support.vndirect.com.vn/hc/vi/articles/9816355920153",
+  "https://cafef.vn/ubcknn-dang-nghien-cuu-giao-dich-chung-khoan-xuyen-trua-noi-bien-do-gia-18826100700173895.chn"
+ ],
+ "edits": [
+  {
+   "slug": "1-hop-dong-phai-sinh-bao-nhieu-tien",
+   "find": "khác biệt hoàn toàn với chu kỳ T+2,5 của cổ phiếu cơ sở.",
+   "replace": "khác với chu kỳ T+2 của cổ phiếu cơ sở."
+  },
+  {
+   "slug": "50-trieu-nen-gui-tiet-kiem-ngan-hang-nao",
+   "find": "Mua bán cổ phiếu linh hoạt T+2,5",
+   "replace": "Bán cổ phiếu xong, tiền về tài khoản trưa ngày T+2"
+  },
+  {
+   "slug": "backtest-la-gi",
+   "find": "<strong>Rào cản chu kỳ thanh toán T+1,5</strong>: Hiện nay, chứng khoán Việt Nam áp dụng chu kỳ thanh toán T+1,5. Cổ phiếu mua ngày T0 phải đến chiều ngày T+2 mới về tài khoản để bán.",
+   "replace": "<strong>Rào cản chu kỳ thanh toán T+2</strong>: Hiện nay, chứng khoán Việt Nam áp dụng chu kỳ thanh toán T+2. Cổ phiếu mua ngày T0 về tài khoản trưa ngày T+2 và chỉ bán được từ phiên chiều hôm đó."
+  },
+  {
+   "slug": "cac-mau-trong-chung-khoan-y-nghia-va-tac-dong-den-nha-dau-tu",
+   "find": "trước khi hàng về tài khoản sau chu kỳ T+2,5.",
+   "replace": "trước khi hàng về tài khoản vào trưa ngày T+2."
+  },
+  {
+   "slug": "cac-thuat-ngu-trong-chung-khoan",
+   "find": "<strong>Ngày T+ (T+2,5)</strong>: Chu kỳ thanh toán quy định thời gian cổ phiếu hoặc tiền về tài khoản sau khi giao dịch thành công. Với quy định T+2,5, tiền hoặc cổ phiếu sẽ về tài khoản vào lúc 11h30–12h00 ngày làm việc thứ hai sau ngày mua bán.",
+   "replace": "<strong>Ngày T+ (T+2)</strong>: Chu kỳ thanh toán quy định thời điểm cổ phiếu hoặc tiền về tài khoản sau khi lệnh khớp. Thị trường cơ sở Việt Nam áp dụng chu kỳ T+2: tiền hoặc cổ phiếu về tài khoản khoảng 11h30–12h00 ngày làm việc thứ hai sau ngày khớp lệnh, nên cổ phiếu mua ngày T bán được từ phiên chiều T+2. Cách gọi “T+2,5” hay gặp trên diễn đàn không phải tên gọi trong quy chế thanh toán."
+  },
+  {
+   "slug": "cac-thuat-ngu-trong-chung-khoan",
+   "find": "các quy tắc giao dịch như chu kỳ T+2,5 và",
+   "replace": "các quy tắc giao dịch như chu kỳ thanh toán T+2 và"
+  },
+  {
+   "slug": "cac-thuat-ngu-trong-chung-khoan",
+   "find": "Việc hiểu rõ chu kỳ T+2,5 giúp",
+   "replace": "Việc hiểu rõ chu kỳ T+2 giúp"
+  },
+  {
+   "slug": "cach-dau-tu-chung-khoan-phai-sinh-tai-viet-nam",
+   "find": "T+2.5 (tiền và chứng khoán về tài khoản sau 2.5 ngày).",
+   "replace": "T+2 (tiền và chứng khoán về tài khoản trưa ngày làm việc thứ hai sau ngày khớp lệnh)."
+  },
+  {
+   "slug": "cach-mua-co-phieu-tren-san-upcom",
+   "find": "(thường là T+2,5)",
+   "replace": "(T+2, tức trưa ngày làm việc thứ hai sau ngày khớp lệnh)"
+  },
+  {
+   "slug": "chien-luoc-dau-tu-chung-khoan-ngan-han-la-gi",
+   "find": "Tuy nhiên, quy định T+1.5 tại Việt Nam hiện chưa cho phép bán ngay cổ phiếu cơ sở vừa mua trong phiên.",
+   "replace": "Tuy nhiên, với chu kỳ thanh toán T+2 tại Việt Nam, tài khoản thông thường chưa bán được ngay cổ phiếu cơ sở vừa mua trong phiên."
+  },
+  {
+   "slug": "chung-khoan-phai-sinh-la-gi-huong-dan-dau-tu-cho-nguoi-moi-bat-dau",
+   "find": "Nhận cổ phiếu về tài khoản sau T+2,5",
+   "replace": "Cổ phiếu về tài khoản trưa ngày T+2"
+  },
+  {
+   "slug": "chung-quyen-la-gi-chung-quyen-co-bao-dam-la-gi-tim-hieu-chung-quyen-tai-viet-nam",
+   "find": "với chu kỳ thanh toán T+2,5.",
+   "replace": "với chu kỳ thanh toán T+2."
+  },
+  {
+   "slug": "co-nen-dau-tu-vang-thoi-diem-nay",
+   "find": "Rất cao (Khớp lệnh T+2,5)",
+   "replace": "Rất cao (Thanh toán T+2)"
+  },
+  {
+   "slug": "co-phieu-la-gi-cac-loai-co-phieu-tren-thi-truong-chung-khoan-viet-nam",
+   "find": "<strong>Chu kỳ T+1.5/T+2: </strong>Khi bạn mua cổ phiếu vào thứ Hai (T0), thì đến 13h00 ngày thứ Tư (T+1.5), cổ phiếu sẽ về tài khoản và bạn có thể bán ngay trong phiên chiều hôm đó.",
+   "replace": "<strong>Chu kỳ thanh toán T+2: </strong>Khi bạn mua cổ phiếu vào thứ Hai (T0), cổ phiếu sẽ về tài khoản trưa thứ Tư (T+2) và bạn có thể bán ngay trong phiên chiều hôm đó."
+  },
+  {
+   "slug": "co-phieu-uu-dai-la-gi",
+   "find": "<strong>Khẩu vị nhà đầu tư ưu tiên thanh khoản T+2,5</strong>",
+   "replace": "<strong>Khẩu vị nhà đầu tư ưu tiên thanh khoản</strong>"
+  },
+  {
+   "slug": "co-phieu-vsc-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+   "find": "Thị trường chứng khoán cơ sở vận hành theo chu kỳ thanh toán T+2,5, đòi hỏi nhà đầu tư phải nắm bắt đúng nhịp sóng cổ phiếu.",
+   "replace": "Thị trường cơ sở vận hành theo chu kỳ thanh toán T+2: cổ phiếu mua hôm nay phải đến phiên chiều ngày làm việc thứ hai mới bán được, nên nhà đầu tư cần nắm đúng nhịp sóng cổ phiếu."
+  },
+  {
+   "slug": "daytrading-la-gi",
+   "find": "<strong>Thực tế day trading tại Việt Nam: Quy định T+2.5 và kỹ thuật lướt trên hàng có sẵn</strong>",
+   "replace": "<strong>Thực tế day trading tại Việt Nam: Quy định T+2 và kỹ thuật lướt trên hàng có sẵn</strong>",
+   "note": "Đổi heading H2. Nếu mục lục (TOC) của bài link bằng id cũ thì kiểm tra lại link mục lục sau khi lưu."
+  },
+  {
+   "slug": "daytrading-la-gi",
+   "find": "Tính đến tháng 10/2026: Thị trường cổ phiếu cơ sở Việt Nam (HOSE, HNX, UPCoM) vẫn áp dụng chu kỳ thanh toán <strong>T+2.5</strong>. Khi bạn mua cổ phiếu vào ngày T0, đến chiều ngày T+2 cổ phiếu mới về tài khoản để bán. Do đó, việc mua và bán cùng một lô cổ phiếu mới trong phiên là không thể thực hiện.",
+   "replace": "Tính đến tháng 11/2026, thị trường cổ phiếu cơ sở Việt Nam (HOSE, HNX, UPCoM) vẫn áp dụng chu kỳ thanh toán <strong>T+2</strong>. Cổ phiếu mua ngày T0 về tài khoản trưa ngày T+2 và bán được từ phiên chiều hôm đó. Vì vậy, với tài khoản thông thường, bạn không thể mua rồi bán cùng một lô cổ phiếu mới trong cùng phiên. Ủy ban Chứng khoán Nhà nước mới đang nghiên cứu phương án T+0, chưa ban hành quy định áp dụng."
+  },
+  {
+   "slug": "daytrading-la-gi",
+   "find": "(đã hoàn tất chu kỳ T+2.5)",
+   "replace": "(đã về tài khoản từ các phiên trước)"
+  },
+  {
+   "slug": "duong-ma-la-gi",
+   "find": "Lướt sóng ngắn hạn T+2,5",
+   "replace": "Lướt sóng ngắn hạn"
+  },
+  {
+   "slug": "duong-ma-la-gi",
+   "find": "Đối với chu kỳ thanh toán T+2,5 tại Việt Nam,",
+   "replace": "Với chu kỳ thanh toán T+2 tại Việt Nam,"
+  },
+  {
+   "slug": "fomo-trong-dau-tu-chung-khoan-la-gi",
+   "find": "Sau 3 phiên T+2,5 hàng về, cổ phiếu giảm 12%.",
+   "replace": "Đến chiều ngày T+2 hàng về tài khoản, cổ phiếu đã giảm 12%."
+  },
+  {
+   "slug": "gio-giao-dich-chung-khoan-viet-nam",
+   "find": "chu kỳ tiền và cổ phiếu về (T+2,5).",
+   "replace": "chu kỳ tiền và cổ phiếu về (T+2)."
+  },
+  {
+   "slug": "gio-giao-dich-chung-khoan-viet-nam",
+   "find": "Ví dụ: nếu mua cổ phiếu vào 14h00 chiều Thứ 5, tiền và cổ phiếu sẽ về tài khoản vào chiều Thứ 2 tuần sau. Nguyên nhân là Thứ 7 và Chủ Nhật không tính vào số ngày làm việc T+2,5.",
+   "replace": "Ví dụ: nếu mua cổ phiếu vào 14h00 chiều Thứ 5, cổ phiếu sẽ về tài khoản trưa Thứ 2 tuần sau và bán được từ phiên chiều hôm đó. Nguyên nhân là Thứ 7 và Chủ Nhật không tính vào số ngày làm việc của chu kỳ T+2."
+  },
+  {
+   "slug": "hop-dong-tuong-lai-la-gi",
+   "find": "cần thanh toán toàn bộ giá trị để nhận quyền sở hữu sau T+2,5,",
+   "replace": "cần thanh toán toàn bộ giá trị và chờ cổ phiếu về tài khoản vào ngày T+2,"
+  },
+  {
+   "slug": "khi-nao-nen-ban-co-phieu-5-truong-hop-nha-dau-tu-can-luu-y",
+   "find": "<strong>T+2,5</strong>",
+   "replace": "<strong>T+2</strong>"
+  },
+  {
+   "slug": "krx-la-gi",
+   "find": "không cần chờ chu kỳ thanh toán T+2,5.",
+   "replace": "không cần chờ chu kỳ thanh toán T+2."
+  },
+  {
+   "slug": "lai-suat-huy-dong-la-gi",
+   "find": "Rất tốt (Thanh khoản T+1,5 trên sàn HOSE/HNX)",
+   "replace": "Rất tốt (Bán trên sàn HOSE/HNX, tiền về trưa ngày T+2)"
+  },
+  {
+   "slug": "macd-la-gi",
+   "find": "<strong>Tùy chỉnh thông số MACD cho giao dịch ngắn hạn T+2,5</strong>",
+   "replace": "<strong>Tùy chỉnh thông số MACD cho giao dịch ngắn hạn</strong>",
+   "note": "Đổi heading H3; kiểm tra mục lục nếu có."
+  },
+  {
+   "slug": "macd-la-gi",
+   "find": "với chu kỳ thanh toán T+2,5,",
+   "replace": "với chu kỳ thanh toán T+2,"
+  },
+  {
+   "slug": "nen-gui-tiet-kiem-hay-dau-tu-chung-khoan",
+   "find": "Cần thời gian <strong>T+2.5</strong> để tiền về tài khoản sau khi bán cổ phiếu thành công.",
+   "replace": "Tiền bán cổ phiếu về tài khoản trưa ngày <strong>T+2</strong>; cần sớm hơn thì dùng dịch vụ ứng trước tiền bán."
+  },
+  {
+   "slug": "phan-biet-thi-truong-chung-khoan-co-so-va-phai-sinh",
+   "find": "Thanh toán theo chu kỳ T+2,5",
+   "replace": "Thanh toán theo chu kỳ T+2"
+  },
+  {
+   "slug": "phuong-phap-vsa",
+   "find": "chu kỳ thanh toán T+2.5.",
+   "replace": "chu kỳ thanh toán T+2."
+  },
+  {
+   "slug": "rui-ro-la-gi",
+   "find": "độ trễ thanh toán (T+2.5).",
+   "replace": "độ trễ thanh toán (T+2)."
+  },
+  {
+   "slug": "rui-ro-va-loi-ich-khi-tham-gia-thi-truong-tai-chinh",
+   "find": "trong thời gian ngắn (chu kỳ T+1,5).",
+   "replace": "trong thời gian ngắn (chu kỳ thanh toán T+2)."
+  },
+  {
+   "slug": "take-profit-la-gi",
+   "find": "(T+2,5 đến vài tuần)",
+   "replace": "(từ vài phiên đến vài tuần)"
+  },
+  {
+   "slug": "thi-truong-tai-chinh-la-gi",
+   "find": "trong thời gian ngắn (chu kỳ T+1,5).",
+   "replace": "trong thời gian ngắn (chu kỳ thanh toán T+2)."
+  },
+  {
+   "slug": "tim-hieu-ve-ban-khong-chung-khoan-hoat-dong-dau-tu-lo-khong-gioi-han",
+   "find": "chờ về theo chu kỳ thanh toán T+1,5.",
+   "replace": "chờ về theo chu kỳ thanh toán T+2."
+  }
+ ]
+}

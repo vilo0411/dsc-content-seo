@@ -20,6 +20,7 @@ Tài liệu này quản lý các nhóm chủ đề được phân tách từ d�
 | `/kien-thuc/bien-loi-nhuan-rong/` | Biên lợi nhuận ròng là gì | 1.300 | Optimizing |
 | `/kien-thuc/bien-loi-nhuan-gop-la-gi-y-nghia-cua-bien-loi-nhuan-gop-khi-lua-chon-co-phieu/` | Biên lợi nhuận gộp là gì | 1.600 | Finalized |
 | `/kien-thuc/loi-nhuan-rong-va-loi-nhuan-sau-thue/` | Lợi nhuận ròng và lợi nhuận sau thuế khác gì nhau | - | Finalized |
+| `/kien-thuc/thue-khi-ban-co-phieu/` | Thuế khi bán cổ phiếu | - | Finalized |
 | `/kien-thuc/casa-la-gi/` | CASA là gì | 5.400 | Finalized |
 | `/kien-thuc/ty-le-bao-phu-no-xau/` | tỷ lệ bao phủ nợ xấu | - | Finalized |
 | `/kien-thuc/no-xau-trong-cac-co-phieu-ngan-hang-la-gi/` | nợ xấu trong các cổ phiếu ngân hàng là gì | - | Finalized |
@@ -29,7 +30,7 @@ Tài liệu này quản lý các nhóm chủ đề được phân tách từ d�
 | `/kien-thuc/chi-so-roa-la-gi-y-nghia-va-cach-su-dung/` | chỉ số ROA là gì | - | Finalized |
 | `/kien-thuc/chi-so-roe-la-gi-cach-tinh-y-nghia-va-tam-quan-trong-doi-voi-nha-dau-tu/` | chỉ số ROE là gì | - | Optimizing |
 | `/kien-thuc/chi-so-ps/` | Chỉ số P/S | - | Finalized |
-| `/kien-thuc/nen-mo-tai-khoan-chung-khoan-o-dau/` | Nên mở tài khoản chứng khoán ở đâu tốt nhất 2026 | - | Finalized |
+| `/kien-thuc/nen-mo-tai-khoan-chung-khoan-o-dau/` | Nên mở tài khoản chứng khoán ở đâu tốt nhất 2026 | - | Optimizing |
 | `/kien-thuc/co-1-ty-nen-gui-ngan-hang-nao/` | Có 1 tỷ nên gửi ngân hàng nào | - | Finalized |
 | `/kien-thuc/100-trieu-gui-ngan-hang/` | 100 triệu gửi ngân hàng | - | Finalized |
 | `/kien-thuc/50-trieu-nen-gui-tiet-kiem-ngan-hang-nao/` | 50 triệu nên gửi tiết kiệm ngân hàng nào | - | Finalized |
@@ -42,6 +43,7 @@ Tài liệu này quản lý các nhóm chủ đề được phân tách từ d�
 | `/kien-thuc/phi-luu-ky-chung-khoan/` | Phí lưu ký chứng khoán | - | Finalized |
 | `/kien-thuc/luu-ky-chung-khoan-moi-dieu-ban-can-biet/` | Lưu ký chứng khoán là gì | - | Finalized |
 | `/kien-thuc/gio-giao-dich-chung-khoan/` | Giờ giao dịch chứng khoán | - | Finalized |
+| /kien-thuc/gio-giao-dich-chung-khoan-quoc-te | Giờ giao dịch chứng khoán quốc tế | - | Finalized |
 | /kien-thuc/gio-giao-dich-chung-khoan-viet-nam | Giờ giao dịch chứng khoán Việt Nam | - | Finalized |
 | `/kien-thuc/san-giao-dich-chung-khoan-la-gi/` | Sàn chứng khoán là gì | - | Finalized |
 | `/kien-thuc/bien-do-giao-dong-gia-co-phieu-la-gi/` | biên độ giao động giá cổ phiếu | - | Finalized |
@@ -58,7 +60,7 @@ Tài liệu này quản lý các nhóm chủ đề được phân tách từ d�
 | `/kien-thuc/co-phieu-penny-la-gi/` | cổ phiếu penny | - | Finalized |
 | `/kien-thuc/cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau/` | cách chơi chứng khoán cho người mới bắt đầu | - | Finalized |
 | `/kien-thuc/co-nen-dau-tu-chung-khoan-khong/` | Có nên chơi chứng khoán không | - | Optimizing |
-| `/kien-thuc/cach-mua-co-phieu-online-cho-nguoi-moi-bat-dau/` | cách mua cổ phiếu online cho người mới bắt đầu | - | Optimizing |
+| `/kien-thuc/cach-mua-co-phieu-online-cho-nguoi-moi-bat-dau/` | cách mua cổ phiếu online cho người mới bắt đầu | - | Finalized |
 | [/kien-thuc/cach-mua-co-phieu-vcb-ngan-hang-vietcombank/](file:///e:/project/seo-writer-agent-main/knowledge/4-content/3-finalized/Final-cach-mua-co-phieu-vcb-ngan-hang-vietcombank.md) | Cách mua cổ phiếu VCB | - | Finalized |
 | [/kien-thuc/lam-the-nao-de-mua-co-phieu-mbb-ngan-hang-quan-doi/](file:///e:/project/seo-writer-agent-main/knowledge/4-content/3-finalized/Final-lam-the-nao-de-mua-co-phieu-mbb-ngan-hang-quan-doi.md) | cách mua cổ phiếu MBB | - | Finalized |
 | `/kien-thuc/khi-nao-nen-ban-co-phieu-5-truong-hop-nha-dau-tu-can-luu-y/` | Khi nào nên bán cổ phiếu | - | Finalized |
@@ -73,6 +75,7 @@ Tài liệu này quản lý các nhóm chủ đề được phân tách từ d�
 | `/kien-thuc/cach-dau-tu-tien-ao/` | cách đầu tư tiền ảo | - | Finalized |
 | `/kien-thuc/cac-thuat-ngu-trong-chung-khoan/` | các thuật ngữ trong chứng khoán | - | Finalized |
 | `/kien-thuc/chi-so-qoq/` | Chỉ số QoQ | - | Finalized |
+| [/kien-thuc/yoy-la-gi-cach-tinh-va-y-nghia-cua-chi-so-yoy/](file:///e:/project/seo-writer-agent-main/knowledge/4-content/3-finalized/Final-yoy-la-gi-cach-tinh-va-y-nghia-cua-chi-so-yoy.md) | YOY là gì | - | Finalized |
 | [/kien-thuc/co-phieu-uu-dai-la-gi/](file:///e:/project/seo-writer-agent-main/knowledge/4-content/3-finalized/Final-co-phieu-uu-dai-la-gi.md) | cổ phiếu ưu đãi là gì | 1.400.000 | Finalized |
 | [/kien-thuc/lai-suat-dieu-hanh-la-gi/](file:///e:/project/seo-writer-agent-main/knowledge/4-content/3-finalized/Final-lai-suat-dieu-hanh-la-gi.md) | lãi suất điều hành là gì | - | Finalized |
 | [/kien-thuc/lai-suat-huy-dong-la-gi/](file:///e:/project/seo-writer-agent-main/knowledge/4-content/3-finalized/Final-lai-suat-huy-dong-la-gi.md) | lãi suất huy động là gì | - | Finalized |
@@ -84,6 +87,8 @@ Tài liệu này quản lý các nhóm chủ đề được phân tách từ d�
 | [/kien-thuc/von-luu-dong-la-gi/](file:///e:/project/seo-writer-agent-main/knowledge/4-content/3-finalized/Final-von-luu-dong-la-gi.md) | Vốn lưu động là gì | - | Finalized |
 | [/kien-thuc/room-tin-dung-trong-linh-vuc-ngan-hang-la-gi-nhu-the-nao-la-tot/](file:///e:/project/seo-writer-agent-main/knowledge/4-content/3-finalized/Final-room-tin-dung-trong-linh-vuc-ngan-hang-la-gi-nhu-the-nao-la-tot.md) | Room tín dụng trong ngành ngân hàng là gì | - | Finalized |
 | [/kien-thuc/phan-biet-co-phieu-va-trai-phieu/](file:///e:/project/seo-writer-agent-main/knowledge/4-content/3-finalized/Final-phan-biet-co-phieu-va-trai-phieu.md) | Phân biệt cổ phiếu và trái phiếu | - | Finalized |
+| `/kien-thuc/roaa-la-gi/` | ROAA là gì | - | Merged → chi-so-roa-la-gi-y-nghia-va-cach-su-dung |
+| `/kien-thuc/dong-tien-tu-do-la-gi/` | dòng tiền tự do là gì | - | Outline-Approved |
 
 
 
@@ -102,7 +107,9 @@ Tài liệu này quản lý các nhóm chủ đề được phân tách từ d�
 | `/kien-thuc/phan-ky-an-rsi-la-gi/` | Phân kỳ ẩn RSI là gì | - | Finalized |
 | `/kien-thuc/bollinger-bands-la-gi/` | Bollinger Bands là gì | 5.400 | Finalized |
 | `/kien-thuc/day-trading-la-gi/` | Day trading là gì | - | Finalized |
+| `/kien-thuc/trading-trong-chung-khoan-la-gi/` | trading là gì | 16.000 | Finalized |
 | `/kien-thuc/ultimate-oscillator-la-gi/` | Ultimate Oscillator là gì | - | Finalized |
+| /kien-thuc/chi-bao-stochastic-la-gi/ | Chỉ báo Stochastic | - | Finalized |
 | `/kien-thuc/chia-tach-co-phieu/` | Chia tách cổ phiếu là gì | - | Finalized |
 | /kien-thuc/song-elliott-va-fibonacci-la-gi/ | Sóng Elliott và Fibonacci là gì | 1.800 | Finalized |
 | `/kien-thuc/cac-mo-hinh-gia-chung-khoan/` | các mô hình giá | - | Finalized |
@@ -113,6 +120,7 @@ Tài liệu này quản lý các nhóm chủ đề được phân tách từ d�
 | `/kien-thuc/chi-so-dow-jones-future/` | Chỉ số down jones future | - | Finalized |
 | `/kien-thuc/chi-so-hnx30/` | Chỉ số HNX30 | - | Finalized |
 | `/kien-thuc/vn-30-la-gi-cach-tinh-y-nghia-va-luu-y-khi-su-dung/` | Chỉ số VN30 | - | Finalized |
+| `/kien-thuc/chi-so-vn-index-va-y-nghia-quan-trong-trong-thi-truong-chung-khoan-viet-nam/` | chỉ số vn-index là gì | - | Finalized |
 | `/kien-thuc/chi-so-kospi/` | Chỉ số Kospi | - | Finalized |
 | `/kien-thuc/dao-han-phai-sinh-la-gi/` | ngày đáo hạn phái sinh | - | Finalized |
 | `/kien-thuc/chung-khoan-phai-sinh-la-gi/` | chứng khoán phái sinh là gì | - | Finalized |
@@ -174,6 +182,10 @@ Tài liệu này quản lý các nhóm chủ đề được phân tách từ d�
 | `/kien-thuc/cung-tien-la-gi/` | Cung tiền là gì | - | Finalized |
 | /kien-thuc/krx-la-gi/ | KRX là gì | - | Finalized |
 | /kien-thuc/do-co-gian-cua-cau-theo-gia-la-gi | Độ co giãn của cầu theo giá là gì | 20.000 | Finalized |
+| /kien-thuc/gia-cao-su/ | giá cao su | - | In Progress |
+| `/kien-thuc/chi-so-dxy-la-gi/` | Chỉ số DXY là gì | 21.000 | Finalized |
+| `/kien-thuc/grdp-la-gi-chi-so-quan-trong-danh-gia-su-phat-trien-kinh-te-dia-phuong/` | GRDP là gì | 16.900 | Finalized |
+| `/kien-thuc/grdp-la-gi-chi-so-quan-trong-danh-gia-su-phat-trien-kinh-te-dia-phuong/` | GRDP là gì | 16.900 | Optimizing |
 
 
 
@@ -219,9 +231,14 @@ Tài liệu này quản lý các nhóm chủ đề được phân tách từ d�
 | `/kien-thuc/co-nen-mua-co-phieu-las/` | có nên mua cổ phiếu las | - | Finalized |
 | `/kien-thuc/co-nen-mua-co-phieu-novaland/` | có nên mua cổ phiếu novaland | - | Finalized |
 | `/kien-thuc/top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh/` | cổ phiếu ngành ngân hàng | - | Finalized |
-| `/kien-thuc/co-nen-mua-co-phieu-pnj-hay-khong/` | có nên mua cổ phiếu pnj | - | Finalized |
+| `/kien-thuc/co-nen-mua-co-phieu-pnj-hay-khong/` | có nên mua cổ phiếu pnj | - | Optimizing |
 | [/kien-thuc/co-phieu-vhm-tong-quan-danh-gia-va-cap-nhan-ket-qua-kinh-doanh-moi-nhat/](file:///e:/project/seo-writer-agent-main/knowledge/4-content/3-finalized/Final-co-phieu-vhm-tong-quan-danh-gia-va-cap-nhan-ket-qua-kinh-doanh-moi-nhat.md) | cổ phiếu vhm | 28.644 | Finalized |
 | [/kien-thuc/co-phieu-vsc-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat/](file:///e:/project/seo-writer-agent-main/knowledge/4-content/3-finalized/Final-co-phieu-vsc-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat.md) | cổ phiếu vsc | 22.223 | Finalized |
+| [/kien-thuc/co-phieu-dxg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat/](file:///e:/project/seo-writer-agent-main/knowledge/4-content/3-finalized/Final-co-phieu-dxg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat.md) | cổ phiếu dxg | 16.985 | Finalized |
+| [/kien-thuc/co-nen-mua-co-phieu-pow-hay-khong/](file:///e:/project/seo-writer-agent-main/knowledge/4-content/3-finalized/Final-co-nen-mua-co-phieu-pow-hay-khong.md) | có nên mua cổ phiếu pow hay không | 13.890 | Finalized |
+| [/kien-thuc/co-phieu-bsr-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat/](file:///e:/project/seo-writer-agent-main/knowledge/4-content/3-finalized/Final-co-phieu-bsr-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat.md) | cổ phiếu bsr | 12.373 | Optimizing |
+| [/kien-thuc/co-phieu-tch-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat/](file:///e:/project/seo-writer-agent-main/knowledge/4-content/3-finalized/Final-co-phieu-tch-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat.md) | cổ phiếu tch | 7.707 | Finalized |
+| [/kien-thuc/top-5-co-phieu-dang-dau-tu/](file:///e:/project/seo-writer-agent-main/knowledge/4-content/3-finalized/Final-top-5-co-phieu-dang-dau-tu.md) | nên mua cổ phiếu nào | - | Finalized |
 
 ## Cluster 6: Chứng chỉ quỹ & Quỹ đầu tư
 **Mục tiêu:** Cung cấp kiến thức toàn diện về các loại hình quỹ đầu tư (quỹ mở, ETF, quỹ đóng) giúp nhà đầu tư đa dạng hóa và tối ưu danh mục với rủi ro thấp.
@@ -236,14 +253,16 @@ Tài liệu này quản lý các nhóm chủ đề được phân tách từ d�
 | `/kien-thuc/chung-chi-quy-tot-nhat-hien-nay/` | chứng chỉ quỹ tốt nhất hiện nay | - | Finalized |
 | `/kien-thuc/so-sanh-co-phieu-va-chung-chi-quy-dau-tu/` | so sánh cổ phiếu và chứng chỉ quỹ đầu tư | - | Finalized |
 | `/kien-thuc/nav-la-gi-trong-dau-tu-chung-khoan/` | NAV là gì | - | Finalized |
-| `/kien-thuc/cach-dau-tu-chung-chi-quy/` | cách đầu tư chứng chỉ quỹ | 110 | Outlining |
-| `/kien-thuc/app-mua-chung-chi-quy/` | app mua chứng chỉ quỹ | 30 | Outlining |
+| `/kien-thuc/cach-dau-tu-chung-chi-quy/` | cách đầu tư chứng chỉ quỹ | 110 | Finalized |
+| `/kien-thuc/app-mua-chung-chi-quy/` | app mua chứng chỉ quỹ | 30 | Finalized |
+| `/kien-thuc/rui-ro-chung-chi-quy/` | rủi ro chứng chỉ quỹ | - | Finalized |
 | `/kien-thuc/quy-dong-la-gi/` | Quỹ đóng là gì | - | Finalized |
 | `/kien-thuc/quy-tuong-ho-la-gi/` | quỹ tương hỗ là gì | - | Finalized |
 | `/kien-thuc/quy-trai-phieu-la-gi/` | quỹ trái phiếu là gì | - | Finalized |
 | `/kien-thuc/trai-phieu-doanh-nghiep-la-gi/` | **Trái phiếu doanh nghiệp là gì** | - | Finalized |
 | `/kien-thuc/lai-suat-chung-chi-quy/` | lãi suất chứng chỉ quỹ | - | Finalized |
 | `/kien-thuc/mo-tai-khoan-chung-chi-quy/` | mở tài khoản chứng chỉ quỹ | - | Finalized |
+| `/kien-thuc/co-nen-dau-tu-chung-chi-quy/` | có nên đầu tư chứng chỉ quỹ | - | Finalized |
 
 
 | /kien-thuc/co-nen-dau-tu-vao-quy-mo-vcbf/ | Có nên đầu tư vào quỹ mở VCBF | - | Finalized |

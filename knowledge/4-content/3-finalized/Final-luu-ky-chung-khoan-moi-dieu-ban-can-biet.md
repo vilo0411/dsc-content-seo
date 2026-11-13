@@ -17,7 +17,7 @@ Nhờ hệ thống lưu ký, toàn bộ tài sản chứng khoán được chuy�
 
 Lưu ký chứng khoán hiểu đơn giản là việc gửi tài sản cổ phiếu của bạn vào một thư viện điện tử quốc gia do VSDC quản lý. Mỗi nhà đầu tư sau khi đăng ký sẽ sở hữu một tài khoản lưu ký riêng biệt. Tài khoản này ghi nhận chính xác số lượng cổ phiếu, trái phiếu và chứng chỉ quỹ mà bạn đang nắm giữ.
 
-Tính đến tháng 8/2026, VSDC đang quản lý dữ liệu lưu ký cho hơn 13,66 triệu tài khoản chứng khoán trên toàn thị trường Việt Nam. Trong đó, nhà đầu tư cá nhân trong nước chiếm tới 13,58 triệu tài khoản. Điều này chứng minh toàn bộ hạ tầng giao dịch hiện đại đều vận hành hoàn toàn dựa trên nền tảng lưu ký điện tử tập trung.
+Theo Luật Chứng khoán 2019, VSDC thực hiện đăng ký, lưu ký, bù trừ và thanh toán chứng khoán. Cổ phiếu bạn mua qua bất kỳ công ty chứng khoán nào cũng được ghi nhận tại VSDC, đứng tên chính bạn.
 
 Công ty Cổ phần Chứng khoán DSC đóng vai trò là Thành viên lưu ký chính thức do Ủy ban Chứng khoán Nhà nước (UBCKNN) cấp phép. DSC làm cầu nối trung gian hỗ trợ nhà đầu tư kết nối và nộp dữ liệu sở hữu an toàn lên hệ thống VSDC.
 

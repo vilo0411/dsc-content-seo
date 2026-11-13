@@ -1,0 +1,716 @@
+{
+ "title": "Cụm Cách chơi chứng khoán — câu mới chứa link về pillar/hub",
+ "edits": [
+  {
+   "src": "thi-truong-so-cap-va-thu-cap-la-gi",
+   "op": "append",
+   "find": "tài khoản giao dịch chứng khoán tại một công ty chứng khoán.",
+   "to": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "sentence": "Mở tài khoản cũng là bước đầu tiên trong [cách chơi chứng khoán cho người mới], trước khi nộp tiền và đặt lệnh.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=25"
+  },
+  {
+   "src": "thi-truong-so-cap-va-thu-cap-la-gi",
+   "op": "append",
+   "find": "hành trên thị trường tới các nhà đầu tư tổ chức và cá nhân.",
+   "to": "thi-truong-tai-chinh-la-gi",
+   "sentence": "Cả hai cùng nằm trong thị trường vốn, một nhánh của [thị trường tài chính] bên cạnh thị trường tiền tệ.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "sub-hub · đoạn i=34"
+  },
+  {
+   "src": "san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong",
+   "op": "append",
+   "find": "tài khoản trong nước chỉ giao dịch được HoSE, HNX và UPCoM.",
+   "to": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "sentence": "Người mới thường bắt đầu với [cách chơi chứng khoán] ở thị trường trong nước, nơi thủ tục và ngôn ngữ quen thuộc hơn.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=15"
+  },
+  {
+   "src": "top-10-chi-so-chung-khoan-quan-trong-can-theo-doi",
+   "op": "append",
+   "find": "a thị trường cao nhất trên thị trường chứng khoán Hồng Kông.",
+   "to": "cac-chi-so-chung-khoan-chau-a-noi-bat",
+   "sentence": "Cùng với Nikkei, đây là một trong các [chỉ số chứng khoán châu Á] được giới đầu tư quốc tế theo dõi nhiều nhất.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "sub-hub · đoạn i=25"
+  },
+  {
+   "src": "tim-hieu-ve-ban-khong-chung-khoan-hoat-dong-dau-tu-lo-khong-gioi-han",
+   "op": "append",
+   "find": "ông qua kênh chính thống bị nghiêm cấm để bảo vệ sự ổn định.",
+   "to": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "sentence": "Đây là quy tắc người mới cần nhớ khi học [cách chơi chứng khoán]: mua trước, chờ cổ phiếu về tài khoản rồi mới bán.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=24"
+  },
+  {
+   "src": "thi-truong-bo-va-thi-truong-gau-y-nghia-va-cach-nhan-biet",
+   "op": "append",
+   "find": "ng tăng giá, trong khi gấu biểu thị cho thị trường giảm giá.",
+   "to": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "sentence": "Đây là hai khái niệm người mới gặp sớm nhất khi tìm hiểu [cách chơi chứng khoán], vì chúng quyết định nên mua, giữ hay đứng ngoài.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=2"
+  },
+  {
+   "src": "thi-truong-bo-va-thi-truong-gau-y-nghia-va-cach-nhan-biet",
+   "op": "append",
+   "find": "cá nhân thắt chặt chi tiêu, dẫn đến giá cổ phiếu giảm xuống.",
+   "to": "thi-truong-tai-chinh-la-gi",
+   "sentence": "Tác động này lan qua toàn bộ [thị trường tài chính], từ tiền gửi, trái phiếu đến cổ phiếu.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "sub-hub · đoạn i=16"
+  },
+  {
+   "src": "giao-dich-thoa-thuan-la-gi",
+   "op": "append",
+   "find": "ộng bất lợi về giá khi cần chuyển nhượng lượng lớn cổ phiếu.",
+   "to": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "sentence": "Người mới học [cách chơi chứng khoán] hầu như chỉ dùng khớp lệnh, còn thỏa thuận dành cho các giao dịch khối lượng lớn.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=23"
+  },
+  {
+   "src": "giao-dich-thoa-thuan-la-gi",
+   "op": "append",
+   "find": "kết quả vào hệ thống giao dịch của Sở Giao dịch Chứng khoán.",
+   "to": "lenh-ato-atc-lo-mp-la-gi",
+   "sentence": "Phương thức này tách biệt với khớp lệnh trên sàn, nơi nhà đầu tư dùng [các loại lệnh] như LO, ATO hay ATC để hệ thống tự ghép giá.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=3"
+  },
+  {
+   "src": "cac-chi-so-chung-khoan-viet-nam-hieu-ro-ve-vn-index-vn-30-hnx-index-va-nhieu-chi-so-khac",
+   "op": "newp",
+   "find": "quan trọng nhất cho nhà đầu tư và người theo dõi thị trường.",
+   "to": "chi-so-chung-khoan-la-gi",
+   "sentence": "Giống mọi [chỉ số chứng khoán] khác, VN-Index không cho biết giá của một mã cụ thể mà cho biết mặt bằng giá chung của cả sàn.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=6"
+  },
+  {
+   "src": "cac-cong-cu-tai-chinh-pho-bien-tai-viet-nam",
+   "op": "newp",
+   "find": "ng tiềm ẩn rủi ro cao do giá cổ phiếu có thể biến động mạnh.",
+   "to": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "sentence": "Với cổ phiếu, người mới nên nắm [cách chơi chứng khoán] trước khi xuống tiền: mở tài khoản, đọc bảng giá và đặt lệnh.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=8"
+  },
+  {
+   "src": "stop-loss-la-gi-cach-su-dung-lenh-stop-loss-trong-chung-khoan",
+   "op": "append",
+   "find": "ngược với kỳ vọng, đồng thời bảo vệ vốn và lợi nhuận của họ.",
+   "to": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "sentence": "Vì vậy, các hướng dẫn [cách chơi chứng khoán cho người mới] thường xếp cắt lỗ vào nhóm nguyên tắc phải học trước khi mua mã đầu tiên.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=15"
+  },
+  {
+   "src": "stop-loss-la-gi-cach-su-dung-lenh-stop-loss-trong-chung-khoan",
+   "op": "append",
+   "find": "chế mức thua lỗ khi thị trường đi ngược với kỳ vọng của họ.",
+   "to": "lenh-ato-atc-lo-mp-la-gi",
+   "sentence": "Khác với [các loại lệnh] cơ bản như LO hay ATC, stop loss là lệnh điều kiện, chỉ kích hoạt khi giá chạm mức đã đặt.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=1"
+  },
+  {
+   "src": "chi-so-msci-la-gi",
+   "op": "append",
+   "find": "n hóa thị trường lớn nhất có tỷ trọng cao nhất trong chỉ số.",
+   "to": "chi-so-chung-khoan-la-gi",
+   "sentence": "Đây cũng là cách tính phổ biến nhất của một [chỉ số chứng khoán], được dùng cho cả VN-Index trên sàn HOSE.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "hub · đoạn i=4"
+  },
+  {
+   "src": "chi-so-msci-la-gi",
+   "op": "append",
+   "find": "i trò quan trọng trong thị trường chứng khoán. Nó là một công cụ hữu ích cho các nhà đầu tư để theo dõi hiệu suất của các thị trường chứng khoán khác nhau, cũng như để so sánh hiệu suất của các danh mục đầu tư khác nhau.",
+   "to": "cac-chi-so-chung-khoan-chau-a-noi-bat",
+   "sentence": "Nhà đầu tư Việt Nam thường xem chúng cùng các [chỉ số chứng khoán châu Á] như Nikkei hay Hang Seng để đánh giá dòng vốn khu vực.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "sub-hub · đoạn i=7"
+  },
+  {
+   "src": "diem-trong-chung-khoan-la-gi-cach-tinh-va-y-nghia",
+   "op": "append",
+   "find": "ự lên xuống của điểm số để xác định xu hướng của thị trường.",
+   "to": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "sentence": "Đọc được điểm số là kỹ năng đầu tiên khi học [cách chơi chứng khoán], trước cả việc chọn mã.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "pillar · đoạn i=4"
+  },
+  {
+   "src": "diem-trong-chung-khoan-la-gi-cach-tinh-va-y-nghia",
+   "op": "append",
+   "find": "ng giảm và nhiều nhà đầu tư đang bán tháo cổ phiếu của mình.",
+   "to": "cac-thuat-ngu-trong-chung-khoan",
+   "sentence": "Điểm cũng là một trong những [thuật ngữ chứng khoán] xuất hiện nhiều nhất trên bản tin thị trường hằng ngày.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "sub-hub · đoạn i=11"
+  },
+  {
+   "src": "nha-tao-lap-thi-truong-la-ai-vai-tro-va-y-nghia-trong-thi-truong-tai-chinh",
+   "op": "append",
+   "find": "luôn thông suốt mà không cần chờ lệnh đối ứng từ bên ngoài.",
+   "to": "thi-truong-tai-chinh-la-gi",
+   "sentence": "Vai trò này có ở hầu hết các mảng của [thị trường tài chính], từ cổ phiếu, trái phiếu đến chứng quyền và ETF.",
+   "group": "cluster",
+   "pri": "P1",
+   "check_text": true,
+   "why": "sub-hub · đoạn i=2"
+  },
+  {
+   "src": "repo-chung-khoan-la-gi",
+   "op": "append",
+   "find": "h thức vay vốn ngắn hạn có tài sản đảm bảo bằng chứng khoán.",
+   "to": "cac-thuat-ngu-trong-chung-khoan",
+   "sentence": "Trong các [thuật ngữ chứng khoán], repo hay bị nhầm với margin, dù một bên là bán kèm cam kết mua lại, một bên là vay tiền mua cổ phiếu.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "sub-hub · đoạn i=2"
+  },
+  {
+   "src": "wash-out-trong-chung-khoan-la-gi",
+   "op": "append",
+   "find": "hà đầu tư có tầm nhìn dài hạn mua vào cổ phiếu với giá thấp.",
+   "to": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "sentence": "Người mới học [cách chơi chứng khoán] dễ rơi vào nhóm này nếu mua bằng tiền vay hoặc không có kế hoạch cắt lỗ từ trước.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=19"
+  },
+  {
+   "src": "chi-so-bien-dong-vix-la-gi",
+   "op": "append",
+   "find": "options) và quyền chọn bán (put options) của chỉ số S&P 500.",
+   "to": "chi-so-chung-khoan-la-gi",
+   "sentence": "Khác với một [chỉ số chứng khoán] thông thường đo giá cổ phiếu, VIX đo mức biến động mà thị trường quyền chọn đang định giá.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=2"
+  },
+  {
+   "src": "chi-so-kospi-la-gi",
+   "op": "append",
+   "find": "c tế như chỉ số Dow Jones tại Mỹ và Nikkei 225 tại Nhật Bản.",
+   "to": "cac-chi-so-chung-khoan-chau-a-noi-bat",
+   "sentence": "Vì vậy, KOSPI thường được đọc cùng nhóm [chỉ số chứng khoán châu Á] như Nikkei, Hang Seng và Shanghai Composite.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "sub-hub · đoạn i=49"
+  },
+  {
+   "src": "tim-hieu-nguon-goc-cua-giao-dich-chung-khoan",
+   "op": "append",
+   "find": "dịch để đảm bảo quyền lợi cho cả công ty và các thương nhân.",
+   "to": "thi-truong-tai-chinh-la-gi",
+   "sentence": "Sàn chứng khoán từ đó trở thành một bộ phận của [thị trường tài chính], bên cạnh thị trường tiền tệ và thị trường trái phiếu.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "sub-hub · đoạn i=21"
+  },
+  {
+   "src": "chi-so-set-la-gi",
+   "op": "append",
+   "find": "Giao dịch Chứng khoán Thái Lan, được thành lập từ năm 1975.",
+   "to": "chi-so-chung-khoan-la-gi",
+   "sentence": "Như mọi [chỉ số chứng khoán] tổng hợp, SET tăng khi phần lớn vốn hóa trên sàn tăng giá và giảm khi ngược lại.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=3"
+  },
+  {
+   "src": "chi-so-shanghai-la-gi",
+   "op": "append",
+   "find": "số do số lượng và vốn hóa vượt trội so với cổ phiếu loại B.",
+   "to": "chi-so-chung-khoan-la-gi",
+   "sentence": "Cách tính theo vốn hóa này giống phần lớn [chỉ số chứng khoán] trên thế giới, trong đó có VN-Index.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=2"
+  },
+  {
+   "src": "thao-tung-thi-truong-chung-khoan-khai-niem-hinh-thuc-hau-qua-va-bien-phap-xu-ly",
+   "op": "append",
+   "find": "Việt Nam, hành vi này bị nghiêm cấm trên mọi sàn giao dịch.",
+   "to": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "sentence": "Vì vậy, bài học đầu tiên trong [cách chơi chứng khoán] là không mua một mã chỉ vì giá và thanh khoản tăng đột biến.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=5"
+  },
+  {
+   "src": "chi-so-dow-jones-future-la-gi",
+   "op": "append",
+   "find": "tư cá nhân trong nước, dẫn đến áp lực bán tháo cổ phiếu trụ.",
+   "to": "cac-chi-so-chung-khoan-chau-a-noi-bat",
+   "sentence": "Cùng khung giờ đó, các [chỉ số chứng khoán châu Á] như Nikkei và KOSPI đã mở cửa, cho thêm một tín hiệu để đối chiếu.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "sub-hub · đoạn i=48"
+  },
+  {
+   "src": "chi-so-nasdaq-chi-so-chung-khoan-cong-nghe-hang-dau-the-gioi",
+   "op": "append",
+   "find": "ể đo lường sức mạnh của thị trường chứng khoán Mỹ nói chung.",
+   "to": "cac-chi-so-chung-khoan-chau-a-noi-bat",
+   "sentence": "Biến động của Nasdaq qua đêm thường ảnh hưởng tới các [chỉ số chứng khoán châu Á] nặng về công nghệ như KOSPI và Nikkei trong phiên sáng.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "sub-hub · đoạn i=9"
+  },
+  {
+   "src": "chi-so-dow-jones-la-gi-y-nghia-cua-chi-so-dow-jones",
+   "op": "append",
+   "find": "ầy đủ của chỉ số này là Dow Jones Industrial Average (DJIA).",
+   "to": "chi-so-chung-khoan-la-gi",
+   "sentence": "Đây là một trong những [chỉ số chứng khoán] lâu đời nhất thế giới còn được tính đến ngày nay.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=5"
+  },
+  {
+   "src": "chi-so-dow-jones-la-gi-y-nghia-cua-chi-so-dow-jones",
+   "op": "append",
+   "find": "ống như chiếc la bàn dẫn đường cho dòng vốn liên thị trường.",
+   "to": "cac-chi-so-chung-khoan-chau-a-noi-bat",
+   "sentence": "Tín hiệu từ Dow Jones thường đến Việt Nam qua các [chỉ số chứng khoán châu Á] mở cửa sớm hơn như Nikkei và KOSPI.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "sub-hub · đoạn i=42"
+  },
+  {
+   "src": "vn-diamond-la-gi",
+   "op": "append",
+   "find": "Diamond là sản phẩm tài chính đại chúng mô phỏng chỉ số đó.",
+   "to": "chi-so-chung-khoan-la-gi",
+   "sentence": "Như mọi [chỉ số chứng khoán] khác, VN Diamond không thể mua trực tiếp; nhà đầu tư chỉ mua được chứng chỉ quỹ bám theo nó.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=11"
+  },
+  {
+   "src": "vn-diamond-la-gi",
+   "op": "append",
+   "find": "hành phần đều có tỷ lệ sở hữu nước ngoài đạt từ 95% trở lên.",
+   "to": "cac-chi-so-chung-khoan-viet-nam-hieu-ro-ve-vn-index-vn-30-hnx-index-va-nhieu-chi-so-khac",
+   "sentence": "Đây là một chỉ số đầu tư trong hệ thống [các chỉ số chứng khoán Việt Nam], bên cạnh VN-Index và nhóm chỉ số theo quy mô vốn hóa.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "sub-hub · đoạn i=2"
+  },
+  {
+   "src": "gio-giao-dich-chung-khoan-quoc-te",
+   "op": "append",
+   "find": "ý mở phiên thường chỉ kéo dài trong 30 đến 45 phút đầu ngày.",
+   "to": "lenh-ato-atc-lo-mp-la-gi",
+   "sentence": "Vì vậy, người đặt [lệnh ATO] sau một đêm chứng khoán Mỹ biến động mạnh cần tính tới khả năng giá đảo chiều trong phiên.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=51"
+  },
+  {
+   "src": "phan-tich-chung-khoan-la-gi",
+   "op": "append",
+   "find": "g đầu tư Việt Nam là Phân tích cơ bản và Phân tích kỹ thuật.",
+   "to": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "sentence": "Đây cũng là phần kiến thức tốn thời gian nhất trong [cách chơi chứng khoán cho người mới], sau các bước mở tài khoản và đặt lệnh.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=1"
+  },
+  {
+   "src": "ce-trong-chung-khoan-la-gi",
+   "op": "append",
+   "find": "iệt với giá sàn (màu xanh lơ) hay giá tham chiếu (màu vàng).",
+   "to": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "sentence": "Đọc màu trên bảng giá là kỹ năng đầu tiên trong [cách chơi chứng khoán], trước khi đặt lệnh mua bán.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=6"
+  },
+  {
+   "src": "ce-trong-chung-khoan-la-gi",
+   "op": "append",
+   "find": "ếu có thể đạt được trong phạm vi một phiên giao dịch cụ thể.",
+   "to": "cac-thuat-ngu-trong-chung-khoan",
+   "sentence": "Trong các [thuật ngữ chứng khoán] về giá, CE luôn đi cùng FL (giá sàn) và giá tham chiếu.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "sub-hub · đoạn i=5"
+  },
+  {
+   "src": "chi-so-hnx-index-la-gi",
+   "op": "append",
+   "find": "ng của cổ phiếu đó nhân với số lượng cổ phiếu đang lưu hành.",
+   "to": "chi-so-chung-khoan-la-gi",
+   "sentence": "Đây là phương pháp tính phổ biến của một [chỉ số chứng khoán], cũng được dùng cho VN-Index trên sàn HOSE.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=9"
+  },
+  {
+   "src": "chi-so-s-p-500-la-gi",
+   "op": "append",
+   "find": "g phản ánh rõ nét kỳ vọng vĩ mô của giới tài chính toàn cầu.",
+   "to": "chi-so-chung-khoan-la-gi",
+   "sentence": "Vì vậy, khi giải thích [chỉ số chứng khoán] là gì, S&P 500 thường được lấy làm ví dụ chuẩn về chỉ số tính theo vốn hóa.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "hub · đoạn i=4"
+  },
+  {
+   "src": "lenh-mak-la-gi",
+   "op": "append",
+   "find": "t hàng tức thì mà không để lại lượng lệnh chờ trên hệ thống.",
+   "to": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "sentence": "Người mới học [cách chơi chứng khoán] nên thành thạo lệnh LO trước, vì lệnh thị trường như MAK không cho chọn giá khớp.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=2"
+  },
+  {
+   "src": "lenh-plo-la-gi",
+   "op": "append",
+   "find": "tư không cần tính toán giá khớp như khi đặt lệnh ATC hay LO.",
+   "to": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "sentence": "Với người mới tìm hiểu [cách chơi chứng khoán], đây là loại lệnh dễ dùng nhất vì chỉ cần nhập khối lượng.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=31"
+  },
+  {
+   "src": "doi-lai-chung-khoan-la-gi-cach-nhan-biet-va-tranh-bi-lua-dao",
+   "op": "append",
+   "find": "sở hữu nhiều vốn và có mối quan hệ rộng rãi trên thị trường.",
+   "to": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "sentence": "Người mới học [cách chơi chứng khoán] là nhóm dễ bị cuốn theo nhất, vì thường mua theo lời rủ trong hội nhóm.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "pillar · đoạn i=1"
+  },
+  {
+   "src": "chi-so-hnx-30-la-gi",
+   "op": "append",
+   "find": "nắm giữ lâu dài bởi cơ quan nhà nước hay cổ đông chiến lược.",
+   "to": "cac-chi-so-chung-khoan-viet-nam-hieu-ro-ve-vn-index-vn-30-hnx-index-va-nhieu-chi-so-khac",
+   "sentence": "Trong [các chỉ số chứng khoán Việt Nam], HNX30 giữ vai trò với sàn HNX tương tự VN30 với sàn HOSE.",
+   "group": "cluster",
+   "pri": "P2",
+   "check_text": true,
+   "why": "sub-hub · đoạn i=3"
+  },
+  {
+   "src": "san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong",
+   "op": "wrap",
+   "find": "E đóng vai trò nền tảng trong hệ thống tài chính quốc tế: huy động vốn cho các",
+   "to": "thi-truong-tai-chinh-la-gi",
+   "anchor": "hệ thống tài chính",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "sub-hub · bọc cụm có sẵn"
+  },
+  {
+   "src": "chi-so-hang-seng-index-la-gi",
+   "op": "wrap",
+   "find": "ỉ số Hang Seng Index (HSI) là chỉ số chứng khoán của thị trường chứng khoán Hồ",
+   "to": "chi-so-chung-khoan-la-gi",
+   "anchor": "chỉ số chứng khoán",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "hub · bọc cụm có sẵn"
+  },
+  {
+   "src": "krx-la-gi",
+   "op": "wrap",
+   "find": "Các quy định giao dịch mới yêu cầu nhà đầu tư phải n",
+   "to": "cac-quy-dinh-giao-dich-chung-khoan-quan-trong-ma-nguoi-moi-can-biet",
+   "anchor": "quy định giao dịch",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "sub-hub · bọc cụm có sẵn"
+  }
+ ],
+ "skipped": [
+  {
+   "src": "sec-la-gi-giai-thich-chi-tiet-ve-uy-ban-chung-khoan-va-hoi-doai-hoa-ky",
+   "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "co-phieu-otc-la-gi-mua-co-phieu-otc-o-dau",
+   "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "lenh-mtl-trong-giao-dich-chung-khoan-la-gi",
+   "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "spread-la-gi",
+   "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "spread-la-gi",
+   "target": "cac-thuat-ngu-trong-chung-khoan",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "top-10-nguoi-giau-nhat-tren-thi-truong-chung-khoan-viet-nam-1",
+   "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "khi-nao-nen-mua-co-phieu",
+   "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "khi-nao-nen-mua-co-phieu",
+   "target": "cach-mua-co-phieu-online-cho-nguoi-moi-bat-dau",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "target-trong-dau-tu-chung-khoan-la-gi",
+   "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "target-trong-dau-tu-chung-khoan-la-gi",
+   "target": "cac-thuat-ngu-trong-chung-khoan",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "nha-dau-tu-chung-khoan-chuyen-nghiep-la-gi",
+   "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "repo-chung-khoan-la-gi",
+   "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "chi-so-bien-dong-vix-la-gi",
+   "target": "cac-chi-so-chung-khoan-chau-a-noi-bat",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "tim-hieu-nguon-goc-cua-giao-dich-chung-khoan",
+   "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "vn-30-la-gi-cach-tinh-y-nghia-va-luu-y-khi-su-dung",
+   "target": "cac-chi-so-chung-khoan-viet-nam-hieu-ro-ve-vn-index-vn-30-hnx-index-va-nhieu-chi-so-khac",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "thi-truong-phan-hoa-hieu-ro-nguyen-nhan-va-dac-diem",
+   "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "thi-truong-phan-hoa-hieu-ro-nguyen-nhan-va-dac-diem",
+   "target": "thi-truong-tai-chinh-la-gi",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "thi-truong-von-la-gi-cach-tiep-can-cho-nha-dau-tu-ca-nhan",
+   "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "thanh-khoan-la-gi",
+   "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "thanh-khoan-la-gi",
+   "target": "cac-thuat-ngu-trong-chung-khoan",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "gio-giao-dich-chung-khoan-quoc-te",
+   "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "bay-thanh-khoan-trong-dau-tu-chung-khoan-la-gi",
+   "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "bay-thanh-khoan-trong-dau-tu-chung-khoan-la-gi",
+   "target": "cac-thuat-ngu-trong-chung-khoan",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "giao-dich-noi-gian-tren-thi-truong-chung-khoan-la-gi",
+   "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "chi-so-s-p-500-la-gi",
+   "target": "cac-chi-so-chung-khoan-chau-a-noi-bat",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "doi-tu-doanh-tren-thi-truong-chung-khoan-la-gi",
+   "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "phan-tich-lien-thi-truong-la-gi-huong-dan-toan-dien-cho-nha-dau-tu",
+   "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "phan-tich-lien-thi-truong-la-gi-huong-dan-toan-dien-cho-nha-dau-tu",
+   "target": "cac-thuat-ngu-trong-chung-khoan",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "krx-la-gi",
+   "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "lenh-stop-limit-la-gi",
+   "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "tieu-diem-thi-truong-la-gi",
+   "target": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "i": 0,
+   "op": "skip",
+   "reason": "không có đoạn hợp ngữ cảnh"
+  }
+ ]
+}

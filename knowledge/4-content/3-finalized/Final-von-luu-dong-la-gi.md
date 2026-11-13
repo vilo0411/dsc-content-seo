@@ -16,7 +16,7 @@ Nguồn vốn này được sử dụng để thanh toán tiền mua nguyên v�
 
 Vốn lưu động có tính chất luân chuyển liên tục trong chu kỳ kinh doanh. Tiền mặt chuyển thành hàng tồn kho, hàng tồn kho chuyển thành khoản phải thu, rồi quay trở lại thành tiền mặt sau khi thu tiền từ khách hàng.
 
-Tính đến tháng 8/2026, toàn thị trường có hơn 13,66 triệu tài khoản chứng khoán niêm yết. Việc hiểu rõ vốn lưu động giúp nhà đầu tư F0 lọc bỏ các cổ phiếu tiềm ẩn rủi ro thanh khoản.
+Việc hiểu rõ vốn lưu động giúp nhà đầu tư F0 lọc bỏ các cổ phiếu tiềm ẩn rủi ro thanh khoản.
 
 ## Công thức và cách tính vốn lưu động chuẩn xác
 

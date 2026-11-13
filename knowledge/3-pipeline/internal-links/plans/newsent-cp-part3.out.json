@@ -1,0 +1,341 @@
+[
+ {
+  "src": "top-5-co-phieu-dau-khi-se-huong-loi-trong-nam-2024-khi-gia-dau-tang",
+  "target": "co-phieu-nganh-nang-luong",
+  "i": 10,
+  "op": "append",
+  "sentence": "Là nhà cung cấp dịch vụ kỹ thuật ở khâu thượng nguồn, PVS thuộc nhóm [cổ phiếu dầu khí] có doanh thu bám theo kế hoạch đầu tư khai thác.",
+  "why": "viết lại theo live 11/11 · đoạn i=10"
+ },
+ {
+  "src": "co-phieu-bsr-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "co-phieu-nganh-nang-luong",
+  "i": 3,
+  "op": "newp",
+  "sentence": "Ở khâu hạ nguồn, BSR đại diện cho nhóm [cổ phiếu ngành năng lượng] chế biến, nơi biên lợi nhuận gắn chặt với giá dầu thô.",
+  "why": "hub năng lượng · mô hình BSR · dời sang đoạn i=3 (đoạn cũ dẫn vào list)"
+ },
+ {
+  "src": "co-phieu-nganh-than",
+  "target": "co-phieu-nganh-nang-luong",
+  "i": 3,
+  "op": "append",
+  "sentence": "Than là nguyên liệu đầu vào của nhiệt điện, nên khi đặt cạnh [cổ phiếu năng lượng] khác, nhóm này chịu tác động từ nhu cầu sản xuất điện.",
+  "why": "hub năng lượng · tổng quan ngành than"
+ },
+ {
+  "src": "co-phieu-pvt-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+  "target": "co-phieu-nganh-nang-luong",
+  "i": 3,
+  "op": "append",
+  "sentence": "Khác các mã khai thác, PVT là mắt xích vận tải trong nhóm [cổ phiếu dầu khí], hưởng lợi khi sản lượng dầu khí cần chuyên chở tăng.",
+  "why": "hub năng lượng · tổng quan PVT"
+ },
+ {
+  "src": "co-nen-mua-co-phieu-plx-hay-khong",
+  "target": "co-phieu-nganh-nang-luong",
+  "i": 39,
+  "op": "append",
+  "sentence": "Vì vậy khi so với [cổ phiếu năng lượng] ở khâu thượng nguồn, PLX nhạy hơn với chênh lệch giữa giá dầu thô và giá bán lẻ.",
+  "why": "hub năng lượng · kỳ vọng ngành"
+ },
+ {
+  "src": "co-phieu-pvs-tong-quan-nhan-dinh-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-nam",
+  "target": "co-phieu-nganh-nang-luong",
+  "i": 26,
+  "op": "append",
+  "sentence": "Mô hình tổng thầu khiến PVS gắn với chu kỳ đầu tư của [cổ phiếu ngành năng lượng], khác các mã bán sản phẩm cuối như xăng dầu.",
+  "why": "hub năng lượng · mô hình PVS"
+ },
+ {
+  "src": "co-phieu-plx-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "co-phieu-nganh-nang-luong",
+  "i": 39,
+  "op": "append",
+  "sentence": "Mảng nhập khẩu và kinh doanh xăng dầu xếp PLX ở khâu phân phối của [ngành dầu khí], bên cạnh các mã khai thác và lọc dầu.",
+  "why": "viết lại theo live 11/11 · đoạn i=39"
+ },
+ {
+  "src": "co-phieu-pvd-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "co-phieu-nganh-nang-luong",
+  "i": 2,
+  "op": "newp",
+  "sentence": "Là nhà thầu khoan, PVD thuộc nhóm [cổ phiếu dầu khí] dịch vụ, nên đơn hàng phụ thuộc kế hoạch khoan thăm dò và khai thác của chủ mỏ.",
+  "why": "hub năng lượng · tổng quan PVD"
+ },
+ {
+  "src": "co-phieu-nt-2-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025",
+  "target": "co-phieu-nganh-nang-luong",
+  "i": 2,
+  "op": "append",
+  "sentence": "Nhà máy điện khí khiến NT2 thuộc nhóm [cổ phiếu ngành điện] phụ thuộc nguồn khí đầu vào, khác thủy điện vốn chịu ảnh hưởng của thời tiết.",
+  "why": "hub năng lượng · tổng quan NT2"
+ },
+ {
+  "src": "co-nen-mua-co-phieu-gas-hay-khong",
+  "target": "co-phieu-nganh-nang-luong",
+  "i": 47,
+  "op": "append",
+  "sentence": "GAS thuộc nhóm [cổ phiếu dầu khí] ở khâu trung nguồn, hưởng lợi từ định hướng phát triển điện khí khi nhu cầu khí cho phát điện tăng.",
+  "why": "hub năng lượng · cơ bản GAS"
+ },
+ {
+  "src": "co-phieu-plc-tong-quan-nhan-dinh-va-ket-qua-kinh-doanh-moi-nhat",
+  "target": "co-phieu-nganh-nang-luong",
+  "i": 29,
+  "op": "append",
+  "sentence": "Nguồn nguyên liệu từ Petrolimex đặt PLC ở khâu hóa dầu thuộc [ngành dầu khí], nơi giá dầu mỏ quyết định chi phí đầu vào.",
+  "why": "hub năng lượng · mô hình PLC"
+ },
+ {
+  "src": "co-phieu-gas-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+  "target": "co-phieu-nganh-nang-luong",
+  "i": 49,
+  "op": "append",
+  "sentence": "Khác các mã khoan hay vận tải dầu, GAS nằm ở khâu khí của [ngành năng lượng], nơi hạ tầng đường ống tạo lợi thế khó sao chép.",
+  "why": "viết lại theo live 11/11 · đoạn i=49"
+ },
+ {
+  "src": "co-nen-mua-co-phieu-pet-hay-khong",
+  "target": "co-phieu-nganh-nang-luong",
+  "op": "skip",
+  "reason": "PET là phân phối ICT, không thuộc ngành năng lượng"
+ },
+ {
+  "src": "co-phieu-qtp-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "co-phieu-nganh-nang-luong",
+  "i": 2,
+  "op": "append",
+  "sentence": "Là nhiệt điện than, QTP thuộc nhóm [cổ phiếu ngành điện] chịu ảnh hưởng của giá than đầu vào và sản lượng được huy động.",
+  "why": "hub năng lượng · tổng quan QTP"
+ },
+ {
+  "src": "cach-mua-co-phieu-plx-petrolimex",
+  "target": "co-phieu-nganh-nang-luong",
+  "i": 4,
+  "op": "append",
+  "sentence": "Thị phần lớn khiến PLX là đại diện phân phối của nhóm [cổ phiếu năng lượng], nên giá dầu thế giới là biến số cần theo dõi.",
+  "why": "hub năng lượng · giới thiệu PLX"
+ },
+ {
+  "src": "co-nen-mua-co-phieu-ree-hay-khong",
+  "target": "co-phieu-nganh-nang-luong",
+  "i": 3,
+  "op": "append",
+  "sentence": "Mảng thủy điện và điện gió là lý do REE cũng được tính vào [cổ phiếu ngành điện], dù gốc của doanh nghiệp là cơ điện lạnh.",
+  "why": "viết lại theo live 11/11 · đoạn i=3"
+ },
+ {
+  "src": "co-phieu-pc-1-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025",
+  "target": "co-phieu-nganh-nang-luong",
+  "i": 2,
+  "op": "append",
+  "sentence": "Mảng xây lắp điện và năng lượng tái tạo đưa PC1 vào nhóm [cổ phiếu năng lượng] thiên về hạ tầng, hưởng lợi khi nhu cầu điện tăng.",
+  "why": "hub năng lượng · tổng quan PC1"
+ },
+ {
+  "src": "co-phieu-ree-tong-quan-nhan-dinh-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "co-phieu-nganh-nang-luong",
+  "i": 2,
+  "op": "append",
+  "sentence": "Mảng thủy điện và điện gió là lý do REE cũng được tính vào [cổ phiếu ngành năng lượng], dù gốc của doanh nghiệp là cơ điện.",
+  "why": "hub năng lượng · tổng quan REE"
+ },
+ {
+  "src": "cach-mua-co-phieu-pow",
+  "target": "co-phieu-nganh-nang-luong",
+  "i": 4,
+  "op": "skip",
+  "sentence": "Là doanh nghiệp điện lớn thuộc VN30, POW đại diện cho nhóm [cổ phiếu ngành điện], nơi hợp đồng mua bán điện dài hạn giữ dòng tiền ổn định.",
+  "why": "hub năng lượng · giới thiệu POW",
+  "reason": "URL đã 301 sang bài khác"
+ },
+ {
+  "src": "cach-mua-co-phieu-pvd",
+  "target": "co-phieu-nganh-nang-luong",
+  "op": "skip",
+  "reason": "không có đoạn thân bài hợp (đoạn duy nhất là quy định lô giao dịch)"
+ },
+ {
+  "src": "co-phieu-vsh-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "co-phieu-nganh-nang-luong",
+  "i": 2,
+  "op": "append",
+  "sentence": "Vĩnh Sơn là thủy điện, nên VSH thuộc nhóm [cổ phiếu ngành điện] có sản lượng phụ thuộc lượng nước các sông, khác nhiệt điện dùng than hoặc khí.",
+  "why": "hub năng lượng · tổng quan VSH"
+ },
+ {
+  "src": "co-nen-mua-co-phieu-hpg-hay-khong",
+  "target": "top-5-co-phieu-nganh-thep-co-co-ban-tot-sap-buoc-vao-chu-ky-tang-truong-moi",
+  "i": 45,
+  "op": "append",
+  "sentence": "Nhu cầu thép bám theo bất động sản và xây dựng, nên [cổ phiếu ngành thép] như HPG thường đi theo chu kỳ của các ngành này.",
+  "why": "hub thép · yếu tố định tính HPG"
+ },
+ {
+  "src": "co-phieu-nganh-nhua",
+  "target": "top-5-co-phieu-nganh-thep-co-co-ban-tot-sap-buoc-vao-chu-ky-tang-truong-moi",
+  "op": "skip",
+  "reason": "ngành nhựa không thuộc hub thép"
+ },
+ {
+  "src": "co-nen-mua-co-phieu-ttf-hay-khong",
+  "target": "top-5-co-phieu-nganh-thep-co-co-ban-tot-sap-buoc-vao-chu-ky-tang-truong-moi",
+  "op": "skip",
+  "reason": "TTF là gỗ, không thuộc hub thép"
+ },
+ {
+  "src": "co-phieu-nkg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-nganh-thep-co-co-ban-tot-sap-buoc-vao-chu-ky-tang-truong-moi",
+  "i": 2,
+  "op": "append",
+  "sentence": "Là doanh nghiệp tôn mạ, NKG thuộc nhóm [cổ phiếu thép] thành phẩm, nên biên lợi nhuận nhạy với giá thép cuộn nguyên liệu.",
+  "why": "hub thép · tổng quan NKG"
+ },
+ {
+  "src": "co-phieu-hsg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-nganh-thep-co-co-ban-tot-sap-buoc-vao-chu-ky-tang-truong-moi",
+  "i": 3,
+  "op": "append",
+  "sentence": "Mảng tôn mạ giúp HSG đại diện cho nhóm [mã cổ phiếu ngành thép] hạ nguồn, nơi thương hiệu và kênh phân phối quyết định thị phần.",
+  "why": "hub thép · tổng quan HSG"
+ },
+ {
+  "src": "cach-mua-co-phieu-hoa-phat-hpg-nhanh-chong-va-an-toan",
+  "target": "top-5-co-phieu-nganh-thep-co-co-ban-tot-sap-buoc-vao-chu-ky-tang-truong-moi",
+  "i": 47,
+  "op": "append",
+  "sentence": "Vì vậy khi chọn HPG, nhà đầu tư nên đặt mã này cạnh các [cổ phiếu ngành thép] khác để so mức độ chịu ảnh hưởng của chu kỳ.",
+  "why": "hub thép · lưu ý HPG"
+ },
+ {
+  "src": "co-phieu-vcs-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-nganh-thep-co-co-ban-tot-sap-buoc-vao-chu-ky-tang-truong-moi",
+  "op": "skip",
+  "reason": "VCS là đá thạch anh, không thuộc hub thép"
+ },
+ {
+  "src": "co-phieu-hpg-tong-quan-dinh-gia-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-nganh-thep-co-co-ban-tot-sap-buoc-vao-chu-ky-tang-truong-moi",
+  "i": 45,
+  "op": "append",
+  "sentence": "Hòa Phát là đại diện đầu ngành, nên diễn biến của HPG phản ánh sức khỏe chung của [cổ phiếu ngành thép] trong chu kỳ này.",
+  "why": "viết lại theo live 11/11 · đoạn i=45"
+ },
+ {
+  "src": "co-phieu-npt-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025",
+  "target": "top-5-co-phieu-nganh-thep-co-co-ban-tot-sap-buoc-vao-chu-ky-tang-truong-moi",
+  "op": "skip",
+  "reason": "NTP là ống nhựa, không thuộc hub thép"
+ },
+ {
+  "src": "co-phieu-ksb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025",
+  "target": "top-5-co-phieu-nganh-thep-co-co-ban-tot-sap-buoc-vao-chu-ky-tang-truong-moi",
+  "op": "skip",
+  "reason": "KSB là đá xây dựng, không thuộc hub thép"
+ },
+ {
+  "src": "co-phieu-ptb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-nganh-thep-co-co-ban-tot-sap-buoc-vao-chu-ky-tang-truong-moi",
+  "op": "skip",
+  "reason": "PTB là chế biến gỗ/đá/ô tô, không thuộc hub thép"
+ },
+ {
+  "src": "co-phieu-bmp-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-nganh-thep-co-co-ban-tot-sap-buoc-vao-chu-ky-tang-truong-moi",
+  "op": "skip",
+  "reason": "BMP là nhựa xây dựng, không thuộc hub thép"
+ },
+ {
+  "src": "co-phieu-acg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-5-co-phieu-nganh-thep-co-co-ban-tot-sap-buoc-vao-chu-ky-tang-truong-moi",
+  "op": "skip",
+  "reason": "ACG là gỗ công nghiệp, không thuộc hub thép"
+ },
+ {
+  "src": "co-phieu-nganh-y-te",
+  "target": "top-5-co-phieu-dang-dau-tu",
+  "op": "skip",
+  "reason": "không có đoạn thân bài hợp (chỉ có đoạn dẫn danh sách)"
+ },
+ {
+  "src": "day-la-5-co-phieu-tich-san-cuc-tot-se-khien-ban-kiem-duoc-bon-tien",
+  "target": "top-5-co-phieu-dang-dau-tu",
+  "i": 4,
+  "op": "append",
+  "sentence": "Chiến lược này chỉ hiệu quả khi chọn đúng [cổ phiếu đáng đầu tư], vì nắm giữ nhiều năm đòi hỏi doanh nghiệp có nền tảng bền vững.",
+  "why": "hub top cổ phiếu · mục tích sản"
+ },
+ {
+  "src": "top-co-phieu-nganh-duoc-nen-dau-tu",
+  "target": "top-5-co-phieu-dang-dau-tu",
+  "i": 80,
+  "op": "append",
+  "sentence": "Chỉ những mã có nền tảng tài chính tốt mới là [cổ phiếu đáng đầu tư], chứ không phải mọi mã cùng ngành dược đều như nhau.",
+  "why": "hub top cổ phiếu · mục mã ngành dược"
+ },
+ {
+  "src": "co-phieu-nganh-du-lich",
+  "target": "top-5-co-phieu-dang-dau-tu",
+  "op": "skip",
+  "reason": "đoạn du lịch không có câu tự nhiên cho hub, gượng"
+ },
+ {
+  "src": "cach-chon-co-phieu-de-dau-tu-dai-han-tai-viet-nam",
+  "target": "top-5-co-phieu-dang-dau-tu",
+  "i": 33,
+  "op": "append",
+  "sentence": "Doanh nghiệp đầu ngành với kênh phân phối rộng như MWG là kiểu mã thường nằm trong nhóm [cổ phiếu đáng đầu tư] cho nhà đầu tư dài hạn.",
+  "why": "hub top cổ phiếu · mục MWG"
+ },
+ {
+  "src": "co-phieu-scs-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-co-phieu-cang-bien-nen-dau-tu",
+  "op": "skip",
+  "reason": "SCS là dịch vụ hàng hóa hàng không, không thuộc cảng biển"
+ },
+ {
+  "src": "co-phieu-vos-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-co-phieu-cang-bien-nen-dau-tu",
+  "i": 3,
+  "op": "append",
+  "sentence": "Vận tải biển là mắt xích liền kề của [cổ phiếu ngành cảng biển], vì sản lượng hàng qua cảng và nhu cầu chuyên chở đi cùng nhau.",
+  "why": "hub cảng biển · tổng quan VOS"
+ },
+ {
+  "src": "co-phieu-hah-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+  "target": "top-co-phieu-cang-bien-nen-dau-tu",
+  "i": 3,
+  "op": "append",
+  "sentence": "Cạnh tranh giữa các cầu cảng Hải Phòng là bối cảnh để so HAH với [cổ phiếu cảng biển] thuần khai thác cảng.",
+  "why": "hub cảng biển · tổng quan HAH"
+ },
+ {
+  "src": "top-3-co-phieu-nganh-xuat-nhap-khau-huong-loi-cuc-lon-trong-giai-doan-sap-toi",
+  "target": "top-co-phieu-cang-bien-nen-dau-tu",
+  "i": 29,
+  "op": "append",
+  "sentence": "Đội tàu container gắn HAH với chu kỳ hàng hóa qua cảng, nên mã này thường được xem cùng [cổ phiếu cảng] khi đánh giá nhóm logistics hàng hải.",
+  "why": "hub cảng biển · mục HAH"
+ },
+ {
+  "src": "top-co-phieu-cao-su-nen-dau-tu",
+  "target": "co-phieu-ltg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "op": "skip",
+  "reason": "cao su không thuộc LTG (Lộc Trời – lúa gạo)"
+ },
+ {
+  "src": "co-phieu-nganh-thuy-san",
+  "target": "co-phieu-ltg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "op": "skip",
+  "reason": "thủy sản không thuộc LTG (Lộc Trời – lúa gạo)"
+ },
+ {
+  "src": "cach-mua-co-phieu-tpb",
+  "target": "co-phieu-tpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+  "i": 3,
+  "op": "append",
+  "sentence": "Nền tảng ngân hàng số này là điểm khác biệt chính khi phân tích [cổ phiếu TPB] so với các ngân hàng truyền thống.",
+  "why": "tổng quan TPB · giới thiệu"
+ }
+]

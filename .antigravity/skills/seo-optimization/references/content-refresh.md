@@ -6,7 +6,7 @@ Tối ưu hóa nội dung không chỉ dành cho bài viết mới. Các bài vi
 
 - **Traffic giảm** ở một trang vốn dĩ đang hoạt động tốt.
 - **Số liệu hoặc dữ liệu** đã cũ hơn 12 tháng.
-- **Sản phẩm thay đổi** — tính năng, phí, hoặc định vị thương hiệu không còn khớp (Ví dụ: Chuyển từ HVS Brokerage sang HVS Tài chính số).
+- **Sản phẩm thay đổi** — tính năng, phí, hoặc định vị thương hiệu không còn khớp.
 - **Đối thủ cập nhật** nội dung của họ cho cùng một chủ đề.
 - **Tầm nhìn AI Search (SGE)** — nội dung cũ ít được AI trích dẫn hơn.
 
