@@ -1,10 +1,10 @@
 from pathlib import Path
 import subprocess,json,sys
 sys.stdout.reconfigure(encoding="utf-8")
-r=Path("knowledge/4-content/audits/account-serp-2026-11-04/v2")
-draft="knowledge/4-content/2-drafts/serp-2026-11-04-v2/Optimize-cach-mo-tai-khoan-chung-khoan.md"
+r=Path("knowledge/3-seo/content/audits/account-serp-2026-11-04/v2")
+draft="knowledge/3-seo/content/2-drafts/serp-2026-11-04-v2/Optimize-cach-mo-tai-khoan-chung-khoan.md"
 commands={
-"lint":["scripts/qa_lint.py",draft,"--original","knowledge/4-content/audits/account-serp-2026-11-04/baseline-cach-mo-tai-khoan-chung-khoan.md","--cta"],
+"lint":["scripts/qa_lint.py",draft,"--original","knowledge/3-seo/content/audits/account-serp-2026-11-04/baseline-cach-mo-tai-khoan-chung-khoan.md","--cta"],
 "style":["scripts/slop_check.py",draft,"-v"],
 "facts":["scripts/market_facts.py","--verify",draft]}
 results={}

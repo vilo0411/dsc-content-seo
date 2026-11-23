@@ -46,8 +46,8 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 ROOT = Path(__file__).resolve().parents[1]
-SITEMAP_CACHE = ROOT / ".antigravity/skills/internal-linking/scripts/sitemap-cache.json"
-CLUSTERS = ROOT / "knowledge/3-pipeline/internal-links/link-clusters.json"
+SITEMAP_CACHE = ROOT / ".agents/skills/link/scripts/sitemap-cache.json"
+CLUSTERS = ROOT / "knowledge/3-seo/strategy/taxonomy.json"
 OUT = ROOT / "knowledge/raw/live"
 HTML_DIR = OUT / "html"
 PAGES_CSV = OUT / "pages.csv"
@@ -69,13 +69,28 @@ XEM_THEM = re.compile(r"xem\s+th[eê]m\s*:?", re.I)
 
 # ──────────────────────────── fetch + extract ────────────────────────────
 
+class Redirected(Exception):
+    """The URL 301s to another page (merged article): it is not a page of its own."""
+
+    def __init__(self, target: str):
+        super().__init__(target)
+        self.target = target
+
+
 def fetch(url: str, retries: int = 2) -> str:
     last = None
     for attempt in range(retries + 1):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
             with urllib.request.urlopen(req, timeout=30) as r:
+                final = r.geturl().rstrip("/")
+                if final != url.rstrip("/"):
+                    # urllib follows redirects silently — without this check the target's body is
+                    # stored under the old slug and the merged URL shows up as a live article.
+                    raise Redirected(final)
                 return r.read().decode("utf-8", "replace")
+        except Redirected:
+            raise
         except Exception as e:  # noqa: BLE001 — network errors of every kind are retried the same way
             last = e
             time.sleep(1.5 * (attempt + 1))
@@ -321,6 +336,7 @@ def sync(sources: dict[str, str | None], full: bool, workers: int) -> int:
 
     done: dict[str, tuple[str, str]] = {}
     failed: list[tuple[str, str]] = []
+    redirected: dict[str, str] = {}  # slug -> final URL
     t0 = time.time()
     with ThreadPoolExecutor(max_workers=workers) as ex:
         futs = {ex.submit(work, u): u for u in sources}
@@ -329,6 +345,8 @@ def sync(sources: dict[str, str | None], full: bool, workers: int) -> int:
             try:
                 _, got = fut.result()
                 done[u] = got
+            except Redirected as e:
+                redirected[slug_of(u)] = e.target
             except Exception as e:  # noqa: BLE001
                 failed.append((u, str(e)))
             if n % 50 == 0 or n == len(futs):
@@ -365,19 +383,32 @@ def sync(sources: dict[str, str | None], full: bool, workers: int) -> int:
             (HTML_DIR / f"{slug}.html").unlink(missing_ok=True)
         links = [r for r in links if r["from"] in pages]
 
+    # Merged URLs (301) are dropped in partial runs too — they are not articles any more.
+    for slug in sorted(redirected):
+        if pages.pop(slug, None) is not None and slug not in removed:
+            removed.append(slug)
+        (HTML_DIR / f"{slug}.html").unlink(missing_ok=True)
+    links = [r for r in links if r["from"] not in redirected]
+
     build_pages(pages, links)
     write_csv(PAGES_CSV, PAGE_FIELDS, sorted(pages.values(), key=lambda r: r["slug"]))
     write_csv(LINKS_CSV, LINK_FIELDS, sorted(links, key=lambda r: (r["from"], r["kind"], r["to"])))
     META.write_text(json.dumps({"last_run": datetime.now().isoformat(timespec="seconds"),
                                 "mode": "full" if full else "partial", "pages": len(pages),
                                 "links": len(links), "changed": changed, "new": new, "removed": removed,
+                                "redirected": {s: slug_of(t) for s, t in sorted(redirected.items())},
                                 "failed": [u for u, _ in failed]}, ensure_ascii=False, indent=1),
                     encoding="utf-8")
 
-    print(f"\n✓ {len(done)} trang · đổi nội dung: {len(changed)} · mới: {len(new)} · gỡ: {len(removed)} · lỗi: {len(failed)}")
+    print(f"\n✓ {len(done)} trang · đổi nội dung: {len(changed)} · mới: {len(new)} · gỡ: {len(removed)} · "
+          f"301: {len(redirected)} · lỗi: {len(failed)}")
     for label, items in (("Đổi", changed), ("Mới", new), ("Gỡ", removed)):
         if items and len(items) <= 40:
             print(f"  {label}: " + ", ".join(items))
+    if redirected:
+        print("  301 (đã gộp — bỏ khỏi snapshot; nếu còn trong taxonomy.json thì thay bằng URL đích):")
+        for s, t in sorted(redirected.items()):
+            print(f"    {s} → {slug_of(t)}")
     for u, err in failed:
         print(f"  ✗ {u} — {err}")
     if changed:
@@ -401,7 +432,7 @@ def load_sf(path: Path) -> dict[str, str]:
     return out
 
 
-FINALIZED = ROOT / "knowledge/4-content/3-finalized"
+FINALIZED = ROOT / "knowledge/3-seo/content/3-finalized"
 
 
 def compare(slug: str) -> int:

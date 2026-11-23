@@ -4,7 +4,7 @@ from pathlib import Path
 from datetime import date, datetime, timedelta
 
 ROOT = Path(__file__).resolve().parents[1]
-BASE = ROOT / 'knowledge/operations/syndication'
+BASE = ROOT / 'knowledge/4-channels/social'
 FIELDS = ['id','slug','source_url','channel','format','version','content','asset_path','target_url','utm_url','anchor','status','posted_url','posted_at','minutes','notes','index_status','checked_at','evidence','channel_url','compose_url','asset_url','title','hashtags']
 DATE_FIELDS = {'posted_at', 'checked_at'}
 

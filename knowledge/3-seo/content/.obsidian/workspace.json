@@ -1,0 +1,211 @@
+{
+  "main": {
+    "id": "a6228c8012a764f3",
+    "type": "split",
+    "children": [
+      {
+        "id": "db05196da09c6bcb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "75130b619319f8ef",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c827262045814de0",
+    "type": "split",
+    "children": [
+      {
+        "id": "6a4bbe5150fbc571",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7cd2c529bf54eaf0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byModifiedTime",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "ba000433c481d108",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "fc0505c8d9c7daef",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 315.5
+  },
+  "right": {
+    "id": "f307ad1e0218f2ec",
+    "type": "split",
+    "children": [
+      {
+        "id": "1d6afa3a726bb000",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7ea48c642ddfea1b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "3-finalized/Final-casa-la-gi.md",
+                "collapseAll": true,
+                "extraContext": true,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Final-casa-la-gi"
+            }
+          },
+          {
+            "id": "649a109c35351ef9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "0-sources/Giờ giao dịch chứng khoán Việt Nam, quốc tế cập nhật 2026.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Giờ giao dịch chứng khoán Việt Nam, quốc tế cập nhật 2026"
+            }
+          },
+          {
+            "id": "316f9d8964658ec6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "b1d047f0393b9bce",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "abf82f7e09a5291f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 331.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "75130b619319f8ef",
+  "lastOpenFiles": [
+    "blog/phi-giao-dich-chung-khoan 1.md",
+    "0-sources/Phân tích báo cáo tài chính Hòa Phát (HPG).md",
+    "Untitled.md",
+    "0-sources/Giờ giao dịch chứng khoán Việt Nam, quốc tế cập nhật 2026.md",
+    "0-sources/Chỉ báo Ultimate Oscillator (UO) là gì Ứng dụng chỉ báo Ultimate Oscillator để xác định tín hiệu MUABÁN cổ phiếu.md",
+    "0-sources/Chỉ số PCE là gì_ Giải thích chi tiết cho nhà đầu tư.md",
+    "0-sources/Bollinger Bands là gì_ cách sử dụng chỉ báo PTKT.md",
+    "0-sources/Nhóm các chỉ số phân tích báo cáo tài chính quan trọng nhất.md",
+    "0-sources/Chi phí cố định là gì_ Cách tính và ứng dụng trong đầu tư.md",
+    "0-sources/Cổ phiếu Penny là gì_ Ưu, nhược điểm và cách đầu tư cổ phiếu Penny.md",
+    "0-sources/Sideway là gì_ Cách nhận biết và giao dịch trong thị trường Sideway.md",
+    "0-sources/ACCA và CFA_ Chọn chứng chỉ nào cho sự nghiệp tài chính_.md",
+    "0-sources/3 cách chọn cổ phiếu tốt và có tiềm năng tăng giá để đầu tư.md",
+    "0-sources/Ngày đáo hạn phái sinh là gì_ Lịch đáo hạn và những lưu ý.md",
+    "0-sources/Chứng khoán phái sinh là gì_ Tổng hợp kiến thức về phái sinh.md",
+    "0-sources/Target là gì trong đầu tư chứng khoán_ Thông tin chi tiết.md",
+    "0-sources/NAV là gì_ Ý nghĩa, cách tính NAV chính xác.md",
+    "0-sources/Chiến lược đầu tư chứng khoán ngắn hạn_ Lợi nhuận cao rủi ro cao.md",
+    "0-sources/Chỉ số Dow Jones là gì_ Tầm quan trọng chỉ số DJIA.md",
+    "0-sources/INDEX.md",
+    "2-drafts/Draft-chi-bao-momentum-la-gi.md",
+    "1-outlines/chi-bao-momentum-la-gi.md",
+    "1-outlines/cac-mo-hinh-gia-chung-khoan.md",
+    "3-finalized/Final-cac-mo-hinh-gia-chung-khoan.md",
+    "2-drafts/Draft-cac-mo-hinh-gia-chung-khoan.md",
+    "2-drafts/Optimize-cach-mo-tai-khoan-chung-khoan.md",
+    "blog"
+  ]
+}

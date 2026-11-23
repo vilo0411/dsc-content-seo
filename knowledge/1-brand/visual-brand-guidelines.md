@@ -3,6 +3,8 @@
 > **Trạng thái:** [Đã cập nhật ✅] — Quản lý Brand Assets và Quy chuẩn Hình ảnh.
 > File này được Visual Architect & Image Skill đọc để đảm bảo hình ảnh nhất quán với thương hiệu DSC.
 
+> **Infographic / biểu đồ / ảnh bìa có chữ trong bài viết:** theo [`image-design-system.md`](image-design-system.md) — token màu, font Be Vietnam Pro (`assets/fonts/`), lưới, component; code `scripts/images/dsc_design.py`.
+
 ---
 
 ## 1. Brand Colors
@@ -30,7 +32,7 @@ knowledge/1-brand/assets/
 │   ├── logo-for-light-bg.png    # Logo chữ xanh/tối (dùng cho nền sáng như Light Mint/Pastel/White)
 │   └── logo-for-dark-bg.png     # Logo chữ trắng (dùng cho nền tối như Dark Navy)
 ├── icons/                       # Thư mục lưu trữ Icon thương hiệu (mở rộng tương lai)
-└── fonts/                       # Thư mục lưu trữ Font chữ thương hiệu (mở rộng tương lai)
+└── fonts/                       # Be Vietnam Pro (Regular→ExtraBold, OFL) — font chữ trong ảnh
 ```
 
 ### Quy tắc ghép Logo:
@@ -43,10 +45,7 @@ knowledge/1-brand/assets/
 
 ## 3. Standard Image Sizes & Aspect Ratios
 
-| Loại ảnh | Tỷ lệ | Vị trí chèn | Mục đích |
-| :--- | :--- | :--- | :--- |
-| **Featured Image (Ảnh bìa)** | `16:9` | Đầu bài viết, OG Image | Dạng Banner ngang rộng, hiển thị đẹp khi share MXH và làm Blog Thumbnail Grid |
-| **Inline Image (Ảnh trong bài)** | `4:3` | Dưới các section H2 | Khuôn hình vừa vặn, không chiếm chiều cao quá lớn trên Mobile |
+**Ảnh bìa (featured): 1000×600 px (5:3). Ảnh trong bài: 800×500 px (16:10).** Đúng chuẩn CMS DSC. Thẻ ảnh trong bài: `<img style="aspect-ratio:800/500;" … width="800" height="500">`. Bố cục cho khung này: `image-design-system.md` §4.
 
 ---
 

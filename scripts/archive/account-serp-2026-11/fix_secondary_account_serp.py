@@ -1,5 +1,5 @@
 ﻿from pathlib import Path
-p=Path("knowledge/4-content/2-drafts/Optimize-nen-mo-tai-khoan-chung-khoan-o-dau-serp-2026-11-04.md")
+p=Path("knowledge/3-seo/content/2-drafts/Optimize-nen-mo-tai-khoan-chung-khoan-o-dau-serp-2026-11-04.md")
 s=p.read_text(encoding="utf-8")
 s=s.replace("phân biệt tài khoản do Tư vấn số và Môi giới quản lý.","phân biệt phí theo khối quản lý tài khoản.")
 s=s.replace("tài khoản Tư vấn số có mức phí 0,1% giá trị giao dịch.","mức 0,1% được công bố riêng cho một nhóm quản lý tài khoản.")

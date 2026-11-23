@@ -90,7 +90,7 @@ def generate_featured_image():
     draw.polygon(arrow_pts, fill="#10E7B3", outline="#00AD14", width=2)
     
     img = add_watermark_logo(img, is_dark_bg=False)
-    out_path = 'knowledge/4-content/images/mo-hinh-nen-hammer-la-gi-featured.jpg'
+    out_path = 'knowledge/3-seo/content/images/mo-hinh-nen-hammer-la-gi-featured.jpg'
     img.convert("RGB").save(out_path, quality=95)
     print("Saved:", out_path)
 
@@ -134,12 +134,12 @@ def generate_trading_image():
     draw.ellipse([cx + 120, cy - 180, cx + 200, cy - 160], fill="#A7F3D0", outline="#00AD14", width=3)
     
     img = add_watermark_logo(img, is_dark_bg=False)
-    out_path = 'knowledge/4-content/images/mo-hinh-nen-hammer-la-gi-giao-dich.jpg'
+    out_path = 'knowledge/3-seo/content/images/mo-hinh-nen-hammer-la-gi-giao-dich.jpg'
     img.convert("RGB").save(out_path, quality=95)
     print("Saved:", out_path)
 
 if __name__ == '__main__':
-    os.makedirs('knowledge/4-content/images', exist_ok=True)
+    os.makedirs('knowledge/3-seo/content/images', exist_ok=True)
     generate_featured_image()
     generate_trading_image()
 

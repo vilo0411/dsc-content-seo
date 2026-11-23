@@ -3,11 +3,11 @@
 
 Usage:
   python scripts/cta_audit.py <file.md>              → detail for one article
-  python scripts/cta_audit.py --all                  → table over knowledge/4-content/3-finalized/
+  python scripts/cta_audit.py --all                  → table over knowledge/3-seo/content/3-finalized/
   python scripts/cta_audit.py --all --ga4 <csv>      → same, ranked by real GA4 landing-page traffic
   python scripts/cta_audit.py --all --json           → machine-readable output
 
-Rules audited here mirror .antigravity/rules/cta-conversion.md. This script never writes to
+Rules audited here mirror .agents/rules/cta-conversion.md. This script never writes to
 content files — inserting a banner requires writing prose (product bridge), which goes through
 the /cro skill with an approval gate.
 
@@ -33,7 +33,7 @@ if hasattr(sys.stdout, "buffer"):
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 
 ROOT = Path(__file__).resolve().parents[1]
-FINALIZED_DIR = ROOT / "knowledge/4-content/3-finalized"
+FINALIZED_DIR = ROOT / "knowledge/3-seo/content/3-finalized"
 LIVE_HTML = ROOT / "knowledge/raw/live/html"  # shared snapshot written by sync_live.py
 
 DSC_HOST = "https://www.dsc.com.vn"

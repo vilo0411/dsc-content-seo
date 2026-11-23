@@ -73,7 +73,7 @@ def generate_roa_by_industry():
         draw.ellipse([px-10, py-10, px+10, py+10], fill="#2BE841", outline="#FFFFFF", width=2)
         
     img = add_watermark_logo(img, is_dark_bg=True)
-    out_dir = "knowledge/4-content/images"
+    out_dir = "knowledge/3-seo/content/images"
     os.makedirs(out_dir, exist_ok=True)
     out_path = os.path.join(out_dir, "chi-so-roa-la-gi-y-nghia-va-cach-su-dung-roa-by-industry.jpg")
     img.convert("RGB").save(out_path, quality=95)
@@ -111,7 +111,7 @@ def generate_dupont_model():
     draw_3d_cube(draw, cx3, cy + 10, 45, 80, "#10E7B3", "#2BE841", "#00AD14")
     
     img = add_watermark_logo(img, is_dark_bg=False)
-    out_dir = "knowledge/4-content/images"
+    out_dir = "knowledge/3-seo/content/images"
     os.makedirs(out_dir, exist_ok=True)
     out_path = os.path.join(out_dir, "chi-so-roa-la-gi-y-nghia-va-cach-su-dung-dupont-model.jpg")
     img.convert("RGB").save(out_path, quality=95)

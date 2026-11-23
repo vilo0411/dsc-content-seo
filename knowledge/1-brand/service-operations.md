@@ -34,6 +34,7 @@ Tài liệu này tổng hợp các quy trình kỹ thuật dành cho khách hàn
     - **Tiểu khoản đuôi 1:** Giao dịch thường (không sử dụng Margin).
     - **Tiểu khoản đuôi 6:** Giao dịch ký quỹ (Margin).
 - **Ứng trước tiền bán:** Hỗ trợ tự động hoặc thủ công trên App giúp tái đầu tư ngay lập tức sau khi bán.
+- **Môi giới 1:1:** Tư vấn chọn mã cổ phiếu và hướng dẫn sàn, lô giao dịch, cách đặt lệnh (xác nhận bởi user 2026-11-19). DSC không tự đặt giá mục tiêu (I120).
 
 ## 4. Chi tiết Dịch vụ Ủy thác (DSC Invest)
 - **Đối tượng:** Khách hàng cao cấp (Wealth Client).

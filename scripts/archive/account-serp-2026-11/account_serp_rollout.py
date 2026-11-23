@@ -6,7 +6,7 @@ from markdownify import markdownify
 sys.stdout.reconfigure(encoding="utf-8")
 ROOT=Path(__file__).resolve().parents[1]
 slug="cach-mo-tai-khoan-chung-khoan"
-base=ROOT/"knowledge/4-content/audits/account-serp-2026-11-04"
+base=ROOT/"knowledge/3-seo/content/audits/account-serp-2026-11-04"
 base.mkdir(parents=True,exist_ok=True)
 live=ROOT/"knowledge/raw/live/html"/(slug+".html")
 raw=live.read_text(encoding="utf-8")
@@ -40,7 +40,7 @@ if not baseline.exists():
 images=[str(i) for i in s.select("img")]
 hrefs={a["href"] for a in s.select("a[href]")}
 # Proposal is written before applying edits; the existing old proposal/drafts remain untouched.
-proposal=ROOT/"knowledge/4-content/1-outlines"/("Proposal-"+slug+"-serp-2026-11-04.md")
+proposal=ROOT/"knowledge/3-seo/content/1-outlines"/("Proposal-"+slug+"-serp-2026-11-04.md")
 image_rows="\n".join("| "+str(i+1)+" | "+e.get("src","")+" | "+e.get("alt","")+" | Giữ nguồn và thứ tự trong cụm thao tác |" for i,e in enumerate(s.select("img")))
 proposal_text=f"""---
 Title: Proposal tối ưu cụm mở tài khoản chứng khoán
@@ -273,7 +273,7 @@ p.append(frag('Tiểu khoản đuôi 6 dùng cho giao dịch ký quỹ; xem <a h
 replace_p("Nơi phù hợp phụ thuộc việc bạn tự giao dịch","""<p>Nơi phù hợp phụ thuộc việc bạn tự giao dịch hay cần Môi giới 1:1 hỗ trợ tư vấn. So cùng gói dịch vụ và điều kiện phí trong bài <a href="https://www.dsc.com.vn/kien-thuc/nen-mo-tai-khoan-chung-khoan-o-dau">nên mở tài khoản chứng khoán ở đâu</a>.</p>""")
 
 # Two real HTML CRO blocks; no fabricated UI screenshots.
-template=(ROOT/".antigravity/skills/cro-optimization/assets/banner-templates.md").read_text(encoding="utf-8")
+template=(ROOT/".agents/skills/cro/references/banner-templates.md").read_text(encoding="utf-8")
 blocks=re.findall(r" \x60", "") if False else re.findall(r"\x60\x60\x60html\n(.*?)\n\x60\x60\x60",template,re.S)
 def banner(i,headline,sub,button):
  return blocks[i].replace("{{HEADLINE}}",headline).replace("{{SUB}}",sub).replace("{{BUTTON}}",button).replace("{{URL}}","https://www.dsc.com.vn/mo-tai-khoan")
@@ -293,7 +293,7 @@ for a in s.select("a[href]"):
 assert [str(i) for i in s.select("img")]==images,"Original image markup changed"
 assert hrefs.issubset({a["href"] for a in s.select("a[href]")}),hrefs-{a["href"] for a in s.select("a[href]")}
 body=str(s)
-draft=ROOT/"knowledge/4-content/2-drafts"/("Optimize-"+slug+"-serp-2026-11-04.md")
+draft=ROOT/"knowledge/3-seo/content/2-drafts"/("Optimize-"+slug+"-serp-2026-11-04.md")
 draft.write_text(fm(title,meta)+"# "+title+"\n\n"+md(body),encoding="utf-8")
 (base/(slug+".body.html")).write_text(body,encoding="utf-8")
 (base/(slug+".metadata.json")).write_text(json.dumps({"slug":slug,"url":url,"title":title,"meta_description":meta,"state":"draft-not-published","source_sha256":hashlib.sha256(raw.encode()).hexdigest(),"date_prepared":"2026-11-04","preserved_images":len(images),"preserved_original_destinations":len(hrefs)},ensure_ascii=False,indent=2),encoding="utf-8")

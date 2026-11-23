@@ -72,7 +72,7 @@ T = {
     "filler_minor": 2,            # corpus p90 = 0 - they only appeared once the rhythm gate existed
 }
 
-# STRICT - applied to new work (files under knowledge/4-content/2-drafts/): a draft must
+# STRICT - applied to new work (files under knowledge/3-seo/content/2-drafts/): a draft must
 # match the *median* of recent pipeline articles (Final files 2026-10, fillers excluded),
 # not merely beat the tail of the legacy corpus. Step 1 toward the ABSOLUTE targets above;
 # tighten again once most new drafts clear it.
@@ -721,7 +721,7 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("file", nargs="?")
     ap.add_argument("--baseline", action="store_true")
-    ap.add_argument("--glob", default="3-finalized", help="thu muc con trong knowledge/4-content")
+    ap.add_argument("--glob", default="3-finalized", help="thu muc con trong knowledge/3-seo/content")
     ap.add_argument("--csv")
     ap.add_argument("--top", type=int, default=15)
     ap.add_argument("--json", action="store_true")

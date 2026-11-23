@@ -5,7 +5,7 @@ Usage:
   python scripts/stale_refresh.py check    # validate only (no write) — for agents writing specs
   python scripts/stale_refresh.py verify   # after CMS edit + sync_live: report which body edits are live
 
-Specs: knowledge/4-content/audits/edits/*.json
+Specs: knowledge/3-seo/content/audits/edits/*.json
   {"group": "rule|rate|stock|data|legal", "priority": "P0|P1|P2", "issue": "...",
    "edits": [{"slug", "find", "replace", "note"?, "sources"?: [url], "priority"?, "issue"?, "field"?}]}
 Body edits: find/replace are raw HTML; find must match exactly once in knowledge/raw/live/html/<slug>.html.
@@ -21,8 +21,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 LIVE = ROOT / "knowledge/raw/live/html"
-FINAL = ROOT / "knowledge/4-content/3-finalized"
-AUDITS = ROOT / "knowledge/4-content/audits"
+FINAL = ROOT / "knowledge/3-seo/content/3-finalized"
+AUDITS = ROOT / "knowledge/3-seo/content/audits"
 SPECS = AUDITS / "edits"
 AUDIT_HTML = AUDITS / "stale-content-refresh-2026-11-04.html"
 INNER_TAGS = ("td", "th", "li", "p", "h2", "h3", "h4")

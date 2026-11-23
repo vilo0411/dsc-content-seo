@@ -77,7 +77,7 @@ def generate_image_1():
     draw.ellipse([cx + 150, cy - 220, cx + 180, cy - 190], fill="#2BE841")
 
     img = add_watermark_logo(img, is_dark_bg=False)
-    out_path = 'knowledge/4-content/images/co-nen-mua-co-phieu-pnj-bien-co-2026.jpg'
+    out_path = 'knowledge/3-seo/content/images/co-nen-mua-co-phieu-pnj-bien-co-2026.jpg'
     img.convert("RGB").save(out_path, "JPEG", quality=92)
     print(f"Generated: {out_path}")
 
@@ -119,7 +119,7 @@ def generate_image_2():
     draw.ellipse([cx + 200, cy - 140, cx + 245, cy - 95], fill="#059669")
 
     img = add_watermark_logo(img, is_dark_bg=False)
-    out_path = 'knowledge/4-content/images/co-nen-mua-co-phieu-pnj-dinh-gia-2026.jpg'
+    out_path = 'knowledge/3-seo/content/images/co-nen-mua-co-phieu-pnj-dinh-gia-2026.jpg'
     img.convert("RGB").save(out_path, "JPEG", quality=92)
     print(f"Generated: {out_path}")
 

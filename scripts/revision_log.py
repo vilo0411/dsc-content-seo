@@ -21,7 +21,7 @@ from datetime import date, timedelta
 
 from _common import PIPELINE_DIR, REVISION_LOG, setup_utf8
 
-STATE = PIPELINE_DIR / "learn-state.json"
+STATE = PIPELINE_DIR / "logs" / "learn-state.json"
 ENTRY = re.compile(r"^### \[(\d{4}-\d{2}-\d{2})\]\s*-\s*(.+?)\s*$")
 FIELD = re.compile(r"^- \*\*(Lỗi đã sửa|Pattern|Rule học được|Scope):\*\*\s*(.*)$")
 FIELD_MAX = 400  # chars per field; the old 3 KB entries are what made the log 95 KB for 30 days
@@ -107,7 +107,7 @@ def cmd_brief(a) -> int:
     for r in rows:
         print(f"- {r['date']} · {r['slug']} · {r['scope'] or '?'} — {clip(r['rule'] or r['fix'], a.width)}")
     if rows:
-        print("\nChi tiết 1 mục: grep -n -A4 \"<slug>\" knowledge/3-pipeline/revision-log.md")
+        print("\nChi tiết 1 mục: grep -n -A4 \"<slug>\" knowledge/3-seo/logs/revision-log.md")
     return 0
 
 

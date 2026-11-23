@@ -66,8 +66,8 @@ def generate_image_1():
 
     img = add_watermark_logo(img, is_dark_bg=False)
     
-    os.makedirs('knowledge/4-content/images', exist_ok=True)
-    output_path = 'knowledge/4-content/images/bien-loi-nhuan-rong-khai-niem.jpg'
+    os.makedirs('knowledge/3-seo/content/images', exist_ok=True)
+    output_path = 'knowledge/3-seo/content/images/bien-loi-nhuan-rong-khai-niem.jpg'
     img.convert("RGB").save(output_path, "JPEG", quality=95)
     print(f"Generated image: {output_path}")
 
@@ -94,7 +94,7 @@ def generate_image_2():
     
     img = add_watermark_logo(img, is_dark_bg=True)
     
-    output_path = 'knowledge/4-content/images/bien-loi-nhuan-rong-so-do-dong-tien.jpg'
+    output_path = 'knowledge/3-seo/content/images/bien-loi-nhuan-rong-so-do-dong-tien.jpg'
     img.convert("RGB").save(output_path, "JPEG", quality=95)
     print(f"Generated image: {output_path}")
 

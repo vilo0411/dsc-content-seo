@@ -108,7 +108,7 @@ def generate_concept_1():
     # Top-Left Official DSC Logo watermark
     img = add_watermark_logo(img, is_dark_bg=False)
     
-    output_path = 'knowledge/4-content/images/fomo-trong-dau-tu-chung-khoan-la-gi-concept1.jpg'
+    output_path = 'knowledge/3-seo/content/images/fomo-trong-dau-tu-chung-khoan-la-gi-concept1.jpg'
     img.convert("RGB").save(output_path, "JPEG", quality=95)
     print(f"Generated Rich Inline Diagram {output_path}")
 
@@ -166,7 +166,7 @@ def generate_concept_2():
     # Top-Left Official DSC Logo watermark
     img = add_watermark_logo(img, is_dark_bg=True)
     
-    output_path = 'knowledge/4-content/images/fomo-trong-dau-tu-chung-khoan-la-gi-concept2.jpg'
+    output_path = 'knowledge/3-seo/content/images/fomo-trong-dau-tu-chung-khoan-la-gi-concept2.jpg'
     img.convert("RGB").save(output_path, "JPEG", quality=95)
     print(f"Generated Rich Inline Diagram {output_path}")
 

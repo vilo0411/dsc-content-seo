@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Topical cluster map: cluster → subgroup → article, with internal-link health and SEO performance on one page.
 
-    python scripts/topical_map.py        # -> knowledge/3-pipeline/internal-links/topical-map.html (open in a browser)
+    python scripts/topical_map.py        # -> knowledge/3-seo/strategy/topical-map.html (open in a browser)
 
 Inputs (all local, 0 network):
-  knowledge/3-pipeline/page-audit.csv                 performance per article (page_groups.py report)
-  knowledge/3-pipeline/internal-links/link-clusters.json   pillar / hub / spoke registry
+  knowledge/3-seo/strategy/page-audit.csv                 performance per article (page_groups.py report)
+  knowledge/3-seo/strategy/taxonomy.json   pillar / hub / spoke registry
   knowledge/raw/live/links.csv                        contextual links currently live (sync_live.py)
 Re-run after `sync_live.py` (links changed) or `page_groups.py report` (new GSC/GA4 numbers).
 """
@@ -22,9 +22,9 @@ from datetime import date
 from _common import PIPELINE_DIR, ROOT, setup_utf8
 from page_groups import CLUSTERS, SUBGROUPS, OUT_AUDIT, OUT_GROUPS, sg_key
 
-LINK_CLUSTERS = PIPELINE_DIR / "internal-links/link-clusters.json"
+LINK_CLUSTERS = PIPELINE_DIR / "strategy/taxonomy.json"
 LINKS = ROOT / "knowledge/raw/live/links.csv"
-OUT = PIPELINE_DIR / "internal-links/topical-map.html"
+OUT = PIPELINE_DIR / "strategy/topical-map.html"
 REG_TO_CLUSTER = {"mo-tai-khoan": "1", "cach-choi-chung-khoan": "2"}  # c3-… → "3" etc. parsed from the id
 
 
@@ -62,7 +62,9 @@ def build_data() -> dict:
             for s in ([g["hub"]] if g.get("hub") else []) + g["spokes"]:
                 role = "hub" if s == g.get("hub") else "spoke"
                 if s not in member or role == "hub":
-                    member[s] = (c["id"], None if g.get("pillar_exempt") else p, g.get("hub"), role)
+                    # pillar_hubs_only: spokes with a hub are not expected to link the pillar
+                    skip_p = g.get("pillar_exempt") or (c.get("pillar_hubs_only") and g.get("hub") and role == "spoke")
+                    member[s] = (c["id"], None if skip_p else p, g.get("hub"), role)
         if p:
             member[p] = (c["id"], p, None, "pillar")
 

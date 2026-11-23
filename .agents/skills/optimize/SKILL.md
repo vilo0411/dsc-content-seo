@@ -1,11 +1,11 @@
 ---
 name: optimize
-description: Tối ưu bài cũ — Brand audit + rewrite + QA (Seven Sweeps Framework).
+description: "Làm lại cả 1 bài SEO cũ đang tụt hoặc lỗi thời (Seven Sweeps: dữ liệu GSC, SERP mới, brand audit, rewrite, QA, proposal). Dùng khi 'tối ưu bài', 'refresh', 'bài tụt hạng', /optimize <path>. Sửa 1 đoạn theo ý user thì /revise."
 ---
 
 # Tối Ưu Bài Viết Cũ (Optimize)
 
-> **Nguồn quy trình duy nhất** cho `/optimize`. `.antigravity/skills/seo-optimization/` chỉ còn chứa template Proposal + tài liệu tham khảo — không cần mở `SKILL.md` của nó.
+> **Nguồn quy trình duy nhất** cho `/optimize`. `.agents/skills/optimize/` chỉ còn chứa template Proposal + tài liệu tham khảo — không cần mở `SKILL.md` của nó.
 
 ## Options
 - `--step`: dừng chờ `/approve` sau Proposal.
@@ -20,10 +20,10 @@ Cập nhật bài đang publish để tăng thứ hạng, đúng Brand và chu�
 
 ### 🔄 Bước 0: System Context Load (BẮT BUỘC — 1 lần/session)
 1. `knowledge/1-brand/profile.md` · `knowledge/1-brand/service-operations.md`
-2. `knowledge/3-pipeline/anti-ai-rules.md` · `knowledge/3-pipeline/glossary.md`
-3. `.antigravity/memory/instincts.md` (+ `instincts-by-scope/<topic>.md` nếu có) + `python scripts/optimize_instincts.py --show [slug]` (ghi chú ARTICLE của chính bài này). Không mở `instincts-archive.md`.
-4. Lịch sử sửa bài: `grep -rn "[slug]" knowledge/3-pipeline/revision-log*` (không đọc cả file). Outline gốc nếu có: `python scripts/article_snapshot.py [slug] --path outline`
-5. Bài gốc `knowledge/4-content/3-finalized/Final-[slug].md` (chưa có → Bước 1.1)
+2. `knowledge/1-brand/anti-ai-rules.md` · `knowledge/1-brand/glossary.md`
+3. `.agents/memory/instincts.md` (+ `instincts-by-scope/<topic>.md` nếu có) + `python scripts/optimize_instincts.py --show [slug]` (ghi chú ARTICLE của chính bài này). Không mở `instincts-archive.md`.
+4. Lịch sử sửa bài: `grep -rn "[slug]" knowledge/3-seo/logs/revision-log*` (không đọc cả file). Outline gốc nếu có: `python scripts/article_snapshot.py [slug] --path outline`
+5. Bài gốc `knowledge/3-seo/content/3-finalized/Final-[slug].md` (chưa có → Bước 1.1)
 6. Persona — `python scripts/persona.py P<n>` sau Bước 1.2 (không mở `personas.md`)
 
 Các bước sau (kể cả QA ở Bước 5) không đọc lại các file này.
@@ -41,15 +41,17 @@ Các bước sau (kể cả QA ở Bước 5) không đọc lại các file này
   - **Chưa có `Final-[slug].md`:** dùng `knowledge/raw/live/html/[slug].html` làm bản gốc (giữ nguyên 100% ảnh, heading, bảng), lưu thành `Final-[slug].md` với front matter `source: https://www.dsc.com.vn/kien-thuc/[slug]` + `fetched_at`. Slug không có trên live → dừng, báo user.
   - Link "chỉ có trên live" **phải giữ** trong bản Optimize. Độ giống < 90% → báo user, đề xuất dùng nội dung live làm bản gốc.
 - `python scripts/topic_status.py [slug] --set Optimizing`
+- Ghi baseline GSC vào sổ (MCP `query_search_analytics`, page = URL bài, `days: 14`; không có MCP: `dashboard_cache.py report [slug]`):
+  `python scripts/article_snapshot.py [slug] --baseline "pos 12.3 · clicks 80 · imp 5000 · top query …"` — `/weekly` đo lại 14 ngày sau khi bản mới lên live và so với dòng này.
 - Baseline (bản optimize không được tệ hơn):
   ```bash
-  python scripts/qa_lint.py knowledge/4-content/3-finalized/Final-[slug].md --no-sitemap
-  python scripts/slop_check.py knowledge/4-content/3-finalized/Final-[slug].md -v
-  python scripts/market_facts.py --verify knowledge/4-content/3-finalized/Final-[slug].md
+  python scripts/qa_lint.py knowledge/3-seo/content/3-finalized/Final-[slug].md --no-sitemap
+  python scripts/slop_check.py knowledge/3-seo/content/3-finalized/Final-[slug].md -v
+  python scripts/market_facts.py --verify knowledge/3-seo/content/3-finalized/Final-[slug].md
   python scripts/news_feed.py --topic "[keyword]" --days 30
   ```
   `FACT-stale` = tín hiệu refresh mạnh nhất. `news_feed` cho mốc sự kiện có ngày thay cho "thời gian gần đây".
-- Working copy: `knowledge/4-content/2-drafts/Optimize-[slug].md` — mọi chỉnh sửa trên bản này.
+- Working copy: `knowledge/3-seo/content/2-drafts/Optimize-[slug].md` — mọi chỉnh sửa trên bản này.
 
 **1.2 — Content Strategy Header (BẮT BUỘC trước mọi audit)**
 Đọc bài gốc + persona, ghi rõ — đây là "hiến pháp" cho mọi quyết định rewrite:
@@ -65,16 +67,16 @@ Bài gốc lệch intent/persona → ghi vào Proposal Section 0 và đề xuấ
 
 ### ⚙️ Bước 2: Audit
 
-**2.1 — SERP & đối thủ** (làm trực tiếp — không cần mở `seo-collector.md`, `seo-outlining/SKILL.md` hay `brief-template.md`)
-1. `python .antigravity/skills/web-serp/scripts/serp_research.py "<keyword>" --top 10 --extract 5` (cache 30 ngày, không `--no-cache`; trang dsc.com.vn tự bị loại khỏi phần so sánh).
+**2.1 — SERP & đối thủ** (làm trực tiếp — không cần mở `seo-collector.md`, `outlining/references/playbook.md` hay `brief-template.md`)
+1. `python .agents/skills/web-serp/scripts/serp_research.py "<keyword>" --top 10 --extract 5` (cache 30 ngày, không `--no-cache`; trang dsc.com.vn tự bị loại khỏi phần so sánh).
    - **Topic Coverage → khối máy đọc của Proposal:** `Thuật ngữ BẮT BUỘC phủ` → `Entities:` (bỏ cụm nào ghi `Entities_Skipped`); `Chủ đề con nhiều đối thủ cùng có` mà bài chưa có → `[THÊM MỚI]` ở Section 5; `Nguồn đối thủ trích` → nguồn gốc cần link.
    - **Information_Gain (≥ 2 mục có `proof`):** điều bản mới sẽ có mà top 5 không có. Bài gốc không có gì riêng → đây là việc chính của lần optimize, không phải sửa câu chữ.
    - **PAA refresh (ghi vào Proposal):** câu PAA chưa có trong bài → `[THÊM MỚI]` vào FAQ (câu đầu ≤ 60 từ, có số + mốc thời gian) hoặc nâng thành H2/H3 nếu thuộc intent chính. Câu FAQ cũ không còn trong PAA và không có traffic GSC → cân nhắc `[XÓA BỎ]`. `Google answer` thuộc đối thủ → viết đáp án ngắn và cụ thể hơn. Ghi `PAA_Questions:` vào YAML Proposal.
 2. `python scripts/analyze_competitors.py <url1> <url2> …` → heading + số từ từng section (tự bỏ URL lỗi/thin). Kết quả in console + `knowledge/raw/competitors_analysis.json` → điền Section 2.
 
-**2.2 — Brand Guardian** (`.antigravity/agents/brand-guardian.md`): vi phạm anti-AI, thông tin sản phẩm lỗi thời, giọng sai persona → danh sách (dòng, loại lỗi, gợi ý sửa).
+**2.2 — Brand Guardian** (`.agents/skills/qa-qc/references/brand-guardian.md`): vi phạm anti-AI, thông tin sản phẩm lỗi thời, giọng sai persona → danh sách (dòng, loại lỗi, gợi ý sửa).
 
-**2.3 — GSC** (không block — không có data thì bỏ qua). Playbook: `.antigravity/skills/seo-dashboard/SKILL.md`.
+**2.3 — GSC** (không block — không có data thì bỏ qua). Playbook: `.agents/skills/seo-dashboard/SKILL.md`.
 - Có MCP `SEO Dashboard`: `query_search_analytics` (`property_url: "sc-domain:dsc.com.vn"`, `dimensions: ["query"]`, `page_value: "/kien-thuc/[slug]"`, `days: 90`, `compare_mode: "prev_period"`, `limit: 30`) → lưu JSON `scratch/dashboard-pq.json` → `python scripts/dashboard_cache.py save page-queries [slug] --file scratch/dashboard-pq.json`.
   Cannibalization: thêm `query_search_analytics` (`dimensions: ["page"]`, `query_value: "[keyword]"`, `days: 90`, `limit: 10`) — URL DSC khác nhận impressions đáng kể → Section 0.
 - Mọi agent: `python scripts/dashboard_cache.py report [slug]` → dán block vào Proposal Section 1 (`📊 GSC Performance Context`). Từ đó: CTR < 3% → flag rewrite Title; tối đa 5 query clicks ≥ 5, position ≤ 20 chưa được bài phục vụ → đề xuất thêm H2/section hoặc đưa vào sapo. **Exit 3 (chưa có cache) → ghi `[GSC] Chưa có data — bỏ qua`**.
@@ -84,7 +86,7 @@ Bài gốc lệch intent/persona → ghi vào Proposal Section 0 và đề xuấ
 ---
 
 ### ⚙️ Bước 3: Proposal
-Điền đúng template `.antigravity/skills/seo-optimization/assets/proposal-template.md`, tổng hợp Bước 2:
+Điền đúng template `.agents/skills/optimize/references/proposal-template.md`, tổng hợp Bước 2:
 - Đánh giá sơ bộ theo 7 Sweeps (danh sách ở Bước 4).
 - Section 2.2: **mỗi** đối thủ đã crawl một block — không gộp. Section 2.3: trích heading/angle cụ thể của đối thủ phục vụ intent bài đang bỏ sót. Section 5: mỗi `[THÊM MỚI]` ghi học từ Competitor nào.
 - Section 7.1: kê khai **toàn bộ** ảnh gốc. Section 7.2: 1–3 vị trí ảnh mới.
@@ -101,9 +103,9 @@ Bài gốc lệch intent/persona → ghi vào Proposal Section 0 và đề xuấ
 - **Chỉ sửa `Optimize-[slug].md`.** Không chạm `3-finalized/` ở bước này.
 - Trước khi viết: đọc lại Content Strategy Header. `anti-ai-rules.md` + `instincts.md` đã có trong context — chỉ load lại nếu session mới.
 - Chỉ sửa phần gắn `[CẬP NHẬT]` / `[XÓA BỎ]` / `[THÊM MỚI]`; `[GIỮ NGUYÊN]` không chạm.
-- **Ảnh:** giữ nguyên vị trí và cú pháp 100% ảnh gốc. Vị trí ảnh mới ở Section 7.2 → chạy skill `/image` (`.agents/skills/image/SKILL.md` — prompt, palette, luật cấm chữ/cấm đỏ nằm ở đó), lưu `knowledge/4-content/images/[slug]-[concept].jpg`, chèn thẳng `![alt có keyword](../images/[slug]-[concept].jpg)` — không để placeholder.
+- **Ảnh:** giữ nguyên vị trí và cú pháp 100% ảnh gốc. Vị trí ảnh mới ở Section 7.2 → chạy skill `/image` (`.agents/skills/image/SKILL.md` — prompt, palette, luật cấm chữ/cấm đỏ nằm ở đó), lưu `knowledge/3-seo/content/images/[slug]-[concept].jpg`, chèn thẳng `![alt có keyword](../images/[slug]-[concept].jpg)` — không để placeholder.
 - **Internal link:** URL tuyệt đối `https://www.dsc.com.vn/...`, lấy từ `find_links.py` (không đoán slug); `qa_gate` kiểm khớp sitemap.
-- **CRO (BẮT BUỘC):** `.antigravity/skills/cro-optimization/SKILL.md` — Persona/Intent/Bridge đọc từ Content Strategy Header; dựng Product Bridge nếu thiếu, chèn banner theo giới hạn persona (**P4: không banner**, chỉ link text). Rule: `.antigravity/rules/cta-conversion.md`.
+- **CRO (BẮT BUỘC):** `.agents/skills/cro/references/playbook.md` — Persona/Intent/Bridge đọc từ Content Strategy Header; dựng Product Bridge nếu thiếu, chèn banner theo giới hạn persona (**P4: không banner**, chỉ link text). Rule: `.agents/rules/cta-conversion.md`.
 - **7 Sweeps** theo thứ tự:
   1. **Clarity** — một câu một ý, bỏ thuật ngữ không cần.
   2. **Voice** — POV chuyên gia DSC, đúng persona.
@@ -119,12 +121,12 @@ Bài gốc lệch intent/persona → ghi vào Proposal Section 0 và đề xuấ
 ### ⚙️ Bước 5: QA 3 tầng (BẮT BUỘC trước khi trình bày)
 - **Tầng A + B + dữ liệu — 1 lệnh** (kiểm cả bảo toàn ảnh gốc; Proposal tự tìm theo slug):
   ```bash
-  python scripts/qa_gate.py knowledge/4-content/2-drafts/Optimize-[slug].md --original knowledge/4-content/3-finalized/Final-[slug].md --cta --fix --all
+  python scripts/qa_gate.py knowledge/3-seo/content/2-drafts/Optimize-[slug].md --original knowledge/3-seo/content/3-finalized/Final-[slug].md --cta --fix --all
   ```
   FAIL → sửa đúng dòng được báo, chạy lại. `SLOP-*`: cách sửa ở `anti-ai-rules.md` §8.7. **Slop score ≥ baseline Bước 1.1**; mọi `FACT-*` có ở baseline phải sạch.
-- Gate PASS → Self-audit ngữ nghĩa (`anti-ai-rules.md` §6) → agent `.antigravity/agents/quality-guardian.md` (chỉ đọc `Optimize-[slug].md` + Content Strategy Header). Sau vòng 1: `qa_gate.py <file> --mark-qg`; vòng 2 QG chỉ đọc `qa_gate.py <file> --changed`.
+- Gate PASS → Self-audit ngữ nghĩa (`anti-ai-rules.md` §6) → agent `.agents/skills/qa-qc/references/quality-guardian.md` (chỉ đọc `Optimize-[slug].md` + Content Strategy Header). **QG chạy bằng subagent mới, không phải agent đã viết bài; self-audit không thay được QG** (đợt 19/11/2026: 4/4 bài PASS gate vẫn FAIL QG). Không có subagent → làm QG ở lượt riêng, chỉ đọc 2 file trên. Sau vòng 1: `qa_gate.py <file> --mark-qg`; vòng 2 QG chỉ đọc `qa_gate.py <file> --changed`.
 - `python scripts/article_snapshot.py [slug] --stage gate2` trước khi trình bày.
 - FAIL → sửa và QA lại **tối đa 2 vòng**; vẫn FAIL → dừng, trình bày kèm `⚠️ Remaining issues`.
 
 **🚧 APPROVAL GATE 2:** trình bày **tóm tắt ≤ 25 dòng + đường dẫn file** (dòng gate: score · coverage · trust · slop so với baseline; từng mục Information_Gain kèm câu trích; các H2 đã đổi; Remaining issues) — không dán bài vào chat. **DỪNG** chờ người dùng đọc và gõ `/approve` — không tự ghi đè `3-finalized/`, không tự đánh dấu `Finalized`.
-Khi approve: theo `/approve` (ghi đè Final, `article_snapshot --stage final` chuyển Proposal vào `archive/[slug]/`, xóa `Optimize-[slug].md` — đã có bản `gate2`, chạy learn/feedback loop, update topic-clusters).
+Khi approve: theo `/approve` (ghi đè Final, `article_snapshot --stage final` chuyển Proposal vào `archive/[slug]/`, xóa `Optimize-[slug].md` — đã có bản `gate2`, chạy learn/feedback loop, `topic_status.py <slug> --set Finalized`).

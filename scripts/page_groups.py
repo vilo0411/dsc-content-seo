@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """Group every live /kien-thuc article into cluster → subgroup, then join GSC + GA4 data per group for audits.
 
-    python scripts/page_groups.py build                 # -> knowledge/3-pipeline/page-groups.csv (all live slugs)
+    python scripts/page_groups.py build                 # -> knowledge/3-seo/strategy/page-groups.csv (all live slugs)
     python scripts/page_groups.py build --show 3d       # list slugs of one subgroup / cluster ("3") / "unassigned"
     python scripts/page_groups.py taxonomy              # print the cluster/subgroup tree with counts
     python scripts/page_groups.py report [--dir D]      # join audit data -> page-audit.csv + group-performance.md
 
 Assignment priority (first hit wins):
-  1. knowledge/3-pipeline/page-groups-overrides.csv   (slug,subgroup,note) — manual decisions, survive rebuilds
-  2. link-clusters.json groups                        (internal-link hub/spoke registry)
+  1. knowledge/3-seo/strategy/page-groups-overrides.csv   (slug,subgroup,note) — manual decisions, survive rebuilds
+  2. taxonomy.json groups                        (internal-link hub/spoke registry)
   3. ticker pages -> ticker-sector.csv                (co-phieu-xxx, co-nen-mua-co-phieu-xxx)
   4. ordered slug rules in RULES below
   5. title rules (same RULES, run on the unaccented title) — confidence "title"
@@ -29,16 +29,16 @@ import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 
-from _common import PIPELINE_DIR, ROOT, TOPIC_FILE, setup_utf8, unaccent
+from _common import PIPELINE_DIR, ROOT, setup_utf8, unaccent
 
 LIVE_PAGES = ROOT / "knowledge/raw/live/pages.csv"
-LINK_CLUSTERS = PIPELINE_DIR / "internal-links/link-clusters.json"
-TICKER_SECTOR = PIPELINE_DIR / "ticker-sector.csv"
-OVERRIDES = PIPELINE_DIR / "page-groups-overrides.csv"
-OUT_GROUPS = PIPELINE_DIR / "page-groups.csv"
+LINK_CLUSTERS = PIPELINE_DIR / "strategy/taxonomy.json"
+TICKER_SECTOR = PIPELINE_DIR / "strategy/ticker-sector.csv"
+OVERRIDES = PIPELINE_DIR / "strategy/page-groups-overrides.csv"
+OUT_GROUPS = PIPELINE_DIR / "strategy/page-groups.csv"
 AUDIT_DIR = ROOT / "knowledge/raw/audit"
-OUT_AUDIT = PIPELINE_DIR / "page-audit.csv"
-OUT_REPORT = PIPELINE_DIR / "group-performance.md"
+OUT_AUDIT = PIPELINE_DIR / "strategy/page-audit.csv"
+OUT_REPORT = PIPELINE_DIR / "strategy/group-performance.md"
 
 CLUSTERS = {
     "1": "Mở TK & Giao dịch cơ bản",
@@ -86,7 +86,7 @@ SUBGROUPS = {
     "13a": "Khoá học & sách", "13b": "Chứng chỉ & nghề nghiệp", "14a": "Bạc",
 }
 
-# link-clusters.json group name -> subgroup
+# taxonomy.json group name -> subgroup
 LINK_GROUP_MAP = {
     "Chọn nơi mở & công cụ": "1a", "Chi phí": "1a", "Thủ tục & loại tài khoản": "1a",
     "Nền tảng & quyết định": "2a", "Thao tác mua / bán": "2b", "Quy định & bảng giá": "1b",
@@ -274,15 +274,12 @@ def ticker_in(slug: str, sector: dict[str, str]) -> str | None:
 
 def old_clusters() -> dict[str, str]:
     out = {}
-    if not TOPIC_FILE.exists():
+    pages = PIPELINE_DIR / "strategy/pages.csv"  # registry: legacy cluster label kept per URL
+    if not pages.exists():
         return out
-    cluster = ""
-    for line in TOPIC_FILE.read_text(encoding="utf-8").splitlines():
-        if line.startswith("## "):
-            cluster = line[3:].strip()
-        m = re.search(r"/kien-thuc/([a-z0-9-]+)", line)
-        if m and line.startswith("|"):
-            out[m.group(1)] = cluster.split(":")[0]
+    for r in read_csv(pages):
+        if r.get("legacy_cluster"):
+            out[r["slug"]] = r["legacy_cluster"].split(":")[0]
     return out
 
 
@@ -315,7 +312,7 @@ def classify(slug: str, title: str, overrides, links, sector) -> tuple[str, str,
     if slug in overrides:
         return overrides[slug], "override", "overrides.csv", bool(tk)
     if slug in links:
-        return links[slug], "registry", "link-clusters.json", bool(tk)
+        return links[slug], "registry", "taxonomy.json", bool(tk)
     if tk:
         return sector[tk], "ticker", tk, True
     for sg, rx in COMPILED:
@@ -695,7 +692,7 @@ def render_report(rows: list[dict], d: Path, ga4_src: str, has_q: bool, has_scro
     L = [f"# Performance theo nhóm bài /kien-thuc",
          f"",
          f"Nguồn: `{d.relative_to(ROOT)}` · GA4: {ga4_src} · ranking query: {'có' if has_q else 'chưa có (thiếu gsc-pq-*.json)'} · "
-         f"sinh bởi `python scripts/page_groups.py report`. Chi tiết từng bài: `knowledge/3-pipeline/page-audit.csv`.",
+         f"sinh bởi `python scripts/page_groups.py report`. Chi tiết từng bài: `knowledge/3-seo/strategy/page-audit.csv`.",
          "",
          "Lưu ý số liệu: GSC 90 ngày so 90 ngày trước. Chỉ số query (top 10, striking) tính trên tối đa 500 cặp page×query "
          "nhiều impression nhất của mỗi nhóm con — đủ cho query chính, thiếu đuôi dài. "
@@ -703,7 +700,7 @@ def render_report(rows: list[dict], d: Path, ga4_src: str, has_q: bool, has_scro
             "export GA4 theo spec trong `page_groups.py` (AUDIT_FILES) để có đủ." if ga4_src.startswith("ga4-matrix") else
             "GA4: export Organic Search từ GA4 Explore."),
          "",
-         "Bản đồ cụm + link pillar/hub: [`internal-links/topical-map.html`](internal-links/topical-map.html) (bấm tên nhóm con bên dưới để mở đúng nhóm).",
+         "Bản đồ cụm + link pillar/hub: [`topical-map.html`](topical-map.html) (bấm tên nhóm con bên dưới để mở đúng nhóm).",
          "",
          "Nhãn: `rank-drop` mất clicks/top 10 · `ctr-low` pos ≤ 8 nhưng CTR < 70% trung vị nhóm · `striking` ≥ 5 query pos 4–15 · "
          "`engage-low` thời gian/tỷ lệ tương tác dưới trung vị nhóm · `convert-low` đọc tốt nhưng 0 key event · `dead` 0 impression.",
@@ -725,7 +722,7 @@ def render_report(rows: list[dict], d: Path, ga4_src: str, has_q: bool, has_scro
     for sg, g in stats:
         lab = ", ".join(f"{k} {v}" for k, v in g["lab"].most_common(4))
         sc = f"{g['scroll']:.0%}" if g["scroll"] is not None else "–"
-        L.append(f"| [{sg} {SUBGROUPS.get(sg, 'unassigned')}](internal-links/topical-map.html#{sg}) | {g['n']} | {g['clicks']:,.0f} | {pct(g['delta'])} | {g['ctr']:.2f}% | "
+        L.append(f"| [{sg} {SUBGROUPS.get(sg, 'unassigned')}](topical-map.html#{sg}) | {g['n']} | {g['clicks']:,.0f} | {pct(g['delta'])} | {g['ctr']:.2f}% | "
                  f"{g['pos']:.1f} | {g['zero']} | {g['top10']} | {g['striking']} | {g['sess']:,} | {g['er']:.0%} | "
                  f"{g['time']:.0f} | {sc} | {g['ke']} | {g['inlink']:.1f} | {lab} | {g['prio']:,.0f} |")
     L += ["", "## Theo dạng bài (intent)", "", "| Intent | Bài | Clicks | CTR | Pos | Eng. | Time (s) |", "|---|---:|---:|---:|---:|---:|---:|"]

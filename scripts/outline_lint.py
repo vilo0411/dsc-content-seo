@@ -2,7 +2,7 @@
 """Lint an SEO outline BEFORE it is shown to the user (Gate cuối của /outlining).
 
 Usage:
-    python scripts/outline_lint.py knowledge/4-content/1-outlines/<slug>.md [--json]
+    python scripts/outline_lint.py knowledge/3-seo/content/1-outlines/<slug>.md [--json]
 
 Checks (deterministic, offline):
     FMT-*      Content_Type must match the format that wins the SERP (re-computed from the SERP cache
@@ -23,6 +23,7 @@ Exit 1 when any CRITICAL/MAJOR finding exists.
 from __future__ import annotations
 
 import argparse
+import csv
 import json
 import re
 import sys
@@ -34,8 +35,8 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 ROOT = Path(__file__).resolve().parents[1]
-SERP_DIR = ROOT / ".antigravity/skills/web-serp/scripts"
-COUNT_WORDS_DIR = ROOT / ".antigravity/skills/qa-qc"
+SERP_DIR = ROOT / ".agents/skills/web-serp/scripts"
+COUNT_WORDS_DIR = ROOT / "scripts"
 
 MAX_TITLE = 59
 META_RANGE = (140, 160)
@@ -196,6 +197,28 @@ ENT_MIN_COVERAGE = 0.7
 
 # ---------------------------------------------------------------- checks
 
+def pillar_conflict(kw: str, slug: str) -> str:
+    """Name the existing URL that already owns this keyword: a cluster pillar (taxonomy.json) or a
+    registry row (strategy/pages.csv) with status Merged. A second URL for the same keyword splits ranking signals —
+    the right move is /optimize on that URL (lesson from cach-choi-chung-khoan, 2026-11-18)."""
+    k = fold(kw).strip()
+    if not k:
+        return ""
+    reg = ROOT / "knowledge/3-seo/strategy/taxonomy.json"
+    if reg.exists():
+        for c in json.loads(reg.read_text(encoding="utf-8")).get("clusters", []):
+            owned = [c.get("pillar_keyword") or ""] + list(c.get("pillar_anchors") or [])
+            if c.get("pillar") and c["pillar"] != slug and any(fold(a).strip() == k for a in owned if a):
+                return f"pillar `{c['pillar']}` (taxonomy.json)"
+    pages = ROOT / "knowledge/3-seo/strategy/pages.csv"
+    if pages.exists():
+        with pages.open(encoding="utf-8-sig", newline="") as f:
+            for r in csv.DictReader(f):
+                if r.get("status") == "Merged" and fold(r.get("key_chinh") or "").strip() == k:
+                    return f"pages.csv: `{r['slug']}` Merged → `{r.get('merged_into') or '?'}`"
+    return ""
+
+
 def lint(path: Path) -> Report:
     rep = Report(str(path))
     text = path.read_text(encoding="utf-8").replace("\r\n", "\n")
@@ -206,6 +229,10 @@ def lint(path: Path) -> Report:
 
     kw = fm.get("Target_Keyword", "")
     ctype = fm.get("Content_Type", "")
+    owner = pillar_conflict(kw, path.stem.replace("Outline-", ""))
+    if owner and "KW-pillar" not in str(fm.get("Lint_Skip", "")):
+        rep.add("MAJOR", "KW-pillar", f"Keyword “{kw}” đã thuộc {owner} — viết URL mới sẽ tranh hạng với bài đó. "
+                "Dùng /optimize cho URL hiện có; chỉ tạo bài mới khi user xác nhận (ghi `Lint_Skip: KW-pillar`)")
     for key in ("Target_Keyword", "Search_Intent", "Content_Type", "Thesis", "Persona", "Writer_Profile",
                 "Word_Count_Target", "Featured_Snippet", "SERP_Status"):
         v = fm.get(key)

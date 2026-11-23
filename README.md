@@ -1,8 +1,8 @@
-# SEO Writer Agent Boilerplate
+# DSC Digital Marketing Agent (SEO là lõi)
 
-**Điều hành SEO:** mở [bảng công việc và tiến độ](knowledge/operations/index.html) để tìm internal link, stale, audit, CMS và việc sau publish. Cập nhật bằng `python scripts/build_content_index.py`. [Hướng dẫn nguồn trạng thái](knowledge/operations/README.md).
+**Điều hành:** mở [bảng công việc và tiến độ](knowledge/0-dashboard/index.html): bài SEO theo bước, đối thủ tuần này, báo cáo tháng, bản nháp kênh, internal link, stale, việc sau publish. Cập nhật bằng `python scripts/build_content_index.py`. [Hướng dẫn nguồn trạng thái](knowledge/0-dashboard/README.md).
 
-A modular, cross-platform template for professional SEO content production. Works seamlessly with **Claude Code**, **Gemini CLI**, and **Antigravity**.
+Bộ skill marketing số cho Chứng khoán DSC: SEO (lõi) + Analytics, Google Ads, Social/syndication, Email, Landing. Dùng được với mọi coding agent đọc `AGENTS.md` + `.agents/skills/` (Claude Code, Antigravity, Codex, Cursor, Gemini CLI). Sau khi clone: `python scripts/link_agent_dirs.py` để Claude Code thấy skill. Bản đồ skill: [START-HERE.md](START-HERE.md).
 
 ## 🚀 Quick Start
 
@@ -43,25 +43,24 @@ A modular, cross-platform template for professional SEO content production. Work
 
 ## 🏗️ Architecture
 
-Following the **Zen Structure 2.0** methodology, the repository is logically divided into two main domains:
+Theo quy ước của các repo marketing skills phổ biến (coreyhaines31/marketingskills, OpenClaudia…):
 
-### 1. The Engine (`.agents/` & `.antigravity/`)
-Contains the core logic, autonomous workflows, and isolated skills (Plan-Validate-Execute framework).
+### 1. Skills (`.agents/`)
+- **`AGENTS.md`** (root): chỉ dẫn chung; `CLAUDE.md` / `GEMINI.md` chỉ import file này.
+- **`.agents/context.md`**: bối cảnh marketing chung — skill ngoài SEO đọc trước.
+- **`.agents/skills/<tên>/`**: mỗi skill 1 thư mục phẳng — `SKILL.md` (quy trình) + `references/` (playbook chi tiết, vai trò như Quality Guardian) + `scripts/`.
+- **`.agents/rules/`**, **`.agents/memory/`** (instincts), **`.agents/templates/`**, **`.agents/config/`** (gitignored).
 
-- **`.agents/workflows/`**: Command routing for tasks like `/setup`, `/write`, `/optimize`, etc.
-- **`.antigravity/skills/`**: Specialized capabilities (e.g., `seo-optimization`, `seo-writing`) enforcing hard assertions and progressive disclosure.
-- **`.antigravity/agents/`**: Task-specific, persona-based sub-agents (e.g., SEO Collector, Brand Guardian).
+### 2. Dữ liệu & sản phẩm (`knowledge/`) — chi tiết: [knowledge/README.md](knowledge/README.md)
+- **`0-dashboard/`** bảng điều hành sinh tự động · **`1-brand/`** DSC + cách viết cho mọi kênh (brand-facts, anti-ai-rules, glossary, source-whitelist)
+- **`2-market/`** thị trường, nghiên cứu, đối thủ (theo dõi tuần + hồ sơ) · **`3-seo/`** toàn bộ SEO: `strategy/` (registry `pages.csv`, `taxonomy.json`) · `content/` (outline → draft → final → cms) · `links/` · `logs/`
+- **`4-channels/`** ads · email · landing · social · **`5-analytics/`** KPI + báo cáo · **`raw/`** dữ liệu thô, snapshot site live, snapshot đối thủ
 
-### 2. The Brain & Factory (`knowledge/`)
-A centralized, standardized data structure ensuring multi-platform portability and token efficiency.
+## 🔄 Workflow
 
-- **`knowledge/1-brand/`**: Brand Identity, Personas, ICP, and Voice guidelines.
-- **`knowledge/2-market/`**: Market Landscape, Competitors, and Topic Cluster Maps.
-- **`knowledge/3-pipeline/`**: Content strategy, backlog, keyword lists, and Sprint Planners.
-- **`knowledge/4-content/`**: The production line spanning granular stages (`0-sources` -> `1-outlines` -> `2-drafts` -> `3-finalized`).
-- **`knowledge/raw/`**: Raw, unprocessed uploads (e.g., client briefs, data dumps).
+Nhịp tháng / tuần / từng bài và các kênh khác: [START-HERE.md § Workflow](START-HERE.md#workflow).
 
-## 🔄 Workflow hiện tại (cập nhật 2026-11-10: cổng thực chất + cắt token)
+### Pipeline 1 bài SEO (chi tiết)
 
 Ô xanh lá = script (0 token LLM) · ô xanh dương = người duyệt · ô vàng = bước LLM · ô cam = còn làm tay.
 Bài tốt = rank được và được AI trích: mỗi tiêu chí (intent · entity · giá trị mới · tin cậy · AI trích xuất) có check máy ở outline và ở draft.
@@ -75,7 +74,7 @@ flowchart TD
 
     U(["/write keyword"]):::human --> S0
 
-    subgraph P0["Bước 0 · Context ~35 KB, load 1 lần / session (CLAUDE.md 12 KB)"]
+    subgraph P0["Bước 0 · Context ~35 KB, load 1 lần / session (AGENTS.md 12 KB)"]
         S0["profile 4 KB · anti-ai-rules 12,6 KB<br/>glossary 8 KB · instincts 9,8 KB + 1 topic 0,5 KB"]:::script
         S0c["topic_status.py --find / --add"]:::script
         S0 --> S0c
@@ -104,7 +103,7 @@ flowchart TD
     SN1 --> DR
 
     subgraph P2["Giai đoạn 2 · Draft + QA"]
-        DR["seo-drafting → Draft-slug.md<br/>giao 5 lời hứa của outline · câu đầu mỗi H2 trả lời ngay<br/>link nguồn gốc tại câu trích"]:::llm
+        DR["/drafting → Draft-slug.md<br/>giao 5 lời hứa của outline · câu đầu mỗi H2 trả lời ngay<br/>link nguồn gốc tại câu trích"]:::llm
         LK["find_links.py → 3–6 link<br/>quy tắc: link-rules.md 2,7 KB"]:::script
         CRO["CRO: Bridge + banner<br/>(skill CRO chỉ nạp ở bước này)"]:::llm
         GATE{"qa_gate.py — 1 lệnh<br/>A lint: hình thức + coverage + trust<br/>→ B slop ≥ 80 → F facts"}:::script
@@ -127,7 +126,7 @@ flowchart TD
         FIN["article_snapshot --stage final<br/>outline → archive/slug/ (exit 3 = thiếu outline)"]:::script
         LOG["qa_lint --log → qa-score-log.csv<br/>(+ coverage, trust, slop) · qa-check-log.csv"]:::script
         CMS["md_to_cms_html.py"]:::script
-        IDX["find_links.py --add-anchor<br/>(không mở anchor-index 189 KB)"]:::script
+        IDX["find_links.py --add-anchor<br/>(ghi vào registry pages.csv)"]:::script
         LEARN["/learn: article_snapshot --diff<br/>→ cổng nhận rule → sửa tại chỗ theo ID"]:::llm
         CHK["optimize_instincts.py --check"]:::script
         AG -- PASS --> FIN --> LOG --> CMS --> IDX --> LEARN --> CHK
@@ -157,32 +156,7 @@ flowchart TD
     OC -. "điểm cao mà không rank → chỉnh ngưỡng / trọng số" .-> LEARN
 ```
 
-### Các nút thắt đã xử lý
-
-| # | Trước | Sau |
-|---|---|---|
-| B1 | `anti-ai-rules.md` 30 KB load nguyên file, mâu thuẫn với instincts | v3.0 12,6 KB, chỉ phần phán đoán; phần máy bắt trỏ tới lint; bản cũ ở `archive/` |
-| B2 | 44 cache SERP hỏng | `serp_research.py` tự coi cache hỏng là hết hạn, lấy lại khi dùng keyword đó |
-| B3 | 3 script + 3 báo cáo dài mỗi vòng; QG đọc lại cả bài | `qa_gate.py` 1 lệnh, chỉ in lỗi chặn; QG vòng 2 chỉ đọc `--changed` |
-| B4 | Finalize xoá outline, mất bản v1 | `article_snapshot.py` lưu outline/gate2/final; `/learn` dùng `--diff` |
-| B5 | revision-log 285 KB, bảng điểm trong file | Giữ 30 ngày + file theo quý; điểm QA (kèm slop) ở `qa-score-log.csv` |
-| B6 | Backfill sửa CMS từng bài | `/weekly` gom 1 spec cho cả tuần (CMS vẫn sửa tay — không có API) |
-| B7 | Đo GSC chỉ là lời nhắc | `publish-ledger.csv` + `/weekly` liệt kê bài 28–56 ngày và quy tắc quyết định |
-| + | Brand Guardian load cả revision-log (95 KB) | Dùng instincts + `--show` |
-| B8 | `/approve`, `/write` mở revision-log 95 KB để Edit; mục log dài 2–3 KB | `revision_log.py add` ghi thẳng, chặn trường > 400 ký tự |
-| B9 | `/learn` không slug đọc cả revision-log | `revision_log.py brief` 1 dòng/mục từ lần /learn trước (~14 KB), `mark-learn` đặt mốc |
-| B10 | "Chỉ đọc section persona" nhưng vẫn phải mở `personas.md` 14,5 KB | `persona.py P2 [--part bridge]` (~0,3–3 KB) |
-| B11 | `/keyword-plan` đọc cả `topic-clusters.md` 27 KB + trỏ sai thư mục persona | `topic_status.py --summary` (~4 KB) + `persona.py` |
-| B12 | `/optimize` load 2 skill (30 KB) lặp nhau, có chỗ lỗi thời (jina crawl, grep tay, ảnh placeholder vs sinh ảnh) | Gộp vào `optimize/SKILL.md` (11 KB); `seo-optimization/` chỉ còn template; GSC chỉ qua `dashboard_cache`; ảnh qua `/image` |
-| B13 | Cổng QA chỉ đo hình thức; mọi bài 94–100 điểm | `qa_lint` thêm nhóm `coverage` + `trust`; `/approve` chặn MAJOR của 2 nhóm này |
-| B14 | Entity đối thủ chỉ là cụm viết hoa, không gộp, không so với draft | `Topic Coverage` gộp đối thủ hợp lệ → `ENT-outline` / `ENT-missing` (≥ 70%) |
-| B15 | `Information_Gain` chỉ kiểm "có điền"; outline có PAA tự bịa | Danh sách có `h2` + `proof` → `IG-missing`; `SERP-paa-fake`; `DUP-h2` / `DUP-faq` giữa các bài |
-| B16 | 7/210 bài có link ngoài, tác giả ghi tên công cụ | `source-whitelist.md` + `SRC-missing`, `YMYL-disclaimer`, `EEAT-firsthand`; Author = Chứng khoán DSC |
-| B17 | Không kiểm câu đầu mỗi H2; slop phạt câu định nghĩa | `GEO-h2-answer`; `SLOP-h2-open` miễn heading "X là gì" |
-| B18 | Digest SERP ~30 KB chép vào outline; gate dán lại cả bài | Digest gọn 6–10 KB; outline không chép cây heading; gate chỉ in tóm tắt ≤ 25 dòng |
-| B19 | `CLAUDE.md` 20,7 KB; finalize / QA / quy tắc link chép ở 5–9 file | `CLAUDE.md` 12 KB (bảng script → `scripts/README.md`); mỗi quy trình 1 nguồn |
-| B20 | Thêm bài vào `anchor-index` / `topic-clusters` phải mở file lớn | `find_links.py --add-anchor`, `topic_status.py --add` |
-| B21 | Kết quả GSC không quay lại pipeline; pillar đang rank bị tái cấu trúc | Sổ lưu GSC cạnh điểm QA (`--outcomes`); `/optimize` giới hạn khi vị trí ≤ 5 |
+Lịch sử các nút thắt đã xử lý (B1–B21): `.agents/memory/DECISIONS.md`.
 
 **Còn làm tay:** dán HTML vào CMS, sửa link trên CMS (không có API) và chụp ảnh thực tế cho bài hướng dẫn thao tác — đã gom về 1 lần/tuần. Schema `Article` / `FAQPage` và byline phải làm ở template CMS.
 
@@ -195,5 +169,5 @@ flowchart TD
 - **Granular Pipeline Control:** Distinct stages for content (Planned, Optimizing, Finalized) aligned perfectly with brand and strategy rules.
 
 ## 🛠️ Requirements
-- AI Assistant supporting Slash Commands (Claude Code, Gemini CLI, or Antigravity).
+- Coding agent đọc `AGENTS.md` + `.agents/skills/` (Claude Code, Antigravity, Codex, Cursor, Gemini CLI). Python 3.11+ (`python -m unittest discover -s tests`).
 - Internet access (for SERP research and Web Fetching).

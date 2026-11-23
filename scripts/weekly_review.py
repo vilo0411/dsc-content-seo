@@ -6,11 +6,14 @@
     python scripts/weekly_review.py --done gsc slug1      # after reviewing GSC for that article
     python scripts/weekly_review.py --seed                # one-time: add existing Final-*.md to the ledger
 
-Reads knowledge/3-pipeline/publish-ledger.csv (written by article_snapshot.py at each stage) and the live
+Reads knowledge/3-seo/logs/publish-ledger.csv (written by article_snapshot.py at each stage) and the live
 snapshot (knowledge/raw/live/html/<slug>.html, written by sync_live.py) and prints:
   1. Finalized but not seen live → paste 4-cms/<slug>.html into the CMS, then one sync_live command.
   2. Live, backfill not done → ONE batched link plan for all of them (instead of one CMS session per article).
-  3. Live 28–56 days, GSC not checked → the MCP query to run + decision rule (→ /optimize or OK).
+  3. Live 14+ days, GSC not checked → the MCP query to run + decision rule (→ /optimize or OK).
+     Optimized articles: same, counted from when the update is seen live, compared with optimize_baseline.
+  0. Last 7 days: ledger events, link plans, revision-log entries, last weekly report (review what was done).
+  3c. Coming due in the next 7 days (new + optimized).
   4. Housekeeping: revision-log rotation, drafts older than 30 days in 2-drafts/.
 Stdlib only, 0 network.
 """
@@ -30,11 +33,17 @@ if hasattr(sys.stdout, "reconfigure"):
 
 ROOT = snap.ROOT
 LIVE = ROOT / "knowledge/raw/live/html"
-FINAL = ROOT / "knowledge/4-content/3-finalized"
-DRAFTS = ROOT / "knowledge/4-content/2-drafts"
-CMS = ROOT / "knowledge/4-content/4-cms"
-GSC_FROM, GSC_TO = 28, 56          # days after first seen live
+FINAL = ROOT / "knowledge/3-seo/content/3-finalized"
+DRAFTS = ROOT / "knowledge/3-seo/content/2-drafts"
+CMS = ROOT / "knowledge/3-seo/content/4-cms"
+GSC_FROM = 14                      # days after first seen live (also the GSC window measured)
 STALE_DRAFT_DAYS = 30
+UPCOMING_DAYS = 7
+PLANS = ROOT / "knowledge/3-seo/links/plans"
+REPORTS = ROOT / "knowledge/5-analytics/weekly"
+STAGE_LABEL = {"outline": "duyệt outline", "gate2": "trình draft", "final": "chốt Final", "first_live": "lên live",
+               "backfill_done": "backfill link", "gsc_checked": "đo GSC", "optimized": "chốt bản optimize",
+               "optimize_live": "bản optimize lên live", "optimize_gsc_checked": "đo GSC sau optimize"}
 
 
 def d(s: str) -> date | None:
@@ -56,8 +65,26 @@ def live_slug(slug: str) -> str:
     return slug
 
 
+def live_file(slug: str) -> Path | None:
+    for name in (slug, live_slug(slug)):
+        f = LIVE / f"{name}.html"
+        if f.exists():
+            return f
+    return None
+
+
 def is_live(slug: str) -> bool:
-    return (LIVE / f"{slug}.html").exists() or (LIVE / f"{live_slug(slug)}.html").exists()
+    return live_file(slug) is not None
+
+
+def optimize_seen_live(slug: str, optimized: date) -> date | None:
+    """sync_live only rewrites a snapshot when the live body changed, so an mtime on/after the optimize date
+    means the update has been pasted into the CMS."""
+    f = live_file(slug)
+    if not f:
+        return None
+    changed = date.fromtimestamp(f.stat().st_mtime)
+    return changed if changed >= optimized else None
 
 
 def seed() -> int:
@@ -84,7 +111,7 @@ def seed() -> int:
 
 def qa_scores(slug: str) -> str:
     """Latest qa-score-log row of the article: "score 96 · coverage 84 · trust 87 · slop 97"."""
-    log = snap.ROOT / "knowledge/3-pipeline/qa-score-log.csv"
+    log = snap.ROOT / "knowledge/3-seo/logs/qa-score-log.csv"
     if not log.exists():
         return ""
     import csv
@@ -98,9 +125,23 @@ def qa_scores(slug: str) -> str:
     return " · ".join(f"{k} {last[k]}" for k in ("score", "coverage", "trust", "slop") if last.get(k))
 
 
+def optimize_pending(r: dict, col: str) -> bool:
+    """True when `--done live|gsc` should go to the current optimize round instead of the first publish."""
+    if not r.get("optimized"):
+        return False
+    return not r.get("optimize_live") if col == "live" else (bool(r.get("optimize_live")) and not r.get("optimize_gsc_checked"))
+
+
 def done(col: str, slugs: list[str], result: str = "") -> int:
     key = {"backfill": "backfill_done", "gsc": "gsc_checked", "live": "first_live"}[col]
+    rows = snap.read_ledger()
     for s in slugs:
+        if col in ("live", "gsc") and optimize_pending(rows.get(s, {}), col):
+            snap.stamp(s, "optimize_live" if col == "live" else "optimize_gsc_checked")
+            if col == "gsc" and result:
+                snap.stamp(s, "optimize_result", f"{date.today().isoformat()} {result}")
+            print(f"{s}: ghi vào vòng optimize {rows[s]['optimized']} (baseline: {rows[s].get('optimize_baseline') or '-'})")
+            continue
         snap.stamp(s, key)
         if col == "gsc":
             # Keep the outcome next to the QA scores: the only way to learn whether the scores predict ranking.
@@ -115,14 +156,42 @@ def done(col: str, slugs: list[str], result: str = "") -> int:
 
 def outcomes() -> int:
     """Articles with both QA scores and a GSC result — read this before changing QA rules."""
-    rows = [(s, r) for s, r in sorted(snap.read_ledger().items()) if r.get("gsc_result")]
+    ledger = sorted(snap.read_ledger().items())
+    rows = [(s, r) for s, r in ledger if r.get("gsc_result")]
     if not rows:
         print("Chưa có bài nào được ghi kết quả GSC (`--done gsc <slug> --result \"pos 8.2 · clicks 120 · imp 3400\"`).")
-        return 0
-    print("| Slug | Final | Điểm QA lúc final | Kết quả GSC |\n|---|---|---|---|")
-    for s, r in rows:
-        print(f"| {s} | {r['final']} | {r.get('qa_at_final') or '-'} | {r['gsc_result']} |")
+    else:
+        print("| Slug | Final | Điểm QA lúc final | Kết quả GSC |\n|---|---|---|---|")
+        for s, r in rows:
+            print(f"| {s} | {r['final']} | {r.get('qa_at_final') or '-'} | {r['gsc_result']} |")
+    opt = [(s, r) for s, r in ledger if r.get("optimized")]
+    if opt:
+        print("\n## Bài đã optimize: trước → sau\n| Slug | Lần | Optimize | Lên live | Baseline | Kết quả | Các lần trước |\n|---|---|---|---|---|---|---|")
+        for s, r in opt:
+            print(f"| {s} | {r.get('optimize_count') or 1} | {r['optimized']} | {r.get('optimize_live') or '-'} | "
+                  f"{r.get('optimize_baseline') or '-'} | {r.get('optimize_result') or 'chưa đo'} | {r.get('optimize_history') or '-'} |")
     return 0
+
+
+def last_week(rows: dict, today: date) -> None:
+    since = today - timedelta(days=7)
+    print(f"## 0. Tuần trước đã làm ({since.isoformat()} → {today.isoformat()})")
+    events = []
+    for slug, r in rows.items():
+        done_ = [lbl for col, lbl in STAGE_LABEL.items() if (x := d(r.get(col, ""))) and since <= x <= today]
+        if done_:
+            events.append(f"- {slug}: {', '.join(done_)}")
+    print("\n".join(sorted(events)) or "- (sổ không ghi việc nào)")
+    plans = sorted(f.name for f in PLANS.glob("*") if since <= date.fromtimestamp(f.stat().st_mtime) <= today) \
+        if PLANS.exists() else []
+    if plans:
+        print(f"- Link plan sửa/tạo: {', '.join(plans[:8])}" + (" …" if len(plans) > 8 else ""))
+    print(f"- Sửa theo feedback: `python scripts/revision_log.py brief --since {since.isoformat()}`")
+    prev = sorted(REPORTS.glob("*.md"))[-2:] if REPORTS.exists() else []
+    prev = [f for f in prev if f.stem < today.isoformat()]
+    if prev:
+        print(f"- Báo cáo tuần trước: `{prev[-1].relative_to(ROOT)}` → đối chiếu mục \"Cần làm tuần này\": việc nào đã xong / còn tồn")
+    print()
 
 
 def report() -> int:
@@ -132,7 +201,18 @@ def report() -> int:
     for slug, r in rows.items():
         if r["final"] and not r["first_live"] and is_live(slug):
             r["first_live"] = today.isoformat()
+        opt = d(r.get("optimized", ""))
+        if opt and not r.get("optimize_live"):
+            seen = optimize_seen_live(slug, opt)
+            if seen:
+                r["optimize_live"] = seen.isoformat()
     snap.write_ledger(rows)
+    opt_unpublished = [s for s, r in rows.items() if r.get("optimized") and not r.get("optimize_live")]
+    opt_gsc_due = []
+    for s, r in rows.items():
+        live = d(r.get("optimize_live", ""))
+        if live and not r.get("optimize_gsc_checked") and GSC_FROM <= (today - live).days:
+            opt_gsc_due.append((s, (today - live).days))
 
     unpublished = [s for s, r in rows.items() if r["final"] and not r["first_live"]]
     pending = [s for s in unpublished if rows[s]["note"] != "seed"]
@@ -145,14 +225,19 @@ def report() -> int:
             gsc_due.append((s, (today - live).days))
 
     print(f"# Weekly review {today.isoformat()} · ledger {len(rows)} bài\n")
+    last_week(rows, today)
 
-    print(f"## 1. Chờ publish / chưa thấy trên live ({len(pending)})")
+    print(f"## 1. Chờ publish / chưa thấy trên live ({len(pending) + len(opt_unpublished)})")
     for s in pending:
         cms = CMS / f"{s}.html"
         print(f"- {s} · final {rows[s]['final']} · HTML: {cms.relative_to(ROOT) if cms.exists() else '(chưa có — chạy md_to_cms_html.py)'}")
     if old_unpublished:
         print(f"- (+ {len(old_unpublished)} bài Final cũ, trước khi có sổ, chưa thấy trên snapshot live — "
               "`python scripts/weekly_review.py --unpublished` để xem; có thể nằm ngoài /kien-thuc hoặc chưa đăng)")
+    for s in opt_unpublished:
+        print(f"- {s} · **optimize** {rows[s]['optimized']} · bản live chưa đổi từ ngày đó")
+    if opt_unpublished:
+        pending = pending + [s for s in opt_unpublished if s not in pending]
     if pending:
         print(f"\nSau khi dán CMS: `python scripts/sync_live.py --only {','.join(live_slug(x) for x in pending)}` rồi chạy lại lệnh này.\n")
 
@@ -161,8 +246,8 @@ def report() -> int:
         for s in backfill:
             print(f"- `python scripts/find_links.py --backfill {s}`")
         print(f"\nGộp gợi ý của cả {len(backfill)} bài vào **1 spec** "
-              f"`knowledge/3-pipeline/internal-links/plans/{today.isoformat()}-weekly-backfill.json` "
-              "(quy tắc: internal-linking/SKILL.md §Quy tắc đặt link) → `python scripts/link_plan.py build <spec>` → sửa CMS một lượt "
+              f"`knowledge/3-seo/links/plans/{today.isoformat()}-weekly-backfill.json` "
+              "(quy tắc: link/references/playbook.md §Quy tắc đặt link) → `python scripts/link_plan.py build <spec>` → sửa CMS một lượt "
               "→ `sync_live.py --only <các bài nguồn>` → `link_plan.py verify <spec>` → "
               f"`python scripts/weekly_review.py --done backfill {' '.join(backfill)}`\n")
 
@@ -171,10 +256,38 @@ def report() -> int:
         print(f"- {s} · live {days} ngày · https://www.dsc.com.vn/kien-thuc/{live_slug(s)}")
     if gsc_due:
         print("\nVới từng bài: MCP `query_search_analytics` (property `sc-domain:dsc.com.vn`, dimensions [\"query\"], "
-              "page = URL trên, days 28) → `python scripts/dashboard_cache.py save page-queries <slug>`.\n"
+              "page = URL trên, days 14) → `python scripts/dashboard_cache.py save page-queries <slug>`.\n"
               "Quyết định: impressions có nhưng CTR < 1% ở vị trí 1–10 → `/optimize` Title/Meta · vị trí 11–30 → `/optimize` nội dung "
               "(query thiếu trong H2/FAQ) · < 50 impressions sau 8 tuần → kiểm index/cannibalization (`get_cannibalization`) · còn lại OK.\n"
               "Xong: `python scripts/weekly_review.py --done gsc <slug…>`. Bài cũ (seed): MCP `get_content_decay`.\n")
+
+    print(f"## 3b. Đo GSC sau optimize ({len(opt_gsc_due)})")
+    for s, days in sorted(opt_gsc_due, key=lambda x: -x[1]):
+        r = rows[s]
+        opt, live = d(r["optimized"]), d(r["optimize_live"])
+        b_from, b_to = opt - timedelta(days=GSC_FROM), opt - timedelta(days=1)
+        print(f"- {s} · optimize lần {r.get('optimize_count') or 1} · cập nhật live {days} ngày · "
+              f"baseline: {r.get('optimize_baseline') or '(chưa ghi)'}\n"
+              f"  before: {b_from} → {b_to} · after: {live + timedelta(days=1)} → ngày mới nhất GSC "
+              f"(cắt cùng số ngày với before, tối đa {GSC_FROM})")
+    if opt_gsc_due:
+        print("\nCùng truy vấn MCP như nhóm 3 (14 ngày gần nhất), so với baseline (baseline cũ 28 ngày → chia đôi clicks/imp): vị trí, clicks, impressions. "
+              "Tệ hơn baseline → `python scripts/article_snapshot.py <slug> --diff --from final.prev --to final` trước khi sửa tiếp.\n"
+              "Xong: `python scripts/weekly_review.py --done gsc <slug> --result \"pos … · clicks … · imp …\"` (tự ghi vào vòng optimize). "
+              "Lịch sử: `--outcomes`.\n")
+
+    upcoming = []
+    for s, r in rows.items():
+        for col, kind, checked in (("first_live", "bài mới", "gsc_checked"), ("optimize_live", "optimize", "optimize_gsc_checked")):
+            live = d(r.get(col, ""))
+            if live and not r.get(checked):
+                due = live + timedelta(days=GSC_FROM)
+                if today < due <= today + timedelta(days=UPCOMING_DAYS):
+                    upcoming.append((due, s, kind))
+    print(f"## 3c. Sắp đến hạn đo trong {UPCOMING_DAYS} ngày tới ({len(upcoming)})")
+    for due, s, kind in sorted(upcoming):
+        print(f"- {due.isoformat()} · {s} ({kind})")
+    print()
 
     print("## 4. Dọn dẹp")
     print("- `python scripts/rotate_revision_log.py` (revision-log chỉ giữ 30 ngày)")

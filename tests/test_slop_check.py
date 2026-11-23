@@ -47,7 +47,7 @@ def _write(dir_: Path, body: str) -> Path:
 class MeasureTest(unittest.TestCase):
     def test_fillers_do_not_buy_rhythm(self):
         long = "Nhà đầu tư cần theo dõi diễn biến tỷ giá và lãi suất điều hành trước khi giải ngân vào cổ phiếu."
-        clean = " ".join([long] * 6)
+        clean = " ".join([long] * 3)   # same long sentences as padded, without fillers
         padded = " ".join([long, "Đây là bước then chốt."] * 3)
         with tempfile.TemporaryDirectory() as d:
             m_clean = sc.measure(sc.Doc(_write(Path(d), clean + "\n")))

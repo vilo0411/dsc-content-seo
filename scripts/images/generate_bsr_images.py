@@ -114,8 +114,8 @@ def create_bsr_image():
     # Add watermark logo
     img = add_watermark_logo(img, is_dark_bg=True)
     
-    os.makedirs("knowledge/4-content/images", exist_ok=True)
-    out_path = "knowledge/4-content/images/co-phieu-bsr-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-nang-cap-dung-quat.jpg"
+    os.makedirs("knowledge/3-seo/content/images", exist_ok=True)
+    out_path = "knowledge/3-seo/content/images/co-phieu-bsr-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-nang-cap-dung-quat.jpg"
     img.save(out_path, "JPEG", quality=92)
     print(f"Created image: {out_path}")
 

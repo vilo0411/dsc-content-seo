@@ -1,183 +1,136 @@
-#!/usr/bin/env python3
-"""Read or update one article's status in topic-clusters.md without loading the file into the LLM.
+"""Read or update one article's pipeline status in the registry (strategy/pages.csv) without the LLM opening it.
 
 Usage:
-  python scripts/topic_status.py <slug>                    → print the matching row(s)
-  python scripts/topic_status.py <slug> --set "In Progress" → update the Trạng thái cell of that row
-  python scripts/topic_status.py --find "từ khóa"           → search rows by keyword text
+  python scripts/topic_status.py <slug>                    → print the matching row(s) (live slug or file slug)
+  python scripts/topic_status.py <slug> --set "Outlining"  → update its status
+  python scripts/topic_status.py --find "từ khóa"           → search main/secondary keywords, anchor, title
   python scripts/topic_status.py --list Optimizing          → list rows with a given status
-  python scripts/topic_status.py --summary                  → counts per cluster + rows not Finalized (/keyword-plan)
-  python scripts/topic_status.py <slug> --add --keyword "từ khóa" --cluster "tên cluster" [--set Outlining]
-                                                            → append a new row to that cluster (no file read by the LLM)
+  python scripts/topic_status.py --summary                  → cluster × status counts + every row in progress (/keyword-plan)
+  python scripts/topic_status.py <slug> --add --keyword "từ khóa" --cluster "3b | tên nhóm" [--set Planned]
+                                                            → add a planned article (cluster omitted → auto-classified)
 
-Slug is matched against the URL column (`/kien-thuc/<slug>/`). Exactly one row must match for --set.
-Statuses used in the pipeline: Planned · Outlining · Outline-Approved · Optimizing · Finalized
+Statuses: Planned · Outlining · Outline-Approved · Optimizing · Finalized · Merged · Live (published, never in this pipeline)
+Registry module and columns: scripts/registry.py
 """
-
 from __future__ import annotations
 
 import argparse
-import io
-import re
 import sys
-import unicodedata
 from pathlib import Path
 
-if hasattr(sys.stdout, "buffer"):
-    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import registry  # noqa: E402
+from _common import setup_utf8, unaccent  # noqa: E402
 
-ROOT = Path(__file__).resolve().parents[1]
-TOPIC_FILE = ROOT / "knowledge/4-content/topic-clusters.md"
-VALID_STATUS = {"Planned", "Outlining", "In Progress", "Outline-Approved", "Optimizing", "Finalized"}
-
-
-def unaccent(s: str) -> str:
-    s = s.replace("đ", "d").replace("Đ", "D")
-    return "".join(c for c in unicodedata.normalize("NFD", s) if unicodedata.category(c) != "Mn").lower()
+IN_PROGRESS = {"Planned", "Outlining", "Outline-Pending", "In Progress", "Outline-Approved", "Optimizing"}
 
 
-def parse_rows(lines: list[str]):
-    """Yield (line_index, cluster, url_slug, keyword, status, cells) for each data row."""
-    cluster = ""
-    for i, line in enumerate(lines):
-        if line.startswith("## "):
-            cluster = line[3:].strip()
-            continue
-        if not line.startswith("|"):
-            continue
-        cells = [c.strip() for c in line.strip().strip("|").split("|")]
-        if len(cells) < 4 or cells[0].startswith("URL") or set(cells[0]) <= set(":- "):
-            continue
-        url_cell = cells[0]
-        m = re.search(r"/kien-thuc/([^/\)\]`\s]+)", url_cell)
-        slug = m.group(1) if m else url_cell.strip("`")
-        yield i, cluster, slug, cells[1], cells[-1], cells
+def cl_label(r: dict) -> str:
+    return f"{r['subgroup'] or r['cluster']} {r['subgroup_name'] or r['cluster_name']}".strip()
 
 
-def fmt(cluster, slug, keyword, status):
-    return f"| {slug} | {keyword} | {status} | {cluster} |"
+def table(rows: list[dict]) -> None:
+    print("| Slug | File slug | Keyword | Trạng thái | Live | Cluster |\n|---|---|---|---|---|---|")
+    for r in rows:
+        fs = r["file_slug"] if r["file_slug"] and r["file_slug"] != r["slug"] else ""
+        print(f"| {r['slug']} | {fs} | {r['key_chinh'] or r['anchor']} | {r['status']} | {r['live']} | {cl_label(r)} |")
 
 
-def main():
+def main() -> int:
+    setup_utf8()
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("slug", nargs="?")
     ap.add_argument("--set", metavar="STATUS", help="New status for the matched row")
-    ap.add_argument("--find", metavar="TEXT", help="Search keyword column (accent-insensitive)")
+    ap.add_argument("--find", metavar="TEXT", help="Search keywords / anchor / title (accent-insensitive)")
     ap.add_argument("--list", metavar="STATUS", help="List all rows with this status")
-    ap.add_argument("--summary", action="store_true",
-                    help="Counts per cluster × status + every row not yet Finalized (input for /keyword-plan)")
-    ap.add_argument("--add", action="store_true", help="Append a new row for <slug> (needs --keyword and --cluster)")
-    ap.add_argument("--keyword", help="Keyword / topic text for --add")
-    ap.add_argument("--cluster", help="Cluster heading to add under (accent-insensitive substring) for --add")
+    ap.add_argument("--summary", action="store_true", help="Cluster × status counts + rows in progress")
+    ap.add_argument("--add", action="store_true", help="Add a planned article <slug> (needs --keyword)")
+    ap.add_argument("--keyword", help="Main keyword for --add")
+    ap.add_argument("--cluster", help="Subgroup code (3b) or cluster/subgroup name for --add; omitted = auto")
     args = ap.parse_args()
-
-    if not TOPIC_FILE.exists():
-        print(f"Không tìm thấy {TOPIC_FILE}", file=sys.stderr)
-        sys.exit(2)
-    raw = TOPIC_FILE.read_bytes()
-    nl = "\r\n" if b"\r\n" in raw else "\n"  # preserve the file's line endings on write
-    text = raw.decode("utf-8")
-    lines = text.split(nl)
-    rows = list(parse_rows(lines))
+    rows = registry.load()
 
     if args.summary:
-        statuses = sorted({r[4] for r in rows}, key=lambda s: (s != "Finalized", s))
+        statuses = [s for s in registry.STATUSES if any(r["status"] == s for r in rows)]
         per: dict[str, dict[str, int]] = {}
-        for _, cl, _, _, st, _ in rows:
-            per.setdefault(cl, {}).setdefault(st, 0)
-            per[cl][st] += 1
-        print(f"# {len(rows)} bài · {len(per)} cluster\n")
+        for r in rows:
+            key = f"{r['cluster']} {r['cluster_name']}".strip() or "(chưa có cluster)"
+            per.setdefault(key, {}).setdefault(r["status"], 0)
+            per[key][r["status"]] += 1
+        print(f"# {len(rows)} bài · {len(per)} cluster (Live = bài cũ chưa qua pipeline)\n")
         print("| Cluster | " + " | ".join(statuses) + " |\n|---|" + "---|" * len(statuses))
-        for cl, cnt in per.items():
-            print(f"| {cl} | " + " | ".join(str(cnt.get(s, 0)) for s in statuses) + " |")
-        todo = [r for r in rows if r[4] != "Finalized"]
-        print(f"\n## {len(todo)} bài chưa Finalized (cột Volume nếu có)\n\n| Slug | Keyword | Volume | Trạng thái | Cluster |\n|---|---|---|---|---|")
-        for _, cl, slug, kw, st, cells in todo:
-            vol = cells[2] if len(cells) >= 4 else "-"
-            print(f"| {slug} | {kw} | {vol} | {st} | {cl} |")
-        return
+        for key in sorted(per, key=lambda k: registry._cluster_key(k.split(" ")[0])):
+            print(f"| {key} | " + " | ".join(str(per[key].get(s, 0)) for s in statuses) + " |")
+        todo = [r for r in rows if r["status"] in IN_PROGRESS]
+        print(f"\n## {len(todo)} bài đang làm\n")
+        table(todo)
+        return 0
 
     if args.list:
-        hits = [r for r in rows if r[4].lower() == args.list.lower()]
-        print(f"# {len(hits)} bài ở trạng thái {args.list}\n\n| Slug | Keyword | Trạng thái | Cluster |\n|---|---|---|---|")
-        for _, cl, slug, kw, st, _ in hits:
-            print(fmt(cl, slug, kw, st))
-        return
+        hits = [r for r in rows if r["status"].lower() == args.list.lower()]
+        print(f"# {len(hits)} bài ở trạng thái {args.list}\n")
+        table(hits)
+        return 0
 
     if args.find:
-        q = unaccent(args.find)
-        hits = [r for r in rows if q in unaccent(r[3]) or q in unaccent(r[2])]
-        print(f"# {len(hits)} dòng khớp “{args.find}”\n\n| Slug | Keyword | Trạng thái | Cluster |\n|---|---|---|---|")
-        for _, cl, slug, kw, st, _ in hits[:20]:
-            print(fmt(cl, slug, kw, st))
-        return
+        words = unaccent(args.find).split()
+        def hay(r):
+            return set(unaccent(registry.terms(r)).replace("|", " ").split()) | set(r["slug"].split("-"))
+        hits = [r for r in rows if all(w in hay(r) for w in words)]
+        print(f"# {len(hits)} dòng khớp “{args.find}”\n")
+        table(hits[:20])
+        return 0
 
     if not args.slug:
-        ap.error("cần <slug>, --find hoặc --list")
-
+        ap.error("cần <slug>, --find, --list hoặc --summary")
     slug = args.slug.strip("/").split("/")[-1]
+
     if args.add:
-        if any(r[2] == slug for r in rows):
+        if registry.find(rows, slug) and any(slug in (r["slug"], r["file_slug"]) for r in rows):
             print(f"Đã có dòng cho '{slug}' — dùng --set để đổi trạng thái.", file=sys.stderr)
-            sys.exit(1)
-        if not args.keyword or not args.cluster:
-            ap.error("--add cần --keyword và --cluster")
-        heads = [(i, l[3:].strip()) for i, l in enumerate(lines) if l.startswith("## ")]
-        match = [(i, h) for i, h in heads if unaccent(args.cluster) in unaccent(h)]
-        if len(match) != 1:
-            print(f"--cluster '{args.cluster}' khớp {len(match)} cluster. Các cluster hiện có:", file=sys.stderr)
-            for _, h in heads:
-                print("  " + h, file=sys.stderr)
-            sys.exit(1)
-        head_idx = match[0][0]
-        in_cluster = [r[0] for r in rows if head_idx < r[0] and not any(head_idx < i <= r[0] for i, _ in heads if i != head_idx)]
-        if not in_cluster:
-            print(f"Cluster '{match[0][1]}' chưa có bảng — thêm tay 1 lần.", file=sys.stderr)
-            sys.exit(1)
-        status = (args.set or "Planned").strip()
-        lines.insert(max(in_cluster) + 1, f"| `/kien-thuc/{slug}/` | {args.keyword} | - | {status} |")
-        TOPIC_FILE.write_bytes(nl.join(lines).encode("utf-8"))
-        print(f"Đã thêm: {slug} · {args.keyword} · {status} · {match[0][1]}")
-        return
-    hits = [r for r in rows if r[2] == slug]
-    if not hits:
-        # fallback: substring match on slug
-        hits = [r for r in rows if slug in r[2]]
-    if not hits:
-        print(f"Không có dòng nào cho slug '{slug}' trong topic-clusters.md. "
-              f"Thêm dòng mới vào cluster phù hợp trước khi đổi trạng thái.", file=sys.stderr)
-        sys.exit(1)
+            return 1
+        if not args.keyword:
+            ap.error("--add cần --keyword")
+        row = {k: "" for k in registry.FIELDS} | {"slug": slug, "file_slug": slug, "live": "no",
+                                                   "status": (args.set or "Planned").strip(), "key_chinh": args.keyword}
+        if args.cluster:
+            hit = registry.match_cluster(rows, args.cluster)
+            if not hit:
+                names = sorted({f"{r['subgroup']} {r['subgroup_name']}" for r in rows if r["subgroup"]})
+                print(f"--cluster '{args.cluster}' không khớp đúng 1 nhóm. Nhóm hiện có:\n  " + "\n  ".join(names), file=sys.stderr)
+                return 1
+            row["cluster"], row["cluster_name"], row["subgroup"], row["subgroup_name"] = hit
+        else:
+            row["cluster"], row["cluster_name"], row["subgroup"], row["subgroup_name"] = registry._classify(slug, args.keyword)
+        rows.append(row)
+        registry.save(rows)
+        print(f"Đã thêm: {slug} · {args.keyword} · {row['status']} · {cl_label(row) or '(chưa có cluster — thêm --cluster)'}")
+        return 0
 
+    hits = registry.find(rows, slug)
+    if not hits:
+        print(f"Không có dòng nào cho '{slug}' trong registry. Bài mới: thêm --add --keyword \"…\".", file=sys.stderr)
+        return 1
     if args.set is None:
-        print("| Slug | Keyword | Trạng thái | Cluster |\n|---|---|---|---|")
-        for _, cl, s, kw, st, _ in hits:
-            print(fmt(cl, s, kw, st))
-        return
-
+        table(hits)
+        return 0
     if len(hits) > 1:
         print(f"{len(hits)} dòng khớp '{slug}' — không thể --set. Dùng slug đầy đủ:", file=sys.stderr)
-        for _, cl, s, kw, st, _ in hits:
-            print(f"  {s}  ({st})", file=sys.stderr)
-        sys.exit(1)
-
-    new_status = args.set.strip()
-    if new_status not in VALID_STATUS:
-        print(f"Cảnh báo: '{new_status}' không nằm trong {sorted(VALID_STATUS)} — vẫn ghi.", file=sys.stderr)
-
-    idx, cl, s, kw, old, cells = hits[0]
-    if old == new_status:
-        print(f"Không đổi: {s} đã ở trạng thái {old}")
-        return
-    line = lines[idx]
-    # Replace only the last cell content, preserving original spacing style
-    new_line = re.sub(r"\|\s*" + re.escape(old) + r"\s*\|\s*$", f"| {new_status} |", line)
-    if new_line == line:
-        print("Không thay được ô trạng thái (format dòng không chuẩn):\n" + line, file=sys.stderr)
-        sys.exit(1)
-    lines[idx] = new_line
-    TOPIC_FILE.write_bytes(nl.join(lines).encode("utf-8"))
-    print(f"Đã cập nhật {s}: {old} → {new_status} (dòng {idx + 1}, {cl})")
+        for r in hits:
+            print(f"  {r['slug']}  ({r['status']})", file=sys.stderr)
+        return 1
+    new = args.set.strip()
+    if new not in registry.STATUSES:
+        print(f"Cảnh báo: '{new}' không nằm trong {registry.STATUSES} — vẫn ghi.", file=sys.stderr)
+    r = hits[0]
+    if r["status"] == new:
+        print(f"Không đổi: {r['slug']} đã ở trạng thái {new}")
+        return 0
+    old, r["status"] = r["status"], new
+    registry.save(rows)
+    print(f"Đã cập nhật {r['slug']}: {old} → {new} ({cl_label(r)})")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

@@ -1,17 +1,17 @@
 ---
 name: setup
-description: Build Knowledge Base cho hệ thống content pipeline.
+description: "Dựng Knowledge Base lần đầu (profile, ICP, persona, glossary, rules) qua Research Agent. Chỉ dùng khi khởi tạo project mới hoặc user yêu cầu xây lại knowledge/1-brand."
 ---
 
-# Khởi Tạo Knowledge Base
+# Setup Knowledge Base
 
-## Nhiệm vụ
-Khởi tạo và xây dựng Knowledge Base cho hệ thống.
+`/setup [company | audience | rules | all]` — chạy 1 lần khi khởi tạo project, hoặc khi user yêu cầu dựng lại. Vai trò thực hiện: `.agents/skills/setup/references/research-agent.md`.
 
-## Quy trình thực thi
-1. Gọi **Research Agent** để thu thập thông tin.
-2. Nếu tham số là `company`, thu thập Profile công ty. Lưu vào `knowledge/1-brand/profile.md`.
-3. Nếu tham số là `audience` hoặc `icp`, định hình chân dung khách hàng. Lưu vào `knowledge/2-market/persona.md`.
-4. Thiết lập các quy tắc viết bài và glossary lưu vào `knowledge/3-pipeline/`.
-5. Nếu tham số là `all`, chạy toàn bộ quy trình thiết lập.
-6. Lưu kết quả chuẩn hóa vào cấu trúc thư mục `knowledge/`.
+| Tham số | Việc | Ghi vào |
+|---|---|---|
+| `company` | Hồ sơ công ty, sản phẩm, USP, tone | `knowledge/1-brand/profile.md` · fact có số → `knowledge/1-brand/brand-facts.json` |
+| `audience` | ICP + persona P1–P4 | `knowledge/1-brand/icp.md` · `knowledge/1-brand/personas.md` |
+| `rules` | Rule văn + glossary (từ template) | `knowledge/1-brand/anti-ai-rules.md` · `knowledge/1-brand/glossary.md` (mẫu: `.agents/templates/1-brand/`) |
+| `all` | Cả 3, rồi cập nhật `.agents/context.md` cho khớp | |
+
+Ghi `Status: Assumed ⚠️` cho thông tin chưa được user xác nhận; câu hỏi cần lãnh đạo chốt → `knowledge/1-brand/confirm-with-leadership.md`. Không ghi đè file đã có `Status: Verified` khi chưa hỏi user.

@@ -1,0 +1,57 @@
+{
+  "_doc": "Competitors watched by scripts/competitor_watch.py. hub = folder of their articles ('/' = site root); listing = page to crawl when the sitemap misses articles; source = serp (from discover) | manual.",
+  "competitors": [
+    {
+      "name": "VPBankS",
+      "domain": "www.vpbanks.com.vn",
+      "hub": "/trung-tam-kien-thuc/",
+      "listing": "",
+      "source": "manual",
+      "added": "2026-11-19"
+    },
+    {
+      "name": "VCBS",
+      "domain": "www.vcbs.com.vn",
+      "hub": "/chi-tiet-kien-thuc-co-ban/",
+      "listing": "https://www.vcbs.com.vn/kien-thuc-co-ban",
+      "source": "serp",
+      "added": "2026-11-19",
+      "disabled": true,
+      "note": "Chưa theo dõi tự động: sitemap thiếu /chi-tiet-kien-thuc-co-ban/, trang danh sách render JS. Cần trình duyệt hoặc theo dõi qua thứ hạng (DataForSEO)."
+    },
+    {
+      "name": "DNSE",
+      "domain": "www.dnse.com.vn",
+      "hub": "/hoc/",
+      "listing": "",
+      "source": "serp",
+      "added": "2026-11-19",
+      "note": "Chưa theo dõi tự động: bài /hoc/ và /senses/tin-tuc/ không có trong sitemap (sitemap chỉ có trang dữ liệu mã CK), trang danh sách render JS.",
+      "disabled": true
+    },
+    {
+      "name": "ACBS",
+      "domain": "acbs.com.vn",
+      "hub": "/blog/",
+      "listing": "",
+      "source": "serp",
+      "added": "2026-11-19"
+    },
+    {
+      "name": "Vietcap",
+      "domain": "www.vietcap.com.vn",
+      "hub": "/kien-thuc/",
+      "listing": "",
+      "source": "serp",
+      "added": "2026-11-19"
+    },
+    {
+      "name": "VFS",
+      "domain": "www.vfs.com.vn",
+      "hub": "/",
+      "listing": "",
+      "source": "serp",
+      "added": "2026-11-19"
+    }
+  ]
+}

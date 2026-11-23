@@ -81,8 +81,8 @@ def create_image_1():
         draw.ellipse([nx-8, ny-8, nx+8, ny+8], fill="#48F28A", outline="#FFFFFF", width=2)
         
     img = add_watermark_logo(img, is_dark_bg=True)
-    os.makedirs('knowledge/4-content/images', exist_ok=True)
-    out_path = 'knowledge/4-content/images/chi-so-dxy-la-gi-dien-bien-vi-mo.jpg'
+    os.makedirs('knowledge/3-seo/content/images', exist_ok=True)
+    out_path = 'knowledge/3-seo/content/images/chi-so-dxy-la-gi-dien-bien-vi-mo.jpg'
     img.save(out_path, quality=95)
     print(f"Created {out_path}")
 
@@ -112,7 +112,7 @@ def create_image_2():
         draw_3d_cube(draw, cx, cy, sz, c_top, c_left, c_right)
         
     img = add_watermark_logo(img, is_dark_bg=True)
-    out_path = 'knowledge/4-content/images/chi-so-dxy-la-gi-tac-dong-chung-khoan.jpg'
+    out_path = 'knowledge/3-seo/content/images/chi-so-dxy-la-gi-tac-dong-chung-khoan.jpg'
     img.save(out_path, quality=95)
     print(f"Created {out_path}")
 

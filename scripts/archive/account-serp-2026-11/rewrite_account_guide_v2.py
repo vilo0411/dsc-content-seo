@@ -6,9 +6,9 @@ from markdownify import markdownify
 sys.stdout.reconfigure(encoding="utf-8")
 ROOT=Path(__file__).resolve().parents[1]
 slug="cach-mo-tai-khoan-chung-khoan"
-OUT=ROOT/"knowledge/4-content/audits/account-serp-2026-11-04/v2"
-DRAFT=ROOT/"knowledge/4-content/2-drafts/serp-2026-11-04-v2"/("Optimize-"+slug+".md")
-PROP=ROOT/"knowledge/4-content/1-outlines/serp-2026-11-04-v2"/("Proposal-"+slug+".md")
+OUT=ROOT/"knowledge/3-seo/content/audits/account-serp-2026-11-04/v2"
+DRAFT=ROOT/"knowledge/3-seo/content/2-drafts/serp-2026-11-04-v2"/("Optimize-"+slug+".md")
+PROP=ROOT/"knowledge/3-seo/content/1-outlines/serp-2026-11-04-v2"/("Proposal-"+slug+".md")
 for p in [OUT,DRAFT.parent,PROP.parent]:p.mkdir(parents=True,exist_ok=True)
 live=(ROOT/"knowledge/raw/live/html"/(slug+".html")).read_text(encoding="utf-8")
 source=BeautifulSoup(live,"html.parser")
@@ -177,7 +177,7 @@ body=r"""<p>Cách mở tài khoản chứng khoán online gồm 3 bước: đăn
 %%CTA%%
 <p><strong>Tuyên bố miễn trừ trách nhiệm:</strong> Nội dung mang tính hướng dẫn và tham khảo, không phải khuyến nghị mua bán chứng khoán. Bạn tự quyết định và chịu trách nhiệm với giao dịch của mình.</p>
 """
-templates=(ROOT/".antigravity/skills/cro-optimization/assets/banner-templates.md").read_text(encoding="utf-8")
+templates=(ROOT/".agents/skills/cro/references/banner-templates.md").read_text(encoding="utf-8")
 banners=re.findall(r"\x60\x60\x60html\n(.*?)\n\x60\x60\x60",templates,re.S)
 cta=banners[2].replace("{{HEADLINE}}","Đăng ký tài khoản trên kênh chính thức DSC").replace("{{SUB}}","eKYC khoảng 3 phút • CCCD gắn chip • Ký hợp đồng điện tử").replace("{{BUTTON}}","Mở tài khoản DSC").replace("{{URL}}","https://www.dsc.com.vn/mo-tai-khoan")
 for i,img in enumerate(imgs):body=body.replace("%%IMG"+str(i)+"%%",img)

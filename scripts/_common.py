@@ -14,23 +14,25 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 # Canonical project paths (single place to change if the layout moves)
-CONTENT = ROOT / "knowledge/4-content"
+CONTENT = ROOT / "knowledge/3-seo/content"
 SOURCES_DIR = CONTENT / "0-sources"
 OUTLINES_DIR = CONTENT / "1-outlines"
 PROPOSALS_DIR = CONTENT / "1-outlines"  # Proposal-*.md live next to outlines (1-proposals/ merged 2026-11-03)
 DRAFTS_DIR = CONTENT / "2-drafts"
 FINAL_DIR = CONTENT / "3-finalized"
-TOPIC_FILE = CONTENT / "topic-clusters.md"
-BACKLOG_FILE = CONTENT / "sprint-backlog.md"
-PIPELINE_DIR = ROOT / "knowledge/3-pipeline"
-ANCHOR_INDEX = PIPELINE_DIR / "internal-links" / "anchor-index.md"
-REVISION_LOG = PIPELINE_DIR / "revision-log.md"
-ANTI_AI_RULES = PIPELINE_DIR / "anti-ai-rules.md"
-BLACKLIST_FILE = PIPELINE_DIR / "anti-ai-rules-blacklist.md"
-GLOSSARY_FILE = PIPELINE_DIR / "glossary.md"
-SITEMAP_CACHE = ROOT / ".antigravity/skills/internal-linking/scripts/sitemap-cache.json"
-WORDCOUNT_DIR = ROOT / ".antigravity/skills/qa-qc"
-MEMORY_DIR = ROOT / ".antigravity/memory"
+STRATEGY_DIR = ROOT / "knowledge/3-seo/strategy"
+REGISTRY = STRATEGY_DIR / "pages.csv"  # one row per article URL (scripts/registry.py)
+BACKLOG_FILE = STRATEGY_DIR / "sprint-backlog.md"
+BRAND_DIR = ROOT / "knowledge/1-brand"
+PIPELINE_DIR = ROOT / "knowledge/3-seo"  # all SEO: strategy/ content/ links/ logs/ (2026-11-19)
+LOGS_DIR = PIPELINE_DIR / "logs"
+REVISION_LOG = LOGS_DIR / "revision-log.md"
+ANTI_AI_RULES = BRAND_DIR / "anti-ai-rules.md"
+BLACKLIST_FILE = BRAND_DIR / "anti-ai-rules-blacklist.md"
+GLOSSARY_FILE = BRAND_DIR / "glossary.md"
+SITEMAP_CACHE = ROOT / ".agents/skills/link/scripts/sitemap-cache.json"
+WORDCOUNT_DIR = ROOT / "scripts"
+MEMORY_DIR = ROOT / ".agents/memory"
 
 HOST = "https://www.dsc.com.vn"
 OPEN_ACCOUNT_URL = f"{HOST}/mo-tai-khoan"

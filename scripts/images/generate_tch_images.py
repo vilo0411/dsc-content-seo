@@ -118,7 +118,7 @@ def create_tch_image():
     # Watermark logo
     img = add_watermark_logo(img, is_dark_bg=True)
     
-    out_dir = "knowledge/4-content/images"
+    out_dir = "knowledge/3-seo/content/images"
     os.makedirs(out_dir, exist_ok=True)
     out_path = os.path.join(out_dir, "co-phieu-tch-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-quy-dat-hai-phong.jpg")
     img.save(out_path, format="JPEG", quality=92)

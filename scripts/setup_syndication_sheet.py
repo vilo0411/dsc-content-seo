@@ -11,7 +11,7 @@ TARGET = '1urr2pvtQRWof_uC-X3RA_D6EMUvHLRhZJbx1PS1TBY0'
 
 def main():
     credentials = Credentials.from_service_account_file(
-        str(ROOT/'gen-lang-client-0863794209-385c2ddf2422.json'),
+        str(ROOT/'.agents/config/gen-lang-client-0863794209-385c2ddf2422.json'),
         scopes=['https://www.googleapis.com/auth/spreadsheets'])
     session = AuthorizedSession(credentials)
     endpoint = f'https://sheets.googleapis.com/v4/spreadsheets/{TARGET}'
@@ -55,7 +55,7 @@ def main():
         result=call('GET',endpoint+'/values/'+requests_quote(name+'!A1:S12'))
         assert result.get('values'), f'{name}: readback empty'
     config=json.loads((BASE/'config.json').read_text(encoding='utf-8'))
-    config.update(spreadsheet_id=TARGET,tabs={n:existing[n] for n in names},auth_mode='service_account',credentials_file='gen-lang-client-0863794209-385c2ddf2422.json')
+    config.update(spreadsheet_id=TARGET,tabs={n:existing[n] for n in names},auth_mode='service_account',credentials_file='.agents/config/gen-lang-client-0863794209-385c2ddf2422.json')
     (BASE/'config.json').write_text(json.dumps(config,indent=2),encoding='utf-8')
     for path in [BASE/'playbook.md']:
         path.write_text(path.read_text(encoding='utf-8').replace('1nWu0TSVzChCOtW57z4OLZxHidJzDJqwLS08XA2drGUk',TARGET),encoding='utf-8')

@@ -49,7 +49,7 @@ from _common import ROOT, setup_utf8  # noqa: E402
 
 LIVE = ROOT / "knowledge/raw/live"
 LIVE_HTML = LIVE / "html"
-CLUSTERS = ROOT / "knowledge/3-pipeline/internal-links/link-clusters.json"
+CLUSTERS = ROOT / "knowledge/3-seo/strategy/taxonomy.json"
 GSC_PAGES = ROOT / "knowledge/raw/gsc/pages.csv"
 KB = "https://www.dsc.com.vn/kien-thuc/"
 UA = "Mozilla/5.0 (compatible; DSC-content-snapshot/1.0)"
@@ -116,7 +116,9 @@ def cmd_candidates(args) -> None:
         for g in c["groups"]:
             for sp in ([g["hub"]] if g.get("hub") else []) + g["spokes"]:
                 need = []
-                if c.get("pillar") and not g.get("pillar_exempt") and c["pillar"] not in ctx[sp]:
+                # pillar_hubs_only: spokes of a group with a hub link the hub, not the pillar
+                hubs_only_spoke = c.get("pillar_hubs_only") and g.get("hub") and sp != g["hub"]
+                if c.get("pillar") and not hubs_only_spoke and not g.get("pillar_exempt") and c["pillar"] not in ctx[sp]:
                     need.append(("pillar", c["pillar"]))
                 if g.get("hub") and sp != g["hub"] and g["hub"] not in ctx[sp]:
                     need.append(("hub", g["hub"]))

@@ -2,8 +2,8 @@
 """Aggregate People Also Ask + Related Searches from cached SERP files into an opportunity report.
 
 Reads every knowledge/raw/serp/*.json written by serp_research.py (0 API calls), dedupes the
-questions/keywords, matches each against existing DSC articles (sitemap-cache + anchor-index)
-and writes knowledge/3-pipeline/serp-opportunities.md:
+questions/keywords, matches each against existing DSC articles (sitemap-cache + registry pages.csv)
+and writes knowledge/3-seo/strategy/serp-opportunities.md:
 
     1. Chưa có bài        -> input for /keyword-plan, /cluster
     2. Có bài, chưa giữ PAA -> input for /optimize (add/refresh FAQ)
@@ -16,6 +16,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import csv
 import glob
 import json
 import re
@@ -30,9 +31,9 @@ if hasattr(sys.stdout, "reconfigure"):
 
 ROOT = Path(__file__).resolve().parent.parent
 SERP_DIR = ROOT / "knowledge/raw/serp"
-SITEMAP_CACHE = ROOT / ".antigravity/skills/internal-linking/scripts/sitemap-cache.json"
-ANCHOR_INDEX = ROOT / "knowledge/3-pipeline/internal-links/anchor-index.md"
-OUT = ROOT / "knowledge/3-pipeline/serp-opportunities.md"
+SITEMAP_CACHE = ROOT / ".agents/skills/link/scripts/sitemap-cache.json"
+REGISTRY = ROOT / "knowledge/3-seo/strategy/pages.csv"
+OUT = ROOT / "knowledge/3-seo/strategy/serp-opportunities.md"
 OWN_DOMAIN = "dsc.com.vn"
 MATCH_RATIO = 0.7   # share of query content-words that must appear in an article slug/anchor
 BIGRAM_RATIO = 0.6  # share of query bigrams that must appear too (keeps compound terms apart)
@@ -60,7 +61,7 @@ def bigrams(words: list[str]) -> set[tuple[str, str]]:
 
 
 def load_articles() -> list[tuple[str, set[str], set[tuple[str, str]]]]:
-    """(url, words, bigrams) for every known DSC article: sitemap slugs + anchor-index anchors/titles.
+    """(url, words, bigrams) for every known DSC article: sitemap slugs + registry anchors/keywords/titles.
 
     Bigrams keep compound terms apart (chứng khoán ≠ chứng chỉ quỹ) where single words collide."""
     arts: dict[str, tuple[set, set]] = {}
@@ -75,19 +76,16 @@ def load_articles() -> list[tuple[str, set[str], set[tuple[str, str]]]]:
         for u in json.loads(SITEMAP_CACHE.read_text(encoding="utf-8")).get("urls", []):
             u = u.rstrip("/")
             add(u, u.rsplit("/", 1)[-1].replace("-", " "))
-    if ANCHOR_INDEX.exists():
-        for line in ANCHOR_INDEX.read_text(encoding="utf-8").splitlines():
-            if "dsc.com.vn/" not in line or not line.startswith("|"):
-                continue
-            cells = [c.strip() for c in line.strip("|").split("|")]
-            url = next((c for c in cells if c.startswith("http")), None)
-            if not url:
-                continue
-            url = url.rstrip("/")
-            add(url, url.rsplit("/", 1)[-1].replace("-", " "))
-            for c in cells:
-                if not c.startswith("http"):
-                    add(url, c)
+    if REGISTRY.exists():
+        with REGISTRY.open(encoding="utf-8-sig", newline="") as f:
+            for r in csv.DictReader(f):
+                if r.get("status") == "Merged":
+                    continue
+                url = "https://www.dsc.com.vn/kien-thuc/" + r["slug"]
+                add(url, r["slug"].replace("-", " "))
+                for c in (r.get("anchor"), r.get("key_chinh"), r.get("key_phu"), r.get("keywords"), r.get("title")):
+                    if c:
+                        add(url, c)
     return [(u, uni, bi) for u, (uni, bi) in arts.items()]
 
 

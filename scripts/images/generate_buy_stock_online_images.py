@@ -85,7 +85,7 @@ def create_5step_pipeline_image():
         draw.ellipse([(cx - 12, orb_y - 12), (cx + 12, orb_y + 12)], fill="#E8F8F2", outline="#2BE841", width=2)
         
     img = add_watermark_logo(img, is_dark_bg=True)
-    out_dir = "knowledge/4-content/images"
+    out_dir = "knowledge/3-seo/content/images"
     os.makedirs(out_dir, exist_ok=True)
     out_path = os.path.join(out_dir, "cach-mua-co-phieu-online-cho-nguoi-moi-bat-dau-quy-trinh-5-buoc.jpg")
     img.save(out_path, quality=95)
@@ -116,7 +116,7 @@ def create_capital_calculation_image():
         draw.ellipse([(cx - 25, top_y - 12), (cx + 25, top_y + 12)], fill=c_top, outline="#2BE841", width=2)
         
     img = add_watermark_logo(img, is_dark_bg=True)
-    out_dir = "knowledge/4-content/images"
+    out_dir = "knowledge/3-seo/content/images"
     os.makedirs(out_dir, exist_ok=True)
     out_path = os.path.join(out_dir, "cach-mua-co-phieu-online-cho-nguoi-moi-bat-dau-bang-tinh-von.jpg")
     img.save(out_path, quality=95)

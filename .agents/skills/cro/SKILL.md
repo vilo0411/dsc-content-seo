@@ -1,12 +1,12 @@
 ---
 name: cro
-description: Tối ưu chuyển đổi — audit CTA, dựng Product Bridge, chèn banner đúng persona, sinh biến thể A/B.
+description: "Tầng chuyển đổi TRONG bài SEO: audit CTA, dựng Product Bridge, chèn banner mở tài khoản đúng persona, biến thể A/B (--audit-all, --apply). Dùng khi hỏi CTA/banner/chuyển đổi của bài viết. Viết cả trang đích thì dùng /copy-landing."
 ---
 
 # Tối Ưu Chuyển Đổi (CRO)
 
 ## Options Hỗ Trợ
-- `--audit-all`: Quét toàn bộ `knowledge/4-content/3-finalized/`, ra bảng xếp hạng bài cần vá trước. **Chỉ báo cáo, không ghi file.**
+- `--audit-all`: Quét toàn bộ `knowledge/3-seo/content/3-finalized/`, ra bảng xếp hạng bài cần vá trước. **Chỉ báo cáo, không ghi file.**
 - `--variants N`: Sinh N biến thể banner/copy cho bài để A/B test.
 - `--apply`: Ghi thay đổi vào file. Mặc định chỉ trình bày và dừng ở approval gate.
 - `--utm`: Gắn UTM vào link CTA. Mặc định **tắt**.
@@ -21,9 +21,9 @@ Chèn tầng chuyển đổi vào bài viết: đoạn Product Bridge dẫn từ
 
 ### 🔄 Bước 0: System Context Load (BẮT BUỘC — trước mọi bước)
 1. `knowledge/1-brand/profile.md`
-2. `knowledge/3-pipeline/anti-ai-rules.md` — bước dựng Product Bridge là viết văn xuôi, không có exception
-3. `.antigravity/rules/cta-conversion.md` — rule cứng về CTA
-4. `.antigravity/memory/instincts.md` — bản rút gọn
+2. `knowledge/1-brand/anti-ai-rules.md` — bước dựng Product Bridge là viết văn xuôi, không có exception
+3. `.agents/rules/cta-conversion.md` — rule cứng về CTA
+4. `.agents/memory/instincts.md` — bản rút gọn
 5. Persona của bài (xác định ở Bước 2) — `python scripts/persona.py P<n> --part bridge` (+ `--part tone` nếu viết đoạn dẫn); ma trận CTA: `python scripts/persona.py --matrix`
 
 > Đây là lần load context **duy nhất** trong session. Các bước sau không đọc lại.
@@ -36,7 +36,7 @@ Chèn tầng chuyển đổi vào bài viết: đoạn Product Bridge dẫn từ
 `/cro` nhận **file path, slug, hoặc URL** — script tự phân giải, bạn không cần tra trước:
 
 ```bash
-python scripts/cta_audit.py knowledge/4-content/3-finalized/Final-[slug].md   # file local
+python scripts/cta_audit.py knowledge/3-seo/content/3-finalized/Final-[slug].md   # file local
 python scripts/cta_audit.py [slug]                                            # slug
 python scripts/cta_audit.py https://www.dsc.com.vn/kien-thuc/[slug]           # URL
 ```
@@ -62,7 +62,7 @@ Chế độ `--audit-all` **kết thúc ở đây** — trình bày bảng kèm 
 
 ### ⚙️ Bước 2: Xác định persona & cường độ CTA
 
-- Kích hoạt skill `.antigravity/skills/cro-optimization/SKILL.md` → Bước 2.
+- Kích hoạt skill `.agents/skills/cro/references/playbook.md` → Bước 2.
 - Đọc `Persona` từ frontmatter. Thiếu → suy từ intent bài rồi ghi bổ sung vào frontmatter.
 - Tra cường độ nút + giới hạn số banner theo persona.
 
@@ -72,7 +72,7 @@ Chế độ `--audit-all` **kết thúc ở đây** — trình bày bảng kèm 
 
 ### ⚙️ Bước 3: Dựng Product Bridge (nếu bài chưa có)
 
-- Kích hoạt `.antigravity/skills/cro-optimization/SKILL.md` → Bước 3.
+- Kích hoạt `.agents/skills/cro/references/playbook.md` → Bước 3.
 - Luận điểm lấy từ "Góc dẫn dắt" của persona. **Không tự nghĩ.**
 - Bài đã có đoạn cầu nối hợp lý → giữ nguyên văn cũ, bỏ qua bước này.
 
@@ -80,8 +80,8 @@ Chế độ `--audit-all` **kết thúc ở đây** — trình bày bảng kèm 
 
 ### ⚙️ Bước 4: Chọn template, viết copy, chèn
 
-- Kích hoạt `.antigravity/skills/cro-optimization/SKILL.md` → Bước 4 & 5.
-- Template ở `.antigravity/skills/cro-optimization/assets/banner-templates.md`.
+- Kích hoạt `.agents/skills/cro/references/playbook.md` → Bước 4 & 5.
+- Template ở `.agents/skills/cro/references/banner-templates.md`.
 - Có `--variants N` → sinh N biến thể, mỗi biến thể đổi đúng một biến.
 
 **⚠️ Chỉ sửa đúng hai thứ:** đoạn Product Bridge mới và khối banner. Giữ nguyên 100% nội dung, ảnh, và link đang có.
@@ -100,7 +100,7 @@ python scripts/cta_audit.py [file]
 python scripts/qa_lint.py [file] --cta --no-sitemap
 ```
 
-Sau đó Self-Audit ngữ nghĩa theo checklist trong `.antigravity/skills/cro-optimization/SKILL.md`.
+Sau đó Self-Audit ngữ nghĩa theo checklist trong `.agents/skills/cro/references/playbook.md`.
 
 **Giới hạn vòng lặp:** FAIL → sửa → QA lại **tối đa 2 vòng**. Vẫn FAIL → dừng, trình bày kèm `⚠️ Remaining issues`. Không tự lặp vòng 3.
 
@@ -123,7 +123,7 @@ Sau đó Self-Audit ngữ nghĩa theo checklist trong `.antigravity/skills/cro-o
 ### 📁 Bước 6: Ghi nhận
 
 - `python scripts/qa_lint.py [file] --log` — ghi score (+ slop) vào `qa-score-log.csv`.
-- Có chạy A/B → ghi biến thể đang dùng của từng bài vào `knowledge/3-pipeline/cta-variants.md` (tạo file nếu chưa có) để lần đo sau biết bài nào chạy gì.
+- Có chạy A/B → ghi biến thể đang dùng của từng bài vào `knowledge/3-seo/cta-variants.md` (tạo file nếu chưa có) để lần đo sau biết bài nào chạy gì.
 - Phát hiện pattern copy lặp lỗi → `/learn` (sửa rule tag `banner` / `product-bridge`: `optimize_instincts.py --show banner`), rồi `python scripts/optimize_instincts.py --check`. Lỗi nào bắt được bằng regex thì thêm vào `qa_lint.py` thay vì thêm instinct.
 
 ---
