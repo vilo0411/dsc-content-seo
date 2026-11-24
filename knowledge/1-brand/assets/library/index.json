@@ -1,0 +1,1118 @@
+{
+  "version": 1,
+  "assets": {
+    "st-hanoi-dusk": {
+      "kind": "bg",
+      "theme": "emerald",
+      "side": "top",
+      "master": "wide",
+      "season": "all",
+      "tags": [
+        "Hà Nội",
+        "thành phố",
+        "thị trường"
+      ],
+      "file": "knowledge/1-brand/assets/library/bg/st-hanoi-dusk.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "source": {
+        "type": "unsplash",
+        "photo_id": "Cj9YgIWSpTs",
+        "author": "Minh Bách Trương",
+        "author_url": "https://unsplash.com/@minhbach",
+        "photo_url": "https://unsplash.com/photos/lighted-cityscape-at-night-Cj9YgIWSpTs",
+        "license": "Unsplash License (dùng thương mại, không bắt buộc ghi công)"
+      },
+      "prompt": null,
+      "created": "2026-11-24T17:09:33",
+      "used": [],
+      "status": "active"
+    },
+    "st-forest-mist": {
+      "kind": "bg",
+      "theme": "emerald",
+      "side": "right",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "rừng",
+        "sương",
+        "thiên nhiên"
+      ],
+      "file": "knowledge/1-brand/assets/library/bg/st-forest-mist.png",
+      "size": [
+        1080,
+        1920
+      ],
+      "source": {
+        "type": "unsplash",
+        "photo_id": "f9j3ELfe-QQ",
+        "author": "Łukasz Rawa",
+        "author_url": "https://unsplash.com/@lukasz_rawa",
+        "photo_url": "https://unsplash.com/photos/a-foggy-forest-filled-with-lots-of-trees-f9j3ELfe-QQ",
+        "license": "Unsplash License (dùng thương mại, không bắt buộc ghi công)"
+      },
+      "prompt": null,
+      "created": "2026-11-24T17:09:36",
+      "used": [],
+      "status": "active"
+    },
+    "st-ricefield": {
+      "kind": "bg",
+      "theme": "emerald",
+      "side": "top",
+      "master": "wide",
+      "season": "all",
+      "tags": [
+        "ruộng bậc thang",
+        "Việt Nam",
+        "thiên nhiên"
+      ],
+      "file": "knowledge/1-brand/assets/library/bg/st-ricefield.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "source": {
+        "type": "unsplash",
+        "photo_id": "xLmDHFEnB8U",
+        "author": "Neil Mewes",
+        "author_url": "https://unsplash.com/@neilmewes",
+        "photo_url": "https://unsplash.com/photos/a-lush-green-hillside-covered-in-lots-of-trees-xLmDHFEnB8U",
+        "license": "Unsplash License (dùng thương mại, không bắt buộc ghi công)"
+      },
+      "prompt": null,
+      "created": "2026-11-24T17:09:38",
+      "used": [],
+      "status": "active"
+    },
+    "st-hands-phone": {
+      "kind": "bg",
+      "theme": "emerald",
+      "side": "right",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "điện thoại",
+        "tay",
+        "app",
+        "mở tài khoản"
+      ],
+      "file": "knowledge/1-brand/assets/library/bg/st-hands-phone.png",
+      "size": [
+        1080,
+        1920
+      ],
+      "source": {
+        "type": "unsplash",
+        "photo_id": "sgNc8aY6Z7E",
+        "author": "Akshar Dave🌻",
+        "author_url": "https://unsplash.com/@akshar_dave",
+        "photo_url": "https://unsplash.com/photos/person-holding-blue-light-in-dark-room-sgNc8aY6Z7E",
+        "license": "Unsplash License (dùng thương mại, không bắt buộc ghi công)"
+      },
+      "prompt": null,
+      "created": "2026-11-24T17:09:41",
+      "used": [],
+      "status": "active"
+    },
+    "st-desk-minimal": {
+      "kind": "bg",
+      "theme": "ivory",
+      "side": "top",
+      "master": "wide",
+      "season": "all",
+      "tags": [
+        "bàn làm việc",
+        "tối giản",
+        "giáo dục"
+      ],
+      "file": "knowledge/1-brand/assets/library/bg/st-desk-minimal.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "source": {
+        "type": "unsplash",
+        "photo_id": "EjbQQ0fgkFE",
+        "author": "Lex Sirikiat",
+        "author_url": "https://unsplash.com/@pundalex",
+        "photo_url": "https://unsplash.com/photos/coffee-in-cup-on-white-surface-EjbQQ0fgkFE",
+        "license": "Unsplash License (dùng thương mại, không bắt buộc ghi công)"
+      },
+      "prompt": null,
+      "created": "2026-11-24T17:09:43",
+      "used": [],
+      "status": "active"
+    },
+    "st-apricot-real": {
+      "kind": "bg",
+      "theme": "emerald",
+      "side": "right",
+      "master": "tall",
+      "season": "tet",
+      "tags": [
+        "Tết",
+        "hoa mai",
+        "thật"
+      ],
+      "file": "knowledge/1-brand/assets/library/bg/st-apricot-real.png",
+      "size": [
+        1080,
+        1920
+      ],
+      "source": {
+        "type": "unsplash",
+        "photo_id": "5aft5AsYTXw",
+        "author": "Tuân Nguyễn Minh",
+        "author_url": "https://unsplash.com/@tuannguyenminh",
+        "photo_url": "https://unsplash.com/photos/a-tree-with-yellow-flowers-and-a-red-and-white-sign-5aft5AsYTXw",
+        "license": "Unsplash License (dùng thương mại, không bắt buộc ghi công)"
+      },
+      "prompt": null,
+      "created": "2026-11-24T17:09:46",
+      "used": [],
+      "status": "active"
+    },
+    "st-peach-real": {
+      "kind": "bg",
+      "theme": "ivory",
+      "side": "top",
+      "master": "tall",
+      "season": "tet",
+      "tags": [
+        "Tết",
+        "hoa đào",
+        "thật"
+      ],
+      "file": "knowledge/1-brand/assets/library/bg/st-peach-real.png",
+      "size": [
+        1080,
+        1920
+      ],
+      "source": {
+        "type": "unsplash",
+        "photo_id": "ljgSaQELBrg",
+        "author": "Pete Alexopoulos",
+        "author_url": "https://unsplash.com/@pete_a",
+        "photo_url": "https://unsplash.com/photos/a-branch-with-pink-flowers-and-green-leaves-ljgSaQELBrg",
+        "license": "Unsplash License (dùng thương mại, không bắt buộc ghi công)"
+      },
+      "prompt": null,
+      "created": "2026-11-24T17:09:49",
+      "used": [],
+      "status": "active"
+    },
+    "st-green-silk": {
+      "kind": "bg",
+      "theme": "emerald",
+      "side": "center",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "lụa",
+        "texture",
+        "sang trọng"
+      ],
+      "file": "knowledge/1-brand/assets/library/bg/st-green-silk.png",
+      "size": [
+        1080,
+        1920
+      ],
+      "source": {
+        "type": "unsplash",
+        "photo_id": "9gOoEU7jkKk",
+        "author": "Susan Wilkinson",
+        "author_url": "https://unsplash.com/@susan_wilkinson",
+        "photo_url": "https://unsplash.com/photos/gray-textile-on-white-textile-9gOoEU7jkKk",
+        "license": "Unsplash License (dùng thương mại, không bắt buộc ghi công)"
+      },
+      "prompt": null,
+      "created": "2026-11-24T17:09:51",
+      "used": [],
+      "status": "active"
+    },
+    "bg-em-mountain-r": {
+      "kind": "bg",
+      "theme": "emerald",
+      "side": "right",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "núi",
+        "sương",
+        "bình minh",
+        "thương hiệu"
+      ],
+      "file": "knowledge/1-brand/assets/library/bg/bg-em-mountain-r.png",
+      "size": [
+        1080,
+        1920
+      ],
+      "source": {
+        "type": "codex",
+        "license": "tạo bởi AI cho DSC"
+      },
+      "prompt": "Background plate for premium social media visuals of a Vietnamese securities company. Subject: misty layered emerald mountains at dawn with soft golden light breaking through the clouds. Details: thin glowing green light trail, floating light particles. Mood: calm, trustworthy, long-term. Style: premium cinematic 3D render, deep emerald green (#0B331E to #226435) palette, polished metallic gold (#EFD786 to #A57D3F) accents with fine engraved Vietnamese patterns, soft volumetric light, shallow depth of field, luxurious and calm. Composition: keep the right 45% of the frame calm, dark-to-mid toned and uncluttered as negative space for text added later; the subject sits on the opposite side. Aspect ratio 9:16 vertical, about 1080x1920px, high detail. No red anywhere.  Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
+      "created": "2026-11-24T17:10:28",
+      "used": [],
+      "status": "active"
+    },
+    "mo-crane-gold": {
+      "kind": "motif",
+      "theme": "emerald",
+      "side": "none",
+      "master": "square",
+      "season": "all",
+      "tags": [
+        "hạc",
+        "đồng hành",
+        "văn hoá"
+      ],
+      "file": "knowledge/1-brand/assets/library/motif/mo-crane-gold.png",
+      "size": [
+        1215,
+        1061
+      ],
+      "source": {
+        "type": "codex",
+        "license": "tạo bởi AI cho DSC"
+      },
+      "prompt": "Single isolated object for compositing: one elegant golden crane in flight with engraved Dong Son patterns on its wings, side view. Style: premium cinematic 3D render, deep emerald green (#0B331E to #226435) palette, polished metallic gold (#EFD786 to #A57D3F) accents with fine engraved Vietnamese patterns, soft volumetric light, shallow depth of field, luxurious and calm. Centered, fully visible with generous margin, nothing cropped. Background: a perfectly flat, uniform, solid pure magenta (#FF00FF) color filling the entire canvas, no gradient, no shadow on the background, no floor, no other objects. The object itself must not contain magenta or pink. Aspect ratio 1:1 square. No red anywhere.  Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
+      "created": "2026-11-24T17:11:07",
+      "used": [],
+      "status": "active"
+    },
+    "bg-em-mountain-l": {
+      "kind": "bg",
+      "theme": "emerald",
+      "side": "left",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "núi",
+        "sương",
+        "bình minh",
+        "thương hiệu"
+      ],
+      "file": "knowledge/1-brand/assets/library/bg/bg-em-mountain-l.png",
+      "size": [
+        1080,
+        1920
+      ],
+      "source": {
+        "type": "codex",
+        "license": "tạo bởi AI cho DSC"
+      },
+      "prompt": "Background plate for premium social media visuals of a Vietnamese securities company. Subject: misty layered emerald mountains at dawn with soft golden light breaking through the clouds. Details: thin glowing green light trail, floating light particles. Mood: calm, trustworthy, long-term. Style: premium cinematic 3D render, deep emerald green (#0B331E to #226435) palette, polished metallic gold (#EFD786 to #A57D3F) accents with fine engraved Vietnamese patterns, soft volumetric light, shallow depth of field, luxurious and calm. Composition: keep the left 45% of the frame calm and uncluttered as negative space for text added later; the subject sits on the opposite side. Aspect ratio 9:16 vertical, about 1080x1920px, high detail. No red anywhere.  Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
+      "created": "2026-11-24T17:12:03",
+      "used": [],
+      "status": "active"
+    },
+    "bg-em-mountain-t": {
+      "kind": "bg",
+      "theme": "emerald",
+      "side": "top",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "núi",
+        "sương",
+        "thương hiệu"
+      ],
+      "file": "knowledge/1-brand/assets/library/bg/bg-em-mountain-t.png",
+      "size": [
+        1080,
+        1920
+      ],
+      "source": {
+        "type": "codex",
+        "license": "tạo bởi AI cho DSC"
+      },
+      "prompt": "Background plate for premium social media visuals of a Vietnamese securities company. Subject: misty layered emerald mountains at dawn with soft golden light breaking through the clouds, mountains occupy the lower half. Details: light particles. Mood: calm, open sky. Style: premium cinematic 3D render, deep emerald green (#0B331E to #226435) palette, polished metallic gold (#EFD786 to #A57D3F) accents with fine engraved Vietnamese patterns, soft volumetric light, shallow depth of field, luxurious and calm. Composition: keep the top 45% of the frame calm and uncluttered (sky / soft gradient) as negative space for text added later; the subject sits on the opposite side. Aspect ratio 9:16 vertical, about 1080x1920px, high detail. No red anywhere.  Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
+      "created": "2026-11-24T17:12:39",
+      "used": [],
+      "status": "active"
+    },
+    "bg-em-lighttrail-r": {
+      "kind": "bg",
+      "theme": "emerald",
+      "side": "right",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "ánh sáng",
+        "thị trường",
+        "công nghệ",
+        "app"
+      ],
+      "file": "knowledge/1-brand/assets/library/bg/bg-em-lighttrail-r.png",
+      "size": [
+        1080,
+        1920
+      ],
+      "source": {
+        "type": "codex",
+        "license": "tạo bởi AI cho DSC"
+      },
+      "prompt": "Background plate for premium social media visuals of a Vietnamese securities company. Subject: abstract flowing ribbons of soft green and gold light gliding through a deep emerald space, elegant and slow. Details: bokeh, fine particles. Mood: modern, digital, refined. Style: premium cinematic 3D render, deep emerald green (#0B331E to #226435) palette, polished metallic gold (#EFD786 to #A57D3F) accents with fine engraved Vietnamese patterns, soft volumetric light, shallow depth of field, luxurious and calm. Composition: keep the right 45% of the frame calm, dark-to-mid toned and uncluttered as negative space for text added later; the subject sits on the opposite side. Aspect ratio 9:16 vertical, about 1080x1920px, high detail. No red anywhere.  Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
+      "created": "2026-11-24T17:13:11",
+      "used": [],
+      "status": "active"
+    },
+    "bg-em-lighttrail-l": {
+      "kind": "bg",
+      "theme": "emerald",
+      "side": "left",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "ánh sáng",
+        "thị trường",
+        "công nghệ",
+        "app"
+      ],
+      "file": "knowledge/1-brand/assets/library/bg/bg-em-lighttrail-l.png",
+      "size": [
+        1080,
+        1920
+      ],
+      "source": {
+        "type": "codex",
+        "license": "tạo bởi AI cho DSC"
+      },
+      "prompt": "Background plate for premium social media visuals of a Vietnamese securities company. Subject: abstract flowing ribbons of soft green and gold light gliding through a deep emerald space, elegant and slow. Details: bokeh, fine particles. Mood: modern, digital, refined. Style: premium cinematic 3D render, deep emerald green (#0B331E to #226435) palette, polished metallic gold (#EFD786 to #A57D3F) accents with fine engraved Vietnamese patterns, soft volumetric light, shallow depth of field, luxurious and calm. Composition: keep the left 45% of the frame calm and uncluttered as negative space for text added later; the subject sits on the opposite side. Aspect ratio 9:16 vertical, about 1080x1920px, high detail. No red anywhere.  Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
+      "created": "2026-11-24T17:13:47",
+      "used": [],
+      "status": "active"
+    },
+    "bg-em-candles-r": {
+      "kind": "bg",
+      "theme": "emerald",
+      "side": "right",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "nến",
+        "thị trường",
+        "số liệu",
+        "báo cáo"
+      ],
+      "file": "knowledge/1-brand/assets/library/bg/bg-em-candles-r.png",
+      "size": [
+        1080,
+        1920
+      ],
+      "source": {
+        "type": "codex",
+        "license": "tạo bởi AI cho DSC"
+      },
+      "prompt": "Background plate for premium social media visuals of a Vietnamese securities company. Subject: abstract softly glowing vertical light bars of different heights in deep emerald fog, like a stylised market landscape, no axis, no numbers, no arrows. Details: haze, particles. Mood: market insight, calm analysis. Style: premium cinematic 3D render, deep emerald green (#0B331E to #226435) palette, polished metallic gold (#EFD786 to #A57D3F) accents with fine engraved Vietnamese patterns, soft volumetric light, shallow depth of field, luxurious and calm. Composition: keep the right 45% of the frame calm, dark-to-mid toned and uncluttered as negative space for text added later; the subject sits on the opposite side. Aspect ratio 9:16 vertical, about 1080x1920px, high detail. No red anywhere.  Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
+      "created": "2026-11-24T17:14:22",
+      "used": [],
+      "status": "active"
+    },
+    "bg-em-dongson-l": {
+      "kind": "bg",
+      "theme": "emerald",
+      "side": "left",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "trống đồng",
+        "văn hoá",
+        "thương hiệu",
+        "Việt Nam"
+      ],
+      "file": "knowledge/1-brand/assets/library/bg/bg-em-dongson-l.png",
+      "size": [
+        1080,
+        1920
+      ],
+      "source": {
+        "type": "codex",
+        "license": "tạo bởi AI cho DSC"
+      },
+      "prompt": "Background plate for premium social media visuals of a Vietnamese securities company. Subject: a large golden Dong Son bronze drum surface with engraved concentric patterns, seen at an angle, partly in soft shadow. Details: star at center of drum, engraved birds pattern. Mood: heritage, pride, solidity. Style: premium cinematic 3D render, deep emerald green (#0B331E to #226435) palette, polished metallic gold (#EFD786 to #A57D3F) accents with fine engraved Vietnamese patterns, soft volumetric light, shallow depth of field, luxurious and calm. Composition: keep the left 45% of the frame calm and uncluttered as negative space for text added later; the subject sits on the opposite side. Aspect ratio 9:16 vertical, about 1080x1920px, high detail. No red anywhere.  Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
+      "created": "2026-11-24T17:14:57",
+      "used": [],
+      "status": "active"
+    },
+    "bg-em-dongson-r": {
+      "kind": "bg",
+      "theme": "emerald",
+      "side": "right",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "trống đồng",
+        "văn hoá",
+        "thương hiệu",
+        "Việt Nam"
+      ],
+      "file": "knowledge/1-brand/assets/library/bg/bg-em-dongson-r.png",
+      "size": [
+        1080,
+        1920
+      ],
+      "source": {
+        "type": "codex",
+        "license": "tạo bởi AI cho DSC"
+      },
+      "prompt": "Background plate for premium social media visuals of a Vietnamese securities company. Subject: a large golden Dong Son bronze drum surface with engraved concentric patterns, seen at an angle, partly in soft shadow. Details: star at center of drum, engraved birds pattern. Mood: heritage, pride, solidity. Style: premium cinematic 3D render, deep emerald green (#0B331E to #226435) palette, polished metallic gold (#EFD786 to #A57D3F) accents with fine engraved Vietnamese patterns, soft volumetric light, shallow depth of field, luxurious and calm. Composition: keep the right 45% of the frame calm, dark-to-mid toned and uncluttered as negative space for text added later; the subject sits on the opposite side. Aspect ratio 9:16 vertical, about 1080x1920px, high detail. No red anywhere.  Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
+      "created": "2026-11-24T17:15:33",
+      "used": [],
+      "status": "active"
+    },
+    "bg-em-silk-r": {
+      "kind": "bg",
+      "theme": "emerald",
+      "side": "right",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "lụa",
+        "sang trọng",
+        "sản phẩm"
+      ],
+      "file": "knowledge/1-brand/assets/library/bg/bg-em-silk-r.png",
+      "size": [
+        1080,
+        1920
+      ],
+      "source": {
+        "type": "codex",
+        "license": "tạo bởi AI cho DSC"
+      },
+      "prompt": "Background plate for premium social media visuals of a Vietnamese securities company. Subject: flowing golden silk fabric waving gracefully through a deep emerald studio. Details: soft rim light. Mood: luxury, smooth. Style: premium cinematic 3D render, deep emerald green (#0B331E to #226435) palette, polished metallic gold (#EFD786 to #A57D3F) accents with fine engraved Vietnamese patterns, soft volumetric light, shallow depth of field, luxurious and calm. Composition: keep the right 45% of the frame calm, dark-to-mid toned and uncluttered as negative space for text added later; the subject sits on the opposite side. Aspect ratio 9:16 vertical, about 1080x1920px, high detail. No red anywhere.  Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
+      "created": "2026-11-24T17:16:06",
+      "used": [],
+      "status": "active"
+    },
+    "bg-em-podium-t": {
+      "kind": "bg",
+      "theme": "emerald",
+      "side": "top",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "bục",
+        "sản phẩm",
+        "app",
+        "ra mắt"
+      ],
+      "file": "knowledge/1-brand/assets/library/bg/bg-em-podium-t.png",
+      "size": [
+        1080,
+        1920
+      ],
+      "source": {
+        "type": "codex",
+        "license": "tạo bởi AI cho DSC"
+      },
+      "prompt": "Background plate for premium social media visuals of a Vietnamese securities company. Subject: an empty round podium of polished emerald marble with a thin engraved gold rim, in a dark emerald studio, ready to display a product. Details: soft spotlight from above, subtle reflections. Mood: product launch, premium. Style: premium cinematic 3D render, deep emerald green (#0B331E to #226435) palette, polished metallic gold (#EFD786 to #A57D3F) accents with fine engraved Vietnamese patterns, soft volumetric light, shallow depth of field, luxurious and calm. Composition: keep the top 45% of the frame calm and uncluttered (sky / soft gradient) as negative space for text added later; the subject sits on the opposite side. Aspect ratio 9:16 vertical, about 1080x1920px, high detail. No red anywhere.  Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
+      "created": "2026-11-24T17:16:39",
+      "used": [],
+      "status": "active"
+    },
+    "bg-em-bokeh-c": {
+      "kind": "bg",
+      "theme": "emerald",
+      "side": "center",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "tối giản",
+        "chữ",
+        "thông báo"
+      ],
+      "file": "knowledge/1-brand/assets/library/bg/bg-em-bokeh-c.png",
+      "size": [
+        1080,
+        1920
+      ],
+      "source": {
+        "type": "codex",
+        "license": "tạo bởi AI cho DSC"
+      },
+      "prompt": "Background plate for premium social media visuals of a Vietnamese securities company. Subject: minimal deep emerald background with soft golden bokeh and a gentle vignette, very subtle. Details: sparse bokeh. Mood: quiet, elegant. Style: premium cinematic 3D render, deep emerald green (#0B331E to #226435) palette, polished metallic gold (#EFD786 to #A57D3F) accents with fine engraved Vietnamese patterns, soft volumetric light, shallow depth of field, luxurious and calm. Composition: keep the central area calm and uncluttered, details only near the edges as negative space for text added later; the subject sits on the opposite side. Aspect ratio 9:16 vertical, about 1080x1920px, high detail. No red anywhere.  Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
+      "created": "2026-11-24T17:17:13",
+      "used": [],
+      "status": "active"
+    },
+    "bg-em-mountain-w": {
+      "kind": "bg",
+      "theme": "emerald",
+      "side": "right",
+      "master": "wide",
+      "season": "all",
+      "tags": [
+        "núi",
+        "sương",
+        "thương hiệu"
+      ],
+      "file": "knowledge/1-brand/assets/library/bg/bg-em-mountain-w.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "source": {
+        "type": "codex",
+        "license": "tạo bởi AI cho DSC"
+      },
+      "prompt": "Background plate for premium social media visuals of a Vietnamese securities company. Subject: misty layered emerald mountains at dawn with soft golden light breaking through the clouds. Details: light trail. Mood: calm, trustworthy. Style: premium cinematic 3D render, deep emerald green (#0B331E to #226435) palette, polished metallic gold (#EFD786 to #A57D3F) accents with fine engraved Vietnamese patterns, soft volumetric light, shallow depth of field, luxurious and calm. Composition: keep the right 45% of the frame calm, dark-to-mid toned and uncluttered as negative space for text added later; the subject sits on the opposite side. Aspect ratio 16:9 horizontal, about 1920x1080px, high detail. No red anywhere.  Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
+      "created": "2026-11-24T17:17:50",
+      "used": [],
+      "status": "active"
+    },
+    "bg-em-lighttrail-w": {
+      "kind": "bg",
+      "theme": "emerald",
+      "side": "left",
+      "master": "wide",
+      "season": "all",
+      "tags": [
+        "ánh sáng",
+        "công nghệ",
+        "app"
+      ],
+      "file": "knowledge/1-brand/assets/library/bg/bg-em-lighttrail-w.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "source": {
+        "type": "codex",
+        "license": "tạo bởi AI cho DSC"
+      },
+      "prompt": "Background plate for premium social media visuals of a Vietnamese securities company. Subject: abstract flowing ribbons of soft green and gold light through deep emerald space. Details: bokeh. Mood: modern, refined. Style: premium cinematic 3D render, deep emerald green (#0B331E to #226435) palette, polished metallic gold (#EFD786 to #A57D3F) accents with fine engraved Vietnamese patterns, soft volumetric light, shallow depth of field, luxurious and calm. Composition: keep the left 45% of the frame calm and uncluttered as negative space for text added later; the subject sits on the opposite side. Aspect ratio 16:9 horizontal, about 1920x1080px, high detail. No red anywhere.  Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
+      "created": "2026-11-24T17:18:23",
+      "used": [],
+      "status": "active"
+    },
+    "bg-iv-sontuy-t": {
+      "kind": "bg",
+      "theme": "ivory",
+      "side": "top",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "sơn thuỷ",
+        "văn hoá",
+        "thông báo",
+        "lễ"
+      ],
+      "file": "knowledge/1-brand/assets/library/bg/bg-iv-sontuy-t.png",
+      "size": [
+        1080,
+        1920
+      ],
+      "source": {
+        "type": "codex",
+        "license": "tạo bởi AI cho DSC"
+      },
+      "prompt": "Background plate for premium social media visuals of a Vietnamese securities company. Subject: elegant layered jade mountains and soft mist painted in Vietnamese silk-and-watercolor style, mountains in the lower half. Details: two small white cranes far away. Mood: serene, cultural. Style: elegant contemporary Vietnamese silk-and-watercolor painting, warm ivory paper (#F9F4EB), jade green (#6CB298) tones, thin gold (#C9A24A) linework, airy and refined. Composition: keep the top 45% of the frame calm and uncluttered (sky / soft gradient) as negative space for text added later; the subject sits on the opposite side. Aspect ratio 9:16 vertical, about 1080x1920px, high detail. No red anywhere.  Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
+      "created": "2026-11-24T17:18:56",
+      "used": [],
+      "status": "active"
+    },
+    "bg-iv-sontuy-r": {
+      "kind": "bg",
+      "theme": "ivory",
+      "side": "right",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "sơn thuỷ",
+        "văn hoá",
+        "giáo dục"
+      ],
+      "file": "knowledge/1-brand/assets/library/bg/bg-iv-sontuy-r.png",
+      "size": [
+        1080,
+        1920
+      ],
+      "source": {
+        "type": "codex",
+        "license": "tạo bởi AI cho DSC"
+      },
+      "prompt": "Background plate for premium social media visuals of a Vietnamese securities company. Subject: elegant layered jade mountains and soft mist painted in Vietnamese silk-and-watercolor style. Details: a small white crane. Mood: serene, thoughtful. Style: elegant contemporary Vietnamese silk-and-watercolor painting, warm ivory paper (#F9F4EB), jade green (#6CB298) tones, thin gold (#C9A24A) linework, airy and refined. Composition: keep the right 45% of the frame calm, dark-to-mid toned and uncluttered as negative space for text added later; the subject sits on the opposite side. Aspect ratio 9:16 vertical, about 1080x1920px, high detail. No red anywhere.  Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
+      "created": "2026-11-24T17:19:29",
+      "used": [],
+      "status": "active"
+    },
+    "bg-iv-lotus-t": {
+      "kind": "bg",
+      "theme": "ivory",
+      "side": "top",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "sen",
+        "văn hoá",
+        "lễ",
+        "thông báo"
+      ],
+      "file": "knowledge/1-brand/assets/library/bg/bg-iv-lotus-t.png",
+      "size": [
+        1080,
+        1920
+      ],
+      "source": {
+        "type": "codex",
+        "license": "tạo bởi AI cho DSC"
+      },
+      "prompt": "Background plate for premium social media visuals of a Vietnamese securities company. Subject: pink lotus flowers and large jade leaves in the lower third, painted in Vietnamese silk-and-watercolor style. Details: water ripples, thin gold outlines. Mood: pure, graceful. Style: elegant contemporary Vietnamese silk-and-watercolor painting, warm ivory paper (#F9F4EB), jade green (#6CB298) tones, thin gold (#C9A24A) linework, airy and refined. Composition: keep the top 45% of the frame calm and uncluttered (sky / soft gradient) as negative space for text added later; the subject sits on the opposite side. Aspect ratio 9:16 vertical, about 1080x1920px, high detail. Touches of soft lotus/peach pink are fine; no saturated red.  Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
+      "created": "2026-11-24T17:20:01",
+      "used": [],
+      "status": "active"
+    },
+    "bg-iv-paper-c": {
+      "kind": "bg",
+      "theme": "ivory",
+      "side": "center",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "giấy",
+        "trống đồng",
+        "thông báo",
+        "lịch nghỉ"
+      ],
+      "file": "knowledge/1-brand/assets/library/bg/bg-iv-paper-c.png",
+      "size": [
+        1080,
+        1920
+      ],
+      "source": {
+        "type": "codex",
+        "license": "tạo bởi AI cho DSC"
+      },
+      "prompt": "Background plate for premium social media visuals of a Vietnamese securities company. Subject: warm handmade do paper texture with a very faint large Dong Son drum pattern watermark and soft jade corners. Details: faint gold flecks. Mood: formal, cultural, quiet. Style: elegant contemporary Vietnamese silk-and-watercolor painting, warm ivory paper (#F9F4EB), jade green (#6CB298) tones, thin gold (#C9A24A) linework, airy and refined. Composition: keep the central area calm and uncluttered, details only near the edges as negative space for text added later; the subject sits on the opposite side. Aspect ratio 9:16 vertical, about 1080x1920px, high detail. No red anywhere.  Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
+      "created": "2026-11-24T17:20:39",
+      "used": [],
+      "status": "active"
+    },
+    "bg-iv-sontuy-w": {
+      "kind": "bg",
+      "theme": "ivory",
+      "side": "left",
+      "master": "wide",
+      "season": "all",
+      "tags": [
+        "sơn thuỷ",
+        "văn hoá"
+      ],
+      "file": "knowledge/1-brand/assets/library/bg/bg-iv-sontuy-w.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "source": {
+        "type": "codex",
+        "license": "tạo bởi AI cho DSC"
+      },
+      "prompt": "Background plate for premium social media visuals of a Vietnamese securities company. Subject: elegant layered jade mountains and soft mist painted in Vietnamese silk-and-watercolor style. Details: a small white crane. Mood: serene. Style: elegant contemporary Vietnamese silk-and-watercolor painting, warm ivory paper (#F9F4EB), jade green (#6CB298) tones, thin gold (#C9A24A) linework, airy and refined. Composition: keep the left 45% of the frame calm and uncluttered as negative space for text added later; the subject sits on the opposite side. Aspect ratio 16:9 horizontal, about 1920x1080px, high detail. No red anywhere.  Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
+      "created": "2026-11-24T17:21:12",
+      "used": [],
+      "status": "active"
+    },
+    "bg-tet-mai-r": {
+      "kind": "bg",
+      "theme": "emerald",
+      "side": "right",
+      "master": "tall",
+      "season": "tet",
+      "tags": [
+        "Tết",
+        "hoa mai",
+        "năm mới"
+      ],
+      "file": "knowledge/1-brand/assets/library/bg/bg-tet-mai-r.png",
+      "size": [
+        1080,
+        1920
+      ],
+      "source": {
+        "type": "codex",
+        "license": "tạo bởi AI cho DSC"
+      },
+      "prompt": "Background plate for premium social media visuals of a Vietnamese securities company. Subject: branches of yellow apricot blossoms (hoa mai) with gold-leaf petals reaching in from the left edge, deep emerald background. Details: small golden lanterns far in background, floating petals. Mood: lunar new year, fresh start. Style: premium cinematic 3D render, deep emerald green (#0B331E to #226435) palette, polished metallic gold (#EFD786 to #A57D3F) accents with fine engraved Vietnamese patterns, soft volumetric light, shallow depth of field, luxurious and calm. Composition: keep the right 45% of the frame calm, dark-to-mid toned and uncluttered as negative space for text added later; the subject sits on the opposite side. Aspect ratio 9:16 vertical, about 1080x1920px, high detail. No red anywhere.  Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
+      "created": "2026-11-24T17:37:27",
+      "used": [],
+      "status": "active"
+    },
+    "bg-tet-mai-l": {
+      "kind": "bg",
+      "theme": "emerald",
+      "side": "left",
+      "master": "tall",
+      "season": "tet",
+      "tags": [
+        "Tết",
+        "hoa mai",
+        "năm mới"
+      ],
+      "file": "knowledge/1-brand/assets/library/bg/bg-tet-mai-l.png",
+      "size": [
+        1080,
+        1920
+      ],
+      "source": {
+        "type": "codex",
+        "license": "tạo bởi AI cho DSC"
+      },
+      "prompt": "Background plate for premium social media visuals of a Vietnamese securities company. Subject: branches of yellow apricot blossoms (hoa mai) with gold-leaf petals reaching in from the right edge, deep emerald background. Details: floating petals. Mood: lunar new year, fresh start. Style: premium cinematic 3D render, deep emerald green (#0B331E to #226435) palette, polished metallic gold (#EFD786 to #A57D3F) accents with fine engraved Vietnamese patterns, soft volumetric light, shallow depth of field, luxurious and calm. Composition: keep the left 45% of the frame calm and uncluttered as negative space for text added later; the subject sits on the opposite side. Aspect ratio 9:16 vertical, about 1080x1920px, high detail. No red anywhere.  Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
+      "created": "2026-11-24T17:53:44",
+      "used": [],
+      "status": "active"
+    },
+    "bg-tet-lantern-t": {
+      "kind": "bg",
+      "theme": "emerald",
+      "side": "top",
+      "master": "tall",
+      "season": "tet",
+      "tags": [
+        "Tết",
+        "đèn lồng",
+        "năm mới"
+      ],
+      "file": "knowledge/1-brand/assets/library/bg/bg-tet-lantern-t.png",
+      "size": [
+        1080,
+        1920
+      ],
+      "source": {
+        "type": "codex",
+        "license": "tạo bởi AI cho DSC"
+      },
+      "prompt": "Background plate for premium social media visuals of a Vietnamese securities company. Subject: refined golden lanterns with engraved lotus patterns hanging at different heights in the lower half, glowing warmly in deep emerald dusk. Details: soft glow, particles. Mood: festive, warm, elegant. Style: premium cinematic 3D render, deep emerald green (#0B331E to #226435) palette, polished metallic gold (#EFD786 to #A57D3F) accents with fine engraved Vietnamese patterns, soft volumetric light, shallow depth of field, luxurious and calm. Composition: keep the top 45% of the frame calm and uncluttered (sky / soft gradient) as negative space for text added later; the subject sits on the opposite side. Aspect ratio 9:16 vertical, about 1080x1920px, high detail. No red anywhere.  Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
+      "created": "2026-11-24T18:58:09",
+      "used": [],
+      "status": "active"
+    },
+    "bg-tet-dao-t": {
+      "kind": "bg",
+      "theme": "ivory",
+      "side": "top",
+      "master": "tall",
+      "season": "tet",
+      "tags": [
+        "Tết",
+        "hoa đào",
+        "năm mới",
+        "văn hoá"
+      ],
+      "file": "knowledge/1-brand/assets/library/bg/bg-tet-dao-t.png",
+      "size": [
+        1080,
+        1920
+      ],
+      "source": {
+        "type": "codex",
+        "license": "tạo bởi AI cho DSC"
+      },
+      "prompt": "Background plate for premium social media visuals of a Vietnamese securities company. Subject: soft pink peach blossom branches (hoa dao) in the lower half, painted in Vietnamese silk-and-watercolor style on ivory. Details: falling petals, thin gold lines. Mood: spring, gentle, festive. Style: elegant contemporary Vietnamese silk-and-watercolor painting, warm ivory paper (#F9F4EB), jade green (#6CB298) tones, thin gold (#C9A24A) linework, airy and refined. Composition: keep the top 45% of the frame calm and uncluttered (sky / soft gradient) as negative space for text added later; the subject sits on the opposite side. Aspect ratio 9:16 vertical, about 1080x1920px, high detail. Touches of soft lotus/peach pink are fine; no saturated red.  Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
+      "created": "2026-11-24T20:33:49",
+      "used": [],
+      "status": "active"
+    },
+    "bg-tet-mai-w": {
+      "kind": "bg",
+      "theme": "emerald",
+      "side": "right",
+      "master": "wide",
+      "season": "tet",
+      "tags": [
+        "Tết",
+        "hoa mai"
+      ],
+      "file": "knowledge/1-brand/assets/library/bg/bg-tet-mai-w.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "source": {
+        "type": "codex",
+        "license": "tạo bởi AI cho DSC"
+      },
+      "prompt": "Background plate for premium social media visuals of a Vietnamese securities company. Subject: branches of yellow apricot blossoms with gold-leaf petals from the left edge, deep emerald background. Details: floating petals. Mood: lunar new year. Style: premium cinematic 3D render, deep emerald green (#0B331E to #226435) palette, polished metallic gold (#EFD786 to #A57D3F) accents with fine engraved Vietnamese patterns, soft volumetric light, shallow depth of field, luxurious and calm. Composition: keep the right 45% of the frame calm, dark-to-mid toned and uncluttered as negative space for text added later; the subject sits on the opposite side. Aspect ratio 16:9 horizontal, about 1920x1080px, high detail. No red anywhere.  Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
+      "created": "2026-11-24T20:34:29",
+      "used": [],
+      "status": "active"
+    },
+    "mo-cranes-pair": {
+      "kind": "motif",
+      "theme": "emerald",
+      "side": "none",
+      "master": "square",
+      "season": "all",
+      "tags": [
+        "hạc",
+        "đồng hành",
+        "đôi"
+      ],
+      "file": "knowledge/1-brand/assets/library/motif/mo-cranes-pair.png",
+      "size": [
+        1144,
+        951
+      ],
+      "source": {
+        "type": "codex",
+        "license": "tạo bởi AI cho DSC"
+      },
+      "prompt": "Single isolated object for compositing: two golden cranes flying side by side, one slightly ahead, engraved Vietnamese patterns. Style: premium cinematic 3D render, deep emerald green (#0B331E to #226435) palette, polished metallic gold (#EFD786 to #A57D3F) accents with fine engraved Vietnamese patterns, soft volumetric light, shallow depth of field, luxurious and calm. Centered, fully visible with generous margin, nothing cropped. Background: a perfectly flat, uniform, solid pure magenta (#FF00FF) color filling the entire canvas, no gradient, no shadow on the background, no floor, no other objects. The object itself must not contain magenta or pink. Aspect ratio 1:1 square. No red anywhere.  Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
+      "created": "2026-11-24T20:35:19",
+      "used": [],
+      "status": "active"
+    },
+    "mo-mai-branch": {
+      "kind": "motif",
+      "theme": "emerald",
+      "side": "none",
+      "master": "square",
+      "season": "tet",
+      "tags": [
+        "Tết",
+        "hoa mai"
+      ],
+      "file": "knowledge/1-brand/assets/library/motif/mo-mai-branch.png",
+      "size": [
+        1150,
+        1086
+      ],
+      "source": {
+        "type": "codex",
+        "license": "tạo bởi AI cho DSC"
+      },
+      "prompt": "Single isolated object for compositing: a single branch of yellow apricot blossoms (hoa mai) with gold-leaf petals, diagonal. Style: premium cinematic 3D render, deep emerald green (#0B331E to #226435) palette, polished metallic gold (#EFD786 to #A57D3F) accents with fine engraved Vietnamese patterns, soft volumetric light, shallow depth of field, luxurious and calm. Centered, fully visible with generous margin, nothing cropped. Background: a perfectly flat, uniform, solid pure magenta (#FF00FF) color filling the entire canvas, no gradient, no shadow on the background, no floor, no other objects. The object itself must not contain magenta or pink. Aspect ratio 1:1 square. No red anywhere.  Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
+      "created": "2026-11-24T20:35:58",
+      "used": [],
+      "status": "active"
+    },
+    "mo-lotus": {
+      "kind": "motif",
+      "theme": "ivory",
+      "side": "none",
+      "master": "square",
+      "season": "all",
+      "tags": [
+        "sen",
+        "văn hoá"
+      ],
+      "file": "knowledge/1-brand/assets/library/motif/mo-lotus.png",
+      "size": [
+        1011,
+        1118
+      ],
+      "source": {
+        "type": "codex",
+        "license": "tạo bởi AI cho DSC"
+      },
+      "prompt": "Single isolated object for compositing: one pink lotus flower with two jade lotus leaves, watercolor style with thin gold outline. Style: elegant contemporary Vietnamese silk-and-watercolor painting, warm ivory paper (#F9F4EB), jade green (#6CB298) tones, thin gold (#C9A24A) linework, airy and refined. Centered, fully visible with generous margin, nothing cropped. Background: a perfectly flat, uniform, solid pure magenta (#FF00FF) color filling the entire canvas, no gradient, no shadow on the background, no floor, no other objects. The object itself must not contain magenta or pink. Aspect ratio 1:1 square. No red anywhere.  Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
+      "created": "2026-11-24T20:36:39",
+      "used": [],
+      "status": "active"
+    },
+    "mo-lantern": {
+      "kind": "motif",
+      "theme": "emerald",
+      "side": "none",
+      "master": "square",
+      "season": "all",
+      "tags": [
+        "Tết",
+        "đèn lồng",
+        "hướng dẫn"
+      ],
+      "file": "knowledge/1-brand/assets/library/motif/mo-lantern.png",
+      "size": [
+        610,
+        1250
+      ],
+      "source": {
+        "type": "codex",
+        "license": "tạo bởi AI cho DSC"
+      },
+      "prompt": "Single isolated object for compositing: one refined golden lantern with engraved lotus pattern, glowing softly. Style: premium cinematic 3D render, deep emerald green (#0B331E to #226435) palette, polished metallic gold (#EFD786 to #A57D3F) accents with fine engraved Vietnamese patterns, soft volumetric light, shallow depth of field, luxurious and calm. Centered, fully visible with generous margin, nothing cropped. Background: a perfectly flat, uniform, solid pure magenta (#FF00FF) color filling the entire canvas, no gradient, no shadow on the background, no floor, no other objects. The object itself must not contain magenta or pink. Aspect ratio 1:1 square. No red anywhere.  Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
+      "created": "2026-11-24T20:37:18",
+      "used": [],
+      "status": "active"
+    },
+    "mo-phone-emerald": {
+      "kind": "motif",
+      "theme": "emerald",
+      "side": "none",
+      "master": "square",
+      "season": "all",
+      "tags": [
+        "điện thoại",
+        "app",
+        "mở tài khoản"
+      ],
+      "file": "knowledge/1-brand/assets/library/motif/mo-phone-emerald.png",
+      "size": [
+        514,
+        1244
+      ],
+      "source": {
+        "type": "codex",
+        "license": "tạo bởi AI cho DSC"
+      },
+      "prompt": "Single isolated object for compositing: a sleek modern smartphone with dark emerald glass back and thin polished gold frame, screen facing viewer showing only a smooth plain green gradient with no interface, three-quarter view. Style: premium cinematic 3D render, deep emerald green (#0B331E to #226435) palette, polished metallic gold (#EFD786 to #A57D3F) accents with fine engraved Vietnamese patterns, soft volumetric light, shallow depth of field, luxurious and calm. Centered, fully visible with generous margin, nothing cropped. Background: a perfectly flat, uniform, solid pure magenta (#FF00FF) color filling the entire canvas, no gradient, no shadow on the background, no floor, no other objects. The object itself must not contain magenta or pink. Aspect ratio 1:1 square. No red anywhere.  Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
+      "created": "2026-11-24T20:37:59",
+      "used": [],
+      "status": "active"
+    },
+    "mo-gold-block": {
+      "kind": "motif",
+      "theme": "emerald",
+      "side": "none",
+      "master": "square",
+      "season": "all",
+      "tags": [
+        "khối vàng",
+        "số liệu",
+        "giá trị"
+      ],
+      "file": "knowledge/1-brand/assets/library/motif/mo-gold-block.png",
+      "size": [
+        989,
+        571
+      ],
+      "source": {
+        "type": "codex",
+        "license": "tạo bởi AI cho DSC"
+      },
+      "prompt": "Single isolated object for compositing: a small polished gold block with finely engraved Vietnamese cloud patterns on its sides, three-quarter view. Style: premium cinematic 3D render, deep emerald green (#0B331E to #226435) palette, polished metallic gold (#EFD786 to #A57D3F) accents with fine engraved Vietnamese patterns, soft volumetric light, shallow depth of field, luxurious and calm. Centered, fully visible with generous margin, nothing cropped. Background: a perfectly flat, uniform, solid pure magenta (#FF00FF) color filling the entire canvas, no gradient, no shadow on the background, no floor, no other objects. The object itself must not contain magenta or pink. Aspect ratio 1:1 square. No red anywhere.  Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
+      "created": "2026-11-24T20:38:40",
+      "used": [],
+      "status": "active"
+    },
+    "mo-dongson-disc": {
+      "kind": "motif",
+      "theme": "emerald",
+      "side": "none",
+      "master": "square",
+      "season": "all",
+      "tags": [
+        "trống đồng",
+        "văn hoá"
+      ],
+      "file": "knowledge/1-brand/assets/library/motif/mo-dongson-disc.png",
+      "size": [
+        1237,
+        1243
+      ],
+      "source": {
+        "type": "codex",
+        "license": "tạo bởi AI cho DSC"
+      },
+      "prompt": "Single isolated object for compositing: the top face of a golden Dong Son bronze drum seen straight from above, perfectly round, engraved concentric patterns and central star. Style: premium cinematic 3D render, deep emerald green (#0B331E to #226435) palette, polished metallic gold (#EFD786 to #A57D3F) accents with fine engraved Vietnamese patterns, soft volumetric light, shallow depth of field, luxurious and calm. Centered, fully visible with generous margin, nothing cropped. Background: a perfectly flat, uniform, solid pure magenta (#FF00FF) color filling the entire canvas, no gradient, no shadow on the background, no floor, no other objects. The object itself must not contain magenta or pink. Aspect ratio 1:1 square. No red anywhere.  Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
+      "created": "2026-11-24T20:39:29",
+      "used": [],
+      "status": "active"
+    },
+    "tx-dongson-gold": {
+      "kind": "texture",
+      "theme": "emerald",
+      "side": "none",
+      "master": "square",
+      "season": "all",
+      "tags": [
+        "hoạ tiết",
+        "trống đồng",
+        "viền"
+      ],
+      "file": "knowledge/1-brand/assets/library/texture/tx-dongson-gold.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "source": {
+        "type": "codex",
+        "license": "tạo bởi AI cho DSC"
+      },
+      "prompt": "seamless tileable pattern of fine gold Dong Son engraved line motifs (birds, concentric circles) evenly spaced. Style: premium cinematic 3D render, deep emerald green (#0B331E to #226435) palette, polished metallic gold (#EFD786 to #A57D3F) accents with fine engraved Vietnamese patterns, soft volumetric light, shallow depth of field, luxurious and calm. Lines only, on a perfectly flat, uniform, solid pure magenta (#FF00FF) background filling the canvas, no gradient, no shadow. Aspect ratio 1:1 square. Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
+      "created": "2026-11-24T20:40:20",
+      "used": [],
+      "status": "active"
+    },
+    "tx-cloud-gold": {
+      "kind": "texture",
+      "theme": "emerald",
+      "side": "none",
+      "master": "square",
+      "season": "all",
+      "tags": [
+        "hoạ tiết",
+        "mây",
+        "viền"
+      ],
+      "file": "knowledge/1-brand/assets/library/texture/tx-cloud-gold.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "source": {
+        "type": "codex",
+        "license": "tạo bởi AI cho DSC"
+      },
+      "prompt": "seamless tileable pattern of traditional Vietnamese auspicious cloud motifs drawn in thin gold lines. Style: premium cinematic 3D render, deep emerald green (#0B331E to #226435) palette, polished metallic gold (#EFD786 to #A57D3F) accents with fine engraved Vietnamese patterns, soft volumetric light, shallow depth of field, luxurious and calm. Lines only, on a perfectly flat, uniform, solid pure magenta (#FF00FF) background filling the canvas, no gradient, no shadow. Aspect ratio 1:1 square. Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
+      "created": "2026-11-24T20:41:34",
+      "used": [],
+      "status": "active"
+    },
+    "tx-paper-ivory": {
+      "kind": "texture",
+      "theme": "ivory",
+      "side": "none",
+      "master": "square",
+      "season": "all",
+      "tags": [
+        "giấy",
+        "nền"
+      ],
+      "file": "knowledge/1-brand/assets/library/texture/tx-paper-ivory.png",
+      "size": [
+        1440,
+        1440
+      ],
+      "source": {
+        "type": "codex",
+        "license": "tạo bởi AI cho DSC"
+      },
+      "prompt": "full-frame close-up of warm ivory handmade do paper with subtle natural fibers, evenly lit, no objects. Style: elegant contemporary Vietnamese silk-and-watercolor painting, warm ivory paper (#F9F4EB), jade green (#6CB298) tones, thin gold (#C9A24A) linework, airy and refined. Aspect ratio 1:1 square, evenly lit, seamless feel. Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
+      "created": "2026-11-24T20:42:21",
+      "used": [],
+      "status": "active"
+    },
+    "tx-emerald-grain": {
+      "kind": "texture",
+      "theme": "emerald",
+      "side": "none",
+      "master": "square",
+      "season": "all",
+      "tags": [
+        "nền",
+        "hạt"
+      ],
+      "file": "knowledge/1-brand/assets/library/texture/tx-emerald-grain.png",
+      "size": [
+        1440,
+        1440
+      ],
+      "source": {
+        "type": "codex",
+        "license": "tạo bởi AI cho DSC"
+      },
+      "prompt": "full-frame subtle deep emerald velvet texture with fine film grain, evenly lit, no objects. Style: premium cinematic 3D render, deep emerald green (#0B331E to #226435) palette, polished metallic gold (#EFD786 to #A57D3F) accents with fine engraved Vietnamese patterns, soft volumetric light, shallow depth of field, luxurious and calm. Aspect ratio 1:1 square, evenly lit, seamless feel. Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
+      "created": "2026-11-24T20:43:39",
+      "used": [],
+      "status": "active"
+    }
+  }
+}

@@ -1,0 +1,281 @@
+{
+  "name": "kv-right",
+  "style": "KV",
+  "mo_ta": "Key visual tràn khung, chủ thể bên trái, khối chữ căn phải (badge → script → tiêu đề in hoa ánh kim → phụ đề). Như bài FTSE / Bản sắc Việt trên fanpage.",
+  "default_theme": "emerald",
+  "type": "serif",
+  "align": "right",
+  "logo": "right",
+  "host": false,
+  "grid": false,
+  "needs_image": true,
+  "variants": {
+    "4:5": {
+      "regions": {
+        "image": {
+          "box": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "fade": "scrim-right"
+        },
+        "badge": {
+          "box": [
+            0.48,
+            0.2,
+            0.46,
+            0.06
+          ],
+          "size": "s",
+          "max_lines": 1
+        },
+        "script": {
+          "box": [
+            0.44,
+            0.27,
+            0.5,
+            0.09
+          ],
+          "size": "xl",
+          "valign": "end",
+          "max_lines": 1
+        },
+        "headline": {
+          "box": [
+            0.44,
+            0.36,
+            0.5,
+            0.3
+          ],
+          "size": "xl",
+          "valign": "start",
+          "max_lines": 4
+        },
+        "sub": {
+          "box": [
+            0.48,
+            0.67,
+            0.46,
+            0.09
+          ],
+          "size": "s",
+          "max_lines": 2
+        },
+        "note": {
+          "box": [
+            0.48,
+            0.91,
+            0.46,
+            0.05
+          ],
+          "size": "xs",
+          "max_lines": 2
+        }
+      }
+    },
+    "1:1": {
+      "regions": {
+        "image": {
+          "box": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "fade": "scrim-right"
+        },
+        "badge": {
+          "box": [
+            0.48,
+            0.15,
+            0.46,
+            0.075
+          ],
+          "size": "s",
+          "max_lines": 1
+        },
+        "script": {
+          "box": [
+            0.44,
+            0.23,
+            0.5,
+            0.11
+          ],
+          "size": "xl",
+          "valign": "end",
+          "max_lines": 1
+        },
+        "headline": {
+          "box": [
+            0.44,
+            0.35,
+            0.5,
+            0.33
+          ],
+          "size": "xl",
+          "valign": "start",
+          "max_lines": 4
+        },
+        "sub": {
+          "box": [
+            0.48,
+            0.69,
+            0.46,
+            0.11
+          ],
+          "size": "s",
+          "max_lines": 2
+        },
+        "note": {
+          "box": [
+            0.48,
+            0.9,
+            0.46,
+            0.06
+          ],
+          "size": "xs",
+          "max_lines": 2
+        }
+      }
+    },
+    "9:16": {
+      "logo_y": 0.15,
+      "safe": [
+        0.0,
+        0.14,
+        1.0,
+        0.66
+      ],
+      "regions": {
+        "image": {
+          "box": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "fade": "scrim-right"
+        },
+        "badge": {
+          "box": [
+            0.4,
+            0.21,
+            0.54,
+            0.04
+          ],
+          "size": "s",
+          "max_lines": 1
+        },
+        "script": {
+          "box": [
+            0.36,
+            0.26,
+            0.58,
+            0.06
+          ],
+          "size": "xl",
+          "valign": "end",
+          "max_lines": 1
+        },
+        "headline": {
+          "box": [
+            0.36,
+            0.32,
+            0.58,
+            0.24
+          ],
+          "size": "xl",
+          "valign": "start",
+          "max_lines": 5
+        },
+        "sub": {
+          "box": [
+            0.4,
+            0.57,
+            0.54,
+            0.06
+          ],
+          "size": "s",
+          "max_lines": 2
+        },
+        "note": {
+          "box": [
+            0.4,
+            0.75,
+            0.54,
+            0.045
+          ],
+          "size": "xs",
+          "max_lines": 2
+        }
+      }
+    },
+    "1.91:1": {
+      "regions": {
+        "image": {
+          "box": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "fade": "scrim-right"
+        },
+        "badge": {
+          "box": [
+            0.52,
+            0.16,
+            0.43,
+            0.12
+          ],
+          "size": "s",
+          "max_lines": 1
+        },
+        "script": {
+          "box": [
+            0.5,
+            0.28,
+            0.45,
+            0.15
+          ],
+          "size": "l",
+          "valign": "end",
+          "max_lines": 1
+        },
+        "headline": {
+          "box": [
+            0.5,
+            0.43,
+            0.45,
+            0.33
+          ],
+          "size": "l",
+          "valign": "start",
+          "max_lines": 3
+        },
+        "sub": {
+          "box": [
+            0.52,
+            0.77,
+            0.43,
+            0.1
+          ],
+          "size": "m",
+          "max_lines": 2
+        },
+        "note": {
+          "box": [
+            0.52,
+            0.88,
+            0.43,
+            0.08
+          ],
+          "size": "xs",
+          "max_lines": 2
+        }
+      }
+    }
+  }
+}

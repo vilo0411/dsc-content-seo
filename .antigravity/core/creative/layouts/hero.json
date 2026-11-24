@@ -1,0 +1,232 @@
+{
+  "name": "hero",
+  "style": "S01+",
+  "mo_ta": "Minh hoạ isometric DSC chiếm phần lớn khung, hoà vào nền; nhãn nhỏ + tiêu đề + câu phụ bên dưới (khổ ngang: chữ trái, ảnh phải). Theme tự chọn theo độ sáng ảnh.",
+  "default_theme": "dark",
+  "variants": {
+    "4:5": {
+      "regions": {
+        "image": {
+          "box": [
+            0.0,
+            0.0,
+            1.0,
+            0.6
+          ],
+          "fade": "bottom"
+        },
+        "eyebrow": {
+          "box": [
+            0.07,
+            0.585,
+            0.86,
+            0.035
+          ],
+          "size": "xs",
+          "max_lines": 1
+        },
+        "headline": {
+          "box": [
+            0.07,
+            0.625,
+            0.86,
+            0.21
+          ],
+          "size": "xxl",
+          "valign": "start",
+          "max_lines": 3
+        },
+        "sub": {
+          "box": [
+            0.07,
+            0.84,
+            0.86,
+            0.065
+          ],
+          "size": "s",
+          "max_lines": 2
+        },
+        "note": {
+          "box": [
+            0.07,
+            0.915,
+            0.86,
+            0.05
+          ],
+          "size": "xs",
+          "max_lines": 2
+        }
+      }
+    },
+    "1:1": {
+      "regions": {
+        "image": {
+          "box": [
+            0.0,
+            0.0,
+            1.0,
+            0.55
+          ],
+          "fade": "bottom"
+        },
+        "eyebrow": {
+          "box": [
+            0.07,
+            0.535,
+            0.86,
+            0.04
+          ],
+          "size": "xs",
+          "max_lines": 1
+        },
+        "headline": {
+          "box": [
+            0.07,
+            0.58,
+            0.86,
+            0.24
+          ],
+          "size": "xxl",
+          "valign": "start",
+          "max_lines": 3
+        },
+        "sub": {
+          "box": [
+            0.07,
+            0.825,
+            0.86,
+            0.075
+          ],
+          "size": "s",
+          "max_lines": 2
+        },
+        "note": {
+          "box": [
+            0.07,
+            0.91,
+            0.86,
+            0.06
+          ],
+          "size": "xs",
+          "max_lines": 2
+        }
+      }
+    },
+    "9:16": {
+      "logo_y": 0.15,
+      "safe": [
+        0.0,
+        0.14,
+        1.0,
+        0.66
+      ],
+      "regions": {
+        "image": {
+          "box": [
+            0.0,
+            0.14,
+            1.0,
+            0.4
+          ],
+          "fade": "top-bottom"
+        },
+        "eyebrow": {
+          "box": [
+            0.08,
+            0.545,
+            0.84,
+            0.025
+          ],
+          "size": "xs",
+          "max_lines": 1
+        },
+        "headline": {
+          "box": [
+            0.08,
+            0.575,
+            0.84,
+            0.15
+          ],
+          "size": "xxl",
+          "valign": "start",
+          "max_lines": 3
+        },
+        "sub": {
+          "box": [
+            0.08,
+            0.73,
+            0.84,
+            0.04
+          ],
+          "size": "s",
+          "max_lines": 2
+        },
+        "note": {
+          "box": [
+            0.08,
+            0.772,
+            0.84,
+            0.028
+          ],
+          "size": "xs",
+          "max_lines": 2
+        }
+      }
+    },
+    "1.91:1": {
+      "regions": {
+        "image": {
+          "box": [
+            0.46,
+            0.0,
+            0.54,
+            1.0
+          ],
+          "fade": "left"
+        },
+        "eyebrow": {
+          "box": [
+            0.05,
+            0.2,
+            0.44,
+            0.08
+          ],
+          "size": "m",
+          "max_lines": 1
+        },
+        "headline": {
+          "box": [
+            0.05,
+            0.29,
+            0.44,
+            0.42
+          ],
+          "size": "xl",
+          "valign": "start",
+          "max_lines": 3
+        },
+        "sub": {
+          "box": [
+            0.05,
+            0.72,
+            0.44,
+            0.12
+          ],
+          "size": "m",
+          "max_lines": 2
+        },
+        "note": {
+          "box": [
+            0.05,
+            0.86,
+            0.44,
+            0.09
+          ],
+          "size": "s",
+          "max_lines": 2
+        }
+      }
+    }
+  },
+  "grid": false
+}

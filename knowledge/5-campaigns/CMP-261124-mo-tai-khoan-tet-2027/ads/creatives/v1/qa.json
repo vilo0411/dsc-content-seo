@@ -1,0 +1,69 @@
+{
+  "job": "",
+  "version": 1,
+  "rendered_at": "2026-11-24T16:03:00",
+  "creatives": {
+    "ads-v1": {
+      "size": "1080x1350",
+      "layout": "thesis",
+      "theme": "dark",
+      "group": null,
+      "status": "Đạt có lưu ý",
+      "issues": [
+        {
+          "rule": "WORDS-on-image",
+          "level": "warn",
+          "msg": "Chữ trên ảnh quảng cáo 9 từ > 8"
+        }
+      ],
+      "fit": {
+        "headline": 1.0
+      }
+    },
+    "ads-v2": {
+      "size": "1080x1350",
+      "layout": "thesis",
+      "theme": "paper",
+      "group": null,
+      "status": "Đạt",
+      "issues": [],
+      "fit": {
+        "headline": 1.0
+      }
+    },
+    "ads-v3": {
+      "size": "1080x1920",
+      "layout": "thesis",
+      "theme": "dark",
+      "group": null,
+      "status": "Đạt",
+      "issues": [],
+      "fit": {
+        "headline": 1.0
+      }
+    },
+    "ads-v4": {
+      "size": "1080x1080",
+      "layout": "thesis",
+      "theme": "paper",
+      "group": null,
+      "status": "Đạt",
+      "issues": [],
+      "fit": {
+        "headline": 1.0,
+        "note": 1.0
+      }
+    },
+    "ads-v5": {
+      "size": "1200x628",
+      "layout": "thesis",
+      "theme": "mint",
+      "group": null,
+      "status": "Đạt",
+      "issues": [],
+      "fit": {
+        "headline": 1.0
+      }
+    }
+  }
+}

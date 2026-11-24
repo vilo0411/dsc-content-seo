@@ -1,13 +1,37 @@
 # 🧠 Project Knowledge Hub (agent.md)
 
-Welcome to the SEO Writer Agent ecosystem. This file provides an overview of the architecture and how Sub-Agents collaborate to produce high-quality SEO content.
+DSC Marketing Workspace: 1 lớp **core** dùng chung (brand, compliance, vòng đời job, QA) + các **domain** gắn vào. SEO là domain đầy đủ nhất; Social, Ads, Campaign/Landing thêm từ 2026-11-24.
 
 ---
 
 ## 🎯 Project Goal
-Build a scalable, data-driven SEO content production system that eliminates "AI-vibe" through rigorous research and multi-stage verification.
+Sản xuất nội dung marketing đứng tên Chứng khoán DSC — rank được, được AI trích, chuyển đổi được — không "AI-vibe", không vi phạm compliance tài chính, mọi output qua QA máy + gate duyệt của người.
 
-## 👥 Sub-Agent Ecosystem
+## 🧱 Layers
+```mermaid
+graph TD
+    User((User)) --> Router[CLAUDE.md · Domain router]
+    Router --> Core
+    subgraph Core [.antigravity/core]
+        Protocol[README: context · job lifecycle · gate]
+        Compliance[rules/compliance-finance]
+        CR[agents/compliance-reviewer · read-only]
+    end
+    Core --> SEO[SEO · .antigravity/skills + agents]
+    Core --> Social[domains/social]
+    Core --> Ads[domains/ads · Facebook Ads MCP]
+    Core --> Campaign[domains/campaign · landing]
+    SEO --> C4[knowledge/4-content]
+    Social --> C5[knowledge/5-campaigns/CMP-*]
+    Ads --> C5
+    Campaign --> C5
+    Brand[knowledge/1-brand · brand.json · personas] --> Core
+    Lint[scripts/qa_gate.py · scripts/mkt_lint.py] --> Core
+```
+
+---
+
+## 👥 Sub-Agent Ecosystem (SEO)
 - **SEO Collector** (`.antigravity/agents/seo-collector.md`): SERP research & Content Briefing.
 - **Brand Guardian** (`.antigravity/agents/brand-guardian.md`): Identity & Style compliance.
 - **Quality Guardian** (`.antigravity/agents/quality-guardian.md`): Independent QA & Fact-checking.

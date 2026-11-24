@@ -1,0 +1,112 @@
+{
+  "job": "CMP-261124-mo-tai-khoan-tet-2027",
+  "source": "copy-v1.md",
+  "channel": "ads",
+  "version": 3,
+  "approved": [],
+  "creatives": [
+    {
+      "id": "ads-v1",
+      "layout": "kv-right",
+      "theme": "emerald",
+      "type": "serif",
+      "size": "1080x1350",
+      "kv": {
+        "subject": "a sleek smartphone of dark emerald glass with a thin polished gold frame, floating at a gentle angle, its screen glowing with soft abstract green light and no interface text, framed by branches of yellow apricot blossoms (hoa mai) with gold-leaf petals",
+        "motifs": [
+          "hoa mai branches",
+          "gold engraved Vietnamese cloud patterns",
+          "soft glowing particles"
+        ],
+        "mood": "fresh start of the Lunar New Year, calm confidence"
+      },
+      "text": {
+        "badge": "Tết 2027",
+        "script": "Khởi đầu năm mới",
+        "headline": "Mở tài khoản **3 phút**, ngay trên điện thoại",
+        "sub": "eKYC 100% online, không cần ra quầy",
+        "note": ""
+      }
+    },
+    {
+      "id": "ads-v2",
+      "layout": "kv-left",
+      "theme": "emerald",
+      "type": "serif",
+      "size": "1080x1350",
+      "kv": {
+        "subject": "two elegant golden cranes with engraved Vietnamese patterns flying side by side, one slightly ahead as if guiding the other, above misty emerald mountains",
+        "motifs": [
+          "golden cranes",
+          "Dong Son drum pattern faintly in the sky",
+          "morning mist"
+        ],
+        "mood": "companionship, guidance, trust"
+      },
+      "text": {
+        "badge": "Môi giới 1:1",
+        "script": "Năm mới",
+        "headline": "Bắt đầu **có người đồng hành**",
+        "sub": "Chuyên gia DSC hỗ trợ từ lệnh đầu tiên",
+        "note": ""
+      }
+    },
+    {
+      "id": "ads-v3",
+      "layout": "kv-center",
+      "theme": "emerald",
+      "type": "sans",
+      "size": "1080x1920",
+      "kv": {
+        "subject": "a refined golden lantern with engraved lotus patterns glowing warmly on a dark emerald stone path, its light gently revealing the way forward",
+        "motifs": [
+          "golden lantern",
+          "lotus engravings",
+          "soft light rays"
+        ],
+        "mood": "guidance before deciding, reassurance"
+      },
+      "text": {
+        "script": "Năm mới",
+        "headline": "Chưa chắc? **Hỏi chuyên gia** trước",
+        "sub": "Hỏi trước khi bạn bấm mua",
+        "note": ""
+      }
+    },
+    {
+      "id": "ads-v4",
+      "layout": "bignum",
+      "theme": "emerald",
+      "size": "1080x1080",
+      "text": {
+        "eyebrow": "Phí giao dịch từ",
+        "big": "0,1%",
+        "headline": "Có **môi giới 1:1** đi kèm",
+        "sub": "Mở tài khoản online khoảng 3 phút",
+        "note": "Theo biểu phí hiện hành của Chứng khoán DSC"
+      }
+    },
+    {
+      "id": "ads-v5",
+      "layout": "kv-right",
+      "theme": "emerald",
+      "type": "serif",
+      "size": "1200x628",
+      "kv": {
+        "subject": "a winding path of emerald stone steps rising into soft light, the first step glowing gold, lined with blooming apricot blossom branches",
+        "motifs": [
+          "hoa mai",
+          "gold light on the first step",
+          "gentle mist"
+        ],
+        "mood": "where to begin, first step of the new year"
+      },
+      "text": {
+        "script": "Tiền thưởng cuối năm",
+        "headline": "**Bắt đầu từ đâu?**",
+        "sub": "Trao đổi với chuyên gia DSC",
+        "note": ""
+      }
+    }
+  ]
+}

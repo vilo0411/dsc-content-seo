@@ -1,0 +1,83 @@
+{
+  "job": "",
+  "version": 2,
+  "rendered_at": "2026-11-24T16:16:02",
+  "creatives": {
+    "facebook-v1": {
+      "size": "1080x1350",
+      "layout": "hero",
+      "theme": "dark",
+      "group": null,
+      "status": "Đạt",
+      "issues": [],
+      "fit": {
+        "eyebrow": 1.0,
+        "headline": 0.88,
+        "sub": 1.0
+      }
+    },
+    "facebook-v2-01": {
+      "size": "1080x1080",
+      "layout": "hero",
+      "theme": "dark",
+      "group": "facebook-v2",
+      "status": "Đạt",
+      "issues": [],
+      "fit": {
+        "eyebrow": 1.0,
+        "headline": 1.0,
+        "sub": 1.0
+      }
+    },
+    "facebook-v2-02": {
+      "size": "1080x1080",
+      "layout": "rows",
+      "theme": "dark",
+      "group": "facebook-v2",
+      "status": "Đạt",
+      "issues": [],
+      "fit": {
+        "headline": 1.0,
+        "items": 0.96
+      }
+    },
+    "facebook-v2-03": {
+      "size": "1080x1080",
+      "layout": "rows",
+      "theme": "dark",
+      "group": "facebook-v2",
+      "status": "Đạt",
+      "issues": [],
+      "fit": {
+        "headline": 1.0,
+        "items": 0.96
+      }
+    },
+    "facebook-v2-04": {
+      "size": "1080x1080",
+      "layout": "rows",
+      "theme": "dark",
+      "group": "facebook-v2",
+      "status": "Đạt",
+      "issues": [],
+      "fit": {
+        "headline": 1.0,
+        "items": 0.96
+      }
+    },
+    "facebook-v2-05": {
+      "size": "1080x1080",
+      "layout": "cta-end",
+      "theme": "dark",
+      "group": "facebook-v2",
+      "status": "Đạt",
+      "issues": [],
+      "fit": {
+        "headline": 1.0,
+        "sub": 1.0,
+        "cta": 1.0,
+        "note": 1.0
+      }
+    }
+  }
+}

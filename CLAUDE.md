@@ -1,6 +1,27 @@
-# SEO Writer Agent Boilerplate
+# DSC Marketing Workspace
 
-This system is a modular SEO content production engine. 
+Workspace marketing của **Chứng khoán DSC**: SEO (engine chính, đầy đủ nhất) + Social/Fanpage + Paid Ads (Meta) + Campaign/Landing.
+
+---
+
+## 🧭 Domain router
+| Việc | Domain | Đọc trước | Lệnh |
+|---|---|---|---|
+| Bài web / kiến thức, tối ưu bài cũ, internal link, GSC | **SEO** | phần còn lại của file này | `/write` `/outlining` `/optimize` `/link` `/weekly` … |
+| Post Fanpage / Zalo OA / LinkedIn, lịch nội dung | **Social** | `.antigravity/domains/social/README.md` | `/social-plan` `/social-post` · kênh cộng đồng: `/syndicate` |
+| Quảng cáo Meta: brief, copy, đọc số, rút bài học | **Ads** | `.antigravity/domains/ads/README.md` | `/ads-brief` `/ads-copy` `/ads-review` `/ads-learn` |
+| Chiến dịch đa kênh, landing page, báo cáo | **Campaign** | `.antigravity/domains/campaign/README.md` | `/campaign-brief` `/landing` `/campaign-report` `/mkt-status` |
+
+Ảnh quảng cáo / post / carousel: chuẩn hình `knowledge/1-brand/DESIGN.md` (rút từ fanpage) → `/creative` (nền lấy từ thư viện `knowledge/1-brand/assets/library/` trước, thiếu mới tạo bằng Codex) (engine `scripts/creative.py`, layout ở `.antigravity/core/creative/`) — tự chạy trong `/ads-copy`, `/social-post`.
+
+**Mọi domain ngoài SEO** load core trước: `.antigravity/core/README.md` (context, vòng đời job, gate duyệt, QA `scripts/mkt_lint.py`) + `.antigravity/core/rules/compliance-finance.md`. Brand kit máy đọc được: `knowledge/1-brand/brand.json`. Job đa kênh: `knowledge/5-campaigns/` qua `python scripts/campaign.py`.
+**Không tự đăng, không tự chạy quảng cáo, không đổi ngân sách** — ghi lên Meta chỉ khi user yêu cầu rõ, luôn `PAUSED`.
+
+---
+
+# Domain SEO
+
+Engine SEO: research SERP → outline → draft → QA 3 tầng → finalize → learn. Phần dưới đây áp cho SEO (rule `content-anti-ai`, `seo-formatting`, `cta-conversion` cũng áp cho văn bản ở các domain khác).
 
 ---
 
@@ -110,6 +131,8 @@ Bài tốt = bài **rank được và được AI trích**. Sạch từ cấm / 
 | `/gsc-sync` | `.agents/skills/gsc-sync/SKILL.md` | Đồng bộ Google Search Console → `gsc-opportunities.md`. Nguồn: SEO Dashboard MCP (ưu tiên) hoặc GSC API. |
 | `/weekly` | `.agents/skills/weekly/SKILL.md` | Việc sau publish gom 1 lần/tuần: sync live, backfill link theo lô, đo GSC bài 4–8 tuần (→ `/optimize`), dọn log. Nguồn: `publish-ledger.csv`. |
 
+**Domain khác** (chi tiết trong README của domain): `/social-plan` `/social-post` `/syndicate` · `/ads-brief` `/ads-copy` `/ads-review` `/ads-learn` · `/campaign-brief` `/landing` `/campaign-report` `/mkt-status` · `/creative` — file tại `.agents/skills/<lệnh>/SKILL.md`.
+
 ## 🛠️ Helper Scripts
 Bảng đầy đủ (cờ, output, khi nào chạy): [`scripts/README.md`](scripts/README.md) — **chỉ mở khi cần chi tiết 1 script**; việc thường ngày dùng bảng "Việc → Làm" ở trên. Mọi script có `--help`.
 
@@ -118,6 +141,8 @@ Bảng đầy đủ (cờ, output, khi nào chạy): [`scripts/README.md`](scrip
 ## 📂 Standardized Workspace Structure
 ```text
 .antigravity/       # [THE ENGINE] Logic, Agents, Scripts, Memory
+├── core/           # Dùng chung mọi domain: README (protocol), rules/compliance-finance, agents/compliance-reviewer
+├── domains/        # social/ ads/ campaign/ — README, references/, learnings.md (SEO chưa move, vẫn ở dưới)
 ├── agents/         # Personas (Who)
 ├── rules/          # Master Rules & Compliance
 ├── skills/         # Standardized Skills (How & What)
@@ -129,10 +154,11 @@ Bảng đầy đủ (cờ, output, khi nào chạy): [`scripts/README.md`](scrip
 └── memory/         # Project history (DECISIONS.md)
 
 knowledge/          # [THE BRAIN & FACTORY] All data and content
-├── 1-brand/        # Identity, Personas, ICP
+├── 1-brand/        # Identity, Personas, ICP · brand.json (brand kit máy đọc được)
 ├── 2-market/       # Market Landscape
 ├── 3-pipeline/     # Strategy: Keywords, Backlog, rules
 │   └── internal-links/  # anchor-index.md, link-clusters.json, dashboard.md, link-graph.html, archive/
 ├── 4-content/      # Production: 1-outlines -> 3-finalized -> 4-cms (HTML dán CMS)
+├── 5-campaigns/    # Job đa kênh CMP-YYMMDD-slug/ (brief, social/, ads/, landing/, approved/, report.md)
 └── raw/            # Raw unprocessed uploads · live/ = snapshot site live (sync_live.py)
 ```

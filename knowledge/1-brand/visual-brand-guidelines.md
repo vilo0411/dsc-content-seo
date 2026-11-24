@@ -1,5 +1,6 @@
 # Visual Brand Guidelines — DSC Securities
 
+> **Phạm vi:** ảnh minh hoạ trong bài blog. Ảnh fanpage / quảng cáo / campaign theo `knowledge/1-brand/DESIGN.md` (2026-11-24).
 > **Trạng thái:** [Đã cập nhật ✅] — Quản lý Brand Assets và Quy chuẩn Hình ảnh.
 > File này được Visual Architect & Image Skill đọc để đảm bảo hình ảnh nhất quán với thương hiệu DSC.
 

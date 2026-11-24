@@ -179,6 +179,7 @@ temp_qa.py
 # Python cache & workflow backups
 __pycache__/
 *.bak
+.DS_Store
 
 # Market / news caches (sinh lại theo yêu cầu, churn cao)
 scripts/market-cache.json
@@ -186,3 +187,6 @@ scripts/news-cache.json
 knowledge/raw/audit/
 
 /gen-lang-client-0863794209-385c2ddf2422.json
+
+# API keys (Unsplash, Pexels…)
+.env

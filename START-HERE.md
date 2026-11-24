@@ -1,4 +1,4 @@
-# START HERE — DSC Content SEO
+# START HERE — DSC Marketing Workspace
 
 Hướng dẫn nhanh cho lần đầu dùng hoặc sau thời gian không đụng project.
 
@@ -21,6 +21,23 @@ Hướng dẫn nhanh cho lần đầu dùng hoặc sau thời gian không đụn
 | `/keyword-plan [N]` | Chọn N bài nên viết tiếp từ cluster map |
 | `/setup` | Build Knowledge Base lần đầu (chạy 1 lần duy nhất) |
 
+### Marketing ngoài SEO
+Đọc trước: `.antigravity/core/README.md` (protocol chung) · `.antigravity/core/rules/compliance-finance.md`.
+
+| Lệnh | Mô tả |
+|---|---|
+| `/social-plan [YYYY-MM]` | Lịch nội dung tháng Fanpage / Zalo OA / LinkedIn |
+| `/social-post <slug\|chủ đề>` | Viết post (≤ 3 biến thể/kênh) + brief hình |
+| `/syndicate <slug>` | Pack cho kênh cộng đồng (X, Mastodon, BAND, Pinterest, Medium…) |
+| `/ads-brief` · `/ads-copy` | Brief + ad copy Meta (không đẩy lên Meta trừ khi yêu cầu rõ, luôn PAUSED) |
+| `/ads-review` · `/ads-learn` | Đọc số Meta (read-only) · rút bài học vào `domains/ads/learnings.md` |
+| `/campaign-brief` | Tạo job đa kênh `knowledge/5-campaigns/CMP-YYMMDD-slug/` |
+| `/landing` | Copy + HTML 1 trang theo `brand.json` |
+| `/campaign-report` · `/mkt-status` | Báo cáo chiến dịch · bảng trạng thái mọi việc |
+| `/creative <file copy>` | Dựng ảnh quảng cáo / post / carousel (PNG đúng brand) + QA, duyệt theo version |
+
+QA nhanh cho post / ad / landing: `python scripts/mkt_lint.py <file> --channel facebook|zalo|linkedin|meta-ad|landing`
+
 ---
 
 ## Folder Map
@@ -38,6 +55,7 @@ knowledge/
 │   ├── glossary.md             ← Tên sản phẩm chuẩn + forbidden terms
 │   ├── anchor-index.md         ← Index bài đã publish, dùng cho internal linking
 │   └── keywords.csv            ← Keyword backlog
+├── 5-campaigns/                ← Job đa kênh (scripts/campaign.py new|status|set)
 ├── 4-content/
 │   ├── 0-sources/              ← Bài DSC cũ cần refresh/repurpose
 │   ├── 1-outlines/             ← Outline đã research (sau /outlining)

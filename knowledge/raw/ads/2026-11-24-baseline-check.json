@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-24",
+  "purpose": "baseline CPL/CPA mở tài khoản cho CMP-261124-mo-tai-khoan-tet-2027",
+  "accounts": [
+    {"id": "768269981943615", "mcp_enabled": true, "has_payment_method": false, "campaigns_all_time": 0},
+    {"id": "1410210783429265", "mcp_enabled": false, "reason": "Ads MCP đang rollout dần, chưa đọc được", "has_payment_method": true},
+    {"id": "1527736408324976", "note": "thuộc business khác (không phải DSC) — không đọc"}
+  ],
+  "baseline": null
+}

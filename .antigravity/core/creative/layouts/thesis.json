@@ -1,0 +1,193 @@
+{
+  "name": "thesis",
+  "style": "S01",
+  "mo_ta": "Luận điểm lớn: 1 tiêu đề lớn lệch trái, 1 câu phụ, nút/ghi chú dưới. Ảnh minh hoạ chỉ có chỗ ở khổ ngang.",
+  "default_theme": "dark",
+  "variants": {
+    "4:5": {
+      "regions": {
+        "headline": {
+          "box": [
+            0.07,
+            0.17,
+            0.86,
+            0.42
+          ],
+          "size": "xxl",
+          "valign": "end",
+          "max_lines": 4
+        },
+        "sub": {
+          "box": [
+            0.07,
+            0.62,
+            0.86,
+            0.14
+          ],
+          "size": "m",
+          "max_lines": 3
+        },
+        "cta": {
+          "box": [
+            0.07,
+            0.79,
+            0.86,
+            0.07
+          ],
+          "size": "s",
+          "max_lines": 1
+        },
+        "note": {
+          "box": [
+            0.07,
+            0.9,
+            0.86,
+            0.06
+          ],
+          "size": "xs",
+          "max_lines": 2
+        }
+      }
+    },
+    "1:1": {
+      "regions": {
+        "headline": {
+          "box": [
+            0.07,
+            0.17,
+            0.86,
+            0.4
+          ],
+          "size": "xxl",
+          "valign": "end",
+          "max_lines": 4
+        },
+        "sub": {
+          "box": [
+            0.07,
+            0.6,
+            0.86,
+            0.13
+          ],
+          "size": "m",
+          "max_lines": 3
+        },
+        "cta": {
+          "box": [
+            0.07,
+            0.76,
+            0.86,
+            0.08
+          ],
+          "size": "s",
+          "max_lines": 1
+        },
+        "note": {
+          "box": [
+            0.07,
+            0.89,
+            0.86,
+            0.07
+          ],
+          "size": "xs",
+          "max_lines": 2
+        }
+      }
+    },
+    "9:16": {
+      "logo_y": 0.15,
+      "safe": [
+        0.0,
+        0.14,
+        1.0,
+        0.66
+      ],
+      "regions": {
+        "headline": {
+          "box": [
+            0.08,
+            0.21,
+            0.84,
+            0.33
+          ],
+          "size": "xxl",
+          "valign": "end",
+          "max_lines": 5
+        },
+        "sub": {
+          "box": [
+            0.08,
+            0.56,
+            0.84,
+            0.1
+          ],
+          "size": "m",
+          "max_lines": 3
+        },
+        "cta": {
+          "box": [
+            0.08,
+            0.68,
+            0.84,
+            0.05
+          ],
+          "size": "s",
+          "max_lines": 1
+        },
+        "note": {
+          "box": [
+            0.08,
+            0.75,
+            0.84,
+            0.045
+          ],
+          "size": "xs",
+          "max_lines": 2
+        }
+      }
+    },
+    "1.91:1": {
+      "regions": {
+        "headline": {
+          "box": [
+            0.05,
+            0.2,
+            0.56,
+            0.46
+          ],
+          "size": "xxl",
+          "valign": "end",
+          "max_lines": 3
+        },
+        "sub": {
+          "box": [
+            0.05,
+            0.68,
+            0.56,
+            0.14
+          ],
+          "size": "s",
+          "max_lines": 2
+        },
+        "note": {
+          "box": [
+            0.05,
+            0.85,
+            0.56,
+            0.1
+          ],
+          "size": "xs",
+          "max_lines": 2
+        },
+        "image": {
+          "box": [
+            0.64,
+            0.12,
+            0.32,
+            0.76
+          ]
+        }
+      }
+    }
+  }
+}

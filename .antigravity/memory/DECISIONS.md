@@ -5,6 +5,7 @@ This file tracks key decisions made during the project lifecycle to ensure long-
 ---
 
 ## 🏛️ Architectural Decisions
+- **2026-11-24:** Mở rộng thành **DSC Marketing Workspace** theo kiểu chuyển dần: thêm lớp `.antigravity/core/` (protocol, compliance-finance, compliance-reviewer) và `.antigravity/domains/{social,ads,campaign}/`; job đa kênh ở `knowledge/5-campaigns/CMP-YYMMDD-slug/`. **SEO chưa move** vào `domains/seo/` để không gãy path trong SKILL.md/scripts — chỉ move khi domain mới chạy ổn. Học của social/ads ghi `domains/<d>/learnings.md`, không vào `instincts-by-scope/` (file đó sinh tự động theo topic SEO). Ghi lên Meta Ads chỉ khi user yêu cầu rõ, luôn PAUSED.
 - **2026-05-17:** Adopted the **Multi-Agent (Sub-agent) Framework** for modularity.
 - **2026-05-17:** All production files must follow the `0-sources` -> `1-outlines` -> `2-drafts` -> `3-finalized` pipeline.
 - **2026-05-17:** Slash commands are the primary interface for triggering workflows.

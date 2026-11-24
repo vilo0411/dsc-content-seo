@@ -1,0 +1,141 @@
+{
+  "job": "",
+  "version": 2,
+  "rendered_at": "2026-11-24T16:16:16",
+  "creatives": {
+    "ads-v1": {
+      "size": "1080x1350",
+      "layout": "hero",
+      "theme": "mint",
+      "group": null,
+      "status": "Đạt có lưu ý",
+      "issues": [
+        {
+          "rule": "FIT-shrunk",
+          "level": "warn",
+          "msg": "headline: phải thu chữ còn 85% — cân nhắc rút gọn"
+        },
+        {
+          "rule": "WORDS-on-image",
+          "level": "warn",
+          "msg": "Chữ trên ảnh quảng cáo 9 từ > 8"
+        }
+      ],
+      "fit": {
+        "eyebrow": 1.0,
+        "headline": 0.85,
+        "sub": 1.0
+      }
+    },
+    "ads-v2": {
+      "size": "1080x1350",
+      "layout": "hero",
+      "theme": "dark",
+      "group": null,
+      "status": "Đạt",
+      "issues": [],
+      "fit": {
+        "eyebrow": 1.0,
+        "headline": 0.88,
+        "sub": 1.0
+      }
+    },
+    "ads-v3": {
+      "size": "1080x1920",
+      "layout": "hero",
+      "theme": "dark",
+      "group": null,
+      "status": "Đạt có lưu ý",
+      "issues": [
+        {
+          "rule": "FIT-shrunk",
+          "level": "warn",
+          "msg": "headline: phải thu chữ còn 85% — cân nhắc rút gọn"
+        }
+      ],
+      "fit": {
+        "eyebrow": 1.0,
+        "headline": 0.85,
+        "sub": 1.0
+      }
+    },
+    "ads-v4": {
+      "size": "1080x1080",
+      "layout": "bignum",
+      "theme": "dark",
+      "group": null,
+      "status": "Đạt",
+      "issues": [],
+      "fit": {
+        "eyebrow": 1.0,
+        "big": 1.0,
+        "headline": 1.0,
+        "sub": 1.0,
+        "note": 1.0
+      }
+    },
+    "ads-v5": {
+      "size": "1200x628",
+      "layout": "hero",
+      "theme": "dark",
+      "group": null,
+      "status": "Đạt",
+      "issues": [],
+      "fit": {
+        "eyebrow": 1.0,
+        "headline": 1.0,
+        "sub": 1.0
+      }
+    },
+    "ads-v2-1080x1080": {
+      "size": "1080x1080",
+      "layout": "hero",
+      "theme": "dark",
+      "group": null,
+      "status": "Đạt",
+      "issues": [],
+      "fit": {
+        "eyebrow": 1.0,
+        "headline": 0.88,
+        "sub": 1.0
+      }
+    },
+    "ads-v2-1080x1920": {
+      "size": "1080x1920",
+      "layout": "hero",
+      "theme": "dark",
+      "group": null,
+      "status": "Đạt",
+      "issues": [],
+      "fit": {
+        "eyebrow": 1.0,
+        "headline": 0.88,
+        "sub": 1.0
+      }
+    },
+    "ads-v2-1200x628": {
+      "size": "1200x628",
+      "layout": "hero",
+      "theme": "dark",
+      "group": null,
+      "status": "Đạt có lưu ý",
+      "issues": [
+        {
+          "rule": "FIT-shrunk",
+          "level": "warn",
+          "msg": "sub: phải thu chữ còn 78% — cân nhắc rút gọn"
+        },
+        {
+          "rule": "MOBILE-small",
+          "level": "warn",
+          "msg": "sub: chữ chỉ ~9.0px khi xem trên điện thoại rộng 390px"
+        }
+      ],
+      "fit": {
+        "eyebrow": 1.0,
+        "headline": 0.88,
+        "sub": 0.78
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "_doc": "Brand kit máy đọc được. Ảnh social/quảng cáo: theo knowledge/1-brand/DESIGN.md (v0.1). Ảnh blog: visual-brand-guidelines.md.",
+  "name": "Chứng khoán DSC",
+  "legal_name": "Công ty Cổ phần Chứng khoán DSC",
+  "host": "https://www.dsc.com.vn",
+  "open_account_url": "https://www.dsc.com.vn/mo-tai-khoan",
+  "colors": {
+    "brand_green": "#00AD14",
+    "bright_green": "#2BE841",
+    "teal": "#10E7B3",
+    "navy": "#0D1B2A",
+    "mint": "#E8F8F2",
+    "white": "#FFFFFF",
+    "gradient": [
+      "#2BE841",
+      "#10E7B3"
+    ],
+    "forbidden": [
+      "red cho chữ/số/biểu đồ (được dùng đỏ trong motif văn hoá — DESIGN.md §2)"
+    ],
+    "emerald_950": "#0B331E",
+    "emerald_800": "#1B5232",
+    "emerald_600": "#226435",
+    "jade_400": "#6CB298",
+    "glow_400": "#5BD681",
+    "gold_200": "#EFD786",
+    "gold_500": "#C9A24A",
+    "gold_700": "#A57D3F",
+    "ivory_50": "#F9F4EB",
+    "cream_200": "#EBE1C1",
+    "lacquer_600": "#BA382B",
+    "gold_gradient": [
+      "#FFF3C4",
+      "#EFD786",
+      "#C9A24A",
+      "#8C6A1F"
+    ]
+  },
+  "logo": {
+    "light_bg": "knowledge/1-brand/assets/logos/logo-for-light-bg.png",
+    "dark_bg": "knowledge/1-brand/assets/logos/logo-for-dark-bg.png",
+    "position": "top-left",
+    "margin": "4%"
+  },
+  "fonts": {
+    "family": "Be Vietnam Pro",
+    "regular": "knowledge/1-brand/assets/fonts/BeVietnamPro-Regular.ttf",
+    "bold": "knowledge/1-brand/assets/fonts/BeVietnamPro-Bold.ttf",
+    "rules": "NFC, không ép đậm giả, line-height tiêu đề >= 1.05 (display) / 1.25 (sans thường), chờ document.fonts.ready trước khi xuất ảnh",
+    "faces": {
+      "script": {
+        "family": "Great Vibes",
+        "file": "knowledge/1-brand/assets/fonts/GreatVibes-Regular.ttf",
+        "weight": "400"
+      },
+      "serif": {
+        "family": "Cormorant Garamond",
+        "file": "knowledge/1-brand/assets/fonts/CormorantGaramond-VF.ttf",
+        "weight": "300 700"
+      },
+      "serif_alt": {
+        "family": "Playfair Display",
+        "file": "knowledge/1-brand/assets/fonts/PlayfairDisplay-VF.ttf",
+        "weight": "400 900"
+      },
+      "sans": {
+        "family": "Montserrat",
+        "file": "knowledge/1-brand/assets/fonts/Montserrat-VF.ttf",
+        "weight": "100 900"
+      }
+    }
+  },
+  "sizes": {
+    "blog_featured": "16:9",
+    "blog_inline": "4:3",
+    "feed_square": "1080x1080",
+    "feed_portrait": "1080x1350",
+    "story_reel": "1080x1920",
+    "link_ad": "1200x628"
+  },
+  "tone": [
+    "chuyên nghiệp",
+    "hiện đại",
+    "tận tâm",
+    "gần gũi nhưng chuẩn mực tài chính"
+  ],
+  "visual_rules": [
+    "không chữ do AI sinh trong ảnh",
+    "không màu đỏ",
+    "không logo đối thủ",
+    "zero-clutter",
+    "1 ảnh = 1 luận điểm"
+  ],
+  "products": {
+    "brokerage": "Môi giới 1:1 — phí từ 0,1%",
+    "dsc_invest": "DSC Invest — ủy thác từ 3 tỷ VNĐ/hợp đồng",
+    "onboarding": "Mở tài khoản eKYC 100% online ~3 phút",
+    "app": "DSC Trading"
+  }
+}
