@@ -8,6 +8,7 @@ from urllib.request import Request, urlopen
 from urllib.parse import urlsplit, urlunsplit, urljoin
 from urllib.error import HTTPError
 from bs4 import BeautifulSoup
+from snapshot_security import redact_google_api_keys
 sys.stdout.reconfigure(encoding="utf-8")
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/"knowledge/raw/competitors/vfs"
@@ -22,12 +23,16 @@ def norm(u):
  return urlunsplit(("https" if h=="www.vfs.com.vn" else p.scheme,h,p.path.rstrip("/") or "/",p.query,""))
 def get(u):
  key=hashlib.sha256(u.encode()).hexdigest()[:20]; f=OUT/"html"/(key+".html")
- if f.exists(): return 200,u,f.read_text(encoding="utf-8")
+ if f.exists():
+  cached=f.read_text(encoding="utf-8"); clean=redact_google_api_keys(cached)
+  if clean!=cached: f.write_text(clean,encoding="utf-8")
+  return 200,u,clean
  for attempt in range(2):
   try:
    time.sleep(.25)
    with urlopen(Request(u,headers={"User-Agent":"Mozilla/5.0 (compatible; LinkResearch/1.0)"}),timeout=22) as r:
     s=r.read().decode("utf-8","replace"); final=r.url; status=r.status
+   s=redact_google_api_keys(s)
    f.write_text(s,encoding="utf-8"); return status,final,s
   except HTTPError as e: return e.code,u,""
   except Exception as e:

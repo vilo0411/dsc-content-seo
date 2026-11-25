@@ -29,6 +29,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import sync_live as sl  # noqa: E402
+from snapshot_security import redact_google_api_keys
 
 ROOT = sl.ROOT
 DEFAULT_HOST = "https://www.vpbanks.com.vn"
@@ -119,6 +120,7 @@ def crawl_one(url: str, out: Path, delay: float) -> tuple[dict, list[dict], dict
     if isinstance(body, str) and body.startswith("$"):
         body = rsc_text_row(payload, body)
     body = sl.normalize(body) if body else ""
+    body = redact_google_api_keys(body)
     (out / "html" / f"{slug}.html").write_text(body, encoding="utf-8")
 
     links, words = sl.parse_links(slug, body)
