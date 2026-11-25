@@ -9,6 +9,11 @@ Link architecture (pillar / hub / spoke, pillar anchors) stays in strategy/taxon
                                                   # URLs, update title/cluster/role; never touches status/anchors
     python scripts/registry.py check             # unmapped file slugs, duplicate main keywords, taxonomy gaps
     python scripts/registry.py show <slug>       # one row, all fields
+    python scripts/registry.py cluster [<code>]  # topic strategy: section core/outer/off, entity, bridge_to,
+                                                  # attributes + which are not yet covered (gaps); no code = table
+    python scripts/registry.py suggest-core      # data view: clicks / key events share per cluster vs section
+
+Strategy fields (section, entity, bridge_to, attributes) live ONLY in taxonomy.json "topics" - edit there.
 
 Columns
   slug          URL slug on dsc.com.vn/kien-thuc/ (live slug once published; file slug before that)
@@ -36,6 +41,10 @@ from _common import FINAL_DIR, ROOT, STRATEGY_DIR, setup_utf8, unaccent
 REGISTRY = STRATEGY_DIR / "pages.csv"
 TAXONOMY = STRATEGY_DIR / "taxonomy.json"
 PAGE_GROUPS = STRATEGY_DIR / "page-groups.csv"
+PAGE_AUDIT = STRATEGY_DIR / "page-audit.csv"
+BRAND_FACTS = ROOT / "knowledge/1-brand/brand-facts.json"
+SECTIONS = ("core", "outer", "off")                              # /kien-thuc topics
+SITE_SECTIONS = ("core", "outer", "trust", "off", "topics")      # site areas; "topics" = split by taxonomy topics
 SITEMAP_CACHE = ROOT / ".agents/skills/link/scripts/sitemap-cache.json"
 LEGACY = {  # only read by `build`
     "anchor_index": ROOT / "knowledge/3-seo/links/anchor-index.md",
@@ -324,8 +333,176 @@ def cmd_check(a) -> int:
         print(f"- {s} ({roles[s][0]})")
     nocluster = [r["slug"] for r in rows if not r["cluster"]]
     print(f"\n## Chưa có cluster ({len(nocluster)}): {', '.join(nocluster[:20])}")
-    issues = len(pending) + len(multi) + len(missing) + len(nocluster)
+    strat = _check_topics(live_slugs)
+    issues = len(pending) + len(multi) + len(missing) + len(nocluster) + len(strat)
     return 1 if issues else 0
+
+
+def _topics() -> dict:
+    return json.loads(TAXONOMY.read_text(encoding="utf-8")).get("topics", {})
+
+
+def topic_problems(data: dict, live_slugs: set[str], facts: set[str]) -> list[str]:
+    """Strategy fields in taxonomy.json topics + name drift between topics and link-group labels."""
+    topics = data.get("topics", {})
+    out = []
+    folders = {}
+    for s in data.get("site", {}).get("sections", []):
+        if s.get("section") not in SITE_SECTIONS:
+            out.append(f"khu vực site {s.get('id')}: section `{s.get('section')}` phải là {' / '.join(SITE_SECTIONS)}")
+        for f in s.get("folders", []):
+            if f in folders:
+                out.append(f"thư mục {f} nằm ở 2 khu vực site: {folders[f]} và {s.get('id')}")
+            folders[f] = s.get("id")
+    for code, t in topics.items():
+        if t.get("section") not in SECTIONS:
+            out.append(f"cụm {code}: section `{t.get('section')}` phải là core / outer / off")
+        b = t.get("bridge_to", "")
+        if t.get("section") == "outer" and not b:
+            out.append(f"cụm {code} (outer): thiếu bridge_to")
+        if b and b not in live_slugs:
+            out.append(f"cụm {code}: bridge_to `{b}` không live")
+        for at in t.get("attributes", []):
+            fid = at.get("fact", "")
+            if fid and fid != "market" and fid not in facts:
+                out.append(f"cụm {code}: thuộc tính “{at.get('name')}” trỏ fact `{fid}` không có trong brand-facts.json")
+    subnames = {sg: n for t in topics.values() for sg, n in t.get("subgroups", {}).items()}
+    for c in data.get("clusters", []):
+        if c.get("topic") not in topics:
+            out.append(f"cụm link {c['id']}: topic `{c.get('topic')}` không có trong topics")
+        for g in c.get("groups", []):
+            m = re.match(r"(\d+[a-z]) (.+)", g.get("name", ""))
+            if m and m.group(1) in subnames and m.group(2) != subnames[m.group(1)]:
+                out.append(f"tên nhóm lệch: link group “{g['name']}” ≠ topics {m.group(1)} “{subnames[m.group(1)]}”")
+    return out
+
+
+def _check_topics(live_slugs: set[str]) -> list[str]:
+    data = json.loads(TAXONOMY.read_text(encoding="utf-8"))
+    facts = {f["id"] for f in json.loads(BRAND_FACTS.read_text(encoding="utf-8"))["facts"]} if BRAND_FACTS.exists() else set()
+    out = topic_problems(data, live_slugs, facts)
+    print(f"\n## Chiến lược cụm (taxonomy.json topics) ({len(out)})")
+    for x in out[:40]:
+        print(f"- {x}")
+    return out
+
+
+def covered(attr: dict, rows: list[dict]) -> list[str]:
+    """Articles whose title / keywords contain the attribute name or one of its aliases (accent-insensitive).
+    Heuristic on registry text, not a content check."""
+    keys = [unaccent(k).lower() for k in [attr["name"], *attr.get("aliases", [])]]
+    return [r["slug"] for r in rows
+            if any(k in unaccent(" ".join([r["title"], r["key_chinh"], r["key_phu"], r["keywords"]])).lower() for k in keys)]
+
+
+def cmd_cluster(a) -> int:
+    topics, rows = _topics(), [r for r in load() if r["status"] != "Merged"]
+    if not a.code:
+        print("| Mã | Cụm | Section | Thực thể | bridge_to | Bài | Qua pipeline | Thuộc tính phủ |")
+        print("|---|---|---|---|---|---:|---:|---:|")
+        for code, t in topics.items():
+            rs = [r for r in rows if r["cluster"] == code]
+            done = sum(1 for r in rs if r["status"] == "Finalized")
+            at = t.get("attributes", [])
+            cov = sum(1 for x in at if covered(x, rs))
+            print(f"| {code} | {t['name']} | {t.get('section', '')} | {t.get('entity', '')} | {t.get('bridge_to', '') or '—'} | "
+                  f"{len(rs)} | {round(100 * done / len(rs)) if rs else 0}% | {cov}/{len(at)} |")
+        print('\nSửa section / entity / bridge_to / attributes: knowledge/3-seo/strategy/taxonomy.json → "topics".')
+        return 0
+    t = topics.get(a.code)
+    if not t:
+        print(f"Không có cụm `{a.code}`. Có: {', '.join(topics)}")
+        return 1
+    rs = [r for r in rows if r["cluster"] == a.code]
+    print(f"# Cụm {a.code} — {t['name']}")
+    print(f"section: {t.get('section')} · thực thể: {t.get('entity')} · bridge_to: {t.get('bridge_to') or '— (core)'}")
+    print(f"bài: {len(rs)} · Finalized: {sum(1 for r in rs if r['status'] == 'Finalized')} · "
+          f"Planned/đang làm: {sum(1 for r in rs if r['status'] not in ('Finalized', 'Live', 'Merged'))}")
+    print("nhóm con: " + " · ".join(f"{k} {v}" for k, v in t.get("subgroups", {}).items()))
+    at = t.get("attributes", [])
+    if not at:
+        print("\nChưa khai báo attributes cho cụm này (taxonomy.json → topics → attributes).")
+        return 0
+    print("\n| Thuộc tính | Nguồn giá trị | Bài đang phủ (theo tiêu đề/từ khoá) |\n|---|---|---|")
+    gaps = []
+    for x in at:
+        hit = covered(x, rs)
+        if not hit:
+            gaps.append(x["name"])
+        shown = (", ".join(hit[:3]) + (" …" if len(hit) > 3 else "")) if hit else "**chưa có**"
+        print(f"| {x['name']} | {x.get('fact') or '—'} | {shown} |")
+    if gaps:
+        print(f"\nGap ({len(gaps)}): {', '.join(gaps)} → ứng viên bài mới cho /keyword-plan")
+    return 0
+
+
+def positioning() -> dict:
+    """The two bold lines of profile.md §0 (single source for Định vị nội dung / Thực thể trung tâm)."""
+    text = (ROOT / "knowledge/1-brand/profile.md").read_text(encoding="utf-8")
+    out = {}
+    for key, label in (("positioning", "Định vị nội dung"), ("entity", "Thực thể trung tâm")):
+        m = re.search(rf"^- \*\*{label}:\*\*\s*(.+)$", text, re.M)
+        out[key] = m.group(1).strip() if m else ""
+    return out
+
+
+def site_sections() -> dict:
+    """Site-wide view: taxonomy.json `site.sections` joined with the latest gsc-site-folders.json snapshot.
+    Folders not mapped to any area are returned as `unmapped` so the map never silently drops traffic."""
+    import page_groups as pg
+    day, snap = pg.latest_site_folders()
+    groups = {g["group"]: g for g in snap.get("groups", [])}
+    data = json.loads(TAXONOMY.read_text(encoding="utf-8")).get("site", {})
+    out, used = [], set()
+    for s in data.get("sections", []):
+        gs = [groups[f] for f in s.get("folders", []) if f in groups]
+        used.update(s.get("folders", []))
+        out.append(dict(id=s["id"], name=s["name"], section=s.get("section", ""), note=s.get("note", ""),
+                        folders=s.get("folders", []),
+                        urls=sum(g.get("rows", 0) for g in gs), clicks=sum(g.get("clicks", 0) for g in gs),
+                        prev=sum(g.get("prev_clicks", 0) for g in gs), impressions=sum(g.get("impressions", 0) for g in gs)))
+    unmapped = [g for f, g in groups.items() if f not in used and g.get("clicks", 0) > 0]
+    return dict(date=day, start=snap.get("start_date", ""), end=snap.get("end_date", ""),
+                totals=snap.get("totals", {}), sections=out, unmapped=unmapped)
+
+
+def suggest_section(share_k: float, rate: float, site_rate: float, sessions: float) -> str:
+    """core when the cluster brings >= 15% of key events, or converts >= 2x the site rate on real traffic."""
+    return "core" if share_k >= 0.15 or (rate >= 2 * site_rate and sessions >= 1000) else "outer"
+
+
+def cmd_suggest_core(a) -> int:
+    """Read-only: per cluster share of clicks and key events from page-audit.csv next to the declared section."""
+    if not PAGE_AUDIT.exists():
+        print("Chưa có page-audit.csv — chạy python scripts/page_groups.py report")
+        return 3
+    topics = _topics()
+    with PAGE_AUDIT.open(encoding="utf-8-sig", newline="") as f:
+        audit = list(csv.DictReader(f))
+    agg: dict[str, list[float]] = {}
+    for r in audit:
+        v = agg.setdefault(r["cluster"], [0, 0.0, 0.0, 0.0, 0])
+        v[0] += 1
+        v[1] += float(r["clicks"] or 0)
+        v[2] += float(r["key_events"] or 0)
+        v[3] += float(r["sessions"] or 0)
+        v[4] += r.get("pipeline") == "Finalized"
+    tc, tk, ts = (sum(v[i] for v in agg.values()) or 1 for i in (1, 2, 3))
+    site_rate = tk / ts
+    print("Key events = tổng GA4 (xem trang MTK + điền form + gửi form), chưa tách theo event — trọng số trong "
+          "kpi-definitions.md chưa áp được.\n")
+    print("| Mã | Cụm | Section khai báo | % clicks | % key events | KE / 1.000 sessions | Qua pipeline | Gợi ý |")
+    print("|---|---|---|---:|---:|---:|---:|---|")
+    for code, t in topics.items():
+        v = agg.get(code, [0, 0, 0, 0, 0])
+        share_k, rate = v[2] / tk, (v[2] / v[3] if v[3] else 0)
+        sug = suggest_section(share_k, rate, site_rate, v[3])
+        decl = t.get("section", "")
+        flag = "" if decl == sug or decl == "off" else " ⚠️ lệch"
+        print(f"| {code} | {t['name']} | {decl} | {100 * v[1] / tc:.0f}% | {100 * share_k:.0f}% | {1000 * rate:.1f} | "
+              f"{round(100 * v[4] / v[0]) if v[0] else 0}% | {sug}{flag} |")
+    print("\nChỉ gợi ý (key events >= 15% tổng, hoặc tỷ lệ >= 2x trung bình site). Quyết định: sửa taxonomy.json → topics.")
+    return 0
 
 
 def cmd_show(a) -> int:
@@ -344,6 +521,8 @@ def main() -> int:
     sub.add_parser("refresh").set_defaults(fn=cmd_refresh)
     sub.add_parser("check").set_defaults(fn=cmd_check)
     s = sub.add_parser("show"); s.add_argument("slug"); s.set_defaults(fn=cmd_show)
+    c = sub.add_parser("cluster"); c.add_argument("code", nargs="?"); c.set_defaults(fn=cmd_cluster)
+    sub.add_parser("suggest-core").set_defaults(fn=cmd_suggest_core)
     a = ap.parse_args()
     return a.fn(a)
 

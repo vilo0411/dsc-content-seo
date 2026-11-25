@@ -1,3 +1,8 @@
+---
+Created: 2026-06-05
+Updated: 2026-06-05
+---
+
 # DCF là gì? Cách định giá cổ phiếu bằng phương pháp DCF chi tiết
 
 Nhiều nhà đầu tư thường mua cổ phiếu dựa vào tin đồn mà không biết giá trị thực của doanh nghiệp là bao nhiêu. Phương pháp **DCF là gì**?

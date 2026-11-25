@@ -3,6 +3,8 @@ Title: Cổ phiếu BSR: Phân tích định giá và kết quả kinh doanh 202
 Meta_Description: Phân tích cổ phiếu BSR năm 2026: Cập nhật kết quả kinh doanh kỷ lục, định giá P/E, P/B, biên crack spread và tiềm năng thoái vốn PVN cùng chuyên gia DSC.
 Target_Keyword: cổ phiếu BSR
 Slug: co-phieu-bsr-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat
+Created: 2026-10-22
+Updated: 2026-10-22
 ---
 
 # Cổ phiếu BSR: Phân tích định giá và kết quả kinh doanh 2026

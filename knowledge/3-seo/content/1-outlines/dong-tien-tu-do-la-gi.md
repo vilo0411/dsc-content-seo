@@ -119,6 +119,8 @@ Internal_Links:
   - anchor: "mở tài khoản chứng khoán DSC"
     url: "https://www.dsc.com.vn/mo-tai-khoan"
     suggested_placement: "H2 Bridge DSC + Kết luận"
+Created: 2026-11-10
+Updated: 2026-11-10
 ---
 
 # SEO Content Outline: Dòng tiền tự do là gì

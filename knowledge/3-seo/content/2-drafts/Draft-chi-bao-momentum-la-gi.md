@@ -1,3 +1,8 @@
+---
+Created: 2026-05-21
+Updated: 2026-05-21
+---
+
 # Chỉ báo Momentum là gì? Ứng dụng Momentum trong giao dịch
 
 Chỉ báo Momentum đo lường tốc độ thay đổi của giá, một yếu tố cốt lõi của xu hướng. Tuy nhiên, nhiều trader áp dụng máy móc, mua khi chỉ báo cắt lên đường 0 và thua lỗ vì tín hiệu nhiễu. Bài viết này giải thích bản chất Momentum là gì và cung cấp một chiến lược giao dịch hoàn chỉnh: từ cài đặt chu kỳ tối ưu cho VN-Index, kết hợp bộ lọc ADX để loại bỏ nhiễu, đến cách đọc tín hiệu phân kỳ bắt đỉnh đáy sớm.

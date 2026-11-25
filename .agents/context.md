@@ -5,12 +5,13 @@
 > Cập nhật: 2026-11-19.
 
 ## 1. Doanh nghiệp & sản phẩm
-- **Thương hiệu:** Chứng khoán DSC — dsc.com.vn. Chi tiết: `knowledge/1-brand/profile.md`.
+- **Thương hiệu:** Chứng khoán DSC — dsc.com.vn. Chi tiết: `knowledge/1-brand/profile.md` (§0 = định vị nội dung + thực thể trung tâm; cụm core/outer: `python scripts/registry.py cluster`).
 - **Sản phẩm bán qua marketing số:**
   - Mở tài khoản online (eKYC) — offer chính, URL `https://www.dsc.com.vn/mo-tai-khoan`.
   - Môi giới 1:1 + Margin — khách giao dịch chủ động.
   - DSC Invest (ủy thác, vốn lớn) — tư vấn 1:1, không chốt online.
 - **Nghiệp vụ / quy trình thật** (nạp tiền, tiểu khoản, eKYC): `knowledge/1-brand/service-operations.md`.
+- **Nhận diện hình ảnh (mọi thiết kế):** `knowledge/1-brand/DESIGN.md` v1.0 + máy đọc `brand.json` — palette Gunmetal `#272D2B` · Pine Teal `#1D4130` · Lime `#2AD03D` · Emerald `#1BBE72` · Frosted Mint `#8CFFCC` · White, font duy nhất Plus Jakarta Sans, ảnh trừu tượng xanh. Không tự đặt hex/font.
 
 ## 2. Khách hàng
 - **ICP:** F0 trẻ, dùng smartphone, vốn 10 triệu – 1 tỷ — `knowledge/1-brand/icp.md`.

@@ -4,6 +4,8 @@ PAA_Questions:
   - "Lợi nhuận ròng có phải là lợi nhuận sau thuế không?"
   - "Lợi nhuận ròng và lợi nhuận gộp khác nhau như thế nào?"
   - "Làm cách nào để tính biên lợi nhuận?"
+Created: 2026-10-07
+Updated: 2026-10-07
 ---
 
 # 📋 BÁO CÁO TỐI ƯU SEO (SEO Optimization Proposal)

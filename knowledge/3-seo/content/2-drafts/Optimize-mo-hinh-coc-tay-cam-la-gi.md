@@ -3,6 +3,8 @@ Title: Mô hình Cốc Tay Cầm là gì? Kỹ thuật giao dịch Pivot Point
 Meta_Description: Hướng dẫn nhận diện mô hình Cốc Tay Cầm (Cup and Handle), quy tắc khối lượng, 3 chiến lược mua Pivot Point và quản trị rủi ro cắt lỗ 7–8% cùng DSC.
 Target_Keyword: mô hình cốc tay cầm
 Slug: mo-hinh-coc-tay-cam-la-gi
+Created: 2026-09-16
+Updated: 2026-09-16
 ---
 
 # Mô hình Cốc Tay Cầm là gì? Kỹ thuật giao dịch Pivot Point

@@ -5,6 +5,8 @@ Slug: nen-mo-tai-khoan-chung-khoan-o-dau
 Persona: P2
 Status: Proposal implemented to draft only
 Evidence_Source: User incognito screenshots
+Created: 2026-11-04
+Updated: 2026-11-04
 ---
 # Proposal: Nên mở tài khoản chứng khoán ở đâu? Top 7 công ty uy tín
 

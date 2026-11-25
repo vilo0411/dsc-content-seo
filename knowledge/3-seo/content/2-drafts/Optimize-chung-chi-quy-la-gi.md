@@ -2,6 +2,8 @@
 title: "Chứng chỉ quỹ là gì? Hướng dẫn đầu tư chi tiết cho F0 [2026]"
 source: "https://www.dsc.com.vn/kien-thuc/chung-chi-quy-la-gi"
 description: "Chứng chỉ quỹ là gì? Khám phá cách tính lợi nhuận, phân biệt quỹ mở - đóng và chiến lược đầu tư chứng chỉ quỹ an toàn cùng chuyên gia DSC. Click ngay!"
+Created: 2026-05-27
+Updated: 2026-05-27
 ---
 
 Bạn đang gửi tiết kiệm ngân hàng với lãi suất thấp? Bạn muốn tìm kênh sinh lời tốt hơn nhưng lại lo ngại rủi ro biến động của cổ phiếu? 

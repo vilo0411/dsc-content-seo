@@ -9,7 +9,7 @@ Thứ tự section (bỏ section không có chất liệu thật, không độn)
 6. **CTA cuối + miễn trừ** — CTA lặp lại, dòng pháp lý (điều kiện ưu đãi, "không phải khuyến nghị đầu tư" nếu có nhận định).
 
 ## Kỹ thuật
-- HTML 1 file, CSS inline từ `knowledge/1-brand/brand.json` (màu, font Be Vietnam Pro), mobile-first, không màu đỏ.
+- HTML 1 file, CSS inline từ `knowledge/1-brand/brand.json` (màu, font Plus Jakarta Sans, thang chữ `fonts.web_scale_pt` — DESIGN.md v1.0), mobile-first, không màu đỏ.
 - 1 CTA chính lặp lại (hero, giữa, cuối) → `open_account_url` hoặc form; không 3 CTA khác nhau.
 - Copy đi qua `mkt_lint.py --channel landing` trước khi dựng HTML.
 - Thẻ meta title/description; nếu cần index thì brief SEO riêng qua `/outlining`.

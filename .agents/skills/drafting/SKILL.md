@@ -22,7 +22,7 @@ Chỉ đọc file **chưa có trong session** (chạy tiếp ngay sau `/outlinin
 - Theo `.agents/skills/drafting/references/playbook.md` Step 1: giao đủ 5 lời hứa của outline (Thesis, Information_Gain, Entities, PAA, bảng dữ liệu có link nguồn) + câu đầu mỗi H2 trả lời ngay.
 - Sapo dùng nguyên văn bản đã duyệt trong outline; bước how-to viết chung cho mọi CTCK (chi tiết riêng DSC ở H2 DSC/CTA).
 - Ảnh vẽ ngay ở bước này theo `knowledge/1-brand/image-design-system.md` (bìa 1000×600, trong bài 800×500), ảnh chụp app lấy từ site rồi ghép khung — xem `drafting/references/playbook.md` Step 1 mục 5.
-- Lưu bản nháp tại: `knowledge/3-seo/content/2-drafts/Draft-[slug].md`.
+- Lưu bản nháp tại: `knowledge/3-seo/content/2-drafts/Draft-[slug].md`. YAML đầu file giữ `Created:` (ngày tạo draft) + `Updated:` (YYYY-MM-DD).
 
 ### Bước 2: Internal Linking
 - Quy tắc đặt link: `.agents/skills/link/references/link-rules.md` (2 KB — không cần mở cả SKILL 13 KB).

@@ -7,6 +7,13 @@ Sources: dsc.com.vn, WebSearch
 
 # Company Profile — Chứng khoán DSC
 
+## 0. Định vị nội dung (Source Context) & Thực thể trung tâm (Central Entity)
+<!-- Nguồn duy nhất cho 2 khái niệm này. Dashboard (mục Bản đồ chiến lược) đọc nguyên văn 2 dòng in đậm dưới đây. -->
+- **Định vị nội dung:** Chứng khoán DSC là công ty chứng khoán; mọi bài viết từ góc nhìn "nhà đầu tư cá nhân làm việc này thế nào khi có tài khoản chứng khoán" — không viết như báo tin tức hay ngân hàng.
+- **Thực thể trung tâm:** Đầu tư chứng khoán cá nhân tại Việt Nam.
+- **DSC kiếm tiền từ:** mở tài khoản + phí giao dịch (Môi giới 1:1), margin, DSC Invest (mục 2). Số liệu: `brand-facts.json`.
+- **Áp dụng:** chủ đề ngoài thực thể trung tâm (vàng, bạc, lãi suất ngân hàng, nghề nghiệp) chỉ viết khi có góc so sánh / dẫn về đầu tư chứng khoán. Cụm nào core / outer / off, bài Outer dẫn về đâu (`bridge_to`): `knowledge/3-seo/strategy/taxonomy.json` → `topics` (xem nhanh: `python scripts/registry.py cluster`).
+
 ## 1. Tổng quan
 - **Tên đầy đủ:** Công ty Cổ phần Chứng khoán DSC.
 - **Trụ sở chính:** Tầng 2, tòa nhà Thành Công (Thành Công Tower), số 80 Dịch Vọng Hậu, Quận Cầu Giấy, Hà Nội.

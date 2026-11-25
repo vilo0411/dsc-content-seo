@@ -10,6 +10,8 @@ PAA_Questions:
     placement: faq
   - q: "Rủi ro lớn nhất khi đầu tư vào cổ phiếu POW là gì?"
     placement: faq
+Created: 2026-10-21
+Updated: 2026-10-21
 ---
 
 # 📋 Báo cáo tối ưu SEO (SEO Optimization Proposal)

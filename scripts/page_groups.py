@@ -40,51 +40,15 @@ AUDIT_DIR = ROOT / "knowledge/raw/audit"
 OUT_AUDIT = PIPELINE_DIR / "strategy/page-audit.csv"
 OUT_REPORT = PIPELINE_DIR / "strategy/group-performance.md"
 
-CLUSTERS = {
-    "1": "Mở TK & Giao dịch cơ bản",
-    "2": "Nhập môn & Thị trường chứng khoán",
-    "3": "Phân tích kỹ thuật & Chỉ báo",
-    "4": "Phân tích cơ bản & Tài chính DN",
-    "5": "Cổ phiếu cụ thể & Ngành",
-    "6": "Chiến lược, Phương pháp & Quản trị rủi ro",
-    "7": "Quỹ & ETF",
-    "8": "Phái sinh & Chứng quyền",
-    "9": "Vĩ mô & Chính sách",
-    "10": "Tiết kiệm & Kênh đầu tư",
-    "11": "Vàng",
-    "12": "Trái phiếu",
-    "13": "Học & nghề tài chính",
-    "14": "Bạc",
-}
+def load_topics() -> dict:
+    """Topic catalog (cluster code -> name, section, entity, bridge_to, attributes, subgroups) from taxonomy.json.
+    Single source of truth: edit taxonomy.json "topics", never hardcode names here."""
+    return json.loads(LINK_CLUSTERS.read_text(encoding="utf-8")).get("topics", {})
 
-SUBGROUPS = {
-    "1a": "Tài khoản, app, phí & margin", "1b": "Lệnh, quy định & phiên giao dịch",
-    "2a": "Nền tảng, kinh nghiệm & rủi ro cho người mới", "2b": "Thao tác mua/bán",
-    "2d": "Chỉ số chứng khoán VN & thế giới",
-    "2f": "Thị trường, chủ thể & thuật ngữ",
-    "3a": "Chỉ báo xu hướng (MA, MACD, ADX…)", "3b": "Chỉ báo động lượng/dao động (RSI, Stoch…)",
-    "3c": "Khối lượng & dòng tiền", "3d": "Mô hình nến", "3e": "Mô hình giá",
-    "3f": "Hỗ trợ–kháng cự, xu hướng, trap, gap", "3g": "Chỉ báo khác (ATR, Bollinger, Keltner…)",
-    "3h": "Lý thuyết, phương pháp & công cụ PTKT",
-    "4a": "BCTC, kế toán & chi phí", "4b": "Chỉ số sinh lời", "4c": "Định giá cổ phiếu & doanh nghiệp",
-    "4d": "Thanh khoản, đòn bẩy, hiệu quả hoạt động", "4e": "Vốn, cổ phần & niêm yết", "4f": "Cổ tức & quyền cổ đông",
-    "4g": "Phân tích BCTC doanh nghiệp cụ thể", "4h": "Phân tích định tính doanh nghiệp",
-    "5a": "CP Ngân hàng", "5b": "CP BĐS, KCN, xây dựng", "5c": "CP Thép, VLXD, nhựa", "5d": "CP Dầu khí, điện, năng lượng",
-    "5e": "CP Bán lẻ, tiêu dùng", "5f": "CP Chứng khoán, bảo hiểm", "5g": "CP Cảng biển & logistics",
-    "5h": "CP Nông nghiệp, thuỷ sản, cao su", "5i": "CP Công nghệ & truyền thông",
-    "5j": "Chuỗi giá trị & phân tích ngành", "5k": "Loại cổ phiếu & cách chọn", "5l": "CP Hàng không", "5m": "CP Hoá chất, phân bón", "5n": "CP Dệt may",
-    "5o": "Danh sách cổ phiếu tiềm năng", "5p": "Chỉ số phân tích ngân hàng (NIM, CASA, LDR…)",
-    "6a": "Trường phái & nhà đầu tư nổi tiếng", "6b": "Chiến lược giao dịch", "6c": "Quản trị rủi ro & danh mục",
-    "6d": "Tâm lý & hành vi",
-    "7a": "Chứng chỉ quỹ, quỹ mở & ETF",
-    "8a": "Phái sinh", "8b": "Chứng quyền",
-    "9a": "Chỉ số kinh tế", "9b": "Chính sách tiền tệ, tài khoá & lãi suất",
-    "9d": "Tỷ giá, thương mại, dòng vốn ngoại", "9e": "Khái niệm kinh tế học", "9f": "Khủng hoảng & sự kiện",
-    "10a": "Lãi suất tiết kiệm & so sánh ngân hàng", "10b": "Kênh đầu tư & phân bổ tiền nhàn rỗi",
-    "10d": "Ngoài phạm vi: tiền số, forex, tài chính cá nhân",
-    "11a": "Vàng", "12a": "Trái phiếu & lợi suất",
-    "13a": "Khoá học & sách", "13b": "Chứng chỉ & nghề nghiệp", "14a": "Bạc",
-}
+
+TOPICS = load_topics()
+CLUSTERS = {code: t["name"] for code, t in TOPICS.items()}
+SUBGROUPS = {sg: name for t in TOPICS.values() for sg, name in t.get("subgroups", {}).items()}
 
 # taxonomy.json group name -> subgroup
 LINK_GROUP_MAP = {
@@ -524,8 +488,15 @@ AUDIT_FILES = """Files in knowledge/raw/audit/<YYYY-MM-DD>/ (all optional; missi
 
 
 def latest_audit_dir() -> Path | None:
-    dirs = sorted(p for p in AUDIT_DIR.glob("20*") if p.is_dir()) if AUDIT_DIR.exists() else []
+    """Newest audit folder that has per-page GSC data (a folder may hold only the site-wide snapshot)."""
+    dirs = sorted(p for p in AUDIT_DIR.glob("20*") if p.is_dir() and (p / "gsc-pages.json").exists()) if AUDIT_DIR.exists() else []
     return dirs[-1] if dirs else None
+
+
+def latest_site_folders() -> tuple[str, dict]:
+    """(date folder, gsc-site-folders.json) — GSC per URL folder across the whole domain, or ('', {})."""
+    files = sorted(AUDIT_DIR.glob("20*/gsc-site-folders.json")) if AUDIT_DIR.exists() else []
+    return (files[-1].parent.name, json.loads(files[-1].read_text(encoding="utf-8"))) if files else ("", {})
 
 
 def median(xs):
@@ -606,11 +577,13 @@ def cmd_report(a):
         rows.append(r)
 
     label_rows(rows)
+    decide_actions(rows)
 
     fields = FIELDS + ["clicks", "impressions", "ctr", "position", "prev_clicks", "click_change", "position_change",
                        "ly_clicks", "queries", "top_query", "top_query_pos", "q_top3", "q_top10", "q_11_20",
                        "q_striking", "q_lost_top10", "sessions", "engaged_sessions", "engagement_rate",
-                       "avg_engagement_time", "views_per_session", "scroll_rate", "key_events", "labels", "priority"]
+                       "avg_engagement_time", "views_per_session", "scroll_rate", "key_events", "labels", "priority",
+                       "section", "pipeline", "action"]
     rows.sort(key=lambda r: (sg_key(r["subgroup"]), -float(r["priority"])))
     write_csv(OUT_AUDIT, rows, fields)
     print(f"[OK] {OUT_AUDIT.relative_to(ROOT)} ({len(rows)} bài)")
@@ -662,6 +635,30 @@ def label_rows(rows: list[dict]):
             lost = max(-cc, 0)
             potential = impr * max(ctr_med / 100 if ctr_med else 0, 0) - clicks if "ctr-low" in lab or "striking" in lab else 0
             r["priority"] = round(lost + max(potential, 0) + (r.get("q_striking") or 0), 1)
+
+
+REGISTRY = PIPELINE_DIR / "strategy/pages.csv"
+REFRESH_MIN = 20  # clicks lost + recoverable; below this a refresh is not worth a pipeline run
+
+
+def decide_actions(rows: list[dict]):
+    """section from taxonomy topics, pipeline = registry status, action by fixed rules (first hit wins):
+    dead -> prune? · rank-drop/striking/ctr-low with priority >= REFRESH_MIN clicks at stake -> refresh ·
+    outer page with traffic but 0 key events -> bridge · keep. Labels stay in "labels" for detail."""
+    status = {r["slug"]: r.get("status", "") for r in read_csv(REGISTRY)} if REGISTRY.exists() else {}
+    for r in rows:
+        r["section"] = TOPICS.get(r["cluster"], {}).get("section", "")
+        r["pipeline"] = status.get(r["slug"], "")
+        lab = set(r["labels"].split())
+        if "dead" in lab:
+            act = "prune?"
+        elif lab & {"rank-drop", "striking", "ctr-low"} and float(r["priority"]) >= REFRESH_MIN:
+            act = "refresh"
+        elif r["section"] == "outer" and ("convert-low" in lab or ((r["sessions"] or 0) >= 100 and not r["key_events"])):
+            act = "bridge"
+        else:
+            act = "keep"
+        r["action"] = act
 
 
 def render_report(rows: list[dict], d: Path, ga4_src: str, has_q: bool, has_scroll: bool) -> str:

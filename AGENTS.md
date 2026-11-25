@@ -51,9 +51,10 @@ User không gõ lệnh → chọn skill theo bảng, mở đúng 1 `SKILL.md` r�
 5. **User yêu cầu sửa trong chat** → ghi ngay `python scripts/revision_log.py add <slug> --fix … --pattern … --rule … --scope …` trước khi sửa. Không mở `revision-log.md`.
 6. **Trình bày ở gate:** tóm tắt ≤ 25 dòng + đường dẫn file. Không dán cả file vào chat. Trước khi trình: `python scripts/build_content_index.py` → bài hiện ở mục **Chờ duyệt** của `knowledge/0-dashboard/index.html` (user đọc + copy `/approve` ở đó).
 7. **Phạm vi:** đang làm 1 bài thì chỉ sửa bài đó; không lan sang bài khác trừ khi user yêu cầu.
-8. **File:** tên slug thường, không dấu (`lai-suat-acb.md`). Không để file tạm ở root — dùng `scratch/` (gitignored).
+8. **File:** tên slug thường, không dấu (`lai-suat-acb.md`). Không để file tạm ở root — dùng `scratch/` (gitignored). Outline / Proposal / Draft / Optimize có YAML đầu file với `Created: YYYY-MM-DD` (ngày tạo) + `Updated: YYYY-MM-DD` (`topic_status.py --set` tự ghi); dashboard đọc 2 trường này. File còn sót sau Finalize: `topic_status.py --stale [--apply]`.
 9. **Không publish / gửi / chạy thật** (CMS, email, Ads, social). Chỉ soạn bản nháp + đề xuất.
 10. **Bài đứng tên Chứng khoán DSC;** link ngoài chỉ tới nguồn trong `knowledge/1-brand/source-whitelist.md`.
+11. **Mọi thiết kế** (ảnh blog, creative, banner CTA, landing, ảnh syndication) chỉ dùng màu / gradient / font trong `knowledge/1-brand/DESIGN.md` v1.0 (máy đọc: `brand.json`): Gunmetal · Pine Teal · Lime · Emerald · Frosted Mint · White, font Plus Jakarta Sans. Không tự đặt hex/font; chữ trắng không đặt trên Lime/Emerald. Theme Tết/lễ (§7) chỉ khi brief ghi rõ.
 
 **Rule chi tiết — chỉ mở khi tới bước cần:**
 | File | Mở khi |
@@ -99,6 +100,7 @@ Mọi script có `--help`; chi tiết cờ: `scripts/README.md` (chỉ mở khi 
 | Việc | KHÔNG làm | Làm |
 |---|---|---|
 | Trạng thái bài / tổng quan cluster | đọc registry `pages.csv` (400 KB) | `python scripts/topic_status.py <slug> [--set "…"]` · `--summary` · `--find "<từ>"` |
+| Chiến lược cụm: core/outer, thực thể, `bridge_to`, thuộc tính còn thiếu | đọc `taxonomy.json` (116 KB) | `python scripts/registry.py cluster [<mã>]` · `suggest-core` (sửa: `taxonomy.json` → `topics`; định vị: `profile.md` §0) |
 | Thêm bài mới vào index | mở file rồi Edit | `topic_status.py <slug> --add --keyword … --cluster …` · `find_links.py --add-anchor <slug> --anchor … --cluster …` |
 | Tìm internal link | đọc registry `pages.csv` | `python scripts/find_links.py "<keyword>" --exclude <slug>` |
 | Bài cũ nên link tới bài mới | đọc các file Final | `python scripts/find_links.py --backfill <slug>` |
@@ -110,6 +112,7 @@ Mọi script có `--help`; chi tiết cờ: `scripts/README.md` (chỉ mở khi 
 | Fact DSC lệch ở bài nào | grep tay | `python scripts/fact_consistency.py [--due] [--changed <id>]` |
 | Tin tức quanh keyword | WebSearch | `python scripts/news_feed.py --topic "<kw>" --days 14` |
 | SERP + đối thủ + thuật ngữ cần phủ | browser / WebSearch | `python .agents/skills/web-serp/scripts/serp_research.py "<kw>" --extract 5` (cache, block `Topic Coverage`) |
+| Thuộc tính (EAV) đối thủ có, root / rare | đọc bài đối thủ | `serp_research.py "<kw>" --eav` (full text trong cache, 0 phí) → khối `EAV:` của outline |
 | Lỗi cũ của bài | đọc `revision-log.md` (95 KB) | `grep -rn "<slug>" knowledge/3-seo/logs/revision-log*` |
 | Ghi revision-log | mở rồi Edit | `python scripts/revision_log.py add …` · `/learn`: `brief` → cuối `mark-learn` |
 | User đã sửa gì so với bản AI | đọc 2 bản | `python scripts/article_snapshot.py <slug> --diff` |

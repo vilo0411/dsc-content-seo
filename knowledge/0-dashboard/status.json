@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-23T16:24:18+07:00",
-  "snapshot": "2026-11-23T10:32:36",
-  "snapshot_mode": "full",
+  "generated_at": "2026-11-25T17:46:38+07:00",
+  "snapshot": "2026-11-25T15:18:36",
+  "snapshot_mode": "partial",
   "tasks": [
     {
       "name": "Bài ở bước Planned",
@@ -52,10 +52,10 @@
       "name": "Bài ở bước Optimizing",
       "group": "Bài SEO",
       "source": "knowledge/3-seo/strategy/pages.csv",
-      "state": "18 bài",
+      "state": "15 bài",
       "evidence": "Nguồn: registry pages.csv (topic_status.py).",
       "next_step": "Hoàn tất /optimize → /approve",
-      "details": "nen-mo-tai-khoan-chung-khoan-o-dau · nên mở tài khoản chứng khoán ở đâu\nco-nen-dau-tu-chung-khoan-khong · Có nên chơi chứng khoán không\nsan-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong · sàn chứng khoán nyse là gì vai tro va cách thuc ho\nthi-truong-so-cap-va-thu-cap-la-gi · thị trường so cap va thu cap là gì\nvwap-la-gi · VWAP là gì\ncach-doc-bieu-do-nen-chung-khoan-cho-nguoi-moi-bat-dau · cách đọc biểu đồ nến chứng khoán cho người mới bat\nkhoang-trong-gia-gap-la-gi · Khoảng trống giá (Gap) là gì\nbien-loi-nhuan-rong · Biên lợi nhuận ròng là gì\nchi-so-roe-la-gi-cach-tinh-y-nghia-va-tam-quan-trong-doi-voi-nha-dau-tu · chỉ số ROE là gì\ndcf-la-gi · DCF\nco-phieu-bsr-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat · cổ phiếu bsr\nco-nen-mua-co-phieu-pnj-hay-khong · có nên mua cổ phiếu pnj\nhop-dong-tuong-lai-la-gi · Hợp đồng tương lai là gì\ngrdp-la-gi-chi-so-quan-trong-danh-gia-su-phat-trien-kinh-te-dia-phuong · GRDP là gì\nlai-suat-la-gi · lãi suất\nnen-gui-tiet-kiem-hay-dau-tu-chung-khoan · Nên gửi tiết kiệm hay đầu tư chứng khoán\nnen-mua-vang-mieng-hay-vang-nhan · Nên mua vàng miếng hay vàng nhẫn\nnen-mua-vang-sjc-hay-9999 · Nên mua vàng SJC hay 9999"
+      "details": "nen-mo-tai-khoan-chung-khoan-o-dau · nên mở tài khoản chứng khoán ở đâu\nco-nen-dau-tu-chung-khoan-khong · Có nên chơi chứng khoán không\nvwap-la-gi · VWAP là gì\nkhoang-trong-gia-gap-la-gi · Khoảng trống giá (Gap) là gì\nbien-loi-nhuan-rong · Biên lợi nhuận ròng là gì\nchi-so-roe-la-gi-cach-tinh-y-nghia-va-tam-quan-trong-doi-voi-nha-dau-tu · chỉ số ROE là gì\ndcf-la-gi · DCF\nco-phieu-bsr-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat · cổ phiếu bsr\nco-nen-mua-co-phieu-pnj-hay-khong · có nên mua cổ phiếu pnj\nhop-dong-tuong-lai-la-gi · Hợp đồng tương lai là gì\ngrdp-la-gi-chi-so-quan-trong-danh-gia-su-phat-trien-kinh-te-dia-phuong · GRDP là gì\nlai-suat-la-gi · lãi suất\nnen-gui-tiet-kiem-hay-dau-tu-chung-khoan · Nên gửi tiết kiệm hay đầu tư chứng khoán\nnen-mua-vang-mieng-hay-vang-nhan · Nên mua vàng miếng hay vàng nhẫn\nnen-mua-vang-sjc-hay-9999 · Nên mua vàng SJC hay 9999"
     },
     {
       "name": "Theo dõi đối thủ",
@@ -123,27 +123,27 @@
       "group": "Sau publish",
       "source": "knowledge/3-seo/logs/publish-ledger.csv",
       "state": "Có việc cần đối chiếu",
-      "evidence": "43 bài thiếu mốc first_live trong ledger; seed là mốc nhập lịch sử.",
+      "evidence": "45 bài thiếu mốc first_live trong ledger; seed là mốc nhập lịch sử.",
       "next_step": "Đối chiếu CMS, publish rồi sync; Finalized chưa có nghĩa là đã lên web.",
-      "details": "100-trieu-gui-ngan-hang\nbao-cao-lai-lo\nbao-cao-tai-chinh-hop-nhat\ncac-mo-hinh-gia-chung-khoan\ncach-choi-chung-khoan\ncach-choi-chung-khoan-cho-sinh-vien\nchi-bao-ky-thuat-la-gi\nchi-bao-stochastic-la-gi\nchi-so-chung-khoan\nchi-so-dow-jones-future\nchi-so-hnx30\nchi-so-kospi\nchi-so-ps\nchi-so-qoq\nchi-so-tam-ly\nco-nen-dau-tu-chung-chi-quy\nco-nen-dau-tu-vao-quy-mo-vinacapital\nco-tien-nen-dau-tu-bac\ncon-hao-kinh-te-la-gi\ndar-la-gi\ndau-tu-vang-nen-mua-loai-na\nduong-cong-loi-suat-dao-nguoc-la-gi\ngia-tri-noi-tai-cua-co-phieu-la-gi\nlai-suat-tiet-kiem-acb\nlai-suat-tiet-kiem-bac-a\nlai-suat-tiet-kiem-bidv\nlai-suat-tiet-kiem-vib\nlai-suat-tiet-kiem-vpbank\nldr-la-gi\nlenh-plo\nmo-tai-khoan-chung-chi-quy\nnha-tao-lap-thi-truong-la-ai\nno-chinh-phu\nphan-biet-thi-truong-tien-te-va-thi-truong-von-huong-dan-chi-tiet-cho-nha-dau-tu\nphi-luu-ky-chung-khoan\nphuong-phap-dau-tu-warren-buffett\nquy-tac-72\nrsi-la-gi\nrui-ro-chung-chi-quy\ntarget-trong-chung-khoan-la-gi\nthao-tung-thi-truong-chung-khoan-la-gi\nthue-khi-ban-co-phieu\nty-le-ky-quy"
+      "details": "100-trieu-gui-ngan-hang\nbao-cao-lai-lo\nbao-cao-tai-chinh-hop-nhat\ncac-mo-hinh-gia-chung-khoan\ncach-choi-chung-khoan\ncach-choi-chung-khoan-cho-sinh-vien\ncach-doc-bieu-do-nen-chung-khoan-cho-nguoi-moi-bat-dau\nchi-bao-ky-thuat-la-gi\nchi-bao-stochastic-la-gi\nchi-so-chung-khoan\nchi-so-dow-jones-future\nchi-so-hnx30\nchi-so-kospi\nchi-so-ps\nchi-so-qoq\nchi-so-tam-ly\nco-nen-dau-tu-chung-chi-quy\nco-nen-dau-tu-vao-quy-mo-vinacapital\nco-tien-nen-dau-tu-bac\ncon-hao-kinh-te-la-gi\ndar-la-gi\ndau-tu-vang-nen-mua-loai-na\nduong-cong-loi-suat-dao-nguoc-la-gi\ngia-tri-noi-tai-cua-co-phieu-la-gi\nlai-suat-tiet-kiem-acb\nlai-suat-tiet-kiem-bac-a\nlai-suat-tiet-kiem-bidv\nlai-suat-tiet-kiem-vib\nlai-suat-tiet-kiem-vpbank\nldr-la-gi\nlenh-plo\nmo-tai-khoan-chung-chi-quy\nnha-tao-lap-thi-truong-la-ai\nno-chinh-phu\nphi-luu-ky-chung-khoan\nphuong-phap-dau-tu-warren-buffett\nquy-tac-72\nrsi-la-gi\nrui-ro-chung-chi-quy\nsan-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong\ntarget-trong-chung-khoan-la-gi\nthao-tung-thi-truong-chung-khoan-la-gi\nthi-truong-so-cap-va-thu-cap-la-gi\nthue-khi-ban-co-phieu\nty-le-ky-quy"
     },
     {
       "name": "Bài live chưa ghi nhận backfill",
       "group": "Sau publish",
       "source": "knowledge/3-seo/logs/publish-ledger.csv",
       "state": "Có việc cần đối chiếu",
-      "evidence": "1 bài thiếu mốc backfill_done trong ledger; seed là mốc nhập lịch sử.",
+      "evidence": "2 bài thiếu mốc backfill_done trong ledger; seed là mốc nhập lịch sử.",
       "next_step": "Gom backfill bằng /weekly, xác minh rồi ghi nhận vào ledger.",
-      "details": "app-mua-chung-chi-quy"
+      "details": "app-mua-chung-chi-quy\nphan-biet-thi-truong-tien-te-va-thi-truong-von-huong-dan-chi-tiet-cho-nha-dau-tu"
     },
     {
       "name": "Bài live chưa ghi nhận kiểm tra GSC",
       "group": "Sau publish",
       "source": "knowledge/3-seo/logs/publish-ledger.csv",
       "state": "Có việc cần đối chiếu",
-      "evidence": "1 bài thiếu mốc gsc_checked trong ledger; seed là mốc nhập lịch sử.",
+      "evidence": "2 bài thiếu mốc gsc_checked trong ledger; seed là mốc nhập lịch sử.",
       "next_step": "Chạy /weekly để lọc bài đến hạn 28–56 ngày; danh sách này gồm cả bài chưa đến hạn.",
-      "details": "app-mua-chung-chi-quy"
+      "details": "app-mua-chung-chi-quy\nphan-biet-thi-truong-tien-te-va-thi-truong-von-huong-dan-chi-tiet-cho-nha-dau-tu"
     },
     {
       "name": "rates-c",
@@ -1242,6 +1242,18 @@
       "archived": false
     },
     {
+      "path": "knowledge/3-seo/content/audits/image-alt-2026-11/alt-plan.csv",
+      "name": "alt-plan.csv",
+      "group": "Audit",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/audits/image-alt-2026-11/alt-plan.html",
+      "name": "alt-plan.html",
+      "group": "Audit",
+      "archived": false
+    },
+    {
       "path": "knowledge/3-seo/content/audits/slop-audit-2026-10-16.md",
       "name": "slop-audit-2026-10-16.md",
       "group": "Audit",
@@ -1296,6 +1308,12 @@
       "archived": false
     },
     {
+      "path": "knowledge/3-seo/content/4-cms/cach-doc-bieu-do-nen-chung-khoan-cho-nguoi-moi-bat-dau.html",
+      "name": "cach-doc-bieu-do-nen-chung-khoan-cho-nguoi-moi-bat-dau.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
       "path": "knowledge/3-seo/content/4-cms/cach-mo-tai-khoan-chung-khoan.html",
       "name": "cach-mo-tai-khoan-chung-khoan.html",
       "group": "CMS",
@@ -1346,6 +1364,18 @@
     {
       "path": "knowledge/3-seo/content/4-cms/rui-ro-chung-chi-quy.html",
       "name": "rui-ro-chung-chi-quy.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/4-cms/san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong.html",
+      "name": "san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/4-cms/thi-truong-so-cap-va-thu-cap-la-gi.html",
+      "name": "thi-truong-so-cap-va-thu-cap-la-gi.html",
       "group": "CMS",
       "archived": false
     },
@@ -1482,8 +1512,32 @@
       "archived": false
     },
     {
+      "path": "knowledge/4-channels/social/design-fonts/OFL-plusjakartasans.txt",
+      "name": "OFL-plusjakartasans.txt",
+      "group": "Kênh khác",
+      "archived": false
+    },
+    {
       "path": "knowledge/4-channels/social/design-fonts/OFL.txt",
       "name": "OFL.txt",
+      "group": "Kênh khác",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-channels/social/design-fonts/PlusJakartaSans-Bold.ttf",
+      "name": "PlusJakartaSans-Bold.ttf",
+      "group": "Kênh khác",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-channels/social/design-fonts/PlusJakartaSans-Regular.ttf",
+      "name": "PlusJakartaSans-Regular.ttf",
+      "group": "Kênh khác",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-channels/social/design-fonts/PlusJakartaSans-SemiBold.ttf",
+      "name": "PlusJakartaSans-SemiBold.ttf",
       "group": "Kênh khác",
       "archived": false
     },
@@ -1861,9 +1915,9 @@
     }
   ],
   "stats": {
-    "in_progress": 27,
+    "in_progress": 24,
     "competitor_new": 0,
     "channel_drafts": 0,
-    "approvals": 21
+    "approvals": 18
   }
 }

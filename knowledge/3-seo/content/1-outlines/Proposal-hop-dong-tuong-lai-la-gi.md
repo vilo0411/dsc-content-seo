@@ -6,6 +6,8 @@ PAA_Questions:
   - "Giao dịch 1 hợp đồng tương lai VN30 cần bao nhiêu tiền ký quỹ?"
   - "Ngày đáo hạn hợp đồng tương lai VN30 là khi nào?"
   - "Phân biệt hợp đồng tương lai và hợp đồng kỳ hạn?"
+Created: 2026-09-23
+Updated: 2026-09-23
 ---
 
 # 📋 BÁO CÁO TỐI ƯU SEO (SEO Optimization Proposal)

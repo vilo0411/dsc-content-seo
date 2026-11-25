@@ -640,7 +640,13 @@
       },
       "prompt": "Background plate for premium social media visuals of a Vietnamese securities company. Subject: elegant layered jade mountains and soft mist painted in Vietnamese silk-and-watercolor style. Details: a small white crane. Mood: serene, thoughtful. Style: elegant contemporary Vietnamese silk-and-watercolor painting, warm ivory paper (#F9F4EB), jade green (#6CB298) tones, thin gold (#C9A24A) linework, airy and refined. Composition: keep the right 45% of the frame calm, dark-to-mid toned and uncluttered as negative space for text added later; the subject sits on the opposite side. Aspect ratio 9:16 vertical, about 1080x1920px, high detail. No red anywhere.  Absolutely NO text, NO letters, NO numbers, NO logos, NO watermarks, NO brand marks, NO people or faces, NO coins, NO banknotes, NO price arrows or profit symbols.",
       "created": "2026-11-24T17:19:29",
-      "used": [],
+      "used": [
+        {
+          "job": "CMP-261124-mo-tai-khoan-tet-2027",
+          "creative": "facebook-v1",
+          "date": "2026-11-25"
+        }
+      ],
       "status": "active"
     },
     "bg-iv-lotus-t": {

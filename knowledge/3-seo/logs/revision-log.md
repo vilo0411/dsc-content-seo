@@ -367,3 +367,93 @@ File này ghi lại các chỉnh sửa thực tế mà người dùng thực hi�
 - **Pattern:** Phân biệt … dựa vào kỳ hạn 1 năm của công cụ được mua bán. Thị trường tiền tệ giao dịch công cụ…; Bài kèm bảng xếp từng công cụ theo kỳ hạn.
 - **Rule học được:** Sapo viết như người giải thích: câu trả lời thẳng bằng lời thường (hãy nhìn vào kỳ hạn), không lặp danh từ trừu tượng; đoạn 2 không liệt kê mục lục, nêu điều người đọc sẽ nhận được và kết bằng 1 con số cụ thể
 - **Scope:** Global
+
+### [2026-11-25] - thi-truong-so-cap-va-thu-cap-la-gi
+- **Lỗi đã sửa:** Sapo đoạn 2 viết lại: câu dẫn 'Trong bài viết này, Chứng khoán DSC…' + bullet liệt kê nội dung chính của bài + câu mời đọc chi tiết bên dưới
+- **Pattern:** Đoạn 2 sapo dạng văn xuôi kết bằng 1 con số gợi tò mò (theo I105)
+- **Rule học được:** Sapo đoạn 2: thay văn xuôi bằng danh sách bullet các nội dung chính của bài (kiểu Key Takeaways của Investopedia/trang tài chính), sau đó 1 câu kêu gọi đọc chi tiết bên dưới. Đoạn 1 vẫn trả lời thẳng keyword.
+- **Scope:** Global
+
+### [2026-11-25] - cach-doc-bieu-do-nen-chung-khoan-cho-nguoi-moi-bat-dau
+- **Lỗi đã sửa:** Sapo đoạn 2 viết lại: câu dẫn 'Trong bài viết này, Chứng khoán DSC…' + bullet liệt kê nội dung chính của bài + câu mời đọc chi tiết bên dưới
+- **Pattern:** Đoạn 2 sapo dạng văn xuôi kết bằng 1 con số gợi tò mò (theo I105)
+- **Rule học được:** Sapo đoạn 2: thay văn xuôi bằng danh sách bullet các nội dung chính của bài (kiểu Key Takeaways của Investopedia/trang tài chính), sau đó 1 câu kêu gọi đọc chi tiết bên dưới. Đoạn 1 vẫn trả lời thẳng keyword.
+- **Scope:** Global
+
+### [2026-11-25] - san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong
+- **Lỗi đã sửa:** Sapo đoạn 2 viết lại: câu dẫn 'Trong bài viết này, Chứng khoán DSC…' + bullet liệt kê nội dung chính của bài + câu mời đọc chi tiết bên dưới
+- **Pattern:** Đoạn 2 sapo dạng văn xuôi kết bằng 1 con số gợi tò mò (theo I105)
+- **Rule học được:** Sapo đoạn 2: thay văn xuôi bằng danh sách bullet các nội dung chính của bài (kiểu Key Takeaways của Investopedia/trang tài chính), sau đó 1 câu kêu gọi đọc chi tiết bên dưới. Đoạn 1 vẫn trả lời thẳng keyword.
+- **Scope:** Global
+
+### [2026-11-25] - thi-truong-so-cap-va-thu-cap-la-gi
+- **Lỗi đã sửa:** Câu chốt sapo 'Xem chi tiết từng phần ở bên dưới' viết lại riêng theo bài: chỉ ra phần cụ thể bên dưới + lợi ích/dữ kiện người đọc nhận được
+- **Pattern:** Xem chi tiết từng phần ở bên dưới.
+- **Rule học được:** Câu mời đọc sau bullet sapo không dùng câu mẫu lặp giữa các bài; mỗi bài viết riêng: nêu tên phần cụ thể và điều người đọc sẽ làm được/biết được (có số hoặc tình huống), giọng tự nhiên, không câu hỏi mồi.
+- **Scope:** Global
+
+### [2026-11-25] - cach-doc-bieu-do-nen-chung-khoan-cho-nguoi-moi-bat-dau
+- **Lỗi đã sửa:** Câu chốt sapo 'Xem chi tiết từng phần ở bên dưới' viết lại riêng theo bài: chỉ ra phần cụ thể bên dưới + lợi ích/dữ kiện người đọc nhận được
+- **Pattern:** Xem chi tiết từng phần ở bên dưới.
+- **Rule học được:** Câu mời đọc sau bullet sapo không dùng câu mẫu lặp giữa các bài; mỗi bài viết riêng: nêu tên phần cụ thể và điều người đọc sẽ làm được/biết được (có số hoặc tình huống), giọng tự nhiên, không câu hỏi mồi.
+- **Scope:** Global
+
+### [2026-11-25] - san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong
+- **Lỗi đã sửa:** Câu chốt sapo 'Xem chi tiết từng phần ở bên dưới' viết lại riêng theo bài: chỉ ra phần cụ thể bên dưới + lợi ích/dữ kiện người đọc nhận được
+- **Pattern:** Xem chi tiết từng phần ở bên dưới.
+- **Rule học được:** Câu mời đọc sau bullet sapo không dùng câu mẫu lặp giữa các bài; mỗi bài viết riêng: nêu tên phần cụ thể và điều người đọc sẽ làm được/biết được (có số hoặc tình huống), giọng tự nhiên, không câu hỏi mồi.
+- **Scope:** Global
+
+### [2026-11-25] - san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong
+- **Lỗi đã sửa:** Câu mời đọc cuối sapo viết lại theo giọng tự nhiên, dẫn vào cả bài thay vì trỏ 1 bảng
+- **Pattern:** Bảng giờ giao dịch bên dưới cho biết phiên NYSE đêm nay mở lúc 21h30 hay 20h30 theo giờ Việt Nam.
+- **Rule học được:** Câu mời đọc sau bullet sapo phải nghe như người nói, gắn với thói quen/tình huống của người đọc và dẫn vào toàn bài; không mô tả kiểu 'bảng X bên dưới cho biết Y' (cứng, giống AI).
+- **Scope:** Global
+
+### [2026-11-25] - thi-truong-so-cap-va-thu-cap-la-gi
+- **Lỗi đã sửa:** Bullet sapo đổi từ dạng nhãn chủ đề ('**Khái niệm**: …') sang Key Takeaways thật: câu đầy đủ, mỗi bullet 1 kết luận có dữ kiện, có nhãn 'Những điểm chính'
+- **Pattern:** - **Khái niệm**: thị trường sơ cấp và thứ cấp là gì, diễn ra ở đâu tại Việt Nam.
+- **Rule học được:** Sapo đoạn 2 = khối Key Takeaways: câu dẫn có cụm 'những điểm chính', 3–5 bullet là câu kết luận đứng độc lập (trả lời luôn, có số/entity), không phải nhãn mục lục 'X: nội dung gì'.
+- **Scope:** Global
+
+### [2026-11-25] - cach-doc-bieu-do-nen-chung-khoan-cho-nguoi-moi-bat-dau
+- **Lỗi đã sửa:** Bullet sapo đổi từ dạng nhãn chủ đề ('**Khái niệm**: …') sang Key Takeaways thật: câu đầy đủ, mỗi bullet 1 kết luận có dữ kiện, có nhãn 'Những điểm chính'
+- **Pattern:** - **Khái niệm**: thị trường sơ cấp và thứ cấp là gì, diễn ra ở đâu tại Việt Nam.
+- **Rule học được:** Sapo đoạn 2 = khối Key Takeaways: câu dẫn có cụm 'những điểm chính', 3–5 bullet là câu kết luận đứng độc lập (trả lời luôn, có số/entity), không phải nhãn mục lục 'X: nội dung gì'.
+- **Scope:** Global
+
+### [2026-11-25] - san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong
+- **Lỗi đã sửa:** Bullet sapo đổi từ dạng nhãn chủ đề ('**Khái niệm**: …') sang Key Takeaways thật: câu đầy đủ, mỗi bullet 1 kết luận có dữ kiện, có nhãn 'Những điểm chính'
+- **Pattern:** - **Khái niệm**: thị trường sơ cấp và thứ cấp là gì, diễn ra ở đâu tại Việt Nam.
+- **Rule học được:** Sapo đoạn 2 = khối Key Takeaways: câu dẫn có cụm 'những điểm chính', 3–5 bullet là câu kết luận đứng độc lập (trả lời luôn, có số/entity), không phải nhãn mục lục 'X: nội dung gì'.
+- **Scope:** Global
+
+### [2026-11-25] - thi-truong-so-cap-va-thu-cap-la-gi
+- **Lỗi đã sửa:** Bỏ ngoặc '(key takeaways)' trong câu dẫn sapo
+- **Pattern:** tóm tắt những điểm chính (key takeaways) bạn cần nắm
+- **Rule học được:** Câu dẫn khối điểm chính viết thuần Việt, không chú thích tiếng Anh trong ngoặc.
+- **Scope:** Global
+
+### [2026-11-25] - cach-doc-bieu-do-nen-chung-khoan-cho-nguoi-moi-bat-dau
+- **Lỗi đã sửa:** Bỏ ngoặc '(key takeaways)' trong câu dẫn sapo
+- **Pattern:** tóm tắt những điểm chính (key takeaways) bạn cần nắm
+- **Rule học được:** Câu dẫn khối điểm chính viết thuần Việt, không chú thích tiếng Anh trong ngoặc.
+- **Scope:** Global
+
+### [2026-11-25] - san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong
+- **Lỗi đã sửa:** Bỏ ngoặc '(key takeaways)' trong câu dẫn sapo
+- **Pattern:** tóm tắt những điểm chính (key takeaways) bạn cần nắm
+- **Rule học được:** Câu dẫn khối điểm chính viết thuần Việt, không chú thích tiếng Anh trong ngoặc.
+- **Scope:** Global
+
+### [2026-11-25] - cach-doc-bieu-do-nen-chung-khoan-cho-nguoi-moi-bat-dau
+- **Lỗi đã sửa:** Viết lại đoạn mời đọc sau khối điểm chính: giữ 2 link, câu mời gắn tình huống người đọc thay vì mô tả 'phần đầu bắt đầu từ…'
+- **Pattern:** Phần đầu bắt đầu từ một cây nến giá 50.000 đồng để bạn tự dựng lại thân và bóng nến trước khi đọc biểu đồ thật.
+- **Rule học được:** Câu mời đọc không mô tả cấu trúc bài ('phần đầu…', 'bảng bên dưới…'); viết từ tình huống/nỗi băn khoăn của người đọc rồi mời đọc tiếp.
+- **Scope:** Global
+
+### [2026-11-25] - thi-truong-so-cap-va-thu-cap-la-gi
+- **Lỗi đã sửa:** Câu mời đọc sau khối điểm chính viết lại theo tình huống người đọc
+- **Pattern:** Nếu bạn sắp đặt lệnh đầu tiên, bảng so sánh bên dưới cho biết ngay mình đang mua ở thị trường nào và tiền đi về đâu.
+- **Rule học được:** Câu mời đọc không mô tả cấu trúc bài ('bảng bên dưới cho biết…'); mở từ tình huống người đọc rồi mời đọc tiếp.
+- **Scope:** Global

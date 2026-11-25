@@ -6,6 +6,8 @@ Slug: bien-loi-nhuan-rong
 source: https://www.dsc.com.vn/kien-thuc/bien-loi-nhuan-rong-net-profit-margin-la-gi-giai-dap-chi-tiet-va-y-nghia-quan-trong
 author: Chứng khoán DSC
 created: 2026-05-15
+Created: 2026-10-07
+Updated: 2026-10-07
 ---
 
 # Biên Lợi Nhuận Ròng Là Gì? Cách Tính & Ý Nghĩa Thực Chiến

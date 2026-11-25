@@ -71,7 +71,7 @@ flowchart LR
 
 | Nhịp | Làm | Kết quả nằm ở |
 |---|---|---|
-| Đầu tháng (~1 giờ) | `/analytics-report` → `/ads-audit` → `/gsc-sync` → `/keyword-plan` | `5-analytics/reports/`, `4-channels/ads/`, `3-seo/strategy/`, `3-seo/strategy/sprint-backlog.md` |
+| Đầu tháng (~1 giờ) | `/analytics-report` → `/ads-audit` → `/gsc-sync` → `/keyword-plan` | `5-analytics/reports/`, `4-channels/ads/`, `3-seo/strategy/`, bài `Planned` trong registry `pages.csv` |
 | Mỗi bài | `/write <keyword>` (= `/outlining` → duyệt → `/drafting` → duyệt) → dán CMS → `/link` → `/syndicate` | `3-seo/content/…` → `4-cms/<slug>.html`, `4-channels/social/` |
 | Hằng tuần | `/weekly` → `/optimize` cho bài tụt · `/competitor-watch` | `3-seo/links/plans/`, `2-market/competitors/watch/<tuần>.md` |
 | Khi có campaign | `/copy-landing` → `/ads-copy` → `/email-sequence` | `4-channels/landing|ads|email/` |

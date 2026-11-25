@@ -2,6 +2,8 @@
 title: "VWAP là gì? 6 chiến lược giao dịch thực chiến với VWAP"
 source: "https://www.dsc.com.vn/kien-thuc/vwap-la-gi"
 description: "VWAP là gì? Hướng dẫn cách tính và 6 chiến lược giao dịch thực chiến với đường VWAP giúp Active Trader tối ưu điểm vào lệnh và quản trị vốn."
+Created: 2026-07-29
+Updated: 2026-07-29
 ---
 Xác định vùng giá giao dịch tối ưu trong phiên và tránh bẫy trượt giá là bài toán cốt lõi của Day Trader. Chỉ báo **VWAP là gì** và làm thế nào để ứng dụng công cụ này vào tối ưu điểm vào lệnh ngắn hạn? Bài viết dưới đây phân tích chi tiết công thức tính cùng 6 chiến lược thực chiến giúp bạn làm chủ đường VWAP.
 

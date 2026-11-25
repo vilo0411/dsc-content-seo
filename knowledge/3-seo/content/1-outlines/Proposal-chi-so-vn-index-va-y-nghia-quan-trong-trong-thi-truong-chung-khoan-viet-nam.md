@@ -1,3 +1,8 @@
+---
+Created: 2026-10-22
+Updated: 2026-10-22
+---
+
 # 📋 Báo cáo tối ưu SEO (SEO Optimization Proposal)
 ## Bài viết: Chỉ số VN-Index là gì? Ý nghĩa và cách tính VN Index (Nhóm CTR Gap & Search Intent Khám Phá Số Liệu)
 

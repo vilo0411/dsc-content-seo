@@ -1,78 +1,230 @@
 <!doctype html>
 <html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Điều hành Marketing DSC — việc và tiến độ</title>
+<title>Bảng điều hành Marketing — Chứng khoán DSC</title>
 <style>
-body{font:15px/1.6 system-ui;background:#f4f6fa;color:#1b2c42;max-width:1400px;margin:auto;padding:28px}h1{margin-bottom:4px}a{color:#075da8}input,select,button{font:inherit;padding:9px;border:1px solid #bdc9d9;border-radius:6px;background:white}input{width:min(470px,90%)}.toolbar{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0}.notice{background:#fff4d8;border-left:4px solid #ca8c11;padding:14px}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin:20px 0}.card{background:white;padding:16px;border-radius:8px}.card b{display:block;font-size:24px}table{width:100%;border-collapse:collapse;background:white}td,th{text-align:left;vertical-align:top;border-bottom:1px solid #dae1eb;padding:13px}th{background:#e7edf6}td:first-child{min-width:200px}small{display:block;color:#526278}pre{white-space:pre-wrap;overflow-wrap:anywhere;max-height:300px;overflow:auto;background:#eef2f7;padding:10px}.table-wrap{overflow:auto}.badge{display:inline-block;background:#e9eef6;padding:3px 8px;border-radius:5px}.good{background:#ddf5e4}.warn{background:#fff0cb}nav{display:flex;gap:20px;margin:20px 0}summary{cursor:pointer}#files td{overflow-wrap:anywhere}.ap{background:white;border-radius:8px;margin:10px 0;border:1px solid #dae1eb}.ap>header{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:12px 16px;cursor:pointer}.ap>header b{font-size:16px}.ap .meta{color:#526278;font-size:13px}.g1{background:#dcebff}.g2{background:#ddf5e4}.gx{background:#eceff3}.ap .bar{display:flex;flex-wrap:wrap;gap:8px;padding:0 16px 12px}.ap .bar button.on{background:#075da8;color:white;border-color:#075da8}.doc{border-top:1px solid #dae1eb;padding:8px 28px 24px;max-height:75vh;overflow:auto}.doc img{max-width:100%}.doc table{margin:10px 0}.doc td,.doc th{padding:6px 10px;border:1px solid #dae1eb}.doc pre{max-height:none}.doc .fm th{width:180px}mark{background:#ffe58a}
+/* Brand: knowledge/1-brand/DESIGN.md — Plus Jakarta Sans; gunmetal / pine teal on white, lime for marks only, no red */
+@font-face{font-family:"Plus Jakarta Sans";src:url("../1-brand/assets/fonts/PlusJakartaSans-VF.ttf") format("truetype");font-weight:200 800;font-display:swap}
+:root{--gunmetal:#272D2B;--pine:#1D4130;--lime:#2AD03D;--emerald:#1BBE72;--mint:#8CFFCC;--ink2:#4A524F;--ink3:#666F6C;--line:#DCE5E0;--track:#E8F0EC;--neutral:#B9C3BF;--mint50:#F2FBF6;--mint100:#DDF7EA}
+*{box-sizing:border-box}
+body{margin:0;font:15px/1.5 "Plus Jakarta Sans","Be Vietnam Pro",system-ui,sans-serif;color:var(--gunmetal);background:#fff}
+.wrap{max-width:1320px;margin:0 auto;padding:0 28px 56px}
+header{display:flex;align-items:center;gap:16px;padding:18px 0 14px;border-bottom:1px solid var(--line)}
+header img{height:30px}header h1{font-size:20px;font-weight:700;margin:0}header .gen{margin-left:auto;color:var(--ink3);font-size:13px;text-align:right}
+nav{display:flex;gap:4px;border-bottom:1px solid var(--line);margin-bottom:22px;overflow-x:auto}
+nav a{padding:12px 14px;color:var(--ink3);text-decoration:none;font-weight:600;font-size:14px;border-bottom:2px solid transparent;margin-bottom:-1px;white-space:nowrap}
+nav a.on{color:var(--pine);border-bottom-color:var(--lime)}nav a:hover{color:var(--gunmetal)}
+h2{font-size:18px;font-weight:700;margin:0 0 4px}h3{font-size:15px;font-weight:700;margin:18px 0 6px}
+p.lead{color:var(--ink3);margin:0 0 14px;font-size:14px}
+a{color:var(--pine)}code{font-family:ui-monospace,Consolas,monospace;font-size:12.5px;background:var(--track);padding:1px 5px;border-radius:4px}
+.panel[hidden]{display:none}
+section.blk{margin-bottom:34px}
+.data{font-size:13px;color:var(--ink3);margin-bottom:18px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:10px;margin-bottom:30px}
+.kpi{padding:14px 18px;border-left:1px solid var(--line)}.kpi:first-child{border-left:0}
+.kpi .v{font-size:26px;font-weight:700;line-height:1.2}.kpi .l{color:var(--ink3);font-size:13px}
+@media(max-width:900px){.kpis{grid-template-columns:1fr 1fr}.kpi:nth-child(3){border-left:0}.grid2{grid-template-columns:1fr!important}}
+.up{color:var(--pine);font-weight:600}.down{color:var(--ink2);font-weight:600}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{text-align:left;font-size:12px;font-weight:600;color:var(--ink3);text-transform:uppercase;letter-spacing:.03em;padding:8px 10px;border-bottom:1px solid var(--line)}
+td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+td .sub{display:block;color:var(--ink3);font-size:12.5px}
+.tag{display:inline-block;font-size:12px;font-weight:600;padding:2px 9px;border-radius:999px;background:var(--mint100);color:var(--gunmetal);white-space:nowrap}
+.t-core{background:var(--pine);color:#fff}.t-outer{background:var(--mint100)}.t-trust{background:var(--track)}.t-off{background:#fff;border:1px solid var(--neutral);color:var(--ink3)}
+.t-old{background:#fff;border:1px solid var(--gunmetal)}
+.age{color:var(--ink3);font-size:12.5px;white-space:nowrap}.age.old{color:var(--gunmetal);font-weight:600}
+button{font:inherit;font-size:12.5px;font-weight:600;padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--pine);cursor:pointer;white-space:nowrap}
+button:hover{border-color:var(--pine)}button.done{background:var(--mint100);border-color:var(--mint100)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.note{background:var(--mint50);border-left:3px solid var(--pine);padding:10px 14px;font-size:13.5px;margin:10px 0}
+.note ul{margin:4px 0;padding-left:18px}
+.bars{width:130px}.bars i{display:block;height:6px;border-radius:3px;margin:3px 0;background:var(--track);position:relative}
+.bars i b{display:block;height:100%;border-radius:3px}.bars .c b{background:var(--neutral)}.bars .k b{background:var(--lime)}
+.more{margin-top:8px}
+.pos{border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin-bottom:18px}.pos div{margin:3px 0}.pos b{display:inline-block;min-width:170px}
+/* legacy panels */
+.toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:12px 0}
+input[type=search],select{font:inherit;font-size:14px;padding:7px 11px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--gunmetal)}input[type=search]{width:min(440px,90%)}
+label{font-size:14px}pre{white-space:pre-wrap;overflow-wrap:anywhere;max-height:300px;overflow:auto;background:var(--mint50);padding:10px;font-size:12.5px}
+summary{cursor:pointer;color:var(--pine);font-size:13px}#files td{overflow-wrap:anywhere}
+.ap{border:1px solid var(--line);border-radius:10px;margin:10px 0}.ap>header{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:12px 16px;cursor:pointer;border:0}
+.ap>header b{font-size:15px}.ap .meta{color:var(--ink3);font-size:13px}.ap .bar{display:flex;flex-wrap:wrap;gap:8px;padding:0 16px 12px}
+.ap .bar button.on{background:var(--pine);color:#fff;border-color:var(--pine)}
+.doc{border-top:1px solid var(--line);padding:8px 28px 24px;max-height:75vh;overflow:auto}.doc img{max-width:100%}.doc table{margin:10px 0}.doc td,.doc th{border:1px solid var(--line)}.doc pre{max-height:none}mark{background:var(--mint)}
 </style>
-<h1>Điều hành Marketing DSC</h1><p>Việc theo nhịp: <b>đầu tháng</b> báo cáo → ads → cơ hội SEO → kế hoạch bài · <b>mỗi bài</b> outline → draft → duyệt → CMS → link → syndicate · <b>hằng tuần</b> /weekly + /competitor-watch. Mỗi dòng có bước tiếp theo.</p>
-<nav><a href="#approve">Chờ duyệt</a><a href="#work">Công việc</a><a href="#library">Kho tài liệu</a><a href="cms.html">HTML CMS</a><a href="README.md">Hướng dẫn</a></nav>
-<div class="notice" id="freshness"></div>
-<div class="cards" id="cards"></div>
-<h2 id="approve">Chờ duyệt</h2><p>Proposal / outline / bản viết lại đang chờ <code>/approve</code>. Bấm vào bài để đọc ngay tại đây; nút copy lệnh để dán vào chat.</p>
-<div class="toolbar"><input id="aq" type="search" placeholder="Tìm slug, từ khóa, đợt, nội dung…" aria-label="Tìm bài chờ duyệt"><select id="agate" aria-label="Gate"><option value="">Mọi trạng thái</option><option value="Gate 1">Gate 1</option><option value="Gate 2">Gate 2</option><option value="Đang làm">Đang làm (chưa tới gate)</option></select><label><input id="abody" type="checkbox" style="width:auto"> Tìm cả trong nội dung</label><label><input id="arecent" type="checkbox" checked style="width:auto"> Chỉ bài sửa trong 30 ngày</label></div>
-<p id="acount" aria-live="polite"></p><div id="approvals"></div>
-<h2 id="work">Công việc và tiến độ</h2>
-<div class="toolbar"><input id="q" type="search" placeholder="Tìm tên đợt, slug, trạng thái…" aria-label="Tìm công việc"><select id="group" aria-label="Nhóm việc"><option value="">Tất cả nhóm</option></select><label><input id="remaining" type="checkbox" style="width:auto"> Ẩn đợt đạt trong snapshot</label></div>
-<p id="count" aria-live="polite"></p>
-<div class="table-wrap"><table><thead><tr><th>Công việc</th><th>Trạng thái</th><th>Bằng chứng</th><th>Bước tiếp theo</th></tr></thead><tbody id="tasks"></tbody></table></div>
-<h2 id="library">Kho tài liệu</h2><p>Gồm internal link, stale, content audit, QA, GSC, ledger, báo cáo cũ và HTML CMS.</p>
-<div class="toolbar"><input id="fq" type="search" placeholder="Tìm đường dẫn hoặc tên file…" aria-label="Tìm file"><label><input id="archive" type="checkbox" style="width:auto"> Hiện tài liệu lưu trữ</label></div>
-<p id="filecount" aria-live="polite"></p><div class="table-wrap"><table><thead><tr><th>Nhóm</th><th>Tài liệu / đường dẫn</th></tr></thead><tbody id="files"></tbody></table></div>
+<div class="wrap">
+<header><img src="../1-brand/assets/logos/logo-for-light-bg.png" alt="Chứng khoán DSC"><h1>Bảng điều hành Marketing</h1><div class="gen" id="gen"></div></header>
+<nav id="tabs"><a href="#today">Hôm nay</a><a href="#approve">Chờ duyệt</a><a href="#strategy">Chiến lược</a><a href="#work">Công việc</a><a href="#library">Tài liệu</a><a href="../3-seo/strategy/topical-map.html">Topical map ↗</a><a href="cms.html">HTML CMS ↗</a></nav>
+
+<div class="panel" id="p-today">
+ <div class="data" id="fresh"></div>
+ <div class="kpis" id="kpis"></div>
+ <section class="blk"><h2>Cần làm</h2><p class="lead">Sắp theo mức gấp, trong mỗi nhóm việc để lâu nhất lên trước. Ngày lấy từ <code>Created</code> / <code>Updated</code> trong YAML của file (không có thì lấy ngày sửa file).</p>
+  <table><thead><tr><th>Việc</th><th>Bài</th><th>Cập nhật</th><th></th></tr></thead><tbody id="todo"></tbody></table>
+  <div class="more" id="todomore"></div></section>
+ <section class="blk" id="cleanup"></section>
+ <div class="grid2">
+  <section class="blk"><h2>Clicks theo cụm /kien-thuc</h2><p class="lead" id="mvlead"></p><table id="moves"></table></section>
+  <section class="blk"><h2>Mất clicks nhiều nhất</h2><p class="lead">Bài có nhãn rank-drop, so với 90 ngày trước.</p><table id="drops"></table></section>
+ </div>
+ <section class="blk"><h2>Làm lại bài cũ</h2><p class="lead" id="qlead"></p>
+  <table><thead><tr><th>Bài</th><th>Việc</th><th>Cụm</th><th class="n">Ưu tiên</th><th>Lý do</th><th></th></tr></thead><tbody id="queue"></tbody></table></section>
+</div>
+
+<div class="panel" id="p-approve" hidden>
+ <h2>Chờ duyệt</h2><p class="lead">Proposal, outline và bản viết lại đang chờ <code>/approve</code>. Bấm vào bài để đọc ngay tại đây.</p>
+ <div class="toolbar"><input id="aq" type="search" placeholder="Tìm slug, từ khóa, đợt, nội dung…" aria-label="Tìm bài chờ duyệt"><select id="agate" aria-label="Gate"><option value="">Mọi trạng thái</option><option value="Gate 1">Gate 1</option><option value="Gate 2">Gate 2</option><option value="Đang làm">Đang làm (chưa tới gate)</option></select><label><input id="abody" type="checkbox"> Tìm cả trong nội dung</label><label><input id="arecent" type="checkbox"> Chỉ bài cập nhật trong 30 ngày</label></div>
+ <p id="acount" aria-live="polite" class="lead"></p><div id="approvals"></div>
+</div>
+
+<div class="panel" id="p-strategy" hidden>
+ <h2>Chiến lược nội dung</h2><p class="lead">Một nơi sửa cho mỗi phần: định vị ở <code>knowledge/1-brand/profile.md</code> §0 · khu vực site và cụm ở <code>knowledge/3-seo/strategy/taxonomy.json</code> (<code>site</code>, <code>topics</code>) · thuật ngữ ở <a href="../README.md">knowledge/README.md</a>. Bản đồ trực quan: <a href="../3-seo/strategy/topical-map.html">Topical map</a>.</p>
+ <div class="pos" id="pos"></div>
+ <div id="warns"></div>
+ <h3>Khu vực trên dsc.com.vn</h3><p class="lead" id="sitelead"></p>
+ <table><thead><tr><th>Khu vực</th><th>Vai trò</th><th class="n">Clicks</th><th class="n">So kỳ trước</th><th class="n">% site</th><th class="n">URL</th><th>Ghi chú</th></tr></thead><tbody id="site"></tbody></table>
+ <h3>Cụm /kien-thuc</h3><p class="lead">Thanh xám = % clicks, thanh xanh = % key events (xem trang MTK + điền form + gửi form). Core nên có thanh xanh dài; Outer kéo traffic và phải dẫn về trang ở cột "Dẫn về".</p>
+ <table><thead><tr><th>Cụm</th><th>Vai trò</th><th>Thực thể</th><th>Clicks / key events</th><th class="n">Clicks</th><th class="n">Qua pipeline</th><th class="n">Thuộc tính</th><th>Dẫn về</th></tr></thead><tbody id="strat"></tbody></table>
+ <div class="note" style="margin-top:18px"><b>Vai trò:</b> <span class="tag t-core">core</span> trang chuyển đổi / phục vụ khách · <span class="tag t-outer">outer</span> kéo traffic, xây thẩm quyền, phải dẫn về Core · <span class="tag t-trust">trust</span> chứng minh DSC là ai · <span class="tag t-off">off</span> ngoài định vị: giữ bài đang có traffic, không viết thêm, không xoá.</div>
+</div>
+
+<div class="panel" id="p-work" hidden>
+ <h2>Công việc và tiến độ</h2><p class="lead">Nhịp: đầu tháng báo cáo → ads → cơ hội SEO → kế hoạch bài · mỗi bài outline → draft → duyệt → CMS → link → syndicate · hằng tuần /weekly + /competitor-watch.</p>
+ <div class="note" id="freshness"></div>
+ <div class="toolbar"><input id="q" type="search" placeholder="Tìm tên đợt, slug, trạng thái…" aria-label="Tìm công việc"><select id="group" aria-label="Nhóm việc"><option value="">Tất cả nhóm</option></select><label><input id="remaining" type="checkbox"> Ẩn đợt đạt trong snapshot</label></div>
+ <p id="count" aria-live="polite" class="lead"></p>
+ <table><thead><tr><th>Công việc</th><th>Trạng thái</th><th>Bằng chứng</th><th>Bước tiếp theo</th></tr></thead><tbody id="tasks"></tbody></table>
+</div>
+
+<div class="panel" id="p-library" hidden>
+ <h2>Tài liệu</h2><p class="lead">Internal link, stale, content audit, QA, GSC, ledger, báo cáo cũ và HTML CMS.</p>
+ <div class="toolbar"><input id="fq" type="search" placeholder="Tìm đường dẫn hoặc tên file…" aria-label="Tìm file"><label><input id="archive" type="checkbox"> Hiện tài liệu lưu trữ</label></div>
+ <p id="filecount" aria-live="polite" class="lead"></p><table><thead><tr><th>Nhóm</th><th>Tài liệu / đường dẫn</th></tr></thead><tbody id="files"></tbody></table>
+</div>
+</div>
 <script>
 const D=__PAYLOAD__;
 const $=id=>document.getElementById(id);
-const norm=s=>String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d');
-function cell(tr,text){const td=document.createElement('td');td.textContent=text;tr.append(td);return td}
+const el=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!=null)e.textContent=text;return e};
+const norm=s=>String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/đ/g,'d');
+const fmt=n=>Math.round(n||0).toLocaleString('vi-VN');
+const pct=x=>Math.round((x||0)*100)+'%';
+const TODAY=new Date(D.generated_at.slice(0,10));
+const days=d=>d?Math.round((TODAY-new Date(d))/864e5):null;
+function delta(cur,prev){if(!prev)return el('span','age','—');const d=(cur-prev)/prev;return el('span',d>=0?'up':'down',(d>=0?'▲ +':'▼ ')+Math.round(d*100)+'%')}
+function ageEl(d){const n=days(d);if(n===null)return el('span','age','—');return el('span','age'+(n>=30?' old':''),d+' · '+(n===0?'hôm nay':n+' ngày'))}
+function cell(tr,text,cls){const td=document.createElement('td');if(cls)td.className=cls;if(text!=null)td.textContent=text;tr.append(td);return td}
 function link(path,label){const a=document.createElement('a');a.href='../../'+path;a.textContent=label;return a}
 function matches(text,q){return norm(q).split(/\s+/).filter(Boolean).every(t=>norm(text).includes(t))}
-$('freshness').textContent=`Tạo bảng: ${D.generated_at}. Snapshot gần nhất: ${D.snapshot} (${D.snapshot_mode}). Đây là đối chiếu dữ liệu đã lưu, không phải kiểm tra website trực tiếp. Partial sync không làm mới mọi bài. Dấu tick trong các tracker cũ chỉ lưu tại trình duyệt và chưa được nhập vào bảng này.`;
-const groups=[...new Set(D.tasks.map(t=>t.group))];
-for(const g of groups)$('group').add(new Option(g,g));
-const S=D.stats||{};for(const [n,v] of [['Chờ duyệt',S.approvals??'-'],['Bài SEO đang làm',S.in_progress??'-'],['Bài mới đối thủ tuần này',S.competitor_new??'-'],['Bản nháp kênh chờ duyệt',S.channel_drafts??'-'],['Đợt internal link',D.tasks.filter(t=>t.group==='Internal link').length],['Đợt đạt trong snapshot',D.tasks.filter(t=>t.state==='Đạt trong snapshot').length],['Tài liệu',D.catalog.length]]){const card=document.createElement('div');card.className='card';const b=document.createElement('b');b.textContent=v;card.append(b,document.createTextNode(n));$('cards').append(card)}
-function render(){
- $('tasks').replaceChildren();
- const rows=D.tasks.filter(t=>(!$('group').value||t.group===$('group').value)&&(!$('remaining').checked||t.state!=='Đạt trong snapshot')&&matches(JSON.stringify(t),$('q').value));
- for(const t of rows){const tr=document.createElement('tr'),name=cell(tr,'');name.append(link(t.source,t.name));const small=document.createElement('small');small.textContent=t.group;name.append(small);
- const state=cell(tr,'');const badge=document.createElement('span');badge.className='badge '+(t.state==='Đạt trong snapshot'?'good':'warn');badge.textContent=t.state;state.append(badge);
- if(t.total){const p=document.createElement('progress');p.max=t.total;p.value=t.done;p.setAttribute('aria-label',`${t.done}/${t.total}`);state.append(document.createElement('br'),p)}
- const proof=cell(tr,t.evidence);if(t.details){const d=document.createElement('details'),s=document.createElement('summary'),pre=document.createElement('pre');s.textContent='Xem chi tiết';pre.textContent=t.details;d.append(s,pre);proof.append(d)}if(t.spec)proof.append(document.createElement('br'),link(t.spec,'Dữ liệu gốc'));
- cell(tr,t.next_step);$('tasks').append(tr)}
- $('count').textContent=`${rows.length}/${D.tasks.length} đầu việc / đợt. Các đợt có thể trùng hoặc thay thế nhau; không cộng số thay đổi giữa các đợt.`;
-}
-function files(){
- $('files').replaceChildren();const rows=D.catalog.filter(r=>($('archive').checked||!r.archived)&&matches(r.path,$('fq').value));
- for(const r of rows){const tr=document.createElement('tr');cell(tr,r.group+(r.archived?' / lưu trữ':''));cell(tr,'').append(link(r.path,r.path));$('files').append(tr)}$('filecount').textContent=`${rows.length}/${D.catalog.length} tài liệu`;
-}
+function copyBtn(text,label){const b=el('button',null,label||'Copy');b.title=text;b.onclick=()=>{navigator.clipboard.writeText(text);b.textContent='Đã copy';b.classList.add('done')};return b}
+function tag(text,cls){return el('span','tag '+(cls||''),text)}
+
+/* tabs */
+function showTab(){const id=(location.hash||'#today').slice(1),p=$('p-'+id)?id:'today';
+ for(const x of document.querySelectorAll('.panel'))x.hidden=x.id!=='p-'+p;
+ for(const a of $('tabs').querySelectorAll('a'))a.classList.toggle('on',a.getAttribute('href')==='#'+p)}
+addEventListener('hashchange',showTab);showTab();
+$('gen').textContent='Cập nhật '+D.generated_at.replace('T',' ').slice(0,16);
+
+/* ---------- Hôm nay ---------- */
+const T=D.today||{},F=T.fresh||{},M=(T.metrics||{}).total||{},TD=T.todo||{},W=TD.weekly||{},A=D.approvals||[];
+$('fresh').append('Số liệu: GSC/GA4 bài /kien-thuc ',el('b',null,F.audit||'chưa có'),' · GSC toàn site ',el('b',null,F.site||'chưa có'),' · web live ',el('b',null,(D.snapshot||'').slice(0,10)),' · SERP ',el('b',null,F.serp||'—'),'. Làm mới số bằng ',el('code',null,'/analytics-report'),'; làm mới bảng bằng ',el('code',null,'python scripts/build_content_index.py'),'.');
+const g1=A.filter(a=>a.gate.startsWith('Gate 1')),g2=A.filter(a=>a.gate.startsWith('Gate 2'));
+for(const [v,l,x] of [[fmt(M.clicks),'clicks /kien-thuc, 90 ngày',delta(M.clicks,M.prev)],[fmt(M.ke),'key events từ bài /kien-thuc'],[`${g2.length} · ${g1.length}`,'chờ duyệt bài · outline/proposal'],[(TD.doing||[]).length,'bài đang trong pipeline']]){
+ const k=el('div','kpi'),vv=el('div','v',String(v));if(x){vv.append(' ');x.style.fontSize='14px';vv.append(x)}k.append(vv,el('div','l',l));$('kpis').append(k)}
+
+const bySlug=Object.fromEntries(A.map(a=>[a.slug,a]));
+const rows=[];
+for(const a of g2)rows.push({o:1,job:'Duyệt bài (Gate 2)',slug:a.slug,kw:a.keyword,d:a.updated,c:a.created,cmd:'/approve '+a.slug,note:a.final_date?'Final hiện tại '+a.final_date:''});
+for(const a of g1)rows.push({o:2,job:a.gate.includes('Proposal')?'Duyệt Proposal':'Duyệt outline',slug:a.slug,kw:a.keyword,d:a.updated,c:a.created,cmd:'/approve '+a.slug,note:a.final_date?'Final hiện tại '+a.final_date:''});
+for(const d of (TD.doing||[])){ if(bySlug[d.slug])continue;
+ const job={'Outline-Approved':'Viết draft','Optimizing':'Hoàn tất làm lại','Outlining':'Hoàn tất outline','Outline-Pending':'Hoàn tất outline','In Progress':'Kiểm tra trạng thái','Planned':'Lên outline'}[d.status]||d.status;
+ const cmd=d.status==='Outline-Approved'?'/drafting '+d.slug:d.status==='Planned'?'/outlining '+(d.keyword||d.slug):'';
+ rows.push({o:d.status==='Outline-Approved'?3:d.status==='Planned'?6:4,job,slug:d.slug,kw:d.keyword,d:d.updated,c:d.created,cmd,note:d.status})}
+for(const s of (W.unpublished||[]))rows.push({o:5,job:'Đăng lên CMS',slug:s,cmd:'',note:'Final chưa thấy trên web'});
+for(const s of (W.backfill||[]))rows.push({o:5,job:'Backfill link',slug:s,cmd:'/weekly'});
+for(const s of (W.gsc_due||[]))rows.push({o:5,job:'Đo GSC (live ≥ 14 ngày)',slug:s,cmd:'/weekly'});
+for(const c of (TD.campaigns||[]))rows.push({o:5,job:'Chiến dịch: '+c.status,slug:c.id,cmd:'/mkt-status'});
+rows.sort((x,y)=>x.o-y.o||String(x.d||'9').localeCompare(String(y.d||'9')));
+let showAll=false;
+function renderTodo(){const tb=$('todo');tb.replaceChildren();const list=showAll?rows:rows.slice(0,14);
+ for(const r of list){const tr=el('tr');cell(tr,r.job);const b=cell(tr,'');b.append(el('b',null,r.kw||r.slug));if(r.kw)b.append(el('span','sub',r.slug));if(r.note)b.append(el('span','sub',r.note));
+  const dc=cell(tr,'');dc.append(ageEl(r.d));if(r.c&&r.c!==r.d)dc.append(el('span','sub','tạo '+r.c));
+  const cc=cell(tr,'');if(r.cmd)cc.append(copyBtn(r.cmd,r.cmd.split(' ')[0]));tb.append(tr)}
+ $('todomore').replaceChildren();if(rows.length>14){const b=el('button',null,showAll?'Thu gọn':`Xem tất cả ${rows.length} việc`);b.onclick=()=>{showAll=!showAll;renderTodo()};$('todomore').append(b)}}
+renderTodo();
+
+const CU=TD.cleanup||{};
+if((CU.leftovers||[]).length||(CU.mismatch||[]).length){const s=$('cleanup');s.append(el('h2',null,'Dọn dẹp file'),el('p','lead','Bài đã Finalized nhưng outline / draft / proposal vẫn nằm trong thư mục làm việc. Không xoá: lệnh chuyển vào archive/<slug>/.'));
+ if(CU.leftovers.length){const n=el('div','note');n.append(el('b',null,`${CU.leftovers.length} file tồn đọng `),copyBtn('python scripts/topic_status.py --stale --apply','Copy lệnh chuyển vào archive'));const d=el('details'),sm=el('summary',null,'Xem danh sách');d.append(sm);const u=el('ul');for(const f of CU.leftovers)u.append(el('li',null,f.file+' · '+f.updated));d.append(u);n.append(d);s.append(n)}
+ if(CU.mismatch.length){const n=el('div','note');n.append(el('b',null,'Trạng thái lệch: đã có Final nhưng registry chưa Finalized'));const u=el('ul');const seen=new Set();for(const f of CU.mismatch){if(seen.has(f.slug))continue;seen.add(f.slug);const l=el('li',null,`${f.slug} · registry: ${f.status} `);l.append(copyBtn(`python scripts/topic_status.py ${f.slug} --set Finalized`,'Copy lệnh'));u.append(l)}n.append(u);s.append(n)}}
+
+const S=(T.strategy||{}).clusters||[];
+$('mvlead').textContent='90 ngày so với 90 ngày trước · cột cuối = key events.';
+$('moves').innerHTML='<thead><tr><th>Cụm</th><th class="n">Clicks</th><th class="n">So kỳ trước</th><th class="n">Key events</th></tr></thead>';
+{const tb=el('tbody');for(const c of [...S].sort((a,b)=>b.clicks-a.clicks)){const tr=el('tr');const n=cell(tr,'');n.append(`${c.code}. ${c.name} `,tag(c.section,'t-'+c.section));cell(tr,fmt(c.clicks),'n');cell(tr,'','n').append(delta(c.clicks,c.prev));cell(tr,fmt(c.ke),'n');tb.append(tr)}$('moves').append(tb)}
+$('drops').innerHTML='<thead><tr><th>Bài</th><th class="n">Clicks</th><th class="n">Thay đổi</th><th></th></tr></thead>';
+{const tb=el('tbody');for(const d of (T.metrics||{}).drops||[]){const tr=el('tr');cell(tr,d.slug);cell(tr,fmt(d.clicks),'n');cell(tr,'','n').append(el('span','down','▼ '+fmt(Math.abs(d.change))));cell(tr,'').append(copyBtn('/optimize '+d.slug,'/optimize'));tb.append(tr)}$('drops').append(tb)}
+
+const QC=T.queue_counts||{};
+$('qlead').textContent=`Từ page-audit.csv, top ${(T.queue||[]).length} theo ưu tiên (clicks mất + clicks lấy lại được). Tổng: làm lại ${QC.refresh||0} · thêm cầu nối ${QC.bridge||0} · cân nhắc gộp/301 ${QC['prune?']||0}. Làm lại = /optimize · thêm cầu nối về trang Core = /cro.`;
+const ACT={refresh:'Làm lại',bridge:'Thêm cầu nối','prune?':'Cân nhắc gộp'};
+for(const q of T.queue||[]){const tr=el('tr');const t=cell(tr,'');t.append(el('b',null,q.slug),el('span','sub',q.pipeline==='Live'?'chưa qua pipeline':q.pipeline));
+ cell(tr,'').append(tag(ACT[q.action]||q.action));const c=cell(tr,'');c.append(q.cluster+' ',tag(q.section,'t-'+q.section));
+ cell(tr,fmt(q.priority),'n');cell(tr,q.labels);cell(tr,'').append(copyBtn(q.cmd,q.cmd.split(' ')[0]));$('queue').append(tr)}
+
+/* ---------- Chiến lược ---------- */
+const ST=T.strategy||{},SITE=ST.site||{sections:[]};
+for(const [l,v] of [['Định vị nội dung',ST.positioning||'chưa ghi ở profile.md §0'],['Thực thể trung tâm',ST.entity||'chưa ghi']]){const d=el('div');d.append(el('b',null,l),v);$('pos').append(d)}
+$('pos').append(el('div','age','Áp cho toàn site dsc.com.vn, không chỉ /kien-thuc.'));
+if((ST.warnings||[]).length){const w=el('div','note');w.append(el('b',null,`Cần xem (${ST.warnings.length})`));const u=el('ul');for(const x of ST.warnings)u.append(el('li',null,x));w.append(u);$('warns').append(w)}
+const stot=(SITE.totals||{}).clicks||1;
+$('sitelead').textContent=`GSC toàn domain ${SITE.start||''} → ${SITE.end||''} (snapshot ${SITE.date||'chưa có'}), tổng ${fmt(stot)} clicks. Kiến thức chia tiếp theo cụm ở bảng dưới.`;
+for(const s of SITE.sections||[]){const tr=el('tr');const n=cell(tr,'');n.append(el('b',null,s.name),el('span','sub',s.folders.join(' ')));
+ cell(tr,'').append(tag(s.section==='topics'?'theo cụm':s.section,'t-'+s.section));cell(tr,fmt(s.clicks),'n');cell(tr,'','n').append(delta(s.clicks,s.prev));
+ cell(tr,pct(s.clicks/stot),'n');cell(tr,fmt(s.urls),'n');cell(tr,s.note).style.fontSize='13px';$('site').append(tr)}
+for(const c of S){const tr=el('tr');const n=cell(tr,'');n.append(el('b',null,`${c.code}. ${c.name}`),el('span','sub',`${c.pages} bài`));
+ const s=cell(tr,'');s.append(tag(c.section,'t-'+c.section));if(c.suggested!==c.section&&c.section!=='off')s.append(el('span','sub','dữ liệu gợi ý: '+c.suggested));
+ cell(tr,c.entity);const b=cell(tr,'');const bars=el('div','bars');for(const [k,v] of [['c',c.clicks_share],['k',c.ke_share]]){const i=el('i',k),bb=el('b');bb.style.width=Math.max(v*100,1)+'%';i.append(bb);bars.append(i)}b.append(bars,el('span','sub',`${pct(c.clicks_share)} clicks · ${pct(c.ke_share)} KE`));
+ const cl=cell(tr,fmt(c.clicks)+' ','n');cl.append(delta(c.clicks,c.prev));cell(tr,pct(c.pipeline),'n');cell(tr,c.attrs?`${c.attrs_covered}/${c.attrs}`:'chưa khai','n');
+ cell(tr,c.bridge_to||(c.section==='core'?'— (core)':'chưa đặt'));$('strat').append(tr)}
+
+/* ---------- Công việc / Tài liệu ---------- */
+$('freshness').textContent=`Snapshot web live: ${D.snapshot} (${D.snapshot_mode}). Đây là đối chiếu dữ liệu đã lưu, không phải kiểm tra website trực tiếp. Dấu tick trong tracker cũ chỉ lưu tại trình duyệt.`;
+for(const g of [...new Set(D.tasks.map(t=>t.group))])$('group').add(new Option(g,g));
+function render(){$('tasks').replaceChildren();
+ const rs=D.tasks.filter(t=>(!$('group').value||t.group===$('group').value)&&(!$('remaining').checked||t.state!=='Đạt trong snapshot')&&matches(JSON.stringify(t),$('q').value));
+ for(const t of rs){const tr=el('tr'),name=cell(tr,'');name.append(link(t.source,t.name),el('span','sub',t.group));
+  const st=cell(tr,'');st.append(tag(t.state,t.state==='Đạt trong snapshot'?'':'t-old'));
+  if(t.total){const p=document.createElement('progress');p.max=t.total;p.value=t.done;st.append(document.createElement('br'),p)}
+  const pr=cell(tr,t.evidence);if(t.details){const d=el('details'),s=el('summary',null,'Xem chi tiết'),pre=el('pre',null,t.details);d.append(s,pre);pr.append(d)}if(t.spec)pr.append(document.createElement('br'),link(t.spec,'Dữ liệu gốc'));
+  cell(tr,t.next_step);$('tasks').append(tr)}
+ $('count').textContent=`${rs.length}/${D.tasks.length} đầu việc / đợt. Các đợt có thể trùng hoặc thay thế nhau.`}
+function files(){$('files').replaceChildren();const rs=D.catalog.filter(r=>($('archive').checked||!r.archived)&&matches(r.path,$('fq').value));
+ for(const r of rs){const tr=el('tr');cell(tr,r.group+(r.archived?' / lưu trữ':''));cell(tr,'').append(link(r.path,r.path));$('files').append(tr)}$('filecount').textContent=`${rs.length}/${D.catalog.length} tài liệu`}
 for(const id of ['q','group','remaining'])$(id).addEventListener('input',render);
 for(const id of ['fq','archive'])$(id).addEventListener('input',files);
 render();files();
-const A=D.approvals||[];
+
+/* ---------- Chờ duyệt ---------- */
 const strip=h=>h.replace(/<[^>]+>/g,' ');
 for(const q of A)q._text=norm([q.slug,q.keyword,q.title,q.wave,q.status,q.gate].join(' '));
-function approvals(){
- const box=$('approvals');box.replaceChildren();const q=$('aq').value,g=$('agate').value,body=$('abody').checked;
- const cut=new Date(Date.now()-30*864e5).toISOString().slice(0,10);
- const rows=A.filter(a=>(!$('arecent').checked||a.updated>=cut)&&(!g||a.gate.startsWith(g))&&(!q||norm(q).split(/\s+/).filter(Boolean).every(t=>a._text.includes(t)||(body&&a.docs.some(d=>norm(strip(d.html)).includes(t))))));
- for(const a of rows){
-  const el=document.createElement('div');el.className='ap';
-  const h=document.createElement('header'),badge=document.createElement('span');
-  badge.className='badge '+(a.gate.startsWith('Gate 1')?'g1':a.gate.startsWith('Gate 2')?'g2':'gx');badge.textContent=a.gate;
-  const name=document.createElement('b');name.textContent=a.slug;
-  const meta=document.createElement('span');meta.className='meta';meta.textContent=[a.keyword&&'KW: '+a.keyword,a.status,a.wave,'sửa '+a.updated].filter(Boolean).join(' · ');
-  h.append(badge,name,meta);el.append(h);
-  const bar=document.createElement('div'),doc=document.createElement('div');bar.className='bar';doc.className='doc';bar.hidden=doc.hidden=true;
-  const show=(d,btn)=>{doc.innerHTML=d.html;const p=document.createElement('p');p.append(link(d.path,'Mở file: '+d.path));doc.prepend(p);
+function approvals(){const box=$('approvals');box.replaceChildren();const q=$('aq').value,g=$('agate').value,body=$('abody').checked;
+ const cut=new Date(TODAY-30*864e5).toISOString().slice(0,10);
+ const rs=A.filter(a=>(!$('arecent').checked||a.updated>=cut)&&(!g||a.gate.startsWith(g))&&(!q||norm(q).split(/\s+/).filter(Boolean).every(t=>a._text.includes(t)||(body&&a.docs.some(d=>norm(strip(d.html)).includes(t))))));
+ for(const a of rs){const box1=el('div','ap'),h=el('header');
+  h.append(tag(a.gate,a.gate.startsWith('Gate 2')?'t-core':a.gate.startsWith('Gate 1')?'':'t-trust'),el('b',null,a.slug));
+  h.append(el('span','meta',[a.keyword&&'KW: '+a.keyword,a.status,a.wave,a.created&&'tạo '+a.created].filter(Boolean).join(' · ')));
+  h.append(ageEl(a.updated));if(a.final_date)h.append(el('span','meta','· Final '+a.final_date));box1.append(h);
+  const bar=el('div','bar'),doc=el('div','doc');bar.hidden=doc.hidden=true;
+  const show=(d,btn)=>{doc.innerHTML=d.html;const p=el('p');p.append(link(d.path,'Mở file: '+d.path));doc.prepend(p);
    bar.querySelectorAll('button.tab').forEach(b=>b.classList.toggle('on',b===btn));
    if(q&&body)for(const t of norm(q).split(/\s+/).filter(Boolean)){const w=document.createTreeWalker(doc,NodeFilter.SHOW_TEXT);let n;while(n=w.nextNode()){const i=norm(n.data).indexOf(t);if(i>=0){const r=document.createRange();r.setStart(n,i);r.setEnd(n,i+t.length);const m=document.createElement('mark');r.surroundContents(m);m.scrollIntoView({block:'center'});break}}}};
-  for(const d of a.docs){const b=document.createElement('button');b.className='tab';b.textContent=d.kind;b.onclick=()=>show(d,b);bar.append(b)}
-  const cp=document.createElement('button');cp.textContent='Copy /approve '+a.slug;cp.onclick=()=>{navigator.clipboard.writeText('/approve '+a.slug);cp.textContent='Đã copy ✓'};bar.append(cp);
-  if(a.final)bar.append(link(a.final,'Bản Final hiện tại'));
+  for(const d of a.docs){const b=el('button','tab',d.kind);b.onclick=()=>show(d,b);bar.append(b)}
+  bar.append(copyBtn('/approve '+a.slug,'Copy /approve'));if(a.final)bar.append(link(a.final,'Bản Final hiện tại'));
   h.onclick=()=>{const open=bar.hidden;bar.hidden=doc.hidden=!open;if(open&&!doc.innerHTML&&a.docs.length)show(a.docs[0],bar.querySelector('button.tab'))};
-  el.append(bar,doc);box.append(el)}
- const n1=A.filter(a=>a.gate.startsWith('Gate 1')).length,n2=A.filter(a=>a.gate.startsWith('Gate 2')).length;
- $('acount').textContent=`${rows.length}/${A.length} bài · Gate 1: ${n1} · Gate 2: ${n2}. Mới sửa nhất ở trên.${$('arecent').checked&&rows.length<A.length?' Bỏ tick “30 ngày” để xem bài treo lâu.':''}`;
-}
+  box1.append(bar,doc);box.append(box1)}
+ $('acount').textContent=`${rs.length}/${A.length} bài · Gate 1: ${g1.length} · Gate 2: ${g2.length}. Cập nhật mới nhất ở trên; ngày theo YAML Updated.`}
 for(const id of ['aq','agate','abody','arecent'])$(id).addEventListener('input',approvals);
 approvals();
-
 </script></html>

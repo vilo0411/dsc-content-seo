@@ -2,6 +2,8 @@
 title: 'Khoảng Trống Giá (Gap) Là Gì? 4 Mô Hình & Cách Giao Dịch'
 source: 'https://www.dsc.com.vn/kien-thuc/khoang-trong-gia-gap-la-gi'
 description: 'Khoảng trống giá (Gap) là gì? Khám phá 4 mô hình Gap phổ biến, ý nghĩa hiện tượng lấp Gap và chiến lược giao dịch kỹ thuật tối ưu lợi nhuận tại DSC.'
+Created: 2026-08-11
+Updated: 2026-08-11
 ---
 
 # Khoảng Trống Giá (Gap) Là Gì? 4 Mô Hình & Cách Giao Dịch

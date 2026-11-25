@@ -1,21 +1,15 @@
 {
   "job": "CMP-261124-mo-tai-khoan-tet-2027",
   "version": 3,
-  "rendered_at": "2026-11-24T16:26:32",
+  "rendered_at": "2026-11-25T09:17:39",
   "creatives": {
     "facebook-v1": {
       "size": "1080x1350",
       "layout": "kv-right",
       "theme": "ivory",
       "group": null,
-      "status": "Chưa đạt",
-      "issues": [
-        {
-          "rule": "KV-missing",
-          "level": "error",
-          "msg": "Chưa có ảnh KV (chưa gán ảnh) — chạy `creative.py prompt`, tạo ảnh bằng Gemini, lưu vào creatives/assets/"
-        }
-      ],
+      "status": "Đạt",
+      "issues": [],
       "fit": {
         "script": 1.0,
         "headline": 1.0,

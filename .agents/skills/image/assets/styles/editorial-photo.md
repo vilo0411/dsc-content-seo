@@ -9,10 +9,10 @@
   }
 
   color-grade: {
-    shadows: lift toward #0D1B2A navy
+    shadows: lift toward #272D2B gunmetal / #1D4130 pine teal
     mids: warm neutral
     highlights: cream direction
-    accent: DSC green subtle in environment (plant / screen glow / chart on phone)
+    accent: DSC lime #2AD03D / emerald #1BBE72 subtle in environment (plant / screen glow / chart on phone)
     forbidden: cold blue grade
   }
 

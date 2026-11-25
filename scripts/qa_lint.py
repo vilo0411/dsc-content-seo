@@ -16,6 +16,7 @@ Rule sources (parsed at runtime, never hardcoded when a file exists):
     .agents/skills/link/scripts/sitemap-cache.json -> link verification
     <outline>.md  PAA_Questions: (with --outline)         -> PAA-missing / FAQ-few-paa (AEO)
     <outline>.md  Entities / Information_Gain             -> ENT-missing / IG-missing (coverage)
+    <outline>.md  EAV block                               -> EAV-value-missing (coverage)
     knowledge/raw/serp/<keyword>.json                    -> terms >= 3 ranking pages share (ENT-missing)
     knowledge/1-brand/source-whitelist.md             -> SRC-* (primary sources a claim may link to)
 
@@ -25,6 +26,7 @@ Score categories: anti_ai, readability, seo, link, geo (form) + coverage, trust 
 from __future__ import annotations
 
 import argparse
+import csv
 import difflib
 import json
 import re
@@ -656,6 +658,35 @@ def check_link_rules(rep, lines, start, slug: str):
                 if slug in b["spokes"] and b.get("subhub") and b["subhub"] not in targets:
                     rep.add("LINK-subhub", "link", "MINOR", start + 1,
                             f"Bài thuộc nhánh “{b['id']} {b['name']}” chưa link về sub-hub {DSC_HOST}/kien-thuc/{b['subhub']}")
+    check_bridge(rep, start, slug, targets)
+
+
+def topic_of(slug: str) -> str:
+    """Cluster code of an article from the registry (pages.csv), matching the live slug or the file slug."""
+    reg = ROOT / "knowledge/3-seo/strategy/pages.csv"
+    try:
+        with reg.open(encoding="utf-8-sig", newline="") as fh:
+            for r in csv.DictReader(fh):
+                if slug and slug in (r.get("slug"), r.get("file_slug")):
+                    return r.get("cluster", "")
+    except OSError:
+        pass
+    return ""
+
+
+def check_bridge(rep, start, slug: str, targets: set[str]):
+    """LINK-bridge: an article in an Outer cluster (taxonomy.json topics.<code>.section) must link to its
+    cluster's bridge_to — the Core page the cluster feeds. MINOR while the existing corpus is backfilled."""
+    try:
+        topics = json.loads(LINK_CLUSTERS.read_text(encoding="utf-8")).get("topics", {})
+    except (OSError, ValueError):
+        return
+    t = topics.get(topic_of(slug), {})
+    bridge = t.get("bridge_to", "")
+    if t.get("section") == "outer" and bridge and slug != bridge and bridge not in targets:
+        rep.add("LINK-bridge", "link", "MINOR", start + 1,
+                f"Bài thuộc cụm Outer “{t.get('name')}” chưa có cầu nối về bài Core {DSC_HOST}/kien-thuc/{bridge} "
+                "— 1 đoạn nối ý bài sang việc người đọc làm tiếp, link nằm trong câu")
 
 
 def check_cta(rep, path: Path):
@@ -1038,6 +1069,33 @@ def check_information_gain(rep, lines, start, outline_path: Path):
             rep.add("IG-misplaced", "coverage", "MINOR", start + 1,
                     f"Proof “{it['proof']}” có trong bài nhưng không nằm ở H2 đã khai “{it['h2']}”")
     rep.stats["information_gain"] = f"{delivered}/{len(items)}"
+
+
+def check_eav(rep, lines, start, outline_path: Path):
+    """EAV-value-missing: every EAV value declared in the outline must appear in the draft (numbers compared
+    without separators, so 0,1% == 0.1%)."""
+    ol = _outline_mod()
+    if not ol or not hasattr(ol, "parse_eav"):
+        return
+    try:
+        text = outline_path.read_text(encoding="utf-8").replace("\r\n", "\n")
+    except OSError:
+        return
+    _, yaml_raw, _ = ol.parse_yaml(text)
+    items = [it for it in ol.parse_eav(yaml_raw) if it.get("value")]
+    if not items:
+        return
+    whole = _fold(strip_md("\n".join(lines[start:])))
+    flat = re.sub(r"[\s.,]", "", whole)
+    done = 0
+    for it in items:
+        v = _fold(it["value"])
+        if v in whole or (re.search(r"\d", v) and re.sub(r"[\s.,]", "", v) in flat):
+            done += 1
+        else:
+            rep.add("EAV-value-missing", "coverage", "MAJOR", start + 1,
+                    f"EAV outline đã khai chưa có trong bài: “{it['attribute']}” = “{it['value']}”")
+    rep.stats["eav"] = f"{done}/{len(items)}"
 
 
 # ─────────────────────────── Duplication across the corpus ───────────────────────────
@@ -1435,6 +1493,7 @@ def main() -> int:
         check_word_count(rep, path, outline)
         paa_count = check_paa(rep, lines, start, outline)
         check_information_gain(rep, lines, start, outline)
+        check_eav(rep, lines, start, outline)
     check_faq_format(rep, lines, start, paa_count)
     check_entities(rep, prose, start, keyword, outline)
     check_duplicates(rep, prose, start, slug)

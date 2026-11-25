@@ -95,6 +95,8 @@ Internal_Links:
     url: "https://www.dsc.com.vn/kien-thuc/top-co-phieu-cao-su-nen-dau-tu"
   - anchor: "mở tài khoản chứng khoán DSC"
     url: "https://www.dsc.com.vn/mo-tai-khoan"
+Created: 2026-10-20
+Updated: 2026-10-20
 ---
 
 # SEO Content Outline: Giá cao su

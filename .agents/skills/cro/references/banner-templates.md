@@ -1,6 +1,6 @@
 # Banner CTA Templates — DSC
 
-> Inline style 100% (WordPress strip `<style>`). Palette và tương phản theo `.agents/rules/cta-conversion.md` mục 5.
+> Inline style 100% (WordPress strip `<style>`). Palette, font và tương phản theo `knowledge/1-brand/DESIGN.md` v1.0 + `.agents/rules/cta-conversion.md` mục 5. Không thêm hex ngoài template.
 > Placeholder: `{{HEADLINE}}` `{{SUB}}` `{{BUTTON}}` `{{URL}}`. Thay hết trước khi chèn — không để placeholder sót lại trong bài.
 >
 > `{{URL}}` = `https://www.dsc.com.vn/mo-tai-khoan` (mặc định, không UTM).
@@ -19,20 +19,20 @@
 
 ## 1. `primary-midarticle`
 
-Nền Dark Navy (tương phản 17.4:1 với chữ trắng), nút xanh lá sáng chữ navy (10.2:1).
+Nền Gunmetal → Pine Teal (chữ trắng 11.3–14:1), nút Lime chữ Gunmetal (6.8:1), dòng phụ Frosted Mint.
 
 ```html
-<div style="background: linear-gradient(135deg, #0D1B2A 0%, #0A3D2E 100%); border-radius: 12px; padding: 30px; margin: 30px 0; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 10px 30px rgba(13, 27, 42, 0.25); position: relative; overflow: hidden; color: #ffffff; gap: 20px; flex-wrap: wrap;">
-  <div aria-hidden="true" style="position: absolute; top: -50%; right: -20%; width: 300px; height: 300px; background: radial-gradient(circle, rgba(43, 232, 65, 0.18) 0%, rgba(43, 232, 65, 0) 70%); border-radius: 50%;"></div>
+<div style="background: linear-gradient(135deg, #272D2B 0%, #1D4130 100%); border-radius: 12px; padding: 30px; margin: 30px 0; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 10px 30px rgba(39, 45, 43, 0.25); position: relative; overflow: hidden; color: #ffffff; gap: 20px; flex-wrap: wrap;">
+  <div aria-hidden="true" style="position: absolute; top: -50%; right: -20%; width: 300px; height: 300px; background: radial-gradient(circle, rgba(42, 208, 61, 0.20) 0%, rgba(42, 208, 61, 0) 70%); border-radius: 50%;"></div>
   <div style="flex: 1 1 260px; position: relative; z-index: 1;">
     <p style="font-size: 22px; line-height: 1.35; margin: 0 0 10px 0; font-weight: 700; color: #ffffff;">{{HEADLINE}}</p>
-    <p style="font-size: 15px; line-height: 1.5; margin: 0; color: #E8F8F2;">{{SUB}}</p>
+    <p style="font-size: 15px; line-height: 1.5; margin: 0; color: #8CFFCC;">{{SUB}}</p>
   </div>
-  <a href="{{URL}}" style="background: #2BE841; color: #0D1B2A; padding: 14px 32px; border-radius: 30px; text-decoration: none; font-weight: 700; font-size: 16px; display: inline-block; position: relative; z-index: 1;">{{BUTTON}}</a>
+  <a href="{{URL}}" style="background: #2AD03D; color: #272D2B; padding: 14px 32px; border-radius: 30px; text-decoration: none; font-weight: 700; font-size: 16px; display: inline-block; position: relative; z-index: 1;">{{BUTTON}}</a>
 </div>
 ```
 
-**Khác gì bản cũ (`#27ae60`) — và tại sao:**
+**Khác gì bản cũ — và tại sao** (bảng lịch sử; màu hiện hành theo DESIGN.md v1.0 từ 2026-11-25, thay Navy/`#2BE841` bằng Gunmetal/Pine Teal/Lime):
 
 | Thay đổi | Lý do |
 | :--- | :--- |
@@ -53,13 +53,13 @@ Headline giảm 24px → 22px: 24px hai dòng trên mobile chiếm quá nhiều 
 Dải mỏng, không ngắt mạch đọc. Viền trái xanh lá làm điểm nhấn thay vì nền đậm.
 
 ```html
-<div style="border-left: 4px solid #00AD14; background: #E8F8F2; border-radius: 0 8px 8px 0; padding: 18px 22px; margin: 28px 0; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
-  <p style="margin: 0; font-size: 16px; line-height: 1.5; color: #0D1B2A; flex: 1 1 240px;">{{HEADLINE}}</p>
-  <a href="{{URL}}" style="background: #0D1B2A; color: #ffffff; padding: 11px 24px; border-radius: 24px; text-decoration: none; font-weight: 600; font-size: 15px; display: inline-block;">{{BUTTON}}</a>
+<div style="border-left: 4px solid #2AD03D; background: #F2FBF6; border-radius: 0 8px 8px 0; padding: 18px 22px; margin: 28px 0; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+  <p style="margin: 0; font-size: 16px; line-height: 1.5; color: #272D2B; flex: 1 1 240px;">{{HEADLINE}}</p>
+  <a href="{{URL}}" style="background: #1D4130; color: #ffffff; padding: 11px 24px; border-radius: 24px; text-decoration: none; font-weight: 600; font-size: 15px; display: inline-block;">{{BUTTON}}</a>
 </div>
 ```
 
-Tương phản: `#0D1B2A` trên `#E8F8F2` ≈ 15.8:1 · nút trắng trên `#0D1B2A` 17.4:1.
+Tương phản: Gunmetal `#272D2B` trên `#F2FBF6` ≈ 13.3:1 · nút trắng trên Pine Teal `#1D4130` 11.3:1.
 Template này **không dùng `{{SUB}}`** — chỉ một dòng.
 
 ---
@@ -69,10 +69,10 @@ Template này **không dùng `{{SUB}}`** — chỉ một dòng.
 Kết bài. Khối dọc, có chỗ cho lý do cuối cùng.
 
 ```html
-<div style="background: linear-gradient(135deg, #0D1B2A 0%, #0A3D2E 100%); border-radius: 14px; padding: 34px 30px; margin: 36px 0; text-align: center; color: #ffffff;">
+<div style="background: linear-gradient(135deg, #272D2B 0%, #1D4130 100%); border-radius: 14px; padding: 34px 30px; margin: 36px 0; text-align: center; color: #ffffff;">
   <p style="font-size: 23px; line-height: 1.35; margin: 0 0 12px 0; font-weight: 700; color: #ffffff;">{{HEADLINE}}</p>
-  <p style="font-size: 15px; line-height: 1.6; margin: 0 0 22px 0; color: #E8F8F2; max-width: 520px; margin-left: auto; margin-right: auto;">{{SUB}}</p>
-  <a href="{{URL}}" style="background: #2BE841; color: #0D1B2A; padding: 15px 38px; border-radius: 30px; text-decoration: none; font-weight: 700; font-size: 16px; display: inline-block;">{{BUTTON}}</a>
+  <p style="font-size: 15px; line-height: 1.6; margin: 0 0 22px 0; color: #8CFFCC; max-width: 520px; margin-left: auto; margin-right: auto;">{{SUB}}</p>
+  <a href="{{URL}}" style="background: #2AD03D; color: #272D2B; padding: 15px 38px; border-radius: 30px; text-decoration: none; font-weight: 700; font-size: 16px; display: inline-block;">{{BUTTON}}</a>
 </div>
 ```
 

@@ -7,6 +7,8 @@ Persona: P2 (F0 - Nhà đầu tư mới)
 Author: Chứng khoán DSC
 Status: Draft
 Created_At: 2026-11-10
+Created: 2026-11-10
+Updated: 2026-11-10
 ---
 
 # Dòng tiền tự do là gì? Cách tính FCF từ báo cáo tài chính

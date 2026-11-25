@@ -1,3 +1,8 @@
+---
+Created: 2026-07-29
+Updated: 2026-07-29
+---
+
 # DCF là gì? Cách định giá cổ phiếu bằng phương pháp DCF chi tiết
 
 Mua đuổi cổ phiếu theo tin đồn khiến nhiều nhà đầu tư gánh chịu thua lỗ lớn. Phương pháp **DCF là gì**? Đây là công cụ định lượng cốt lõi giúp bạn xác định giá trị thực của cổ phiếu trước khi đầu tư.

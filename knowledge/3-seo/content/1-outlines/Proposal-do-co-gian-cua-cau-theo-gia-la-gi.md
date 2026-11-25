@@ -1,3 +1,8 @@
+---
+Created: 2026-10-16
+Updated: 2026-10-16
+---
+
 # 📋 Báo cáo tối ưu SEO (SEO Optimization Proposal)
 ## Bài 4: Độ co giãn của cầu theo giá là gì (Nhóm CTR Gap)
 

@@ -5,6 +5,8 @@ Target_Keyword: cách mua cổ phiếu FLC
 Slug: cach-mua-co-phieu-flc
 Persona: P2 — F0 (Nhà Đầu Tư Mới)
 Search_Intent: Informational & Transactional
+Created: 2026-11-06
+Updated: 2026-11-06
 ---
 
 # Cách mua cổ phiếu FLC sau khi bị hủy niêm yết

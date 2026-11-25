@@ -1,3 +1,8 @@
+---
+Created: 2026-10-21
+Updated: 2026-10-21
+---
+
 # 📋 Báo cáo tối ưu SEO (SEO Optimization Proposal)
 ## Bài viết: YOY là gì? Cách tính và ý nghĩa của chỉ số YOY (Nhóm CTR Gap)
 

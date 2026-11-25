@@ -13,26 +13,33 @@ LOGO_DIR = os.path.join(ROOT, "knowledge/1-brand/assets/logos")
 SS = 3
 
 # ---- colour tokens -------------------------------------------------------
+# Brand guideline v1.0 (knowledge/1-brand/DESIGN.md, brand.json). Old token names
+# (green/navy/bright/teal) are kept as aliases so per-article generate_*.py still run.
 C = {
-    "green": "#00AD14",      # brand primary: data highlight, numbers that matter
-    "green_700": "#00801A",  # text-safe green on light bg (AA on white)
-    "green_900": "#0B4D2A",
-    "bright": "#2BE841",     # gradient start, only on navy
-    "teal": "#10E7B3",       # gradient end, only on navy
-    "navy": "#0D1B2A",       # text, dark surfaces, "bad" data (no red)
-    "navy_800": "#13263A",
-    "navy_700": "#1C3348",
-    "ink_2": "#425466",      # secondary text
-    "ink_3": "#7A8A99",      # captions, axis
-    "line": "#DCE7E1",       # borders, dividers
-    "track": "#E6F0EA",      # chart tracks, empty bars
-    "neutral": "#B6C2CC",    # baseline / comparison data
-    "mint_50": "#F4FAF7",    # light canvas
-    "mint_100": "#E8F8F2",   # tags, soft fills
+    "gunmetal": "#272D2B",
+    "pine_teal": "#1D4130",
+    "lime": "#2AD03D",
+    "emerald": "#1BBE72",
+    "frosted_mint": "#8CFFCC",
+    "green": "#2AD03D",      # = lime: data highlight, bars, lines (never text on white; text on it = gunmetal)
+    "green_700": "#1D4130",  # = pine_teal: text-safe green on light bg
+    "green_900": "#1D4130",
+    "bright": "#61CC6C",     # primary gradient start
+    "teal": "#14A46E",       # primary gradient end
+    "navy": "#272D2B",       # = gunmetal: text, dark surfaces, "bad" data (no red)
+    "navy_800": "#1D4130",   # = pine_teal: surface on dark bg
+    "navy_700": "#34403C",
+    "ink_2": "#4A524F",      # secondary text
+    "ink_3": "#666F6C",      # captions, axis (AA on white)
+    "line": "#DCE5E0",       # borders, dividers
+    "track": "#E8F0EC",      # chart tracks, empty bars
+    "neutral": "#B9C3BF",    # baseline / comparison data
+    "mint_50": "#F2FBF6",    # light canvas
+    "mint_100": "#DDF7EA",   # tags, soft fills
     "white": "#FFFFFF",
 }
 
-# ---- type scale (final px, Be Vietnam Pro) --------------------------------
+# ---- type scale (final px, Plus Jakarta Sans) ------------------------------
 TYPE = {  # for the 800x500 canvas
     "display": ("ExtraBold", 46), "h1": ("Bold", 26), "h2": ("SemiBold", 17),
     "body": ("Regular", 14), "body_m": ("Medium", 14), "caption": ("Medium", 12),
@@ -55,7 +62,7 @@ _font_cache = {}
 def font(weight, size):
     key = (weight, size)
     if key not in _font_cache:
-        _font_cache[key] = ImageFont.truetype(os.path.join(FONT_DIR, f"BeVietnamPro-{weight}.ttf"), size * SS)
+        _font_cache[key] = ImageFont.truetype(os.path.join(FONT_DIR, f"PlusJakartaSans-{weight}.ttf"), size * SS)
     return _font_cache[key]
 
 

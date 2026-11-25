@@ -5,6 +5,8 @@ Meta_Description: Lệnh stop limit là gì? Tìm hiểu cơ chế hoạt độn
 Keyword: Lệnh stop limit
 Slug: lenh-stop-limit-la-gi
 Date: 2026-09-29
+Created: 2026-09-29
+Updated: 2026-09-29
 ---
 
 # Lệnh Stop Limit Là Gì? Cách Đặt Lệnh Thực Chiến 2026

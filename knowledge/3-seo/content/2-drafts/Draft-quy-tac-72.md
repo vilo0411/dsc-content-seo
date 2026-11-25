@@ -1,3 +1,8 @@
+---
+Created: 2026-05-26
+Updated: 2026-05-26
+---
+
 # Quy tắc 72 là gì? Công thức tính nhẩm nhân đôi tài sản
 
 Với 100 triệu VNĐ nhàn rỗi, bạn mất bao lâu để nhân đôi tài sản? Nhà đầu tư chuyên nghiệp chỉ mất đúng 3 giây để tính nhẩm con số này. 

@@ -39,8 +39,32 @@ LIVE_HTML = ROOT / "knowledge/raw/live/html"  # shared snapshot written by sync_
 DSC_HOST = "https://www.dsc.com.vn"
 OPEN_ACCOUNT_URL = f"{DSC_HOST}/mo-tai-khoan"
 
-# Palette from knowledge/1-brand/visual-brand-guidelines.md
-BRAND_HEX = {"#00ad14", "#2be841", "#10e7b3", "#0d1b2a", "#e8f8f2", "#ffffff", "#fff", "#0a3d2e"}
+BRAND_FILE = ROOT / "knowledge/1-brand/brand.json"
+
+
+def _brand_hexes() -> tuple[set[str], set[str]]:
+    """(current palette, legacy palette) from brand.json — DESIGN.md v1.0. Seasonal tokens are not for SEO banners."""
+    hex_re = re.compile(r"#[0-9a-fA-F]{6}")
+
+    def walk(v, out: set[str]) -> set[str]:
+        if isinstance(v, str) and hex_re.fullmatch(v):
+            out.add(v.lower())
+        elif isinstance(v, list):
+            for x in v:
+                walk(x, out)
+        elif isinstance(v, dict):
+            for k, x in v.items():
+                if k not in ("legacy", "seasonal"):
+                    walk(x, out)
+        return out
+    try:
+        colors = json.loads(BRAND_FILE.read_text(encoding="utf-8"))["colors"]
+    except (OSError, ValueError, KeyError):
+        return {"#ffffff"}, set()
+    return walk(colors, {"#ffffff", "#fff"}), walk(colors.get("legacy", {}), {"#0a3d2e"})
+
+
+BRAND_HEX, LEGACY_HEX = _brand_hexes()
 HEX_RE = re.compile(r"#(?:[0-9a-fA-F]{3}|[0-9a-fA-F]{6})\b")
 
 GENERIC_BUTTON = {"xem thêm", "tại đây", "click vào đây", "ở đây", "tìm hiểu", "chi tiết", "link"}
@@ -280,8 +304,11 @@ def audit_text(text: str, path: Path, slug: str, source: str = "local") -> Artic
         if "{{" in b["html"]:
             add(("CTA-placeholder", "CRITICAL", b["line"], "Còn placeholder {{...}} chưa thay"))
         off = {h.lower() for h in HEX_RE.findall(b["html"])} - BRAND_HEX
-        if off:
-            add(("CTA-palette", "MINOR", b["line"], f"Màu ngoài brand palette: {', '.join(sorted(off))}"))
+        old = off & LEGACY_HEX
+        if old:
+            add(("CTA-palette", "MINOR", b["line"], f"Banner dùng bảng màu cũ (trước 2026-11-25): {', '.join(sorted(old))} — đổi sang template mới khi sửa bài"))
+        if off - old:
+            add(("CTA-palette", "MINOR", b["line"], f"Màu ngoài brand palette: {', '.join(sorted(off - old))}"))
 
     if len(art.banners) == 2:
         between = count_words("\n".join(lines[art.banners[0]["end_line"]:art.banners[1]["line"] - 1]))

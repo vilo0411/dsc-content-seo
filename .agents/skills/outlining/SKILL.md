@@ -24,8 +24,9 @@ Dùng khi chỉ muốn làm Research + Outline, chưa viết bài. Tương đư�
 Agent `.agents/skills/outlining/references/seo-collector.md` chạy Step 1–3 của `outlining/references/playbook.md`:
 1. `serp_research.py` → kiểm `⚠️ SERP_CHECK` (SERP sai → refetch / nhờ user dán SERP ẩn danh) → **chốt khung bài theo block `SERP Format & Intent`** → chốt độ dài, vị trí H2 hướng dẫn, kiểu sapo theo block `Structure consensus` (đọc từ full text đối thủ, không chỉ heading).
 2. SERP degraded → báo user trước khi đi tiếp.
-3. Dữ liệu: `market_facts.py --brief`, `news_feed.py`. Ưu tiên số năm hiện tại.
-4. Internal links: `find_links.py`, 3–6 link `/kien-thuc/`.
+3. **EAV (thuộc tính phải nêu giá trị):** `serp_research.py "[keyword]" --eav` (đọc full text đối thủ trong cache, 0 phí; chưa có nội dung thì chạy `--extract 5` trước) + `python scripts/registry.py cluster <mã cụm>` (thực thể, thuộc tính cụm, `bridge_to`). Gộp tên đồng nghĩa → khối `EAV:` của outline: mọi thuộc tính **root**, ≥ 1 dòng **rare/unique**; value lấy từ `brand-facts.json` / `market_facts.py` / URL whitelist — số của đối thủ chỉ là bằng chứng, không phải nguồn. Cụm `outer` → outline có 1 đoạn/H2 cầu nối về `bridge_to` (qa_lint `LINK-bridge`).
+4. Dữ liệu: `market_facts.py --brief`, `news_feed.py`. Ưu tiên số năm hiện tại.
+5. Internal links: `find_links.py`, 3–6 link `/kien-thuc/`.
 
 > **30-second Rule:** data/insight hay nhưng không dùng cho bài này → ghi 1 dòng vào `knowledge/raw/intel/dump.md` (ngày + nguồn + mô tả).
 

@@ -1,3 +1,8 @@
+---
+Created: 2026-05-26
+Updated: 2026-05-26
+---
+
 # Có nên mua cổ phiếu LAS năm 2026? Đánh giá tiềm năng và dòng tiền cổ tức
 
 Liệu có nên mua cổ phiếu LAS không khi lợi nhuận Q1/2026 giảm sâu dù chính sách cổ tức vẫn sòng phẳng? Để tự giao dịch hiệu quả, bạn cần phân tích thấu đáo báo cáo tài chính và triển vọng dự án Kali Sunfat (SOP). Hãy cùng Chứng khoán DSC mổ xẻ các số liệu thực tế ngay sau đây.

@@ -1,13 +1,13 @@
 # Creative engine — ảnh quảng cáo / post social
 
-> **Chuẩn hình ảnh: `knowledge/1-brand/DESIGN.md`** (rút từ fanpage DSC: Emerald & Gold / Ivory Culture, 3 cấp chữ script + display + body, KV tràn khung). Ảnh blog vẫn theo `visual-brand-guidelines.md`.
+> **Chuẩn hình ảnh: `knowledge/1-brand/DESIGN.md` v1.0** (brand guideline chính thức: Gunmetal / Pine Teal / Lime / Emerald / Frosted Mint, 3 gradient, font duy nhất Plus Jakarta Sans, ảnh trừu tượng xanh). Engine đọc màu/font từ `brand.json` — không đặt hex/font tay trong design.json. Theme mùa vụ `emerald`/`ivory` chỉ khi brief ghi Tết/lễ (§7). Ảnh blog: `image-design-system.md` (cùng palette).
 
 ## 0. Luồng key visual (mặc định cho quảng cáo / ảnh bìa / post chính)
 ```
-copy đã lint → init → chỉnh design.json: layout kv-right|kv-left|kv-center, theme emerald|ivory, type serif|sans,
+copy đã lint → init → chỉnh design.json: layout kv-right|kv-left|kv-center, theme dark|pine (mùa vụ: emerald|ivory), type sans|(trống),
   slot badge / script / headline / sub, mục "kv": {subject, motifs, mood}
 → creative.py pick <design.json>                 → chọn nền trong thư viện asset (0 quota) — knowledge/1-brand/assets/library/README.md
-     + "layers": motif tách nền (hạc, mai, điện thoại lục bảo…) đặt chồng lên nền
+     + "layers": motif tách nền (dải lụa/kính xanh, vệt sáng; mùa vụ: hạc, mai…) đặt chồng lên nền
 → (chỉ ảnh chưa có nền) creative.py generate <design.json> --dry-run   → kiểm prompt (không TODO, có luật cấm chữ/logo, chừa khoảng trống, không tiếng Việt có dấu)
 → creative.py generate <design.json> [--only id] → gọi Codex CLI (`codex exec -s read-only`, tài khoản ChatGPT đã đăng nhập,
      không cần API key) → ảnh gốc assets/<id>.raw.png → cắt đúng khổ assets/<id>.png; log ở generate-log.jsonl
@@ -55,14 +55,15 @@ copy đã lint (ads/copy-vN.md, social/<kênh>-…-vN.md)
 ## 3. Layout (`layouts/*.json`)
 | Layout | Style | Theme mặc định | Dùng cho |
 |---|---|---|---|
-| `thesis` | S01 | dark | 1 luận điểm / ảnh quảng cáo 1 dòng chữ (theme `paper`/`mint` cho S03/S02) |
+| `thesis` | S01 | dark | 1 luận điểm / ảnh quảng cáo 1 dòng chữ (theme `paper`/`mint` cho S03/S02, `pine` cho biến thể nền xanh) |
+| `kv-right` / `kv-left` / `kv-center` | KV | dark | key visual trừu tượng tràn khung + khối chữ (DESIGN.md §5) |
 | `rows` | S03 | paper | 2–4 hàng cùng tiêu chí, slide giữa carousel |
 | `steps` | S02 | mint | 3–4 bước có số |
 | `cta-end` | S04 | dark | slide cuối carousel: câu chốt + nút + pháp lý |
 | `hero` | S01+ | tự theo độ sáng ảnh | **mặc định cho quảng cáo / ảnh bìa**: minh hoạ isometric DSC chiếm ~55–60% khung, hoà vào nền; nhãn + tiêu đề + câu phụ |
 | `bignum` | S01+ | dark | 1 con số lớn (phí, thời gian, 1:1) làm tâm điểm — con số phải nằm trong chữ khoá |
 
-Slot chữ: `eyebrow` (nhãn nhỏ in hoa), `big` (số lớn), `headline`, `sub`, `cta`, `note`, `items`. Carousel có `page`/`pages` → tự vẽ chấm chỉ trang. Nền dark có lưới mờ như ảnh featured DSC; `hero` tắt lưới để ảnh liền nền.
+Slot chữ: `eyebrow` (nhãn nhỏ in hoa), `big` (số lớn), `headline`, `sub`, `cta`, `note`, `items`. Carousel có `page`/`pages` → tự vẽ chấm chỉ trang. Theme: `dark` (Gunmetal, nút Lime), `pine` (Pine Teal), `mint` (mint nhạt, nút Pine Teal), `paper` (trắng, nút Lime); mùa vụ `emerald`, `ivory`. Nền dark có lưới mờ như ảnh featured DSC; `hero` tắt lưới để ảnh liền nền.
 
 Mỗi layout có 4 khổ: `4:5` (1080×1350), `1:1` (1080×1080), `9:16` (1080×1920, có vùng an toàn), `1.91:1` (1200×628). Box là phân số của khung `[x, y, w, h]`. Cỡ chữ = phân số của cạnh ngắn (`xs` 0.026 … `xxl` 0.095), khổ ngang ×1.25.
 **Khung tự giãn:** slot ngay dưới tiêu đề bỏ trống → tiêu đề chiếm chỗ và căn giữa; không có ảnh minh hoạ → chữ dàn hết bề ngang.
@@ -71,7 +72,7 @@ Thêm layout mới = thêm 1 file JSON cùng schema; `python scripts/creative.py
 ## 4. QA máy (`qa.json`)
 | Rule | Mức | Bắt gì |
 |---|---|---|
-| `FONT-not-loaded` | lỗi | Be Vietnam Pro không nạp được glyph `Ắệờ` |
+| `FONT-not-loaded` | lỗi | Plus Jakarta Sans không nạp được glyph `Ắệờ` |
 | `FIT-overflow` / `FIT-shrunk` | lỗi / lưu ý | chữ tràn khi đã thu còn 60% / phải thu < 85% |
 | `FIT-off-canvas` | lỗi | chữ ra ngoài khung |
 | `SAFE-zone` | lưu ý | 9:16: chữ ngoài vùng 14%–80% chiều cao (giao diện app che) |

@@ -995,6 +995,101 @@ INTENT_RULES = (
 )
 
 
+# --- EAV (Entity-Attribute-Value) candidates from competitor full text ---------------------------
+EAV_SKIP = re.compile(r"(?i)^(?:phần )?(kết luận|tổng kết|lời kết|mục lục|câu hỏi thường gặp|faq|giới thiệu|tham khảo|"
+                      r"nguồn|tác giả|đăng ký|liên hệ|mở tài khoản)\b")
+EAV_VALUE = re.compile(r"(?i)(?:\bT\+\d\b|\d[\d.,]*\s*(?:%|đồng|vnđ|vnd|đ\b|nghìn|triệu|tỷ|ngày|phút|giờ|tuần|"
+                       r"tháng|năm|cổ phiếu|cp\b|lô|lần|điểm|hợp đồng|usd))")
+
+
+def _section_texts(md):
+    """[(level, title, body)] from competitor markdown: full text per H2/H3, not the 200-char snippet."""
+    out, cur = [], None
+    for line in md.splitlines():
+        m = re.match(r"^(#{2,3})\s+(.+)", line)
+        if m:
+            if cur:
+                out.append(cur)
+            cur = ["H%d" % len(m.group(1)), re.sub(r"[*_]{1,3}", "", m.group(2)).strip(), []]  # raw title: matches content_headings
+        elif cur:
+            cur[2].append(line)
+    if cur:
+        out.append(cur)
+    return [(lv, t, _clean_text(" ".join(x for x in b if x.strip()))) for lv, t, b in out]
+
+
+def eav_candidates(data):
+    """Attribute candidates = competitor H2/H3 grouped across pages (same bigram rule as topic_coverage);
+    values = numbers with units found in each section, kept as evidence only (never copied as DSC facts).
+    root = covered by >= ROOT share of usable competitors, rare = fewer. Unique attributes come from DSC
+    sources (brand-facts.json, registry.py cluster), not from the SERP."""
+    ranking = {r["url"] for r in data.get("organic") or []}
+    pool = data.get("competitors_all") or data.get("competitors") or []
+    comps = [c for c in usable_competitors(pool) if (not ranking or c["url"] in ranking) and c.get("content")]
+    kw_bg = {b for b in _bigrams(data.get("keyword") or "") if isinstance(b, tuple)}
+    clusters = []
+    for c in comps:
+        titles = {s["title"] for s in content_headings(c)}
+        for lv, title, body in _section_texts(c["content"]):
+            if title not in titles or EAV_SKIP.search(title):
+                continue
+            bg = {b for b in _bigrams(title) if isinstance(b, tuple)}
+            bg = (bg - kw_bg) or bg or {(slugify(title),)}  # the keyword itself is in every heading: not an attribute
+            vals = []
+            for sent in re.split(r"(?<=[.!?])\s+", body):
+                if EAV_VALUE.search(sent):
+                    vals.append(sent[:180])
+                if len(vals) >= 2:
+                    break
+            for cl in clusters:
+                if len(bg & cl["bigrams"]) / min(len(bg), len(cl["bigrams"])) >= 0.6:
+                    cl["titles"].append(title)
+                    cl["domains"].add(c.get("domain"))
+                    cl["values"] += [(c.get("domain"), v) for v in vals]
+                    break
+            else:
+                clusters.append({"bigrams": bg, "titles": [title], "domains": {c.get("domain")},
+                                 "values": [(c.get("domain"), v) for v in vals]})
+    n = len(comps)
+    root_min = max(2, -(-n * 3 // 5)) if n else 0  # >= 60% of competitors, at least 2
+    # "3.1. Ký quỹ" / "Bước 2. Chọn …" / "Câu hỏi 1: …" -> the name only
+    unnum = lambda t: re.sub(r"^(?:(?i:bước|câu hỏi|phần|mục)\s+\d+\s*[.:]?\s*|(?:[IVX]+|\d+)(?:\.\d+)*(?:\.\s*|\s+))", "", t)
+    for cl in clusters:
+        cl["titles"] = [unnum(t) for t in cl["titles"]]
+    rows = [{"attribute": min(cl["titles"], key=len), "n": len(cl["domains"]),
+             "type": "root" if len(cl["domains"]) >= root_min else "rare",
+             "domains": sorted(cl["domains"]), "variants": sorted(set(cl["titles"]))[:4],
+             "values": cl["values"][:3]} for cl in clusters]
+    rows.sort(key=lambda r: (-r["n"], r["attribute"]))
+    return {"competitors": n, "root_min": root_min, "rows": rows}
+
+
+def print_eav(keyword, res):
+    if not res["competitors"]:
+        print("Chưa có nội dung đối thủ trong cache cho \"%s\". Chạy trước (DataForSEO SERP đã cache thì 0 phí, "
+              "tải bài qua Jina miễn phí):\n  python .agents/skills/web-serp/scripts/serp_research.py \"%s\" --extract 5"
+              % (keyword, keyword))
+        return
+    rows = res["rows"]
+    roots = [r for r in rows if r["type"] == "root"]
+    print("### EAV — thuộc tính từ %d bài đối thủ (root = có ở >= %d bài)" % (res["competitors"], res["root_min"]))
+    print("Giá trị đối thủ chỉ là bằng chứng thuộc tính tồn tại + giá trị thường gặp. Value trong outline phải lấy từ "
+          "brand-facts.json / market_facts.py / URL source-whitelist.\n")
+    print("| Thuộc tính (heading đại diện) | Loại | Số bài | Cách đối thủ gọi | Giá trị đối thủ nêu (bằng chứng) |")
+    print("|---|---|---:|---|---|")
+    shown = [r for r in rows if r["n"] >= 2 or r["values"]]
+    for r in shown:
+        vals = " · ".join("%s: %s" % (d, v) for d, v in r["values"][:2]) or "—"
+        print("| %s | %s | %d | %s | %s |" % (r["attribute"], r["type"], r["n"], " / ".join(r["variants"][:3]),
+                                            vals.replace("|", "/")))
+    rest = [r["attribute"] for r in rows if r not in shown]
+    if rest:  # one-off headings without data: listed so the agent still sees every sub-topic
+        print("\nChỉ 1 bài có, không số liệu (%d): %s" % (len(rest), " · ".join(rest)))
+    print("\n%d root · %d rare có số liệu. Agent: gộp tên đồng nghĩa → khối `EAV:` trong outline "
+          "(type root|rare|unique, value + source). Unique = dữ liệu DSC: `python scripts/registry.py cluster <mã>`."
+          % (len(roots), sum(1 for r in rows if r["type"] == "rare" and r["values"])))
+
+
 def _fold(text):
     return slugify(text or "").replace("-", " ")
 
@@ -1337,6 +1432,8 @@ def main():
     ap.add_argument("--top", type=int, default=10, help="organic results to show (max 10)")
     ap.add_argument("--extract", type=int, default=0, metavar="N", help="extract content of top N URLs (local parser first, Jina fallback)")
     ap.add_argument("--content", action="store_true", help="print full trimmed markdown of extracted competitors")
+    ap.add_argument("--eav", action="store_true",
+                    help="attribute (EAV) candidates from cached competitor full text: root/rare + value evidence (0 API calls)")
     ap.add_argument("--full", action="store_true",
                     help="per-competitor detail (topic sentences, entities, data points, links): ~3x longer digest")
     ap.add_argument("--json", action="store_true", help="print results as JSON")
@@ -1357,6 +1454,20 @@ def main():
     if not args.keyword:
         sys.exit("Empty keyword — refusing to call the API.")
     top = min(args.top, DEPTH)
+
+    if args.eav:  # cache only, any age: never calls the API
+        path = cache_path(args.keyword)
+        if not os.path.exists(path):
+            print_eav(args.keyword, {"competitors": 0})
+            return
+        with open(path, encoding="utf-8-sig") as fh:
+            cached = json.load(fh)
+        res = eav_candidates(dict(cached, competitors_all=cached.get("competitors") or []))
+        if args.json:
+            print(json.dumps(res, ensure_ascii=False, indent=2))
+        else:
+            print_eav(args.keyword, res)
+        return
 
     cfg = load_config()
     data = None if (args.no_cache or args.raw) else load_cache(args.keyword)

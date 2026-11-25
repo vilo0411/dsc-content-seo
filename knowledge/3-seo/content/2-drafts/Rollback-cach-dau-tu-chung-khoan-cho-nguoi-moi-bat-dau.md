@@ -3,6 +3,8 @@ Title: Cách chơi chứng khoán cho người mới bắt đầu từ A - Z [20
 Meta_Description: Hướng dẫn cách chơi chứng khoán cho người mới bắt đầu từ A-Z. Khám phá quy trình mở tài khoản eKYC, nộp tiền và cách giao dịch online an toàn cùng DSC.
 Target_Keyword: cách chơi chứng khoán cho người mới bắt đầu
 Slug: cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau
+Created: 2026-10-16
+Updated: 2026-10-22
 ---
 
 # Cách chơi chứng khoán cho người mới bắt đầu [2026]

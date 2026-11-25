@@ -1,6 +1,8 @@
 ---
 name: Content Brief — Có nên mua cổ phiếu OIL (Expert & Anti-AI)
 description: Dàn ý chi tiết phân tích mã cổ phiếu OIL (PV OIL) trên sàn UPCoM, triển vọng kinh doanh và chiến lược giao dịch ngắn/dài hạn cùng DSC.
+Created: 2026-05-25
+Updated: 2026-05-25
 ---
 
 # SEO Content Outline: Có nên mua cổ phiếu OIL (PV OIL) năm 2026? Phân tích tiềm năng và rủi ro

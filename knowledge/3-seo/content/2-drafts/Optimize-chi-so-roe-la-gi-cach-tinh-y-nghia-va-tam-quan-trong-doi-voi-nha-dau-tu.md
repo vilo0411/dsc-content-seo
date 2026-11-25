@@ -4,6 +4,8 @@ Meta_Description: Chỉ số ROE là gì? Hướng dẫn cách tính ROE bình q
 Target_Keyword: chỉ số ROE là gì
 Slug: chi-so-roe-la-gi-cach-tinh-y-nghia-va-tam-quan-trong-doi-voi-nha-dau-tu
 source: https://www.dsc.com.vn/kien-thuc/chi-so-roe-la-gi-cach-tinh-y-nghia-va-tam-quan-trong-doi-voi-nha-dau-tu
+Created: 2026-10-07
+Updated: 2026-10-07
 ---
 
 # Chỉ số ROE là gì? Công thức, ý nghĩa & cách lọc cổ phiếu

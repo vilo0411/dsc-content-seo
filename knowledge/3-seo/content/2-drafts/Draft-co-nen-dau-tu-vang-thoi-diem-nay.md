@@ -11,6 +11,8 @@ Search_Intent: Commercial
 Content_Type: Comprehensive Guide
 Featured_Snippet: Paragraph — H2 Diễn biến thị trường vàng thế giới và trong nước cập nhật tháng 6/2026 (40–60 từ)
 Word_Count_Target: 1300 - 1500 words
+Created: 2026-06-16
+Updated: 2026-06-16
 ---
 
 # Có nên đầu tư vàng thời điểm này không? Phân tích từ chuyên gia DSC

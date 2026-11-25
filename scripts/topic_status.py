@@ -6,6 +6,8 @@ Usage:
   python scripts/topic_status.py --find "từ khóa"           → search main/secondary keywords, anchor, title
   python scripts/topic_status.py --list Optimizing          → list rows with a given status
   python scripts/topic_status.py --summary                  → cluster × status counts + every row in progress (/keyword-plan)
+  python scripts/topic_status.py --stale [--apply]         → outline/draft files left after Finalize (--apply: move to archive/)
+  --set also writes `Updated: YYYY-MM-DD` into the article's working files (YAML)
   python scripts/topic_status.py <slug> --add --keyword "từ khóa" --cluster "3b | tên nhóm" [--set Planned]
                                                             → add a planned article (cluster omitted → auto-classified)
 
@@ -15,12 +17,17 @@ Registry module and columns: scripts/registry.py
 from __future__ import annotations
 
 import argparse
+import re
 import sys
+from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import registry  # noqa: E402
-from _common import setup_utf8, unaccent  # noqa: E402
+from _common import (CONTENT, DRAFTS_DIR, FINAL_DIR, OUTLINES_DIR, ROOT, setup_utf8,  # noqa: E402
+                     stamp_frontmatter, unaccent, working_files)
+
+ARCHIVE_DIR = CONTENT / "archive"
 
 IN_PROGRESS = {"Planned", "Outlining", "Outline-Pending", "In Progress", "Outline-Approved", "Optimizing"}
 
@@ -44,10 +51,14 @@ def main() -> int:
     ap.add_argument("--find", metavar="TEXT", help="Search keywords / anchor / title (accent-insensitive)")
     ap.add_argument("--list", metavar="STATUS", help="List all rows with this status")
     ap.add_argument("--summary", action="store_true", help="Cluster × status counts + rows in progress")
+    ap.add_argument("--stale", action="store_true", help="Leftover outline/draft files of finalized articles")
+    ap.add_argument("--apply", action="store_true", help="With --stale: move leftovers to content/archive/<slug>/")
     ap.add_argument("--add", action="store_true", help="Add a planned article <slug> (needs --keyword)")
     ap.add_argument("--keyword", help="Main keyword for --add")
     ap.add_argument("--cluster", help="Subgroup code (3b) or cluster/subgroup name for --add; omitted = auto")
     args = ap.parse_args()
+    if args.stale:
+        return stale(args.apply)
     rows = registry.load()
 
     if args.summary:
@@ -128,7 +139,58 @@ def main() -> int:
         return 0
     old, r["status"] = r["status"], new
     registry.save(rows)
-    print(f"Đã cập nhật {r['slug']}: {old} → {new} ({cl_label(r)})")
+    today = date.today().isoformat()
+    stamped = []
+    for f in {*working_files(r["slug"]), *working_files(r["file_slug"] or r["slug"])}:
+        stamp_frontmatter(f, Updated=today)
+        stamped.append(f.name)
+    print(f"Đã cập nhật {r['slug']}: {old} → {new} ({cl_label(r)})"
+          + (f" · Updated {today}: {', '.join(sorted(stamped))}" if stamped else ""))
+    return 0
+
+
+def find_stale() -> tuple[list, list]:
+    """(leftovers [(path, slug)], mismatch [(path, slug, status)]) — see stale(). Used by the dashboard too."""
+    rows = registry.load()
+    by = {}
+    for r in rows:
+        for s in {r["slug"], r["file_slug"]} - {""}:
+            by.setdefault(s, r)
+    leftovers, mismatch = [], []
+    for folder in (OUTLINES_DIR, DRAFTS_DIR):
+        for p in sorted(folder.glob("*.md")):
+            slug = re.sub(r"^(Proposal|Optimize|Draft|Rollback)-", "", p.stem)
+            final = FINAL_DIR / f"Final-{slug}.md"
+            st = by.get(slug, {}).get("status", "")
+            if not final.exists():
+                continue
+            if st in ("Finalized", "Merged", "Live") and final.stat().st_mtime >= p.stat().st_mtime:
+                leftovers.append((p, slug))
+            elif st not in ("Finalized", "Merged", "Live", "Optimizing"):
+                mismatch.append((p, slug, st))
+    return leftovers, mismatch
+
+
+def stale(apply: bool) -> int:
+    """Working files left behind after Finalize: the article is Finalized / Merged / Live and the Final is newer.
+    --apply moves them to archive/<slug>/ (kept, not deleted). Status mismatches are only listed."""
+    leftovers, mismatch = find_stale()
+    print(f"## File tồn đọng — bài đã Finalized, bản Final mới hơn ({len(leftovers)})")
+    for p, slug in leftovers:
+        print(f"- {p.relative_to(ROOT).as_posix()} → archive/{slug}/")
+    print(f"\n## Trạng thái lệch — đã có Final nhưng registry chưa Finalized ({len(mismatch)})")
+    for p, slug, st in mismatch:
+        print(f"- {p.name} · registry: {st} → kiểm tra rồi `topic_status.py {slug} --set Finalized`")
+    if apply:
+        for p, slug in leftovers:
+            dest = ARCHIVE_DIR / slug / p.name
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            if dest.exists():
+                dest = dest.with_name(f"{p.stem}-{date.fromtimestamp(p.stat().st_mtime).isoformat()}.md")
+            p.replace(dest)
+        print(f"\nĐã chuyển {len(leftovers)} file vào archive/.")
+    elif leftovers:
+        print("\nXem lại danh sách rồi chạy `python scripts/topic_status.py --stale --apply` để chuyển vào archive/.")
     return 0
 
 

@@ -1,4 +1,7 @@
-"""Build the local searchable catalog of CMS exports and audit artifacts."""
+"""Build the local searchable catalog of CMS exports and audit artifacts, then the work dashboard (index.html).
+
+Usage: python scripts/build_content_index.py
+"""
 from pathlib import Path
 import json
 
@@ -53,4 +56,6 @@ query.addEventListener('input',render);kind.addEventListener('change',render);re
 
 
 if __name__ == '__main__':
+    import argparse
+    argparse.ArgumentParser(description=__doc__).parse_args()  # --help prints usage instead of rebuilding
     build()

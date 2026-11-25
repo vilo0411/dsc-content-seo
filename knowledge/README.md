@@ -21,7 +21,7 @@ Cột "Ai ghi": **người** = sửa tay · **agent** = skill viết · **script
 | `profile.md`, `icp.md`, `personas.md`, `service-operations.md` | Doanh nghiệp, khách hàng, quy trình nghiệp vụ thật |
 | `brand-facts.json` | **Nguồn duy nhất** cho số liệu DSC (phí, margin, eKYC…) — `qa_lint` `CL5-fact` đọc |
 | `anti-ai-rules.md` + `anti-ai-rules-blacklist.md`, `glossary.md`, `source-whitelist.md` | Rule văn, cụm cấm, tên chuẩn, nguồn ngoài được link |
-| `image-design-system.md`, `visual-brand-guidelines.md`, `assets/`, `writers/`, `archive/` | Ảnh, nhận diện, writer profile, rule cũ |
+| `DESIGN.md` + `brand.json` (nhận diện chuẩn v1.0, ảnh gốc ở `guideline/`), `image-design-system.md`, `visual-brand-guidelines.md`, `assets/`, `writers/`, `archive/` | Nhận diện hình ảnh cho mọi thiết kế, ảnh blog, writer profile, rule cũ |
 
 ## 2-market/
 | File / thư mục | Nội dung | Sinh bởi |
@@ -41,6 +41,27 @@ Cột "Ai ghi": **người** = sửa tay · **agent** = skill viết · **script
 | `logs/` | `revision-log.md` (+ quý cũ), `qa-score-log.csv`, `qa-check-log.csv`, `publish-ledger.csv`, `slop-baseline.csv` | `revision_log.py`, `qa_lint --log`, `article_snapshot.py` — **không sửa tay** |
 
 Trạng thái bài và internal link cùng đọc **một** nguồn `strategy/pages.csv` qua `topic_status.py` / `find_links.py` / `registry.py show` (không mở file 400 KB).
+
+## Thuật ngữ chiến lược (1 khái niệm = 1 tên = 1 nơi lưu)
+Thuật ngữ Koray / Semantic SEO ↔ tên dùng trong repo. Skill và script chỉ dùng cột "Tên trong repo".
+
+| Khái niệm (Koray) | Tên trong repo | Lưu ở (duy nhất) | Xem nhanh |
+|---|---|---|---|
+| Source Context | Định vị nội dung | `1-brand/profile.md` §0 | dashboard → Bản đồ chiến lược |
+| Central Entity | Thực thể trung tâm | `1-brand/profile.md` §0 | như trên |
+| Topical cluster | Cụm (mã `1`–`14`), nhóm con (`1a`…) | `3-seo/strategy/taxonomy.json` → `topics` | `registry.py cluster` |
+| Core / Outer section | `section`: `core` / `outer` / `off` (lệch định vị) | `taxonomy.json` → `topics.<mã>.section` | `registry.py suggest-core` |
+| Khu vực site (toàn dsc.com.vn) | `site.sections`: `core` / `outer` / `trust` / `off` / `topics` | `taxonomy.json` → `site` | Topical map → Bản đồ site |
+| Entity của cụm | `entity` | `taxonomy.json` → `topics.<mã>.entity` | `registry.py cluster <mã>` |
+| Contextual bridge | `bridge_to` (bài Core mà bài Outer phải link về) | `taxonomy.json` → `topics.<mã>.bridge_to` | `registry.py cluster <mã>` |
+| Attribute (EAV, cấp cụm) | `attributes` (`fact` = id `brand-facts.json` hoặc `market`) | `taxonomy.json` → `topics.<mã>.attributes` | `registry.py cluster <mã>` (gap) |
+| EAV (cấp bài) | khối `EAV:` trong outline | YAML đầu file outline | `outline_lint.py` |
+| Giá trị (Value) của DSC / thị trường | fact | `1-brand/brand-facts.json` / `market_facts.py` | `fact_consistency.py` |
+| Pillar / hub / spoke | cụm link (`clusters`, mỗi cụm có `topic` = mã cụm) | `taxonomy.json` → `clusters` | `topical-map.html` |
+| Hành động cho bài cũ | `action`: refresh / bridge / prune? / keep | `page-audit.csv` (script sinh) | dashboard → Queue |
+| Chuyển đổi | Lead / micro-conversion, trọng số | `5-analytics/kpi-definitions.md` | — |
+
+Cụm trên SEO Dashboard MCP (vd "Tài khoản & Giao dịch") là cấu hình riêng của tool, không đồng bộ tự động — đổi tên trong tool cho khớp bảng `topics`.
 
 ## Quy ước
 - File script sinh ra: không sửa tay, chạy lại script.

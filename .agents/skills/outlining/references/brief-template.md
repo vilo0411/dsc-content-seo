@@ -16,6 +16,8 @@ Quy tắc dùng template:
 ---
 Author: Chứng khoán DSC
 Status: Outline
+Created: YYYY-MM-DD                   # ngày tạo outline (không đổi)
+Updated: YYYY-MM-DD                   # topic_status.py --set tự ghi; sửa tay thì cập nhật
 Pipeline_Mode: Express | Guided | Auto
 SERP_Research: true
 SERP_Status: ok | degraded            # (lint) degraded = DataForSEO < 5 organic hoặc dùng fallback
@@ -48,6 +50,14 @@ Information_Gain:                     # (lint) ≥ 2 mục; qa_lint tìm đúng 
     h2: "[...]"
     type: calc
     proof: "[...]"
+
+EAV:                                  # (lint) thuộc tính bài phải nêu GIÁ TRỊ. Nguồn gợi ý: serp_research.py "<kw>" --eav (root/rare từ đối thủ) + registry.py cluster <mã> (thuộc tính cụm)
+  - attribute: "[thuộc tính, vd biên độ dao động giá]"
+    entity: "[thực thể, vd Sàn HOSE]"
+    value: "[giá trị sẽ viết, vd ±7% so với giá tham chiếu]"   # qa_lint tìm đúng chuỗi này trong draft
+    source: "[brand-facts:<id> | market_facts | URL source-whitelist | DSC nội bộ | calc]"   # số đối thủ KHÔNG phải nguồn
+    type: root | rare | unique          # root = ≥ 60% đối thủ có · rare = ít đối thủ có · unique = chỉ DSC (≥ 1 dòng rare/unique)
+    h2: "[H2 sẽ giao]"
 
 # Audience & Brand
 Persona: [P1–P4 — tên]

@@ -1,3 +1,8 @@
+---
+Created: 2026-10-16
+Updated: 2026-10-16
+---
+
 # 📋 Báo cáo tối ưu SEO (SEO Optimization Proposal)
 ## Bài 3: Cổ phiếu VSC (Nhóm CTR Gap)
 

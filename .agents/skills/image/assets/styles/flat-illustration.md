@@ -6,18 +6,18 @@
     type: flat vector — phones / charts / coins / contracts / abstract figures
     faces: geometric abstract heads only — NO detailed faces
     edges: slightly rounded, NOT soft or bubbly
-    outline: { weight: 1.5px, color: #0D1B2A }
-    fills: { primary: #00AD14, secondary: #FFFFFF, accent: #10E7B3 }
+    outline: { weight: 1.5px, color: #272D2B }
+    fills: { primary: #2AD03D, secondary: #FFFFFF, accent: #1BBE72, soft: #8CFFCC }
   }
 
   bg: {
     color: #FFFFFF
-    overlay: 1px dotted grid 4% OR thin geometric arc motifs teal 6% — optional
+    overlay: 1px dotted grid 4% OR thin geometric arc motifs emerald 6% — optional
   }
 
   lighting: {
     type: 2-tone shading only — solid fill + 8% darker same hue
-    shadow: offset teal 4–6px down-right — optional
+    shadow: offset pine teal #1D4130 at 15%, 4–6px down-right — optional
     forbidden: [realistic lighting, drop shadows]
   }
 

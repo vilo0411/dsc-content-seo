@@ -6,6 +6,17 @@
 ## Lead
 **Lead = GA4 key event chính** (hoàn tất đăng ký mở tài khoản). Không cộng các event phụ (click CTA, xem trang mở tài khoản) vào Lead. Event phụ báo cáo riêng: "micro-conversion".
 
+### Key events GA4 & trọng số (dùng khi xếp cụm core / outer)
+GA4 key events hiện gồm 3 event; `page-audit.csv` cột `key_events` = **tổng cả 3** (chưa tách).
+
+| Event | Loại | Trọng số |
+|---|---|---:|
+| Xem trang mở tài khoản | micro-conversion | 1 |
+| Điền form mở tài khoản | micro-conversion | 3 |
+| Gửi form thành công | **Lead** | 10 |
+
+Khi có số theo từng event: điểm chuyển đổi = Σ(số event × trọng số). Chưa tách được thì `registry.py suggest-core` dùng tổng key events và ghi rõ hạn chế.
+
 ## Kênh
 | Kênh | Định nghĩa GA4 |
 |---|---|

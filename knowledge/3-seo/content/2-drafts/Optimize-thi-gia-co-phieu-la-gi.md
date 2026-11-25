@@ -2,6 +2,8 @@
 title: 'Thị giá cổ phiếu là gì? Khái niệm, cách tính & phân biệt'
 source: 'https://www.dsc.com.vn/kien-thuc/thi-gia-co-phieu-la-gi-cach-tinh-phan-tich-va-cac-yeu-to-anh-huong'
 description: 'Thị giá cổ phiếu là gì? Hướng dẫn cách xác định giá khớp lệnh trên HOSE/HNX/UPCoM và phân biệt thị giá với mệnh giá, giá trị sổ sách cho F0 tại DSC.'
+Created: 2026-08-19
+Updated: 2026-08-19
 ---
 
 # Thị giá cổ phiếu là gì? Khái niệm, cách tính & phân biệt

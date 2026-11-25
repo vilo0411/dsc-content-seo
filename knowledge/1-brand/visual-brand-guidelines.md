@@ -1,25 +1,29 @@
 # Visual Brand Guidelines — DSC Securities
 
-> **Phạm vi:** ảnh minh hoạ trong bài blog. Ảnh fanpage / quảng cáo / campaign theo `knowledge/1-brand/DESIGN.md` (2026-11-24).
+> **Phạm vi:** ảnh minh hoạ trong bài blog (logo, khổ ảnh, quy tắc cấm). Màu / font / phong cách: `knowledge/1-brand/DESIGN.md` v1.0 — nguồn chuẩn cho mọi thiết kế.
 > **Trạng thái:** [Đã cập nhật ✅] — Quản lý Brand Assets và Quy chuẩn Hình ảnh.
 > File này được Visual Architect & Image Skill đọc để đảm bảo hình ảnh nhất quán với thương hiệu DSC.
 
-> **Infographic / biểu đồ / ảnh bìa có chữ trong bài viết:** theo [`image-design-system.md`](image-design-system.md) — token màu, font Be Vietnam Pro (`assets/fonts/`), lưới, component; code `scripts/images/dsc_design.py`.
+> **Infographic / biểu đồ / ảnh bìa có chữ trong bài viết:** theo [`image-design-system.md`](image-design-system.md) — token màu, font Plus Jakarta Sans (`assets/fonts/`), lưới, component; code `scripts/images/dsc_design.py`.
 
 ---
 
 ## 1. Brand Colors
 
+Theo brand guideline chính thức — chi tiết, gradient, bảng tương phản: [`DESIGN.md`](DESIGN.md) §2–§3.
+
 | Màu | Hex | Dùng cho |
 | :--- | :--- | :--- |
-| Brand Green | `#00AD14` | Primary accent, logo, key elements |
-| Bright Green | `#2BE841` | Gradient start, energy highlight |
-| Teal | `#10E7B3` | Gradient end, digital accent |
-| Dark Navy | `#0D1B2A` | Text, dark backgrounds |
-| Light Mint Pastel | `#E8F8F2` | Nền sáng chủ đạo cho ảnh Isometric 3D |
-| White | `#FFFFFF` | Primary background |
+| Gunmetal | `#272D2B` | Chữ, nền tối chính |
+| Pine Teal | `#1D4130` | Nền tối thứ hai, chữ xanh trên nền sáng |
+| Lime Green | `#2AD03D` | Điểm nhấn chính, nút CTA (chữ Gunmetal) |
+| Emerald | `#1BBE72` | Điểm nhấn phụ |
+| Frosted Mint | `#8CFFCC` | Nhấn sáng trên nền tối, tag |
+| White | `#FFFFFF` | Nền sáng chính |
 
-**Gradient chuẩn:** Linear `#2BE841` → `#10E7B3` — dùng cho chart lines, icon accent, overlay.
+**Gradient:** Primary `#61CC6C → #14A46E` (đường biểu đồ, icon, thanh nhấn) · Ambient `#156A1F → #31AE40 → #156A1F` / `#354D38 → #2C7B50 → #7D9E9F → #B6C7AF` (nền). Nền sáng nhạt cho isometric 3D: `#F2FBF6`.
+
+**Phong cách ảnh AI:** trừu tượng 3D tông xanh (dải lụa/kính, khối mềm, vệt sáng trên nền tối) — mẫu `guideline/20-abstract.png`.
 
 ---
 
@@ -30,10 +34,10 @@ Tất cả các tài sản đồ họa thương hiệu được tổ chức tạ
 ```text
 knowledge/1-brand/assets/
 ├── logos/
-│   ├── logo-for-light-bg.png    # Logo chữ xanh/tối (dùng cho nền sáng như Light Mint/Pastel/White)
-│   └── logo-for-dark-bg.png     # Logo chữ trắng (dùng cho nền tối như Dark Navy)
+│   ├── logo-for-light-bg.png    # Logo chữ xanh/tối (dùng cho nền sáng như White / mint nhạt)
+│   └── logo-for-dark-bg.png     # Logo chữ trắng (dùng cho nền tối như Gunmetal / Pine Teal)
 ├── icons/                       # Thư mục lưu trữ Icon thương hiệu (mở rộng tương lai)
-└── fonts/                       # Be Vietnam Pro (Regular→ExtraBold, OFL) — font chữ trong ảnh
+└── fonts/                       # Plus Jakarta Sans (Regular→ExtraBold, OFL) — font duy nhất của brand
 ```
 
 ### Quy tắc ghép Logo:

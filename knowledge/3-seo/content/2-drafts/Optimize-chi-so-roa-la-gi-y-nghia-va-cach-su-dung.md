@@ -3,6 +3,8 @@ Title: Chỉ Số ROA Là Gì? Công Thức Tính Và Đánh Giá ROA 2026
 Meta_Description: Chỉ số ROA là gì? Khám phá công thức tính, ý nghĩa tài chính, bảng chuẩn ROA theo ngành và cách kết hợp ROA - ROE chọn cổ phiếu hiệu quả từ Chứng khoán DSC.
 Target_Keyword: chỉ số ROA là gì
 Slug: chi-so-roa-la-gi-y-nghia-va-cach-su-dung
+Created: 2026-09-16
+Updated: 2026-09-16
 ---
 
 # Chỉ Số ROA Là Gì? Công Thức Tính Và Đánh Giá ROA 2026

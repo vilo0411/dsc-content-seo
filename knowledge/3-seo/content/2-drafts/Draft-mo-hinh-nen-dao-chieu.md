@@ -4,6 +4,8 @@ Status: Draft
 Pipeline_Mode: Guided
 Target_Keyword: mô hình nến đảo chiều
 Writer_Profile: analytical
+Created: 2026-05-26
+Updated: 2026-05-26
 ---
 
 # 12+ mô hình nến đảo chiều mạnh nhất trong phân tích kỹ thuật chứng khoán

@@ -7,6 +7,8 @@ PAA_Questions:
   - "GRDP tiếng Anh là gì?"
   - "GRDP là viết tắt của chỉ số nào?"
   - "GRDP trên đầu người là gì?"
+Created: 2026-10-22
+Updated: 2026-10-22
 ---
 
 # 📋 BÁO CÁO TỐI ƯU SEO (SEO Optimization Proposal)

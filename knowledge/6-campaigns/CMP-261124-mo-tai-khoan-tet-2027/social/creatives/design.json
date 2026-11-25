@@ -25,6 +25,10 @@
         "headline": "**Bước đầu tiên** là gì?",
         "sub": "Mở tài khoản trước, hỏi chuyên gia rồi mới mua",
         "note": ""
+      },
+      "image": {
+        "src": "lib:bg-iv-sontuy-r",
+        "focus": "50% 50%"
       }
     },
     {

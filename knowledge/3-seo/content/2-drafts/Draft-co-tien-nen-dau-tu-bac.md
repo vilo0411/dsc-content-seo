@@ -11,6 +11,8 @@ Search_Intent: Commercial
 Content_Type: Comprehensive Guide
 Featured_Snippet: Paragraph — H2 Ưu điểm và cơ hội khi lựa chọn đầu tư bạc (40–60 từ)
 Word_Count_Target: 1300 - 1500 words
+Created: 2026-06-16
+Updated: 2026-06-16
 ---
 
 # Có tiền nên đầu tư bạc không? Phân tích cơ hội và rủi ro thanh khoản

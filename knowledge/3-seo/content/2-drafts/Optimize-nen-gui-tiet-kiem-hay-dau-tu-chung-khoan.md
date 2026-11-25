@@ -1,6 +1,8 @@
 ---
 title: "Nên Gửi Tiết Kiệm Hay Đầu Tư Chứng Khoán? 5 Yếu Tố Phân Bổ Vốn"
 description: "Nên gửi tiết kiệm hay đầu tư chứng khoán? So sánh chi tiết rủi ro, lãi suất, bài toán lạm phát & 4 bước phân bổ vốn an toàn cho người mới từ DSC."
+Created: 2026-09-09
+Updated: 2026-09-09
 ---
 
 # Nên Gửi Tiết Kiệm Hay Đầu Tư Chứng Khoán? 5 Yếu Tố Phân Bổ Vốn

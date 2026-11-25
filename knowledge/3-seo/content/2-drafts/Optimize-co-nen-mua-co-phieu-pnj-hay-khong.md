@@ -7,6 +7,8 @@ PAA_Questions:
   - Mua cổ phiếu PNJ ở đâu?
   - Mua cổ phiếu PNJ cần bao nhiêu tiền?
   - Mã cổ phiếu PNJ là gì?
+Created: 2026-11-13
+Updated: 2026-11-19
 ---
 
 # Có nên mua cổ phiếu PNJ lúc này và cách mua PNJ an toàn tại DSC

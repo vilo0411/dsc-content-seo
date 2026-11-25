@@ -57,6 +57,8 @@ Internal_Links:
     anchor: mô hình cái nêm
   - url: https://www.dsc.com.vn/mo-tai-khoan
     anchor: mở tài khoản chứng khoán DSC
+Created: 2026-10-05
+Updated: 2026-10-05
 ---
 
 # Mô hình cốc tay cầm: Định nghĩa, dấu hiệu chuẩn và chiến lược giao dịch

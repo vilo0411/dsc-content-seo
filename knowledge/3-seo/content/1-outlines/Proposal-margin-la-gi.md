@@ -4,6 +4,8 @@ PAA_Questions:
   - "Tỷ lệ ký quỹ là gì?"
   - "Call margin là gì?"
   - "Tài khoản margin khác gì tài khoản thường?"
+Created: 2026-10-09
+Updated: 2026-10-09
 ---
 
 # 📋 BÁO CÁO TỐI ƯU SEO (SEO Optimization Proposal)

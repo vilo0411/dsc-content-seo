@@ -1,3 +1,8 @@
+---
+Created: 2026-10-21
+Updated: 2026-10-21
+---
+
 # 📋 Báo cáo tối ưu SEO (SEO Optimization Proposal)
 ## Bài viết: Chỉ số DXY là gì? Ứng dụng chỉ số DXY trong đầu tư chứng khoán
 

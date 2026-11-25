@@ -90,6 +90,8 @@ Internal_Links:
   - anchor: "Mở tài khoản chứng khoán DSC"
     url: "https://www.dsc.com.vn/mo-tai-khoan"
     suggested_placement: "H2: Tối ưu hiệu quả giao dịch cùng giải pháp Môi giới 1:1 DSC"
+Created: 2026-09-29
+Updated: 2026-09-29
 ---
 
 # SEO Content Outline: Lệnh Stop Limit Là Gì? Cách Đặt Lệnh Chuẩn Thực Chiến 2026

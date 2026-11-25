@@ -1,17 +1,24 @@
 ---
 name: keyword-plan
-description: "Chọn N bài SEO nên viết tiếp theo persona, tín hiệu GSC và SERP (topic_status --summary, gsc-opportunities, serp_opportunities) → sprint-backlog.md. Dùng khi hỏi 'viết gì tiếp', 'kế hoạch nội dung', 'chọn keyword'."
+description: "Chọn N việc SEO nên làm tiếp (bài mới + làm lại bài cũ) theo chiến lược cụm (core/outer, thuộc tính còn thiếu), queue toàn site, tín hiệu GSC và SERP → ghi Planned vào registry. Dùng khi hỏi 'viết gì tiếp', 'kế hoạch nội dung', 'chọn keyword'."
 ---
 
 # Lập Kế Hoạch Từ Khóa (Keyword Plan)
 
 ## Nhiệm vụ
-Phân tích Topic Clusters và đề xuất [N] bài viết tiếp theo nên được ưu tiên triển khai dựa trên chân dung độc giả (persona).
+Đề xuất [N] việc tiếp theo, cân giữa **bài mới** và **làm lại bài cũ**, ưu tiên cụm Core đang yếu. Chiến lược (định vị, core/outer, `bridge_to`, thuộc tính) không tự quyết ở đây — đọc từ nguồn duy nhất (`knowledge/README.md` → Thuật ngữ chiến lược).
+
+## Tỷ lệ mặc định mỗi tháng
+**40% refresh · 20% bridge · 40% bài mới** (user đổi trong chat thì theo user). refresh / bridge lấy từ queue; bài mới lấy từ gap thuộc tính + GSC + SERP.
 
 ## Quy trình thực thi
-1. `python scripts/topic_status.py --summary` — bảng cluster × trạng thái + danh sách bài chưa Finalized (~4 KB). **Không** đọc `pages.csv` (400 KB); tra thêm theo chủ đề: `topic_status.py --find "<từ>"`.
-2. Persona: `python scripts/persona.py P<n>` (danh sách: `--list`).
-3. **Kiểm tra GSC signal (nếu có data):** Đọc `knowledge/3-seo/strategy/gsc-opportunities.md` section "Keyword ngủ quên". Nếu có query đang rank (position ≤ 20, clicks ≥ 5) nhưng chưa có bài target chính xác query đó → đưa lên mức ưu tiên cao hơn volume thông thường. Lý do: bài mới sẽ rank nhanh hơn vì domain đã có tín hiệu liên quan. Nếu file không tồn tại: agent có MCP `SEO Dashboard` gọi `get_opportunities` (`property_url: "sc-domain:dsc.com.vn"`) thay thế (playbook `.agents/skills/seo-dashboard/SKILL.md`); không có MCP thì bỏ qua bước này.
-4. **Kiểm tra SERP signal:** chạy `python scripts/serp_opportunities.py` (0 API call) rồi đọc section "1. Chưa có bài" trong `knowledge/3-seo/strategy/serp-opportunities.md`. Câu PAA / related search xuất hiện ở ≥ 2 keyword đã research và chưa có bài → ưu tiên ngang GSC signal (Google đã xác nhận nhu cầu). Related search khác intent với bài gốc (VD "cách mua cổ phiếu Vingroup") là ứng viên bài riêng, không phải secondary keyword.
-5. Phân tích ngữ cảnh, độ khó, và tính cấp thiết để lọc ra [N] từ khóa phù hợp nhất.
-6. Ghi nhận các từ khóa này vào `knowledge/3-seo/strategy/sprint-backlog.md` với trạng thái `Planned`.
+1. **Chiến lược cụm:** `python scripts/registry.py cluster` (bảng section, thực thể, bridge_to, % qua pipeline, thuộc tính phủ) + `python scripts/registry.py suggest-core` (clicks / key events từng cụm). Cụm `core` mất clicks hoặc phủ thuộc tính thấp → ưu tiên. Cụm `off` chỉ nhận bài có góc dẫn về đầu tư chứng khoán (`profile.md` §0).
+2. **Queue bài cũ (refresh / bridge):** đọc top theo `priority` của `knowledge/3-seo/strategy/page-audit.csv` cột `action` (dashboard mục Queue toàn site hiển thị sẵn) — dùng `grep -E ",(refresh|bridge)$"` hoặc đọc ở dashboard, không mở cả file. refresh → `/optimize <slug>`; bridge → `/cro <slug>` (đoạn cầu nối + link về `bridge_to`).
+3. **Bài mới — gap thuộc tính:** `python scripts/registry.py cluster <mã>` với cụm ưu tiên → dòng `Gap` = thuộc tính chưa bài nào phủ → ứng viên keyword.
+4. `python scripts/topic_status.py --summary` — bảng cluster × trạng thái + danh sách bài chưa Finalized. **Không** đọc `pages.csv` (400 KB); tra theo chủ đề: `topic_status.py --find "<từ>"` (tránh trùng bài đã có).
+5. Persona: `python scripts/persona.py P<n>` (danh sách: `--list`).
+6. **GSC signal (nếu có data):** `knowledge/3-seo/strategy/gsc-opportunities.md` section "Keyword ngủ quên". Query đang rank (position ≤ 20, clicks ≥ 5) mà chưa có bài target đúng query → ưu tiên cao hơn volume thông thường. Không có file: MCP `SEO Dashboard` → `get_opportunities` (`property_url: "sc-domain:dsc.com.vn"`, playbook `.agents/skills/seo-dashboard/SKILL.md`); không có MCP thì bỏ qua.
+7. **SERP signal:** `python scripts/serp_opportunities.py` (0 API call) → section "1. Chưa có bài" của `knowledge/3-seo/strategy/serp-opportunities.md`. PAA / related search xuất hiện ở ≥ 2 keyword đã research và chưa có bài → ưu tiên ngang GSC. Related search khác intent (VD "cách mua cổ phiếu Vingroup") là bài riêng, không phải secondary keyword.
+8. Lọc ra [N] việc theo tỷ lệ trên; mỗi việc ghi: cụm + section, loại (refresh / bridge / mới), lý do bằng số (clicks mất, gap thuộc tính, query GSC…).
+9. **Ghi vào registry (nguồn trạng thái duy nhất):** bài mới → `python scripts/topic_status.py <slug> --add --keyword "<kw>" --cluster "<mã nhóm con> | <tên>" --set Planned`. Việc refresh / bridge không cần ghi — queue đã giữ. **Không** ghi `sprint-backlog.md` (bản cũ, chỉ để tham khảo).
+10. Trình user ≤ 25 dòng: bảng [việc · cụm/section · lý do · lệnh tiếp theo]. Chạy `python scripts/build_content_index.py` để dashboard cập nhật.

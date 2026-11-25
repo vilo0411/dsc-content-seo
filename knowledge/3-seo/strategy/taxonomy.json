@@ -1,5 +1,345 @@
 {
   "_doc": "Cluster registry cho rule internal link (xem .agents/skills/link/references/playbook.md §Quy tắc cụm). qa_lint.py đọc file này: bài là hub/spoke trong 'groups' phải link về pillar (spoke có hub thì link cả hub); anchor trùng 'pillar_keyword' chỉ được trỏ về pillar. Bài mới: thêm slug vào 'spokes' đúng group khi outline được approve. Nguồn: archive/2026-10-30-mo-tk-cach-choi/topical-map.html. Cụm c3–c14 (2026-11-10) sinh từ knowledge/3-seo/strategy/page-groups.csv (scripts/page_groups.py): group = nhóm con, hub = bài tổng của nhóm; pillar null = cụm chưa có bài pillar (qa_lint chỉ kiểm hub); group có pillar_exempt = bài lệch chủ đề với pillar, không bắt link pillar (chỉ kiểm hub). Bài đã thuộc cụm mo-tai-khoan / cach-choi-chung-khoan không lặp lại ở cụm khác. Tầng 3: group.branches (sinh bởi plans/2026-11-10-tier3.gen.py — chạy lại sau gen-clusters): spoke trong branch link về subhub (LINK-subhub); peer=true = các bài cùng nhánh link chéo, không có subhub. pillar_hubs_only=true (cụm C5): chỉ hub phải link pillar; spoke chỉ phải link pillar khi nhóm không có hub (trừ pillar_exempt). Sửa tay 2026-11-17: C5 pillar, 2d.2 sub-hub = top-10-chi-so-chung-khoan-quan-trong-can-theo-doi. 2026-11-17: bỏ 21 URL đã 301 (sync_live giờ ghi chúng vào _meta.redirected); hub/sub-hub trỏ URL 301 đổi sang URL đích.",
+  "site": {
+    "_doc": "Lớp toàn site — mọi khu vực URL của dsc.com.vn, không chỉ /kien-thuc. Định vị nội dung + thực thể trung tâm (profile.md §0) áp cho cả site; mỗi khu vực có section: core = trang chuyển đổi / phục vụ khách (nơi bài Outer dẫn về), outer = nội dung kéo traffic và xây thẩm quyền chủ đề, trust = trang chứng minh DSC là ai (giới thiệu, IR, tin tức — củng cố định vị, không viết SEO), off = ngoài định vị. /kien-thuc chia tiếp theo 'topics'. Số liệu: knowledge/raw/audit/<ngày>/gsc-site-folders.json.",
+    "sections": [
+      {
+        "id": "san-pham",
+        "name": "Sản phẩm & mở tài khoản",
+        "section": "core",
+        "folders": [
+          "/mo-tai-khoan/",
+          "/dich-vu/",
+          "/bieu-phi/",
+          "/he-sinh-thai/",
+          "/bang-gia/",
+          "/danh-muc-dau-tu/",
+          "/dau-tu/",
+          "/dsctrade/"
+        ],
+        "note": "Trang chuyển đổi (money pages). Rank kém (/dich-vu pos 13, /mo-tai-khoan pos 18) — nhận traffic chủ yếu qua link từ bài kiến thức."
+      },
+      {
+        "id": "trang-chu-app",
+        "name": "Trang chủ & nền tảng giao dịch",
+        "section": "core",
+        "folders": [
+          "/"
+        ],
+        "note": "Trang chủ www + host app (trading., one., wetrade.) — truy vấn thương hiệu."
+      },
+      {
+        "id": "huong-dan",
+        "name": "Hướng dẫn sử dụng",
+        "section": "core",
+        "folders": [
+          "/huong-dan/",
+          "/huong-dan-su-dung/",
+          "/cau-hoi-thuong-gap/"
+        ],
+        "note": "Phục vụ khách đã/đang mở tài khoản: nạp tiền, đặt lệnh trên app. Bài kiến thức thao tác nên dẫn về đây."
+      },
+      {
+        "id": "kien-thuc",
+        "name": "Kiến thức",
+        "section": "topics",
+        "folders": [
+          "/kien-thuc/"
+        ],
+        "note": "Kênh SEO chính — core / outer / off theo từng cụm trong 'topics'."
+      },
+      {
+        "id": "phan-tich",
+        "name": "Báo cáo & phân tích",
+        "section": "outer",
+        "folders": [
+          "/bao-cao-phan-tich/",
+          "/kinh-te-vi-mo/",
+          "/phan-tich-co-phieu/",
+          "/eback/"
+        ],
+        "note": "Chuyên môn riêng của DSC (E-E-A-T mạnh nhất). /kinh-te-vi-mo có 54 URL nằm ngoài registry. /eback = file PDF báo cáo."
+      },
+      {
+        "id": "tin-tuc",
+        "name": "Tin tức DSC",
+        "section": "trust",
+        "folders": [
+          "/tin-tuc/"
+        ],
+        "note": "Tin doanh nghiệp, sự kiện."
+      },
+      {
+        "id": "doanh-nghiep",
+        "name": "Doanh nghiệp & quan hệ cổ đông",
+        "section": "trust",
+        "folders": [
+          "/gioi-thieu/",
+          "/quan-he-co-dong/",
+          "/quan-he-co-dong-1/",
+          "/thong-tin-co-phieu/",
+          "/lien-he/",
+          "/careers/",
+          "/co-hoi-nghe-nghiep/",
+          "/danh-sach-nguoi-hanh-nghe-chung-khoan/",
+          "/dieu-khoan-chung/"
+        ],
+        "note": "Chứng minh DSC là ai: pháp nhân, người hành nghề, IR."
+      },
+      {
+        "id": "khac",
+        "name": "Tiếng Anh & URL cũ",
+        "section": "off",
+        "folders": [
+          "/en/",
+          "/post/"
+        ],
+        "note": "Bản tiếng Anh và URL cũ — không đầu tư SEO."
+      }
+    ]
+  },
+  "_topics_doc": "Danh mục cụm nội dung (topics) = NGUỒN DUY NHẤT cho mã cụm/nhóm con, tên, section core|outer|off, thực thể (entity), bridge_to (bài Core mà bài Outer phải link về), attributes (thuộc tính gốc; fact = id trong brand-facts.json hoặc 'market' = market_facts). page_groups.py / registry.py / dashboard đọc từ đây. Đề xuất section theo dữ liệu: python scripts/registry.py suggest-core. Xem 1 cụm: registry.py cluster <mã>.",
+  "topics": {
+    "1": {
+      "name": "Mở TK & Giao dịch cơ bản",
+      "section": "core",
+      "entity": "Tài khoản chứng khoán",
+      "bridge_to": "",
+      "attributes": [
+        {
+          "name": "thời gian mở tài khoản",
+          "fact": "ekyc_time",
+          "aliases": [
+            "mở tài khoản",
+            "ekyc"
+          ]
+        },
+        {
+          "name": "phí giao dịch",
+          "fact": "trading_fee",
+          "aliases": [
+            "phí"
+          ]
+        },
+        {
+          "name": "lãi suất margin",
+          "fact": "margin_rate",
+          "aliases": [
+            "margin",
+            "ký quỹ"
+          ]
+        },
+        {
+          "name": "nạp tiền",
+          "fact": "deposit_code",
+          "aliases": [
+            "nộp tiền",
+            "nạp tiền"
+          ]
+        },
+        {
+          "name": "biên độ giá",
+          "fact": "market",
+          "aliases": [
+            "biên độ"
+          ]
+        },
+        {
+          "name": "chu kỳ thanh toán",
+          "fact": "market",
+          "aliases": [
+            "t+2",
+            "thanh toán"
+          ]
+        },
+        {
+          "name": "lô giao dịch",
+          "fact": "market",
+          "aliases": [
+            "lô chẵn",
+            "lô lẻ"
+          ]
+        }
+      ],
+      "subgroups": {
+        "1a": "Tài khoản, app, phí & margin",
+        "1b": "Lệnh, quy định & phiên giao dịch"
+      }
+    },
+    "2": {
+      "name": "Nhập môn & Thị trường chứng khoán",
+      "section": "core",
+      "entity": "Thị trường chứng khoán Việt Nam",
+      "bridge_to": "",
+      "attributes": [],
+      "subgroups": {
+        "2a": "Nền tảng, kinh nghiệm & rủi ro cho người mới",
+        "2b": "Thao tác mua/bán",
+        "2d": "Chỉ số chứng khoán VN & thế giới",
+        "2f": "Thị trường, chủ thể & thuật ngữ"
+      }
+    },
+    "3": {
+      "name": "Phân tích kỹ thuật & Chỉ báo",
+      "section": "outer",
+      "entity": "Phân tích kỹ thuật",
+      "bridge_to": "cach-mo-tai-khoan-chung-khoan",
+      "attributes": [],
+      "subgroups": {
+        "3a": "Chỉ báo xu hướng (MA, MACD, ADX…)",
+        "3b": "Chỉ báo động lượng/dao động (RSI, Stoch…)",
+        "3c": "Khối lượng & dòng tiền",
+        "3d": "Mô hình nến",
+        "3e": "Mô hình giá",
+        "3f": "Hỗ trợ–kháng cự, xu hướng, trap, gap",
+        "3g": "Chỉ báo khác (ATR, Bollinger, Keltner…)",
+        "3h": "Lý thuyết, phương pháp & công cụ PTKT"
+      }
+    },
+    "4": {
+      "name": "Phân tích cơ bản & Tài chính DN",
+      "section": "outer",
+      "entity": "Phân tích cơ bản",
+      "bridge_to": "cach-mo-tai-khoan-chung-khoan",
+      "attributes": [],
+      "subgroups": {
+        "4a": "BCTC, kế toán & chi phí",
+        "4b": "Chỉ số sinh lời",
+        "4c": "Định giá cổ phiếu & doanh nghiệp",
+        "4d": "Thanh khoản, đòn bẩy, hiệu quả hoạt động",
+        "4e": "Vốn, cổ phần & niêm yết",
+        "4f": "Cổ tức & quyền cổ đông",
+        "4g": "Phân tích BCTC doanh nghiệp cụ thể",
+        "4h": "Phân tích định tính doanh nghiệp"
+      }
+    },
+    "5": {
+      "name": "Cổ phiếu cụ thể & Ngành",
+      "section": "core",
+      "entity": "Cổ phiếu",
+      "bridge_to": "",
+      "attributes": [],
+      "subgroups": {
+        "5a": "CP Ngân hàng",
+        "5b": "CP BĐS, KCN, xây dựng",
+        "5c": "CP Thép, VLXD, nhựa",
+        "5d": "CP Dầu khí, điện, năng lượng",
+        "5e": "CP Bán lẻ, tiêu dùng",
+        "5f": "CP Chứng khoán, bảo hiểm",
+        "5g": "CP Cảng biển & logistics",
+        "5h": "CP Nông nghiệp, thuỷ sản, cao su",
+        "5i": "CP Công nghệ & truyền thông",
+        "5j": "Chuỗi giá trị & phân tích ngành",
+        "5k": "Loại cổ phiếu & cách chọn",
+        "5l": "CP Hàng không",
+        "5m": "CP Hoá chất, phân bón",
+        "5n": "CP Dệt may",
+        "5o": "Danh sách cổ phiếu tiềm năng",
+        "5p": "Chỉ số phân tích ngân hàng (NIM, CASA, LDR…)"
+      }
+    },
+    "6": {
+      "name": "Chiến lược, Phương pháp & Quản trị rủi ro",
+      "section": "outer",
+      "entity": "Chiến lược đầu tư",
+      "bridge_to": "cach-mo-tai-khoan-chung-khoan",
+      "attributes": [],
+      "subgroups": {
+        "6a": "Trường phái & nhà đầu tư nổi tiếng",
+        "6b": "Chiến lược giao dịch",
+        "6c": "Quản trị rủi ro & danh mục",
+        "6d": "Tâm lý & hành vi"
+      }
+    },
+    "7": {
+      "name": "Quỹ & ETF",
+      "section": "outer",
+      "entity": "Chứng chỉ quỹ",
+      "bridge_to": "cach-mo-tai-khoan-chung-khoan",
+      "attributes": [],
+      "subgroups": {
+        "7a": "Chứng chỉ quỹ, quỹ mở & ETF"
+      }
+    },
+    "8": {
+      "name": "Phái sinh & Chứng quyền",
+      "section": "outer",
+      "entity": "Chứng khoán phái sinh",
+      "bridge_to": "cach-mo-tai-khoan-chung-khoan",
+      "attributes": [],
+      "subgroups": {
+        "8a": "Phái sinh",
+        "8b": "Chứng quyền"
+      }
+    },
+    "9": {
+      "name": "Vĩ mô & Chính sách",
+      "section": "outer",
+      "entity": "Kinh tế vĩ mô",
+      "bridge_to": "cach-mo-tai-khoan-chung-khoan",
+      "attributes": [],
+      "subgroups": {
+        "9a": "Chỉ số kinh tế",
+        "9b": "Chính sách tiền tệ, tài khoá & lãi suất",
+        "9d": "Tỷ giá, thương mại, dòng vốn ngoại",
+        "9e": "Khái niệm kinh tế học",
+        "9f": "Khủng hoảng & sự kiện"
+      }
+    },
+    "10": {
+      "name": "Tiết kiệm & Kênh đầu tư",
+      "section": "outer",
+      "entity": "Kênh đầu tư",
+      "bridge_to": "cach-mo-tai-khoan-chung-khoan",
+      "attributes": [],
+      "subgroups": {
+        "10a": "Lãi suất tiết kiệm & so sánh ngân hàng",
+        "10b": "Kênh đầu tư & phân bổ tiền nhàn rỗi",
+        "10d": "Ngoài phạm vi: tiền số, forex, tài chính cá nhân"
+      }
+    },
+    "11": {
+      "name": "Vàng",
+      "section": "off",
+      "entity": "Vàng",
+      "bridge_to": "cach-mo-tai-khoan-chung-khoan",
+      "attributes": [],
+      "subgroups": {
+        "11a": "Vàng"
+      }
+    },
+    "12": {
+      "name": "Trái phiếu",
+      "section": "outer",
+      "entity": "Trái phiếu",
+      "bridge_to": "cach-mo-tai-khoan-chung-khoan",
+      "attributes": [],
+      "subgroups": {
+        "12a": "Trái phiếu & lợi suất"
+      }
+    },
+    "13": {
+      "name": "Học & nghề tài chính",
+      "section": "off",
+      "entity": "Nghề tài chính",
+      "bridge_to": "cach-mo-tai-khoan-chung-khoan",
+      "attributes": [],
+      "subgroups": {
+        "13a": "Khoá học & sách",
+        "13b": "Chứng chỉ & nghề nghiệp"
+      }
+    },
+    "14": {
+      "name": "Bạc",
+      "section": "off",
+      "entity": "Bạc",
+      "bridge_to": "cach-mo-tai-khoan-chung-khoan",
+      "attributes": [],
+      "subgroups": {
+        "14a": "Bạc"
+      }
+    }
+  },
   "clusters": [
     {
       "id": "mo-tai-khoan",
@@ -103,7 +443,8 @@
         "gio-giao-dich-chung-khoan-viet-nam",
         "dau-tu-chung-khoan-can-bao-nhieu-tien",
         "cac-quy-dinh-giao-dich-chung-khoan-quan-trong-ma-nguoi-moi-can-biet"
-      ]
+      ],
+      "topic": "1"
     },
     {
       "id": "cach-choi-chung-khoan",
@@ -385,7 +726,8 @@
       "cross": [
         "cach-mo-tai-khoan-chung-khoan",
         "nen-mo-tai-khoan-chung-khoan-o-dau"
-      ]
+      ],
+      "topic": "2"
     },
     {
       "id": "c3-phan-tich-ky-thuat",
@@ -707,7 +1049,8 @@
           ]
         }
       ],
-      "note": "Pillar yếu (0 click, pos 16) — cần viết lại."
+      "note": "Pillar yếu (0 click, pos 16) — cần viết lại.",
+      "topic": "3"
     },
     {
       "id": "c4-phan-tich-co-ban",
@@ -1008,7 +1351,8 @@
           ]
         }
       ],
-      "note": "Pillar chỉ 6% bài cụm link về — cần nâng cấp."
+      "note": "Pillar chỉ 6% bài cụm link về — cần nâng cấp.",
+      "topic": "4"
     },
     {
       "id": "c5-co-phieu-nganh",
@@ -1817,7 +2161,8 @@
         }
       ],
       "note": "Pillar = top-5-co-phieu-dang-dau-tu (chốt 2026-11-17; 151 click/90 ngày, pos 2,8 cho «nên mua cổ phiếu nào»). pillar_hubs_only: chỉ hub ngành link pillar; bài từng mã link hub ngành (và sub-hub mã). Pillar cần thêm phần bản đồ nhóm ngành link xuống các hub.",
-      "pillar_hubs_only": true
+      "pillar_hubs_only": true,
+      "topic": "5"
     },
     {
       "id": "c6-chien-luoc-rui-ro",
@@ -1963,7 +2308,8 @@
           ]
         }
       ],
-      "note": "Pillar tạm (pos 40) — cân nhắc viết bài phương pháp đầu tư."
+      "note": "Pillar tạm (pos 40) — cân nhắc viết bài phương pháp đầu tư.",
+      "topic": "6"
     },
     {
       "id": "c7-quy-etf",
@@ -2045,7 +2391,8 @@
           ]
         }
       ],
-      "note": "Pillar yếu (pos 41.8) — cần làm lại."
+      "note": "Pillar yếu (pos 41.8) — cần làm lại.",
+      "topic": "7"
     },
     {
       "id": "c8-phai-sinh",
@@ -2079,7 +2426,8 @@
           ],
           "pillar_exempt": "chứng quyền không thuộc phái sinh — link pillar chỉ khi đoạn văn so sánh"
         }
-      ]
+      ],
+      "topic": "8"
     },
     {
       "id": "c9-vi-mo",
@@ -2309,7 +2657,8 @@
             "vo-no-la-gi"
           ]
         }
-      ]
+      ],
+      "topic": "9"
     },
     {
       "id": "c10-tiet-kiem-kenh-dau-tu",
@@ -2435,7 +2784,8 @@
           "pillar_exempt": "ngoài phạm vi chứng khoán/tiết kiệm"
         }
       ],
-      "note": "Pillar = bài kênh đầu tư tổng (109 clicks). 10d = ngoài phạm vi, không bắt link pillar."
+      "note": "Pillar = bài kênh đầu tư tổng (109 clicks). 10d = ngoài phạm vi, không bắt link pillar.",
+      "topic": "10"
     },
     {
       "id": "c11-vang",
@@ -2515,7 +2865,8 @@
           ]
         }
       ],
-      "note": "Pillar yếu (pos 19.6) — /optimize trước khi chèn link."
+      "note": "Pillar yếu (pos 19.6) — /optimize trước khi chèn link.",
+      "topic": "11"
     },
     {
       "id": "c12-trai-phieu",
@@ -2545,7 +2896,8 @@
             "trai-phieu-ngan-hang-la-gi"
           ]
         }
-      ]
+      ],
+      "topic": "12"
     },
     {
       "id": "c13-hoc-nghe",
@@ -2657,7 +3009,8 @@
           ]
         }
       ],
-      "note": "Không có pillar bắt buộc: sách/khoá học link về pillar của chủ đề (PTKT → C3, BCTC → C4)."
+      "note": "Không có pillar bắt buộc: sách/khoá học link về pillar của chủ đề (PTKT → C3, BCTC → C4).",
+      "topic": "13"
     },
     {
       "id": "c14-bac",
@@ -2679,7 +3032,8 @@
           ]
         }
       ],
-      "note": "Cầu nối với C11: nen-dau-tu-vang-hay-bac (thuộc C11, link cả 2 pillar)."
+      "note": "Cầu nối với C11: nen-dau-tu-vang-hay-bac (thuộc C11, link cả 2 pillar).",
+      "topic": "14"
     }
   ]
 }

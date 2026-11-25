@@ -84,6 +84,47 @@ def split_frontmatter(text: str) -> tuple[dict, int, list[str]]:
     return fm, 0, lines
 
 
+WORK_PREFIXES = ("Proposal-", "Optimize-", "Draft-", "")   # working files of one article (outline has no prefix)
+DATE_FIELDS = ("Created", "Updated")                          # YYYY-MM-DD in the YAML of outline / proposal / draft
+
+
+def working_files(slug: str) -> list[Path]:
+    """Outline / Proposal / Draft / Optimize files of one article that are still in the working folders."""
+    out = []
+    for folder in (OUTLINES_DIR, DRAFTS_DIR):
+        for prefix in WORK_PREFIXES:
+            p = folder / f"{prefix}{slug}.md"
+            if p.exists() and p not in out:
+                out.append(p)
+    return out
+
+
+def stamp_frontmatter(p: Path, keep_mtime: bool = False, **fields: str) -> None:
+    """Set top-level YAML keys (adds the `---` block if the file has none). Other lines stay untouched.
+    keep_mtime: restore the file time (backfills must not look like edits to gate detection)."""
+    import os
+    st = p.stat()
+    text, nl = read_text(p)
+    lines = text.split("\n")
+    # YAML block: leading `---` … `---`, or the old template's ```yaml / --- … --- / ``` fenced after the title
+    start = 0 if lines and lines[0].strip() == "---" else next(
+        (i + 1 for i in range(len(lines) - 1) if re.match(r"^```ya?ml\s*$", lines[i]) and lines[i + 1].strip() == "---"), None)
+    if start is not None and "---" in (l.strip() for l in lines[start + 1:]):
+        end = next(i for i in range(start + 1, len(lines)) if lines[i].strip() == "---")
+        for key, val in fields.items():
+            hit = next((i for i in range(start + 1, end) if re.match(rf"^{key}\s*:", lines[i])), None)
+            if hit is not None:
+                lines[hit] = f"{key}: {val}"
+            else:
+                lines.insert(end, f"{key}: {val}")
+                end += 1
+    else:
+        lines = ["---", *(f"{k}: {v}" for k, v in fields.items()), "---", ""] + lines
+    write_text(p, "\n".join(lines), nl)
+    if keep_mtime:
+        os.utime(p, (st.st_atime, st.st_mtime))
+
+
 def body_end(lines: list[str], start: int = 0) -> int:
     """Index of the Revision Log heading (content after it is not article body), or len(lines)."""
     for i in range(start, len(lines)):

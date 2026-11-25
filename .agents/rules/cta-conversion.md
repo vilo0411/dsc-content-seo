@@ -74,17 +74,20 @@ P3 đặc biệt: `personas.md` ghi rõ **tránh CTA aggressive kiểu "mở tà
 ## 5. Kỹ thuật
 
 - **Inline style bắt buộc.** WordPress strip thẻ `<style>`. Không dùng class CSS ngoài.
-- **Palette chỉ được dùng** màu trong `knowledge/1-brand/visual-brand-guidelines.md`: `#00AD14`, `#2BE841`, `#10E7B3`, `#0D1B2A`, `#E8F8F2`, `#FFFFFF`. Cấm `#27ae60`, `#229954` và mọi màu ngoài danh sách. Cấm màu đỏ.
+- **Palette chỉ được dùng** màu trong `knowledge/1-brand/DESIGN.md` §2–§3 (brand guideline v1.0): Gunmetal `#272D2B`, Pine Teal `#1D4130`, Lime `#2AD03D`, Emerald `#1BBE72`, Frosted Mint `#8CFFCC`, White `#FFFFFF`, gradient Primary `#61CC6C → #14A46E`, nền nhạt `#F2FBF6`. Cấm màu cũ (`#00AD14`, `#2BE841`, `#10E7B3`, `#0D1B2A`, `#E8F8F2`), `#27ae60`, `#229954` và mọi màu ngoài danh sách. Cấm màu đỏ.
+- **Font:** banner trong CMS kế thừa font của site — không đặt `font-family` khác (Inter, Arial…). Thang chữ theo DESIGN.md §4 (headline 20–24px/700, dòng phụ 15px/400, nút 15–16px/700).
 - **Tương phản ≥ 4.5:1** (WCAG AA, text thường). Đã đo:
 
   | Tổ hợp | Tỉ lệ | Kết luận |
   | :--- | ---: | :--- |
-  | Trắng trên `#27ae60` | 2.9:1 | ✗ cấm |
-  | Trắng trên `#00AD14` | 3.0:1 | ✗ cấm làm nền text |
-  | Trắng trên `#0D1B2A` | 17.4:1 | ✓ nền chuẩn |
-  | `#0D1B2A` trên `#2BE841` | 10.2:1 | ✓ nút chuẩn |
+  | Trắng trên Lime `#2AD03D` | 2.1:1 | ✗ cấm làm nền chữ trắng |
+  | Trắng trên Emerald `#1BBE72` | 2.4:1 | ✗ cấm |
+  | Trắng trên Gunmetal `#272D2B` | 14.0:1 | ✓ nền chuẩn |
+  | Trắng trên Pine Teal `#1D4130` | 11.3:1 | ✓ nền chuẩn / nút trên nền sáng |
+  | Gunmetal trên Lime | 6.8:1 | ✓ nút chuẩn |
+  | Frosted Mint trên Gunmetal | 11.6:1 | ✓ dòng phụ / nhấn |
 
-  → **Nền banner là Dark Navy, nút là xanh lá sáng chữ navy.** Không dùng nền xanh lá cho khối có text thường.
+  → **Nền banner Gunmetal → Pine Teal, nút Lime chữ Gunmetal.** Không dùng nền Lime/Emerald cho khối có text thường.
 - **Mobile:** container phải có `flex-wrap: wrap`, nút không được để `white-space: nowrap` kèm padding lớn. Test ở 360px.
 - **Accessibility:** phần tử trang trí thuần hình phải có `aria-hidden="true"`.
 - Link cùng domain → **không** dùng `target="_blank"`.

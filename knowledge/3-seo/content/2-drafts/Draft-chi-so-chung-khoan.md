@@ -4,6 +4,8 @@ Status: Draft
 Pipeline_Mode: Guided
 Target_Keyword: chỉ số chứng khoán
 Writer_Profile: educational
+Created: 2026-05-26
+Updated: 2026-05-26
 ---
 
 # Chỉ số chứng khoán là gì? Các chỉ số chứng khoán Việt Nam cần biết

@@ -9,6 +9,8 @@ Product_Bridge: Mở tài khoản eKYC và Môi giới 1:1
 Status: Optimize draft - pending human approval
 Source_URL: https://www.dsc.com.vn/kien-thuc/nen-mo-tai-khoan-chung-khoan-o-dau
 Reviewed_At: 2026-11-04
+Created: 2026-11-04
+Updated: 2026-11-04
 ---
 
 # Nên mở tài khoản chứng khoán ở đâu? Top 7 công ty uy tín

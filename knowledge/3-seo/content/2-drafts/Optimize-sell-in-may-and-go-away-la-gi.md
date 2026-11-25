@@ -2,6 +2,8 @@
 title: "Sell In May And Go Away Là Gì? 4 Lưu Ý Cho Nhà Đầu Tư"
 source: "https://www.dsc.com.vn/kien-thuc/y-nghia-cua-sell-in-may-and-go-away-trong-dau-tu-chung-khoan-tai-viet-nam"
 description: "Sell in May and go away là gì? Khám phá nguồn gốc, số liệu lịch sử VN-Index và 4 chiến lược cơ cấu danh mục hiệu quả cho nhà đầu tư cùng DSC."
+Created: 2026-08-12
+Updated: 2026-08-12
 ---
 
 Tìm hiểu **Sell in May and go away là gì** luôn là mối quan tâm hàng đầu của nhà đầu tư khi thị trường chứng khoán bước vào giai đoạn chuyển giao giữa hai quý đầu năm. Tâm lý e ngại đà sụt giảm theo mùa vụ khiến nhiều nhà đầu tư vội vã bán tháo cổ phiếu để đứng ngoài thị trường.

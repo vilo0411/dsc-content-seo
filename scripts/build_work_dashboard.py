@@ -181,14 +181,136 @@ def approval_queue() -> list[dict]:
             gate = 'Đang làm'
         final = CONTENT / '3-finalized' / f'Final-{slug}.md'
         order = ['Proposal', 'Outline', 'Bản viết lại', 'Draft']
+        created, updated = file_dates(list(fs.values()))
         queue.append(dict(
             slug=slug, status=status, gate=gate, wave=waves.get(slug, ''),
             keyword=r['key_chinh'] if r else '', title=r['title'] if r else '',
-            updated=datetime.fromtimestamp(newest).strftime('%Y-%m-%d %H:%M'),
+            created=created, updated=updated,
             final=rel(final) if final.exists() else '',
+            final_date=datetime.fromtimestamp(final.stat().st_mtime).strftime('%Y-%m-%d') if final.exists() else '',
             docs=[dict(kind=k, path=rel(fs[k]), html=md_preview(fs[k])) for k in order if k in fs]))
     queue.sort(key=lambda q: q['updated'], reverse=True)
     return queue
+
+
+def file_dates(paths: list[Path]) -> tuple[str, str]:
+    """(Created, Updated) of an article's working files: YAML fields first (AGENTS.md rule 8), file time as fallback."""
+    from _common import read_text, split_frontmatter
+    created, updated = [], []
+    for p in paths:
+        fm = split_frontmatter(read_text(p)[0])[0]
+        mt = datetime.fromtimestamp(p.stat().st_mtime).strftime('%Y-%m-%d')
+        created.append(fm.get('Created') or mt)
+        updated.append(fm.get('Updated') or mt)
+    return (min(created) if created else ''), (max(updated) if updated else '')
+
+
+ACTION_CMD = {'refresh': '/optimize {slug}', 'bridge': '/cro {slug}', 'prune?': 'xem lại: gộp / 301 / giữ — {slug}'}
+
+
+def _num(x) -> float:
+    try:
+        return float(x or 0)
+    except ValueError:
+        return 0.0
+
+
+def today_view(approvals: list[dict]) -> dict:
+    """Home screen data: today's tasks, metric changes, site-level queue, strategy map. Read-only."""
+    import campaign
+    import page_groups
+    import registry
+    import topic_status
+    import weekly_review as wr
+    from _common import working_files
+
+    today = datetime.now().date()
+    rows = registry.load() if registry.REGISTRY.exists() else []
+    audit_path = registry.PAGE_AUDIT
+    audit = []
+    if audit_path.exists():
+        with audit_path.open(encoding='utf-8-sig', newline='') as fh:
+            audit = list(csv.DictReader(fh))
+    audit_dir = page_groups.latest_audit_dir()
+    site = registry.site_sections()
+    serp = sorted((ROOT / 'knowledge/raw/serp').glob('*.json'), key=lambda p: p.stat().st_mtime)
+    fresh = dict(
+        audit=audit_dir.name if audit_dir else '', site=site['date'],
+        audit_built=datetime.fromtimestamp(audit_path.stat().st_mtime).strftime('%Y-%m-%d') if audit_path.exists() else '',
+        serp=datetime.fromtimestamp(serp[-1].stat().st_mtime).strftime('%Y-%m-%d') if serp else '')
+
+    # 1. Today's tasks
+    doing = []
+    for r in rows:
+        if r['status'] in NEXT_BY_STATUS:
+            slug = r['file_slug'] or r['slug']
+            created, updated = file_dates(working_files(slug) or working_files(r['slug']))
+            doing.append(dict(slug=slug, keyword=r['key_chinh'], status=r['status'], next=NEXT_BY_STATUS[r['status']],
+                              created=created, updated=updated))
+    leftovers, mismatch = topic_status.find_stale()
+    cleanup = dict(
+        leftovers=[dict(file=rel(p), slug=sl, updated=file_dates([p])[1]) for p, sl in leftovers],
+        mismatch=[dict(file=rel(p), slug=sl, status=st) for p, sl, st in mismatch])
+    ledger = wr.snap.read_ledger()
+    unpublished = [s for s, r in ledger.items() if r['final'] and not r['first_live'] and r['note'] != 'seed']
+    backfill = [s for s, r in ledger.items() if wr.d(r['first_live']) and not r['backfill_done']]
+    gsc_due = [s for s, r in ledger.items()
+               if wr.d(r['first_live']) and not r['gsc_checked'] and (today - wr.d(r['first_live'])).days >= wr.GSC_FROM]
+    jobs = [j for j in campaign.summary() if j['status'] not in ('Đóng',)]
+    todo = dict(
+        gate1=[a['slug'] for a in approvals if a['gate'].startswith('Gate 1')],
+        gate2=[a['slug'] for a in approvals if a['gate'].startswith('Gate 2')],
+        doing=doing, cleanup=cleanup, weekly=dict(unpublished=unpublished, backfill=backfill, gsc_due=gsc_due),
+        campaigns=[dict(id=j['id'], status=j['status']) for j in jobs])
+
+    # 2. Metric changes (offline snapshot from page_groups.py report)
+    topics = registry._topics()
+    by = {}
+    for r in audit:
+        v = by.setdefault(r['cluster'], dict(clicks=0.0, prev=0.0, impr=0.0, ke=0.0, sess=0.0, n=0, final=0))
+        v['clicks'] += _num(r['clicks'])
+        v['prev'] += _num(r['prev_clicks'])
+        v['impr'] += _num(r['impressions'])
+        v['ke'] += _num(r['key_events'])
+        v['sess'] += _num(r['sessions'])
+        v['n'] += 1
+        v['final'] += r.get('pipeline') == 'Finalized'
+    tot = {k: sum(v[k] for v in by.values()) for k in ('clicks', 'prev', 'impr', 'ke', 'sess')}
+    drops = sorted((r for r in audit if 'rank-drop' in r['labels']), key=lambda r: _num(r['click_change']))[:5]
+    metrics = dict(total=tot, drops=[dict(slug=r['slug'], clicks=_num(r['clicks']), change=_num(r['click_change']),
+                                          cluster=r['cluster']) for r in drops])
+
+    # 3. Site-level queue
+    queue = sorted((r for r in audit if r.get('action') in ACTION_CMD), key=lambda r: -_num(r['priority']))
+    counts = Counter(r.get('action', '') for r in audit)
+    queue_rows = [dict(slug=r['slug'], action=r['action'], priority=_num(r['priority']), labels=r['labels'],
+                       cluster=r['cluster'], section=r.get('section', ''), pipeline=r.get('pipeline', ''),
+                       cmd=ACTION_CMD[r['action']].format(slug=r['slug'])) for r in queue[:15]]
+
+    # 4. Strategy map
+    site_rate = tot['ke'] / tot['sess'] if tot['sess'] else 0
+    live = {r['slug'] for r in rows if r['live'] == 'yes'}
+    facts = {f['id'] for f in read_json(registry.BRAND_FACTS)['facts']}
+    warnings = registry.topic_problems(read_json(registry.TAXONOMY), live, facts)
+    clusters = []
+    reg_rows = [r for r in rows if r['status'] != 'Merged']
+    for code, t in topics.items():
+        v = by.get(code, dict(clicks=0, prev=0, impr=0, ke=0, sess=0, n=0, final=0))
+        share_k = v['ke'] / tot['ke'] if tot['ke'] else 0
+        sug = registry.suggest_section(share_k, v['ke'] / v['sess'] if v['sess'] else 0, site_rate, v['sess'])
+        if t.get('section') not in (sug, 'off'):
+            warnings.append(f"cụm {code} khai báo {t.get('section')}, dữ liệu gợi ý {sug} (key events {share_k:.0%})")
+        rs = [r for r in reg_rows if r['cluster'] == code]
+        at = t.get('attributes', [])
+        clusters.append(dict(
+            code=code, name=t['name'], section=t.get('section', ''), suggested=sug, entity=t.get('entity', ''),
+            bridge_to=t.get('bridge_to', ''), pages=v['n'], clicks=v['clicks'], prev=v['prev'],
+            clicks_share=v['clicks'] / tot['clicks'] if tot['clicks'] else 0, ke=v['ke'], ke_share=share_k,
+            pipeline=v['final'] / v['n'] if v['n'] else 0,
+            attrs=len(at), attrs_covered=sum(1 for x in at if registry.covered(x, rs)),
+            actions=dict(Counter(r.get('action', '') for r in audit if r['cluster'] == code))))
+    strategy = dict(**registry.positioning(), clusters=clusters, warnings=warnings, site=site)
+    return dict(fresh=fresh, todo=todo, metrics=metrics, queue=queue_rows, queue_counts=dict(counts), strategy=strategy)
 
 
 def unaccent_key(s: str) -> str:
@@ -333,6 +455,7 @@ def build():
     (OUT / 'status.json').write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding='utf-8')
     # Rendered documents go into index.html only; status.json stays small.
     payload['approvals'] = approvals
+    payload['today'] = today_view(approvals)
     template = (ROOT / 'scripts/templates/work-dashboard.html').read_text(encoding='utf-8')
     (OUT / 'index.html').write_text(template.replace('__PAYLOAD__', json.dumps(payload, ensure_ascii=False).replace('<', '\\u003c')), encoding='utf-8')
     print(f'Work dashboard: {len(tasks)} workstreams, {len(catalog)} files, snapshot {snapshot}')
@@ -340,4 +463,6 @@ def build():
 
 
 if __name__ == '__main__':
+    import argparse
+    argparse.ArgumentParser(description=__doc__).parse_args()  # --help prints usage instead of rebuilding
     build()

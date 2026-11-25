@@ -53,6 +53,8 @@ Internal_Links:
     url: "/blog/cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau/"
   - anchor: "phí giao dịch chứng khoán"
     url: "/blog/phi-giao-dich-chung-khoan/"
+Created: 2026-06-15
+Updated: 2026-06-15
 ---
 
 # SEO Content Outline: Đầu tư vàng online

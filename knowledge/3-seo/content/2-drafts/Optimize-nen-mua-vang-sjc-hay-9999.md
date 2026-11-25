@@ -11,6 +11,8 @@ Search_Intent: Informational / Commercial
 Content_Type: Comparison
 Featured_Snippet: Table
 Word_Count_Target: 1300 - 1500 words
+Created: 2026-07-30
+Updated: 2026-07-30
 ---
 
 # Nên mua vàng SJC hay 9999 để tối ưu lợi nhuận năm 2026?

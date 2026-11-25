@@ -20,7 +20,7 @@ from collections import Counter, defaultdict
 from datetime import date
 
 from _common import PIPELINE_DIR, ROOT, setup_utf8
-from page_groups import CLUSTERS, SUBGROUPS, OUT_AUDIT, OUT_GROUPS, sg_key
+from page_groups import CLUSTERS, SUBGROUPS, TOPICS, OUT_AUDIT, OUT_GROUPS, sg_key
 
 LINK_CLUSTERS = PIPELINE_DIR / "strategy/taxonomy.json"
 LINKS = ROOT / "knowledge/raw/live/links.csv"
@@ -75,7 +75,11 @@ def build_data() -> dict:
         need_p = bool(p) and role != "pillar" and p not in ctx[s]
         need_h = bool(hub) and role == "spoke" and hub not in ctx[s]
         out_c = [t for t in ctx[s] if t in cl_of]
+        tp = TOPICS.get(r["cluster"], {})
+        bridge = tp.get("bridge_to", "")
         arts.append({
+            "sec": tp.get("section", ""), "br": bridge,
+            "nb": tp.get("section") == "outer" and bool(bridge) and s != bridge and bridge not in ctx[s],
             "s": s, "t": r["title"], "c": r["cluster"], "g": r["subgroup"], "i": r["intent"], "r": role, "reg": reg_id,
             "np": need_p, "nh": need_h, "pl": p or "", "hb": hub or "",
             "cl": round(fnum(r.get("clicks"))), "pc": round(fnum(r.get("prev_clicks"))),
@@ -96,30 +100,30 @@ def build_data() -> dict:
     idx = {a["s"]: i for i, a in enumerate(arts)}
     live_edges = sorted({(idx[f_], idx[t_]) for f_, ts in ctx.items() if f_ in idx for t_ in ts if t_ in idx})
     has_perf = src == OUT_AUDIT
-    return {"le": live_edges, "xc": [[a, b, n] for (a, b), n in xc.items()], "clusters": CLUSTERS, "subgroups": SUBGROUPS, "pillars": pillars, "arts": arts,
+    import registry
+    topics = {c: {k: t.get(k, "") for k in ("name", "section", "entity", "bridge_to")} for c, t in TOPICS.items()}
+    return {"site": registry.site_sections(), "pos": registry.positioning(), "topics": topics,
+            "le": live_edges, "xc": [[a, b, n] for (a, b), n in xc.items()], "clusters": CLUSTERS, "subgroups": SUBGROUPS, "pillars": pillars, "arts": arts,
             "perf": has_perf, "built": date.today().isoformat(),
             "order": sorted({a["g"] for a in arts}, key=sg_key)}
 
 
 TEMPLATE = r"""<!doctype html>
 <html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Topical cluster map — DSC /kien-thuc</title>
+<title>Topical map — Chứng khoán DSC</title>
 <style>
-.viz-root{color-scheme:light;--page:#f9f9f7;--surface-1:#fcfcfb;--text-primary:#0b0b0b;--text-secondary:#52514e;--muted:#898781;
- --grid:#e1e0d9;--base:#c3c2b7;--ring:rgba(11,11,11,.10);--good:#0ca30c;--warning:#fab219;--serious:#ec835a;--critical:#d03b3b;
- --none:#c3c2b7;--up2:#256abf;--up1:#86b6ef;--mid:#e1e0d9;--dn1:#f0a3a2;--dn2:#e34948;--sel:#2a78d6;--up-text:#006300}
-@media (prefers-color-scheme:dark){:root:where(:not([data-theme="light"])) .viz-root{color-scheme:dark;--page:#0d0d0d;--surface-1:#1a1a19;
- --text-primary:#f0efec;--text-secondary:#c3c2b7;--muted:#898781;--grid:#2c2c2a;--base:#383835;--ring:rgba(255,255,255,.10);
- --none:#52514e;--up2:#5598e7;--up1:#1c5cab;--mid:#383835;--dn1:#8f3434;--dn2:#e66767;--sel:#3987e5;--up-text:#0ca30c}}
-:root[data-theme="dark"] .viz-root{color-scheme:dark;--page:#0d0d0d;--surface-1:#1a1a19;--text-primary:#f0efec;--text-secondary:#c3c2b7;
- --muted:#898781;--grid:#2c2c2a;--base:#383835;--ring:rgba(255,255,255,.10);--none:#52514e;--up2:#5598e7;--up1:#1c5cab;--mid:#383835;
- --dn1:#8f3434;--dn2:#e66767;--sel:#3987e5;--up-text:#0ca30c}
+/* Brand: knowledge/1-brand/DESIGN.md — Plus Jakarta Sans, DSC palette only, no red (bad = gunmetal / neutral) */
+@font-face{font-family:"Plus Jakarta Sans";src:url("../../1-brand/assets/fonts/PlusJakartaSans-VF.ttf") format("truetype");font-weight:200 800;font-display:swap}
+.viz-root{color-scheme:light;--page:#FFFFFF;--surface-1:#FFFFFF;--text-primary:#272D2B;--text-secondary:#4A524F;--muted:#666F6C;
+ --grid:#DCE5E0;--base:#B9C3BF;--ring:#DCE5E0;--good:#1BBE72;--warning:#B9C3BF;--serious:#666F6C;--critical:#272D2B;
+ --none:#DCE5E0;--up2:#1BBE72;--up1:#8CFFCC;--mid:#E8F0EC;--dn1:#B9C3BF;--dn2:#272D2B;--sel:#1D4130;--up-text:#1D4130;--mint50:#F2FBF6;--lime:#2AD03D}
 *{box-sizing:border-box}body{margin:0}
-.viz-root{font:13px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--page);color:var(--text-primary);min-height:100vh}
-header{padding:16px 20px 8px}h1{font-size:18px;margin:0 0 4px}.sub{color:var(--text-secondary)}
+.viz-root{font:13.5px/1.5 "Plus Jakarta Sans","Be Vietnam Pro",system-ui,sans-serif;background:var(--page);color:var(--text-primary);min-height:100vh}
+header{display:flex;align-items:center;gap:14px;padding:16px 20px 12px;border-bottom:1px solid var(--grid)}header img{height:28px}
+h1{font-size:19px;font-weight:700;margin:0}.sub{color:var(--muted);font-size:12.5px}header .back{margin-left:auto;font-weight:600;color:var(--sel);text-decoration:none;font-size:13px}
 .bar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;padding:8px 20px;position:sticky;top:0;background:var(--page);z-index:5;border-bottom:1px solid var(--grid)}
-.seg{display:inline-flex;border:1px solid var(--base);border-radius:6px;overflow:hidden}.seg button{border:0;background:transparent;color:var(--text-secondary);padding:5px 10px;cursor:pointer;font:inherit}
-.seg button.on{background:var(--text-primary);color:var(--surface-1)}
+.seg{display:inline-flex;border:1px solid var(--grid);border-radius:999px;overflow:hidden}.seg button{border:0;background:transparent;color:var(--text-secondary);padding:5px 10px;cursor:pointer;font:inherit}
+.seg button.on{background:var(--sel);color:#fff}
 select,input[type=search]{font:inherit;padding:4px 8px;border:1px solid var(--base);border-radius:6px;background:var(--surface-1);color:var(--text-primary)}
 .legend{display:flex;flex-wrap:wrap;gap:10px;color:var(--text-secondary);font-size:12px}.legend span{display:inline-flex;align-items:center;gap:5px}
 .sw{width:11px;height:11px;border-radius:50%;display:inline-block;box-shadow:0 0 0 1px var(--ring)}
@@ -154,19 +158,31 @@ a{color:inherit}.tip{position:fixed;pointer-events:none;background:var(--surface
 .zoom{position:absolute;right:10px;top:10px;display:flex;flex-direction:column;gap:4px}.zoom button{width:28px;height:28px;border:1px solid var(--base);border-radius:6px;background:var(--surface-1);color:var(--text-primary);cursor:pointer;font:inherit}
 .gh{position:absolute;left:10px;bottom:8px;font-size:11px;color:var(--muted)}
 .order td{cursor:pointer}.note{font-size:12px;color:var(--text-secondary)}
+.help{margin:12px 20px 0;padding:10px 14px;border-left:3px solid var(--sel);background:var(--mint50);color:var(--text-secondary);font-size:12.5px;max-width:1100px}
+.site{padding:12px 20px 40px}.site[hidden]{display:none}main[hidden]{display:none}
+.pos{background:var(--surface-1);border:1px solid var(--grid);border-radius:10px;padding:12px 16px;margin-bottom:14px;max-width:1100px}
+.pos div{margin:2px 0}.pos b{display:inline-block;min-width:150px}
+.cols{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}@media(max-width:1100px){.cols{grid-template-columns:1fr 1fr}}
+.col h2{font-size:14px;margin:0 0 2px;text-transform:uppercase;letter-spacing:.04em;color:var(--sel);border-bottom:2px solid var(--lime);padding-bottom:4px}.col>p{margin:0 0 10px;color:var(--text-secondary);font-size:12px;min-height:34px}
+.area{background:var(--surface-1);border:1px solid var(--ring);border-radius:8px;padding:9px 11px;margin-bottom:8px}
+.area.k{border-left:4px solid var(--sel)}.area h3{font-size:13px;margin:0 0 3px}.area .kpi{display:block;font-size:12px}
+.area .tag{margin-top:4px}.area.click{cursor:pointer}.area.click:hover{outline:2px solid var(--sel);outline-offset:-1px}
+.bridge{font-size:11.5px;color:var(--text-secondary);margin-top:3px}.warnb{color:var(--critical);font-weight:600}
 </style></head>
 <body><div class="viz-root">
-<header><h1>Topical cluster map — /kien-thuc</h1>
-<div class="sub" id="meta"></div></header>
+<header><img src="../../1-brand/assets/logos/logo-for-light-bg.png" alt="Chứng khoán DSC"><div><h1>Topical map</h1>
+<div class="sub" id="meta"></div></div><a class="back" href="../../0-dashboard/index.html#strategy">← Bảng điều hành</a></header>
 <div class="bar">
- <span class="seg" id="view"><button data-v="graph" class="on">Đồ thị đề xuất</button><button data-v="live">Đồ thị hiện tại</button><button data-v="list">Danh sách nhóm</button></span>
+ <span class="seg" id="view"><button data-v="site" class="on">Bản đồ site</button><button data-v="graph">Cấu trúc link chuẩn</button><button data-v="live">Link đang có trên web</button><button data-v="list">Bảng nhóm bài</button></span>
  <label class="legend" id="xcl"><input type="checkbox" id="xcb"> Link giữa các cụm</label>
- <span class="seg" id="mode"><button data-m="link" class="on">Màu: link pillar/hub</button><button data-m="delta">Màu: Δ clicks</button><button data-m="label">Màu: nhãn audit</button></span>
- <select id="lab"><option value="">Lọc nhãn: tất cả</option><option>rank-drop</option><option>striking</option><option>ctr-low</option><option>engage-low</option><option>convert-low</option><option>dead</option><option value="np">Thiếu link pillar</option><option value="nh">Thiếu link hub</option><option value="noreg">Chưa vào registry</option></select>
+ <span class="seg" id="mode"><button data-m="link" class="on">Màu: link pillar/hub</button><button data-m="delta">Màu: Δ clicks</button><button data-m="label">Màu: nhãn audit</button><button data-m="section">Màu: Core/Outer</button></span>
+ <select id="lab"><option value="">Lọc nhãn: tất cả</option><option>rank-drop</option><option>striking</option><option>ctr-low</option><option>engage-low</option><option>convert-low</option><option>dead</option><option value="np">Thiếu link pillar</option><option value="nh">Thiếu link hub</option><option value="noreg">Chưa vào registry</option><option value="nb">Thiếu bridge về Core</option></select>
  <input type="search" id="q" placeholder="Tìm slug / tiêu đề…">
  <span class="legend" id="legend"></span>
 </div>
-<main><section><div id="graph"><svg id="svg"></svg><div class="zoom"><button id="zi">+</button><button id="zo">−</button><button id="zf" title="Vừa khung">⤢</button></div><div class="gh">Cuộn để zoom · kéo để di chuyển · bấm node để mở batch audit</div></div><div id="map" hidden></div></section><aside class="card" id="panel"></aside></main>
+<div id="help" class="help"></div>
+<div id="site" class="site"></div>
+<main id="mainv"><section><div id="graph"><svg id="svg"></svg><div class="zoom"><button id="zi">+</button><button id="zo">−</button><button id="zf" title="Vừa khung">⤢</button></div><div class="gh">Cuộn để zoom · kéo để di chuyển · bấm node để mở batch audit</div></div><div id="map" hidden></div></section><aside class="card" id="panel"></aside></main>
 <div class="tip" id="tip"></div>
 </div>
 <script>
@@ -181,10 +197,12 @@ function dcol(a){ const d=pct(a.cl,a.pc); if(!a.pc&&!a.cl) return ["none","Khôn
  if(d<=-30) return ["dn2","Giảm ≥ 30%"]; if(d<=-10) return ["dn1","Giảm 10–30%"]; if(d<10) return ["mid","±10%"]; if(d<30) return ["up1","Tăng 10–30%"]; return ["up2","Tăng ≥ 30%"]; }
 const LABC={"rank-drop":"critical","ctr-low":"serious","engage-low":"serious","striking":"warning","convert-low":"warning","dead":"none"};
 function lcol(a){ const l=a.lb.split(" ").filter(Boolean); for(const k of ["dead","rank-drop","ctr-low","engage-low","striking","convert-low"]) if(l.includes(k)) return [LABC[k],k]; return ["good","Không nhãn"]; }
-function col(a){ return mode==="link"?stat(a):mode==="delta"?dcol(a):lcol(a); }
+function scol(a){ if(a.sec==="core") return ["good","Core"]; if(a.sec==="off") return ["none","Off (lệch định vị)"];
+ return a.nb?["warning","Outer, thiếu bridge"]:["mid","Outer, có bridge"]; }
+function col(a){ return mode==="link"?stat(a):mode==="delta"?dcol(a):mode==="section"?scol(a):lcol(a); }
 function size(a){ return Math.round(8+22*Math.sqrt(a.cl/maxC)); }
 function match(a){ if(q && !(a.s.includes(q)||a.t.toLowerCase().includes(q))) return false;
- if(!lab) return true; if(lab==="np") return a.np; if(lab==="nh") return a.nh; if(lab==="noreg") return !a.reg&&a.r!=="pillar"; return a.lb.split(" ").includes(lab); }
+ if(!lab) return true; if(lab==="np") return a.np; if(lab==="nh") return a.nh; if(lab==="noreg") return !a.reg&&a.r!=="pillar"; if(lab==="nb") return a.nb; return a.lb.split(" ").includes(lab); }
 function agg(rs){ const cl=rs.reduce((s,a)=>s+a.cl,0), pc=rs.reduce((s,a)=>s+a.pc,0), im=rs.reduce((s,a)=>s+a.im,0);
  const sp=rs.filter(a=>a.r==="spoke"||a.r==="hub"); return {n:rs.length,cl,pc,im,d:pct(cl,pc),ctr:im?cl/im*100:0,
  np:rs.filter(a=>a.np).length,nh:rs.filter(a=>a.nh).length,noreg:rs.filter(a=>!a.reg&&a.r!=="pillar").length,
@@ -196,6 +214,7 @@ function dtxt(d){ return d===null?"–":`<span class="${d<0?"dn":"up"}">${d>0?"+
 function legend(){ if(view==="live"){ const n=LIVEN||["…","…","…"];
   $("#legend").innerHTML=`<span><i class="sw" style="background:var(--muted)"></i>Link trong cùng nhóm con (${n[0]})</span><span><i class="sw" style="background:var(--sel)"></i>Link khác nhóm, cùng cluster (${n[1]})</span><span><i class="sw" style="background:var(--serious)"></i>Link sang cluster khác (${n[2]})</span><span>Chỉ link ngữ cảnh trong thân bài đang live · vị trí node giữ nguyên như đồ thị đề xuất</span>`; return; }
  const L=mode==="link"?[["good","✓ Đủ link pillar/hub"],["warning","! Thiếu link hub"],["critical","✕ Thiếu link pillar"],["none","○ Chưa vào registry"]]
+ :mode==="section"?[["good","Core"],["mid","Outer, có bridge về Core"],["warning","Outer, thiếu bridge"],["none","Off (lệch định vị)"]]
  :mode==="delta"?[["dn2","Giảm ≥ 30%"],["dn1","Giảm 10–30%"],["mid","±10%"],["up1","Tăng 10–30%"],["up2","Tăng ≥ 30% / mới"],["none","Không có clicks"]]
  :[["critical","rank-drop"],["serious","ctr-low / engage-low"],["warning","striking / convert-low"],["none","dead"],["good","Không nhãn"]];
  $("#legend").innerHTML=L.map(([c,t])=>`<span><i class="sw" style="background:var(--${c})"></i>${t}</span>`).join("")+
@@ -253,7 +272,31 @@ document.addEventListener("mousemove",e=>{const d=e.target.closest(".d[data-s],.
  tip.style.display="block"; const x=Math.min(e.clientX+14,innerWidth-360), y=Math.min(e.clientY+14,innerHeight-tip.offsetHeight-10); tip.style.left=x+"px"; tip.style.top=y+"px";});
 $("#meta").innerHTML=`${A.length} bài · ${Object.keys(D.clusters).length} cluster · ${D.order.length} nhóm con · dữ liệu ${D.perf?"GSC 90 ngày (page-audit.csv)":"chưa có performance — chạy page_groups.py report"} · link live theo snapshot sync_live · sinh ${D.built} bởi <code>scripts/topical_map.py</code>`;
 // ───────── graph view: cluster = radial (pillar centre → subgroup/hub ring → articles), clusters on a big ring ─────────
-let view="graph", showXC=false, VB=null, LAY=null, LIVEN=null;
+let view="site", showXC=false, VB=null, LAY=null, LIVEN=null;
+const HELP={
+ site:"<b>Bản đồ site</b> = chiến lược toàn dsc.com.vn: mọi khu vực URL xếp theo vai trò. <b>Core</b> = trang chuyển đổi / phục vụ khách (bài khác phải dẫn về). <b>Outer</b> = nội dung kéo traffic, xây thẩm quyền chủ đề, mỗi cụm có 1 trang Core để dẫn về (bridge). <b>Trust</b> = trang chứng minh DSC là ai. <b>Off</b> = ngoài định vị: giữ bài đang có traffic, không viết thêm, không xoá. Viền đen = cụm /kien-thuc (bấm để xem nhóm bài). Sửa: taxonomy.json → site / topics.",
+ graph:"<b>Cấu trúc link chuẩn</b> = cách các bài /kien-thuc <i>nên</i> nối với nhau theo taxonomy.json: mỗi cụm 1 pillar (ô vuông giữa), mỗi nhóm con 1 hub (vòng tròn viền đậm), bài thường quanh hub. Đường nét đứt đậm = bài đang <i>thiếu</i> link bắt buộc về hub / pillar.",
+ live:"<b>Link đang có trên web</b> = link ngữ cảnh thật trong thân bài theo snapshot sync_live, vẽ trên cùng vị trí node. So với 'Cấu trúc link chuẩn' để thấy chỗ thiếu / chỗ link lan sang cụm khác (xám đậm).",
+ list:"<b>Bảng nhóm bài</b> = từng cụm → nhóm con → bài, kèm clicks, nhãn audit và thứ tự ưu tiên audit (bấm 1 nhóm ở cột phải)."};
+function renderSite(){
+ const S=D.site||{sections:[]}, T=D.topics||{}, cols={core:[],outer:[],trust:[],off:[]};
+ const byC={}; A.forEach(a=>{const c=byC[a.c]=byC[a.c]||{n:0,cl:0,pc:0,ke:0,nb:0}; c.n++; c.cl+=a.cl; c.pc+=a.pc; c.ke+=a.ke; c.nb+=a.nb?1:0;});
+ const keT=Object.values(byC).reduce((s,c)=>s+c.ke,0)||1, tot=(S.totals||{}).clicks||1;
+ for(const s of S.sections){
+  if(s.section==="topics"){ for(const [code,t] of Object.entries(T)){ const c=byC[code]||{n:0,cl:0,pc:0,ke:0,nb:0};
+    (cols[t.section]||cols.outer).push(`<div class="area k click" data-cl="${code}"><h3>Kiến thức · C${code}. ${t.name}</h3>
+     <span class="kpi"><b>${fmt(c.cl)}</b> clicks ${dtxt(pct(c.cl,c.pc))} · ${c.n} bài · ${Math.round(c.ke/keT*100)}% key events</span>
+     <span class="kpi">Thực thể: ${t.entity||"–"}</span>
+     ${t.section==="outer"?`<div class="bridge">→ dẫn về <b>${t.bridge_to||"chưa đặt"}</b>${c.nb?` · <span class="warnb">${c.nb} bài chưa link</span>`:""}</div>`:""}</div>`); } continue; }
+  (cols[s.section]||cols.off).push(`<div class="area"><h3>${s.name}</h3><span class="kpi"><b>${fmt(s.clicks)}</b> clicks ${dtxt(pct(s.clicks,s.prev))} · ${fmt(s.urls)} URL · ${Math.round(s.clicks/tot*100)}% clicks site</span>
+   <span class="note">${s.note||""}</span><div>${s.folders.map(f=>`<span class="tag">${f}</span>`).join("")}</div></div>`); }
+ const H={core:["Core","Trang chuyển đổi / phục vụ khách — nơi các bài khác dẫn về."],outer:["Outer","Kéo traffic, xây thẩm quyền chủ đề — mỗi cụm có trang Core để dẫn về."],
+  trust:["Trust","Chứng minh DSC là ai (pháp nhân, IR, tin tức) — củng cố định vị, không viết SEO."],off:["Off — ngoài định vị","Giữ bài đang có traffic, không viết thêm, không xoá; nếu viết thì phải có góc dẫn về chứng khoán."]};
+ $("#site").innerHTML=`<div class="pos"><div><b>Định vị nội dung</b> ${D.pos.positioning||"chưa ghi — profile.md §0"}</div><div><b>Thực thể trung tâm</b> ${D.pos.entity||"–"}</div>
+  <div class="note">Áp cho toàn site, không chỉ /kien-thuc. GSC ${S.start||""} → ${S.end||""} so 90 ngày trước · tổng ${fmt(tot)} clicks · sửa: <code>knowledge/1-brand/profile.md</code> §0</div></div>
+  <div class="cols">${Object.entries(H).map(([k,[h,p]])=>`<div class="col"><h2>${h}</h2><p>${p}</p>${cols[k].join("")||'<p class="note">—</p>'}</div>`).join("")}</div>
+  ${(S.unmapped||[]).length?`<p class="note">Thư mục có clicks chưa xếp vào khu vực nào: ${S.unmapped.map(g=>g.group).join(", ")} → thêm vào taxonomy.json → site.</p>`:""}`;
+}
 const NS="http://www.w3.org/2000/svg";
 function layout(){
  const P={}, CL=[];
@@ -344,9 +387,14 @@ function focusSg(g){ if(view==="list"||!LAY) return; const its=Object.values(LAY
  const xs=its.map(i=>i.X), ys=its.map(i=>i.Y), cx=(Math.min(...xs)+Math.max(...xs))/2, cy=(Math.min(...ys)+Math.max(...ys))/2, m=Math.max(260,Math.max(...xs)-Math.min(...xs),Math.max(...ys)-Math.min(...ys))*1.4;
  VB=[cx-m/2,cy-m/2,m,m]; $("#svg").setAttribute("viewBox",VB.join(" ")); }
 
-function render(){ legend(); if(view!=="list") drawGraph(); else renderList(); if(view==="live") legend(); panel(); }
-const qv=new URLSearchParams(location.search).get("view"); if(["graph","live","list"].includes(qv)){ view=qv; document.querySelectorAll("#view button").forEach(x=>x.classList.toggle("on",x.dataset.v===qv)); $("#graph").hidden=view==="list"; $("#map").hidden=view!=="list"; }
-const h0=decodeURIComponent(location.hash.slice(1)); if(byG[h0]) selSg=h0;
+function render(){ $("#help").innerHTML=HELP[view]; const st=view==="site"; $("#site").hidden=!st; $("#mainv").hidden=st;
+ document.querySelectorAll("#mode,#lab,#q,#legend").forEach(x=>x.style.display=st?"none":""); if(st){ $("#xcl").style.display="none"; renderSite(); return; }
+ legend(); if(view!=="list") drawGraph(); else renderList(); if(view==="live") legend(); panel(); }
+document.addEventListener("click",e=>{const c=e.target.closest(".area[data-cl]"); if(!c) return; const g=D.order.find(x=>x.replace(/[a-z]$/,"")===c.dataset.cl);
+ view="list"; document.querySelectorAll("#view button").forEach(x=>x.classList.toggle("on",x.dataset.v==="list")); $("#graph").hidden=true; $("#map").hidden=false; selSg=g||null; render();
+ document.getElementById("c"+c.dataset.cl)?.scrollIntoView({block:"start"});});
+const qv=new URLSearchParams(location.search).get("view"); if(["site","graph","live","list"].includes(qv)){ view=qv; document.querySelectorAll("#view button").forEach(x=>x.classList.toggle("on",x.dataset.v===qv)); $("#graph").hidden=view==="list"; $("#map").hidden=view!=="list"; }
+const h0=decodeURIComponent(location.hash.slice(1)); if(byG[h0]){ selSg=h0; if(view==="site") view="graph"; document.querySelectorAll("#view button").forEach(x=>x.classList.toggle("on",x.dataset.v===view)); }
 render(); if(selSg) focusSg(selSg);
 addEventListener("hashchange",()=>{const g=decodeURIComponent(location.hash.slice(1)); if(byG[g]){selSg=g;render();focusSg(g);}});
 </script></body></html>

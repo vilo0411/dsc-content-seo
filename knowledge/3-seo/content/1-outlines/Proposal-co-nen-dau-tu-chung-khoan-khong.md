@@ -9,6 +9,8 @@ PAA_Questions:
   - q: Tại sao không nên chơi chứng khoán?
   - q: Chơi chứng khoán 1 năm lãi bao nhiêu?
   - q: Chơi chứng khoán cần biết gì?
+Created: 2026-10-09
+Updated: 2026-10-09
 ---
 
 # 📋 BÁO CÁO TỐI ƯU SEO (SEO Optimization Proposal)

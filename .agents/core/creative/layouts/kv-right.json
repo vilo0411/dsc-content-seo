@@ -1,9 +1,8 @@
 {
   "name": "kv-right",
   "style": "KV",
-  "mo_ta": "Key visual tràn khung, chủ thể bên trái, khối chữ căn phải (badge → script → tiêu đề in hoa ánh kim → phụ đề). Như bài FTSE / Bản sắc Việt trên fanpage.",
-  "default_theme": "emerald",
-  "type": "serif",
+  "mo_ta": "Key visual tràn khung, chủ thể bên trái, khối chữ căn phải (badge → script → tiêu đề Plus Jakarta Sans → phụ đề). Như bài FTSE / Bản sắc Việt trên fanpage.",
+  "default_theme": "dark",
   "align": "right",
   "logo": "right",
   "host": false,

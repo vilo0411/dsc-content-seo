@@ -54,6 +54,8 @@ Internal_Links:
     url: "/blog/lai-suat-tiet-kiem-acb/"
   - anchor: "phí giao dịch chứng khoán"
     url: "/blog/phi-giao-dich-chung-khoan/"
+Created: 2026-06-15
+Updated: 2026-06-15
 ---
 
 # SEO Content Outline: Nên gửi tiết kiệm hay mua vàng

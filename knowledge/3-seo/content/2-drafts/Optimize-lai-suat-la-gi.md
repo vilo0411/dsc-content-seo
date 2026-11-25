@@ -2,6 +2,8 @@
 title: Lãi suất là gì? Phân loại và ảnh hưởng đến chứng khoán
 source: https://www.dsc.com.vn/kien-thuc/lai-suat-la-gi
 description: Lãi suất là gì? Tìm hiểu các loại lãi suất phổ biến, vai trò kinh tế và cách tối ưu danh mục đầu tư chứng khoán cùng chuyên gia DSC ngay tại đây.
+Created: 2026-07-29
+Updated: 2026-07-29
 ---
 
 Bạn đang tìm hiểu **lãi suất là gì** để tối ưu hóa kế hoạch tài chính cá nhân của mình? Sự biến động của lãi suất ảnh hưởng trực tiếp đến dòng tiền tiết kiệm và các quyết định đầu tư cổ phiếu. Chúng tôi sẽ phân tích các loại lãi suất phổ biến và cách đón đầu cơ hội đầu tư cùng chuyên gia DSC.

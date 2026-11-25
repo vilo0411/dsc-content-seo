@@ -4,6 +4,8 @@ PAA_Questions:
   - "Chỉ số ROA và ROE là gì?"
   - "Làm cách nào để tính chỉ số ROE?"
   - "ROE của ngân hàng là gì?"
+Created: 2026-10-07
+Updated: 2026-10-07
 ---
 
 # 📋 BÁO CÁO TỐI ƯU SEO (SEO Optimization Proposal)

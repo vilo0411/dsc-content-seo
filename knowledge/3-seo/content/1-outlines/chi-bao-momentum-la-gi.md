@@ -43,6 +43,8 @@ Internal_Links:
   - anchor: "chỉ báo Bollinger Bands"
     url: "/blog/bollinger-bands-la-gi/"
     suggested_placement: "H2: Giải pháp cho vấn đề không biên giới của Momentum bằng Bollinger Bands"
+Created: 2026-05-21
+Updated: 2026-05-21
 ---
 
 # SEO Content Outline: Chỉ báo Momentum là gì? Chiến lược giao dịch theo đà thị trường chứng khoán Việt Nam

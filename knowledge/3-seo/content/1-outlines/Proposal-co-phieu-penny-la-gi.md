@@ -1,3 +1,8 @@
+---
+Created: 2026-08-25
+Updated: 2026-08-25
+---
+
 # 📋 BÁO CÁO TỐI ƯU SEO (SEO Optimization Proposal)
 
 ## 0. Content Strategy Header ⚠️ ĐỌC TRƯỚC KHI XEM BẤT KỲ MỤC NÀO

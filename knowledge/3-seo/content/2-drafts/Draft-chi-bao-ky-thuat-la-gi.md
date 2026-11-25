@@ -2,6 +2,8 @@
 title: "Chỉ báo kỹ thuật là gì? Các chỉ báo trong chứng khoán phổ biến"
 source: "https://www.dsc.com.vn/kien-thuc/chi-bao-ky-thuat-la-gi"
 description: "Chỉ báo kỹ thuật là gì? Khám phá các chỉ báo chứng khoán phổ biến (MA, RSI, Bollinger Bands, Fibonacci) và cách phối hợp lọc tín hiệu giả cùng chuyên gia DSC. Click ngay!"
+Created: 2026-06-05
+Updated: 2026-06-05
 ---
 
 Nhiều nhà đầu tư mới (F0) thường bị quá tải khi nhìn vào biểu đồ. Việc lạm dụng quá nhiều chỉ báo kỹ thuật dễ dẫn đến quyết định sai lầm.

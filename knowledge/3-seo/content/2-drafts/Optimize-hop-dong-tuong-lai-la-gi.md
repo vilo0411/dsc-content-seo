@@ -2,6 +2,8 @@
 title: "Hợp Đồng Tương Lai Là Gì? Lợi Ích Và Rủi Ro Phái Sinh"
 source: "https://www.dsc.com.vn/kien-thuc/hop-dong-tuong-lai-la-gi"
 description: "Hợp đồng tương lai là gì? Cùng DSC tìm hiểu đặc điểm, cơ chế ký quỹ, 9 lợi ích và cách quản trị rủi ro phái sinh hiệu quả qua ví dụ VN30 thực tế."
+Created: 2026-08-11
+Updated: 2026-08-11
 ---
 
 Thị trường chứng khoán phái sinh ngày càng thu hút sự quan tâm của giới đầu tư nhờ khả năng tìm kiếm lợi nhuận hai chiều linh hoạt và tối ưu hóa đòn bẩy vốn. Trong đó, hợp đồng tương lai là công cụ giao dịch chủ lực với thanh khoản sôi động bậc nhất hiện nay.

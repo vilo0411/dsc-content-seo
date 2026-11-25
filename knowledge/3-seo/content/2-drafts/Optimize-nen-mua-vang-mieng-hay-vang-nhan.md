@@ -2,6 +2,8 @@
 title: 'Nên mua vàng miếng hay vàng nhẫn để tích trữ năm 2026?'
 source: 'https://www.dsc.com.vn/kien-thuc/nen-mua-vang-mieng-hay-vang-nhan'
 description: 'Phân vân nên mua vàng miếng hay vàng nhẫn để tích trữ? Xem ngay bảng so sánh chi tiết, rủi ro spread rộng và chiến lược phân bổ vốn an toàn năm 2026.'
+Created: 2026-07-30
+Updated: 2026-07-30
 ---
 
 # Nên mua vàng miếng hay vàng nhẫn để tích trữ năm 2026?

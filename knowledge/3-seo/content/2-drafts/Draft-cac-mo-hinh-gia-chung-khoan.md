@@ -1,3 +1,8 @@
+---
+Created: 2026-05-21
+Updated: 2026-05-21
+---
+
 # Các mô hình giá trong chứng khoán: Hướng dẫn thực chiến cho F0
 
 Nhiều nhà đầu tư F0 thua lỗ vì mua đuổi ngay khi thấy mô hình giá vừa chớm hình thành. Các bẫy tăng giá xuất hiện liên tục khiến tài khoản bị bào mòn.

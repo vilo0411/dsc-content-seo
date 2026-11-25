@@ -16,6 +16,7 @@
 |------|---------|
 | `assets/brand.md` | [BRAND] block — paste cố định |
 | `assets/negative.md` | [NEGATIVE] block — paste cố định |
+| `assets/styles/abstract-brand.md` | **Mặc định** — trừu tượng 3D xanh theo brand guideline (ảnh bìa không số liệu, khái niệm, vĩ mô) |
 | `assets/styles/abstract-finance.md` | Chỉ báo kỹ thuật, oscillator, chart |
 | `assets/styles/editorial-photo.md` | Phân tích, lifestyle tài chính |
 | `assets/styles/flat-illustration.md` | Hướng dẫn, checklist, step-by-step |
@@ -113,7 +114,7 @@ Agent chỉ cần điền block này. Dùng `{}` cho nested objects, `[]` cho ar
 | # | Check | Pass |
 |---|-------|------|
 | 1 | No text | Không có chữ trong featured/inline |
-| 2 | Brand green | Màu #00AD14 xuất hiện tự nhiên |
+| 2 | Brand green | Lime `#2AD03D` / Emerald `#1BBE72` xuất hiện tự nhiên, không màu ngoài DESIGN.md §2 |
 | 3 | No red | Không có đỏ bất kỳ dạng nào |
 | 4 | No cliché | Không bắt tay, không chỉ màn hình |
 | 5 | Kích thước đúng | featured 1000×600 · inline / infographic 800×500 (chuẩn CMS DSC) |

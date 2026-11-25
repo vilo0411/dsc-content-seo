@@ -43,6 +43,8 @@ Internal_Links:
   - anchor: "các chỉ số phân tích báo cáo tài chính"
     url: "/blog/cac-chi-so-phan-tich-bao-cao-tai-chinh/"
     suggested_placement: "H2: Các thành phần cốt lõi cấu thành hệ thống giao dịch định lượng"
+Created: 2026-05-21
+Updated: 2026-05-21
 ---
 
 # SEO Content Outline: Quantitative Trading là gì? Ứng dụng tư duy định lượng cho nhà đầu tư Việt Nam
