@@ -6,10 +6,10 @@ description: Viết post Facebook Fanpage / Zalo OA / LinkedIn từ 1 bài đã 
 # /social-post <slug|chủ đề> [--channel facebook,zalo,linkedin] [--job CMP-…] [--variants N]
 
 ## Bước 0 — Context (1 lần/session)
-`.antigravity/core/README.md` §1 (profile, brand.json, compliance-finance, blacklist) + `.antigravity/domains/social/README.md` và các file nó liệt kê.
+`.agents/core/README.md` §1 (profile, brand.json, compliance-finance, blacklist) + `.agents/domains/social/README.md` và các file nó liệt kê.
 
 ## Bước 1 — Chất liệu
-- Có slug: xác nhận bài đã live (`grep <slug> knowledge/3-pipeline/publish-ledger.csv`; cần nội dung live: `python scripts/sync_live.py --show <slug>`). Lấy 1 ý mạnh nhất + số liệu có nguồn trong bài. Finalized nhưng chưa live → dừng, báo user.
+- Có slug: xác nhận bài đã live (`grep <slug> knowledge/3-seo/logs/publish-ledger.csv`; cần nội dung live: `python scripts/sync_live.py --show <slug>`). Lấy 1 ý mạnh nhất + số liệu có nguồn trong bài. Finalized nhưng chưa live → dừng, báo user.
 - Chủ đề tự do: `python scripts/news_feed.py --topic "<chủ đề>" --days 14`, số liệu `python scripts/market_facts.py --brief`.
 - Persona: chọn theo kênh (channel-specs.md) → `python scripts/persona.py P<n> --part tone`.
 
@@ -22,12 +22,12 @@ description: Viết post Facebook Fanpage / Zalo OA / LinkedIn từ 1 bài đã 
 ```bash
 python scripts/mkt_lint.py <file> --channel <kênh>
 ```
-Có số liệu / phí / lãi suất / mã cổ phiếu → chạy Compliance Reviewer (`.antigravity/core/agents/compliance-reviewer.md`, sub-agent read-only).
+Có số liệu / phí / lãi suất / mã cổ phiếu → chạy Compliance Reviewer (`.agents/core/agents/compliance-reviewer.md`, sub-agent read-only).
 
 ## Bước 3b — Ảnh
 Biến thể cần ảnh mới (dòng `Hình:` có kích thước + style, không phải "dùng ảnh bài gốc") → `/creative <file post>`: init → điền slide carousel → render → QA máy + creative-qa.
 
 ## Bước 4 — Lưu & gate
-- File: `knowledge/5-campaigns/<job>/social/<kênh>-<slug>-v1.md`. Không có `--job` → `python scripts/campaign.py path social-<YYYY-MM>` hoặc tạo `python scripts/campaign.py new social-<YYYY-MM> --title "Social <tháng>" --channels social`.
+- File: `knowledge/6-campaigns/<job>/social/<kênh>-<slug>-v1.md`. Không có `--job` → `python scripts/campaign.py path social-<YYYY-MM>` hoặc tạo `python scripts/campaign.py new social-<YYYY-MM> --title "Social <tháng>" --channels social`.
 - Trình bày ≤ 25 dòng: biến thể đề xuất, kết quả lint, QA ảnh + link `social/creatives/v<N>/preview.html`, việc cần user (pháp chế, ảnh minh hoạ). Dừng chờ duyệt.
 - User duyệt → copy bản chọn vào `<job>/approved/`. Muốn đưa lên kênh syndication cộng đồng → `/syndicate <slug>`.

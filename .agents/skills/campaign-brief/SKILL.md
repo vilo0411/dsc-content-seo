@@ -6,13 +6,13 @@ description: Khởi tạo chiến dịch marketing đa kênh — tạo job folde
 # /campaign-brief <tên chiến dịch> [--channels seo,social,ads,landing]
 
 ## Bước 0 — Context
-`.antigravity/core/README.md` §1 + `.antigravity/domains/campaign/README.md` + `.antigravity/rules/cta-conversion.md`.
+`.agents/core/README.md` §1 + `.agents/domains/campaign/README.md` + `.agents/rules/cta-conversion.md`.
 
 ## Bước 1 — Tạo job
 ```bash
 python scripts/campaign.py new <slug> --title "<tên>" --channels <kênh>
 ```
-In ra đường dẫn job; brief.md sinh từ `.antigravity/domains/campaign/references/brief-template.md`.
+In ra đường dẫn job; brief.md sinh từ `.agents/domains/campaign/references/brief-template.md`.
 
 ## Bước 2 — Điền brief
 - Hỏi user 1 lần (gộp) những gì không suy ra được: mục tiêu kinh doanh + số, thời gian, ngân sách, offer.

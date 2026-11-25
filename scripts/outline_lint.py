@@ -2,7 +2,7 @@
 """Lint an SEO outline BEFORE it is shown to the user (Gate cuối của /outlining).
 
 Usage:
-    python scripts/outline_lint.py knowledge/4-content/1-outlines/<slug>.md [--json]
+    python scripts/outline_lint.py knowledge/3-seo/content/1-outlines/<slug>.md [--json]
 
 Checks (deterministic, offline):
     FMT-*      Content_Type must match the format that wins the SERP (re-computed from the SERP cache
@@ -18,11 +18,14 @@ Checks (deterministic, offline):
                PAA labelled as Google's but absent from the SERP cache
     ENT-*      terms used by >= 3 ranking pages (serp_research.topic_coverage) must be in the outline
     IG-*       Information_Gain is a list of claims, each with the H2 that delivers it and a checkable proof
+    EAV-*      (only when the outline has an `EAV:` block) every row has value + source; root attributes that
+               >= 60% of competitors cover (serp_research.eav_candidates) are planned; >= 1 rare/unique row
 Exit 1 when any CRITICAL/MAJOR finding exists.
 """
 from __future__ import annotations
 
 import argparse
+import csv
 import json
 import re
 import sys
@@ -34,8 +37,8 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 ROOT = Path(__file__).resolve().parents[1]
-SERP_DIR = ROOT / ".antigravity/skills/web-serp/scripts"
-COUNT_WORDS_DIR = ROOT / ".antigravity/skills/qa-qc"
+SERP_DIR = ROOT / ".agents/skills/web-serp/scripts"
+COUNT_WORDS_DIR = ROOT / "scripts"
 
 MAX_TITLE = 59
 META_RANGE = (140, 160)
@@ -190,11 +193,63 @@ def skipped_terms(fm: dict) -> set[str]:
     return {fold(re.split(r"\s+[—–-]\s+", x)[0]) for x in yaml_list(fm.get("Entities_Skipped", ""))}
 
 
+def parse_eav(yaml_raw: str) -> list[dict]:
+    """EAV block: `- attribute:` items with entity / value / source / type / h2. Empty list = no block."""
+    block = re.search(r"^EAV:[ \t]*\n([\s\S]*?)(?=^[A-Za-z_#]|\Z)", yaml_raw, re.M)
+    if not block:
+        return []
+    items = []
+    for chunk in re.split(r"^\s*-\s*(?=attribute\s*:)", block.group(1), flags=re.M)[1:]:
+        it = {}
+        for key in ("attribute", "entity", "value", "source", "type", "h2"):
+            m = re.search(r"^\s*%s\s*:\s*(.+)$" % key, chunk, re.M)
+            it[key] = m.group(1).split(" #")[0].strip().strip('"\'') if m else ""
+        items.append(it)
+    return items
+
+
+def _bigram_set(text: str) -> set:
+    ws = [w for w in fold(text).split() if len(w) > 1]
+    return {(ws[i], ws[i + 1]) for i in range(len(ws) - 1)} if len(ws) > 1 else set(ws)
+
+
+def attr_planned(attr: str, planned: list[str]) -> bool:
+    """A competitor attribute is planned when its name is in the outline or shares >= 60% bigrams with an
+    EAV row / heading (same matching rule serp_research uses to group headings)."""
+    a = _bigram_set(attr)
+    return any(a and (b := _bigram_set(p)) and len(a & b) / min(len(a), len(b)) >= 0.6 for p in planned)
+
+
+EAV_TYPES = {"root", "rare", "unique"}
+EAV_SOURCE = re.compile(r"(?i)^(brand-facts:\S+|market_facts|https?://\S+|dsc nội bộ|calc)")
+EAV_MIN_ROOT = 0.7
 IG_TYPES = {"calc", "dsc-data", "regulation", "screenshot", "comparison"}
 ENT_MIN_COVERAGE = 0.7
 
 
 # ---------------------------------------------------------------- checks
+
+def pillar_conflict(kw: str, slug: str) -> str:
+    """Name the existing URL that already owns this keyword: a cluster pillar (taxonomy.json) or a
+    registry row (strategy/pages.csv) with status Merged. A second URL for the same keyword splits ranking signals —
+    the right move is /optimize on that URL (lesson from cach-choi-chung-khoan, 2026-11-18)."""
+    k = fold(kw).strip()
+    if not k:
+        return ""
+    reg = ROOT / "knowledge/3-seo/strategy/taxonomy.json"
+    if reg.exists():
+        for c in json.loads(reg.read_text(encoding="utf-8")).get("clusters", []):
+            owned = [c.get("pillar_keyword") or ""] + list(c.get("pillar_anchors") or [])
+            if c.get("pillar") and c["pillar"] != slug and any(fold(a).strip() == k for a in owned if a):
+                return f"pillar `{c['pillar']}` (taxonomy.json)"
+    pages = ROOT / "knowledge/3-seo/strategy/pages.csv"
+    if pages.exists():
+        with pages.open(encoding="utf-8-sig", newline="") as f:
+            for r in csv.DictReader(f):
+                if r.get("status") == "Merged" and fold(r.get("key_chinh") or "").strip() == k:
+                    return f"pages.csv: `{r['slug']}` Merged → `{r.get('merged_into') or '?'}`"
+    return ""
+
 
 def lint(path: Path) -> Report:
     rep = Report(str(path))
@@ -206,6 +261,10 @@ def lint(path: Path) -> Report:
 
     kw = fm.get("Target_Keyword", "")
     ctype = fm.get("Content_Type", "")
+    owner = pillar_conflict(kw, path.stem.replace("Outline-", ""))
+    if owner and "KW-pillar" not in str(fm.get("Lint_Skip", "")):
+        rep.add("MAJOR", "KW-pillar", f"Keyword “{kw}” đã thuộc {owner} — viết URL mới sẽ tranh hạng với bài đó. "
+                "Dùng /optimize cho URL hiện có; chỉ tạo bài mới khi user xác nhận (ghi `Lint_Skip: KW-pillar`)")
     for key in ("Target_Keyword", "Search_Intent", "Content_Type", "Thesis", "Persona", "Writer_Profile",
                 "Word_Count_Target", "Featured_Snippet", "SERP_Status"):
         v = fm.get(key)
@@ -229,6 +288,20 @@ def lint(path: Path) -> Report:
                 rep.add("MAJOR", "IG-shape", f"Mục Information_Gain thiếu {', '.join(lack)}: “{it['claim'][:60]}”")
             if it["type"] and it["type"] not in IG_TYPES:
                 rep.add("MINOR", "IG-shape", f"Information_Gain type `{it['type']}` — chọn 1 trong {sorted(IG_TYPES)}")
+    # --- EAV block (optional; required shape once present)
+    eav = parse_eav(yaml_raw)
+    rep.stats["eav"] = len(eav)
+    for it in eav:
+        name = it["attribute"][:50]
+        if not it["value"] or it["value"].startswith("["):
+            rep.add("MAJOR", "EAV-no-value", f"EAV “{name}” chưa có value — không có nguồn thì bỏ dòng hoặc hỏi user")
+        if not EAV_SOURCE.match(it["source"] or ""):
+            rep.add("MAJOR", "EAV-no-source", f"EAV “{name}” source `{it['source'] or 'trống'}` — dùng brand-facts:<id>, "
+                                              "market_facts, URL source-whitelist, DSC nội bộ hoặc calc")
+        if it["type"] and it["type"] not in EAV_TYPES:
+            rep.add("MINOR", "EAV-type", f"EAV “{name}” type `{it['type']}` — chọn root / rare / unique")
+    if eav and not any(it["type"] in ("rare", "unique") for it in eav):
+        rep.add("MAJOR", "EAV-no-gain", "EAV chỉ có thuộc tính root — cần ≥ 1 dòng rare / unique (thứ đối thủ ít hoặc không có)")
     if ctype and ctype not in CONTENT_TYPES:
         rep.add("MAJOR", "YAML-enum", f"Content_Type `{ctype}` không thuộc {sorted(CONTENT_TYPES)}")
     if fm.get("Featured_Snippet") and fm["Featured_Snippet"] not in SNIPPETS:
@@ -255,6 +328,19 @@ def lint(path: Path) -> Report:
                 rep.add("MAJOR", "ENT-outline",
                         f"Outline phủ {round(cov * 100)}% thuật ngữ mà ≥ 3 đối thủ đều dùng (cần ≥ {round(ENT_MIN_COVERAGE * 100)}%). "
                         f"Thiếu: {' · '.join(missing)}. Đưa vào H2/Entities, hoặc ghi `Entities_Skipped: [cụm — lý do]`")
+        # --- EAV: root attributes of the SERP must be planned (only when the outline uses the EAV block)
+        if eav:
+            roots = [r["attribute"] for r in sr.eav_candidates(dict(sdata, competitors_all=sdata.get("competitors") or []))["rows"]
+                     if r["type"] == "root"]
+            planned = [it["attribute"] for it in eav] + [h for _, h, _ in headings(body)] + list(skipped)
+            miss = [a for a in roots if not attr_planned(a, planned) and fold(a) not in folded]
+            if roots:
+                cov = 1 - len(miss) / len(roots)
+                rep.stats["eav_root_coverage"] = f"{round(cov * 100)}% ({len(roots) - len(miss)}/{len(roots)})"
+                if cov < EAV_MIN_ROOT:
+                    rep.add("MAJOR", "EAV-root-missing",
+                            f"EAV phủ {round(cov * 100)}% thuộc tính gốc đối thủ đều có (cần ≥ {round(EAV_MIN_ROOT * 100)}%). "
+                            f"Thiếu: {' · '.join(miss)}. Thêm dòng EAV / H2, hoặc ghi `Entities_Skipped: [thuộc tính — lý do]`")
         # --- information gain must not already be on a ranking page
         comp_text = fold(" ".join(c.get("content") or "" for c in sr.usable_competitors(sdata.get("competitors"))))
         for it in ig:

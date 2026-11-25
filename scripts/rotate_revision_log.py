@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Keep revision-log.md small: keep the last 30 days, move older entries to knowledge/3-pipeline/revision-log/YYYY-Qn.md
+"""Keep revision-log.md small: keep the last 30 days, move older entries to knowledge/3-seo/logs/revision-log/YYYY-Qn.md
 and the old markdown "QA Score Log" table to qa-score-log.csv. Idempotent; run any time (also from /weekly).
 
     python scripts/rotate_revision_log.py [--dry-run]
 
-Search across all quarters: `grep -rn "<slug>" knowledge/3-pipeline/revision-log*`
+Search across all quarters: `grep -rn "<slug>" knowledge/3-seo/logs/revision-log*`
 """
 from __future__ import annotations
 
@@ -19,9 +19,9 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 ROOT = Path(__file__).resolve().parents[1]
-LOG = ROOT / "knowledge/3-pipeline/revision-log.md"
-ARCH = ROOT / "knowledge/3-pipeline/revision-log"
-SCORE_CSV = ROOT / "knowledge/3-pipeline/qa-score-log.csv"
+LOG = ROOT / "knowledge/3-seo/logs/revision-log.md"
+ARCH = ROOT / "knowledge/3-seo/logs/revision-log"
+SCORE_CSV = ROOT / "knowledge/3-seo/logs/qa-score-log.csv"
 SCORE_COLS = ["date", "slug", "score", "critical", "major", "minor", "anti_ai", "seo", "readability", "link", "geo", "slop"]
 ENTRY = re.compile(r"^### \[(\d{4})-(\d{2})-(\d{2})\]")
 KEEP_DAYS = 30
@@ -108,8 +108,8 @@ def main() -> int:
             for cells in scores:
                 w.writerow(score_row(cells))
     head_text = "\n".join(head).rstrip()
-    note = (f"\n\n> Mục quý trước nằm ở `knowledge/3-pipeline/revision-log/YYYY-Qn.md` (`python scripts/rotate_revision_log.py`). "
-            f"Tìm theo bài: `grep -rn \"<slug>\" knowledge/3-pipeline/revision-log*`. Điểm QA: `qa-score-log.csv`.")
+    note = (f"\n\n> Mục quý trước nằm ở `knowledge/3-seo/logs/revision-log/YYYY-Qn.md` (`python scripts/rotate_revision_log.py`). "
+            f"Tìm theo bài: `grep -rn \"<slug>\" knowledge/3-seo/logs/revision-log*`. Điểm QA: `qa-score-log.csv`.")
     if "revision-log/YYYY-Qn.md" in head_text:
         note = ""
     LOG.write_text(head_text + note + "\n\n" + "\n\n".join(keep) + "\n", encoding="utf-8")

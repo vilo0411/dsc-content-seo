@@ -4,7 +4,7 @@
 Usage:
     python scripts/md_to_cms_html.py <slug | path/to/Final-slug.md> [--stdout]
 
-Output: knowledge/4-content/4-cms/<slug>.html (body only, no H1 — the CMS renders the
+Output: knowledge/3-seo/content/4-cms/<slug>.html (body only, no H1 — the CMS renders the
 title itself). Title / Meta / H1 are printed to the console for the CMS fields.
 
 Markup mirrors what the CMS stores on the live site (see knowledge/raw/live/html/):
@@ -23,8 +23,8 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-FINAL_DIR = ROOT / "knowledge/4-content/3-finalized"
-OUT_DIR = ROOT / "knowledge/4-content/4-cms"
+FINAL_DIR = ROOT / "knowledge/3-seo/content/3-finalized"
+OUT_DIR = ROOT / "knowledge/3-seo/content/4-cms"
 
 BLOCK_TAGS = r"div|section|table|figure"
 # Live pages render images from the extgw host, but the CMS source must use relative /uploads/.
@@ -57,6 +57,41 @@ def inline(text: str) -> str:
     out = re.sub(r"(?<!\w)_(?!\s)(.+?)(?<!\s)_(?!\w)", r"<em>\1</em>", out)
     out = re.sub(r"`([^`]+)`", r"<code>\1</code>", out)
     return out
+
+
+IMG_SIZES = {(800, 500), (1000, 600)}   # CMS standard: in-article 800x500, featured 1000x600
+size_warnings: list[str] = []
+
+
+def img_size(src: str) -> tuple[int, int] | None:
+    """Width/height of a local JPEG/PNG (stdlib only); None if not a local file."""
+    path = ROOT / src
+    if src.startswith("http") or not path.is_file():
+        return None
+    data = path.read_bytes()
+    if data[:8] == b"\x89PNG\r\n\x1a\n":
+        return int.from_bytes(data[16:20], "big"), int.from_bytes(data[20:24], "big")
+    i = 2
+    while i < len(data) - 9:
+        if data[i] != 0xFF:
+            i += 1
+            continue
+        marker, seg = data[i + 1], int.from_bytes(data[i + 2:i + 4], "big")
+        if marker in (0xC0, 0xC1, 0xC2):
+            return int.from_bytes(data[i + 7:i + 9], "big"), int.from_bytes(data[i + 5:i + 7], "big")
+        i += 2 + seg
+    return None
+
+
+def img_tag(src: str, alt: str) -> str:
+    """Live-site markup: aspect-ratio style + width/height for local images (avoids layout shift)."""
+    size = img_size(src)
+    if not size:
+        return f'<img src="{src}" alt="{alt}">'
+    w, h = size
+    if size not in IMG_SIZES:
+        size_warnings.append(f"{src} = {w}x{h} (chuẩn: 800x500 trong bài, 1000x600 ảnh bìa)")
+    return f'<img style="aspect-ratio:{w}/{h};" src="{src}" alt="{alt}" width="{w}" height="{h}">'
 
 
 def center_img(tag: str) -> str:
@@ -116,7 +151,7 @@ def convert(lines: list[str]) -> tuple[str, str]:
         m = re.fullmatch(r"!\[([^\]]*)\]\(([^)\s]+)\)", s)
         if m:
             flush_para()
-            out.append(center_img(f'<img src="{m.group(2)}" alt="{html.escape(m.group(1))}">'))
+            out.append(center_img(img_tag(m.group(2), html.escape(m.group(1)))))
             i += 1
             continue
         m = re.match(r"^(#{1,6})\s+(.*)$", s)
@@ -199,6 +234,12 @@ def main() -> int:
     print(f"Title : {fm.get('Title', '')}  ({len(fm.get('Title', ''))} ký tự)")
     print(f"Meta  : {fm.get('Meta_Description', '')}  ({len(fm.get('Meta_Description', ''))} ký tự)")
     print(f"H1    : {h1}")
+    for src in sorted(set(re.findall(r'<img[^>]*src="([^"]+)"', body, re.I))):
+        size = img_size(src)
+        if size and size not in IMG_SIZES:
+            size_warnings.append(f"{src} = {size[0]}x{size[1]} (chuẩn: 800x500 trong bài, 1000x600 ảnh bìa)")
+    for w in sorted(set(size_warnings)):
+        print(f"⚠️  Ảnh sai kích thước: {w}")
     leftover = sorted(set(re.findall(r'src="(https?://[^"]+)"', body, re.I)))
     if leftover:
         print(f"⚠️  {len(leftover)} ảnh còn URL tuyệt đối — CMS cần /uploads/ (tải ảnh lên CMS rồi sửa src):")

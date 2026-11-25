@@ -33,7 +33,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from _common import ROOT, setup_utf8, unaccent  # noqa: E402
 import mkt_lint as ml  # noqa: E402
 
-LAYOUT_DIR = ROOT / ".antigravity/core/creative/layouts"
+LAYOUT_DIR = ROOT / ".agents/core/creative/layouts"
 BRAND_FILE = ROOT / "knowledge/1-brand/brand.json"
 STYLE_THEME = {"S01": "dark", "S02": "mint", "S03": "paper", "S04": "dark"}  # ảnh 1 dòng chữ: layout thesis + tông của style
 SIZE_PRESET = {"xs": 0.026, "s": 0.034, "m": 0.045, "l": 0.06, "xl": 0.075, "xxl": 0.095, "mega": 0.24}
@@ -72,26 +72,39 @@ def load_brand() -> dict:
 
 
 def themes(brand: dict) -> dict:
-    c = brand["colors"]
+    """Theme = palette DESIGN.md v1.0 §2 (dark/pine/mint/paper); emerald/ivory = theme mùa vụ §7 (chỉ khi brief ghi Tết/lễ)."""
+    c, d, se = brand["colors"], brand["colors"]["derived"], brand["colors"]["seasonal"]
+    prim = brand["colors"]["gradients"]["primary"]
     return {
-        "dark": {"bg": c["navy"], "fg": c["white"], "sub": "#C9D4DF", "note": "#AAB6C2", "eyebrow": c["bright_green"], "grid": True,
-                 "accent": c["gradient"], "cta_bg": c["gradient"], "cta_fg": c["navy"], "logo": "dark_bg",
-                 "band": c["teal"], "glow": True},
-        "mint": {"bg": c["mint"], "fg": c["navy"], "sub": "#33424F", "note": "#4A5866", "eyebrow": "#00780E", "grid": False,
-                 "accent": None, "mark": c["teal"], "cta_bg": [c["navy"], c["navy"]], "cta_fg": c["white"],
-                 "logo": "light_bg", "band": c["brand_green"], "glow": False},
-        "emerald": {"bg": c["emerald_950"], "fg": "#FFFFFF", "sub": "#EDE6C8", "note": "#CFC8A9", "eyebrow": c["gold_200"],
-                    "grid": False, "accent": None, "gold": c["gold_gradient"], "display_ref": c["gold_500"],
-                    "script": c["gold_200"], "cta_bg": [c["gold_200"], c["gold_500"]], "cta_fg": c["emerald_950"],
-                    "badge_bg": "#FFFFFF", "badge_fg": c["emerald_800"], "logo": "dark_bg", "band": c["gold_500"], "glow": False},
-        "ivory": {"bg": c["ivory_50"], "fg": c["emerald_800"], "sub": "#3E4A3F", "note": "#5E665C", "eyebrow": c["emerald_600"],
-                  "grid": False, "accent": None, "mark": c["gold_200"], "script": c["emerald_800"], "display_ref": c["emerald_800"],
-                  "cta_bg": [c["emerald_800"], c["emerald_800"]], "cta_fg": "#FFFFFF",
-                  "badge_bg": c["emerald_800"], "badge_fg": "#FFFFFF", "logo": "light_bg", "band": c["gold_700"], "glow": False},
-        "paper": {"bg": "#FBFAF6", "fg": c["navy"], "sub": "#33424F", "note": "#4A5866", "eyebrow": "#00780E", "grid": False,
-                  "accent": None, "mark": c["bright_green"], "cta_bg": [c["navy"], c["navy"]], "cta_fg": c["white"],
-                  "logo": "light_bg", "band": c["brand_green"], "glow": False},
+        "dark": {"bg": c["gunmetal"], "fg": c["white"], "sub": d["on_dark_sub"], "note": d["on_dark_note"],
+                 "eyebrow": c["frosted_mint"], "grid": True, "accent": prim, "mark": c["emerald"],
+                 "cta_bg": [c["lime"], c["lime"]], "cta_fg": c["gunmetal"],
+                 "badge_bg": c["pine_teal"], "badge_fg": c["frosted_mint"], "logo": "dark_bg", "band": c["lime"], "glow": True},
+        "pine": {"bg": c["pine_teal"], "fg": c["white"], "sub": d["on_dark_sub"], "note": d["on_dark_note"],
+                 "eyebrow": c["frosted_mint"], "grid": False, "accent": [c["lime"], c["frosted_mint"]], "mark": c["emerald"],
+                 "cta_bg": [c["lime"], c["lime"]], "cta_fg": c["gunmetal"],
+                 "badge_bg": c["frosted_mint"], "badge_fg": c["gunmetal"], "logo": "dark_bg", "band": c["lime"], "glow": True},
+        "mint": {"bg": d["mint_50"], "fg": c["gunmetal"], "sub": d["ink_2"], "note": d["ink_3"], "eyebrow": c["pine_teal"],
+                 "grid": False, "accent": None, "mark": c["frosted_mint"], "cta_bg": [c["pine_teal"], c["pine_teal"]],
+                 "cta_fg": c["white"], "badge_bg": c["frosted_mint"], "badge_fg": c["gunmetal"],
+                 "logo": "light_bg", "band": c["lime"], "glow": False},
+        "paper": {"bg": c["white"], "fg": c["gunmetal"], "sub": d["ink_2"], "note": d["ink_3"], "eyebrow": c["pine_teal"],
+                  "grid": False, "accent": None, "mark": c["frosted_mint"], "cta_bg": [c["lime"], c["lime"]],
+                  "cta_fg": c["gunmetal"], "badge_bg": c["pine_teal"], "badge_fg": c["white"],
+                  "logo": "light_bg", "band": c["lime"], "glow": False},
+        # seasonal (DESIGN.md §7)
+        "emerald": {"bg": se["emerald_950"], "fg": "#FFFFFF", "sub": "#EDE6C8", "note": "#CFC8A9", "eyebrow": se["gold_200"],
+                    "grid": False, "accent": None, "gold": se["gold_gradient"], "display_ref": se["gold_500"],
+                    "script": se["gold_200"], "cta_bg": [se["gold_200"], se["gold_500"]], "cta_fg": se["emerald_950"],
+                    "badge_bg": "#FFFFFF", "badge_fg": se["emerald_800"], "logo": "dark_bg", "band": se["gold_500"], "glow": False},
+        "ivory": {"bg": se["ivory_50"], "fg": se["emerald_800"], "sub": "#3E4A3F", "note": "#5E665C", "eyebrow": se["emerald_600"],
+                  "grid": False, "accent": None, "mark": se["gold_200"], "script": se["emerald_800"], "display_ref": se["emerald_800"],
+                  "cta_bg": [se["emerald_800"], se["emerald_800"]], "cta_fg": "#FFFFFF",
+                  "badge_bg": se["emerald_800"], "badge_fg": "#FFFFFF", "logo": "light_bg", "band": se["gold_700"], "glow": False},
     }
+
+
+SEASONAL_THEMES = {"emerald", "ivory"}
 
 
 def luminance(hex_color: str) -> float:
@@ -307,17 +320,19 @@ def compose(cr: dict, brand: dict) -> tuple[str, dict]:
     base = min(w, h)
     align = layout.get("align", "left")
     fonts = brand["fonts"]
-    reg = ROOT / fonts["regular"]
-    faces_css = "".join(
-        f'@font-face{{font-family:"{f["family"]}";src:url("{(ROOT / f["file"]).as_uri()}");font-weight:{f.get("weight", "400")}}}'
-        for f in fonts.get("faces", {}).values() if (ROOT / f["file"]).exists())
+    fam, fb = fonts["family"], fonts.get("fallback", "Be Vietnam Pro")
+    face_files = [(fonts.get(k), wt, st) for k, wt, st in (("regular", 400, "normal"), ("semibold", 600, "normal"),
+                  ("bold", 700, "normal"), ("extrabold", 800, "normal"), ("italic", 400, "italic"))]
+    faces_css = "".join(f'@font-face{{font-family:"{fam}";src:url("{(ROOT / f).as_uri()}");font-weight:{wt};font-style:{st}}}'
+                        for f, wt, st in face_files if f and (ROOT / f).exists())
+    faces_css += "".join(f'@font-face{{font-family:"{fb}";src:url("{(ROOT / f).as_uri()}");font-weight:{wt}}}'
+                         for f, wt in zip(fonts.get("fallback_files", {}).values(), (400, 700)) if (ROOT / f).exists())
+    font_stack = f'"{fam}","{fb}",sans-serif'
+    # one brand typeface (DESIGN.md §4): old layout "type" values only change weight/caps, never the family
     typeface = cr.get("type") or layout.get("type") or "body"
-    face = fonts.get("faces", {}).get(typeface)
-    disp_family = f'"{face["family"]}","Be Vietnam Pro",serif' if face else '"Be Vietnam Pro",sans-serif'
-    disp_weight = {"serif": 700, "serif_alt": 800, "sans": 800}.get(typeface, 700)
+    disp_family = font_stack
+    disp_weight = 800 if typeface in ("serif", "serif_alt", "sans") else 700
     caps = cr.get("caps", typeface in ("serif", "serif_alt", "sans"))
-    script_face = fonts.get("faces", {}).get("script", {}).get("family", "Be Vietnam Pro")
-    bold = ROOT / fonts["bold"]
     logo = ROOT / brand["logo"][theme["logo"]]
     logo_w = int(w * (0.14 if w / h > 1.3 else 0.17))
     logo_y = int(h * var.get("logo_y", 0.04))
@@ -335,12 +350,10 @@ def compose(cr: dict, brand: dict) -> tuple[str, dict]:
     acc = theme.get("accent") or [theme["fg"], theme["fg"]]
     cta_bg = theme["cta_bg"]
     css = f"""
-@font-face{{font-family:"Be Vietnam Pro";src:url("{reg.as_uri()}");font-weight:400}}
-@font-face{{font-family:"Be Vietnam Pro";src:url("{bold.as_uri()}");font-weight:700}}
 {faces_css}
 *{{box-sizing:border-box;margin:0;padding:0}}
 html,body{{width:{w}px;height:{h}px;overflow:hidden}}
-body{{position:relative;background:{theme['bg']};color:{theme['fg']};font-family:"Be Vietnam Pro",sans-serif;{grid_css}
+body{{position:relative;background:{theme['bg']};color:{theme['fg']};font-family:{font_stack};{grid_css}
   -webkit-font-smoothing:antialiased;text-rendering:geometricPrecision}}
 .r{{position:absolute;display:flex;flex-direction:column;overflow:hidden;text-align:{align}}}
 .r.v-start{{justify-content:flex-start}} .r.v-center{{justify-content:center}} .r.v-end{{justify-content:flex-end}}
@@ -350,7 +363,7 @@ body{{position:relative;background:{theme['bg']};color:{theme['fg']};font-family
 .note .t{{line-height:1.4;color:{theme['note']}}}
 .accent{{background:linear-gradient(90deg,{acc[0]},{acc[1]});-webkit-background-clip:text;background-clip:text;color:transparent}}
 .nw{{white-space:nowrap}}
-.mark{{background:linear-gradient(transparent 62%,{theme.get('mark', '#10E7B3')}88 62%);padding:0 .05em}}
+.mark{{background:linear-gradient(transparent 62%,{theme.get('mark', brand['colors']['frosted_mint'])}88 62%);padding:0 .05em}}
 .cta .t{{display:flex;justify-content:{'center' if align == 'center' else 'flex-start'}}}
 .cta .t span{{display:inline-block;font-weight:700;line-height:1;padding:.62em 1.3em;border-radius:.5em;
   background:linear-gradient(90deg,{cta_bg[0]},{cta_bg[1]});color:{theme['cta_fg']}}}
@@ -379,7 +392,7 @@ body{{position:relative;background:{theme['bg']};color:{theme['fg']};font-family
 .gold{{background:linear-gradient(180deg,{','.join(theme.get('gold') or [theme['fg'], theme['fg']])});-webkit-background-clip:text;
   background-clip:text;color:transparent;-webkit-box-decoration-break:clone;box-decoration-break:clone}}
 .gold .accent,.gold .mark{{background:none;-webkit-text-fill-color:#FFFFFF;color:#FFFFFF}}
-.script .t{{font-family:"{script_face}",cursive;font-weight:400;line-height:1.15;color:{theme.get('script', theme['fg'])};
+.script .t{{font-family:{font_stack};font-style:italic;font-weight:400;line-height:1.15;color:{theme.get('script', theme['fg'])};
   filter:{'drop-shadow(0 3px 10px rgba(0,0,0,.45))' if theme.get('gold') else 'none'}}}
 .badge .t{{display:flex;justify-content:{'center' if align == 'center' else ('flex-end' if align == 'right' else 'flex-start')}}}
 .badge .t span{{display:inline-block;font-weight:700;text-transform:uppercase;letter-spacing:.06em;line-height:1;padding:.5em 1.1em;
@@ -400,7 +413,7 @@ body{{position:relative;background:{theme['bg']};color:{theme['fg']};font-family
   font-size:{base * 0.022 * (1.25 if w / h > 1.6 else 1):.0f}px;letter-spacing:.04em;color:{theme['note']}}}
 .logo{{position:absolute;left:{int(w * 0.04)}px;top:{logo_y}px;width:{logo_w}px}}
 .glow{{position:absolute;right:-{int(base * .25)}px;bottom:-{int(base * .3)}px;width:{int(base * .9)}px;height:{int(base * .9)}px;
-  border-radius:50%;background:radial-gradient(circle,{brand['colors']['teal']}33,transparent 65%)}}
+  border-radius:50%;background:radial-gradient(circle,{brand['colors']['emerald']}33,transparent 65%)}}
 """
     meta = {"w": w, "h": h, "aspect": vkey, "theme": th_name, "safe": var.get("safe"), "slots": {}}
 
@@ -418,6 +431,15 @@ body{{position:relative;background:{theme['bg']};color:{theme['fg']};font-family
             fx = (f'mix-blend-mode:{lay["blend"]};' if lay.get("blend") else
                   f'filter:drop-shadow(0 {base * 0.02:.0f}px {base * 0.04:.0f}px rgba(0,0,0,.45));')
             fit = "cover" if lay.get("cover") else "contain"
+            # "fade": "left"|"right"|"top"|"bottom" → that visual edge melts into the background (no hard seam)
+            if lay.get("fade") in ("left", "right", "top", "bottom"):
+                side = lay["fade"]
+                if lay.get("flip") and side in ("left", "right"):
+                    side = "right" if side == "left" else "left"  # mask lives in the element's (mirrored) space
+                to = {"left": "to right", "right": "to left", "top": "to bottom", "bottom": "to top"}[side]
+                stop = int(lay.get("fade_pct", 45))
+                grad = f"linear-gradient({to},transparent 0%,#000 {stop}%)"
+                fx += f"-webkit-mask-image:{grad};mask-image:{grad};"
             out.append(f'<img class="layer" src="{src.as_uri()}" style="position:absolute;left:{lx * w:.0f}px;top:{ly * h:.0f}px;'
                        f'width:{lw * w:.0f}px;height:{lh * h:.0f}px;object-fit:{fit};opacity:{lay.get("opacity", 1)};'
                        f'{"transform:" + tf + ";" if tf else ""}{fx}">')
@@ -497,8 +519,8 @@ body{{position:relative;background:{theme['bg']};color:{theme['fg']};font-family
 
 FIT_JS = """
 async () => {
-  const f700 = await document.fonts.load('700 40px "Be Vietnam Pro"', 'Ắệờ');
-  const f400 = await document.fonts.load('400 40px "Be Vietnam Pro"', 'Ắệờ');
+  const f700 = await document.fonts.load('700 40px "Plus Jakarta Sans"', 'Ắệờ');
+  const f400 = await document.fonts.load('400 40px "Plus Jakarta Sans"', 'Ắệờ');
   await document.fonts.ready;
   const out = {fontLoaded: f700.length > 0 && f400.length > 0, slots: {}};
   const MIN = %s;
@@ -525,7 +547,7 @@ def qa_creative(cr: dict, meta: dict, m: dict, png: Path, locks: dict, channel: 
 
     w, h = meta["w"], meta["h"]
     if not m.get("fontLoaded"):
-        add("FONT-not-loaded", "error", "Font Be Vietnam Pro (có dấu tiếng Việt) chưa nạp — kiểm brand.json fonts")
+        add("FONT-not-loaded", "error", "Font Plus Jakarta Sans (có dấu tiếng Việt) chưa nạp — kiểm brand.json fonts")
     if not meta.get("logo"):
         add("LOGO-missing", "error", "Không tìm thấy file logo trong brand.json")
     if meta.get("layer_missing"):
@@ -645,6 +667,20 @@ def status_of(issues: list[dict]) -> str:
     return "Đạt có lưu ý" if issues else "Đạt"
 
 
+def _launch_browser(p):
+    """Launch bundled Chromium; fall back to system Edge/Chrome when it is missing
+    (company machines may block `playwright install`)."""
+    try:
+        return p.chromium.launch()
+    except Exception as first_err:
+        for channel in ("msedge", "chrome"):
+            try:
+                return p.chromium.launch(channel=channel)
+            except Exception:
+                continue
+        raise first_err
+
+
 def render(design_path: Path, only: list[str] | None = None, bump: bool = False) -> tuple[Path, dict]:
     data = json.loads(design_path.read_text(encoding="utf-8"))
     approved_versions = {a["v"] for a in data.get("approved", [])}
@@ -665,7 +701,7 @@ def render(design_path: Path, only: list[str] | None = None, bump: bool = False)
     qa.setdefault("creatives", {})
     from playwright.sync_api import sync_playwright
     with sync_playwright() as p:
-        browser = p.chromium.launch()
+        browser = _launch_browser(p)
         for cr in data["creatives"]:
             if only and cr["id"] not in only and cr.get("group") not in only:
                 continue
@@ -754,7 +790,16 @@ def adapt(design_path: Path, sizes: list[str], only: list[str] | None = None) ->
 
 # ─────────────────────────── prompt: KV cho Gemini / công cụ tạo ảnh ───────────────────────────
 
-KV_STYLE = {
+KV_STYLE = {  # DESIGN.md §5 (abstract, default) and §7 (seasonal)
+    "dark": ("abstract 3D render, glossy translucent green glass ribbons and silk-like folds twisting in layers with thin dark edges, "
+             "soft diagonal streaks of green light on a near-black gunmetal background (#272D2B), lime green (#2AD03D) and "
+             "emerald (#1BBE72) highlights, subtle frosted mint (#8CFFCC) glow, cinematic depth, minimal and premium"),
+    "pine": ("abstract 3D render, soft organic flowing blobs of lime green (#2AD03D) and emerald (#1BBE72) over a deep pine teal "
+             "(#1D4130) background, smooth gradients, gentle volumetric light, calm and modern"),
+    "mint": ("abstract 3D render, translucent green glass ribbons and wavy refracted green forms on a pale mint background, "
+             "lime green (#2AD03D) to emerald (#1BBE72) tones, soft studio light, airy, lots of clean empty space"),
+    "paper": ("abstract soft-focus ambient gradient, blurred green to grey-teal tones (#354D38, #2C7B50, #7D9E9F, #B6C7AF), "
+              "a hint of glass ribbon, minimal and calm, lots of clean empty space"),
     "emerald": ("premium cinematic 3D render, deep emerald green (#0B331E to #226435) environment, polished metallic gold "
                 "(#EFD786 to #A57D3F) details with fine engraved Vietnamese patterns, soft volumetric light, subtle glowing "
                 "green light trails (#5BD681), floating light particles, shallow depth of field, luxurious and calm"),
@@ -767,7 +812,7 @@ SIDE_EN = {"kv-right": "right", "kv-left": "left", "kv-center": "top"}
 
 def kv_prompt(cr: dict) -> str:
     kv = cr.get("kv") or {}
-    theme = cr.get("theme") or "emerald"
+    theme = cr.get("theme") or load_layout(cr["layout"]).get("default_theme", "dark")
     w, h = parse_size(cr["size"])
     side = SIDE_EN.get(cr["layout"], "right")
     subject_side = {"right": "left", "left": "right", "top": "bottom"}[side]
@@ -778,7 +823,7 @@ def kv_prompt(cr: dict) -> str:
         f"Key visual for a social media post of Chung khoan DSC, a Vietnamese securities company. Subject: {kv.get('subject', 'TODO')}.",
         f"Motifs: {', '.join(kv.get('motifs', []))}." if kv.get("motifs") else "",
         f"Mood: {kv['mood']}." if kv.get("mood") else "",
-        f"Style: {KV_STYLE.get(theme, KV_STYLE['emerald'])}.",
+        f"Style: {KV_STYLE.get(theme, KV_STYLE['dark'])}.",
         f"Composition: place the main subject on the {subject_side} side; keep the {side} {45 if side != 'top' else 40}% of the frame "
         f"calm, softly lit and uncluttered as negative space for a text overlay added later.",
         f"Aspect ratio {ratio}, {w}x{h}px, high detail, sharp focus on the subject.",

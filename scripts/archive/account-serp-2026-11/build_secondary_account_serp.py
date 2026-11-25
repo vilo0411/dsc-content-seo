@@ -2,7 +2,7 @@
 import json,re,html
 from bs4 import BeautifulSoup
 from markdownify import markdownify
-root=Path.cwd();slug="nen-mo-tai-khoan-chung-khoan-o-dau";out=root/"knowledge/4-content/audits/account-serp-2026-11-04";out.mkdir(parents=True,exist_ok=True)
+root=Path.cwd();slug="nen-mo-tai-khoan-chung-khoan-o-dau";out=root/"knowledge/3-seo/content/audits/account-serp-2026-11-04";out.mkdir(parents=True,exist_ok=True)
 live=(root/"knowledge/raw/live/html"/(slug+".html")).read_text(encoding="utf-8");soup=BeautifulSoup(live,"html.parser")
 imgs=[(x.get("alt",""),x["src"]) for x in soup.select("img[src]")];links=[a["href"] for a in soup.select("a[href]")]
 title="Nên mở tài khoản chứng khoán ở đâu? Top 7 công ty uy tín"
@@ -164,7 +164,7 @@ Bạn đã chọn DSC và cần thực hiện đăng ký thì dùng kênh chính
   <a href="https://www.dsc.com.vn/mo-tai-khoan" style="background: #0D1B2A; color: #ffffff; padding: 11px 24px; border-radius: 24px; text-decoration: none; font-weight: 600; font-size: 15px; display: inline-block;">Mở tài khoản DSC</a>
 </div>
 """
-draftpath=root/"knowledge/4-content/2-drafts"/("Optimize-"+slug+"-serp-2026-11-04.md");draftpath.write_text(draft,encoding="utf-8")
+draftpath=root/"knowledge/3-seo/content/2-drafts"/("Optimize-"+slug+"-serp-2026-11-04.md");draftpath.write_text(draft,encoding="utf-8")
 proposal=f"""---
 Title: Proposal tối ưu lựa chọn công ty chứng khoán
 Target_Keyword: nên mở tài khoản chứng khoán ở đâu
@@ -287,7 +287,7 @@ proposal+="""\n\nHai ảnh đầu chứa claim thị phần chưa đối chiếu
 
 Dùng bảng mới và bốn ảnh thực đang có. Không tạo screenshot giả hoặc thêm stock chỉ để đạt số lượng ảnh.
 """
-proppath=root/"knowledge/4-content/1-outlines"/("Proposal-"+slug+"-serp-2026-11-04.md");proppath.write_text(proposal,encoding="utf-8")
+proppath=root/"knowledge/3-seo/content/1-outlines"/("Proposal-"+slug+"-serp-2026-11-04.md");proppath.write_text(proposal,encoding="utf-8")
 checks={"slug":slug,"title_characters":len(title),"meta_characters":len(meta),"missing_images":[u for _,u in imgs if u not in draft],"missing_links":[u for u in links if u not in draft],"editorial_open":["Original market-share graphic and SSI alt still need editorial verification before CMS"],"published":False}
 (out/("preservation-"+slug+".json")).write_text(json.dumps(checks,ensure_ascii=False,indent=2),encoding="utf-8")
 print(json.dumps(checks,ensure_ascii=False))

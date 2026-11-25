@@ -11,8 +11,8 @@ Không có `## ` nào → cả file là 1 biến thể. Với meta-ad, mỗi bi�
     Description: …    (hoặc "Mô tả:")
 
 Rule:
-    COMP-*  compliance tài chính (.antigravity/core/rules/compliance-finance.md)
-    AI-*    cụm cấm trong knowledge/3-pipeline/anti-ai-rules-blacklist.md + glossary Từ bị cấm
+    COMP-*  compliance tài chính (.agents/core/rules/compliance-finance.md)
+    AI-*    cụm cấm trong knowledge/1-brand/anti-ai-rules-blacklist.md + glossary Từ bị cấm
     LEN-*, TAG-*, CTA-*, FIELD-*  hình thức theo kênh (giới hạn biên tập, không phải giới hạn kỹ thuật chắc chắn)
 Exit 1 nếu có CRITICAL hoặc MAJOR.
 """

@@ -6,12 +6,12 @@ from urllib.request import urlopen
 from bs4 import BeautifulSoup
 sys.stdout.reconfigure(encoding="utf-8")
 ROOT=Path(__file__).resolve().parents[1]
-OUT=ROOT/"knowledge/4-content/audits/account-serp-2026-11-04"
+OUT=ROOT/"knowledge/3-seo/content/audits/account-serp-2026-11-04"
 slugs=["cach-mo-tai-khoan-chung-khoan","nen-mo-tai-khoan-chung-khoan-o-dau"]
 e=html.escape
 def read(p):return p.read_text(encoding="utf-8-sig")
 # Correct only source alignment noted by the editor; preserve all original live destinations.
-second=ROOT/"knowledge/4-content/2-drafts"/("Optimize-"+slugs[1]+"-serp-2026-11-04.md")
+second=ROOT/"knowledge/3-seo/content/2-drafts"/("Optimize-"+slugs[1]+"-serp-2026-11-04.md")
 short="https://www.vndirect.com.vn/mo-tai-khoan-chung-khoan/"
 long="https://support.vndirect.com.vn/hc/vi/articles/4413910748697-Hướng-dẫn-mở-tài-khoản-trực-tuyến-cho-nhà-đầu-tư-cá-nhân-trong-nước"
 for p in [second,OUT/(slugs[1]+".body.html")]:
@@ -110,7 +110,7 @@ previewcss="body{font:16px/1.7 system-ui;color:#153044;padding:20px;overflow-wra
 def doc(body,title):return "<!doctype html><html lang='vi'><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><style>"+previewcss+"</style><h1>"+e(title)+"</h1>"+body+"</html>"
 parts=["<!doctype html><html lang='vi'><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Kế hoạch và bản sửa DSC — mở tài khoản</title><style>"+css+"</style><h1>Kế hoạch và bản sửa cụm mở tài khoản DSC</h1><p>Chuẩn bị04/11/2026 · <b>Bản nháp local — chưa xuất bản</b></p><div class='hold'>Bài hướng dẫn còn style gate74/100; bài so sánh còn ảnh cũ chưa xác minh. Chưa đánh dấu toàn bộ gói sẵn sàng publish.</div><section><h2>Phạm vi và kiểm tra</h2><p>Giữ2URL. Bài hướng dẫn cho thao tác mở tài khoản; bài lựa chọn cho so sánh công ty. Đối chứng chính là ảnh SERP của người dùng; DataForSEO chỉ bổ sung.</p><table><tr><th>Bài</th><th>Lint</th><th>Style</th><th>Bảo toàn</th></tr><tr><td>Cách mở</td><td>99 PASS</td><td>74 FAIL; baseline strict81</td><td>6ảnh /13đích gốc</td></tr><tr><td>Nên mở ở đâu</td><td>99 PASS</td><td>91 PASS; baseline strict64</td><td>4ảnh /8đích gốc</td></tr></table><p>Fact checker không tìm thấy claim chỉ số theo ngày; không phải chứng nhận mọi dữ kiện. HTTP200, canonical tự trỏ; chưa có URL Inspection.</p><p><a href='rollout-plan.md'>Kế hoạch và checklist CMS</a> · <a href='rollout-validation.json'>Validation JSON</a> · <a href='technical-checks.json'>Kỹ thuật</a> · <a href='gsc-baseline.csv'>GSC baseline</a> · <a href='monitoring.csv'>Bảng theo dõi T0–T+42</a></p></section>"]
 for i,slug in enumerate(slugs):
- draft=ROOT/"knowledge/4-content/2-drafts"/("Optimize-"+slug+"-serp-2026-11-04.md")
+ draft=ROOT/"knowledge/3-seo/content/2-drafts"/("Optimize-"+slug+"-serp-2026-11-04.md")
  content=read(draft);title=re.search(r"^Title: (.+)$",content,re.M).group(1);meta=re.search(r"^Meta_Description: (.+)$",content,re.M).group(1)
  source=read(ROOT/"knowledge/raw/live/html"/(slug+".html"));body=read(OUT/(slug+".body.html"))
  (OUT/(slug+".preview.html")).write_text(doc(body,title),encoding="utf-8")

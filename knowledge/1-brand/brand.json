@@ -1,40 +1,62 @@
 {
-  "_doc": "Brand kit máy đọc được. Ảnh social/quảng cáo: theo knowledge/1-brand/DESIGN.md (v0.1). Ảnh blog: visual-brand-guidelines.md.",
+  "_doc": "Brand kit máy đọc được — nguồn chuẩn cho MỌI thiết kế (creative, banner CTA, landing, ảnh blog, syndication). Người đọc: knowledge/1-brand/DESIGN.md v1.0 (theo brand guideline chính thức, ảnh gốc ở knowledge/1-brand/guideline/). Không tự đặt hex/font ngoài file này.",
+  "version": "1.0 (2026-11-25)",
   "name": "Chứng khoán DSC",
   "legal_name": "Công ty Cổ phần Chứng khoán DSC",
   "host": "https://www.dsc.com.vn",
   "open_account_url": "https://www.dsc.com.vn/mo-tai-khoan",
   "colors": {
-    "brand_green": "#00AD14",
-    "bright_green": "#2BE841",
-    "teal": "#10E7B3",
-    "navy": "#0D1B2A",
-    "mint": "#E8F8F2",
+    "gunmetal": "#272D2B",
+    "pine_teal": "#1D4130",
+    "lime": "#2AD03D",
+    "emerald": "#1BBE72",
+    "frosted_mint": "#8CFFCC",
     "white": "#FFFFFF",
-    "gradient": [
-      "#2BE841",
-      "#10E7B3"
-    ],
+    "gradients": {
+      "primary": ["#61CC6C", "#14A46E"],
+      "ambient_light": ["#156A1F", "#31AE40", "#156A1F"],
+      "ambient_soft": ["#354D38", "#2C7B50", "#7D9E9F", "#B6C7AF"]
+    },
+    "derived": {
+      "_doc": "Tông phụ trợ suy ra từ palette chính (chữ phụ, viền, nền sáng nhạt) — không phải màu thương hiệu, không dùng làm điểm nhấn.",
+      "ink_2": "#4A524F",
+      "ink_3": "#666F6C",
+      "line": "#DCE5E0",
+      "track": "#E8F0EC",
+      "neutral": "#B9C3BF",
+      "mint_50": "#F2FBF6",
+      "mint_100": "#DDF7EA",
+      "on_dark_sub": "#C8D3CE",
+      "on_dark_note": "#A3B0AA"
+    },
     "forbidden": [
-      "red cho chữ/số/biểu đồ (được dùng đỏ trong motif văn hoá — DESIGN.md §2)"
+      "đỏ cho chữ/số/biểu đồ/mũi tên giá (được dùng đỏ trong motif văn hoá của theme mùa vụ — DESIGN.md §7)",
+      "chữ trắng trên Lime/Emerald (2.1–2.4:1)",
+      "Lime/Emerald làm chữ trên nền trắng — chữ xanh trên nền sáng dùng Pine Teal"
     ],
-    "emerald_950": "#0B331E",
-    "emerald_800": "#1B5232",
-    "emerald_600": "#226435",
-    "jade_400": "#6CB298",
-    "glow_400": "#5BD681",
-    "gold_200": "#EFD786",
-    "gold_500": "#C9A24A",
-    "gold_700": "#A57D3F",
-    "ivory_50": "#F9F4EB",
-    "cream_200": "#EBE1C1",
-    "lacquer_600": "#BA382B",
-    "gold_gradient": [
-      "#FFF3C4",
-      "#EFD786",
-      "#C9A24A",
-      "#8C6A1F"
-    ]
+    "seasonal": {
+      "_doc": "Theme mùa vụ (Tết / lễ / văn hoá) — CHỈ dùng khi brief ghi rõ. DESIGN.md §7.",
+      "emerald_950": "#0B331E",
+      "emerald_800": "#1B5232",
+      "emerald_600": "#226435",
+      "jade_400": "#6CB298",
+      "glow_400": "#5BD681",
+      "gold_200": "#EFD786",
+      "gold_500": "#C9A24A",
+      "gold_700": "#A57D3F",
+      "ivory_50": "#F9F4EB",
+      "cream_200": "#EBE1C1",
+      "lacquer_600": "#BA382B",
+      "gold_gradient": ["#FFF3C4", "#EFD786", "#C9A24A", "#8C6A1F"]
+    },
+    "legacy": {
+      "_doc": "Bảng màu trước 2026-11-25. Chỉ để đọc lại thiết kế cũ (CMP-261124 v1–v3, ảnh blog đã publish). KHÔNG dùng cho thiết kế mới.",
+      "brand_green": "#00AD14",
+      "bright_green": "#2BE841",
+      "teal": "#10E7B3",
+      "navy": "#0D1B2A",
+      "mint": "#E8F8F2"
+    }
   },
   "logo": {
     "light_bg": "knowledge/1-brand/assets/logos/logo-for-light-bg.png",
@@ -43,32 +65,36 @@
     "margin": "4%"
   },
   "fonts": {
-    "family": "Be Vietnam Pro",
-    "regular": "knowledge/1-brand/assets/fonts/BeVietnamPro-Regular.ttf",
-    "bold": "knowledge/1-brand/assets/fonts/BeVietnamPro-Bold.ttf",
-    "rules": "NFC, không ép đậm giả, line-height tiêu đề >= 1.05 (display) / 1.25 (sans thường), chờ document.fonts.ready trước khi xuất ảnh",
-    "faces": {
-      "script": {
-        "family": "Great Vibes",
-        "file": "knowledge/1-brand/assets/fonts/GreatVibes-Regular.ttf",
-        "weight": "400"
-      },
-      "serif": {
-        "family": "Cormorant Garamond",
-        "file": "knowledge/1-brand/assets/fonts/CormorantGaramond-VF.ttf",
-        "weight": "300 700"
-      },
-      "serif_alt": {
-        "family": "Playfair Display",
-        "file": "knowledge/1-brand/assets/fonts/PlayfairDisplay-VF.ttf",
-        "weight": "400 900"
-      },
-      "sans": {
-        "family": "Montserrat",
-        "file": "knowledge/1-brand/assets/fonts/Montserrat-VF.ttf",
-        "weight": "100 900"
-      }
-    }
+    "family": "Plus Jakarta Sans",
+    "fallback": "Be Vietnam Pro",
+    "regular": "knowledge/1-brand/assets/fonts/PlusJakartaSans-Regular.ttf",
+    "semibold": "knowledge/1-brand/assets/fonts/PlusJakartaSans-SemiBold.ttf",
+    "bold": "knowledge/1-brand/assets/fonts/PlusJakartaSans-Bold.ttf",
+    "extrabold": "knowledge/1-brand/assets/fonts/PlusJakartaSans-ExtraBold.ttf",
+    "italic": "knowledge/1-brand/assets/fonts/PlusJakartaSans-Italic.ttf",
+    "variable": "knowledge/1-brand/assets/fonts/PlusJakartaSans-VF.ttf",
+    "fallback_files": {
+      "regular": "knowledge/1-brand/assets/fonts/BeVietnamPro-Regular.ttf",
+      "bold": "knowledge/1-brand/assets/fonts/BeVietnamPro-Bold.ttf"
+    },
+    "web_scale_pt": {
+      "h1": [56, 700],
+      "h2": [42, 700],
+      "h3": [32, 700],
+      "h4": [20, 600],
+      "paragraph_bold": [15, 700],
+      "paragraph_semibold": [15, 600],
+      "paragraph": [15, 400],
+      "subtitle_semibold": [14, 600],
+      "subtitle": [14, 400],
+      "subtitle_italic": [14, 400, "italic"]
+    },
+    "rules": "1 font duy nhất: Plus Jakarta Sans (OFL, đủ dấu tiếng Việt). NFC, dùng file đúng độ đậm (không ép đậm giả), line-height tiêu đề >= 1.1 / chữ thường >= 1.4, chờ document.fonts.ready trước khi xuất ảnh. Không dùng font script/serif."
+  },
+  "imagery": {
+    "style": "abstract",
+    "description": "Trừu tượng 3D tông xanh: dải lụa/kính xanh xoắn, khối màu mềm uốn lượn, ánh sáng xanh vệt chéo trên nền tối (Gunmetal / xanh đen), nền mờ ambient gradient. Không người, không chữ, không vật thể tài chính sáo rỗng.",
+    "reference": "knowledge/1-brand/guideline/20-abstract.png"
   },
   "sizes": {
     "blog_featured": "16:9",
@@ -85,8 +111,10 @@
     "gần gũi nhưng chuẩn mực tài chính"
   ],
   "visual_rules": [
+    "chỉ màu trong colors (+ seasonal khi brief ghi Tết/lễ)",
+    "chỉ font Plus Jakarta Sans",
     "không chữ do AI sinh trong ảnh",
-    "không màu đỏ",
+    "không màu đỏ cho chữ/số/biểu đồ",
     "không logo đối thủ",
     "zero-clutter",
     "1 ảnh = 1 luận điểm"

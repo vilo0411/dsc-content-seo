@@ -169,7 +169,7 @@ def write_graph(out: Path, host: str, prefix: str, label: str) -> Path:
     """
     import importlib.util
     spec = importlib.util.spec_from_file_location(
-        "link_audit", ROOT / ".antigravity/skills/internal-linking/scripts/link_audit.py")
+        "link_audit", ROOT / ".agents/skills/link/scripts/link_audit.py")
     la = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(la)
 

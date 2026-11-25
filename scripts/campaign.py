@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Job folder cho chiến dịch marketing đa kênh: knowledge/5-campaigns/CMP-YYMMDD-<slug>/
+"""Job folder cho chiến dịch marketing đa kênh: knowledge/6-campaigns/CMP-YYMMDD-<slug>/
 
 Dùng:
     python scripts/campaign.py new <slug> --title "…" [--channels seo,social,ads,landing] [--date 2026-11-24]
@@ -22,8 +22,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from _common import ROOT, setup_utf8, slugify  # noqa: E402
 
-CAMPAIGNS_DIR = ROOT / "knowledge/5-campaigns"
-TEMPLATE = ROOT / ".antigravity/domains/campaign/references/brief-template.md"
+CAMPAIGNS_DIR = ROOT / "knowledge/6-campaigns"
+TEMPLATE = ROOT / ".agents/domains/campaign/references/brief-template.md"
 CHANNELS = ("seo", "social", "ads", "landing")
 STATUSES = ("Brief", "Đang làm", "Chờ duyệt", "Approved", "Live", "Đo kết quả", "Đóng")
 STATUS_RE = re.compile(r"(?m)^Status:\s*(.*)$")
@@ -119,7 +119,7 @@ def main(argv=None) -> int:
         if a.json:
             print(json.dumps(rows, ensure_ascii=False, indent=2))
         elif not rows:
-            print("Chưa có job nào trong knowledge/5-campaigns/")
+            print("Chưa có job nào trong knowledge/6-campaigns/")
         else:
             for r in rows:
                 files = " ".join(f"{k}:{v}" for k, v in r["files"].items())

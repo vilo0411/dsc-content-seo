@@ -6,7 +6,7 @@ description: Viết copy và dựng landing page HTML 1 trang theo brand.json ch
 # /landing <job|sản phẩm> [--persona P<n>]
 
 ## Bước 0 — Context
-`.antigravity/core/README.md` §1 (gồm `brand.json`) + `.antigravity/domains/campaign/references/landing-structure.md` + `.antigravity/rules/cta-conversion.md` + persona `python scripts/persona.py P<n> --part bridge`.
+`.agents/core/README.md` §1 (gồm `brand.json`) + `.agents/domains/campaign/references/landing-structure.md` + `.agents/rules/cta-conversion.md` + persona `python scripts/persona.py P<n> --part bridge`.
 Thiết kế: load skill `frontend-design` nếu có trong session.
 
 ## Bước 1 — Copy
@@ -19,7 +19,7 @@ python scripts/mkt_lint.py <job>/landing/copy-v1.md --channel landing
 + Compliance Reviewer. Dừng ở gate copy trước khi dựng HTML.
 
 ## Bước 2 — HTML
-- `<job>/landing/landing-v1.html`: 1 file, CSS inline từ `brand.json` (màu, Be Vietnam Pro), mobile-first, 1 CTA chính lặp 3 lần → `open_account_url` hoặc form user chỉ định.
+- `<job>/landing/landing-v1.html`: 1 file, CSS inline từ `brand.json` / `DESIGN.md` v1.0 (palette Gunmetal/Pine Teal/Lime/Emerald/Frosted Mint, font Plus Jakarta Sans nhúng `@font-face` + thang chữ web H1 56/700 … Subtitle 14/400; nút Lime chữ Gunmetal), mobile-first, 1 CTA chính lặp 3 lần → `open_account_url` hoặc form user chỉ định.
 - Kiểm: mở bằng trình duyệt (skill `run` / Claude in Chrome nếu user cho phép), chụp mobile 390px + desktop.
 - Muốn xem/chia sẻ nội bộ: publish Artifact (private).
 

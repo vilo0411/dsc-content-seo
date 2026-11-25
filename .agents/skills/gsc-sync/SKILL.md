@@ -1,6 +1,6 @@
 ---
 name: gsc-sync
-description: Fetch GSC data và generate opportunity report.
+description: "Đồng bộ Google Search Console (ưu tiên SEO Dashboard MCP) → knowledge/3-seo/strategy/gsc-opportunities.md: keyword ngủ quên, CTR thấp, trang tụt. Dùng khi cần làm mới danh sách cơ hội SEO. Báo cáo KPI tháng thì dùng /analytics-report."
 ---
 
 # Fetch GSC Data & Opportunity Report
@@ -13,8 +13,8 @@ Sync data từ Google Search Console API, phân tích cơ hội, và xuất báo
 - `--force`: Bỏ qua cache TTL (7 ngày), fetch ngay kể cả khi cache còn mới
 
 ## Điều kiện tiên quyết (1 trong 2 nguồn)
-- **Nguồn A — SEO Dashboard MCP (ưu tiên, không cần credentials):** agent có MCP `SEO Dashboard`. Playbook: `.antigravity/skills/seo-dashboard/SKILL.md`.
-- **Nguồn B — GSC API trực tiếp:** file credentials tại `.antigravity/config/gsc-credentials.json`. Nếu chưa có: làm theo `.antigravity/config/gsc-config.md`.
+- **Nguồn A — SEO Dashboard MCP (ưu tiên, không cần credentials):** agent có MCP `SEO Dashboard`. Playbook: `.agents/skills/seo-dashboard/SKILL.md`.
+- **Nguồn B — GSC API trực tiếp:** file credentials tại `.agents/config/gsc-credentials.json`. Nếu chưa có: làm theo `.agents/config/gsc-config.md`.
 - Không có cả hai → kiểm tra `python scripts/dashboard_cache.py status`; cache còn thì nhảy thẳng Bước 2.
 
 ---
@@ -47,10 +47,10 @@ Nếu cache còn mới (< 7 ngày) và không có `--force`: báo `[SKIP]` và d
 python scripts/process_gsc.py
 ```
 
-Output: `knowledge/3-pipeline/gsc-opportunities.md`
+Output: `knowledge/3-seo/strategy/gsc-opportunities.md`
 
 ### Bước 3: Đọc và tóm tắt report
-Đọc `knowledge/3-pipeline/gsc-opportunities.md` và trình bày tóm tắt cho người dùng:
+Đọc `knowledge/3-seo/strategy/gsc-opportunities.md` và trình bày tóm tắt cho người dùng:
 
 ```
 📊 GSC Opportunities Report — [ngày tạo]

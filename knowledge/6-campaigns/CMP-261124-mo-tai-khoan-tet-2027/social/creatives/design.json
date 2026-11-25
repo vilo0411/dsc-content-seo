@@ -1,0 +1,126 @@
+{
+  "job": "CMP-261124-mo-tai-khoan-tet-2027",
+  "source": "facebook-mo-tai-khoan-tet-v1.md",
+  "channel": "social",
+  "version": 3,
+  "approved": [],
+  "creatives": [
+    {
+      "id": "facebook-v1",
+      "layout": "kv-right",
+      "theme": "ivory",
+      "type": "serif",
+      "size": "1080x1350",
+      "kv": {
+        "subject": "a delicate watercolor path of stone steps climbing gently up layered jade mountains, the first step touched with gold, a blooming apricot blossom branch in the foreground",
+        "motifs": [
+          "hoa mai",
+          "layered jade mountains",
+          "thin gold linework"
+        ],
+        "mood": "a calm first step in the new year"
+      },
+      "text": {
+        "script": "Tiền thưởng về",
+        "headline": "**Bước đầu tiên** là gì?",
+        "sub": "Mở tài khoản trước, hỏi chuyên gia rồi mới mua",
+        "note": ""
+      },
+      "image": {
+        "src": "lib:bg-iv-sontuy-r",
+        "focus": "50% 50%"
+      }
+    },
+    {
+      "id": "facebook-v2-01",
+      "group": "facebook-v2",
+      "layout": "kv-center",
+      "size": "1080x1080",
+      "text": {
+        "script": "Trước khi mở tài khoản",
+        "headline": "**3 điều** nên so",
+        "sub": "Lướt sang để xem từng điều →",
+        "note": ""
+      },
+      "page": 1,
+      "pages": 5,
+      "theme": "ivory",
+      "type": "serif",
+      "kv": {
+        "subject": "three graceful white cranes standing on lotus leaves in a quiet pond below jade mountains, painted in Vietnamese silk-and-watercolor style",
+        "motifs": [
+          "three cranes",
+          "lotus leaves",
+          "jade mountains"
+        ],
+        "mood": "careful comparison, clarity"
+      }
+    },
+    {
+      "id": "facebook-v2-02",
+      "group": "facebook-v2",
+      "layout": "rows",
+      "size": "1080x1080",
+      "text": {
+        "headline": "1. Phí giao dịch",
+        "items": [
+          "Xem biểu phí công bố, không chỉ con số trên quảng cáo",
+          "Hỏi rõ phí khi mua và khi bán"
+        ],
+        "note": ""
+      },
+      "theme": "ivory",
+      "page": 2,
+      "pages": 5
+    },
+    {
+      "id": "facebook-v2-03",
+      "group": "facebook-v2",
+      "layout": "rows",
+      "size": "1080x1080",
+      "text": {
+        "headline": "2. Người hỗ trợ khi bạn cần hỏi",
+        "items": [
+          "Có chuyên gia môi giới riêng hay chỉ có chatbot",
+          "Hỏi được trước khi đặt lệnh đầu tiên"
+        ],
+        "note": ""
+      },
+      "theme": "ivory",
+      "page": 3,
+      "pages": 5
+    },
+    {
+      "id": "facebook-v2-04",
+      "group": "facebook-v2",
+      "layout": "rows",
+      "size": "1080x1080",
+      "text": {
+        "headline": "3. App đặt lệnh dễ dùng",
+        "items": [
+          "Đặt lệnh giới hạn có rõ ràng, dễ kiểm tra không",
+          "Xem danh mục, nạp tiền ngay trên app"
+        ],
+        "note": ""
+      },
+      "theme": "ivory",
+      "page": 4,
+      "pages": 5
+    },
+    {
+      "id": "facebook-v2-05",
+      "group": "facebook-v2",
+      "layout": "cta-end",
+      "size": "1080x1080",
+      "text": {
+        "headline": "Ở DSC: phí từ **0,1%**, có môi giới 1:1",
+        "sub": "Mở tài khoản online khoảng 3 phút",
+        "cta": "Mở tài khoản ngay",
+        "note": "Theo biểu phí hiện hành của Chứng khoán DSC"
+      },
+      "page": 5,
+      "pages": 5,
+      "theme": "emerald"
+    }
+  ]
+}

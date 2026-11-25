@@ -16,9 +16,9 @@ class SnapshotTest(unittest.TestCase):
         root = Path(self.tmp.name)
         self._orig = (snap.ROOT, snap.CONTENT, snap.ARCHIVE, snap.LEDGER, snap.SOURCES)
         snap.ROOT = root
-        snap.CONTENT = root / "knowledge/4-content"
+        snap.CONTENT = root / "knowledge/3-seo/content"
         snap.ARCHIVE = snap.CONTENT / "archive"
-        snap.LEDGER = root / "knowledge/3-pipeline/publish-ledger.csv"
+        snap.LEDGER = root / "knowledge/3-seo/logs/publish-ledger.csv"
         snap.SOURCES = {
             "outline": [snap.CONTENT / "1-outlines" / "{slug}.md"],
             "gate2": [snap.CONTENT / "2-drafts" / "Draft-{slug}.md"],

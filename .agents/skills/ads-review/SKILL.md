@@ -6,7 +6,7 @@ description: Đọc hiệu quả quảng cáo Meta (account / campaign / job), c
 # /ads-review [job|campaign_id|account] [--days 7|14|30]
 
 ## Bước 0 — Context
-`.antigravity/domains/ads/README.md`, `references/meta-ads-playbook.md` §4, `learnings.md`. Không cần load anti-ai / persona (không viết nội dung).
+`.agents/domains/ads/README.md`, `references/meta-ads-playbook.md` §4, `learnings.md`. Không cần load anti-ai / persona (không viết nội dung).
 
 ## Bước 1 — Kéo số (read-only)
 1. `ads_get_ad_accounts` nếu chưa biết account; job có `ads/meta-ids.md` → dùng các ID trong đó.

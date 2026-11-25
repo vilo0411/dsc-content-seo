@@ -2,8 +2,8 @@
 import html,re,json,subprocess,sys
 from bs4 import BeautifulSoup
 sys.stdout.reconfigure(encoding="utf-8")
-slug="nen-mo-tai-khoan-chung-khoan-o-dau";out=Path("knowledge/4-content/audits/account-serp-2026-11-04")
-draft=Path("knowledge/4-content/2-drafts/Optimize-"+slug+"-serp-2026-11-04.md");base=out/("baseline-"+slug+".md")
+slug="nen-mo-tai-khoan-chung-khoan-o-dau";out=Path("knowledge/3-seo/content/audits/account-serp-2026-11-04")
+draft=Path("knowledge/3-seo/content/2-drafts/Optimize-"+slug+"-serp-2026-11-04.md");base=out/("baseline-"+slug+".md")
 s=draft.read_text(encoding="utf-8");body=s.split("---",2)[2].strip();blocks=re.split(r"\n\s*\n",body)
 def inline(text):
  text=html.escape(text)
@@ -46,7 +46,7 @@ commands={
  "draft_facts":["scripts/market_facts.py","--verify",str(draft)],
  "baseline_facts":["scripts/market_facts.py","--verify",str(base)]
 }
-report={"slug":slug,"published":False,"proposal":"knowledge/4-content/1-outlines/Proposal-"+slug+"-serp-2026-11-04.md","draft":str(draft),"body_html":str(target),"preservation":check,"qa":{},"remaining_editorial":["Original HOSE market-share infographic and SSI Top2 alt were retained from live; no independently verified source for their numeric claims. Caption explicitly historical. Must resolve before CMS publication."],"fact_check_scope":"market_facts checks market index/ticker/stale patterns, not all service claims; fee and onboarding claims checked separately against primary company websites."}
+report={"slug":slug,"published":False,"proposal":"knowledge/3-seo/content/1-outlines/Proposal-"+slug+"-serp-2026-11-04.md","draft":str(draft),"body_html":str(target),"preservation":check,"qa":{},"remaining_editorial":["Original HOSE market-share infographic and SSI Top2 alt were retained from live; no independently verified source for their numeric claims. Caption explicitly historical. Must resolve before CMS publication."],"fact_check_scope":"market_facts checks market index/ticker/stale patterns, not all service claims; fee and onboarding claims checked separately against primary company websites."}
 for name,args in commands.items():
  p=subprocess.run([sys.executable]+args,capture_output=True,encoding="utf-8")
  try:v=json.loads(p.stdout)

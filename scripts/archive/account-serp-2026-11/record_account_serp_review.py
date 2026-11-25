@@ -1,6 +1,6 @@
 ﻿from pathlib import Path
 import json
-root=Path("knowledge/4-content/audits/account-serp-2026-11-04")
+root=Path("knowledge/3-seo/content/audits/account-serp-2026-11-04")
 review="""# Independent Quality Guardian — 04/11/2026
 
 Secondary semantic review: FAIL before publication. Lint99/100 does not override these findings.

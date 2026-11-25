@@ -116,8 +116,8 @@ def create_pow_image():
     # Add watermark logo
     img = add_watermark_logo(img, is_dark_bg=True)
     
-    os.makedirs("knowledge/4-content/images", exist_ok=True)
-    out_path = "knowledge/4-content/images/co-nen-mua-co-phieu-pow-hay-khong-nhon-trach-3-4.jpg"
+    os.makedirs("knowledge/3-seo/content/images", exist_ok=True)
+    out_path = "knowledge/3-seo/content/images/co-nen-mua-co-phieu-pow-hay-khong-nhon-trach-3-4.jpg"
     img.save(out_path, "JPEG", quality=92)
     print(f"Created image: {out_path}")
 

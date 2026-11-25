@@ -1,0 +1,666 @@
+{
+ "title": "Đợt 3 — link nội bộ trỏ vào URL đã 301 (gộp bài) / bài bị gỡ",
+ "intro": "href = đổi sang URL đích; unlink = alias của chính bài / bài đã gỡ / trang danh mục dau-tu-hieu-qua (gỡ theo quyết định 17/11).",
+ "edits": [
+  {
+   "src": "cach-dinh-gia-co-phieu-cho-nguoi-moi-bat-dau",
+   "op": "href",
+   "find": "Định giá cổ phiếu HPG",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-phieu-hpg-tong-quan-dinh-gia-ket-qua-kinh-doanh-moi-nhat",
+   "to": "co-nen-mua-co-phieu-hpg-hay-khong",
+   "group": "fix",
+   "pri": "P1",
+   "why": "co-phieu-hpg-tong-quan-dinh-gia-ket-qua-kinh-doanh-moi-nhat đã 301 → co-nen-mua-co-phieu-hpg-hay-khong (xem-them)"
+  },
+  {
+   "src": "cach-mua-co-phieu-acb-ngan-hang-thuong-mai-co-phan-a-chau-huong-dan-chi-tiet",
+   "op": "href",
+   "find": "Xem số lượng cổ phiếu ACB đã mua được hiển thị tro",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-phieu-acb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "to": "co-nen-mua-co-phieu-acb-hay-khong",
+   "group": "fix",
+   "pri": "P1",
+   "why": "co-phieu-acb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat đã 301 → co-nen-mua-co-phieu-acb-hay-khong (contextual)"
+  },
+  {
+   "src": "cach-mua-co-phieu-hoa-phat-hpg-nhanh-chong-va-an-toan",
+   "op": "href",
+   "find": "Để sở hữu cổ phiếu HPG, bước đầu tiên bạn cần thực",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-phieu-hpg-tong-quan-dinh-gia-ket-qua-kinh-doanh-moi-nhat",
+   "to": "co-nen-mua-co-phieu-hpg-hay-khong",
+   "group": "fix",
+   "pri": "P1",
+   "why": "co-phieu-hpg-tong-quan-dinh-gia-ket-qua-kinh-doanh-moi-nhat đã 301 → co-nen-mua-co-phieu-hpg-hay-khong (contextual)"
+  },
+  {
+   "src": "cach-mua-co-phieu-plx-petrolimex",
+   "op": "href",
+   "find": "Tập đoàn Xăng dầu Việt Nam (Petrolimex - Mã: PLX) ",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-phieu-plx-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "to": "co-nen-mua-co-phieu-plx-hay-khong",
+   "group": "fix",
+   "pri": "P1",
+   "why": "co-phieu-plx-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat đã 301 → co-nen-mua-co-phieu-plx-hay-khong (contextual)"
+  },
+  {
+   "src": "cach-mua-co-phieu-vhm",
+   "op": "href",
+   "find": "Cách mua cổ phiếu VRE cho người mới bắt đầu",
+   "old": "https://www.dsc.com.vn/kien-thuc/cach-mua-co-phieu-vre",
+   "to": "cach-mua-co-phieu-vingroup-vic-huong-dan-moi-nhat-2024",
+   "group": "fix",
+   "pri": "P1",
+   "why": "cach-mua-co-phieu-vre đã 301 → cach-mua-co-phieu-vingroup-vic-huong-dan-moi-nhat-2024 (xem-them)"
+  },
+  {
+   "src": "cach-mua-co-phieu-vjc",
+   "op": "href",
+   "find": "Cổ phiếu VJC là thành viên của chỉ số VN30, phản á",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-phieu-vjc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "to": "co-nen-mua-co-phieu-vjc-hay-khong",
+   "group": "fix",
+   "pri": "P1",
+   "why": "co-phieu-vjc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat đã 301 → co-nen-mua-co-phieu-vjc-hay-khong (contextual)"
+  },
+  {
+   "src": "cach-su-dung-4-duong-ma-pho-bien-trong-phan-tich-ky-thuat",
+   "op": "href",
+   "find": ">> Xem thêm: Hướng dẫn phân tích kỹ thuật kết hợp ",
+   "old": "https://www.dsc.com.vn/kien-thuc/chien-luoc-giao-dich-ket-hop-bollinger-bands-va-duong-ma",
+   "to": "bollinger-bands-la-gi-cach-su-dung-trong-giao-dich-chung-khoan",
+   "group": "fix",
+   "pri": "P1",
+   "why": "chien-luoc-giao-dich-ket-hop-bollinger-bands-va-duong-ma đã 301 → bollinger-bands-la-gi-cach-su-dung-trong-giao-dich-chung-khoan (xem-them)"
+  },
+  {
+   "src": "chi-bao-ultimate-oscillator-uo-la-gi",
+   "op": "href",
+   "find": "Nhóm này gồm các cổ phiếu ngành bất động sản như D",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-nen-mua-co-phieu-dig-hay-khong",
+   "to": "co-phieu-dig-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "group": "fix",
+   "pri": "P1",
+   "why": "co-nen-mua-co-phieu-dig-hay-khong đã 301 → co-phieu-dig-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat (contextual)"
+  },
+  {
+   "src": "co-nen-ban-vang-thoi-diem-nay",
+   "op": "href",
+   "find": ">> Xem thêm: Nên gửi tiết kiệm hay mua vàng?",
+   "old": "https://www.dsc.com.vn/kien-thuc/nen-gui-tiet-kiem-hay-mua-vang",
+   "to": "co-100-trieu-nen-mua-vang-hay-gui-tiet-kiem",
+   "group": "fix",
+   "pri": "P1",
+   "why": "nen-gui-tiet-kiem-hay-mua-vang đã 301 → co-100-trieu-nen-mua-vang-hay-gui-tiet-kiem (xem-them)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-acb-hay-khong",
+   "op": "unlink",
+   "find": "Cổ phiếu ACB là được phát hành bởi Ngân hàng thươn",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-phieu-acb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "to": "",
+   "group": "fix",
+   "pri": "P1",
+   "why": "link tới co-phieu-acb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat — URL đã 301 về chính bài này"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-acb-hay-khong",
+   "op": "href",
+   "find": "Có nên mua cổ phiếu BID hay không?",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-nen-mua-co-phieu-bid-hay-khong",
+   "to": "co-phieu-bid-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "group": "fix",
+   "pri": "P1",
+   "why": "co-nen-mua-co-phieu-bid-hay-khong đã 301 → co-phieu-bid-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat (xem-them)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-acv-hay-khong",
+   "op": "href",
+   "find": ">> Xem thêm: Có nên mua cổ phiếu BID hay không?",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-nen-mua-co-phieu-bid-hay-khong",
+   "to": "co-phieu-bid-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "group": "fix",
+   "pri": "P1",
+   "why": "co-nen-mua-co-phieu-bid-hay-khong đã 301 → co-phieu-bid-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat (xem-them)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-gas-hay-khong",
+   "op": "unlink",
+   "find": "Đây là những dữ liệu phân tích kỹ thuật tại thời đ",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-phieu-gas-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+   "to": "",
+   "group": "fix",
+   "pri": "P1",
+   "why": "link tới co-phieu-gas-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat — URL đã 301 về chính bài này"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-hpg-hay-khong",
+   "op": "unlink",
+   "find": "Cổ phiếu HPG là được phát hành bởi Tập đoàn Hòa Ph",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-phieu-hpg-tong-quan-dinh-gia-ket-qua-kinh-doanh-moi-nhat",
+   "to": "",
+   "group": "fix",
+   "pri": "P1",
+   "why": "link tới co-phieu-hpg-tong-quan-dinh-gia-ket-qua-kinh-doanh-moi-nhat — URL đã 301 về chính bài này"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-hpg-hay-khong",
+   "op": "href",
+   "find": "Có nên mua cổ phiếu LPB hay không?",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-nen-mua-co-phieu-lpb-hay-khong",
+   "to": "co-phieu-lpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "group": "fix",
+   "pri": "P1",
+   "why": "co-nen-mua-co-phieu-lpb-hay-khong đã 301 → co-phieu-lpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat (xem-them)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-idj-hay-khong",
+   "op": "href",
+   "find": ">> Xem thêm: Có nên mua cổ phiếu LPB hay không?",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-nen-mua-co-phieu-lpb-hay-khong",
+   "to": "co-phieu-lpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "group": "fix",
+   "pri": "P1",
+   "why": "co-nen-mua-co-phieu-lpb-hay-khong đã 301 → co-phieu-lpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat (xem-them)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-plx-hay-khong",
+   "op": "unlink",
+   "find": "Cổ phiếu PLX là cổ phiếu được phát hành bởi Tập đ",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-phieu-plx-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "to": "",
+   "group": "fix",
+   "pri": "P1",
+   "why": "link tới co-phieu-plx-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat — URL đã 301 về chính bài này"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-pow-hay-khong",
+   "op": "href",
+   "find": "Có nên mua cổ phiếu REE hay không?",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-nen-mua-co-phieu-ree-hay-khong",
+   "to": "co-phieu-ree-tong-quan-nhan-dinh-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "group": "fix",
+   "pri": "P1",
+   "why": "co-nen-mua-co-phieu-ree-hay-khong đã 301 → co-phieu-ree-tong-quan-nhan-dinh-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat (xem-them)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-ssi-hay-khong",
+   "op": "unlink",
+   "find": "Cổ phiếu SSI được phát hành bởi công ty cổ phần ch",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-phieu-ssi-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "to": "",
+   "group": "fix",
+   "pri": "P1",
+   "why": "link tới co-phieu-ssi-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat — URL đã 301 về chính bài này"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-vib-hay-khong-1",
+   "op": "unlink",
+   "find": "Cổ phiếu VIB là cổ phiếu được phát hành bởi Ngân h",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-phieu-vib-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "to": "",
+   "group": "fix",
+   "pri": "P1",
+   "why": "link tới co-phieu-vib-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat — URL đã 301 về chính bài này"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-vjc-hay-khong",
+   "op": "unlink",
+   "find": "Cổ phiếu VJC là cổ phiếu được phát hành bởi Công t",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-phieu-vjc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "to": "",
+   "group": "fix",
+   "pri": "P1",
+   "why": "link tới co-phieu-vjc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat — URL đã 301 về chính bài này"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-vpb-hay-khong",
+   "op": "unlink",
+   "find": "Cổ phiếu VPB là cổ phiếu được phát hành bởi Ngân h",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-phieu-vpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "to": "",
+   "group": "fix",
+   "pri": "P1",
+   "why": "link tới co-phieu-vpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat — URL đã 301 về chính bài này"
+  },
+  {
+   "src": "co-phieu-bsr-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "href",
+   "find": ">> Xem thêm: Cổ phiếu PLX: Tổng quan, đánh giá và ",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-phieu-plx-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "to": "co-nen-mua-co-phieu-plx-hay-khong",
+   "group": "fix",
+   "pri": "P1",
+   "why": "co-phieu-plx-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat đã 301 → co-nen-mua-co-phieu-plx-hay-khong (xem-them)"
+  },
+  {
+   "src": "co-phieu-ctg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "href",
+   "find": "Cổ phiếu VIB: Tổng quan, đánh giá và cập nhật kết ",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-phieu-vib-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "to": "co-nen-mua-co-phieu-vib-hay-khong-1",
+   "group": "fix",
+   "pri": "P1",
+   "why": "co-phieu-vib-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat đã 301 → co-nen-mua-co-phieu-vib-hay-khong-1 (xem-them)"
+  },
+  {
+   "src": "co-phieu-dig-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "unlink",
+   "find": "Có nên mua cổ phiếu DIG hay không?",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-nen-mua-co-phieu-dig-hay-khong",
+   "to": "",
+   "group": "fix",
+   "pri": "P1",
+   "why": "link tới co-nen-mua-co-phieu-dig-hay-khong — URL đã 301 về chính bài này"
+  },
+  {
+   "src": "co-phieu-frt-tong-quan-dinh-gia-ket-qua-kinh-doanh-moi-nhat",
+   "op": "href",
+   "find": "Cổ phiếu GAS: Tổng quan, đánh giá và kết quả kinh ",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-phieu-gas-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+   "to": "co-nen-mua-co-phieu-gas-hay-khong",
+   "group": "fix",
+   "pri": "P1",
+   "why": "co-phieu-gas-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat đã 301 → co-nen-mua-co-phieu-gas-hay-khong (xem-them)"
+  },
+  {
+   "src": "co-phieu-hdb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "href",
+   "find": "Cổ phiếu VPB: Tổng quan, đánh giá và cập nhật kết ",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-phieu-vpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "to": "co-nen-mua-co-phieu-vpb-hay-khong",
+   "group": "fix",
+   "pri": "P1",
+   "why": "co-phieu-vpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat đã 301 → co-nen-mua-co-phieu-vpb-hay-khong (xem-them)"
+  },
+  {
+   "src": "co-phieu-lpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "unlink",
+   "find": ">> Xem thêm: Có nên mua cổ phiếu LPB hay không?",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-nen-mua-co-phieu-lpb-hay-khong",
+   "to": "",
+   "group": "fix",
+   "pri": "P1",
+   "why": "link tới co-nen-mua-co-phieu-lpb-hay-khong — URL đã 301 về chính bài này"
+  },
+  {
+   "src": "co-phieu-msb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "href",
+   "find": "Cổ phiếu VIB: Tổng quan, đánh giá và cập nhật kết ",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-phieu-vib-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "to": "co-nen-mua-co-phieu-vib-hay-khong-1",
+   "group": "fix",
+   "pri": "P1",
+   "why": "co-phieu-vib-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat đã 301 → co-nen-mua-co-phieu-vib-hay-khong-1 (xem-them)"
+  },
+  {
+   "src": "co-phieu-nganh-du-lich",
+   "op": "href",
+   "find": "VJC luôn dẫn đầu về vốn hóa và tính thanh khoản tr",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-phieu-vjc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "to": "co-nen-mua-co-phieu-vjc-hay-khong",
+   "group": "fix",
+   "pri": "P1",
+   "why": "co-phieu-vjc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat đã 301 → co-nen-mua-co-phieu-vjc-hay-khong (contextual)"
+  },
+  {
+   "src": "co-phieu-ocb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "href",
+   "find": "Cổ phiếu ACB: Tổng quan, đánh giá và cập nhật kết ",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-phieu-acb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "to": "co-nen-mua-co-phieu-acb-hay-khong",
+   "group": "fix",
+   "pri": "P1",
+   "why": "co-phieu-acb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat đã 301 → co-nen-mua-co-phieu-acb-hay-khong (xem-them)"
+  },
+  {
+   "src": "co-phieu-scs-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "href",
+   "find": ">> Xem thêm: Cổ phiếu VJC: Tổng quan, đánh giá và ",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-phieu-vjc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "to": "co-nen-mua-co-phieu-vjc-hay-khong",
+   "group": "fix",
+   "pri": "P1",
+   "why": "co-phieu-vjc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat đã 301 → co-nen-mua-co-phieu-vjc-hay-khong (xem-them)"
+  },
+  {
+   "src": "co-phieu-stb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "href",
+   "find": "Cổ phiếu VPB: Tổng quan, đánh giá và cập nhật kết ",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-phieu-vpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "to": "co-nen-mua-co-phieu-vpb-hay-khong",
+   "group": "fix",
+   "pri": "P1",
+   "why": "co-phieu-vpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat đã 301 → co-nen-mua-co-phieu-vpb-hay-khong (xem-them)"
+  },
+  {
+   "src": "co-phieu-vci-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+   "op": "href",
+   "find": ">> Xem thêm: Cổ phiếu SSI: Tổng quan, đánh giá và ",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-phieu-ssi-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "to": "co-nen-mua-co-phieu-ssi-hay-khong",
+   "group": "fix",
+   "pri": "P1",
+   "why": "co-phieu-ssi-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat đã 301 → co-nen-mua-co-phieu-ssi-hay-khong (xem-them)"
+  },
+  {
+   "src": "co-phieu-vcs-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "href",
+   "find": ">> Xem thêm: Cổ phiếu VIB: Tổng quan, đánh giá và ",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-phieu-vib-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "to": "co-nen-mua-co-phieu-vib-hay-khong-1",
+   "group": "fix",
+   "pri": "P1",
+   "why": "co-phieu-vib-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat đã 301 → co-nen-mua-co-phieu-vib-hay-khong-1 (xem-them)"
+  },
+  {
+   "src": "co-phieu-vcs-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "href",
+   "find": ">> Xem thêm: Cổ phiếu VJC: Tổng quan, đánh giá và ",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-phieu-vjc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "to": "co-nen-mua-co-phieu-vjc-hay-khong",
+   "group": "fix",
+   "pri": "P1",
+   "why": "co-phieu-vjc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat đã 301 → co-nen-mua-co-phieu-vjc-hay-khong (xem-them)"
+  },
+  {
+   "src": "co-phieu-vds-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "op": "href",
+   "find": ">> Xem thêm: Cổ phiếu SSI: Tổng quan, đánh giá và ",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-phieu-ssi-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "to": "co-nen-mua-co-phieu-ssi-hay-khong",
+   "group": "fix",
+   "pri": "P1",
+   "why": "co-phieu-ssi-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat đã 301 → co-nen-mua-co-phieu-ssi-hay-khong (xem-them)"
+  },
+  {
+   "src": "co-phieu-vos-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+   "op": "href",
+   "find": ">> Xem thêm: Cổ phiếu VPB: Tổng quan, đánh giá và ",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-phieu-vpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "to": "co-nen-mua-co-phieu-vpb-hay-khong",
+   "group": "fix",
+   "pri": "P1",
+   "why": "co-phieu-vpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat đã 301 → co-nen-mua-co-phieu-vpb-hay-khong (xem-them)"
+  },
+  {
+   "src": "co-phieu-vre-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+   "op": "href",
+   "find": "Cách mua cổ phiếu VRE",
+   "old": "https://www.dsc.com.vn/kien-thuc/cach-mua-co-phieu-vre",
+   "to": "cach-mua-co-phieu-vingroup-vic-huong-dan-moi-nhat-2024",
+   "group": "fix",
+   "pri": "P1",
+   "why": "cach-mua-co-phieu-vre đã 301 → cach-mua-co-phieu-vingroup-vic-huong-dan-moi-nhat-2024 (xem-them)"
+  },
+  {
+   "src": "huong-dan-cach-mua-co-phieu-ssi-tai-chung-khoan-dsc",
+   "op": "href",
+   "find": "Đến bước quan trọng nhất - đặt lệnh mua cổ phiếu S",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-phieu-ssi-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "to": "co-nen-mua-co-phieu-ssi-hay-khong",
+   "group": "fix",
+   "pri": "P1",
+   "why": "co-phieu-ssi-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat đã 301 → co-nen-mua-co-phieu-ssi-hay-khong (contextual)"
+  },
+  {
+   "src": "nen-mua-vang-o-ngan-hang-hay-tiem-vang",
+   "op": "href",
+   "find": ">> Xem thêm: Nên gửi tiết kiệm hay mua vàng?",
+   "old": "https://www.dsc.com.vn/kien-thuc/nen-gui-tiet-kiem-hay-mua-vang",
+   "to": "co-100-trieu-nen-mua-vang-hay-gui-tiet-kiem",
+   "group": "fix",
+   "pri": "P1",
+   "why": "nen-gui-tiet-kiem-hay-mua-vang đã 301 → co-100-trieu-nen-mua-vang-hay-gui-tiet-kiem (xem-them)"
+  },
+  {
+   "src": "top-5-co-phieu-dau-khi-se-huong-loi-trong-nam-2024-khi-gia-dau-tang",
+   "op": "href",
+   "find": "GAS hoạt động chủ yếu trong lĩnh vực kinh doanh kh",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-phieu-gas-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+   "to": "co-nen-mua-co-phieu-gas-hay-khong",
+   "group": "fix",
+   "pri": "P1",
+   "why": "co-phieu-gas-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat đã 301 → co-nen-mua-co-phieu-gas-hay-khong (contextual)"
+  },
+  {
+   "src": "top-5-co-phieu-dau-khi-se-huong-loi-trong-nam-2024-khi-gia-dau-tang",
+   "op": "href",
+   "find": "Petrolimex (PLX) là doanh nghiệp phân phối xăng dầ",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-phieu-plx-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "to": "co-nen-mua-co-phieu-plx-hay-khong",
+   "group": "fix",
+   "pri": "P1",
+   "why": "co-phieu-plx-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat đã 301 → co-nen-mua-co-phieu-plx-hay-khong (contextual)"
+  },
+  {
+   "src": "top-5-co-phieu-nganh-chung-khoan-dang-dau-tu-nhat",
+   "op": "href",
+   "find": "Cổ phiếu SSI được đánh giá là một trong những mã ổ",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-phieu-ssi-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "to": "co-nen-mua-co-phieu-ssi-hay-khong",
+   "group": "fix",
+   "pri": "P1",
+   "why": "co-phieu-ssi-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat đã 301 → co-nen-mua-co-phieu-ssi-hay-khong (contextual)"
+  },
+  {
+   "src": "top-5-co-phieu-sieu-dau-co-cua-tung-nhom-nganh-rui-ro-cao-loi-nhuan-cao",
+   "op": "href",
+   "find": "DIG là đơn vị phát triển bất động sản có quỹ đất k",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-nen-mua-co-phieu-dig-hay-khong",
+   "to": "co-phieu-dig-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "group": "fix",
+   "pri": "P1",
+   "why": "co-nen-mua-co-phieu-dig-hay-khong đã 301 → co-phieu-dig-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat (contextual)"
+  },
+  {
+   "src": "top-co-phieu-hang-khong-nen-dau-tu",
+   "op": "href",
+   "find": "Đứng đầu top cổ phiếu ngành ngân hàng có giá trị t",
+   "old": "https://www.dsc.com.vn/kien-thuc/co-phieu-vjc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "to": "co-nen-mua-co-phieu-vjc-hay-khong",
+   "group": "fix",
+   "pri": "P1",
+   "why": "co-phieu-vjc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat đã 301 → co-nen-mua-co-phieu-vjc-hay-khong (contextual)"
+  },
+  {
+   "src": "tu-van-chung-khoan-la-gi",
+   "op": "href",
+   "find": "Hoạt động ủy thác đầu tư chứng khoán là gì?",
+   "old": "https://www.dsc.com.vn/kien-thuc/hoat-dong-uy-thac-dau-tu-chung-khoan-la-gi",
+   "to": "uy-thac-dau-tu-la-gi",
+   "group": "fix",
+   "pri": "P1",
+   "why": "hoat-dong-uy-thac-dau-tu-chung-khoan-la-gi đã 301 → uy-thac-dau-tu-la-gi (xem-them)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-acv-hay-khong",
+   "op": "unlink",
+   "find": "“Có nên mua cổ phiếu ACV hay không?” là câu hỏi kh",
+   "old": "https://www.dsc.com.vn/kien-thuc/dau-tu-hieu-qua",
+   "to": "",
+   "group": "fix",
+   "pri": "P2",
+   "why": "link tới trang danh mục «Đầu tư hiệu quả» — gỡ (quyết định 17/11)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-frt-hay-khong",
+   "op": "unlink",
+   "find": "Trên đây là những đánh giá chi tiết về cổ phiếu FR",
+   "old": "https://www.dsc.com.vn/kien-thuc/dau-tu-hieu-qua",
+   "to": "",
+   "group": "fix",
+   "pri": "P2",
+   "why": "link tới trang danh mục «Đầu tư hiệu quả» — gỡ (quyết định 17/11)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-gas-hay-khong",
+   "op": "unlink",
+   "find": "Trên đây là những đánh giá chi tiết về cổ phiếu GA",
+   "old": "https://www.dsc.com.vn/kien-thuc/dau-tu-hieu-qua",
+   "to": "",
+   "group": "fix",
+   "pri": "P2",
+   "why": "link tới trang danh mục «Đầu tư hiệu quả» — gỡ (quyết định 17/11)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-hag-hay-khong",
+   "op": "unlink",
+   "find": "Trên đây là những đánh giá chi tiết về cổ phiếu HA",
+   "old": "https://www.dsc.com.vn/kien-thuc/dau-tu-hieu-qua",
+   "to": "",
+   "group": "fix",
+   "pri": "P2",
+   "why": "link tới trang danh mục «Đầu tư hiệu quả» — gỡ (quyết định 17/11)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-hpg-hay-khong",
+   "op": "unlink",
+   "find": "Mong rằng nhà đầu tư đã có những quyết định cho ri",
+   "old": "https://www.dsc.com.vn/kien-thuc/dau-tu-hieu-qua",
+   "to": "",
+   "group": "fix",
+   "pri": "P2",
+   "why": "link tới trang danh mục «Đầu tư hiệu quả» — gỡ (quyết định 17/11)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-idj-hay-khong",
+   "op": "unlink",
+   "find": "Trên đây là những đánh giá chi tiết về cổ phiếu ID",
+   "old": "https://www.dsc.com.vn/kien-thuc/dau-tu-hieu-qua",
+   "to": "",
+   "group": "fix",
+   "pri": "P2",
+   "why": "link tới trang danh mục «Đầu tư hiệu quả» — gỡ (quyết định 17/11)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-pet-hay-khong",
+   "op": "unlink",
+   "find": "Trên đây là những đánh giá chi tiết về cổ phiếu PE",
+   "old": "https://www.dsc.com.vn/kien-thuc/dau-tu-hieu-qua",
+   "to": "",
+   "group": "fix",
+   "pri": "P2",
+   "why": "link tới trang danh mục «Đầu tư hiệu quả» — gỡ (quyết định 17/11)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-plx-hay-khong",
+   "op": "unlink",
+   "find": "Trên đây là những đánh giá chi tiết về cổ phiếu PL",
+   "old": "https://www.dsc.com.vn/kien-thuc/dau-tu-hieu-qua",
+   "to": "",
+   "group": "fix",
+   "pri": "P2",
+   "why": "link tới trang danh mục «Đầu tư hiệu quả» — gỡ (quyết định 17/11)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-pow-hay-khong",
+   "op": "unlink",
+   "find": "Trên đây là những đánh giá chi tiết về cổ phiếu PO",
+   "old": "https://www.dsc.com.vn/kien-thuc/dau-tu-hieu-qua",
+   "to": "",
+   "group": "fix",
+   "pri": "P2",
+   "why": "link tới trang danh mục «Đầu tư hiệu quả» — gỡ (quyết định 17/11)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-sbt-hay-khong",
+   "op": "unlink",
+   "find": "Trên đây là những đánh giá chi tiết về cổ phiếu SB",
+   "old": "https://www.dsc.com.vn/kien-thuc/dau-tu-hieu-qua",
+   "to": "",
+   "group": "fix",
+   "pri": "P2",
+   "why": "link tới trang danh mục «Đầu tư hiệu quả» — gỡ (quyết định 17/11)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-scr-hay-khong",
+   "op": "unlink",
+   "find": "Trên đây là những đánh giá chi tiết về cổ phiếu SC",
+   "old": "https://www.dsc.com.vn/kien-thuc/dau-tu-hieu-qua",
+   "to": "",
+   "group": "fix",
+   "pri": "P2",
+   "why": "link tới trang danh mục «Đầu tư hiệu quả» — gỡ (quyết định 17/11)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-tar-hay-khong",
+   "op": "unlink",
+   "find": "Trên đây là những đánh giá chi tiết về cổ phiếu TA",
+   "old": "https://www.dsc.com.vn/kien-thuc/dau-tu-hieu-qua",
+   "to": "",
+   "group": "fix",
+   "pri": "P2",
+   "why": "link tới trang danh mục «Đầu tư hiệu quả» — gỡ (quyết định 17/11)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-tcb-techcombank-hay-khong",
+   "op": "unlink",
+   "find": "Trên đây là những đánh giá chi tiết về cổ phiếu TC",
+   "old": "https://www.dsc.com.vn/kien-thuc/dau-tu-hieu-qua",
+   "to": "",
+   "group": "fix",
+   "pri": "P2",
+   "why": "link tới trang danh mục «Đầu tư hiệu quả» — gỡ (quyết định 17/11)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-ttf-hay-khong",
+   "op": "unlink",
+   "find": "Trên đây là những đánh giá chi tiết về cổ phiếu TT",
+   "old": "https://www.dsc.com.vn/kien-thuc/dau-tu-hieu-qua",
+   "to": "",
+   "group": "fix",
+   "pri": "P2",
+   "why": "link tới trang danh mục «Đầu tư hiệu quả» — gỡ (quyết định 17/11)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-vcb-vietcombank-hay-khong",
+   "op": "unlink",
+   "find": "Trên đây là những đánh giá chi tiết về cổ phiếu VC",
+   "old": "https://www.dsc.com.vn/kien-thuc/dau-tu-hieu-qua",
+   "to": "",
+   "group": "fix",
+   "pri": "P2",
+   "why": "link tới trang danh mục «Đầu tư hiệu quả» — gỡ (quyết định 17/11)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-vib-hay-khong-1",
+   "op": "unlink",
+   "find": "Trên đây là những đánh giá chi tiết về cổ phiếu VI",
+   "old": "https://www.dsc.com.vn/kien-thuc/dau-tu-hieu-qua",
+   "to": "",
+   "group": "fix",
+   "pri": "P2",
+   "why": "link tới trang danh mục «Đầu tư hiệu quả» — gỡ (quyết định 17/11)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-vietnam-airlines-hvn-hay-khong",
+   "op": "unlink",
+   "find": "Trên đây là những đánh giá chi tiết về cổ phiếu HV",
+   "old": "https://www.dsc.com.vn/kien-thuc/dau-tu-hieu-qua",
+   "to": "",
+   "group": "fix",
+   "pri": "P2",
+   "why": "link tới trang danh mục «Đầu tư hiệu quả» — gỡ (quyết định 17/11)"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-vjc-hay-khong",
+   "op": "unlink",
+   "find": "Trên đây là những đánh giá chi tiết về cổ phiếu VJ",
+   "old": "https://www.dsc.com.vn/kien-thuc/dau-tu-hieu-qua",
+   "to": "",
+   "group": "fix",
+   "pri": "P2",
+   "why": "link tới trang danh mục «Đầu tư hiệu quả» — gỡ (quyết định 17/11)"
+  },
+  {
+   "src": "co-phieu-kdh-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+   "op": "unlink",
+   "find": "Bên cạnh những phân tích cơ bản, bài viết này còn ",
+   "old": "https://www.dsc.com.vn/kien-thuc/dau-tu-hieu-qua",
+   "to": "",
+   "group": "fix",
+   "pri": "P2",
+   "why": "link tới trang danh mục «Đầu tư hiệu quả» — gỡ (quyết định 17/11)"
+  }
+ ]
+}

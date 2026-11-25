@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Query the internal-link registry without loading the whole anchor-index.md.
+"""Query the article registry (knowledge/3-seo/strategy/pages.csv, scripts/registry.py) for internal links.
 
 Modes:
   python scripts/find_links.py "từ khóa" [--top 8] [--exclude slug] [--json]
@@ -10,9 +10,9 @@ Modes:
         the section + paragraph where an anchor could be wrapped. Scans the live snapshot
         (knowledge/raw/live, sync_live.py); --finalized falls back to 3-finalized/*.md.
 
-Sources: knowledge/3-pipeline/internal-links/anchor-index.md, sitemap-cache.json,
+Sources: knowledge/3-seo/strategy/pages.csv (registry.py), sitemap-cache.json,
          knowledge/raw/live/{html/,links.csv,pages.csv} (backfill + inlink column),
-         knowledge/4-content/3-finalized/*.md (backfill --finalized only),
+         knowledge/3-seo/content/3-finalized/*.md (backfill --finalized only),
          knowledge/raw/gsc/pages.csv (optional, ranks backfill sources by clicks).
 """
 
@@ -34,14 +34,15 @@ if hasattr(sys.stdout, "buffer"):
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 
 ROOT = Path(__file__).resolve().parents[1]
-ANCHOR_INDEX = ROOT / "knowledge/3-pipeline/internal-links/anchor-index.md"
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import registry  # noqa: E402  single source: strategy/pages.csv
 LIVE_DIR = ROOT / "knowledge/raw/live"
 LIVE_HTML = LIVE_DIR / "html"
 LIVE_LINKS = LIVE_DIR / "links.csv"
 LIVE_PAGES = LIVE_DIR / "pages.csv"
 LIVE_META = LIVE_DIR / "_meta.json"
-SITEMAP_CACHE = ROOT / ".antigravity/skills/internal-linking/scripts/sitemap-cache.json"
-FINALIZED_DIR = ROOT / "knowledge/4-content/3-finalized"
+SITEMAP_CACHE = ROOT / ".agents/skills/link/scripts/sitemap-cache.json"
+FINALIZED_DIR = ROOT / "knowledge/3-seo/content/3-finalized"
 GSC_PAGES = ROOT / "knowledge/raw/gsc/pages.csv"
 DSC_KB = "https://www.dsc.com.vn/kien-thuc/"
 
@@ -79,20 +80,16 @@ class Entry:
 
 
 def load_index() -> list[Entry]:
-    entries, cluster = [], ""
-    for i, line in enumerate(ANCHOR_INDEX.read_text(encoding="utf-8").splitlines(), 1):
-        if line.startswith("## "):
-            cluster = re.sub(r"\s*\(\d+ bài\)\s*$", "", line[3:]).strip()
+    """One Entry per registry row (Merged rows excluded); cluster = "<subgroup> <subgroup name>"."""
+    entries = []
+    for i, r in enumerate(registry.load(), 2):
+        if r["status"] == "Merged":
             continue
-        if not line.startswith("|"):
-            continue
-        cells = [c.strip() for c in line.strip().strip("|").split("|")]
-        if len(cells) < 4 or cells[0] in ("Anchor Text Gợi ý", "") or set(cells[0]) <= set(":- "):
-            continue
-        url = re.sub(r"^\[.*?\]\((.*?)\)$", r"\1", cells[1]).strip("`")
-        if not url.startswith("http"):
-            continue
-        entries.append(Entry(cluster, cells[0], url, cells[2], cells[3], i))
+        cluster = f"{r['subgroup']} {r['subgroup_name']}".strip() or f"{r['cluster']} {r['cluster_name']}".strip()
+        anchor = r["anchor"] or r["key_chinh"] or r["title"]
+        related = " | ".join(x for x in (r["key_chinh"], r["key_phu"], r["keywords"], r["title"]) if x and x != anchor)
+        status = "Live Published" if r["live"] == "yes" else r["status"]
+        entries.append(Entry(cluster, anchor, registry.url(r), related, status, i))
     return entries
 
 
@@ -170,7 +167,7 @@ def mode_search(args, entries, sitemap):
         ok = "✓" if e.url.rstrip("/") in sitemap else "✗ (không có trong cache)"
         print(f"| {n} | {e.anchor} | {e.url} | {e.cluster} | {e.status} | {ok} | {inl.get(e.slug, '-')} |")
     if not top:
-        print("Không có bài liên quan trong anchor-index. Cân nhắc link về hub cluster hoặc bỏ qua.")
+        print("Không có bài liên quan trong registry. Cân nhắc link về hub cluster hoặc bỏ qua.")
     print("\nChỉ dùng URL có Sitemap ✓. Đặt anchor tự nhiên trong câu, không dùng 'Xem thêm'.")
 
 
@@ -219,7 +216,7 @@ def mode_backfill(args, entries, sitemap):
         if len(matches) == 1:
             target = matches[0]
         else:
-            print(f"Không tìm thấy slug '{args.backfill}' trong anchor-index"
+            print(f"Không tìm thấy slug '{args.backfill}' trong registry pages.csv"
                   + (f" ({len(matches)} URL gần giống)" if matches else ""), file=sys.stderr)
             sys.exit(1)
     q = tokens(target.anchor) | tokens(target.related)
@@ -292,38 +289,30 @@ def mode_backfill(args, entries, sitemap):
 
 
 def add_anchor(args, entries) -> int:
-    """Append one row to anchor-index.md under the chosen cluster (the LLM never opens the 189 KB file)."""
+    """Set anchor + cluster of one article in the registry (adds the row if missing)."""
     slug = args.add_anchor.strip("/").split("/")[-1]
-    url = DSC_KB + slug
-    if any(e.url.rstrip("/") == url for e in entries):
-        print(f"{slug} đã có trong anchor-index.md — không thêm.")
-        return 0
     if not args.anchor or not args.cluster:
-        print("--add-anchor cần --anchor \"<anchor chính>\" và --cluster \"<tên cluster>\"", file=sys.stderr)
+        print("--add-anchor cần --anchor \"<anchor chính>\" và --cluster \"<subgroup / tên cluster>\"", file=sys.stderr)
         return 2
-    raw = ANCHOR_INDEX.read_bytes()
-    nl = "\r\n" if b"\r\n" in raw else "\n"
-    lines = raw.decode("utf-8").split(nl)
-    heads = [(i, l) for i, l in enumerate(lines) if l.startswith("## ")]
-    match = [(i, l) for i, l in heads if unaccent(args.cluster) in unaccent(l)]
-    if len(match) != 1:
-        print(f"--cluster '{args.cluster}' khớp {len(match)} cluster. Các cluster hiện có:", file=sys.stderr)
-        for _, l in heads:
-            print("  " + l[3:], file=sys.stderr)
+    rows = registry.load()
+    hit = registry.match_cluster(rows, args.cluster)
+    if not hit:
+        names = sorted({f"{r['subgroup']} {r['subgroup_name']}" for r in rows if r["subgroup"]})
+        print(f"--cluster '{args.cluster}' không khớp đúng 1 nhóm. Ví dụ hợp lệ: 3b, 10a hoặc tên nhóm:", file=sys.stderr)
+        print("  " + "\n  ".join(names), file=sys.stderr)
         return 1
-    head_idx = match[0][0]
-    end = next((i for i, _ in heads if i > head_idx), len(lines))
-    last_row = max((i for i in range(head_idx, end) if lines[i].startswith("|")), default=None)
-    if last_row is None:
-        print("Cluster chưa có bảng — thêm tay 1 lần.", file=sys.stderr)
-        return 1
-    title = args.title or args.anchor
-    lines.insert(last_row + 1, f"| {args.anchor} | {url} | {title} | Finalized (Mới) |")
-    m = re.search(r"\((\d+) bài\)\s*$", lines[head_idx])  # keep the per-cluster counter in the heading right
-    if m:
-        lines[head_idx] = lines[head_idx][:m.start(1)] + str(int(m.group(1)) + 1) + lines[head_idx][m.end(1):]
-    ANCHOR_INDEX.write_bytes(nl.join(lines).encode("utf-8"))
-    print(f"Đã thêm vào anchor-index.md: {args.anchor} → {url} · {lines[head_idx][3:]}")
+    found = registry.find(rows, slug)
+    row = found[0] if len(found) == 1 else None
+    if row is None:
+        row = {k: "" for k in registry.FIELDS} | {"slug": slug, "file_slug": slug, "live": "no", "status": "Finalized"}
+        rows.append(row)
+    row["anchor"] = args.anchor
+    row["key_chinh"] = row["key_chinh"] or args.anchor
+    row["title"] = row["title"] or (args.title or "")
+    if not row["cluster"] or hit[2]:
+        row["cluster"], row["cluster_name"], row["subgroup"], row["subgroup_name"] = hit
+    registry.save(rows)
+    print(f"Registry: {row['slug']} · anchor “{args.anchor}” · {row['subgroup'] or row['cluster']} {row['subgroup_name'] or row['cluster_name']}")
     return 0
 
 
@@ -336,16 +325,13 @@ def main():
     ap.add_argument("--json", action="store_true")
     ap.add_argument("--finalized", action="store_true",
                     help="--backfill quét 3-finalized/*.md thay vì snapshot live (mặc định: live nếu có)")
-    ap.add_argument("--add-anchor", metavar="SLUG", help="Thêm 1 dòng cho bài mới vào anchor-index.md (cần --anchor, --cluster)")
+    ap.add_argument("--add-anchor", metavar="SLUG", help="Đặt anchor + cluster cho bài trong registry pages.csv (cần --anchor, --cluster)")
     ap.add_argument("--anchor", help="Anchor text chính cho --add-anchor")
-    ap.add_argument("--cluster", help="Tên cluster (khớp 1 phần, không dấu) cho --add-anchor")
+    ap.add_argument("--cluster", help="Mã subgroup (3b) hoặc tên nhóm/cluster (khớp 1 phần, không dấu) cho --add-anchor")
     ap.add_argument("--title", help="Title bài (cột Từ khóa liên quan) cho --add-anchor; mặc định = anchor")
     args = ap.parse_args()
     if not args.keyword and not args.backfill and not args.add_anchor:
         ap.error("cần keyword, --backfill <slug> hoặc --add-anchor <slug>")
-    if not ANCHOR_INDEX.exists():
-        print(f"Không tìm thấy {ANCHOR_INDEX}", file=sys.stderr)
-        sys.exit(2)
     entries, sitemap = load_index(), load_sitemap()
     if args.add_anchor:
         sys.exit(add_anchor(args, entries))

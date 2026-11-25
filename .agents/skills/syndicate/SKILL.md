@@ -1,11 +1,11 @@
 ---
 name: syndicate
-description: Prepare DSC syndication packs and synchronize local ledger with Google Sheets through the connected agent.
+description: "Phân phối bài SEO đã live lên social/kênh ngoài (Facebook, LinkedIn, Zalo, Pinterest, Medium…): soạn pack theo kênh, ảnh, đồng bộ ledger với Google Sheet Publishing. Dùng khi /syndicate, 'đăng lại bài lên social', 'repurpose'."
 ---
 
 # Syndicate
 
-Read knowledge/operations/syndication/playbook.md and config.json first. Apply project brand context and existing approval requirements.
+Read knowledge/4-channels/social/playbook.md and config.json first. Apply project brand context and existing approval requirements.
 
 ## /syndicate sync
 
@@ -16,13 +16,13 @@ Back up ledger, apply sync-proposal.csv locally after successful remote writes. 
 
 ## /syndicate <slug>
 
-Read Formats in the configured spreadsheet (local reference: knowledge/operations/syndication/formats.csv). Long-form content needs an explicit title and H2 sections; H3 only for real subsections. Keep title and hashtags in their dedicated ledger columns. Social posts use a few relevant hashtags within their character budget; resource hubs and articles use platform tags only where appropriate. Sheet text uses Markdown heading markers; provide a local HTML preview with semantic headings and rich-copy support, and explain that plain-text paste needs native Heading styles in the editor.
+Read Formats in the configured spreadsheet (local reference: knowledge/4-channels/social/formats.csv). Long-form content needs an explicit title and H2 sections; H3 only for real subsections. Keep title and hashtags in their dedicated ledger columns. Social posts use a few relevant hashtags within their character budget; resource hubs and articles use platform tags only where appropriate. Sheet text uses Markdown heading markers; provide a local HTML preview with semantic headings and rich-copy support, and explain that plain-text paste needs native Heading styles in the editor.
 
-Read Visual Styles (local reference: knowledge/operations/syndication/visual-styles.md) before proposing images. Choose a layout by communication job: S01 thesis, S02 mechanism diagram, S03 evidence comparison, S04 multi-slide sequence. Existing blog-image conventions do not require every social creative to use the same mint 3D or checklist layout. Keep brand palette/logo and exact Vietnamese typography. Design studies are proposals, not approved posting assets.
+Read Visual Styles (local reference: knowledge/4-channels/social/visual-styles.md) before proposing images. Choose a layout by communication job: S01 thesis, S02 mechanism diagram, S03 evidence comparison, S04 multi-slide sequence. Existing blog-image conventions do not require every social creative to use the same mint 3D or checklist layout. Keep brand palette/logo and exact Vietnamese typography. Design studies are proposals, not approved posting assets.
 
 User preference: decide whether the format actually needs a new image. If no new design is needed, reuse the article's verified DSC image URL in BOTH asset_path and asset_url. If a NEW image is awaiting creation, design approval or upload, leave BOTH fields empty and record the reason in notes; never substitute an old source image for a pending new design. Current trial: Pinterest/Pixbender need new images; the other nine variants reuse DSC imagery. Record decisions in image-plan.csv. Image-first posts with pending new assets remain incomplete for manual publishing.
 
-Vietnamese typography: normalize text to NFC, use embedded Be Vietnam Pro regular/bold with Vietnamese coverage (design-fonts/), await document.fonts.ready before exporting, avoid synthetic weights and negative tracking, and give accented headlines adequate line-height. Verify a close-up screenshot and mobile layout before delivering design previews.
+Vietnamese typography: normalize text to NFC, use embedded Plus Jakarta Sans regular/semibold/bold (brand font, Vietnamese coverage, design-fonts/) and only the colors in knowledge/1-brand/DESIGN.md v1.0, await document.fonts.ready before exporting, avoid synthetic weights and negative tracking, and give accented headlines adequate line-height. Verify a close-up screenshot and mobile layout before delivering design previews.
 
 Asset uploads must use the supplied service account only, never fall back to another connected Google account. If a My Drive upload returns storageQuotaExceeded, stop upload attempts and explain that an OAuth connection to the intended owner or a Shared Drive is needed. Do not request folder sharing with an unrelated account. Keep local paths in the asset manifest only; Publishing.asset_path and asset_url must be accessible online links, or empty with a clear pending reason. Never substitute a horizontal source image for a completed vertical infographic without labeling it.
 

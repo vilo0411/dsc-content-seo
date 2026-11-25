@@ -1,5 +1,5 @@
 ﻿from pathlib import Path
-p=Path("knowledge/4-content/2-drafts/Optimize-nen-mo-tai-khoan-chung-khoan-o-dau-serp-2026-11-04.md")
+p=Path("knowledge/3-seo/content/2-drafts/Optimize-nen-mo-tai-khoan-chung-khoan-o-dau-serp-2026-11-04.md")
 s=p.read_text(encoding="utf-8")
 s=s.replace("Khi so [phí giao dịch chứng khoán]","So đúng kênh đặt lệnh.\n\nKhi so [phí giao dịch chứng khoán]")
 s=s.replace("Hãy so cùng điều kiện.","So đúng loại tài khoản.")

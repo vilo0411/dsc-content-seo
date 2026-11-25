@@ -107,8 +107,8 @@ def create_vnindex_image():
         draw.ellipse([peak_x-r, peak_y-int(r*0.6), peak_x+r, peak_y+int(r*0.6)], outline="#10E7B3", width=2)
         
     img = add_watermark_logo(img, is_dark_bg=True)
-    os.makedirs('knowledge/4-content/images', exist_ok=True)
-    out_path = 'knowledge/4-content/images/chi-so-vn-index-va-y-nghia-bieu-do-thi-truong.jpg'
+    os.makedirs('knowledge/3-seo/content/images', exist_ok=True)
+    out_path = 'knowledge/3-seo/content/images/chi-so-vn-index-va-y-nghia-bieu-do-thi-truong.jpg'
     img.save(out_path, quality=95)
     print(f"Created {out_path}")
 

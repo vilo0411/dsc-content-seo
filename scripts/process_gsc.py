@@ -1,5 +1,5 @@
 """
-Analyze GSC cache CSVs and generate knowledge/3-pipeline/gsc-opportunities.md.
+Analyze GSC cache CSVs and generate knowledge/3-seo/strategy/gsc-opportunities.md.
 
 Usage:
     python scripts/process_gsc.py
@@ -17,8 +17,8 @@ CACHE_DIR = Path("knowledge/raw/gsc")
 QUERIES_CSV = CACHE_DIR / "queries.csv"
 PAGES_CSV = CACHE_DIR / "pages.csv"
 META_FILE = CACHE_DIR / "cache-meta.json"
-OUTPUT_FILE = Path("knowledge/3-pipeline/gsc-opportunities.md")
-ANCHOR_INDEX = Path("knowledge/3-pipeline/internal-links/anchor-index.md")
+OUTPUT_FILE = Path("knowledge/3-seo/strategy/gsc-opportunities.md")
+REGISTRY = Path("knowledge/3-seo/strategy/pages.csv")
 
 BASE_URL = "https://www.dsc.com.vn/kien-thuc/"
 
@@ -35,19 +35,12 @@ def url_to_slug(url):
 
 
 def extract_anchor_index_slugs():
-    """Extract all known slugs from anchor-index.md (lines containing dsc.com.vn URLs)."""
-    if not ANCHOR_INDEX.exists():
+    """All known article slugs (live + file slugs) from the registry strategy/pages.csv."""
+    if not REGISTRY.exists():
         return set()
-    slugs = set()
-    with open(ANCHOR_INDEX, encoding="utf-8") as f:
-        for line in f:
-            if "dsc.com.vn/kien-thuc/" in line:
-                parts = line.split("dsc.com.vn/kien-thuc/")
-                if len(parts) > 1:
-                    slug = parts[1].split("|")[0].split(")")[0].strip().rstrip("/")
-                    if slug:
-                        slugs.add(slug)
-    return slugs
+    import csv
+    with open(REGISTRY, encoding="utf-8-sig", newline="") as f:
+        return {s for r in csv.DictReader(f) for s in (r.get("slug"), r.get("file_slug")) if s}
 
 
 def find_ctr_gaps(pages, min_impressions, max_ctr, top_n=20):

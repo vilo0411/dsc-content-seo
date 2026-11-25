@@ -1,0 +1,707 @@
+{
+ "title": "Đợt 2 — link pillar/hub/sub-hub chưa từng xét (sau full sync 17/11, quy tắc pillar_hubs_only cho C5)",
+ "intro": "P1 = bài nguồn ≥ 10 click/90 ngày. Ưu tiên wrap cụm có sẵn; câu mới ≤ 30 từ nối tiếp ý đoạn. Mục skipped: lý do ở trường why.",
+ "edits": [
+  {
+   "src": "20-nguyen-tac-giao-dich-cua-richard-donchian",
+   "op": "append",
+   "find": "Vào những năm 1930, ông đã bắt đầu phát triển các ",
+   "to": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "pillar · 17 click/90 ngày",
+   "sentence": "Giao dịch theo xu hướng đến nay vẫn là một trong các [chiến lược đầu tư chứng khoán] phổ biến nhất.",
+   "check_text": true
+  },
+  {
+   "src": "cac-chi-so-chung-khoan-chau-a-noi-bat",
+   "op": "append",
+   "find": "Chỉ số Nikkei 225 là chỉ số chứng khoán lâu đời nh",
+   "to": "top-10-chi-so-chung-khoan-quan-trong-can-theo-doi",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "subhub · 12 click/90 ngày",
+   "sentence": "Cùng với S&P 500 hay Dow Jones, Nikkei 225 nằm trong nhóm [chỉ số chứng khoán thế giới] được nhà đầu tư theo dõi hằng ngày.",
+   "check_text": true
+  },
+  {
+   "src": "can-can-vang-lai-la-gi",
+   "op": "append",
+   "find": "Nến bên “có” = bên “nợ” => Cân bằng tài khoản vãng",
+   "to": "can-can-thanh-toan-bop-la-gi",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "hub · 28 click/90 ngày",
+   "sentence": "Cán cân vãng lai là một cấu phần chính của [cán cân thanh toán], bên cạnh cán cân vốn và cán cân tài chính.",
+   "check_text": true
+  },
+  {
+   "src": "co-phieu-otc-la-gi-mua-co-phieu-otc-o-dau",
+   "op": "append",
+   "find": "Để mua cổ phiếu OTC qua công ty chứng khoán, bạn c",
+   "to": "cach-mua-co-phieu-online-cho-nguoi-moi-bat-dau",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "hub · 26 click/90 ngày",
+   "sentence": "Khác với cổ phiếu niêm yết, bạn không thể tự đặt lệnh trên app theo [cách mua cổ phiếu online] thông thường mà phải qua môi giới.",
+   "check_text": true
+  },
+  {
+   "src": "huong-dan-phan-tich-nganh-trong-dau-tu-chung-khoan",
+   "op": "append",
+   "find": "Phân tích ngành là việc đánh giá sức khỏe và tiềm ",
+   "to": "top-5-co-phieu-dang-dau-tu",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "pillar · 12 click/90 ngày",
+   "sentence": "Kết quả phân tích ngành là bước lọc đầu tiên trước khi chọn [cổ phiếu tiềm năng] cụ thể để giải ngân.",
+   "check_text": true
+  },
+  {
+   "src": "khoa-hoc-chung-khoan-tai-da-nang",
+   "op": "wrap",
+   "find": "Việc lựa chọn một khóa học chứng khoán tại Đà Nẵng",
+   "to": "khoa-hoc-chung-khoan",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "subhub · 12 click/90 ngày",
+   "anchor": "khóa học chứng khoán"
+  },
+  {
+   "src": "lai-suat-gui-tiet-kiem-ngan-hang-acb",
+   "op": "append",
+   "find": "Đây là nội dung quan trọng nhất mà mọi khách hàng ",
+   "to": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "hub · 11 click/90 ngày",
+   "sentence": "Muốn biết ACB đứng ở đâu so với mặt bằng chung, có thể đối chiếu với danh sách [ngân hàng nào có lãi suất tiết kiệm cao nhất] hiện nay.",
+   "check_text": true
+  },
+  {
+   "src": "lai-suat-gui-tiet-kiem-ngan-hang-agribank",
+   "op": "append",
+   "find": "Ở hình thức này, lãi suất gửi tiết kiệm ngân hàng ",
+   "to": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "hub · 49 click/90 ngày",
+   "sentence": "Mức này thấp hơn nhiều ngân hàng tư nhân, nên xem [gửi tiết kiệm ngân hàng nào cao nhất] nếu bạn ưu tiên lợi suất hơn sự an toàn.",
+   "check_text": true
+  },
+  {
+   "src": "lai-suat-gui-tiet-kiem-ngan-hang-sacombank",
+   "op": "append",
+   "find": "Điểm khác biệt lớn nhất của Sacombank trong tháng ",
+   "to": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "hub · 37 click/90 ngày",
+   "sentence": "Cách phân tầng theo số tiền gửi khiến việc [so sánh lãi suất tiết kiệm] giữa các ngân hàng cần dựa trên cùng mức tiền và cùng kỳ hạn.",
+   "check_text": true
+  },
+  {
+   "src": "lai-suat-gui-tiet-kiem-ngan-hang-shb",
+   "op": "append",
+   "find": "Mức lãi suất gửi tiết kiệm ngân hàng SHB cao nhất ",
+   "to": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "hub · 17 click/90 ngày",
+   "sentence": "Muốn biết 6,10%/năm có thực sự cao, cần đặt cạnh danh sách [ngân hàng nào có lãi suất tiết kiệm cao nhất] ở cùng kỳ hạn.",
+   "check_text": true
+  },
+  {
+   "src": "lai-suat-gui-tiet-kiem-ngan-hang-vietinbank",
+   "op": "append",
+   "find": "Ở hình thức này, lãi suất gửi tiết kiệm ngân hàng ",
+   "to": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "hub · 20 click/90 ngày",
+   "sentence": "Mức 6%/năm vẫn thấp hơn một số ngân hàng tư nhân, điều dễ thấy khi đặt cạnh bảng [so sánh lãi suất tiết kiệm] toàn hệ thống.",
+   "check_text": true
+  },
+  {
+   "src": "lai-suat-gui-tiet-kiem-ngan-hang-vpbank",
+   "op": "append",
+   "find": "Đối với hình thức gửi tiền truyền thống tại chi nh",
+   "to": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "hub · 22 click/90 ngày",
+   "sentence": "Chênh lệch nhỏ này vẫn đáng tính khi [so sánh lãi suất tiết kiệm] giữa VPBank và các ngân hàng khác cho khoản tiền lớn.",
+   "check_text": true
+  },
+  {
+   "src": "lai-suat-ngan-hang-dong-a",
+   "op": "append",
+   "find": "Lưu ý: Mức lãi suất đặc biệt 7,9%/năm áp dụng cho ",
+   "to": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "hub · 336 click/90 ngày",
+   "sentence": "Với khoản tiền gửi thông thường, nên đối chiếu bảng [lãi suất gửi tiết kiệm ngân hàng nào cao nhất] theo đúng mức tiền và kỳ hạn của mình.",
+   "check_text": true
+  },
+  {
+   "src": "phan-tich-bao-cao-tai-chinh-hoa-phat",
+   "op": "append",
+   "find": "Báo cáo kết quả kinh doanh Hòa Phát 2025 ghi nhận ",
+   "to": "cach-phan-tich-bao-cao-tai-chinh",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "hub · 61 click/90 ngày",
+   "sentence": "Đọc theo khung [phân tích báo cáo tài chính], biên lợi nhuận gộp là chỉ tiêu nên xem trước khi kết luận lợi nhuận tăng bền vững.",
+   "check_text": true
+  },
+  {
+   "src": "phan-tich-bao-cao-tai-chinh-vinamilk",
+   "op": "append",
+   "find": "Bảng cân đối kế toán cho thấy Vinamilk tiếp tục du",
+   "to": "cach-phan-tich-bao-cao-tai-chinh",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "hub · 44 click/90 ngày",
+   "sentence": "Trong khung [phân tích báo cáo tài chính], bảng này cho biết doanh nghiệp đang tài trợ tài sản bằng vốn chủ hay bằng nợ vay.",
+   "check_text": true
+  },
+  {
+   "src": "rui-ro-tin-dung-la-gi",
+   "op": "append",
+   "find": "Như đã nêu ở phân loại rủi ro trên, nguyên nhân củ",
+   "to": "quan-tri-rui-ro-la-gi-2",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "hub · 41 click/90 ngày",
+   "sentence": "Vì nguyên nhân đến từ cả hai phía, [quản trị rủi ro] tín dụng phải bắt đầu ngay từ khâu thẩm định khách hàng.",
+   "check_text": true
+  },
+  {
+   "src": "sach-phan-tich-bao-cao-tai-chinh",
+   "op": "append",
+   "find": "Đối với sinh viên, các trường đại học thường là ng",
+   "to": "nhung-cuon-sach-hay-ve-dau-tu-chung-khoan",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "subhub · 53 click/90 ngày",
+   "sentence": "Ngoài giáo trình đại học, nhiều cuốn [sách đầu tư chứng khoán] phổ thông cũng giúp người mới đọc báo cáo tài chính dễ hơn.",
+   "check_text": true
+  },
+  {
+   "src": "san-giao-dich-vang",
+   "op": "append",
+   "find": "Đây là hình thức hợp pháp duy nhất hiện nay dành c",
+   "to": "dau-tu-vang-nen-mua-loai-nao",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "subhub · 10 click/90 ngày",
+   "sentence": "Mỗi loại có mức chênh lệch mua bán khác nhau, nên cần biết [nên mua vàng loại nào để tích trữ] trước khi đặt mua online.",
+   "check_text": true
+  },
+  {
+   "src": "su-khac-biet-giua-cpi-cot-loi-cpi-thuc-va-cpi-co-ban",
+   "op": "append",
+   "find": "Sự phân biệt giữa CPI cốt lõi, CPI thực, và CPI cơ",
+   "to": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "pillar · 17 click/90 ngày",
+   "sentence": "Trong [phân tích vĩ mô], CPI cốt lõi thường được dùng để dự đoán hướng đi của lãi suất điều hành.",
+   "check_text": true
+  },
+  {
+   "src": "su-kien-thien-nga-den-la-gi",
+   "op": "append",
+   "find": "Sự kiện thiên nga đen (Black Swan Event) là thuật ",
+   "to": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "pillar · 13 click/90 ngày",
+   "sentence": "Vì vậy, [phân tích vĩ mô] chỉ giúp chuẩn bị kịch bản, không thể dự báo trước loại sự kiện này.",
+   "check_text": true
+  },
+  {
+   "src": "thi-truong-tai-chinh-la-gi",
+   "op": "append",
+   "find": "Khi theo dõi các chỉ số chứng khoán Việt Nam như V",
+   "to": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "pillar · 68 click/90 ngày",
+   "sentence": "Muốn tham gia phân khu này, bước đầu là nắm [cách chơi chứng khoán cho người mới]: mở tài khoản, nạp tiền và đặt lệnh đầu tiên.",
+   "check_text": true
+  },
+  {
+   "src": "top-5-co-phieu-dang-dau-tu",
+   "op": "wrap",
+   "find": "Ngành: Phân đạm",
+   "anchor": "Phân đạm",
+   "to": "co-phieu-nganh-hoa-chat",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "pillar C5 → hub 5m · 9 hub còn lại cần section mới qua /optimize"
+  },
+  {
+   "src": "top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh",
+   "op": "append",
+   "find": "Các quỹ đầu tư tổ chức quốc tế ưu tiên giải ngân v",
+   "to": "top-5-co-phieu-dang-dau-tu",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "pillar · 29 click/90 ngày",
+   "sentence": "Đây cũng là lý do cổ phiếu ngân hàng thường có mặt trong các danh sách [cổ phiếu đáng đầu tư] mỗi khi thị trường đón dòng vốn ngoại.",
+   "check_text": true
+  },
+  {
+   "src": "top-5-co-phieu-nganh-thep-co-co-ban-tot-sap-buoc-vao-chu-ky-tang-truong-moi",
+   "op": "append",
+   "find": "Tuy nhiên, mức độ tăng trưởng của từng doanh nghiệ",
+   "to": "top-5-co-phieu-dang-dau-tu",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "pillar · 28 click/90 ngày",
+   "sentence": "Vì vậy, khi lọc [cổ phiếu đáng đầu tư] trong ngành thép, nên ưu tiên doanh nghiệp có quy mô lớn và chi phí sản xuất cạnh tranh.",
+   "check_text": true
+  },
+  {
+   "src": "top-co-phieu-cang-bien-nen-dau-tu",
+   "op": "append",
+   "find": "Dựa vào báo cáo tài chính cũng như tỷ lệ chia cổ t",
+   "to": "top-5-co-phieu-dang-dau-tu",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "pillar · 302 click/90 ngày",
+   "sentence": "Trước khi xuống tiền, nên so sánh GMD với các [cổ phiếu tiềm năng] ở ngành khác về định giá và tăng trưởng lợi nhuận.",
+   "check_text": true
+  },
+  {
+   "src": "top-co-phieu-hang-khong-nen-dau-tu",
+   "op": "append",
+   "find": "Nhìn chung, ngành hàng không đang có xu hướng phục",
+   "to": "top-5-co-phieu-dang-dau-tu",
+   "group": "cluster",
+   "pri": "P1",
+   "why": "pillar · 18 click/90 ngày",
+   "sentence": "So với [cổ phiếu tiềm năng] ở các ngành khác, nhóm hàng không biến động mạnh hơn do phụ thuộc giá nhiên liệu và tỷ giá.",
+   "check_text": true
+  },
+  {
+   "src": "5-chi-so-quan-trong-cua-phan-tich-co-ban-trong-chung-khoan",
+   "op": "append",
+   "find": "Khi nắm vững “ngôn ngữ tài chính” này, bạn sẽ dễ d",
+   "to": "cac-chi-so-phan-tich-bao-cao-tai-chinh",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "hub · 5 click/90 ngày",
+   "sentence": "Ngoài các chỉ số trên, nhóm [chỉ số tài chính doanh nghiệp] về thanh khoản và đòn bẩy giúp đánh giá rủi ro trả nợ rõ hơn.",
+   "check_text": true
+  },
+  {
+   "src": "bollinger-bands-la-gi-cach-su-dung-trong-giao-dich-chung-khoan",
+   "op": "append",
+   "find": "Bollinger Bands là chỉ báo phân tích kỹ thuật dùng",
+   "to": "chi-bao-ky-thuat",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "hub · 0 click/90 ngày",
+   "sentence": "Trong hệ thống [chỉ báo kỹ thuật], Bollinger Bands thuộc nhóm đo biến động, cùng nhóm với ATR.",
+   "check_text": true
+  },
+  {
+   "src": "chi-bao-know-sure-thing-kst-la-gi",
+   "op": "append",
+   "find": "Know Sure Thing (KST) là một chỉ báo kỹ thuật dao ",
+   "to": "chi-bao-ky-thuat",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "hub · 0 click/90 ngày",
+   "sentence": "KST vì thế được xếp chung nhóm với RSI, Stochastic trong hệ thống [chỉ báo kỹ thuật] động lượng.",
+   "check_text": true
+  },
+  {
+   "src": "chi-bao-ultimate-oscillator-uo-la-gi",
+   "op": "append",
+   "find": "Ultimate Oscillator là chỉ báo phân tích kỹ thuật ",
+   "to": "chi-bao-ky-thuat",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "hub · 0 click/90 ngày",
+   "sentence": "Đây là cách phân loại quen thuộc trong hệ thống [chỉ báo kỹ thuật]: nhóm xu hướng, động lượng, biến động và khối lượng.",
+   "check_text": true
+  },
+  {
+   "src": "chi-bao-vortex-indicator-vi-la-gi",
+   "op": "append",
+   "find": "Tín hiệu giảm giá xuất hiện khi chỉ báo xu hướng t",
+   "to": "chi-bao-ky-thuat",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "hub · 0 click/90 ngày",
+   "sentence": "Vì đo hướng của xu hướng, Vortex thường được xếp cùng ADX trong nhóm [chỉ báo kỹ thuật] theo xu hướng.",
+   "check_text": true
+  },
+  {
+   "src": "chi-so-bien-dong-vix-la-gi",
+   "op": "append",
+   "find": "Chỉ báo biến động CBOE (VIX - Volatility Index) là",
+   "to": "top-10-chi-so-chung-khoan-quan-trong-can-theo-doi",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "subhub · 5 click/90 ngày",
+   "sentence": "Vì vậy, VIX thường được xem cùng S&P 500 và các [chỉ số chứng khoán thế giới] khác để đánh giá tâm lý thị trường.",
+   "check_text": true
+  },
+  {
+   "src": "chi-so-dow-jones-future-la-gi",
+   "op": "append",
+   "find": "Thị trường chứng khoán Việt Nam chịu ảnh hưởng lớn",
+   "to": "top-10-chi-so-chung-khoan-quan-trong-can-theo-doi",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "subhub · 0 click/90 ngày",
+   "sentence": "Ngoài Dow Jones Future, nhà đầu tư thường xem thêm Nasdaq, S&P 500 và các [chỉ số chứng khoán thế giới] khác trước giờ mở phiên.",
+   "check_text": true
+  },
+  {
+   "src": "chi-so-kospi-la-gi",
+   "op": "append",
+   "find": "Đối với nhà đầu tư Active Trader tại Việt Nam, the",
+   "to": "top-10-chi-so-chung-khoan-quan-trong-can-theo-doi",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "subhub · 6 click/90 ngày",
+   "sentence": "KOSPI thường được đặt cạnh Nikkei 225, Hang Seng và các [chỉ số chứng khoán thế giới] khác trong bảng theo dõi liên thị trường.",
+   "check_text": true
+  },
+  {
+   "src": "chi-so-msci-la-gi",
+   "op": "append",
+   "find": "Chỉ số MSCI đóng vai trò quan trọng trong thị trườ",
+   "to": "top-10-chi-so-chung-khoan-quan-trong-can-theo-doi",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "subhub · 9 click/90 ngày",
+   "sentence": "Ở phạm vi toàn cầu, MSCI World thường được so sánh với S&P 500 và Dow Jones trong nhóm [chỉ số chứng khoán thế giới] quan trọng.",
+   "check_text": true
+  },
+  {
+   "src": "chi-so-nasdaq-chi-so-chung-khoan-cong-nghe-hang-dau-the-gioi",
+   "op": "newp",
+   "find": "Chỉ số Nasdaq đóng vai trò quan trọng trong thị tr",
+   "to": "top-10-chi-so-chung-khoan-quan-trong-can-theo-doi",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "subhub · 4 click/90 ngày",
+   "sentence": "Cùng với S&P 500 và Dow Jones, Nasdaq thuộc bộ ba [chỉ số chứng khoán thế giới] mà nhà đầu tư Việt Nam hay xem trước phiên sáng.",
+   "check_text": true
+  },
+  {
+   "src": "chi-so-pmi-la-gi",
+   "op": "append",
+   "find": "Kết quả từ những khảo sát này được tổng hợp và xử ",
+   "to": "gdp-la-gi",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "subhub · 5 click/90 ngày",
+   "sentence": "Vì được công bố đầu mỗi tháng, PMI thường được dùng để dự báo sớm tăng trưởng [GDP] trước khi số liệu chính thức ra theo quý.",
+   "check_text": true
+  },
+  {
+   "src": "chi-so-set-la-gi",
+   "op": "append",
+   "find": "Chỉ số SET là thước đo đại diện cho hiệu suất tổng",
+   "to": "top-10-chi-so-chung-khoan-quan-trong-can-theo-doi",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "subhub · 0 click/90 ngày",
+   "sentence": "SET ít được nhắc tới hơn S&P 500 hay Nikkei 225, nhưng vẫn là một trong các [chỉ số chứng khoán thế giới] cần theo dõi ở Đông Nam Á.",
+   "check_text": true
+  },
+  {
+   "src": "dau-tu-thu-dong-la-gi-uu-nhuoc-diem-va-cach-dau-tu-hieu-qua",
+   "op": "wrap",
+   "find": "Đơn giản và dễ dàng: Đầu tư thụ động là một chiến ",
+   "to": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "pillar · 5 click/90 ngày",
+   "anchor": "chiến lược đầu tư"
+  },
+  {
+   "src": "dau-tu-vang-nen-mua-loai-nao",
+   "op": "append",
+   "find": "Quyết định đầu tư vàng nên mua loại nào phụ thuộc ",
+   "to": "cach-dau-tu-vang",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "pillar · 0 click/90 ngày",
+   "sentence": "Trước khi chọn loại vàng, nên nắm [cách đầu tư vàng] cơ bản: xác định tỷ trọng trong tài sản và thời gian nắm giữ.",
+   "check_text": true
+  },
+  {
+   "src": "drawdown-trong-dau-tu-la-gi",
+   "op": "newp",
+   "find": "Drawdown (Mức sụt giảm vốn) là chỉ số đo lường mức",
+   "to": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "pillar · 5 click/90 ngày",
+   "sentence": "Mức drawdown chấp nhận được khác nhau giữa các [chiến lược đầu tư chứng khoán]: lướt sóng thường chịu sụt giảm sâu hơn đầu tư giá trị dài hạn.",
+   "check_text": true
+  },
+  {
+   "src": "fomo-trong-dau-tu-chung-khoan-la-gi",
+   "op": "append",
+   "find": "FOMO trong đầu tư chứng khoán là hành vi nhà đầu t",
+   "to": "thien-kien-nhan-thuc-la-gi",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "hub · 0 click/90 ngày",
+   "sentence": "FOMO là một dạng [thiên kiến nhận thức], khi cảm xúc lấn át dữ liệu trong quyết định mua bán.",
+   "check_text": true
+  },
+  {
+   "src": "khoa-hoc-phan-tich-chung-khoan-co-ban",
+   "op": "append",
+   "find": "Nhiều F0 chọn cách tự học qua sách vở hoặc Youtube",
+   "to": "khoa-hoc-chung-khoan",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "subhub · 7 click/90 ngày",
+   "sentence": "Một [khóa học chứng khoán] có lộ trình theo cấp độ và người hướng dẫn giải quyết đúng điểm yếu này.",
+   "check_text": true
+  },
+  {
+   "src": "kinh-te-hoc-vi-mo-la-gi-y-nghia-trong-dau-tu-chung-khoan",
+   "op": "wrap",
+   "find": "Rủi ro hệ thống: Rủi ro ảnh hưởng đến toàn bộ thị ",
+   "to": "phan-tich-vi-mo-trong-dau-tu-chung-khoan-la-gi",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "pillar · 0 click/90 ngày",
+   "anchor": "yếu tố vĩ mô"
+  },
+  {
+   "src": "lai-suat-gui-tiet-kiem-ngan-hang-vietcombank",
+   "op": "append",
+   "find": "Ở hình thức gửi tại quầy, mức lãi suất cao nhất gh",
+   "to": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "hub · 5 click/90 ngày",
+   "sentence": "Là ngân hàng quốc doanh, Vietcombank hiếm khi nằm trong nhóm [gửi tiết kiệm ngân hàng nào cao nhất], đổi lại là mức an toàn cao.",
+   "check_text": true
+  },
+  {
+   "src": "mo-hinh-2-dinh-la-gi",
+   "op": "append",
+   "find": "Mô hình 2 đỉnh (hay còn gọi là mô hình Double Top)",
+   "to": "cac-mo-hinh-gia-trong-chung-khoan",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "hub · 0 click/90 ngày",
+   "sentence": "Đây là một trong các [mô hình giá] đảo chiều phổ biến nhất, bên cạnh vai đầu vai và 2 đáy.",
+   "check_text": true
+  },
+  {
+   "src": "mo-hinh-cai-nem-la-gi",
+   "op": "wrap",
+   "find": "Mô hình cái nêm (Wedge Pattern) là một mẫu hình bi",
+   "to": "cac-mo-hinh-gia-trong-chung-khoan",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "hub · 0 click/90 ngày",
+   "anchor": "các mô hình giá"
+  },
+  {
+   "src": "nhung-cuon-sach-hay-ve-phuong-phap-dau-tu-gia-tri",
+   "op": "append",
+   "find": "Đây là cuốn sách kinh điển về đầu tư giá trị, được",
+   "to": "nhung-cuon-sach-hay-ve-dau-tu-chung-khoan",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "subhub · 0 click/90 ngày",
+   "sentence": "Cuốn này cũng thường đứng đầu các danh sách [sách đầu tư chứng khoán] dành cho người mới.",
+   "check_text": true
+  },
+  {
+   "src": "vung-dinh-va-day-la-gi",
+   "op": "append",
+   "find": "Việc sử dụng các vùng đỉnh/đáy trong quá khứ để xá",
+   "to": "duong-ho-tro-va-khang-cu-la-gi",
+   "group": "cluster",
+   "pri": "P2",
+   "why": "subhub · 5 click/90 ngày",
+   "sentence": "Các vùng này là cơ sở để vẽ [hỗ trợ và kháng cự] cho giai đoạn giá tiếp theo.",
+   "check_text": true
+  }
+ ],
+ "skipped": [
+  {
+   "src": "gia-co-phieu-tang-nhung-khoi-luong-giam-he-lo-dieu-gi-cho-nha-dau-tu",
+   "to": "phuong-phap-dau-tu-theo-dong-tien-hieu-qua",
+   "why": "không có đoạn hợp ngữ cảnh"
+  },
+  {
+   "src": "cach-mua-co-phieu-vre",
+   "to": "co-phieu-vre-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat",
+   "why": "URL cach-mua-co-phieu-vre đang chứa bài mua cổ phiếu VIC — sửa nội dung trước"
+  },
+  {
+   "src": "rui-ro-va-loi-ich-khi-tham-gia-thi-truong-tai-chinh",
+   "to": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+   "why": "URL trùng nội dung thi-truong-tai-chinh-la-gi — xử lý trùng lặp trước"
+  },
+  {
+   "src": "rui-ro-va-loi-ich-khi-tham-gia-thi-truong-tai-chinh",
+   "to": "quan-tri-rui-ro-la-gi-2",
+   "why": "URL trùng nội dung thi-truong-tai-chinh-la-gi — xử lý trùng lặp trước"
+  },
+  {
+   "src": "rui-ro-va-loi-ich-khi-tham-gia-thi-truong-tai-chinh",
+   "to": "rui-ro-la-gi",
+   "why": "URL trùng nội dung thi-truong-tai-chinh-la-gi — xử lý trùng lặp trước"
+  },
+  {
+   "src": "lai-suat-gui-tiet-kiem-ngan-hang-vib",
+   "to": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+   "why": "chỉ có đoạn lưu ý boilerplate, không hợp ngữ cảnh"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-dig-hay-khong",
+   "to": "co-phieu-dig-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "why": "URL nguồn đã 301 (gộp bài) — không sửa"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-lpb-hay-khong",
+   "to": "co-phieu-lpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "why": "URL nguồn đã 301 (gộp bài) — không sửa"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-bid-hay-khong",
+   "to": "co-phieu-bid-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "why": "URL nguồn đã 301 (gộp bài) — không sửa"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-mwg-hay-khong",
+   "to": "co-phieu-mwg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "why": "URL nguồn đã 301 (gộp bài) — không sửa"
+  },
+  {
+   "src": "co-nen-mua-co-phieu-ree-hay-khong",
+   "to": "co-phieu-ree-tong-quan-nhan-dinh-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat",
+   "why": "URL nguồn đã 301 (gộp bài) — không sửa"
+  },
+  {
+   "src": "huong-dan-phan-bo-va-da-dang-hoa-tai-san",
+   "to": "cac-chien-luoc-dau-tu-chung-khoan-pho-bien-tren-thi-truong",
+   "why": "URL nguồn đã 301 (gộp bài) — không sửa"
+  },
+  {
+   "src": "huong-dan-phan-bo-va-da-dang-hoa-tai-san",
+   "to": "quan-tri-rui-ro-la-gi-2",
+   "why": "URL nguồn đã 301 (gộp bài) — không sửa"
+  },
+  {
+   "src": "huong-dan-phan-bo-va-da-dang-hoa-tai-san",
+   "to": "danh-muc-dau-tu-hieu-qua-la-gi",
+   "why": "URL nguồn đã 301 (gộp bài) — không sửa"
+  },
+  {
+   "src": "quy-trinh-hoan-doi-danh-muc-etf",
+   "to": "etf-la-gi",
+   "why": "URL nguồn đã 301 (gộp bài) — không sửa"
+  },
+  {
+   "src": "chi-so-hang-seng-index-la-gi",
+   "to": "top-10-chi-so-chung-khoan-quan-trong-can-theo-doi",
+   "why": "rà lại 17/11: ngay sau là dòng Xem thêm cùng đích"
+  },
+  {
+   "src": "co-phieu-nganh-ban-le",
+   "to": "top-5-co-phieu-dang-dau-tu",
+   "why": "rà lại 17/11: tiêu chí so sánh liên ngành không thuộc list chỉ tiêu bán lẻ"
+  },
+  {
+   "src": "co-phieu-nganh-nang-luong",
+   "to": "top-5-co-phieu-dang-dau-tu",
+   "why": "rà lại 17/11: chen vào list chiến lược, gượng"
+  },
+  {
+   "src": "co-phieu-nganh-nong-nghiep",
+   "to": "top-5-co-phieu-dang-dau-tu",
+   "why": "rà lại 17/11: câu chung chung, không thêm thông tin"
+  },
+  {
+   "src": "duong-ma-la-gi",
+   "to": "cac-chi-bao-xac-dinh-xu-huong-dang-tin-cay-trong-phan-tich-ky-thuat",
+   "why": "rà lại 17/11: chen giữa 2 câu RSI/MACD"
+  },
+  {
+   "src": "huong-dan-cach-doc-bao-cao-thuong-nien-hieu-qua",
+   "to": "huong-dan-cach-doc-bao-cao-tai-chinh-nhung-thong-tin-quan-trong",
+   "why": "rà lại 17/11: trùng ý câu cuối đoạn"
+  },
+  {
+   "src": "khoa-hoc-phan-tich-bao-cao-tai-chinh",
+   "to": "khoa-hoc-chung-khoan",
+   "why": "rà lại 17/11: lời khuyên lạc giữa phần mô tả khóa ATC"
+  },
+  {
+   "src": "phan-tich-bao-cao-tai-chinh-vingroup",
+   "to": "cach-phan-tich-bao-cao-tai-chinh",
+   "why": "rà lại 17/11: trùng ý câu cuối đoạn"
+  },
+  {
+   "src": "chi-so-shanghai-la-gi",
+   "to": "top-10-chi-so-chung-khoan-quan-trong-can-theo-doi",
+   "why": "rà lại 17/11: không nối ý CSI 300 vs SSE"
+  },
+  {
+   "src": "chi-tieu-loi-nhuan-cua-doanh-nghiep",
+   "to": "phan-tich-co-ban-la-gi",
+   "why": "rà lại 17/11: cắt ngang mạch các bước đo lường"
+  },
+  {
+   "src": "chinh-sach-tai-khoa-la-gi",
+   "to": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te",
+   "why": "rà lại 17/11: làm sai chủ ngữ câu sau («Trong đó, chính phủ…»)"
+  },
+  {
+   "src": "co-nen-dau-tu-vang-thoi-diem-nay",
+   "to": "cach-dau-tu-vang",
+   "why": "rà lại 17/11: cắt ngang câu dẫn list yếu tố vĩ mô"
+  },
+  {
+   "src": "co-phieu-la-gi-cac-loai-co-phieu-tren-thi-truong-chung-khoan-viet-nam",
+   "to": "top-5-co-phieu-dang-dau-tu",
+   "why": "rà lại 17/11: lệch ý — đoạn dẫn vào lợi ích/rủi ro"
+  },
+  {
+   "src": "co-phieu-nganh-hoa-chat",
+   "to": "top-5-co-phieu-dang-dau-tu",
+   "why": "rà lại 17/11: câu đệm «Nhờ đó…» không thêm thông tin"
+  },
+  {
+   "src": "lai-suat-gui-tiet-kiem-ngan-hang-bidv",
+   "to": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+   "why": "rà lại 17/11: ngược mạch — mục sau chuyển sang chứng khoán"
+  },
+  {
+   "src": "mo-hinh-co-duoi-nheo-la-gi",
+   "to": "cac-mo-hinh-gia-trong-chung-khoan",
+   "why": "rà lại 17/11: ngay sau là dòng Xem thêm cùng đích"
+  },
+  {
+   "src": "phan-tich-bao-cao-tai-chinh-cong-ty-bibica",
+   "to": "cach-phan-tich-bao-cao-tai-chinh",
+   "why": "rà lại 17/11: trùng ý câu cuối đoạn"
+  },
+  {
+   "src": "von-it-co-nen-dau-tu-chung-khoan",
+   "to": "cach-dau-tu-chung-khoan-cho-nguoi-moi-bat-dau",
+   "why": "rà lại 17/11: ngay sau là dòng Xem thêm cùng đích"
+  }
+ ]
+}

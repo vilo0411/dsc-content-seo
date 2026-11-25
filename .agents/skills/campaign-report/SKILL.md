@@ -13,7 +13,7 @@ description: Báo cáo kết quả 1 chiến dịch đa kênh — gộp GSC (SEO
 |---|---|
 | SEO | SEO Dashboard MCP `query_search_analytics` theo page của các slug trong `seo/` → `python scripts/dashboard_cache.py save page-queries <slug>`; không có MCP: `python scripts/dashboard_cache.py report <slug>` |
 | Ads | `knowledge/raw/ads/*.json` mới nhất của các ID trong `ads/meta-ids.md`; cũ hơn 3 ngày → `/ads-review` (read-only) |
-| Social | số user dán / export Meta Business Suite; syndication: `knowledge/raw/operations/syndication/ledger.csv` (checks +7/+14/+28) |
+| Social | số user dán / export Meta Business Suite; syndication: `knowledge/4-channels/social/ledger.csv` (checks +7/+14/+28) |
 
 Kênh thiếu số → ghi "chưa có số", không ước đoán.
 

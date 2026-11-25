@@ -11,13 +11,14 @@ Usage:
 Exit:   0 = PASS (0 CRITICAL, 0 MAJOR)   1 = FAIL   2 = usage / IO error
 
 Rule sources (parsed at runtime, never hardcoded when a file exists):
-    knowledge/3-pipeline/anti-ai-rules-blacklist.md     -> CL2 trigger phrases
-    knowledge/3-pipeline/glossary.md  (section 7)        -> CL3 forbidden terms
-    .antigravity/skills/internal-linking/scripts/sitemap-cache.json -> link verification
+    knowledge/1-brand/anti-ai-rules-blacklist.md     -> CL2 trigger phrases
+    knowledge/1-brand/glossary.md  (section 7)        -> CL3 forbidden terms
+    .agents/skills/link/scripts/sitemap-cache.json -> link verification
     <outline>.md  PAA_Questions: (with --outline)         -> PAA-missing / FAQ-few-paa (AEO)
     <outline>.md  Entities / Information_Gain             -> ENT-missing / IG-missing (coverage)
+    <outline>.md  EAV block                               -> EAV-value-missing (coverage)
     knowledge/raw/serp/<keyword>.json                    -> terms >= 3 ranking pages share (ENT-missing)
-    knowledge/3-pipeline/source-whitelist.md             -> SRC-* (primary sources a claim may link to)
+    knowledge/1-brand/source-whitelist.md             -> SRC-* (primary sources a claim may link to)
 
 Score categories: anti_ai, readability, seo, link, geo (form) + coverage, trust (substance).
 """
@@ -25,6 +26,7 @@ Score categories: anti_ai, readability, seo, link, geo (form) + coverage, trust 
 from __future__ import annotations
 
 import argparse
+import csv
 import difflib
 import json
 import re
@@ -34,16 +36,23 @@ from dataclasses import dataclass, field, asdict
 from datetime import date
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+try:
+    import fact_consistency as fc  # brand fact register (CL5-fact)
+    BRAND_FACTS = fc.load_facts()
+except Exception:  # register missing / invalid -> CL5 skipped, never crash the linter
+    fc, BRAND_FACTS = None, []
+
 if hasattr(sys.stdout, "reconfigure"):  # reconfigure in place: a new TextIOWrapper would close the buffer when GC'd
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 ROOT = Path(__file__).resolve().parents[1]
-BLACKLIST_FILE = ROOT / "knowledge/3-pipeline/anti-ai-rules-blacklist.md"
-GLOSSARY_FILE = ROOT / "knowledge/3-pipeline/glossary.md"
-SITEMAP_CACHE = ROOT / ".antigravity/skills/internal-linking/scripts/sitemap-cache.json"
-REVISION_LOG = ROOT / "knowledge/3-pipeline/revision-log.md"
-LINK_CLUSTERS = ROOT / "knowledge/3-pipeline/internal-links/link-clusters.json"
-COUNT_WORDS_DIR = ROOT / ".antigravity/skills/qa-qc"
+BLACKLIST_FILE = ROOT / "knowledge/1-brand/anti-ai-rules-blacklist.md"
+GLOSSARY_FILE = ROOT / "knowledge/1-brand/glossary.md"
+SITEMAP_CACHE = ROOT / ".agents/skills/link/scripts/sitemap-cache.json"
+REVISION_LOG = ROOT / "knowledge/3-seo/logs/revision-log.md"
+LINK_CLUSTERS = ROOT / "knowledge/3-seo/strategy/taxonomy.json"
+COUNT_WORDS_DIR = ROOT / "scripts"
 
 DSC_HOST = "https://www.dsc.com.vn"
 OPEN_ACCOUNT_URL = f"{DSC_HOST}/mo-tai-khoan"
@@ -58,7 +67,7 @@ MIN_INTERNAL_LINKS = 3
 # Composite score weights (sum = 100)
 WEIGHTS = {"anti_ai": 20, "seo": 20, "readability": 15, "link": 10, "geo": 10, "coverage": 15, "trust": 10}
 SUBSTANCE = ("coverage", "trust")  # MAJOR here blocks /approve: these decide ranking, not polish
-WHITELIST_FILE = ROOT / "knowledge/3-pipeline/source-whitelist.md"
+WHITELIST_FILE = ROOT / "knowledge/1-brand/source-whitelist.md"
 AUTHOR = "Chứng khoán DSC"
 PENALTY = {"CRITICAL": 25, "MAJOR": 10, "MINOR": 3}
 MINOR_CAP = 30  # MINOR findings can cost a category at most this many points
@@ -381,6 +390,7 @@ def check_anti_ai(rep, lines, start, hard, hedge, soft, forbidden):
 
 def check_brand_format(rep, lines, start):
     in_fence = False
+    _unverified_seen: set[str] = set()  # FACT-unverified: once per fact per article
     for i in range(start, len(lines)):
         raw = lines[i]
         if raw.strip().startswith("```"):
@@ -399,30 +409,17 @@ def check_brand_format(rep, lines, start):
                 if "/năm" not in tail and "năm" not in tail:
                     rep.add("CL3-rate-unit", "seo", "MINOR", i + 1, f"Lãi suất thiếu `/năm`: “{m.group(0)}”", raw)
                     break
-        # DSC fact constants (CL5) — checked per sentence that names DSC
-        if "dsc" in low:
+        # DSC brand facts (CL5) — values come from knowledge/1-brand/brand-facts.json (register with owner/review date)
+        if "dsc" in low and BRAND_FACTS:
             for sent in split_sentences(strip_md(raw)):
-                sl = sent.lower()
-                if "dsc" not in sl:
-                    continue
-                pcts = re.findall(r"(\d+(?:,\d+)?)\s*%", sent)
-                if "phí giao dịch" in sl:
-                    for p in pcts:
-                        if float(p.replace(",", ".")) > 0.5:
-                            rep.add("CL5-fact", "trust", "MAJOR", i + 1,
-                                    f"Phí giao dịch DSC ghi {p}% — chuẩn là từ 0,1% [CẦN XÁC NHẬN]", sent)
-                if "margin" in sl:
-                    for p in pcts:
-                        v = float(p.replace(",", "."))
-                        if not (10 <= v <= 13.5):
-                            rep.add("CL5-fact", "trust", "MAJOR", i + 1,
-                                    f"Lãi margin DSC ghi {p}% — chuẩn 10–13,5%/năm [CẦN XÁC NHẬN]", sent)
-                if "ekyc" in sl and re.search(r"\d+\s*phút", sl) and "3 phút" not in sl:
-                    rep.add("CL5-fact", "trust", "MAJOR", i + 1, "Thời gian eKYC DSC chuẩn là 3 phút", sent)
-                if "định danh" in sl:
-                    for m in re.finditer(r"\b\d{6}\b", sent):
-                        if m.group(0) != "963369":
-                            rep.add("CL5-fact", "trust", "MAJOR", i + 1, "Mã định danh nạp tiền DSC chuẩn là 963369", sent)
+                for fact, found in fc.check_sentence(sent, BRAND_FACTS):
+                    if found is not None:
+                        rep.add("CL5-fact", "trust", fact.get("severity", "MAJOR"), i + 1, fc.message(fact, found), sent)
+                    elif fact["id"] not in _unverified_seen and fc.due(fact):
+                        _unverified_seen.add(fact["id"])
+                        rep.add("FACT-unverified", "trust", "MINOR", i + 1,
+                                f"Fact `{fact['id']}` ({fact['value']}) {fc.due(fact)} trong brand-facts.json — "
+                                f"xác nhận với owner trước khi publish", sent)
         if re.search(r"\$\$?[^$\n]{1,80}\$\$?", raw) and "VNĐ" not in raw and "USD" not in raw:
             rep.add("FMT-latex", "readability", "MAJOR", i + 1, "Công thức LaTeX `$...$` — viết bằng in đậm thường", raw)
         if classify(raw) == "list":
@@ -555,7 +552,10 @@ def check_links(rep, lines, start, sitemap: set[str], use_sitemap: bool):
 XEM_THEM_LINE = re.compile(r"(?i)^[\s>*_»•-]*(?:&gt;&gt;|>>)?\s*[*_]*\s*xem\s+th[eê]m\s*[*_]*\s*:")
 POINTER_PHRASE = re.compile(
     r"(?i)(tham khảo (thêm )?(bài|tại|ở)|xem (thêm )?(bài|chi tiết tại|tại)|đọc (thêm )?(bài|tại)|"
-    r"chi tiết (xem )?tại bài)\s")
+    r"chi tiết (xem )?tại bài|"
+    # "… có trong bài [x]", "… được giải thích trong bài [x]", "thao tác chi tiết có ở bài [x]"
+    r"(có|nằm|được (giải thích|hướng dẫn|trình bày|phân tích))( chi tiết)? (trong|ở|tại) bài|"
+    r"(hướng dẫn|thao tác|cách làm) (chi tiết|từng bước|từng màn hình)[^.]{0,40}(trong|ở|tại) bài)\s")
 
 
 def load_link_clusters() -> list[dict]:
@@ -565,11 +565,38 @@ def load_link_clusters() -> list[dict]:
         return []
 
 
+DSC_OPS = re.compile(r"963369|\b024C\d|tiểu khoản đuôi|đuôi tiểu khoản|của DSC tại BIDV")
+STEP_HEAD = re.compile(r"(?i)^#{2,3} .*(bước|hướng dẫn|quy trình)")
+
+
+def check_brand_in_steps(rep, lines, start, fm: dict):
+    """BRAND-steps: DSC-only operating details (deposit code, account format, sub-account suffix) inside
+    generic how-to steps. Steps must work at any broker; DSC specifics belong in the DSC H2 / CTA
+    (user feedback 2026-11-18, cach-choi-chung-khoan). Skipped for DSC-branded articles."""
+    if "DSC" in (fm.get("Title", "") + fm.get("Target_Keyword", "")):
+        return
+    in_steps = False
+    for i in range(start, len(lines)):
+        s = lines[i].strip()
+        if s.startswith("## "):
+            in_steps = bool(STEP_HEAD.match(s)) and "DSC" not in s
+            continue
+        if s.startswith("### ") and STEP_HEAD.match(s) and "DSC" not in s:
+            in_steps = True
+        if not in_steps:
+            continue
+        m = DSC_OPS.search(lines[i])
+        if m:
+            rep.add("BRAND-steps", "seo", "MINOR", i + 1,
+                    f"Chi tiết riêng DSC “{m.group(0)}” trong bước hướng dẫn chung — viết cách làm dùng được ở "
+                    "mọi CTCK, dồn số/mã riêng DSC về H2 DSC hoặc CTA", lines[i])
+
+
 def check_link_rules(rep, lines, start, slug: str):
     """Contextual-link rules from the 2026-10-30 internal-link pass (internal-linking SKILL §Quy tắc).
 
     LINK-xemthem      ">> Xem thêm: …" line instead of a link inside a sentence           MAJOR
-    LINK-pointer      sentence exists only to send the reader away ("tham khảo bài …")    MINOR
+    LINK-pointer      sentence exists only to send the reader away ("tham khảo bài …")    MAJOR
     LINK-pillar-anchor exact pillar anchor pointing anywhere except that pillar           MAJOR
     LINK-cta-anchor   /mo-tai-khoan anchor without "DSC" (pillar keyword belongs to pillar) MINOR
     LINK-pillar       hub/spoke of a registered cluster with no link to its pillar        MAJOR
@@ -597,7 +624,7 @@ def check_link_rules(rep, lines, start, slug: str):
             rep.add("LINK-xemthem", "link", "MAJOR", i + 1,
                     "Dòng “Xem thêm:” — đặt link vào 1 câu có ngữ cảnh của chính đoạn đó", raw)
         elif POINTER_PHRASE.search(strip_md(raw)):
-            rep.add("LINK-pointer", "link", "MINOR", i + 1,
+            rep.add("LINK-pointer", "link", "MAJOR", i + 1,
                     "Câu chỉ để trỏ sang bài khác — anchor nên là một phần của lập luận", raw)
         for text, url, prose in found:
             clean = url.split("?")[0].split("#")[0].rstrip("/")
@@ -618,7 +645,9 @@ def check_link_rules(rep, lines, start, slug: str):
             if slug not in members:
                 continue
             rep.stats["link_cluster"] = f"{c['id']} / {g['name']}"
-            if c.get("pillar") and not g.get("pillar_exempt") and c["pillar"] not in targets:
+            # pillar_hubs_only: spokes link their hub; only hubs (or spokes of hubless groups) must link the pillar
+            needs_pillar = not (c.get("pillar_hubs_only") and g.get("hub") and slug != g["hub"])
+            if c.get("pillar") and needs_pillar and not g.get("pillar_exempt") and c["pillar"] not in targets:
                 rep.add("LINK-pillar", "link", "MAJOR", start + 1,
                         f"Bài thuộc cụm “{c['name']}” nhưng chưa link về pillar {DSC_HOST}/kien-thuc/{c['pillar']} "
                         f"(anchor gợi ý: “{c['pillar_anchors'][0]}”)")
@@ -629,6 +658,35 @@ def check_link_rules(rep, lines, start, slug: str):
                 if slug in b["spokes"] and b.get("subhub") and b["subhub"] not in targets:
                     rep.add("LINK-subhub", "link", "MINOR", start + 1,
                             f"Bài thuộc nhánh “{b['id']} {b['name']}” chưa link về sub-hub {DSC_HOST}/kien-thuc/{b['subhub']}")
+    check_bridge(rep, start, slug, targets)
+
+
+def topic_of(slug: str) -> str:
+    """Cluster code of an article from the registry (pages.csv), matching the live slug or the file slug."""
+    reg = ROOT / "knowledge/3-seo/strategy/pages.csv"
+    try:
+        with reg.open(encoding="utf-8-sig", newline="") as fh:
+            for r in csv.DictReader(fh):
+                if slug and slug in (r.get("slug"), r.get("file_slug")):
+                    return r.get("cluster", "")
+    except OSError:
+        pass
+    return ""
+
+
+def check_bridge(rep, start, slug: str, targets: set[str]):
+    """LINK-bridge: an article in an Outer cluster (taxonomy.json topics.<code>.section) must link to its
+    cluster's bridge_to — the Core page the cluster feeds. MINOR while the existing corpus is backfilled."""
+    try:
+        topics = json.loads(LINK_CLUSTERS.read_text(encoding="utf-8")).get("topics", {})
+    except (OSError, ValueError):
+        return
+    t = topics.get(topic_of(slug), {})
+    bridge = t.get("bridge_to", "")
+    if t.get("section") == "outer" and bridge and slug != bridge and bridge not in targets:
+        rep.add("LINK-bridge", "link", "MINOR", start + 1,
+                f"Bài thuộc cụm Outer “{t.get('name')}” chưa có cầu nối về bài Core {DSC_HOST}/kien-thuc/{bridge} "
+                "— 1 đoạn nối ý bài sang việc người đọc làm tiếp, link nằm trong câu")
 
 
 def check_cta(rep, path: Path):
@@ -681,6 +739,70 @@ def check_geo(rep, lines, start):
         rep.add("GEO-few-marker", "geo", "MINOR", start + 1, f"{data_points} data point, chỉ {markers} mốc thời gian")
     if h2 and markers > h2 * 2:
         rep.add("GEO-overuse", "geo", "MINOR", start + 1, f"{markers} mốc thời gian cho {h2} H2 — có dấu hiệu lạm dụng (§8.3)")
+
+
+# Passage self-containment: AI retrieval pulls single sections, so each must make sense out of context.
+VAGUE_OPENER = re.compile(
+    r"^(Nó|Điều này|Việc này|Cách này|Dịch vụ này|Sản phẩm này|Công cụ này|Chỉ báo này|Phương pháp này|"
+    r"Chiến lược này|Mô hình này|Loại hình này|Hình thức này|Chỉ số này|Lệnh này|Quy định này)\b")
+# Time-limited / conditional offers only — "mở tài khoản miễn phí", "tư vấn miễn phí" are standing policy.
+PROMO_CLAIM = re.compile(
+    r"ưu đãi|giảm phí|hoàn phí|khuyến mãi|miễn phí (?:phí )?(?:giao dịch|lãi|margin|ứng trước|chuyển tiền)|"
+    r"\b0\s?(?:đ|đồng|VNĐ)\b|(?<![\d,])0\s?%", re.I)
+PREF_TERM = re.compile(r"(cổ phiếu|cổ tức|cổ phần|cổ đông|quyền|vốn vay) ưu đãi", re.I)  # finance terms, not promos
+CONDITION_WORD = re.compile(
+    r"áp dụng|điều kiện|tùy|tuỳ|nếu|từ ngày|đến ngày|đến hết|trong (?:\d+|vòng)|biểu phí|tối thiểu|tối đa|"
+    r"kỳ hạn|thời hạn|chương trình|dành cho|chỉ cho", re.I)
+_SKIP_H2 = re.compile(r"kết luận|câu hỏi|faq|tổng kết|lời kết", re.I)
+
+
+def check_passages(rep, lines, start):
+    """GEO-entity-anchor / GEO-claim-condition / IMG-alt-empty / IMG-text-only (all MINOR, advisory)."""
+    h2_line, h2_text, body_seen = None, "", True
+    sents_with_line: list[tuple[int, str]] = []
+    in_fence = False
+    for i in range(start, len(lines)):
+        raw = lines[i]
+        if raw.strip().startswith("```"):
+            in_fence = not in_fence
+            continue
+        if in_fence or not raw.strip():
+            continue
+        if raw.startswith("## "):
+            h2_line, h2_text, body_seen = i, raw[3:].strip(), False
+            continue
+        if raw.startswith("#"):
+            continue
+        text = strip_md(raw).lstrip("-*+> ").strip()
+        if h2_line is not None and not body_seen and text:
+            body_seen = True
+            if not _SKIP_H2.search(h2_text) and VAGUE_OPENER.match(text):
+                rep.add("GEO-entity-anchor", "geo", "MINOR", i + 1,
+                        f"Câu đầu mục “{h2_text[:50]}” mở bằng “{VAGUE_OPENER.match(text).group(0)}” — "
+                        f"AI trích riêng đoạn này sẽ mất chủ ngữ; gọi thẳng tên (sản phẩm / chỉ báo / DSC)", text)
+        for s in split_sentences(text):
+            sents_with_line.append((i, s))
+        # Images: alt text must exist, and numbers it carries must also be in the prose
+        # [![](banner)](link) = CTA banner image, decorative -> skipped
+        for alt in re.findall(r"(?<!\[)!\[([^\]]*)\]\([^)]+\)", raw):
+            if not alt.strip():
+                rep.add("IMG-alt-empty", "geo", "MINOR", i + 1, "Ảnh không có alt — mô tả nội dung ảnh bằng chữ", raw)
+                continue
+            nums = [n for n in re.findall(r"\d+(?:[.,]\d+)?", alt) if not re.fullmatch(r"(19|20)\d\d", n)]
+            body = "\n".join(lines[start:])
+            body_wo_img = re.sub(r"!\[[^\]]*\]\([^)]+\)", "", body)
+            missing = [n for n in nums if n not in body_wo_img]
+            if missing:
+                rep.add("IMG-text-only", "geo", "MINOR", i + 1,
+                        f"Số {', '.join(missing)} chỉ có trong ảnh/alt — viết lại bằng chữ trong đoạn văn", alt)
+    for k, (ln, s) in enumerate(sents_with_line):
+        if "dsc" not in s.lower() or not PROMO_CLAIM.search(PREF_TERM.sub("", s)):
+            continue
+        near = " ".join(x for _, x in sents_with_line[max(0, k - 1):k + 2])
+        if not CONDITION_WORD.search(near):
+            rep.add("GEO-claim-condition", "geo", "MINOR", ln + 1,
+                    "Ưu đãi/miễn phí của DSC không kèm điều kiện (áp dụng cho ai, đến khi nào) trong cùng câu "
+                    "hoặc câu kề — AI trích riêng câu này sẽ thành cam kết vô điều kiện", s)
 
 
 def check_images(rep, lines, start, original: Path):
@@ -949,9 +1071,36 @@ def check_information_gain(rep, lines, start, outline_path: Path):
     rep.stats["information_gain"] = f"{delivered}/{len(items)}"
 
 
+def check_eav(rep, lines, start, outline_path: Path):
+    """EAV-value-missing: every EAV value declared in the outline must appear in the draft (numbers compared
+    without separators, so 0,1% == 0.1%)."""
+    ol = _outline_mod()
+    if not ol or not hasattr(ol, "parse_eav"):
+        return
+    try:
+        text = outline_path.read_text(encoding="utf-8").replace("\r\n", "\n")
+    except OSError:
+        return
+    _, yaml_raw, _ = ol.parse_yaml(text)
+    items = [it for it in ol.parse_eav(yaml_raw) if it.get("value")]
+    if not items:
+        return
+    whole = _fold(strip_md("\n".join(lines[start:])))
+    flat = re.sub(r"[\s.,]", "", whole)
+    done = 0
+    for it in items:
+        v = _fold(it["value"])
+        if v in whole or (re.search(r"\d", v) and re.sub(r"[\s.,]", "", v) in flat):
+            done += 1
+        else:
+            rep.add("EAV-value-missing", "coverage", "MAJOR", start + 1,
+                    f"EAV outline đã khai chưa có trong bài: “{it['attribute']}” = “{it['value']}”")
+    rep.stats["eav"] = f"{done}/{len(items)}"
+
+
 # ─────────────────────────── Duplication across the corpus ───────────────────────────
 
-FINAL_DIR = ROOT / "knowledge/4-content/3-finalized"
+FINAL_DIR = ROOT / "knowledge/3-seo/content/3-finalized"
 DUP_JACCARD = 0.8
 
 
@@ -1218,7 +1367,7 @@ def render(rep: Report) -> str:
     return "\n".join(out)
 
 
-CHECK_LOG = ROOT / "knowledge/3-pipeline/qa-check-log.csv"
+CHECK_LOG = ROOT / "knowledge/3-seo/logs/qa-check-log.csv"
 
 
 def append_check_log(rep: Report, slug: str):
@@ -1240,7 +1389,7 @@ def append_check_log(rep: Report, slug: str):
             w.writerow([today, slug, "qa_lint", check, sev, n])
 
 
-SCORE_LOG = ROOT / "knowledge/3-pipeline/qa-score-log.csv"
+SCORE_LOG = ROOT / "knowledge/3-seo/logs/qa-score-log.csv"
 SCORE_COLS = ["date", "slug", "score", "critical", "major", "minor", "anti_ai", "seo", "readability", "link", "geo", "slop",
               "coverage", "trust"]
 
@@ -1330,7 +1479,9 @@ def main() -> int:
     check_structure(rep, prose, start)
     check_links(rep, lines, start, sitemap, not args.no_sitemap)
     check_link_rules(rep, lines, start, slug)
+    check_brand_in_steps(rep, prose, start, fm)
     check_geo(rep, prose, start)  # CSS percentages (0%, 70%) would count as data points
+    check_passages(rep, prose, start)
     check_boilerplate_stats(rep, prose, start)
     if args.cta:
         check_cta(rep, path)
@@ -1342,6 +1493,7 @@ def main() -> int:
         check_word_count(rep, path, outline)
         paa_count = check_paa(rep, lines, start, outline)
         check_information_gain(rep, lines, start, outline)
+        check_eav(rep, lines, start, outline)
     check_faq_format(rep, lines, start, paa_count)
     check_entities(rep, prose, start, keyword, outline)
     check_duplicates(rep, prose, start, slug)

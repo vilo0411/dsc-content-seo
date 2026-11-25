@@ -23,7 +23,7 @@ What the script does:
   2. Audits: LONG (rule > MAX_CHARS), TAG-DUP (≥2 ACTIVE rules share tag+scope), BUDGET (instincts.md
      > CORE_BUDGET), ORPHAN (an ACTIVE rule rendered nowhere), SUPERSEDE (DEPRECATED without valid
      "Thay bởi"), NO-ID. `--check` exits 1 when any audit fires.
-  3. `--stats`: recurrence of each rule's checks in knowledge/3-pipeline/qa-check-log.csv
+  3. `--stats`: recurrence of each rule's checks in knowledge/3-seo/logs/qa-check-log.csv
      (written by `qa_lint.py --log`) — a check that keeps firing after the rule was learned means the
      rule is not working; a rule whose check never fires for months is a pruning candidate.
   4. `--assign-ids`: one-time, writes `- **ID:** Ixxx` into archive entries that lack one (backup first).
@@ -47,10 +47,10 @@ if hasattr(sys.stdout, "buffer"):
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 
 ROOT = Path(__file__).resolve().parents[1]
-ARCHIVE = ROOT / ".antigravity/memory/instincts-archive.md"
-CORE = ROOT / ".antigravity/memory/instincts.md"
-SCOPE_DIR = ROOT / ".antigravity/memory/instincts-by-scope"
-CHECK_LOG = ROOT / "knowledge/3-pipeline/qa-check-log.csv"
+ARCHIVE = ROOT / ".agents/memory/instincts-archive.md"
+CORE = ROOT / ".agents/memory/instincts.md"
+SCOPE_DIR = ROOT / ".agents/memory/instincts-by-scope"
+CHECK_LOG = ROOT / "knowledge/3-seo/logs/qa-check-log.csv"
 
 DEDUPE_THRESHOLD = 0.5
 MAX_CHARS = 450              # a rule longer than this is reported, never cut

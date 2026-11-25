@@ -6,7 +6,7 @@ description: Brief quảng cáo Meta — mục tiêu, objective, persona, offer,
 # /ads-brief <mục tiêu> [--job CMP-…] [--product eKYC|brokerage|invest|margin]
 
 ## Bước 0 — Context
-`.antigravity/core/README.md` §1 + `.antigravity/domains/ads/README.md`, `references/meta-ads-playbook.md`, `learnings.md`.
+`.agents/core/README.md` §1 + `.agents/domains/ads/README.md`, `references/meta-ads-playbook.md`, `learnings.md`.
 
 ## Bước 1 — Hỏi những gì không suy ra được (1 lần, gộp)
 Ngân sách, thời gian chạy, sự kiện chuyển đổi đã cài (pixel/dataset), offer hiện hành. Không tự đặt ngân sách.
@@ -19,7 +19,7 @@ Ngân sách, thời gian chạy, sự kiện chuyển đổi đã cài (pixel/da
 
 ## Bước 3 — Brief
 Theo khung playbook §1: objective, KPI chính + mục tiêu (dựa baseline, ghi rõ nguồn), persona, 2–3 angle (khung PAS/Proof/Question/Expert), audience đề xuất (tuân compliance-finance §3), landing đích (có sẵn hay cần `/landing`), creative cần.
-File: `knowledge/5-campaigns/<job>/ads/brief.md` (chưa có job → `python scripts/campaign.py new <slug> --title "…" --channels ads[,landing,social]`).
+File: `knowledge/6-campaigns/<job>/ads/brief.md` (chưa có job → `python scripts/campaign.py new <slug> --title "…" --channels ads[,landing,social]`).
 
 ## Bước 4 — Gate
-Tóm tắt ≤ 20 dòng, dừng chờ duyệt. Tiếp theo: `/ads-copy <job>`.
+Tóm tắt ≤ 20 dòng, dừng chờ duyệt. Tiếp theo: `/meta-ads-copy <job>`.

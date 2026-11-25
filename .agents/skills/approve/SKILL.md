@@ -1,69 +1,41 @@
 ---
 name: approve
-description: Phê duyệt giai đoạn hiện tại (Outline → Draft/Final/Optimize) trong Content Pipeline.
+description: "Duyệt giai đoạn hiện tại của bài SEO (Outline → Draft → Final, hoặc proposal /optimize): kiểm trạng thái, ghi revision-log, chuyển file, cập nhật topic_status. Dùng khi user gõ /approve, 'duyệt', 'ok chốt', 'approve outline/draft'."
 ---
 
 # Phê duyệt giai đoạn hiện tại
 
-## Nhiệm vụ
-Cho phép người dùng phê duyệt một bản nháp, outline, hoặc bản tối ưu để đẩy nó sang giai đoạn tiếp theo trong Content Pipeline.
+**Nguồn duy nhất** cho trình tự finalize — `/write`, `drafting`, `qa-qc`, `quality-guardian` chỉ trỏ về đây.
 
-## 🔄 Context Load (Trước khi thực thi)
-1. `python scripts/topic_status.py [slug]` — xác nhận slug/trạng thái (không đọc `topic-clusters.md`)
-2. Không mở `instincts-archive.md` / `revision-log.md`. Bài học mới: cổng nhận rule của `content-feedback-loop` (sửa rule cùng Tag theo ID — xem bằng `python scripts/optimize_instincts.py --show <ID|tag>`), rồi `optimize_instincts.py --check`. Log: `python scripts/revision_log.py add …`.
+## Bước 0: Xác định stage (1 lệnh)
+`python scripts/topic_status.py <slug>` → stage theo file đang thảo luận:
+- `knowledge/3-seo/content/1-outlines/<slug>.md` → **A. Outline**
+- `knowledge/3-seo/content/2-drafts/Draft-<slug>.md` → **B. Draft**
+- `knowledge/3-seo/content/2-drafts/Optimize-<slug>.md` → **C. Optimize**
 
-> File này là **nguồn duy nhất** cho trình tự finalize. `/write`, `seo-drafting`, `qa-qc`, `quality-guardian` chỉ trỏ về đây.
+Không mở `revision-log.md`, `instincts-archive.md`, `pages.csv` (registry) — mọi bước dưới đây đều có script.
 
-## Quy trình thực thi
+## A. Outline
+1. `python scripts/topic_status.py <slug> --set Outline-Approved`
+2. `python scripts/article_snapshot.py <slug> --stage outline`
+3. Báo: "Outline đã duyệt. Gõ `/drafting <slug>` để viết bài."
 
-### Bước 1: Xác định context
-Xác định file đang ở stage nào dựa trên tên file hoặc stage đang được thảo luận trong conversation:
+## B. Draft và C. Optimize — trình tự chung
+1. **Hỏi user (bắt buộc):** *"Ngoài các chỉnh sửa đã trao đổi trong chat, bạn có tự sửa thêm gì trong file không? Mô tả ngắn để tôi ghi log. (Gõ 'không' để bỏ qua.)"* Có bản AI đã trình → `python scripts/article_snapshot.py <slug> --diff` để thấy phần user tự sửa.
+2. **Ghi log** toàn bộ sửa đổi của session: `python scripts/revision_log.py add <slug> --fix "…" --pattern "…" --rule "…" --scope <Global|topic>` (mỗi trường ≤ 400 ký tự).
+3. **Gate:** `python scripts/qa_gate.py <file> --all`. **Không chuyển file** khi còn: `CRITICAL` · `MAJOR` thực chất (`ENT-*`, `IG-*`, `PAA-*`, `DUP-*`, `SRC-*`, `YMYL-*`, `EEAT-*`, `CL5-fact`) · slop < 80 · cảnh báo "Không có outline" → báo user danh sách lỗi, chờ quyết định. `MAJOR` hình thức + `FACT-*`: in ra, không chặn (exit 3 = nguồn dữ liệu chết). Chỉ bỏ gate khi user nói rõ "cứ finalize".
+4. **Chuyển file:**
+   - B: move → `knowledge/3-seo/content/3-finalized/Final-<slug>.md`.
+   - C: ghi đè nội dung lên `Final-<slug>.md`, rồi xoá `Optimize-<slug>.md` (bản trình duyệt đã lưu ở `archive/<slug>/gate2.md`).
+5. `python scripts/article_snapshot.py <slug> --stage final` — lưu Final + chuyển outline/proposal vào `knowledge/3-seo/content/archive/<slug>/`. Exit 3 = không có outline → báo user.
+6. `python scripts/topic_status.py <slug> --set Finalized`
+7. `python scripts/md_to_cms_html.py <slug>` → `knowledge/3-seo/content/4-cms/<slug>.html` + Title / Meta / H1. Script báo `⚠️ Ảnh sai kích thước` → vẽ lại (bìa 1000×600, trong bài 800×500) trước khi báo user.
+8. `python scripts/qa_lint.py knowledge/3-seo/content/3-finalized/Final-<slug>.md --log` (ghi `qa-score-log.csv` + `qa-check-log.csv`).
+9. **Chỉ B (bài mới):** `python scripts/find_links.py --add-anchor <slug> --anchor "<anchor chính>" --cluster "<cluster>"`.
+10. **Học:** session có ghi revision-log ở bước 2 (khác "không") → làm theo `.agents/skills/learn/references/playbook.md` cho slug này (cổng nhận rule → sửa rule cùng Tag theo ID → `python scripts/optimize_instincts.py --check`). Không có sửa đổi → bỏ qua bước này.
 
-### Bước 2: Thực thi theo stage
-
-**Nếu stage là Outline (`knowledge/4-content/1-outlines/[slug].md`):**
-- `python scripts/topic_status.py [slug] --set Outline-Approved`
-- `python scripts/article_snapshot.py [slug] --stage outline`
-- Thông báo: "Outline đã được approve. Gõ `/drafting [slug]` để bắt đầu viết bài."
-
-**Nếu stage là Draft (`knowledge/4-content/2-drafts/Draft-[slug].md`):**
-- **BẮT BUỘC — Hỏi trước khi finalize:**
-  > *"Ngoài các chỉnh sửa đã trao đổi trong chat, bạn có tự sửa thêm gì trong file không? Mô tả ngắn để tôi ghi log. (Gõ 'không' để bỏ qua.)"*
-- Tổng hợp **toàn bộ** những gì đã sửa trong session này (từ chat + file trực tiếp nếu user khai báo) → ghi log bằng `python scripts/revision_log.py add <slug> --fix "…" --pattern "…" --rule "…" --scope <Global|topic>` (mỗi trường ≤ 400 ký tự). **Không** mở `revision-log.md` (~95 KB) để Edit.
-- **GATE trước khi move file** (DSC không có `finalize.py`, nên gate chạy tay ở đây):
-  ```bash
-  python scripts/qa_gate.py [đường dẫn file đang approve] --all
-  ```
-  **KHÔNG move file** khi còn: `CRITICAL` (tầng A) · `MAJOR` thuộc nhóm thực chất — `ENT-*`, `IG-*`, `PAA-*`, `DUP-*`, `SRC-*`, `YMYL-*`, `EEAT-*`, `CL5-fact` (đây là các lỗi quyết định bài có rank / được AI trích hay không) · slop score < 80 (tầng B) · cảnh báo "Không có outline". Báo lại cho user kèm danh sách lỗi và chờ quyết định. `MAJOR` hình thức còn lại + `FACT-*`: in ra cho user, không chặn (exit 3 = nguồn dữ liệu chết, bỏ qua). Chỉ bỏ qua gate khi user nói rõ "cứ finalize".
-- **BẮT BUỘC**: Di chuyển file sang `knowledge/4-content/3-finalized/Final-[slug].md`.
-- **BẮT BUỘC**: `python scripts/article_snapshot.py [slug] --stage final` — lưu bản Final + **chuyển** outline vào `knowledge/4-content/archive/[slug]/` (không xoá). Exit 3 = bài không có outline ở đâu cả → báo user (Thesis / Information_Gain của bài không còn được lưu).
-- `python scripts/topic_status.py [slug] --set Finalized`
-- **BẮT BUỘC**: `python scripts/md_to_cms_html.py [slug]` → xuất `knowledge/4-content/4-cms/[slug].html` (thân bài HTML đúng định dạng CMS, không gồm H1) + in Title / Meta / H1 để dán vào các ô của CMS.
-- `python scripts/qa_lint.py knowledge/4-content/3-finalized/Final-[slug].md --log` — 1 dòng `qa-score-log.csv` (tự kèm slop score) + từng check vào `qa-check-log.csv` (đo rule nào còn tái diễn: `optimize_instincts.py --stats`).
-- Auto-trigger: Kích hoạt skill `.antigravity/skills/content-feedback-loop/SKILL.md` để tổng hợp bài học → cổng nhận rule → sửa/thêm trong `instincts-archive.md` → `python scripts/optimize_instincts.py --check`.
-- Thêm bài vào chỉ mục link: `python scripts/find_links.py --add-anchor [slug] --anchor "<anchor chính>" --cluster "<tên cluster>"` (script chèn 1 dòng vào `anchor-index.md`; **không** mở file 189 KB đó).
-- Nhắc user: sau khi publish lên CMS, mỗi tuần chạy `/weekly` — tự gom sync_live, backfill link theo lô và lịch đo GSC (sổ `publish-ledger.csv` đã được `article_snapshot` ghi).
-
-**Nếu stage là Optimize (`knowledge/4-content/2-drafts/Optimize-[slug].md`):**
-- **BẮT BUỘC — Hỏi trước khi finalize:**
-  > *"Ngoài các chỉnh sửa đã trao đổi trong chat, bạn có tự sửa thêm gì trong file không? Mô tả ngắn để tôi ghi log. (Gõ 'không' để bỏ qua.)"*
-- Tổng hợp **toàn bộ** những gì đã sửa trong session này (từ chat + file trực tiếp nếu user khai báo) → ghi log bằng `python scripts/revision_log.py add <slug> --fix "…" --pattern "…" --rule "…" --scope <Global|topic>` (mỗi trường ≤ 400 ký tự). **Không** mở `revision-log.md` (~95 KB) để Edit.
-- **GATE trước khi move file** (DSC không có `finalize.py`, nên gate chạy tay ở đây):
-  ```bash
-  python scripts/qa_gate.py [đường dẫn file đang approve] --all
-  ```
-  **KHÔNG move file** khi còn: `CRITICAL` (tầng A) · `MAJOR` thuộc nhóm thực chất — `ENT-*`, `IG-*`, `PAA-*`, `DUP-*`, `SRC-*`, `YMYL-*`, `EEAT-*`, `CL5-fact` (đây là các lỗi quyết định bài có rank / được AI trích hay không) · slop score < 80 (tầng B) · cảnh báo "Không có outline". Báo lại cho user kèm danh sách lỗi và chờ quyết định. `MAJOR` hình thức còn lại + `FACT-*`: in ra cho user, không chặn (exit 3 = nguồn dữ liệu chết, bỏ qua). Chỉ bỏ qua gate khi user nói rõ "cứ finalize".
-- Ghi đè bản nâng cấp lên file gốc: `knowledge/4-content/3-finalized/Final-[slug].md`.
-- `python scripts/article_snapshot.py [slug] --stage final` (lưu Final + chuyển Proposal vào `archive/[slug]/outline.md`), rồi xóa `Optimize-[slug].md` trong `2-drafts/` (bản trình duyệt đã có ở `archive/[slug]/gate2.md`).
-- `python scripts/topic_status.py [slug] --set Finalized`
-- **BẮT BUỘC**: `python scripts/md_to_cms_html.py [slug]` → xuất `knowledge/4-content/4-cms/[slug].html` (thân bài HTML đúng định dạng CMS, không gồm H1) + in Title / Meta / H1 để dán vào các ô của CMS.
-- `python scripts/qa_lint.py knowledge/4-content/3-finalized/Final-[slug].md --log` — 1 dòng `qa-score-log.csv` (tự kèm slop score) + `qa-check-log.csv`.
-- Auto-trigger: Kích hoạt skill `.antigravity/skills/content-feedback-loop/SKILL.md` để tổng hợp bài học → cổng nhận rule → sửa/thêm trong `instincts-archive.md` → `python scripts/optimize_instincts.py --check`.
-
-### Bước 3: Xác nhận
-Sau khi hoàn thành, báo cáo cho người dùng:
-- Đường dẫn file final.
-- Đường dẫn file HTML cho CMS (`knowledge/4-content/4-cms/[slug].html`) kèm Title / Meta / H1 in ra từ script — user copy thẳng vào CMS (chế độ Source).
-- Trạng thái mới (output của `topic_status.py`) + 1 dòng điểm: score · **coverage** · **trust** · slop.
-- Việc user phải tự làm trên CMS: ảnh thực tế còn thiếu (`[ẢNH THỰC TẾ: …]`), nếu có.
-- Tóm tắt bài học mới từ Content Feedback Loop.
+## Báo cáo cho user (≤ 15 dòng)
+- Đường dẫn Final + HTML CMS kèm Title / Meta / H1 (user dán vào CMS chế độ Source).
+- Trạng thái mới + 1 dòng điểm: score · **coverage** · **trust** · slop.
+- Việc tay trên CMS: tải ảnh `knowledge/3-seo/content/images/<slug>-*.jpg`, thay `src` bằng `/uploads/…`, ảnh bìa vào ô featured; ảnh `[ẢNH THỰC TẾ: …]` còn thiếu (nếu có).
+- Bài học mới (nếu bước 10 chạy). Nhắc: sau publish, mỗi tuần chạy `/weekly`.

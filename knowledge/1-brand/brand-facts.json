@@ -1,0 +1,92 @@
+{
+  "_doc": "Brand fact register (grounding layer). Single source for DSC facts used by qa_lint CL5 and scripts/fact_consistency.py. Edit a value here -> run `python scripts/fact_consistency.py --changed <id>` to list articles to update. status: verified | needs_confirmation. Check types: pct_allowed_range (every % in the sentence must be within [min,max] or in also_allowed), unit_value (number before `unit` must include one of `allowed`), code (every 6-digit number must equal `expected`). A sentence is checked only if it names DSC and contains all `trigger_all` and at least one `trigger_any`.",
+  "facts": [
+    {
+      "id": "trading_fee",
+      "label": "Phí giao dịch cổ phiếu DSC",
+      "value": "từ 0,1%",
+      "trigger_all": ["phí giao dịch"],
+      "check": {"type": "pct_allowed_range", "min": 0, "max": 0.5},
+      "message": "Phí giao dịch DSC ghi {found}% — chuẩn là từ 0,1%",
+      "severity": "MAJOR",
+      "owner": "",
+      "source": "",
+      "verified_at": "",
+      "review_every_days": 90,
+      "status": "needs_confirmation"
+    },
+    {
+      "id": "margin_rate",
+      "label": "Lãi suất margin DSC",
+      "value": "10–13,5%/năm",
+      "trigger_all": ["margin"],
+      "trigger_any": ["lãi"],
+      "check": {"type": "pct_allowed_range", "min": 10, "max": 13.5},
+      "message": "Lãi margin DSC ghi {found}% — chuẩn 10–13,5%/năm",
+      "severity": "MAJOR",
+      "owner": "",
+      "source": "",
+      "verified_at": "",
+      "review_every_days": 30,
+      "status": "needs_confirmation"
+    },
+    {
+      "id": "ekyc_time",
+      "label": "Thời gian mở tài khoản eKYC DSC",
+      "value": "3 phút",
+      "trigger_all": ["ekyc"],
+      "check": {"type": "unit_value", "unit": "phút", "allowed": [3]},
+      "message": "Thời gian eKYC DSC ghi {found} phút — chuẩn là 3 phút",
+      "severity": "MAJOR",
+      "owner": "",
+      "source": "",
+      "verified_at": "",
+      "review_every_days": 180,
+      "status": "needs_confirmation"
+    },
+    {
+      "id": "deposit_code",
+      "label": "Mã định danh nạp tiền DSC (BIDV)",
+      "value": "963369",
+      "trigger_all": ["định danh"],
+      "check": {"type": "code", "pattern": "\\b\\d{6}\\b", "expected": "963369"},
+      "message": "Mã định danh nạp tiền DSC ghi {found} — chuẩn là 963369",
+      "severity": "MAJOR",
+      "owner": "",
+      "source": "knowledge/1-brand/service-operations.md §2.1 (dsc.com.vn Hướng dẫn)",
+      "verified_at": "2026-05-11",
+      "review_every_days": 180,
+      "status": "verified"
+    },
+    {
+      "id": "dsc_invest_fees",
+      "label": "Biểu phí DSC Invest (quản lý 1,5%/năm; thưởng 20% phần vượt 8%/năm)",
+      "value": "1,5% / 20% / 8%",
+      "trigger_all": ["dsc invest"],
+      "trigger_any": ["phí quản lý", "phí thưởng"],
+      "check": {"type": "pct_allowed_range", "min": 1.5, "max": 1.5, "also_allowed": [20, 8]},
+      "message": "Biểu phí DSC Invest ghi {found}% — chuẩn: quản lý 1,5%/năm, thưởng 20% phần lợi nhuận vượt 8%/năm",
+      "severity": "MINOR",
+      "owner": "",
+      "source": "knowledge/1-brand/service-operations.md §4",
+      "verified_at": "2026-05-11",
+      "review_every_days": 90,
+      "status": "verified"
+    },
+    {
+      "id": "dsc_invest_min_capital",
+      "label": "Vốn tối thiểu DSC Invest",
+      "value": "3 tỷ VNĐ",
+      "trigger_all": ["dsc invest"],
+      "trigger_any": ["tối thiểu", "từ"],
+      "check": {"type": "unit_value", "unit": "tỷ", "allowed": [3]},
+      "message": "Vốn tối thiểu DSC Invest ghi {found} tỷ — chuẩn là 3 tỷ VNĐ",
+      "severity": "MINOR",
+      "owner": "",
+      "source": "knowledge/1-brand/service-operations.md §4",
+      "verified_at": "2026-05-11",
+      "review_every_days": 90,
+      "status": "verified"
+    }
+  ]
+}

@@ -1,8 +1,13 @@
-"""Build the local searchable catalog of CMS exports and audit artifacts."""
+"""Build the local searchable catalog of CMS exports and audit artifacts, then the work dashboard (index.html).
+
+Usage: python scripts/build_content_index.py
+"""
 from pathlib import Path
 import json
 
-BASE = Path(__file__).resolve().parents[1] / 'knowledge/4-content'
+ROOT = Path(__file__).resolve().parents[1]
+BASE = ROOT / 'knowledge/3-seo/content'
+OUT = ROOT / 'knowledge/0-dashboard' / 'cms.html'
 
 
 def build():
@@ -13,7 +18,7 @@ def build():
                 continue
             relative = path.relative_to(BASE).as_posix()
             rows.append({'kind': kind, 'name': path.name,
-                         'path': relative, 'href': relative,
+                         'path': relative, 'href': '../3-seo/content/' + relative,
                          'group': path.parent.relative_to(BASE).as_posix()})
     data = json.dumps(rows, ensure_ascii=False).replace('<', '\\u003c')
     page = '''<!doctype html><html lang="vi"><meta charset="utf-8">
@@ -21,7 +26,7 @@ def build():
 <title>Tra cứu HTML CMS và audit</title>
 <style>body{font:16px system-ui;max-width:1200px;margin:40px auto;padding:0 20px;color:#172b4d}input,select{font:inherit;padding:10px;margin:0 8px 16px 0}input{width:min(600px,80%)}table{width:100%;border-collapse:collapse}td,th{text-align:left;padding:12px;border-bottom:1px solid #ddd;overflow-wrap:anywhere}a{color:#0758ab}small{color:#526278}tr[hidden]{display:none}</style>
 <h1>Tra cứu HTML CMS và audit</h1>
-<p><a href="../operations/index.html">Bảng điều hành: internal link, stale, audit và tiến độ</a></p>
+<p><a href="index.html">Bảng điều hành: internal link, stale, audit và tiến độ</a></p>
 <p><b>CMS:</b> HTML thân bài để dán vào CMS. <b>Audit:</b> báo cáo, bản xem trước, so sánh và dữ liệu kiểm tra.</p>
 <input id="query" type="search" aria-label="Tìm tài liệu" placeholder="Tìm slug, tên file, đợt audit…">
 <select id="kind" aria-label="Loại tài liệu"><option value="">Tất cả</option><option>CMS</option><option>Audit</option></select>
@@ -42,12 +47,15 @@ function render(){
 }
 query.addEventListener('input',render);kind.addEventListener('change',render);render();
 </script></html>'''.replace('DATA', data)
-    (BASE / 'index.html').write_text(page, encoding='utf-8')
-    print(f'Indexed {len(rows)} artifacts: {BASE / "index.html"}')
+    OUT.parent.mkdir(parents=True, exist_ok=True)
+    OUT.write_text(page, encoding='utf-8')
+    print(f'Indexed {len(rows)} artifacts: {OUT}')
     from build_work_dashboard import build as build_dashboard
     build_dashboard()
     return rows
 
 
 if __name__ == '__main__':
+    import argparse
+    argparse.ArgumentParser(description=__doc__).parse_args()  # --help prints usage instead of rebuilding
     build()

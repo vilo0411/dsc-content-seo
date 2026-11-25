@@ -6,10 +6,16 @@
     python scripts/article_snapshot.py <slug> --stage final     # at /approve Finalize (also archives the outline)
     python scripts/article_snapshot.py <slug> --diff [--from gate2 --to final]
     python scripts/article_snapshot.py <slug> --path outline    # print archived file path (e.g. for qa_lint --outline)
+    python scripts/article_snapshot.py <slug> --baseline "pos 12.3 · clicks 80 · imp 5000"   # /optimize step 1.1
 
-Snapshots: knowledge/4-content/archive/<slug>/<stage>.md (latest of each stage; the previous gate2 is kept
+Re-finalizing an article that is already live (or already had a final) counts as an optimize round: the
+first `final` date is kept, `optimized` / `optimize_count` are set, the previous Final is kept as
+final.prev.md, and the previous round (baseline → result) moves to `optimize_history`. weekly_review.py then
+re-measures GSC 28–56 days after the update is seen live and compares it with `optimize_baseline`.
+
+Snapshots: knowledge/3-seo/content/archive/<slug>/<stage>.md (latest of each stage; the previous gate2 is kept
 as gate2.prev.md). `--diff` prints only the paragraphs that changed — what /learn needs to see the user's
-edits without reading two full articles. Every stage also stamps knowledge/3-pipeline/publish-ledger.csv,
+edits without reading two full articles. Every stage also stamps knowledge/3-seo/logs/publish-ledger.csv,
 which scripts/weekly_review.py uses for sync/backfill/GSC follow-ups. Stdlib only.
 """
 from __future__ import annotations
@@ -27,11 +33,14 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 ROOT = Path(__file__).resolve().parents[1]
-CONTENT = ROOT / "knowledge/4-content"
+CONTENT = ROOT / "knowledge/3-seo/content"
 ARCHIVE = CONTENT / "archive"
-LEDGER = ROOT / "knowledge/3-pipeline/publish-ledger.csv"
+LEDGER = ROOT / "knowledge/3-seo/logs/publish-ledger.csv"
 LEDGER_COLS = ["slug", "outline", "gate2", "final", "first_live", "backfill_done", "gsc_checked", "note",
-               "qa_at_final", "gsc_result"]  # scores vs real outcome, side by side (filled by weekly_review --done gsc --result)
+               "qa_at_final", "gsc_result",  # scores vs real outcome, side by side (filled by weekly_review --done gsc --result)
+               # /optimize rounds: latest round in its own columns, older rounds folded into optimize_history
+               "optimized", "optimize_count", "optimize_baseline", "optimize_live", "optimize_gsc_checked",
+               "optimize_result", "optimize_history"]
 
 SOURCES = {
     "outline": [CONTENT / "1-outlines" / "{slug}.md", CONTENT / "1-outlines" / "Proposal-{slug}.md",
@@ -39,6 +48,19 @@ SOURCES = {
     "gate2": [CONTENT / "2-drafts" / "Draft-{slug}.md", CONTENT / "2-drafts" / "Optimize-{slug}.md"],
     "final": [CONTENT / "3-finalized" / "Final-{slug}.md"],
 }
+
+
+def already_live(slug: str) -> bool:
+    """Live snapshot exists for the slug or for the URL in the Final's front matter (`source:` / `url:` / `Slug:`)."""
+    live = ROOT / "knowledge/raw/live/html"
+    names = {slug}
+    final = CONTENT / "3-finalized" / f"Final-{slug}.md"
+    if final.exists():
+        m = re.search(r"^(?:source|url|URL|canonical|Slug)\s*:\s*[\"']?(\S+?)[\"']?\s*$",
+                      final.read_text(encoding="utf-8", errors="replace")[:1500], re.M)
+        if m:
+            names.add(m.group(1).rstrip("/").rsplit("/", 1)[-1])
+    return any((live / f"{n}.html").exists() for n in names if n)
 
 
 def find_source(slug: str, stage: str) -> Path | None:
@@ -74,6 +96,43 @@ def stamp(slug: str, col: str, value: str | None = None) -> None:
     write_ledger(rows)
 
 
+def fold_round(row: dict) -> None:
+    """Move the latest optimize round (date: baseline → result) into optimize_history and clear its columns."""
+    if not row.get("optimized"):
+        return
+    prev = f"{row['optimized']}: {row.get('optimize_baseline') or '?'} → {row.get('optimize_result') or 'chưa đo'}"
+    row["optimize_history"] = " ;; ".join(x for x in (row.get("optimize_history"), prev) if x)
+    for c in ("optimized", "optimize_baseline", "optimize_live", "optimize_gsc_checked", "optimize_result"):
+        row[c] = ""
+
+
+def set_baseline(slug: str, text: str) -> None:
+    """/optimize step 1.1: GSC before the rewrite. Starts a new round, so the previous one goes to history first."""
+    rows = read_ledger()
+    row = rows.setdefault(slug, {c: "" for c in LEDGER_COLS} | {"slug": slug})
+    fold_round(row)
+    row["optimize_baseline"] = f"{date.today().isoformat()} {text}"
+    write_ledger(rows)
+
+
+def record_optimize(slug: str) -> None:
+    """Finalize an optimize round: keep the first `final` date, count the round, reset its live/GSC follow-up."""
+    rows = read_ledger()
+    row = rows.setdefault(slug, {c: "" for c in LEDGER_COLS} | {"slug": slug})
+    today = date.today().isoformat()
+    if row.get("optimized") == today:
+        pass                        # re-approved the same day: same round
+    else:
+        if row.get("optimized"):    # no --baseline this time: close the previous round here
+            fold_round(row)
+        row["optimize_count"] = str(int(row.get("optimize_count") or 0) + 1)
+    row["final"] = row.get("final") or today
+    row["optimized"] = today
+    row["optimize_live"] = row["optimize_gsc_checked"] = row["optimize_result"] = ""
+    write_ledger(rows)
+    print(f"optimize: lần {row['optimize_count']} · baseline: {row.get('optimize_baseline') or '⚠ chưa ghi (--baseline)'}")
+
+
 # ─────────────────────────── snapshot ───────────────────────────
 
 def snapshot(slug: str, stage: str) -> int:
@@ -84,8 +143,13 @@ def snapshot(slug: str, stage: str) -> int:
     dest_dir = ARCHIVE / slug
     dest_dir.mkdir(parents=True, exist_ok=True)
     dest = dest_dir / f"{stage}.md"
+    row = read_ledger().get(slug, {})
+    # re-finalizing something already published = optimize round (ledger row may not exist for pre-ledger articles)
+    is_optimize = stage == "final" and bool(row.get("first_live") or dest.exists() or already_live(slug))
     if stage == "gate2" and dest.exists():
         shutil.copy2(dest, dest_dir / "gate2.prev.md")
+    if is_optimize and dest.exists():
+        shutil.copy2(dest, dest_dir / "final.prev.md")  # the version before this optimize round
     shutil.copy2(src, dest)
     print(f"{stage}: {src.relative_to(ROOT)} → {dest.relative_to(ROOT)}")
     if stage == "final":
@@ -98,7 +162,10 @@ def snapshot(slug: str, stage: str) -> int:
             print(f"outline: {outline.relative_to(ROOT)} → {target.relative_to(ROOT)} (đã chuyển khỏi 1-outlines/)")
             if not read_ledger().get(slug, {}).get("outline"):
                 stamp(slug, "outline")  # approved without `--stage outline`: still record that one exists
-    stamp(slug, stage)
+    if is_optimize:
+        record_optimize(slug)
+    else:
+        stamp(slug, stage)
     if stage in ("gate2", "final") and not (dest_dir / "outline.md").exists() and not find_source(slug, "outline"):
         # The outline is the only record of Thesis / Information_Gain / PAA plan. Without it qa_lint cannot
         # check them now, and /optimize cannot later. Non-zero exit so the caller sees it.
@@ -159,11 +226,16 @@ def main() -> int:
     g.add_argument("--stage", choices=list(SOURCES))
     g.add_argument("--diff", action="store_true")
     g.add_argument("--path", choices=["outline", "gate2", "final"])
+    g.add_argument("--baseline", metavar="TEXT", help='GSC trước khi optimize, vd "pos 12.3 · clicks 80 · imp 5000 (28d)"')
     ap.add_argument("--from", dest="a", default="gate2")
     ap.add_argument("--to", dest="b", default="final")
     args = ap.parse_args()
     if args.stage:
         return snapshot(args.slug, args.stage)
+    if args.baseline:
+        set_baseline(args.slug, args.baseline)
+        print(f"Baseline optimize `{args.slug}`: {args.baseline}")
+        return 0
     if args.path:
         p = stage_file(args.slug, args.path)
         print(p.relative_to(ROOT) if p else "")

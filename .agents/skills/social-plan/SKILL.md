@@ -6,10 +6,10 @@ description: Lập lịch nội dung tháng cho Fanpage / Zalo OA / LinkedIn the
 # /social-plan [YYYY-MM] [--channels facebook,zalo,linkedin]
 
 ## Bước 0 — Context
-`.antigravity/core/README.md` §1 + `.antigravity/domains/social/README.md`, `references/content-pillars.md`, `references/channel-specs.md`, `learnings.md`.
+`.agents/core/README.md` §1 + `.agents/domains/social/README.md`, `references/content-pillars.md`, `references/channel-specs.md`, `learnings.md`.
 
 ## Bước 1 — Nguồn
-1. Bài live gần đây và bài có traffic: `knowledge/3-pipeline/publish-ledger.csv`; số GSC nếu có MCP SEO Dashboard (`query_search_analytics`, dimension page) — ưu tiên bài clicks cao / bài mới 2–6 tuần.
+1. Bài live gần đây và bài có traffic: `knowledge/3-seo/logs/publish-ledger.csv`; số GSC nếu có MCP SEO Dashboard (`query_search_analytics`, dimension page) — ưu tiên bài clicks cao / bài mới 2–6 tuần.
 2. Sự kiện tháng: `python scripts/news_feed.py --topic "chứng khoán" --days 30`; lịch cố định (họp FOMC, đáo hạn phái sinh, công bố BCTC quý) — ghi "cần xác minh ngày" nếu không chắc.
 3. Ma trận persona: `python scripts/persona.py --matrix`.
 

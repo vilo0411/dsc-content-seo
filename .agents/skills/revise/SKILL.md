@@ -1,6 +1,6 @@
 ---
 name: revise
-description: Sửa nội dung bài viết theo yêu cầu chat — có context load bắt buộc.
+description: "Sửa đoạn / câu / section cụ thể trong bài theo yêu cầu chat của user, có ghi revision-log và chạy qa_gate. Dùng khi 'sửa đoạn này', 'viết lại câu', 'đổi H2'. Làm lại cả bài theo dữ liệu thì /optimize."
 ---
 
 # Chỉnh Sửa Bài Viết (Revise)
@@ -12,9 +12,9 @@ Chỉnh sửa một đoạn / section cụ thể trong bài viết theo yêu c�
 
 ## Bước 0: Context Load (BẮT BUỘC — đọc đủ 4 file trước khi chạm vào bất kỳ nội dung nào)
 
-1. `knowledge/3-pipeline/anti-ai-rules.md` — phần phán đoán (~10 KB); cụm cấm ở blacklist do lint bắt
-2. `.antigravity/memory/instincts.md` — lỗi đã học từ các vòng sửa trước
-3. `knowledge/3-pipeline/glossary.md` — thuật ngữ chuẩn thương hiệu
+1. `knowledge/1-brand/anti-ai-rules.md` — phần phán đoán (~10 KB); cụm cấm ở blacklist do lint bắt
+2. `.agents/memory/instincts.md` — lỗi đã học từ các vòng sửa trước
+3. `knowledge/1-brand/glossary.md` — thuật ngữ chuẩn thương hiệu
 4. File cần sửa (Draft hoặc Final tương ứng với slug)
 
 ---

@@ -9,7 +9,7 @@ Why: the three scripts print long reports; the agent re-reads all of them every 
 one line per tier + only CRITICAL/MAJOR findings (MINOR counted), stops at the first failing blocking
 tier (fix that tier, re-run — earlier tiers are cheap and re-checked automatically), and lets Quality
 Guardian round 2 review only the changed paragraphs (`--changed`) instead of the whole article.
-Outline is found automatically: 1-outlines/<slug>.md, else knowledge/4-content/archive/<slug>/outline.md.
+Outline is found automatically: 1-outlines/<slug>.md, else knowledge/3-seo/content/archive/<slug>/outline.md.
 Exit 0 = all blocking tiers PASS.
 """
 from __future__ import annotations
@@ -29,7 +29,7 @@ if hasattr(sys.stdout, "reconfigure"):
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = ROOT / "scripts"
-CONTENT = ROOT / "knowledge/4-content"
+CONTENT = ROOT / "knowledge/3-seo/content"
 MAX_SHOWN = 12
 BLOCKING = ("CRITICAL", "MAJOR")
 
@@ -112,7 +112,7 @@ def tier_slop(draft: Path) -> bool:
     print(f"B · slop_check: {'PASS' if d['pass'] else 'FAIL'} · score {d['slop_score']} (≥ 80) · mode {d.get('mode')}")
     show(d["findings"])
     if not d["pass"]:
-        print("    Cách sửa từng SLOP-*: knowledge/3-pipeline/anti-ai-rules.md §8.7 — sửa đúng chỗ báo, không viết lại cả bài.")
+        print("    Cách sửa từng SLOP-*: knowledge/1-brand/anti-ai-rules.md §8.7 — sửa đúng chỗ báo, không viết lại cả bài.")
     return bool(d["pass"])
 
 

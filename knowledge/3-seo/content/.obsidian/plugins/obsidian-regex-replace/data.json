@@ -1,0 +1,10 @@
+{
+  "findText": "Ý nghĩa thực chiến:",
+  "replaceText": "Ý nghĩa:",
+  "useRegEx": false,
+  "selOnly": false,
+  "caseInsensitive": false,
+  "processLineBreak": false,
+  "processTab": false,
+  "prefillFind": false
+}

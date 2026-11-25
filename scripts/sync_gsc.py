@@ -17,8 +17,8 @@ import time
 from datetime import datetime, timedelta
 from pathlib import Path
 
-CREDENTIALS_PATH = Path(".antigravity/config/gsc-credentials.json")
-TOKEN_PATH = Path(".antigravity/config/gsc-token.json")
+CREDENTIALS_PATH = Path(".agents/config/gsc-credentials.json")
+TOKEN_PATH = Path(".agents/config/gsc-token.json")
 CACHE_DIR = Path("knowledge/raw/gsc")
 QUERIES_CSV = CACHE_DIR / "queries.csv"
 PAGES_CSV = CACHE_DIR / "pages.csv"
@@ -44,7 +44,7 @@ def get_credentials():
         else:
             if not CREDENTIALS_PATH.exists():
                 print(f"[ERROR] Credentials file not found: {CREDENTIALS_PATH}")
-                print("Follow setup guide: .antigravity/config/gsc-config.md")
+                print("Follow setup guide: .agents/config/gsc-config.md")
                 sys.exit(1)
             flow = InstalledAppFlow.from_client_secrets_file(str(CREDENTIALS_PATH), SCOPES)
             creds = flow.run_local_server(port=0)

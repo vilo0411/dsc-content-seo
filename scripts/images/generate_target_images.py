@@ -89,8 +89,8 @@ def create_target_image():
         draw.ellipse([apex_x-r, apex_y-int(r*0.6), apex_x+r, apex_y+int(r*0.6)], outline="#10E7B3", width=2)
         
     img = add_watermark_logo(img, is_dark_bg=True)
-    os.makedirs('knowledge/4-content/images', exist_ok=True)
-    out_path = 'knowledge/4-content/images/target-trong-chung-khoan-la-gi-chot-loi-ky-luat.jpg'
+    os.makedirs('knowledge/3-seo/content/images', exist_ok=True)
+    out_path = 'knowledge/3-seo/content/images/target-trong-chung-khoan-la-gi-chot-loi-ky-luat.jpg'
     img.save(out_path, quality=95)
     print(f"Created {out_path}")
 

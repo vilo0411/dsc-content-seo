@@ -86,8 +86,8 @@ def create_featured_image():
         draw.ellipse([nx-7, ny-7, nx+7, ny+7], fill="#48F28A", outline="#FFFFFF", width=2)
         
     img = add_watermark_logo(img, is_dark_bg=True)
-    os.makedirs('knowledge/4-content/images', exist_ok=True)
-    out_path = 'knowledge/4-content/images/grdp-la-gi-featured.jpg'
+    os.makedirs('knowledge/3-seo/content/images', exist_ok=True)
+    out_path = 'knowledge/3-seo/content/images/grdp-la-gi-featured.jpg'
     img.save(out_path, quality=95)
     print(f"Created {out_path}")
 
@@ -118,7 +118,7 @@ def create_ranking_image():
         draw_3d_cube(draw, cx, cy, sz, c_top, c_left, c_right, height_factor=hf)
         
     img = add_watermark_logo(img, is_dark_bg=True)
-    out_path = 'knowledge/4-content/images/grdp-la-gi-bang-xep-hang.jpg'
+    out_path = 'knowledge/3-seo/content/images/grdp-la-gi-bang-xep-hang.jpg'
     img.save(out_path, quality=95)
     print(f"Created {out_path}")
 
