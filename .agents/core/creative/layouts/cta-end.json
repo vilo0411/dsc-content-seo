@@ -1,0 +1,196 @@
+{
+  "name": "cta-end",
+  "style": "S04",
+  "mo_ta": "Slide/ảnh kết: câu chốt căn giữa + nút + ghi chú pháp lý. Dùng làm slide cuối carousel.",
+  "default_theme": "dark",
+  "align": "center",
+  "variants": {
+    "4:5": {
+      "regions": {
+        "headline": {
+          "box": [
+            0.1,
+            0.3,
+            0.8,
+            0.27
+          ],
+          "size": "xl",
+          "valign": "end",
+          "max_lines": 4
+        },
+        "sub": {
+          "box": [
+            0.1,
+            0.59,
+            0.8,
+            0.1
+          ],
+          "size": "m",
+          "max_lines": 2
+        },
+        "cta": {
+          "box": [
+            0.1,
+            0.71,
+            0.8,
+            0.07
+          ],
+          "size": "s",
+          "max_lines": 1
+        },
+        "note": {
+          "box": [
+            0.1,
+            0.88,
+            0.8,
+            0.07
+          ],
+          "size": "xs",
+          "max_lines": 2
+        }
+      }
+    },
+    "1:1": {
+      "regions": {
+        "headline": {
+          "box": [
+            0.1,
+            0.25,
+            0.8,
+            0.28
+          ],
+          "size": "xl",
+          "valign": "end",
+          "max_lines": 4
+        },
+        "sub": {
+          "box": [
+            0.1,
+            0.55,
+            0.8,
+            0.11
+          ],
+          "size": "m",
+          "max_lines": 2
+        },
+        "cta": {
+          "box": [
+            0.1,
+            0.69,
+            0.8,
+            0.08
+          ],
+          "size": "s",
+          "max_lines": 1
+        },
+        "note": {
+          "box": [
+            0.1,
+            0.87,
+            0.8,
+            0.08
+          ],
+          "size": "xs",
+          "max_lines": 2
+        }
+      }
+    },
+    "9:16": {
+      "logo_y": 0.15,
+      "safe": [
+        0.0,
+        0.14,
+        1.0,
+        0.66
+      ],
+      "regions": {
+        "headline": {
+          "box": [
+            0.1,
+            0.3,
+            0.8,
+            0.2
+          ],
+          "size": "xl",
+          "valign": "end",
+          "max_lines": 4
+        },
+        "sub": {
+          "box": [
+            0.1,
+            0.52,
+            0.8,
+            0.08
+          ],
+          "size": "m",
+          "max_lines": 2
+        },
+        "cta": {
+          "box": [
+            0.1,
+            0.62,
+            0.8,
+            0.05
+          ],
+          "size": "s",
+          "max_lines": 1
+        },
+        "note": {
+          "box": [
+            0.1,
+            0.74,
+            0.8,
+            0.05
+          ],
+          "size": "xs",
+          "max_lines": 2
+        }
+      }
+    },
+    "1.91:1": {
+      "regions": {
+        "headline": {
+          "box": [
+            0.12,
+            0.2,
+            0.76,
+            0.34
+          ],
+          "size": "xl",
+          "valign": "end",
+          "max_lines": 2
+        },
+        "sub": {
+          "box": [
+            0.12,
+            0.56,
+            0.76,
+            0.12
+          ],
+          "size": "s",
+          "max_lines": 2
+        },
+        "cta": {
+          "box": [
+            0.12,
+            0.7,
+            0.76,
+            0.11
+          ],
+          "size": "s",
+          "max_lines": 1
+        },
+        "note": {
+          "box": [
+            0.12,
+            0.86,
+            0.76,
+            0.09
+          ],
+          "size": "xs",
+          "max_lines": 2
+        }
+      }
+    }
+  }
+}

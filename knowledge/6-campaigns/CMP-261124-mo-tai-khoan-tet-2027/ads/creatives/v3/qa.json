@@ -1,0 +1,99 @@
+{
+  "job": "CMP-261124-mo-tai-khoan-tet-2027",
+  "version": 3,
+  "rendered_at": "2026-11-24T16:34:46",
+  "creatives": {
+    "ads-v1": {
+      "size": "1080x1350",
+      "layout": "kv-right",
+      "theme": "emerald",
+      "group": null,
+      "status": "Chưa đạt",
+      "issues": [
+        {
+          "rule": "KV-missing",
+          "level": "error",
+          "msg": "Chưa có ảnh KV (chưa gán ảnh) — chạy `creative.py prompt`, tạo ảnh bằng Gemini, lưu vào creatives/assets/"
+        },
+        {
+          "rule": "WORDS-on-image",
+          "level": "warn",
+          "msg": "Chữ trên ảnh quảng cáo 9 từ > 8"
+        }
+      ],
+      "fit": {
+        "badge": 1.0,
+        "script": 1.0,
+        "headline": 0.88,
+        "sub": 1.0
+      }
+    },
+    "ads-v2": {
+      "size": "1080x1350",
+      "layout": "kv-left",
+      "theme": "emerald",
+      "group": null,
+      "status": "Đạt",
+      "issues": [],
+      "fit": {
+        "badge": 1.0,
+        "script": 1.0,
+        "headline": 1.0,
+        "sub": 1.0
+      }
+    },
+    "ads-v3": {
+      "size": "1080x1920",
+      "layout": "kv-center",
+      "theme": "emerald",
+      "group": null,
+      "status": "Chưa đạt",
+      "issues": [
+        {
+          "rule": "KV-missing",
+          "level": "error",
+          "msg": "Chưa có ảnh KV (chưa gán ảnh) — chạy `creative.py prompt`, tạo ảnh bằng Gemini, lưu vào creatives/assets/"
+        }
+      ],
+      "fit": {
+        "script": 1.0,
+        "headline": 1.0,
+        "sub": 1.0
+      }
+    },
+    "ads-v4": {
+      "size": "1080x1080",
+      "layout": "bignum",
+      "theme": "emerald",
+      "group": null,
+      "status": "Đạt",
+      "issues": [],
+      "fit": {
+        "eyebrow": 1.0,
+        "big": 1.0,
+        "headline": 1.0,
+        "sub": 1.0,
+        "note": 1.0
+      }
+    },
+    "ads-v5": {
+      "size": "1200x628",
+      "layout": "kv-right",
+      "theme": "emerald",
+      "group": null,
+      "status": "Chưa đạt",
+      "issues": [
+        {
+          "rule": "KV-missing",
+          "level": "error",
+          "msg": "Chưa có ảnh KV (chưa gán ảnh) — chạy `creative.py prompt`, tạo ảnh bằng Gemini, lưu vào creatives/assets/"
+        }
+      ],
+      "fit": {
+        "script": 1.0,
+        "headline": 1.0,
+        "sub": 1.0
+      }
+    }
+  }
+}

@@ -28,6 +28,23 @@ Hướng dẫn nhanh cho lần đầu dùng hoặc sau một thời gian không 
 | | `/ads-copy [ad group]` | Viết RSA, sitelink, callout |
 | **6. Đo lường** | `/analytics-report [YYYY-MM]` | Báo cáo tháng SEO + GA4 + Ads |
 
+### Marketing ngoài SEO
+Đọc trước: `.agents/core/README.md` (protocol chung) · `.agents/core/rules/compliance-finance.md`.
+
+| Lệnh | Mô tả |
+|---|---|
+| `/social-plan [YYYY-MM]` | Lịch nội dung tháng Fanpage / Zalo OA / LinkedIn |
+| `/social-post <slug\|chủ đề>` | Viết post (≤ 3 biến thể/kênh) + brief hình |
+| `/syndicate <slug>` | Pack cho kênh cộng đồng (X, Mastodon, BAND, Pinterest, Medium…) |
+| `/ads-brief` · `/meta-ads-copy` | Brief + ad copy Meta (không đẩy lên Meta trừ khi yêu cầu rõ, luôn PAUSED) |
+| `/ads-review` · `/ads-learn` | Đọc số Meta (read-only) · rút bài học vào `domains/ads/learnings.md` |
+| `/campaign-brief` | Tạo job đa kênh `knowledge/6-campaigns/CMP-YYMMDD-slug/` |
+| `/landing` | Copy + HTML 1 trang theo `brand.json` |
+| `/campaign-report` · `/mkt-status` | Báo cáo chiến dịch · bảng trạng thái mọi việc |
+| `/creative <file copy>` | Dựng ảnh quảng cáo / post / carousel (PNG đúng brand) + QA, duyệt theo version |
+
+QA nhanh cho post / ad / landing: `python scripts/mkt_lint.py <file> --channel facebook|zalo|linkedin|meta-ad|landing`
+
 ---
 
 ## Workflow
@@ -74,6 +91,8 @@ AGENTS.md                ← chỉ dẫn chung (CLAUDE.md, GEMINI.md import file
 ├── context.md           ← bối cảnh marketing chung
 ├── skills/<tên>/        ← SKILL.md + references/ + scripts/ (mỗi skill 1 thư mục)
 ├── rules/               ← seo-formatting, cta-conversion (mở khi cần)
+├── core/                ← dùng chung ngoài SEO: protocol, compliance-finance, creative layouts
+├── domains/             ← social/ · ads/ (Meta) · campaign/ — README, references, learnings
 ├── memory/              ← instincts.md, instincts-by-scope/, DECISIONS.md
 ├── templates/           ← template dùng lại
 └── config/              ← API key (gitignored)
@@ -89,6 +108,7 @@ knowledge/
 │   └── logs/            ← revision-log, qa-*-log, publish-ledger (script ghi)
 ├── 4-channels/          ← ads/ · email/ · landing/ · social/
 ├── 5-analytics/         ← kpi-definitions.md, reports/
+├── 6-campaigns/         ← job đa kênh CMP-YYMMDD-slug/ (scripts/campaign.py)
 └── raw/                 ← dữ liệu thô · live/ (snapshot site) · serp/
 
 scripts/                 ← script Python (mọi script có --help, xem scripts/README.md) · hooks/

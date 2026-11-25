@@ -1,6 +1,6 @@
 # DSC Digital Marketing Agent (SEO là lõi)
 
-Bộ skill marketing cho **Chứng khoán DSC**: SEO (lõi) + Analytics, Google Ads, Social, Email/Landing.
+Bộ skill marketing cho **Chứng khoán DSC**: SEO (lõi) + Analytics, Google Ads, Meta Ads, Social/Fanpage, Campaign đa kênh, Email/Landing, Creative.
 Chỉ dẫn chung cho **mọi coding agent** (Claude Code, Antigravity, Codex, Cursor, Gemini CLI…). `CLAUDE.md` / `GEMINI.md` chỉ import file này. Output cho user bằng tiếng Việt; code comment bằng tiếng Anh.
 
 - Skill = thư mục phẳng `.agents/skills/<tên>/` (`SKILL.md` + `references/` + `scripts/`). Lệnh `/x` = mở `.agents/skills/<x>/SKILL.md` và làm theo.
@@ -24,7 +24,12 @@ User không gõ lệnh → chọn skill theo bảng, mở đúng 1 `SKILL.md` r�
 | Cơ hội từ GSC → `gsc-opportunities.md` | `/gsc-sync` | `/analytics-report` = báo cáo KPI đa kênh |
 | Hỏi số GSC/GA4/Ads lẻ (1 bài, 1 query) | gọi MCP thẳng theo `seo-dashboard` | không cần skill lớn |
 | Báo cáo tháng/tuần, KPI, Lead, CPL, CPA | `/analytics-report` | — |
-| Google Ads: hiệu quả, search term, negative | `/ads-audit` · viết quảng cáo: `/ads-copy` | — |
+| Google Ads: hiệu quả, search term, negative | `/ads-audit` · viết quảng cáo: `/ads-copy` | Meta Ads → `/ads-brief` … |
+| Meta Ads: brief, copy, đọc số, rút bài học | `/ads-brief` → `/meta-ads-copy` · `/ads-review` · `/ads-learn` | `/ads-copy` = Google RSA |
+| Post Fanpage / Zalo OA / LinkedIn, lịch nội dung tháng | `/social-post` · `/social-plan` | `/syndicate` = kênh cộng đồng từ bài SEO |
+| Chiến dịch đa kênh (job `CMP-*`), báo cáo chiến dịch, trạng thái mọi việc | `/campaign-brief` · `/campaign-report` · `/mkt-status` | `/analytics-report` = KPI tháng |
+| Landing 1 trang cho chiến dịch (copy + HTML theo `brand.json`) | `/landing` | `/copy-landing` = chỉ copy trang có sẵn |
+| Ảnh quảng cáo / post / carousel đúng brand | `/creative` (tự chạy trong `/meta-ads-copy`, `/social-post`) | `/image` = ảnh trong bài SEO |
 | Phân phối bài lên social / sheet Publishing | `/syndicate` | — |
 | Chuỗi email | `/email-sequence` | — |
 | Copy landing page | `/copy-landing` | `/cro` |
@@ -82,6 +87,7 @@ Bài tốt = bài **rank được và được AI trích**. Sạch từ cấm / 
 5. File riêng theo block Context của skill.
 
 **Skill ngoài SEO** (`analytics-report`, `ads-*`, `email-sequence`, `copy-landing`, `syndicate`): `.agents/context.md` + skill tự liệt kê phần còn lại.
+**Social / Meta Ads / Campaign / Landing / Creative:** thêm `.agents/core/README.md` (vòng đời job, gate, QA `scripts/mkt_lint.py`) + `.agents/core/rules/compliance-finance.md` + README của domain (`.agents/domains/<social|ads|campaign>/`). Brand kit máy đọc: `knowledge/1-brand/brand.json`, chuẩn hình `knowledge/1-brand/DESIGN.md`. Ghi lên Meta chỉ khi user yêu cầu rõ, luôn `PAUSED`, không đổi ngân sách.
 
 Đã có trong session thì **không đọc lại** (kể cả ở QA, rewrite, approve). Không chắc đã đọc chưa → đọc lại 1 lần, đừng đoán rule.
 
@@ -137,6 +143,7 @@ SEO Collector `outlining/references/seo-collector.md` · Brand Guardian + Qualit
 ## 📂 8. Cấu trúc
 ```text
 .agents/  context.md · skills/<tên>/ · rules/ · memory/ (instincts) · templates/ · config/ (gitignored)
+          core/ (protocol, compliance-finance, creative layouts) · domains/ (social, ads, campaign)
 knowledge/   (mục đích từng thư mục: knowledge/README.md)
   0-dashboard/ bảng điều hành, sinh tự động — không sửa tay
   1-brand/     DSC + cách viết cho mọi kênh: profile, personas, brand-facts.json, anti-ai-rules, glossary, source-whitelist
@@ -148,6 +155,7 @@ knowledge/   (mục đích từng thư mục: knowledge/README.md)
     logs/        revision-log, qa-*-log, publish-ledger (script ghi, không sửa tay)
   4-channels/  ads/ · email/ · landing/ · social/ (syndication)
   5-analytics/ KPI, báo cáo
+  6-campaigns/ job đa kênh CMP-YYMMDD-slug/ (scripts/campaign.py)
   raw/         dữ liệu thô, live/ snapshot site, serp/ cache
 scripts/  script Python dùng chung · hooks/ (Claude Code) · tests/ unittest (`python -m unittest discover -s tests`)
 ```
@@ -161,5 +169,5 @@ scripts/  script Python dùng chung · hooks/ (Claude Code) · tests/ unittest (
 | Mỗi bài | `/write` (Gate 1 outline, Gate 2 draft) → `/approve` → user dán CMS → `/link` backfill → `/syndicate` |
 | Hằng tuần | `/weekly` (sync live, registry refresh, backfill theo lô, đo bài live ≥ 14 ngày) → bài tụt: `/optimize` · `/competitor-watch` |
 | Hằng quý | `/market-research` · `/competitor-profile` đối thủ vượt DSC · `/link` chế độ audit cấu trúc |
-| Khi có campaign | `/copy-landing` → `/ads-copy` → `/email-sequence` |
+| Khi có campaign | `/campaign-brief` → `/landing` hoặc `/copy-landing` → `/ads-brief` → `/meta-ads-copy` / `/ads-copy` → `/social-post` → `/email-sequence` → `/campaign-report` |
 | Sau đợt duyệt / lỗi lặp | `/learn` |

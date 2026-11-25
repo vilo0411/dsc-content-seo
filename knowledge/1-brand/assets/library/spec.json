@@ -1,0 +1,1064 @@
+{
+  "version": 1,
+  "note": "Danh sách asset khởi đầu. Sửa ở đây rồi `python scripts/asset_lib.py build`. side = phía CHỪA TRỐNG cho chữ.",
+  "assets": [
+    {
+      "id": "bg-em-mountain-r",
+      "kind": "bg",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "right",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "núi",
+        "sương",
+        "bình minh",
+        "thương hiệu"
+      ],
+      "subject": "misty layered emerald mountains at dawn with soft golden light breaking through the clouds",
+      "motifs": [
+        "thin glowing green light trail",
+        "floating light particles"
+      ],
+      "mood": "calm, trustworthy, long-term",
+      "allow_red": false
+    },
+    {
+      "id": "bg-em-mountain-l",
+      "kind": "bg",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "left",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "núi",
+        "sương",
+        "bình minh",
+        "thương hiệu"
+      ],
+      "subject": "misty layered emerald mountains at dawn with soft golden light breaking through the clouds",
+      "motifs": [
+        "thin glowing green light trail",
+        "floating light particles"
+      ],
+      "mood": "calm, trustworthy, long-term",
+      "allow_red": false
+    },
+    {
+      "id": "bg-em-mountain-t",
+      "kind": "bg",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "top",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "núi",
+        "sương",
+        "thương hiệu"
+      ],
+      "subject": "misty layered emerald mountains at dawn with soft golden light breaking through the clouds, mountains occupy the lower half",
+      "motifs": [
+        "light particles"
+      ],
+      "mood": "calm, open sky",
+      "allow_red": false
+    },
+    {
+      "id": "bg-em-lighttrail-r",
+      "kind": "bg",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "right",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "ánh sáng",
+        "thị trường",
+        "công nghệ",
+        "app"
+      ],
+      "subject": "abstract flowing ribbons of soft green and gold light gliding through a deep emerald space, elegant and slow",
+      "motifs": [
+        "bokeh",
+        "fine particles"
+      ],
+      "mood": "modern, digital, refined",
+      "allow_red": false
+    },
+    {
+      "id": "bg-em-lighttrail-l",
+      "kind": "bg",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "left",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "ánh sáng",
+        "thị trường",
+        "công nghệ",
+        "app"
+      ],
+      "subject": "abstract flowing ribbons of soft green and gold light gliding through a deep emerald space, elegant and slow",
+      "motifs": [
+        "bokeh",
+        "fine particles"
+      ],
+      "mood": "modern, digital, refined",
+      "allow_red": false
+    },
+    {
+      "id": "bg-em-candles-r",
+      "kind": "bg",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "right",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "nến",
+        "thị trường",
+        "số liệu",
+        "báo cáo"
+      ],
+      "subject": "abstract softly glowing vertical light bars of different heights in deep emerald fog, like a stylised market landscape, no axis, no numbers, no arrows",
+      "motifs": [
+        "haze",
+        "particles"
+      ],
+      "mood": "market insight, calm analysis",
+      "allow_red": false
+    },
+    {
+      "id": "bg-em-dongson-l",
+      "kind": "bg",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "left",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "trống đồng",
+        "văn hoá",
+        "thương hiệu",
+        "Việt Nam"
+      ],
+      "subject": "a large golden Dong Son bronze drum surface with engraved concentric patterns, seen at an angle, partly in soft shadow",
+      "motifs": [
+        "star at center of drum",
+        "engraved birds pattern"
+      ],
+      "mood": "heritage, pride, solidity",
+      "allow_red": false
+    },
+    {
+      "id": "bg-em-dongson-r",
+      "kind": "bg",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "right",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "trống đồng",
+        "văn hoá",
+        "thương hiệu",
+        "Việt Nam"
+      ],
+      "subject": "a large golden Dong Son bronze drum surface with engraved concentric patterns, seen at an angle, partly in soft shadow",
+      "motifs": [
+        "star at center of drum",
+        "engraved birds pattern"
+      ],
+      "mood": "heritage, pride, solidity",
+      "allow_red": false
+    },
+    {
+      "id": "bg-em-silk-r",
+      "kind": "bg",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "right",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "lụa",
+        "sang trọng",
+        "sản phẩm"
+      ],
+      "subject": "flowing golden silk fabric waving gracefully through a deep emerald studio",
+      "motifs": [
+        "soft rim light"
+      ],
+      "mood": "luxury, smooth",
+      "allow_red": false
+    },
+    {
+      "id": "bg-em-podium-t",
+      "kind": "bg",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "top",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "bục",
+        "sản phẩm",
+        "app",
+        "ra mắt"
+      ],
+      "subject": "an empty round podium of polished emerald marble with a thin engraved gold rim, in a dark emerald studio, ready to display a product",
+      "motifs": [
+        "soft spotlight from above",
+        "subtle reflections"
+      ],
+      "mood": "product launch, premium",
+      "allow_red": false
+    },
+    {
+      "id": "bg-em-bokeh-c",
+      "kind": "bg",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "center",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "tối giản",
+        "chữ",
+        "thông báo"
+      ],
+      "subject": "minimal deep emerald background with soft golden bokeh and a gentle vignette, very subtle",
+      "motifs": [
+        "sparse bokeh"
+      ],
+      "mood": "quiet, elegant",
+      "allow_red": false
+    },
+    {
+      "id": "bg-em-mountain-w",
+      "kind": "bg",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "right",
+      "master": "wide",
+      "season": "all",
+      "tags": [
+        "núi",
+        "sương",
+        "thương hiệu"
+      ],
+      "subject": "misty layered emerald mountains at dawn with soft golden light breaking through the clouds",
+      "motifs": [
+        "light trail"
+      ],
+      "mood": "calm, trustworthy",
+      "allow_red": false
+    },
+    {
+      "id": "bg-em-lighttrail-w",
+      "kind": "bg",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "left",
+      "master": "wide",
+      "season": "all",
+      "tags": [
+        "ánh sáng",
+        "công nghệ",
+        "app"
+      ],
+      "subject": "abstract flowing ribbons of soft green and gold light through deep emerald space",
+      "motifs": [
+        "bokeh"
+      ],
+      "mood": "modern, refined",
+      "allow_red": false
+    },
+    {
+      "id": "bg-iv-sontuy-t",
+      "kind": "bg",
+      "source": "codex",
+      "theme": "ivory",
+      "side": "top",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "sơn thuỷ",
+        "văn hoá",
+        "thông báo",
+        "lễ"
+      ],
+      "subject": "elegant layered jade mountains and soft mist painted in Vietnamese silk-and-watercolor style, mountains in the lower half",
+      "motifs": [
+        "two small white cranes far away"
+      ],
+      "mood": "serene, cultural",
+      "allow_red": false
+    },
+    {
+      "id": "bg-iv-sontuy-r",
+      "kind": "bg",
+      "source": "codex",
+      "theme": "ivory",
+      "side": "right",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "sơn thuỷ",
+        "văn hoá",
+        "giáo dục"
+      ],
+      "subject": "elegant layered jade mountains and soft mist painted in Vietnamese silk-and-watercolor style",
+      "motifs": [
+        "a small white crane"
+      ],
+      "mood": "serene, thoughtful",
+      "allow_red": false
+    },
+    {
+      "id": "bg-iv-lotus-t",
+      "kind": "bg",
+      "source": "codex",
+      "theme": "ivory",
+      "side": "top",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "sen",
+        "văn hoá",
+        "lễ",
+        "thông báo"
+      ],
+      "subject": "pink lotus flowers and large jade leaves in the lower third, painted in Vietnamese silk-and-watercolor style",
+      "motifs": [
+        "water ripples",
+        "thin gold outlines"
+      ],
+      "mood": "pure, graceful",
+      "allow_red": true
+    },
+    {
+      "id": "bg-iv-paper-c",
+      "kind": "bg",
+      "source": "codex",
+      "theme": "ivory",
+      "side": "center",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "giấy",
+        "trống đồng",
+        "thông báo",
+        "lịch nghỉ"
+      ],
+      "subject": "warm handmade do paper texture with a very faint large Dong Son drum pattern watermark and soft jade corners",
+      "motifs": [
+        "faint gold flecks"
+      ],
+      "mood": "formal, cultural, quiet",
+      "allow_red": false
+    },
+    {
+      "id": "bg-iv-sontuy-w",
+      "kind": "bg",
+      "source": "codex",
+      "theme": "ivory",
+      "side": "left",
+      "master": "wide",
+      "season": "all",
+      "tags": [
+        "sơn thuỷ",
+        "văn hoá"
+      ],
+      "subject": "elegant layered jade mountains and soft mist painted in Vietnamese silk-and-watercolor style",
+      "motifs": [
+        "a small white crane"
+      ],
+      "mood": "serene",
+      "allow_red": false
+    },
+    {
+      "id": "bg-tet-mai-r",
+      "kind": "bg",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "right",
+      "master": "tall",
+      "season": "tet",
+      "tags": [
+        "Tết",
+        "hoa mai",
+        "năm mới"
+      ],
+      "subject": "branches of yellow apricot blossoms (hoa mai) with gold-leaf petals reaching in from the left edge, deep emerald background",
+      "motifs": [
+        "small golden lanterns far in background",
+        "floating petals"
+      ],
+      "mood": "lunar new year, fresh start",
+      "allow_red": false
+    },
+    {
+      "id": "bg-tet-mai-l",
+      "kind": "bg",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "left",
+      "master": "tall",
+      "season": "tet",
+      "tags": [
+        "Tết",
+        "hoa mai",
+        "năm mới"
+      ],
+      "subject": "branches of yellow apricot blossoms (hoa mai) with gold-leaf petals reaching in from the right edge, deep emerald background",
+      "motifs": [
+        "floating petals"
+      ],
+      "mood": "lunar new year, fresh start",
+      "allow_red": false
+    },
+    {
+      "id": "bg-tet-lantern-t",
+      "kind": "bg",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "top",
+      "master": "tall",
+      "season": "tet",
+      "tags": [
+        "Tết",
+        "đèn lồng",
+        "năm mới"
+      ],
+      "subject": "refined golden lanterns with engraved lotus patterns hanging at different heights in the lower half, glowing warmly in deep emerald dusk",
+      "motifs": [
+        "soft glow",
+        "particles"
+      ],
+      "mood": "festive, warm, elegant",
+      "allow_red": false
+    },
+    {
+      "id": "bg-tet-dao-t",
+      "kind": "bg",
+      "source": "codex",
+      "theme": "ivory",
+      "side": "top",
+      "master": "tall",
+      "season": "tet",
+      "tags": [
+        "Tết",
+        "hoa đào",
+        "năm mới",
+        "văn hoá"
+      ],
+      "subject": "soft pink peach blossom branches (hoa dao) in the lower half, painted in Vietnamese silk-and-watercolor style on ivory",
+      "motifs": [
+        "falling petals",
+        "thin gold lines"
+      ],
+      "mood": "spring, gentle, festive",
+      "allow_red": true
+    },
+    {
+      "id": "bg-tet-mai-w",
+      "kind": "bg",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "right",
+      "master": "wide",
+      "season": "tet",
+      "tags": [
+        "Tết",
+        "hoa mai"
+      ],
+      "subject": "branches of yellow apricot blossoms with gold-leaf petals from the left edge, deep emerald background",
+      "motifs": [
+        "floating petals"
+      ],
+      "mood": "lunar new year",
+      "allow_red": false
+    },
+    {
+      "id": "mo-crane-gold",
+      "kind": "motif",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "none",
+      "master": "square",
+      "season": "all",
+      "tags": [
+        "hạc",
+        "đồng hành",
+        "văn hoá"
+      ],
+      "subject": "one elegant golden crane in flight with engraved Dong Son patterns on its wings, side view"
+    },
+    {
+      "id": "mo-cranes-pair",
+      "kind": "motif",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "none",
+      "master": "square",
+      "season": "all",
+      "tags": [
+        "hạc",
+        "đồng hành",
+        "đôi"
+      ],
+      "subject": "two golden cranes flying side by side, one slightly ahead, engraved Vietnamese patterns"
+    },
+    {
+      "id": "mo-mai-branch",
+      "kind": "motif",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "none",
+      "master": "square",
+      "season": "tet",
+      "tags": [
+        "Tết",
+        "hoa mai"
+      ],
+      "subject": "a single branch of yellow apricot blossoms (hoa mai) with gold-leaf petals, diagonal"
+    },
+    {
+      "id": "mo-lotus",
+      "kind": "motif",
+      "source": "codex",
+      "theme": "ivory",
+      "side": "none",
+      "master": "square",
+      "season": "all",
+      "tags": [
+        "sen",
+        "văn hoá"
+      ],
+      "subject": "one pink lotus flower with two jade lotus leaves, watercolor style with thin gold outline"
+    },
+    {
+      "id": "mo-lantern",
+      "kind": "motif",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "none",
+      "master": "square",
+      "season": "all",
+      "tags": [
+        "Tết",
+        "đèn lồng",
+        "hướng dẫn"
+      ],
+      "subject": "one refined golden lantern with engraved lotus pattern, glowing softly"
+    },
+    {
+      "id": "mo-phone-emerald",
+      "kind": "motif",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "none",
+      "master": "square",
+      "season": "all",
+      "tags": [
+        "điện thoại",
+        "app",
+        "mở tài khoản"
+      ],
+      "subject": "a sleek modern smartphone with dark emerald glass back and thin polished gold frame, screen facing viewer showing only a smooth plain green gradient with no interface, three-quarter view"
+    },
+    {
+      "id": "mo-gold-block",
+      "kind": "motif",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "none",
+      "master": "square",
+      "season": "all",
+      "tags": [
+        "khối vàng",
+        "số liệu",
+        "giá trị"
+      ],
+      "subject": "a small polished gold block with finely engraved Vietnamese cloud patterns on its sides, three-quarter view"
+    },
+    {
+      "id": "mo-dongson-disc",
+      "kind": "motif",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "none",
+      "master": "square",
+      "season": "all",
+      "tags": [
+        "trống đồng",
+        "văn hoá"
+      ],
+      "subject": "the top face of a golden Dong Son bronze drum seen straight from above, perfectly round, engraved concentric patterns and central star"
+    },
+    {
+      "id": "tx-dongson-gold",
+      "kind": "texture",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "none",
+      "master": "square",
+      "season": "all",
+      "tags": [
+        "hoạ tiết",
+        "trống đồng",
+        "viền"
+      ],
+      "subject": "seamless tileable pattern of fine gold Dong Son engraved line motifs (birds, concentric circles) evenly spaced",
+      "keyed": true
+    },
+    {
+      "id": "tx-cloud-gold",
+      "kind": "texture",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "none",
+      "master": "square",
+      "season": "all",
+      "tags": [
+        "hoạ tiết",
+        "mây",
+        "viền"
+      ],
+      "subject": "seamless tileable pattern of traditional Vietnamese auspicious cloud motifs drawn in thin gold lines",
+      "keyed": true
+    },
+    {
+      "id": "tx-paper-ivory",
+      "kind": "texture",
+      "source": "codex",
+      "theme": "ivory",
+      "side": "none",
+      "master": "square",
+      "season": "all",
+      "tags": [
+        "giấy",
+        "nền"
+      ],
+      "subject": "full-frame close-up of warm ivory handmade do paper with subtle natural fibers, evenly lit, no objects",
+      "keyed": false
+    },
+    {
+      "id": "tx-emerald-grain",
+      "kind": "texture",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "none",
+      "master": "square",
+      "season": "all",
+      "tags": [
+        "nền",
+        "hạt"
+      ],
+      "subject": "full-frame subtle deep emerald velvet texture with fine film grain, evenly lit, no objects",
+      "keyed": false
+    },
+    {
+      "id": "st-hanoi-dusk",
+      "kind": "bg",
+      "source": "unsplash",
+      "theme": "emerald",
+      "side": "top",
+      "master": "wide",
+      "season": "all",
+      "tags": [
+        "Hà Nội",
+        "thành phố",
+        "thị trường"
+      ],
+      "query": "hanoi long bien bridge morning",
+      "orientation": "landscape",
+      "photo_id": "79DoOEznTRY"
+    },
+    {
+      "id": "st-forest-mist",
+      "kind": "bg",
+      "source": "unsplash",
+      "theme": "emerald",
+      "side": "right",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "rừng",
+        "sương",
+        "thiên nhiên"
+      ],
+      "query": "misty green forest",
+      "orientation": "portrait"
+    },
+    {
+      "id": "st-ricefield",
+      "kind": "bg",
+      "source": "unsplash",
+      "theme": "emerald",
+      "side": "top",
+      "master": "wide",
+      "season": "all",
+      "tags": [
+        "ruộng bậc thang",
+        "Việt Nam",
+        "thiên nhiên"
+      ],
+      "query": "vietnam rice terraces",
+      "orientation": "landscape"
+    },
+    {
+      "id": "st-hands-phone",
+      "kind": "bg",
+      "source": "unsplash",
+      "theme": "emerald",
+      "side": "right",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "điện thoại",
+        "tay",
+        "app",
+        "mở tài khoản"
+      ],
+      "query": "hands holding smartphone dark",
+      "orientation": "portrait"
+    },
+    {
+      "id": "st-desk-minimal",
+      "kind": "bg",
+      "source": "unsplash",
+      "theme": "ivory",
+      "side": "top",
+      "master": "wide",
+      "season": "all",
+      "tags": [
+        "bàn làm việc",
+        "tối giản",
+        "giáo dục"
+      ],
+      "query": "minimal desk notebook coffee top view",
+      "orientation": "landscape"
+    },
+    {
+      "id": "st-apricot-real",
+      "kind": "bg",
+      "source": "unsplash",
+      "theme": "emerald",
+      "side": "right",
+      "master": "tall",
+      "season": "tet",
+      "tags": [
+        "Tết",
+        "hoa mai",
+        "thật"
+      ],
+      "query": "yellow apricot flowers close up",
+      "orientation": "portrait",
+      "photo_id": "s9B02yLU4hA"
+    },
+    {
+      "id": "st-peach-real",
+      "kind": "bg",
+      "source": "unsplash",
+      "theme": "ivory",
+      "side": "top",
+      "master": "tall",
+      "season": "tet",
+      "tags": [
+        "Tết",
+        "hoa đào",
+        "thật"
+      ],
+      "query": "peach blossom branch",
+      "orientation": "portrait"
+    },
+    {
+      "id": "st-green-silk",
+      "kind": "bg",
+      "source": "unsplash",
+      "theme": "emerald",
+      "side": "center",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "lụa",
+        "texture",
+        "sang trọng"
+      ],
+      "query": "dark green satin fabric",
+      "orientation": "portrait",
+      "photo_id": "nKubOgxdh88"
+    },
+    {
+      "id": "bg-em-candles-t",
+      "kind": "bg",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "top",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "nến",
+        "thị trường",
+        "sự kiện",
+        "hội nghị"
+      ],
+      "subject": "glowing bright green candlestick chart bars of varied heights rising like a city skyline, soft neon-green glow and reflections, no numbers, no axis, no arrows, in the lower half of a deep emerald scene",
+      "motifs": [
+        "light haze",
+        "particles"
+      ],
+      "mood": "market event, optimism, energy",
+      "allow_red": false,
+      "ref": "fanpage"
+    },
+    {
+      "id": "bg-em-candles-w",
+      "kind": "bg",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "left",
+      "master": "wide",
+      "season": "all",
+      "tags": [
+        "nến",
+        "thị trường",
+        "sự kiện"
+      ],
+      "subject": "glowing bright green candlestick chart bars of varied heights rising like a city skyline, soft neon-green glow and reflections, no numbers, no axis, no arrows, on the right side of a deep emerald scene",
+      "motifs": [
+        "light haze"
+      ],
+      "mood": "market event",
+      "allow_red": false,
+      "ref": "fanpage"
+    },
+    {
+      "id": "bg-em-flag-r",
+      "kind": "bg",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "right",
+      "master": "tall",
+      "season": "national",
+      "tags": [
+        "cờ",
+        "Quốc khánh",
+        "lễ",
+        "Việt Nam"
+      ],
+      "subject": "a large Vietnamese national flag of red silk with a yellow star flowing in soft waves from the lower-left corner across a deep emerald and gold scene",
+      "motifs": [
+        "warm golden light",
+        "floating gold particles"
+      ],
+      "mood": "national pride, celebration",
+      "allow_red": true,
+      "ref": "fanpage"
+    },
+    {
+      "id": "bg-em-flag-w",
+      "kind": "bg",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "right",
+      "master": "wide",
+      "season": "national",
+      "tags": [
+        "cờ",
+        "Quốc khánh",
+        "lễ"
+      ],
+      "subject": "a Vietnamese national flag of red silk with a yellow star flowing from the left edge across a deep emerald and gold scene",
+      "motifs": [
+        "golden light"
+      ],
+      "mood": "national pride",
+      "allow_red": true,
+      "ref": "fanpage"
+    },
+    {
+      "id": "bg-em-goldlight-c",
+      "kind": "bg",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "center",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "vệt sáng",
+        "lễ",
+        "thông báo",
+        "lịch nghỉ"
+      ],
+      "subject": "deep emerald background framed by elegant flowing ribbons of golden light sweeping along the edges and corners",
+      "motifs": [
+        "gold sparkles"
+      ],
+      "mood": "festive, premium, calm center",
+      "allow_red": false,
+      "ref": "fanpage"
+    },
+    {
+      "id": "mo-flag-silk",
+      "kind": "motif",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "none",
+      "master": "square",
+      "season": "national",
+      "tags": [
+        "cờ",
+        "Quốc khánh",
+        "lễ"
+      ],
+      "subject": "a flowing ribbon of red silk Vietnamese national flag with one yellow five-pointed star, elegant waves",
+      "allow_red": true,
+      "ref": "fanpage"
+    },
+    {
+      "id": "mo-star-gold",
+      "kind": "motif",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "none",
+      "master": "square",
+      "season": "national",
+      "tags": [
+        "ngôi sao",
+        "Quốc khánh",
+        "lễ"
+      ],
+      "subject": "one polished 3D golden five-pointed star with beveled faces, slightly angled",
+      "allow_red": false,
+      "ref": "fanpage"
+    },
+    {
+      "id": "mo-doves",
+      "kind": "motif",
+      "source": "codex",
+      "theme": "ivory",
+      "side": "none",
+      "master": "square",
+      "season": "national",
+      "tags": [
+        "bồ câu",
+        "hoà bình",
+        "lễ"
+      ],
+      "subject": "two white doves flying together, wings open, soft studio light",
+      "allow_red": false,
+      "ref": "fanpage"
+    },
+    {
+      "id": "mo-bull-glow",
+      "kind": "motif",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "none",
+      "master": "square",
+      "season": "all",
+      "tags": [
+        "bò tót",
+        "ngành chứng khoán",
+        "thị trường"
+      ],
+      "subject": "a charging bull sculpture in low-poly faceted emerald green glass with thin gold edges",
+      "allow_red": false,
+      "ref": "fanpage"
+    },
+    {
+      "id": "mo-laptop",
+      "kind": "motif",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "none",
+      "master": "square",
+      "season": "all",
+      "tags": [
+        "laptop",
+        "sản phẩm",
+        "app",
+        "web"
+      ],
+      "subject": "a modern thin laptop opened at a slight angle, dark space-grey body, screen showing only a plain smooth dark green gradient with no interface",
+      "allow_red": false,
+      "ref": "fanpage"
+    },
+    {
+      "id": "mo-hand-phone",
+      "kind": "motif",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "none",
+      "master": "square",
+      "season": "all",
+      "tags": [
+        "tay",
+        "điện thoại",
+        "app",
+        "mở tài khoản"
+      ],
+      "subject": "a well-groomed hand holding a modern smartphone upright, screen facing viewer showing only a plain smooth green gradient with no interface, sleeve of a dark green shirt, no face",
+      "allow_red": false,
+      "ref": "ads"
+    },
+    {
+      "id": "mo-tablet-hands",
+      "kind": "motif",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "none",
+      "master": "square",
+      "season": "all",
+      "tags": [
+        "máy tính bảng",
+        "danh mục",
+        "app"
+      ],
+      "subject": "two hands holding a modern tablet horizontally, screen facing viewer showing only a plain light gradient with no interface, no face",
+      "allow_red": false,
+      "ref": "fanpage"
+    },
+    {
+      "id": "ov-gold-swoosh",
+      "kind": "overlay",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "none",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "vệt sáng",
+        "vàng",
+        "lễ"
+      ],
+      "subject": "elegant flowing ribbons and streaks of golden light curving gracefully, with fine glitter, on a pure solid black background",
+      "blend": "screen",
+      "ref": "fanpage"
+    },
+    {
+      "id": "ov-gold-sparkle",
+      "kind": "overlay",
+      "source": "codex",
+      "theme": "emerald",
+      "side": "none",
+      "master": "tall",
+      "season": "all",
+      "tags": [
+        "kim tuyến",
+        "hạt sáng",
+        "lễ"
+      ],
+      "subject": "scattered golden bokeh lights and tiny glitter sparkles of varied sizes, denser at the edges, on a pure solid black background",
+      "blend": "screen",
+      "ref": "fanpage"
+    }
+  ]
+}

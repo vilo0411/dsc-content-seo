@@ -12,6 +12,7 @@ Cột "Ai ghi": **người** = sửa tay · **agent** = skill viết · **script
 | `3-seo/` | Mọi thứ của kênh SEO: chiến lược, bài viết, link, log | agent + script |
 | `4-channels/` | Bản nháp kênh khác: ads, email, landing, social | agent (`/ads-*`, `/email-sequence`, `/copy-landing`, `/syndicate`) |
 | `5-analytics/` | Kết quả đa kênh (KPI, báo cáo tháng) | agent (`/analytics-report`) |
+| `6-campaigns/` | Job chiến dịch đa kênh `CMP-YYMMDD-slug/` (brief, social, ads, landing, creatives, approved/) | agent (`scripts/campaign.py`, `/campaign-brief`) |
 | `raw/` | Dữ liệu thô: snapshot site live, cache SERP, export GSC, snapshot đối thủ | script |
 
 ## 1-brand/ — nền cho mọi kênh

@@ -5,6 +5,7 @@ This file tracks key decisions made during the project lifecycle to ensure long-
 ---
 
 ## 🏛️ Architectural Decisions
+- **2026-11-25:** Gộp nhánh Marketing Workspace (main 2026-11-24) vào cấu trúc `.agents/`: `core/` + `domains/{social,ads,campaign}/` chuyển từ `.antigravity/` sang `.agents/`; job đa kênh ở `knowledge/6-campaigns/` (5 đã dùng cho `5-analytics`). Skill Meta Ads copy đổi tên `/meta-ads-copy`; `/ads-copy` giữ cho Google RSA. Học của social/ads ghi `domains/<d>/learnings.md`, không vào `instincts-by-scope/`. Ghi lên Meta chỉ khi user yêu cầu rõ, luôn PAUSED.
 - **2026-05-17:** Adopted the **Multi-Agent (Sub-agent) Framework** for modularity.
 - **2026-05-17:** All production files must follow the `0-sources` -> `1-outlines` -> `2-drafts` -> `3-finalized` pipeline.
 - **2026-05-17:** Slash commands are the primary interface for triggering workflows.
