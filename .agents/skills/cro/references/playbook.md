@@ -18,9 +18,9 @@ Bài viết SEO tốt mà không có đường dẫn tới hành động thì ch
 
 - [ ] `.agents/rules/cta-conversion.md` — rule cứng, nguồn sự thật duy nhất về CTA
 - [ ] Persona của bài — `python scripts/persona.py P<n> --part bridge` · ma trận CTA: `python scripts/persona.py --matrix`
-- [ ] `assets/product-bridge-patterns.md` — bảng tra persona + khuôn đoạn
-- [ ] `assets/banner-templates.md` — HTML template
-- [ ] `references/cro-principles.md` — công thức copy (đọc khi viết, không cần đọc trước)
+- [ ] `.agents/skills/cro/references/product-bridge-patterns.md` — bảng tra persona + khuôn đoạn
+- [ ] `.agents/skills/cro/references/banner-templates.md` — HTML template chuẩn Brand Guideline v1.0
+- [ ] `.agents/skills/cro/references/cro-principles.md` — công thức copy (đọc khi viết, không cần đọc trước)
 
 `profile.md`, `anti-ai-rules.md`, `instincts.md` đã có trong context từ Bước 0 của workflow gọi tới — **không đọc lại**.
 

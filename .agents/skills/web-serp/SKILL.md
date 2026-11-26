@@ -81,18 +81,20 @@ python .agents/skills/web-serp/scripts/serp_research.py "{keyword}" --top 10 --e
 6. `### Competitor N: {domain}` × N — **bản gọn (mặc định)**: URL, số từ, yếu tố đặc biệt, cây H2/H3 kèm số từ từng mục. `--full` thêm câu chủ đề, entity, data point, internal/external link từng đối thủ và khung trống Gap Synthesis. Gap Synthesis điền ở mục 2 của brief-template.
 7. `Cost: $x.xxxx`
 
-**Cấu hình (1 lần):** thêm vào `.agents/config/api-keys.md` (đã gitignore):
+**Cấu hình:** đặt `DATAFORSEO_LOGIN`, `DATAFORSEO_PASSWORD` trong môi trường chạy agent/script.
+Có thể lưu cục bộ trong `.env` ở root (đã gitignore), theo mẫu `.env.example`, rồi nạp vào shell trước khi chạy:
+```sh
+set -a
+source .env
+set +a
 ```
-DATAFORSEO_LOGIN=...
-DATAFORSEO_PASSWORD=...
-```
-Lấy tại https://app.dataforseo.com/api-access. Xem `.agents/config/api-keys.example.md`.
+Lấy tại https://app.dataforseo.com/api-access. Script chỉ đọc biến môi trường, không tự đọc `.env` hoặc file Markdown. Khi chạy qua ứng dụng agent, cấu hình env cho tiến trình agent hoặc khởi động agent từ shell đã nạp env.
 
 **Lỗi thường gặp:**
 
 | Message | Xử lý |
 |---|---|
-| `Missing config: DATAFORSEO_...` | Chưa điền `api-keys.md` |
+| `Missing config: DATAFORSEO_...` | Chưa export biến môi trường vào tiến trình chạy script |
 | `DataForSEO HTTP 401` | Sai login/password API (password API ≠ password web) |
 | `DataForSEO task error 40201/40202` | Hết tiền / quá rate limit → báo user nạp tiền, không chạy lại |
 | Script lỗi mạng | Fallback DuckDuckGo: `WebFetch https://html.duckduckgo.com/html/?q={keyword_url_encoded}`, parse `<a class="result__a">` |

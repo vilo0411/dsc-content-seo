@@ -97,8 +97,8 @@
     "reference": "knowledge/1-brand/guideline/20-abstract.png"
   },
   "sizes": {
-    "blog_featured": "16:9",
-    "blog_inline": "4:3",
+    "blog_featured": "1000x600",
+    "blog_inline": "800x500",
     "feed_square": "1080x1080",
     "feed_portrait": "1080x1350",
     "story_reel": "1080x1920",
@@ -119,10 +119,5 @@
     "zero-clutter",
     "1 ảnh = 1 luận điểm"
   ],
-  "products": {
-    "brokerage": "Môi giới 1:1 — phí từ 0,1%",
-    "dsc_invest": "DSC Invest — ủy thác từ 3 tỷ VNĐ/hợp đồng",
-    "onboarding": "Mở tài khoản eKYC 100% online ~3 phút",
-    "app": "DSC Trading"
-  }
+  "products_ref": "knowledge/1-brand/brand-facts.json (Single Source of Truth cho số liệu sản phẩm, phí, margin)"
 }

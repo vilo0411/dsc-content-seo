@@ -6,7 +6,7 @@ description: Brief quảng cáo Meta — mục tiêu, objective, persona, offer,
 # /ads-brief <mục tiêu> [--job CMP-…] [--product eKYC|brokerage|invest|margin]
 
 ## Bước 0 — Context
-`.agents/core/README.md` §1 + `.agents/domains/ads/README.md`, `references/meta-ads-playbook.md`, `learnings.md`.
+`.agents/core/README.md` §1 + `.agents/domains/ads/README.md`, `references/meta-ads-playbook.md`, `learnings.md` + `knowledge/2-market/research/voc-objections.md` (nỗi lo & ngôn ngữ khách hàng thật) + `knowledge/2-market/account-opening-comparison.md` (vị thế cạnh tranh).
 
 ## Bước 1 — Hỏi những gì không suy ra được (1 lần, gộp)
 Ngân sách, thời gian chạy, sự kiện chuyển đổi đã cài (pixel/dataset), offer hiện hành. Không tự đặt ngân sách.

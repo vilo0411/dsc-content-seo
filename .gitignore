@@ -1,5 +1,6 @@
 # API Keys — không commit lên git
 .agents/config/api-keys.md
+.antigravity/config/api-keys.md
 .agents/config/claude-token.txt
 
 # GSC credentials & token — tuyệt đối không commit

@@ -14,7 +14,9 @@ DOCS = [ROOT / "AGENTS.md", ROOT / ".agents" / "context.md", *SKILLS.glob("*/SKI
 # Paths that are produced at runtime or gitignored - allowed to be missing.
 OPTIONAL = {".agents/config/gsc-credentials.json", ".agents/config/gsc-token.json",
             ".agents/memory/instincts-archive.proposed.md", "knowledge/3-seo/cta-variants.md",
-            "knowledge/raw/ga4/landing-pages.csv"}
+            "knowledge/raw/ga4/landing-pages.csv", "knowledge/raw/serp/",
+            "knowledge/raw/gsc/queries.csv", "knowledge/raw/gsc/pages.csv",
+            "knowledge/raw/gsc/cache-meta.json"}
 PATH_RE = re.compile(r"`((?:\.agents|knowledge|scripts|tests)/[^`\s]+?)`")
 
 try:

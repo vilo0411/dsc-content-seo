@@ -11,7 +11,7 @@ Usage:
 
 Setup:
     pip install firecrawl-py
-    Thêm FIRECRAWL_API_KEY vào .agents/config/api-keys.md
+    Export biến môi trường FIRECRAWL_API_KEY trước khi chạy.
 """
 
 import sys
@@ -43,19 +43,7 @@ EXCLUDE_TAGS = [
 
 
 def load_api_key() -> str:
-    key = os.environ.get("FIRECRAWL_API_KEY", "")
-    if key:
-        return key
-
-    config_path = os.path.normpath(
-        os.path.join(os.path.dirname(__file__), "../../../config/api-keys.md")
-    )
-    if os.path.exists(config_path):
-        with open(config_path) as f:
-            for line in f:
-                if line.startswith("FIRECRAWL_API_KEY="):
-                    return line.strip().split("=", 1)[1]
-    return ""
+    return os.environ.get("FIRECRAWL_API_KEY", "")
 
 
 def is_valid_url(url: str) -> bool:
@@ -190,7 +178,7 @@ def main():
 
     api_key = load_api_key()
     if not api_key:
-        print("Thiếu FIRECRAWL_API_KEY. Thêm vào .agents/config/api-keys.md hoặc set env var.")
+        print("Thiếu FIRECRAWL_API_KEY. Export biến môi trường trước khi chạy.")
         sys.exit(1)
 
     app = FirecrawlApp(api_key=api_key)

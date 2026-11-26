@@ -1485,6 +1485,17 @@ def main() -> int:
     check_boilerplate_stats(rep, prose, start)
     if args.cta:
         check_cta(rep, path)
+    else:
+        # Always enforce brand v1.0 palette on any existing CTA banner, even when --cta is not passed
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        try:
+            import cta_audit  # type: ignore
+            art = cta_audit.audit(path)
+            for cid, sev, line, msg in art.issues:
+                if cid in ("CTA-palette", "CTA-placeholder"):
+                    rep.add(cid, "link", sev, line, msg)
+        except ImportError:
+            pass
     if args.original:
         check_images(rep, lines, start, Path(args.original))
     paa_count = 0

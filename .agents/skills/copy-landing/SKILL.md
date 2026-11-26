@@ -12,8 +12,8 @@ Khác `/cro`: `/cro` gắn CTA/banner **vào bài SEO**; skill này viết **c�
 ## Bước 0: Context
 1. `.agents/context.md`
 2. `.agents/rules/cta-conversion.md` (offer, CTA) · `.agents/skills/cro/references/cro-principles.md`
-3. `knowledge/1-brand/brand-facts.json` · `knowledge/1-brand/service-operations.md` · `knowledge/1-brand/anti-ai-rules.md` · `glossary.md`
-4. Persona: `python scripts/persona.py P<n>` (đủ cả bridge + tone)
+3. `knowledge/1-brand/brand-facts.json` · `knowledge/1-brand/service-operations.md` · `knowledge/1-brand/anti-ai-rules.md` · `knowledge/1-brand/glossary.md`
+4. Persona & VoC thật: `python scripts/persona.py P<n>` (đủ cả bridge + tone) · `knowledge/2-market/research/voc-objections.md` (5 rào cản chuyển đổi & câu hỏi thật từ SERP/GSC) · `knowledge/2-market/account-opening-comparison.md` (lợi thế cạnh tranh so với đối thủ)
 5. Trang hiện tại (nếu viết lại): nội dung live (`python scripts/sync_live.py --show <slug>` hoặc tải URL) + số liệu: MCP `get_pages` / `get_conversion_breakdown` lọc theo landing (sessions, lead, CVR); nguồn traffic chính (Ads keyword nào, bài SEO nào dẫn tới).
 
 ## Bước 1: Chẩn đoán (trình user)

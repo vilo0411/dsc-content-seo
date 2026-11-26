@@ -11,7 +11,7 @@ description: Viết quảng cáo Google Ads (Responsive Search Ads, sitelink, ca
 1. `.agents/context.md` (mục 5 Ràng buộc là bắt buộc)
 2. `knowledge/1-brand/brand-facts.json` — số nào đưa vào ad phải có ở đây với `status: verified`
 3. `knowledge/1-brand/anti-ai-rules-blacklist.md` · `knowledge/1-brand/glossary.md`
-4. Persona: `python scripts/persona.py --matrix` → chọn 1 persona theo keyword
+4. Persona & VoC thật: `python scripts/persona.py --matrix` → chọn 1 persona theo keyword; đọc `knowledge/2-market/research/voc-objections.md` để lấy ngôn ngữ khách hàng & rào cản thật cho 2 headline xử lý lo ngại
 5. Ad group đang có (nếu viết lại): MCP `get_ads_breakdown` + `get_ads_search_terms` — lấy search term thật làm ngôn ngữ người dùng
 
 ## Bước 1: Brief (trình user trước khi viết)

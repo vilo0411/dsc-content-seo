@@ -457,3 +457,21 @@ File này ghi lại các chỉnh sửa thực tế mà người dùng thực hi�
 - **Pattern:** Nếu bạn sắp đặt lệnh đầu tiên, bảng so sánh bên dưới cho biết ngay mình đang mua ở thị trường nào và tiền đi về đâu.
 - **Rule học được:** Câu mời đọc không mô tả cấu trúc bài ('bảng bên dưới cho biết…'); mở từ tình huống người đọc rồi mời đọc tiếp.
 - **Scope:** Global
+
+### [2026-11-25] - so-sanh-lai-suat-tiet-kiem-ngan-hang
+- **Lỗi đã sửa:** Sửa Sapo đoạn 1 theo khuôn loại bài (Comparison mở bằng chênh lệch tiền thật 11,5 triệu/năm trên 500 triệu) và đoạn 2 tóm tắt nội dung theo đúng thứ tự các H2 trong outline
+- **Pattern:** Sapo mở câu 1 bằng nguyên cụm keyword dài làm chủ ngữ nghe máy móc, hoặc đoạn 2 giới thiệu nội dung không khớp thứ tự H2 trong outline
+- **Rule học được:** I105: Đoạn 1 mở tự nhiên theo loại bài (Comparison: chênh lệch tiền thật; Definition: bản chất + số thực tế bất ngờ; How-to: tổng số bước + tên bước; Review: Nên/Không nên kèm điều kiện; Toplist: tiêu chí + quán quân), lồng keyword tự nhiên. Đoạn 2: Chứng khoán DSC giới thiệu nội dung theo đúng thứ tự các H2 trong outline + câu cuối có 1 con số gợi tò mò
+- **Scope:** Global
+
+### [2026-11-25] - so-sanh-lai-suat-tiet-kiem-ngan-hang
+- **Lỗi đã sửa:** Nối câu cuối của Sapo (con số gợi tò mò) trực tiếp vào luận điểm của câu trước thay vì đặt 1 câu dữ kiện rời rạc không rõ liên hệ
+- **Pattern:** Câu cuối Sapo nêu 1 con số trong bài theo I105 nhưng đứng trơ trọi, không nối nhân-quả với nội dung vừa giới thiệu
+- **Rule học được:** I105: Câu cuối của Sapo (con số gợi tò mò) phải nối nhân-quả trực tiếp với vấn đề/hành động vừa nêu ở câu trước, không thả một dữ kiện rời rạc
+- **Scope:** Global
+
+### [2026-11-25] - so-sanh-lai-suat-tiet-kiem-ngan-hang
+- **Lỗi đã sửa:** Đổi 'hai vạch chia: nhóm ngân hàng và kênh gửi' thành 'nhóm ngân hàng và hình thức gửi tại quầy hay online' cho tự nhiên đúng tiếng Việt
+- **Pattern:** Dùng cụm ẩn dụ dịch từ tiếng Anh ('hai vạch chia' - dividing lines) thay vì từ tiếng Việt tự nhiên
+- **Rule học được:** I106: Tránh cụm từ dịch máy từ tiếng Anh ('vạch chia'); dùng từ tiếng Việt bình dị, trực tiếp ('nhóm ngân hàng và hình thức gửi tại quầy hay online')
+- **Scope:** Global

@@ -10,7 +10,7 @@ Cost policy (DataForSEO is paid):
     - Extraction is local first (urllib + Scrapling parser, ~1s/page, no API) and falls
       back to Jina AI Reader (free, ~8s/page) for JS-rendered pages. Also stored in the cache.
 
-Config (env vars, or .agents/config/api-keys.md as KEY=value lines):
+Config (environment variables):
     DATAFORSEO_LOGIN, DATAFORSEO_PASSWORD   required
     JINA_API_KEY                            optional, raises Jina rate limit
     LOCAL_FETCH=0                           optional, skip local extraction and go straight to Jina
@@ -47,7 +47,6 @@ OWN_DOMAIN = "dsc.com.vn"  # flag PAA answers Google already takes from our site
 PAA_MAX_DEPTH = 4      # DataForSEO people_also_ask_click_depth upper bound
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", "..", "..", ".."))
-CONFIG = os.path.join(ROOT, ".agents", "config", "api-keys.md")
 CACHE_DIR = os.path.join(ROOT, "knowledge", "raw", "serp")
 # Keyword plans: an API call is only made for keywords listed here unless --force is passed.
 PLAN_FILES = (
@@ -68,18 +67,10 @@ FOOTER_HINTS = ("bài viết liên quan", "xem thêm", "tags:", "chính sách", 
 # ---------------------------------------------------------------- config / cache
 
 def load_config():
-    """Env wins; fall back to KEY=value lines in api-keys.md."""
-    cfg = {}
-    if os.path.exists(CONFIG):
-        with open(CONFIG, encoding="utf-8") as fh:
-            for line in fh:
-                m = re.match(r"\s*([A-Z_][A-Z0-9_]*)\s*=\s*(\S+)", line)
-                if m:
-                    cfg[m.group(1)] = m.group(2)
-    for k in ("DATAFORSEO_LOGIN", "DATAFORSEO_PASSWORD", "JINA_API_KEY"):
-        if os.environ.get(k):
-            cfg[k] = os.environ[k]
-    return cfg
+    """Read credentials only from the process environment."""
+    return {k: os.environ[k] for k in
+            ("DATAFORSEO_LOGIN", "DATAFORSEO_PASSWORD", "JINA_API_KEY")
+            if os.environ.get(k)}
 
 
 def slugify(text):

@@ -95,6 +95,20 @@ Một số thuật ngữ có nhiều cách nói. Dùng đúng cách theo persona
 | **F0** | f0, F-0 | Nhà đầu tư mới lần đầu tham gia thị trường |
 | **F1/F2** | f1, f2 | Nhà đầu tư đã có kinh nghiệm 1–3 năm |
 
+### Tiếng lóng ngành chứng khoán (Industry Slang — Quy tắc sử dụng)
+
+Các thuật ngữ khẩu ngữ phổ biến trên diễn đàn/mạng xã hội. **Chỉ dùng khi giải thích khái niệm trong bài viết cho P2/P3 hoặc làm hook gần gũi trên Social; không dùng làm thuật ngữ phân tích chính thức cho P1/P4.**
+
+| Thuật ngữ lóng | Ý nghĩa thực tế | Cách diễn đạt chuẩn mực thay thế (khi viết phân tích) |
+|---|---|---|
+| **Đu đỉnh** | Mua cổ phiếu ở vùng giá cao nhất trước khi đảo chiều giảm | Mua tại vùng kháng cự / vùng đỉnh ngắn hạn |
+| **Bắt đáy** | Mua cổ phiếu khi giá đang giảm mạnh với kỳ vọng hồi phục | Mua thăm dò tại vùng hỗ trợ / định giá thấp |
+| **Call Margin** | Thông báo yêu cầu nộp thêm tiền/bán bớt cổ phiếu khi tỷ lệ ký quỹ chạm ngưỡng cảnh báo | Chạm ngưỡng ký quỹ duy trì (Maintenance Margin) |
+| **Force Sell** | Công ty chứng khoán tự động bán giải chấp cổ phiếu để thu hồi nợ vay ký quỹ | Bán giải chấp tài khoản ký quỹ |
+| **Xanh vỏ đỏ lòng** | VN-Index tăng điểm nhờ một vài cổ phiếu trụ nhưng đa số cổ phiếu trên sàn lại giảm giá | Độ rộng thị trường nghiêng về bên bán dù chỉ số chung tăng |
+| **Chim lợn / Bìm bịp** | Người hô hào thị trường giảm để mua rẻ / Người luôn hô hào thị trường tăng | Phe bi quan (Bearish) / Phe lạc quan (Bullish) — *Tránh dùng "chim lợn/bìm bịp" trong bài phân tích trừ bài giải thích thuật ngữ* |
+| **Sóng** | Chu kỳ tăng hoặc giảm đồng loạt của một nhóm cổ phiếu ngành | Chu kỳ tăng trưởng ngành / Dòng tiền luân chuyển theo ngành |
+
 ---
 
 ## 5. Quy tắc viết số & Đơn vị
@@ -128,7 +142,7 @@ Một số thuật ngữ có nhiều cách nói. Dùng đúng cách theo persona
 
 ## 6. CTA chuẩn theo Persona
 
-Mỗi persona có CTA riêng — không dùng lẫn lộn.
+> **Nguồn chuẩn đầy đủ (Product Bridge, Cường độ CTA, Góc dẫn dắt):** Xem [`knowledge/1-brand/personas.md`](personas.md) (`python scripts/persona.py --matrix`) và [`.agents/rules/cta-conversion.md`](../../.agents/rules/cta-conversion.md). Bảng dưới đây là quy chiếu nhanh về từ ngữ trên nút CTA:
 
 | Persona | CTA ưu tiên | CTA tránh dùng |
 |---|---|---|

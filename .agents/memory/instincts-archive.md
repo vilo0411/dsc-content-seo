@@ -28,17 +28,17 @@
 
 ## Rule chuẩn (ACTIVE)
 
-### Sapo: keyword + trả lời thẳng, đoạn 2 có DSC và câu dẫn vào bài
+### Sapo: mở theo loại bài, đoạn 2 có DSC và đúng thứ tự outline
 - **ID:** I105
 - **Trạng thái:** ACTIVE
 - **Tag:** sapo
-- **Nguồn:** gộp từ I004, I024, I030, I034, I075, I093, I096, I098; cach-choi-chung-khoan, phan-biet-thi-truong-tien-te-va-thi-truong-von-huong-dan-chi-tiet-cho-nha-dau-tu
+- **Nguồn:** gộp từ I004, I024, I030, I034, I075, I093, I096, I098; cach-choi-chung-khoan, phan-biet-thi-truong-tien-te-va-thi-truong-von-huong-dan-chi-tiet-cho-nha-dau-tu, so-sanh-lai-suat-tiet-kiem-ngan-hang
 - **Phạm vi:** Global
 - **Checklist:** qa_lint:CL1-sapo, qa_lint:CL2-blacklist, outline_lint:META-sapo-dsc
 - **Máy kiểm:** partial
-- **Cập nhật:** 2026-11-23
-- **Phản hồi từ User:** "phần sapo chưa hay. ko nhắc đến brand, chưa tóm tắt rõ nội dung bài viết, chưa khiến người đọc tò mò" · "nội dung chính là cách chơi chứng khoán, còn cách đầu tư hay các phần sau chỉ là bổ trợ" (2026-11-18) · "phần sapo đọc bị cứng quá, ko tự nhiên" (2026-11-23)
-- **Bản năng:** Sapo 2 đoạn dưới H1, viết như người giải thích bằng lời thường. Đoạn 1: nguyên keyword dạng truy vấn, trả lời thẳng (how-to: số bước + tên bước) kèm 1 số có ngày. Đoạn 2: “Trong bài viết này, Chứng khoán DSC …” nêu điều người đọc nhận được, không kể mục lục; câu cuối là 1 con số có trong bài gợi tò mò. Không bối cảnh vĩ mô, không tự khen, không lặp danh từ trừu tượng.
+- **Cập nhật:** 2026-11-25
+- **Phản hồi từ User:** "phần sapo chưa hay. ko nhắc đến brand, chưa tóm tắt rõ nội dung bài viết, chưa khiến người đọc tò mò" · "phần sapo đọc bị cứng quá, ko tự nhiên" (2026-11-23) · "với các sapo loại khác chất lượng cũng phải tốt như này; nếu sapo nói đến nội dung bài thì phải follow đúng thứ tự theo outline" (2026-11-25)
+- **Bản năng:** Sapo 2 đoạn dưới H1 (≤ 110 từ), cấm bê keyword dài làm chủ ngữ. Đoạn 1 lồng keyword + 1 số có ngày, mở theo loại bài: Comparison = tiêu chí chia + biên độ; Definition = bản chất + 1 số bất ngờ; How-to = số bước + tên bước; Review = Nên/Không nên + điều kiện; Toplist = tiêu chí + số 1. Đoạn 2: “Trong bài viết này, Chứng khoán DSC …” nêu các phần đúng thứ tự H2; câu cuối “Bạn sẽ thấy vì sao …” nêu số minh họa.
 
 ### Văn phong định chế tài chính, từ cấm nằm trong blacklist
 - **ID:** I106

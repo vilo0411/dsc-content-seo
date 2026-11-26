@@ -68,8 +68,14 @@ Template: [`references/brief-template.md`](references/brief-template.md) · Gate
 - Mỗi H2 thân bài có `**Câu hỏi người đọc:**` + `**Ý chính:**` + `**Chuyển ý → H2 sau:**`. Không viết H2 dạng "liệt kê chủ đề + nhét số liệu".
 - Có ít nhất 1 H2 chứa keyword hoặc câu hỏi keyword.
 - **Sapo plan (instinct I105)** — viết sẵn nguyên văn 2 đoạn trong outline để duyệt cùng cây H2:
-  - Đoạn 1: keyword dạng truy vấn + trả lời thẳng (how-to: số bước + tên bước) + 1 con số có ngày.
-  - Đoạn 2: “Trong bài viết này, Chứng khoán DSC …” nêu phạm vi **xoay quanh intent chính**; các H2 phụ chỉ đi sau “kèm”. Câu cuối = 1 con số có trong bài gợi tò mò (vd phí 0,3% → 18% vốn/năm). Không liệt kê mọi H2 ngang hàng, không tự khen (“tính sẵn”, “con số cụ thể”).
+  - Đoạn 1: cấm bê nguyên keyword dài làm chủ ngữ đầu câu một cách máy móc; lồng keyword tự nhiên + 1 con số có ngày và mở theo đúng `Content_Type`:
+    - *Comparison:* mở bằng khoảng chênh quy ra tiền thật trên 1 mốc vốn chuẩn giữa các lựa chọn, câu 2 nêu biên độ % và keyword.
+    - *Definition:* trả lời thẳng bản chất bằng lời thường + 1 số liệu thực tế từ BCTC/thị trường gây bất ngờ.
+    - *How-to:* chốt tổng số bước + tên các bước gói trong 1 câu + vốn/thời gian tối thiểu.
+    - *Review ("Có nên"):* mở bằng phán quyết có điều kiện (Nên khi A — Không nên khi B) + số liệu kiểm chứng 2 chiều.
+    - *Toplist:* nêu tiêu chí xếp hạng + điểm tên ngay đơn vị dẫn đầu kèm con số đỉnh.
+    - *Comprehensive Guide:* nêu quy tắc toán học / con số cốt lõi phá bỏ lầm tưởng, rồi đặt keyword vào phạm vi bài.
+  - Đoạn 2: Câu 1 mở bằng “Trong bài viết này, Chứng khoán DSC …” giới thiệu nội dung bài theo **ĐÚNG THỨ TỰ các H2 trong outline** (không đảo thứ tự H2 sau lên trước H2 đầu; các phần phụ đi sau “kèm”). Câu 2 mở bằng **“Bạn sẽ thấy vì sao …”** (hoặc **“Qua đó, bạn sẽ thấy …”**) nêu 1–2 hệ quả bằng con số cụ thể từ chính các phần vừa giới thiệu ở Câu 1 để gợi tò mò (xem mẫu đã duyệt ở `Final-cach-choi-chung-khoan.md` và `Final-phan-biet-thi-truong-tien-te-va-thi-truong-von-huong-dan-chi-tiet-cho-nha-dau-tu.md`). Cấm thả 1 câu dữ kiện đứng trơ trọi mà không có cụm chuyển tiếp nối với Câu 1. Không tự khen (“tính sẵn”, “con số cụ thể”).
   - Tổng ≤ 110 từ, mỗi câu ≤ 30 từ.
 - **Bài how-to (I119):** bước viết chung cho mọi CTCK (đối thủ top đều vậy). Mã/số riêng DSC (963369, dạng 024C, đuôi tiểu khoản) chỉ nằm ở H2 DSC hoặc CTA (`qa_lint:BRAND-steps`). Ảnh app DSC dùng minh họa được.
 - Product Bridge: nối từ kết luận của bài sang các bước cụ thể tại DSC, không phải list tính năng.

@@ -105,13 +105,13 @@ Mua ở thị trường sơ cấp, chẳng hạn đăng ký mua trong đợt IPO
 
 Ngoài việc biết mình đang ở thị trường thứ cấp, bạn cần có tài khoản và đặt lệnh đúng lô, đúng biên độ. Bạn không cần biết hết mới bắt đầu, vì chuyên gia Môi giới 1:1 của DSC hướng dẫn sàn, lô và cách đặt lệnh khi bạn cần hỏi.
 
-<div style="background: linear-gradient(135deg, #0D1B2A 0%, #0A3D2E 100%); border-radius: 12px; padding: 30px; margin: 30px 0; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 10px 30px rgba(13, 27, 42, 0.25); position: relative; overflow: hidden; color: #ffffff; gap: 20px; flex-wrap: wrap;">
-  <div aria-hidden="true" style="position: absolute; top: -50%; right: -20%; width: 300px; height: 300px; background: radial-gradient(circle, rgba(43, 232, 65, 0.18) 0%, rgba(43, 232, 65, 0) 70%); border-radius: 50%;"></div>
+<div style="background: linear-gradient(135deg, #272D2B 0%, #1D4130 100%); border-radius: 12px; padding: 30px; margin: 30px 0; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 10px 30px rgba(39, 45, 43, 0.25); position: relative; overflow: hidden; color: #ffffff; gap: 20px; flex-wrap: wrap;">
+  <div aria-hidden="true" style="position: absolute; top: -50%; right: -20%; width: 300px; height: 300px; background: radial-gradient(circle, rgba(42, 208, 61, 0.20) 0%, rgba(42, 208, 61, 0) 70%); border-radius: 50%;"></div>
   <div style="flex: 1 1 260px; position: relative; z-index: 1;">
     <p style="font-size: 22px; line-height: 1.35; margin: 0 0 10px 0; font-weight: 700; color: #ffffff;">Đặt lệnh đầu tiên trên thị trường thứ cấp với tài khoản mở online</p>
-    <p style="font-size: 15px; line-height: 1.5; margin: 0; color: #E8F8F2;">eKYC 3 phút • Môi giới 1:1 • Phí giao dịch từ 0,1%</p>
+    <p style="font-size: 15px; line-height: 1.5; margin: 0; color: #8CFFCC;">eKYC 3 phút • Môi giới 1:1 • Phí giao dịch từ 0,1%</p>
   </div>
-  <a href="https://www.dsc.com.vn/mo-tai-khoan" style="background: #2BE841; color: #0D1B2A; padding: 14px 32px; border-radius: 30px; text-decoration: none; font-weight: 700; font-size: 16px; display: inline-block; position: relative; z-index: 1;">Mở tài khoản — 3 phút</a>
+  <a href="https://www.dsc.com.vn/mo-tai-khoan" style="background: #2AD03D; color: #272D2B; padding: 14px 32px; border-radius: 30px; text-decoration: none; font-weight: 700; font-size: 16px; display: inline-block; position: relative; z-index: 1;">Mở tài khoản — 3 phút</a>
 </div>
 
 ## Mối quan hệ giữa thị trường sơ cấp và thị trường thứ cấp

@@ -1,17 +1,8 @@
 {
-  "generated_at": "2026-11-25T17:46:38+07:00",
+  "generated_at": "2026-11-26T06:47:06+07:00",
   "snapshot": "2026-11-25T15:18:36",
   "snapshot_mode": "partial",
   "tasks": [
-    {
-      "name": "Bài ở bước Planned",
-      "group": "Bài SEO",
-      "source": "knowledge/3-seo/strategy/pages.csv",
-      "state": "1 bài",
-      "evidence": "Nguồn: registry pages.csv (topic_status.py).",
-      "next_step": "/outlining <keyword> (hoặc /write)",
-      "details": "so-sanh-lai-suat-tiet-kiem-ngan-hang · So sánh lãi suất tiết kiệm ngân hàng 2026"
-    },
     {
       "name": "Bài ở bước Outlining",
       "group": "Bài SEO",
@@ -34,10 +25,10 @@
       "name": "Bài ở bước In Progress",
       "group": "Bài SEO",
       "source": "knowledge/3-seo/strategy/pages.csv",
-      "state": "1 bài",
+      "state": "2 bài",
       "evidence": "Nguồn: registry pages.csv (topic_status.py).",
       "next_step": "Kiểm tra lại trạng thái thật (topic_status --set)",
-      "details": "gia-cao-su · giá cao su"
+      "details": "so-sanh-lai-suat-tiet-kiem-ngan-hang · So sánh lãi suất tiết kiệm ngân hàng 2026\ngia-cao-su · giá cao su"
     },
     {
       "name": "Bài ở bước Outline-Approved",
@@ -882,6 +873,12 @@
       "archived": true
     },
     {
+      "path": "knowledge/3-seo/links/archive/legacy-2026-11-19/README.md",
+      "name": "README.md",
+      "group": "Internal link",
+      "archived": true
+    },
+    {
       "path": "knowledge/3-seo/links/archive/legacy-2026-11-19/anchor-index.md",
       "name": "anchor-index.md",
       "group": "Internal link",
@@ -890,12 +887,6 @@
     {
       "path": "knowledge/3-seo/links/archive/legacy-2026-11-19/anchor-keys.csv",
       "name": "anchor-keys.csv",
-      "group": "Internal link",
-      "archived": true
-    },
-    {
-      "path": "knowledge/3-seo/links/archive/legacy-2026-11-19/README.md",
-      "name": "README.md",
       "group": "Internal link",
       "archived": true
     },
@@ -1440,6 +1431,18 @@
       "archived": false
     },
     {
+      "path": "knowledge/2-market/research/README.md",
+      "name": "README.md",
+      "group": "Thị trường & đối thủ",
+      "archived": false
+    },
+    {
+      "path": "knowledge/2-market/research/voc-objections.md",
+      "name": "voc-objections.md",
+      "group": "Thị trường & đối thủ",
+      "archived": false
+    },
+    {
       "path": "knowledge/4-channels/ads/README.md",
       "name": "README.md",
       "group": "Kênh khác",
@@ -1578,6 +1581,12 @@
       "archived": false
     },
     {
+      "path": "knowledge/4-channels/social/packs/con-hao-kinh-te-la-gi-cach-tao-ra-va-tam-quan-trong-cua-con-hao-kinh-te/all-channels-v2/README.md",
+      "name": "README.md",
+      "group": "Kênh khác",
+      "archived": false
+    },
+    {
       "path": "knowledge/4-channels/social/packs/con-hao-kinh-te-la-gi-cach-tao-ra-va-tam-quan-trong-cua-con-hao-kinh-te/all-channels-v2/ameblo.md",
       "name": "ameblo.md",
       "group": "Kênh khác",
@@ -1638,12 +1647,6 @@
       "archived": false
     },
     {
-      "path": "knowledge/4-channels/social/packs/con-hao-kinh-te-la-gi-cach-tao-ra-va-tam-quan-trong-cua-con-hao-kinh-te/all-channels-v2/README.md",
-      "name": "README.md",
-      "group": "Kênh khác",
-      "archived": false
-    },
-    {
       "path": "knowledge/4-channels/social/packs/con-hao-kinh-te-la-gi-cach-tao-ra-va-tam-quan-trong-cua-con-hao-kinh-te/all-channels-v2/telegraph.md",
       "name": "telegraph.md",
       "group": "Kênh khác",
@@ -1658,6 +1661,12 @@
     {
       "path": "knowledge/4-channels/social/packs/con-hao-kinh-te-la-gi-cach-tao-ra-va-tam-quan-trong-cua-con-hao-kinh-te/all-channels-v2/x.md",
       "name": "x.md",
+      "group": "Kênh khác",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-channels/social/packs/con-hao-kinh-te-la-gi-cach-tao-ra-va-tam-quan-trong-cua-con-hao-kinh-te/all-channels-v3/README.md",
+      "name": "README.md",
       "group": "Kênh khác",
       "archived": false
     },
@@ -1770,12 +1779,6 @@
       "archived": false
     },
     {
-      "path": "knowledge/4-channels/social/packs/con-hao-kinh-te-la-gi-cach-tao-ra-va-tam-quan-trong-cua-con-hao-kinh-te/all-channels-v3/README.md",
-      "name": "README.md",
-      "group": "Kênh khác",
-      "archived": false
-    },
-    {
       "path": "knowledge/4-channels/social/packs/con-hao-kinh-te-la-gi-cach-tao-ra-va-tam-quan-trong-cua-con-hao-kinh-te/all-channels-v3/telegraph.html",
       "name": "telegraph.html",
       "group": "Kênh khác",
@@ -1812,6 +1815,12 @@
       "archived": false
     },
     {
+      "path": "knowledge/4-channels/social/packs/con-hao-kinh-te-la-gi-cach-tao-ra-va-tam-quan-trong-cua-con-hao-kinh-te/v1/README.md",
+      "name": "README.md",
+      "group": "Kênh khác",
+      "archived": false
+    },
+    {
       "path": "knowledge/4-channels/social/packs/con-hao-kinh-te-la-gi-cach-tao-ra-va-tam-quan-trong-cua-con-hao-kinh-te/v1/ledger-before.csv",
       "name": "ledger-before.csv",
       "group": "Kênh khác",
@@ -1820,12 +1829,6 @@
     {
       "path": "knowledge/4-channels/social/packs/con-hao-kinh-te-la-gi-cach-tao-ra-va-tam-quan-trong-cua-con-hao-kinh-te/v1/mastodon.md",
       "name": "mastodon.md",
-      "group": "Kênh khác",
-      "archived": false
-    },
-    {
-      "path": "knowledge/4-channels/social/packs/con-hao-kinh-te-la-gi-cach-tao-ra-va-tam-quan-trong-cua-con-hao-kinh-te/v1/README.md",
-      "name": "README.md",
       "group": "Kênh khác",
       "archived": false
     },
@@ -1918,6 +1921,6 @@
     "in_progress": 24,
     "competitor_new": 0,
     "channel_drafts": 0,
-    "approvals": 18
+    "approvals": 19
   }
 }

@@ -10,7 +10,7 @@ You are a Strategic Research Expert. Your task is to build the foundational docu
 
 ### Phase 0 — Skeleton & Discovery (Interactive)
 Before any research, you must ensure the workspace is ready and you have "Seed Data":
-1.  **Skeleton Check:** Check if `knowledge/` folders exist. If not, create the 1-brand, 2-market, 3-seo, and 4-content subfolders.
+1.  **Skeleton Check:** Check if `knowledge/` folders exist. If not, create the `1-brand`, `2-market`, `3-seo`, `4-channels`, `5-analytics`, and `6-campaigns` subfolders.
 2.  **File Triage & Organization:** 
     *   Scan the **root directory** for any files that look like company info, PDFs, docs, or research notes.
     *   If found, move them to `knowledge/raw/` (create this folder if needed).
@@ -42,12 +42,12 @@ List **only missing information** as a one-time form for the user to answer.
 ## 📦 Key Modules
 
 ### Module 1: Company Research
-**Output:** `knowledge/1-brand/profile.md`
-- Overview, Products & Services, USPs, Tone of Voice, Brand Keywords.
+**Output:** `knowledge/1-brand/profile.md` & `knowledge/1-brand/brand-facts.json`
+- Overview & Proof Points, Products & Services (numeric facts in `brand-facts.json`), USPs, Tone of Voice, Brand Keywords.
 
 ### Module 2: Market Research
-**Output:** `knowledge/2-market/market-landscape.md`
-- Market size, Top Content Competitors, Content Gaps, Search Trends, Industry Slang.
+**Output:** `knowledge/2-market/market-landscape.md` & `knowledge/2-market/research/voc-objections.md`
+- Market size, 2-Tier Competitor Map (Business/Ads vs. SEO Content), Content Gaps, Market Seasonality Calendar; Industry Slang goes to `knowledge/1-brand/glossary.md`.
 
 ### Module 3: Persona Research
 **Output:** `knowledge/1-brand/personas.md`
@@ -55,7 +55,7 @@ List **only missing information** as a one-time form for the user to answer.
 
 ### Module 4: ICP (Ideal Customer Profile)
 **Output:** `knowledge/1-brand/icp.md`
-- Definition of the most profitable/convertible group, Buying signals, Implications for content strategy.
+- Definition of core digital segments aligned with P1–P4 in `personas.md`, resource allocation across personas.
 
 ## ⚠️ Immutable Principles
 - **No Hallucinations:** Use `[TBD ❓]` instead of guessing.

@@ -6,7 +6,7 @@ description: Viết copy và dựng landing page HTML 1 trang theo brand.json ch
 # /landing <job|sản phẩm> [--persona P<n>]
 
 ## Bước 0 — Context
-`.agents/core/README.md` §1 (gồm `brand.json`) + `.agents/domains/campaign/references/landing-structure.md` + `.agents/rules/cta-conversion.md` + persona `python scripts/persona.py P<n> --part bridge`.
+`.agents/core/README.md` §1 (gồm `brand.json`) + `.agents/domains/campaign/references/landing-structure.md` + `.agents/rules/cta-conversion.md` + persona `python scripts/persona.py P<n> --part bridge` + `knowledge/2-market/research/voc-objections.md` (câu hỏi thật & rào cản chuyển đổi).
 Thiết kế: load skill `frontend-design` nếu có trong session.
 
 ## Bước 1 — Copy

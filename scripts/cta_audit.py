@@ -306,9 +306,9 @@ def audit_text(text: str, path: Path, slug: str, source: str = "local") -> Artic
         off = {h.lower() for h in HEX_RE.findall(b["html"])} - BRAND_HEX
         old = off & LEGACY_HEX
         if old:
-            add(("CTA-palette", "MINOR", b["line"], f"Banner dùng bảng màu cũ (trước 2026-11-25): {', '.join(sorted(old))} — đổi sang template mới khi sửa bài"))
+            add(("CTA-palette", "MAJOR", b["line"], f"Banner dùng bảng màu cũ (trước 2026-11-25): {', '.join(sorted(old))} — đổi sang template v1.0 trong banner-templates.md"))
         if off - old:
-            add(("CTA-palette", "MINOR", b["line"], f"Màu ngoài brand palette: {', '.join(sorted(off - old))}"))
+            add(("CTA-palette", "MAJOR", b["line"], f"Màu ngoài brand palette: {', '.join(sorted(off - old))} — chỉ dùng màu trong DESIGN.md v1.0"))
 
     if len(art.banners) == 2:
         between = count_words("\n".join(lines[art.banners[0]["end_line"]:art.banners[1]["line"] - 1]))

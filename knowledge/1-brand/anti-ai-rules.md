@@ -12,6 +12,7 @@
 3. **Liệt kê** khi cần lập luận → nối nguyên nhân – hệ quả bằng văn xuôi.
 4. **Rào đón** ("có thể", "tương đối") → thay bằng số (lint `CL2-hedge`).
 5. **Đối xứng giả** → ưu/nhược theo thực tế, không ép đều (§1.3).
+6. **Mùi dịch tiếng Anh (Translationese / Calque)** → tiếng Anh trọng danh từ và ẩn dụ vật lý (*dividing lines, financial landscape, cushion, the price of, unlock...*), còn tiếng Việt báo chí tài chính **trọng động từ trực tiếp + danh từ chỉ vật thật**. Khi viết phải bỏ danh từ đệm (`Việc [V]`, `Sự [Adj]`) và tuyệt đối không dịch sát nghĩa ẩn dụ tiếng Anh (*vạch chia, bức tranh, lớp đệm, cái giá của, bàn cân*); hãy dùng động từ trần (*tách, chia, chọn, gửi, rút, chênh, mất, lời, lỗ*) và thuật ngữ tài chính thuần Việt (*tiêu chí phân biệt, mặt bằng lãi suất, quỹ dự phòng, chi phí cơ hội*).
 
 ## 1. Cấm
 

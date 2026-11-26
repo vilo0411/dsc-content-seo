@@ -62,6 +62,7 @@ Lint chỉ bắt được cụm từ. Bạn bắt **cấu trúc**:
 - [ ] Không có block "Ưu điểm / Nhược điểm" cân bằng giả tạo (anti-ai-rules §1.3) — bài phải có lập trường. Bài Toplist: Ưu/Nhược từng mục là khung của thể loại (I120), chỉ bắt khi ý rỗng hoặc ép đều số lượng
 - [ ] Mở bài đi thẳng vào vấn đề của người đọc, không dạo đầu bối cảnh (§3.3); kết bài là hành động cụ thể, không tổng kết (§3.4)
 - [ ] Không có đoạn "mô tả" thay vì "đặt người đọc vào tình huống" (Rule S2)
+- [ ] **Không có mùi dịch tiếng Anh (Translationese / English Calques — anti-ai-rules §0 mục 6):** Đọc từng đoạn bằng tai Biên tập viên báo tài chính người Việt. Bắt mọi cụm nghe như dịch sát nghĩa từ khung câu/idiom tiếng Anh (ẩn dụ vật lý kiểu Tây như *vạch chia, bức tranh, lớp đệm, cái giá của, đặt lên bàn cân, mở khóa, điều hướng*; danh từ hóa nặng nề *Việc [V]..., Sự [Adj]...*; mệnh đề quan hệ nối đuôi *, nơi mà / , điều giúp*). Yêu cầu đổi thẳng về **động từ trần** (*tách, chia, chọn, gửi, rút, chênh*) và danh từ tài chính thuần Việt.
 
 #### [CL3] Glossary & Brand — CRITICAL
 - [ ] Tên sản phẩm DSC đúng ngữ cảnh theo `glossary.md` (Môi giới 1:1, DSC Invest, App DSC Trading…) — lint chỉ bắt tên cũ bị cấm, không bắt dùng sai sản phẩm

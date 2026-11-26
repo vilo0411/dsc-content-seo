@@ -15,22 +15,21 @@ Cột "Ai ghi": **người** = sửa tay · **agent** = skill viết · **script
 | `6-campaigns/` | Job chiến dịch đa kênh `CMP-YYMMDD-slug/` (brief, social, ads, landing, creatives, approved/) | agent (`scripts/campaign.py`, `/campaign-brief`) |
 | `raw/` | Dữ liệu thô: snapshot site live, cache SERP, export GSC, snapshot đối thủ | script |
 
-## 1-brand/ — nền cho mọi kênh
-| File | Dùng để |
-|---|---|
-| `profile.md`, `icp.md`, `personas.md`, `service-operations.md` | Doanh nghiệp, khách hàng, quy trình nghiệp vụ thật |
-| `brand-facts.json` | **Nguồn duy nhất** cho số liệu DSC (phí, margin, eKYC…) — `qa_lint` `CL5-fact` đọc |
-| `anti-ai-rules.md` + `anti-ai-rules-blacklist.md`, `glossary.md`, `source-whitelist.md` | Rule văn, cụm cấm, tên chuẩn, nguồn ngoài được link |
-| `DESIGN.md` + `brand.json` (nhận diện chuẩn v1.0, ảnh gốc ở `guideline/`), `image-design-system.md`, `visual-brand-guidelines.md`, `assets/`, `writers/`, `archive/` | Nhận diện hình ảnh cho mọi thiết kế, ảnh blog, writer profile, rule cũ |
-
-## 2-market/
-| File / thư mục | Nội dung | Sinh bởi |
+## 1-brand/ — nền cho mọi kênh (Internal Truth & Prescriptive Rules)
+| Nhóm MECE | File | Dùng để |
 |---|---|---|
-| `market-landscape.md`, `account-opening-comparison.md` | Bức tranh ngành, so sánh sản phẩm | `/market-research` |
-| `research/` | Nghiên cứu theo chủ đề (insight có độ tin cậy + nguồn) | `/market-research` |
-| `competitors/competitors.json` | Đối thủ đang theo dõi (domain, hub bài) | `competitor_watch.py discover --add` / sửa tay |
-| `competitors/watch/<YYYY-Www>.md`, `velocity.csv` | Bài mới tuần này, nhịp đăng 12 tuần, chủ đề DSC chưa có | `competitor_watch.py report` |
-| `competitors/profiles/` | Hồ sơ sâu từng đối thủ | `/competitor-profile` |
+| **1. Định vị & Thương hiệu** | `profile.md` | Định vị nội dung (§0), tổng quan & bằng chứng tin cậy (Proof Points), 3 mảng dịch vụ, USP, giọng văn |
+| **2. Sản phẩm, Số liệu & Nghiệp vụ** | `brand-facts.json`, `service-operations.md`, `confirm-with-leadership.md` | **`brand-facts.json` = Nguồn duy nhất** cho số liệu DSC (phí, margin, eKYC… — `qa_lint` `CL5-fact` đọc) · `service-operations.md` = quy trình kỹ thuật step-by-step · `confirm-with-leadership.md` = sổ quyết định & mục chờ xác nhận |
+| **3. Tập khách hàng mục tiêu** | `icp.md`, `personas.md` | Trọng tâm phân bổ nguồn lực (`icp.md`) và ma trận 4 Persona P1–P4 (`personas.md`, tra qua `python scripts/persona.py`) |
+| **4. Hệ thống Ngôn từ & Nguồn** | `anti-ai-rules.md` + `anti-ai-rules-blacklist.md`, `glossary.md`, `source-whitelist.md`, `writers/` | Rule văn, cụm cấm, từ điển thuật ngữ + tiếng lóng (Slang), nguồn ngoài được phép link, writer profile |
+| **5. Hệ thống Thị giác** | `DESIGN.md` + `brand.json` (nhận diện chuẩn v1.0, ảnh gốc ở `guideline/`), `image-design-system.md`, `visual-brand-guidelines.md`, `assets/`, `fanpage-refs/`, `archive/` | Nhận diện hình ảnh cho mọi thiết kế (`DESIGN.md` / `brand.json`), component PIL vẽ infographic (`image-design-system.md`), quy tắc ghép logo & khổ ảnh blog (`visual-brand-guidelines.md`) |
+
+## 2-market/ — bức tranh bên ngoài (External Reality & Intelligence)
+| Nhóm MECE | File / thư mục | Nội dung | Sinh bởi |
+|---|---|---|---|
+| **1. Toàn cảnh Ngành & Mùa vụ** | `market-landscape.md` | Quy mô thị trường, bản đồ đối thủ 2 tầng (Thị phần/Ads vs. SEO Content), khoảng trống thị trường, **Lịch mùa vụ chứng khoán 4 quý** | `/market-research` |
+| **2. Tình báo Đối thủ** | `account-opening-comparison.md`, `competitors/competitors.json`, `competitors/watch/<YYYY-Www>.md`, `velocity.csv`, `competitors/profiles/` | So sánh mở tài khoản/phí/margin 6 CTCK (`account-opening-comparison.md`) · Danh sách theo dõi (`competitors.json`) · Nhịp đăng tuần (`watch/`) · Hồ sơ sâu (`profiles/`) | `competitor_watch.py`, `/competitor-profile`, `/market-research` |
+| **3. Nghiên cứu Khách hàng & VoC** | `research/voc-objections.md`, `research/<chu-de>-YYYY-MM.md` | **Voice of Customer (VoC) & 5 rào cản chuyển đổi (Objections)** trích từ dữ liệu SERP PAA + GSC thật · Báo cáo nghiên cứu theo chủ đề/quý | `/market-research` |
 
 ## 3-seo/ — toàn bộ kênh SEO
 | Thư mục | Nội dung | Sinh bởi |

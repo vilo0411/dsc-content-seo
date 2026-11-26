@@ -13,10 +13,12 @@
 - **Nghiệp vụ / quy trình thật** (nạp tiền, tiểu khoản, eKYC): `knowledge/1-brand/service-operations.md`.
 - **Nhận diện hình ảnh (mọi thiết kế):** `knowledge/1-brand/DESIGN.md` v1.0 + máy đọc `brand.json` — palette Gunmetal `#272D2B` · Pine Teal `#1D4130` · Lime `#2AD03D` · Emerald `#1BBE72` · Frosted Mint `#8CFFCC` · White, font duy nhất Plus Jakarta Sans, ảnh trừu tượng xanh. Không tự đặt hex/font.
 
-## 2. Khách hàng
-- **ICP:** F0 trẻ, dùng smartphone, vốn 10 triệu – 1 tỷ — `knowledge/1-brand/icp.md`.
-- **4 persona:** P1 Tiết kiệm · P2 F0 · P3 Active Trader · P4 Vốn lớn. Tra nhanh: `python scripts/persona.py --matrix`; chi tiết 1 persona: `python scripts/persona.py P2 [--part bridge|tone]`.
+## 2. Khách hàng & Voice of Customer (VoC)
+- **ICP & Phân bổ nguồn lực:** `knowledge/1-brand/icp.md` (trọng tâm chuyển đổi số P2 F0 & P3 Active Trader).
+- **4 persona:** P1 Tiết kiệm · P2 F0 · P3 Active Trader · P4 Vốn lớn — `knowledge/1-brand/personas.md`. Tra nhanh: `python scripts/persona.py --matrix`; chi tiết 1 persona: `python scripts/persona.py P2 [--part bridge|tone]`.
 - **CTA theo persona:** P1 "Tìm hiểu thêm" · P2 "Mở tài khoản — 3 phút" · P3 "Trao đổi với chuyên gia" · P4 "Đặt lịch tư vấn".
+- **Ngôn ngữ khách hàng thật (VoC) & 5 Rào cản chuyển đổi (Objections):** `knowledge/2-market/research/voc-objections.md` (trích xuất từ SERP PAA + GSC thật) — dùng cho mục Xử lý lo ngại / FAQ của Landing Page, Hook quảng cáo và Product Bridge.
+- **So sánh sản phẩm/phí với đối thủ & Lịch mùa vụ chứng khoán:** `knowledge/2-market/account-opening-comparison.md` và `knowledge/2-market/market-landscape.md` (§4).
 
 ## 3. Kênh
 | Kênh | Vai trò | Skill | Output |

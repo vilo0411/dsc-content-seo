@@ -6,9 +6,6 @@
 
 ## Văn phong & Ngôn từ (Style & Tone)
 
-### [I105] Sapo: keyword + trả lời thẳng, đoạn 2 có DSC và câu dẫn vào bài (lint)
-- Sapo 2 đoạn dưới H1, viết như người giải thích bằng lời thường. Đoạn 1: nguyên keyword dạng truy vấn, trả lời thẳng (how-to: số bước + tên bước) kèm 1 số có ngày. Đoạn 2: “Trong bài viết này, Chứng khoán DSC …” nêu điều người đọc nhận được, không kể mục lục; câu cuối là 1 con số có trong bài gợi tò mò. Không bối cảnh vĩ mô, không tự khen, không lặp danh từ trừu tượng.
-
 ### [I106] Văn phong định chế tài chính, từ cấm nằm trong blacklist (lint)
 - Giọng định chế tài chính: mộc mạc, chính xác, đi thẳng vào số liệu. Không từ cường điệu, văn nói, từ lóng, ngoặc kép bọc từ thường, tiếng Anh thô khi có từ Việt chuẩn (trader → nhà đầu tư chủ động). Từ cấm cụ thể: anti-ai-rules-blacklist.md.
 
@@ -37,6 +34,9 @@
 - Số từ, số H2 quanh median Structure consensus (serp_research); H2 các bước ở vị trí ≤ median, H2 “các cách/loại” ngắn đứng trước; H3 là bước đánh số. Bước viết chung cho mọi CTCK; mã/số riêng DSC (963369, 024C, đuôi tiểu khoản) chỉ ở H2 DSC/CTA; ảnh app DSC minh họa được. Web/app xác định từ ảnh chụp.
 
 ## Cấu trúc & Định dạng (Structure & Formatting)
+
+### [I105] Sapo: mở theo loại bài, đoạn 2 có DSC và đúng thứ tự outline (lint)
+- Sapo 2 đoạn dưới H1 (≤ 110 từ), cấm bê keyword dài làm chủ ngữ. Đoạn 1 lồng keyword + 1 số có ngày, mở theo loại bài: Comparison = tiêu chí chia + biên độ; Definition = bản chất + 1 số bất ngờ; How-to = số bước + tên bước; Review = Nên/Không nên + điều kiện; Toplist = tiêu chí + số 1. Đoạn 2: “Trong bài viết này, Chứng khoán DSC …” nêu các phần đúng thứ tự H2; câu cuối “Bạn sẽ thấy vì sao …” nêu số minh họa.
 
 ### [I109] Mốc thời gian chỉ đi với số liệu biến động (lint)
 - Chỉ gắn mốc thời gian (thời điểm thật) vào câu có số liệu biến động: phí, lãi suất, chỉ số. Không lặp “Tính đến tháng M/Y,” đầu câu hay đầu H2; phần lý thuyết, quy định chung không cần mốc.

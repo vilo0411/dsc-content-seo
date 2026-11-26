@@ -4,7 +4,10 @@ import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-import count_words as cw  # noqa: E402
+try:
+    import count_words as cw  # noqa: E402
+except ImportError:  # pragma: no cover - count_words.py is gitignored
+    cw = None
 
 OUTLINE = """### H2: Chứng khoán là gì
 **Target:** 120 từ
@@ -20,6 +23,7 @@ Nhà đầu tư mở tài khoản online bằng eKYC trong vài phút.
 """
 
 
+@unittest.skipIf(cw is None, "scripts/count_words.py is gitignored and not present")
 class CountWordsApiTest(unittest.TestCase):
     def test_outline_and_draft_sections_match(self):
         outline = cw.parse_outline(OUTLINE)

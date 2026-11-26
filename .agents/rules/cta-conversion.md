@@ -110,8 +110,8 @@ Check `LINK-cta` trong `qa_lint.py` dùng `startswith` nên query string không 
 
 ## 7. Lint
 
-`python scripts/qa_lint.py <file> --cta` — các check: `CTA-missing-banner`, `CTA-position`, `CTA-orphan`, `CTA-count`, `CTA-copy`, `CTA-palette`, `CTA-gap`, `CTA-placeholder`.
+`python scripts/qa_lint.py <file> --cta` — các check: `CTA-missing-banner`, `CTA-position`, `CTA-orphan`, `CTA-count`, `CTA-copy`, `CTA-palette` (**MAJOR** khi dùng bảng màu cũ hoặc màu ngoài palette), `CTA-gap`, `CTA-placeholder`.
 
 Audit không qua lint: `python scripts/cta_audit.py <file>` (hoặc `--all`).
 
-Cờ `--cta` hiện **chưa bật mặc định** vì 157 bài trong `3-finalized/` chưa được backfill banner. Backfill xong mới chuyển thành mặc định.
+`qa_gate.py` luôn kiểm `CTA-palette` cho mọi bài đang có banner (kể cả khi chưa bật `--cta`), đảm bảo mọi bài mới viết hoặc tối ưu bắt buộc phải đạt chuẩn Brand Guideline v1.0 trước khi qua gate.

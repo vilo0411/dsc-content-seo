@@ -1,43 +1,24 @@
-# Visual Brand Guidelines — DSC Securities
+# Visual Brand Guidelines — DSC Securities (Blog & AI Illustration Spec)
 
-> **Phạm vi:** ảnh minh hoạ trong bài blog (logo, khổ ảnh, quy tắc cấm). Màu / font / phong cách: `knowledge/1-brand/DESIGN.md` v1.0 — nguồn chuẩn cho mọi thiết kế.
-> **Trạng thái:** [Đã cập nhật ✅] — Quản lý Brand Assets và Quy chuẩn Hình ảnh.
-> File này được Visual Architect & Image Skill đọc để đảm bảo hình ảnh nhất quán với thương hiệu DSC.
-
-> **Infographic / biểu đồ / ảnh bìa có chữ trong bài viết:** theo [`image-design-system.md`](image-design-system.md) — token màu, font Plus Jakarta Sans (`assets/fonts/`), lưới, component; code `scripts/images/dsc_design.py`.
-
----
-
-## 1. Brand Colors
-
-Theo brand guideline chính thức — chi tiết, gradient, bảng tương phản: [`DESIGN.md`](DESIGN.md) §2–§3.
-
-| Màu | Hex | Dùng cho |
-| :--- | :--- | :--- |
-| Gunmetal | `#272D2B` | Chữ, nền tối chính |
-| Pine Teal | `#1D4130` | Nền tối thứ hai, chữ xanh trên nền sáng |
-| Lime Green | `#2AD03D` | Điểm nhấn chính, nút CTA (chữ Gunmetal) |
-| Emerald | `#1BBE72` | Điểm nhấn phụ |
-| Frosted Mint | `#8CFFCC` | Nhấn sáng trên nền tối, tag |
-| White | `#FFFFFF` | Nền sáng chính |
-
-**Gradient:** Primary `#61CC6C → #14A46E` (đường biểu đồ, icon, thanh nhấn) · Ambient `#156A1F → #31AE40 → #156A1F` / `#354D38 → #2C7B50 → #7D9E9F → #B6C7AF` (nền). Nền sáng nhạt cho isometric 3D: `#F2FBF6`.
-
-**Phong cách ảnh AI:** trừu tượng 3D tông xanh (dải lụa/kính, khối mềm, vệt sáng trên nền tối) — mẫu `guideline/20-abstract.png`.
+> **Phân ranh giới MECE (Tránh trùng lặp bảng màu & font):**
+> - **Nguồn chuẩn duy nhất về Màu sắc, Gradient, Font chữ (`Plus Jakarta Sans`), Tương phản WCAG và Theme mùa vụ:** Xem [`knowledge/1-brand/DESIGN.md`](DESIGN.md) v1.0 (máy đọc: [`knowledge/1-brand/brand.json`](brand.json)).
+> - **Nguồn chuẩn về Lưới, Token PIL, Component vẽ Infographic & Ảnh bìa bằng code (`scripts/images/dsc_design.py`):** Xem [`knowledge/1-brand/image-design-system.md`](image-design-system.md).
+> - **File này (`visual-brand-guidelines.md`)** chỉ quy định **Cấu trúc thư mục Assets, Quy tắc ghép Logo tự động, Khổ ảnh chuẩn CMS Blog và Quy tắc cấm (Negative Rules)** khi dùng AI sinh ảnh minh họa không chữ (`/image`).
 
 ---
 
-## 2. Brand Assets & Logo Structure
+## 1. Brand Assets & Logo Structure
 
 Tất cả các tài sản đồ họa thương hiệu được tổ chức tại thư mục `knowledge/1-brand/assets/`:
 
 ```text
 knowledge/1-brand/assets/
 ├── logos/
-│   ├── logo-for-light-bg.png    # Logo chữ xanh/tối (dùng cho nền sáng như White / mint nhạt)
-│   └── logo-for-dark-bg.png     # Logo chữ trắng (dùng cho nền tối như Gunmetal / Pine Teal)
-├── icons/                       # Thư mục lưu trữ Icon thương hiệu (mở rộng tương lai)
-└── fonts/                       # Plus Jakarta Sans (Regular→ExtraBold, OFL) — font duy nhất của brand
+│   ├── logo-for-light-bg.png    # Logo chữ xanh/tối (dùng cho nền sáng như White / mint nhạt #F2FBF6)
+│   └── logo-for-dark-bg.png     # Logo chữ trắng (dùng cho nền tối như Gunmetal #272D2B / Pine Teal #1D4130)
+├── fonts/                       # Plus Jakarta Sans (Regular→ExtraBold, OFL) — font duy nhất của brand
+├── library/                     # Kho nền & asset đã duyệt (quản lý bởi scripts/asset_lib.py)
+└── screens/                     # Ảnh chụp màn hình thật App DSC Trading dùng cho infographic hướng dẫn
 ```
 
 ### Quy tắc ghép Logo:
@@ -48,15 +29,17 @@ knowledge/1-brand/assets/
 
 ---
 
-## 3. Standard Image Sizes & Aspect Ratios
+## 2. Standard Blog Image Sizes & Aspect Ratios (Chuẩn CMS DSC)
 
-**Ảnh bìa (featured): 1000×600 px (5:3). Ảnh trong bài: 800×500 px (16:10).** Đúng chuẩn CMS DSC. Thẻ ảnh trong bài: `<img style="aspect-ratio:800/500;" … width="800" height="500">`. Bố cục cho khung này: `image-design-system.md` §4.
+- **Ảnh bìa (Featured Image):** `1000×600 px` (tỷ lệ `5:3`). Thẻ HTML: `<img style="aspect-ratio:1000/600;" … width="1000" height="600">`.
+- **Ảnh trong bài (Inline Image / H2 Infographic):** `800×500 px` (tỷ lệ `16:10`). Thẻ HTML: `<img style="aspect-ratio:800/500;" … width="800" height="500">`.
+- *(Khổ ảnh cho Social Feed `1080×1080`, Portrait `1080×1350`, Story `1080×1920`, Link Ad `1200×628` xem trong `brand.json` → `sizes`).*
 
 ---
 
-## 4. Negative Rules (Quy tắc cấm)
+## 3. Negative Rules (Quy tắc cấm bắt buộc cho mọi hình ảnh)
 
-- Tuyệt đối 0% chữ rác/typography lỗi do AI tự sinh (`Strict No-Text Rule`).
-- Tuyệt đối không sử dụng màu đỏ (tránh thị giác giảm giá chứng khoán).
-- Không có logo của đối thủ cạnh tranh.
-- Không có chi tiết mạng lưới rác, đường nối chằng chịt gây rối mắt (`Zero-Clutter Rule`).
+- **Strict No-Text Rule cho ảnh AI:** Tuyệt đối 0% chữ rác/typography lỗi do AI tự sinh. Mọi chữ và số liệu trên ảnh bắt buộc phải render bằng code qua font `Plus Jakarta Sans` thật (`dsc_design.py` hoặc `creative.py`).
+- **No Red Rule:** Tuyệt đối không sử dụng màu đỏ cho chữ, số, biểu đồ hoặc mũi tên giá (tránh thị giác giảm giá chứng khoán tại Việt Nam; dữ liệu giảm/rủi ro dùng màu `gunmetal` `#272D2B` hoặc `neutral` `#B9C3BF`).
+- **No Competitor Assets:** Không xuất hiện logo, giao diện app hoặc nhãn hiệu của đối thủ cạnh tranh.
+- **Zero-Clutter Rule:** Không dùng chi tiết mạng lưới rác, đường nối chằng chịt, tiền mặt/đồng xu rơi hay ảnh chụp màn hình lãi/lỗ giả lập.

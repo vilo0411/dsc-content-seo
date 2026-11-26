@@ -1,0 +1,1280 @@
+{
+  "articles_crawled": 84,
+  "paragraphs_extracted": 263,
+  "categories": {
+    "analytical_fa": [
+      {
+        "source": "Vietstock Phân tích cơ bản (BCTC & Cổ phiếu)",
+        "title": "DCM - Cơ hội và thách thức trong chu kỳ mới (Kỳ 2)",
+        "url": "http://vietstock.vn/2026/11/dcm-co-hoi-va-thach-thuc-trong-chu-ky-moi-ky-2-582-1517418.htm",
+        "text": "Người viết sử dụng phương pháp Market Multiple Models (P/E, P/B) kết hợp với phương pháp DDM (Dividend Discount Model) với tỷ trọng bằng nhau. Mức giá hợp lý của DCM được xác định là 38,792 đồng. Như vậy, giá thị trường đang ở mức khá hấp dẫn cho mục tiêu đầu tư dài hạn.",
+        "words": 55,
+        "sents": 3,
+        "nums": 3
+      },
+      {
+        "source": "Vietstock Phân tích cơ bản (BCTC & Cổ phiếu)",
+        "title": "DBC - Tăng trưởng giữa biến động (Kỳ 2)",
+        "url": "http://vietstock.vn/2026/04/dbc-tang-truong-giua-bien-dong-ky-2-582-1423775.htm",
+        "text": "Sử dụng phương pháp Market Multiple Models (P/E, P/B) với tỷ trọng tương đương, người viết dự báo giá trị hợp lý của DBC là 28,227 đồng. Vì vậy, giá thị trường hiện tại đang khá hấp dẫn cho việc đầu tư dài hạn.",
+        "words": 44,
+        "sents": 2,
+        "nums": 3
+      },
+      {
+        "source": "Vietstock Phân tích cơ bản (BCTC & Cổ phiếu)",
+        "title": "Ngày 14/07/2026: 10 cổ phiếu nóng dưới góc nhìn PTKT của Vietstock",
+        "url": "http://vietstock.vn/2026/07/ngay-14072026-10-co-phieu-nong-duoi-goc-nhin-ptkt-cua-vietstock-582-1465730.htm",
+        "text": "Chỉ báo Stochastic Oscillator và MACD đảo chiều cắt xuống dưới đường signal nên triển vọng ngắn hạn khá bi quan. Đáy cũ tháng 03/2026 (tương đương vùng 15,000-16,000) sẽ tiếp tục đóng vai trò hỗ trợ quan trọng trong thời gian tới.",
+        "words": 43,
+        "sents": 2,
+        "nums": 3
+      },
+      {
+        "source": "Vietstock Phân tích cơ bản (BCTC & Cổ phiếu)",
+        "title": "Ngày 05/11/2026: 10 cổ phiếu nóng dưới góc nhìn PTKT của Vietstock",
+        "url": "http://vietstock.vn/2026/11/ngay-05112026-10-co-phieu-nong-duoi-goc-nhin-ptkt-cua-vietstock-582-1511599.htm",
+        "text": "Đáy cũ tháng 07/2026 (tương đương vùng 19,700-22,700) sẽ tiếp tục đóng vai trò là hỗ trợ mạnh trong thời gian tới. Trong phiên giao dịch ngày 04/11/2026, giá cổ phiếu HDB tăng trở lại sau khi test đường SMA 50 ngày.",
+        "words": 42,
+        "sents": 2,
+        "nums": 3
+      },
+      {
+        "source": "Vietstock Phân tích cơ bản (BCTC & Cổ phiếu)",
+        "title": "Ngày 05/11/2026: 10 cổ phiếu nóng dưới góc nhìn PTKT của Vietstock",
+        "url": "http://vietstock.vn/2026/11/ngay-05112026-10-co-phieu-nong-duoi-goc-nhin-ptkt-cua-vietstock-582-1511599.htm",
+        "text": "Giá cổ phiếu STB tăng nhẹ trong phiên giao dịch ngày 04/11/2026 và trụ vững bên trên đường Middle của Bollinger Bands. Đáy cũ tháng 03/2026 (tương đương vùng 58,000-63,000) đã đóng vai trò hỗ trợ rất tốt trong thời gian qua.",
+        "words": 42,
+        "sents": 2,
+        "nums": 3
+      },
+      {
+        "source": "Vietstock Phân tích cơ bản (BCTC & Cổ phiếu)",
+        "title": "SAB - Lợi thế còn đủ lớn trong thị trường đang dịch chuyển? (Kỳ 2)",
+        "url": "http://vietstock.vn/2026/10/sab-loi-the-con-du-lon-trong-thi-truong-dang-dich-chuyen-ky-2-582-1496397.htm",
+        "text": "Người viết sử dụng Market Multiple Models (P/E, P/B) kết hợp với phương pháp chiết khấu RIM (Residual Income Model) và DDM (Dividend Discount Model) với tỷ trọng bằng nhau. Mức giá hợp lý của SAB được xác định là 52,460 đồng.",
+        "words": 42,
+        "sents": 2,
+        "nums": 3
+      },
+      {
+        "source": "Vietstock Phân tích cơ bản (BCTC & Cổ phiếu)",
+        "title": "Ngày 14/07/2026: 10 cổ phiếu nóng dưới góc nhìn PTKT của Vietstock",
+        "url": "http://vietstock.vn/2026/07/ngay-14072026-10-co-phieu-nong-duoi-goc-nhin-ptkt-cua-vietstock-582-1465730.htm",
+        "text": "Trong phiên giao dịch ngày 13/07/2026, giá cổ phiếu MBB giằng co mạnh khi test lại đường Middle của Bollinger Bands. Đáy cũ tháng 05/2026 (tương đương vùng 23,500-24,200) sẽ là hỗ trợ mạnh của giá trong thời gian tới.",
+        "words": 40,
+        "sents": 2,
+        "nums": 3
+      },
+      {
+        "source": "Vietstock Phân tích cơ bản (BCTC & Cổ phiếu)",
+        "title": "Ngày 05/11/2026: 10 cổ phiếu nóng dưới góc nhìn PTKT của Vietstock",
+        "url": "http://vietstock.vn/2026/11/ngay-05112026-10-co-phieu-nong-duoi-goc-nhin-ptkt-cua-vietstock-582-1511599.htm",
+        "text": "Đáy cũ tháng 07/2026 (tương đương vùng 28,400-29,400) đã đóng vai trò hỗ trợ hiệu quả và trụ vững. Giá cổ phiếu CTD bứt phá trong phiên giao dịch ngày 04/11/2026 và tiến sát Upper Band của Bollinger Bands.",
+        "words": 39,
+        "sents": 2,
+        "nums": 3
+      },
+      {
+        "source": "Vietstock Phân tích cơ bản (BCTC & Cổ phiếu)",
+        "title": "Góc nhìn đầu tư 2026: Ngành sữa - Bắt nhịp xu hướng giữa áp lực cạnh tranh",
+        "url": "http://vietstock.vn/2026/03/goc-nhin-dau-tu-2026-nganh-sua-bat-nhip-xu-huong-giua-ap-luc-canh-tranh-582-1403321.htm",
+        "text": "Người viết sử dụng Market Multiple Models (P/E, P/B) kết hợp với phương pháp chiết khấu RIM (Residual Income Model) và DDM (Dividend Discount Model) với tỷ trọng bằng nhau. Mức giá hợp lý của VNM được xác định là 80,643 đồng. Như vậy, giá thị trường hiện tại vẫn còn khá hấp dẫn để mua vào cho mục tiêu đầu tư dài hạn.",
+        "words": 64,
+        "sents": 3,
+        "nums": 3
+      },
+      {
+        "source": "Vietstock Phân tích cơ bản (BCTC & Cổ phiếu)",
+        "title": "Ngày 05/11/2026: 10 cổ phiếu nóng dưới góc nhìn PTKT của Vietstock",
+        "url": "http://vietstock.vn/2026/11/ngay-05112026-10-co-phieu-nong-duoi-goc-nhin-ptkt-cua-vietstock-582-1511599.htm",
+        "text": "Giá test thành công các đường SMA 50 ngày, SMA 100 ngày và Middle của Bollinger Bands nên xu hướng tăng được duy trì. EIB - Ngân hàng TMCP Xuất nhập khẩu Việt Nam",
+        "words": 34,
+        "sents": 2,
+        "nums": 3
+      },
+      {
+        "source": "Vietstock Phân tích cơ bản (BCTC & Cổ phiếu)",
+        "title": "Ngày 14/07/2026: 10 cổ phiếu nóng dưới góc nhìn PTKT của Vietstock",
+        "url": "http://vietstock.vn/2026/07/ngay-14072026-10-co-phieu-nong-duoi-goc-nhin-ptkt-cua-vietstock-582-1465730.htm",
+        "text": "Giá cổ phiếu VHM rung lắc trong phiên giao dịch ngày 13/07/2026 và rơi xuống dưới đường Middle của Bollinger Bands và đường SMA 50 ngày. Khối lượng giao dịch tăng và vượt mức trung bình 20 ngày cho thấy nhà đầu tư không quá thận trọng trong ngắn hạn.",
+        "words": 50,
+        "sents": 2,
+        "nums": 2
+      },
+      {
+        "source": "Vietstock Phân tích cơ bản (BCTC & Cổ phiếu)",
+        "title": "SAB - Lợi thế còn đủ lớn trong thị trường đang dịch chuyển? (Kỳ 1)",
+        "url": "http://vietstock.vn/2026/09/sab-loi-the-con-du-lon-trong-thi-truong-dang-dich-chuyen-ky-1-582-1494015.htm",
+        "text": "Trong khi đó, số liệu sản xuất cho thấy hoạt động của ngành tiếp tục được cải thiện trong năm 2026. Theo Cục Thống kê, sản lượng sản xuất bia trong 8 tháng đầu năm 2026 đạt khoảng 3.4 tỷ lít, tăng 14.4% so với cùng kỳ năm trước.",
+        "words": 49,
+        "sents": 2,
+        "nums": 2
+      },
+      {
+        "source": "Vietstock Phân tích cơ bản (BCTC & Cổ phiếu)",
+        "title": "Ngày 05/11/2026: 10 cổ phiếu nóng dưới góc nhìn PTKT của Vietstock",
+        "url": "http://vietstock.vn/2026/11/ngay-05112026-10-co-phieu-nong-duoi-goc-nhin-ptkt-cua-vietstock-582-1511599.htm",
+        "text": "Trong phiên giao dịch ngày 04/11/2026, giá cổ phiếu VCB tăng khá mạnh với khối lượng nằm trên trung bình 20 ngày. Đáy cũ tháng 07/2026 (tương đương vùng 52,600-55,000) đang đóng vai trò hỗ trợ mạnh. Người viết kỳ vọng đà giảm sẽ chững lại tại đây.",
+        "words": 48,
+        "sents": 3,
+        "nums": 2
+      },
+      {
+        "source": "Vietstock Phân tích cơ bản (BCTC & Cổ phiếu)",
+        "title": "Ngày 14/07/2026: 10 cổ phiếu nóng dưới góc nhìn PTKT của Vietstock",
+        "url": "http://vietstock.vn/2026/07/ngay-14072026-10-co-phieu-nong-duoi-goc-nhin-ptkt-cua-vietstock-582-1465730.htm",
+        "text": "Trong phiên giao dịch ngày 13/07/2026, giá cổ phiếu VJC giằng co và xuất hiện mẫu hình nến Long Lower Shadow. Giá giảm sau khi test lại đỉnh cũ tháng 05/2026 (tương đương vùng 139,000-146,000). Đây sẽ tiếp tục là kháng cự mạnh trong thời gian tới.",
+        "words": 47,
+        "sents": 3,
+        "nums": 2
+      },
+      {
+        "source": "Vietstock Phân tích cơ bản (BCTC & Cổ phiếu)",
+        "title": "Ngày 05/11/2026: 10 cổ phiếu nóng dưới góc nhìn PTKT của Vietstock",
+        "url": "http://vietstock.vn/2026/11/ngay-05112026-10-co-phieu-nong-duoi-goc-nhin-ptkt-cua-vietstock-582-1511599.htm",
+        "text": "Giá cổ phiếu EIB tăng trong phiên giao dịch ngày 04/11/2026 nhưng khối lượng vẫn ở mức khá thấp. Giá đang test lại đường Middle của Bollinger Bands và SMA 50 ngày. Nếu vượt được các ngưỡng này thì đà phục hồi sẽ được củng cố.",
+        "words": 46,
+        "sents": 3,
+        "nums": 2
+      },
+      {
+        "source": "Vietstock Phân tích cơ bản (BCTC & Cổ phiếu)",
+        "title": "Ngày 14/07/2026: 10 cổ phiếu nóng dưới góc nhìn PTKT của Vietstock",
+        "url": "http://vietstock.vn/2026/07/ngay-14072026-10-co-phieu-nong-duoi-goc-nhin-ptkt-cua-vietstock-582-1465730.htm",
+        "text": "Chỉ báo Stochastic Oscillator cắt xuống dưới đường signal trong vùng overbought nên triển vọng ngắn hạn xấu đi. Giá giảm sau khi test lại đỉnh cũ tháng 05/2026 (tương đương vùng 27,000-28,100). Đây sẽ tiếp tục là kháng cự mạnh trong thời gian tới.",
+        "words": 45,
+        "sents": 3,
+        "nums": 2
+      },
+      {
+        "source": "Vietstock Phân tích cơ bản (BCTC & Cổ phiếu)",
+        "title": "Ngày 05/11/2026: 10 cổ phiếu nóng dưới góc nhìn PTKT của Vietstock",
+        "url": "http://vietstock.vn/2026/11/ngay-05112026-10-co-phieu-nong-duoi-goc-nhin-ptkt-cua-vietstock-582-1511599.htm",
+        "text": "Đáy cũ tháng 03/2026 (tương đương vùng 39,300-41,300) sẽ đóng vai trò hỗ trợ nếu tình trạng sụt giảm mạnh bất ngờ xuất hiện. Giá cổ phiếu VNM tăng trong phiên giao dịch ngày 04/11/2026 với khối lượng vượt mức trung bình 20 ngày.",
+        "words": 44,
+        "sents": 2,
+        "nums": 2
+      },
+      {
+        "source": "Vietstock Phân tích cơ bản (BCTC & Cổ phiếu)",
+        "title": "Ngày 14/07/2026: 10 cổ phiếu nóng dưới góc nhìn PTKT của Vietstock",
+        "url": "http://vietstock.vn/2026/07/ngay-14072026-10-co-phieu-nong-duoi-goc-nhin-ptkt-cua-vietstock-582-1465730.htm",
+        "text": "Đáy cũ tháng 03/2026 (tương đương vùng 24,000-26,000) sẽ tiếp tục đóng vai trò hỗ trợ quan trọng trong thời gian tới. Giá cổ phiếu OCB giảm khá mạnh trong phiên giao dịch ngày 13/07/2026 với sự xuất hiện của cây nến đỏ dài.",
+        "words": 44,
+        "sents": 2,
+        "nums": 2
+      },
+      {
+        "source": "Vietstock Phân tích cơ bản (BCTC & Cổ phiếu)",
+        "title": "Ngày 14/07/2026: 10 cổ phiếu nóng dưới góc nhìn PTKT của Vietstock",
+        "url": "http://vietstock.vn/2026/07/ngay-14072026-10-co-phieu-nong-duoi-goc-nhin-ptkt-cua-vietstock-582-1465730.htm",
+        "text": "Đáy cũ tháng 05/2026 (tương đương vùng 69,000-72,000) đang hỗ trợ mạnh cho giá cổ phiếu FPT . Giá cổ phiếu HDB tiếp tục giảm trong phiên giao dịch ngày 13/07/2026 với sự xuất hiện của mẫu hình nến Long Lower Shadow.",
+        "words": 42,
+        "sents": 2,
+        "nums": 2
+      },
+      {
+        "source": "Vietstock Phân tích cơ bản (BCTC & Cổ phiếu)",
+        "title": "Ngày 14/07/2026: 10 cổ phiếu nóng dưới góc nhìn PTKT của Vietstock",
+        "url": "http://vietstock.vn/2026/07/ngay-14072026-10-co-phieu-nong-duoi-goc-nhin-ptkt-cua-vietstock-582-1465730.htm",
+        "text": "Giá cổ phiếu FPT giằng co mạnh trong phiên giao dịch ngày 13/07/2026 và xuất hiện mẫu hình nến Long Upper Shadow. Giá đã rơi xuống dưới đường Middle của Bollinger Bands và SMA 50 ngày nên rủi ro gia tăng.",
+        "words": 41,
+        "sents": 2,
+        "nums": 2
+      }
+    ],
+    "analytical_ta": [
+      {
+        "source": "Vietstock Phân tích kỹ thuật (Chỉ báo & Đồ thị)",
+        "title": "Phân tích kỹ thuật chứng khoán Việt Nam: Tuần 23-27/11/2026",
+        "url": "http://vietstock.vn/2026/11/phan-tich-ky-thuat-chung-khoan-viet-nam-tuan-23-27112026-585-1516785.htm",
+        "text": "Chỉ báo MACD và Stochastic Oscillator tiếp tục giảm sau khi cắt xuống đường signal cho thấy triển vọng ngắn hạn tiếp tục xấu đi. Người viết kỳ vọng ngưỡng Fibonacci Projection 100% (tương đương vùng 225-230) sẽ là hỗ trợ trong thời gian tới cho chỉ số.",
+        "words": 48,
+        "sents": 2,
+        "nums": 4
+      },
+      {
+        "source": "Vietstock Phân tích kỹ thuật (Chỉ báo & Đồ thị)",
+        "title": "Ngày 19/11/2026: 10 cổ phiếu nóng dưới góc nhìn PTKT của Vietstock",
+        "url": "http://vietstock.vn/2026/11/ngay-19112026-10-co-phieu-nong-duoi-goc-nhin-ptkt-cua-vietstock-585-1515940.htm",
+        "text": "Khối lượng thường xuyên nằm dưới mức trung bình 20 phiên và giá chưa thể vượt qua đường Middle của Bollinger Bands. Đáy cũ tháng 10/2026 (tương đương vùng 15,700-16,500) đang đóng vai trò hỗ trợ ngắn hạn.",
+        "words": 38,
+        "sents": 2,
+        "nums": 4
+      },
+      {
+        "source": "Vietstock Phân tích kỹ thuật (Chỉ báo & Đồ thị)",
+        "title": "Tuần 23-27/11/2026: 10 cổ phiếu nóng dưới góc nhìn PTKT của Vietstock",
+        "url": "http://vietstock.vn/2026/11/tuan-23-27112026-10-co-phieu-nong-duoi-goc-nhin-ptkt-cua-vietstock-585-1516784.htm",
+        "text": "Đáy cũ tháng 10/2025 (tương đương vùng 50,900-51,900) sẽ đóng vai trò hỗ trợ trong thời gian tới nếu đà giảm tiếp tục. Trong phiên giao dịch ngày 20/11/2026, giá cổ phiếu VHM chững lại đà giảm dù vẫn bám sát Lower Band của Bollinger Bands.",
+        "words": 46,
+        "sents": 2,
+        "nums": 3
+      },
+      {
+        "source": "Vietstock Phân tích kỹ thuật (Chỉ báo & Đồ thị)",
+        "title": "Ngày 19/11/2026: 10 cổ phiếu nóng dưới góc nhìn PTKT của Vietstock",
+        "url": "http://vietstock.vn/2026/11/ngay-19112026-10-co-phieu-nong-duoi-goc-nhin-ptkt-cua-vietstock-585-1515940.htm",
+        "text": "Chỉ báo MACD và Stochastic Oscillator giảm sau khi đồng loạt cắt xuống dưới đường signal nên rủi ro tiếp tục gia tăng. Đáy cũ tháng 10/2025 (tương đương vùng 50,900-51,900) sẽ đóng vai trò hỗ trợ trong thời gian tới nếu đà giảm tiếp tục.",
+        "words": 46,
+        "sents": 2,
+        "nums": 3
+      },
+      {
+        "source": "Vietstock Phân tích kỹ thuật (Chỉ báo & Đồ thị)",
+        "title": "Ngày 19/11/2026: 10 cổ phiếu nóng dưới góc nhìn PTKT của Vietstock",
+        "url": "http://vietstock.vn/2026/11/ngay-19112026-10-co-phieu-nong-duoi-goc-nhin-ptkt-cua-vietstock-585-1515940.htm",
+        "text": "Đáy cũ tháng 07/2026 (tương đương vùng 19,700-22,700) sẽ tiếp tục đóng vai trò là hỗ trợ mạnh trong thời gian tới. Trong phiên giao dịch ngày 18/11/2026, giá cổ phiếu HDB diễn biến giằng co và đang kiểm tra đường Middle của Bollinger Bands.",
+        "words": 45,
+        "sents": 2,
+        "nums": 3
+      },
+      {
+        "source": "Vietstock Phân tích kỹ thuật (Chỉ báo & Đồ thị)",
+        "title": "Ngày 24/11/2026: 10 cổ phiếu nóng dưới góc nhìn PTKT của Vietstock",
+        "url": "http://vietstock.vn/2026/11/ngay-24112026-10-co-phieu-nong-duoi-goc-nhin-ptkt-cua-vietstock-585-1517133.htm",
+        "text": "Chỉ báo MACD đã cắt xuống dưới đường signal và nằm dưới ngưỡng 0 nên rủi ro tăng lên. Đáy cũ tháng 10/2026 (tương đương vùng 9,500-10,500) sẽ đóng vai trò hỗ trợ nếu tình trạng sụt giảm mạnh bất ngờ xuất hiện.",
+        "words": 43,
+        "sents": 2,
+        "nums": 3
+      },
+      {
+        "source": "Vietstock Phân tích kỹ thuật (Chỉ báo & Đồ thị)",
+        "title": "Tuần 23-27/11/2026: 10 cổ phiếu nóng dưới góc nhìn PTKT của Vietstock",
+        "url": "http://vietstock.vn/2026/11/tuan-23-27112026-10-co-phieu-nong-duoi-goc-nhin-ptkt-cua-vietstock-585-1516784.htm",
+        "text": "Chỉ báo MACD đã cắt xuống dưới đường signal và nằm dưới ngưỡng 0 nên rủi ro tăng lên. Đáy cũ tháng 10/2026 (tương đương vùng 9,500-10,500) sẽ đóng vai trò hỗ trợ nếu tình trạng sụt giảm mạnh bất ngờ xuất hiện.",
+        "words": 43,
+        "sents": 2,
+        "nums": 3
+      },
+      {
+        "source": "Vietstock Phân tích kỹ thuật (Chỉ báo & Đồ thị)",
+        "title": "Ngày 24/11/2026: 10 cổ phiếu nóng dưới góc nhìn PTKT của Vietstock",
+        "url": "http://vietstock.vn/2026/11/ngay-24112026-10-co-phieu-nong-duoi-goc-nhin-ptkt-cua-vietstock-585-1517133.htm",
+        "text": "Giá cổ phiếu BMP tăng trưởng và test lại đường Middle của Bollinger Bands trong phiên giao dịch ngày 23/11/2026. Giá đang ở gần đáy cũ tháng 06/2026 (tương đương vùng 125,600-128,000) nên sẽ nhận được sự hỗ trợ từ ngưỡng này.",
+        "words": 42,
+        "sents": 2,
+        "nums": 3
+      },
+      {
+        "source": "Vietstock Phân tích kỹ thuật (Chỉ báo & Đồ thị)",
+        "title": "Tuần 23-27/11/2026: 10 cổ phiếu nóng dưới góc nhìn PTKT của Vietstock",
+        "url": "http://vietstock.vn/2026/11/tuan-23-27112026-10-co-phieu-nong-duoi-goc-nhin-ptkt-cua-vietstock-585-1516784.htm",
+        "text": "Đáy cũ tháng 07/2026 (tương đương vùng 19,700-22,700) sẽ tiếp tục đóng vai trò là hỗ trợ mạnh trong thời gian tới. Trong phiên giao dịch ngày 20/11/2026, giá cổ phiếu HDB diễn biến giằng co và xuất hiện mẫu hình Doji.",
+        "words": 42,
+        "sents": 2,
+        "nums": 3
+      },
+      {
+        "source": "Vietstock Phân tích kỹ thuật (Chỉ báo & Đồ thị)",
+        "title": "Ngày 17/11/2026: 10 cổ phiếu nóng dưới góc nhìn PTKT của Vietstock",
+        "url": "http://vietstock.vn/2026/11/ngay-17112026-10-co-phieu-nong-duoi-goc-nhin-ptkt-cua-vietstock-585-1515196.htm",
+        "text": "Đáy cũ tháng 07/2026 (tương đương vùng 19,700-22,700) sẽ tiếp tục đóng vai trò là hỗ trợ mạnh trong thời gian tới. Trong phiên giao dịch ngày 16/11/2026, giá cổ phiếu HDB giảm và đang kiểm tra đường Middle của Bollinger Bands.",
+        "words": 42,
+        "sents": 2,
+        "nums": 3
+      },
+      {
+        "source": "Vietstock Phân tích kỹ thuật (Chỉ báo & Đồ thị)",
+        "title": "Ngày 24/11/2026: 10 cổ phiếu nóng dưới góc nhìn PTKT của Vietstock",
+        "url": "http://vietstock.vn/2026/11/ngay-24112026-10-co-phieu-nong-duoi-goc-nhin-ptkt-cua-vietstock-585-1517133.htm",
+        "text": "Đáy cũ tháng 10/2025 (tương đương vùng 50,900-51,900) sẽ đóng vai trò hỗ trợ trong thời gian tới. Trong phiên giao dịch ngày 23/11/2026, giá cổ phiếu VHM tăng khá mạnh và chuẩn bị test lại Middle của Bollinger Bands.",
+        "words": 40,
+        "sents": 2,
+        "nums": 3
+      },
+      {
+        "source": "Vietstock Phân tích kỹ thuật (Chỉ báo & Đồ thị)",
+        "title": "Tuần 23-27/11/2026: 10 cổ phiếu nóng dưới góc nhìn PTKT của Vietstock",
+        "url": "http://vietstock.vn/2026/11/tuan-23-27112026-10-co-phieu-nong-duoi-goc-nhin-ptkt-cua-vietstock-585-1516784.htm",
+        "text": "Giá liên tục nằm dưới đường Middle của Bollinger Bands và SMA 50 ngày trong những tuần gần đây. Nếu đáy cũ tháng 10/2026 (tương đương vùng 15,700-16,500) bị phá vỡ hoàn toàn thì rủi ro sẽ gia tăng.",
+        "words": 39,
+        "sents": 2,
+        "nums": 3
+      },
+      {
+        "source": "Vietstock Phân tích kỹ thuật (Chỉ báo & Đồ thị)",
+        "title": "Tuần 23-27/11/2026: 10 cổ phiếu nóng dưới góc nhìn PTKT của Vietstock",
+        "url": "http://vietstock.vn/2026/11/tuan-23-27112026-10-co-phieu-nong-duoi-goc-nhin-ptkt-cua-vietstock-585-1516784.htm",
+        "text": "Giá cổ phiếu BVH giằng co trong phiên giao dịch ngày 20/11/2026 và tiếp tục bám vào Lower Band của Bollinger Bands. Giá đang nhận được sự hỗ trợ từ đáy cũ tháng 07/2026 (tương đương vùng 55,500-58,000).",
+        "words": 38,
+        "sents": 2,
+        "nums": 3
+      },
+      {
+        "source": "Vietstock Phân tích kỹ thuật (Chỉ báo & Đồ thị)",
+        "title": "Ngày 19/11/2026: 10 cổ phiếu nóng dưới góc nhìn PTKT của Vietstock",
+        "url": "http://vietstock.vn/2026/11/ngay-19112026-10-co-phieu-nong-duoi-goc-nhin-ptkt-cua-vietstock-585-1515940.htm",
+        "text": "Giá cổ phiếu ACB giằng co trong phiên giao dịch ngày 18/11/2026 đồng thời xuất hiện mẫu hình nến Long Lower Shadow. Giá đang nhận được sự hỗ trợ từ đáy cũ tháng 05/2026 (tương đương vùng 19,300-20,300).",
+        "words": 38,
+        "sents": 2,
+        "nums": 3
+      },
+      {
+        "source": "Vietstock Phân tích kỹ thuật (Chỉ báo & Đồ thị)",
+        "title": "Ngày 24/11/2026: 10 cổ phiếu nóng dưới góc nhìn PTKT của Vietstock",
+        "url": "http://vietstock.vn/2026/11/ngay-24112026-10-co-phieu-nong-duoi-goc-nhin-ptkt-cua-vietstock-585-1517133.htm",
+        "text": "Giá cổ phiếu BVH giằng co trong phiên giao dịch ngày 23/11/2026 với sự xuất hiện của mẫu hình nến Doji. Giá đang nhận được sự hỗ trợ từ đáy cũ tháng 07/2026 (tương đương vùng 55,500-58,000).",
+        "words": 37,
+        "sents": 2,
+        "nums": 3
+      },
+      {
+        "source": "Vietstock Phân tích kỹ thuật (Chỉ báo & Đồ thị)",
+        "title": "Ngày 17/11/2026: 10 cổ phiếu nóng dưới góc nhìn PTKT của Vietstock",
+        "url": "http://vietstock.vn/2026/11/ngay-17112026-10-co-phieu-nong-duoi-goc-nhin-ptkt-cua-vietstock-585-1515196.htm",
+        "text": "Khối lượng giảm xuống mức rất thấp và giá chưa thể vượt qua đường Middle của Bollinger Bands. Đáy cũ tháng 10/2026 (tương đương vùng 15,700-16,500) đang đóng vai trò hỗ trợ ngắn hạn.",
+        "words": 34,
+        "sents": 2,
+        "nums": 3
+      },
+      {
+        "source": "Vietstock Phân tích kỹ thuật (Chỉ báo & Đồ thị)",
+        "title": "Phân tích kỹ thuật phiên chiều 16/11: Tiếp tục giằng co",
+        "url": "http://vietstock.vn/2026/11/phan-tich-ky-thuat-phien-chieu-1611-tiep-tuc-giang-co-585-1515081.htm",
+        "text": "Trong phiên giao dịch sáng ngày 16/11/2026, HNX-Index giằng co đồng thời xuất hiện mẫu hình nến Gravestone Doji và tiếp tục vận động quanh ngưỡng Fibonacci Projection 61.8% (tương đương vùng 253-258 điểm).",
+        "words": 34,
+        "sents": 1,
+        "nums": 3
+      },
+      {
+        "source": "Vietstock Phân tích kỹ thuật (Chỉ báo & Đồ thị)",
+        "title": "Ngày 19/11/2026: 10 cổ phiếu nóng dưới góc nhìn PTKT của Vietstock",
+        "url": "http://vietstock.vn/2026/11/ngay-19112026-10-co-phieu-nong-duoi-goc-nhin-ptkt-cua-vietstock-585-1515940.htm",
+        "text": "Giá đang lui về gần đáy cũ tháng 06/2026 (tương đương vùng 125,600-127,000) và nằm dưới các đường SMA 50 ngày và SMA 100 ngày nên rủi ro vẫn còn.",
+        "words": 30,
+        "sents": 1,
+        "nums": 3
+      },
+      {
+        "source": "Vietstock Phân tích kỹ thuật (Chỉ báo & Đồ thị)",
+        "title": "Ngày 19/11/2026: 10 cổ phiếu nóng dưới góc nhìn PTKT của Vietstock",
+        "url": "http://vietstock.vn/2026/11/ngay-19112026-10-co-phieu-nong-duoi-goc-nhin-ptkt-cua-vietstock-585-1515940.htm",
+        "text": "Bên cạnh đó, giá đang lui về gần ngưỡng Fibonacci Projection 50% (tương đương vùng 48,000-49,200), đây sẽ là ngưỡng hỗ trợ trong thời gian tới của cổ phiếu này.",
+        "words": 30,
+        "sents": 1,
+        "nums": 3
+      },
+      {
+        "source": "Vietstock Phân tích kỹ thuật (Chỉ báo & Đồ thị)",
+        "title": "Ngày 17/11/2026: 10 cổ phiếu nóng dưới góc nhìn PTKT của Vietstock",
+        "url": "http://vietstock.vn/2026/11/ngay-17112026-10-co-phieu-nong-duoi-goc-nhin-ptkt-cua-vietstock-585-1515196.htm",
+        "text": "Giá đang lui về gần đáy cũ tháng 06/2026 (tương đương vùng 125,600-127,000) và nằm dưới các đường SMA 50 ngày và SMA 100 ngày nên rủi ro vẫn còn.",
+        "words": 30,
+        "sents": 1,
+        "nums": 3
+      }
+    ],
+    "analytical_market": [
+      {
+        "source": "Vietstock Nhận định, Phái sinh & Chứng quyền",
+        "title": "Nhịp đập Thị trường 25/11: Xuất hiện giao dịch thỏa thuận “khủng” ở một cổ phiếu bất động sản",
+        "url": "http://vietstock.vn/2026/11/nhip-dap-thi-truong-2511-xuat-hien-giao-dich-thoa-thuan-khung-o-mot-co-phieu-bat-dong-san-1636-1517452.htm",
+        "text": "Nhóm trụ dẫn dắt các chỉ số đảo vai mạnh so với 9h30. Trên VN-Index , thay cho VCB (+0.70 điểm), VHM (+0.69 điểm) và BID (+0.57 điểm) đầu giờ, lực đỡ chuyển sang VIC (+0.81 điểm), VNM (+0.22 điểm), SAB (+0.21 điểm) và MBB (+0.19 điểm). Chiều ghìm điểm gồm VHM (-0.52 điểm), HVN (-0.36 điểm), DMX (-0.34 điểm) và HDB (-0.20 điểm).",
+        "words": 64,
+        "sents": 3,
+        "nums": 11
+      },
+      {
+        "source": "Vietstock Nhận định, Phái sinh & Chứng quyền",
+        "title": "Nhịp đập Thị trường 25/11: Xuất hiện giao dịch thỏa thuận “khủng” ở một cổ phiếu bất động sản",
+        "url": "http://vietstock.vn/2026/11/nhip-dap-thi-truong-2511-xuat-hien-giao-dich-thoa-thuan-khung-o-mot-co-phieu-bat-dong-san-1636-1517452.htm",
+        "text": "Bất động sản phân hóa giữa VPI (14.8 tỷ, -1.89%) với VC3 (13.75 tỷ, +0.43%), VHM (12.39 tỷ, +0.33%), VIC (11.78 tỷ, +0.12%). Tổ chức tín dụng có TCB (21.86 tỷ), HDB (15.95 tỷ) đi ngang, còn VPB (10.35 tỷ, +0.49%) và MBB (7.09 tỷ, +1.38%) tăng điểm.",
+        "words": 48,
+        "sents": 2,
+        "nums": 8
+      },
+      {
+        "source": "Vietstock Nhận định, Phái sinh & Chứng quyền",
+        "title": "Nhịp đập Thị trường 23/11: VN-Index phục hồi trong bối cảnh phân hóa, PNJ lại chạm sàn",
+        "url": "http://vietstock.vn/2026/11/nhip-dap-thi-truong-2311-vn-index-phuc-hoi-trong-boi-canh-phan-hoa-pnj-lai-cham-san-1636-1516907.htm",
+        "text": "Điểm sáng thuộc về FPT khi bùng nổ thanh khoản và tăng ngược dòng. Mã dẫn đầu thị trường với 278.39 tỷ đồng, tăng +1.78%, kéo rổ VN30 tăng 1.11 điểm và VN-Index tăng 0.28 điểm. Cổ phiếu bật tăng từ vùng quá bán khi RSI lùi về 26.46, trong bối cảnh sắp chốt quyền tạm ứng cổ tức đợt 1/2026 tiền mặt tỷ lệ 10% vào ngày 27/11. Chiều nâng đỡ còn có GVR (+0.38 điểm), TMS (+0.08 điểm) và GEE (+0.05 điểm).",
+        "words": 84,
+        "sents": 4,
+        "nums": 8
+      },
+      {
+        "source": "Vietstock Nhận định, Phái sinh & Chứng quyền",
+        "title": "Nhịp đập Thị trường 25/11: Xuất hiện giao dịch thỏa thuận “khủng” ở một cổ phiếu bất động sản",
+        "url": "http://vietstock.vn/2026/11/nhip-dap-thi-truong-2511-xuat-hien-giao-dich-thoa-thuan-khung-o-mot-co-phieu-bat-dong-san-1636-1517452.htm",
+        "text": "Ba nhóm hút tiền mạnh nhất gồm chứng khoán (99.71 tỷ đồng), bất động sản (97.51 tỷ đồng) và ngân hàng (92.37 tỷ đồng). Nhóm chứng khoán nổi bật với SHS (26.60 tỷ, 0.0%), VIX (20.98 tỷ, +1.19%), SSI (18.61 tỷ, +0.76%), VND (9.43 tỷ, +0.69%).",
+        "words": 46,
+        "sents": 2,
+        "nums": 7
+      },
+      {
+        "source": "Vietstock Nhận định, Phái sinh & Chứng quyền",
+        "title": "Chứng khoán phái sinh ngày 26/11/2026: Chưa hết thận trọng",
+        "url": "http://vietstock.vn/2026/11/chung-khoan-phai-sinh-ngay-26112026-chua-het-than-trong-1636-1517617.htm",
+        "text": "Các hợp đồng tương lai VN30 đồng loạt giảm điểm trong phiên giao dịch ngày 25/11/2026. Cụ thể, 41I1GC000 (I1GC000) giảm 1.08%, còn 1,769.9 điểm; 41I1H1000 (I1H1000) giảm 1.17%, còn 1,768.4 điểm; hợp đồng 41I1H3000 (I1H3000) giảm 1.25%, còn 1,767.5 điểm; hợp đồng 41I1H6000 (I1H6000) giảm 1.29%, còn 1,762.5 điểm. Chỉ số cơ sở VN30-Index kết phiên ở mức 1,778.58 điểm.",
+        "words": 61,
+        "sents": 3,
+        "nums": 6
+      },
+      {
+        "source": "Vietstock Nhận định, Phái sinh & Chứng quyền",
+        "title": "Chứng khoán phái sinh ngày 25/11/2026: Đã bớt bi quan?",
+        "url": "http://vietstock.vn/2026/11/chung-khoan-phai-sinh-ngay-25112026-da-bot-bi-quan-1636-1517071.htm",
+        "text": "Các hợp đồng tương lai VN30 đồng loạt tăng điểm trong phiên giao dịch ngày 23/11/2026. Cụ thể, 41I1GC000 (I1GC000) tăng 0.51%, đạt 1,789.3 điểm; 41I1H1000 (I1H1000) tăng 0.77%, đạt 1,789.4 điểm; hợp đồng 41I1H3000 (I1H3000) tăng 0.7%, đạt 1,789.9 điểm; hợp đồng 41I1H6000 (I1H6000) tăng 0.6%, đạt 1,785.5 điểm. Chỉ số cơ sở VN30-Index kết phiên ở mức 1,791.12 điểm.",
+        "words": 61,
+        "sents": 3,
+        "nums": 6
+      },
+      {
+        "source": "Vietstock Nhận định, Phái sinh & Chứng quyền",
+        "title": "Chứng khoán phái sinh tuần 23-27/11/2026: Triển vọng ngắn hạn còn tiêu cực?",
+        "url": "http://vietstock.vn/2026/11/chung-khoan-phai-sinh-tuan-23-27112026-trien-vong-ngan-han-con-tieu-cuc-1636-1516559.htm",
+        "text": "Các hợp đồng tương lai VN30 đồng loạt giảm điểm trong phiên giao dịch ngày 20/11/2026. Cụ thể, 41I1GC000 (I1GC000) giảm 0.61%, còn 1,780.2 điểm; 41I1H1000 (I1H1000) giảm 1.16%, còn 1,775.7 điểm; hợp đồng 41I1H3000 (I1H3000) giảm 0.45%, còn 1,777.5 điểm; hợp đồng 41I1H6000 (I1H6000) giảm 0.79%, còn 1,774.9 điểm. Chỉ số cơ sở VN30-Index kết phiên ở mức 1,786.84 điểm.",
+        "words": 61,
+        "sents": 3,
+        "nums": 6
+      },
+      {
+        "source": "Vietstock Nhận định, Phái sinh & Chứng quyền",
+        "title": "Chứng khoán phái sinh tuần 23-27/11/2026: Triển vọng ngắn hạn còn tiêu cực?",
+        "url": "http://vietstock.vn/2026/11/chung-khoan-phai-sinh-tuan-23-27112026-trien-vong-ngan-han-con-tieu-cuc-1636-1516559.htm",
+        "text": "Ngoài ra, các hợp đồng tương lai VN100 đồng loạt giảm điểm trong phiên giao dịch ngày 20/11/2026. Cụ thể, 41I2GC000 (I2GC000) giảm 0.86%, còn 1,707.8 điểm; 41I2H1000 (I2H1000) giảm 1.41%, còn 1,703 điểm; hợp đồng 41I2H3000 (I2H3000) giảm 0.39%, còn 1,716.3 điểm; hợp đồng 41I2H6000 (I2H6000) giảm 1.51%, còn 1,700 điểm. Chỉ số cơ sở VN100-Index kết phiên ở mức 1,716.84 điểm.",
+        "words": 63,
+        "sents": 3,
+        "nums": 6
+      },
+      {
+        "source": "Vietstock Nhận định, Phái sinh & Chứng quyền",
+        "title": "Nhịp đập Thị trường 23/11: VN-Index phục hồi trong bối cảnh phân hóa, PNJ lại chạm sàn",
+        "url": "http://vietstock.vn/2026/11/nhip-dap-thi-truong-2311-vn-index-phuc-hoi-trong-boi-canh-phan-hoa-pnj-lai-cham-san-1636-1516907.htm",
+        "text": "Áp lực bán tháo đổ dồn vào PNJ khi giảm -5.19% về 12,850 đồng/cổ phiếu, thanh khoản 98.19 tỷ đồng (hơn 7.69 triệu cổ phiếu), kéo RSI về 24.2 trong trạng thái quá bán. Lực cung xuất hiện trong bối cảnh thị trường lo ngại biến động nhân sự và tiến độ chi trả cam kết thu đổi kim cương.",
+        "words": 60,
+        "sents": 2,
+        "nums": 5
+      },
+      {
+        "source": "Vietstock Nhận định, Phái sinh & Chứng quyền",
+        "title": "Chứng khoán phái sinh ngày 26/11/2026: Chưa hết thận trọng",
+        "url": "http://vietstock.vn/2026/11/chung-khoan-phai-sinh-ngay-26112026-chua-het-than-trong-1636-1517617.htm",
+        "text": "Ngoài ra, các hợp đồng tương lai VN100 tăng giảm đan xen trong phiên giao dịch ngày 25/11/2026. Cụ thể, 41I2GC000 (I2GC000) giảm 0.96%, còn 1,705.6 điểm; 41I2H1000 (I2H1000) tăng 0.53%, đạt 1,712 điểm; hợp đồng 41I2H3000 (I2H3000) tăng 0.42%, đạt 1,713.5 điểm; hợp đồng 41I2H6000 (I2H6000) giảm 0.5%, còn 1,702.9 điểm. Chỉ số cơ sở VN100-Index kết phiên ở mức 1,707.45 điểm.",
+        "words": 63,
+        "sents": 3,
+        "nums": 5
+      },
+      {
+        "source": "Vietstock Nhận định, Phái sinh & Chứng quyền",
+        "title": "Chứng khoán phái sinh ngày 25/11/2026: Đã bớt bi quan?",
+        "url": "http://vietstock.vn/2026/11/chung-khoan-phai-sinh-ngay-25112026-da-bot-bi-quan-1636-1517071.htm",
+        "text": "Ngoài ra, các hợp đồng tương lai VN100 tăng giảm đan xen trong phiên giao dịch ngày 23/11/2026. Cụ thể, 41I2GC000 (I2GC000) tăng 1.16%, đạt 1,722.2 điểm; 41I2H1000 (I2H1000) giảm 0.04%, còn 1,703 điểm; hợp đồng 41I2H3000 (I2H3000) giảm 0.41%, còn 1,709.3 điểm; hợp đồng 41I2H6000 (I2H6000) tăng 1.36%, đạt 1,723.8 điểm. Chỉ số cơ sở VN100-Index kết phiên ở mức 1,720.49 điểm.",
+        "words": 63,
+        "sents": 3,
+        "nums": 5
+      },
+      {
+        "source": "Vietstock Nhận định, Phái sinh & Chứng quyền",
+        "title": "Nhịp đập Thị trường 25/11: Xuất hiện giao dịch thỏa thuận “khủng” ở một cổ phiếu bất động sản",
+        "url": "http://vietstock.vn/2026/11/nhip-dap-thi-truong-2511-xuat-hien-giao-dich-thoa-thuan-khung-o-mot-co-phieu-bat-dong-san-1636-1517452.htm",
+        "text": "Khối ngoại bán ròng với giá trị 683.51 tỷ đồng trên cả ba sàn. Lực bán chủ yếu tập trung ở MSN với giá trị 79.67 tỷ đồng. Trong khi đó, dẫn đầu top mua ròng là PNJ và VNM với giá trị lần lượt là 27.9 tỷ và 20.78 tỷ.",
+        "words": 51,
+        "sents": 3,
+        "nums": 4
+      },
+      {
+        "source": "Vietstock Nhận định, Phái sinh & Chứng quyền",
+        "title": "Chứng khoán Tuần 16-20/11/2026: Áp lực bủa vây",
+        "url": "http://vietstock.vn/2026/11/chung-khoan-tuan-16-20112026-ap-luc-bua-vay-1636-1516624.htm",
+        "text": "Giao dịch: Các chỉ số chính tiếp tục giảm điểm trong phiên giao dịch ngày 20/11. Cụ thể, VN-Index dừng ngay dưới mốc tham chiếu tại 1,688.79 điểm; HNX-Index giảm 1.82%, lùi về 234.59 điểm. Xét cho cả tuần, VN-Index mất tổng cộng 46.14 điểm (-2.66%), HNX-Index giảm 20.39 điểm (-8%).",
+        "words": 51,
+        "sents": 3,
+        "nums": 4
+      },
+      {
+        "source": "Vietstock Nhận định, Phái sinh & Chứng quyền",
+        "title": "Vietstock Weekly 23-27/11/2026: Thử thách tại vùng hỗ trợ?",
+        "url": "http://vietstock.vn/2026/11/vietstock-weekly-23-27112026-thu-thach-tai-vung-ho-tro-1636-1516787.htm",
+        "text": "Chỉ báo MACD và Stochastic Oscillator tiếp tục giảm sau khi cắt xuống đường signal cho thấy triển vọng ngắn hạn tiếp tục xấu đi. Người viết kỳ vọng ngưỡng Fibonacci Projection 100% (tương đương vùng 225-230) sẽ là hỗ trợ trong thời gian tới cho chỉ số.",
+        "words": 48,
+        "sents": 2,
+        "nums": 4
+      },
+      {
+        "source": "Vietstock Nhận định, Phái sinh & Chứng quyền",
+        "title": "Thị trường chứng quyền ngày 26/11/2026: Triển vọng bi quan vẫn hiện hữu",
+        "url": "http://vietstock.vn/2026/11/thi-truong-chung-quyen-ngay-26112026-trien-vong-bi-quan-van-hien-huu-1636-1517639.htm",
+        "text": "Khối lượng giao dịch toàn thị trường trong phiên 25/11 đạt 54.68 triệu CW, giảm 38.96%; giá trị giao dịch đạt 23.04 tỷ đồng, giảm 47.39% so với phiên 23/11. Trong đó, CVNM2620 là mã dẫn đầu thị trường về khối lượng với 2.22 triệu CW; CVRE2609 dẫn đầu về giá trị giao dịch với 1.45 tỷ đồng.",
+        "words": 58,
+        "sents": 2,
+        "nums": 4
+      },
+      {
+        "source": "Vietstock Nhận định, Phái sinh & Chứng quyền",
+        "title": "Thị trường chứng quyền tuần 23-27/11/2026: Sự bi quan vẫn còn",
+        "url": "http://vietstock.vn/2026/11/thi-truong-chung-quyen-tuan-23-27112026-su-bi-quan-van-con-1636-1516596.htm",
+        "text": "Khối lượng giao dịch toàn thị trường trong phiên 20/11 đạt 83.99 triệu CW, tăng 18.94%; giá trị giao dịch đạt 40.03 tỷ đồng, tăng 1.2% so với phiên 19/11. Trong đó, CVPB2630 là mã dẫn đầu thị trường về khối lượng với 2.44 triệu CW; CHDB2615 dẫn đầu về giá trị giao dịch với 1.72 tỷ đồng.",
+        "words": 58,
+        "sents": 2,
+        "nums": 4
+      },
+      {
+        "source": "Vietstock Nhận định, Phái sinh & Chứng quyền",
+        "title": "Nhịp đập Thị trường 23/11: VN-Index phục hồi trong bối cảnh phân hóa, PNJ lại chạm sàn",
+        "url": "http://vietstock.vn/2026/11/nhip-dap-thi-truong-2311-vn-index-phuc-hoi-trong-boi-canh-phan-hoa-pnj-lai-cham-san-1636-1516907.htm",
+        "text": "Thanh khoản thị trường sụt giảm trong sáng nay. Khối lượng giao dịch của HOSE chỉ đạt hơn 230 triệu đơn vị, tương đương với giá trị gần 4.7 ngàn tỷ, giảm 15.54% so với phiên trước. HNX cũng chỉ ghi nhận khối lượng hơn 16 triệu đơn vị, tương đương gần 196 tỷ đồng, giảm 37.35% so với phiên trước.",
+        "words": 61,
+        "sents": 3,
+        "nums": 4
+      },
+      {
+        "source": "Vietstock Nhận định, Phái sinh & Chứng quyền",
+        "title": "Thị trường chứng quyền ngày 25/11/2026: Thị trường diễn biến phân hóa",
+        "url": "http://vietstock.vn/2026/11/thi-truong-chung-quyen-ngay-25112026-thi-truong-dien-bien-phan-hoa-1636-1517109.htm",
+        "text": "Khối lượng giao dịch toàn thị trường trong phiên 23/11 đạt 89.59 triệu CW, tăng 6.66%; giá trị giao dịch đạt 43.81 tỷ đồng, tăng 9.44% so với phiên 20/11. Trong đó, CVPB2630 là mã dẫn đầu thị trường về khối lượng và giá trị giao dịch, với tổng khối lượng đạt 7.85 triệu CW, tương đương giá trị 2.44 tỷ đồng.",
+        "words": 62,
+        "sents": 2,
+        "nums": 4
+      },
+      {
+        "source": "Vietstock Nhận định, Phái sinh & Chứng quyền",
+        "title": "Nhịp đập Thị trường 25/11: Xuất hiện giao dịch thỏa thuận “khủng” ở một cổ phiếu bất động sản",
+        "url": "http://vietstock.vn/2026/11/nhip-dap-thi-truong-2511-xuat-hien-giao-dich-thoa-thuan-khung-o-mot-co-phieu-bat-dong-san-1636-1517452.htm",
+        "text": "Kết thúc phiên giao dịch, VN-Index giảm 9.69 điểm (-0.57%), xuống mức 1,687.45 điểm; HNX-Index giảm 4.77 điểm (-2.05%), xuống mức 227.46 điểm. Độ rộng toàn thị trường với sắc đỏ dẫn dắt khi bên bán có 444 mã giảm và bên mua có 252 mã tăng. Tương tự, sắc đỏ áp đảo trong rổ VN30 với 22 mã giảm, 6 mã tăng và 2 mã tham chiếu.",
+        "words": 68,
+        "sents": 3,
+        "nums": 4
+      },
+      {
+        "source": "Vietstock Nhận định, Phái sinh & Chứng quyền",
+        "title": "Nhịp đập Thị trường 23/11: VN-Index phục hồi trong bối cảnh phân hóa, PNJ lại chạm sàn",
+        "url": "http://vietstock.vn/2026/11/nhip-dap-thi-truong-2311-vn-index-phuc-hoi-trong-boi-canh-phan-hoa-pnj-lai-cham-san-1636-1516907.htm",
+        "text": "Kết thúc phiên giao dịch, VN-Index tăng 8.35 điểm (+0.49%), lên mức 1,697.14 điểm; HNX-Index giảm 2.36 điểm (-1.01%), xuống mức 232.23 điểm. Độ rộng toàn thị trường với sắc xanh dẫn dắt khi bên mua có 368 mã tăng và bên bán có 291 mã giảm. Tuơng tự, sắc xanh có phần lấn lướt hơn trong rổ VN30 với 14 mã tăng, 11 mã giảm và 5 mã tham chiếu.",
+        "words": 71,
+        "sents": 3,
+        "nums": 4
+      }
+    ],
+    "securities": [
+      {
+        "source": "CafeF Thị trường chứng khoán",
+        "title": "Ngân hàng mua lại trái phiếu cũ, tất toán sớm hàng nghìn tỷ",
+        "url": "https://cafef.vn/ngan-hang-mua-lai-trai-phieu-cu-tat-toan-som-hang-nghin-ty-188261125191041439.chn",
+        "text": "Cụ thể, ba lô VIB12501, VIB12502 và VIB12503 có tổng giá trị 4.200 tỷ đồng, cùng mức lãi suất 5,6%/năm. Tiếp đó, ngày 27/10, ngân hàng mua lại 3.000 tỷ đồng trái phiếu VIB12506 với lãi suất 6%/năm. Ngày 17/11, VIB tiếp tục tất toán lô VIB12507 trị giá 3.000 tỷ đồng, lãi suất 6,4%/năm. Tổng số tiền thanh toán cho đợt mua lại này là 3.192 tỷ đồng, gồm 3.000 tỷ đồng tiền gốc và 192 tỷ đồng tiền lãi.",
+        "words": 81,
+        "sents": 4,
+        "nums": 6
+      },
+      {
+        "source": "CafeF Thị trường chứng khoán",
+        "title": "Ngân hàng mua lại trái phiếu cũ, tất toán sớm hàng nghìn tỷ",
+        "url": "https://cafef.vn/ngan-hang-mua-lai-trai-phieu-cu-tat-toan-som-hang-nghin-ty-188261125191041439.chn",
+        "text": "Điển hình, VietinBank ngày 3/11 vừa qua đã hoàn tất chào bán 120 triệu trái phiếu mã CTG2632T2/01 cho 1.773 nhà đầu tư trong nước, thu về 12.000 tỷ đồng. Trái phiếu có mệnh giá 100.000 đồng, kỳ hạn 6 năm, lãi suất bằng lãi suất tham chiếu cộng biên độ 2,25%/năm, trả lãi định kỳ 6 tháng một lần.",
+        "words": 60,
+        "sents": 2,
+        "nums": 5
+      },
+      {
+        "source": "CafeF Thị trường chứng khoán",
+        "title": "Một cổ phiếu HoSE bất ngờ \"rơi thẳng đứng\", bốc hơi gần nửa thị giá chưa đầy một tháng",
+        "url": "https://cafef.vn/mot-co-phieu-hose-bat-ngo-roi-thang-dung-boc-hoi-gan-nua-thi-gia-chua-day-mot-thang-188261125212706652.chn",
+        "text": "Về tình hình kinh doanh, theo báo cáo tài chính hợp nhất quý III/2026, HHP Global ghi nhận doanh thu thuần 839 tỷ đồng, tăng 19% so với cùng kỳ. Lợi nhuận sau thuế đạt 13 tỷ đồng, tăng 37%. Lũy kế 9 tháng đầu năm, doanh thu thuần đạt 2.443 tỷ đồng, tăng 5%, trong khi lợi nhuận sau thuế đạt 45 tỷ đồng, tăng 7% so với cùng kỳ.",
+        "words": 71,
+        "sents": 3,
+        "nums": 5
+      },
+      {
+        "source": "CafeF Thị trường chứng khoán",
+        "title": "Một cổ phiếu HoSE bất ngờ \"rơi thẳng đứng\", bốc hơi gần nửa thị giá chưa đầy một tháng",
+        "url": "https://cafef.vn/mot-co-phieu-hose-bat-ngo-roi-thang-dung-boc-hoi-gan-nua-thi-gia-chua-day-mot-thang-188261125212706652.chn",
+        "text": "Cổ phiếu HHP của CTCP HHP Global (HoSE: HHP) tiếp tục giảm hết biên độ trong phiên 25/11, xuống 9.820 đồng/cp, đánh dấu phiên giảm sàn thứ 5 liên tiếp. Áp lực bán áp đảo trong khi lực cầu gần như biến mất, khiến thanh khoản cả phiên chỉ đạt 50.300 cổ phiếu, tương ứng giá trị chưa tới 500 triệu đồng. Trong khi đó, lượng dư bán giá sàn lên tới hơn 8,6 triệu đơn vị.",
+        "words": 77,
+        "sents": 3,
+        "nums": 5
+      },
+      {
+        "source": "CafeF Thị trường chứng khoán",
+        "title": "Gần 400.000 tỷ đồng trái phiếu chờ thanh toán năm 2027, doanh nghiệp nào dẫn đầu?",
+        "url": "https://cafef.vn/gan-400000-ty-dong-trai-phieu-cho-thanh-toan-nam-2027-doanh-nghiep-nao-dan-dau-188261125113219716.chn",
+        "text": "Phát triển Bất động sản Hưng Long và Parkland 53 cùng có giá trị trái phiếu đáo hạn ở mức 7.000 tỷ đồng. Các vị trí tiếp theo thuộc về Novaland (6.866 tỷ đồng), Địa ốc Việt Hân (6.000 tỷ đồng) và Thương mại Xuất nhập khẩu Tam Tài Lộc (5.700 tỷ đồng).",
+        "words": 53,
+        "sents": 2,
+        "nums": 4
+      },
+      {
+        "source": "CafeF Thị trường chứng khoán",
+        "title": "Ngân hàng mua lại trái phiếu cũ, tất toán sớm hàng nghìn tỷ",
+        "url": "https://cafef.vn/ngan-hang-mua-lai-trai-phieu-cu-tat-toan-som-hang-nghin-ty-188261125191041439.chn",
+        "text": "Theo phương án được Ủy ban Chứng khoán Nhà nước cấp phép, VietinBank được chào bán tổng cộng 160 triệu trái phiếu, chia thành hai đợt. Sau đợt đầu tiên huy động 12.000 tỷ đồng, ngân hàng dự kiến tiếp tục phát hành 40 triệu trái phiếu mã CTG2632T2/02, tương ứng 4.000 tỷ đồng.",
+        "words": 54,
+        "sents": 2,
+        "nums": 4
+      },
+      {
+        "source": "CafeF Thị trường chứng khoán",
+        "title": "Một cổ phiếu HoSE bất ngờ \"rơi thẳng đứng\", bốc hơi gần nửa thị giá chưa đầy một tháng",
+        "url": "https://cafef.vn/mot-co-phieu-hose-bat-ngo-roi-thang-dung-boc-hoi-gan-nua-thi-gia-chua-day-mot-thang-188261125212706652.chn",
+        "text": "Dù duy trì tăng trưởng lợi nhuận, doanh nghiệp đang ghi nhận dư nợ vay lớn. Tại ngày 30/9/2026, tổng vay và nợ thuê tài chính ở mức khoảng 2.306 tỷ đồng, trong khi tiền và các khoản tương đương tiền chỉ gần 28 tỷ đồng. Chi phí đi vay trong 9 tháng đầu năm đạt gần 98 tỷ đồng, tăng 35% so với cùng kỳ.",
+        "words": 66,
+        "sents": 3,
+        "nums": 4
+      },
+      {
+        "source": "CafeF Thị trường chứng khoán",
+        "title": "Ngân hàng mua lại trái phiếu cũ, tất toán sớm hàng nghìn tỷ",
+        "url": "https://cafef.vn/ngan-hang-mua-lai-trai-phieu-cu-tat-toan-som-hang-nghin-ty-188261125191041439.chn",
+        "text": "Ngân hàng Vietcombank vừa công bố hoàn tất mua lại trước hạn toàn bộ lô trái phiếu mã VCBH2131003 vào ngày 19/11/2026, với giá trị mua lại thực tế 1,067 tỷ đồng/trái phiếu. Lô trái phiếu này được phát hành ngày 19/11/2021, tổng giá trị 600 tỷ đồng, kỳ hạn 10 năm và dự kiến đáo hạn vào ngày 19/11/2031. Như vậy, ngân hàng đã tất toán khoản nợ sớm 5 năm.",
+        "words": 72,
+        "sents": 3,
+        "nums": 4
+      },
+      {
+        "source": "CafeF Thị trường chứng khoán",
+        "title": "VN-Index vượt 1.700 điểm bất thành, khối ngoại bán mạnh",
+        "url": "https://cafef.vn/vn-index-vuot-1700-diem-bat-thanh-khoi-ngoai-ban-manh-188261125191133375.chn",
+        "text": "Trong phiên, VN-Index có thời điểm vượt 1.700 điểm, lên sát 1.705 điểm nhờ sự hỗ trợ của một số cổ phiếu vốn hóa lớn. Tuy nhiên, đà tăng không duy trì được lâu khi dòng tiền tham gia khá dè dặt, còn áp lực bán ngày càng rõ nét.",
+        "words": 50,
+        "sents": 2,
+        "nums": 3
+      },
+      {
+        "source": "CafeF Thị trường chứng khoán",
+        "title": "Ngân hàng mua lại trái phiếu cũ, tất toán sớm hàng nghìn tỷ",
+        "url": "https://cafef.vn/ngan-hang-mua-lai-trai-phieu-cu-tat-toan-som-hang-nghin-ty-188261125191041439.chn",
+        "text": "Trước đó, ngày 16/11, Vietcombank cũng mua lại toàn bộ lô trái phiếu VCBH2131001, gồm 950 trái phiếu, tổng giá trị phát hành 950 tỷ đồng. Lô này được phát hành từ ngày 15/11/2021, kỳ hạn 10 năm. Giá trị mua lại thực tế hơn 1,067 tỷ đồng/trái phiếu.",
+        "words": 49,
+        "sents": 3,
+        "nums": 3
+      },
+      {
+        "source": "CafeF Thị trường chứng khoán",
+        "title": "Ngân hàng mua lại trái phiếu cũ, tất toán sớm hàng nghìn tỷ",
+        "url": "https://cafef.vn/ngan-hang-mua-lai-trai-phieu-cu-tat-toan-som-hang-nghin-ty-188261125191041439.chn",
+        "text": "Ngân hàng VietinBank cũng vừa chi 100 tỷ đồng tất toán lô trái phiếu CTGL2331008 vào ngày 23/11. Trái phiếu được phát hành ngày 23/11/2023, kỳ hạn 8 năm, dự kiến đáo hạn năm 2031. Việc mua lại giúp ngân hàng kết thúc nghĩa vụ nợ sớm 5 năm.",
+        "words": 49,
+        "sents": 3,
+        "nums": 3
+      },
+      {
+        "source": "CafeF Thị trường chứng khoán",
+        "title": "ETF vàng toàn cầu có tuần bán mạnh nhất kể từ tháng 6, điều gì đang xảy ra?",
+        "url": "https://cafef.vn/etf-vang-toan-cau-co-tuan-ban-manh-nhat-ke-tu-thang-6-dieu-gi-dang-xay-ra-188261125221802966.chn",
+        "text": "Dù dòng tiền ETF đang có dấu hiệu đảo chiều, nhu cầu vàng từ các ngân hàng trung ương (NHTW) vẫn là một yếu tố hỗ trợ quan trọng đối với thị trường. 9 tháng đầu năm, lượng vàng nắm giữ bởi nhóm này tăng thêm 675 tấn. Đáng chú ý, tốc độ mua vàng đã tăng mạnh trong quý 2 và quý 3, bù đắp cho giai đoạn khởi đầu tương đối trầm lắng của năm 2026.",
+        "words": 78,
+        "sents": 3,
+        "nums": 3
+      },
+      {
+        "source": "CafeF Thị trường chứng khoán",
+        "title": "VN-Index vượt 1.700 điểm bất thành, khối ngoại bán mạnh",
+        "url": "https://cafef.vn/vn-index-vuot-1700-diem-bat-thanh-khoi-ngoai-ban-manh-188261125191133375.chn",
+        "text": "Sàn HoSE có 84 mã tăng giá, trong khi số mã giảm lên tới 227. Tổng giá trị giao dịch đạt hơn 16.091 tỷ đồng, tăng gần 27% so với phiên trước. Tuy nhiên, nếu loại trừ giao dịch thỏa thuận, thanh khoản khớp lệnh không có nhiều cải thiện.",
+        "words": 50,
+        "sents": 3,
+        "nums": 2
+      },
+      {
+        "source": "CafeF Thị trường chứng khoán",
+        "title": "VN-Index vượt 1.700 điểm bất thành, khối ngoại bán mạnh",
+        "url": "https://cafef.vn/vn-index-vuot-1700-diem-bat-thanh-khoi-ngoai-ban-manh-188261125191133375.chn",
+        "text": "Ngược chiều thị trường, nhóm cổ phiếu khoáng sản thu hút sự chú ý. MSR tăng hết biên độ 14,94% sau chuỗi 6 phiên giảm liên tiếp. PNJ cũng hồi phục 1,59% lên 12.800 đồng/cổ phiếu, dù từng có thời điểm tăng hết biên độ trong phiên sáng.",
+        "words": 48,
+        "sents": 3,
+        "nums": 2
+      },
+      {
+        "source": "CafeF Thị trường chứng khoán",
+        "title": "Ngân hàng mua lại trái phiếu cũ, tất toán sớm hàng nghìn tỷ",
+        "url": "https://cafef.vn/ngan-hang-mua-lai-trai-phieu-cu-tat-toan-som-hang-nghin-ty-188261125191041439.chn",
+        "text": "Hoạt động này dự kiến chưa dừng lại. Ngày 7/12, VIB lên kế hoạch mua lại trước hạn 3.000 tỷ đồng trái phiếu mã VIB12508. Nếu hoàn tất, tổng giá trị trái phiếu được ngân hàng mua lại trong chuỗi giao dịch sẽ lên 13.200 tỷ đồng.",
+        "words": 47,
+        "sents": 3,
+        "nums": 2
+      },
+      {
+        "source": "CafeF Thị trường chứng khoán",
+        "title": "VN-Index vượt 1.700 điểm bất thành, khối ngoại bán mạnh",
+        "url": "https://cafef.vn/vn-index-vuot-1700-diem-bat-thanh-khoi-ngoai-ban-manh-188261125191133375.chn",
+        "text": "Diễn biến thị trường chuyển biến tiêu cực trong phiên chiều. Nhiều cổ phiếu đồng loạt suy yếu, đặc biệt ở nhóm ngân hàng, chứng khoán, bất động sản và thép. Kết phiên, VN-Index giảm 9,69 điểm, tương đương 0,57%, xuống 1.687 điểm, đánh mất toàn bộ số điểm tăng của phiên trước đó.",
+        "words": 54,
+        "sents": 3,
+        "nums": 2
+      },
+      {
+        "source": "CafeF Thị trường chứng khoán",
+        "title": "Gần 400.000 tỷ đồng trái phiếu chờ thanh toán năm 2027, doanh nghiệp nào dẫn đầu?",
+        "url": "https://cafef.vn/gan-400000-ty-dong-trai-phieu-cho-thanh-toan-nam-2027-doanh-nghiep-nao-dan-dau-188261125113219716.chn",
+        "text": "Trong đó, bất động sản là nhóm ngành có nghĩa vụ thanh toán lớn nhất với 182.700 tỷ đồng, tăng 23,8% so với năm trước. Đáng chú ý, nghĩa vụ thanh toán của nhóm ngân hàng dự kiến tăng tới 80,9%, lên 121.300 tỷ đồng.",
+        "words": 45,
+        "sents": 2,
+        "nums": 2
+      },
+      {
+        "source": "CafeF Thị trường chứng khoán",
+        "title": "ACV phải xác định rõ thời điểm công bố thông tin khai thác sân bay Long Thành",
+        "url": "https://cafef.vn/acv-phai-xac-dinh-ro-thoi-diem-cong-bo-thong-tin-khai-thac-san-bay-long-thanh-188261125191450836.chn",
+        "text": "Theo báo cáo của ACV, đến nay, giá trị khối lượng thực hiện Dự án thành phần 3 đạt 76.953,8 tỷ đồng, tương đương 88,63% giá trị hợp đồng. Giá trị giải ngân đạt 49.507,3 tỷ đồng, tương đương 57% giá trị hợp đồng.",
+        "words": 44,
+        "sents": 2,
+        "nums": 2
+      },
+      {
+        "source": "CafeF Thị trường chứng khoán",
+        "title": "Ngân hàng mua lại trái phiếu cũ, tất toán sớm hàng nghìn tỷ",
+        "url": "https://cafef.vn/ngan-hang-mua-lai-trai-phieu-cu-tat-toan-som-hang-nghin-ty-188261125191041439.chn",
+        "text": "Các lô trái phiếu này có kỳ hạn 3 năm, lãi suất danh nghĩa từ 5,6-6,4%/năm. Chỉ sau khoảng một năm lưu hành, VIB đã tất toán toàn bộ nghĩa vụ gốc, sớm gần 2 năm so với kế hoạch ban đầu.",
+        "words": 42,
+        "sents": 2,
+        "nums": 2
+      },
+      {
+        "source": "CafeF Thị trường chứng khoán",
+        "title": "Từng mất gần triệu USD chỉ trong 1 tháng, CEO chứng khoán tiết lộ điều tự hào nhất sau 20 năm",
+        "url": "https://cafef.vn/tung-mat-gan-trieu-usd-chi-trong-1-thang-ceo-chung-khoan-tiet-lo-dieu-tu-hao-nhat-sau-20-nam-188261125230316369.chn",
+        "text": "Từ cảnh tranh nhau mua giá trần, bảng điện chuyển sang chuỗi ngày bán sàn trắng bên mua. \"Gần như ngày nào đến công ty cũng mở bảng ra là chỉ nhìn thấy tranh nhau bán giá sàn\", Đạt nhớ lại. Chỉ số VN-Index trượt dài từ vùng đỉnh 1.170–1.180 điểm xuống vùng đáy 235 điểm vào năm 2009.",
+        "words": 59,
+        "sents": 3,
+        "nums": 2
+      }
+    ],
+    "enterprise": [
+      {
+        "source": "CafeF Doanh nghiệp niêm yết",
+        "title": "Vé số miền Nam dự kiến tăng giá gấp đôi lên 20.000 đồng, giải đặc biệt lên 4 tỷ đồng",
+        "url": "https://cafef.vn/ve-so-mien-nam-du-kien-tang-gia-gap-doi-len-20000-dong-giai-dac-biet-len-4-ty-dong-188261125214059794.chn",
+        "text": "Cùng với việc tăng mệnh giá, giá trị tất cả các giải thưởng của loại vé xuân này cũng được đề xuất nâng gấp đôi. Trong đó, giải đặc biệt tăng từ 2 tỷ lên 4 tỷ đồng, giải nhất từ 30 triệu lên 60 triệu đồng và giải nhì từ 15 triệu lên 30 triệu đồng.",
+        "words": 57,
+        "sents": 2,
+        "nums": 6
+      },
+      {
+        "source": "CafeF Doanh nghiệp niêm yết",
+        "title": "Dược phẩm Cửu Long (DCL) nằm sàn 5 phiên liên tiếp, dư bán chất đống sàn gần 13 triệu cổ phiếu",
+        "url": "https://cafef.vn/duoc-pham-cuu-long-dcl-nam-san-5-phien-lien-tiep-du-ban-chat-dong-san-gan-13-trieu-co-phieu-188261125223715083.chn",
+        "text": "Lũy kế 9 tháng đầu năm 2026, doanh thu thuần của Dược phẩm Cửu Long đạt gần 949 tỷ đồng, gần như đi ngang so với cùng kỳ. Đáng chú ý, doanh nghiệp chuyển từ mức lãi 16,3 tỷ đồng trong 9 tháng đầu năm trước sang khoản lỗ khoảng 18 tỷ đồng trong năm nay.",
+        "words": 56,
+        "sents": 2,
+        "nums": 5
+      },
+      {
+        "source": "CafeF Doanh nghiệp niêm yết",
+        "title": "Nhà máy tại Việt Nam của đại gia điện mặt trời Trung Quốc JinkoSolar: Doanh thu gần 18.000 tỷ nhưng lỗ 750 tỷ đồng trong 9 tháng",
+        "url": "https://cafef.vn/nha-may-tai-viet-nam-cua-dai-gia-dien-mat-troi-trung-quoc-jinkosolar-doanh-thu-gan-18000-ty-nhung-lo-750-ty-dong-trong-9-thang-188261125234921649.chn",
+        "text": "﻿Theo số liệu năm 2025, đơn vị này đạt doanh thu 6,98 tỷ NDT (25.360 tỷ đồng) và lỗ ròng 176 triệu NDT (640 tỷ đồng). Tức là mức lỗ 9 tháng đầu năm 2026 cao hơn mức lỗ cả năm 2025.",
+        "words": 42,
+        "sents": 2,
+        "nums": 5
+      },
+      {
+        "source": "CafeF Doanh nghiệp niêm yết",
+        "title": "Cổ phiếu Thaiholdings giảm sàn 4 phiên liên tiếp, mất hơn 34% chỉ trong chưa đầy một tuần, giảm 62.400 tỷ đồng vốn hóa so với đỉnh",
+        "url": "https://cafef.vn/co-phieu-thaiholdings-giam-san-4-phien-lien-tiep-mat-hon-34-chi-trong-chua-day-mot-tuan-giam-62400-ty-dong-von-hoa-so-voi-dinh-18826112523133747.chn",
+        "text": "Với mức giá đóng cửa 50.400 đồng/cổ phiếu, vốn hóa Thaiholdings hiện còn khoảng 19.404 tỷ đồng. So với mức đỉnh 212.500 đồng/cổ phiếu thiết lập vào tháng 6/2026, THD đã mất hơn 76% thị giá, tương ứng hơn 62.400 tỷ đồng vốn hóa doanh nghiệp bị thu hẹp.",
+        "words": 49,
+        "sents": 2,
+        "nums": 4
+      },
+      {
+        "source": "CafeF Doanh nghiệp niêm yết",
+        "title": "Doanh nghiệp Hàn Quốc giành hợp đồng 1.260 tỷ đồng, tham gia siêu dự án 5 tuyến metro với tỷ phú Phạm Nhật Vượng",
+        "url": "https://cafef.vn/doanh-nghiep-han-quoc-gianh-hop-dong-1260-ty-dong-tham-gia-sieu-du-an-5-tuyen-metro-voi-ty-phu-pham-nhat-vuong-188261125212452.chn",
+        "text": "Hợp đồng có giá trị gần 48 triệu USD, tương đương khoảng 1.260 tỷ đồng (quy đổi theo tỷ giá 26.300 đồng/USD). Tính theo đồng nội tệ Hàn Quốc, giá trị hợp đồng đạt gần 64 tỷ won, bằng 16,5% doanh thu năm 2025 của Yooshin Engineering.",
+        "words": 47,
+        "sents": 2,
+        "nums": 4
+      },
+      {
+        "source": "CafeF Doanh nghiệp niêm yết",
+        "title": "Vé số miền Nam dự kiến tăng giá gấp đôi lên 20.000 đồng, giải đặc biệt lên 4 tỷ đồng",
+        "url": "https://cafef.vn/ve-so-mien-nam-du-kien-tang-gia-gap-doi-len-20000-dong-giai-dac-biet-len-4-ty-dong-188261125214059794.chn",
+        "text": "Từ ngày 1/4/2026, Bộ Tài chính đã cho phép nâng hạn mức phát hành của mỗi công ty từ 140 tỷ lên 160 tỷ đồng/kỳ. Với hạn mức này, lượng vé số được đưa ra thị trường mỗi ngày có tổng giá trị khoảng 480 tỷ đồng, riêng thứ Bảy lên tới 640 tỷ đồng.",
+        "words": 55,
+        "sents": 2,
+        "nums": 4
+      },
+      {
+        "source": "CafeF Doanh nghiệp niêm yết",
+        "title": "Vé số miền Nam dự kiến tăng giá gấp đôi lên 20.000 đồng, giải đặc biệt lên 4 tỷ đồng",
+        "url": "https://cafef.vn/ve-so-mien-nam-du-kien-tang-gia-gap-doi-len-20000-dong-giai-dac-biet-len-4-ty-dong-188261125214059794.chn",
+        "text": "Trong 9 tháng, các công ty xổ số miền Nam đã chi hơn 64.012 tỷ đồng trả thưởng và 22.103 tỷ đồng chi phí phát hành. Lợi nhuận trước thuế toàn khu vực đạt 17.777 tỷ đồng, tăng 17,54% so với cùng kỳ năm 2025.",
+        "words": 45,
+        "sents": 2,
+        "nums": 4
+      },
+      {
+        "source": "CafeF Doanh nghiệp niêm yết",
+        "title": "Cổ phiếu Thaiholdings giảm sàn 4 phiên liên tiếp, mất hơn 34% chỉ trong chưa đầy một tuần, giảm 62.400 tỷ đồng vốn hóa so với đỉnh",
+        "url": "https://cafef.vn/co-phieu-thaiholdings-giam-san-4-phien-lien-tiep-mat-hon-34-chi-trong-chua-day-mot-tuan-giam-62400-ty-dong-von-hoa-so-voi-dinh-18826112523133747.chn",
+        "text": "Về tình hình kinh doanh, trong quý III/2026, Thaiholdings ghi nhận doanh thu thuần gần 319 tỷ đồng, tăng gần 31% so với cùng kỳ năm trước. Tuy nhiên, giá vốn hàng bán lên tới 312 tỷ đồng khiến lợi nhuận gộp chỉ đạt hơn 6 tỷ đồng, tương ứng biên lợi nhuận gộp khoảng 2%.",
+        "words": 56,
+        "sents": 2,
+        "nums": 4
+      },
+      {
+        "source": "CafeF Doanh nghiệp niêm yết",
+        "title": "\"Vua bo mạch AI\" chuyên cung cấp cho Nvidia muốn rót thêm 700 triệu USD vào Việt Nam: Xây nhà máy 10 ha, nhà ở 21 tầng cho công nhân",
+        "url": "https://cafef.vn/vua-bo-mach-ai-chuyen-cung-cap-cho-nvidia-muon-rot-them-700-trieu-usd-vao-viet-nam-xay-nha-may-10-ha-nha-o-21-tang-cho-cong-nhan-188261125234740861.chn",
+        "text": "Trong 9 tháng đầu năm 2026, Victory Giant ghi nhận doanh thu khoảng 68.000 tỷ đồng, tăng 30,8% so với cùng kỳ. Lợi nhuận ròng thuộc về cổ đông công ty mẹ đạt khoảng 12.500 tỷ đồng, tăng 4,3%. Tổng tài sản của tập đoàn đạt khoảng 264.000 tỷ đồng, gấp đôi thời điểm đầu năm.",
+        "words": 56,
+        "sents": 3,
+        "nums": 4
+      },
+      {
+        "source": "CafeF Doanh nghiệp niêm yết",
+        "title": "Việt Nam lại được 'ông lớn' Hà Lan chọn để đóng tàu biển đặc biệt: Có sân đáp trực thăng, 111 cabin, cần cẩu nâng 150 tấn dưới biển",
+        "url": "https://cafef.vn/viet-nam-lai-duoc-ong-lon-ha-lan-chon-de-dong-tau-bien-dac-biet-co-san-dap-truc-thang-111-cabin-can-cau-nang-150-tan-duoi-bien-188261125215633026.chn",
+        "text": "Năm 2025, Damen ghi nhận doanh thu 3,25 tỷ euro (khoảng 100.000 tỷ đồng), bàn giao 160 tàu. Giá trị đơn hàng đã ký nhưng chưa hoàn thành đạt 10,2 tỷ euro, tương đương hơn 300.000 tỷ đồng.",
+        "words": 38,
+        "sents": 2,
+        "nums": 4
+      },
+      {
+        "source": "CafeF Doanh nghiệp niêm yết",
+        "title": "Từng làm những chiếc cẩu cao 93 m, nặng 1.700 tấn: Nhà máy 'siêu thiết bị' ở Dung Quất được gã khổng lồ đóng tàu Hàn Quốc mua lại giá 200 triệu USD",
+        "url": "https://cafef.vn/tung-lam-nhung-chiec-cau-cao-93-m-nang-1700-tan-nha-may-sieu-thiet-bi-o-dung-quat-vua-duoc-ga-khong-lo-dong-tau-han-quoc-mua-lai-gia-200-trieu-usd-188261125222632442.chn",
+        "text": "Với mảng dầu khí và hóa dầu, Doosan Vina từng xuất 12 module nặng tổng cộng 1.746 tấn cho nhà máy lọc dầu Ruwais (UAE) và 1.200 tấn module sang Singapore. Tháng 3/2024, nhà máy gửi lô 9 module kết cấu thép nặng 1.900 tấn sang Tổ hợp polyme Golden Triangle ở bang Texas (Mỹ), thuộc hợp đồng 18 module tổng trọng lượng 4.589 tấn. Đây là lần đầu doanh nghiệp thắng thầu cung cấp module cho thị trường Mỹ.",
+        "words": 80,
+        "sents": 3,
+        "nums": 4
+      },
+      {
+        "source": "CafeF Doanh nghiệp niêm yết",
+        "title": "Dược phẩm Cửu Long (DCL) nằm sàn 5 phiên liên tiếp, dư bán chất đống sàn gần 13 triệu cổ phiếu",
+        "url": "https://cafef.vn/duoc-pham-cuu-long-dcl-nam-san-5-phien-lien-tiep-du-ban-chat-dong-san-gan-13-trieu-co-phieu-188261125223715083.chn",
+        "text": "Trong 9 tháng đầu năm 2026, dòng tiền thuần từ hoạt động kinh doanh chỉ dương khoảng 800 triệu đồng. Dù đã cải thiện đáng kể so với mức âm 39 tỷ đồng cùng kỳ năm trước, con số này vẫn khá khiêm tốn so với quy mô doanh thu của doanh nghiệp.",
+        "words": 53,
+        "sents": 2,
+        "nums": 3
+      },
+      {
+        "source": "CafeF Doanh nghiệp niêm yết",
+        "title": "\"Vua bo mạch AI\" chuyên cung cấp cho Nvidia muốn rót thêm 700 triệu USD vào Việt Nam: Xây nhà máy 10 ha, nhà ở 21 tầng cho công nhân",
+        "url": "https://cafef.vn/vua-bo-mach-ai-chuyen-cung-cap-cho-nvidia-muon-rot-them-700-trieu-usd-vao-viet-nam-xay-nha-may-10-ha-nha-o-21-tang-cho-cong-nhan-188261125234740861.chn",
+        "text": "Tính đến ngày 30/9/2026, tổng tài sản của Victory Giant Việt Nam đạt khoảng 3.600 tỷ đồng, tăng gần 175% so với đầu năm. Công ty chưa ghi nhận doanh thu và báo lỗ khoảng 31 tỷ đồng trong 9 tháng đầu năm.",
+        "words": 43,
+        "sents": 2,
+        "nums": 3
+      },
+      {
+        "source": "CafeF Doanh nghiệp niêm yết",
+        "title": "Việt Nam lại được 'ông lớn' Hà Lan chọn để đóng tàu biển đặc biệt: Có sân đáp trực thăng, 111 cabin, cần cẩu nâng 150 tấn dưới biển",
+        "url": "https://cafef.vn/viet-nam-lai-duoc-ong-lon-ha-lan-chon-de-dong-tau-bien-dac-biet-co-san-dap-truc-thang-111-cabin-can-cau-nang-150-tan-duoi-bien-188261125215633026.chn",
+        "text": "Tàu được trang bị cần cẩu có sức nâng 150 tấn dưới biển, đồng thời có thể vận hành ở chế độ bù chuyển động 3D với sức nâng 15 tấn. Ngoài phục vụ các dự án điện gió ngoài khơi, tàu còn có khả năng hỗ trợ sửa chữa cáp ngầm và triển khai robot dưới biển.",
+        "words": 58,
+        "sents": 2,
+        "nums": 3
+      },
+      {
+        "source": "CafeF Doanh nghiệp niêm yết",
+        "title": "Cổ phiếu Thaiholdings giảm sàn 4 phiên liên tiếp, mất hơn 34% chỉ trong chưa đầy một tuần, giảm 62.400 tỷ đồng vốn hóa so với đỉnh",
+        "url": "https://cafef.vn/co-phieu-thaiholdings-giam-san-4-phien-lien-tiep-mat-hon-34-chi-trong-chua-day-mot-tuan-giam-62400-ty-dong-von-hoa-so-voi-dinh-18826112523133747.chn",
+        "text": "Kết thúc phiên giao dịch ngày 25/11, cổ phiếu THD của CTCP Thaiholdings tiếp tục giảm hết biên độ trên sàn HNX, đánh dấu phiên giảm sàn thứ 4 liên tiếp. Tính chung 4 phiên, thị giá THD đã giảm 34,1%. Đây là lần đầu tiên trong hơn 2 năm, cổ phiếu này ghi nhận chuỗi giảm sàn kéo dài như vậy.",
+        "words": 62,
+        "sents": 3,
+        "nums": 3
+      },
+      {
+        "source": "CafeF Doanh nghiệp niêm yết",
+        "title": "Masan báo tin lãi khủng sau 10 tháng kinh doanh, cổ phiếu MSR tăng kịch trần gần 15%",
+        "url": "https://cafef.vn/masan-bao-tin-lai-khung-sau-10-thang-kinh-doanh-co-phieu-msr-tang-kich-tran-gan-15-188261125160906588.chn",
+        "text": "Lợi nhuận sau thuế của MSR đạt khoảng 190 triệu USD. Doanh nghiệp dự kiến kết thúc năm 2026 với lợi nhuận sau thuế từ 260-280 triệu USD, tương đương khoảng 6.750-7.270 tỷ đồng.",
+        "words": 34,
+        "sents": 2,
+        "nums": 3
+      },
+      {
+        "source": "CafeF Doanh nghiệp niêm yết",
+        "title": "Dược phẩm Cửu Long (DCL) nằm sàn 5 phiên liên tiếp, dư bán chất đống sàn gần 13 triệu cổ phiếu",
+        "url": "https://cafef.vn/duoc-pham-cuu-long-dcl-nam-san-5-phien-lien-tiep-du-ban-chat-dong-san-gan-13-trieu-co-phieu-188261125223715083.chn",
+        "text": "Kết phiên, DCL giảm hết biên độ 6,97%, xuống còn 30.700 đồng/cổ phiếu. Tuy nhiên, thanh khoản của mã này ở mức rất thấp khi chỉ có 1.300 cổ phiếu được khớp lệnh.",
+        "words": 33,
+        "sents": 2,
+        "nums": 3
+      },
+      {
+        "source": "CafeF Doanh nghiệp niêm yết",
+        "title": "Masan báo tin lãi khủng sau 10 tháng kinh doanh, cổ phiếu MSR tăng kịch trần gần 15%",
+        "url": "https://cafef.vn/masan-bao-tin-lai-khung-sau-10-thang-kinh-doanh-co-phieu-msr-tang-kich-tran-gan-15-188261125160906588.chn",
+        "text": "Trên thị trường chứng khoán, kết thúc phiên giao dịch ngày 25/11, cổ phiếu MSR tăng kịch trần 14,94% lên 55.400 đồng/cổ phiếu, với khối lượng giao dịch hơn 3,25 triệu đơn vị.",
+        "words": 33,
+        "sents": 1,
+        "nums": 3
+      },
+      {
+        "source": "CafeF Doanh nghiệp niêm yết",
+        "title": "Dược phẩm Cửu Long (DCL) nằm sàn 5 phiên liên tiếp, dư bán chất đống sàn gần 13 triệu cổ phiếu",
+        "url": "https://cafef.vn/duoc-pham-cuu-long-dcl-nam-san-5-phien-lien-tiep-du-ban-chat-dong-san-gan-13-trieu-co-phieu-188261125223715083.chn",
+        "text": "Dư nợ tài chính đạt khoảng 959 tỷ đồng, tăng thêm hơn 181 tỷ đồng. Trong đó, nợ vay ngắn hạn chiếm tỷ trọng lớn, lên tới gần 769 tỷ đồng.",
+        "words": 31,
+        "sents": 2,
+        "nums": 3
+      },
+      {
+        "source": "CafeF Doanh nghiệp niêm yết",
+        "title": "Masan báo tin lãi khủng sau 10 tháng kinh doanh, cổ phiếu MSR tăng kịch trần gần 15%",
+        "url": "https://cafef.vn/masan-bao-tin-lai-khung-sau-10-thang-kinh-doanh-co-phieu-msr-tang-kich-tran-gan-15-188261125160906588.chn",
+        "text": "Trong 10 tháng đầu năm, MSR ghi nhận doanh thu thuần đạt 29.701 tỷ đồng, gấp 5,1 lần cùng kỳ, đóng góp gần 30% doanh thu hợp nhất của tập đoàn.",
+        "words": 31,
+        "sents": 1,
+        "nums": 3
+      }
+    ],
+    "banking": [
+      {
+        "source": "CafeF Tài chính ngân hàng",
+        "title": "Giá vàng nhẫn trơn, vàng miếng chiều tối 25/11 tại SJC, PNJ, DOJI, Bảo Tín Minh Châu và Bảo Tín Mạnh Hải đồng loạt giảm so với cuối phiên hôm qua",
+        "url": "https://cafef.vn/gia-vang-nhan-tron-vang-mieng-chieu-25-11-tai-sjc-pnj-doji-bao-tin-minh-chau-va-bao-tin-manh-hai-188261124224943954.chn",
+        "text": "Tại Bảo Tín Minh Châu, giá mua - bán vàng nhẫn được niêm yết ở mức 128,5-133,5 triệu đồng/lượng, giảm 1,5 triệu đồng/lượng ở cả hai chiều. Vàng miếng SJC mua - bán ở mức 128,5-134,1 triệu đồng/lượng, giảm 1,5 triệu đồng/lượng ở chiều mua và 900.000 đồng/lượng ở chiều bán.",
+        "words": 51,
+        "sents": 2,
+        "nums": 5
+      },
+      {
+        "source": "CafeF Tài chính ngân hàng",
+        "title": "Giá vàng nhẫn trơn, vàng miếng chiều tối 25/11 tại SJC, PNJ, DOJI, Bảo Tín Minh Châu và Bảo Tín Mạnh Hải đồng loạt giảm so với cuối phiên hôm qua",
+        "url": "https://cafef.vn/gia-vang-nhan-tron-vang-mieng-chieu-25-11-tai-sjc-pnj-doji-bao-tin-minh-chau-va-bao-tin-manh-hai-188261124224943954.chn",
+        "text": "Tại Bảo Tín Minh Châu, giá mua - bán vàng nhẫn ở mức 128,5-133,5 triệu đồng/lượng, giảm 1,5 triệu đồng/lượng ở cả hai chiều. Vàng miếng SJC mua - bán ở mức 128,5-134,1 triệu đồng/lượng, giảm 1,5 triệu đồng/lượng ở chiều mua và 900.000 đồng/lượng ở chiều bán.",
+        "words": 48,
+        "sents": 2,
+        "nums": 5
+      },
+      {
+        "source": "CafeF Tài chính ngân hàng",
+        "title": "Giá vàng nhẫn trơn, vàng miếng chiều tối 25/11 tại SJC, PNJ, DOJI, Bảo Tín Minh Châu và Bảo Tín Mạnh Hải đồng loạt giảm so với cuối phiên hôm qua",
+        "url": "https://cafef.vn/gia-vang-nhan-tron-vang-mieng-chieu-25-11-tai-sjc-pnj-doji-bao-tin-minh-chau-va-bao-tin-manh-hai-188261124224943954.chn",
+        "text": "Tại DOJI, giá mua - bán vàng nhẫn được niêm yết ở mức 128,5-133,5 triệu đồng/lượng, giảm 1,5 triệu đồng/lượng ở cả hai chiều so với cuối phiên trước. Vàng miếng SJC mua - bán ở mức 129,1-134,1 triệu đồng/lượng, giảm 900.000 đồng/lượng ở cả hai chiều.",
+        "words": 47,
+        "sents": 2,
+        "nums": 5
+      },
+      {
+        "source": "CafeF Tài chính ngân hàng",
+        "title": "Ngày 26/11, gửi 100 triệu đồng kỳ hạn 12 tháng tại MB, VPBank, Techcombank, Sacombank, SHB, HDBank và ACB nhận được bao nhiêu tiền lãi?",
+        "url": "https://cafef.vn/ngay-26-11-gui-100-trieu-dong-ky-han-12-thang-tai-mb-vpbank-techcombank-sacombank-shb-hdbank-va-acb-nhan-duoc-bao-nhieu-tien-lai-18826112522380546.chn",
+        "text": "Ở kênh online, Sacombank áp dụng lãi suất 6,8%/năm đối với khoản tiền gửi từ 50 triệu đồng đến dưới 500 triệu đồng ở kỳ hạn 12 tháng. Với 100 triệu đồng gửi đủ một năm, khách hàng dự kiến nhận 6,8 triệu đồng tiền lãi.",
+        "words": 46,
+        "sents": 2,
+        "nums": 5
+      },
+      {
+        "source": "CafeF Tài chính ngân hàng",
+        "title": "Giá vàng nhẫn trơn, vàng miếng chiều tối 25/11 tại SJC, PNJ, DOJI, Bảo Tín Minh Châu và Bảo Tín Mạnh Hải đồng loạt giảm so với cuối phiên hôm qua",
+        "url": "https://cafef.vn/gia-vang-nhan-tron-vang-mieng-chieu-25-11-tai-sjc-pnj-doji-bao-tin-minh-chau-va-bao-tin-manh-hai-188261124224943954.chn",
+        "text": "Tại DOJI, giá mua - bán vàng nhẫn chốt phiên ở mức 128,5-133,5 triệu đồng/lượng, giảm 1,5 triệu đồng/lượng ở cả hai chiều so với cuối phiên trước. Vàng miếng SJC mua - bán ở mức 129,1-134,1 triệu đồng/lượng, giảm 900.000 đồng/lượng ở cả hai chiều.",
+        "words": 46,
+        "sents": 2,
+        "nums": 5
+      },
+      {
+        "source": "CafeF Tài chính ngân hàng",
+        "title": "Giá vàng nhẫn trơn, vàng miếng chiều tối 25/11 tại SJC, PNJ, DOJI, Bảo Tín Minh Châu và Bảo Tín Mạnh Hải đồng loạt giảm so với cuối phiên hôm qua",
+        "url": "https://cafef.vn/gia-vang-nhan-tron-vang-mieng-chieu-25-11-tai-sjc-pnj-doji-bao-tin-minh-chau-va-bao-tin-manh-hai-188261124224943954.chn",
+        "text": "Tại PNJ, giá mua - bán vàng nhẫn ở mức 126-131,5 triệu đồng/lượng, giảm 1 triệu đồng/lượng ở cả hai chiều so với cuối phiên trước. Vàng miếng SJC mua - bán ở mức 129,1-134,1 triệu đồng/lượng, tăng 600.000 đồng/lượng so với khảo sát buổi sáng nhưng vẫn thấp hơn 900.000 đồng/lượng so với cuối phiên hôm qua.",
+        "words": 58,
+        "sents": 2,
+        "nums": 5
+      },
+      {
+        "source": "CafeF Tài chính ngân hàng",
+        "title": "Agribank rao bán khoản nợ hơn 84,9 tỷ đồng, không còn tài sản bảo đảm",
+        "url": "https://cafef.vn/ngan-hang-rao-ban-khoan-no-hon-849-ty-dong-cua-mot-cong-ty-khong-con-tai-san-bao-dam-188261125214733682.chn",
+        "text": "Khoản nợ đến từ 3 hợp đồng tín dụng ký trong năm 2017 và 2019. Tính đến ngày 20/10/2026, giá trị ghi sổ tạm tính của khoản nợ là hơn 84,9 tỷ đồng. Trong đó, nợ gốc là hơn 55 tỷ đồng. Nợ lãi là gần 30 tỷ đồng, gồm lãi trong hạn 29,2 tỷ đồng và lãi quá hạn 626 triệu đồng.",
+        "words": 63,
+        "sents": 4,
+        "nums": 5
+      },
+      {
+        "source": "CafeF Tài chính ngân hàng",
+        "title": "Giá vàng nhẫn trơn, vàng miếng chiều tối 25/11 tại SJC, PNJ, DOJI, Bảo Tín Minh Châu và Bảo Tín Mạnh Hải đồng loạt giảm so với cuối phiên hôm qua",
+        "url": "https://cafef.vn/gia-vang-nhan-tron-vang-mieng-chieu-25-11-tai-sjc-pnj-doji-bao-tin-minh-chau-va-bao-tin-manh-hai-188261124224943954.chn",
+        "text": "Tại Bảo Tín Mạnh Hải, giá mua - bán vàng nhẫn được duy trì ở mức 128,5-133,5 triệu đồng/lượng, giảm 1,5 triệu đồng/lượng ở cả hai chiều so với cuối phiên trước. Vàng miếng SJC mua - bán ở mức 129,1-134,1 triệu đồng/lượng, giảm 900.000 đồng/lượng ở cả hai chiều.",
+        "words": 50,
+        "sents": 2,
+        "nums": 4
+      },
+      {
+        "source": "CafeF Tài chính ngân hàng",
+        "title": "2 nữ Quyền CEO ngân hàng trẻ nhất Việt Nam: Đều sinh năm 1983, từng cùng làm việc ở một ngân hàng",
+        "url": "https://cafef.vn/2-nu-quyen-ceo-ngan-hang-tre-nhat-viet-nam-deu-sinh-nam-1983-tung-cung-lam-viec-o-mot-ngan-hang-188261125144129742.chn",
+        "text": "Bà tiếp quản LPBank khi ngân hàng đang tăng trưởng nhanh. Tại ngày 30/9/2026, tổng tài sản đạt 694.183 tỷ đồng, tăng 14,6% so với đầu năm. Dư nợ cho vay khách hàng đạt 481.570 tỷ đồng, tăng 22,9%. Lợi nhuận trước thuế 9 tháng đạt 10.421 tỷ đồng.",
+        "words": 49,
+        "sents": 4,
+        "nums": 4
+      },
+      {
+        "source": "CafeF Tài chính ngân hàng",
+        "title": "Giá vàng nhẫn trơn, vàng miếng chiều tối 25/11 tại SJC, PNJ, DOJI, Bảo Tín Minh Châu và Bảo Tín Mạnh Hải đồng loạt giảm so với cuối phiên hôm qua",
+        "url": "https://cafef.vn/gia-vang-nhan-tron-vang-mieng-chieu-25-11-tai-sjc-pnj-doji-bao-tin-minh-chau-va-bao-tin-manh-hai-188261124224943954.chn",
+        "text": "Đối với vàng miếng SJC, cả 5 thương hiệu được khảo sát cùng niêm yết giá bán ra ở mức 134,1 triệu đồng/lượng. Giá mua vào tại SJC, PNJ, DOJI và Bảo Tín Mạnh Hải cùng ở mức 129,1 triệu đồng/lượng, cao hơn 600.000 đồng/lượng so với Bảo Tín Minh Châu.",
+        "words": 51,
+        "sents": 2,
+        "nums": 4
+      },
+      {
+        "source": "CafeF Tài chính ngân hàng",
+        "title": "Giá vàng nhẫn trơn, vàng miếng chiều tối 25/11 tại SJC, PNJ, DOJI, Bảo Tín Minh Châu và Bảo Tín Mạnh Hải đồng loạt giảm so với cuối phiên hôm qua",
+        "url": "https://cafef.vn/gia-vang-nhan-tron-vang-mieng-chieu-25-11-tai-sjc-pnj-doji-bao-tin-minh-chau-va-bao-tin-manh-hai-188261124224943954.chn",
+        "text": "Đối với vàng miếng SJC, cả 5 thương hiệu được khảo sát cùng chốt phiên với giá bán ra ở mức 134,1 triệu đồng/lượng. Giá mua vào tại SJC, PNJ, DOJI và Bảo Tín Mạnh Hải cùng ở mức 129,1 triệu đồng/lượng, cao hơn 600.000 đồng/lượng so với Bảo Tín Minh Châu.",
+        "words": 52,
+        "sents": 2,
+        "nums": 4
+      },
+      {
+        "source": "CafeF Tài chính ngân hàng",
+        "title": "Giá vàng nhẫn trơn, vàng miếng chiều tối 25/11 tại SJC, PNJ, DOJI, Bảo Tín Minh Châu và Bảo Tín Mạnh Hải đồng loạt giảm so với cuối phiên hôm qua",
+        "url": "https://cafef.vn/gia-vang-nhan-tron-vang-mieng-chieu-25-11-tai-sjc-pnj-doji-bao-tin-minh-chau-va-bao-tin-manh-hai-188261124224943954.chn",
+        "text": "Đối với vàng miếng SJC, giá mua vào và bán ra cao nhất thuộc về SJC, lần lượt ở mức 129,1 triệu đồng/lượng và 134,1 triệu đồng/lượng. Bốn thương hiệu còn lại cùng niêm yết giá mua - bán ở mức 128,5-133,5 triệu đồng/lượng, thấp hơn 600.000 đồng/lượng ở cả hai chiều.",
+        "words": 52,
+        "sents": 2,
+        "nums": 4
+      },
+      {
+        "source": "CafeF Tài chính ngân hàng",
+        "title": "Giá vàng nhẫn trơn, vàng miếng chiều tối 25/11 tại SJC, PNJ, DOJI, Bảo Tín Minh Châu và Bảo Tín Mạnh Hải đồng loạt giảm so với cuối phiên hôm qua",
+        "url": "https://cafef.vn/gia-vang-nhan-tron-vang-mieng-chieu-25-11-tai-sjc-pnj-doji-bao-tin-minh-chau-va-bao-tin-manh-hai-188261124224943954.chn",
+        "text": "Tại SJC, giá mua - bán vàng nhẫn được niêm yết ở mức 127,9-133,9 triệu đồng/lượng, giảm 900.000 đồng/lượng ở cả hai chiều so với cuối phiên trước. Vàng miếng SJC mua - bán ở mức 129,1-134,1 triệu đồng/lượng, cũng giảm 900.000 đồng/lượng ở cả hai chiều.",
+        "words": 47,
+        "sents": 2,
+        "nums": 4
+      },
+      {
+        "source": "CafeF Tài chính ngân hàng",
+        "title": "Giá vàng nhẫn trơn, vàng miếng chiều tối 25/11 tại SJC, PNJ, DOJI, Bảo Tín Minh Châu và Bảo Tín Mạnh Hải đồng loạt giảm so với cuối phiên hôm qua",
+        "url": "https://cafef.vn/gia-vang-nhan-tron-vang-mieng-chieu-25-11-tai-sjc-pnj-doji-bao-tin-minh-chau-va-bao-tin-manh-hai-188261124224943954.chn",
+        "text": "Tại SJC, giá mua - bán vàng nhẫn được niêm yết ở mức 127,9-133,9 triệu đồng/lượng, giảm 900.000 đồng/lượng ở cả hai chiều so với cuối phiên trước. Vàng miếng SJC mua - bán ở mức 129,1-134,1 triệu đồng/lượng, cũng giảm 900.000 đồng/lượng ở cả hai chiều.",
+        "words": 47,
+        "sents": 2,
+        "nums": 4
+      },
+      {
+        "source": "CafeF Tài chính ngân hàng",
+        "title": "Ngày 26/11, gửi 100 triệu đồng kỳ hạn 12 tháng tại MB, VPBank, Techcombank, Sacombank, SHB, HDBank và ACB nhận được bao nhiêu tiền lãi?",
+        "url": "https://cafef.vn/ngay-26-11-gui-100-trieu-dong-ky-han-12-thang-tai-mb-vpbank-techcombank-sacombank-shb-hdbank-va-acb-nhan-duoc-bao-nhieu-tien-lai-18826112522380546.chn",
+        "text": "Như vậy, với khoản tiền gửi 100 triệu đồng trong 12 tháng, Sacombank có lãi suất online cao nhất trong nhóm được so sánh, ở mức 6,8%/năm, tương ứng 6,8 triệu đồng tiền lãi. VPBank đứng sau với lãi suất 6,6%/năm, tương ứng 6,6 triệu đồng.",
+        "words": 46,
+        "sents": 2,
+        "nums": 4
+      },
+      {
+        "source": "CafeF Tài chính ngân hàng",
+        "title": "Giá vàng nhẫn trơn, vàng miếng chiều tối 25/11 tại SJC, PNJ, DOJI, Bảo Tín Minh Châu và Bảo Tín Mạnh Hải đồng loạt giảm so với cuối phiên hôm qua",
+        "url": "https://cafef.vn/gia-vang-nhan-tron-vang-mieng-chieu-25-11-tai-sjc-pnj-doji-bao-tin-minh-chau-va-bao-tin-manh-hai-188261124224943954.chn",
+        "text": "Tại SJC, giá mua - bán vàng nhẫn chốt phiên ở mức 127,9-133,9 triệu đồng/lượng, giảm 900.000 đồng/lượng ở cả hai chiều so với cuối phiên trước. Vàng miếng SJC mua - bán ở mức 129,1-134,1 triệu đồng/lượng, cũng giảm 900.000 đồng/lượng ở cả hai chiều.",
+        "words": 46,
+        "sents": 2,
+        "nums": 4
+      },
+      {
+        "source": "CafeF Tài chính ngân hàng",
+        "title": "Ngày 26/11, gửi 100 triệu đồng kỳ hạn 12 tháng tại MB, VPBank, Techcombank, Sacombank, SHB, HDBank và ACB nhận được bao nhiêu tiền lãi?",
+        "url": "https://cafef.vn/ngay-26-11-gui-100-trieu-dong-ky-han-12-thang-tai-mb-vpbank-techcombank-sacombank-shb-hdbank-va-acb-nhan-duoc-bao-nhieu-tien-lai-18826112522380546.chn",
+        "text": "VPBank niêm yết lãi suất tiết kiệm online kỳ hạn 12 tháng ở mức 6,6%/năm đối với khoản tiền gửi dưới 1 tỷ đồng. Mức lãi suất này tương ứng 6,6 triệu đồng tiền lãi cho khoản gửi 100 triệu đồng sau một năm.",
+        "words": 44,
+        "sents": 2,
+        "nums": 4
+      },
+      {
+        "source": "CafeF Tài chính ngân hàng",
+        "title": "Giá vàng nhẫn trơn, vàng miếng chiều tối 25/11 tại SJC, PNJ, DOJI, Bảo Tín Minh Châu và Bảo Tín Mạnh Hải đồng loạt giảm so với cuối phiên hôm qua",
+        "url": "https://cafef.vn/gia-vang-nhan-tron-vang-mieng-chieu-25-11-tai-sjc-pnj-doji-bao-tin-minh-chau-va-bao-tin-manh-hai-188261124224943954.chn",
+        "text": "Tại Bảo Tín Mạnh Hải, giá mua - bán vàng nhẫn chốt phiên ở mức 128,5-133,5 triệu đồng/lượng, giảm 1,5 triệu đồng/lượng ở cả hai chiều. Vàng miếng SJC mua - bán ở mức 129,1-134,1 triệu đồng/lượng, giảm 900.000 đồng/lượng ở cả hai chiều.",
+        "words": 44,
+        "sents": 2,
+        "nums": 4
+      },
+      {
+        "source": "CafeF Tài chính ngân hàng",
+        "title": "Ngày 26/11, gửi 100 triệu đồng kỳ hạn 12 tháng tại MB, VPBank, Techcombank, Sacombank, SHB, HDBank và ACB nhận được bao nhiêu tiền lãi?",
+        "url": "https://cafef.vn/ngay-26-11-gui-100-trieu-dong-ky-han-12-thang-tai-mb-vpbank-techcombank-sacombank-shb-hdbank-va-acb-nhan-duoc-bao-nhieu-tien-lai-18826112522380546.chn",
+        "text": "Tại MB, biểu lãi suất tiết kiệm khách hàng cá nhân ghi nhận mức 5,7%/năm đối với khoản tiền dưới 1 tỷ đồng ở kỳ hạn 12 tháng. Khoản tiền gửi 100 triệu đồng tương ứng 5,7 triệu đồng tiền lãi.",
+        "words": 41,
+        "sents": 2,
+        "nums": 4
+      },
+      {
+        "source": "CafeF Tài chính ngân hàng",
+        "title": "Ngày 26/11, gửi 100 triệu đồng kỳ hạn 12 tháng tại MB, VPBank, Techcombank, Sacombank, SHB, HDBank và ACB nhận được bao nhiêu tiền lãi?",
+        "url": "https://cafef.vn/ngay-26-11-gui-100-trieu-dong-ky-han-12-thang-tai-mb-vpbank-techcombank-sacombank-shb-hdbank-va-acb-nhan-duoc-bao-nhieu-tien-lai-18826112522380546.chn",
+        "text": "Tại Techcombank, lãi suất kỳ hạn 12 tháng dành cho khách hàng thông thường có khoản tiền gửi dưới 1 tỷ đồng là 5,75%/năm. Với 100 triệu đồng gửi đủ kỳ hạn, tiền lãi dự kiến đạt 5,75 triệu đồng.",
+        "words": 40,
+        "sents": 2,
+        "nums": 4
+      }
+    ],
+    "macro_business": [
+      {
+        "source": "VnExpress Kinh doanh",
+        "title": "Bộ Công Thương: Thuế bổ sung Mỹ đề xuất áp với Việt Nam có thể giảm",
+        "url": "https://vnexpress.net/bo-cong-thuong-thue-bo-sung-my-de-xuat-ap-voi-viet-nam-co-the-giam-5148936.html",
+        "text": "Theo số liệu của Cục Thống kê, tính chung 10 tháng đầu năm, tổng kim ngạch xuất nhập khẩu đạt khoảng 1.001 tỷ USD, vượt quy mô cả năm 2025. Mỹ là thị trường xuất khẩu lớn nhất của Việt Nam trong 10 tháng năm nay, đạt 159,4 tỷ USD.",
+        "words": 50,
+        "sents": 2,
+        "nums": 4
+      },
+      {
+        "source": "VnExpress Kinh doanh",
+        "title": "Nhà đầu tư ngoại bán ròng đột biến",
+        "url": "https://vnexpress.net/nha-dau-tu-ngoai-ban-rong-dot-bien-5148823.html",
+        "text": "Thanh khoản sàn TP HCM đạt hơn 16.000 tỷ đồng, chủ yếu đến từ phương thức thỏa thuận. Dòng tiền tập trung cục bộ ở rổ vốn hóa lớn với giá trị hơn 10.500 tỷ đồng. Xét theo phương thức khớp lệnh, FPT dẫn đầu với hơn 430 tỷ đồng, sau đó đến VIX và VIC.",
+        "words": 56,
+        "sents": 3,
+        "nums": 4
+      },
+      {
+        "source": "VnExpress Kinh doanh",
+        "title": "Ngân hàng vẫn chào lãi suất tiết kiệm tới 9,6% một năm",
+        "url": "https://vnexpress.net/ngan-hang-van-chao-lai-suat-tiet-kiem-toi-9-6-mot-nam-5148499.html",
+        "text": "Nhân viên Vikki Bank chào lãi suất 9% một năm cho khoản tiền gửi từ 10 triệu đồng, kỳ hạn 6-13 tháng. Với khoản tiền từ 200 triệu đồng, lãi suất có thể lên tới 9,6% nếu khách chọn sản phẩm lãi kép (nhận lãi đầu kỳ, sau đó gửi thành sổ mới).",
+        "words": 53,
+        "sents": 2,
+        "nums": 3
+      },
+      {
+        "source": "VnExpress Kinh doanh",
+        "title": "Ngân hàng vẫn chào lãi suất tiết kiệm tới 9,6% một năm",
+        "url": "https://vnexpress.net/ngan-hang-van-chao-lai-suat-tiet-kiem-toi-9-6-mot-nam-5148499.html",
+        "text": "Với lãi suất niêm yết , hiện mức cao nhất hệ thống là 7,9% một năm, tại Saigonbank, cho khoản tiền gửi 13 tháng không yêu cầu số tiền. Các khoản tiền dưới 1 tỷ đồng gửi kỳ hạn 12 tháng, mức niêm yết tại các ngân hàng không quá 7% một năm.",
+        "words": 53,
+        "sents": 2,
+        "nums": 3
+      },
+      {
+        "source": "VnExpress Kinh doanh",
+        "title": "Nhà đầu tư ngoại bán ròng đột biến",
+        "url": "https://vnexpress.net/nha-dau-tu-ngoai-ban-rong-dot-bien-5148823.html",
+        "text": "Ngoài Vingroup, khối ngoại còn xả hàng nhiều mã như ETF FUEVFVND, MSN, HDB, MCH và ACB. Tổng giá trị bán ròng cả phiên hôm nay lên đến 5.700 tỷ đồng, gấp 13 lần ngày đầu tuần, đồng thời nối dài chuỗi bán 6 phiên liên tiếp.",
+        "words": 47,
+        "sents": 2,
+        "nums": 3
+      },
+      {
+        "source": "VnExpress Kinh doanh",
+        "title": "Ngân hàng vẫn chào lãi suất tiết kiệm tới 9,6% một năm",
+        "url": "https://vnexpress.net/ngan-hang-van-chao-lai-suat-tiet-kiem-toi-9-6-mot-nam-5148499.html",
+        "text": "Từ giữa tháng 10, Ngân hàng Nhà nước đã yêu cầu các nhà băng giảm tối thiểu 0,5 điểm phần trăm lãi suất tiền gửi kỳ hạn từ 6 tháng. Ngay sau đó, hầu hết nhà băng đều đã điều chỉnh biểu lãi suất tiết kiệm niêm yết, giảm 0,5% với kỳ hạn từ 6 tháng trở lên.",
+        "words": 58,
+        "sents": 2,
+        "nums": 3
+      },
+      {
+        "source": "VnExpress Kinh doanh",
+        "title": "Nhà đầu tư ngoại bán ròng đột biến",
+        "url": "https://vnexpress.net/nha-dau-tu-ngoai-ban-rong-dot-bien-5148823.html",
+        "text": "Nhà đầu tư nước ngoài thực hiện ba lệnh bán thỏa thuận cổ phiếu Vingroup (VIC) trong 15 phút cuối phiên hôm nay. Tổng khối lượng sang tay gần 19 triệu cổ phiếu, cùng ở giá tham chiếu 245.700 đồng. Một số lệnh khác được thực hiện bằng phương thức khớp lệnh, nâng giá trị rút ròng lên 4.700 tỷ đồng.",
+        "words": 61,
+        "sents": 3,
+        "nums": 3
+      },
+      {
+        "source": "VnExpress Kinh doanh",
+        "title": "Nhiều người tính để dành thưởng Tết vì giá tăng",
+        "url": "https://vnexpress.net/nhieu-nguoi-tinh-de-danh-thuong-tet-vi-gia-tang-5148820.html",
+        "text": "Sống tại phường An Lạc (TP HCM), gia đình chị Minh Trang năm nay ăn ngoài nhiều hơn vì công việc bận rộn. Chị cho biết một phần ăn giá trung bình 50.000-55.000 đồng, tăng so với 30.000-35.000 đồng hồi năm ngoái. Giá loại thực phẩm chức năng chị thường dùng cũng đắt thêm gần trăm nghìn đồng, lên 580.000-600.000 đồng mỗi lọ.",
+        "words": 63,
+        "sents": 3,
+        "nums": 3
+      },
+      {
+        "source": "VnExpress Kinh doanh",
+        "title": "Nhiều người tính để dành thưởng Tết vì giá tăng",
+        "url": "https://vnexpress.net/nhieu-nguoi-tinh-de-danh-thuong-tet-vi-gia-tang-5148820.html",
+        "text": "Tương tự, nghiên cứu của Ngân hàng UOB cho biết dù tâm lý nhìn chung có phần thận trọng hơn, người tiêu dùng vẫn lạc quan về triển vọng kinh tế. Chỉ số tâm lý người tiêu dùng Việt Nam đạt 63 điểm, giảm 4 điểm so với năm trước, song vẫn đứng đầu khu vực và cao hơn mức bình quân (54 điểm).",
+        "words": 64,
+        "sents": 2,
+        "nums": 3
+      },
+      {
+        "source": "VnExpress Kinh doanh",
+        "title": "Nhà đầu tư ngoại bán ròng đột biến",
+        "url": "https://vnexpress.net/nha-dau-tu-ngoai-ban-rong-dot-bien-5148823.html",
+        "text": "Các lệnh bán lớn được thực hiện trong phiên thỏa thuận nên không ảnh hưởng đến giá cổ phiếu và chỉ số đại diện cho sàn TP HCM. VIC đóng cửa tại 245.400 đồng, mất 0,1% so với tham chiếu. VN-Index đảo chiều từ tăng thành giảm gần 10 điểm, xuống 1.687 điểm, chủ yếu do tác động của nhóm ngân hàng và bất động sản.",
+        "words": 66,
+        "sents": 3,
+        "nums": 3
+      },
+      {
+        "source": "VnExpress Kinh doanh",
+        "title": "PNJ hạ giá vàng nhẫn trơn xuống thấp hơn nhiều thương hiệu lớn",
+        "url": "https://vnexpress.net/pnj-ha-gia-vang-nhan-tron-xuong-thap-hon-nhieu-thuong-hieu-lon-5148658.html",
+        "text": "Ở chiều mua vào từ người dân, SJC và DOJI niêm yết quanh 128 triệu đồng một lượng, còn Mi Hồng thu vào giá cao nhất 132,5 triệu mỗi lượng.",
+        "words": 30,
+        "sents": 1,
+        "nums": 3
+      },
+      {
+        "source": "VnExpress Kinh doanh",
+        "title": "Nhiều người tính để dành thưởng Tết vì giá tăng",
+        "url": "https://vnexpress.net/nhieu-nguoi-tinh-de-danh-thuong-tet-vi-gia-tang-5148820.html",
+        "text": "Áp lực giá cũng thể hiện trong nghiên cứu Tâm lý người tiêu dùng ASEAN 2026 của Ngân hàng UOB công bố mới đây. Theo đó, 62% người tham gia khảo sát tại Việt Nam lo ngại về chi phí sinh hoạt leo thang, cao hơn 8 điểm phần trăm so với 2025. Tỷ lệ lo lắng về chi tiêu hộ gia đình ở mức 60%, tăng 10 điểm phần trăm.",
+        "words": 71,
+        "sents": 3,
+        "nums": 3
+      },
+      {
+        "source": "VnExpress Kinh doanh",
+        "title": "Giá vàng thế giới mất mốc 3.500 USD",
+        "url": "https://vnexpress.net/gia-vang-the-gioi-mat-moc-3-500-usd-5148917.html",
+        "text": "Tối 25/11, giá vàng thế giới giao ngay giảm 101 USD, hiện còn 3.454 USD một ounce. Giá đi xuống sau khi Mỹ công bố chỉ số chi tiêu cá nhân (PCE) tháng 10 tiếp tục tăng tốc, với 3,8% so với cùng kỳ năm ngoái. Tốc độ này cao hơn 3,6% của tháng 9.",
+        "words": 55,
+        "sents": 3,
+        "nums": 2
+      },
+      {
+        "source": "VnExpress Kinh doanh",
+        "title": "Nhà đầu tư ngoại bán ròng đột biến",
+        "url": "https://vnexpress.net/nha-dau-tu-ngoai-ban-rong-dot-bien-5148823.html",
+        "text": "MCH của Masan Consumer dẫn đầu danh sách tác động tiêu cực nhất đến chỉ số khi sụt hơn 2%, xuống 130.000 đồng. VHM, HPG, VCB, BID lần lượt xếp sau. Ngược lại, KLB của KienlongBank là cổ phiếu hiếm hoi tăng hết biên độ, lên 10.900 đồng, nằm trong nhóm đóng góp tích cực cho VN-Index.",
+        "words": 57,
+        "sents": 3,
+        "nums": 2
+      },
+      {
+        "source": "VnExpress Kinh doanh",
+        "title": "PNJ hạ giá vàng nhẫn trơn xuống thấp hơn nhiều thương hiệu lớn",
+        "url": "https://vnexpress.net/pnj-ha-gia-vang-nhan-tron-xuong-thap-hon-nhieu-thuong-hieu-lon-5148658.html",
+        "text": "Giá vàng giao ngay trên thị trường quốc tế sáng nay neo quanh 3.550 USD một ounce. Quy đổi theo tỷ giá Vietcombank, giá vàng thế giới tương đương 111,2 triệu đồng một lượng, chưa gồm thuế, phí.",
+        "words": 38,
+        "sents": 2,
+        "nums": 2
+      },
+      {
+        "source": "VnExpress Kinh doanh",
+        "title": "Ngân hàng vẫn chào lãi suất tiết kiệm tới 9,6% một năm",
+        "url": "https://vnexpress.net/ngan-hang-van-chao-lai-suat-tiet-kiem-toi-9-6-mot-nam-5148499.html",
+        "text": "PVcomBank đưa ra mức lãi 9,1% một năm với khoản tiền gửi từ 100 triệu đồng, kèm quà tặng. MBV cũng áp dụng mức 9,1% cho khoản tiền gửi dưới 3 tỷ đồng tại quầy giao dịch.",
+        "words": 37,
+        "sents": 2,
+        "nums": 2
+      },
+      {
+        "source": "VnExpress Kinh doanh",
+        "title": "Nhà đầu tư ngoại bán ròng đột biến",
+        "url": "https://vnexpress.net/nha-dau-tu-ngoai-ban-rong-dot-bien-5148823.html",
+        "text": "Khối ngoại bán ròng khoảng 4.700 tỷ đồng cổ phiếu Vingroup, nâng giá trị rút ròng cả phiên lên gần 5.700 tỷ đồng, mức cao nhất một tháng rưỡi.",
+        "words": 29,
+        "sents": 1,
+        "nums": 2
+      },
+      {
+        "source": "VnExpress Kinh doanh",
+        "title": "PNJ hạ giá vàng nhẫn trơn xuống thấp hơn nhiều thương hiệu lớn",
+        "url": "https://vnexpress.net/pnj-ha-gia-vang-nhan-tron-xuong-thap-hon-nhieu-thuong-hieu-lon-5148658.html",
+        "text": "Chênh lệch giữa giá mua và bán vàng nhẫn ở mức cao 5 triệu đồng, riêng tại Mi Hồng có mức chênh lệch chỉ khoảng 1,5 triệu mỗi lượng.",
+        "words": 29,
+        "sents": 1,
+        "nums": 2
+      },
+      {
+        "source": "VnExpress Kinh doanh",
+        "title": "PNJ hạ giá vàng nhẫn trơn xuống thấp hơn nhiều thương hiệu lớn",
+        "url": "https://vnexpress.net/pnj-ha-gia-vang-nhan-tron-xuong-thap-hon-nhieu-thuong-hieu-lon-5148658.html",
+        "text": "Sáng 25/11, vàng nhẫn trơn được các thương hiệu lớn như SJC, DOJI và Mi Hồng bán ra thị trường từ 133,5 đến 134 triệu đồng mỗi lượng.",
+        "words": 28,
+        "sents": 1,
+        "nums": 2
+      },
+      {
+        "source": "VnExpress Kinh doanh",
+        "title": "PNJ hạ giá vàng nhẫn trơn xuống thấp hơn nhiều thương hiệu lớn",
+        "url": "https://vnexpress.net/pnj-ha-gia-vang-nhan-tron-xuong-thap-hon-nhieu-thuong-hieu-lon-5148658.html",
+        "text": "Chênh lệch giữa giá vàng miếng và thế giới vẫn neo cao gần 23 triệu đồng một lượng, trong khi nhẫn trơn chênh 20-23 triệu tuỳ thương hiệu.",
+        "words": 28,
+        "sents": 1,
+        "nums": 2
+      }
+    ]
+  }
+}
