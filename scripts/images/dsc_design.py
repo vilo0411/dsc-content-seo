@@ -1,5 +1,5 @@
 """DSC article-image design system (tokens + components) for PIL.
-Spec: knowledge/1-brand/image-design-system.md — keep both in sync.
+Spec: .agents/skills/image/references/image-design-system.md — keep both in sync.
 
 Everything is drawn at SS x scale and downsampled (anti-aliasing PIL lacks).
 Coordinates passed to Canvas methods are in final pixels.

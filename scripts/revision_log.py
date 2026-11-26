@@ -20,6 +20,7 @@ import sys
 from datetime import date, timedelta
 
 from _common import PIPELINE_DIR, REVISION_LOG, setup_utf8
+from activity_log import emit
 
 STATE = PIPELINE_DIR / "logs" / "learn-state.json"
 ENTRY = re.compile(r"^### \[(\d{4}-\d{2}-\d{2})\]\s*-\s*(.+?)\s*$")
@@ -75,6 +76,7 @@ def cmd_add(a) -> int:
     text = raw.decode("utf-8").rstrip()
     out = (text + nl + nl if text else "") + nl.join(block) + nl
     REVISION_LOG.write_bytes(out.encode("utf-8"))
+    emit("seo", "revise", slug, skill="revision_log", note=a.pattern[:120], path=REVISION_LOG)
     print(f"Đã ghi revision-log: [{a.date}] {slug} ({sum(len(v) for v in fields.values())} ký tự)")
     return 0
 
@@ -114,6 +116,7 @@ def cmd_brief(a) -> int:
 def cmd_mark(_a) -> int:
     today = date.today().isoformat()
     STATE.write_text(json.dumps({"last_learn": today}, ensure_ascii=False) + "\n", encoding="utf-8")
+    emit("seo", "learn", "revision-log", skill="learn", path=STATE)
     print(f"Đã lưu mốc /learn: {today}")
     return 0
 

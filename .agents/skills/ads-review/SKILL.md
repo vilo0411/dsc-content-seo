@@ -23,3 +23,6 @@ Phân phối → chi tiêu → KPI chính vs brief → tầng phễu hỏng → 
 - Đề xuất đánh số, mỗi đề xuất: hành động · lý do (số) · mức ảnh hưởng ước tính · cần user xác nhận không.
 - Muốn trực quan: dùng Dashboard artifact (quickstart intent "other").
 Trình bày ≤ 25 dòng. Mọi thay đổi trên Meta (tắt ad, đổi budget) chỉ làm khi user yêu cầu rõ. Có pattern lặp → gợi ý `/ads-learn`.
+
+## Ghi activity log (bước cuối)
+Sau khi lưu output (và sau mỗi lần user duyệt → `--action approve`): `python scripts/activity_log.py add --domain ads-meta --skill ads-review --action report --target <CMP-id | account> --path <review-YYYY-MM-DD.md>`. Hiện ở tab **Hoạt động** của `knowledge/0-dashboard/index.html`.

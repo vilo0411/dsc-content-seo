@@ -23,3 +23,6 @@ Kênh thiếu số → ghi "chưa có số", không ước đoán.
 
 ## Bước 3
 Trình bày ≤ 20 dòng. Có bài học ads → gợi ý `/ads-learn`; bài SEO tụt → `/optimize`.
+
+## Ghi activity log (bước cuối)
+Sau khi lưu output (và sau mỗi lần user duyệt → `--action approve`): `python scripts/activity_log.py add --domain campaign --skill campaign-report --action report --target <CMP-id> --path <job>/report.md`. Hiện ở tab **Hoạt động** của `knowledge/0-dashboard/index.html`.

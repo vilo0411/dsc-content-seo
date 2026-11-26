@@ -134,9 +134,12 @@ def _md_rows(path: Path):
 
 
 def _sitemap() -> set[str]:
+    """Live slugs: sitemap + pages sync_live fetched directly (CMS leaves some articles out of the sitemap;
+    sync_live deletes the snapshot of a removed / 301 page, so a snapshot on disk means the URL is live)."""
+    live = {f.stem for f in (ROOT / "knowledge/raw/live/html").glob("*.html")}
     if not SITEMAP_CACHE.exists():
-        return set()
-    return {u.rstrip("/").rsplit("/", 1)[-1] for u in json.loads(SITEMAP_CACHE.read_text(encoding="utf-8")).get("urls", [])}
+        return live
+    return live | {u.rstrip("/").rsplit("/", 1)[-1] for u in json.loads(SITEMAP_CACHE.read_text(encoding="utf-8")).get("urls", [])}
 
 
 def _taxonomy_roles() -> dict[str, tuple[str, str]]:
@@ -155,6 +158,10 @@ def _taxonomy_roles() -> dict[str, tuple[str, str]]:
             for s in g.get("spokes", []):
                 out.setdefault(s, ("spoke", hub or pillar))
     return out
+
+
+def final_path(file_slug: str) -> Path:
+    return FINAL_DIR / f"Final-{file_slug}.md"
 
 
 def _final_titles() -> dict[str, str]:
@@ -181,6 +188,14 @@ def _map_to_live(file_slug: str, title: str, live: dict[str, str]) -> str:
         if scored and scored[0][0] >= 0.8 and (len(scored) == 1 or scored[0][0] - scored[1][0] >= 0.05):
             return scored[0][1]
     return ""
+
+
+def _content_target(file_slug: str) -> str:
+    """Live slug whose body matches Final-<file_slug>.md (weekly_review.content_match) — catches articles
+    the CMS published under an unrelated URL; empty when no page is a clear match."""
+    import weekly_review as wr  # same matcher the publish ledger uses
+    best, score, _, second = wr.content_match(file_slug)
+    return best if best and score >= wr.MATCH_MIN and score - second >= wr.MATCH_MARGIN else ""
 
 
 def _groups() -> dict[str, dict]:
@@ -291,7 +306,7 @@ def cmd_refresh(a) -> int:
     for r in list(by_slug.values()):
         if r["slug"] in sitemap or not r["file_slug"]:
             continue
-        target = _map_to_live(r["file_slug"], r["title"], live_titles)
+        target = _map_to_live(r["file_slug"], r["title"], live_titles) or _content_target(r["file_slug"])
         t = by_slug.get(target)
         if t and t is not r and (not t["file_slug"] or t["file_slug"] == r["file_slug"]):
             t["file_slug"] = r["file_slug"]
@@ -314,9 +329,14 @@ def cmd_refresh(a) -> int:
 def cmd_check(a) -> int:
     rows, issues = load(), 0
     live_slugs = {r["slug"] for r in rows if r["live"] == "yes"}
-    pending = [r for r in rows if r["file_slug"] and r["live"] == "no" and r["status"] in ("Finalized", "Optimizing")]
-    print(f"## Bài Finalized chưa khớp URL live ({len(pending)}) — đã publish thì sửa cột `slug` thành slug live")
+    not_live = [r for r in rows if r["file_slug"] and r["live"] == "no" and r["status"] in ("Finalized", "Optimizing")]
+    pending = [r for r in not_live if not final_path(r["file_slug"]).exists()]
+    waiting = [r for r in not_live if r not in pending]
+    print(f"## Finalized nhưng không có file Final ({len(pending)}) — sửa status, hoặc gộp vào dòng URL live")
     for r in pending[:40]:
+        print(f"- {r['file_slug']} · {r['key_chinh'][:70]}")
+    print(f"\n## Bài Final chờ đăng ({len(waiting)}) — không lỗi; refresh tự khớp URL khi thân bài có trên live")
+    for r in waiting[:40]:
         print(f"- {r['file_slug']} · {r['title'][:70]}")
     dups: dict[str, list[str]] = {}
     for r in rows:

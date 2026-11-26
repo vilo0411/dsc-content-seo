@@ -25,4 +25,4 @@
 - Tên đứng quảng cáo: **Chứng khoán DSC** (theo `profile.md`), không dùng tên cá nhân môi giới làm brand.
 
 ## 4. Giọng văn
-Theo `profile.md` §4: chuyên nghiệp, hiện đại, tận tâm. Không giật tít kiểu FOMO ("Cơ hội cuối cùng!", "Đừng bỏ lỡ siêu cổ!"). Không dùng màu đỏ trong hình (visual-brand-guidelines §4).
+Theo `profile.md` §4: chuyên nghiệp, hiện đại, tận tâm. Không giật tít kiểu FOMO ("Cơ hội cuối cùng!", "Đừng bỏ lỡ siêu cổ!"). Không dùng màu đỏ trong hình (`DESIGN.md` §5).

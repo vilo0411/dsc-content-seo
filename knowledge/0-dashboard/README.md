@@ -4,6 +4,8 @@
 
 Mở [bảng điều hành](index.html): mục **Chờ duyệt** trên cùng (Proposal / outline / bản viết lại đang chờ `/approve`, đọc ngay trên trang, tìm theo slug / từ khóa / đợt hoặc cả nội dung, nút copy lệnh `/approve`); bài SEO theo bước (từ registry), registry lệch, theo dõi đối thủ, báo cáo tháng, bản nháp kênh khác, rồi tới internal link, stale, content audit, QA/SERP, GSC và việc sau publish. Kho tài liệu trên cùng trang tìm cả tài liệu hiện hành và lưu trữ. [status.json](status.json) lưu kết quả tổng hợp.
 
+Tab **Kênh** = 1 thẻ / kênh (SEO, Campaign, Meta Ads, Google Ads, Email, Landing, Social, Creative, Analytics, Thị trường) · tab **Hoạt động** = dòng thời gian mọi việc, lọc theo kênh / người / loại việc / khoảng ngày, đọc từ `../logs/activity/*.jsonl`. Nháp ngoài SEO chờ duyệt (`Stage: PREVIEW`, `Status: Draft`) hiện trong **Cần làm** của tab Hôm nay.
+
 ## Cập nhật tiến độ
 
 Từ thư mục gốc dự án:
@@ -12,7 +14,7 @@ Từ thư mục gốc dự án:
 python scripts/build_content_index.py
 ```
 
-Lệnh cập nhật cả danh mục CMS và bảng điều hành. Không gọi mạng, không sửa trạng thái nguồn. Xuất CMS bằng `md_to_cms_html.py` cũng chạy bước này.
+Claude Code tự chạy lệnh này ở cuối lượt nếu activity log có dòng mới (hook Stop, chạy nền). Lệnh cập nhật cả danh mục CMS và bảng điều hành. Không gọi mạng, không sửa trạng thái nguồn. Xuất CMS bằng `md_to_cms_html.py` cũng chạy bước này.
 
 Sau khi sửa CMS, dùng quy trình sync hiện có rồi chạy lại lệnh trên. Snapshot có thể chỉ sync một phần; ngày `last_run` không phải ngày cập nhật của mọi bài. Bảng không xác nhận website hiện tại nếu chưa sync mới.
 
@@ -27,6 +29,8 @@ Sau khi sửa CMS, dùng quy trình sync hiện có rồi chạy lại lệnh tr
 | Sau publish | `../3-seo/logs/publish-ledger.csv` | Các mốc đã ghi nhận; `seed` là dữ liệu lịch sử, không phải ngày publish |
 | QA/SERP | `../3-seo/content/audits/**/validation*.json` | Kết quả kiểm tra đã lưu; chưa chứng minh bản hiện tại đã qua QA |
 | Đo lường | `monitoring.csv` trong từng đợt audit | Chỉ tính dòng có `actual_date`; không tự đặt lịch |
+| Hoạt động | `../logs/activity/*.jsonl` (`activity_log.py`) | Dòng `backfill` dựng lại từ ledger / revision-log / qa-score-log / ngày tạo file — ngày gần đúng |
+| Kênh | `../6-campaigns/CMP-*`, `../4-channels/**`, `social/ledger.csv`, `creatives/design.json`, `5-analytics/`, `2-market/` | Đếm file và trạng thái ghi trong file; không gọi API |
 
 `sprint-backlog.md` có trạng thái cũ lệch nguồn chính; dùng `topic_status.py <slug>` để tra trạng thái bài. Bảng liệt kê trường hợp lệch khi từ khóa khớp chính xác.
 

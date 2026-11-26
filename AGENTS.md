@@ -52,9 +52,10 @@ User không gõ lệnh → chọn skill theo bảng, mở đúng 1 `SKILL.md` r�
 6. **Trình bày ở gate:** tóm tắt ≤ 25 dòng + đường dẫn file. Không dán cả file vào chat. Trước khi trình: `python scripts/build_content_index.py` → bài hiện ở mục **Chờ duyệt** của `knowledge/0-dashboard/index.html` (user đọc + copy `/approve` ở đó).
 7. **Phạm vi:** đang làm 1 bài thì chỉ sửa bài đó; không lan sang bài khác trừ khi user yêu cầu.
 8. **File:** tên slug thường, không dấu (`lai-suat-acb.md`). Không để file tạm ở root — dùng `scratch/` (gitignored). Outline / Proposal / Draft / Optimize có YAML đầu file với `Created: YYYY-MM-DD` (ngày tạo) + `Updated: YYYY-MM-DD` (`topic_status.py --set` tự ghi); dashboard đọc 2 trường này. File còn sót sau Finalize: `topic_status.py --stale [--apply]`.
-9. **Không publish / gửi / chạy thật** (CMS, email, Ads, social). Chỉ soạn bản nháp + đề xuất.
-10. **Bài đứng tên Chứng khoán DSC;** link ngoài chỉ tới nguồn trong `knowledge/1-brand/source-whitelist.md`.
-11. **Mọi thiết kế** (ảnh blog, creative, banner CTA, landing, ảnh syndication) chỉ dùng màu / gradient / font trong `knowledge/1-brand/DESIGN.md` v1.0 (máy đọc: `brand.json`): Gunmetal · Pine Teal · Lime · Emerald · Frosted Mint · White, font Plus Jakarta Sans. Không tự đặt hex/font; chữ trắng không đặt trên Lime/Emerald. Theme Tết/lễ (§7) chỉ khi brief ghi rõ.
+9. **Mọi việc đều có dấu vết.** Script tự ghi activity log khi đổi trạng thái / QA / duyệt / xuất CMS. Skill tạo output bằng tay → bước cuối `python scripts/activity_log.py add --domain … --skill … --action … --target … --path …` (hook ghi dự phòng khi tạo file). Dashboard tự dựng lại cuối lượt; tab **Kênh** + **Hoạt động** đọc log này.
+10. **Không publish / gửi / chạy thật** (CMS, email, Ads, social). Chỉ soạn bản nháp + đề xuất.
+11. **Bài đứng tên Chứng khoán DSC;** link ngoài chỉ tới nguồn trong `knowledge/1-brand/source-whitelist.md`.
+12. **Mọi thiết kế** (ảnh blog, creative, banner CTA, landing, ảnh syndication) chỉ dùng màu / gradient / font trong `knowledge/1-brand/DESIGN.md` v1.0 (máy đọc: `brand.json`): Gunmetal · Pine Teal · Lime · Emerald · Frosted Mint · White, font Plus Jakarta Sans. Không tự đặt hex/font; chữ trắng không đặt trên Lime/Emerald. Theme Tết/lễ (§7) chỉ khi brief ghi rõ.
 
 **Rule chi tiết — chỉ mở khi tới bước cần:**
 | File | Mở khi |
@@ -123,6 +124,7 @@ Mọi script có `--help`; chi tiết cờ: `scripts/README.md` (chỉ mở khi 
 | Registry lệch (slug live chưa khớp, trùng key, thiếu cluster) | tự dò | `python scripts/registry.py refresh` → `check` |
 | Đối thủ tuần này / nhịp đăng | WebSearch, mở site đối thủ | `python scripts/competitor_watch.py run` → `report` |
 | Ai rank top keyword của DSC · keyword đối thủ thắng DSC | đoán | `competitor_watch.py discover [--keyword …]` · `gap <domain>` (cache SERP, 0 phí) |
+| Ai đã làm gì, kênh nào, khi nào | hỏi lại / dò file | `python scripts/activity_log.py tail [--domain …] [--days 7]` · `stats [--month]` · tab Hoạt động |
 | Việc tuần này | tự nhớ | `python scripts/weekly_review.py` · bảng `knowledge/0-dashboard/index.html` |
 
 ---

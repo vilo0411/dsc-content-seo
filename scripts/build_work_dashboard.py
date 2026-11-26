@@ -52,16 +52,21 @@ def workflow_tasks(task) -> dict:
                  details='\n'.join(f"{r['file_slug'] or r['slug']} · {r['key_chinh']}" for r in hit))
     if rows:
         live = {r['slug'] for r in rows if r['live'] == 'yes'}
-        unmapped = [r for r in rows if r['file_slug'] and r['live'] == 'no' and r['status'] in ('Finalized', 'Optimizing')]
+        not_live = [r for r in rows if r['file_slug'] and r['live'] == 'no' and r['status'] in ('Finalized', 'Optimizing')]
+        # Final file exists but no live page matches its body → simply not published yet (publish queue, not an error)
+        waiting = [r for r in not_live if registry.final_path(r['file_slug']).exists()]
+        nofile = [r for r in not_live if r not in waiting]
         keys = Counter(unaccent_key(r['key_chinh']) for r in rows if r['key_chinh'] and r['status'] != 'Merged')
         dup = [k for k, n in keys.items() if n > 1]
         nocl = [r['slug'] for r in rows if not r['cluster']]
-        bad = len(unmapped) + len(dup) + len(nocl)
+        bad = len(nofile) + len(dup) + len(nocl)
         task('Registry bài viết', 'Dữ liệu', registry.REGISTRY, 'Cần đối chiếu' if bad else 'Đạt trong snapshot',
-             f'{len(rows)} URL · {len(live)} live · {len(unmapped)} Finalized chưa khớp URL live · {len(dup)} key chính trùng · {len(nocl)} chưa có cluster.',
-             'python scripts/registry.py check → sửa cột slug / cluster; trùng key → cân nhắc gộp (301).',
-             details='\n'.join([*(f'chưa khớp live: {r["file_slug"]}' for r in unmapped), *(f'trùng key: {k}' for k in dup),
-                                *(f'chưa cluster: {s}' for s in nocl)]))
+             f'{len(rows)} URL · {len(live)} live · {len(waiting)} bài Final chờ đăng · {len(nofile)} Finalized không có file Final · '
+             f'{len(dup)} key chính trùng · {len(nocl)} chưa có cluster.',
+             'Chờ đăng: xem mục "Chờ publish" của weekly_review.py. Lỗi dữ liệu: python scripts/registry.py check → '
+             'sửa slug / status / cluster; trùng key → cân nhắc gộp (301).',
+             details='\n'.join([*(f'không có file Final: {r["file_slug"]}' for r in nofile), *(f'trùng key: {k}' for k in dup),
+                                *(f'chưa cluster: {s}' for s in nocl), *(f'chờ đăng: {r["file_slug"]}' for r in waiting)]))
     watch = sorted((ROOT / 'knowledge/2-market/competitors/watch').glob('*.md'))
     y, w, _ = today.isocalendar()
     this_week = f'{y}-W{w:02d}'
@@ -313,6 +318,153 @@ def today_view(approvals: list[dict]) -> dict:
     return dict(fresh=fresh, todo=todo, metrics=metrics, queue=queue_rows, queue_counts=dict(counts), strategy=strategy)
 
 
+# ─────────────────────────── activity log + channels (all marketing domains) ───────────────────────────
+
+STAGE_RE = re.compile(r'^(?:Stage|Status):\s*(.+)$', re.M)
+CAMPAIGN_CH = {'social': 'social', 'ads': 'ads-meta', 'landing': 'landing', 'seo': 'seo', 'email': 'email'}
+IN_PROGRESS = {'Planned', 'Outlining', 'Outline-Pending', 'In Progress', 'Outline-Approved', 'Optimizing'}
+
+
+def _head(path, n=800):
+    return path.read_text(encoding='utf-8', errors='replace')[:n]
+
+
+def _mdate(path):
+    return datetime.fromtimestamp(path.stat().st_mtime).strftime('%Y-%m-%d')
+
+
+def activity_view(days=180, cap=2000):
+    """Events for the "Hoạt động" tab: last N days (newest first) + per-domain counts for 7 / 30 days."""
+    import activity_log as al
+    ev = al.read_events(days=days)
+    today = datetime.now().date()
+    cut7, cut30 = (today - timedelta(days=7)).isoformat(), (today - timedelta(days=30)).isoformat()
+    counts = {}
+    for e in ev:
+        c = counts.setdefault(e.get('domain', '?'), {'d7': 0, 'd30': 0, 'last': ''})
+        ts = e.get('ts', '')
+        c['d7'] += ts >= cut7
+        c['d30'] += ts >= cut30
+        c['last'] = max(c['last'], ts)
+    return dict(events=list(reversed(ev))[:cap], counts=counts, labels=al.DOMAIN_LABEL, total=len(ev))
+
+
+def channels_view(approvals, act):
+    """One card per channel: what is in progress, what waits for approval, latest activity.
+    pending[] = non-SEO drafts waiting for a human (fed into "Cần làm" on the Hôm nay tab)."""
+    import campaign
+    import registry
+    counts = act['counts']
+    cards, pending = [], []
+
+    def card(domain, items, metrics, cmd=''):
+        c = counts.get(domain, {})
+        cards.append(dict(domain=domain, label=act['labels'].get(domain, domain), metrics=metrics, items=items[:12],
+                          more=max(0, len(items) - 12), d7=c.get('d7', 0), d30=c.get('d30', 0),
+                          last=c.get('last', '')[:16].replace('T', ' '), cmd=cmd))
+
+    def draft_item(dom, f, stage, job=''):
+        return dict(domain=dom, job=job, file=rel(f), name=f.name, stage=stage, updated=_mdate(f))
+
+    # SEO
+    rows = registry.load()
+    in_prog = [r for r in rows if r['status'] in IN_PROGRESS]
+    g1 = sum(a['gate'].startswith('Gate 1') for a in approvals)
+    g2 = sum(a['gate'].startswith('Gate 2') for a in approvals)
+    card('seo', [f"{r['status']} · {r['slug']}" for r in in_prog],
+         [('Đang làm', len(in_prog)), ('Chờ duyệt outline', g1), ('Chờ duyệt bài', g2),
+          ('Live', sum(r['live'] == 'yes' for r in rows))], '/write · /approve')
+
+    # Campaign jobs + drafts inside each job (Stage: PREVIEW / not yet copied to approved/)
+    jobs = campaign.summary()
+    by_dom = {d: [] for d in ('social', 'ads-meta', 'landing', 'seo', 'email')}
+    for j in jobs:
+        job = campaign.CAMPAIGNS_DIR / j['id']
+        approved = {f.stem for f in (job / 'approved').glob('*')} if (job / 'approved').is_dir() else set()
+        for ch, dom in CAMPAIGN_CH.items():
+            if not (job / ch).is_dir():
+                continue
+            for f in sorted((job / ch).glob('*.md')):
+                m = STAGE_RE.search(_head(f))
+                stage = m.group(1).strip() if m else ''
+                if f.stem in approved or re.match(r'(?i)approved|live', stage):
+                    continue
+                item = draft_item(dom, f, stage.split('—')[0].strip() or 'Nháp', j['id'])
+                by_dom[dom].append(item)
+                pending.append(item)
+    card('campaign', [f"{j['status']} · {j['id']} · " + ' '.join(f'{k}:{v}' for k, v in j['files'].items())
+                      + f" · approved:{j['approved']}" + (' · report ✓' if j['report'] else '') for j in jobs],
+         [('Job', len(jobs)), ('Chờ duyệt', sum(j['status'] == 'Chờ duyệt' for j in jobs)),
+          ('Live', sum(j['status'] == 'Live' for j in jobs)), ('Nháp trong job', len(pending))],
+         '/campaign-brief · /mkt-status')
+
+    # Meta Ads: drafts in jobs + review files
+    reviews = sorted(ROOT.glob('knowledge/6-campaigns/CMP-*/ads/review-*.md')) + sorted(ROOT.glob('knowledge/raw/ads/review-*.md'))
+    card('ads-meta', [f"{i['stage']} · {i['job']} · {i['name']}" for i in by_dom['ads-meta']]
+         + [f"Review · {rel(p)}" for p in reviews[-3:]],
+         [('Nháp chờ duyệt', len(by_dom['ads-meta'])), ('Review', len(reviews))], '/ads-brief → /meta-ads-copy · /ads-review')
+
+    # Channels with their own folder in 4-channels (Status: Draft in frontmatter)
+    def chan_files(sub):
+        out = []
+        for f in sorted((ROOT / 'knowledge/4-channels' / sub).glob('*.md')):
+            if f.name != 'README.md':
+                m = STAGE_RE.search(_head(f))
+                out.append((m.group(1).strip() if m else '?', f))
+        return out
+
+    for sub, dom, cmd in (('ads', 'ads-google', '/ads-audit · /ads-copy'), ('email', 'email', '/email-sequence'),
+                          ('landing', 'landing', '/landing · /copy-landing')):
+        fs = chan_files(sub)
+        jd = by_dom.get(dom, []) if dom != 'ads-google' else []
+        n_draft = sum(s.startswith('Draft') for s, _ in fs)
+        card(dom, [f"{s} · {f.name}" for s, f in fs] + [f"{i['stage']} · {i['job']} · {i['name']}" for i in jd],
+             [('File kênh', len(fs)), ('Nháp', n_draft + len(jd))], cmd)
+        pending += [draft_item(dom, f, 'Draft') for s, f in fs if s.startswith('Draft')]
+
+    # Social: syndication ledger + campaign posts
+    ledger = ROOT / 'knowledge/4-channels/social/ledger.csv'
+    srows = list(csv.DictReader(ledger.open(encoding='utf-8-sig', newline=''))) if ledger.exists() else []
+    st = Counter(r.get('status', '') for r in srows)
+    card('social', [f"{i['stage']} · {i['job']} · {i['name']}" for i in by_dom['social']]
+         + [f"{r.get('status')} · {r.get('channel')} · {r.get('slug')}" for r in srows if r.get('status') != 'Posted'],
+         [('Syndication', len(srows))] + [(f'Syndication {k or "?"}', v) for k, v in st.most_common(2)]
+         + [('Post trong job', len(by_dom['social']))], '/social-post · /syndicate')
+
+    # Creative: design.json per channel in each job
+    items, n_sets, n_appr = [], 0, 0
+    for design in sorted(ROOT.glob('knowledge/6-campaigns/CMP-*/*/creatives/design.json')):
+        try:
+            d = read_json(design)
+        except Exception:
+            continue
+        v = d.get('version', '?')
+        qa = design.parent / f'v{v}' / 'qa.json'
+        qs = Counter(c.get('status', '?') for c in read_json(qa).get('creatives', {}).values()) if qa.exists() else Counter()
+        n_appr += len(d.get('approved') or [])
+        n_sets += 1
+        job, ch = design.relative_to(ROOT / 'knowledge/6-campaigns').parts[:2]
+        items.append(f"{job} · {ch} v{v} · " + (', '.join(f'{k} {c}' for k, c in qs.items()) or 'chưa QA')
+                     + f" · đã duyệt {len(d.get('approved') or [])} lần")
+    card('creative', items, [('Bộ creative', n_sets), ('Lần duyệt', n_appr)], '/creative')
+
+    # Analytics + market
+    reps = sorted((ROOT / 'knowledge/5-analytics/reports').glob('20*.md'))
+    weekly = sorted((ROOT / 'knowledge/5-analytics/weekly').glob('20*.md'))
+    card('analytics', [f"Báo cáo tháng · {p.stem}" for p in reversed(reps)][:4] + [f"Weekly · {p.stem}" for p in reversed(weekly)][:4],
+         [('Báo cáo tháng mới nhất', reps[-1].stem if reps else '—'), ('Weekly mới nhất', weekly[-1].stem if weekly else '—')],
+         '/analytics-report · /weekly')
+    mk = ROOT / 'knowledge/2-market'
+    watch = sorted((mk / 'competitors/watch').glob('20*.md'))
+    profiles = sorted((mk / 'competitors/profiles').glob('*.md'))
+    research = sorted((mk / 'research').glob('*.md'))
+    card('market', [f"Watch · {p.stem}" for p in reversed(watch)][:3] + [f"Profile · {p.stem}" for p in profiles]
+         + [f"Research · {p.stem}" for p in research],
+         [('Watch mới nhất', watch[-1].stem if watch else '—'), ('Profile', len(profiles)), ('Research', len(research))],
+         '/competitor-watch · /market-research')
+    return dict(cards=cards, pending=pending)
+
+
 def unaccent_key(s: str) -> str:
     import unicodedata
     s = s.replace('đ', 'd').replace('Đ', 'D')
@@ -435,11 +587,13 @@ def build():
     for base, category in [(PIPE / 'strategy', 'SEO strategy'), (PIPE / 'links', 'Internal link'), (PIPE / 'logs', 'Log'),
                            (CONTENT / 'audits', 'Audit'), (CONTENT / '4-cms', 'CMS'),
                            (ROOT / 'knowledge/2-market', 'Thị trường & đối thủ'), (ROOT / 'knowledge/4-channels', 'Kênh khác'),
-                           (ROOT / 'knowledge/5-analytics', 'Đo lường')]:
+                           (ROOT / 'knowledge/5-analytics', 'Đo lường'),
+                           (ROOT / 'knowledge/6-campaigns', 'Chiến dịch'), (ROOT / 'knowledge/logs', 'Log')]:
         if not base.exists():
             continue
         for path in sorted(base.rglob('*')):
-            if path.is_file():
+            if path.is_file() and not (category == 'Chiến dịch' and (
+                    path.suffix.lower() in ('.png', '.jpg', '.jpeg', '.webp') or re.search(r'/creatives/v\d+/', path.as_posix()))):
                 catalog.append(dict(path=rel(path), name=path.name, group=category,
                                     archived='archive' in path.parts))
     for path in [PIPE / 'strategy/pages.csv', PIPE / 'strategy/sprint-backlog.md', OUT / 'cms.html']:
@@ -450,12 +604,20 @@ def build():
     tasks.sort(key=lambda t: order.index(t['group']) if t['group'] in order else len(order))
     approvals = approval_queue()
     stats['approvals'] = sum(q['gate'].startswith('Gate') for q in approvals)
+    act = activity_view()
+    channels = channels_view(approvals, act)
+    stats['channel_pending'] = len(channels['pending'])
     payload = dict(generated_at=datetime.now().astimezone().isoformat(timespec='seconds'),
-                   snapshot=snapshot, snapshot_mode=meta.get('mode'), tasks=tasks, catalog=catalog, stats=stats)
+                   snapshot=snapshot, snapshot_mode=meta.get('mode'), tasks=tasks, catalog=catalog, stats=stats,
+                   activity_recent=act['events'][:50], activity_counts=act['counts'],
+                   channels=[{k: c[k] for k in ('domain', 'label', 'metrics', 'd7', 'd30', 'last')} for c in channels['cards']],
+                   channel_pending=channels['pending'])
     (OUT / 'status.json').write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding='utf-8')
     # Rendered documents go into index.html only; status.json stays small.
     payload['approvals'] = approvals
     payload['today'] = today_view(approvals)
+    payload['activity'] = act
+    payload['channels'] = channels['cards']
     template = (ROOT / 'scripts/templates/work-dashboard.html').read_text(encoding='utf-8')
     (OUT / 'index.html').write_text(template.replace('__PAYLOAD__', json.dumps(payload, ensure_ascii=False).replace('<', '\\u003c')), encoding='utf-8')
     print(f'Work dashboard: {len(tasks)} workstreams, {len(catalog)} files, snapshot {snapshot}')

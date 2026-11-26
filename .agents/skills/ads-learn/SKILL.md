@@ -21,3 +21,6 @@ description: Rút bài học từ kết quả quảng cáo Meta (angle, khung co
 ## Ghi
 Mục mới lên đầu `learnings.md`, ID `A<nnn>` tăng dần, theo mẫu trong file. Trình bày các mục thêm/sửa, chờ user duyệt trước khi lưu.
 Bài học dùng chung cho social (hook, angle) → ghi thêm 1 dòng tham chiếu trong `.agents/domains/social/learnings.md`.
+
+## Ghi activity log (bước cuối)
+Sau khi lưu output (và sau mỗi lần user duyệt → `--action approve`): `python scripts/activity_log.py add --domain ads-meta --skill ads-learn --action learn --target <A0xx> --path .agents/domains/ads/learnings.md`. Hiện ở tab **Hoạt động** của `knowledge/0-dashboard/index.html`.

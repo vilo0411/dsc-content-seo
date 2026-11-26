@@ -28,6 +28,8 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from activity_log import emit  # noqa: E402
 SCRIPTS = ROOT / "scripts"
 CONTENT = ROOT / "knowledge/3-seo/content"
 MAX_SHOWN = 12
@@ -200,6 +202,7 @@ def main() -> int:
         ok = tier_slop(draft) and ok
     if (ok or a.all) and not a.no_facts:
         ok = tier_facts(draft) and ok
+    emit("seo", "qa", slug_of(draft), skill="qa_gate", result="PASS" if ok else "FAIL", path=draft)
     print("→ PASS: chuyển tầng C (Quality Guardian)" if ok else
           "→ FAIL: sửa đúng các dòng trên rồi chạy lại lệnh này (tối đa 2 vòng)")
     return 0 if ok else 1

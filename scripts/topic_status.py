@@ -24,6 +24,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import registry  # noqa: E402
+from activity_log import emit  # noqa: E402
 from _common import (CONTENT, DRAFTS_DIR, FINAL_DIR, OUTLINES_DIR, ROOT, setup_utf8,  # noqa: E402
                      stamp_frontmatter, unaccent, working_files)
 
@@ -115,6 +116,8 @@ def main() -> int:
             row["cluster"], row["cluster_name"], row["subgroup"], row["subgroup_name"] = registry._classify(slug, args.keyword)
         rows.append(row)
         registry.save(rows)
+        emit("seo", "create", slug, skill="topic_status", status_to=row["status"], note=args.keyword,
+             path="knowledge/3-seo/strategy/pages.csv")
         print(f"Đã thêm: {slug} · {args.keyword} · {row['status']} · {cl_label(row) or '(chưa có cluster — thêm --cluster)'}")
         return 0
 
@@ -139,6 +142,7 @@ def main() -> int:
         return 0
     old, r["status"] = r["status"], new
     registry.save(rows)
+    emit("seo", "status", r["slug"], skill="topic_status", status_from=old, status_to=new)
     today = date.today().isoformat()
     stamped = []
     for f in {*working_files(r["slug"]), *working_files(r["file_slug"] or r["slug"])}:
@@ -188,7 +192,11 @@ def stale(apply: bool) -> int:
             if dest.exists():
                 dest = dest.with_name(f"{p.stem}-{date.fromtimestamp(p.stat().st_mtime).isoformat()}.md")
             p.replace(dest)
+            emit("seo", "run", slug, skill="topic_status --stale", path=dest, note=f"archive {p.name}")
         print(f"\nĐã chuyển {len(leftovers)} file vào archive/.")
+        # index.html is static — rebuild so the stale/pending lists reflect the move
+        from build_content_index import build as build_index
+        build_index()
     elif leftovers:
         print("\nXem lại danh sách rồi chạy `python scripts/topic_status.py --stale --apply` để chuyển vào archive/.")
     return 0

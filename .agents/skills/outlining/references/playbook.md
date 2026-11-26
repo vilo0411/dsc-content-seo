@@ -49,7 +49,7 @@ Template: [`references/brief-template.md`](references/brief-template.md) · Gate
 - Số thị trường: `python scripts/market_facts.py --brief [--tickers ...]`. Sự kiện có ngày: `python scripts/news_feed.py --topic "<kw>" --days 30`. Không dùng block "CSDL tham chiếu" trong `anti-ai-rules.md` làm nguồn số (đã cũ).
 - **Ưu tiên số năm hiện tại.** Mốc của năm trước trở về trước chỉ dùng làm ví dụ lịch sử, ghi rõ đó là ví dụ.
 - Mỗi dữ kiện là 1 dòng ở bảng mục 3, đủ các cột: số liệu, mốc, nguồn, trạng thái ✓. **Cột Nguồn phải là URL** (hoặc `market_facts` / `DSC nội bộ`) — lint `DATA-source`. Quy định, phí, hạn mức: URL văn bản gốc thuộc `knowledge/1-brand/source-whitelist.md` (UBCKNN, NHNN, HOSE, VSDC, cổng văn bản Chính phủ…); draft sẽ link đúng URL này tại câu trích (`SRC-missing`).
-- Bài hướng dẫn thao tác / đánh giá app: liệt kê ảnh ở mục 6. Trước khi ghi `[ẢNH THỰC TẾ: …]`, tìm ảnh chụp app đã có trên site: `grep -oh '<img[^>]*>' knowledge/raw/live/html/*.html | grep -i "<từ khóa màn hình>"` — có thì ghi URL đó (sẽ được ghép vào khung 800×500). Infographic (bước, chi phí, so sánh kịch bản) ghi rõ số liệu sẽ vẽ — vẽ bằng code theo `knowledge/1-brand/image-design-system.md`. Câu "theo khảo sát / số liệu của DSC" chỉ được dùng khi có con số + mốc thời gian trong bảng này.
+- Bài hướng dẫn thao tác / đánh giá app: liệt kê ảnh ở mục 6. Trước khi ghi `[ẢNH THỰC TẾ: …]`, tìm ảnh chụp app đã có trên site: `grep -oh '<img[^>]*>' knowledge/raw/live/html/*.html | grep -i "<từ khóa màn hình>"` — có thì ghi URL đó (sẽ được ghép vào khung 800×500). Infographic (bước, chi phí, so sánh kịch bản) ghi rõ số liệu sẽ vẽ — vẽ bằng code theo `.agents/skills/image/references/image-design-system.md`. Câu "theo khảo sát / số liệu của DSC" chỉ được dùng khi có con số + mốc thời gian trong bảng này.
 - Dữ kiện không xác minh được → **bỏ**, không để `[CẦN XÁC NHẬN]` trong outline. Nếu thiếu dữ kiện quan trọng thì báo user.
 
 ## Step 3 — Internal links & cannibalization
@@ -67,16 +67,16 @@ Template: [`references/brief-template.md`](references/brief-template.md) · Gate
 - `Information_Gain`: danh sách **≥ 2 mục**, mỗi mục `claim` (điều top 5 không có) · `h2` (mục nào giao nó) · `type` (`calc` tự tính bằng tiền / `dsc-data` / `regulation` điều khoản cụ thể / `screenshot` / `comparison`) · `proof` (con số hoặc cụm từ chắc chắn xuất hiện trong bài). `qa_lint` tìm đúng `proof` trong draft (`IG-missing`), Quality Guardian trích câu giao nó. `proof` đã có ở bài đối thủ → lint báo `IG-not-new`. Không tìm được 2 mục thì bài không có lý do để rank trên đối thủ → báo user.
 - Mỗi H2 thân bài có `**Câu hỏi người đọc:**` + `**Ý chính:**` + `**Chuyển ý → H2 sau:**`. Không viết H2 dạng "liệt kê chủ đề + nhét số liệu".
 - Có ít nhất 1 H2 chứa keyword hoặc câu hỏi keyword.
-- **Sapo plan (instinct I105)** — viết sẵn nguyên văn 2 đoạn trong outline để duyệt cùng cây H2:
+- **Sapo plan (instinct I105)** — viết sẵn nguyên văn trong outline (đoạn 1 + khối điểm chính) để duyệt cùng cây H2:
   - Đoạn 1: cấm bê nguyên keyword dài làm chủ ngữ đầu câu một cách máy móc; lồng keyword tự nhiên + 1 con số có ngày và mở theo đúng `Content_Type`:
-    - *Comparison:* mở bằng khoảng chênh quy ra tiền thật trên 1 mốc vốn chuẩn giữa các lựa chọn, câu 2 nêu biên độ % và keyword.
+    - *Comparison:* trả lời thẳng hai khái niệm/lựa chọn khác nhau ở đâu (tiêu chí chia) + 1 biên độ hoặc ngưỡng có số; so sánh lựa chọn đầu tư (lãi suất, kênh) thì quy khoảng chênh ra tiền thật trên 1 mốc vốn chuẩn.
     - *Definition:* trả lời thẳng bản chất bằng lời thường + 1 số liệu thực tế từ BCTC/thị trường gây bất ngờ.
     - *How-to:* chốt tổng số bước + tên các bước gói trong 1 câu + vốn/thời gian tối thiểu.
     - *Review ("Có nên"):* mở bằng phán quyết có điều kiện (Nên khi A — Không nên khi B) + số liệu kiểm chứng 2 chiều.
     - *Toplist:* nêu tiêu chí xếp hạng + điểm tên ngay đơn vị dẫn đầu kèm con số đỉnh.
     - *Comprehensive Guide:* nêu quy tắc toán học / con số cốt lõi phá bỏ lầm tưởng, rồi đặt keyword vào phạm vi bài.
-  - Đoạn 2: Câu 1 mở bằng “Trong bài viết này, Chứng khoán DSC …” giới thiệu nội dung bài theo **ĐÚNG THỨ TỰ các H2 trong outline** (không đảo thứ tự H2 sau lên trước H2 đầu; các phần phụ đi sau “kèm”). Câu 2 mở bằng **“Bạn sẽ thấy vì sao …”** (hoặc **“Qua đó, bạn sẽ thấy …”**) nêu 1–2 hệ quả bằng con số cụ thể từ chính các phần vừa giới thiệu ở Câu 1 để gợi tò mò (xem mẫu đã duyệt ở `Final-cach-choi-chung-khoan.md` và `Final-phan-biet-thi-truong-tien-te-va-thi-truong-von-huong-dan-chi-tiet-cho-nha-dau-tu.md`). Cấm thả 1 câu dữ kiện đứng trơ trọi mà không có cụm chuyển tiếp nối với Câu 1. Không tự khen (“tính sẵn”, “con số cụ thể”).
-  - Tổng ≤ 110 từ, mỗi câu ≤ 30 từ.
+  - Đoạn 2 = khối điểm chính (mọi loại bài): đúng câu dẫn “Trong bài viết này, Chứng khoán DSC tóm tắt những điểm chính bạn cần nắm.” (không nối thêm mệnh đề) → **3–5 bullet**, mỗi bullet là câu kết luận đứng độc lập có số/entity, theo **đúng thứ tự H2** (không nhãn mục lục “X: nội dung gì”) → **1 câu mời đọc** viết riêng cho bài, mở từ tình huống của người đọc; không mô tả cấu trúc bài (“bảng bên dưới…”), không câu hỏi mồi. Mẫu đã duyệt: `Final-thi-truong-so-cap-va-thu-cap-la-gi.md`, `Final-san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong.md`.
+  - Không giới hạn tổng số từ; mỗi câu ≤ 30 từ (`outline_lint` `META-sapo-sentence`), khối bullet 3–5 (`META-sapo-takeaways`). Sapo chốt ở outline — draft chép nguyên, cần sửa thì sửa ở outline rồi chạy lại `outline_lint`.
 - **Bài how-to (I119):** bước viết chung cho mọi CTCK (đối thủ top đều vậy). Mã/số riêng DSC (963369, dạng 024C, đuôi tiểu khoản) chỉ nằm ở H2 DSC hoặc CTA (`qa_lint:BRAND-steps`). Ảnh app DSC dùng minh họa được.
 - Product Bridge: nối từ kết luận của bài sang các bước cụ thể tại DSC, không phải list tính năng.
 - H2 `Kết luận` tóm tắt insight rồi CTA. Không mở bằng "Tóm lại".

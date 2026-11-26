@@ -21,6 +21,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from _common import ROOT, setup_utf8, slugify  # noqa: E402
+from activity_log import emit  # noqa: E402
 
 CAMPAIGNS_DIR = ROOT / "knowledge/6-campaigns"
 TEMPLATE = ROOT / ".agents/domains/campaign/references/brief-template.md"
@@ -56,6 +57,7 @@ def new(slug: str, title: str, channels: list[str], day: date, base: Path | None
     brief = (tpl.replace("{id}", job.name).replace("{title}", title).replace("{date}", day.isoformat())
              .replace("{channels}", ", ".join(channels)))
     (job / "brief.md").write_text(brief, encoding="utf-8")
+    emit("campaign", "create", job.name, skill="campaign-brief", status_to="Brief", note=title, path=job / "brief.md")
     return job
 
 
@@ -71,9 +73,12 @@ def set_status(job: Path, status: str) -> None:
     if status not in STATUSES:
         raise SystemExit(f"Trạng thái không hợp lệ. Chọn: {', '.join(STATUSES)}")
     brief = job / "brief.md"
+    old = read_status(job)
     text = brief.read_text(encoding="utf-8")
     text = STATUS_RE.sub(f"Status: {status}", text, count=1) if STATUS_RE.search(text) else f"Status: {status}\n" + text
     brief.write_text(text, encoding="utf-8")
+    if old != status:
+        emit("campaign", "status", job.name, status_from=old, status_to=status, path=brief)
 
 
 def summary(base: Path | None = None) -> list[dict]:

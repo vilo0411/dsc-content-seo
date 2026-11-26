@@ -2,7 +2,7 @@
 
 > Áp dụng cho ảnh bìa và infographic/biểu đồ trong bài SEO. Mã nguồn: `scripts/images/dsc_design.py` (token + component). Sửa token ở cả 2 nơi.
 > Ví dụ chuẩn: `scripts/images/generate_cach_choi_chung_khoan_images.py` → `knowledge/3-seo/content/images/cach-choi-chung-khoan-*.jpg`.
-> Màu, font, hình ảnh gốc: `DESIGN.md` v1.0 (brand guideline chính thức). File này chỉ thêm lưới, component cho ảnh trong bài viết; không tự thêm màu/font.
+> Màu, font, logo, khổ ảnh, điều cấm: `knowledge/1-brand/DESIGN.md` v1.0 (brand guideline chính thức). File này chỉ thêm lưới, component cho ảnh trong bài viết; không tự thêm màu/font.
 
 ## 1. Hướng thiết kế
 **Editorial fintech:** sạch, nhiều khoảng trắng, số liệu là nhân vật chính. Mỗi ảnh trả lời đúng 1 câu hỏi của section, đọc được trong 3 giây trên điện thoại.
@@ -12,27 +12,22 @@
 - Mỗi ảnh có đúng 1 điểm nhấn: con số lớn nhất **hoặc** cột nổi bật nhất. Mọi thứ còn lại đều trung tính.
 
 ## 2. Màu (token)
-Nguồn màu: `DESIGN.md` §2 (brand guideline v1.0). Bảng dưới là tên token trong `dsc_design.py` → màu brand.
+Hex, vai trò, tương phản: `knowledge/1-brand/DESIGN.md` §2–3 / `brand.json` (không chép lại ở đây). Tên token trong `dsc_design.py` → màu brand:
 
-| Token code | Brand | Hex | Vai trò |
-|---|---|---|---|
-| `navy` (= `gunmetal`) | Gunmetal | `#272D2B` | Chữ chính, nền ảnh bìa, **dữ liệu xấu / rủi ro** (thay cho đỏ) |
-| `navy_800` (= `pine_teal`) / `navy_700` | Pine Teal / derived | `#1D4130` / `#34403C` | Bề mặt trên nền tối (card, ô nhập) |
-| `green` (= `lime`) | Lime Green | `#2AD03D` | Dữ liệu tốt / điểm nhấn chính: bar, đường, chip. **Chữ trên nó = `navy`**, không dùng làm chữ trên nền trắng |
-| `emerald` | Emerald | `#1BBE72` | Chuỗi dữ liệu thứ hai, icon |
-| `green_700` (= `pine_teal`) | Pine Teal | `#1D4130` | **Chữ xanh trên nền sáng** (11:1) |
-| `frosted_mint` | Frosted Mint | `#8CFFCC` | Chữ/số nhấn trên nền tối, glow |
-| `bright` → `teal` | Primary gradient | `#61CC6C` → `#14A46E` | Gradient chữ nhấn / đường biểu đồ / thanh |
-| `ink_2` | derived | `#4A524F` | Chữ phụ, phụ đề |
-| `ink_3` | derived | `#666F6C` | Chú thích, nguồn, nhãn trục (AA trên trắng) |
-| `neutral` | derived | `#B9C3BF` | Dữ liệu so sánh / mốc "không làm gì" |
-| `line` / `track` | derived | `#DCE5E0` / `#E8F0EC` | Viền card, đường kẻ / nền thanh bar |
-| `mint_50` / `mint_100` | derived | `#F2FBF6` / `#DDF7EA` | Nền ảnh sáng / nền tag |
+| Token code | Màu brand |
+|---|---|
+| `navy` | `gunmetal` — chữ chính, nền ảnh bìa, dữ liệu xấu / rủi ro |
+| `navy_800`, `green_700` | `pine_teal` — bề mặt trên nền tối; `green_700` = chữ xanh trên nền sáng |
+| `navy_700` | derived — card tối phụ |
+| `green` | `lime` — dữ liệu tốt / điểm nhấn chính |
+| `emerald`, `frosted_mint` | cùng tên brand |
+| `bright` → `teal` | gradient `primary` |
+| `ink_2`, `ink_3`, `neutral`, `line`, `track`, `mint_50`, `mint_100` | `colors.derived` trong brand.json |
 
 Quy tắc dữ liệu: tốt = `green`, xấu = `navy`, so sánh = `neutral`. **Không dùng đỏ**, kể cả cho số âm. Dấu âm dùng ký tự “−”. Chip số nền `green` → số màu `navy` (chữ trắng trên Lime chỉ 2.1:1).
 
 ## 3. Chữ
-Font **Plus Jakarta Sans** (OFL, đủ dấu tiếng Việt) — font duy nhất của brand, file tĩnh `PlusJakartaSans-{Regular,Medium,SemiBold,Bold,ExtraBold}.ttf` ở `knowledge/1-brand/assets/fonts/`. Không dùng Arial / Segoe / Be Vietnam Pro.
+Font: Plus Jakarta Sans (`DESIGN.md` §4). Cỡ chữ cho khung 800×500:
 
 | Token | Weight / size (px trên khung 800×500) | Dùng cho |
 |---|---|---|

@@ -1,52 +1,25 @@
 {
-  "generated_at": "2026-11-26T06:47:06+07:00",
-  "snapshot": "2026-11-25T15:18:36",
+  "generated_at": "2026-11-26T13:28:32+07:00",
+  "snapshot": "2026-11-26T11:16:09",
   "snapshot_mode": "partial",
   "tasks": [
     {
-      "name": "Bài ở bước Outlining",
-      "group": "Bài SEO",
-      "source": "knowledge/3-seo/strategy/pages.csv",
-      "state": "1 bài",
-      "evidence": "Nguồn: registry pages.csv (topic_status.py).",
-      "next_step": "Hoàn tất outline → outline_lint → trình Gate 1",
-      "details": "quantitative-trading-la-gi · quantitative trading là gì"
-    },
-    {
-      "name": "Bài ở bước Outline-Pending",
-      "group": "Bài SEO",
-      "source": "knowledge/3-seo/strategy/pages.csv",
-      "state": "1 bài",
-      "evidence": "Nguồn: registry pages.csv (topic_status.py).",
-      "next_step": "Hoàn tất outline → trình Gate 1",
-      "details": "dau-tu-vang-online · Hướng dẫn cách mua vàng online qua app an toàn"
-    },
-    {
-      "name": "Bài ở bước In Progress",
+      "name": "Bài ở bước Planned",
       "group": "Bài SEO",
       "source": "knowledge/3-seo/strategy/pages.csv",
       "state": "2 bài",
       "evidence": "Nguồn: registry pages.csv (topic_status.py).",
-      "next_step": "Kiểm tra lại trạng thái thật (topic_status --set)",
-      "details": "so-sanh-lai-suat-tiet-kiem-ngan-hang · So sánh lãi suất tiết kiệm ngân hàng 2026\ngia-cao-su · giá cao su"
-    },
-    {
-      "name": "Bài ở bước Outline-Approved",
-      "group": "Bài SEO",
-      "source": "knowledge/3-seo/strategy/pages.csv",
-      "state": "5 bài",
-      "evidence": "Nguồn: registry pages.csv (topic_status.py).",
-      "next_step": "/drafting <slug>",
-      "details": "lenh-stop-limit-la-gi · Lệnh stop limit\nchi-bao-momentum-la-gi · chỉ báo momentum là gì\ndong-tien-tu-do-la-gi · dòng tiền tự do là gì\nmo-hinh-coc-tay-cam-la-gi · mô hình cốc tay cầm\nco-nen-mua-co-phieu-oil · có nên mua cổ phiếu oil"
+      "next_step": "/outlining <keyword> (hoặc /write)",
+      "details": "dau-tu-vang-online · Hướng dẫn cách mua vàng online qua app an toàn\ngia-cao-su · giá cao su"
     },
     {
       "name": "Bài ở bước Optimizing",
       "group": "Bài SEO",
       "source": "knowledge/3-seo/strategy/pages.csv",
-      "state": "15 bài",
+      "state": "5 bài",
       "evidence": "Nguồn: registry pages.csv (topic_status.py).",
       "next_step": "Hoàn tất /optimize → /approve",
-      "details": "nen-mo-tai-khoan-chung-khoan-o-dau · nên mở tài khoản chứng khoán ở đâu\nco-nen-dau-tu-chung-khoan-khong · Có nên chơi chứng khoán không\nvwap-la-gi · VWAP là gì\nkhoang-trong-gia-gap-la-gi · Khoảng trống giá (Gap) là gì\nbien-loi-nhuan-rong · Biên lợi nhuận ròng là gì\nchi-so-roe-la-gi-cach-tinh-y-nghia-va-tam-quan-trong-doi-voi-nha-dau-tu · chỉ số ROE là gì\ndcf-la-gi · DCF\nco-phieu-bsr-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat · cổ phiếu bsr\nco-nen-mua-co-phieu-pnj-hay-khong · có nên mua cổ phiếu pnj\nhop-dong-tuong-lai-la-gi · Hợp đồng tương lai là gì\ngrdp-la-gi-chi-so-quan-trong-danh-gia-su-phat-trien-kinh-te-dia-phuong · GRDP là gì\nlai-suat-la-gi · lãi suất\nnen-gui-tiet-kiem-hay-dau-tu-chung-khoan · Nên gửi tiết kiệm hay đầu tư chứng khoán\nnen-mua-vang-mieng-hay-vang-nhan · Nên mua vàng miếng hay vàng nhẫn\nnen-mua-vang-sjc-hay-9999 · Nên mua vàng SJC hay 9999"
+      "details": "nen-mo-tai-khoan-chung-khoan-o-dau · nên mở tài khoản chứng khoán ở đâu\nrsi-la-gi · chỉ số RSI\nvwap-la-gi · VWAP là gì\nco-nen-mua-co-phieu-pnj-hay-khong · có nên mua cổ phiếu pnj\nco-tien-nen-dau-tu-bac · đầu tư bạc"
     },
     {
       "name": "Theo dõi đối thủ",
@@ -59,8 +32,8 @@
     {
       "name": "Báo cáo tháng 2026-10",
       "group": "Đo lường",
-      "source": "knowledge/5-analytics/kpi-definitions.md",
-      "state": "Đến hạn",
+      "source": "knowledge/5-analytics/reports/2026-10.md",
+      "state": "Đạt trong snapshot",
       "evidence": "Lead, CPL SEO, CPA Ads theo kpi-definitions.md.",
       "next_step": "/analytics-report 2026-10"
     },
@@ -74,78 +47,54 @@
       "details": ""
     },
     {
-      "name": "2026-11-17-con-lai",
+      "name": "2026-11-26-backfill-lai-suat",
       "group": "Internal link",
-      "source": "knowledge/3-seo/links/plans/2026-11-17-con-lai.html",
+      "source": "knowledge/3-seo/links/plans/2026-11-26-backfill-lai-suat.html",
       "state": "Còn mục chưa xác nhận",
-      "evidence": "0/24 thay đổi đạt kiểm tra; không cộng các đợt vì có thể trùng nhau.",
+      "evidence": "3/13 thay đổi đạt kiểm tra; không cộng các đợt vì có thể trùng nhau.",
       "next_step": "Xem mục chưa đạt; đối chiếu CMS rồi sync và kiểm tra lại.",
-      "done": 0,
-      "total": 24,
-      "details": "Đã lên live: 0/24\n- cach-mua-co-phieu-bvh: wrap → co-phieu-nganh-bao-hiem\n- cach-mua-co-phieu-vcb-ngan-hang-vietcombank: wrap → co-phieu-vcb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat\n- co-nen-dau-tu-vang-thoi-diem-nay: remove → https://www.dsc.com.vn/kien-thuc/cach-dau-tu-vang\n- co-nen-mua-co-phieu-pet-hay-khong: wrap → co-phieu-nganh-nang-luong\n- co-phieu-bid-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat: remove → https://www.dsc.com.vn/kien-thuc/top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh\n- co-phieu-dgc-tong-quan-danh-gia-va-ket-qua-kinh-doanh-moi-nhat: wrap → co-phieu-nganh-nong-nghiep\n- co-phieu-dxg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat: remove → https://www.dsc.com.vn/kien-thuc/top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam\n- co-phieu-fcn-tong-quanh-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat: wrap → co-phieu-nganh-xay-dung\n- co-phieu-hbc-tong-quanh-danh-gia-va-ket-qua-kinh-doanh-moi-nhat: wrap → co-phieu-nganh-xay-dung\n- co-phieu-hdg-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat-2025: wrap → top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam; remove → https://www.dsc.com.vn/kien-thuc/top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam\n- co-phieu-itc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat: wrap → top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam; remove → https://www.dsc.com.vn/kien-thuc/top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam\n- co-phieu-lpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat: remove → https://www.dsc.com.vn/kien-thuc/top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh\n- co-phieu-mbb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat: remove → https://www.dsc.com.vn/kien-thuc/top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh\n- co-phieu-sip-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat: remove → https://www.dsc.com.vn/kien-thuc/top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam\n- co-phieu-stb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat: remove → https://www.dsc.com.vn/kien-thuc/top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh\n- co-phieu-szc-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat: wrap → top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam; remove → https://www.dsc.com.vn/kien-thuc/top-5-co-phieu-bat-dong-san-co-the-buoc-vao-song-tang-giai-doan-cuoi-nam\n- co-phieu-tcb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat: remove → https://www.dsc.com.vn/kien-thuc/top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh\n- co-phieu-tpb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat: remove → https://www.dsc.com.vn/kien-thuc/top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh\n- co-phieu-vcb-tong-quan-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat: remove → https://www.dsc.com.vn/kien-thuc/top-5-co-phieu-ngan-hang-dinh-gia-hop-ly-tiem-nang-but-pha-manh\n- co-phieu-vcg-tong-quanh-danh-gia-va-cap-nhat-ket-qua-kinh-doanh-moi-nhat: wrap → co-phieu-nganh-xay-dung\n- nen-mua-vang-sjc-hay-9999: wrap → dau-tu-vang-nen-mua-loai-nao\n",
-      "spec": "knowledge/3-seo/links/plans/2026-11-17-con-lai.json"
-    },
-    {
-      "name": "2026-11-17-link-301",
-      "group": "Internal link",
-      "source": "knowledge/3-seo/links/plans/2026-11-17-link-301.html",
-      "state": "Đạt trong snapshot",
-      "evidence": "66/66 thay đổi đạt kiểm tra; không cộng các đợt vì có thể trùng nhau.",
-      "next_step": "Xem mục chưa đạt; đối chiếu CMS rồi sync và kiểm tra lại.",
-      "done": 66,
-      "total": 66,
-      "details": "Đã lên live: 66/66\n",
-      "spec": "knowledge/3-seo/links/plans/2026-11-17-link-301.json"
-    },
-    {
-      "name": "2026-11-17-pillar-hub-chua-xet",
-      "group": "Internal link",
-      "source": "knowledge/3-seo/links/plans/2026-11-17-pillar-hub-chua-xet.html",
-      "state": "Còn mục chưa xác nhận",
-      "evidence": "48/49 thay đổi đạt kiểm tra; không cộng các đợt vì có thể trùng nhau.",
-      "next_step": "Xem mục chưa đạt; đối chiếu CMS rồi sync và kiểm tra lại.",
-      "done": 48,
-      "total": 49,
-      "details": "Đã lên live: 48/49\n- top-co-phieu-cang-bien-nen-dau-tu: append → top-5-co-phieu-dang-dau-tu (chưa thấy câu mới trên live)\n",
-      "spec": "knowledge/3-seo/links/plans/2026-11-17-pillar-hub-chua-xet.json"
+      "done": 3,
+      "total": 13,
+      "details": "Đã lên live: 3/13\n- co-1-ty-nen-gui-ngan-hang-nao: append → lai-suat-ngan-hang-dong-a\n- co-15-trieu-nen-dau-tu-gi: remove → https://www.dsc.com.vn/kien-thuc/lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat; wrap → lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat\n- co-20-trieu-nen-dau-tu-gi: remove → https://www.dsc.com.vn/kien-thuc/lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat\n- co-5-trieu-nen-dau-tu-gi: remove → https://www.dsc.com.vn/kien-thuc/lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat; wrap → lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat\n- co-nen-gui-tiet-kiem-ngan-hang-khong: remove → https://www.dsc.com.vn/kien-thuc/lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat; cut (đoạn cần gỡ vẫn còn trên live)\n- lai-suat-gui-tiet-kiem-ngan-hang-vib: remove → https://www.dsc.com.vn/kien-thuc/lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat\n- lai-suat-gui-tiet-kiem-ngan-hang-vietinbank: remove → https://www.dsc.com.vn/kien-thuc/lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat\n",
+      "spec": "knowledge/3-seo/links/plans/2026-11-26-backfill-lai-suat.json"
     },
     {
       "name": "Bản Final chưa ghi nhận live",
       "group": "Sau publish",
       "source": "knowledge/3-seo/logs/publish-ledger.csv",
       "state": "Có việc cần đối chiếu",
-      "evidence": "45 bài thiếu mốc first_live trong ledger; seed là mốc nhập lịch sử.",
+      "evidence": "5 bài thiếu mốc first_live trong ledger; seed là mốc nhập lịch sử.",
       "next_step": "Đối chiếu CMS, publish rồi sync; Finalized chưa có nghĩa là đã lên web.",
-      "details": "100-trieu-gui-ngan-hang\nbao-cao-lai-lo\nbao-cao-tai-chinh-hop-nhat\ncac-mo-hinh-gia-chung-khoan\ncach-choi-chung-khoan\ncach-choi-chung-khoan-cho-sinh-vien\ncach-doc-bieu-do-nen-chung-khoan-cho-nguoi-moi-bat-dau\nchi-bao-ky-thuat-la-gi\nchi-bao-stochastic-la-gi\nchi-so-chung-khoan\nchi-so-dow-jones-future\nchi-so-hnx30\nchi-so-kospi\nchi-so-ps\nchi-so-qoq\nchi-so-tam-ly\nco-nen-dau-tu-chung-chi-quy\nco-nen-dau-tu-vao-quy-mo-vinacapital\nco-tien-nen-dau-tu-bac\ncon-hao-kinh-te-la-gi\ndar-la-gi\ndau-tu-vang-nen-mua-loai-na\nduong-cong-loi-suat-dao-nguoc-la-gi\ngia-tri-noi-tai-cua-co-phieu-la-gi\nlai-suat-tiet-kiem-acb\nlai-suat-tiet-kiem-bac-a\nlai-suat-tiet-kiem-bidv\nlai-suat-tiet-kiem-vib\nlai-suat-tiet-kiem-vpbank\nldr-la-gi\nlenh-plo\nmo-tai-khoan-chung-chi-quy\nnha-tao-lap-thi-truong-la-ai\nno-chinh-phu\nphi-luu-ky-chung-khoan\nphuong-phap-dau-tu-warren-buffett\nquy-tac-72\nrsi-la-gi\nrui-ro-chung-chi-quy\nsan-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong\ntarget-trong-chung-khoan-la-gi\nthao-tung-thi-truong-chung-khoan-la-gi\nthi-truong-so-cap-va-thu-cap-la-gi\nthue-khi-ban-co-phieu\nty-le-ky-quy"
+      "details": "chi-bao-stochastic-la-gi\nco-nen-dau-tu-chung-chi-quy\nrui-ro-chung-chi-quy\nthi-truong-so-cap-va-thu-cap-la-gi\nty-le-ky-quy"
     },
     {
       "name": "Bài live chưa ghi nhận backfill",
       "group": "Sau publish",
       "source": "knowledge/3-seo/logs/publish-ledger.csv",
       "state": "Có việc cần đối chiếu",
-      "evidence": "2 bài thiếu mốc backfill_done trong ledger; seed là mốc nhập lịch sử.",
+      "evidence": "6 bài thiếu mốc backfill_done trong ledger; seed là mốc nhập lịch sử.",
       "next_step": "Gom backfill bằng /weekly, xác minh rồi ghi nhận vào ledger.",
-      "details": "app-mua-chung-chi-quy\nphan-biet-thi-truong-tien-te-va-thi-truong-von-huong-dan-chi-tiet-cho-nha-dau-tu"
+      "details": "app-mua-chung-chi-quy\ncach-choi-chung-khoan\nchi-so-ps\nphan-biet-thi-truong-tien-te-va-thi-truong-von-huong-dan-chi-tiet-cho-nha-dau-tu\ntarget-trong-chung-khoan-la-gi\nthue-khi-ban-co-phieu"
     },
     {
       "name": "Bài live chưa ghi nhận kiểm tra GSC",
       "group": "Sau publish",
       "source": "knowledge/3-seo/logs/publish-ledger.csv",
       "state": "Có việc cần đối chiếu",
-      "evidence": "2 bài thiếu mốc gsc_checked trong ledger; seed là mốc nhập lịch sử.",
+      "evidence": "6 bài thiếu mốc gsc_checked trong ledger; seed là mốc nhập lịch sử.",
       "next_step": "Chạy /weekly để lọc bài đến hạn 28–56 ngày; danh sách này gồm cả bài chưa đến hạn.",
-      "details": "app-mua-chung-chi-quy\nphan-biet-thi-truong-tien-te-va-thi-truong-von-huong-dan-chi-tiet-cho-nha-dau-tu"
+      "details": "app-mua-chung-chi-quy\ncach-choi-chung-khoan\nchi-so-ps\nphan-biet-thi-truong-tien-te-va-thi-truong-von-huong-dan-chi-tiet-cho-nha-dau-tu\ntarget-trong-chung-khoan-la-gi\nthue-khi-ban-co-phieu"
     },
     {
       "name": "rates-c",
       "group": "Stale",
       "source": "knowledge/3-seo/content/audits/stale-content-refresh-2026-11-04.html",
       "state": "Còn mục chưa xác nhận",
-      "evidence": "0/48 đạt; 36 còn đoạn cũ; 12 cần xác minh riêng.",
+      "evidence": "0/48 đạt; 25 còn đoạn cũ; 23 cần xác minh riêng.",
       "next_step": "Mở bộ sửa stale; kiểm tra từng mục, title/meta cần đối chiếu CMS.",
       "done": 0,
       "total": 48,
-      "details": "lai-suat-gui-tiet-kiem-ngan-hang-vietcombank: Cần xác minh riêng (field/thiếu snapshot)\nlai-suat-gui-tiet-kiem-ngan-hang-vietcombank: Cần xác minh riêng (field/thiếu snapshot)\nlai-suat-gui-tiet-kiem-ngan-hang-vietcombank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietcombank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietcombank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietcombank: Nội dung đã đổi; chưa khớp bản đề xuất\nlai-suat-gui-tiet-kiem-ngan-hang-vietcombank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietcombank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietcombank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietcombank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietcombank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Cần xác minh riêng (field/thiếu snapshot)\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Cần xác minh riêng (field/thiếu snapshot)\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Nội dung đã đổi; chưa khớp bản đề xuất\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vpbank: Cần xác minh riêng (field/thiếu snapshot)\nlai-suat-gui-tiet-kiem-ngan-hang-vpbank: Cần xác minh riêng (field/thiếu snapshot)\nlai-suat-gui-tiet-kiem-ngan-hang-vpbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vpbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vpbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vpbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vpbank: Nội dung đã đổi; chưa khớp bản đề xuất\nlai-suat-gui-tiet-kiem-ngan-hang-vpbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vpbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vpbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vpbank: Còn đoạn cũ trong snapshot\nlai-suat-ngan-hang-dong-a: Cần xác minh riêng (field/thiếu snapshot)\nlai-suat-ngan-hang-dong-a: Cần xác minh riêng (field/thiếu snapshot)\nlai-suat-ngan-hang-dong-a: Còn đoạn cũ trong snapshot\nlai-suat-ngan-hang-dong-a: Còn đoạn cũ trong snapshot\nlai-suat-ngan-hang-dong-a: Còn đoạn cũ trong snapshot\nlai-suat-ngan-hang-dong-a: Còn đoạn cũ trong snapshot\nlai-suat-ngan-hang-dong-a: Nội dung đã đổi; chưa khớp bản đề xuất\nlai-suat-ngan-hang-dong-a: Còn đoạn cũ trong snapshot\nlai-suat-ngan-hang-dong-a: Còn đoạn cũ trong snapshot\nlai-suat-ngan-hang-dong-a: Còn đoạn cũ trong snapshot\nlai-suat-ngan-hang-dong-a: Còn đoạn cũ trong snapshot\nlai-suat-ngan-hang-dong-a: Còn đoạn cũ trong snapshot\nlai-suat-ngan-hang-dong-a: Còn đoạn cũ trong snapshot\nlai-suat-ngan-hang-dong-a: Còn đoạn cũ trong snapshot",
+      "details": "lai-suat-gui-tiet-kiem-ngan-hang-vietcombank: Cần xác minh riêng (field/thiếu snapshot)\nlai-suat-gui-tiet-kiem-ngan-hang-vietcombank: Cần xác minh riêng (field/thiếu snapshot)\nlai-suat-gui-tiet-kiem-ngan-hang-vietcombank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietcombank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietcombank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietcombank: Nội dung đã đổi; chưa khớp bản đề xuất\nlai-suat-gui-tiet-kiem-ngan-hang-vietcombank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietcombank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietcombank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietcombank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietcombank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Cần xác minh riêng (field/thiếu snapshot)\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Cần xác minh riêng (field/thiếu snapshot)\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Nội dung đã đổi; chưa khớp bản đề xuất\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vietinbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vpbank: Cần xác minh riêng (field/thiếu snapshot)\nlai-suat-gui-tiet-kiem-ngan-hang-vpbank: Cần xác minh riêng (field/thiếu snapshot)\nlai-suat-gui-tiet-kiem-ngan-hang-vpbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vpbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vpbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vpbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vpbank: Nội dung đã đổi; chưa khớp bản đề xuất\nlai-suat-gui-tiet-kiem-ngan-hang-vpbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vpbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vpbank: Còn đoạn cũ trong snapshot\nlai-suat-gui-tiet-kiem-ngan-hang-vpbank: Còn đoạn cũ trong snapshot\nlai-suat-ngan-hang-dong-a: Cần xác minh riêng (field/thiếu snapshot)\nlai-suat-ngan-hang-dong-a: Cần xác minh riêng (field/thiếu snapshot)\nlai-suat-ngan-hang-dong-a: Nội dung đã đổi; chưa khớp bản đề xuất\nlai-suat-ngan-hang-dong-a: Nội dung đã đổi; chưa khớp bản đề xuất\nlai-suat-ngan-hang-dong-a: Nội dung đã đổi; chưa khớp bản đề xuất\nlai-suat-ngan-hang-dong-a: Nội dung đã đổi; chưa khớp bản đề xuất\nlai-suat-ngan-hang-dong-a: Nội dung đã đổi; chưa khớp bản đề xuất\nlai-suat-ngan-hang-dong-a: Nội dung đã đổi; chưa khớp bản đề xuất\nlai-suat-ngan-hang-dong-a: Nội dung đã đổi; chưa khớp bản đề xuất\nlai-suat-ngan-hang-dong-a: Nội dung đã đổi; chưa khớp bản đề xuất\nlai-suat-ngan-hang-dong-a: Nội dung đã đổi; chưa khớp bản đề xuất\nlai-suat-ngan-hang-dong-a: Nội dung đã đổi; chưa khớp bản đề xuất\nlai-suat-ngan-hang-dong-a: Nội dung đã đổi; chưa khớp bản đề xuất\nlai-suat-ngan-hang-dong-a: Nội dung đã đổi; chưa khớp bản đề xuất",
       "spec": "knowledge/3-seo/content/audits/edits/rates-c.json"
     },
     {
@@ -209,18 +158,18 @@
       "group": "Dữ liệu",
       "source": "knowledge/3-seo/strategy/pages.csv",
       "state": "Cần đối chiếu",
-      "evidence": "881 URL · 845 live · 22 Finalized chưa khớp URL live · 2 key chính trùng · 3 chưa có cluster.",
-      "next_step": "python scripts/registry.py check → sửa cột slug / cluster; trùng key → cân nhắc gộp (301).",
-      "details": "chưa khớp live: app-mua-chung-chi-quy\nchưa khớp live: ty-le-ky-quy\nchưa khớp live: cach-choi-chung-khoan-cho-sinh-vien\nchưa khớp live: chi-so-dow-jones\nchưa khớp live: sell-in-may-and-go-away-la-gi\nchưa khớp live: chi-bao-stochastic-la-gi\nchưa khớp live: rsi-la-gi\nchưa khớp live: phan-tich-nganh-la-gi\nchưa khớp live: casa-la-gi\nchưa khớp live: phuong-phap-dau-tu-warren-buffett\nchưa khớp live: cach-dau-tu-chung-chi-quy\nchưa khớp live: chung-chi-quy-tot-nhat-hien-nay\nchưa khớp live: co-nen-dau-tu-chung-chi-quy\nchưa khớp live: rui-ro-chung-chi-quy\nchưa khớp live: so-sanh-co-phieu-va-chung-chi-quy-dau-tu\nchưa khớp live: lai-suat-tiet-kiem-acb\nchưa khớp live: lai-suat-tiet-kiem-bac-a\nchưa khớp live: lai-suat-tiet-kiem-bidv\nchưa khớp live: lai-suat-tiet-kiem-vib\nchưa khớp live: lai-suat-tiet-kiem-vpbank\nchưa khớp live: co-tien-nen-dau-tu-bac\nchưa khớp live: william-r-la-gi\ntrùng key: sell in may and go away la gi\ntrùng key: casa la gi\nchưa cluster: gia-cao-su\nchưa cluster: roaa-la-gi\nchưa cluster: william-r-la-gi"
+      "evidence": "865 URL · 846 live · 5 bài Final chờ đăng · 0 Finalized không có file Final · 0 key chính trùng · 1 chưa có cluster.",
+      "next_step": "Chờ đăng: xem mục \"Chờ publish\" của weekly_review.py. Lỗi dữ liệu: python scripts/registry.py check → sửa slug / status / cluster; trùng key → cân nhắc gộp (301).",
+      "details": "chưa cluster: gia-cao-su\nchờ đăng: ty-le-ky-quy\nchờ đăng: chi-bao-stochastic-la-gi\nchờ đăng: cach-dau-tu-chung-chi-quy\nchờ đăng: co-nen-dau-tu-chung-chi-quy\nchờ đăng: rui-ro-chung-chi-quy"
     },
     {
       "name": "Backlog có trạng thái lệch nguồn chính",
       "group": "Dữ liệu tiến độ",
       "source": "knowledge/3-seo/strategy/sprint-backlog.md",
       "state": "Cần đối chiếu",
-      "evidence": "9 từ khóa khớp chính xác nhưng khác trạng thái. Nguồn trạng thái bài: strategy/pages.csv (topic_status.py).",
+      "evidence": "11 từ khóa khớp chính xác nhưng khác trạng thái. Nguồn trạng thái bài: strategy/pages.csv (topic_status.py).",
       "next_step": "Tra trạng thái bằng python scripts/topic_status.py <slug>; backlog cũ chỉ để tham khảo.",
-      "details": "có nên mua cổ phiếu las: backlog=Outline-Approved; registry=Finalized\ncó nên mua cổ phiếu novaland: backlog=Outline-Approved; registry=Finalized\nchỉ số chứng khoán: backlog=Outline-Approved; registry=Finalized\nmô hình nến đảo chiều: backlog=Outlining; registry=Finalized\ncách đầu tư chứng chỉ quỹ: backlog=Outlining; registry=Finalized\napp mua chứng chỉ quỹ: backlog=Outlining; registry=Finalized\ncách đầu tư vàng: backlog=Outline-Pending; registry=Finalized\nnên gửi tiết kiệm hay mua vàng: backlog=Outline-Pending; registry=Finalized\nđầu tư vàng nên mua loại nào: backlog=Outline-Approved; registry=Finalized"
+      "details": "có nên mua cổ phiếu oil: backlog=Outline-Approved; registry=Live\ncó nên mua cổ phiếu las: backlog=Outline-Approved; registry=Finalized\ncó nên mua cổ phiếu novaland: backlog=Outline-Approved; registry=Finalized\nchỉ số chứng khoán: backlog=Outline-Approved; registry=Finalized\nmô hình nến đảo chiều: backlog=Outlining; registry=Finalized\ncách đầu tư chứng chỉ quỹ: backlog=Outlining; registry=Finalized\napp mua chứng chỉ quỹ: backlog=Outlining; registry=Finalized\ncách đầu tư vàng: backlog=Outline-Pending; registry=Finalized\nnên gửi tiết kiệm hay mua vàng: backlog=Outline-Pending; registry=Finalized\nđầu tư vàng nên mua loại nào: backlog=Outline-Approved; registry=Finalized\ncách chơi chứng khoán cho sinh viên: backlog=Finalized; registry=Merged"
     }
   ],
   "catalog": [
@@ -305,6 +254,42 @@
     {
       "path": "knowledge/3-seo/links/archive/2026-10-30-mo-tk-cach-choi/topical-map.html",
       "name": "topical-map.html",
+      "group": "Internal link",
+      "archived": true
+    },
+    {
+      "path": "knowledge/3-seo/links/archive/2026-11-17-con-lai.html",
+      "name": "2026-11-17-con-lai.html",
+      "group": "Internal link",
+      "archived": true
+    },
+    {
+      "path": "knowledge/3-seo/links/archive/2026-11-17-con-lai.json",
+      "name": "2026-11-17-con-lai.json",
+      "group": "Internal link",
+      "archived": true
+    },
+    {
+      "path": "knowledge/3-seo/links/archive/2026-11-17-link-301.html",
+      "name": "2026-11-17-link-301.html",
+      "group": "Internal link",
+      "archived": true
+    },
+    {
+      "path": "knowledge/3-seo/links/archive/2026-11-17-link-301.json",
+      "name": "2026-11-17-link-301.json",
+      "group": "Internal link",
+      "archived": true
+    },
+    {
+      "path": "knowledge/3-seo/links/archive/2026-11-17-pillar-hub-chua-xet.html",
+      "name": "2026-11-17-pillar-hub-chua-xet.html",
+      "group": "Internal link",
+      "archived": true
+    },
+    {
+      "path": "knowledge/3-seo/links/archive/2026-11-17-pillar-hub-chua-xet.json",
+      "name": "2026-11-17-pillar-hub-chua-xet.json",
       "group": "Internal link",
       "archived": true
     },
@@ -873,12 +858,6 @@
       "archived": true
     },
     {
-      "path": "knowledge/3-seo/links/archive/legacy-2026-11-19/README.md",
-      "name": "README.md",
-      "group": "Internal link",
-      "archived": true
-    },
-    {
       "path": "knowledge/3-seo/links/archive/legacy-2026-11-19/anchor-index.md",
       "name": "anchor-index.md",
       "group": "Internal link",
@@ -887,6 +866,12 @@
     {
       "path": "knowledge/3-seo/links/archive/legacy-2026-11-19/anchor-keys.csv",
       "name": "anchor-keys.csv",
+      "group": "Internal link",
+      "archived": true
+    },
+    {
+      "path": "knowledge/3-seo/links/archive/legacy-2026-11-19/README.md",
+      "name": "README.md",
       "group": "Internal link",
       "archived": true
     },
@@ -915,44 +900,20 @@
       "archived": false
     },
     {
-      "path": "knowledge/3-seo/links/plans/2026-11-17-con-lai.html",
-      "name": "2026-11-17-con-lai.html",
-      "group": "Internal link",
-      "archived": false
-    },
-    {
-      "path": "knowledge/3-seo/links/plans/2026-11-17-con-lai.json",
-      "name": "2026-11-17-con-lai.json",
-      "group": "Internal link",
-      "archived": false
-    },
-    {
-      "path": "knowledge/3-seo/links/plans/2026-11-17-link-301.html",
-      "name": "2026-11-17-link-301.html",
-      "group": "Internal link",
-      "archived": false
-    },
-    {
-      "path": "knowledge/3-seo/links/plans/2026-11-17-link-301.json",
-      "name": "2026-11-17-link-301.json",
-      "group": "Internal link",
-      "archived": false
-    },
-    {
       "path": "knowledge/3-seo/links/plans/2026-11-17-lo-trinh.md",
       "name": "2026-11-17-lo-trinh.md",
       "group": "Internal link",
       "archived": false
     },
     {
-      "path": "knowledge/3-seo/links/plans/2026-11-17-pillar-hub-chua-xet.html",
-      "name": "2026-11-17-pillar-hub-chua-xet.html",
+      "path": "knowledge/3-seo/links/plans/2026-11-26-backfill-lai-suat.html",
+      "name": "2026-11-26-backfill-lai-suat.html",
       "group": "Internal link",
       "archived": false
     },
     {
-      "path": "knowledge/3-seo/links/plans/2026-11-17-pillar-hub-chua-xet.json",
-      "name": "2026-11-17-pillar-hub-chua-xet.json",
+      "path": "knowledge/3-seo/links/plans/2026-11-26-backfill-lai-suat.json",
+      "name": "2026-11-26-backfill-lai-suat.json",
       "group": "Internal link",
       "archived": false
     },
@@ -1329,6 +1290,12 @@
       "archived": false
     },
     {
+      "path": "knowledge/3-seo/content/4-cms/chi-bao-stochastic-la-gi.html",
+      "name": "chi-bao-stochastic-la-gi.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
       "path": "knowledge/3-seo/content/4-cms/co-nen-dau-tu-chung-chi-quy.html",
       "name": "co-nen-dau-tu-chung-chi-quy.html",
       "group": "CMS",
@@ -1341,6 +1308,24 @@
       "archived": false
     },
     {
+      "path": "knowledge/3-seo/content/4-cms/co-tien-nen-dau-tu-bac.html",
+      "name": "co-tien-nen-dau-tu-bac.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/4-cms/lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat.html",
+      "name": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/4-cms/lai-suat-ngan-hang-dong-a.html",
+      "name": "lai-suat-ngan-hang-dong-a.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
       "path": "knowledge/3-seo/content/4-cms/mo-hinh-nen-bua-nguoc-inverted-hammer-la-gi.html",
       "name": "mo-hinh-nen-bua-nguoc-inverted-hammer-la-gi.html",
       "group": "CMS",
@@ -1349,6 +1334,12 @@
     {
       "path": "knowledge/3-seo/content/4-cms/phan-biet-thi-truong-tien-te-va-thi-truong-von-huong-dan-chi-tiet-cho-nha-dau-tu.html",
       "name": "phan-biet-thi-truong-tien-te-va-thi-truong-von-huong-dan-chi-tiet-cho-nha-dau-tu.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/4-cms/rsi-la-gi.html",
+      "name": "rsi-la-gi.html",
       "group": "CMS",
       "archived": false
     },
@@ -1581,12 +1572,6 @@
       "archived": false
     },
     {
-      "path": "knowledge/4-channels/social/packs/con-hao-kinh-te-la-gi-cach-tao-ra-va-tam-quan-trong-cua-con-hao-kinh-te/all-channels-v2/README.md",
-      "name": "README.md",
-      "group": "Kênh khác",
-      "archived": false
-    },
-    {
       "path": "knowledge/4-channels/social/packs/con-hao-kinh-te-la-gi-cach-tao-ra-va-tam-quan-trong-cua-con-hao-kinh-te/all-channels-v2/ameblo.md",
       "name": "ameblo.md",
       "group": "Kênh khác",
@@ -1647,6 +1632,12 @@
       "archived": false
     },
     {
+      "path": "knowledge/4-channels/social/packs/con-hao-kinh-te-la-gi-cach-tao-ra-va-tam-quan-trong-cua-con-hao-kinh-te/all-channels-v2/README.md",
+      "name": "README.md",
+      "group": "Kênh khác",
+      "archived": false
+    },
+    {
       "path": "knowledge/4-channels/social/packs/con-hao-kinh-te-la-gi-cach-tao-ra-va-tam-quan-trong-cua-con-hao-kinh-te/all-channels-v2/telegraph.md",
       "name": "telegraph.md",
       "group": "Kênh khác",
@@ -1661,12 +1652,6 @@
     {
       "path": "knowledge/4-channels/social/packs/con-hao-kinh-te-la-gi-cach-tao-ra-va-tam-quan-trong-cua-con-hao-kinh-te/all-channels-v2/x.md",
       "name": "x.md",
-      "group": "Kênh khác",
-      "archived": false
-    },
-    {
-      "path": "knowledge/4-channels/social/packs/con-hao-kinh-te-la-gi-cach-tao-ra-va-tam-quan-trong-cua-con-hao-kinh-te/all-channels-v3/README.md",
-      "name": "README.md",
       "group": "Kênh khác",
       "archived": false
     },
@@ -1779,6 +1764,12 @@
       "archived": false
     },
     {
+      "path": "knowledge/4-channels/social/packs/con-hao-kinh-te-la-gi-cach-tao-ra-va-tam-quan-trong-cua-con-hao-kinh-te/all-channels-v3/README.md",
+      "name": "README.md",
+      "group": "Kênh khác",
+      "archived": false
+    },
+    {
       "path": "knowledge/4-channels/social/packs/con-hao-kinh-te-la-gi-cach-tao-ra-va-tam-quan-trong-cua-con-hao-kinh-te/all-channels-v3/telegraph.html",
       "name": "telegraph.html",
       "group": "Kênh khác",
@@ -1815,12 +1806,6 @@
       "archived": false
     },
     {
-      "path": "knowledge/4-channels/social/packs/con-hao-kinh-te-la-gi-cach-tao-ra-va-tam-quan-trong-cua-con-hao-kinh-te/v1/README.md",
-      "name": "README.md",
-      "group": "Kênh khác",
-      "archived": false
-    },
-    {
       "path": "knowledge/4-channels/social/packs/con-hao-kinh-te-la-gi-cach-tao-ra-va-tam-quan-trong-cua-con-hao-kinh-te/v1/ledger-before.csv",
       "name": "ledger-before.csv",
       "group": "Kênh khác",
@@ -1829,6 +1814,12 @@
     {
       "path": "knowledge/4-channels/social/packs/con-hao-kinh-te-la-gi-cach-tao-ra-va-tam-quan-trong-cua-con-hao-kinh-te/v1/mastodon.md",
       "name": "mastodon.md",
+      "group": "Kênh khác",
+      "archived": false
+    },
+    {
+      "path": "knowledge/4-channels/social/packs/con-hao-kinh-te-la-gi-cach-tao-ra-va-tam-quan-trong-cua-con-hao-kinh-te/v1/README.md",
+      "name": "README.md",
       "group": "Kênh khác",
       "archived": false
     },
@@ -1887,6 +1878,12 @@
       "archived": false
     },
     {
+      "path": "knowledge/5-analytics/reports/2026-10.md",
+      "name": "2026-10.md",
+      "group": "Đo lường",
+      "archived": false
+    },
+    {
       "path": "knowledge/5-analytics/reports/README.md",
       "name": "README.md",
       "group": "Đo lường",
@@ -1896,6 +1893,114 @@
       "path": "knowledge/5-analytics/weekly/2026-11-23.md",
       "name": "2026-11-23.md",
       "group": "Đo lường",
+      "archived": false
+    },
+    {
+      "path": "knowledge/6-campaigns/CMP-261124-mo-tai-khoan-tet-2027/ads/copy-v1.md",
+      "name": "copy-v1.md",
+      "group": "Chiến dịch",
+      "archived": false
+    },
+    {
+      "path": "knowledge/6-campaigns/CMP-261124-mo-tai-khoan-tet-2027/ads/creatives/design.json",
+      "name": "design.json",
+      "group": "Chiến dịch",
+      "archived": false
+    },
+    {
+      "path": "knowledge/6-campaigns/CMP-261124-mo-tai-khoan-tet-2027/ads/creatives/generate-log.jsonl",
+      "name": "generate-log.jsonl",
+      "group": "Chiến dịch",
+      "archived": false
+    },
+    {
+      "path": "knowledge/6-campaigns/CMP-261124-mo-tai-khoan-tet-2027/ads/creatives/prompts.md",
+      "name": "prompts.md",
+      "group": "Chiến dịch",
+      "archived": false
+    },
+    {
+      "path": "knowledge/6-campaigns/CMP-261124-mo-tai-khoan-tet-2027/brief.md",
+      "name": "brief.md",
+      "group": "Chiến dịch",
+      "archived": false
+    },
+    {
+      "path": "knowledge/6-campaigns/CMP-261124-mo-tai-khoan-tet-2027/landing/copy-v1.md",
+      "name": "copy-v1.md",
+      "group": "Chiến dịch",
+      "archived": false
+    },
+    {
+      "path": "knowledge/6-campaigns/CMP-261124-mo-tai-khoan-tet-2027/landing/landing-v1.html",
+      "name": "landing-v1.html",
+      "group": "Chiến dịch",
+      "archived": false
+    },
+    {
+      "path": "knowledge/6-campaigns/CMP-261124-mo-tai-khoan-tet-2027/social/creatives/design.json",
+      "name": "design.json",
+      "group": "Chiến dịch",
+      "archived": false
+    },
+    {
+      "path": "knowledge/6-campaigns/CMP-261124-mo-tai-khoan-tet-2027/social/creatives/prompts.md",
+      "name": "prompts.md",
+      "group": "Chiến dịch",
+      "archived": false
+    },
+    {
+      "path": "knowledge/6-campaigns/CMP-261124-mo-tai-khoan-tet-2027/social/facebook-mo-tai-khoan-tet-v1.md",
+      "name": "facebook-mo-tai-khoan-tet-v1.md",
+      "group": "Chiến dịch",
+      "archived": false
+    },
+    {
+      "path": "knowledge/6-campaigns/README.md",
+      "name": "README.md",
+      "group": "Chiến dịch",
+      "archived": false
+    },
+    {
+      "path": "knowledge/logs/activity/2026-05.jsonl",
+      "name": "2026-05.jsonl",
+      "group": "Log",
+      "archived": false
+    },
+    {
+      "path": "knowledge/logs/activity/2026-06.jsonl",
+      "name": "2026-06.jsonl",
+      "group": "Log",
+      "archived": false
+    },
+    {
+      "path": "knowledge/logs/activity/2026-07.jsonl",
+      "name": "2026-07.jsonl",
+      "group": "Log",
+      "archived": false
+    },
+    {
+      "path": "knowledge/logs/activity/2026-08.jsonl",
+      "name": "2026-08.jsonl",
+      "group": "Log",
+      "archived": false
+    },
+    {
+      "path": "knowledge/logs/activity/2026-09.jsonl",
+      "name": "2026-09.jsonl",
+      "group": "Log",
+      "archived": false
+    },
+    {
+      "path": "knowledge/logs/activity/2026-10.jsonl",
+      "name": "2026-10.jsonl",
+      "group": "Log",
+      "archived": false
+    },
+    {
+      "path": "knowledge/logs/activity/2026-11.jsonl",
+      "name": "2026-11.jsonl",
+      "group": "Log",
       "archived": false
     },
     {
@@ -1918,9 +2023,818 @@
     }
   ],
   "stats": {
-    "in_progress": 24,
+    "in_progress": 7,
     "competitor_new": 0,
     "channel_drafts": 0,
-    "approvals": 19
-  }
+    "approvals": 3,
+    "channel_pending": 3
+  },
+  "activity_recent": [
+    {
+      "ts": "2026-11-26T13:28:25",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "sync_live",
+      "action": "sync",
+      "target": "live-site",
+      "result": "7 trang · partial"
+    },
+    {
+      "ts": "2026-11-26T13:28:19",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "article_snapshot",
+      "action": "approve",
+      "target": "dong-tien-tu-do-la-gi",
+      "status_to": "Draft-Approved",
+      "path": "knowledge/3-seo/logs/publish-ledger.csv",
+      "note": "ledger:gate2"
+    },
+    {
+      "ts": "2026-11-26T13:28:17",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "qa_gate",
+      "action": "qa",
+      "target": "dong-tien-tu-do-la-gi",
+      "path": "knowledge/3-seo/content/2-drafts/Draft-dong-tien-tu-do-la-gi.md",
+      "result": "PASS"
+    },
+    {
+      "ts": "2026-11-26T13:08:49",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "revision_log",
+      "action": "revise",
+      "target": "dong-tien-tu-do-la-gi",
+      "path": "knowledge/3-seo/logs/revision-log.md",
+      "note": "Sapo-outline-order"
+    },
+    {
+      "ts": "2026-11-26T11:21:48",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "article_snapshot",
+      "action": "approve",
+      "target": "dong-tien-tu-do-la-gi",
+      "status_to": "Draft-Approved",
+      "path": "knowledge/3-seo/logs/publish-ledger.csv",
+      "note": "ledger:gate2"
+    },
+    {
+      "ts": "2026-11-26T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "market",
+      "action": "report",
+      "target": "2026-W48",
+      "path": "knowledge/2-market/competitors/watch/2026-W48.md",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-26T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "market",
+      "action": "create",
+      "target": "voc-objections",
+      "path": "knowledge/2-market/research/voc-objections.md",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-26T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "market",
+      "action": "create",
+      "target": "market-landscape",
+      "path": "knowledge/2-market/market-landscape.md",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-26T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "market",
+      "action": "create",
+      "target": "account-opening-comparison",
+      "path": "knowledge/2-market/account-opening-comparison.md",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-26T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "analytics",
+      "action": "report",
+      "target": "2026-10",
+      "path": "knowledge/5-analytics/reports/2026-10.md",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-26T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "qa_lint",
+      "action": "qa",
+      "target": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+      "path": "knowledge/3-seo/logs/qa-score-log.csv",
+      "result": "score 96",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-26T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "qa_lint",
+      "action": "qa",
+      "target": "lai-suat-ngan-hang-dong-a",
+      "path": "knowledge/3-seo/logs/qa-score-log.csv",
+      "result": "score 98",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-26T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "qa_lint",
+      "action": "qa",
+      "target": "thi-truong-so-cap-va-thu-cap-la-gi",
+      "path": "knowledge/3-seo/logs/qa-score-log.csv",
+      "result": "score 97",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-26T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "revise",
+      "action": "revise",
+      "target": "dong-tien-tu-do-la-gi",
+      "path": "knowledge/3-seo/logs/revision-log.md",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-26T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "revise",
+      "action": "revise",
+      "target": "lai-suat-ngan-hang-dong-a",
+      "path": "knowledge/3-seo/logs/revision-log.md",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-26T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "revise",
+      "action": "revise",
+      "target": "thi-truong-so-cap-va-thu-cap-la-gi-v2",
+      "path": "knowledge/3-seo/logs/revision-log.md",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-26T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "approve",
+      "action": "approve",
+      "target": "so-sanh-lai-suat-tiet-kiem-ngan-hang",
+      "status_to": "Draft-Approved",
+      "path": "knowledge/3-seo/logs/publish-ledger.csv",
+      "note": "ledger:gate2",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-26T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "optimize",
+      "action": "approve",
+      "target": "rsi-la-gi",
+      "status_to": "Optimized",
+      "path": "knowledge/3-seo/logs/publish-ledger.csv",
+      "note": "ledger:optimized",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-26T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "action": "publish",
+      "target": "lai-suat-ngan-hang-dong-a",
+      "status_to": "Live",
+      "path": "knowledge/3-seo/logs/publish-ledger.csv",
+      "note": "ledger:optimize_live",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-26T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "optimize",
+      "action": "approve",
+      "target": "lai-suat-ngan-hang-dong-a",
+      "status_to": "Optimized",
+      "path": "knowledge/3-seo/logs/publish-ledger.csv",
+      "note": "ledger:optimized",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-26T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "approve",
+      "action": "approve",
+      "target": "lai-suat-ngan-hang-dong-a",
+      "status_to": "Finalized",
+      "path": "knowledge/3-seo/logs/publish-ledger.csv",
+      "note": "ledger:final",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-26T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "approve",
+      "action": "approve",
+      "target": "lai-suat-ngan-hang-dong-a",
+      "status_to": "Draft-Approved",
+      "path": "knowledge/3-seo/logs/publish-ledger.csv",
+      "note": "ledger:gate2",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-26T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "approve",
+      "action": "approve",
+      "target": "lai-suat-ngan-hang-dong-a",
+      "status_to": "Outline-Approved",
+      "path": "knowledge/3-seo/logs/publish-ledger.csv",
+      "note": "ledger:outline",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-26T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "optimize",
+      "action": "approve",
+      "target": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+      "status_to": "Optimized",
+      "path": "knowledge/3-seo/logs/publish-ledger.csv",
+      "note": "ledger:optimized",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-26T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "approve",
+      "action": "approve",
+      "target": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+      "status_to": "Finalized",
+      "path": "knowledge/3-seo/logs/publish-ledger.csv",
+      "note": "ledger:final",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-26T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "approve",
+      "action": "approve",
+      "target": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+      "status_to": "Draft-Approved",
+      "path": "knowledge/3-seo/logs/publish-ledger.csv",
+      "note": "ledger:gate2",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-26T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "approve",
+      "action": "approve",
+      "target": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+      "status_to": "Outline-Approved",
+      "path": "knowledge/3-seo/logs/publish-ledger.csv",
+      "note": "ledger:outline",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-26T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "optimize",
+      "action": "approve",
+      "target": "co-tien-nen-dau-tu-bac",
+      "status_to": "Optimized",
+      "path": "knowledge/3-seo/logs/publish-ledger.csv",
+      "note": "ledger:optimized",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-25T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "analytics",
+      "action": "report",
+      "target": "kpi-definitions",
+      "path": "knowledge/5-analytics/kpi-definitions.md",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-25T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "social",
+      "action": "create",
+      "target": "CMP-261124-mo-tai-khoan-tet-2027",
+      "path": "knowledge/6-campaigns/CMP-261124-mo-tai-khoan-tet-2027/social/facebook-mo-tai-khoan-tet-v1.md",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-25T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "landing",
+      "action": "create",
+      "target": "CMP-261124-mo-tai-khoan-tet-2027",
+      "path": "knowledge/6-campaigns/CMP-261124-mo-tai-khoan-tet-2027/landing/copy-v1.md",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-25T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "ads-meta",
+      "action": "create",
+      "target": "CMP-261124-mo-tai-khoan-tet-2027",
+      "path": "knowledge/6-campaigns/CMP-261124-mo-tai-khoan-tet-2027/ads/copy-v1.md",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-25T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "qa_lint",
+      "action": "qa",
+      "target": "san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong",
+      "path": "knowledge/3-seo/logs/qa-score-log.csv",
+      "result": "score 98",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-25T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "qa_lint",
+      "action": "qa",
+      "target": "cach-doc-bieu-do-nen-chung-khoan-cho-nguoi-moi-bat-dau",
+      "path": "knowledge/3-seo/logs/qa-score-log.csv",
+      "result": "score 99",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-25T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "qa_lint",
+      "action": "qa",
+      "target": "thi-truong-so-cap-va-thu-cap-la-gi",
+      "path": "knowledge/3-seo/logs/qa-score-log.csv",
+      "result": "score 97",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-25T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "revise",
+      "action": "revise",
+      "target": "so-sanh-lai-suat-tiet-kiem-ngan-hang",
+      "path": "knowledge/3-seo/logs/revision-log.md",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-25T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "revise",
+      "action": "revise",
+      "target": "san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong",
+      "path": "knowledge/3-seo/logs/revision-log.md",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-25T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "revise",
+      "action": "revise",
+      "target": "cach-doc-bieu-do-nen-chung-khoan-cho-nguoi-moi-bat-dau",
+      "path": "knowledge/3-seo/logs/revision-log.md",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-25T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "revise",
+      "action": "revise",
+      "target": "thi-truong-so-cap-va-thu-cap-la-gi",
+      "path": "knowledge/3-seo/logs/revision-log.md",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-25T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "approve",
+      "action": "approve",
+      "target": "thi-truong-so-cap-va-thu-cap-la-gi",
+      "status_to": "Finalized",
+      "path": "knowledge/3-seo/logs/publish-ledger.csv",
+      "note": "ledger:final",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-25T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "approve",
+      "action": "approve",
+      "target": "thi-truong-so-cap-va-thu-cap-la-gi",
+      "status_to": "Draft-Approved",
+      "path": "knowledge/3-seo/logs/publish-ledger.csv",
+      "note": "ledger:gate2",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-25T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "approve",
+      "action": "approve",
+      "target": "thi-truong-so-cap-va-thu-cap-la-gi",
+      "status_to": "Outline-Approved",
+      "path": "knowledge/3-seo/logs/publish-ledger.csv",
+      "note": "ledger:outline",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-25T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "optimize",
+      "action": "approve",
+      "target": "san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong",
+      "status_to": "Optimized",
+      "path": "knowledge/3-seo/logs/publish-ledger.csv",
+      "note": "ledger:optimized",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-25T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "approve",
+      "action": "approve",
+      "target": "san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong",
+      "status_to": "Finalized",
+      "path": "knowledge/3-seo/logs/publish-ledger.csv",
+      "note": "ledger:final",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-25T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "approve",
+      "action": "approve",
+      "target": "san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong",
+      "status_to": "Draft-Approved",
+      "path": "knowledge/3-seo/logs/publish-ledger.csv",
+      "note": "ledger:gate2",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-25T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "approve",
+      "action": "approve",
+      "target": "san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong",
+      "status_to": "Outline-Approved",
+      "path": "knowledge/3-seo/logs/publish-ledger.csv",
+      "note": "ledger:outline",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-25T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "action": "publish",
+      "target": "phan-biet-thi-truong-tien-te-va-thi-truong-von-huong-dan-chi-tiet-cho-nha-dau-tu",
+      "status_to": "Live",
+      "path": "knowledge/3-seo/logs/publish-ledger.csv",
+      "note": "ledger:first_live",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-25T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "optimize",
+      "action": "approve",
+      "target": "cach-doc-bieu-do-nen-chung-khoan-cho-nguoi-moi-bat-dau",
+      "status_to": "Optimized",
+      "path": "knowledge/3-seo/logs/publish-ledger.csv",
+      "note": "ledger:optimized",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-25T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "approve",
+      "action": "approve",
+      "target": "cach-doc-bieu-do-nen-chung-khoan-cho-nguoi-moi-bat-dau",
+      "status_to": "Finalized",
+      "path": "knowledge/3-seo/logs/publish-ledger.csv",
+      "note": "ledger:final",
+      "src": "backfill"
+    },
+    {
+      "ts": "2026-11-25T00:00:00",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "approve",
+      "action": "approve",
+      "target": "cach-doc-bieu-do-nen-chung-khoan-cho-nguoi-moi-bat-dau",
+      "status_to": "Draft-Approved",
+      "path": "knowledge/3-seo/logs/publish-ledger.csv",
+      "note": "ledger:gate2",
+      "src": "backfill"
+    }
+  ],
+  "activity_counts": {
+    "seo": {
+      "d7": 79,
+      "d30": 116,
+      "last": "2026-11-26T13:28:25"
+    },
+    "market": {
+      "d7": 5,
+      "d30": 6,
+      "last": "2026-11-26T00:00:00"
+    },
+    "analytics": {
+      "d7": 4,
+      "d30": 4,
+      "last": "2026-11-26T00:00:00"
+    },
+    "campaign": {
+      "d7": 1,
+      "d30": 1,
+      "last": "2026-11-24T00:00:00"
+    },
+    "creative": {
+      "d7": 1,
+      "d30": 1,
+      "last": "2026-11-24T16:34:42"
+    },
+    "ads-meta": {
+      "d7": 1,
+      "d30": 1,
+      "last": "2026-11-25T00:00:00"
+    },
+    "landing": {
+      "d7": 1,
+      "d30": 1,
+      "last": "2026-11-25T00:00:00"
+    },
+    "social": {
+      "d7": 1,
+      "d30": 1,
+      "last": "2026-11-25T00:00:00"
+    }
+  },
+  "channels": [
+    {
+      "domain": "seo",
+      "label": "SEO",
+      "metrics": [
+        [
+          "Đang làm",
+          7
+        ],
+        [
+          "Chờ duyệt outline",
+          2
+        ],
+        [
+          "Chờ duyệt bài",
+          1
+        ],
+        [
+          "Live",
+          846
+        ]
+      ],
+      "d7": 79,
+      "d30": 116,
+      "last": "2026-11-26 13:28"
+    },
+    {
+      "domain": "campaign",
+      "label": "Campaign",
+      "metrics": [
+        [
+          "Job",
+          1
+        ],
+        [
+          "Chờ duyệt",
+          1
+        ],
+        [
+          "Live",
+          0
+        ],
+        [
+          "Nháp trong job",
+          3
+        ]
+      ],
+      "d7": 1,
+      "d30": 1,
+      "last": "2026-11-24 00:00"
+    },
+    {
+      "domain": "ads-meta",
+      "label": "Meta Ads",
+      "metrics": [
+        [
+          "Nháp chờ duyệt",
+          1
+        ],
+        [
+          "Review",
+          0
+        ]
+      ],
+      "d7": 1,
+      "d30": 1,
+      "last": "2026-11-25 00:00"
+    },
+    {
+      "domain": "ads-google",
+      "label": "Google Ads",
+      "metrics": [
+        [
+          "File kênh",
+          0
+        ],
+        [
+          "Nháp",
+          0
+        ]
+      ],
+      "d7": 0,
+      "d30": 0,
+      "last": ""
+    },
+    {
+      "domain": "email",
+      "label": "Email",
+      "metrics": [
+        [
+          "File kênh",
+          0
+        ],
+        [
+          "Nháp",
+          0
+        ]
+      ],
+      "d7": 0,
+      "d30": 0,
+      "last": ""
+    },
+    {
+      "domain": "landing",
+      "label": "Landing",
+      "metrics": [
+        [
+          "File kênh",
+          0
+        ],
+        [
+          "Nháp",
+          1
+        ]
+      ],
+      "d7": 1,
+      "d30": 1,
+      "last": "2026-11-25 00:00"
+    },
+    {
+      "domain": "social",
+      "label": "Social",
+      "metrics": [
+        [
+          "Syndication",
+          11
+        ],
+        [
+          "Syndication Draft",
+          11
+        ],
+        [
+          "Post trong job",
+          1
+        ]
+      ],
+      "d7": 1,
+      "d30": 1,
+      "last": "2026-11-25 00:00"
+    },
+    {
+      "domain": "creative",
+      "label": "Creative",
+      "metrics": [
+        [
+          "Bộ creative",
+          2
+        ],
+        [
+          "Lần duyệt",
+          0
+        ]
+      ],
+      "d7": 1,
+      "d30": 1,
+      "last": "2026-11-24 16:34"
+    },
+    {
+      "domain": "analytics",
+      "label": "Analytics",
+      "metrics": [
+        [
+          "Báo cáo tháng mới nhất",
+          "2026-10"
+        ],
+        [
+          "Weekly mới nhất",
+          "2026-11-23"
+        ]
+      ],
+      "d7": 4,
+      "d30": 4,
+      "last": "2026-11-26 00:00"
+    },
+    {
+      "domain": "market",
+      "label": "Thị trường",
+      "metrics": [
+        [
+          "Watch mới nhất",
+          "2026-W48"
+        ],
+        [
+          "Profile",
+          1
+        ],
+        [
+          "Research",
+          2
+        ]
+      ],
+      "d7": 5,
+      "d30": 6,
+      "last": "2026-11-26 00:00"
+    }
+  ],
+  "channel_pending": [
+    {
+      "domain": "social",
+      "job": "CMP-261124-mo-tai-khoan-tet-2027",
+      "file": "knowledge/6-campaigns/CMP-261124-mo-tai-khoan-tet-2027/social/facebook-mo-tai-khoan-tet-v1.md",
+      "name": "facebook-mo-tai-khoan-tet-v1.md",
+      "stage": "PREVIEW",
+      "updated": "2026-11-25"
+    },
+    {
+      "domain": "ads-meta",
+      "job": "CMP-261124-mo-tai-khoan-tet-2027",
+      "file": "knowledge/6-campaigns/CMP-261124-mo-tai-khoan-tet-2027/ads/copy-v1.md",
+      "name": "copy-v1.md",
+      "stage": "PREVIEW",
+      "updated": "2026-11-25"
+    },
+    {
+      "domain": "landing",
+      "job": "CMP-261124-mo-tai-khoan-tet-2027",
+      "file": "knowledge/6-campaigns/CMP-261124-mo-tai-khoan-tet-2027/landing/copy-v1.md",
+      "name": "copy-v1.md",
+      "stage": "PREVIEW",
+      "updated": "2026-11-25"
+    }
+  ]
 }

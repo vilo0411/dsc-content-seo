@@ -38,6 +38,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from _common import REGISTRY, ROOT, setup_utf8, unaccent  # noqa: E402
+from activity_log import emit  # noqa: E402
 
 CONFIG = ROOT / "knowledge/2-market/competitors/competitors.json"
 WATCH_DIR = ROOT / "knowledge/2-market/competitors/watch"
@@ -405,6 +406,8 @@ def cmd_report(a) -> int:
         wr.writerows(old + vel_rows)
     print("\n".join(out[:8 + len(summary)]))
     print(f"\n→ {path.relative_to(ROOT)} · {len(gaps)} chủ đề DSC chưa có")
+    emit("market", "report", week, skill="competitor-watch", path=path,
+         result=f"{sum(int(r['new']) for r in vel_rows)} bài mới đối thủ · {len(gaps)} chủ đề DSC chưa có")
     return 0
 
 

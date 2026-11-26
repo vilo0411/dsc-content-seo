@@ -82,3 +82,6 @@ Kỳ dữ liệu: [period]
 - Cache TTL 7 ngày: phù hợp với workflow optimize theo tuần
 - File CSV trong `knowledge/raw/gsc/` là gitignored (chứa traffic data nhạy cảm)
 - File `gsc-opportunities.md` có thể commit để team đọc chung
+
+## Ghi activity log (bước cuối)
+Sau khi lưu output (và sau mỗi lần user duyệt → `--action approve`): `python scripts/activity_log.py add --domain seo --skill gsc-sync --action sync --target gsc-opportunities --path knowledge/3-seo/strategy/gsc-opportunities.md`. Hiện ở tab **Hoạt động** của `knowledge/0-dashboard/index.html`.

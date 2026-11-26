@@ -112,6 +112,17 @@ def field_line(body: str, label: str) -> str:
     return re.sub(r"\s*\((?:~?\d+\s*ký tự|~?\d+\s*chars?)\)\s*$", "", m.group(1)).strip()
 
 
+def sapo_block(body: str, raw: bool = False) -> str:
+    """Sapo under `- **Sapo (…):**` (template label has a parenthetical). raw=True keeps lines/indent."""
+    m = re.search(r"^\s*[-*]\s*\*\*Sapo[^*]*\*\*:?[^\n]*\n(.*?)(?=^[-*]\s*\*\*|^#|\Z)", body, re.M | re.S)
+    if not m:
+        return ""
+    if raw:
+        return m.group(1).rstrip()
+    txt = re.sub(r"^\s*[-*]\s*(?:Đoạn\s*\d|Câu mời đọc)\s*:\s*", "", m.group(1), flags=re.M)
+    return " ".join(txt.split())
+
+
 def headings(body: str) -> list[tuple[str, str, str]]:
     """[(level, title, block_text)] for `### H2:` / `#### H3:` outline headings."""
     out, cur, buf = [], None, []
@@ -416,6 +427,19 @@ def lint(path: Path) -> Report:
         rep.add("MAJOR", "META-desc", "Thiếu Meta description")
     elif not META_RANGE[0] <= len(meta) <= META_RANGE[1]:
         rep.add("MINOR", "META-desc", f"Meta {len(meta)} ký tự (chuẩn {META_RANGE[0]}–{META_RANGE[1]})")
+    raw_sapo = sapo_block(body, raw=True)
+    sapo = sapo or " ".join(raw_sapo.split())
+    if raw_sapo:
+        # I105: para 1 + lead-in + 3-5 takeaway bullets + reader-situation invite; no total word cap, sentences <= 30 words
+        bullets = re.findall(r"^\s{2,}[-*]\s+(?!Đoạn\s*\d|Câu mời)(.+)$", raw_sapo, re.M)
+        if not 3 <= len(bullets) <= 5:
+            rep.add("MAJOR", "META-sapo-takeaways", f"Sapo có {len(bullets)} bullet điểm chính — cần 3–5 bullet kết luận dưới câu dẫn “… tóm tắt những điểm chính bạn cần nắm.” (I105)")
+        elif any(re.match(r"^\*{0,2}[^.:]{1,40}\*{0,2}:\s", x) for x in bullets):
+            rep.add("MINOR", "META-sapo-takeaways", "Bullet điểm chính dạng nhãn mục lục “X: …” — viết thành câu kết luận có số")
+        lines = [re.sub(r"^\s*[-*]\s*(?:(?:Đoạn\s*\d|Câu mời đọc)\s*:\s*)?", "", ln) for ln in raw_sapo.splitlines()]
+        long_s = [x for ln in lines for x in re.split(r"(?<=[.!?])\s+", ln.strip()) if len(x.split()) > 30]
+        if long_s:
+            rep.add("MINOR", "META-sapo-sentence", f"{len(long_s)} câu sapo > 30 từ — “{long_s[0][:60]}…”")
     if sapo and "dsc" not in sapo.lower():
         rep.add("MAJOR", "META-sapo-dsc", "Sapo không nhắc DSC + câu dẫn vào bài (yêu cầu user 2026-11-09)")
     if ctype == "Toplist":

@@ -39,5 +39,8 @@ Khung theo `competitor-profiling` của coreyhaines31/marketingskills: tách **d
 ```
 Mỗi nhận định trong "Hàm ý" trỏ về 1 dữ kiện ở trên. Không có dữ liệu → ghi "chưa có", không ước đoán số.
 
+## Ghi activity log (bước cuối)
+Sau khi lưu output (và sau mỗi lần user duyệt → `--action approve`): `python scripts/activity_log.py add --domain market --skill competitor-profile --action report --target <domain> --path <file profile>`. Hiện ở tab **Hoạt động** của `knowledge/0-dashboard/index.html`.
+
 ## Related Skills
 `/competitor-watch` · `/market-research` · `/keyword-plan` · `/optimize`

@@ -1,0 +1,143 @@
+{
+ "title": "Backfill link về 2 bài lãi suất vừa tối ưu (Vikki/Đông Á + hub ngân hàng nào cao nhất) — 26/11/2026",
+ "edits": [
+  {
+   "src": "co-5-trieu-nen-dau-tu-gi",
+   "op": "remove",
+   "find": "ngân hàng nào cao nhất 2026?",
+   "old": "https://www.dsc.com.vn/kien-thuc/lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+   "group": "backfill",
+   "pri": "P1",
+   "why": "Bỏ dòng Xem thêm, link chuyển vào câu ngay phía trên"
+  },
+  {
+   "src": "co-5-trieu-nen-dau-tu-gi",
+   "op": "wrap",
+   "find": "so sánh thông tin từ nhiều ngân hàng khác nhau",
+   "anchor": "so sánh thông tin từ nhiều ngân hàng khác nhau",
+   "to": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+   "group": "backfill",
+   "pri": "P1",
+   "why": "Câu đang khuyên so sánh lãi suất các ngân hàng — đúng nội dung hub (24 click/90 ngày)"
+  },
+  {
+   "src": "co-15-trieu-nen-dau-tu-gi",
+   "op": "remove",
+   "find": "ngân hàng nào cao nhất 2026?",
+   "old": "https://www.dsc.com.vn/kien-thuc/lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+   "group": "backfill",
+   "pri": "P1",
+   "why": "Bỏ dòng Xem thêm, link chuyển vào câu trong cùng mục"
+  },
+  {
+   "src": "co-15-trieu-nen-dau-tu-gi",
+   "op": "wrap",
+   "find": "các ngân hàng có lãi suất cao hơn một chút",
+   "anchor": "các ngân hàng có lãi suất cao hơn",
+   "to": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+   "group": "backfill",
+   "pri": "P1",
+   "why": "Cụm có sẵn nói đúng ý 'ngân hàng lãi cao hơn' (18 click/90 ngày)"
+  },
+  {
+   "src": "co-20-trieu-nen-dau-tu-gi",
+   "op": "remove",
+   "find": "ngân hàng nào cao nhất 2026?",
+   "old": "https://www.dsc.com.vn/kien-thuc/lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+   "group": "backfill",
+   "pri": "P1",
+   "why": "Bỏ dòng Xem thêm"
+  },
+  {
+   "src": "co-20-trieu-nen-dau-tu-gi",
+   "op": "append",
+   "find": "lựa chọn truyền thống và an toàn hàng đầu",
+   "to": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+   "anchor": "lãi suất gửi tiết kiệm ngân hàng nào cao nhất",
+   "sentence": "Lãi giữa các ngân hàng chênh nhau theo kỳ hạn và kênh gửi, nên hãy so [lãi suất gửi tiết kiệm ngân hàng nào cao nhất] trước khi chọn nơi gửi 20 triệu.",
+   "group": "backfill",
+   "pri": "P1",
+   "why": "Đoạn mở mục Gửi tiết kiệm chỉ có 1 câu, không có cụm sẵn để bọc — thêm 1 câu nối ý (12 click/90 ngày)"
+  },
+  {
+   "src": "lai-suat-gui-tiet-kiem-ngan-hang-vib",
+   "op": "remove",
+   "find": "ngân hàng nào cao nhất 2026?",
+   "old": "https://www.dsc.com.vn/kien-thuc/lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Dòng Xem thêm đang nằm trong mục DSC — sai section"
+  },
+  {
+   "src": "lai-suat-gui-tiet-kiem-ngan-hang-vib",
+   "op": "append",
+   "find": "dưới 1 tháng tại VIB",
+   "to": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+   "anchor": "lãi suất gửi tiết kiệm ngân hàng nào cao nhất",
+   "sentence": "Để biết mức của VIB đứng ở đâu, hãy đặt cạnh [lãi suất gửi tiết kiệm ngân hàng nào cao nhất] ở cùng kỳ hạn.",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Link về hub đặt ở mục bảng lãi suất VIB thay vì mục DSC (5 click/90 ngày)"
+  },
+  {
+   "src": "lai-suat-gui-tiet-kiem-ngan-hang-vietinbank",
+   "op": "remove",
+   "find": "ngân hàng nào cao nhất?",
+   "old": "https://www.dsc.com.vn/kien-thuc/lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Bài đã có link hub trong câu ('thấp hơn một số ngân hàng tư nhân'); dòng Xem thêm cùng đích là thừa"
+  },
+  {
+   "src": "co-nen-gui-tiet-kiem-ngan-hang-khong",
+   "op": "remove",
+   "find": "Lãi suất gửi tiết kiệm ngân hàng nào cao nhất 2026?",
+   "old": "https://www.dsc.com.vn/kien-thuc/lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Bỏ danh sách Xem thêm (1 mục) sau danh sách 'ai nên gửi tiết kiệm'"
+  },
+  {
+   "src": "co-nen-gui-tiet-kiem-ngan-hang-khong",
+   "op": "cut",
+   "find": "Xem thêm:",
+   "old_text": "<p>&gt;&gt; Xem thêm:&nbsp;</p>",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Xoá nhãn 'Xem thêm:' còn trơ lại"
+  },
+  {
+   "src": "co-nen-gui-tiet-kiem-ngan-hang-khong",
+   "op": "wrap",
+   "find": "So sánh lãi suất:",
+   "anchor": "Lãi suất gửi tiết kiệm ngân hàng nào cao nhất",
+   "to": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Mục 'So sánh lãi suất' đã có nguyên cụm keyword hub — chỉ bọc link"
+  },
+  {
+   "src": "co-1-ty-nen-gui-ngan-hang-nao",
+   "op": "append",
+   "find": "Để tăng trưởng thị phần, các ngân hàng số",
+   "to": "lai-suat-ngan-hang-dong-a",
+   "anchor": "lãi suất ngân hàng Vikki",
+   "sentence": "Trong nhóm ngân hàng số, [lãi suất ngân hàng Vikki] (tên cũ DongA Bank) kỳ hạn 12 tháng gửi online là 6,10%/năm theo biểu ngày 02/06/2026.",
+   "group": "backfill",
+   "pri": "P1",
+   "why": "Đoạn nói về nhóm ngân hàng số; Vikki là ngân hàng số, số liệu khớp bài đích"
+  }
+ ],
+ "skipped": [
+  {
+   "src": "lai-suat-gui-tiet-kiem-ngan-hang-vietinbank",
+   "to": "lai-suat-ngan-hang-dong-a",
+   "why": "Đoạn gợi ý (iPay Mobile) nói riêng về VietinBank online, không nhắc Vikki — link sang Vikki lạc ngữ cảnh"
+  },
+  {
+   "src": "lai-suat-gui-tiet-kiem-ngan-hang-vib",
+   "to": "lai-suat-ngan-hang-dong-a",
+   "why": "Đang có danh sách Xem thêm (Đông Á + VietinBank) ở mục bảng lãi suất; không có đoạn nhắc Vikki để bọc — để đợt dọn Xem thêm theo lô"
+  }
+ ]
+}

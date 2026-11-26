@@ -227,6 +227,8 @@ def main() -> int:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     out = OUT_DIR / f"{slug}.html"
     out.write_text(body, encoding="utf-8")
+    from activity_log import emit
+    emit("seo", "export", slug, skill="md_to_cms_html", path=out, note="CMS HTML")
     from build_content_index import build
     build()
     print(f"HTML  : {out.relative_to(ROOT)}  ({len(body):,} ký tự, không gồm H1)")

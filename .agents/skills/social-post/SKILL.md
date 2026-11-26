@@ -31,3 +31,6 @@ Biến thể cần ảnh mới (dòng `Hình:` có kích thước + style, khôn
 - File: `knowledge/6-campaigns/<job>/social/<kênh>-<slug>-v1.md`. Không có `--job` → `python scripts/campaign.py path social-<YYYY-MM>` hoặc tạo `python scripts/campaign.py new social-<YYYY-MM> --title "Social <tháng>" --channels social`.
 - Trình bày ≤ 25 dòng: biến thể đề xuất, kết quả lint, QA ảnh + link `social/creatives/v<N>/preview.html`, việc cần user (pháp chế, ảnh minh hoạ). Dừng chờ duyệt.
 - User duyệt → copy bản chọn vào `<job>/approved/`. Muốn đưa lên kênh syndication cộng đồng → `/syndicate <slug>`.
+
+## Ghi activity log (bước cuối)
+Sau khi lưu output (và sau mỗi lần user duyệt → `--action approve`): `python scripts/activity_log.py add --domain social --skill social-post --action create --target <CMP-id> --path <file post>`. Hiện ở tab **Hoạt động** của `knowledge/0-dashboard/index.html`.

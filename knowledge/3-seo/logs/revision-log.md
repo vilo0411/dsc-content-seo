@@ -475,3 +475,51 @@ File này ghi lại các chỉnh sửa thực tế mà người dùng thực hi�
 - **Pattern:** Dùng cụm ẩn dụ dịch từ tiếng Anh ('hai vạch chia' - dividing lines) thay vì từ tiếng Việt tự nhiên
 - **Rule học được:** I106: Tránh cụm từ dịch máy từ tiếng Anh ('vạch chia'); dùng từ tiếng Việt bình dị, trực tiếp ('nhóm ngân hàng và hình thức gửi tại quầy hay online')
 - **Scope:** Global
+
+### [2026-11-26] - thi-truong-so-cap-va-thu-cap-la-gi-v2
+- **Lỗi đã sửa:** Sapo bài Comparison mở kiểu Definition, mất tiêu chí phân biệt; số có ngày lạc đề; đoạn 2 thành chuỗi danh từ cụt. Viết lại theo khung Comparison: câu 1 nêu tiêu chí (tiền về ai), câu 2 phân loại, số có ngày gắn với tiêu chí; đoạn 2 câu văn đủ.
+- **Pattern:** Phiên 25/11/2026, VN-Index khớp 410,6 triệu cổ phiếu, doanh nghiệp không nhận đồng nào. / DSC giải thích hai khái niệm, dòng tiền, 6 điểm khác nhau, điều kiện lên sàn, kèm 6 tình huống mua.
+- **Rule học được:** Sapo chỉ sửa ở outline rồi chép sang draft; không rút gọn sapo trong draft để qua WC-over. Sapo Comparison mở bằng tiêu chí phân biệt (Muốn phân biệt A và B, hãy nhìn vào X), số có ngày phải minh hoạ chính tiêu chí đó; đoạn 2 là câu văn, không liệt kê danh từ.
+- **Scope:** Global
+
+### [2026-11-26] - thi-truong-so-cap-va-thu-cap-la-gi-v2
+- **Lỗi đã sửa:** Bỏ khối điểm chính (câu dẫn + bullet + câu mời đọc) ở sapo, đổi lại 2 đoạn văn xuôi: đoạn 1 tiêu chí chia + số có ngày, đoạn 2 'Trong bài viết này, Chứng khoán DSC…' + 'Bạn sẽ thấy vì sao…' kèm số.
+- **Pattern:** Trong bài viết này, Chứng khoán DSC tóm tắt những điểm chính trước khi bạn đặt tiền vào thị trường nào. + 4 bullet
+- **Rule học được:** Sapo dùng 2 đoạn văn xuôi cho mọi loại bài; không dùng khối điểm chính dạng bullet (thay quyết định 25/11).
+- **Scope:** Global
+
+### [2026-11-26] - thi-truong-so-cap-va-thu-cap-la-gi-v2
+- **Lỗi đã sửa:** Bỏ giới hạn sapo ≤ 110 từ (I105, playbook, template, outline_lint META-sapo-length, Max word count H1).
+- **Pattern:** Sapo 2 đoạn văn xuôi ≤ 110 từ
+- **Rule học được:** Sapo không có giới hạn tổng số từ; chỉ giữ câu ≤ 30 từ. Con số 110 do AI đặt khi gộp rule 23/11, không có nguồn từ user hay Koray.
+- **Scope:** Global
+
+### [2026-11-26] - thi-truong-so-cap-va-thu-cap-la-gi-v2
+- **Lỗi đã sửa:** Dùng lại sapo v1 (khung điểm chính) cho v2, thêm 1 bullet điều kiện IPO cho khớp H2 mới. Lượt trước hiểu nhầm: user chỉ chê câu dẫn 'tóm tắt những điểm chính trước khi bạn đặt tiền vào thị trường nào', không bỏ khung.
+- **Pattern:** Trong bài viết này, Chứng khoán DSC tóm tắt những điểm chính trước khi bạn đặt tiền vào thị trường nào.
+- **Rule học được:** Giữ khung điểm chính (25/11) cho mọi bài; câu dẫn giữ ngắn đúng mẫu 'Trong bài viết này, Chứng khoán DSC tóm tắt những điểm chính bạn cần nắm.', không nối thêm mệnh đề. Góp ý ngắn mơ hồ (chê 1 phần) → hỏi lại phần nào trước khi đổi rule.
+- **Scope:** Global
+
+### [2026-11-26] - lai-suat-ngan-hang-dong-a
+- **Lỗi đã sửa:** H2 Bridge 'Phần tiền nhàn rỗi nào có thể thử chứng khoán' -> 'Kết hợp gửi tiết kiệm Vikki với đầu tư chứng khoán'
+- **Pattern:** H2 Product Bridge viết như câu hỏi chung chung, không nối từ chủ đề bài (lãi suất ngân hàng) sang chứng khoán
+- **Rule học được:** H2 Bridge trong bài lãi suất ngân hàng: cụm danh từ giọng báo cáo, có tên ngân hàng của bài và nêu quan hệ tiết kiệm - chứng khoán đúng nội dung section (vd kết hợp/so sánh)
+- **Scope:** tai-chinh-ca-nhan
+
+### [2026-11-26] - lai-suat-ngan-hang-dong-a
+- **Lỗi đã sửa:** Proposal thêm đối thủ topi.vn/lai-suat-ngan-hang-dong-a.html do user chỉ định (không lọt top 10 DataForSEO 3 lần kéo)
+- **Pattern:** SERP DataForSEO cho keyword lãi suất ngân hàng nhiễu (Facebook, tin báo cũ), bỏ sót trang tra cứu đối thủ trực tiếp như topi.vn
+- **Rule học được:** Bài lãi suất ngân hàng: ngoài SERP, luôn đối chiếu thêm trang cùng khung tra cứu của topi.vn cho cùng ngân hàng trước khi chốt Proposal/outline
+- **Scope:** tai-chinh-ca-nhan
+
+### [2026-11-26] - dong-tien-tu-do-la-gi
+- **Lỗi đã sửa:** Đổi bullet tóm tắt ở Sapo từ số liệu VNM/HPG thành liệt kê các ý chính theo outline (công thức B03-DN, ví dụ 3 mã 2025, cách đọc FCF âm và ngưỡng ngành)
+- **Pattern:** Sapo-bullets
+- **Rule học được:** I105
+- **Scope:** chi-so-tai-chinh-bctc
+
+### [2026-11-26] - dong-tien-tu-do-la-gi
+- **Lỗi đã sửa:** Sửa bullet Sapo theo đúng thứ tự H2 của outline: Định nghĩa, Cách tính, Ví dụ 2025, Cách đọc & lỗi thường gặp
+- **Pattern:** Sapo-outline-order
+- **Rule học được:** I105
+- **Scope:** chi-so-tai-chinh-bctc

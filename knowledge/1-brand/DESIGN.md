@@ -1,7 +1,7 @@
 ---
 name: Chứng khoán DSC — Visual Identity
 version: 1.0 (2026-11-25)
-status: CHUẨN — theo brand guideline chính thức của DSC (trang 11, 12, 14, 15, 20; ảnh gốc ở knowledge/1-brand/guideline/)
+status: CHUẨN — theo brand guideline chính thức của DSC (trang 11, 12, 14, 15, 20; ảnh gốc ở knowledge/1-brand/guideline/ chỉ để người đối chiếu — AI dùng file này + brand.json, không mở ảnh)
 format: DESIGN.md (google-labs-code/design.md)
 machine: knowledge/1-brand/brand.json (mọi script đọc màu/font từ đây)
 scope: MỌI thiết kế — ảnh social/quảng cáo (/creative), banner CTA trong bài (/cro), landing (/landing, /copy-landing), ảnh & infographic blog (/image, scripts/images/dsc_design.py), ảnh syndication (/syndicate)
@@ -71,12 +71,14 @@ Phong cách mặc định: **trừu tượng 3D tông xanh**
 - vệt ánh sáng xanh chéo trên nền gần đen;
 - nền mờ ambient gradient xanh — xanh xám.
 
-Bố cục: chủ thể lệch một phía, phía còn lại là khoảng thở 40–50% cho khối chữ. Ảnh minh hoạ blog (isometric / infographic) vẫn theo `image-design-system.md` nhưng dùng palette này.
+Bố cục: chủ thể lệch một phía, phía còn lại là khoảng thở 40–50% cho khối chữ. Ảnh minh hoạ blog (isometric / infographic) vẫn theo `.agents/skills/image/references/image-design-system.md` nhưng dùng palette này.
 
-**Cấm:** chữ do AI sinh, logo/nhãn hiệu khác, người thật nhận diện được, tiền mặt/đồng xu rơi, mũi tên lãi "x lần", ảnh chụp lãi/lỗ, màu ngoài palette (tím, cam, xanh dương…).
+**Cấm (mọi ảnh):** chữ/số do AI sinh (mọi chữ render bằng code với Plus Jakarta Sans thật — `dsc_design.py` / `creative.py`), màu đỏ cho chữ/số/biểu đồ/mũi tên giá, logo/giao diện app/nhãn hiệu đối thủ, người thật nhận diện được, tiền mặt/đồng xu rơi, mũi tên lãi "x lần", ảnh chụp lãi/lỗ giả lập, mạng lưới/đường nối chằng chịt trang trí, màu ngoài palette (tím, cam, xanh dương…).
 
 ## 6. Thành phần
-- **Logo:** bản trắng trên nền tối, bản màu trên nền sáng; góc trên trái (hoặc trên phải nếu KV chiếm trái); cạnh ≥ 4% khung.
+- **Logo:** `assets/logos/logo-for-dark-bg.png` (chữ trắng) trên nền tối, `logo-for-light-bg.png` trên nền sáng; góc trên trái (hoặc trên phải nếu KV chiếm trái); cạnh ≥ 4% khung.
+- **Assets** (`knowledge/1-brand/assets/`): `logos/` · `fonts/` (Plus Jakarta Sans) · `icons/` · `library/` (nền đã duyệt, `scripts/asset_lib.py`) · `screens/` (ảnh chụp thật app DSC Trading).
+- **Khổ ảnh blog (CMS DSC):** ảnh bìa `1000×600` (5:3) — `<img style="aspect-ratio:1000/600;" … width="1000" height="600">`; ảnh trong bài `800×500` (16:10) — `aspect-ratio:800/500`, `width="800" height="500"`. Khổ social/ads: `brand.json` → `sizes`.
 - **Nút CTA:** nền Lime (hoặc gradient `primary`), chữ Gunmetal 700, bo tròn 999px. Trên nền sáng có thể dùng nút Pine Teal chữ trắng.
 - **Badge / tag:** viên thuốc nền Frosted Mint chữ Gunmetal (nền sáng) hoặc nền Pine Teal chữ trắng/Frosted Mint (nền tối).
 - **Scrim:** gradient từ màu nền, không vẽ khung hộp.

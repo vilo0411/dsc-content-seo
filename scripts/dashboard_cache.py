@@ -28,6 +28,7 @@ from datetime import datetime
 from pathlib import Path
 
 from _common import ROOT, setup_utf8
+from activity_log import emit
 
 GSC_DIR = ROOT / "knowledge/raw/gsc"
 CACHE_DIR = GSC_DIR / "dashboard"
@@ -86,6 +87,8 @@ def cmd_save(a):
     out = cache_path(a.kind, a.slug if a.kind == "page-queries" else None)
     out.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"[OK] {out.relative_to(ROOT)} ({len(data['rows'])} rows)")
+    emit("analytics", "sync", a.kind + (f" {a.slug}" if a.slug else ""), skill="dashboard_cache", path=out,
+         result=f"{len(data['rows'])} rows")
     if a.kind == "pages":
         write_csv(PAGES_CSV, data["rows"], ["page", "clicks", "impressions", "ctr", "position"])
         update_meta(data, "page_rows")

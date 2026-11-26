@@ -7,6 +7,7 @@ Cột "Ai ghi": **người** = sửa tay · **agent** = skill viết · **script
 | Thư mục | Trả lời câu hỏi | Ai ghi |
 |---|---|---|
 | `0-dashboard/` | Đang có việc gì, tới bước nào? | script (`python scripts/build_content_index.py`) |
+| `logs/activity/` | Ai đã làm gì, kênh nào, khi nào? (`YYYY-MM.jsonl`, 1 dòng / việc, mọi kênh) | script (`activity_log.py`, hook) — **không sửa tay** |
 | `1-brand/` | DSC là ai, bán gì, cho ai, **viết thế nào** (mọi kênh) | người + `/setup`, `/learn` |
 | `2-market/` | Thị trường và đối thủ ra sao, tuần này đối thủ làm gì? | agent + script (`/market-research`, `/competitor-*`) |
 | `3-seo/` | Mọi thứ của kênh SEO: chiến lược, bài viết, link, log | agent + script |
@@ -22,7 +23,7 @@ Cột "Ai ghi": **người** = sửa tay · **agent** = skill viết · **script
 | **2. Sản phẩm, Số liệu & Nghiệp vụ** | `brand-facts.json`, `service-operations.md`, `confirm-with-leadership.md` | **`brand-facts.json` = Nguồn duy nhất** cho số liệu DSC (phí, margin, eKYC… — `qa_lint` `CL5-fact` đọc) · `service-operations.md` = quy trình kỹ thuật step-by-step · `confirm-with-leadership.md` = sổ quyết định & mục chờ xác nhận |
 | **3. Tập khách hàng mục tiêu** | `icp.md`, `personas.md` | Trọng tâm phân bổ nguồn lực (`icp.md`) và ma trận 4 Persona P1–P4 (`personas.md`, tra qua `python scripts/persona.py`) |
 | **4. Hệ thống Ngôn từ & Nguồn** | `anti-ai-rules.md` + `anti-ai-rules-blacklist.md`, `glossary.md`, `source-whitelist.md`, `writers/` | Rule văn, cụm cấm, từ điển thuật ngữ + tiếng lóng (Slang), nguồn ngoài được phép link, writer profile |
-| **5. Hệ thống Thị giác** | `DESIGN.md` + `brand.json` (nhận diện chuẩn v1.0, ảnh gốc ở `guideline/`), `image-design-system.md`, `visual-brand-guidelines.md`, `assets/`, `fanpage-refs/`, `archive/` | Nhận diện hình ảnh cho mọi thiết kế (`DESIGN.md` / `brand.json`), component PIL vẽ infographic (`image-design-system.md`), quy tắc ghép logo & khổ ảnh blog (`visual-brand-guidelines.md`) |
+| **5. Hệ thống Thị giác** | `DESIGN.md` + `brand.json` (nhận diện chuẩn v1.0, ảnh gốc ở `guideline/`), `assets/`, `fanpage-refs/`, `archive/` | Nhận diện hình ảnh cho mọi thiết kế (`DESIGN.md` / `brand.json`), gồm cả logo, khổ ảnh blog, điều cấm. Component PIL vẽ infographic: `.agents/skills/image/references/image-design-system.md` |
 
 ## 2-market/ — bức tranh bên ngoài (External Reality & Intelligence)
 | Nhóm MECE | File / thư mục | Nội dung | Sinh bởi |

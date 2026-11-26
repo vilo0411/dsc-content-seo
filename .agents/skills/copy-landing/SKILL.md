@@ -38,5 +38,8 @@ Soát blacklist + glossary; mọi số đối chiếu brand-facts; CTA đúng pe
 ## Output → `knowledge/4-channels/landing/YYYY-MM-DD-<trang>.md`
 `Status: Draft` · chẩn đoán · copy theo khối (dạng wireframe chữ, ghi vị trí trên trang) · `--variants N`: N phiên bản hero cho A/B kèm giả thuyết + chỉ số đo · ghi chú pháp chế.
 
+## Ghi activity log (bước cuối)
+Sau khi lưu output (và sau mỗi lần user duyệt → `--action approve`): `python scripts/activity_log.py add --domain landing --skill copy-landing --action create --target <trang> --path <file copy>`. Hiện ở tab **Hoạt động** của `knowledge/0-dashboard/index.html`.
+
 ## Related Skills
 `/cro` (CTA trong bài SEO) · `/ads-copy` (ad trỏ về landing này) · `/email-sequence` · `/analytics-report` (đo CVR trước/sau)

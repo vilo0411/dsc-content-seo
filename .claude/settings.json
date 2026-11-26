@@ -75,6 +75,22 @@
             "type": "command",
             "command": "python \"$CLAUDE_PROJECT_DIR/scripts/hooks/qa_reminder.py\"",
             "timeout": 10
+          },
+          {
+            "type": "command",
+            "command": "python \"$CLAUDE_PROJECT_DIR/scripts/hooks/activity_hook.py\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"$CLAUDE_PROJECT_DIR/scripts/hooks/activity_hook.py\" --stop",
+            "timeout": 15
           }
         ]
       }

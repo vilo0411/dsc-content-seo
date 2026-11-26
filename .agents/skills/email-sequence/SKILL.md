@@ -34,5 +34,8 @@ Soát blacklist (`knowledge/1-brand/anti-ai-rules-blacklist.md`), độ dài sub
 ## Output → `knowledge/4-channels/email/YYYY-MM-DD-<chuoi>-<persona>.md`
 `Status: Draft` · bảng kịch bản · từng email (subject · preheader · body · CTA + URL) · chỉ số theo dõi đề xuất (open, click, tỷ lệ hoàn thành hành động mục tiêu).
 
+## Ghi activity log (bước cuối)
+Sau khi lưu output (và sau mỗi lần user duyệt → `--action approve`): `python scripts/activity_log.py add --domain email --skill email-sequence --action create --target <chuoi>-<persona> --path <file email>`. Hiện ở tab **Hoạt động** của `knowledge/0-dashboard/index.html`.
+
 ## Related Skills
 `/copy-landing` (landing mà email dẫn tới) · `/write` (bài SEO dùng làm nội dung nuôi dưỡng) · `/analytics-report`

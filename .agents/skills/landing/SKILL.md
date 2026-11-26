@@ -25,3 +25,6 @@ python scripts/mkt_lint.py <job>/landing/copy-v1.md --channel landing
 
 ## Bước 3 — Gate
 Trình bày ảnh chụp + đường dẫn file + lint. Duyệt → copy vào `<job>/approved/`. Đưa lên CMS là việc user (hoặc dev web) làm.
+
+## Ghi activity log (bước cuối)
+Sau khi lưu output (và sau mỗi lần user duyệt → `--action approve`): `python scripts/activity_log.py add --domain landing --skill landing --action create --target <CMP-id> --path <job>/landing/landing-v<n>.html`. Hiện ở tab **Hoạt động** của `knowledge/0-dashboard/index.html`.

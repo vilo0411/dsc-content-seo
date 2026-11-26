@@ -1470,7 +1470,7 @@ def main():
                      "Kiểm tra lại, hoặc thêm --force để gọi API (có phí)." % args.keyword)
         missing = [k for k in ("DATAFORSEO_LOGIN", "DATAFORSEO_PASSWORD") if not cfg.get(k)]
         if missing:
-            sys.exit("Missing config: %s (set as env var or in %s)" % (", ".join(missing), CONFIG))
+            sys.exit("Missing config: %s (export as env vars, e.g. `set -a; source .env; set +a`)" % ", ".join(missing))
         payload = fetch_serp(cfg, args.keyword, args.timeout, args.paa_depth)
         if args.raw:
             print(json.dumps(payload, ensure_ascii=False, indent=2))

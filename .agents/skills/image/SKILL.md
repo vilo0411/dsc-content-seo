@@ -16,7 +16,7 @@ Output: Gemini prompts + Hình ảnh trực tiếp chuẩn Brand DNA DSC.
    - Điểm nhấn: Lime Green `#2AD03D` (chính) · Emerald `#1BBE72` (phụ) · Frosted Mint `#8CFFCC` (glow trên nền tối)
    - Gradient: Primary `#61CC6C` ➔ `#14A46E` · Ambient `#156A1F → #31AE40 → #156A1F` / `#354D38 → #2C7B50 → #7D9E9F → #B6C7AF`
    - Nền Tối/Sáng: Gunmetal `#272D2B` hoặc Pine Teal `#1D4130` / White `#FFFFFF` hoặc mint nhạt `#F2FBF6`
-   - Phong cách mặc định cho ảnh AI: **trừu tượng 3D xanh** (dải lụa/kính, khối mềm, vệt sáng) — mẫu `knowledge/1-brand/guideline/20-abstract.png`, style `assets/styles/abstract-brand.md`.
+   - Phong cách mặc định cho ảnh AI: **trừu tượng 3D xanh** (dải lụa/kính, khối mềm, vệt sáng) — mô tả đủ bằng chữ ở `assets/styles/abstract-brand.md` (không cần mở ảnh gốc `guideline/20-abstract.png`). Hex trong `assets/styles/*.md` là bản chép để dán vào prompt — đổi màu brand thì sửa `brand.json` trước rồi cập nhật các style này.
 2. **Ngăn chặn chữ rác (Strict No-Text Rule)**: 
    - AI Image Generator **tuyệt đối không sinh chữ tiếng Anh rác, chữ ngẫu nhiên, hoặc font tiếng Việt bị méo**.
    - Thêm câu chốt bắt buộc ở cuối mọi prompt: `Absolutely NO TEXT, NO WORDS, NO LETTERS, NO NUMBERS, NO ENGLISH LABELS.`
@@ -41,8 +41,8 @@ Output: Gemini prompts + Hình ảnh trực tiếp chuẩn Brand DNA DSC.
 ## 🛠️ Quy trình thực thi & Tối ưu
 
 ### 🔄 Bước 0: Context Load
-0. **Ảnh có chữ/số liệu (infographic, biểu đồ, ảnh bìa có tiêu đề):** không dùng AI sinh ảnh — vẽ bằng code theo `knowledge/1-brand/image-design-system.md` (`scripts/images/dsc_design.py`, mẫu: `generate_cach_choi_chung_khoan_images.py`). Template AI bên dưới chỉ cho ảnh minh họa không chữ.
-1. `knowledge/1-brand/profile.md` & `DESIGN.md` (màu, font, phong cách ảnh chính thức) — `visual-brand-guidelines.md` cho logo/khổ ảnh blog.
+0. **Ảnh có chữ/số liệu (infographic, biểu đồ, ảnh bìa có tiêu đề):** không dùng AI sinh ảnh — vẽ bằng code theo `.agents/skills/image/references/image-design-system.md` (`scripts/images/dsc_design.py`, mẫu: `generate_cach_choi_chung_khoan_images.py`). Template AI bên dưới chỉ cho ảnh minh họa không chữ.
+1. `knowledge/1-brand/profile.md` & `DESIGN.md` (màu, font, phong cách ảnh, logo, khổ ảnh blog, điều cấm).
 2. `knowledge/3-seo/content/3-finalized/Final-[slug].md` — Ưu tiên file final.
 3. Nếu chưa final: `knowledge/3-seo/content/2-drafts/Draft-[slug].md` hoặc `Optimize-[slug].md`.
 
@@ -80,3 +80,6 @@ Xác định số lượng và vị trí ảnh cần tạo:
 - [ ] **Độ thoáng & Tối giản:** Chỉ có 1 vật thể chính ở giữa, $\ge 60\%$ khoảng trống âm, 0% chi tiết thừa rối mắt.
 - [ ] **Chất lượng hình ảnh:** 0% chữ rác / typography lỗi.
 - [ ] **SEO Asset Management:** Ảnh nằm trong `knowledge/3-seo/content/images/` với tên file theo chuẩn SEO slug.
+
+## Ghi activity log (bước cuối)
+Sau khi lưu output (và sau mỗi lần user duyệt → `--action approve`): `python scripts/activity_log.py add --domain seo --skill image --action create --target <slug> --path <thư mục ảnh>`. Hiện ở tab **Hoạt động** của `knowledge/0-dashboard/index.html`.

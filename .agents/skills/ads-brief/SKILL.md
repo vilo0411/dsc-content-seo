@@ -23,3 +23,6 @@ File: `knowledge/6-campaigns/<job>/ads/brief.md` (chưa có job → `python scri
 
 ## Bước 4 — Gate
 Tóm tắt ≤ 20 dòng, dừng chờ duyệt. Tiếp theo: `/meta-ads-copy <job>`.
+
+## Ghi activity log (bước cuối)
+Sau khi lưu output (và sau mỗi lần user duyệt → `--action approve`): `python scripts/activity_log.py add --domain ads-meta --skill ads-brief --action create --target <CMP-id> --path <job>/ads/brief.md`. Hiện ở tab **Hoạt động** của `knowledge/0-dashboard/index.html`.

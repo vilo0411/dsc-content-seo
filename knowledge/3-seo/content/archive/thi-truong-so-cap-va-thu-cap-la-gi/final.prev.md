@@ -20,7 +20,7 @@ Trong bài viết này, Chứng khoán DSC tóm tắt những điểm chính b�
 - Một đợt phát hành thu 200 tỷ đồng chỉ tăng vốn doanh nghiệp một lần, mọi giao dịch sau đó trên sàn chỉ đổi người sở hữu.
 - Mua cổ phiếu trên sàn là giao dịch ở thị trường thứ cấp, với lô chẵn 100 cổ phiếu, biên độ ±7% trên HOSE và thanh toán T+2.
 
-Nếu bạn sắp đặt lệnh đầu tiên, bảng so sánh bên dưới cho biết ngay mình đang mua ở thị trường nào và tiền đi về đâu.
+Nếu bạn sắp đặt lệnh mua cổ phiếu đầu tiên, đọc tiếp để biết tiền của mình thực sự đi về đâu.
 
 ![Thị trường sơ cấp và thứ cấp là gì](https://extgw.dsc.com.vn/eback/uploads/thi_truong_so_cap_va_thu_cap_94fb0c5b5a.jpg)
 

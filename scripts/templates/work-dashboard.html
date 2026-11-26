@@ -50,11 +50,16 @@ summary{cursor:pointer;color:var(--pine);font-size:13px}#files td{overflow-wrap:
 .ap{border:1px solid var(--line);border-radius:10px;margin:10px 0}.ap>header{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:12px 16px;cursor:pointer;border:0}
 .ap>header b{font-size:15px}.ap .meta{color:var(--ink3);font-size:13px}.ap .bar{display:flex;flex-wrap:wrap;gap:8px;padding:0 16px 12px}
 .ap .bar button.on{background:var(--pine);color:#fff;border-color:var(--pine)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(380px,1fr));gap:16px}
+.card{border:1px solid var(--line);border-radius:10px;padding:14px 18px}.card h3{margin:0 0 2px;display:flex;gap:8px;align-items:baseline}.card h3 a{text-decoration:none;color:var(--gunmetal)}
+.card .mt{display:flex;flex-wrap:wrap;gap:6px 16px;margin:8px 0;font-size:13px;color:var(--ink3)}.card .mt b{color:var(--gunmetal);font-size:15px;margin-right:3px}
+.card ul{margin:6px 0 0;padding-left:18px;font-size:13px}.card li{overflow-wrap:anywhere}
+.d-seo{background:var(--pine);color:#fff}.d-campaign{background:var(--gunmetal);color:#fff}
 .doc{border-top:1px solid var(--line);padding:8px 28px 24px;max-height:75vh;overflow:auto}.doc img{max-width:100%}.doc table{margin:10px 0}.doc td,.doc th{border:1px solid var(--line)}.doc pre{max-height:none}mark{background:var(--mint)}
 </style>
 <div class="wrap">
 <header><img src="../1-brand/assets/logos/logo-for-light-bg.png" alt="Chứng khoán DSC"><h1>Bảng điều hành Marketing</h1><div class="gen" id="gen"></div></header>
-<nav id="tabs"><a href="#today">Hôm nay</a><a href="#approve">Chờ duyệt</a><a href="#strategy">Chiến lược</a><a href="#work">Công việc</a><a href="#library">Tài liệu</a><a href="../3-seo/strategy/topical-map.html">Topical map ↗</a><a href="cms.html">HTML CMS ↗</a></nav>
+<nav id="tabs"><a href="#today">Hôm nay</a><a href="#approve">Chờ duyệt</a><a href="#channels">Kênh</a><a href="#activity">Hoạt động</a><a href="#strategy">Chiến lược</a><a href="#work">Công việc</a><a href="#library">Tài liệu</a><a href="../3-seo/strategy/topical-map.html">Topical map ↗</a><a href="cms.html">HTML CMS ↗</a></nav>
 
 <div class="panel" id="p-today">
  <div class="data" id="fresh"></div>
@@ -75,6 +80,20 @@ summary{cursor:pointer;color:var(--pine);font-size:13px}#files td{overflow-wrap:
  <h2>Chờ duyệt</h2><p class="lead">Proposal, outline và bản viết lại đang chờ <code>/approve</code>. Bấm vào bài để đọc ngay tại đây.</p>
  <div class="toolbar"><input id="aq" type="search" placeholder="Tìm slug, từ khóa, đợt, nội dung…" aria-label="Tìm bài chờ duyệt"><select id="agate" aria-label="Gate"><option value="">Mọi trạng thái</option><option value="Gate 1">Gate 1</option><option value="Gate 2">Gate 2</option><option value="Đang làm">Đang làm (chưa tới gate)</option></select><label><input id="abody" type="checkbox"> Tìm cả trong nội dung</label><label><input id="arecent" type="checkbox"> Chỉ bài cập nhật trong 30 ngày</label></div>
  <p id="acount" aria-live="polite" class="lead"></p><div id="approvals"></div>
+</div>
+
+<div class="panel" id="p-channels" hidden>
+ <h2>Kênh</h2><p class="lead">Mỗi kênh một thẻ: đang làm gì, chờ duyệt gì, hoạt động gần nhất. Số hoạt động lấy từ <code>knowledge/logs/activity/</code>; bấm vào tên kênh để lọc tab Hoạt động.</p>
+ <div class="cards" id="cards"></div>
+</div>
+
+<div class="panel" id="p-activity" hidden>
+ <h2>Hoạt động</h2><p class="lead">Mọi việc của mọi kênh, mới nhất ở trên. Script tự ghi khi đổi trạng thái / QA / duyệt / xuất CMS; skill làm tay ghi bằng <code>python scripts/activity_log.py add …</code>. Dòng <i>backfill</i> là lịch sử dựng lại từ ledger và log cũ.</p>
+ <div class="kpis" id="akpis"></div>
+ <div class="toolbar"><input id="evq" type="search" placeholder="Tìm slug, job, ghi chú…" aria-label="Tìm hoạt động"><select id="evdom" aria-label="Kênh"><option value="">Mọi kênh</option></select><select id="evact" aria-label="Loại việc"><option value="">Mọi loại việc</option></select><select id="evwho" aria-label="Người làm"><option value="">Mọi người</option></select><select id="evdays" aria-label="Khoảng ngày"><option value="7">7 ngày</option><option value="30" selected>30 ngày</option><option value="90">90 ngày</option><option value="180">180 ngày</option></select><label><input id="evbf" type="checkbox" checked> Gồm lịch sử backfill</label></div>
+ <p id="evcount" aria-live="polite" class="lead"></p>
+ <table><thead><tr><th>Thời gian</th><th>Kênh</th><th>Việc</th><th>Đối tượng</th><th>Chi tiết</th><th>Người</th></tr></thead><tbody id="events"></tbody></table>
+ <div class="more" id="evmore"></div>
 </div>
 
 <div class="panel" id="p-strategy" hidden>
@@ -145,6 +164,8 @@ for(const s of (W.unpublished||[]))rows.push({o:5,job:'Đăng lên CMS',slug:s,c
 for(const s of (W.backfill||[]))rows.push({o:5,job:'Backfill link',slug:s,cmd:'/weekly'});
 for(const s of (W.gsc_due||[]))rows.push({o:5,job:'Đo GSC (live ≥ 14 ngày)',slug:s,cmd:'/weekly'});
 for(const c of (TD.campaigns||[]))rows.push({o:5,job:'Chiến dịch: '+c.status,slug:c.id,cmd:'/mkt-status'});
+const DL=(D.activity||{}).labels||{};
+for(const p of (D.channel_pending||[]))rows.push({o:3,job:'Duyệt '+(DL[p.domain]||p.domain)+' ('+p.stage+')',slug:p.name,kw:p.job||'',d:p.updated,cmd:'',note:p.file});
 rows.sort((x,y)=>x.o-y.o||String(x.d||'9').localeCompare(String(y.d||'9')));
 let showAll=false;
 function renderTodo(){const tb=$('todo');tb.replaceChildren();const list=showAll?rows:rows.slice(0,14);
@@ -205,6 +226,36 @@ function files(){$('files').replaceChildren();const rs=D.catalog.filter(r=>($('a
 for(const id of ['q','group','remaining'])$(id).addEventListener('input',render);
 for(const id of ['fq','archive'])$(id).addEventListener('input',files);
 render();files();
+
+/* ---------- Kênh ---------- */
+const AV=D.activity||{events:[],counts:{},labels:{}},EV=AV.events||[];
+for(const c of D.channels||[]){const box=el('div','card'),h=el('h3'),a=el('a',null,c.label);a.href='#activity';a.onclick=()=>{$('evdom').value=c.domain;evRender()};
+ h.append(a,el('span','age',c.last?'gần nhất '+c.last:'chưa có hoạt động'));box.append(h);
+ const mt=el('div','mt');for(const [l,v] of [...c.metrics,['Việc 7 ngày',c.d7],['Việc 30 ngày',c.d30]]){const s=el('span');s.append(el('b',null,String(v)),l);mt.append(s)}box.append(mt);
+ if(c.items.length){const u=el('ul');for(const x of c.items)u.append(el('li',null,x));if(c.more)u.append(el('li','age',`… +${c.more} mục`));box.append(u)}
+ if(c.cmd)box.append(el('div','age','Lệnh: '+c.cmd));$('cards').append(box)}
+
+/* ---------- Hoạt động ---------- */
+const ACTL={create:'Tạo',status:'Đổi trạng thái',qa:'QA',approve:'Duyệt',publish:'Lên live',revise:'Sửa',report:'Báo cáo',learn:'Học rule',sync:'Đồng bộ',run:'Chạy',link:'Link',export:'Xuất CMS'};
+{const cut7=new Date(TODAY-7*864e5).toISOString().slice(0,10);const e7=EV.filter(e=>e.ts>=cut7),real7=e7.filter(e=>e.src!=='backfill');
+ const doms=Object.entries(AV.counts||{}).sort((a,b)=>b[1].d7-a[1].d7);
+ for(const [v,l] of [[e7.length,'việc 7 ngày qua'],[real7.length,'trong đó ghi trực tiếp'],[doms.filter(d=>d[1].d7).length,'kênh có hoạt động 7 ngày'],[new Set(e7.map(e=>e.actor)).size,'người làm 7 ngày']]){const k=el('div','kpi');k.append(el('div','v',String(v)),el('div','l',l));$('akpis').append(k)}
+ for(const [d] of doms)$('evdom').add(new Option(AV.labels[d]||d,d));
+ for(const a of [...new Set(EV.map(e=>e.action))].sort())$('evact').add(new Option(ACTL[a]||a,a));
+ for(const w of [...new Set(EV.map(e=>e.actor).filter(Boolean))].sort())$('evwho').add(new Option(w,w))}
+let evAll=false;
+function evRender(){const tb=$('events');tb.replaceChildren();const cut=new Date(TODAY-(+$('evdays').value)*864e5).toISOString().slice(0,10);
+ const rs=EV.filter(e=>e.ts>=cut&&(!$('evdom').value||e.domain===$('evdom').value)&&(!$('evact').value||e.action===$('evact').value)&&(!$('evwho').value||e.actor===$('evwho').value)&&($('evbf').checked||e.src!=='backfill')&&matches([e.target,e.note,e.result,e.skill,e.path,e.status_to].join(' '),$('evq').value));
+ for(const e of (evAll?rs:rs.slice(0,200))){const tr=el('tr');const t=e.ts.slice(0,16).replace('T',' ');cell(tr,e.ts.slice(11,16)==='00:00'?e.ts.slice(0,10):t).className='age';
+  cell(tr,'').append(tag(AV.labels[e.domain]||e.domain,'d-'+e.domain));
+  const a=cell(tr,ACTL[e.action]||e.action);if(e.skill)a.append(el('span','sub',e.skill));
+  const g=cell(tr,'');g.append(el('b',null,e.target||'—'));if(e.status_to)g.append(el('span','sub',(e.status_from?e.status_from+' → ':'→ ')+e.status_to));
+  const dt=cell(tr,[e.result,e.note].filter(Boolean).join(' · '));if(e.path){dt.append(document.createElement('br'));dt.append(link(e.path,e.path.split('/').pop()))}
+  const w=cell(tr,e.actor||'');if(e.src==='backfill')w.append(el('span','sub','backfill'));tb.append(tr)}
+ $('evcount').textContent=`${rs.length} hoạt động · tổng ${AV.total||EV.length} trong 180 ngày`;
+ $('evmore').replaceChildren();if(rs.length>200){const b=el('button',null,evAll?'Thu gọn':`Xem tất cả ${rs.length}`);b.onclick=()=>{evAll=!evAll;evRender()};$('evmore').append(b)}}
+for(const id of ['evq','evdom','evact','evwho','evdays','evbf'])$(id).addEventListener('input',evRender);
+evRender();
 
 /* ---------- Chờ duyệt ---------- */
 const strip=h=>h.replace(/<[^>]+>/g,' ');

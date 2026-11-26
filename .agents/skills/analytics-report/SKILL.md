@@ -42,5 +42,8 @@ Không có MCP → `python scripts/dashboard_cache.py status` / `report`, và gh
 ```
 Số trong bảng lấy từ `meta.totals` của MCP, không tự cộng dòng. Trình bày trong chat: tóm tắt + bảng KPI + đường dẫn file.
 
+## Ghi activity log (bước cuối)
+Sau khi lưu output (và sau mỗi lần user duyệt → `--action approve`): `python scripts/activity_log.py add --domain analytics --skill analytics-report --action report --target <YYYY-MM | tuần> --path <file báo cáo>`. Hiện ở tab **Hoạt động** của `knowledge/0-dashboard/index.html`.
+
 ## Related Skills
 `/ads-audit` (chi tiết Ads) · `/optimize`, `/weekly` (việc SEO) · `/cro`, `/copy-landing` (CVR) · `seo-dashboard` (cách dùng MCP + cache)

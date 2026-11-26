@@ -37,3 +37,6 @@ Duyệt → copy sang `<job>/approved/ads-copy-v<n>.md` + `python scripts/creati
 
 ## Đẩy lên Meta (chỉ khi user yêu cầu rõ)
 Xác nhận lại tài khoản, page, campaign/ad set đích và từng biến thể; chỉ dùng ảnh trong `<job>/approved/`; đặt tên ad `<JOB> | <id> | v<N>` (để `/ads-learn` ghép số theo mẫu ảnh); tạo creative + ad ở trạng thái **PAUSED** qua Facebook Ads MCP; không đổi budget/bid. Báo lại ID đã tạo và ghi vào `<job>/ads/meta-ids.md`. User tự bật.
+
+## Ghi activity log (bước cuối)
+Sau khi lưu output (và sau mỗi lần user duyệt → `--action approve`): `python scripts/activity_log.py add --domain ads-meta --skill meta-ads-copy --action create --target <CMP-id> --path <job>/ads/copy-v<n>.md`. Hiện ở tab **Hoạt động** của `knowledge/0-dashboard/index.html`.

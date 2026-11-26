@@ -38,5 +38,8 @@ Status: Draft
 ```
 Trình bày trong chat: tóm tắt + top 5 việc + đường dẫn file.
 
+## Ghi activity log (bước cuối)
+Sau khi lưu output (và sau mỗi lần user duyệt → `--action approve`): `python scripts/activity_log.py add --domain ads-google --skill ads-audit --action report --target <YYYY-MM-DD-audit> --path <file audit>`. Hiện ở tab **Hoạt động** của `knowledge/0-dashboard/index.html`.
+
 ## Related Skills
 `/ads-copy` (viết lại quảng cáo cho ad group kém) · `/analytics-report` · `/keyword-plan`, `/write` (khoảng trống organic) · `/copy-landing` (landing của campaign)

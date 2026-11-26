@@ -34,5 +34,8 @@ Chỉ WebSearch khi các nguồn trên không trả lời được. Tuyệt đ�
 ```
 Dữ kiện / suy luận tách riêng. Không có nguồn → không đưa số.
 
+## Ghi activity log (bước cuối)
+Sau khi lưu output (và sau mỗi lần user duyệt → `--action approve`): `python scripts/activity_log.py add --domain market --skill market-research --action report --target <chủ đề> --path <file research>`. Hiện ở tab **Hoạt động** của `knowledge/0-dashboard/index.html`.
+
 ## Related Skills
 `/competitor-watch` · `/competitor-profile` · `/keyword-plan` · `/analytics-report`

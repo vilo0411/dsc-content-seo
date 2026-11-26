@@ -99,7 +99,12 @@ Internal_Links:         # (lint) 3–6 link /kien-thuc/ + mở tài khoản; m�
 
 - **Title:** [≤ 59 ký tự, chứa nguyên keyword. Toplist → có số N]
 - **H1:** [chứa keyword. Toplist → có số N]
-- **Sapo (viết nguyên văn, duyệt cùng outline — I105):** [Đoạn 1: nguyên keyword + trả lời thẳng (how-to: số bước + tên bước) + 1 con số có ngày. Đoạn 2: "Trong bài viết này, Chứng khoán DSC …" nêu phạm vi xoay quanh intent chính, phần phụ đi sau "kèm"; câu cuối là 1 con số trong bài gợi tò mò. ≤ 110 từ, câu ≤ 30 từ.]
+- **Sapo (viết nguyên văn, duyệt cùng outline — I105):**
+  - Đoạn 1: [trả lời thẳng keyword theo loại bài + 1 con số]
+  - Đoạn 2: Trong bài viết này, Chứng khoán DSC tóm tắt những điểm chính bạn cần nắm.
+    - [câu kết luận có số — theo H2 thứ 1]
+    - [… 3–5 bullet, đúng thứ tự H2]
+  - Câu mời đọc: [1 câu riêng của bài, mở từ tình huống người đọc, không mô tả cấu trúc bài]
 - **Meta description:** [140–160 ký tự, chứa keyword]
 
 ## 1. SERP & Intent
@@ -147,7 +152,6 @@ Internal_Links:         # (lint) 3–6 link /kien-thuc/ + mở tài khoản; m�
 <!-- Mỗi H2 thân bài BẮT BUỘC có 2 dòng đầu (lint). "Ý chính" là câu người đọc mang về; Nội dung chính phục vụ câu đó. -->
 
 ### H1: [...]
-- **Max word count:** [sapo, ~110]
 
 ### H2: [Heading chứa keyword / câu hỏi keyword — trả lời thẳng]
 - **Câu hỏi người đọc:** [người đọc đang hỏi gì khi tới đây]

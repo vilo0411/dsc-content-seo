@@ -545,7 +545,10 @@ def main() -> int:
         sys.exit("Không có URL nào để sync.")
     print(f"Sync {len(sources)} trang ({'SF export' if a.from_sf else 'live'}, {'full' if full else 'partial'})…",
           file=sys.stderr)
-    return sync(sources, full, a.workers)
+    code = sync(sources, full, a.workers)
+    from activity_log import emit
+    emit("seo", "sync", "live-site", skill="sync_live", result=f"{len(sources)} trang · {'full' if full else 'partial'}")
+    return code
 
 
 if __name__ == "__main__":

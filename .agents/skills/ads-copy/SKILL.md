@@ -33,5 +33,8 @@ Chạy script đếm ký tự (vd `python -c "for s in [...]: print(len(s), s)"`
 ## Output → `knowledge/4-channels/ads/YYYY-MM-DD-<ad-group>-rsa.md`
 `Status: Draft` · brief · bảng headline (text · số ký tự · nhóm · pin) · bảng description · sitelink · callout · ghi chú pháp chế. `--variants N`: N bộ khác góc (lợi ích / lo ngại / tin cậy) để A/B.
 
+## Ghi activity log (bước cuối)
+Sau khi lưu output (và sau mỗi lần user duyệt → `--action approve`): `python scripts/activity_log.py add --domain ads-google --skill ads-copy --action create --target <ad-group> --path <file rsa>`. Hiện ở tab **Hoạt động** của `knowledge/0-dashboard/index.html`.
+
 ## Related Skills
 `/ads-audit` (chọn ad group cần viết lại) · `/copy-landing` (landing khớp ad) · `/cro`

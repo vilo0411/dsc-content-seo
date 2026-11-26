@@ -21,3 +21,6 @@ description: Lập lịch nội dung tháng cho Fanpage / Zalo OA / LinkedIn the
 
 ## Bước 3 — Gate
 Trình bày: số post theo kênh × pillar, 5 post đầu tiên, khoảng trống cần user (ảnh con người DSC, ưu đãi tháng). Dừng chờ duyệt. Sau duyệt: `python scripts/campaign.py set social-<YYYY-MM> --status "Đang làm"`; từng dòng viết bằng `/social-post`.
+
+## Ghi activity log (bước cuối)
+Sau khi lưu output (và sau mỗi lần user duyệt → `--action approve`): `python scripts/activity_log.py add --domain social --skill social-plan --action create --target <CMP-id> --path <calendar-YYYY-MM.csv>`. Hiện ở tab **Hoạt động** của `knowledge/0-dashboard/index.html`.

@@ -27,9 +27,11 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from _common import setup_utf8  # noqa: E402
+from activity_log import emit  # noqa: E402
 import qa_lint as ql  # noqa: E402
 
 CHANNELS = ("facebook", "zalo", "linkedin", "meta-ad", "landing")
+MKT_DOMAIN = {"meta-ad": "ads-meta", "landing": "landing"}  # activity-log domain; others = social
 SEVERITIES = ("CRITICAL", "MAJOR", "MINOR", "INFO")
 
 # body_max = (MINOR threshold, MAJOR threshold or None); hook = chars visible before "Xem thêm"
@@ -254,6 +256,10 @@ def main(argv=None) -> int:
                           "issues": [i.__dict__ for i in rep.issues]}, ensure_ascii=False, indent=2))
     else:
         print(render(rep))
+    from activity_log import classify
+    dom, target = classify(a.file) or (MKT_DOMAIN.get(a.channel, "social"), Path(a.file).stem)
+    emit(dom, "qa", target, skill="mkt_lint", result="PASS" if rep.passed else f"FAIL ({len(rep.issues)} lỗi)",
+         path=a.file, note=a.channel)
     return 0 if rep.passed else 1
 
 

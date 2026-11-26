@@ -4,11 +4,10 @@ Trạng thái: đề xuất để xem và chọn hướng; chưa phải ảnh đ
 
 ## Nguyên tắc
 
-- Giữ màu, logo chuẩn DSC. Logo góc trên trái, cách mép ít nhất 4%. Không dùng màu đỏ.
+- Màu, font, logo, điều cấm: theo `knowledge/1-brand/DESIGN.md` v1.0 / `brand.json` (không chép lại ở đây). File này chỉ quy định bố cục S01–S04 cho ảnh syndication.
 - Một ảnh truyền đạt một luận điểm. Chọn bố cục theo chức năng nội dung, không dùng cùng một mẫu checklist cho mọi bài.
 - Chữ có ba cấp rõ: tiêu đề, thông tin chính, chú thích. Bản 1080 px: tiêu đề khoảng 64–88 px, nội dung 32–40 px, nguồn 22–26 px; thử xem ở kích thước điện thoại.
-- Màu: chỉ palette `knowledge/1-brand/DESIGN.md` v1.0 (Gunmetal `#272D2B`, Pine Teal `#1D4130`, Lime `#2AD03D`, Emerald `#1BBE72`, Frosted Mint `#8CFFCC`, White).
-- Font mẫu: Plus Jakarta Sans Regular/SemiBold/Bold (font brand), nhúng trực tiếp để không phụ thuộc font trên máy người xem. Chuẩn hóa tiếng Việt NFC; không ép độ đậm giả, không dùng tracking âm; tiêu đề line-height tối thiểu khoảng 1.25. Chờ tải font hoàn tất trước khi xuất ảnh. Font và giấy phép OFL lưu trong design-fonts/.
+- Font nhúng trực tiếp vào bản xem trước để không phụ thuộc font trên máy người xem. Chuẩn hóa tiếng Việt NFC; không ép độ đậm giả, không dùng tracking âm; tiêu đề line-height tối thiểu khoảng 1.25. Chờ tải font hoàn tất trước khi xuất ảnh. Font và giấy phép OFL lưu trong design-fonts/.
 - Giữ khoảng trống giữa các nhóm thông tin; không bắt ảnh social chứa chữ phải đạt tỷ lệ trống dành cho ảnh bìa blog.
 - AI chỉ tạo phần minh họa khi có lợi; chữ Việt, số liệu, logo được dàn chính xác bằng công cụ thiết kế. Không dùng ảnh AI giả lập biểu đồ tài chính hay số liệu không có nguồn.
 - Không tạo nhiều ảnh trước khi chọn hướng thiết kế. Một bài ưu tiên một mẫu chính và một biến thể cần thiết.

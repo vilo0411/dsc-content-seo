@@ -31,6 +31,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from _common import ROOT, setup_utf8, unaccent  # noqa: E402
+from activity_log import classify as _act_classify, emit  # noqa: E402
 import mkt_lint as ml  # noqa: E402
 
 LAYOUT_DIR = ROOT / ".agents/core/creative/layouts"
@@ -1019,6 +1020,11 @@ def approve(design_path: Path, ids: list[str] | str, xac_nhan: str, accept_error
     return copied
 
 
+def _job_of(design) -> str:
+    hit = _act_classify(Path(design).resolve())
+    return hit[1] if hit else Path(design).parent.parent.name
+
+
 def main(argv=None) -> int:
     setup_utf8()
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -1067,10 +1073,14 @@ def main(argv=None) -> int:
                 print(f"    [{i['level']}] {i['rule']} — {i['msg']}")
             bad += q["status"] == "Chưa đạt"
         print(f"→ {out / 'preview.html'}")
+        emit("creative", "qa", _job_of(a.design), skill="creative render", path=out / "qa.json",
+             result=f"{len(qa['creatives']) - bad}/{len(qa['creatives'])} đạt")
         return 1 if bad else 0
     elif a.cmd == "approve":
         for p_ in approve(Path(a.design).resolve(), "all" if a.ids == "all" else a.ids.split(","), a.xac_nhan, a.chap_nhan_loi):
             print(p_)
+        emit("creative", "approve", _job_of(a.design), skill="creative approve", path=a.design,
+             note=f"{a.ids} · {a.xac_nhan}"[:200])
     elif a.cmd == "pick":
         for cid, aid, note in pick(Path(a.design).resolve(), a.only.split(",") if a.only else None, a.season, a.dry_run):
             print(f"{cid:<18} → {aid or '—':<22} {note}")
@@ -1078,6 +1088,9 @@ def main(argv=None) -> int:
         res = generate(Path(a.design).resolve(), a.only.split(",") if a.only else None, a.force, a.dry_run)
         for r_ in res:
             print(f"{r_['id']:<18} {r_['status']}" + (f"  ({r_['seconds']}s)" if "seconds" in r_ else ""))
+        if not a.dry_run and res:
+            emit("creative", "create", _job_of(a.design), skill="creative generate", path=a.design,
+                 result=", ".join(f"{r_['id']} {r_['status']}" for r_ in res)[:200])
         return 1 if any(r_["status"].startswith(("prompt lỗi", "Codex")) for r_ in res) else 0
     elif a.cmd == "prompt":
         print(write_prompts(Path(a.design).resolve(), a.only.split(",") if a.only else None))

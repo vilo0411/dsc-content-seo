@@ -42,5 +42,8 @@ Nhiều bài trong tuần → gom 1 spec trong `/weekly`.
 ## Không làm
 Mở `pages.csv`, `link-graph.html`, `topical-map.html` để đọc (dùng script) · mỗi đoạn văn sửa tối đa 1 link trong 1 plan · đặt link trong Kết luận / CTA khi không hợp ngữ cảnh.
 
+## Ghi activity log (bước cuối)
+Sau khi lưu output (và sau mỗi lần user duyệt → `--action approve`): `python scripts/activity_log.py add --domain seo --skill link --action link --target <slug | đợt> --path <plan html / file bài>`. Hiện ở tab **Hoạt động** của `knowledge/0-dashboard/index.html`.
+
 ## Related Skills
 `/approve` (đăng ký bài mới) · `/weekly` (backfill theo lô) · `/optimize` (bài tụt, sửa cả link) · `/cro` (banner)

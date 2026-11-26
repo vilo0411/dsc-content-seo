@@ -28,6 +28,8 @@ Xác nhận với người dùng:
 
 Nếu người dùng không chỉ rõ slug hoặc section → hỏi lại trước khi làm.
 
+Trước khi sửa: `python scripts/revision_log.py add <slug> --fix … --pattern … --rule … --scope …` (lệnh này cũng ghi 1 dòng vào activity log).
+
 ---
 
 ## Bước 2: Viết bản sửa

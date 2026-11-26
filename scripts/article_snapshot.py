@@ -33,6 +33,8 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from activity_log import emit  # noqa: E402
 CONTENT = ROOT / "knowledge/3-seo/content"
 ARCHIVE = CONTENT / "archive"
 LEDGER = ROOT / "knowledge/3-seo/logs/publish-ledger.csv"
@@ -89,11 +91,21 @@ def write_ledger(rows: dict[str, dict]) -> None:
             w.writerow(rows[slug])
 
 
+# ledger column → (activity action, status) — every stamp leaves one line in the activity log
+LEDGER_EVENT = {"outline": ("approve", "Outline-Approved"), "gate2": ("approve", "Draft-Approved"),
+                "final": ("approve", "Finalized"), "first_live": ("publish", "Live"), "backfill_done": ("link", ""),
+                "gsc_checked": ("report", ""), "optimize_live": ("publish", "Live"), "optimize_gsc_checked": ("report", "")}
+
+
 def stamp(slug: str, col: str, value: str | None = None) -> None:
     rows = read_ledger()
     row = rows.setdefault(slug, {c: "" for c in LEDGER_COLS} | {"slug": slug})
     row[col] = value or date.today().isoformat()
     write_ledger(rows)
+    if col in LEDGER_EVENT:
+        action, st = LEDGER_EVENT[col]
+        emit("seo", action, slug, skill="article_snapshot", status_to=st, note=f"ledger:{col}",
+             path="knowledge/3-seo/logs/publish-ledger.csv")
 
 
 def fold_round(row: dict) -> None:
@@ -130,6 +142,8 @@ def record_optimize(slug: str) -> None:
     row["optimized"] = today
     row["optimize_live"] = row["optimize_gsc_checked"] = row["optimize_result"] = ""
     write_ledger(rows)
+    emit("seo", "approve", slug, skill="optimize", status_to="Optimized", note=f"lần {row['optimize_count']}",
+         path="knowledge/3-seo/logs/publish-ledger.csv")
     print(f"optimize: lần {row['optimize_count']} · baseline: {row.get('optimize_baseline') or '⚠ chưa ghi (--baseline)'}")
 
 
@@ -156,8 +170,10 @@ def snapshot(slug: str, stage: str) -> int:
         outline = find_source(slug, "outline")
         if outline:   # archive instead of deleting, so /optimize can re-run qa_lint --outline later
             target = dest_dir / "outline.md"
-            if not target.exists():
-                shutil.copy2(outline, target)
+            if target.exists() and target.read_bytes() != outline.read_bytes():
+                # a new outline for a re-written article: keep the old one instead of dropping the new one
+                shutil.copy2(target, dest_dir / "outline.prev.md")
+            shutil.copy2(outline, target)
             outline.unlink()
             print(f"outline: {outline.relative_to(ROOT)} → {target.relative_to(ROOT)} (đã chuyển khỏi 1-outlines/)")
             if not read_ledger().get(slug, {}).get("outline"):

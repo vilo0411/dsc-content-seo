@@ -135,3 +135,6 @@ Sau đó Self-Audit ngữ nghĩa theo checklist trong `.agents/skills/cro/refere
 - [ ] Headline qua được phép thử thay tên đối thủ
 - [ ] Nút hứa đúng thứ URL giao
 - [ ] Nội dung, ảnh, link cũ giữ nguyên 100%
+
+## Ghi activity log (bước cuối)
+Sau khi lưu output (và sau mỗi lần user duyệt → `--action approve`): `python scripts/activity_log.py add --domain seo --skill cro --action revise --target <slug> --path <file bài>`. Hiện ở tab **Hoạt động** của `knowledge/0-dashboard/index.html`.

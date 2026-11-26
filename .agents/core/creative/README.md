@@ -1,6 +1,6 @@
 # Creative engine — ảnh quảng cáo / post social
 
-> **Chuẩn hình ảnh: `knowledge/1-brand/DESIGN.md` v1.0** (brand guideline chính thức: Gunmetal / Pine Teal / Lime / Emerald / Frosted Mint, 3 gradient, font duy nhất Plus Jakarta Sans, ảnh trừu tượng xanh). Engine đọc màu/font từ `brand.json` — không đặt hex/font tay trong design.json. Theme mùa vụ `emerald`/`ivory` chỉ khi brief ghi Tết/lễ (§7). Ảnh blog: `image-design-system.md` (cùng palette).
+> **Chuẩn hình ảnh: `knowledge/1-brand/DESIGN.md` v1.0** (brand guideline chính thức: Gunmetal / Pine Teal / Lime / Emerald / Frosted Mint, 3 gradient, font duy nhất Plus Jakarta Sans, ảnh trừu tượng xanh). Engine đọc màu/font từ `brand.json` — không đặt hex/font tay trong design.json. Theme mùa vụ `emerald`/`ivory` chỉ khi brief ghi Tết/lễ (§7). Ảnh blog: `.agents/skills/image/references/image-design-system.md` (cùng palette).
 
 ## 0. Luồng key visual (mặc định cho quảng cáo / ảnh bìa / post chính)
 ```

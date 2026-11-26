@@ -67,6 +67,12 @@ def dashboard():
     body = ''.join('<tr>' + ''.join(cell(k,r.get(k,'')) for k in FIELDS if k != 'utm_url')+'</tr>' for r in rows.values())
     (BASE/'index.html').write_text('<!doctype html><meta charset="utf-8"><title>DSC Syndication</title><style>body{font:14px system-ui;margin:24px}table{border-collapse:collapse}td,th{padding:8px;border:1px solid #ddd;max-width:360px;white-space:pre-wrap}th{background:#153d59;color:white;position:sticky;top:0}</style><h1>DSC Syndication</h1><p>Edit ledger.csv or Google Sheets; sync through agent. Index status requires evidence.</p><a href="https://docs.google.com/spreadsheets/d/'+sheet_id+'/edit">Open Google Sheets</a><table><thead><tr>'+''.join('<th>'+k+'</th>' for k in FIELDS if k != 'utm_url')+'</tr></thead><tbody>'+body+'</tbody></table>',encoding='utf-8')
 
+def _emit(*a, **k):
+    import sys
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from activity_log import emit
+    emit(*a, **k)
+
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     sub=p.add_subparsers(dest='command',required=True)
@@ -80,11 +86,13 @@ def main():
     remote=read(args.remote if args.command=='merge' else args.verified_remote)
     if args.command=='checkpoint':
         if local != remote: raise ValueError('Remote readback differs; checkpoint refused')
-        baseline.write_text(json.dumps(local,ensure_ascii=False,indent=2),encoding='utf-8'); return
+        baseline.write_text(json.dumps(local,ensure_ascii=False,indent=2),encoding='utf-8')
+        _emit('social','sync','syndication',skill='syndicate checkpoint',path=BASE/'ledger.csv',result=f'{len(local)} dòng khớp Sheet'); return
     base=json.loads(baseline.read_text(encoding='utf-8')) if baseline.exists() else {}
     merged, conflicts=merge(base,local,remote)
     (BASE/'conflicts.json').write_text(json.dumps(conflicts,ensure_ascii=False,indent=2),encoding='utf-8')
     write(BASE/'sync-proposal.csv',merged)
+    _emit('social','sync','syndication',skill='syndicate merge',path=BASE/'sync-proposal.csv',result=f'{len(merged)} dòng · {len(conflicts)} xung đột')
     print(f'Proposal only: {len(merged)} records; {len(conflicts)} conflicts. Source ledger unchanged.')
 
 if __name__=='__main__': main()

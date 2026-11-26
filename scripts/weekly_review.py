@@ -26,6 +26,7 @@ from datetime import date, timedelta
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from activity_log import emit  # noqa: E402
 import article_snapshot as snap  # noqa: E402
 
 if hasattr(sys.stdout, "reconfigure"):
@@ -53,15 +54,83 @@ def d(s: str) -> date | None:
         return None
 
 
+_REG_LIVE: dict[str, str] | None = None
+_LIVE_IDX: dict[str, set[int]] | None = None
+_MATCH: dict[str, tuple[str, float, str, float]] = {}
+SHINGLE = 5                        # words per shingle for body comparison
+MATCH_MIN = 0.45                   # share of the Final's shingles found on one live page → same article
+MATCH_MARGIN = 0.15                # best page must beat the runner-up by this much
+
+
+def _registry_live() -> dict[str, str]:
+    """file_slug → live slug from pages.csv (registry refresh maps Final files to their CMS URL);
+    Merged rows map to the article they were merged into."""
+    global _REG_LIVE
+    if _REG_LIVE is None:
+        _REG_LIVE = {}
+        try:
+            import registry
+            for r in registry.load():
+                fs = r.get("file_slug")
+                if not fs:
+                    continue
+                if r.get("status") == "Merged" and r.get("merged_into"):
+                    _REG_LIVE.setdefault(fs, r["merged_into"].rstrip("/").rsplit("/", 1)[-1])
+                elif r.get("slug") and r.get("live") == "yes":
+                    _REG_LIVE[fs] = r["slug"]
+        except Exception:
+            pass
+    return _REG_LIVE
+
+
+def _shingles(text: str) -> set[int]:
+    text = re.sub(r"<[^>]+>|\]\([^)]*\)|[#*_>`|\[\]]", " ", text).lower()
+    words = re.findall(r"\w+", text)
+    return {hash(" ".join(words[i:i + SHINGLE])) for i in range(len(words) - SHINGLE + 1)}
+
+
+def _final_body(slug: str) -> str:
+    f = FINAL / f"Final-{slug}.md"
+    if not f.exists():
+        return ""
+    t = f.read_text(encoding="utf-8", errors="replace")
+    return re.sub(r"\A---.*?\n---\s*\n", "", t, flags=re.S)        # drop front matter
+
+
+def content_match(slug: str) -> tuple[str, float, str, float]:
+    """(best live slug, share of Final shingles on it, runner-up slug, its share) — compares article bodies
+    with every live snapshot, so it finds the page whatever its URL (merged, renamed, different CMS slug)."""
+    global _LIVE_IDX
+    if slug in _MATCH:
+        return _MATCH[slug]
+    if _LIVE_IDX is None:
+        _LIVE_IDX = {f.stem: _shingles(f.read_text(encoding="utf-8", errors="replace")) for f in LIVE.glob("*.html")}
+    mine = _shingles(_final_body(slug))
+    res = ("", 0.0, "", 0.0)
+    if mine:
+        scored = sorted(((len(mine & s) / len(mine), n) for n, s in _LIVE_IDX.items() if s), reverse=True)[:2]
+        scored += [(0.0, "")] * (2 - len(scored))
+        res = (scored[0][1], scored[0][0], scored[1][1], scored[1][0])
+    _MATCH[slug] = res
+    return res
+
+
 def live_slug(slug: str) -> str:
-    """Slug on dsc.com.vn — Final files often keep a shorter local name (Final-adx-la-gi → chi-bao-adx-la-gi);
-    the real URL is in the front matter (`source:` / `url:` / `Slug:`)."""
+    """Slug on dsc.com.vn — Final files often keep a shorter local name (Final-adx-la-gi → chi-bao-adx-la-gi).
+    Order: registry (incl. merged_into) → front matter URL → body content match against all live pages."""
+    if slug in _registry_live():
+        return _registry_live()[slug]
     f = FINAL / f"Final-{slug}.md"
     if f.exists():
         head = f.read_text(encoding="utf-8", errors="replace")[:1500]
         m = re.search(r"^(?:source|url|URL|canonical|Slug)\s*:\s*[\"']?(\S+?)[\"']?\s*$", head, re.M)
         if m:
-            return m.group(1).rstrip("/").rsplit("/", 1)[-1] or slug
+            cand = m.group(1).rstrip("/").rsplit("/", 1)[-1]
+            if cand and (LIVE / f"{cand}.html").exists():
+                return cand
+    best, score, _, second = content_match(slug)
+    if best and score >= MATCH_MIN and score - second >= MATCH_MARGIN:
+        return best
     return slug
 
 
@@ -200,7 +269,16 @@ def report() -> int:
     # 0. auto-detect first time a finalized article shows up in the live snapshot
     for slug, r in rows.items():
         if r["final"] and not r["first_live"] and is_live(slug):
-            r["first_live"] = today.isoformat()
+            if r["note"] == "seed" or r.get("optimized"):
+                # URL was live before the ledger / before this optimize round: not a new article, keep it out of
+                # the new-article queues (the optimize round is tracked by optimize_live).
+                r["first_live"] = r["backfill_done"] = r["gsc_checked"] = "seed"
+            else:
+                # snapshot mtime = last day the live body changed; older than Final → CMS still shows an old version
+                changed = date.fromtimestamp(live_file(slug).stat().st_mtime)
+                final = d(r["final"])
+                if not final or changed >= final:
+                    r["first_live"] = changed.isoformat()
         opt = d(r.get("optimized", ""))
         if opt and not r.get("optimize_live"):
             seen = optimize_seen_live(slug, opt)
@@ -314,13 +392,17 @@ def main() -> int:
     if a.unpublished:
         for slug, r in sorted(snap.read_ledger().items()):
             if r["final"] and not r["first_live"]:
-                print(f"{slug}\tfinal {r['final']}\tlive slug: {live_slug(slug)}")
+                best, score, second, s2 = content_match(slug)
+                print(f"{slug}\tfinal {r['final']}\tlive slug: {live_slug(slug)}"
+                      f"\tgần nhất: {best or '-'} ({score:.0%}; kế: {second or '-'} {s2:.0%})")
         return 0
     if a.done:
         if len(a.done) < 2 or a.done[0] not in ("backfill", "gsc", "live"):
             ap.error("--done backfill|gsc|live <slug…>")
         return done(a.done[0], a.done[1:], a.result)
-    return report()
+    code = report()
+    emit("seo", "run", "weekly", skill="weekly_review")
+    return code
 
 
 if __name__ == "__main__":
