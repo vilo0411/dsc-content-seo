@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-26T13:28:32+07:00",
-  "snapshot": "2026-11-26T11:16:09",
+  "generated_at": "2026-11-27T11:15:19+07:00",
+  "snapshot": "2026-11-27T11:11:36",
   "snapshot_mode": "partial",
   "tasks": [
     {
@@ -50,22 +50,34 @@
       "name": "2026-11-26-backfill-lai-suat",
       "group": "Internal link",
       "source": "knowledge/3-seo/links/plans/2026-11-26-backfill-lai-suat.html",
-      "state": "Còn mục chưa xác nhận",
-      "evidence": "3/13 thay đổi đạt kiểm tra; không cộng các đợt vì có thể trùng nhau.",
+      "state": "Đạt trong snapshot",
+      "evidence": "13/13 thay đổi đạt kiểm tra; không cộng các đợt vì có thể trùng nhau.",
       "next_step": "Xem mục chưa đạt; đối chiếu CMS rồi sync và kiểm tra lại.",
-      "done": 3,
+      "done": 13,
       "total": 13,
-      "details": "Đã lên live: 3/13\n- co-1-ty-nen-gui-ngan-hang-nao: append → lai-suat-ngan-hang-dong-a\n- co-15-trieu-nen-dau-tu-gi: remove → https://www.dsc.com.vn/kien-thuc/lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat; wrap → lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat\n- co-20-trieu-nen-dau-tu-gi: remove → https://www.dsc.com.vn/kien-thuc/lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat\n- co-5-trieu-nen-dau-tu-gi: remove → https://www.dsc.com.vn/kien-thuc/lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat; wrap → lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat\n- co-nen-gui-tiet-kiem-ngan-hang-khong: remove → https://www.dsc.com.vn/kien-thuc/lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat; cut (đoạn cần gỡ vẫn còn trên live)\n- lai-suat-gui-tiet-kiem-ngan-hang-vib: remove → https://www.dsc.com.vn/kien-thuc/lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat\n- lai-suat-gui-tiet-kiem-ngan-hang-vietinbank: remove → https://www.dsc.com.vn/kien-thuc/lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat\n",
+      "details": "Đã lên live: 13/13\n",
       "spec": "knowledge/3-seo/links/plans/2026-11-26-backfill-lai-suat.json"
+    },
+    {
+      "name": "2026-11-27-weekly-backfill",
+      "group": "Internal link",
+      "source": "knowledge/3-seo/links/plans/2026-11-27-weekly-backfill.html",
+      "state": "Còn mục chưa xác nhận",
+      "evidence": "0/9 thay đổi đạt kiểm tra; không cộng các đợt vì có thể trùng nhau.",
+      "next_step": "Xem mục chưa đạt; đối chiếu CMS rồi sync và kiểm tra lại.",
+      "done": 0,
+      "total": 9,
+      "details": "Đã lên live: 0/9\n- cach-ban-co-phieu-cho-nguoi-moi: wrap → thue-khi-ban-co-phieu-la-bao-nhieu\n- chi-so-p-e-la-gi-cach-ap-dung-de-tim-co-phieu-tot: wrap → chi-so-p-s-la-gi\n- lai-suat-huy-dong-la-gi: wrap → phan-biet-thi-truong-tien-te-va-thi-truong-von-huong-dan-chi-tiet-cho-nha-dau-tu\n- lai-suat-omo-la-gi-giai-ma-cong-cu-dieu-tiet-thi-truong-tien-te-hieu-qua: wrap → phan-biet-thi-truong-tien-te-va-thi-truong-von-huong-dan-chi-tiet-cho-nha-dau-tu\n- peg-la-gi: wrap → chi-so-p-s-la-gi\n- phan-tich-co-ban-la-gi: wrap → chi-so-p-s-la-gi\n- quy-mo-la-gi-tong-quan-ve-quy-mo-tren-thi-truong-chung-khoan-viet-nam: wrap → app-mua-chung-chi-quy\n- so-sanh-dau-tu-co-phieu-va-dau-tu-chung-chi-quy: wrap → thue-khi-ban-co-phieu-la-bao-nhieu\n- thien-kien-nhan-thuc-la-gi: wrap → target-trong-dau-tu-chung-khoan-la-gi\n",
+      "spec": "knowledge/3-seo/links/plans/2026-11-27-weekly-backfill.json"
     },
     {
       "name": "Bản Final chưa ghi nhận live",
       "group": "Sau publish",
       "source": "knowledge/3-seo/logs/publish-ledger.csv",
       "state": "Có việc cần đối chiếu",
-      "evidence": "5 bài thiếu mốc first_live trong ledger; seed là mốc nhập lịch sử.",
+      "evidence": "6 bài thiếu mốc first_live trong ledger; seed là mốc nhập lịch sử.",
       "next_step": "Đối chiếu CMS, publish rồi sync; Finalized chưa có nghĩa là đã lên web.",
-      "details": "chi-bao-stochastic-la-gi\nco-nen-dau-tu-chung-chi-quy\nrui-ro-chung-chi-quy\nthi-truong-so-cap-va-thu-cap-la-gi\nty-le-ky-quy"
+      "details": "chi-bao-stochastic-la-gi\nco-nen-dau-tu-chung-chi-quy\ndong-tien-tu-do-la-gi\nrui-ro-chung-chi-quy\nthi-truong-so-cap-va-thu-cap-la-gi\nty-le-ky-quy"
     },
     {
       "name": "Bài live chưa ghi nhận backfill",
@@ -81,9 +93,9 @@
       "group": "Sau publish",
       "source": "knowledge/3-seo/logs/publish-ledger.csv",
       "state": "Có việc cần đối chiếu",
-      "evidence": "6 bài thiếu mốc gsc_checked trong ledger; seed là mốc nhập lịch sử.",
+      "evidence": "3 bài thiếu mốc gsc_checked trong ledger; seed là mốc nhập lịch sử.",
       "next_step": "Chạy /weekly để lọc bài đến hạn 28–56 ngày; danh sách này gồm cả bài chưa đến hạn.",
-      "details": "app-mua-chung-chi-quy\ncach-choi-chung-khoan\nchi-so-ps\nphan-biet-thi-truong-tien-te-va-thi-truong-von-huong-dan-chi-tiet-cho-nha-dau-tu\ntarget-trong-chung-khoan-la-gi\nthue-khi-ban-co-phieu"
+      "details": "app-mua-chung-chi-quy\ncach-choi-chung-khoan\nphan-biet-thi-truong-tien-te-va-thi-truong-von-huong-dan-chi-tiet-cho-nha-dau-tu"
     },
     {
       "name": "rates-c",
@@ -158,9 +170,9 @@
       "group": "Dữ liệu",
       "source": "knowledge/3-seo/strategy/pages.csv",
       "state": "Cần đối chiếu",
-      "evidence": "865 URL · 846 live · 5 bài Final chờ đăng · 0 Finalized không có file Final · 0 key chính trùng · 1 chưa có cluster.",
+      "evidence": "865 URL · 846 live · 6 bài Final chờ đăng · 0 Finalized không có file Final · 0 key chính trùng · 1 chưa có cluster.",
       "next_step": "Chờ đăng: xem mục \"Chờ publish\" của weekly_review.py. Lỗi dữ liệu: python scripts/registry.py check → sửa slug / status / cluster; trùng key → cân nhắc gộp (301).",
-      "details": "chưa cluster: gia-cao-su\nchờ đăng: ty-le-ky-quy\nchờ đăng: chi-bao-stochastic-la-gi\nchờ đăng: cach-dau-tu-chung-chi-quy\nchờ đăng: co-nen-dau-tu-chung-chi-quy\nchờ đăng: rui-ro-chung-chi-quy"
+      "details": "chưa cluster: gia-cao-su\nchờ đăng: ty-le-ky-quy\nchờ đăng: chi-bao-stochastic-la-gi\nchờ đăng: dong-tien-tu-do-la-gi\nchờ đăng: cach-dau-tu-chung-chi-quy\nchờ đăng: co-nen-dau-tu-chung-chi-quy\nchờ đăng: rui-ro-chung-chi-quy"
     },
     {
       "name": "Backlog có trạng thái lệch nguồn chính",
@@ -918,6 +930,18 @@
       "archived": false
     },
     {
+      "path": "knowledge/3-seo/links/plans/2026-11-27-weekly-backfill.html",
+      "name": "2026-11-27-weekly-backfill.html",
+      "group": "Internal link",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/links/plans/2026-11-27-weekly-backfill.json",
+      "name": "2026-11-27-weekly-backfill.json",
+      "group": "Internal link",
+      "archived": false
+    },
+    {
       "path": "knowledge/3-seo/logs/learn-state.json",
       "name": "learn-state.json",
       "group": "Log",
@@ -1206,6 +1230,12 @@
       "archived": false
     },
     {
+      "path": "knowledge/3-seo/content/audits/image-alt-2026-11/gdocs-images.csv",
+      "name": "gdocs-images.csv",
+      "group": "Audit",
+      "archived": false
+    },
+    {
       "path": "knowledge/3-seo/content/audits/slop-audit-2026-10-16.md",
       "name": "slop-audit-2026-10-16.md",
       "group": "Audit",
@@ -1284,14 +1314,74 @@
       "archived": false
     },
     {
+      "path": "knowledge/3-seo/content/4-cms/cach-su-dung-4-duong-ma-pho-bien-trong-phan-tich-ky-thuat.html",
+      "name": "cach-su-dung-4-duong-ma-pho-bien-trong-phan-tich-ky-thuat.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/4-cms/can-can-vang-lai-la-gi.html",
+      "name": "can-can-vang-lai-la-gi.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
       "path": "knowledge/3-seo/content/4-cms/canh-tranh-hoan-hao-la-gi.html",
       "name": "canh-tranh-hoan-hao-la-gi.html",
       "group": "CMS",
       "archived": false
     },
     {
+      "path": "knowledge/3-seo/content/4-cms/chi-bao-aroon-la-gi.html",
+      "name": "chi-bao-aroon-la-gi.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/4-cms/chi-bao-atr-la-gi.html",
+      "name": "chi-bao-atr-la-gi.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/4-cms/chi-bao-cci-la-gi.html",
+      "name": "chi-bao-cci-la-gi.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/4-cms/chi-bao-dao-dong-aroon-aroon-oscillator-la-gi.html",
+      "name": "chi-bao-dao-dong-aroon-aroon-oscillator-la-gi.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/4-cms/chi-bao-kenh-keltner-la-gi.html",
+      "name": "chi-bao-kenh-keltner-la-gi.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/4-cms/chi-bao-macd-histogram-la-gi.html",
+      "name": "chi-bao-macd-histogram-la-gi.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/4-cms/chi-bao-rate-of-change-roc-la-gi.html",
+      "name": "chi-bao-rate-of-change-roc-la-gi.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
       "path": "knowledge/3-seo/content/4-cms/chi-bao-stochastic-la-gi.html",
       "name": "chi-bao-stochastic-la-gi.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/4-cms/chi-bao-ttm-squeeze-la-gi.html",
+      "name": "chi-bao-ttm-squeeze-la-gi.html",
       "group": "CMS",
       "archived": false
     },
@@ -1308,8 +1398,62 @@
       "archived": false
     },
     {
+      "path": "knowledge/3-seo/content/4-cms/co-phieu-tru-la-gi.html",
+      "name": "co-phieu-tru-la-gi.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
       "path": "knowledge/3-seo/content/4-cms/co-tien-nen-dau-tu-bac.html",
       "name": "co-tien-nen-dau-tu-bac.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/4-cms/do-lech-chuan-la-gi.html",
+      "name": "do-lech-chuan-la-gi.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/4-cms/do-thi-ky-thuat-la-gi.html",
+      "name": "do-thi-ky-thuat-la-gi.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/4-cms/dong-tien-tu-do-la-gi.html",
+      "name": "dong-tien-tu-do-la-gi.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/4-cms/duong-ma-la-gi.html",
+      "name": "duong-ma-la-gi.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/4-cms/etf-la-gi.html",
+      "name": "etf-la-gi.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/4-cms/goodwill-la-gi.html",
+      "name": "goodwill-la-gi.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/4-cms/huong-dan-ket-hop-3-duong-ma-trong-giao-dich-va-dau-tu-hieu-qua.html",
+      "name": "huong-dan-ket-hop-3-duong-ma-trong-giao-dich-va-dau-tu-hieu-qua.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/4-cms/huong-dan-mua-trai-phieu-doanh-nghiep-cho-nguoi-moi-bat-dau.html",
+      "name": "huong-dan-mua-trai-phieu-doanh-nghiep-cho-nguoi-moi-bat-dau.html",
       "group": "CMS",
       "archived": false
     },
@@ -1326,14 +1470,74 @@
       "archived": false
     },
     {
+      "path": "knowledge/3-seo/content/4-cms/mau-hinh-nen-bao-trum-la-gi.html",
+      "name": "mau-hinh-nen-bao-trum-la-gi.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/4-cms/mo-hinh-3-day-la-gi.html",
+      "name": "mo-hinh-3-day-la-gi.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
       "path": "knowledge/3-seo/content/4-cms/mo-hinh-nen-bua-nguoc-inverted-hammer-la-gi.html",
       "name": "mo-hinh-nen-bua-nguoc-inverted-hammer-la-gi.html",
       "group": "CMS",
       "archived": false
     },
     {
+      "path": "knowledge/3-seo/content/4-cms/mo-hinh-nen-hammer-la-gi.html",
+      "name": "mo-hinh-nen-hammer-la-gi.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/4-cms/mo-hinh-tam-giac-la-gi.html",
+      "name": "mo-hinh-tam-giac-la-gi.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/4-cms/mo-hinh-vai-dau-vai-la-gi.html",
+      "name": "mo-hinh-vai-dau-vai-la-gi.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/4-cms/nen-doji-la-gi.html",
+      "name": "nen-doji-la-gi.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/4-cms/nen-pin-bar-la-gi.html",
+      "name": "nen-pin-bar-la-gi.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/4-cms/npv-va-irr-la-gi.html",
+      "name": "npv-va-irr-la-gi.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
       "path": "knowledge/3-seo/content/4-cms/phan-biet-thi-truong-tien-te-va-thi-truong-von-huong-dan-chi-tiet-cho-nha-dau-tu.html",
       "name": "phan-biet-thi-truong-tien-te-va-thi-truong-von-huong-dan-chi-tiet-cho-nha-dau-tu.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/4-cms/phan-tich-chung-khoan-la-gi.html",
+      "name": "phan-tich-chung-khoan-la-gi.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/4-cms/price-action-hanh-dong-gia-la-gi.html",
+      "name": "price-action-hanh-dong-gia-la-gi.html",
       "group": "CMS",
       "archived": false
     },
@@ -1350,14 +1554,50 @@
       "archived": false
     },
     {
+      "path": "knowledge/3-seo/content/4-cms/rui-ro-thanh-khoan-la-gi.html",
+      "name": "rui-ro-thanh-khoan-la-gi.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/4-cms/rui-ro-tin-dung-la-gi.html",
+      "name": "rui-ro-tin-dung-la-gi.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
       "path": "knowledge/3-seo/content/4-cms/san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong.html",
       "name": "san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong.html",
       "group": "CMS",
       "archived": false
     },
     {
+      "path": "knowledge/3-seo/content/4-cms/so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te.html",
+      "name": "so-sanh-chinh-sach-tai-khoa-va-chinh-sach-tien-te.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/4-cms/tai-sao-nen-dau-tu-trai-phieu-trai-phieu-phu-hop-voi-nha-dau-tu-nao.html",
+      "name": "tai-sao-nen-dau-tu-trai-phieu-trai-phieu-phu-hop-voi-nha-dau-tu-nao.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
       "path": "knowledge/3-seo/content/4-cms/thi-truong-so-cap-va-thu-cap-la-gi.html",
       "name": "thi-truong-so-cap-va-thu-cap-la-gi.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/4-cms/tim-hieu-phuong-phap-wyckoff-ve-phan-tich-co-phieu.html",
+      "name": "tim-hieu-phuong-phap-wyckoff-ve-phan-tich-co-phieu.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/4-cms/tom-tat-su-kien-brexit.html",
+      "name": "tom-tat-su-kien-brexit.html",
       "group": "CMS",
       "archived": false
     },
@@ -1376,6 +1616,18 @@
     {
       "path": "knowledge/3-seo/content/4-cms/top-co-phieu-cang-bien-nen-dau-tu.html",
       "name": "top-co-phieu-cang-bien-nen-dau-tu.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/4-cms/ung-dung-arbitrage-vao-dau-tu-chung-chi-quy.html",
+      "name": "ung-dung-arbitrage-vao-dau-tu-chung-chi-quy.html",
+      "group": "CMS",
+      "archived": false
+    },
+    {
+      "path": "knowledge/3-seo/content/4-cms/vung-bay-gia-la-gi.html",
+      "name": "vung-bay-gia-la-gi.html",
       "group": "CMS",
       "archived": false
     },
@@ -2031,6 +2283,381 @@
   },
   "activity_recent": [
     {
+      "ts": "2026-11-27T11:15:18",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "image",
+      "action": "export",
+      "target": "gdocs-images",
+      "path": "knowledge/3-seo/content/4-cms",
+      "note": "35 bài: 103 ảnh Google Docs → /uploads/, 8 ảnh vẽ lại, 1 gỡ"
+    },
+    {
+      "ts": "2026-11-27T11:15:18",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "revision_log",
+      "action": "revise",
+      "target": "tai-sao-nen-dau-tu-trai-phieu-trai-phieu-phu-hop-voi-nha-dau-tu-nao",
+      "path": "knowledge/3-seo/logs/revision-log.md",
+      "note": "img googleusercontent"
+    },
+    {
+      "ts": "2026-11-27T11:15:18",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "revision_log",
+      "action": "revise",
+      "target": "npv-va-irr-la-gi",
+      "path": "knowledge/3-seo/logs/revision-log.md",
+      "note": "img googleusercontent"
+    },
+    {
+      "ts": "2026-11-27T11:15:18",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "revision_log",
+      "action": "revise",
+      "target": "nen-doji-la-gi",
+      "path": "knowledge/3-seo/logs/revision-log.md",
+      "note": "img googleusercontent"
+    },
+    {
+      "ts": "2026-11-27T11:15:17",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "revision_log",
+      "action": "revise",
+      "target": "mau-hinh-nen-bao-trum-la-gi",
+      "path": "knowledge/3-seo/logs/revision-log.md",
+      "note": "img googleusercontent"
+    },
+    {
+      "ts": "2026-11-27T11:15:17",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "revision_log",
+      "action": "revise",
+      "target": "mo-hinh-nen-hammer-la-gi",
+      "path": "knowledge/3-seo/logs/revision-log.md",
+      "note": "img googleusercontent"
+    },
+    {
+      "ts": "2026-11-27T11:15:17",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "revision_log",
+      "action": "revise",
+      "target": "chi-bao-atr-la-gi",
+      "path": "knowledge/3-seo/logs/revision-log.md",
+      "note": "img googleusercontent"
+    },
+    {
+      "ts": "2026-11-27T11:15:16",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "revision_log",
+      "action": "revise",
+      "target": "rui-ro-tin-dung-la-gi",
+      "path": "knowledge/3-seo/logs/revision-log.md",
+      "note": "img googleusercontent"
+    },
+    {
+      "ts": "2026-11-27T11:11:36",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "sync_live",
+      "action": "sync",
+      "target": "live-site",
+      "result": "35 trang · partial"
+    },
+    {
+      "ts": "2026-11-27T11:09:11",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "image",
+      "action": "create",
+      "target": "gdocs-images",
+      "path": "knowledge/3-seo/content/audits/image-alt-2026-11/gdocs-images.csv",
+      "note": "Rà 112 ảnh Google Docs/35 bài; 7 ảnh vẽ thay ảnh mờ"
+    },
+    {
+      "ts": "2026-11-27T11:00:03",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "revision_log",
+      "action": "revise",
+      "target": "do-lech-chuan-la-gi",
+      "path": "knowledge/3-seo/logs/revision-log.md",
+      "note": "ảnh phím bấm cắt từ Google Docs, <h2><img></h2>"
+    },
+    {
+      "ts": "2026-11-27T10:59:06",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "sync_live",
+      "action": "sync",
+      "target": "live-site",
+      "result": "1 trang · partial"
+    },
+    {
+      "ts": "2026-11-27T10:57:42",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "link",
+      "action": "link",
+      "target": "weekly-backfill-2026-11-27",
+      "path": "knowledge/3-seo/links/plans/2026-11-27-weekly-backfill.html"
+    },
+    {
+      "ts": "2026-11-27T10:55:59",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "image",
+      "action": "create",
+      "target": "do-lech-chuan-la-gi",
+      "path": "knowledge/3-seo/content/images/do-lech-chuan-la-gi-cong-thuc.jpg",
+      "note": "3 ảnh thay 65 ảnh Google Docs (công thức, fx-570ES, fx-580VN X)"
+    },
+    {
+      "ts": "2026-11-27T10:55:46",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "sync_live",
+      "action": "sync",
+      "target": "live-site",
+      "result": "847 trang · full"
+    },
+    {
+      "ts": "2026-11-27T10:48:25",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "qa_gate",
+      "action": "qa",
+      "target": "dong-tien-tu-do-la-gi",
+      "path": "knowledge/3-seo/content/3-finalized/Final-dong-tien-tu-do-la-gi.md",
+      "result": "FAIL"
+    },
+    {
+      "ts": "2026-11-27T10:48:20",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "qa_gate",
+      "action": "qa",
+      "target": "dong-tien-tu-do-la-gi",
+      "path": "knowledge/3-seo/content/3-finalized/Final-dong-tien-tu-do-la-gi.md",
+      "result": "FAIL"
+    },
+    {
+      "ts": "2026-11-27T10:47:58",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "md_to_cms_html",
+      "action": "export",
+      "target": "dong-tien-tu-do-la-gi",
+      "path": "knowledge/3-seo/content/4-cms/dong-tien-tu-do-la-gi.html",
+      "note": "CMS HTML"
+    },
+    {
+      "ts": "2026-11-27T10:47:50",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "hook",
+      "action": "revise",
+      "target": "dong-tien-tu-do-la-gi",
+      "path": "knowledge/3-seo/content/3-finalized/Final-dong-tien-tu-do-la-gi.md",
+      "src": "hook"
+    },
+    {
+      "ts": "2026-11-27T10:47:33",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "revision_log",
+      "action": "revise",
+      "target": "dong-tien-tu-do-la-gi",
+      "path": "knowledge/3-seo/logs/revision-log.md",
+      "note": "Bảng số liệu nhiều cột số dài (≥6 cột kiểu 17.365,86) làm vỡ layout mobile của dsc.com.vn: cột bài không co (thiếu min-w"
+    },
+    {
+      "ts": "2026-11-27T10:40:57",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "md_to_cms_html",
+      "action": "export",
+      "target": "dong-tien-tu-do-la-gi",
+      "path": "knowledge/3-seo/content/4-cms/dong-tien-tu-do-la-gi.html",
+      "note": "CMS HTML"
+    },
+    {
+      "ts": "2026-11-27T10:36:19",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "md_to_cms_html",
+      "action": "export",
+      "target": "dong-tien-tu-do-la-gi",
+      "path": "knowledge/3-seo/content/4-cms/dong-tien-tu-do-la-gi.html",
+      "note": "CMS HTML"
+    },
+    {
+      "ts": "2026-11-27T10:30:07",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "md_to_cms_html",
+      "action": "export",
+      "target": "dong-tien-tu-do-la-gi",
+      "path": "knowledge/3-seo/content/4-cms/dong-tien-tu-do-la-gi.html",
+      "note": "CMS HTML"
+    },
+    {
+      "ts": "2026-11-27T10:29:38",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "md_to_cms_html",
+      "action": "export",
+      "target": "dong-tien-tu-do-la-gi",
+      "path": "knowledge/3-seo/content/4-cms/dong-tien-tu-do-la-gi.html",
+      "note": "CMS HTML"
+    },
+    {
+      "ts": "2026-11-27T10:29:24",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "md_to_cms_html",
+      "action": "export",
+      "target": "dong-tien-tu-do-la-gi",
+      "path": "knowledge/3-seo/content/4-cms/dong-tien-tu-do-la-gi.html",
+      "note": "CMS HTML"
+    },
+    {
+      "ts": "2026-11-27T10:26:42",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "sync_live",
+      "action": "sync",
+      "target": "live-site",
+      "result": "1 trang · partial"
+    },
+    {
+      "ts": "2026-11-27T10:17:26",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "md_to_cms_html",
+      "action": "export",
+      "target": "dong-tien-tu-do-la-gi",
+      "path": "knowledge/3-seo/content/4-cms/dong-tien-tu-do-la-gi.html",
+      "note": "CMS HTML"
+    },
+    {
+      "ts": "2026-11-27T10:17:25",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "topic_status",
+      "action": "status",
+      "target": "dong-tien-tu-do-la-gi",
+      "status_from": "Draft-Pending",
+      "status_to": "Finalized"
+    },
+    {
+      "ts": "2026-11-27T10:17:25",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "article_snapshot",
+      "action": "approve",
+      "target": "dong-tien-tu-do-la-gi",
+      "status_to": "Finalized",
+      "path": "knowledge/3-seo/logs/publish-ledger.csv",
+      "note": "ledger:final"
+    },
+    {
+      "ts": "2026-11-27T10:17:25",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "article_snapshot",
+      "action": "approve",
+      "target": "dong-tien-tu-do-la-gi",
+      "status_to": "Outline-Approved",
+      "path": "knowledge/3-seo/logs/publish-ledger.csv",
+      "note": "ledger:outline"
+    },
+    {
+      "ts": "2026-11-27T10:16:19",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "article_snapshot",
+      "action": "report",
+      "target": "thue-khi-ban-co-phieu",
+      "path": "knowledge/3-seo/logs/publish-ledger.csv",
+      "note": "ledger:gsc_checked"
+    },
+    {
+      "ts": "2026-11-27T10:16:19",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "article_snapshot",
+      "action": "report",
+      "target": "chi-so-ps",
+      "path": "knowledge/3-seo/logs/publish-ledger.csv",
+      "note": "ledger:gsc_checked"
+    },
+    {
+      "ts": "2026-11-27T10:16:19",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "article_snapshot",
+      "action": "report",
+      "target": "target-trong-chung-khoan-la-gi",
+      "path": "knowledge/3-seo/logs/publish-ledger.csv",
+      "note": "ledger:gsc_checked"
+    },
+    {
+      "ts": "2026-11-27T10:16:19",
+      "actor": "Lộc Nguyễn",
+      "domain": "analytics",
+      "skill": "dashboard_cache",
+      "action": "sync",
+      "target": "page-queries thue-khi-ban-co-phieu",
+      "path": "knowledge/raw/gsc/dashboard/page-queries-thue-khi-ban-co-phieu.json",
+      "result": "2 rows"
+    },
+    {
+      "ts": "2026-11-27T10:16:19",
+      "actor": "Lộc Nguyễn",
+      "domain": "analytics",
+      "skill": "dashboard_cache",
+      "action": "sync",
+      "target": "page-queries chi-so-ps",
+      "path": "knowledge/raw/gsc/dashboard/page-queries-chi-so-ps.json",
+      "result": "3 rows"
+    },
+    {
+      "ts": "2026-11-27T10:16:18",
+      "actor": "Lộc Nguyễn",
+      "domain": "analytics",
+      "skill": "dashboard_cache",
+      "action": "sync",
+      "target": "page-queries target-trong-chung-khoan-la-gi",
+      "path": "knowledge/raw/gsc/dashboard/page-queries-target-trong-chung-khoan-la-gi.json",
+      "result": "10 rows"
+    },
+    {
+      "ts": "2026-11-27T10:15:58",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "qa_gate",
+      "action": "qa",
+      "target": "dong-tien-tu-do-la-gi",
+      "path": "knowledge/3-seo/content/2-drafts/Draft-dong-tien-tu-do-la-gi.md",
+      "result": "PASS"
+    },
+    {
+      "ts": "2026-11-27T10:12:45",
+      "actor": "Lộc Nguyễn",
+      "domain": "seo",
+      "skill": "weekly_review",
+      "action": "run",
+      "target": "weekly"
+    },
+    {
       "ts": "2026-11-26T13:28:25",
       "actor": "Lộc Nguyễn",
       "domain": "seo",
@@ -2147,447 +2774,23 @@
       "path": "knowledge/3-seo/logs/qa-score-log.csv",
       "result": "score 98",
       "src": "backfill"
-    },
-    {
-      "ts": "2026-11-26T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "seo",
-      "skill": "qa_lint",
-      "action": "qa",
-      "target": "thi-truong-so-cap-va-thu-cap-la-gi",
-      "path": "knowledge/3-seo/logs/qa-score-log.csv",
-      "result": "score 97",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-26T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "seo",
-      "skill": "revise",
-      "action": "revise",
-      "target": "dong-tien-tu-do-la-gi",
-      "path": "knowledge/3-seo/logs/revision-log.md",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-26T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "seo",
-      "skill": "revise",
-      "action": "revise",
-      "target": "lai-suat-ngan-hang-dong-a",
-      "path": "knowledge/3-seo/logs/revision-log.md",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-26T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "seo",
-      "skill": "revise",
-      "action": "revise",
-      "target": "thi-truong-so-cap-va-thu-cap-la-gi-v2",
-      "path": "knowledge/3-seo/logs/revision-log.md",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-26T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "seo",
-      "skill": "approve",
-      "action": "approve",
-      "target": "so-sanh-lai-suat-tiet-kiem-ngan-hang",
-      "status_to": "Draft-Approved",
-      "path": "knowledge/3-seo/logs/publish-ledger.csv",
-      "note": "ledger:gate2",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-26T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "seo",
-      "skill": "optimize",
-      "action": "approve",
-      "target": "rsi-la-gi",
-      "status_to": "Optimized",
-      "path": "knowledge/3-seo/logs/publish-ledger.csv",
-      "note": "ledger:optimized",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-26T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "seo",
-      "action": "publish",
-      "target": "lai-suat-ngan-hang-dong-a",
-      "status_to": "Live",
-      "path": "knowledge/3-seo/logs/publish-ledger.csv",
-      "note": "ledger:optimize_live",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-26T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "seo",
-      "skill": "optimize",
-      "action": "approve",
-      "target": "lai-suat-ngan-hang-dong-a",
-      "status_to": "Optimized",
-      "path": "knowledge/3-seo/logs/publish-ledger.csv",
-      "note": "ledger:optimized",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-26T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "seo",
-      "skill": "approve",
-      "action": "approve",
-      "target": "lai-suat-ngan-hang-dong-a",
-      "status_to": "Finalized",
-      "path": "knowledge/3-seo/logs/publish-ledger.csv",
-      "note": "ledger:final",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-26T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "seo",
-      "skill": "approve",
-      "action": "approve",
-      "target": "lai-suat-ngan-hang-dong-a",
-      "status_to": "Draft-Approved",
-      "path": "knowledge/3-seo/logs/publish-ledger.csv",
-      "note": "ledger:gate2",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-26T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "seo",
-      "skill": "approve",
-      "action": "approve",
-      "target": "lai-suat-ngan-hang-dong-a",
-      "status_to": "Outline-Approved",
-      "path": "knowledge/3-seo/logs/publish-ledger.csv",
-      "note": "ledger:outline",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-26T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "seo",
-      "skill": "optimize",
-      "action": "approve",
-      "target": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
-      "status_to": "Optimized",
-      "path": "knowledge/3-seo/logs/publish-ledger.csv",
-      "note": "ledger:optimized",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-26T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "seo",
-      "skill": "approve",
-      "action": "approve",
-      "target": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
-      "status_to": "Finalized",
-      "path": "knowledge/3-seo/logs/publish-ledger.csv",
-      "note": "ledger:final",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-26T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "seo",
-      "skill": "approve",
-      "action": "approve",
-      "target": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
-      "status_to": "Draft-Approved",
-      "path": "knowledge/3-seo/logs/publish-ledger.csv",
-      "note": "ledger:gate2",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-26T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "seo",
-      "skill": "approve",
-      "action": "approve",
-      "target": "lai-suat-gui-tiet-kiem-ngan-hang-nao-cao-nhat",
-      "status_to": "Outline-Approved",
-      "path": "knowledge/3-seo/logs/publish-ledger.csv",
-      "note": "ledger:outline",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-26T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "seo",
-      "skill": "optimize",
-      "action": "approve",
-      "target": "co-tien-nen-dau-tu-bac",
-      "status_to": "Optimized",
-      "path": "knowledge/3-seo/logs/publish-ledger.csv",
-      "note": "ledger:optimized",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-25T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "analytics",
-      "action": "report",
-      "target": "kpi-definitions",
-      "path": "knowledge/5-analytics/kpi-definitions.md",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-25T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "social",
-      "action": "create",
-      "target": "CMP-261124-mo-tai-khoan-tet-2027",
-      "path": "knowledge/6-campaigns/CMP-261124-mo-tai-khoan-tet-2027/social/facebook-mo-tai-khoan-tet-v1.md",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-25T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "landing",
-      "action": "create",
-      "target": "CMP-261124-mo-tai-khoan-tet-2027",
-      "path": "knowledge/6-campaigns/CMP-261124-mo-tai-khoan-tet-2027/landing/copy-v1.md",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-25T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "ads-meta",
-      "action": "create",
-      "target": "CMP-261124-mo-tai-khoan-tet-2027",
-      "path": "knowledge/6-campaigns/CMP-261124-mo-tai-khoan-tet-2027/ads/copy-v1.md",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-25T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "seo",
-      "skill": "qa_lint",
-      "action": "qa",
-      "target": "san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong",
-      "path": "knowledge/3-seo/logs/qa-score-log.csv",
-      "result": "score 98",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-25T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "seo",
-      "skill": "qa_lint",
-      "action": "qa",
-      "target": "cach-doc-bieu-do-nen-chung-khoan-cho-nguoi-moi-bat-dau",
-      "path": "knowledge/3-seo/logs/qa-score-log.csv",
-      "result": "score 99",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-25T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "seo",
-      "skill": "qa_lint",
-      "action": "qa",
-      "target": "thi-truong-so-cap-va-thu-cap-la-gi",
-      "path": "knowledge/3-seo/logs/qa-score-log.csv",
-      "result": "score 97",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-25T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "seo",
-      "skill": "revise",
-      "action": "revise",
-      "target": "so-sanh-lai-suat-tiet-kiem-ngan-hang",
-      "path": "knowledge/3-seo/logs/revision-log.md",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-25T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "seo",
-      "skill": "revise",
-      "action": "revise",
-      "target": "san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong",
-      "path": "knowledge/3-seo/logs/revision-log.md",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-25T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "seo",
-      "skill": "revise",
-      "action": "revise",
-      "target": "cach-doc-bieu-do-nen-chung-khoan-cho-nguoi-moi-bat-dau",
-      "path": "knowledge/3-seo/logs/revision-log.md",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-25T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "seo",
-      "skill": "revise",
-      "action": "revise",
-      "target": "thi-truong-so-cap-va-thu-cap-la-gi",
-      "path": "knowledge/3-seo/logs/revision-log.md",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-25T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "seo",
-      "skill": "approve",
-      "action": "approve",
-      "target": "thi-truong-so-cap-va-thu-cap-la-gi",
-      "status_to": "Finalized",
-      "path": "knowledge/3-seo/logs/publish-ledger.csv",
-      "note": "ledger:final",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-25T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "seo",
-      "skill": "approve",
-      "action": "approve",
-      "target": "thi-truong-so-cap-va-thu-cap-la-gi",
-      "status_to": "Draft-Approved",
-      "path": "knowledge/3-seo/logs/publish-ledger.csv",
-      "note": "ledger:gate2",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-25T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "seo",
-      "skill": "approve",
-      "action": "approve",
-      "target": "thi-truong-so-cap-va-thu-cap-la-gi",
-      "status_to": "Outline-Approved",
-      "path": "knowledge/3-seo/logs/publish-ledger.csv",
-      "note": "ledger:outline",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-25T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "seo",
-      "skill": "optimize",
-      "action": "approve",
-      "target": "san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong",
-      "status_to": "Optimized",
-      "path": "knowledge/3-seo/logs/publish-ledger.csv",
-      "note": "ledger:optimized",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-25T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "seo",
-      "skill": "approve",
-      "action": "approve",
-      "target": "san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong",
-      "status_to": "Finalized",
-      "path": "knowledge/3-seo/logs/publish-ledger.csv",
-      "note": "ledger:final",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-25T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "seo",
-      "skill": "approve",
-      "action": "approve",
-      "target": "san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong",
-      "status_to": "Draft-Approved",
-      "path": "knowledge/3-seo/logs/publish-ledger.csv",
-      "note": "ledger:gate2",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-25T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "seo",
-      "skill": "approve",
-      "action": "approve",
-      "target": "san-chung-khoan-nyse-la-gi-vai-tro-va-cach-thuc-hoat-dong",
-      "status_to": "Outline-Approved",
-      "path": "knowledge/3-seo/logs/publish-ledger.csv",
-      "note": "ledger:outline",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-25T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "seo",
-      "action": "publish",
-      "target": "phan-biet-thi-truong-tien-te-va-thi-truong-von-huong-dan-chi-tiet-cho-nha-dau-tu",
-      "status_to": "Live",
-      "path": "knowledge/3-seo/logs/publish-ledger.csv",
-      "note": "ledger:first_live",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-25T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "seo",
-      "skill": "optimize",
-      "action": "approve",
-      "target": "cach-doc-bieu-do-nen-chung-khoan-cho-nguoi-moi-bat-dau",
-      "status_to": "Optimized",
-      "path": "knowledge/3-seo/logs/publish-ledger.csv",
-      "note": "ledger:optimized",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-25T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "seo",
-      "skill": "approve",
-      "action": "approve",
-      "target": "cach-doc-bieu-do-nen-chung-khoan-cho-nguoi-moi-bat-dau",
-      "status_to": "Finalized",
-      "path": "knowledge/3-seo/logs/publish-ledger.csv",
-      "note": "ledger:final",
-      "src": "backfill"
-    },
-    {
-      "ts": "2026-11-25T00:00:00",
-      "actor": "Lộc Nguyễn",
-      "domain": "seo",
-      "skill": "approve",
-      "action": "approve",
-      "target": "cach-doc-bieu-do-nen-chung-khoan-cho-nguoi-moi-bat-dau",
-      "status_to": "Draft-Approved",
-      "path": "knowledge/3-seo/logs/publish-ledger.csv",
-      "note": "ledger:gate2",
-      "src": "backfill"
     }
   ],
   "activity_counts": {
     "seo": {
-      "d7": 79,
-      "d30": 116,
-      "last": "2026-11-26T13:28:25"
+      "d7": 88,
+      "d30": 151,
+      "last": "2026-11-27T11:15:18"
     },
     "market": {
-      "d7": 5,
+      "d7": 4,
       "d30": 6,
       "last": "2026-11-26T00:00:00"
     },
     "analytics": {
-      "d7": 4,
-      "d30": 4,
-      "last": "2026-11-26T00:00:00"
+      "d7": 7,
+      "d30": 7,
+      "last": "2026-11-27T10:16:19"
     },
     "campaign": {
       "d7": 1,
@@ -2637,9 +2840,9 @@
           846
         ]
       ],
-      "d7": 79,
-      "d30": 116,
-      "last": "2026-11-26 13:28"
+      "d7": 88,
+      "d30": 151,
+      "last": "2026-11-27 11:15"
     },
     {
       "domain": "campaign",
@@ -2785,9 +2988,9 @@
           "2026-11-23"
         ]
       ],
-      "d7": 4,
-      "d30": 4,
-      "last": "2026-11-26 00:00"
+      "d7": 7,
+      "d30": 7,
+      "last": "2026-11-27 10:16"
     },
     {
       "domain": "market",
@@ -2806,7 +3009,7 @@
           2
         ]
       ],
-      "d7": 5,
+      "d7": 4,
       "d30": 6,
       "last": "2026-11-26 00:00"
     }

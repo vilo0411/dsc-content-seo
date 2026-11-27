@@ -43,7 +43,7 @@ Câu chữ trong ảnh: viết hoa đầu câu, không viết hoa toàn bộ (tr
 
 ## 4. Lưới và khung
 - **Kích thước (chuẩn CMS DSC):** ảnh trong bài **800×500** (16:10); **ảnh bìa 1000×600** (5:3), vẽ trên khung 800×480 với cùng bộ cỡ chữ rồi xuất ra 1000×600 (`Canvas(FEATURED, …, out=FEATURED_OUT)`). Vẽ ở 3× rồi thu nhỏ để khử răng cưa.
-- Thẻ ảnh trong bài: `<img style="aspect-ratio:800/500;" src="…" alt="…" width="800" height="500">`, theo mẫu thẻ ảnh trên site live. Ảnh bìa: `aspect-ratio:1000/600`, `width="1000" height="600"`.
+- Thẻ ảnh trong bài: `<img src="/uploads/…" alt="…">` — **không** gắn `width`/`height`/`style`: CMS giữ `height="500"` mà CSS site không có `height:auto` → trên mobile ảnh thừa khoảng trắng trên/dưới (đã kiểm 2026-11-27). Kích thước file vẫn 800×500 (bìa 1000×600).
 - **Lề:** 40 px. **Bước khoảng cách:** bội số của 4 (8/12/16/20). Card cách nhau 10–16.
 - **Khung infographic (`inline_frame`)**, từ trên xuống:
   1. Logo nền sáng góc trên bên trái, cao 20 px, cách lề 40 px. Eyebrow nằm cùng hàng, căn phải.
@@ -70,5 +70,6 @@ Câu chữ trong ảnh: viết hoa đầu câu, không viết hoa toàn bộ (tr
 - [ ] Footer ghi nguồn khi ảnh có phí, thuế, lãi suất hoặc giá.
 - [ ] Không có đỏ, không có logo đối thủ, không có chữ do AI sinh.
 - [ ] Đúng kích thước: ảnh trong bài 800×500, ảnh bìa 1000×600; chữ nhỏ nhất 12 px; không chữ nào bị card / mockup che.
+- [ ] Không chữ nào tràn khỏi card hay khung ảnh. `Canvas.save()` tự kiểm và **không lưu** nếu tràn (in ra chữ + tọa độ). Card hẹp (4 cột ≈ 172 px) không đặt nhãn bên cạnh hình; đưa chú thích lên phụ đề hoặc chân card. Vẽ chữ bằng `cv.d.text` trực tiếp thì gọi thêm `cv.track(bbox, s)`.
 - [ ] Chỉ có 1 điểm nhấn màu, phần còn lại dùng `navy` / `neutral`.
 - [ ] Tên file `<slug>-<chu-de>.jpg`, alt chứa keyword và mô tả đúng nội dung ảnh.

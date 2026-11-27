@@ -24,7 +24,7 @@ Output: Gemini prompts + Hình ảnh trực tiếp chuẩn Brand DNA DSC.
    - Không dùng màu đỏ trong bất kỳ hình ảnh nào (tránh ám chỉ lỗ/giảm giá trong giao dịch chứng khoán tại Việt Nam).
 4. **Phân định Kích thước & Tỷ lệ Khung hình (Aspect Ratio Standards)**:
    - **Ảnh bìa (Featured Image):** `1000×600` (5:3) — chuẩn CMS DSC, dùng cho đầu bài, thumbnail, OG image.
-   - **Ảnh trong bài (Inline Image / H2 Infographics):** `800×500` (16:10) — cùng chuẩn; thẻ `<img style="aspect-ratio:800/500;" … width="800" height="500">`.
+   - **Ảnh trong bài (Inline Image / H2 Infographics):** `800×500` (16:10) — cùng chuẩn; thẻ `<img src="…" alt="…">` — **không** width/height/style (CMS giữ height="500" còn CSS site thiếu height:auto → mobile thừa khoảng trắng trên/dưới).
 5. **Nguyên tắc Chống rối mắt (Zero Clutter & Focal Point Rule)**:
    - **Ảnh bìa (Featured Image):** Duy nhất 1 vật thể chính (Single Central Hero Object) ở giữa, 70% khoảng trống âm.
    - **Ảnh trong bài (Inline Image / H2 Infographics):** Linh hoạt trình bày sơ đồ/diagram minh họa 2–3 phần tử liên quan (ví dụ: đối sánh 2 trường phái, hoặc sơ đồ 3–4 bước) nhưng phải giữ bố cục tối giản, không rối mắt.
@@ -78,6 +78,7 @@ Xác định số lượng và vị trí ảnh cần tạo:
 - [ ] **Kích thước:** ảnh bìa `1000×600`, ảnh trong bài `800×500`.
 - [ ] **Màu sắc Brand:** Chỉ màu trong `DESIGN.md` §2–§3 (Gunmetal, Pine Teal, Lime, Emerald, Frosted Mint, White + gradient), không màu cũ (`#00AD14`/`#2BE841`/`#10E7B3`/`#0D1B2A`), không đỏ.
 - [ ] **Độ thoáng & Tối giản:** Chỉ có 1 vật thể chính ở giữa, $\ge 60\%$ khoảng trống âm, 0% chi tiết thừa rối mắt.
+- [ ] **Chữ không tràn:** ảnh vẽ bằng `dsc_design.py` tự bị chặn khi chữ tràn card/khung (`Canvas.save()` báo lỗi). Vẫn mở ảnh xem bằng mắt trước khi trình.
 - [ ] **Chất lượng hình ảnh:** 0% chữ rác / typography lỗi.
 - [ ] **SEO Asset Management:** Ảnh nằm trong `knowledge/3-seo/content/images/` với tên file theo chuẩn SEO slug.
 

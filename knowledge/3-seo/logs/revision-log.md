@@ -523,3 +523,57 @@ File này ghi lại các chỉnh sửa thực tế mà người dùng thực hi�
 - **Pattern:** Sapo-outline-order
 - **Rule học được:** I105
 - **Scope:** chi-so-tai-chinh-bctc
+
+### [2026-11-27] - dong-tien-tu-do-la-gi
+- **Lỗi đã sửa:** Bảng ví dụ FCF 2025 từ 7 cột xuống 5 cột (gộp Mã CK + Năm, bỏ cột LNST, đơn vị tỷ VNĐ ghi 1 lần) vì min-content bảng ~400px đẩy cột bài rộng hơn màn hình mobile 360-375px, kéo theo banner CTA tràn ra ngoài
+- **Pattern:** Bảng số liệu nhiều cột số dài (≥6 cột kiểu 17.365,86) làm vỡ layout mobile của dsc.com.vn: cột bài không co (thiếu min-width:0), bảng không cuộn ngang
+- **Rule học được:** Bảng trong bài tối đa 5 cột nếu có số dạng nghìn,thập phân; đơn vị đưa ra caption/tiêu đề, không lặp trong mỗi header; gộp cột phụ (Năm) vào cột nhãn
+- **Scope:** Global
+
+### [2026-11-27] - do-lech-chuan-la-gi
+- **Lỗi đã sửa:** 66 ảnh Google Docs (mảnh phím fx-570/580, công thức) → 4 ảnh /uploads/ + bước dạng list; bỏ 9 H2 rỗng bọc ảnh
+- **Pattern:** ảnh phím bấm cắt từ Google Docs, <h2><img></h2>
+- **Rule học được:** Hướng dẫn bấm máy: viết bước bằng chữ + 1 ảnh tổng hợp/section, không chèn ảnh từng phím; ảnh không đặt trong heading
+- **Scope:** image
+
+### [2026-11-27] - rui-ro-tin-dung-la-gi
+- **Lỗi đã sửa:** Ảnh Google Docs mờ/sai brand → ảnh vẽ lại 800x500, mọi ảnh về /uploads/
+- **Pattern:** img googleusercontent
+- **Rule học được:** Ảnh sơ đồ chữ nhỏ/mờ/có logo đối thủ: vẽ lại theo image-design-system, không giữ ảnh Google Docs
+- **Scope:** image
+
+### [2026-11-27] - chi-bao-atr-la-gi
+- **Lỗi đã sửa:** Ảnh Google Docs mờ/sai brand → ảnh vẽ lại 800x500, mọi ảnh về /uploads/
+- **Pattern:** img googleusercontent
+- **Rule học được:** Ảnh sơ đồ chữ nhỏ/mờ/có logo đối thủ: vẽ lại theo image-design-system, không giữ ảnh Google Docs
+- **Scope:** image
+
+### [2026-11-27] - mo-hinh-nen-hammer-la-gi
+- **Lỗi đã sửa:** Ảnh Google Docs mờ/sai brand → ảnh vẽ lại 800x500, mọi ảnh về /uploads/
+- **Pattern:** img googleusercontent
+- **Rule học được:** Ảnh sơ đồ chữ nhỏ/mờ/có logo đối thủ: vẽ lại theo image-design-system, không giữ ảnh Google Docs
+- **Scope:** image
+
+### [2026-11-27] - mau-hinh-nen-bao-trum-la-gi
+- **Lỗi đã sửa:** Ảnh Google Docs mờ/sai brand → ảnh vẽ lại 800x500, mọi ảnh về /uploads/
+- **Pattern:** img googleusercontent
+- **Rule học được:** Ảnh sơ đồ chữ nhỏ/mờ/có logo đối thủ: vẽ lại theo image-design-system, không giữ ảnh Google Docs
+- **Scope:** image
+
+### [2026-11-27] - nen-doji-la-gi
+- **Lỗi đã sửa:** Ảnh Google Docs mờ/sai brand → ảnh vẽ lại 800x500, mọi ảnh về /uploads/
+- **Pattern:** img googleusercontent
+- **Rule học được:** Ảnh sơ đồ chữ nhỏ/mờ/có logo đối thủ: vẽ lại theo image-design-system, không giữ ảnh Google Docs
+- **Scope:** image
+
+### [2026-11-27] - npv-va-irr-la-gi
+- **Lỗi đã sửa:** Ảnh Google Docs mờ/sai brand → ảnh vẽ lại 800x500, mọi ảnh về /uploads/
+- **Pattern:** img googleusercontent
+- **Rule học được:** Ảnh sơ đồ chữ nhỏ/mờ/có logo đối thủ: vẽ lại theo image-design-system, không giữ ảnh Google Docs
+- **Scope:** image
+
+### [2026-11-27] - tai-sao-nen-dau-tu-trai-phieu-trai-phieu-phu-hop-voi-nha-dau-tu-nao
+- **Lỗi đã sửa:** Ảnh Google Docs mờ/sai brand → ảnh vẽ lại 800x500, mọi ảnh về /uploads/
+- **Pattern:** img googleusercontent
+- **Rule học được:** Ảnh sơ đồ chữ nhỏ/mờ/có logo đối thủ: vẽ lại theo image-design-system, không giữ ảnh Google Docs
+- **Scope:** image

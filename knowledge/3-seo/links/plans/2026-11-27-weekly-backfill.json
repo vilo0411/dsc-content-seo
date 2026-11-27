@@ -1,0 +1,95 @@
+{
+ "title": "Weekly backfill 27/11/2026 — P/S, target, thuế bán cổ phiếu, app mua CCQ, TT tiền tệ vs TT vốn",
+ "edits": [
+  {
+   "src": "chi-so-p-e-la-gi-cach-ap-dung-de-tim-co-phieu-tot",
+   "op": "wrap",
+   "find": "EPS có thể âm",
+   "anchor": "P/S (Price/Sales)",
+   "to": "chi-so-p-s-la-gi",
+   "group": "backfill",
+   "pri": "P1",
+   "why": "Lưu ý P/E vô nghĩa khi EPS âm → gợi ý dùng P/S: đúng chỗ người đọc cần bài P/S"
+  },
+  {
+   "src": "peg-la-gi",
+   "op": "wrap",
+   "find": "P/S (Price-to-Sales) hoặc chiết khấu dòng tiền",
+   "anchor": "P/S (Price-to-Sales)",
+   "to": "chi-so-p-s-la-gi",
+   "group": "backfill",
+   "pri": "P1",
+   "why": "Mục hạn chế PEG khuyên dùng P/S thay thế"
+  },
+  {
+   "src": "phan-tich-co-ban-la-gi",
+   "op": "wrap",
+   "find": "P/S (Price to Sales Ratio)",
+   "anchor": "P/S (Price to Sales Ratio)",
+   "to": "chi-so-p-s-la-gi",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Danh sách chỉ số tài chính trong phân tích cơ bản, mục P/S"
+  },
+  {
+   "src": "thien-kien-nhan-thuc-la-gi",
+   "op": "wrap",
+   "find": "mỏ neo thường xuất hiện",
+   "anchor": "giá mục tiêu của chuyên gia phân tích",
+   "to": "target-trong-dau-tu-chung-khoan-la-gi",
+   "group": "backfill",
+   "pri": "P1",
+   "why": "Giá mục tiêu (target) của chuyên gia là ví dụ mỏ neo — bài target giải thích cách đọc con số này"
+  },
+  {
+   "src": "cach-ban-co-phieu-cho-nguoi-moi",
+   "op": "wrap",
+   "find": "Xem xét thuế và phí",
+   "anchor": "thuế (0,1% giá trị bán)",
+   "to": "thue-khi-ban-co-phieu-la-bao-nhieu",
+   "group": "backfill",
+   "pri": "P1",
+   "why": "Lưu ý khi bán cổ phiếu nhắc thuế 0,1% — bài thuế khi bán cổ phiếu là chi tiết"
+  },
+  {
+   "src": "so-sanh-dau-tu-co-phieu-va-dau-tu-chung-chi-quy",
+   "op": "wrap",
+   "find": "Chi phí đầu tư Cổ phiếu",
+   "anchor": "Thuế bán cổ phiếu",
+   "to": "thue-khi-ban-co-phieu-la-bao-nhieu",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Mục chi phí & thuế khi đầu tư cổ phiếu"
+  },
+  {
+   "src": "quy-mo-la-gi-tong-quan-ve-quy-mo-tren-thi-truong-chung-khoan-viet-nam",
+   "op": "wrap",
+   "find": "Sau khi chọn được quỹ phù hợp",
+   "anchor": "đặt lệnh mua chứng chỉ quỹ",
+   "to": "app-mua-chung-chi-quy",
+   "group": "backfill",
+   "pri": "P1",
+   "why": "Bước đặt lệnh mua CCQ đầu tiên — bài app mua CCQ hướng dẫn thao tác"
+  },
+  {
+   "src": "lai-suat-omo-la-gi-giai-ma-cong-cu-dieu-tiet-thi-truong-tien-te-hieu-qua",
+   "op": "wrap",
+   "find": "Lãi suất OMO là lãi suất chuẩn cho các giao dịch ngắn hạn",
+   "anchor": "thị trường tiền tệ",
+   "to": "phan-biet-thi-truong-tien-te-va-thi-truong-von-huong-dan-chi-tiet-cho-nha-dau-tu",
+   "group": "backfill",
+   "pri": "P1",
+   "why": "OMO là lãi suất chuẩn trên thị trường tiền tệ — bài phân biệt TT tiền tệ/TT vốn giải thích khái niệm"
+  },
+  {
+   "src": "lai-suat-huy-dong-la-gi",
+   "op": "wrap",
+   "find": "3 loại lãi suất cốt lõi",
+   "anchor": "thị trường tiền tệ",
+   "to": "phan-biet-thi-truong-tien-te-va-thi-truong-von-huong-dan-chi-tiet-cho-nha-dau-tu",
+   "group": "backfill",
+   "pri": "P2",
+   "why": "Câu dẫn phân biệt 3 loại lãi suất trên thị trường tiền tệ"
+  }
+ ]
+}

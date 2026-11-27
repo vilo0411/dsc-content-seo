@@ -84,18 +84,26 @@ def img_size(src: str) -> tuple[int, int] | None:
 
 
 def img_tag(src: str, alt: str) -> str:
-    """Live-site markup: aspect-ratio style + width/height for local images (avoids layout shift)."""
+    """Plain <img src alt>: no width/height/style (see strip_img_size)."""
     size = img_size(src)
-    if not size:
-        return f'<img src="{src}" alt="{alt}">'
-    w, h = size
-    if size not in IMG_SIZES:
+    if size and size not in IMG_SIZES:
+        w, h = size
         size_warnings.append(f"{src} = {w}x{h} (chuẩn: 800x500 trong bài, 1000x600 ảnh bìa)")
-    return f'<img style="aspect-ratio:{w}/{h};" src="{src}" alt="{alt}" width="{w}" height="{h}">'
+    return f'<img src="{src}" alt="{alt}">'
+
+
+def strip_img_size(tag: str) -> str:
+    """Drop width/height attrs and inline style from <img>.
+
+    Site CSS caps img width (max-width:100%) but never sets height:auto, and the CMS editor
+    strips any inline height:auto we add. With height="500" kept, mobile shows a 500px-tall box
+    letterboxed by object-fit:contain (blank bands above/below). Without the attrs height is auto.
+    """
+    return re.sub(r'\s+(?:width|height|style)\s*=\s*"[^"]*"', "", tag, flags=re.I)
 
 
 def center_img(tag: str) -> str:
-    return f'<p style="text-align:center;">\n{tag}</p>'
+    return f'<p style="text-align:center;">\n{strip_img_size(tag)}</p>'
 
 
 def table_html(rows: list[str]) -> str:
