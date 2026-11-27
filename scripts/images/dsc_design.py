@@ -82,6 +82,28 @@ class Canvas:
         self.out = out or size
         self.img = Image.new("RGBA", (self.w * SS, self.h * SS), hex_rgb(C.get(bg, bg)))
         self.d = ImageDraw.Draw(self.img)
+        self.cards = []   # card boxes, final px — used by check_layout()
+        self.texts = []   # (bbox final px, string) of every drawn text
+
+    # -- layout QA: text must stay inside its card and inside the canvas --
+    def track(self, bbox_ss, s):
+        """Register a text bbox given in SS pixels. Call this when drawing with self.d.text directly."""
+        self.texts.append((tuple(v / SS for v in bbox_ss), s))
+
+    def check_layout(self, pad=2):
+        """Return overflow problems: text crossing the edge of the card it sits in, or leaving the canvas."""
+        issues = []
+        for (x0, y0, x1, y1), s in self.texts:
+            cx, cy = (x0 + x1) / 2, (y0 + y1) / 2
+            home = [c for c in self.cards if c[0] <= cx <= c[2] and c[1] <= cy <= c[3]]
+            if home:
+                c = min(home, key=lambda b: (b[2] - b[0]) * (b[3] - b[1]))  # innermost card
+                if x0 < c[0] + pad or x1 > c[2] - pad or y0 < c[1] + pad or y1 > c[3] - pad:
+                    issues.append(f'"{s}" tràn khỏi card ({x0:.0f},{y0:.0f})-({x1:.0f},{y1:.0f}) '
+                                  f'vs card ({c[0]:.0f},{c[1]:.0f})-({c[2]:.0f},{c[3]:.0f})')
+            elif x0 < pad or y0 < pad or x1 > self.w - pad or y1 > self.h - pad:
+                issues.append(f'"{s}" tràn khỏi khung ảnh ({x0:.0f},{y0:.0f})-({x1:.0f},{y1:.0f})')
+        return issues
 
     # -- primitives (final-pixel coords) --
     def _s(self, *v):
@@ -103,6 +125,7 @@ class Canvas:
         if shadow:
             self.shadow(x0, y0, x1, y1, r)
         self.rect(x0, y0, x1, y1, fill, r, outline=border, width=1 if border else 1)
+        self.cards.append((x0, y0, x1, y1))
 
     def ellipse(self, x0, y0, x1, y1, fill):
         self.d.ellipse(self._s(x0, y0, x1, y1), fill=C.get(fill, fill))
@@ -117,11 +140,15 @@ class Canvas:
             if anchor[0] != "l":
                 total = sum(self.d.textlength(ch, font=f) + tracking * SS for ch in s) - tracking * SS
                 cx -= total if anchor[0] == "r" else total / 2
+            start = cx
             for ch in s:
                 self.d.text((cx, y * SS), ch, font=f, fill=C.get(fill, fill), anchor="l" + anchor[1])
                 cx += self.d.textlength(ch, font=f) + tracking * SS
+            bb = self.d.textbbox((start, y * SS), s, font=f, anchor="l" + anchor[1])
+            self.track((start, bb[1], cx, bb[3]), s)
             return
         self.d.text((x * SS, y * SS), s, font=f, fill=C.get(fill, fill), anchor=anchor)
+        self.track(self.d.textbbox((x * SS, y * SS), s, font=f, anchor=anchor), s)
 
     def tlen(self, s, token):
         f = tfont(token) if token in TYPE else token
@@ -187,6 +214,10 @@ class Canvas:
         self.img.alpha_composite(lg, (int(x * SS), int(y * SS)))
 
     def save(self, path, quality=90):
+        # Refuse to write an image whose text overflows a card / the canvas (set DSC_ALLOW_OVERFLOW=1 to bypass).
+        issues = self.check_layout()
+        if issues and not os.environ.get("DSC_ALLOW_OVERFLOW"):
+            raise ValueError(f"{os.path.basename(path)}: chữ tràn layout, chưa lưu ảnh:\n  " + "\n  ".join(issues))
         out = self.img.resize(self.out, Image.Resampling.LANCZOS).convert("RGB")
         out.save(path, quality=quality, optimize=True, subsampling=0)
         print(path, out.size)
